@@ -310,6 +310,32 @@ so fixed points are exactly **constant** unitary matrices satisfying the usual 1
 `Heuristic H1.10 (Why 1D looks “more complicated”).`
 The lesson is not that \(1\)D is “more renormalizable”; it is that the relevant notion of RG data for point interactions is the boundary-condition parameter space. In \(2\)D the same “scale from a point” reappears as a single transmutation scale. In \(1\)D, because the full contact family is larger (U(2) rather than a one-parameter subset), the scaling flow can have a correspondingly richer fixed-point structure.
 
+`Heuristic H1.11 (Fixed points as quantization rules in finite volume).`
+In one dimension, a contact interaction is boundary data at a point, and RG fixed points are precisely the **scale-invariant** boundary conditions (energy-independent \(S\)-matrices). When the system is placed in a finite box (or on a circle), boundary/scattering data become **quantization conditions** for the allowed momenta. Thus fixed points naturally correspond to simple “quantization rules” (linear spectra up to constant phase shifts), while departures from the fixed point appear as scale-dependent phase shifts.
+
+`Derivation D1.6 (Robin boundary condition gives a quantization condition).`
+Consider a free particle on the interval \([0,L]\) with a Robin boundary condition at the left endpoint,
+\(\psi'(0)=\lambda\,\psi(0)\),
+and (for simplicity) a Dirichlet boundary at the right endpoint,
+\(\psi(L)=0\).
+For energy \(E=\hbar^2k^2/(2m)\), the general solution is \(\psi(x)=A\sin(kx)+B\cos(kx)\).
+The Dirichlet condition gives \(A\sin(kL)+B\cos(kL)=0\), hence \(B=-A\tan(kL)\).
+The Robin condition gives \(A k=\lambda B\), so
+\[
+k=-\lambda\,\tan(kL),
+\qquad\text{equivalently}\qquad
+\tan(kL)=-\frac{k}{\lambda}.
+\]
+This is a quantization rule: the allowed \(k\) are the roots of the displayed equation.
+At the scale-invariant endpoints \(\lambda=\infty\) (Dirichlet at \(0\)) and \(\lambda=0\) (Neumann at \(0\)), one recovers the familiar fixed-point spectra
+\[
+\lambda=\infty:\; k_n=\frac{n\pi}{L},
+\qquad
+\lambda=0:\; k_n=\frac{(n+\tfrac12)\pi}{L},
+\]
+up to the usual \(n\in\mathbb N\) conventions.
+More general point interactions (including the full U(2) family on the line) act similarly: they change the phase relation at the defect, hence shift the finite-volume quantization condition by a phase.
+
 ## 6. Semigroup vs Group: What Is (Not) Invertible
 The phrase “renormalization group” hides two different notions:
 1. an information-losing *coarse-graining map* on descriptions of the system, and

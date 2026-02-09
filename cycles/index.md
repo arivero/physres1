@@ -20,6 +20,7 @@
 17. `C16` Completed.
 18. `C17` Completed.
 19. `C18` Completed.
+20. `C19` Completed.
 
 ## Next Action
 Priority: advance the follow-up papers (dependent on `paper/main.md`).
