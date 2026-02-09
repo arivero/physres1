@@ -16,6 +16,13 @@ Date: 2026-02-09
 3. Prefer OA sources first; otherwise mark `PENDING` and rely on lawful local PDFs for ingestion.
 4. Treat preprints (especially A. Rivero drafts) as idea guides; treat any preprint-only claims as heuristic until verified against independent sources.
 
+## Novelty Guardrail (Anti-Herd)
+The goal is not to repackage standard narratives. Default to:
+1. **Derivation-first:** write the claim as an explicit lemma/derivation in our own words before looking for “supporting quotes”.
+2. **One computation per concept:** if a section is conceptual, attach at least one toy model (delta interaction, Gaussian coarse-grain, free kernel) that actually computes something.
+3. **Separate filters:** keep “half-density/normalization” distinct from other dimension-selection filters (SUSY/division algebras/hopf bundles); track them as separate hypotheses and compare outcomes rather than mixing them.
+4. **Literature as anchor, not driver:** use standard sources to sanity-check and attribute, but let the argument be forced by refinement/half-density compatibility constraints.
+
 ## Operational Loop (One Session)
 1. Pick one thread + one concrete question (keep scope ≤ 1–2 pages of derivation).
 2. Record decisions/results in `docs/research-log.md`; put longer math in `paper/notes/`.
