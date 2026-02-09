@@ -145,3 +145,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Next:
   1. Optionally add one more alternative sieve (string tension / \(\alpha'\)) and compare it to the gravity-only and gauge-coupling cases.
   2. If we keep `Derivation D3.5`, consider adding one sentence tying it to half-density kernel composition (without turning the main paper into a half-density paper).
+
+## 2026-02-09 (C13 continuation: why mention string tension?)
+- Focus: answer “why string tension?” without letting it displace the half-density-first logic.
+- Question: is \(\alpha'\) introduced only as a dimensionful scale, and how does it relate to \(G\) / Planck length?
+- Work: added `Example E4` + `Heuristic H2.12` in `papers/planck-area/main.md` showing (i) \(\alpha'\) supplies a background-free area scale directly, (ii) it does not uniquely select \(d=4\) under strict integrality, and (iii) in stringy UV completions \(G_d\) (hence Planck length) is derived from \(\alpha'\) and dimensionless couplings (plus compactification factors).
+- Result: “string tension” is not a new foundational postulate; it is one possible *source of the scalarization scale* in H2.4, with gravity/Planck scale either fundamental (gravity-only sieve) or emergent (stringy sieve).
+- Sources touched (keys + status changes): none.
+- Next: decide whether the paper should treat \(\alpha'\) as an allowed coupling in the Diophantine sieve or keep the focus strictly on “gravity-only → \(d=4\)”.

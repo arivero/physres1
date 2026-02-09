@@ -735,6 +735,23 @@ K(q_f,t_f;q_i,t_i)
 \qquad t_i<t<t_f.
 \]
 
+\texttt{Heuristic\ H4.0\ (Half-density\ kernels\ make\ composition\ measure-free).}
+On a configuration manifold \(M\), the coordinate-free object underlying
+the displayed formula is a \textbf{bi-half-density kernel}:
+\(K_t(q',q)\in|\Lambda^dT^\ast_{q'}M|^{1/2}\otimes|\Lambda^dT^\ast_qM|^{1/2}\).
+Then composition is the canonical pairing in the intermediate variable
+\(q\), and it does not require choosing a background measure. Writing
+\(\int dq\) is what one gets after choosing a reference density to
+identify half-densities with scalar functions.
+
+\texttt{Derivation\ D4.0\ (Coordinate\ invariance\ of\ composition\ via\ half-densities).}
+In local coordinates \(q\), write
+\(K_t(q',q)=k_t(q',q)\,|dq'|^{1/2}|dq|^{1/2}\). Then
+\(K_{t_f-t}(q_f,q)\,K_{t-t_i}(q,q_i)
+=k_1k_2\,|dq_f|^{1/2}|dq|\,|dq_i|^{1/2}\) is a density in \(q\), so
+\(\int_M K_{t_f-t}(q_f,q)K_{t-t_i}(q,q_i)\) is coordinate invariant.
+This is the intrinsic meaning of the composition postulate.
+
 \texttt{Derivation\ D4.1\ (Time\ slicing\ from\ repeated\ composition).}
 Iterating the composition law over a partition
 \(t_i=t_0<\cdots<t_N=t_f\) gives
@@ -828,6 +845,28 @@ Fast phase oscillations cancel nonstationary contributions, while
 neighborhoods of stationary paths contribute coherently. This is the
 precise sense in which the classical equations reappear as \(\hbar\to0\)
 asymptotics.
+
+\texttt{Derivation\ D4.3\ (Van\ Vleck\ prefactor\ is\ a\ bi-half-density).}
+In the semiclassical approximation, the endpoint kernel has the standard
+form \[
+K(q_f,t_f;q_i,t_i)\approx
+\frac{1}{(2\pi i\hbar)^{d/2}}
+\left|\det\!\left(-\frac{\partial^2 S_{\mathrm{cl}}}{\partial q_f\,\partial q_i}\right)\right|^{1/2}
+\exp\!\left(\frac{i}{\hbar}S_{\mathrm{cl}}(q_f,t_f;q_i,t_i)\right),
+\] where \(S_{\mathrm{cl}}\) is the classical action evaluated on the
+stationary path with those endpoints. Under changes of coordinates
+\(q_f=q_f(q_f')\), \(q_i=q_i(q_i')\), the mixed Hessian transforms by
+the chain rule, and \[
+\det\!\left(-\frac{\partial^2 S_{\mathrm{cl}}}{\partial q_f'\,\partial q_i'}\right)
+=
+\det\!\left(\frac{\partial q_f}{\partial q_f'}\right)
+\det\!\left(\frac{\partial q_i}{\partial q_i'}\right)
+\det\!\left(-\frac{\partial^2 S_{\mathrm{cl}}}{\partial q_f\,\partial q_i}\right).
+\] Taking square roots yields a factor
+\(|\det(\partial q_f/\partial q_f')|^{1/2}|\det(\partial q_i/\partial q_i')|^{1/2}\),
+so the prefactor transforms as a half-density in each endpoint variable.
+This is the concrete semiclassical origin of the half-density viewpoint
+in \texttt{Heuristic\ H4.0}.
 
 \subsubsection{6.5 Link Back to Section 5 Singular
 Dynamics}\label{link-back-to-section-5-singular-dynamics}
