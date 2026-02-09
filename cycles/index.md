@@ -23,7 +23,7 @@
 19. `C18` Completed.
 20. `C19` Completed.
 21. `C20` Completed.
-22. `C21` In Progress.
+22. `C21` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.

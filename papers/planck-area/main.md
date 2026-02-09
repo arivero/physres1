@@ -207,6 +207,24 @@ If one relaxes H2.5’s “analytic monomial in couplings” requirement, then e
 \(\kappa_\ast \sim \mu\,\exp(-\mathrm{const}/g(\mu)^2)\) or \(\kappa_\ast \sim \mu\,\exp(-\mathrm{const}/g(\mu))\).
 In that branch, the half-density scalarization scale required by H2.4 can be supplied by \(\kappa_\ast^{-d/2}\) (or its square in \(d=4\) as an area scale), but the scale is no longer an analytic monomial in the couplings: it is emergent and non-perturbative in the naive coupling expansion.
 
+`Heuristic H2.14 (Bookkeeping: what “\(d\)” means in \(\text{length}^{d/2}\)).`
+The half-density weight \(\text{length}^{d/2}\) refers to the dimension of the manifold whose coordinates are integrated over in the composition law (the intermediate-variable space). In a nonrelativistic time-sliced kernel this is typically the *spatial* dimension, while for covariant/proper-time kernels one may compose over *spacetime* points. The dimension-sieve discussion using \(G_d\) treats \(d\) as the **spacetime** dimension, so any \(d=4\Rightarrow\) “area scale” conclusion should be read in that covariant sense unless stated otherwise.
+
+`Derivation D1.6a (RG-invariant scale from a beta function).`
+Let a (dimensionless) running coupling \(g(\mu)\) satisfy an RG equation
+\(\mu\,dg/d\mu=\beta(g)\) with \(\beta(g)\neq 0\) in the range of interest.
+Then the combination
+\[
+\Lambda_\ast
+\equiv
+\mu\exp\!\left(-\int^{g(\mu)} \frac{dg'}{\beta(g')}\right)
+\]
+is RG-invariant (independent of the subtraction scale \(\mu\)), up to a finite multiplicative constant corresponding to a choice of scheme/normalization of the integral.
+In one-loop form \(\beta(g)=-b g^2+O(g^3)\), one obtains the familiar transmutation scale
+\(\Lambda_\ast \sim \mu\,e^{-1/(b g(\mu))}\times(\text{scheme factor})\).
+
+If H2.3–H2.4 demand a universal scalarization constant \(C\) with \([C]=\text{length}^{d/2}\), then any RG-invariant inverse length \(\Lambda_\ast\) supplies one by \(C\sim \Lambda_\ast^{-d/2}\). In particular, for \(d=4\) this produces a universal **area** scale \(C\sim \Lambda_\ast^{-2}\), without requiring the scale to be an analytic monomial in couplings (so this branch sits outside H2.5).
+
 `Example E5 (2D delta: transmutation yields a length scale).`
 In the \(2\)D delta interaction, the contact coupling is marginal and the renormalized theory is naturally parameterized by an RG-invariant inverse length \(\kappa_\ast\) rather than by the bare coupling. Concretely, one finds (up to conventions) a running coupling \(g_R(\mu)\) with beta function \(\beta(g_R)\propto g_R^2\), and the RG invariant
 \[

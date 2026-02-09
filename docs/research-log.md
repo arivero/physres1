@@ -228,3 +228,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have concrete “promotion candidates” to implement in `papers/planck-area/main.md` (likely as part of `C21`) plus an explicit list of open questions.
 - Sources touched (keys + status changes): none (blackboard only).
 - Next: promote the RG-invariant scale derivation + \(d\)-bookkeeping paragraph into `papers/planck-area/main.md` and rebuild the PDF.
+
+## 2026-02-09 (C21: promote RG-scale branch into Planck-area draft)
+- Focus: make the half-density \(\Rightarrow \text{length}^{d/2}\) scale discussion less programmatic by adding a general RG-invariant scale derivation and explicit \(d\)-bookkeeping.
+- Question: can we state, in a single labeled derivation, how RG invariants can supply the scalarization constant (separate from the H2.5 integer-exponent sieve)?
+- Work:
+  - Added `Heuristic H2.14` (“what is \(d\)?”) and `Derivation D1.6a` (RG-invariant scale from \(\beta(g)\)) to `papers/planck-area/main.md`.
+  - Rebuilt `papers/planck-area/main.pdf` and deleted `.aux`/`.log` artifacts after successful generation.
+- Result: `papers/planck-area/main.md` now separates two distinct “scale suppliers” cleanly: (i) integer-exponent coupling monomials (H2.5) and (ii) RG-generated invariant scales (outside H2.5), with an explicit \(d=4\Rightarrow\) area specialization *conditional on the bookkeeping choice*.
+- Sources touched (keys + status changes): none.
+- Next: decide whether to add a short cross-link from `paper/main.md` to this follow-up (one sentence), or keep the cornerstone paper free of Planck-scale discussion.
