@@ -44,6 +44,20 @@ On \(\mathbb R^d\), consider a dilation \(y\mapsto y'=a y\) with \(a>0\).
 Then \(|dy'|=a^d|dy|\), so \(|dy'|^{1/2}=a^{d/2}|dy|^{1/2}\).
 Thus even in flat space, half-densities carry an inherent \(\text{length}^{d/2}\) scaling weight.
 
+`Derivation D1.2a (Near-diagonal scaling forces the square-root Jacobian \(\varepsilon^{-d/2}\)).`
+On \(M=\mathbb R^d\), introduce near-diagonal coordinates \(y=x+\varepsilon v\) with \(\varepsilon>0\). Then
+\(dy=\varepsilon^d\,dv\), hence \(|dy|^{1/2}=\varepsilon^{d/2}|dv|^{1/2}\).
+For a bi-half-density kernel written locally as
+\[
+K_\varepsilon(x,y)=k_\varepsilon(x,y)\,|dx|^{1/2}|dy|^{1/2},
+\]
+its pullback to \((x,v)\) variables becomes
+\[
+K_\varepsilon(x,x+\varepsilon v)
+=\big(\varepsilon^{d/2}k_\varepsilon(x,x+\varepsilon v)\big)\,|dx|^{1/2}|dv|^{1/2}.
+\]
+Thus, any attempt to define a nontrivial “\(\varepsilon\to0\)” near-diagonal limit of kernels (the scaling step that tangent-groupoid quantization packages) inevitably produces an \(\varepsilon^{d/2}\) factor from the half-density Jacobian, and the corresponding scalar representative must be renormalized by \(\varepsilon^{-d/2}\) to stay finite. This is the same exponent as in the finite-dimensional “square-root delta” normalization: the half-density is the square root of the density Jacobian.
+
 `Proposition P1.2 (Universal *dimensionless* amplitudes force a \(\text{length}^{d/2}\) constant).`
 If one imposes the extra requirement that the scalar representative \(f\) in \(\psi=f\,\sigma_\ast\) be dimensionless in physical units, then the reference half-density \(\sigma_\ast\) must carry all of the \(\text{length}^{d/2}\) dimension. In particular, a *constant* (field-independent) choice of \(\sigma_\ast\) is equivalent to choosing a universal \(\text{length}^{d/2}\) scale.
 

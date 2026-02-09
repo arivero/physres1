@@ -171,3 +171,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the main manuscript now separates (i) intrinsic half-density composition from (ii) scalarization conventions and (iii) any universality assumptions about fixing the scalarization scale.
 - Sources touched (keys + status changes): none.
 - Next: decide whether to add a single forward-pointer sentence from the main manuscript to the dependent Planck-area draft, or keep that discussion entirely out of the cornerstone paper.
+
+## 2026-02-09 (C16 start: near-diagonal scaling as the concrete witness)
+- Focus: make the \(\varepsilon^{-d/2}\) factor appear explicitly from near-diagonal scaling rather than as an abstract “half-density weight”.
+- Question: can we show, in the simplest coordinates \(y=x+\varepsilon v\), that half-density pullback forces the square-root Jacobian factor used in refinement limits?
+- Work: added `Derivation D1.2a` to `papers/planck-area/main.md` isolating the \(|dy|^{1/2}=\varepsilon^{d/2}|dv|^{1/2}\) factor and explaining why scalar representatives must be renormalized by \(\varepsilon^{-d/2}\) to obtain nontrivial \(\varepsilon\to0\) limits (tangent-groupoid style scaling).
+- Result: the “need a \(\text{length}^{d/2}\) scale” claim now has a concrete local-coordinate computation attached to it, not just dimensional analysis.
+- Sources touched (keys + status changes): none.
+- Next: decide whether to add a one-paragraph version of this near-diagonal scaling witness into `paper/main.md` (likely not necessary given D4.0/D4.1a), or keep it confined to the Planck-area follow-up.
