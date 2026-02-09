@@ -7,6 +7,7 @@
 4. Added `Derivation D1.4` (stationary-phase/Van Vleck prefactor is a bi-half-density) to connect the half-density theme directly to the main paper’s stationary-phase narrative.
 5. Added `Derivation D1.5` (inverse-square orbit radius + Planck areal speed \(\Rightarrow\) Compton radius cancellation) anchored to `[RiveroAreal]`.
 6. Added an explicit hypothesis ledger + relaxation branches (Section 3.1–3.2) to separate what is forced by half-density geometry from what is imposed as a universality/selection principle.
+7. Started explicit analysis of `H2.5` by separating “integrality vs perturbative analyticity” readings and adding a Diophantine dimension-sieve derivation (Section 3.3, `Derivation D1.6`).
 
 ## Sections Touched
 1. `papers/planck-area/main.md`.

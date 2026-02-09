@@ -57,12 +57,12 @@ The “universal area scale” claim begins only after adding two further hypoth
 
 Under these hypotheses, \(d=4\) is the unique dimension in which the needed \(\text{length}^{d/2}\) constant can be supplied by the gravitational coupling without fractional powers (Derivation D1.3).
 
-`Derivation D1.3 (Dimension match: why \(d=4\) is singled out by gravity).`
+`Derivation D1.3 (Gravity-only sieve: why \(d=4\) is singled out if only \(G_d\) is used).`
 In \(d\) spacetime dimensions, the Einstein--Hilbert action
 \(\frac{1}{16\pi G_d}\int d^d x\,\sqrt{|g|}\,R\)
 shows that (in \(c=\hbar=1\) units) Newton’s constant has dimension
 \([G_d]=\text{length}^{d-2}\).
-If the universal half-density normalization constant is required to be built from \(G_d\) without fractional powers, then its dimension must match \(\text{length}^{d/2}\) with exponent \(1\), i.e.
+Assume the only available dimensionful coupling used to build the universal normalization constant is \(G_d\) itself (no cosmological constant, no additional dimensionful scales), and impose H2.5 in the literal “no fractional powers of \(G_d\)” sense. Then the normalization constant has dimension \(\text{length}^{k(d-2)}\) for some integer \(k\). Matching \(\text{length}^{d/2}\) forces
 \(\text{length}^{d/2}=\text{length}^{d-2}\),
 which holds if and only if \(d=4\).
 In that case \(G_4\) itself has dimension of area, and the corresponding area scale is the Planck area \(L_P^2\sim \hbar G_4/c^3\).
@@ -88,7 +88,11 @@ The scalar representative \(f\) is required to be dimensionless in physical unit
 The reference \(\sigma_\ast\) is taken to be constant/field-independent, rather than determined by background geometry (e.g. a Riemannian volume \(|g|^{1/4}|dx|^{1/2}\)) or by dynamical fields (e.g. a dilaton-like factor). This is the first point where a *universal constant* enters.
 
 `Hypothesis H2.5 (Analyticity / no fractional powers of couplings).`
-If the universal constant is required to be built from the theory’s couplings without fractional powers, then dimensional analysis becomes a *dimension sieve* rather than a tautology. Derivation D1.3 is the gravity instance: “use \(G_d\) without fractional powers” singles out \(d=4\).
+If the universal constant is required to be built from the theory’s couplings without fractional powers, then dimensional analysis becomes a *dimension sieve* rather than a tautology. This hypothesis has at least two distinct readings:
+1. **Integrality (Diophantine) reading:** the constant is a monomial in the available couplings with integer exponents (possibly allowing negative powers).
+2. **Perturbative analyticity reading (stronger):** the constant admits a Taylor expansion around zero couplings, so only nonnegative integer powers appear.
+
+Derivation D1.3 is the simplest gravity-only instance under the integrality reading: “use \(G_d\) without fractional powers” singles out \(d=4\).
 
 `Heuristic H2.6 (Where “special dimensions” can appear).`
 Special dimensions do not come from half-densities alone (Hypothesis H2.1). They appear only after adding a selection principle like H2.4–H2.5: the requirement that the scalarization choice be universal, background-free, and coupling-built in a restricted (e.g. analytic) way.
@@ -104,6 +108,48 @@ This subsection records the main “branches” that need separate study.
    Then in any \(d>2\) one can build a \(\text{length}^{d/2}\) constant from gravity via \(G_d^{\,d/(2(d-2))}\) (in \(c=\hbar=1\) units), so \(d=4\) is no longer singled out; instead, \(d=4\) is simply the unique case where the exponent is an integer.
 4. **Change “which coupling supplies the scale”.**
    Using other dimensionful couplings (cosmological constant, string tension, gauge couplings in various dimensions, etc.) yields different “special-dimension” sieves. This is conceptually aligned with the observation that some dimensions are singled out by other structures (division algebras, special holonomy, supersymmetry), but those filters are separate from the half-density story and should not be conflated.
+
+### 3.3 Starting with H2.5: Integrality as a Dimension Sieve
+The point of H2.5 is not that dimensional analysis alone selects a unique scale (it does not), but that *restricting allowed functional dependence on couplings* can turn dimensional analysis into a selection principle.
+
+`Derivation D1.6 (Diophantine form of “no fractional powers”).`
+Work in \(c=\hbar=1\) units for dimension counting. Let the available couplings \(\{g_i\}\) have length dimensions
+\([g_i]=\text{length}^{a_i}\).
+Under the integrality reading of H2.5, the universal normalization constant is a monomial
+\(C=\prod_i g_i^{n_i}\)
+with integers \(n_i\). Its length dimension is
+\([C]=\text{length}^{\sum_i n_i a_i}\).
+Requiring \([C]=\text{length}^{d/2}\) is therefore the Diophantine condition
+
+$$
+\sum_i n_i a_i=\frac{d}{2}.
+$$
+
+Existence (and non-uniqueness) of solutions depends on:
+1. which couplings are admitted as “universal” inputs, and
+2. whether one allows negative exponents (non-analytic at zero coupling) or insists on perturbative analyticity (nonnegative exponents).
+
+`Heuristic H2.7 (Why H2.5 needs a “what counts as a coupling” rule).`
+If one allows arbitrary redefinitions of couplings (e.g. adjoining a new symbol \(\tilde G = G_d^{1/(d-2)}\)), then “no fractional powers” becomes vacuous: the forbidden root has simply been renamed as an allowed coupling. H2.5 is meaningful only together with a prior criterion for admissible coupling dependence (e.g. perturbative analyticity around a distinguished limit such as \(G_d\to0\)).
+
+`Example E1 (Gravity-only).`
+With only \(G_d\) available, \(a_1=d-2\) and the condition becomes \(n(d-2)=d/2\). For integer \(d\ge 3\), this has a solution only at \(d=4\) with \(n=1\), reproducing Derivation D1.3.
+
+`Example E2 (Gravity + cosmological constant).`
+If one also allows the cosmological constant \(\Lambda_d\) with \([\Lambda_d]=\text{length}^{-2}\), then the condition becomes
+\(n(d-2)-2m=d/2\) for integers \(n,m\).
+A simple family of solutions exists for \(d\) divisible by \(4\): take \(n=1\) and \(m=d/4-1\), so
+
+$$
+C \sim G_d\,\Lambda_d^{\,d/4-1},
+$$
+
+has dimension \(\text{length}^{d/2}\).
+Thus, even under H2.5, \(d=4\) is not automatically unique once additional dimensionful couplings are admitted; what is special about \(d=4\) in this family is that it is the only case with \(m=0\) (no need to involve \(\Lambda_d\)).
+
+`Heuristic H2.8 (What H2.5 is really buying).`
+The value of H2.5 is comparative:
+it distinguishes dimensions in which the needed \(\text{length}^{d/2}\) factor can be supplied by *simple* coupling dependence (integer powers of the already-present couplings), versus dimensions in which any such factor requires either (i) introducing extra scales/couplings, (ii) taking fractional powers, or (iii) invoking non-analytic mechanisms (dimensional transmutation).
 
 ## 4. Stationary Phase Produces Half-Density Prefactors (Short-Time Kernel)
 The main manuscript uses stationary phase to explain why classical extremals dominate refinement limits. Here we add the complementary kernel-level fact:

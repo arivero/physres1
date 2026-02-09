@@ -7,6 +7,7 @@ Turn `papers/planck-area/main.md` from a program note into a substantive, self-c
 1. Add one concrete half-density composition model (kernel calculus) showing coordinate invariance and where a \(\text{length}^{d/2}\) normalization scale enters.
 2. Specialize to \(d=4\) and isolate the universal area-scale requirement in explicit formulas.
 3. Make the hypothesis ladder explicit and modular: identify which assumptions are geometric facts vs representational choices vs universality/selection principles, and record what changes when each hypothesis is relaxed.
+   - Explicitly track and test the three “upper” hypotheses: `H2.3` (dimensionless scalar representative), `H2.4` (background-free constancy), `H2.5` (analyticity / no fractional powers).
 4. Add a cleaned derivation based on [RiveroAreal] showing the inverse-square \(D=4\) cancellation story, with assumptions and status labels.
 5. Add a short section explaining how this interacts with the main paper’s RCP/RG narrative (what is compatibility, what is conjectural).
 

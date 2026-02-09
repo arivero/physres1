@@ -33,6 +33,7 @@ Date: 2026-02-09
 ### 2) Planck area / half-density scale (follow-up draft)
 - Draft: `papers/planck-area/main.md`.
 - Goal: make precise why half-density normalization forces a \(\text{length}^{d/2}\) scale, and why in \(d=4\) this is naturally an area scale (candidate: Planck area), with at least one concrete model computation.
+- Current sub-questions: evaluate `H2.3` (dimensionless scalarization), `H2.4` (background-free constancy), `H2.5` (analyticity/no fractional powers) separately; current focus is `H2.5`.
 
 ### 3) RG as fundamental (follow-up draft)
 - Draft: `papers/rg-fundamental/main.md`.

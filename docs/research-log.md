@@ -116,3 +116,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the draft now cleanly separates (i) half-density composition facts, (ii) scalarization choices, and (iii) the extra selection principles that can single out \(d=4\).
 - Sources touched (keys + status changes): none.
 - Next: pick one branch to analyze next (e.g. allow background metric; allow fractional powers; replace gravity by another coupling) and see what “special dimensions” it selects.
+
+## 2026-02-09 (C13 continuation: start with H2.5)
+- Focus: test `H2.5` (analyticity / no fractional powers of couplings) as a *dimension-selection* principle.
+- Question: is `H2.5` too strong, and what weaker/stronger variants are actually motivated?
+- Work: refined `H2.5` discussion in `papers/planck-area/main.md` by separating:
+  - the “integer-exponent” (integrality/Diophantine) reading,
+  - the stronger “perturbative analyticity near zero coupling” reading (nonnegative integer powers),
+  - and the relaxed setting where fractional powers are allowed (selection disappears).
+- Result: `H2.5` is now treated explicitly as a knob that either produces a sharp sieve (e.g. “gravity-only → \(d=4\)”) or becomes permissive once relaxed.
+- Sources touched (keys + status changes): none.
+- Next: decide which couplings count as admissible “universal inputs” (e.g. is \(\Lambda\) allowed?), and test at least one additional choice (string tension / other dimensionful couplings) to compare the induced “special dimension” filters.
