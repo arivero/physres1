@@ -436,6 +436,8 @@ Under the near-diagonal scaling \(y=x+\varepsilon z\) (so \(dy=\varepsilon^Ndz\)
 \(|A_\varepsilon(O)|^2\to (2\pi)^N\int \delta(\nabla f(x))\,|O(x)|^2\,dx\).
 This exhibits the pattern “density = \(|\text{amplitude}|^2\)”, with the exponent \(N/2\) matching the half-density scaling needed to cancel Jacobians under refinement.
 
+Section 6 recovers the same “square-root Jacobian” in the dynamical setting: semigroup composition of short-time kernels forces the characteristic \(t^{-d/2}\) normalization (Derivation D4.1a).
+
 In infinite-dimensional settings (paths), one is tempted to write “formal measures” supported on stationary-action trajectories. A concrete version of this idea, and its relation to exponential weighting and consistency, is developed in [Rivero9803035]. In this manuscript we treat such expressions as roadmap heuristics until they are regularized and made compatible with composition (Section 6).
 
 ### 5.6 Caveats (Nonlinear Distribution Pitfalls)
