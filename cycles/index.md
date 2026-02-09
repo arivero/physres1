@@ -28,7 +28,7 @@
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
-- `B01` Pending.
+- `B01` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -39,9 +39,8 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Execute `B01`: locate/capture an OA-stable source for `[Jackiw1991DeltaPotentials]` and add one standard half-density / semiclassical-propagator anchor (`PENDING` if needed).
-2. Promote the stable H2.5-split branch statements into the Planck-area draft (new `C23`, pending).
-3. Run a quick Q-pass (`Q01`, optional) after B01 + the next promotion cycle to ensure no new ambiguity crept in.
+1. Promote the stable H2.5-split branch statements into the Planck-area draft (new `C23`, pending).
+2. Run a quick Q-pass (`Q01`, optional) after the next promotion cycle to ensure no new ambiguity crept in.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

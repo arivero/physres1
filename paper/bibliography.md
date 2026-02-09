@@ -27,7 +27,8 @@ Use this file as a source ledger.
 13. `[BonneauFarautValent2001SAE]` Guy Bonneau, Jacques Faraut, and Galliano Valent, "Self-adjoint extensions of operators and the teaching of quantum mechanics," *American Journal of Physics* 69 (2001), 322–331. arXiv:`quant-ph/0103153`. DOI `10.1119/1.1328351`.
 14. `[FulopTsutsui2000Circle]` Tamás Fülöp and Izumi Tsutsui, "A free particle on a circle with point interaction," *Physics Letters A* 264 (2000), 366–374. arXiv:`quant-ph/9910062`. DOI `10.1016/S0375-9601(99)00850-6`.
 15. `[TsutsuiFulopCheon2002Connection]` Izumi Tsutsui, Tamás Fülöp, and Taksu Cheon, "Connection Conditions and the Spectral Family under Singular Potentials," arXiv:`quant-ph/0209110` (v1, 20 Sep 2002).
-16. `[Jackiw1991DeltaPotentials]` R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42.
+16. `[Jackiw1991DeltaPotentials]` R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.
+17. `[VanVleck1928Correspondence]` J. H. Van Vleck, "The Correspondence Principle in the Statistical Interpretation of Quantum Mechanics," *Proceedings of the National Academy of Sciences of the United States of America* 14(2) (1928), 178–188. DOI `10.1073/pnas.14.2.178`.
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -47,6 +48,7 @@ Use this file as a source ledger.
 15. `[FulopTsutsui2000Circle]`: DOI `10.1016/S0375-9601(99)00850-6`; arXiv primary anchor used (`quant-ph/9910062`).
 16. `[TsutsuiFulopCheon2002Connection]`: arXiv primary anchor used (`quant-ph/0209110`).
 17. `[Jackiw1991DeltaPotentials]`: no DOI pinned (report/proceedings); use report number `MIT-CTP-1937` as the stable anchor.
+18. `[VanVleck1928Correspondence]`: DOI `10.1073/pnas.14.2.178`.
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -64,7 +66,8 @@ Use this file as a source ledger.
 13. `[BonneauFarautValent2001SAE]`: acquired via arXiv preprint in `sources/0103153-f3c9ab8d.md`.
 14. `[FulopTsutsui2000Circle]`: acquired via arXiv preprint in `sources/9910062-3abd8de8.md`.
 15. `[TsutsuiFulopCheon2002Connection]`: acquired via arXiv preprint in `sources/0209110-d9d8cbab.md`.
-16. `[Jackiw1991DeltaPotentials]`: `PENDING` capture (MIT report/proceedings; locate an OA PDF mirror).
+16. `[Jackiw1991DeltaPotentials]`: acquired via OA PDF mirror in `sources/jackiw-d3bfc358.md`.
+17. `[VanVleck1928Correspondence]`: acquired via PMC HTML record in `sources/pmc1085402-e8895437.md`.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004). Local mirror file: `/usr/local/var/www/wordpress/research/0404086.pdf`.

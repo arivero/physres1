@@ -265,3 +265,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a clean branch map plus promotion candidates to tighten `papers/planck-area/main.md` without overclaiming.
 - Sources touched (keys + status changes): none (blackboard only).
 - Next: execute `B01`, then promote the S01 promotion candidates into the Planck-area draft.
+
+## 2026-02-09 (B01: Jackiw + Van Vleck anchors)
+- Focus: reduce preprint dependence by adding independent, OA-stable anchors for (i) delta/contact lore and (ii) semiclassical prefactors.
+- Question: can we capture an OA Jackiw source for 2D/3D delta potentials and a primary Van Vleck anchor for semiclassical prefactors?
+- Work:
+  - Ingested an OA Jackiw PDF mirror into `sources/` and updated `[Jackiw1991DeltaPotentials]` status in `paper/bibliography.md`.
+  - Added `[VanVleck1928Correspondence]` (PNAS 1928; DOI `10.1073/pnas.14.2.178`) via PMC capture and registered it in `paper/bibliography.md`.
+- Result: the bibliography ledger now contains independent anchors suitable for referee-facing citations; the remaining work is to thread them into manuscript citation points during the next promotion cycle.
+- Sources touched (keys + status changes):
+  - `[Jackiw1991DeltaPotentials]` moved `PENDING` → acquired.
+  - Added `[VanVleck1928Correspondence]`.
+- Next: start the next content promotion cycle (`C23`) to integrate the S01 branch-map statements + add the new citations at the Van Vleck/2D-delta touchpoints.
