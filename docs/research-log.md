@@ -288,3 +288,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the half-density “universal scale” ladder now has explicit branch control, and the key folklore touchpoints have independent anchors suitable for referee-facing citations.
 - Sources touched (keys + status changes): none (used B01 additions).
 - Next: optionally run a quick Q-pass (`Q01`) to sanity-check claim/citation placement after these promotions.
+
+## 2026-02-10 (Q01: post-promotion quality pass)
+- Focus: fast claim/citation/notation sanity after B01/S01/C23.
+- Question: did the recent promotions introduce any citation mismatch, dimension ambiguity, or overclaiming?
+- Work: recorded a short referee-style review and actionable queue in `cycles/Q01-execution.md`.
+- Result: the next concrete steps are now: (i) `S` convention-map note for delta normalizations, (ii) `B` ingest the intended Cristina 2D-delta reference, (iii) add one modern semiclassical-propagator reference (OA or `PENDING`) to support the prefactor formula beyond attributional anchors.
+- Sources touched (keys + status changes): none (review only).
+- Next: execute the next support cycle on the half-density priority thread (default: `S` for the convention-map blackboard), then return to `C`.

@@ -37,7 +37,7 @@
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
-- `Q01` Pending.
+- `Q01` Completed.
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
