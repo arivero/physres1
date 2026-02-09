@@ -605,6 +605,7 @@ Under changes of coordinates \(q_f=q_f(q_f')\), \(q_i=q_i(q_i')\), the mixed Hes
 Taking square roots yields a factor
 \(|\det(\partial q_f/\partial q_f')|^{1/2}|\det(\partial q_i/\partial q_i')|^{1/2}\),
 so the prefactor transforms as a half-density in each endpoint variable. This is the concrete semiclassical origin of the half-density viewpoint in `Heuristic H4.0`.
+For an early semiclassical/correspondence-principle anchor in the “Van Vleck” tradition, see [VanVleck1928Correspondence].
 
 ### 6.5 Link Back to Section 5 Singular Dynamics
 The composition picture naturally includes piecewise-smooth trajectories. At impulses, the dominant classical skeleton must satisfy the jump laws from Section 5:
@@ -1142,6 +1143,7 @@ Operational note: four bibliography items are intentionally deferred as `PENDING
 
 ### 10.5 Singular Contact Interaction as an Explicit RG Computation (2D Delta)
 Section 8 argues that RG is the scale-compatibility condition required when refinement limits diverge. This appendix supplies a fully explicit example in a singular quantum-mechanical model where the continuum theory is defined only after a renormalization prescription is chosen. For a perturbative-QFT-style treatment of this mechanism in quantum mechanics (including the 2D delta interaction), see [ManuelTarrach1994PertRenQM].
+For a standard discussion of delta-function potentials in two and three dimensions (and their renormalization issues), see [Jackiw1991DeltaPotentials].
 
 Consider the two-dimensional contact interaction
 

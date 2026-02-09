@@ -42,7 +42,7 @@ The cleanest “RG appears before QFT” example is the contact (delta) interact
 2. the naive continuum limit is ill-defined,
 3. a renormalization prescription plus RG invariance *defines* the theory.
 
-For a compact treatment that explicitly parallels QFT-style renormalization in a two-dimensional delta interaction (and also treats the Aharonov–Bohm case), see [ManuelTarrach1994PertRenQM]. The derivation below matches the same logarithmic short-distance divergence and dimensional transmutation scale, up to conventions for normalization and for where one places scheme-dependent constants. For a complementary Wilson–Kogut-style RG study of contact interactions in \(1\)D quantum mechanics (including a scaling analysis on the full line), see [BoyaRivero1994Contact]. The \(2\)D delta model below is chosen because it is the simplest setting where the contact coupling is marginal and the renormalization produces genuine logarithmic running and dimensional transmutation.
+For a standard overview of delta-function potentials in two and three dimensions, see [Jackiw1991DeltaPotentials]. For a compact treatment that explicitly parallels QFT-style renormalization in a two-dimensional delta interaction (and also treats the Aharonov–Bohm case), see [ManuelTarrach1994PertRenQM]. The derivation below matches the same logarithmic short-distance divergence and dimensional transmutation scale, up to conventions for normalization and for where one places scheme-dependent constants. For a complementary Wilson–Kogut-style RG study of contact interactions in \(1\)D quantum mechanics (including a scaling analysis on the full line), see [BoyaRivero1994Contact]. The \(2\)D delta model below is chosen because it is the simplest setting where the contact coupling is marginal and the renormalization produces genuine logarithmic running and dimensional transmutation.
 
 ### 5.1 Setup
 Consider \(H = -\frac{\hbar^2}{2m}\Delta + g\,\delta^{(2)}(x)\) on \(\mathbb R^2\).
@@ -294,6 +294,7 @@ Then the renormalized amplitude takes the universal one-parameter form
 T(E)=\frac{2\pi\hbar^2/m}{\frac{1}{a}-ik},
 \]
 up to conventions for the overall normalization of \(T\).
+This is the standard “scattering length parameterization” of the contact interaction in 3D; see also [Jackiw1991DeltaPotentials] for the delta-potential lore and convention comparisons.
 
 `Heuristic H1.9 (3D “no log” does not mean “no RG”).`
 Because the divergence is power-like, a minimal-subtraction style scheme can hide running. But in a Wilsonian parameterization with a dimensionless coupling (roughly \( \hat g(\Lambda)\propto \Lambda g_B(\Lambda)\)), the flow can exhibit fixed points corresponding to \(a=0\) (free/transparent) and \(a=\infty\) (unitarity). The point for this note is structural: even when running is not logarithmic, a compatibility condition still controls how the effective description must change with scale.
@@ -440,8 +441,7 @@ Thus even the simplest exact coarse-graining step already splits into “extrema
 ## 7. What This Paper Must Still Do
 This is an explicit forward queue, tagged by cycle type (`C` content, `S` study/blackboard, `B` bibliography).
 
-1. `B`: Locate/capture an OA-stable source for `[Jackiw1991DeltaPotentials]` (or mark `PENDING` with a stable pointer) and cite it where 2D/3D delta lore is used.
-2. `B`: Identify/ingest the intended “Cristina 2D delta” reference (Tarrach–Manuel / Tarrach–Hidalgo) and match its conventions to the derivations here.
-3. `S`: Produce a short “convention map” note: which overall \(T\)-matrix normalization is used, and how constants like \(2e^{-\gamma}\) shift under finite subtractions.
-4. `C`: Decide whether the rooted-tree/Hopf-algebra material is core to this note’s thesis or should be moved to an appendix-style section; keep the main flow centered on compatibility + explicit witnesses.
-5. `C`: Make the 3D Wilsonian fixed-point statement more explicit by defining a dimensionless coupling (e.g. \(\hat g(\Lambda)\propto \Lambda g_B(\Lambda)\)) and stating which endpoints correspond to \(a=0\) vs \(a=\infty\).
+1. `B`: Identify/ingest the intended “Cristina 2D delta” reference (Tarrach–Manuel / Tarrach–Hidalgo) and match its conventions to the derivations here.
+2. `S`: Produce a short “convention map” note: which overall \(T\)-matrix normalization is used, and how constants like \(2e^{-\gamma}\) shift under finite subtractions.
+3. `C`: Decide whether the rooted-tree/Hopf-algebra material is core to this note’s thesis or should be moved to an appendix-style section; keep the main flow centered on compatibility + explicit witnesses.
+4. `C`: Make the 3D Wilsonian fixed-point statement more explicit by defining a dimensionless coupling (e.g. \(\hat g(\Lambda)\propto \Lambda g_B(\Lambda)\)) and stating which endpoints correspond to \(a=0\) vs \(a=\infty\).

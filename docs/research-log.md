@@ -277,3 +277,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - `[Jackiw1991DeltaPotentials]` moved `PENDING` → acquired.
   - Added `[VanVleck1928Correspondence]`.
 - Next: start the next content promotion cycle (`C23`) to integrate the S01 branch-map statements + add the new citations at the Van Vleck/2D-delta touchpoints.
+
+## 2026-02-09 (C23: promote S01 split + thread new anchors)
+- Focus: tighten the half-density \(\Rightarrow\) scale hypothesis ladder and reduce referee friction by threading independent anchors into the exact touchpoints.
+- Question: can we make the “no fractional powers” sieve unambiguous (integrality vs analyticity vs transmutation) and cite standard sources where the semiclassical/delta lore is invoked?
+- Work:
+  - `papers/planck-area/main.md`: split H2.5 into H2.5a (integrality) and H2.5b (perturbative analyticity), and made dimensional transmutation an explicitly separate branch; added `[VanVleck1928Correspondence]` at the semiclassical prefactor derivation.
+  - `paper/main.md`: added `[VanVleck1928Correspondence]` at `Derivation D4.3` and `[Jackiw1991DeltaPotentials]` at the Appendix 10.5 entry point.
+  - `papers/rg-fundamental/main.md`: added `[Jackiw1991DeltaPotentials]` as an independent anchor for the 2D/3D delta discussion.
+- Result: the half-density “universal scale” ladder now has explicit branch control, and the key folklore touchpoints have independent anchors suitable for referee-facing citations.
+- Sources touched (keys + status changes): none (used B01 additions).
+- Next: optionally run a quick Q-pass (`Q01`) to sanity-check claim/citation placement after these promotions.

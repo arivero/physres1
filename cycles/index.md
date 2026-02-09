@@ -25,7 +25,7 @@
 21. `C20` Completed.
 22. `C21` Completed.
 23. `C22` Completed.
-24. `C23` Pending.
+24. `C23` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -40,8 +40,8 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Promote the stable H2.5-split branch statements into the Planck-area draft (new `C23`, pending).
-2. Run a quick Q-pass (`Q01`, optional) after the next promotion cycle to ensure no new ambiguity crept in.
+1. Run a quick Q-pass (`Q01`, optional) after B01/S01/C23 promotions (check claim hygiene + citation placement).
+2. Decide next content direction: deepen the half-density \(\Rightarrow\) universal scale hypothesis (new `C24`) or expand the RG note’s independent anchors (new `B02`).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
