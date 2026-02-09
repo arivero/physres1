@@ -138,8 +138,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Added `Derivation D1.8` comparing flat/affine vs metric-derived vs field-derived (dilaton-like) reference half-densities and clarified the “no extra background function” reading of `H2.4`.
   - Added `Heuristic H2.11` framing RG as scale dependence of scalarization (wavefunction renormalization viewpoint).
   - Added `Derivation D1.9` connecting the “square-root delta” normalization in oscillatory integrals to the half-density exponent \(N/2\) and the Born-rule pattern (amplitude squared yields a density).
+  - Added `Example E3` (Yang--Mills coupling) as an explicit alternative “dimension sieve” under the H2.5 Diophantine condition.
 - Result: the “universal area scale” claim is now explicitly conditional: `H2.3` is largely a convention until `H2.4` restricts the scalarization gauge freedom to a single global scale, and `H2.5` restricts how that scale may depend on couplings (analytic monomial vs dimensional transmutation).
 - Sources touched (keys + status changes): none.
 - Next:
-  1. Add one more explicit “alternative sieve” example (e.g. gauge coupling dimensionality) clearly separated from the half-density sieve.
-  2. Decide whether the delta-halving derivation belongs in the main manuscript (briefly) or stays confined to follow-up notes.
+  1. Decide whether the delta-halving derivation belongs in the main manuscript (briefly) or stays confined to follow-up notes.
+  2. Optionally add one more alternative sieve (string tension / \(\alpha'\)) and compare it to the gravity-only and gauge-coupling cases.

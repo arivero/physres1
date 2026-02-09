@@ -147,6 +147,26 @@ $$
 has dimension \(\text{length}^{d/2}\).
 Thus, even under H2.5, \(d=4\) is not automatically unique once additional dimensionful couplings are admitted; what is special about \(d=4\) in this family is that it is the only case with \(m=0\) (no need to involve \(\Lambda_d\)).
 
+`Example E3 (Yang--Mills coupling as an alternative sieve).`
+In \(d\) spacetime dimensions, the Yang--Mills action is typically written as
+\(\frac{1}{4g_d^2}\int d^d x\,F_{\mu\nu}F^{\mu\nu}\),
+so \([g_d^2]=\text{length}^{d-4}\) (equivalently \([g_d]=\text{length}^{(d-4)/2}\)).
+If we (hypothetically) allow the half-density normalization constant to be a pure monomial in \(g_d\),
+\(C\sim g_d^{\,p}\) with integer \(p\ge 0\),
+then
+\[
+[C]=\text{length}^{p(d-4)/2}.
+\]
+Matching \([C]=\text{length}^{d/2}\) gives the Diophantine condition
+\[
+p(d-4)=d
+\quad\Longrightarrow\quad
+d=\frac{4p}{p-1}=4+\frac{4}{p-1}.
+\]
+Thus integer solutions occur only when \(p-1\mid 4\), i.e. \(p\in\{2,3,5\}\), giving \(d\in\{8,6,5\}\) respectively.
+
+In particular, in \(d=4\) the gauge coupling is dimensionless and cannot by itself supply the \(\text{length}^{d/2}\) factor needed for half-density scalarization; in that case the scale must come from another dimensionful coupling (e.g. gravity) or from a non-analytic mechanism (dimensional transmutation).
+
 `Heuristic H2.8 (What H2.5 is really buying).`
 The value of H2.5 is comparative:
 it distinguishes dimensions in which the needed \(\text{length}^{d/2}\) factor can be supplied by *simple* coupling dependence (integer powers of the already-present couplings), versus dimensions in which any such factor requires either (i) introducing extra scales/couplings, (ii) taking fractional powers, or (iii) invoking non-analytic mechanisms (dimensional transmutation).
