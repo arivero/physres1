@@ -34,7 +34,7 @@
 ### Study Cycles (`Snn`)
 - `S00` Completed.
 - `S01` Completed.
-- `S02` Pending.
+- `S02` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.

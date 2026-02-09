@@ -296,3 +296,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the next concrete steps are now: (i) `S` convention-map note for delta normalizations, (ii) `B` ingest the intended Cristina 2D-delta reference, (iii) add one modern semiclassical-propagator reference (OA or `PENDING`) to support the prefactor formula beyond attributional anchors.
 - Sources touched (keys + status changes): none (review only).
 - Next: execute the next support cycle on the half-density priority thread (default: `S` for the convention-map blackboard), then return to `C`.
+
+## 2026-02-10 (S02: scalarization gauge running ↔ wavefunction renormalization)
+- Focus: explore whether the “scalarization gauge” for half-densities admits a useful RG interpretation (without category errors).
+- Question: can a scale-dependent scalarization convention \(\sigma_\ast(\mu)\) be viewed as a \(Z(\mu)\) factor on scalar representatives, and does that sharpen the half-density \(\Rightarrow\) universal scale story?
+- Work: wrote `blackboards/2026-02-10-scalarization-gauge-running.md` formalizing the bookkeeping identification \(\sigma_\ast(\mu)\sim Z(\mu)^{1/2}\sigma_0\) and separating geometric density weights from anomalous RG scaling.
+- Result: two promotion candidates were extracted (but not promoted yet): a short bridge sentence for the Planck-area draft and a guardrail sentence preventing geometric/RG conflation.
+- Sources touched (keys + status changes): none (blackboard only).
+- Next: return to a `C` cycle on the half-density priority thread if the promotion candidates are deemed stable.
