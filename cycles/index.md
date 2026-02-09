@@ -24,12 +24,15 @@
 20. `C19` Completed.
 21. `C20` Completed.
 22. `C21` Completed.
+23. `C22` Pending.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
+- `B01` Pending.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
+- `S01` Pending.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
