@@ -304,3 +304,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: two promotion candidates were extracted (but not promoted yet): a short bridge sentence for the Planck-area draft and a guardrail sentence preventing geometric/RG conflation.
 - Sources touched (keys + status changes): none (blackboard only).
 - Next: return to a `C` cycle on the half-density priority thread if the promotion candidates are deemed stable.
+
+## 2026-02-10 (C24: promote scalarization-running note)
+- Focus: tighten the Planck-area hypothesis ladder by making the “RG as scalarization running” remark explicit and adding a short branch summary.
+- Question: can we state, in one labeled derivation, the sense in which a running scalarization convention is equivalent to a \(Z(\mu)\) factor, without reifying conventions as physics?
+- Work: updated `papers/planck-area/main.md` with a branch-summary paragraph (end of Section 3.2), `Derivation D1.8a` (scalarization running \(\leftrightarrow Z(\mu)\)), and a guardrail `Heuristic H2.11a` (geometric weight \(\neq\) anomalous dimension).
+- Result: the draft now has a precise bookkeeping statement connecting the half-density scalarization gauge to the standard “wavefunction renormalization” language, while keeping physical content tied to RG invariants.
+- Sources touched (keys + status changes): none.
+- Next: optionally start a bibliography cycle to find an OA modern semiclassical-propagator reference for the Van Vleck prefactor formula (beyond heritage/attribution anchors).
