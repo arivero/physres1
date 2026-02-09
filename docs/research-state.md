@@ -25,12 +25,14 @@ The goal is not to repackage standard narratives. Default to:
 
 ## Operational Loop (One Session)
 1. Pick one thread + one concrete question (keep scope ≤ 1–2 pages of derivation).
-2. Record decisions/results in `docs/research-log.md`; put longer math in `paper/notes/`.
-3. If an external claim matters, ingest/track its primary source:
+2. If the work is exploratory, prefer a Study cycle (`Snn`) and write a dated note in `blackboards/` first; promote later.
+3. Record decisions/results in `docs/research-log.md`; put longer math in `paper/notes/`.
+4. If an external claim matters, ingest/track its primary source:
    - update `paper/bibliography.md` (key + status),
    - add/refresh `sources/<...>.md` or `sources/pending-<key>.md`.
-4. Promote only “stable” results into `paper/main.md` (or a new follow-up manuscript directory when needed).
-5. Run consistency checks + rebuild the PDF when manuscript text changes.
+   If this becomes a dedicated effort, open a Bibliography cycle (`Bnn`) to keep it separate from prose iteration.
+5. Promote only “stable” results into `paper/main.md` (or a new follow-up manuscript directory when needed).
+6. Run consistency checks + rebuild the PDF when manuscript text changes (delete `.aux`/`.log` after successful generation).
 
 ## Active Threads (Pick One)
 ### 1) Main paper: RG as foundational compatibility

@@ -33,6 +33,7 @@ Commands:
 pandoc -f markdown+tex_math_single_backslash -s paper/main.md -o paper/main.tex
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory paper paper/main.tex
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory paper paper/main.tex
+rm -f paper/main.aux paper/main.log paper/main.toc
 ```
 
 Why: without `tex_math_single_backslash`, pandoc may emit literal parentheses like

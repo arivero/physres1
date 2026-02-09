@@ -1,6 +1,7 @@
 # Cycle Board
 
 ## Status
+### Content Cycles (`Cnn`)
 1. `C00` Completed.
 2. `C01` Completed.
 3. `C02` Completed.
@@ -22,12 +23,19 @@
 19. `C18` Completed.
 20. `C19` Completed.
 21. `C20` Completed.
+22. `C21` In Progress.
+
+### Bibliography Cycles (`Bnn`)
+- `B00` In Progress.
+
+### Study Cycles (`Snn`)
+- `S00` In Progress.
 
 ## Next Action
-Priority: advance the follow-up papers (dependent on `paper/main.md`).
-1. Continue `C13`: keep the Planck-area/selection discussion modular and hypothesis-labeled; avoid conflating with other dimension filters.
-2. Keep `papers/rg-fundamental/main.md` moving: decide what subset (if any) should be promoted back into `paper/main.md` without bloating the manuscript (Gaussian semigroup witness, boundary-condition view, and now 1D/3D context).
-3. Optional: add an independent anchor for the 1D U(2) contact-interaction classification (Albeverio/Kurasov lineage) when polishing.
+Priority: half-densities + dependent follow-up drafts.
+1. Execute `C21`: tighten the “half-density \(\Rightarrow\) universal \(\text{length}^{d/2}\) scale” ladder, and make the \(d=4\) area specialization explicit without overclaiming.
+2. Run `B00`: add at least one independent, non-preprint anchor for point interactions (Albeverio/Kurasov lineage) and capture OA sources when possible.
+3. Use `S00` blackboard work to keep exploration free, then promote only the stable pieces into `papers/planck-area/main.md`.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
