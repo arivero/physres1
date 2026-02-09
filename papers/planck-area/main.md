@@ -1,7 +1,7 @@
 # Planck Area from Half-Density Normalization (Draft)
 
 ## Abstract
-Half-densities are the natural “coordinate-free integrands” for composing kernels without choosing a background measure. But a half-density still carries physical units: in \(d\) dimensions its normalization involves a scale with units of \(\text{length}^{d/2}\). In \(d=4\), this is an *area*. This note develops a programmatic argument that the need to normalize composition kernels as half-densities forces the introduction of a universal area scale, and that identifying this scale with the Planck area is both natural and, in certain Newtonian/gravitational settings, reciprocally recoverable from a minimal-areal-speed principle [RiveroAreal] [RiveroSimple].
+Half-densities are the natural “coordinate-free integrands” for composing kernels without choosing a background measure. But choosing a *universal* convention for turning half-density objects into dimensionless numerical amplitudes introduces a \(\text{length}^{d/2}\) scale. In \(d=4\), this is an *area*. This note sharpens the hypothesis ladder needed for the claim “half-density normalization selects a universal area scale”, and isolates a simple dimension-matching condition under which the Planck area appears without fractional powers of couplings. A gravitational anchor based on a minimal-areal-speed principle is recorded as a separate heuristic thread [RiveroAreal] [RiveroSimple].
 
 ## 1. Purpose and Status
 This is a dependent follow-up to `paper/main.md`. It is not yet a finished paper; its goal is to isolate one technical point that is only implicit in the main manuscript:
@@ -35,19 +35,37 @@ Kernel composition is the same mechanism: if \(K_1(x,y)\) and \(K_2(y,z)\) are h
 ## 3. Dimensional Analysis: Normalizing a Half-Density Requires a Scale
 A density on \(M\) carries the units of \(\text{length}^d\) once physical units are assigned to coordinates. A half-density therefore carries units \(\text{length}^{d/2}\).
 
-`Proposition P1.1 (Scale required for numerical normalization).`
-Any attempt to map a half-density \(\psi\in|\Lambda^d T^\ast M|^{1/2}\) to a dimensionless numerical amplitude requires choosing a reference scale \(\ell_\ast\) with units \(\text{length}\) (equivalently \(\ell_\ast^{d/2}\) with units \(\text{length}^{d/2}\)) to fix normalization conventions.
+`Proposition P1.1 (No canonical “half-density = function” identification).`
+There is no canonical identification of a half-density \(\psi\in|\Lambda^d T^\ast M|^{1/2}\) with an ordinary scalar function \(f\) on \(M\). Choosing such an identification is equivalent to choosing a nowhere-vanishing reference half-density \(\sigma_\ast\) (equivalently a positive density \(\rho_\ast=\sigma_\ast^2\)) and writing
+\(\psi=f\,\sigma_\ast\).
 
-In \(d=4\), \(\ell_\ast^{d/2}=\ell_\ast^2\) is an *area*. Thus, in four dimensions, half-density normalization is naturally controlled by a fundamental area scale.
-
-`Derivation D1.2 (Dilation makes the \(\text{length}^{d/2}\) scale explicit).`
+`Derivation D1.2 (Dilation makes the \(\text{length}^{d/2}\) weight explicit).`
 On \(\mathbb R^d\), consider a dilation \(y\mapsto y'=a y\) with \(a>0\).
 Then \(|dy'|=a^d|dy|\), so \(|dy'|^{1/2}=a^{d/2}|dy|^{1/2}\).
-Thus even in flat space, half-density normalization is inherently tied to a \(\text{length}^{d/2}\) scaling weight.
-In \(d=4\), the “scale you must insert to make half-densities numerically comparable” naturally carries units of area.
+Thus even in flat space, half-densities carry an inherent \(\text{length}^{d/2}\) scaling weight.
+
+`Proposition P1.2 (Universal *dimensionless* amplitudes force a \(\text{length}^{d/2}\) constant).`
+If one imposes the extra requirement that the scalar representative \(f\) in \(\psi=f\,\sigma_\ast\) be dimensionless in physical units, then the reference half-density \(\sigma_\ast\) must carry all of the \(\text{length}^{d/2}\) dimension. In particular, a *constant* (field-independent) choice of \(\sigma_\ast\) is equivalent to choosing a universal \(\text{length}^{d/2}\) scale.
+
+In \(d=4\), this universal \(\text{length}^{d/2}\) scale is a universal *area* scale.
 
 `Heuristic H1.2 (Reciprocity claim).`
-If one accepts “composition kernels live as half-densities” as the right invariant setup for quantum amplitudes, and also insists on a *universal* normalization convention (no background structures), then a universal area scale is forced in \(d=4\). A natural identification is the Planck area \(L_P^2\).
+Half-densities alone do not force a particular scale: the forced fact is that converting half-density objects into scalar numerical amplitudes requires extra structure (a reference half-density).
+The “universal area scale” claim begins only after adding two further hypotheses:
+1. the reference \(\sigma_\ast\) is taken to be *constant* (no dependence on background metric/fields), and
+2. the constant is required to be fixed by universal constants/couplings of the theory.
+
+Under these hypotheses, \(d=4\) is the unique dimension in which the needed \(\text{length}^{d/2}\) constant can be supplied by the gravitational coupling without fractional powers (Derivation D1.3).
+
+`Derivation D1.3 (Dimension match: why \(d=4\) is singled out by gravity).`
+In \(d\) spacetime dimensions, the Einstein--Hilbert action
+\(\frac{1}{16\pi G_d}\int d^d x\,\sqrt{|g|}\,R\)
+shows that (in \(c=\hbar=1\) units) Newton’s constant has dimension
+\([G_d]=\text{length}^{d-2}\).
+If the universal half-density normalization constant is required to be built from \(G_d\) without fractional powers, then its dimension must match \(\text{length}^{d/2}\) with exponent \(1\), i.e.
+\(\text{length}^{d/2}=\text{length}^{d-2}\),
+which holds if and only if \(d=4\).
+In that case \(G_4\) itself has dimension of area, and the corresponding area scale is the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
 ## 4. Stationary Phase Produces Half-Density Prefactors (Short-Time Kernel)
 The main manuscript uses stationary phase to explain why classical extremals dominate refinement limits. Here we add the complementary kernel-level fact:
@@ -77,17 +95,9 @@ $$
 Taking square roots shows that the prefactor transforms with
 \(|\det(\partial x/\partial x')|^{1/2}|\det(\partial z/\partial z')|^{1/2}\), i.e. exactly as a half-density factor at each endpoint. Thus the stationary-phase prefactor is naturally interpreted as making \(K\) a half-density in each variable, so that kernel composition does not depend on a background measure choice.
 
-`Proposition P1.2 (Reference half-density fixes normalization conventions).`
-Given a chart \(x\) on \(M\), any nowhere-vanishing reference half-density can be written as
-\(\sigma_\ast(x)=\ell_\ast^{d/2}\,|dx|^{1/2}\),
-where \(\ell_\ast\) is a chosen length scale. A half-density \(\psi(x)=\varphi(x)\,|dx|^{1/2}\) is then converted into a scalar coefficient by
-\(\varphi_\ast(x)=\psi(x)/\sigma_\ast(x)\).
-Therefore a universal convention for turning half-densities into scalar amplitudes requires choosing a universal \(\ell_\ast^{d/2}\) scale.
-
-In \(d=4\), \(\ell_\ast^{d/2}=\ell_\ast^2\) is an area, so a universal normalization convention for half-densities in four dimensions is equivalent to choosing a universal area scale.
-
 `Heuristic H1.4 (Where Planck area can enter, minimally).`
-If one further insists that \(\ell_\ast\) be fixed by universal constants rather than background geometric data, then in a relativistic setting the only available \(4\)D area scale built from \((\hbar,c,G)\) is the Planck area \(L_P^2\). The claim pursued in this follow-up draft is that this is not merely dimensional bookkeeping: it interacts with refinement/composition in a way that can be physically anchored (Section 5).
+Derivation D1.3 isolates one minimal route by which a Planck-scale quantity can enter:
+if the theory supplies a single universal coupling with dimension of length (Newton’s constant) and one demands that the half-density normalization constant be built from that coupling *without fractional powers*, then \(d=4\) is singled out and the resulting constant has the dimension of an area, naturally identified with the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
 ## 5. A Gravitational Anchor: Minimal Areal Speed and the \(D=4\) Cancellation
 Rivero’s “Planck areal speed” observation gives a concrete route by which Planck-scale discreteness reappears at Compton scales in inverse-square gravity [RiveroAreal] [RiveroSimple].
@@ -95,7 +105,7 @@ Rivero’s “Planck areal speed” observation gives a concrete route by which 
 `Heuristic H1.3 (Areal-speed selection).`
 In \(3+1\) Newtonian gravity (inverse-square), imposing a discrete areal-speed/area-time condition at a Planck scale can yield characteristic radii proportional to a reduced Compton length, with Newton’s constant canceling when expressed in Planck units. This is a nontrivial indication that “a universal area scale” can be operationally meaningful at low energies in \(D=4\).
 
-`Derivation D1.3 (Inverse-square circular orbit + Planck areal speed \(\Rightarrow\) Compton radius).`
+`Derivation D1.5 (Inverse-square circular orbit + Planck areal speed \(\Rightarrow\) Compton radius).`
 For a circular orbit under an inverse-square central force \(F(r)=K/r^2\) (with coupling \(K>0\)), the centripetal balance is
 \(m v^2/r = K/r^2\).
 The areal speed is

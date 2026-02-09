@@ -3,8 +3,9 @@
 ## Draft Deltas
 1. Added `Derivation D1.1` (coordinate invariance of half-density pairing/composition) to `papers/planck-area/main.md`.
 2. Added `Derivation D1.2` (dilation scaling makes the \(\text{length}^{d/2}\) scale explicit).
-3. Added `Derivation D1.3` (inverse-square orbit radius + Planck areal speed \(\Rightarrow\) Compton radius cancellation) anchored to `[RiveroAreal]`.
-4. Added `Derivation D1.4` (stationary-phase/Van Vleck prefactor is a bi-half-density) and `Proposition P1.2` (reference half-density \(\leftrightarrow\) universal \(\text{length}^{d/2}\) scale) to connect the half-density theme directly to the main paper’s stationary-phase narrative.
+3. Added `Derivation D1.3` (dimension match: \(d=4\) is singled out if the half-density normalization constant is built from gravity without fractional powers).
+4. Added `Derivation D1.4` (stationary-phase/Van Vleck prefactor is a bi-half-density) to connect the half-density theme directly to the main paper’s stationary-phase narrative.
+5. Added `Derivation D1.5` (inverse-square orbit radius + Planck areal speed \(\Rightarrow\) Compton radius cancellation) anchored to `[RiveroAreal]`.
 
 ## Sections Touched
 1. `papers/planck-area/main.md`.
