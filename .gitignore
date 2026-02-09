@@ -1,0 +1,22 @@
+# Regenerable research captures
+sources/
+bibliography/sources/
+
+# Python
+__pycache__/
+*.pyc
+
+# LaTeX / TeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.lof
+*.lot
