@@ -163,3 +163,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - a condensed version was promoted into the main manuscript as `Derivation D4.1a` in `paper/main.md`.
 - Sources touched (keys + status changes): none.
 - Next: verify the inserted derivation stays concise and does not drag the manuscript into a full “half-density paper” (details remain in `paper/notes/half-density-kernel-normalization.md`).
+
+## 2026-02-09 (Half-density priority: scalarization gauge)
+- Focus: make the “half-densities first” stance explicit in the main manuscript without overcommitting to any Planck-scale identification.
+- Question: where exactly does a *universal scale* enter if kernels are intrinsically half-densities?
+- Work: added `Heuristic H4.0a` in `paper/main.md` explaining that writing kernels as scalar functions implicitly chooses a reference density/half-density, and that demanding dimensionless scalar amplitudes shifts the \(\text{length}^{d/2}\) weight into that reference choice.
+- Result: the main manuscript now separates (i) intrinsic half-density composition from (ii) scalarization conventions and (iii) any universality assumptions about fixing the scalarization scale.
+- Sources touched (keys + status changes): none.
+- Next: decide whether to add a single forward-pointer sentence from the main manuscript to the dependent Planck-area draft, or keep that discussion entirely out of the cornerstone paper.
