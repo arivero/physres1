@@ -257,3 +257,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the three manuscripts now communicate (i) what is structurally derived vs (ii) what is an extra universality hypothesis more cleanly, and they avoid the most likely “what is \(d\)?” confusion.
 - Sources touched (keys + status changes): none (used existing keys only).
 - Next: run `B01` (Jackiw + semiclassical/half-density anchors) and then `S01` (H2.5 split blackboard).
+
+## 2026-02-09 (S01: split H2.5 on a blackboard)
+- Focus: tighten the half-density \(\Rightarrow\) universal scale ladder by preventing “branch leakage” inside H2.5.
+- Question: which “no fractional powers” constraint do we actually mean (integrality, perturbative analyticity, or something else), and where does dimensional transmutation sit?
+- Work: wrote `blackboards/2026-02-09-h2-5-split.md` separating H2.5a (integrality), H2.5b (analyticity), and a distinct transmutation branch (RG invariant scales), with explicit notes on what “\(D=4\Rightarrow\) area” does and does not mean in each branch.
+- Result: we now have a clean branch map plus promotion candidates to tighten `papers/planck-area/main.md` without overclaiming.
+- Sources touched (keys + status changes): none (blackboard only).
+- Next: execute `B01`, then promote the S01 promotion candidates into the Planck-area draft.

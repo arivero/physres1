@@ -32,7 +32,7 @@
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
-- `S01` Pending.
+- `S01` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -40,8 +40,8 @@
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
 1. Execute `B01`: locate/capture an OA-stable source for `[Jackiw1991DeltaPotentials]` and add one standard half-density / semiclassical-propagator anchor (`PENDING` if needed).
-2. Execute `S01`: blackboard the “H2.5 split” (integrality vs perturbative analyticity vs transmutation) and map which statements survive each branch.
-3. Run a quick Q-pass (`Q01`, optional) after B01/S01 promotions to ensure no new ambiguity crept in.
+2. Promote the stable H2.5-split branch statements into the Planck-area draft (new `C23`, pending).
+3. Run a quick Q-pass (`Q01`, optional) after B01 + the next promotion cycle to ensure no new ambiguity crept in.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
