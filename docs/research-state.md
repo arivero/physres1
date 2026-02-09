@@ -34,6 +34,27 @@ The goal is not to repackage standard narratives. Default to:
 5. Promote only “stable” results into `paper/main.md` (or a new follow-up manuscript directory when needed).
 6. Run consistency checks + rebuild the PDF when manuscript text changes (delete `.aux`/`.log` after successful generation).
 
+## Default Scheduling Policy (Automatic)
+We prioritize *topics*, but we alternate *cycle types*.
+
+### Topic priority (what we push first)
+1. Half-densities (and the Planck-area / universal scale hypothesis ladder).
+2. Cornerstone paper coherence (`paper/main.md`) as the integration target.
+3. RG follow-up work when it either (i) anchors a load-bearing claim in the half-density ladder (e.g. transmutation scales), or (ii) removes a blocking “independent anchor” gap.
+
+### Cycle cadence (how we avoid unanchored prose)
+Rule: never run long stretches of `C` cycles without verification support.
+
+Default cadence:
+1. `C` (promote stable prose/derivations),
+2. then **exactly one** of:
+   - `S` if a claim is unclear/fragile or branches are mixing,
+   - `B` if a claim is load-bearing and needs an independent anchor,
+   - `Q` if we made cross-cutting edits or are approaching “submission quality”,
+3. then return to `C` on the half-density priority thread.
+
+Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and immediately after any cycle that threads new citations or changes dimension/notation conventions.
+
 ## Active Threads (Pick One)
 ### 1) Main paper: RG as foundational compatibility
 - Goal: strengthen the manuscript’s thesis that RG is the scale-compatibility condition forced by composed refinement when naive limits diverge.
