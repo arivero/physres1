@@ -5,7 +5,7 @@ Make the 1D “rich fixed points” point do real work in `papers/rg-fundamental
 
 ## Scope
 1. Add a short derivation in `papers/rg-fundamental/main.md`:
-   - scaling \(x\mapsto b x\) induces \(\lambda\mapsto b^{-1}\lambda\) for the Robin parameter,
+   - scaling \(x\mapsto b x\) induces \(\lambda\mapsto b^{-1}\lambda\) for the Dirichlet/Neumann mixing parameter \(\lambda\) in \(\psi'(0)=\lambda\psi(0)\),
    - hence a beta function for a dimensionless combination (e.g. \(\hat\lambda=\lambda/\mu\)),
    - and fixed points correspond to Dirichlet/Neumann limits.
 2. Add one concrete scattering example to connect “boundary RG” to “S-matrix RG”:
@@ -16,4 +16,3 @@ Make the 1D “rich fixed points” point do real work in `papers/rg-fundamental
 ## Acceptance Tests
 1. `papers/rg-fundamental/main.md` gains one labeled `Derivation` adding an explicit RG flow for \(\lambda\) and one labeled `Example` for the 1D \(\delta\) scattering matrix limits.
 2. `papers/rg-fundamental/main.pdf` rebuilds without errors.
-

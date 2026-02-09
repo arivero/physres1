@@ -202,7 +202,7 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: make the “1D scaling flow” point computational (not just classification).
 - Question: can we show, in one page, how scaling acts on boundary/contact parameters and how fixed points appear directly in spectra/scattering?
 - Work:
-  - Added `Derivation D1.6b` to `papers/rg-fundamental/main.md` (engineering beta function for the Robin parameter \(\lambda\) and identification of Neumann/Dirichlet fixed points).
+  - Added `Derivation D1.6b` to `papers/rg-fundamental/main.md` (engineering beta function for the Dirichlet/Neumann mixing parameter \(\lambda\) and identification of Neumann/Dirichlet fixed points).
   - Added `Example E1.1` to `papers/rg-fundamental/main.md` (1D \(\delta\)-potential reflection/transmission and transparent/reflective endpoints as scale limits).
   - Rebuilt `papers/rg-fundamental/main.pdf` and deleted `.aux`/`.log` artifacts after successful generation.
 - Result: the 1D thread now has a concrete “boundary RG ↔ S-matrix RG” witness that fits the “RG = compatibility” thesis without pretending a UV subtraction is present in 1D.

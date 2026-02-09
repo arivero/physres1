@@ -313,14 +313,14 @@ The lesson is not that \(1\)D is “more renormalizable”; it is that the relev
 `Heuristic H1.11 (Fixed points as quantization rules in finite volume).`
 In one dimension, a contact interaction is boundary data at a point, and RG fixed points are precisely the **scale-invariant** boundary conditions (energy-independent \(S\)-matrices). When the system is placed in a finite box (or on a circle), boundary/scattering data become **quantization conditions** for the allowed momenta. Thus fixed points naturally correspond to simple “quantization rules” (linear spectra up to constant phase shifts), while departures from the fixed point appear as scale-dependent phase shifts.
 
-`Derivation D1.6a (Robin boundary condition gives a quantization condition).`
-Consider a free particle on the interval \([0,L]\) with a Robin boundary condition at the left endpoint,
+`Derivation D1.6a (Dirichlet/Neumann interpolation gives a quantization condition).`
+Consider a free particle on the interval \([0,L]\) with the left-endpoint boundary condition
 \(\psi'(0)=\lambda\,\psi(0)\),
 and (for simplicity) a Dirichlet boundary at the right endpoint,
 \(\psi(L)=0\).
 For energy \(E=\hbar^2k^2/(2m)\), the general solution is \(\psi(x)=A\sin(kx)+B\cos(kx)\).
 The Dirichlet condition gives \(A\sin(kL)+B\cos(kL)=0\), hence \(B=-A\tan(kL)\).
-The Robin condition gives \(A k=\lambda B\), so
+The left-endpoint boundary condition gives \(A k=\lambda B\), so
 \[
 k=-\lambda\,\tan(kL),
 \qquad\text{equivalently}\qquad
@@ -342,8 +342,8 @@ At the scale-invariant endpoints \(\lambda=\infty\) (Dirichlet at \(0\)) and \(\
 up to the usual \(n\in\mathbb N\) conventions.
 More general point interactions (including the full U(2) family on the line) act similarly: they change the phase relation at the defect, hence shift the finite-volume quantization condition by a phase.
 
-`Derivation D1.6b (Scaling of the Robin parameter as boundary RG data).`
-The Robin boundary condition \(\psi'(0)=\lambda\,\psi(0)\) already encodes the engineering dimension of \(\lambda\): since \(\psi'\) carries one inverse length compared to \(\psi\), one has \([\lambda]=\text{length}^{-1}\).
+`Derivation D1.6b (Scaling of the Dirichlet/Neumann mixing parameter).`
+The boundary condition \(\psi'(0)=\lambda\,\psi(0)\) interpolates between Neumann (\(\lambda=0\)) and Dirichlet (\(|\lambda|=\infty\)) at the endpoint, and already encodes the engineering dimension of \(\lambda\): since \(\psi'\) carries one inverse length compared to \(\psi\), one has \([\lambda]=\text{length}^{-1}\).
 Equivalently, under a spatial dilation \(x\mapsto b x\) with \(b>0\), the derivative scales as \(\partial_x \mapsto b^{-1}\partial_x\), so preserving the *form* of the boundary condition forces
 \[
 \lambda \mapsto \lambda(b)=b^{-1}\lambda.
@@ -352,7 +352,7 @@ If we parameterize the same statement by a momentum/energy scale \(\mu\sim 1/\el
 \[
 \beta_{\hat\lambda}(\mu):=\mu\frac{d\hat\lambda}{d\mu}=-\hat\lambda.
 \]
-The fixed points are \(\hat\lambda=0\) (Neumann, \(\psi'(0)=0\)) and \(\hat\lambda=\infty\) (Dirichlet, \(\psi(0)=0\)); general Robin data interpolates between them as one changes the probing scale.
+The fixed points are \(\hat\lambda=0\) (Neumann, \(\psi'(0)=0\)) and \(\hat\lambda=\infty\) (Dirichlet, \(\psi(0)=0\)); general finite \(\lambda\) interpolates between them as one changes the probing scale.
 This is not a loop-induced running: it is the RG action of scaling on boundary-condition parameters.
 
 `Example E1.1 (1D \(\delta\) scattering: transparent vs reflective endpoints).`

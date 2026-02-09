@@ -31,6 +31,9 @@
 ### Study Cycles (`Snn`)
 - `S00` Completed.
 
+### Quality Cycles (`Qnn`)
+- `Q00` In Progress.
+
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
 1. Execute `C21`: tighten the “half-density \(\Rightarrow\) universal \(\text{length}^{d/2}\) scale” ladder, and make the \(d=4\) area specialization explicit without overclaiming.
