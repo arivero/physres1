@@ -98,3 +98,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the Planck-area draft now directly interfaces with the main paper’s stationary-phase narrative rather than remaining purely programmatic.
 - Sources touched (keys + status changes): none.
 - Next: tighten the hypotheses around “universal” (what background geometry is allowed) and connect the scale choice to RG language (what runs vs what is fixed).
+
+## 2026-02-09 (C13 continuation: hypothesis ladder + dimension sieve)
+- Focus: tighten what is actually *forced* by half-densities vs what needs extra hypotheses to reach “Planck area”.
+- Question: is the “universal area scale” claim really dimension-agnostic, or does it single out \(d=4\) only after adding gravity-specific assumptions?
+- Work:
+  - Rewrote the core claim as a hypothesis ladder in `papers/planck-area/main.md`: half-densities force *no* unique scale, but identifying half-densities with dimensionless scalar amplitudes requires choosing a reference half-density; requiring it to be constant and fixed by couplings introduces a \(\text{length}^{d/2}\) constant.
+  - Added a crisp dimension-matching derivation: if that constant is required to be built from Newton’s constant without fractional powers, then \(d=4\) is uniquely selected and the constant has the dimension of an area (Planck area).
+- Result: the “half-density → Planck area” direction is now explicitly conditional and falsifiable: it becomes a dimension-selection mechanism rather than a pure dimensional-analysis slogan.
+- Sources touched (keys + status changes): none.
+- Next: connect this ladder to RG language (constant vs running normalization conventions) and decide whether to keep the gravity-based sieve as the primary selection principle or one filter among many.
