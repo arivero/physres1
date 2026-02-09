@@ -24,7 +24,7 @@
 20. `C19` Completed.
 21. `C20` Completed.
 22. `C21` Completed.
-23. `C22` Pending.
+23. `C22` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -39,9 +39,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Start `C22`: implement the Q00 actionable fixes that tighten the half-density \(\Rightarrow\) scale/area story and reduce ambiguity (notation, minimal-claim statements, and cross-paper pointers).
-2. Start `B01`: locate/capture an OA-stable source for `[Jackiw1991DeltaPotentials]` and add one standard half-density / semiclassical-propagator anchor (`PENDING` if needed).
-3. Start `S01`: blackboard the “H2.5 split” (integrality vs perturbative analyticity vs transmutation) and map which statements survive each branch.
+1. Execute `B01`: locate/capture an OA-stable source for `[Jackiw1991DeltaPotentials]` and add one standard half-density / semiclassical-propagator anchor (`PENDING` if needed).
+2. Execute `S01`: blackboard the “H2.5 split” (integrality vs perturbative analyticity vs transmutation) and map which statements survive each branch.
+3. Run a quick Q-pass (`Q01`, optional) after B01/S01 promotions to ensure no new ambiguity crept in.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

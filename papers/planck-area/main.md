@@ -3,11 +3,16 @@
 ## Abstract
 Half-densities are the natural “coordinate-free integrands” for composing kernels without choosing a background measure. But choosing a *universal* convention for turning half-density objects into dimensionless numerical amplitudes introduces a \(\text{length}^{d/2}\) scale. In \(d=4\), this is an *area*. This note sharpens the hypothesis ladder needed for the claim “half-density normalization selects a universal area scale”, and isolates a simple dimension-matching condition under which the Planck area appears without fractional powers of couplings. A gravitational anchor based on a minimal-areal-speed principle is recorded as a separate heuristic thread [RiveroAreal] [RiveroSimple].
 
+Minimal claim (proved under stated hypotheses): half-density composition is intrinsic, but any scalar “amplitude function” representation requires extra scalarization structure, and if that scalar representative is demanded dimensionless then a \(\text{length}^{d/2}\) constant is unavoidable. Conjectural claim (additional universality hypotheses): the scalarization constant is fixed by universal couplings and becomes a universal area scale in \(D=4\).
+
 ## 1. Purpose and Status
 This is a dependent follow-up to `paper/main.md`. It is not yet a finished paper; its goal is to isolate one technical point that is only implicit in the main manuscript:
 the role of half-densities (and their scaling) in making composition laws coordinate-invariant *and* dimensionally well-defined.
 
 Claims below are labeled as `Proposition` (math-precise under hypotheses) or `Heuristic` (programmatic bridge).
+
+**Notation (dimensions).**
+The half-density weight \(\text{length}^{d/2}\) uses the dimension of the manifold being integrated over in the composition law (the “composition variable” dimension). In nonrelativistic time-slicing this is typically spatial dimension; in covariant/field-theory settings it is spacetime dimension. In the gravity-only sieve (Derivation D1.3), read \(d\) as the spacetime dimension \(D\) if that avoids confusion: the “\(D=4\Rightarrow\) area” conclusion is about spacetime \(D=4\), not a claim that *spatial* \(d=4\) is privileged.
 
 ## 2. Half-Densities and Composition Kernels
 Let \(M\) be a \(d\)-dimensional manifold. A (positive) density is a section of \(|\Lambda^d T^\ast M|\), and a half-density is a section of \(|\Lambda^d T^\ast M|^{1/2}\).

@@ -246,3 +246,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: a concrete queue of `C`/`S`/`B` next steps, with half-densities kept primary and preprint-only claims flagged as heuristic until independently anchored.
 - Sources touched (keys + status changes): none (review only).
 - Next: start `C22` (implement the clarity/notation/minimal-claim fixes), then `B01` (Jackiw + half-density anchors), then `S01` (H2.5 split blackboard).
+
+## 2026-02-09 (C22: implement Q00 clarity fixes)
+- Focus: reduce referee-friction (novelty signposting, notation ambiguity) while keeping half-densities primary.
+- Question: can we tighten clarity without importing Planck-scale content into the cornerstone paper?
+- Work:
+  - `paper/main.md`: added an explicit “Contributions” list; added \(d\)/\(D\) dimension bookkeeping; added a single forward pointer to `papers/planck-area/main.md`; clarified the Euclidean/analytic-continuation reading in the semigroup normalization derivation; changed the schematic QFT integral to \(\int d^D x\).
+  - `papers/planck-area/main.md`: added a “minimal claim vs conjecture” abstract paragraph and an explicit dimension-notation note.
+  - `papers/rg-fundamental/main.md`: rephrased the abstract thesis as a conditional compatibility schema; anchored the 1D U(2) point-interaction discussion with independent self-adjoint-extension references; expanded Section 7 into a tagged `C`/`S`/`B` checklist.
+- Result: the three manuscripts now communicate (i) what is structurally derived vs (ii) what is an extra universality hypothesis more cleanly, and they avoid the most likely “what is \(d\)?” confusion.
+- Sources touched (keys + status changes): none (used existing keys only).
+- Next: run `B01` (Jackiw + semiclassical/half-density anchors) and then `S01` (H2.5 split blackboard).

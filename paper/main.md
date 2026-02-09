@@ -17,7 +17,17 @@ The third anchor is methodological. In this manuscript, deformation quantization
 Section 2 fixes the formal vocabulary and claim taxonomy used in later sections. It also narrows one foundational ambiguity:
 the paper does not assume that continuum limits are ontological statements about nature. It assumes only that they are operational definitions of stable predictive objects. This narrowed statement will be stress-tested in later sections.
 
+**Contributions (what is new here).**
+1. A refinement/composition reading of the Newton \(\to\) action \(\to\) kernel chain in which each stage is retained as a compatibility condition, not replaced.
+2. An intrinsic half-density formulation of the composition law for propagators, separating coordinate-free kernel composition from scalarization conventions.
+3. A semigroup-closure derivation showing the short-time normalization exponent \(t^{-d/2}\) is forced by composition (the “square-root Jacobian”).
+4. A refinement-compatibility framing of renormalization in which RG invariance is the consistency condition demanded by divergent refinement limits.
+5. A fully explicit “RG appears before QFT” computation (2D delta/contact interaction) included as an appendix-level witness.
+
 ## 2. Notation and Claim Taxonomy
+**Dimension bookkeeping.**
+Throughout Sections 2–7, \(d\) denotes the dimension of the manifold being integrated over in the composition law (typically configuration-space/spatial dimension in nonrelativistic kernels). When we write field-theory-style spacetime integrals, we will denote spacetime dimension by \(D\) to avoid conflating it with the composition-variable dimension.
+
 ### 2.1 Core Objects
 Let \(q:[t_i,t_f]\to \mathbb{R}^d\) be a configuration-space trajectory and \(\mathcal{L}(q,\dot q,t)\) a Lagrangian density. Define the action:
 
@@ -475,6 +485,7 @@ is a density in \(q\), so \(\int_M K_{t_f-t}(q_f,q)K_{t-t_i}(q,q_i)\) is coordin
 
 `Heuristic H4.0a (Scalarization gauge and scale).`
 Writing a half-density kernel as an ordinary scalar function with an explicit “\(dq\)” implicitly chooses a reference density \(\rho_\ast\) on \(M\) (equivalently a reference half-density \(\sigma_\ast=\rho_\ast^{1/2}\)). Different choices are related by pointwise multiplication and give unitarily equivalent scalar representations. If one additionally demands scalar amplitudes be dimensionless, then \(\sigma_\ast\) must carry the full \(\text{length}^{d/2}\) weight, so a universal choice of \(\sigma_\ast\) is equivalent to choosing a universal \(\text{length}^{d/2}\) scale.
+The dependent note `papers/planck-area/main.md` explores the further (optional) hypothesis that such a scale is fixed by universal couplings and, in \(D=4\), is naturally an area scale; that identification is not required for the present paper’s structural chain.
 
 `Derivation D4.1 (Time slicing from repeated composition).`
 Iterating the composition law over a partition \(t_i=t_0<\cdots<t_N=t_f\) gives
@@ -496,7 +507,7 @@ Assume a quadratic short-time phase and write
 \[
 k_t(u)=A(t)\,\exp\!\left(\frac{i m}{2\hbar}\frac{\|u\|^2}{t}\right),
 \]
-interpreting the Gaussian integral in Euclidean time or with the usual \(i0\) prescription.
+interpreting the Gaussian integral in Euclidean time (heat kernel) and then analytically continuing, or with the usual \(i0\) prescription.
 Then
 \[
 (k_t*k_s)(u)=A(t)A(s)\int_{\mathbb R^d}
@@ -841,7 +852,7 @@ In field theory language, refinement is implemented by a regulated action \(S_\L
 $$
 S_\Lambda[\phi]
 =
-\int d^d x\left(
+\int d^D x\left(
 \frac{Z(\Lambda)}{2}(\partial\phi)^2
 +\frac{m^2(\Lambda)}{2}\phi^2
 +\frac{\lambda(\Lambda)}{4!}\phi^4
@@ -849,7 +860,7 @@ S_\Lambda[\phi]
 \right),
 $$
 
-where the "\(\cdots\)" stands for additional operators allowed by symmetries and by the desired accuracy. The counterterm viewpoint is simply the statement that \(Z,m^2,\lambda,\ldots\) must be chosen as functions of \(\Lambda\) so that the cutoff-stable limits of observables exist. In this compositional narrative, counterterms are refinement corrections required to keep the "same theory" after integrating out short scales.
+where \(D\) is the spacetime dimension and the "\(\cdots\)" stands for additional operators allowed by symmetries and by the desired accuracy. The counterterm viewpoint is simply the statement that \(Z,m^2,\lambda,\ldots\) must be chosen as functions of \(\Lambda\) so that the cutoff-stable limits of observables exist. In this compositional narrative, counterterms are refinement corrections required to keep the "same theory" after integrating out short scales.
 
 `Derivation D6.3 (Difference quotient as counterterm subtraction).`
 Let \(f\in C^1\) and \(\varepsilon\to 0^+\). The two regulated quantities \(f(x+\varepsilon)/\varepsilon\) and \(f(x)/\varepsilon\) each diverge like \(1/\varepsilon\). Subtracting the local counterterm \(f(x)/\varepsilon\) produces a finite limit:
