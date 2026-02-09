@@ -208,3 +208,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the 1D thread now has a concrete “boundary RG ↔ S-matrix RG” witness that fits the “RG = compatibility” thesis without pretending a UV subtraction is present in 1D.
 - Sources touched (keys + status changes): none.
 - Next: decide whether to (i) keep this entirely in the RG follow-up, or (ii) promote a condensed paragraph into `paper/main.md` as a second “RG appears before QFT” witness alongside the 2D delta.
+
+## 2026-02-09 (B00: independent anchors for point interactions)
+- Focus: reduce reliance on Rivero preprints for the 1D contact-interaction discussion by adding independent anchors.
+- Question: which standard sources best anchor “U(2) family of point interactions” and “delta/contact models as boundary conditions”?
+- Work:
+  - Added new bibliography keys in `paper/bibliography.md` for Kurasov (distribution theory / generalized coefficients), Bonneau–Faraut–Valent (self-adjoint extensions; AJP + arXiv), and Fülöp–Tsutsui / Tsutsui–Fülöp–Cheon (point interactions; arXiv anchors).
+  - Ingested OA arXiv captures into `sources/` for the arXiv-available items.
+  - Added Jackiw’s MIT-CTP-1937 delta-potentials note as a pending capture target for an additional 2D/3D delta anchor.
+- Result: the 1D “boundary-condition parameter space” thread now has at least one non-Rivero, OA anchor and a clear next target for a 2D/3D delta anchor.
+- Sources touched (keys + status changes):
+  - Added `[Kurasov1996DiscontinuousTest]`, `[BonneauFarautValent2001SAE]`, `[FulopTsutsui2000Circle]`, `[TsutsuiFulopCheon2002Connection]`, `[Jackiw1991DeltaPotentials]`.
+- Next: decide whether to cite Kurasov/Bonneau-Faraut-Valent directly in `papers/rg-fundamental/main.md` (optional until polish), and locate an OA-stable PDF for Jackiw’s 1991 note.

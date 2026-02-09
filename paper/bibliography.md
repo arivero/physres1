@@ -23,6 +23,11 @@ Use this file as a source ledger.
 9. `[McLachlan2017]` Robert I. McLachlan, Klas Modin, Hans Munthe-Kaas, Olivier Verdier, "Butcher series: A story of rooted trees and numerical methods for evolution equations," arXiv:`1512.00906` (v3, 27 Feb 2017).
 10. `[BoyaRivero1994Contact]` Luis J. Boya and Alejandro Rivero, "Renormalization in 1-D Quantum Mechanics: contact interactions," arXiv:`hep-th/9411081` (v1, 11 Nov 1994).
 11. `[ManuelTarrach1994PertRenQM]` Cristina Manuel and Rolf Tarrach, "Perturbative Renormalization in Quantum Mechanics," *Physics Letters B* 328 (1994), 113--118. arXiv:`hep-th/9309013` (v1, 2 Sep 1993). DOI `10.1016/0370-2693(94)90437-5`.
+12. `[Kurasov1996DiscontinuousTest]` Pavel Kurasov, "Distribution theory for discontinuous test functions and differential operators with generalized coefficients," *Journal of Mathematical Analysis and Applications* 201 (1996), 287–323. DOI `10.1006/jmaa.1996.0256`.
+13. `[BonneauFarautValent2001SAE]` Guy Bonneau, Jacques Faraut, and Galliano Valent, "Self-adjoint extensions of operators and the teaching of quantum mechanics," *American Journal of Physics* 69 (2001), 322–331. arXiv:`quant-ph/0103153`. DOI `10.1119/1.1328351`.
+14. `[FulopTsutsui2000Circle]` Tamás Fülöp and Izumi Tsutsui, "A free particle on a circle with point interaction," *Physics Letters A* 264 (2000), 366–374. arXiv:`quant-ph/9910062`. DOI `10.1016/S0375-9601(99)00850-6`.
+15. `[TsutsuiFulopCheon2002Connection]` Izumi Tsutsui, Tamás Fülöp, and Taksu Cheon, "Connection Conditions and the Spectral Family under Singular Potentials," arXiv:`quant-ph/0209110` (v1, 20 Sep 2002).
+16. `[Jackiw1991DeltaPotentials]` R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42.
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -37,6 +42,11 @@ Use this file as a source ledger.
 10. `[McLachlan2017]`: arXiv primary anchor used (`1512.00906`).
 11. `[BoyaRivero1994Contact]`: arXiv primary anchor used (`hep-th/9411081`).
 12. `[ManuelTarrach1994PertRenQM]`: DOI `10.1016/0370-2693(94)90437-5`.
+13. `[Kurasov1996DiscontinuousTest]`: DOI `10.1006/jmaa.1996.0256`.
+14. `[BonneauFarautValent2001SAE]`: DOI `10.1119/1.1328351`; arXiv primary anchor used (`quant-ph/0103153`).
+15. `[FulopTsutsui2000Circle]`: DOI `10.1016/S0375-9601(99)00850-6`; arXiv primary anchor used (`quant-ph/9910062`).
+16. `[TsutsuiFulopCheon2002Connection]`: arXiv primary anchor used (`quant-ph/0209110`).
+17. `[Jackiw1991DeltaPotentials]`: no DOI pinned (report/proceedings); use report number `MIT-CTP-1937` as the stable anchor.
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -50,6 +60,11 @@ Use this file as a source ledger.
 9. `[McLachlan2017]`: acquired in `sources/1512-00906-2a111472.md`.
 10. `[BoyaRivero1994Contact]`: acquired via arXiv preprint in `sources/9411081-51727cbf.md`.
 11. `[ManuelTarrach1994PertRenQM]`: acquired via arXiv preprint in `sources/9309013-6f2e5cc3.md`.
+12. `[Kurasov1996DiscontinuousTest]`: `PENDING` (journal PDF not retrieved via OA routes in this environment).
+13. `[BonneauFarautValent2001SAE]`: acquired via arXiv preprint in `sources/0103153-f3c9ab8d.md`.
+14. `[FulopTsutsui2000Circle]`: acquired via arXiv preprint in `sources/9910062-3abd8de8.md`.
+15. `[TsutsuiFulopCheon2002Connection]`: acquired via arXiv preprint in `sources/0209110-d9d8cbab.md`.
+16. `[Jackiw1991DeltaPotentials]`: `PENDING` capture (MIT report/proceedings; locate an OA PDF mirror).
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004). Local mirror file: `/usr/local/var/www/wordpress/research/0404086.pdf`.

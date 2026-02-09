@@ -26,7 +26,7 @@
 22. `C21` In Progress.
 
 ### Bibliography Cycles (`Bnn`)
-- `B00` In Progress.
+- `B00` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` In Progress.
