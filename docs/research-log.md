@@ -193,7 +193,7 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-09 (C19 start: fixed points as quantization rules)
 - Focus: decide whether the 1D fixed-point structure is relevant for the RG paper’s thesis, and if so, express it operationally.
 - Question: can RG fixed points for contact interactions be reframed as *quantization rules* (finite-volume spectra / phase-shift quantization)?
-- Work: added `Heuristic H1.11` + `Derivation D1.6` to `papers/rg-fundamental/main.md` showing how scale-invariant boundary conditions give simple momentum quantization conditions on \([0,L]\), and how general point interactions shift such conditions by phases.
+- Work: added `Heuristic H1.11` + `Derivation D1.6a` to `papers/rg-fundamental/main.md` showing how scale-invariant boundary conditions give simple momentum quantization conditions on \([0,L]\), and how general point interactions shift such conditions by phases.
 - Result: the 1D “rich fixed points” point now has a concrete operational interpretation (spectral quantization), rather than being only an abstract classification.
 - Sources touched (keys + status changes): none.
 - Next: decide whether to add an independent standard reference for the boundary-condition/point-interaction classification (optional for now).
