@@ -18,5 +18,5 @@ Use the same pandoc math extension as the main paper:
 pandoc -f markdown+tex_math_single_backslash -s papers/<paper>/main.md -o papers/<paper>/main.tex
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory papers/<paper> papers/<paper>/main.tex
 pdflatex -interaction=nonstopmode -halt-on-error -output-directory papers/<paper> papers/<paper>/main.tex
+rm -f papers/<paper>/main.aux papers/<paper>/main.log
 ```
-

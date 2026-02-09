@@ -103,7 +103,7 @@ The reference \(\sigma_\ast\) is taken to be constant/field-independent, rather 
 
 `Hypothesis H2.5 (Analyticity / no fractional powers of couplings).`
 If the universal constant is required to be built from the theory’s couplings without fractional powers, then dimensional analysis becomes a *dimension sieve* rather than a tautology. This hypothesis has at least two distinct readings:
-1. **Integrality (Diophantine) reading:** the constant is a monomial in the available couplings with integer exponents (possibly allowing negative powers).
+1. **Integrality (integer-exponent) reading:** the constant is a monomial in the available couplings with integer exponents (possibly allowing negative powers). Equivalently, dimension-matching becomes an integer (Diophantine) constraint on the exponents.
 2. **Perturbative analyticity reading (stronger):** the constant admits a Taylor expansion around zero couplings, so only nonnegative integer powers appear.
 
 Derivation D1.3 is the simplest gravity-only instance under the integrality reading: “use \(G_d\) without fractional powers” singles out \(d=4\).
@@ -126,14 +126,14 @@ This subsection records the main “branches” that need separate study.
 ### 3.3 Starting with H2.5: Integrality as a Dimension Sieve
 The point of H2.5 is not that dimensional analysis alone selects a unique scale (it does not), but that *restricting allowed functional dependence on couplings* can turn dimensional analysis into a selection principle.
 
-`Derivation D1.6 (Diophantine form of “no fractional powers”).`
+`Derivation D1.6 (Integer-exponent form of “no fractional powers”).`
 Work in \(c=\hbar=1\) units for dimension counting. Let the available couplings \(\{g_i\}\) have length dimensions
 \([g_i]=\text{length}^{a_i}\).
 Under the integrality reading of H2.5, the universal normalization constant is a monomial
 \(C=\prod_i g_i^{n_i}\)
 with integers \(n_i\). Its length dimension is
 \([C]=\text{length}^{\sum_i n_i a_i}\).
-Requiring \([C]=\text{length}^{d/2}\) is therefore the Diophantine condition
+Requiring \([C]=\text{length}^{d/2}\) is therefore the integer-exponent (Diophantine) condition
 
 $$
 \sum_i n_i a_i=\frac{d}{2}.
@@ -171,7 +171,7 @@ then
 \[
 [C]=\text{length}^{p(d-4)/2}.
 \]
-Matching \([C]=\text{length}^{d/2}\) gives the Diophantine condition
+Matching \([C]=\text{length}^{d/2}\) gives the integer-exponent condition
 \[
 p(d-4)=d
 \quad\Longrightarrow\quad

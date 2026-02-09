@@ -264,9 +264,9 @@ The \(2\)D delta is singled out above because its coupling is marginal and produ
 `Proposition P1.6 (Canonical dimension of the delta coupling).`
 In \(d\) spatial dimensions, the contact potential \(V(x)=g\,\delta^{(d)}(x)\) requires \([g]=\text{length}^{d-2}\) (in \(\hbar=c=1\) units), because \([\delta^{(d)}]=\text{length}^{-d}\) and the kinetic term sets \([E]=\text{length}^{-2}\).
 Thus:
-1. \(d=1\): \([g]=\text{length}^{-1}\) (irrelevant in naive power counting),
+1. \(d=1\): \([g]=\text{length}^{-1}\) (the natural dimensionless combination at momentum scale \(\mu\) is \(g/\mu\)),
 2. \(d=2\): \([g]=\text{length}^{0}\) (marginal; logarithms),
-3. \(d=3\): \([g]=\text{length}^{+1}\) (relevant; power divergences).
+3. \(d=3\): \([g]=\text{length}^{+1}\) (the natural dimensionless combination at momentum scale \(\mu\) is \(\mu g\); cutoff schemes show power divergences).
 
 #### 5.8.1 The 3D delta: scattering length and (Wilsonian) fixed points
 In \(3\)D, the loop integral \(I(E)\) diverges linearly with a momentum cutoff. With \(E=\hbar^2k^2/(2m)\) and \(|q|<\Lambda\),
@@ -274,8 +274,8 @@ In \(3\)D, the loop integral \(I(E)\) diverges linearly with a momentum cutoff. 
 I_{3D}(E;\Lambda)
 =\int \frac{d^3q}{(2\pi)^3}\,\frac{1}{E-\frac{\hbar^2 q^2}{2m}+i0}
 =-\frac{m}{\pi^2\hbar^2}\Lambda
-i\,\frac{m}{2\pi\hbar^2}k
-O\!\left(\frac{k^2}{\Lambda}\right).
++i\,\frac{m}{2\pi\hbar^2}k
++O\!\left(\frac{k^2}{\Lambda}\right).
 \]
 So
 \[
@@ -342,6 +342,35 @@ At the scale-invariant endpoints \(\lambda=\infty\) (Dirichlet at \(0\)) and \(\
 up to the usual \(n\in\mathbb N\) conventions.
 More general point interactions (including the full U(2) family on the line) act similarly: they change the phase relation at the defect, hence shift the finite-volume quantization condition by a phase.
 
+`Derivation D1.6b (Scaling of the Robin parameter as boundary RG data).`
+The Robin boundary condition \(\psi'(0)=\lambda\,\psi(0)\) already encodes the engineering dimension of \(\lambda\): since \(\psi'\) carries one inverse length compared to \(\psi\), one has \([\lambda]=\text{length}^{-1}\).
+Equivalently, under a spatial dilation \(x\mapsto b x\) with \(b>0\), the derivative scales as \(\partial_x \mapsto b^{-1}\partial_x\), so preserving the *form* of the boundary condition forces
+\[
+\lambda \mapsto \lambda(b)=b^{-1}\lambda.
+\]
+If we parameterize the same statement by a momentum/energy scale \(\mu\sim 1/\ell\), then the dimensionless coupling \(\hat\lambda(\mu):=\lambda/\mu\) obeys the purely engineering beta function
+\[
+\beta_{\hat\lambda}(\mu):=\mu\frac{d\hat\lambda}{d\mu}=-\hat\lambda.
+\]
+The fixed points are \(\hat\lambda=0\) (Neumann, \(\psi'(0)=0\)) and \(\hat\lambda=\infty\) (Dirichlet, \(\psi(0)=0\)); general Robin data interpolates between them as one changes the probing scale.
+This is not a loop-induced running: it is the RG action of scaling on boundary-condition parameters.
+
+`Example E1.1 (1D \(\delta\) scattering: transparent vs reflective endpoints).`
+Consider \(H=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+g\,\delta(x)\) on the full line.
+For an incoming plane wave from the left,
+\(\psi(x)=e^{ikx}+r(k)e^{-ikx}\) for \(x<0\) and \(\psi(x)=t(k)e^{ikx}\) for \(x>0\).
+Continuity at \(x=0\) and the derivative jump condition
+\(\psi'(0^+)-\psi'(0^-)=\frac{2mg}{\hbar^2}\psi(0)\)
+give
+\[
+t(k)=\frac{1}{1+i\,\kappa/k},\qquad r(k)=\frac{-i\,\kappa/k}{1+i\,\kappa/k},
+\qquad \kappa:=\frac{mg}{\hbar^2}.
+\]
+Thus the scattering depends only on the dimensionless ratio \(\kappa/k\) (equivalently \(\kappa/\mu\) at scale \(\mu\sim k\)). The endpoint behaviors are:
+1. \(k\gg \kappa\) (UV/short distance): \(t(k)\to 1\), \(r(k)\to 0\) (transparent fixed point),
+2. \(k\ll \kappa\) (IR/long distance): \(t(k)\to 0\), \(r(k)\to -1\) (perfect reflection fixed point).
+In this sense the “RG flow of the \(S\)-matrix” is simply the statement that, for a dimensionful contact strength, changing the probing scale moves one along a trajectory between scale-invariant endpoint matrices.
+
 ## 6. Semigroup vs Group: What Is (Not) Invertible
 The phrase “renormalization group” hides two different notions:
 1. an information-losing *coarse-graining map* on descriptions of the system, and
@@ -363,7 +392,7 @@ If one restricts attention to a finite-dimensional ansatz for the effective desc
 ### 6.1 A Fully Explicit Coarse-Graining Map: Gaussian Integration (Schur Complement)
 This toy model is deliberately “too simple” in the same way the difference quotient is “too simple”: it makes the semigroup structure and non-invertibility *visible*.
 
-`Derivation D1.6 (Exact coarse-graining in a quadratic model).`
+`Derivation D1.7 (Exact coarse-graining in a quadratic model).`
 Let \(x\) be “IR” and \(y\) be “UV”, and consider the quadratic action
 \[
 S(x,y)=\frac12\left(a\,x^2+2b\,x y+c\,y^2\right),
