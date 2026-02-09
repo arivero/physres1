@@ -20,8 +20,8 @@
 
 ## Next Action
 Priority: advance the follow-up papers (dependent on `paper/main.md`).
-1. Execute `C13`: turn `papers/planck-area/main.md` into a substantive note (one concrete half-density composition model + one anchored derivation).
-2. Keep `papers/rg-fundamental/main.md` moving: decide what subset (if any) should be promoted back into `paper/main.md` without bloating the manuscript.
+1. Continue `C13`: extend the half-density “dimension sieve” analysis with 1–2 explicit alternative sieves (e.g. gauge coupling dimensionality, string tension), clearly separated from the gravity-only sieve.
+2. Keep `papers/rg-fundamental/main.md` moving: decide what subset (if any) should be promoted back into `paper/main.md` without bloating the manuscript (Gaussian semigroup witness, boundary-condition view of the 2D delta).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

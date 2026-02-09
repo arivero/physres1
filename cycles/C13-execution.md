@@ -8,10 +8,13 @@
 5. Added `Derivation D1.5` (inverse-square orbit radius + Planck areal speed \(\Rightarrow\) Compton radius cancellation) anchored to `[RiveroAreal]`.
 6. Added an explicit hypothesis ledger + relaxation branches (Section 3.1–3.2) to separate what is forced by half-density geometry from what is imposed as a universality/selection principle.
 7. Started explicit analysis of `H2.5` by separating “integrality vs perturbative analyticity” readings and adding a Diophantine dimension-sieve derivation (Section 3.3, `Derivation D1.6`).
+8. Ran `H2.3` explicitly: added `Proposition P1.3` + `Derivation D1.7` (scalarization is a choice of measure; changes of \(\sigma_\ast\) act by multiplication on scalar representatives).
+9. Ran `H2.4` explicitly: added `Derivation D1.8` (flat/affine vs metric-derived vs field-derived reference half-densities) plus an “RG as scale dependence of scalarization” note (`Heuristic H2.11`).
+10. Added `Derivation D1.9` (square-root delta normalization has half-density weight) to connect the “halved delta” construction directly to half-density scaling exponents.
 
 ## Sections Touched
 1. `papers/planck-area/main.md`.
 2. `docs/research-log.md` (recorded the start of `C13`).
 
 ## Status
-In progress: next step is to make the “universal area scale” claim sharper by stating explicit hypotheses (what background structure is allowed) and by clarifying how RG scaling interacts with half-density normalization.
+In progress: next step is to add one or two concrete “alternative dimension sieves” (e.g. gauge coupling dimensionality, string tension) clearly separated from the half-density sieve, and to decide whether the delta-halving argument should be promoted (briefly) into `paper/main.md` as an additional motivation for half-densities.

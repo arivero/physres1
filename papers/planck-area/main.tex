@@ -325,6 +325,100 @@ dimensions in which any such factor requires either (i) introducing
 extra scales/couplings, (ii) taking fractional powers, or (iii) invoking
 non-analytic mechanisms (dimensional transmutation).
 
+\subsubsection{\texorpdfstring{3.4 Running H2.3: Is ``Dimensionless
+\(f\)'' Physics or
+Convention?}{3.4 Running H2.3: Is ``Dimensionless f'' Physics or Convention?}}\label{running-h2.3-is-dimensionless-f-physics-or-convention}
+
+The half-density formalism (H2.1) gives a canonical pairing
+\(\int \bar\psi\,\psi\) that does not require choosing a background
+measure. But when we write \(\psi=f\,\sigma_\ast\) (H2.2), we are
+choosing a \emph{representation} of the same object as a scalar function
+with respect to a chosen positive density \(\rho_\ast=\sigma_\ast^2\).
+
+\texttt{Proposition\ P1.3\ (Scalarization\ is\ a\ choice\ of\ measure,\ not\ new\ physics).}
+Choosing a reference half-density \(\sigma_\ast\) identifies the
+canonical Hilbert space of \(L^2\) half-densities on \(M\) with the
+scalar Hilbert space \(L^2(M,\rho_\ast)\), where
+\(\rho_\ast=\sigma_\ast^2\). Different choices \(\sigma_\ast\) yield
+unitarily equivalent scalar representations.
+
+\texttt{Derivation\ D1.7\ (Change\ of\ reference\ half-density\ acts\ by\ multiplication).}
+Let \(\sigma_1,\sigma_2\) be nowhere-vanishing half-densities on \(M\)
+and set \(r:=\sigma_2/\sigma_1\), a positive scalar function. Writing
+the same half-density state \(\psi\) as
+\(\psi=f_1\,\sigma_1=f_2\,\sigma_2\) gives \(f_2=r^{-1}f_1\). Moreover,
+\[
+\int_M \bar\psi\,\psi
+=\int_M |f_1|^2\,\sigma_1^2
+=\int_M |f_2|^2\,\sigma_2^2
+=\int_M |f_2|^2\,r^2\,\sigma_1^2,
+\] so the two scalar pictures differ by a compensating change of measure
+and pointwise multiplication. In particular, if \(\sigma_2=c\,\sigma_1\)
+is a constant rescaling, then \(f_2=c^{-1}f_1\) is the familiar global
+wavefunction normalization freedom.
+
+\texttt{Heuristic\ H2.9\ (How\ H2.3\ creates\ a\ scale).} In the usual
+``scalar wavefunction'' presentation on \(\mathbb R^d\), one implicitly
+chooses \(\sigma_\ast=|dx|^{1/2}\) and allows the scalar representative
+to carry dimension \(\text{length}^{-d/2}\) so that \(|\psi|^2\,d^dx\)
+is dimensionless probability. Requiring instead that the scalar
+representative \(f\) be dimensionless (H2.3) shifts the
+\(\text{length}^{-d/2}\) factor into the reference half-density: \[
+\sigma_\ast \sim L_\ast^{-d/2}|dx|^{1/2},
+\] so ``dimensionless \(f\)'' is a convention unless the scale
+\(L_\ast^{d/2}\) is fixed by an additional universality principle
+(H2.4--H2.5).
+
+\subsubsection{3.5 Running H2.4: What Does ``Background-Free Constancy''
+Mean?}\label{running-h2.4-what-does-background-free-constancy-mean}
+
+From Derivation D1.7, changing the reference half-density
+\(\sigma_\ast\) by a positive function \(r(x)\) changes the scalar
+representative by \(f\mapsto r^{-1}f\) and changes the scalar measure by
+\(\rho_\ast\mapsto r^2\rho_\ast\). So the raw half-density formulation
+has a large ``scalarization gauge freedom''.
+
+\texttt{Heuristic\ H2.10\ (Constancy\ =\ no\ extra\ background\ function).}
+If we take ``background-free'' in the strong sense ``no additional
+structure beyond the manifold and the theory's couplings'', then
+allowing an arbitrary non-constant \(r(x)\) would amount to introducing
+a new background field/function by hand. In that strong sense, the only
+admissible changes are constant rescalings, and choosing \(\sigma_\ast\)
+becomes a choice of a single global scale (fixed or not fixed by
+couplings depending on H2.5).
+
+\texttt{Derivation\ D1.8\ (Three\ natural\ families\ of\ \textbackslash{}(\textbackslash{}sigma\_\textbackslash{}ast\textbackslash{})\ and\ what\ they\ mean).}
+On a configuration space \(M\), the common ways to choose a reference
+half-density are: 1. \textbf{Flat/affine choice (when available):} on
+\(\mathbb R^d\) with its affine structure, translation invariance picks
+\(|dx|^{1/2}\) uniquely up to a constant factor. This is ``constant'' in
+the sense of being homogeneous under translations. 2.
+\textbf{Metric-derived choice:} given a Riemannian/Lorentzian metric
+\(g\), one can take \(\sigma_g := |g|^{1/4}|dx|^{1/2}\), so that
+\(\rho_g=\sigma_g^2=\sqrt{|g|}\,|dx|\) is the familiar invariant volume
+density. This makes the scalar representative \(f\) a genuine scalar
+field but makes the scalarization depend on background geometry. 3.
+\textbf{Field-derived (dilaton-like) choice:} given a scalar field
+\(\Phi\) (background or dynamical), one can take
+\(\sigma_{\Phi}:=e^{-\Phi}\sigma_g\). In the scalar picture this is a
+local rescaling of the measure, and it is the natural way to encode
+``local units'' or Weyl factors.
+
+H2.4 asserts that the theory supplies (or selects) a choice of type (1)
+with no \(x\)-dependent factor: a fixed reference \(\sigma_\ast\) whose
+only remaining ambiguity is an overall constant scale.
+
+\texttt{Heuristic\ H2.11\ (RG\ as\ scale\ dependence\ of\ scalarization).}
+If refinement/coarse-graining forces an \(x\)-independent but
+scale-dependent choice \(\sigma_\ast(\mu)\) (equivalently a
+scale-dependent constant \(L_\ast(\mu)\)), then H2.4 is replaced by an
+RG statement: the scalarization convention becomes part of the
+renormalization scheme (a ``wavefunction renormalization'' for the
+scalar representative). In that case, a universal area/length scale can
+still appear, but typically as an RG invariant (dimensional
+transmutation scale) rather than as a fixed analytic monomial in
+couplings.
+
 \subsection{4. Stationary Phase Produces Half-Density Prefactors
 (Short-Time
 Kernel)}\label{stationary-phase-produces-half-density-prefactors-short-time-kernel}
@@ -366,6 +460,30 @@ i.e.~exactly as a half-density factor at each endpoint. Thus the
 stationary-phase prefactor is naturally interpreted as making \(K\) a
 half-density in each variable, so that kernel composition does not
 depend on a background measure choice.
+
+\texttt{Derivation\ D1.9\ (Square-root\ delta\ normalization\ has\ half-density\ weight).}
+In finite dimension, the ``localize on critical points'' distribution is
+\(\delta(\nabla f)\), supported on \(\mathrm{Crit}(f)\). A concrete way
+it appears is via a ``halved'' oscillatory integral with a normalization
+exponent fixed by dimension.
+
+Let \(f:\mathbb R^N\to\mathbb R\) be smooth and define, for
+\(\varepsilon>0\), \[
+A_\varepsilon(O):=\varepsilon^{-N/2}\int_{\mathbb R^N} e^{\frac{i}{\varepsilon}f(x)}\,O(x)\,dx.
+\] Then \[
+|A_\varepsilon(O)|^2
+=\varepsilon^{-N}\int\!\!\int e^{\frac{i}{\varepsilon}(f(x)-f(y))}\,O(x)\,\overline{O(y)}\,dx\,dy.
+\] Applying the near-diagonal scaling \(y=x+\varepsilon z\) (so
+\(dy=\varepsilon^Ndz\)) gives \[
+|A_\varepsilon(O)|^2
+=\int\!\!\int e^{-\frac{i}{\varepsilon}(f(x+\varepsilon z)-f(x))}\,O(x)\,\overline{O(x+\varepsilon z)}\,dz\,dx.
+\] Formally letting \(\varepsilon\to 0\) yields \[
+|A_\varepsilon(O)|^2 \;\to\;\int\!\!\int e^{-i z\cdot \nabla f(x)}\,|O(x)|^2\,dz\,dx
+=(2\pi)^N\int \delta(\nabla f(x))\,|O(x)|^2\,dx.
+\] The exponent \(N/2\) in the prefactor is exactly the half-density
+scaling: it cancels the Jacobian \(dy=\varepsilon^Ndz\) under
+near-diagonal rescaling, and it is the ``square root'' of the density
+normalization that produces \(\delta(\nabla f)\).
 
 \texttt{Heuristic\ H1.4\ (Where\ Planck\ area\ can\ enter,\ minimally).}
 Derivation D1.3 isolates one minimal route by which a Planck-scale

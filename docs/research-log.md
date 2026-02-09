@@ -127,3 +127,19 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: `H2.5` is now treated explicitly as a knob that either produces a sharp sieve (e.g. “gravity-only → \(d=4\)”) or becomes permissive once relaxed.
 - Sources touched (keys + status changes): none.
 - Next: decide which couplings count as admissible “universal inputs” (e.g. is \(\Lambda\) allowed?), and test at least one additional choice (string tension / other dimensionful couplings) to compare the induced “special dimension” filters.
+
+## 2026-02-09 (C13 continuation: run H2.3 + H2.4)
+- Focus: tighten the half-density → universal area-scale hypothesis ladder by analyzing `H2.3` and `H2.4` explicitly (not just as labels).
+- Question:
+  1. Is `H2.3` (dimensionless scalar representative) a physical requirement or a normalization convention?
+  2. What does “background-free constancy” (`H2.4`) mean operationally in kernel composition, and when is it too strong?
+- Work:
+  - Added `Proposition P1.3` + `Derivation D1.7` showing scalarization is a measure choice and changes of \(\sigma_\ast\) act by multiplication (unitary-equivalent scalar pictures).
+  - Added `Derivation D1.8` comparing flat/affine vs metric-derived vs field-derived (dilaton-like) reference half-densities and clarified the “no extra background function” reading of `H2.4`.
+  - Added `Heuristic H2.11` framing RG as scale dependence of scalarization (wavefunction renormalization viewpoint).
+  - Added `Derivation D1.9` connecting the “square-root delta” normalization in oscillatory integrals to the half-density exponent \(N/2\) and the Born-rule pattern (amplitude squared yields a density).
+- Result: the “universal area scale” claim is now explicitly conditional: `H2.3` is largely a convention until `H2.4` restricts the scalarization gauge freedom to a single global scale, and `H2.5` restricts how that scale may depend on couplings (analytic monomial vs dimensional transmutation).
+- Sources touched (keys + status changes): none.
+- Next:
+  1. Add one more explicit “alternative sieve” example (e.g. gauge coupling dimensionality) clearly separated from the half-density sieve.
+  2. Decide whether the delta-halving derivation belongs in the main manuscript (briefly) or stays confined to follow-up notes.
