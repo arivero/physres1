@@ -29,7 +29,7 @@
 - `B00` Completed.
 
 ### Study Cycles (`Snn`)
-- `S00` In Progress.
+- `S00` Completed.
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.

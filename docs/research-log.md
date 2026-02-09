@@ -220,3 +220,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
   - Added `[Kurasov1996DiscontinuousTest]`, `[BonneauFarautValent2001SAE]`, `[FulopTsutsui2000Circle]`, `[TsutsuiFulopCheon2002Connection]`, `[Jackiw1991DeltaPotentials]`.
 - Next: decide whether to cite Kurasov/Bonneau-Faraut-Valent directly in `papers/rg-fundamental/main.md` (optional until polish), and locate an OA-stable PDF for Jackiw’s 1991 note.
+
+## 2026-02-09 (S00: blackboard note on RG scale as scalarization supply)
+- Focus: tighten the hypothesis ladder linking half-densities to a universal area scale without overclaiming.
+- Question: if H2.3+H2.4 demand a universal \(\text{length}^{d/2}\) constant, can RG invariants supply it when H2.5 is relaxed?
+- Work: wrote `blackboards/2026-02-09-half-density-scale-from-RG.md` clarifying (i) what “\(d\)” refers to in the half-density weight, (ii) the general RG-invariant scale construction \(\Lambda_\ast\), and (iii) why \(d=4\) naturally yields an area scale.
+- Result: we now have concrete “promotion candidates” to implement in `papers/planck-area/main.md` (likely as part of `C21`) plus an explicit list of open questions.
+- Sources touched (keys + status changes): none (blackboard only).
+- Next: promote the RG-invariant scale derivation + \(d\)-bookkeeping paragraph into `papers/planck-area/main.md` and rebuild the PDF.
