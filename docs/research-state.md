@@ -34,6 +34,11 @@ The goal is not to repackage standard narratives. Default to:
 5. Promote only “stable” results into `paper/main.md` (or a new follow-up manuscript directory when needed).
 6. Run consistency checks + rebuild the PDF when manuscript text changes (delete `.aux`/`.log` after successful generation).
 
+## S-Cycle Tool Use (Verification)
+During `S` cycles we may use heavier verification tooling to keep manuscripts lean:
+1. **Python/symbolic checks** (e.g. SymPy) for dimensional analysis, algebra, and toy-model computations. Record the exact command + output in the blackboard note.
+2. **Lean (optional, heavy)** for formalizing small lemmas when they become load-bearing and ambiguity persists. Use sparingly; prefer “one lemma” targets rather than attempting to formalize whole sections.
+
 ## Default Scheduling Policy (Automatic)
 We prioritize *topics*, but we alternate *cycle types*.
 
