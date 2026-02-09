@@ -15,6 +15,7 @@
 12. Promoted the delta-halving normalization witness into the main manuscript as `Derivation D3.5` in `paper/main.md`.
 13. Added `Example E4` (string tension / \(\alpha'\)) and a short gravity/Planck-length linkage heuristic (`Heuristic H2.12`) as another explicit “source of scale” candidate, keeping half-densities primary.
 14. Added `paper/notes/half-density-kernel-normalization.md` (Gaussian semigroup computation fixing the \(t^{-d/2}\) normalization as half-density scaling).
+15. Added `Derivation D4.1a` in `paper/main.md` (semigroup composition fixes the \(t^{-d/2}\) normalization), keeping the detailed computation in `paper/notes/half-density-kernel-normalization.md`.
 
 ## Sections Touched
 1. `papers/planck-area/main.md`.

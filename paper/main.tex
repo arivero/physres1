@@ -766,6 +766,26 @@ K_\Delta(q_{k+1},q_k;t_k),
 with \(q_0=q_i,\;q_N=q_f,\;\Delta t_k=t_{k+1}-t_k\), and \(K_\Delta\)
 the short-time kernel.
 
+\texttt{Derivation\ D4.1a\ (Semigroup\ fixes\ the\ \textbackslash{}(t\^{}\{-d/2\}\textbackslash{})\ normalization).}
+On \(M=\mathbb R^d\), translation invariance suggests a bi-half-density
+kernel of the form \(K_t(x,y)=k_t(x-y)\,|dx|^{1/2}|dy|^{1/2}\), so the
+semigroup law becomes a scalar convolution: \(k_{t+s}=k_t*k_s\). Assume
+a quadratic short-time phase and write \[
+k_t(u)=A(t)\,\exp\!\left(\frac{i m}{2\hbar}\frac{\|u\|^2}{t}\right),
+\] interpreting the Gaussian integral in Euclidean time or with the
+usual \(i0\) prescription. Then \[
+(k_t*k_s)(u)=A(t)A(s)\int_{\mathbb R^d}
+\exp\!\left(\frac{i m}{2\hbar}\left(\frac{\|u-v\|^2}{t}+\frac{\|v\|^2}{s}\right)\right)\,dv.
+\] Completing the square yields \[
+\frac{\|u-v\|^2}{t}+\frac{\|v\|^2}{s}
+=\frac{\|u\|^2}{t+s}+\frac{t+s}{ts}\left\|v-\frac{s}{t+s}u\right\|^2,
+\] so the convolution closes on the same family with \[
+A(t+s)=A(t)A(s)\left(\frac{ts}{t+s}\right)^{d/2}\times(\text{phase}).
+\] The unique solution (up to an overall constant phase) is
+\(A(t)\propto t^{-d/2}\). Thus the exponent \(d/2\) is forced by
+semigroup composition: it is the half-density ``square-root Jacobian''
+needed for refinement-stable kernel composition.
+
 \subsubsection{6.2 From Additive Action to Multiplicative
 Weights}\label{from-additive-action-to-multiplicative-weights}
 

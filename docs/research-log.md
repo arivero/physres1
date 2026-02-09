@@ -158,6 +158,8 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: make half-densities operationally prioritary in the main argument by attaching an explicit calculation to the “\(d/2\) exponent”.
 - Question: can we see \(t^{-d/2}\) normalization forced purely by half-density composition + semigroup closure (refinement compatibility)?
 - Work: added `paper/notes/half-density-kernel-normalization.md` deriving \(B(t)=m/(2t)\) and \(A(t)\propto t^{-d/2}\) from Gaussian semigroup closure in the scalar kernel \(k_t\), interpreted as the half-density scaling exponent.
-- Result: one concrete toy computation now exists that ties “square-root Jacobian” to semigroup composition rather than to a priori measure choices.
+- Result:
+  - one concrete toy computation now exists that ties “square-root Jacobian” to semigroup composition rather than to a priori measure choices, and
+  - a condensed version was promoted into the main manuscript as `Derivation D4.1a` in `paper/main.md`.
 - Sources touched (keys + status changes): none.
-- Next: decide whether to promote a 3–4 line version of this note into `paper/main.md` Section 6 without bloating it.
+- Next: verify the inserted derivation stays concise and does not drag the manuscript into a full “half-density paper” (details remain in `paper/notes/half-density-kernel-normalization.md`).
