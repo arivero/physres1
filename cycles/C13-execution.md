@@ -12,10 +12,11 @@
 9. Ran `H2.4` explicitly: added `Derivation D1.8` (flat/affine vs metric-derived vs field-derived reference half-densities) plus an “RG as scale dependence of scalarization” note (`Heuristic H2.11`).
 10. Added `Derivation D1.9` (square-root delta normalization has half-density weight) to connect the “halved delta” construction directly to half-density scaling exponents.
 11. Added `Example E3` (Yang--Mills coupling) as an explicit alternative “dimension sieve” inside the H2.5 Diophantine framework.
+12. Promoted the delta-halving normalization witness into the main manuscript as `Derivation D3.5` in `paper/main.md`.
 
 ## Sections Touched
 1. `papers/planck-area/main.md`.
 2. `docs/research-log.md` (recorded the start of `C13`).
 
 ## Status
-In progress: next step is to decide whether the delta-halving argument should be promoted (briefly) into `paper/main.md` as an additional motivation for half-densities, and whether to add a second alternative sieve (e.g. string tension / \(\alpha'\)) or stop at the gauge-coupling example.
+In progress: next step is to decide whether to add a second alternative sieve (e.g. string tension / \(\alpha'\)) or stop at the gauge-coupling example, and to see if any of the half-density material should be condensed into `paper/main.md` without bloating it.

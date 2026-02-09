@@ -427,6 +427,15 @@ This connects directly to the Section 3 impulse scaffold: central impulses prese
 ### 5.5 Extremal Measures: Finite-Dimensional Analogy and Limits
 The phrase “Dirac distributions to calculate extrema” is unambiguous in finite dimensions. For a smooth \(f:\mathbb R\to\mathbb R\), the distribution \(\delta(f'(x))\) is supported on the critical points of \(f\). In higher dimensions one analogously uses \(\delta(\nabla f)\).
 
+`Derivation D3.5 (Square-root delta normalization and Born-rule form).`
+Let \(f:\mathbb R^N\to\mathbb R\) be smooth and define, for \(\varepsilon>0\),
+\(A_\varepsilon(O):=\varepsilon^{-N/2}\int e^{\frac{i}{\varepsilon}f(x)}O(x)\,dx\).
+Then
+\(|A_\varepsilon(O)|^2=\varepsilon^{-N}\iint e^{\frac{i}{\varepsilon}(f(x)-f(y))}O(x)\overline{O(y)}\,dx\,dy\).
+Under the near-diagonal scaling \(y=x+\varepsilon z\) (so \(dy=\varepsilon^Ndz\)), one formally obtains
+\(|A_\varepsilon(O)|^2\to (2\pi)^N\int \delta(\nabla f(x))\,|O(x)|^2\,dx\).
+This exhibits the pattern “density = \(|\text{amplitude}|^2\)”, with the exponent \(N/2\) matching the half-density scaling needed to cancel Jacobians under refinement.
+
 In infinite-dimensional settings (paths), one is tempted to write “formal measures” supported on stationary-action trajectories. A concrete version of this idea, and its relation to exponential weighting and consistency, is developed in [Rivero9803035]. In this manuscript we treat such expressions as roadmap heuristics until they are regularized and made compatible with composition (Section 6).
 
 ### 5.6 Caveats (Nonlinear Distribution Pitfalls)
