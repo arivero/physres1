@@ -258,6 +258,58 @@ Thus the boundary-condition parameter \(R\) is equivalent to the bound-state sca
 `Heuristic H1.6 (Scheme dependence is the constant in “\(\ln r\)”).`
 The only ambiguity in the short-distance matching is the additive constant accompanying \(\ln r\) (here \(-\ln(\kappa/2)-\gamma\)). Changing that finite constant is exactly the finite-subtraction freedom of Section 5.4, and it rescales the physical length/energy scale (\(R\), \(\kappa_\ast\)) without changing the beta function.
 
+### 5.8 Contact Interactions Across Dimensions: 1D vs 2D vs 3D
+The \(2\)D delta is singled out above because its coupling is marginal and produces a clean log-running and transmutation scale. But contact interactions exist in all dimensions, and comparing \(1\)D/\(2\)D/\(3\)D is a good sanity-check on the “RG = compatibility” thesis: the dimension controls which kind of divergence (or boundary-condition flow) appears.
+
+`Proposition P1.6 (Canonical dimension of the delta coupling).`
+In \(d\) spatial dimensions, the contact potential \(V(x)=g\,\delta^{(d)}(x)\) requires \([g]=\text{length}^{d-2}\) (in \(\hbar=c=1\) units), because \([\delta^{(d)}]=\text{length}^{-d}\) and the kinetic term sets \([E]=\text{length}^{-2}\).
+Thus:
+1. \(d=1\): \([g]=\text{length}^{-1}\) (irrelevant in naive power counting),
+2. \(d=2\): \([g]=\text{length}^{0}\) (marginal; logarithms),
+3. \(d=3\): \([g]=\text{length}^{+1}\) (relevant; power divergences).
+
+#### 5.8.1 The 3D delta: scattering length and (Wilsonian) fixed points
+In \(3\)D, the loop integral \(I(E)\) diverges linearly with a momentum cutoff. With \(E=\hbar^2k^2/(2m)\) and \(|q|<\Lambda\),
+\[
+I_{3D}(E;\Lambda)
+=\int \frac{d^3q}{(2\pi)^3}\,\frac{1}{E-\frac{\hbar^2 q^2}{2m}+i0}
+=-\frac{m}{\pi^2\hbar^2}\Lambda
+i\,\frac{m}{2\pi\hbar^2}k
+O\!\left(\frac{k^2}{\Lambda}\right).
+\]
+So
+\[
+T(E;\Lambda)=\frac{1}{g_B(\Lambda)^{-1}-I_{3D}(E;\Lambda)}
+\]
+is cutoff-dependent unless one trades \(g_B(\Lambda)\) for a physical parameter.
+A standard choice is to define a renormalized coupling at threshold (equivalently a scattering length \(a\)) by fixing \(T(0)\):
+\[
+\frac{1}{T(0)}\equiv \frac{m}{2\pi\hbar^2}\,\frac{1}{a}
+\quad\Longleftrightarrow\quad
+\frac{1}{g_B(\Lambda)}+\frac{m}{\pi^2\hbar^2}\Lambda
+=\frac{m}{2\pi\hbar^2}\,\frac{1}{a}.
+\]
+Then the renormalized amplitude takes the universal one-parameter form
+\[
+T(E)=\frac{2\pi\hbar^2/m}{\frac{1}{a}-ik},
+\]
+up to conventions for the overall normalization of \(T\).
+
+`Heuristic H1.9 (3D “no log” does not mean “no RG”).`
+Because the divergence is power-like, a minimal-subtraction style scheme can hide running. But in a Wilsonian parameterization with a dimensionless coupling (roughly \( \hat g(\Lambda)\propto \Lambda g_B(\Lambda)\)), the flow can exhibit fixed points corresponding to \(a=0\) (free/transparent) and \(a=\infty\) (unitarity). The point for this note is structural: even when running is not logarithmic, a compatibility condition still controls how the effective description must change with scale.
+
+#### 5.8.2 The 1D line: U(2) contact family and richer fixed-point set
+In \(1\)D, the pure \(\delta(x)\) interaction is already a well-defined self-adjoint Hamiltonian and does not require a UV subtraction to make scattering finite. However, the *space of all* contact interactions on the full line is richer: it is naturally parameterized by boundary conditions at the origin (a self-adjoint extension of the free Hamiltonian on \(\mathbb R\setminus\{0\}\)), and scaling acts nontrivially on that parameter space.
+
+One convenient description is in terms of the (dimensionless) cutoff-\(a\) scattering matrix \(\tilde S_{\tilde k,a}\) as a function of \(\tilde k=ak\). A Wilson--Kogut style scaling transformation acts by
+\[
+\tilde S^{(t)}_{\tilde k}=T^t[\tilde S]_{\tilde k}=\tilde S_{e^{-t}\tilde k},
+\]
+so fixed points are exactly **constant** unitary matrices satisfying the usual 1D constraints (unitarity and \(S_{-k}=Q S_k^\dagger Q\) with \(Q\) swapping left/right channels). Boya--Rivero show that this yields a nontrivial fixed-point set (including a circle of fixed points in the time-reversal-invariant sector) and that familiar contact interactions (\(\delta\), \(\delta'\), decoupled half-lines) sit on trajectories connecting these fixed points [BoyaRivero1994Contact].
+
+`Heuristic H1.10 (Why 1D looks “more complicated”).`
+The lesson is not that \(1\)D is “more renormalizable”; it is that the relevant notion of RG data for point interactions is the boundary-condition parameter space. In \(2\)D the same “scale from a point” reappears as a single transmutation scale. In \(1\)D, because the full contact family is larger (U(2) rather than a one-parameter subset), the scaling flow can have a correspondingly richer fixed-point structure.
+
 ## 6. Semigroup vs Group: What Is (Not) Invertible
 The phrase “renormalization group” hides two different notions:
 1. an information-losing *coarse-graining map* on descriptions of the system, and

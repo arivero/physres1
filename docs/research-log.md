@@ -179,3 +179,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the “need a \(\text{length}^{d/2}\) scale” claim now has a concrete local-coordinate computation attached to it, not just dimensional analysis.
 - Sources touched (keys + status changes): none.
 - Next: decide whether to add a one-paragraph version of this near-diagonal scaling witness into `paper/main.md` (likely not necessary given D4.0/D4.1a), or keep it confined to the Planck-area follow-up.
+
+## 2026-02-09 (C18 start: 1D/3D contact interactions around the 2D delta)
+- Focus: broaden the “RG is definitional” witness by comparing delta/contact interactions across dimensions.
+- Question: if 2D is our clean log-running example, what should we say about 3D (scattering length/unitarity) and 1D (richer fixed points on the full line)?
+- Work: added Section 5.8 to `papers/rg-fundamental/main.md`:
+  - 3D: linear divergence with cutoff, renormalization to a scattering length, and a short note on Wilsonian fixed points (free vs unitarity).
+  - 1D: emphasize that while the pure \(\delta\) is finite, the full U(2) contact family has a nontrivial fixed-point set under scaling (Boya--Rivero flow picture) [BoyaRivero1994Contact].
+- Result: the delta example is now positioned as the “marginal/log” middle case between “boundary-condition flow” (1D) and “power divergence/scattering length” (3D), making the dimension-dependence of RG structure part of the argument rather than a footnote.
+- Sources touched (keys + status changes): none.
+- Next: decide whether to add an independent non-Rivero anchor for the 1D U(2) classification (e.g. Albeverio/Kurasov) before polishing for publication.

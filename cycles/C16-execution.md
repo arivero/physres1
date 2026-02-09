@@ -5,4 +5,4 @@
 2. Rebuilt `papers/planck-area/main.pdf`.
 
 ## Status
-In progress.
+Completed.

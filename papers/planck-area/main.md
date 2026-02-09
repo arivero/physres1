@@ -202,6 +202,20 @@ so the Planck length/area is *derived* from \(\alpha'\) and \(g_s\) rather than 
 The value of H2.5 is comparative:
 it distinguishes dimensions in which the needed \(\text{length}^{d/2}\) factor can be supplied by *simple* coupling dependence (integer powers of the already-present couplings), versus dimensions in which any such factor requires either (i) introducing extra scales/couplings, (ii) taking fractional powers, or (iii) invoking non-analytic mechanisms (dimensional transmutation).
 
+`Heuristic H2.13 (Dimensional transmutation as a scale-supplier).`
+If one relaxes H2.5’s “analytic monomial in couplings” requirement, then even a theory with only *dimensionless* couplings can generate a physical length scale through RG invariance: a running coupling \(g(\mu)\) can be traded for an RG-invariant scale \(\kappa_\ast\) (or \(\Lambda\)), typically of the form
+\(\kappa_\ast \sim \mu\,\exp(-\mathrm{const}/g(\mu)^2)\) or \(\kappa_\ast \sim \mu\,\exp(-\mathrm{const}/g(\mu))\).
+In that branch, the half-density scalarization scale required by H2.4 can be supplied by \(\kappa_\ast^{-d/2}\) (or its square in \(d=4\) as an area scale), but the scale is no longer an analytic monomial in the couplings: it is emergent and non-perturbative in the naive coupling expansion.
+
+`Example E5 (2D delta: transmutation yields a length scale).`
+In the \(2\)D delta interaction, the contact coupling is marginal and the renormalized theory is naturally parameterized by an RG-invariant inverse length \(\kappa_\ast\) rather than by the bare coupling. Concretely, one finds (up to conventions) a running coupling \(g_R(\mu)\) with beta function \(\beta(g_R)\propto g_R^2\), and the RG invariant
+\[
+\kappa_\ast^2
+\equiv
+\mu^2\exp\!\left(\frac{2\pi\hbar^2}{m}\frac{1}{g_R(\mu)}\right),
+\]
+so \(\kappa_\ast\) is independent of the subtraction scale \(\mu\) and sets a bound-state/scattering scale [ManuelTarrach1994PertRenQM]. This is a minimal witness that “a scale is forced by compatibility” can occur even without a dimensionful coupling, via renormalization rather than via analytic monomials.
+
 ### 3.4 Running H2.3: Is “Dimensionless \(f\)” Physics or Convention?
 The half-density formalism (H2.1) gives a canonical pairing \(\int \bar\psi\,\psi\) that does not require choosing a background measure. But when we write \(\psi=f\,\sigma_\ast\) (H2.2), we are choosing a *representation* of the same object as a scalar function with respect to a chosen positive density \(\rho_\ast=\sigma_\ast^2\).
 
