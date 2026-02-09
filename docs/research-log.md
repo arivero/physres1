@@ -108,3 +108,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the “half-density → Planck area” direction is now explicitly conditional and falsifiable: it becomes a dimension-selection mechanism rather than a pure dimensional-analysis slogan.
 - Sources touched (keys + status changes): none.
 - Next: connect this ladder to RG language (constant vs running normalization conventions) and decide whether to keep the gravity-based sieve as the primary selection principle or one filter among many.
+
+## 2026-02-09 (C13 continuation: study each hypothesis separately)
+- Focus: modularize the argument so each hypothesis can be studied/accepted/rejected independently.
+- Question: which parts are geometry, which parts are conventions, and which parts are genuinely additional “universality” axioms?
+- Work: added an explicit hypothesis ledger (H2.1–H2.5) plus a “relaxation tree” of alternative branches in `papers/planck-area/main.md`.
+- Result: the draft now cleanly separates (i) half-density composition facts, (ii) scalarization choices, and (iii) the extra selection principles that can single out \(d=4\).
+- Sources touched (keys + status changes): none.
+- Next: pick one branch to analyze next (e.g. allow background metric; allow fractional powers; replace gravity by another coupling) and see what “special dimensions” it selects.

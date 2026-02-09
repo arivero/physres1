@@ -67,6 +67,44 @@ If the universal half-density normalization constant is required to be built fro
 which holds if and only if \(d=4\).
 In that case \(G_4\) itself has dimension of area, and the corresponding area scale is the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
+### 3.1 Hypotheses as Separate Knobs (What Is Forced vs Chosen)
+The discussion above mixes three different kinds of statements:
+1. **Geometric facts** (what half-densities are, how they compose, how they scale),
+2. **Representational choices** (how one turns half-density objects into scalar numbers),
+3. **Universality/selection principles** (what choices are allowed if we demand “background-free” and “built from couplings”).
+
+To study these separately, it is useful to keep the hypotheses explicit.
+
+`Hypothesis H2.1 (Half-density formulation).`
+Quantum kernels are treated as bi-half-densities so that composition in intermediate variables is coordinate invariant (Section 2 and Derivation D1.4).
+
+`Hypothesis H2.2 (Scalarization by a reference half-density).`
+To interpret half-density amplitudes as scalar numerical functions, we pick a nowhere-vanishing reference half-density \(\sigma_\ast\) and write \(\psi=f\,\sigma_\ast\) (Proposition P1.1).
+
+`Hypothesis H2.3 (Dimensionless scalar representative).`
+The scalar representative \(f\) is required to be dimensionless in physical units (Proposition P1.2). This forces \(\sigma_\ast\) to carry the full \(\text{length}^{d/2}\) weight.
+
+`Hypothesis H2.4 (Background-free constancy).`
+The reference \(\sigma_\ast\) is taken to be constant/field-independent, rather than determined by background geometry (e.g. a Riemannian volume \(|g|^{1/4}|dx|^{1/2}\)) or by dynamical fields (e.g. a dilaton-like factor). This is the first point where a *universal constant* enters.
+
+`Hypothesis H2.5 (Analyticity / no fractional powers of couplings).`
+If the universal constant is required to be built from the theory’s couplings without fractional powers, then dimensional analysis becomes a *dimension sieve* rather than a tautology. Derivation D1.3 is the gravity instance: “use \(G_d\) without fractional powers” singles out \(d=4\).
+
+`Heuristic H2.6 (Where “special dimensions” can appear).`
+Special dimensions do not come from half-densities alone (Hypothesis H2.1). They appear only after adding a selection principle like H2.4–H2.5: the requirement that the scalarization choice be universal, background-free, and coupling-built in a restricted (e.g. analytic) way.
+
+### 3.2 What Changes When a Hypothesis Is Relaxed?
+This subsection records the main “branches” that need separate study.
+
+1. **Drop H2.3 (allow dimensionful \(f\)).**
+   Then no universal \(\text{length}^{d/2}\) constant is forced; the dimensional weight can be carried by the scalar representative itself (as in the usual statement “wavefunctions have dimension \(\text{length}^{-d/2}\)”).
+2. **Drop H2.4 (allow background geometry).**
+   Then \(\sigma_\ast\) can be chosen from a metric (or other structure), and the “universal constant” is replaced by background-dependent normalization.
+3. **Drop H2.5 (allow fractional powers).**
+   Then in any \(d>2\) one can build a \(\text{length}^{d/2}\) constant from gravity via \(G_d^{\,d/(2(d-2))}\) (in \(c=\hbar=1\) units), so \(d=4\) is no longer singled out; instead, \(d=4\) is simply the unique case where the exponent is an integer.
+4. **Change “which coupling supplies the scale”.**
+   Using other dimensionful couplings (cosmological constant, string tension, gauge couplings in various dimensions, etc.) yields different “special-dimension” sieves. This is conceptually aligned with the observation that some dimensions are singled out by other structures (division algebras, special holonomy, supersymmetry), but those filters are separate from the half-density story and should not be conflated.
+
 ## 4. Stationary Phase Produces Half-Density Prefactors (Short-Time Kernel)
 The main manuscript uses stationary phase to explain why classical extremals dominate refinement limits. Here we add the complementary kernel-level fact:
 stationary phase does not only pick the extremal; it also produces a determinant prefactor that transforms as a half-density, i.e. the object needed for coordinate-free kernel composition.
