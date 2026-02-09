@@ -23,4 +23,4 @@
 2. `docs/research-log.md` (recorded the start of `C13`).
 
 ## Status
-In progress: next step is to decide whether the “universal area scale” should be identified with \(G_4\) (gravity-only) or treated more abstractly as “the UV scale that fixes scalarization” (allowing \(\alpha'\) in stringy UV completions), and to see if any additional half-density material should be condensed into `paper/main.md` without bloating it.
+Completed: the draft now contains explicit half-density composition/scaling witnesses plus a modular hypothesis ladder. Remaining open choices about “which universal area scale” and how strongly to connect to \(G_4\) vs emergent UV scales are deferred to a new content cycle so this one can stay closed.

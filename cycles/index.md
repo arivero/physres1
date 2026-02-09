@@ -15,7 +15,7 @@
 11. `C10` Completed.
 12. `C11` Completed.
 13. `C12` Completed.
-14. `C13` In Progress.
+14. `C13` Completed.
 15. `C14` Completed.
 16. `C15` Completed.
 17. `C16` Completed.
@@ -32,13 +32,13 @@
 - `S00` Completed.
 
 ### Quality Cycles (`Qnn`)
-- `Q00` In Progress.
+- `Q00` Completed.
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Execute `C21`: tighten the “half-density \(\Rightarrow\) universal \(\text{length}^{d/2}\) scale” ladder, and make the \(d=4\) area specialization explicit without overclaiming.
-2. Run `B00`: add at least one independent, non-preprint anchor for point interactions (Albeverio/Kurasov lineage) and capture OA sources when possible.
-3. Use `S00` blackboard work to keep exploration free, then promote only the stable pieces into `papers/planck-area/main.md`.
+1. Start `C22`: implement the Q00 actionable fixes that tighten the half-density \(\Rightarrow\) scale/area story and reduce ambiguity (notation, minimal-claim statements, and cross-paper pointers).
+2. Start `B01`: locate/capture an OA-stable source for `[Jackiw1991DeltaPotentials]` and add one standard half-density / semiclassical-propagator anchor (`PENDING` if needed).
+3. Start `S01`: blackboard the “H2.5 split” (integrality vs perturbative analyticity vs transmutation) and map which statements survive each branch.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

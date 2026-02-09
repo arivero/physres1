@@ -238,3 +238,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: `papers/planck-area/main.md` now separates two distinct “scale suppliers” cleanly: (i) integer-exponent coupling monomials (H2.5) and (ii) RG-generated invariant scales (outside H2.5), with an explicit \(d=4\Rightarrow\) area specialization *conditional on the bookkeeping choice*.
 - Sources touched (keys + status changes): none.
 - Next: decide whether to add a short cross-link from `paper/main.md` to this follow-up (one sentence), or keep the cornerstone paper free of Planck-scale discussion.
+
+## 2026-02-09 (Q00: PhysRev-quality pass)
+- Focus: referee-style quality review without “herd narrative” drift.
+- Question: are the three manuscripts (cornerstone + two dependents) internally clear about what is derived vs assumed, and are the load-bearing claims independently anchorable?
+- Work: ran the Q00 checklist and recorded per-manuscript strengths/risks/actionable fixes in `cycles/Q00-execution.md`.
+- Result: a concrete queue of `C`/`S`/`B` next steps, with half-densities kept primary and preprint-only claims flagged as heuristic until independently anchored.
+- Sources touched (keys + status changes): none (review only).
+- Next: start `C22` (implement the clarity/notation/minimal-claim fixes), then `B01` (Jackiw + half-density anchors), then `S01` (H2.5 split blackboard).
