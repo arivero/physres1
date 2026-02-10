@@ -531,3 +531,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - \(\delta'\) arises for discontinuous \(q\) (or differentiated impulses / higher-derivative actions).
 - Result: we now have a concrete “worked corner” computation that can be cited if we later promote the corners/impulses thread beyond a remark.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S12: contact loop integrals in 1D/2D/3D)
+- Focus: record the explicit cutoff loop integrals \(I_d(E;\Lambda)\) controlling contact-interaction renormalization in \(d=1,2,3\) spatial dimensions.
+- Work: added `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` with consistent normalization and the 1D (finite), 2D (log divergent), and 3D (linear divergent) asymptotics, including the imaginary parts from the \(+i0\) prescription.
+- Result: we now have a compact “dimension table” for delta/contact divergences that can be promoted into `papers/rg-fundamental/main.md` to clarify why 2D is the cleanest log-RG witness while 3D is power-subtraction and 1D simple \(\delta\) is finite.
+- Sources touched (keys + status changes): none.
