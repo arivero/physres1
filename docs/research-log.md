@@ -966,3 +966,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the draft now states explicitly that low-mass Compton-like behavior is robust, while high-mass asymptotics are clock-convention dependent in the present SR-mechanical model.
 - Sources touched (keys + status changes): none.
 - Next: run `Q17` on D1.5/D1.5b/D1.5c for clarity and overclaim control.
+
+## 2026-02-10 (Q17: quality pass on D1.5-series block)
+- Focus: check coherence and claim hygiene after adding D1.5c.
+- Checks:
+  - read-through of D1.5, D1.5a, D1.5b, D1.5c as one chain;
+  - symbolic sanity: D1.5b large-\(M\) limit \(r_t\to 2\dot A_0/c\), D1.5c endpoint \(r_\tau\to0\) as \(M\to2M_P^{-}\);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; the robust-vs-convention-sensitive split is explicit and avoids overclaiming.
+- Sources touched (keys + status changes): none.

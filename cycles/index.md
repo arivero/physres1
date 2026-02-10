@@ -115,11 +115,12 @@
 - `Q14` Completed.
 - `Q15` Completed.
 - `Q16` Completed.
+- `Q17` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q17`: quality pass on the D1.5/D1.5b/D1.5c block after caveat insertion.
-2. `S29`: test whether a covariant (clock-independent) areal invariant can replace both \(dA/dt\) and \(dA/d\tau\) postulates.
+1. `S29`: test whether a covariant (clock-independent) areal invariant can replace both \(dA/dt\) and \(dA/d\tau\) postulates.
+2. `C56`: if S29 yields a clean invariant candidate, promote as a short outlook remark in `papers/planck-area/main.md`.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
