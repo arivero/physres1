@@ -1283,3 +1283,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: implementation path now includes a minimal uncertainty layer without expanding into full methods detail.
 - Sources touched (keys + status changes): none.
 - Next: run `Q25` on D1.5b-k for coherence and readability.
+
+## 2026-02-10 (Q25: quality pass on D1.5b-k)
+- Focus: consistency review after adding uncertainty addendum D1.5k.
+- Checks:
+  - read-through of D1.5b-k progression;
+  - verified D1.5k remains baseline-level and aligned with D1.5j;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; branch remains coherent and scoped.
+- Sources touched (keys + status changes): none.
