@@ -312,3 +312,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the draft now has a precise bookkeeping statement connecting the half-density scalarization gauge to the standard “wavefunction renormalization” language, while keeping physical content tied to RG invariants.
 - Sources touched (keys + status changes): none.
 - Next: optionally start a bibliography cycle to find an OA modern semiclassical-propagator reference for the Van Vleck prefactor formula (beyond heritage/attribution anchors).
+
+## 2026-02-10 (S03: interpret H2.5b analyticity)
+- Focus: remove ambiguity in H2.5b (“perturbative analyticity”) when couplings are dimensionful.
+- Question: can H2.5b be stated without smuggling in explicit \(\mu\)-dependence, and how does it relate to the monomial sieve vs transmutation?
+- Work: wrote `blackboards/2026-02-10-h2-5b-meaning.md` defining a concrete reading (“analytic in dimensionless couplings \(\hat g(\mu)\)”) and showing that \(\mu\)-independent dimensionful constants then require either an engineering-dimension monomial (sieve) or non-analytic transmutation (outside H2.5b).
+- Result: extracted two promotion candidates to tighten H2.5b language in `papers/planck-area/main.md` without overclaiming.
+- Sources touched (keys + status changes): none (blackboard only).
+- Next: promote the stable clarification sentence(s) into the Planck-area draft in the next `C` cycle.
