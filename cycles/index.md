@@ -36,6 +36,7 @@
 32. `C31` Completed.
 33. `C32` Completed.
 34. `C33` Completed.
+35. `C34` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -63,10 +64,10 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `C34`: start `papers/half-density-qft/main.md` (wave 1: densitized scalar field + propagators as bi-half-densities; BV as outlook only).
+1. `Q04`: quick referee-style pass on `papers/half-density-qft/main.md` (concision + overreach check).
 2. `C35`: tighten `papers/delta-objects/main.md` with an explicit \(\delta(f')\) vs \(\delta'\) clarifier and a weak Euler–Lagrange corner/jump remark.
 3. Optional `C36`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
-4. Optional `Q04`: quick quality pass on the RG note after H1.12 + on any new follow-up draft content (redundancy/flow).
+4. Optional `Q05`: quality pass on the RG note after H1.12 and on the delta-objects clarifier once promoted.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

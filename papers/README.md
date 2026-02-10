@@ -4,6 +4,8 @@ This repository’s publishable manuscript is `paper/main.md`.
 This `papers/` folder holds follow-up drafts that **depend on** (and cite) the main paper’s narrative and bibliography ledger.
 
 ## Manuscripts
+- `papers/delta-objects/main.md`: identity delta kernel, stationary-set delta, and point interactions (draft).
+- `papers/half-density-qft/main.md`: half-densities in QFT propagators and densitized fields (draft).
 - `papers/planck-area/main.md`: Planck area / half-density scaling program (draft).
 - `papers/rg-fundamental/main.md`: RG as fundamental compatibility principle (draft).
 

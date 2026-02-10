@@ -479,3 +479,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: half-densities remain the organizing representation in QFT kernels as well as QM kernels; and we now have a compact distribution-theory “delta dictionary” to prevent conflations when discussing stationary/extremal constraints.
 - Sources touched (keys + status changes): none (study only; BV anchors queued).
 - Next: `C34` start `papers/half-density-qft/main.md` (wave 1: densitized scalar field + kernel semantics), and `C35` tighten `papers/delta-objects/main.md` with an explicit \(\delta(f')\) vs \(\delta'\) clarifier + weak Euler–Lagrange corner remark.
+
+## 2026-02-10 (C34: start half-densities-in-QFT follow-up draft)
+- Focus: create a dependent follow-up draft that makes the half-density kernel calculus explicit for QFT spacetime propagators, with one worked computation (densitized scalar field).
+- Question: can we state QFT propagators canonically as bi-half-density kernels and separate “canonical objects” from scalarization conventions (e.g. \(\sqrt{|g|}\))?
+- Work:
+  - Added `papers/half-density-qft/main.md` (wave 1) with a worked densitized scalar field computation \(\psi=|g|^{1/4}\phi\), an explicit coordinate formula for the conjugated Laplacian on half-densities, and the propagator kernel written as a canonical bi-half-density.
+  - Updated `papers/README.md` to list the new draft (and the delta-objects draft).
+- Result: the repo now has a concrete QFT-facing follow-up paper that extends the half-density-first stance beyond QM kernels, while keeping BV/field-space themes explicitly “outlook only” pending independent anchors.
+- Sources touched (keys + status changes): none.
+- Next: a short `Q` pass for concision/overreach, then `C35` to tighten `papers/delta-objects/main.md` with a \(\delta(f')\) vs \(\delta'\) clarifier and a weak Euler–Lagrange/corners bridge.

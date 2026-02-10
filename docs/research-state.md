@@ -78,6 +78,7 @@ Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and imm
 
 ### 2b) Half-densities in QFT (follow-up draft candidate)
 - Seed note: `blackboards/2026-02-10-half-densities-in-qft.md`.
+- Draft: `papers/half-density-qft/main.md`.
 - Goal: make the “kernel as bi-half-density” calculus explicit for spacetime propagators/Green functions, with at least one worked computation (densitized scalar field \(\psi=|g|^{1/4}\phi\)); keep BV half-densities as outlook unless anchored by a bibliography cycle.
 
 ### 3) RG as fundamental (follow-up draft)
