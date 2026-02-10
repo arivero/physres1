@@ -116,6 +116,7 @@
 - `S36` Completed.
 - `S37` Completed.
 - `S38` Completed.
+- `S39` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -149,8 +150,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S39`: start distribution-derivative study branch for action-variation kernels.
-2. `C66`: promote one concise distribution-kernel result into a manuscript draft.
+1. `C66`: promote one concise distribution-kernel result into a manuscript draft.
+2. `Q28`: quality pass on the promoted RG-section addition.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

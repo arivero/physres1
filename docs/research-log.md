@@ -1368,3 +1368,22 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required; branch remains coherent.
 - Sources touched (keys + status changes): none.
 - Next: run `S39` on distribution-derivative variational kernels for a new manuscript promotion outside D1.5.
+
+## 2026-02-10 (S39: weak variational derivative as counterterm-limit pattern)
+- Focus: build a non-point-potential bridge from distribution theory to the RG "local subtraction + limit" grammar.
+- Work:
+  - Derived weak finite-difference identity:
+    \[
+    \int \frac{p(t+\varepsilon)-p(t)}{\varepsilon}\eta(t)\,dt
+    \to \langle \dot p,\eta\rangle.
+    \]
+  - Interpreted this as regulate/subtract/limit in distributional form.
+  - Worked jump example \(p(t)=p_-+(p_+-p_-)H(t-t_0)\), giving
+    \[
+    \dot p=(p_+-p_-)\delta(t-t_0),
+    \]
+    i.e. explicit contact-term generation in weak Euler-Lagrange form.
+  - Logged derivation in `blackboards/2026-02-10-weak-variational-derivative-as-counterterm-limit.md`.
+- Result: obtained a concise promotion candidate for RG paper Section 3 that aligns with the derivative-as-counterterm intuition while staying distribution-theoretic.
+- Sources touched (keys + status changes): none.
+- Next: promote the remark in `C66`.
