@@ -24,6 +24,7 @@ In infinite-dimensional spaces there is no nontrivial translation-invariant \(\s
 
 `Heuristic H0.3 (Constants as control parameters for compatibility limits).`
 In this program, \(\hbar\), \(c\), and \(G\) can be read as control parameters for three distinct compatibilities: \(\hbar\to0\) recovers classical stationarity from oscillatory composition, \(c\to\infty\) recovers Galilean/Newtonian kinematics from Lorentz-compatible refinement, and \(G\to0\) switches off geometric backreaction (with \(\hbar,c,G\) together defining the Planck scale where quantum and gravitational refinement controls meet).
+`Derivation D0.2` below gives a concrete example of a \(c\to\infty\) passage requiring an explicit subtraction convention.
 
 The third anchor is methodological. In this manuscript, deformation quantization and renormalization are not presented as detached specialist topics. They are two ways to control limits:
 1. Deformation quantization controls the classical-to-quantum passage through algebraic deformation and recovery of Poisson structure in the small-parameter limit [Landsman1998] [Connes1994].
@@ -94,6 +95,21 @@ Choosing \(c_0=i\) and \(\kappa=\hbar\) recovers the standard oscillatory quantu
 
 `Heuristic H0.1 (Classical recovery as concentration).`
 When the phase scale is small relative to action variation, dominant contributions concentrate near stationary-action trajectories. This is the structural claim later made precise through stationary-phase analysis.
+
+`Derivation D0.2 (Nonrelativistic limit as a controlled \(c\to\infty\) subtraction).`
+Consider the relativistic free-particle action written with an explicit speed-of-light parameter:
+\[
+S_{\mathrm{rel}}[q]
+=-mc^2\int_{t_i}^{t_f} dt\;\sqrt{1-\frac{\|\dot q(t)\|^2}{c^2}}.
+\]
+For \(\|\dot q\|\ll c\), expand the square root:
+\[
+S_{\mathrm{rel}}[q]
+=\int_{t_i}^{t_f} dt\left(-mc^2+\frac12 m\|\dot q(t)\|^2+O(c^{-2})\right).
+\]
+The term \(-mc^2(t_f-t_i)\) diverges as \(c\to\infty\). Classically it is inert (adding a constant to \(\mathcal L\) does not change the Euler-Lagrange equations), so one may subtract it as an allowed additive counterterm to obtain a finite \(c\to\infty\) limit:
+the Newtonian kinetic action \(\int \frac12 m\|\dot q\|^2 dt\) plus higher-order relativistic corrections.
+In quantum amplitudes, the same subtraction corresponds to an overall phase \(e^{-imc^2(t_f-t_i)/\hbar}\).
 
 ### 2.5 Scope Boundary Established
 This section fixes notation and methodological boundaries:

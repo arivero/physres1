@@ -1918,3 +1918,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - adjusted `paper/main.md` `Derivation D4.2a` wording to "hard elimination/extremization" rather than "Newtonian elimination".
 - Sources touched (keys + status changes): none.
 - Next: consider a similarly nonstandard witness for \(c\) or \(G\) (optional `C85`).
+
+## 2026-02-10 (C85: concrete witness for \(c\to\infty\) as a controlled subtraction limit)
+- Focus: provide a concrete "constants as controls" witness for \(c\) that matches the manuscript's limit-control theme.
+- Work:
+  - added `Derivation D0.2` in `paper/main.md` expanding the relativistic free-particle action at large \(c\),
+    exhibiting the divergent \(-mc^2(t_f-t_i)\) term and its removal as an allowed additive counterterm.
+  - added a one-sentence pointer near `Heuristic H0.3` to the concrete witness.
+- Result: the manuscript now exhibits an explicit \(c\to\infty\) limit that is not well-defined until a subtraction convention is specified (parallel in spirit to renormalization/counterterm control of other refinement limits).
+- Sources touched (keys + status changes): none.
+- Next: optional `Q44` to referee-pass this new block, and optional work toward a similarly concrete \(G\) witness tied to the half-density area-scale ladder.
