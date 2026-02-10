@@ -114,6 +114,16 @@ Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and imm
 - Close the `PENDING` acquisition gaps (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`) when they become blocking for revisions.
 - Optional: switch to pandoc `[@Key]` citations + a `.bib` file if a formal reference list is desired (keep `sources/` out of git).
 
+### 10) Action–Angle indeterminacy (central potentials)
+- Goal: formulate a clean “sharp actions \(\Rightarrow\) delocalized conjugate angles” statement for integrable central potentials, with at least one explicit computation in the \((\phi,L_z)\) sector.
+- Seed note: `blackboards/2026-02-10-action-angle-indeterminacy-central-potentials.md`.
+- Intended role: foundations-level clarification of what is (and is not) “undetermined” in stationary states, compatible with the project’s semiclassical/stationary-phase narrative.
+
+### 11) Fermionic mediators → contact limits / boundary-condition data
+- Goal: clarify whether (and in what sense) a fermionic field can generate an effective central potential, emphasizing the Grassmann-source obstruction and the EFT/contact-interaction route (delta kernels, derivative contact terms, self-adjoint extensions).
+- Seed note: `blackboards/2026-02-10-fermionic-mediators-central-potentials-and-contact-limits.md`.
+- Intended role: connect “mediator-field talk” to the repo’s point-interaction + RG themes in a controlled, falsifiable way.
+
 ## Immediate Next Actions (Low Friction)
 1. Add a dated entry to `docs/research-log.md` at the start of each session (even if work is exploratory).
 2. When a derivation starts to stabilize, create a dedicated note in `paper/notes/` and link it from the log.

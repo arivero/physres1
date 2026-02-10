@@ -1956,3 +1956,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: wrote `blackboards/2026-02-10-planck-areal-speed-circular-orbit.md`.
 - Sources touched (keys + status changes): none.
 - Next: decide whether to promote as a short remark in Section 3 or keep as a dependent-draft witness.
+
+## 2026-02-10 (Theme pool expansion: action–angle indeterminacy + fermionic mediator contact limits)
+- Focus: add two new themes to the research backlog for possible foundations follow-ups.
+- Work:
+  - added action–angle/phase–action theme note: `blackboards/2026-02-10-action-angle-indeterminacy-central-potentials.md`.
+  - added fermionic-mediator/contact-limit theme note: `blackboards/2026-02-10-fermionic-mediators-central-potentials-and-contact-limits.md`.
+  - updated backlog pointers in `docs/next-articles.md` and `docs/research-state.md`.
+- Result: both themes now have an explicit derivation scaffold aligned with the repo’s “refinement compatibility” framing, without promoting any new claims into manuscript prose.
+- Sources touched (keys + status changes): none.
