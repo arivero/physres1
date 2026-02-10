@@ -1485,3 +1485,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - recorded derivation + promotion target in `blackboards/2026-02-10-half-density-doubling-density-matrix-kernels.md`.
 - Result: prepared a concise manuscript remark for `papers/half-density-qft/main.md` linking bra/ket doubling to kernel composition (without new bibliography).
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C69: promote QFT doubling bridge in half-density QFT draft)
+- Focus: extend the half-density QFT note beyond propagators to the density/operator level.
+- Work:
+  - Added `Remark D4.1` in `papers/half-density-qft/main.md` with the doubled-space kernel identity for \(\rho_t=U_t\rho_0U_t^{-1}\).
+  - Interpreted it as the kernel-level origin of bra/ket doubling while keeping the statement structural (no new bibliography claims).
+- Result: `half-density-qft` now explicitly covers why \(|\mathcal A|^2\) and real expectations naturally live on \(M\\times M\) in kernel language.
+- Sources touched (keys + status changes): none.

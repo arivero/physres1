@@ -70,6 +70,7 @@
 66. `C66` Completed.
 67. `C67` Completed.
 68. `C68` Completed.
+69. `C69` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -159,8 +160,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C69`: promote one concise QFT-doubling bridge remark into a draft manuscript.
-2. `Q31`: quality pass on the doubling remark insertion.
+1. `Q31`: quality pass on the doubling remark insertion.
+2. `S43`: return to the "Newton limit paradox" and list candidate precise obstructions.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

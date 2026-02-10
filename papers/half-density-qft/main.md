@@ -120,6 +120,14 @@ Equivalently, if \(G_g(x,y)\) denotes the usual **scalar** Green function for \(
 
 This is exactly the same “kernel as bi-half-density” structure used for QM propagators in the main manuscript, now applied to spacetime Green functions in QFT.
 
+`Remark D4.1 (Doubling: densities live on \(M\times M\)).`
+Half-density kernels also make the amplitude-vs-density doubling completely explicit. Let \(U_t\) be a (unitary) evolution operator on half-densities with kernel \(K_t(x,y)\). Then a density operator \(\rho_t=U_t\rho_0U_t^{-1}\) has a kernel satisfying
+\[
+K_{\rho_t}(x,y)
+=\int_{M\times M} K_t(x,x')\,K_{\rho_0}(x',y')\,\overline{K_t(y,y')}.
+\]
+So densities naturally propagate by a kernel on the doubled space \(M\times M\), built from the forward kernel and its conjugate. This is the kernel-level origin of bra/ket (forward/backward) doubling in real expectation values; promoting this beyond a remark should be paired with an explicit bibliography cycle.
+
 ## 5. Contact terms and counterterms as diagonal delta kernels (kernel-level remark)
 In QFT, divergences are removed by adding local counterterms to the action, e.g.
 \(\delta m^2\,\phi^2\), \(\delta Z\,(\partial\phi)^2\), curvature couplings, etc.
