@@ -115,6 +115,12 @@ To keep the branches explicit, we will refer to these as:
 - `Hypothesis H2.5a (Integrality / monomial sieve).` The normalization constant is a monomial in admitted couplings with integer exponents.
 - `Hypothesis H2.5b (Perturbative analyticity sieve).` The dependence is analytic at a specified weak-coupling point (hence forbids negative powers and other non-analytic dependence).
 
+`Heuristic H2.5b1 (Analyticity for dimensionful couplings needs a reference scale).`
+If a coupling \(g_i\) is dimensionful, “weak coupling” is only meaningful after choosing a reference scale \(\mu\) and forming a dimensionless parameter \(\hat g_i(\mu):=\mu^{-a_i}g_i\) (where \([g_i]=\text{length}^{a_i}\)). In that sense, perturbative analyticity is naturally analyticity in \(\hat g_i(\mu)\) near \(\hat g_i=0\).
+Demanding at the same time that the scalarization constant be a \(\mu\)-independent universal constant pushes one back to either:
+1. an engineering-dimension monomial in admitted dimensionful couplings with nonnegative integer exponents (the sieve branch), or
+2. a non-analytic RG-invariant transmutation scale (outside H2.5b).
+
 Separately, the RG “dimensional transmutation” mechanism (Heuristic H2.13 / Derivation D1.6a) supplies a scale *outside* both H2.5a and H2.5b: it is typically non-analytic in the coupling.
 
 Derivation D1.3 is the simplest gravity-only instance under the integrality reading: “use \(G_d\) without fractional powers” singles out \(d=4\).

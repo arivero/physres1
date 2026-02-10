@@ -320,3 +320,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: extracted two promotion candidates to tighten H2.5b language in `papers/planck-area/main.md` without overclaiming.
 - Sources touched (keys + status changes): none (blackboard only).
 - Next: promote the stable clarification sentence(s) into the Planck-area draft in the next `C` cycle.
+
+## 2026-02-10 (C25: clarify H2.5b in the draft)
+- Focus: remove the remaining ambiguity in H2.5b inside `papers/planck-area/main.md`.
+- Question: how do we state “perturbative analyticity” for dimensionful couplings without accidentally introducing explicit \(\mu\)-dependence?
+- Work: added `Heuristic H2.5b1` explaining that analyticity is naturally in dimensionless \(\hat g(\mu)\), and that \(\mu\)-independent universal constants then require either the monomial sieve (analytic, no explicit \(\mu\)) or non-analytic transmutation (outside H2.5b).
+- Result: the H2.5 branch structure is now explicit enough that readers can see exactly where \(D=4\) enters (gravity-only sieve) versus where it does not (fractional powers / transmutation).
+- Sources touched (keys + status changes): none.
+- Next: per cadence, follow with one support cycle (likely `B` when network is available) to find a modern OA semiclassical-prefactor reference; otherwise proceed with local-only study tasks.
