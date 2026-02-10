@@ -1463,3 +1463,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Framed the issue structurally (limit control for singular/divergent refinements), and positioned quantization/renormalization as distinct control mechanisms.
 - Result: the paper now states the foundational "why this program" motivation in one place, tied to concrete loci already treated later (Dirac-supported probes and divergent refinement).
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q30: quality pass on Zeno-style motivation insertion)
+- Focus: verify the new Zeno-style paragraph reads as motivation, not theorem.
+- Checks:
+  - reviewed `paper/main.md` Introduction around the new paragraph;
+  - verified it points to concrete loci already treated later (singular probes, divergent refinement);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S42` on the QFT doubling bridge in half-density kernel language.
