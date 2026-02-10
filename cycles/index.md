@@ -112,6 +112,7 @@
 - `S34` Completed.
 - `S35` Completed.
 - `S36` Completed.
+- `S37` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -143,8 +144,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S37`: test one lightweight nonlinear propagation check (Monte Carlo toy) for the projected observables.
-2. `C64`: if S37 is clean, promote a one-sentence nonlinear-validation caveat near D1.5k.
+1. `C64`: promote a one-sentence nonlinear-validation caveat near D1.5k.
+2. `Q26`: quality pass on D1.5b-l after nonlinear-validation note.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

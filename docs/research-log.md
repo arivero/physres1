@@ -1292,3 +1292,20 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; branch remains coherent and scoped.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S37: Monte Carlo toy validation of uncertainty baseline)
+- Focus: test linear uncertainty baseline against a lightweight nonlinear check.
+- Work:
+  - Ran a 250k-sample Gaussian Monte Carlo toy for
+    \[
+    q=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v).
+    \]
+  - Compared linear and Monte Carlo standard deviations:
+    \[
+    \sigma_q^{\rm linear}=6.6998\times10^{-3},\quad
+    \sigma_q^{\rm MC}=6.6918\times10^{-3},
+    \]
+    relative difference \(\approx0.12\%\).
+- Result: in mild regimes, first-order propagation is accurate; motivates a concise manuscript caveat to run nonlinear checks in stronger-nonlinearity cases.
+- Sources touched (keys + status changes): none.
+- Next: promote one-sentence nonlinear-validation caveat near D1.5k.
