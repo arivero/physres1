@@ -1056,3 +1056,17 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; branch assumptions and bounded claims are explicit.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S31: minimal timelike-structure map)
+- Focus: identify minimal extra structure needed for informative covariant areal postulates.
+- Work:
+  - Defined observer-dependent projected scalar
+    \[
+    \ell_{(u)}=\frac1m\sqrt{\frac12\,M^{(u)}_{\mu\nu}M_{(u)}^{\mu\nu}},
+    \]
+    with \(M^{(u)\mu\nu}=h(u)^\mu{}_\alpha h(u)^\nu{}_\beta M^{\alpha\beta}\), \(h(u)^\mu{}_\nu=\delta^\mu{}_\nu+u^\mu u_\nu/c^2\).
+  - Mapped three levels: no \(u^\mu\) (only \(I_1,I_2\), too coarse), generic \(u^\mu(x)\), and source-anchored \(u^\mu=U^\mu\).
+  - Recorded rule for this branch: minimal structure is source worldline \(U^\mu\); preferred fixed quantity is \(\ell_{(U)}\) (equivalently \(\dot A_{\tau,U}\)).
+- Result: provides a clean criterion for when timelike structure is acceptable without inflating assumptions.
+- Sources touched (keys + status changes): none.
+- Next: promote a compact manuscript remark encoding this rule after D1.5e.

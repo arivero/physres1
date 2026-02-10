@@ -100,6 +100,7 @@
 - `S28` Completed.
 - `S29` Completed.
 - `S30` Completed.
+- `S31` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -125,8 +126,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S31`: map what minimal timelike structure is acceptable in a background-light formulation (source worldline vs observer field).
-2. `C58`: if S31 stabilizes, add a short “minimal structure axiom” note to the D1.5 sequence.
+1. `C58`: add the short “minimal timelike-structure rule” note to the D1.5 sequence.
+2. `Q20`: quality pass on the D1.5b-D1.5f block.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
