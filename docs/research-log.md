@@ -567,3 +567,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Action queue:
   - `C`: optional micro-edit to reframe Example E4 as “universal area parameter admitted” (string as example), keeping UV-completion remarks heuristic/outlook.
   - `B`: only if the UV-completion scaling becomes load-bearing, ingest an authoritative anchor.
+
+## 2026-02-10 (C39: anti-herd micro-edit of \u03b1' sieve example in planck-area draft)
+- Focus: implement the Q07 action item by reframing the \(\alpha'\) example as an admissibility knob (“a universal area parameter \(\alpha_\ast\) is admitted”), with string theory as a parenthetical example.
+- Work: updated `papers/planck-area/main.md` Example E4 to use \(\alpha_\ast\) generically (keeping the \(d\equiv0\pmod4\) sieve), and rewrote H2.12 to state the gravity-from-\(\alpha_\ast\) scaling relation dimensionally (\(G_d\propto g^2(\alpha_\ast)^{(d-2)/2}\)) before specializing to the string case.
+- Result: the scale-sieve content is unchanged, but the narrative no longer sounds like it depends on string dynamics; \(\alpha'\) is now clearly an admissibility variant.
+- Sources touched (keys + status changes): none.

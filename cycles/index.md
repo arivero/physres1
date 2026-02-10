@@ -41,6 +41,7 @@
 37. `C36` Completed.
 38. `C37` Completed.
 39. `C38` Completed.
+40. `C39` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -75,9 +76,8 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Optional `C39`: micro-edit `papers/planck-area/main.md` Example E4/H2.12 to emphasize \(\alpha'\) as an admissibility knob (anti-herd clarity).
-2. Optional `C40`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
-3. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
+1. Optional `C40`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
+2. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
