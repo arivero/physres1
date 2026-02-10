@@ -654,3 +654,22 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: updated `papers/half-density-qft/main.md` by adding `Derivation D1.3`, expanding \(\widetilde\Delta=|g|^{1/4}\Delta_g|g|^{-1/4}\) for \(g_{\mu\nu}=e^{2\sigma}\delta_{\mu\nu}\) and noting the \(D=4\) cancellation of the \((\partial\sigma)^2\) term **within the conformal ansatz**, with a pointer to `blackboards/2026-02-10-half-density-laplacian-conformal-metric.md` for details and the SymPy check.
 - Result: the QFT half-density draft now has a concrete “scalarization gauge dependence” computation and an independent D=4 simplification observation, kept explicitly heuristic.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S17: conformal rescaling weight-family; D=4 intersection for half-densities)
+- Focus: reframe the conformal half-density Laplacian computation as a one-parameter conjugation family \(O_a=e^{a\sigma}\Delta_g e^{-a\sigma}\) to isolate why the half-density choice \(a=D/2\) is special at \(D=4\) (within the conformal ansatz).
+- Work: added `blackboards/2026-02-10-conformal-rescaling-and-half-density-laplacian-family.md` deriving the boxed formula
+  \[
+  O_a\psi
+  =e^{-2\sigma}\Big(
+  \partial^2\psi
+  +(D-2-2a)\,\partial\sigma\cdot\partial\psi
+  +\big(-a\,\partial^2\sigma + a(a-(D-2))(\partial\sigma)^2\big)\psi
+  \Big),
+  \]
+  and identifying two independent “simplicity” conditions:
+  - no first-derivative term: \(a=(D-2)/2\),
+  - no \((\partial\sigma)^2\) term: \(a\in\{0,D-2\}\).
+  Specializing to half-densities (\(a=D/2\)) shows the \((\partial\sigma)^2\) term cancels only when \(D/2=D-2\Rightarrow D=4\).
+  The note records a SymPy check (generic \(D,a\)) in a reduced \(\sigma=\sigma(x)\) toy model.
+- Result: we have a cleaner, knob-separated statement of the D=4 simplification as an “intersection point” for half-density scalarization within the conformal class; interpretation as a dimension filter remains explicitly heuristic.
+- Sources touched (keys + status changes): none.
