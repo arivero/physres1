@@ -648,3 +648,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   The note records a SymPy coefficient/sign check in a reduced \(\sigma=\sigma(x)\) toy case (D=2,3,4,5) with zero difference.
 - Result: we have a concrete, derivation-first “special dimension” observation for half-density conjugation in a conformal background; it is queued as heuristic until given a coordinate-free interpretation.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C45: promote conformal half-density Laplacian example into QFT draft)
+- Focus: promote the checked S16 computation into the half-density QFT follow-up draft as a compact worked example, with careful caveats.
+- Work: updated `papers/half-density-qft/main.md` by adding `Derivation D1.3`, expanding \(\widetilde\Delta=|g|^{1/4}\Delta_g|g|^{-1/4}\) for \(g_{\mu\nu}=e^{2\sigma}\delta_{\mu\nu}\) and noting the \(D=4\) cancellation of the \((\partial\sigma)^2\) term **within the conformal ansatz**, with a pointer to `blackboards/2026-02-10-half-density-laplacian-conformal-metric.md` for details and the SymPy check.
+- Result: the QFT half-density draft now has a concrete “scalarization gauge dependence” computation and an independent D=4 simplification observation, kept explicitly heuristic.
+- Sources touched (keys + status changes): none.

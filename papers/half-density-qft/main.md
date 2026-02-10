@@ -83,6 +83,20 @@ Assuming compact support (or boundary conditions killing boundary terms),
 \]
 which is manifestly symmetric under \((1\leftrightarrow 2)\).
 
+`Derivation D1.3 (Conformal metric expansion; D=4 simplification in the conformal class).`
+As a worked expansion, take a conformally flat background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) (Euclidean for simplicity). Then
+\(\sqrt{|g|}=e^{D\sigma}\), \(|g|^{1/4}=e^{D\sigma/2}\), \(g^{\mu\nu}=e^{-2\sigma}\delta^{\mu\nu}\), and one finds
+\[
+\widetilde\Delta\psi:=|g|^{1/4}\Delta_g|g|^{-1/4}\psi
+=e^{-2\sigma}\Big(
+\partial^2\psi
+-2\,\partial\sigma\cdot\partial\psi
+-\frac{D}{2}(\partial^2\sigma)\,\psi
++\frac{D(4-D)}{4}(\partial\sigma)^2\,\psi
+\Big),
+\]
+so the kinetic operator \(\widetilde P_{\mathrm{kin}}=-\widetilde\Delta\) contains a term proportional to \(D(4-D)(\partial\sigma)^2\), which cancels at \(D=4\) in this conformal ansatz. This is recorded only as a concrete simplification in a natural metric class; its broader meaning (if any) is a separate question. For the derivation and a SymPy coefficient/sign check, see `blackboards/2026-02-10-half-density-laplacian-conformal-metric.md`.
+
 Interpretation:
 - the metric half-density \(|g|^{1/4}|dx|^{1/2}\) is a **scalarization gauge** (a choice of reference half-density) on a fixed background,
 - writing the field as \(\psi\) makes the “half-density prioritary” viewpoint explicit: both the field and the kernels live naturally as half-density objects.
