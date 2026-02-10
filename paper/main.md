@@ -615,6 +615,29 @@ $$
 
 Fast phase oscillations cancel nonstationary contributions, while neighborhoods of stationary paths contribute coherently. This is the precise sense in which the classical equations reappear as \(\hbar\to0\) asymptotics.
 
+`Derivation D4.2a (Soft extremum and why a finite \(\hbar\) stabilizes refinement).`
+Even before any infinite-dimensional measure issues, the refinement-composition pattern forces a "softened" version of extremization.
+Consider a finite-dimensional two-slice action
+\(S(q_2,q_1)+S(q_1,q_0)\) and form the Euclideanized composed weight
+\[
+W_\hbar(q_2,q_0):=\int dq_1\;\exp\!\left(-\frac{1}{\hbar}\big(S(q_2,q_1)+S(q_1,q_0)\big)\right).
+\]
+Define the associated coarse effective action (a log-partition functional)
+\[
+S_{\mathrm{eff}}^{(\hbar)}(q_2,q_0):=-\hbar\ln W_\hbar(q_2,q_0).
+\]
+Then refinement-composition is exact at the level of weights (add actions in the exponent, integrate the intermediate variable),
+and the hard Newtonian elimination rule appears only as the sharpening limit:
+under standard nondegeneracy assumptions, Laplace's method gives
+\[
+S_{\mathrm{eff}}^{(\hbar)}(q_2,q_0)
+\xrightarrow{\hbar\to0}
+\inf_{q_1}\big(S(q_2,q_1)+S(q_1,q_0)\big),
+\]
+with \(O(\hbar)\) corrections determined by local quadratic data near the minimizer(s).
+So \(\hbar\) plays the role of a universal control parameter that makes "refine then compare" stable, with classical extremals recovered as a limit.
+In real time, the same pattern appears with \(e^{iS/\hbar}\) and stationary phase in place of positivity and Laplace concentration.
+
 `Derivation D4.3 (Van Vleck prefactor is a bi-half-density).`
 In the semiclassical approximation, the endpoint kernel has the standard form
 \[

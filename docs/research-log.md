@@ -1897,3 +1897,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - adjusted the wording in `paper/main.md` `Derivation D6.0` accordingly.
 - Sources touched (keys + status changes): none.
 - Next: run `C84` to add an additional Newton-limit paradox witness explicitly tied to \(\hbar\).
+
+## 2026-02-10 (C84: add a "soft extremum" witness tying refinement stability to \(\hbar\))
+- Focus: add one explicit obstruction/resolution witness for the Newton-limit paradox:
+  the hard extremum rule is not the stable primitive under refinement-composition, but arises as a sharpening limit controlled by \(\hbar\).
+- Work:
+  - inserted `Derivation D4.2a` in `paper/main.md` (Section 6.4):
+    - defined \(S_{\mathrm{eff}}^{(\hbar)}=-\hbar\ln\int e^{-S/\hbar}\) in a finite-dimensional two-slice action,
+    - stated its refinement-composition meaning and its \(\hbar\to0\) Laplace-principle limit to the hard elimination \(\inf S\),
+    - noted the real-time stationary-phase analogue without claiming a full path-space measure.
+- Result: the manuscript now contains a concrete mathematical pattern explaining why a finite \(\hbar\) is a natural control parameter in the refinement program.
+- Sources touched (keys + status changes): none.
+- Next: run `Q43` to referee-pass the new block for novelty/clarity, then consider a similarly nonstandard witness for \(c\) or \(G\).
