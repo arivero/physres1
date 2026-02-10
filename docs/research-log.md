@@ -1493,3 +1493,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Interpreted it as the kernel-level origin of bra/ket doubling while keeping the statement structural (no new bibliography claims).
 - Result: `half-density-qft` now explicitly covers why \(|\mathcal A|^2\) and real expectations naturally live on \(M\\times M\) in kernel language.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q31: quality pass on doubling remark in half-density-qft)
+- Focus: coherence/scope check after adding `Remark D4.1`.
+- Checks:
+  - reviewed Section 4 flow into the remark and transition into Section 5;
+  - verified remark remains structural and self-contained;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S43` to list precise candidates for the Newton-limit obstruction.

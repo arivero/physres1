@@ -157,11 +157,12 @@
 - `Q28` Completed.
 - `Q29` Completed.
 - `Q30` Completed.
+- `Q31` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q31`: quality pass on the doubling remark insertion.
-2. `S43`: return to the "Newton limit paradox" and list candidate precise obstructions.
+1. `S43`: return to the "Newton limit paradox" and list candidate precise obstructions.
+2. `C70`: promote one precise obstruction candidate into `paper/main.md` as a labeled heuristic.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
