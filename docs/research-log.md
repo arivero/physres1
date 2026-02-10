@@ -1070,3 +1070,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: provides a clean criterion for when timelike structure is acceptable without inflating assumptions.
 - Sources touched (keys + status changes): none.
 - Next: promote a compact manuscript remark encoding this rule after D1.5e.
+
+## 2026-02-10 (C58: promote minimal timelike-structure rule)
+- Focus: encode S31 as a concise manuscript rule near D1.5e.
+- Work:
+  - Added `Remark D1.5f` in `papers/planck-area/main.md`.
+  - Stated branch-scoped rule: use source 4-velocity \(U^\mu\) as distinguished timelike direction and formulate the postulate on \(\ell_{(U)}\), with coordinate-time areal rates treated as derived.
+- Result: D1.5 sequence now ends with an operational rule that stabilizes clock/congruence choices for this branch.
+- Sources touched (keys + status changes): none.
+- Next: run `Q20` for readability and scope discipline across D1.5b-f.

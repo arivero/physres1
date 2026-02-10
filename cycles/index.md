@@ -59,6 +59,7 @@
 55. `C55` Completed.
 56. `C56` Completed.
 57. `C57` Completed.
+58. `C58` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -126,8 +127,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C58`: add the short “minimal timelike-structure rule” note to the D1.5 sequence.
-2. `Q20`: quality pass on the D1.5b-D1.5f block.
+1. `Q20`: quality pass on the D1.5b-D1.5f block.
+2. `S32`: explore whether the same minimal-structure rule extends to non-circular bound orbits.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

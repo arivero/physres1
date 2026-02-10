@@ -561,6 +561,18 @@ I_1=-m^2c^2r^2,
 \]
 independent of orbital speed, while \(I_2\) vanishes in the planar case. So these simple frame-free invariants do not encode the areal-rate branch parameter. In this setup, a timelike direction (e.g. source \(U^\mu\)) appears to be minimal extra structure for a useful covariant postulate.
 
+`Remark D1.5f (Minimal timelike-structure rule for this branch).`
+For the present central-source inverse-square model, a practical “minimal structure” rule is:
+1. use the source worldline 4-velocity \(U^\mu\) as the distinguished timelike direction (already part of the model input), and
+2. formulate the postulate on
+\[
+\ell_{(U)}:=\frac1m\sqrt{\frac12\,M^{(U)}_{\mu\nu}M_{(U)}^{\mu\nu}},
+\qquad
+M^{(U)\mu\nu}=h(U)^\mu{}_\alpha h(U)^\nu{}_\beta M^{\alpha\beta},
+\]
+rather than directly on coordinate-time areal rate.
+In the source rest frame this is equivalent to fixing \(\dot A_{\tau,U}=\ell_{(U)}/2\), while coordinate-time rates are derived via the corresponding lapse factor. This keeps the branch covariant-with-source and avoids introducing an additional arbitrary observer field \(u^\mu(x)\).
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
