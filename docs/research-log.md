@@ -347,3 +347,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the RG note is now self-contained about the load-bearing convention choices and makes the scheme dependence of \(2e^{-\gamma}\) (as a finite log constant) explicit.
 - Sources touched (keys + status changes): none.
 - Next: start a new `S` cycle on “delta as a half-density kernel / identity operator” and how that interfaces with the scalarization-gauge story (blackboard first, then promote).
+
+## 2026-02-10 (S05: delta as a bi-half-density kernel)
+- Focus: tighten the half-density-first story by making the “delta” objects precise as Schwartz kernels on half-densities (not scalar functions).
+- Question: can we extract the \(\varepsilon^{-d/2}\) normalization exponent directly from the identity kernel, and connect it cleanly to the scalarization-gauge scale \(L_\ast^{d/2}\)?
+- Work: wrote `blackboards/2026-02-10-delta-as-half-density-kernel.md` deriving the identity kernel \(\delta(x-y)|dx|^{1/2}|dy|^{1/2}\), its near-diagonal scaling \(\varepsilon^{-d/2}\), and the scalarization identity \(k_{\mathrm{Id}}=L_\ast^d\delta\) under \(\sigma_\ast=L_\ast^{-d/2}|dx|^{1/2}\); also recorded the rank-one contact-kernel factorization \(V=g|0\rangle\langle0|\) as a tensor product of two distributional half-densities.
+- Result: we now have a clean, coordinate-free “delta” witness that supports the half-density normalization exponent and clarifies what “\(\delta^{1/2}\)” can safely mean in operator/kernel terms.
+- Sources touched (keys + status changes): none (study only).
+- Next: promote the stable paragraph(s) into `papers/planck-area/main.md` (and optionally add a one-line clarifier in `paper/main.md` if it improves the cornerstone narrative without bloating it).
