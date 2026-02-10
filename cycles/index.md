@@ -80,6 +80,7 @@
 76. `C76` Completed.
 77. `C77` Completed.
 78. `C78` Completed.
+79. `C79` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -190,8 +191,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C79`: tighten `Remark D1.5a` in `papers/planck-area/main.md` (dimension-selection clarity) and record diffstat.
-2. `S54`: control-map \(\tau\) formalization note (then `C80` promote minimally into `paper/main.md`).
+1. `S54`: control-map \(\tau\) formalization note (then `C80` promote minimally into `paper/main.md`).
+2. `S55`: sketch a "why \(c\), why \(G\)" control-parameter view (separate from \(\hbar\)) for possible future promotion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

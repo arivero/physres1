@@ -476,6 +476,7 @@ If one imposes \(\dot A=cL_P\) and uses the \(D=4\) identity \(L_P^2=G\hbar/c^3\
 r=\left(\frac{4\hbar}{cM}\right)^{\frac{1}{3-q}}.
 \]
 Thus the Planck-areal-speed substitution produces *linear* reduced-Compton scaling \(r\propto \hbar/(cM)\) only for \(q=2\) (inverse-square). For Newtonian long-range fields in \(n\) spatial dimensions, the Laplacian Green function gives \(\Phi(r)\propto r^{2-n}\) (for \(n>2\)), so \(F\sim|\nabla\Phi|\propto r^{1-n}\), i.e. \(q=n-1\) (with the \(n=2\) logarithmic exception) [Tanaka2021KernelQuadrature]. In this sense the \(q=2\) special case corresponds to \(n=3\) spatial dimensions (spacetime \(D=4\)).
+Equivalently, substituting \(q=n-1\) into the mass scaling gives \(r\propto M^{-1/(4-n)}\) (for \(n\neq 4\)), so the linear Compton scaling (and the \(G\)-cancellation in the \(D=4\) identity \(L_P^2=G\hbar/c^3\)) is uniquely \(n=3\); the \(n=4\) case is the degenerate \(q=3\) condition where the radius drops out.
 
 `Remark D1.5b (SR continuation of the inverse-square witness: Compton branch \(\to\) Planck floor).`
 Inside the same mechanical SR model used in `papers/relativistic-central-orbits/main.md` (external inverse-square force, no GR field dynamics), one can keep the fixed coordinate-time areal speed \(\dot A_0=dA/dt\) and continue D1.5 exactly.

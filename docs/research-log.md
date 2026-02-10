@@ -1769,3 +1769,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: prepared a small `C79` promotion target to tighten `Remark D1.5a` in `papers/planck-area/main.md`.
 - Sources touched (keys + status changes): none.
 - Next: run `C79` to apply the remark wording improvement and record diffstat.
+
+## 2026-02-10 (C79: make the dimension-dependent mass scaling explicit in `Remark D1.5a`)
+- Focus: tighten the Planck-areal-speed dimension-selection remark so the \(n\)-dependence is visible at a glance.
+- Work:
+  - Updated `papers/planck-area/main.md` `Remark D1.5a` to state the Gauss-law gravity scaling \(r\propto M^{-1/(4-n)}\) (for \(n\neq 4\)) and to flag \(n=4\) as the degenerate \(q=3\) case.
+- Result: the "only \(n=3\) yields linear Compton scaling" message is now explicit rather than implicit.
+- Sources touched (keys + status changes): none.
+- Next: run `S54` on formalizing the control map \(\tau\) and then promote minimally into `paper/main.md`.
