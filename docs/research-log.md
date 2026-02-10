@@ -419,3 +419,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a clean determinant-level bridge between “delta on stationary conditions” and the semiclassical prefactor, in a form that can be promoted into a short `paper/notes/` lemma or a one-sentence clarifier near D4.3 if desired.
 - Sources touched (keys + status changes): none (study only).
 - Next: decide whether to promote a one-sentence clarifier into `paper/main.md` near D4.3, or keep this determinant story in `paper/notes/` until `B02` is unblocked.
+
+## 2026-02-10 (C31: Schur-complement template for Van Vleck)
+- Focus: make the “mixed Hessian determinant after eliminating intermediates” mechanism explicit in a finite-dimensional model.
+- Question: can we show, without invoking functional determinants, why integrating out intermediate variables naturally produces (i) determinant prefactors and (ii) Schur-complement-corrected mixed endpoint Hessians?
+- Work: added `paper/notes/van-vleck-schur-complement.md` with an exact quadratic Gaussian-elimination computation and the corresponding block-matrix (Schur complement) formulas, plus a stationary-phase remark.
+- Result: we now have a self-contained algebraic template that explains the emergence of Van Vleck–type mixed Hessian determinants after time slicing/elimination.
+- Sources touched (keys + status changes): none.
+- Next: commit; optionally add a one-line pointer near `Derivation D4.3` once `B02` is available (so the semiclassical prefactor has a modern anchor).

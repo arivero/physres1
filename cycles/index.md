@@ -33,6 +33,7 @@
 29. `C28` Completed.
 30. `C29` Completed.
 31. `C30` Completed.
+32. `C31` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -57,8 +58,8 @@
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
 1. `B02` (blocked until DNS/network works): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
-2. `C31`: add a short `paper/notes/` lemma showing (in a quadratic model) how eliminating intermediate variables produces Schur-complement determinants and leads to mixed Hessians (a concrete template for the Van Vleck structure).
-3. Optional `Q03`: quick check that Section 5.5 remains concise after D3.5a, and that D3.5/D3.5a still read as one unit.
+2. Optional `Q03`: quick check that Section 5.5 remains concise after D3.5a, and that D3.5/D3.5a still read as one unit.
+3. Optional `C32`: add a one-sentence pointer near `Derivation D4.3` to the new Schur-complement note once `B02` is unblocked (so the semiclassical prefactor has a modern anchor).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
