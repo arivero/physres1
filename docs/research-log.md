@@ -1616,3 +1616,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S47` to attempt a single crisp lemma-like obstruction statement.
+
+## 2026-02-10 (S47: "no Lebesgue measure" obstruction lemma for path space)
+- Focus: sharpen one "Newton-limit paradox" obstruction into a theorem-like statement usable in the main manuscript.
+- Work:
+  - wrote a lemma-like statement and proof sketch: no nontrivial translation-invariant locally finite Borel measure exists on infinite-dimensional Banach spaces.
+  - recorded the operational moral for our refinement program: `Dφ` is formal, so refinement limits are constructions with control data (semigroup definition, regularization, scheme compatibility).
+  - logged details in `blackboards/2026-02-10-no-lebesgue-measure-in-infinite-dim.md`.
+- Result: prepared a `C74` promotion target (short heuristic remark near `Heuristic H0.2` in `paper/main.md`).
+- Sources touched (keys + status changes): none.
+- Next: run `C74` to promote the remark into `paper/main.md`.

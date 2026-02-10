@@ -132,6 +132,7 @@
 - `S44` Completed.
 - `S45` Completed.
 - `S46` Completed.
+- `S47` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -173,8 +174,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S47`: revisit the "Newton-limit paradox" and attempt a single crisp mathematical statement (candidate theorem/lemma form).
-2. `C74`: promote the stabilized obstruction statement into `paper/main.md` (short heuristic/remark).
+1. `C74`: promote the stabilized obstruction statement into `paper/main.md` (short heuristic/remark).
+2. `B06`: attach a standard reference for the "no Lebesgue measure in infinite dimensions" lemma (measure theory / functional analysis).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
