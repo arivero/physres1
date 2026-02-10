@@ -1577,3 +1577,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Stated explicitly that emergent string tension \(\sigma\) (when defined) provides an area scale \(\sigma^{-1}\) but in \(d=4\) belongs logically to the transmutation branch (H2.13) rather than to H2.5 analytic monomial sieves, unless one assumes a fundamental UV area parameter \(\alpha_\ast\).
 - Result: the string-tension option is now cleanly separated into "fundamental input" vs "RG-emergent invariant" branches.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q34: quality pass on Remark E4a)
+- Focus: scope/claim hygiene review after adding the string-tension branch clarification.
+- Checks:
+  - reviewed flow across Example E4 -> E4a -> H2.12/H2.13;
+  - verified E4a remains bookkeeping and avoids confinement-diagnostic claims;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S46` on "uncuttable" clarification.
