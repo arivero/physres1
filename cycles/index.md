@@ -77,6 +77,7 @@
 73. `C73` Completed.
 74. `C74` Completed.
 75. `C75` Completed.
+76. `C76` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -180,8 +181,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C76`: promote the stabilized example into `paper/main.md` as a short companion to `Heuristic H0.2` (non-uniqueness obstruction).
-2. `Q37`: quality pass on the Introduction after the promotion (flow + tone).
+1. `Q37`: quality pass on the Introduction after the promotion (flow + tone).
+2. `S50`: study whether the \(H=pq\) witness has a cleaner "control-map equivalence" phrasing (similarity transforms vs genuinely different physics).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

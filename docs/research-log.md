@@ -1680,3 +1680,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: prepared a clean promotion target for `paper/main.md`: a 2-3 sentence companion to `Heuristic H0.2` item 2.
 - Sources touched (keys + status changes): none.
 - Next: run `C76` to promote the companion sentence into `paper/main.md` and record diffstat.
+
+## 2026-02-10 (C76: promote a minimal ordering-ambiguity witness into the Introduction)
+- Focus: make the "non-uniqueness" failure mode in `Heuristic H0.2` concrete.
+- Work:
+  - Added a short parenthetical witness to `paper/main.md` `Heuristic H0.2` item 2: time-slicing \(H=pq\) can yield \(-\hat p\hat q\) vs \(-\hat q\hat p\) depending on endpoint evaluation (difference \(O(\hbar)\)).
+- Result: the Introduction now has concrete examples for both non-existence (measure obstruction) and non-uniqueness (ordering ambiguity).
+- Sources touched (keys + status changes): none.
+- Next: run `Q37` to quality-pass the Introduction after this addition (flow + tone).
