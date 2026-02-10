@@ -788,3 +788,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added `Derivation D6.0` to `paper/main.md` Section 8.2, defining a resolution parameter \(h\), a coarse-graining operator \(\mathcal G_b\), and the closure requirement \(\mathcal G_b(A_{h/b,\theta})=A_{h,\tau_b(\theta)}\). The paragraph explicitly frames \(\tau_b\) as the parameter flow induced by refinement and notes that failure of closure forces an enlarged operator/coupling family (counterterms).
 - Result: the cornerstone paper now contains a transcript-independent formulation of “compare discretizations at fixed ruler” that dovetails with the existing renormalization-map semigroup discussion.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q12: quality pass after adding the \(\tau\) compatibility equation)
+- Focus: referee-style coherence pass on Sections 6–8 after inserting `Derivation D6.0` (control map \(\tau_b\)).
+- Checks:
+  - `rg -n 'C[0-9]{2}' paper/main.md` (no matches).
+  - Read-through of Section 6.1 (H4.0a/H4.0b) and Section 8.2–8.3 (D6.0–D6.2) for notation and “no overclaim” scope.
+- Findings: D6.0 reads as a closure requirement (not a theorem), uses \(\mathcal G_b\) to avoid collision with the RCP \(\mathcal C_t\) notation, and cleanly points back to the existing \(R_{\Lambda\to\mu}\) semigroup paragraph.
+- Sources touched (keys + status changes): none.

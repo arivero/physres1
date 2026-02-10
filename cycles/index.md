@@ -97,12 +97,12 @@
 - `Q09` Completed.
 - `Q10` Completed.
 - `Q11` Completed.
+- `Q12` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q12`: quality pass focused on Sections 6–8 coherence (scalarization gauge, \(\tau\), RG compatibility).
-2. Optional `S23`: decide whether “point interactions in the momentum along the path” deserves a separate note, distinct from point *potentials* (distributional Lagrangians / impulses).
-3. Optional `B04`: if we publish the \(\tau\) paragraph, add one standard (non-preprint) RG/coarse-graining anchor (OA-first).
+1. Optional `S23`: decide whether “point interactions in the momentum along the path” deserves a separate note, distinct from point *potentials* (distributional Lagrangians / impulses).
+2. Optional `B04`: if we publish the \(\tau\) paragraph, add one standard (non-preprint) RG/coarse-graining anchor (OA-first).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
