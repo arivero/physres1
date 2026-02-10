@@ -1,0 +1,233 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Fermionic Mediators{,} Static Potentials{,} and Contact/Boundary-Condition Limits},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Fermionic Mediators, Static Potentials, and
+Contact/Boundary-Condition Limits}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+The textbook derivation of a static potential from ``field exchange''
+uses a bosonic mediator linearly sourced by a commuting classical
+density, yielding an effective action quadratic in the source and (in a
+static limit) a central Yukawa/Coulomb potential. This derivation does
+not transplant verbatim to fermionic fields: the linear source terms for
+fermions require Grassmann-valued sources, so there is no ordinary
+commuting classical source whose elimination produces a classical
+potential in the same way. This note isolates the precise obstruction
+and records the robust infrared replacement: when a microscopic
+description reduces to local operators at low resolution, the effective
+interaction is encoded by contact terms (delta kernels and their
+derivatives) or, equivalently, boundary-condition/self-adjoint-extension
+data, with renormalization-group running when the contact limit is
+singular.
+
+This is a dependent note aligned with the repository's ``refinement
+compatibility'' program: contact terms are diagonal-support kernels, and
+their scale dependence is a compatibility condition rather than an
+afterthought.
+\end{abstract}
+
+\section{1. Purpose and scope}\label{purpose-and-scope}
+
+This note answers a narrowly phrased question: what can it mean for a
+\textbf{fermionic} field to ``generate a (central) potential'' in the
+same sense that a massive bosonic field generates a Yukawa potential?
+
+We keep the scope bounded: 1. state the bosonic sourcing \(\Rightarrow\)
+potential mechanism (derivation-first, brief), 2. state the fermionic
+obstruction precisely (Grassmann sources), 3. give one explicit IR
+matching witness: \textbf{local operators \(\Rightarrow\)
+contact/derivative-contact kernels}, 4. connect contact kernels to the
+repo's point-interaction/RG witnesses.
+
+We do \textbf{not} claim that fermions cannot affect forces; we only
+isolate which parts of the ``classical source \(\Rightarrow\)
+potential'' story fail, and what the correct replacement statement is at
+low resolution.
+
+\section{2. What ``a field generates a potential'' means in the bosonic
+source
+story}\label{what-a-field-generates-a-potential-means-in-the-bosonic-source-story}
+
+The archetypal construction is a bosonic mediator \(\varphi\) linearly
+coupled to a commuting source \(J(x)\): \[
+S[\varphi;J]=\int d^Dx\left(\frac12\,\varphi\,K\,\varphi + J\,\varphi\right),
+\qquad K=(\Box+m^2)\ \text{(example)}.
+\] Integrating out \(\varphi\) (Gaussian elimination) yields an
+effective action quadratic in the source, \[
+S_{\mathrm{eff}}[J]=-\frac12\int d^Dx\,d^Dy\; J(x)\,K^{-1}(x,y)\,J(y),
+\] so the static, nonrelativistic limit of \(K^{-1}\) produces a central
+potential (Yukawa for \(m\neq 0\), Coulomb-type when \(m=0\)).
+
+The key structural ingredient is that the source is an ordinary
+commuting function (a classical background density).
+
+\section{3. Fermionic fields: linear sources are Grassmann, so the
+classical-source story does not
+transplant}\label{fermionic-fields-linear-sources-are-grassmann-so-the-classical-source-story-does-not-transplant}
+
+For a Dirac fermion \(\Psi\), the generating functional with sources is
+written with \textbf{Grassmann-valued} sources \(\eta,\bar\eta\): \[
+Z[\bar\eta,\eta]
+=\int D\bar\Psi\,D\Psi\;
+\exp\!\left(
+i\int d^Dx\;\bar\Psi\,(i\gamma^\mu\partial_\mu-m)\Psi
++i\int d^Dx\;(\bar\eta\,\Psi+\bar\Psi\,\eta)
+\right).
+\] An explicit statement of this form, including that \(\eta,\bar\eta\)
+are Grassmann-valued, is recorded in
+{[}Floerchinger2024QFT1Lecture21{]}.
+
+Two immediate consequences follow.
+
+\texttt{Remark\ 3.1\ (Obstruction\ statement).} The bosonic derivation
+``choose a commuting classical source \(J\), integrate out the field,
+and read off a classical potential'' does not directly apply to
+fermions, because the linear source terms that couple to \(\Psi\)
+require Grassmann sources rather than commuting c-number densities.
+Therefore, ``fermion exchange generates a classical potential between
+commuting sources'' is not a well-posed transplant of the bosonic story.
+
+This does \textbf{not} mean fermions are irrelevant: fermions can and do
+affect effective interactions through loop effects, through bosonic
+composite modes (bilinears), and through low-energy EFT operators. The
+point is that the meaning of ``generates a potential'' must be stated
+through one of these controlled mechanisms.
+
+\section{\texorpdfstring{4. IR replacement: local operators
+\(\Rightarrow\) contact kernels / boundary-condition
+data}{4. IR replacement: local operators \textbackslash Rightarrow contact kernels / boundary-condition data}}\label{ir-replacement-local-operators-rightarrow-contact-kernels-boundary-condition-data}
+
+At low resolution, integrating out heavy degrees of freedom typically
+produces local operators. In a two-body, nonrelativistic sector, this
+appears as an amplitude expansion analytic in momentum transfer \(q\):
+\[
+\mathcal A(q)=C_0+C_2 q^2+O(q^4).
+\]
+
+The coordinate-space interaction associated to such an analytic
+expansion is distributional and diagonal-supported. The invariant core
+is a Fourier-transform identity: \[
+\int \frac{d^d q}{(2\pi)^d}\,e^{iq\cdot r}= \delta^{(d)}(r),
+\qquad
+\int \frac{d^d q}{(2\pi)^d}\,q^2\,e^{iq\cdot r}= -\nabla^2\delta^{(d)}(r).
+\]
+
+\texttt{Derivation\ 4.1\ (Contact\ expansion\ gives\ \textbackslash{}(\textbackslash{}delta\textbackslash{})\ and\ derivative\ contacts).}
+Interpreting the low-energy interaction kernel as the inverse Fourier
+transform of \(\mathcal A(q)\) (Born-level language, up to overall
+convention-dependent factors), we obtain \[
+V(r)\ \propto\ \int \frac{d^d q}{(2\pi)^d}\,e^{iq\cdot r}\,\mathcal A(q)
+\ \propto\
+C_0\,\delta^{(d)}(r)\;-\;C_2\,\nabla^2\delta^{(d)}(r)\;+\;\cdots.
+\] Thus locality at low energy naturally becomes \textbf{contact data}:
+delta kernels and their derivatives supported at a point (or on the
+diagonal, in kernel language).
+
+In singular cases (notably \(\delta\) interactions in \(d\ge 2\) in
+various channels), this contact data is not simply a fixed number: it is
+defined by a renormalization condition and can generate RG-invariant
+scales and bound states {[}Jackiw1991DeltaPotentials{]}
+{[}ManuelTarrach1994PertRenQM{]}.
+
+\section{5. Boundary-condition reading (point
+interactions)}\label{boundary-condition-reading-point-interactions}
+
+Point-supported interactions can be encoded as self-adjoint extension /
+boundary-condition data rather than as ordinary functions \(V(r)\). This
+is the natural operator-theoretic counterpart of ``diagonal-support
+kernels.'' For standard references and pedagogical framing, see
+{[}BonneauFarautValent2001SAE{]} and the delta-potential discussion in
+{[}Jackiw1991DeltaPotentials{]}.
+
+This viewpoint matches the repo's ``controlled refinement'' theme: when
+a continuum description is defined as a refinement limit, UV data can
+survive in the limit precisely as boundary-condition parameters (contact
+terms), with RG flow expressing compatibility across resolutions.
+
+\section{6. Outlook (kept minimal)}\label{outlook-kept-minimal}
+
+Longer-range effects associated to fermionic degrees of freedom can
+arise through loop-induced mechanisms or through emergent bosonic
+composite modes. Treating those responsibly would require a separate
+bibliography-hardening pass and is outside this note's scope.
+
+\section{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  {[}ManuelTarrach1994PertRenQM{]} Cristina Manuel and Rolf Tarrach,
+  ``Perturbative Renormalization in Quantum Mechanics,'' \emph{Physics
+  Letters B} 328 (1994), 113--118. arXiv:\texttt{hep-th/9309013} (v1, 2
+  Sep 1993). DOI \texttt{10.1016/0370-2693(94)90437-5}.
+\item
+  {[}BonneauFarautValent2001SAE{]} Guy Bonneau, Jacques Faraut, and
+  Galliano Valent, ``Self-adjoint extensions of operators and the
+  teaching of quantum mechanics,'' \emph{American Journal of Physics} 69
+  (2001), 322--331. arXiv:\texttt{quant-ph/0103153}. DOI
+  \texttt{10.1119/1.1328351}.
+\item
+  {[}Jackiw1991DeltaPotentials{]} R. Jackiw, ``Delta-function potentials
+  in two- and three-dimensional quantum mechanics,'' MIT-CTP-1937 (Jan
+  1991). Reprinted in \emph{M.A.B. Bég Memorial Volume} (World
+  Scientific, 1991), pp.~25--42. OA mirror:
+  \url{https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf}.
+\item
+  {[}Floerchinger2024QFT1Lecture21{]} Stefan Floerchinger, ``Quantum
+  field theory 1, lecture 21'' (updated 11 Jun 2024). (States the
+  Dirac-fermion generating functional \(Z[\bar\eta,\eta]\) with
+  Grassmann-valued sources.) OA: lecture webpage.
+\end{enumerate}
+
+\end{document}

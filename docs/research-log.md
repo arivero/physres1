@@ -1965,3 +1965,35 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - updated backlog pointers in `docs/next-articles.md` and `docs/research-state.md`.
 - Result: both themes now have an explicit derivation scaffold aligned with the repo’s “refinement compatibility” framing, without promoting any new claims into manuscript prose.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (D00: discovery — fermionic mediators → contact/boundary-condition limits)
+- Focus: start a continuous discovery-to-prose pipeline on Theme L.
+- Question: what is the referee-safe meaning of “a fermionic field generates a potential,” and what is the controlled IR replacement?
+- Work:
+  - selected the precise target claim: no ordinary *classical* static potential from commuting sources via linear fermion sourcing (Grassmann-source obstruction); meaningful IR effects are contact/boundary-condition data (EFT) and/or loop/composite routes.
+  - opened discovery cycle artifacts: `cycles/D00-*.md`.
+- Result: next cycles are fully specified: `S61` (explicit EFT→QM contact matching witness), `B09` (OA anchor for Grassmann sources), then `C87` (new dependent note) followed by `Q45` (referee pass on `C87`).
+- Sources touched (keys + status changes): none (deferred to `B09`).
+
+## 2026-02-10 (S61: explicit EFT→QM matching witness for contact interactions)
+- Focus: derive one bounded witness connecting local operators to point-supported “potentials.”
+- Question: how do constant/polynomial momentum-space amplitudes appear in coordinate space?
+- Work:
+  - wrote `blackboards/2026-02-10-fermionic-mediators-contact-eft-to-qm-match.md` deriving:
+    - constant amplitude \(\leftrightarrow\) \(\delta^{(d)}(r)\),
+    - \(q^2\) dependence \(\leftrightarrow\) \(-\nabla^2\delta^{(d)}(r)\),
+    - higher polynomials \(\leftrightarrow\) higher derivatives of the diagonal delta.
+  - recorded a copyable promotion candidate block for the forthcoming dependent note.
+- Result: Theme L now has a concrete derivation-level core that can be promoted without introducing full EFT machinery.
+- Sources touched (keys + status changes): none.
+- Next: run `B09` to ingest one OA anchor for Grassmann sources, then start `C87` to write `papers/fermionic-mediators-contact-limits/main.md`.
+
+## 2026-02-10 (B09: OA anchor for fermionic generating functional with Grassmann sources)
+- Focus: obtain an independent OA anchor for the statement “fermionic sources are Grassmann-valued,” to keep Theme L referee-safe.
+- Question: can we point to an open source that explicitly writes \(Z[\bar\eta,\eta]\) for Dirac fermions and states \(\eta,\bar\eta\) are Grassmann?
+- Work:
+  - added `[Floerchinger2024QFT1Lecture21]` to `paper/bibliography.md` (OA lecture page; updated 11 Jun 2024).
+  - ingested a local capture to `sources/lecture21-2cc5b4d3.md` (gitignored by repo policy).
+- Result: Theme L now has a concrete, independently anchored statement of the Grassmann-source formalism suitable for citation in the dependent note.
+- Sources touched (keys + status changes): added `[Floerchinger2024QFT1Lecture21]`.
+- Next: start `C87` to draft `papers/fermionic-mediators-contact-limits/main.md` and promote the `S61` matching witness.
