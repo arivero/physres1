@@ -3,7 +3,7 @@
 This file is the durable "working memory" for continuing research in this repo across context resets.
 It is **not** a citable source and may reference `conv_patched.md` only as an idea log.
 
-Date: 2026-02-09
+Date: 2026-02-10
 
 ## North Star (Current Paper)
 - Manuscript: `paper/main.md` (publishable artifact).
@@ -75,6 +75,10 @@ Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and imm
 - Draft: `papers/planck-area/main.md`.
 - Goal: make precise why half-density normalization forces a \(\text{length}^{d/2}\) scale, and why in \(d=4\) this is naturally an area scale (candidate: Planck area), with at least one concrete model computation.
 - Current sub-questions: evaluate `H2.3` (dimensionless scalarization), `H2.4` (background-free constancy), `H2.5` (analyticity/no fractional powers) separately; current focus is `H2.5`.
+
+### 2b) Half-densities in QFT (follow-up draft candidate)
+- Seed note: `blackboards/2026-02-10-half-densities-in-qft.md`.
+- Goal: make the “kernel as bi-half-density” calculus explicit for spacetime propagators/Green functions, with at least one worked computation (densitized scalar field \(\psi=|g|^{1/4}\phi\)); keep BV half-densities as outlook unless anchored by a bibliography cycle.
 
 ### 3) RG as fundamental (follow-up draft)
 - Draft: `papers/rg-fundamental/main.md`.

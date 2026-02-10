@@ -53,6 +53,7 @@
 - `S07` Completed.
 - `S08` Completed.
 - `S09` Completed.
+- `S10` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -62,9 +63,10 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `S10`: study half-densities in QFT (propagators/Green functions as bi-half-densities; densitized fields; BV half-densities) and extract promotion candidates.
-2. Optional `C34`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
-3. Optional `Q04`: quick quality pass on the RG note after adding H1.12 (redundancy/flow).
+1. `C34`: start `papers/half-density-qft/main.md` (wave 1: densitized scalar field + propagators as bi-half-densities; BV as outlook only).
+2. `C35`: tighten `papers/delta-objects/main.md` with an explicit \(\delta(f')\) vs \(\delta'\) clarifier and a weak Euler–Lagrange corner/jump remark.
+3. Optional `C36`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
+4. Optional `Q04`: quick quality pass on the RG note after H1.12 + on any new follow-up draft content (redundancy/flow).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -469,3 +469,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a dedicated bridge draft that can later be merged into an appendix or spun into a standalone short note, and it is not just an outline (it contains explicit computations).
 - Sources touched (keys + status changes): none.
 - Next: commit; then start a QFT-oriented study cycle extending the half-density-first stance beyond QM/statics (e.g. propagators as bi-half-densities, BV half-densities).
+
+## 2026-02-10 (S10: half-densities in QFT + distribution toolbox for extremals)
+- Focus: extend the “half-density prioritary” thread into QFT (spacetime propagators + densitized fields) and clarify which delta/distribution objects correspond to “extremal conditions”.
+- Question: can we (i) express QFT propagators canonically as bi-half-density kernels, and (ii) separate \(\delta\), \(\delta'\), and \(\delta(f')\) so “delta for extremals” stays unambiguous?
+- Work:
+  - Wrote/extended `blackboards/2026-02-10-half-densities-in-qft.md` with the densitized scalar field computation \(\psi=|g|^{1/4}\phi\), an explicit coordinate formula for the conjugated kinetic operator, and the interpretation of propagators as bi-half-density kernels; flagged BV half-densities as a structural theme (heuristic here).
+  - Added `blackboards/2026-02-10-distribution-theory-for-extremals.md` distinguishing \(\delta\) (evaluation), \(\delta'\) (derivative evaluation), and \(\delta(f')\) (stationary-set localization), and recording weak Euler–Lagrange as a distributional equality (corner/jump terms appear automatically).
+- Result: half-densities remain the organizing representation in QFT kernels as well as QM kernels; and we now have a compact distribution-theory “delta dictionary” to prevent conflations when discussing stationary/extremal constraints.
+- Sources touched (keys + status changes): none (study only; BV anchors queued).
+- Next: `C34` start `papers/half-density-qft/main.md` (wave 1: densitized scalar field + kernel semantics), and `C35` tighten `papers/delta-objects/main.md` with an explicit \(\delta(f')\) vs \(\delta'\) clarifier + weak Euler–Lagrange corner remark.
