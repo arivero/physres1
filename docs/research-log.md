@@ -1088,3 +1088,19 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; progression is readable and branch scope remains explicit.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S32: non-circular planar extension of \(\ell\)-rule)
+- Focus: test whether the S31 minimal-structure rule is circular-only.
+- Work:
+  - Derived for general planar motion:
+    \[
+    \ell=\gamma r v_\perp=\gamma r^2\dot\phi,
+    \quad
+    \frac{dA}{dt}=\frac{\ell}{2\gamma},
+    \quad
+    \frac{dA}{d\tau}=\frac{\ell}{2}.
+    \]
+  - Recorded derivation in `blackboards/2026-02-10-noncircular-planar-extension-ell-and-areal-rates.md`.
+- Result: extension is kinematic (force-independent) for planar trajectories; supports promoting a short non-circular extension note in the manuscript.
+- Sources touched (keys + status changes): none.
+- Next: promote one compact paragraph near D1.5f and run a follow-up quality pass.
