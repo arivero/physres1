@@ -1327,3 +1327,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required; chain remains coherent and scoped.
 - Sources touched (keys + status changes): none.
 - Next: run `S38` robustness toy with correlated/higher-noise uncertainty to test escalation behavior.
+
+## 2026-02-10 (S38: correlated/high-noise robustness scan)
+- Focus: test how the linear-vs-nonlinear uncertainty discrepancy changes with covariance scale and correlations.
+- Work:
+  - Built a correlated covariance family \(\Sigma_s=(sL_0)(sL_0)^\top\) and swept \(s\in[1.0,4.0]\).
+  - Compared Jacobian-linear \(\sigma_q\) against Monte Carlo \(\sigma_q\) for
+    \[
+    q=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v).
+    \]
+  - Logged command, setup, and numeric table in `blackboards/2026-02-10-correlated-noise-threshold-scan-for-projected-areal-rate.md`.
+- Result: mismatch rises from \(0.505\%\) at \(s=1.0\) to \(6.311\%\) at \(s=4.0\), crossing the "few-percent" regime around \(s\approx3\) in this toy.
+- Sources touched (keys + status changes): none.
+- Next: promote one concise regime-dependence qualifier near D1.5l.

@@ -114,6 +114,7 @@
 - `S35` Completed.
 - `S36` Completed.
 - `S37` Completed.
+- `S38` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -146,8 +147,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S38`: test one robustness variant (correlated/higher-noise toy) for the nonlinear trigger.
-2. `C65`: promote one concise robustness qualifier if S38 supports it.
+1. `C65`: promote one concise robustness qualifier from S38 results.
+2. `Q27`: quality pass on D1.5b-m after promotion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
