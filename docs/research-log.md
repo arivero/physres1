@@ -1749,3 +1749,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S52` to scan `conv_patched.md` for remaining unincorporated themes and spawn study goals (update `docs/conv-coverage-map.md`).
+
+## 2026-02-10 (S52: refresh `conv_patched.md` coverage map + spawn next study goals)
+- Focus: keep the conversation-to-drafts mapping accurate and actionable.
+- Work:
+  - Updated `docs/conv-coverage-map.md` to reflect new covered threads (Introduction obstruction witnesses; relativistic central orbits draft; uncuttable note; QFT doubling remark).
+  - Updated `blackboards/2026-02-10-unresolved-conv-themes-coverage-map.md` to match current coverage and reprioritize next work.
+- Result: remaining high-ROI gaps are now clearly listed as cycle-ready next goals (generic-\(q\) derivation; \(\tau\) formalization; gauge/string-tension branch with `B` anchors).
+- Sources touched (keys + status changes): none.
+- Next: run `S53` (generic-\(q\) areal-speed derivation) and `S54` (\(\tau\) formalization note); open `B07` if the gauge branch is activated.

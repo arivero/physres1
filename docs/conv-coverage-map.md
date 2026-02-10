@@ -5,7 +5,7 @@ Do not cite `conv_patched.md` as evidence or as bibliography.
 
 The current “paper set” referenced here:
 - Cornerstone manuscript: `paper/main.md`
-- Follow-ups: `papers/planck-area/main.md`, `papers/rg-fundamental/main.md`, `papers/half-density-qft/main.md`, `papers/delta-objects/main.md`
+- Follow-ups: `papers/planck-area/main.md`, `papers/rg-fundamental/main.md`, `papers/half-density-qft/main.md`, `papers/delta-objects/main.md`, `papers/relativistic-central-orbits/main.md`, `papers/uncuttable-controlled-refinement/main.md`
 
 ## 1) Fully Covered (Already Incorporated)
 
@@ -14,6 +14,9 @@ These conversation threads are already represented in the current drafts (though
 - Half-density kernel composition and scalarization choice \(\sigma_\ast\): `paper/main.md` (Section 6, H4.0/H4.0a) + `papers/planck-area/main.md` (Sections 2–3).
 - RG as a refinement-compatibility principle + explicit singular QM witness (2D delta): `paper/main.md` (Section 8 + Appendix) + `papers/rg-fundamental/main.md`.
 - Delta dictionary and weak Euler–Lagrange / corners / impulses: `papers/delta-objects/main.md` + `blackboards/2026-02-10-distribution-theory-for-extremals.md`.
+- Zeno-style “refinement paradox” framing with concrete obstruction witnesses (measure non-existence, ordering ambiguity, subtraction toy): `paper/main.md` Introduction (`Heuristic H0.2`, `Heuristic H0.2a`).
+- QFT doubling / density-matrix kernel viewpoint: `papers/half-density-qft/main.md` (compact remark-level bridge).
+- "Uncuttable" clarified as controlled refinement (not indivisibility): `papers/uncuttable-controlled-refinement/main.md`.
 
 ## 2) Partially Covered (Conversation Has More Than the Drafts)
 
@@ -65,14 +68,14 @@ These conversation threads are already represented in the current drafts (though
 - Next cycles:
   - `S`: study non-conformal perturbations (if desired).
 
-## 3) Outside Current Paper Set (Needs New Drafts or Clearly Separated Inserts)
+## 3) Outside Core Manuscript (Dependent Drafts or Still Missing)
 
 ### 3.1 Special relativity: circular orbits under \(F=K/r^n\), bounds on \(L\), stability, and non-circular orbit existence
 - Conversation anchors:
   - `conv_patched.md` early blocks: `## 1–8` (SR force balance, special cases \(n=2,3\), non-circular orbit analysis).
   - Key idea: inverse-square special case gives a lower bound \(L>K/c\) for circular motion in SR (and related bounds for \(n=3\)).
 - Current coverage:
-  - Not present in `paper/main.md` or follow-up drafts (we treat Newtonian polygonal refinement).
+  - Drafted in `papers/relativistic-central-orbits/main.md` (SR circular motion, inverse-square bound, and SR stability inequalities).
 - Best incorporation path:
   - New dependent manuscript: `papers/relativistic-central-orbits/main.md` (recommended), structured as:
     1) SR worldline action + central potential reduction,
@@ -86,7 +89,8 @@ These conversation threads are already represented in the current drafts (though
 
 ### 3.2 General relativity: effective potential, circular-orbit criteria, photon sphere / impact parameter story
 - Conversation anchors: `conv_patched.md` blocks around `## 9–14` (GR extension questions, photon sphere).
-- Current coverage: not present.
+- Current coverage:
+  - Baseline derivations exist in `papers/relativistic-central-orbits/main.md` (Schwarzschild effective potential, photon sphere, timelike circular branch and ISCO).
 - Best incorporation path:
   - Extend the same proposed `papers/relativistic-central-orbits/main.md` with a GR chapter:
     - geodesic action \(\to\) conserved \(E,L\) from Killing fields,
@@ -99,7 +103,7 @@ These conversation threads are already represented in the current drafts (though
 ### 3.3 Gauge theories: “long-range potential” via Wilson loops; confinement / string tension; Cornell potential
 - Conversation anchors: `conv_patched.md` blocks `## 11–16` (Wilson loop definition of \(V(r)\), dimension-dependent Coulomb kernels, confining \(\sigma r\), Cornell model).
 - Current coverage:
-  - Only minimal mentions: `papers/planck-area/main.md` allows a “universal area parameter \(\alpha_\ast\)” (string \(\alpha'\) as example), but no gauge-theory derivation of a string tension scale is given.
+  - Still mostly missing as a derivation thread. We now have a hypothesis-separation remark in `papers/planck-area/main.md` clarifying where an emergent confining string tension \(\sigma\) would belong logically (transmutation branch vs a fundamental UV area parameter).
 - Best incorporation path:
   - New dependent draft: `papers/string-tension-as-area-scale/main.md` (recommended):
     - Wilson loop definition \(\\langle W\\rangle \\sim e^{-TV(r)}\),
@@ -113,7 +117,8 @@ These conversation threads are already represented in the current drafts (though
 
 ### 3.4 “Uncuttable” / Democritus / pyramid volume paradox and the “two-face slice” idea
 - Conversation anchors: `conv_patched.md` blocks `## 23–24`.
-- Current coverage: none.
+- Current coverage:
+  - Definition-level note exists in `papers/uncuttable-controlled-refinement/main.md` (kept historically neutral; focuses on controlled refinement).
 - Best incorporation path:
   - Keep out of the PhysRev-facing core drafts unless we do a dedicated, well-sourced historical note.
   - If kept, create a separate historical/interpretive draft:
