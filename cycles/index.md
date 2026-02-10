@@ -27,6 +27,7 @@
 23. `C22` Completed.
 24. `C23` Completed.
 25. `C24` Completed.
+26. `C25` Pending.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
