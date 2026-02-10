@@ -834,3 +834,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - a short “next waves” roadmap for stability + Schwarzschild/photon-sphere baseline.
 - Result: the relativistic-orbit branch is now captured as a real draft (not just a sketch) without bloating the cornerstone manuscript.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S25: Schwarzschild effective potential + photon sphere baseline)
+- Focus: add a clean GR baseline derivation (effective potential + photon sphere) to extend the relativistic-orbit branch beyond SR.
+- Work: added `blackboards/2026-02-10-schwarzschild-geodesics-effective-potential.md`, deriving conserved \(E,L\), the radial equation \(\dot r^2=E^2-(1-2M/r)(\epsilon+L^2/r^2)\), and the null circular orbit (photon sphere) radius \(r_{\mathrm{ph}}=3M\) (with impact parameter \(b=3\sqrt3\,M\) in \(G=c=1\) units).
+- Result: the GR baseline is now derivation-first and ready for promotion into `papers/relativistic-central-orbits/main.md` as the next content wave.
+- Sources touched (keys + status changes): none.
