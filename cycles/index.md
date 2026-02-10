@@ -83,6 +83,7 @@
 79. `C79` Completed.
 80. `C80` Completed.
 81. `C81` Completed.
+82. `C82` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -198,8 +199,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C82`: add a short hypothesis-separated paragraph to `papers/planck-area/main.md` (near `Remark E4a`) using `[Greensite2003Confinement]` as an anchor.
-2. `Q41`: quality pass on the updated scale-supplier section (keep branch separation crisp).
+1. `Q41`: quality pass on the updated scale-supplier section (keep branch separation crisp).
+2. `S57`: decide whether to open a dedicated `papers/string-tension-as-area-scale/main.md` draft (only if multiple waves justify it).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

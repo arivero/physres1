@@ -1840,3 +1840,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: prepared a `C82` promotion target: add one short hypothesis-separated paragraph near `Remark E4a` in `papers/planck-area/main.md`, anchored by `[Greensite2003Confinement]`.
 - Sources touched (keys + status changes): none.
 - Next: run `C82` to promote the paragraph into `papers/planck-area/main.md` and record diffstat.
+
+## 2026-02-10 (C82: add Wilson-loop definition to anchor the string-tension scale-supplier option)
+- Focus: make the "string tension supplies an area scale" option operationally anchored, not just dimensional.
+- Work:
+  - Extended `papers/planck-area/main.md` `Remark E4a` with the standard Wilson-loop static-potential definition and area-law \(\Rightarrow\) \(\sigma\) identification, citing `[Greensite2003Confinement]`.
+- Result: the scale-supplier branch now has an explicit definition-level anchor consistent with the OA-first bibliography policy.
+- Sources touched (keys + status changes): none (key already added in `B07`).
+- Next: run `Q41` to quality-pass the scale-supplier section for branch separation and tone.
