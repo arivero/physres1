@@ -64,6 +64,7 @@
 - `S11` Completed.
 - `S12` Completed.
 - `S13` Completed.
+- `S14` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -79,6 +80,7 @@
 Priority: half-densities + dependent follow-up drafts.
 1. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
 2. Optional `C41`: tighten the RG follow-up’s 1D/2D/3D comparison with a one-line pointer to `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` (if helpful).
+3. Optional `C42`: promote one sentence from S14 into `paper/main.md` Section 6.2/6.4 highlighting that an \(\hbar\)-like action scale is forced by dimensionless oscillatory weights plus delta-normalized kernel composition.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

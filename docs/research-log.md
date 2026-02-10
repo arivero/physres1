@@ -579,3 +579,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added a single pointer sentence near `Derivation D4.3` in `paper/main.md` to the explicit Schur-complement elimination template note `paper/notes/van-vleck-schur-complement.md`.
 - Result: readers can see, without extra prose, where the “mixed Hessian after eliminating intermediates” mechanism is worked out algebraically.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S14: \u03b7 as action scale forced by oscillatory weights + kernel composition)
+- Focus: stay close to quantization (avoid BV): explain why an \(\hbar\)-like action scale is structurally required when defining oscillatory action weights and delta-normalized composable kernels.
+- Work: added `blackboards/2026-02-10-hbar-as-action-scale-and-kernel-normalization.md` with:
+  - the “dimensionless exponent forces an action scale” argument,
+  - stationary phase showing \(\hbar\) as the small parameter selecting extremals,
+  - the short-time kernel normalization showing \(\hbar\) enters the prefactor once delta initial condition and composition are imposed.
+- Result: we have a compact support note aligning the repo’s “stationary extremes + refinement compatibility” narrative with the unavoidable appearance of an action-scale constant in quantization.
+- Sources touched (keys + status changes): none.
