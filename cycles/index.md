@@ -84,6 +84,7 @@
 80. `C80` Completed.
 81. `C81` Completed.
 82. `C82` Completed.
+83. `C83` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -202,8 +203,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C83`: promote the regulator-independent \(\tau\) lemma into `paper/main.md` (with a concrete toy witness) and record diffstat.
-2. `Q42`: referee-pass the revised Section 8 for claim hygiene and reader flow.
+1. `Q42`: referee-pass the revised Section 8 for claim hygiene and reader flow.
+2. `C84`: add one additional "Newton-limit paradox" witness that forces a deformation/control parameter (tie explicitly to \(\hbar\)) without drifting into standard narratives.
 3. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
 
 Deprioritized unless blocking a revision:

@@ -1879,3 +1879,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a crisp, copyable lemma to tighten Section 8 without leaning on cutoff-specific language.
 - Sources touched (keys + status changes): none.
 - Next: run `C83` to promote the lemma into `paper/main.md` and record diffstat.
+
+## 2026-02-10 (C83: tighten `Derivation D6.0` as compare-at-fixed-ruler, point to witness)
+- Focus: make the \(\tau_b\) control-map statement read as "compare at fixed ruler" (scheme-explicit, regulator-independent) and attach a concrete witness.
+- Work:
+  - edited `paper/main.md` `Derivation D6.0` to introduce \(\mathcal C_{b,h}\) and restate closure as \(\mathcal C_{b,h}(A_{h/b,\theta})=A_{h,\tau_b(\theta)}\).
+  - added an explicit pointer to `Derivation D6.2a` as the computed witness \(\tau_2(a)=a/2+1/4\), \(a_\ast=1/2\).
+- Result: Section 8 now states RG/control as a refinement-composition condition with an explicit micro-model attached.
+- Sources touched (keys + status changes): none.
+- Next: run `Q42` to referee-pass Section 8, then add one additional Newton-limit paradox witness tied to \(\hbar\).

@@ -795,13 +795,13 @@ $$
 This is the renormalization-group (RG) semigroup property in refinement language; for a standard Wilsonian/ERG discussion of coarse-graining flows and fixed points, see [Rosten2012ERG].
 
 `Derivation D6.0 (Control map \(\tau\): comparing refinements at fixed ruler).`
-The same compatibility condition can be stated without committing to a particular regulator. Let \(h>0\) be a resolution parameter (e.g. \(h\sim 1/\Lambda\) for a cutoff \(\Lambda\)), and let \(A_{h,\theta}\) denote a family of regulated amplitudes/prediction functionals indexed by parameters \(\theta\) (couplings, normalizations, and any fixed conventions such as scalarization gauge). Let \(\mathcal G_b\) be coarse-graining by factor \(b>1\): integrate out the degrees of freedom present at resolution \(h/b\) and re-express the result at resolution \(h\). Scale compatibility is the closure requirement that coarse-graining lands back in the same family after a parameter redefinition:
+The same compatibility condition can be stated without committing to a particular regulator. Fix a reference ruler \(h>0\) (the resolution at which we compare predictions), and let \(A_{h,\theta}\) denote a family of amplitudes/prediction functionals indexed by parameters \(\theta\) (couplings, normalizations, and any fixed conventions such as scalarization gauge). For a refinement factor \(b>1\), let \(\mathcal C_{b,h}\) denote the canonical "compare at ruler \(h\)" operation: take a prediction written at finer ruler \(h/b\) and express it back at ruler \(h\) (e.g. by composing fine steps or integrating intermediate variables when such a representation exists). Scale compatibility is the closure requirement that refinement-comparison lands back in the same family after a parameter update:
 
 $$
-\mathcal G_b\!\big(A_{h/b,\theta}\big)=A_{h,\tau_b(\theta)}.
+\mathcal C_{b,h}\!\big(A_{h/b,\theta}\big)=A_{h,\tau_b(\theta)}.
 $$
 
-Here \(\tau_b\) is the control/flow map induced by refinement. When no such \(\tau_b\) exists within the chosen parameter family, coarse-graining generates new operators and the family must be enlarged (counterterms/effective operators). In the cutoff notation above, one may view \(R_{\Lambda\to\mu}\) as a special case of \(\tau\) written with explicit reference scales.
+Here \(\tau_b\) is the control/flow map induced by the compare-at-fixed-ruler operation. When no such \(\tau_b\) exists within the chosen parameter family, refinement generates new operators and the family must be enlarged (counterterms/effective operators). A concrete micro-witness is `Derivation D6.2a`, where step-halving induces \(\tau_2(a)=a/2+1/4\) with fixed point \(a_\ast=1/2\). In the cutoff notation above, one may view \(R_{\Lambda\to\mu}\) as a special case of \(\tau\) written with explicit reference scales.
 
 ### 8.3 RG Equation from Cutoff Independence
 `Derivation D6.1 (RG equation as consistency under refinement).`
