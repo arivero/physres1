@@ -122,6 +122,7 @@
 - `S39` Completed.
 - `S40` Completed.
 - `S41` Completed.
+- `S42` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -158,8 +159,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S42`: return to QFT doubling bridge (half-density continuation) for the next promotion.
-2. `C69`: promote one concise QFT-doubling bridge remark into a draft manuscript.
+1. `C69`: promote one concise QFT-doubling bridge remark into a draft manuscript.
+2. `Q31`: quality pass on the doubling remark insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

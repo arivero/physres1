@@ -1473,3 +1473,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S42` on the QFT doubling bridge in half-density kernel language.
+
+## 2026-02-10 (S42: half-density kernel doubling for densities)
+- Focus: make the "amplitude squared implies doubling" structure explicit in half-density kernel calculus.
+- Work:
+  - derived the density-operator evolution kernel identity
+    \[
+    K_{\rho_t}(x,y)=\int_{M\times M} K_t(x,x')\,K_{\rho_0}(x',y')\,\overline{K_t(y,y')},
+    \]
+    showing why densities naturally live on \(M\times M\).
+  - recorded derivation + promotion target in `blackboards/2026-02-10-half-density-doubling-density-matrix-kernels.md`.
+- Result: prepared a concise manuscript remark for `papers/half-density-qft/main.md` linking bra/ket doubling to kernel composition (without new bibliography).
+- Sources touched (keys + status changes): none.
