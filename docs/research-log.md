@@ -1794,3 +1794,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: Section 8.4 now contains a concrete example where "refine then compare" induces a control map and a fixed point, matching the manuscript’s refinement-compatibility narrative.
 - Sources touched (keys + status changes): none.
 - Next: run `S55` to sketch a parallel "control-parameter" view for why \(c\) and \(G\) appear as fundamental constants (separate from \(\hbar\)).
+
+## 2026-02-10 (S55: \(\hbar\), \(c\), \(G\) as control parameters for distinct compatibilities)
+- Focus: draft a foundations-level "why these constants" viewpoint consistent with the refinement/compatibility thesis.
+- Work:
+  - wrote `blackboards/2026-02-10-why-hbar-c-g-as-control-parameters.md`, framing \(\hbar\to0\), \(c\to\infty\), and \(G\to0\) as three different compatibility limits (quantum, relativistic, gravitational) in the staged refinement program.
+- Result: prepared a minimal `C81` promotion target: a short heuristic block in `paper/main.md` Introduction connecting these constants to the already-stated obstruction/control narrative.
+- Sources touched (keys + status changes): none.
+- Next: run `C81` if we can insert the block without inflating the Introduction.

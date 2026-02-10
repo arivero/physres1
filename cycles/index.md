@@ -148,6 +148,7 @@
 - `S52` Completed.
 - `S53` Completed.
 - `S54` Completed.
+- `S55` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -193,8 +194,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S55`: sketch a "why \(c\), why \(G\)" control-parameter view (separate from \(\hbar\)) for possible future promotion.
-2. `C81`: if warranted, add a short heuristic in `paper/main.md` (Intro or Section 9) summarizing "constants as control parameters" without overclaiming.
+1. `C81`: if warranted, add a short heuristic in `paper/main.md` (Intro or Section 9) summarizing "constants as control parameters" without overclaiming.
+2. `Q40`: quality pass on the Introduction after the addition (check bloat and claim hygiene).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
