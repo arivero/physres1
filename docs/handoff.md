@@ -6,6 +6,9 @@ It is meant to survive chat/context resets.
 ## Canonical Agent Instructions
 - Canonical rules live in `AGENTS.md`.
 - `AGENT.md` is a pointer only.
+For other assistants:
+- Claude reads `CLAUDE.md` (points back to `AGENTS.md` + invocation contract).
+- GitHub Copilot reads `.github/copilot-instructions.md` (points back to `AGENTS.md` + cycle workflow).
 
 Key policies:
 1. Cycle IDs (`C00`, `C01`, ...) are planning metadata only; keep them in `cycles/` and never in rendered manuscript output.
