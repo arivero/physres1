@@ -142,11 +142,12 @@
 - `Q23` Completed.
 - `Q24` Completed.
 - `Q25` Completed.
+- `Q26` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q26`: quality pass on D1.5b-l after nonlinear-validation note.
-2. `S38`: test one robustness variant (correlated/higher-noise toy) for the nonlinear trigger.
+1. `S38`: test one robustness variant (correlated/higher-noise toy) for the nonlinear trigger.
+2. `C65`: promote one concise robustness qualifier if S38 supports it.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

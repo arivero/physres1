@@ -1317,3 +1317,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: uncertainty section now has an actionable guardrail connecting S37 numerical check style to manuscript practice.
 - Sources touched (keys + status changes): none.
 - Next: run `Q26` on D1.5b-l for coherence and wording discipline.
+
+## 2026-02-10 (Q26: quality pass on D1.5b-l)
+- Focus: consistency review after adding nonlinear-validation trigger D1.5l.
+- Checks:
+  - read-through of D1.5b-l progression;
+  - verified D1.5l remains pragmatic guidance (not a universal threshold law);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required; chain remains coherent and scoped.
+- Sources touched (keys + status changes): none.
+- Next: run `S38` robustness toy with correlated/higher-noise uncertainty to test escalation behavior.
