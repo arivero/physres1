@@ -64,6 +64,7 @@
 60. `C60` Completed.
 61. `C61` Completed.
 62. `C62` Completed.
+63. `C63` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -141,8 +142,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C63`: promote S36 as a compact uncertainty addendum near D1.5j.
-2. `Q25`: quality pass on D1.5b-k after uncertainty insertion.
+1. `Q25`: quality pass on D1.5b-k after uncertainty insertion.
+2. `S37`: test one lightweight nonlinear propagation check (Monte Carlo toy) for the projected observables.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

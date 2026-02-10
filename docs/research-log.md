@@ -1270,3 +1270,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: branch now has a consistent uncertainty baseline ready for concise manuscript promotion.
 - Sources touched (keys + status changes): none.
 - Next: promote a compact uncertainty addendum near D1.5j.
+
+## 2026-02-10 (C63: promote uncertainty addendum)
+- Focus: add a concise uncertainty baseline to the D1.5 chain.
+- Work:
+  - Added `Remark D1.5k` in `papers/planck-area/main.md` with first-order Jacobian covariance templates:
+    \[
+    \sigma_q^2\approx J_q\Sigma_xJ_q^\top,\qquad
+    \sigma_{\mathcal T}^2\approx J_{\mathcal T}\Sigma_zJ_{\mathcal T}^\top.
+    \]
+  - Added explicit nonlinear cross-check caveat for strongly nonlinear regimes.
+- Result: implementation path now includes a minimal uncertainty layer without expanding into full methods detail.
+- Sources touched (keys + status changes): none.
+- Next: run `Q25` on D1.5b-k for coherence and readability.

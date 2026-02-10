@@ -633,6 +633,19 @@ and, if a force model is supplied, the projected-torque residual
 \]
 This keeps the postulate test tied to explicit reconstruction and uncertainty handling rather than to abstract kinematic statements alone.
 
+`Remark D1.5k (Minimal uncertainty scaffold).`
+At first order, uncertainty in projected observables can be propagated by Jacobians:
+\[
+q:=\dot A_{\mathbf n}
+\quad\Rightarrow\quad
+\sigma_q^2\approx J_q\,\Sigma_x\,J_q^\top,
+\]
+for reconstructed state vector \(x\) and covariance \(\Sigma_x\), and
+\[
+\sigma_{\mathcal T}^2\approx J_{\mathcal T}\,\Sigma_z\,J_{\mathcal T}^\top
+\]
+for residual \(\mathcal T_{\mathbf n}\) with augmented state \(z\). This linear scaffold is a baseline; in strongly nonlinear regimes the same quantities should be cross-checked with nonlinear propagation (e.g. Monte Carlo) before interpretation.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
