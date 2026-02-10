@@ -200,11 +200,12 @@
 - `Q39` Completed.
 - `Q40` Completed.
 - `Q41` Completed.
+- `Q42` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q42`: referee-pass the revised Section 8 for claim hygiene and reader flow.
-2. `C84`: add one additional "Newton-limit paradox" witness that forces a deformation/control parameter (tie explicitly to \(\hbar\)) without drifting into standard narratives.
+1. `C84`: add one additional "Newton-limit paradox" witness that forces a deformation/control parameter (tie explicitly to \(\hbar\)) without drifting into standard narratives.
+2. `Q43`: referee-pass the new \(\hbar\) witness block for novelty and claim hygiene.
 3. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
 
 Deprioritized unless blocking a revision:

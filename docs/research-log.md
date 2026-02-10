@@ -1888,3 +1888,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: Section 8 now states RG/control as a refinement-composition condition with an explicit micro-model attached.
 - Sources touched (keys + status changes): none.
 - Next: run `Q42` to referee-pass Section 8, then add one additional Newton-limit paradox witness tied to \(\hbar\).
+
+## 2026-02-10 (Q42: referee pass on Section 8 after the \(\tau\) rewrite)
+- Focus: quality-pass Section 8 for scheme-clarity and reader flow (\(\Lambda\) vs \(h\)).
+- Findings:
+  - `Derivation D6.0` should treat \(\mathcal C_{b,h}\) as a *chosen* comparison rule (scheme choice), not as "canonical".
+- Edits:
+  - adjusted the wording in `paper/main.md` `Derivation D6.0` accordingly.
+- Sources touched (keys + status changes): none.
+- Next: run `C84` to add an additional Newton-limit paradox witness explicitly tied to \(\hbar\).
