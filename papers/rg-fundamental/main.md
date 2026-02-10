@@ -372,6 +372,35 @@ Thus the scattering depends only on the dimensionless ratio \(\kappa/k\) (equiva
 2. \(k\ll \kappa\) (IR/long distance): \(t(k)\to 0\), \(r(k)\to -1\) (perfect reflection fixed point).
 In this sense the “RG flow of the \(S\)-matrix” is simply the statement that, for a dimensionful contact strength, changing the probing scale moves one along a trajectory between scale-invariant endpoint matrices.
 
+### 5.9 Convention Map: Measures, Loop Integrals, and Scheme Constants
+The \((2\pi)^d\) factors and the finite constants in the logarithms are the usual source of “same result up to conventions” confusion. In this note we fix the conventions as follows:
+we define the loop integral (free resolvent at the origin) by
+\[
+I_d(E;\Lambda)
+=\int_{|q|<\Lambda}\frac{d^dq}{(2\pi)^d}\,
+\frac{1}{E-\frac{\hbar^2 q^2}{2m}+i0},
+\]
+and we define the (scalar) \(T\)-matrix by the algebraic Lippmann–Schwinger form
+\[
+T(E;\Lambda)=\frac{1}{g_B(\Lambda)^{-1}-I_d(E;\Lambda)}.
+\]
+
+With \(E=\hbar^2k^2/(2m)\) (\(E>0\)) and \(\Lambda\gg k\), these definitions give:
+\[
+I_2(E;\Lambda)
+=-\frac{m}{2\pi\hbar^2}\left[\ln\!\left(\frac{\Lambda^2}{k^2}\right)+i\pi\right]
++O\!\left(\frac{k^2}{\Lambda^2}\right),
+\]
+\[
+I_3(E;\Lambda)
+=-\frac{m}{\pi^2\hbar^2}\Lambda
++i\,\frac{m}{2\pi\hbar^2}k
++O\!\left(\frac{k^2}{\Lambda}\right).
+\]
+
+Finally, the finite constant accompanying the logarithm is a scheme choice:
+adding a fixed constant \(C\) to the subtraction condition does not change the beta function, but it rescales the RG-invariant transmutation scale \(\kappa_\ast^2\mapsto e^{C}\kappa_\ast^2\) (hence the boundary-condition length \(R\sim 1/\kappa_\ast\) rescales by \(R\mapsto e^{-C/2}R\)). The universal content is the existence of the single scale, not its convention-dependent normalization.
+
 ## 6. Semigroup vs Group: What Is (Not) Invertible
 The phrase “renormalization group” hides two different notions:
 1. an information-losing *coarse-graining map* on descriptions of the system, and
@@ -441,7 +470,6 @@ Thus even the simplest exact coarse-graining step already splits into “extrema
 ## 7. What This Paper Must Still Do
 This is an explicit forward queue, tagged by cycle type (`C` content, `S` study/blackboard, `B` bibliography).
 
-1. `B`: Identify/ingest the intended “Cristina 2D delta” reference (Tarrach–Manuel / Tarrach–Hidalgo) and match its conventions to the derivations here.
-2. `S`: Produce a short “convention map” note: which overall \(T\)-matrix normalization is used, and how constants like \(2e^{-\gamma}\) shift under finite subtractions.
-3. `C`: Decide whether the rooted-tree/Hopf-algebra material is core to this note’s thesis or should be moved to an appendix-style section; keep the main flow centered on compatibility + explicit witnesses.
-4. `C`: Make the 3D Wilsonian fixed-point statement more explicit by defining a dimensionless coupling (e.g. \(\hat g(\Lambda)\propto \Lambda g_B(\Lambda)\)) and stating which endpoints correspond to \(a=0\) vs \(a=\infty\).
+1. `C`: Decide whether the rooted-tree/Hopf-algebra material is core to this note’s thesis or should be moved to an appendix-style section; keep the main flow centered on compatibility + explicit witnesses.
+2. `C`: Make the 3D Wilsonian fixed-point statement more explicit by defining a dimensionless coupling (e.g. \(\hat g(\Lambda)\propto \Lambda g_B(\Lambda)\)) and stating which endpoints correspond to \(a=0\) vs \(a=\infty\).
+3. `B` (optional): add an independent non-Rivero anchor for the 1D “U(2) point interactions” classification (OA-first; otherwise mark `PENDING`).

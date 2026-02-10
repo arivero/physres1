@@ -336,3 +336,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the 2D/3D loop formulas match once the \(1/(2\pi)^d\) measures and log-branch choice are fixed; scheme dependence is cleanly a rescaling of \(\kappa_\ast\) (hence of the boundary-length \(R\)).
 - Sources touched (keys + status changes): none (study only).
 - Next: per cadence, return to `C` to optionally promote a short “convention map” paragraph into `papers/rg-fundamental/main.md` (or keep it blackboard-only until the Cristina 2D-delta reference is ingested).
+
+## 2026-02-10 (C26: promote S04 convention map into RG note)
+- Focus: reduce “up to conventions” objections in the singular-QM witness by pinning measures, asymptotics, and scheme constants inside the RG note itself.
+- Question: can we state the convention map *succinctly* without derailing the compatibility narrative?
+- Work:
+  - Added Section 5.9 (“Convention Map”) to `papers/rg-fundamental/main.md` fixing the \((2\pi)^{-d}\) measure conventions and quoting the 2D/3D cutoff asymptotics.
+  - Added an explicit sentence stating that finite subtraction shifts rescale \(\kappa_\ast\) (hence \(R\)) while leaving the beta function unchanged.
+  - Refreshed the forward queue in Section 7 to remove items completed by `B01`/`S04`.
+- Result: the RG note is now self-contained about the load-bearing convention choices and makes the scheme dependence of \(2e^{-\gamma}\) (as a finite log constant) explicit.
+- Sources touched (keys + status changes): none.
+- Next: start a new `S` cycle on “delta as a half-density kernel / identity operator” and how that interfaces with the scalarization-gauge story (blackboard first, then promote).

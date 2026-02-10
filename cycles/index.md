@@ -46,8 +46,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Run a quick Q-pass (`Q01`, optional) after B01/S01/C23 promotions (check claim hygiene + citation placement).
-2. Decide next content direction: deepen the half-density \(\Rightarrow\) universal scale hypothesis (new `C24`) or expand the RG note’s independent anchors (new `B02`).
+1. `C26`: promote `S04` into `papers/rg-fundamental/main.md` (short convention-map paragraph + explicit scheme-constant statement) and refresh its forward queue (remove completed items).
+2. `S05`: study “delta as a half-density kernel / identity operator” and how it interfaces with the scalarization-gauge story (blackboard first).
+3. `B02` (when network is available): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
