@@ -79,6 +79,7 @@
 75. `C75` Completed.
 76. `C76` Completed.
 77. `C77` Completed.
+78. `C78` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -186,8 +187,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C78`: add a single toy divergence witness clause to `Heuristic H0.2` item 3 without inflating the Introduction.
-2. `Q39`: quality pass on the Introduction after the change (flow + tone).
+1. `Q39`: quality pass on the Introduction after the change (flow + tone).
+2. `S52`: scan `conv_patched.md` for any remaining unincorporated themes and spawn study goals (update `docs/conv-coverage-map.md`).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

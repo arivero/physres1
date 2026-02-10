@@ -1732,3 +1732,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: prepared exact `C78` wording: add a short "(Toy witness ...)" parenthetical to H0.2 item 3.
 - Sources touched (keys + status changes): none.
 - Next: run `C78` to apply the wording change and record diffstat.
+
+## 2026-02-10 (C78: add a toy divergence witness to `Heuristic H0.2` item 3)
+- Focus: make the "divergence" obstruction in H0.2 slightly more concrete without inflating the Introduction.
+- Work:
+  - Added a short toy witness parenthetical to `paper/main.md` H0.2 item 3: the derivative exists only after subtracting a \(1/\varepsilon\) divergence in the difference quotient.
+- Result: all three H0.2 obstructions now have minimal concrete witness lines (measure, ordering, subtraction).
+- Sources touched (keys + status changes): none.
+- Next: run `Q39` to quality-pass the Introduction after this addition (flow + tone).
