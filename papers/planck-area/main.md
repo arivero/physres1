@@ -573,6 +573,15 @@ M^{(U)\mu\nu}=h(U)^\mu{}_\alpha h(U)^\nu{}_\beta M^{\alpha\beta},
 rather than directly on coordinate-time areal rate.
 In the source rest frame this is equivalent to fixing \(\dot A_{\tau,U}=\ell_{(U)}/2\), while coordinate-time rates are derived via the corresponding lapse factor. This keeps the branch covariant-with-source and avoids introducing an additional arbitrary observer field \(u^\mu(x)\).
 
+`Remark D1.5g (Non-circular planar extension is kinematic).`
+The \(\ell\)-based rule is not restricted to circular trajectories. For general planar motion with tangential component \(v_\perp=r\dot\phi\),
+\[
+\ell=\gamma r v_\perp=\gamma r^2\dot\phi,\qquad
+\frac{dA}{dt}=\frac12 r^2\dot\phi=\frac{\ell}{2\gamma},\qquad
+\frac{dA}{d\tau}=\frac{\ell}{2}.
+\]
+Thus “fix \(\ell\)” remains equivalent to fixing proper-time areal rate in the source frame even away from circular orbits; this part is kinematic and does not depend on the specific force law.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and

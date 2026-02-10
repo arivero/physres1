@@ -1104,3 +1104,17 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: extension is kinematic (force-independent) for planar trajectories; supports promoting a short non-circular extension note in the manuscript.
 - Sources touched (keys + status changes): none.
 - Next: promote one compact paragraph near D1.5f and run a follow-up quality pass.
+
+## 2026-02-10 (C59: promote non-circular planar extension)
+- Focus: prevent circular-only misreading of the D1.5f rule.
+- Work:
+  - Added `Remark D1.5g` to `papers/planck-area/main.md` with planar non-circular identities:
+    \[
+    \ell=\gamma r v_\perp=\gamma r^2\dot\phi,\quad
+    \frac{dA}{dt}=\frac{\ell}{2\gamma},\quad
+    \frac{dA}{d\tau}=\frac{\ell}{2}.
+    \]
+  - Stated this extension as kinematic (force-law independent) within the branch assumptions.
+- Result: manuscript now explicitly carries the minimal-structure rule beyond circular trajectories.
+- Sources touched (keys + status changes): none.
+- Next: run `Q21` over D1.5b-g for clarity and scope control.

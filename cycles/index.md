@@ -60,6 +60,7 @@
 56. `C56` Completed.
 57. `C57` Completed.
 58. `C58` Completed.
+59. `C59` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -129,8 +130,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C59`: promote S32 as a one-paragraph non-circular extension note near D1.5f.
-2. `Q21`: quality pass on D1.5b-f plus non-circular extension statement.
+1. `Q21`: quality pass on D1.5b-g plus non-circular extension statement.
+2. `S33`: probe whether the same \(\ell\)-rule survives mild non-planar perturbations (precessing/orbit-tilt settings).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
