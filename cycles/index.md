@@ -38,6 +38,7 @@
 - `S01` Completed.
 - `S02` Completed.
 - `S03` Completed.
+- `S04` Pending.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
