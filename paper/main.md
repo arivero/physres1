@@ -20,7 +20,7 @@ Three recurring obstructions that make "refine \(\to 0\)" nontrivial in practice
 This manuscript treats these as limit-control problems rather than as postulates about "nature at the smallest scale."
 
 `Heuristic H0.2a (No Lebesgue measure on path space).`
-In infinite-dimensional spaces there is no nontrivial translation-invariant Borel measure that is finite on a neighborhood, so the formal symbol \(Dq\) in a path integral cannot be interpreted as an ordinary "Lebesgue measure on trajectories." Therefore the slogan "refine the time slicing, integrate over paths, and send \(\Delta t\to0\)" is not a raw Newtonian limit statement but a definition-by-refinement that must specify normalization and, when singularities are present, regulator/subtraction rules.
+In infinite-dimensional spaces there is no nontrivial translation-invariant \(\sigma\)-finite Borel measure (no Lebesgue/Haar measure) [Velhinho2017InfDimMeasure], so the formal symbol \(Dq\) in a path integral cannot be interpreted as an ordinary "Lebesgue measure on trajectories." Therefore the slogan "refine the time slicing, integrate over paths, and send \(\Delta t\to0\)" is not a raw Newtonian limit statement but a definition-by-refinement that must specify normalization and, when singularities are present, regulator/subtraction rules.
 
 The third anchor is methodological. In this manuscript, deformation quantization and renormalization are not presented as detached specialist topics. They are two ways to control limits:
 1. Deformation quantization controls the classical-to-quantum passage through algebraic deformation and recovery of Poisson structure in the small-parameter limit [Landsman1998] [Connes1994].

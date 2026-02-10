@@ -1653,3 +1653,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a concrete internal bridge between "singular probes" and distribution theory that can be selectively promoted into manuscripts if needed.
 - Sources touched (keys + status changes): none.
 - Next: run `C75` to add an inline citation for `Heuristic H0.2a` (and optionally add a one-line pointer to this jump-condition note near the "singular probes" discussion).
+
+## 2026-02-10 (C75: cite the infinite-dimensional measure obstruction in the Introduction)
+- Focus: make `Heuristic H0.2a` source-anchored.
+- Work:
+  - Updated `paper/main.md` `Heuristic H0.2a` to cite `[Velhinho2017InfDimMeasure]` for the "no translation-invariant \(\sigma\)-finite Borel measure in infinite dimensions" statement.
+- Result: the measure-theory obstruction is now explicitly anchored to an external OA reference.
+- Sources touched (keys + status changes): none (reference key already added in `B06`).
+- Next: run `Q36` to quality-pass the Introduction heuristics (flow + claim hygiene).

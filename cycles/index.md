@@ -76,6 +76,7 @@
 72. `C72` Completed.
 73. `C73` Completed.
 74. `C74` Completed.
+75. `C75` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -177,8 +178,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C75`: insert an inline citation for `Heuristic H0.2a` (and ensure the statement matches the reference hypotheses).
-2. `Q36`: quality pass on the Introduction heuristics (H0.2/H0.2a) for claim hygiene and flow.
+1. `Q36`: quality pass on the Introduction heuristics (H0.2/H0.2a) for claim hygiene and flow.
+2. `S49`: study one concrete ordering/scheme non-uniqueness example (Itô/Stratonovich or midpoint rule) that fits the refinement narrative.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
