@@ -446,6 +446,13 @@ Under the near-diagonal scaling \(y=x+\varepsilon z\) (so \(dy=\varepsilon^Ndz\)
 \(|A_\varepsilon(O)|^2\to (2\pi)^N\int \delta(\nabla f(x))\,|O(x)|^2\,dx\).
 This exhibits the pattern “density = \(|\text{amplitude}|^2\)”, with the exponent \(N/2\) matching the half-density scaling needed to cancel Jacobians under refinement.
 
+`Derivation D3.5a (Nondegenerate critical points: why the weights are square roots).`
+In one dimension, if \(f\) has finitely many nondegenerate critical points \(x_i\) (so \(f'(x_i)=0\) and \(f''(x_i)\neq 0\)), then the distributional identity
+\[
+\delta(f'(x))=\sum_i \frac{\delta(x-x_i)}{|f''(x_i)|}
+\]
+makes explicit that \(\delta(f')\,dx\) is a density supported on stationary points with weights \(1/|f''|\). Stationary phase, by contrast, gives amplitude contributions weighted by \(1/\sqrt{|f''(x_i)|}\). This is the clean finite-dimensional reason the “half-density first” viewpoint is natural: amplitude weights are square roots of density weights.
+
 Section 6 recovers the same “square-root Jacobian” in the dynamical setting: semigroup composition of short-time kernels forces the characteristic \(t^{-d/2}\) normalization (Derivation D4.1a).
 
 In infinite-dimensional settings (paths), one is tempted to write “formal measures” supported on stationary-action trajectories. A concrete version of this idea, and its relation to exponential weighting and consistency, is developed in [Rivero9803035]. In this manuscript we treat such expressions as roadmap heuristics until they are regularized and made compatible with composition (Section 6).

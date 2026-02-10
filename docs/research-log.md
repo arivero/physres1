@@ -403,3 +403,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a clean bridge between (i) “stationarity as a delta-supported density” and (ii) “amplitudes as half-densities whose squared modulus gives densities”, without invoking any transcript or functional-integral claims as theorems.
 - Sources touched (keys + status changes): none (study only).
 - Next: open a content cycle to promote a short paragraph into `paper/main.md` (and optionally a longer note in `paper/notes/`), keeping it citation-light and hypothesis-labeled.
+
+## 2026-02-10 (C30: promote \u03b4(f') weights into the main paper)
+- Focus: strengthen Section 5.5’s “extremal measures” analogy by making the critical-point weights explicit and tying them to stationary-phase prefactors.
+- Question: can we state the nondegenerate identity \(\delta(f')=\sum \delta_{x_i}/|f''(x_i)|\) and its square-root relation to stationary-phase amplitudes in a few lines?
+- Work: added `Derivation D3.5a` to `paper/main.md` immediately after `Derivation D3.5`, stating the nondegenerate \(\delta(f')\) identity and noting that stationary phase yields the corresponding amplitude weights \(1/\sqrt{|f''|}\).
+- Result: the manuscript now makes explicit (in the finite-dimensional sanity-check setting) why “amplitudes are half-densities; probabilities are densities” is the natural scaling pattern behind the square-root Jacobian exponent.
+- Sources touched (keys + status changes): none.
+- Next: policy check + commit; then either attempt `B02` again if DNS recovers, or run an `S` cycle on the multi-dimensional \(\delta(\nabla f)\) / Van Vleck determinant link.

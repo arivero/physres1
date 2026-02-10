@@ -32,6 +32,7 @@
 28. `C27` Completed.
 29. `C28` Completed.
 30. `C29` Completed.
+31. `C30` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -55,8 +56,8 @@
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
 1. `B02` (blocked until DNS/network works): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
-2. `C30`: promote the stable delta/critical-set paragraph into `paper/main.md` (keep it short; no new citations required) now that `S07` is complete.
-3. Optional `S08`: multi-dimensional version \(\delta(\nabla f)\) and the Van Vleck determinant as the Hessian weight.
+2. `S08`: multi-dimensional version \(\delta(\nabla f)\) and the Van Vleck determinant as the Hessian weight (then decide if a longer `paper/notes/` addendum is warranted).
+3. Optional `Q03`: quick check that Section 5.5 remains concise after D3.5a.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
