@@ -151,11 +151,12 @@
 - `Q26` Completed.
 - `Q27` Completed.
 - `Q28` Completed.
+- `Q29` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q29`: quality pass on the Section 5.8 bridge insertion.
-2. `S41`: map unresolved conv-patched themes not yet represented in manuscripts.
+1. `S41`: map unresolved conv-patched themes not yet represented in manuscripts.
+2. `C68`: promote one high-value unresolved theme into manuscript prose.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

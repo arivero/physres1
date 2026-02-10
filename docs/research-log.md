@@ -1437,3 +1437,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: Section 5.8 now has a compact conceptual bridge explaining dimensional fixed-point richness without changing the core RG thesis.
 - Sources touched (keys + status changes): none.
 - Next: run `Q29` on Section 5.8 wording/scope.
+
+## 2026-02-10 (Q29: quality pass on Section 5.8 bridge insertion)
+- Focus: readability and scope review after adding `H1.8a`.
+- Checks:
+  - reviewed flow around `P1.6 -> H1.8a -> 5.8.1/5.8.2`;
+  - verified 3D statement remains explicitly scoped to s-wave contact reduction;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required; bridge improves section coherence.
+- Sources touched (keys + status changes): none.
+- Next: run `S41` to map unresolved `conv_patched.md` themes still outside manuscript coverage.
