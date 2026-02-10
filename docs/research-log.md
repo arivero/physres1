@@ -546,3 +546,8 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Fixed missing factors of 2 in `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` (1D and 3D prefactors).
 - Result: the RG draft and the supporting study note now agree on the 2D/3D conventions, and the 3D imaginary sign matches the \(+i0\) rule.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q06: check RG draft consistency after 3D sign fix)
+- Focus: quick referee-style consistency check of `papers/rg-fundamental/main.md` after correcting the 3D \(I_3\) imaginary sign.
+- Findings: §5.8.1 and §5.9 now agree on the 3D sign/prefactors; no remaining occurrences of the old \(+i\) term were found; the 3D scattering-length parameterization is consistent with the corrected convention (up to overall \(T\) normalization).
+- Action queue: none required for correctness.
