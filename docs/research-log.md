@@ -733,3 +733,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added `Heuristic H4.0b` to `paper/main.md` near the scalarization-gauge discussion (H4.0a), stating that the half-density conjugated Laplacian \(\widetilde\Delta_g=|g|^{1/4}\Delta_g|g|^{-1/4}\) acquires a \(|\nabla\sigma|^2\) term with coefficient \(D(4-D)/4\) under conformal rescaling \(g=e^{2\sigma}\bar g\), hence cancels at \(D=4\) (within the conformal class). The sidebar links to `papers/half-density-qft/main.md` and `blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md` for the invariant derivation and details.
 - Result: the main paper now tracks, briefly, a second orthogonal appearance of \(D=4\) as an operator-simplicity filter under scalarization choices, while keeping the scale-sieve story in the dependent Planck-area draft.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q11: quality pass after adding H4.0b sidebar to cornerstone paper)
+- Focus: referee-style check of the new H4.0b operator-simplicity sidebar (scope/caveats, \(d\) vs \(D\) clarity) plus manuscript-policy guardrail scan.
+- Checks:
+  - `rg -n 'C[0-9]{2}' paper/main.md` (no matches).
+  - Read-through around `Heuristic H4.0a` / `Heuristic H4.0b`.
+  - Verified the referenced files exist: `papers/half-density-qft/main.md` and `blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md`.
+- Findings: no issues; H4.0b is short, explicitly conformal-class scoped, and clearly distinguished from the Planck-area sieve.
+- Sources touched (keys + status changes): none.
