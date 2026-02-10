@@ -81,6 +81,7 @@
 77. `C77` Completed.
 78. `C78` Completed.
 79. `C79` Completed.
+80. `C80` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -192,8 +193,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C80`: promote the step-halving \(\tau\) witness into `paper/main.md` (Section 8.4) and record diffstat.
-2. `S55`: sketch a "why \(c\), why \(G\)" control-parameter view (separate from \(\hbar\)) for possible future promotion.
+1. `S55`: sketch a "why \(c\), why \(G\)" control-parameter view (separate from \(\hbar\)) for possible future promotion.
+2. `C81`: if warranted, add a short heuristic in `paper/main.md` (Intro or Section 9) summarizing "constants as control parameters" without overclaiming.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

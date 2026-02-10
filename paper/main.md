@@ -879,6 +879,21 @@ illustrating how renormalization turns the divergent \(\ln\Lambda\) refinement e
 One can see the same logic in purely classical numerical refinement. Consider an evolution operator \(\Phi_\varepsilon\) representing "one step" at resolution \(\varepsilon\). Composition gives \(\Phi_{2\varepsilon}\approx \Phi_\varepsilon\circ\Phi_\varepsilon\). A refinement-control question is then:
 what correction to \(\Phi_\varepsilon\) makes the two-step composition agree with a one-step method after rescaling back to the same reference resolution?
 
+`Derivation D6.2a (Step-halving induces a control map \(\tau\) in a toy ODE).`
+Consider the scalar ODE \(y'=f(y)\) and a one-parameter family of one-step maps at step size \(h\),
+\[
+\Phi_h^{(a)}(y)=y+h f(y)+a\,h^2 f'(y)f(y)+O(h^3).
+\]
+Define the step-halving comparison \(H(\Phi_h):=\Phi_{h/2}\circ \Phi_{h/2}\). A direct expansion to order \(h^2\) gives
+\[
+H(\Phi_h^{(a)})(y)=y+h f(y)+\left(\frac14+\frac{a}{2}\right)h^2 f'(y)f(y)+O(h^3).
+\]
+Thus, within this ansatz family, refinement comparison closes by a parameter update
+\[
+H(\Phi_h^{(a)})=\Phi_h^{(\tau_2(a))}+O(h^3),\qquad \tau_2(a)=\frac{a}{2}+\frac14,
+\]
+with fixed point \(a_\ast=1/2\) (the second-order Taylor coefficient of the exact flow). This is a clean micro-model for `Derivation D6.0`: \(\tau_b\) is the control map required so that "refine and compare" lands back in the chosen family; failure of closure forces enlarging the family (counterterms).
+
 `Heuristic H6.2 (Rooted trees as refinement bookkeeping).`
 In Runge-Kutta and related integrators, the comparison between composed steps and a single step organizes into rooted-tree expansions; the corresponding composition law forms a group (the Butcher group). Rivero observes that "scale-halving then rescaling back" is an RG-like operation on method coefficients, and the same rooted-tree/Hopf-algebra combinatorics appears in perturbative renormalization bookkeeping [RiveroOde2002] [Brouder1999] [McLachlan2017] [ConnesKreimer2000].
 

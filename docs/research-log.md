@@ -1786,3 +1786,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: prepared a `C80` promotion target for `paper/main.md` Section 8.4: add a short derivation block exhibiting \(\tau_2\) and its fixed point.
 - Sources touched (keys + status changes): none.
 - Next: run `C80` to promote the step-halving \(\tau\) witness into `paper/main.md` and record diffstat.
+
+## 2026-02-10 (C80: promote an explicit step-halving \(\tau\) witness into the main manuscript)
+- Focus: make the control-map language in `Derivation D6.0` less abstract by adding a fully explicit micro-model.
+- Work:
+  - Added `Derivation D6.2a` to `paper/main.md` Section 8.4, deriving the induced parameter map \(\tau_2(a)=a/2+1/4\) (fixed point \(a_\ast=1/2\)) for a one-parameter ODE one-step ansatz under step-halving comparison.
+- Result: Section 8.4 now contains a concrete example where "refine then compare" induces a control map and a fixed point, matching the manuscript’s refinement-compatibility narrative.
+- Sources touched (keys + status changes): none.
+- Next: run `S55` to sketch a parallel "control-parameter" view for why \(c\) and \(G\) appear as fundamental constants (separate from \(\hbar\)).
