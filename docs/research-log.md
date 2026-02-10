@@ -537,3 +537,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` with consistent normalization and the 1D (finite), 2D (log divergent), and 3D (linear divergent) asymptotics, including the imaginary parts from the \(+i0\) prescription.
 - Result: we now have a compact “dimension table” for delta/contact divergences that can be promoted into `papers/rg-fundamental/main.md` to clarify why 2D is the cleanest log-RG witness while 3D is power-subtraction and 1D simple \(\delta\) is finite.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C38: fix 3D \(I_3\) sign/prefactors in RG draft + S12 note)
+- Focus: resolve a convention/sign inconsistency in the 3D contact loop integral (\(+i0\) prescription) and align the S12 blackboard normalization with the RG draft’s convention map.
+- Work:
+  - Corrected the imaginary sign in the 3D loop integral \(I_3(E;\Lambda)\) in `papers/rg-fundamental/main.md` (§5.8.1 and §5.9) and adjusted the displayed scattering-length parameterization accordingly.
+  - Added a one-line reminder of \(1/(x+i0)=\mathrm{PV}(1/x)-i\pi\delta(x)\) in the convention map.
+  - Fixed missing factors of 2 in `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` (1D and 3D prefactors).
+- Result: the RG draft and the supporting study note now agree on the 2D/3D conventions, and the 3D imaginary sign matches the \(+i0\) rule.
+- Sources touched (keys + status changes): none.

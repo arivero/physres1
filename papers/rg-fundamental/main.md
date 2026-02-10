@@ -274,7 +274,7 @@ In \(3\)D, the loop integral \(I(E)\) diverges linearly with a momentum cutoff. 
 I_{3D}(E;\Lambda)
 =\int \frac{d^3q}{(2\pi)^3}\,\frac{1}{E-\frac{\hbar^2 q^2}{2m}+i0}
 =-\frac{m}{\pi^2\hbar^2}\Lambda
-+i\,\frac{m}{2\pi\hbar^2}k
+-i\,\frac{m}{2\pi\hbar^2}k
 +O\!\left(\frac{k^2}{\Lambda}\right).
 \]
 So
@@ -291,7 +291,7 @@ A standard choice is to define a renormalized coupling at threshold (equivalentl
 \]
 Then the renormalized amplitude takes the universal one-parameter form
 \[
-T(E)=\frac{2\pi\hbar^2/m}{\frac{1}{a}-ik},
+T(E)=\frac{2\pi\hbar^2/m}{\frac{1}{a}+ik},
 \]
 up to conventions for the overall normalization of \(T\).
 This is the standard “scattering length parameterization” of the contact interaction in 3D; see also [Jackiw1991DeltaPotentials] for the delta-potential lore and convention comparisons.
@@ -385,6 +385,8 @@ and we define the (scalar) \(T\)-matrix by the algebraic Lippmann–Schwinger fo
 T(E;\Lambda)=\frac{1}{g_B(\Lambda)^{-1}-I_d(E;\Lambda)}.
 \]
 
+Reminder: we use \( \frac{1}{x+i0}=\mathrm{PV}\frac{1}{x}-i\pi\delta(x)\), so the on-shell imaginary part of \(I_d\) carries the minus sign.
+
 With \(E=\hbar^2k^2/(2m)\) (\(E>0\)) and \(\Lambda\gg k\), these definitions give:
 \[
 I_2(E;\Lambda)
@@ -394,7 +396,7 @@ I_2(E;\Lambda)
 \[
 I_3(E;\Lambda)
 =-\frac{m}{\pi^2\hbar^2}\Lambda
-+i\,\frac{m}{2\pi\hbar^2}k
+-i\,\frac{m}{2\pi\hbar^2}k
 +O\!\left(\frac{k^2}{\Lambda}\right).
 \]
 

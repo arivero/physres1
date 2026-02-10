@@ -40,6 +40,7 @@
 36. `C35` Completed.
 37. `C36` Completed.
 38. `C37` Completed.
+39. `C38` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -71,9 +72,8 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `C38`: promote a concise 1D/2D/3D divergence table into `papers/rg-fundamental/main.md` (context for why 2D is the cleanest log-RG witness).
-2. Optional `C39`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
-3. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
+1. Optional `C39`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
+2. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -40,11 +40,11 @@ Evaluating the principal value integral gives
 \]
 so
 \[
-I_1(E;\Lambda)=\frac{m}{\pi\hbar^2}\frac{1}{k}\log\!\Bigl(\frac{\Lambda+k}{\Lambda-k}\Bigr)\;-\;i\,\frac{m}{2\hbar^2 k}.
+I_1(E;\Lambda)=\frac{m}{\pi\hbar^2}\frac{1}{k}\log\!\Bigl(\frac{\Lambda+k}{\Lambda-k}\Bigr)\;-\;i\,\frac{m}{\hbar^2 k}.
 \]
 As \(\Lambda\to\infty\), the real part vanishes like \(O(1/\Lambda)\) and
 \[
-I_1(E;\Lambda)\to -i\,\frac{m}{2\hbar^2 k}.
+I_1(E;\Lambda)\to -i\,\frac{m}{\hbar^2 k}.
 \]
 Thus, the simplest 1D \(\delta(x)\) interaction does not force UV renormalization via \(I_1\).
 
@@ -67,7 +67,7 @@ so renormalization is unavoidably logarithmic and produces an RG-invariant scale
 In \(d=3\),
 \[
 I_3(E;\Lambda)=\frac{2m}{\hbar^2}\int_{|q|<\Lambda}\frac{d^3q}{(2\pi)^3}\;\frac{1}{k^2-q^2+i0}
-=\frac{m}{2\pi^2\hbar^2}\int_0^\Lambda dq\;\frac{q^2}{k^2-q^2+i0}.
+=\frac{m}{\pi^2\hbar^2}\int_0^\Lambda dq\;\frac{q^2}{k^2-q^2+i0}.
 \]
 Split into principal value plus imaginary part:
 \[
@@ -79,16 +79,15 @@ Split into principal value plus imaginary part:
 Hence
 \[
 I_3(E;\Lambda)
-=\frac{m}{2\pi^2\hbar^2}\Bigl[-\Lambda+\frac{k}{2}\log\!\Bigl(\frac{\Lambda+k}{\Lambda-k}\Bigr)\Bigr]
-\;-\;i\,\frac{mk}{4\pi\hbar^2}.
+=\frac{m}{\pi^2\hbar^2}\Bigl[-\Lambda+\frac{k}{2}\log\!\Bigl(\frac{\Lambda+k}{\Lambda-k}\Bigr)\Bigr]
+\;-\;i\,\frac{mk}{2\pi\hbar^2}.
 \]
 As \(\Lambda\to\infty\),
 \[
-I_3(E;\Lambda)= -\frac{m}{2\pi^2\hbar^2}\Lambda\;-\;i\,\frac{mk}{4\pi\hbar^2}\;+\;O\!\Bigl(\frac{k^2}{\Lambda}\Bigr).
+I_3(E;\Lambda)= -\frac{m}{\pi^2\hbar^2}\Lambda\;-\;i\,\frac{mk}{2\pi\hbar^2}\;+\;O\!\Bigl(\frac{k^2}{\Lambda}\Bigr).
 \]
 Renormalizing a 3D contact interaction therefore requires subtracting a linear divergence and replacing the bare coupling by a physical length scale (e.g. the scattering length) in the finite amplitude, but there is no logarithmic running of the 2D type.
 
 ## Promotion queue
 1. Promote a concise “dimension table” (1D/2D/3D divergence structure) into `papers/rg-fundamental/main.md` as context for why the 2D delta is the cleanest RG witness.
 2. Tie the above to the half-density scalarization discussion: the need for a scale in marginal cases (2D) is sharp, while in relevant cases (3D) the coupling already carries dimension and a length scale enters more directly (but scheme dependence remains in subtraction conventions).
-
