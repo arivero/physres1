@@ -128,6 +128,7 @@
 - `S42` Completed.
 - `S43` Completed.
 - `S44` Completed.
+- `S45` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -167,8 +168,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S45`: return to gauge-phase/string-tension scale-supplier branch (keep it hypothesis-separated).
-2. `C72`: promote one concise string-tension scale-supplier remark into `papers/planck-area/main.md`.
+1. `C72`: promote one concise string-tension scale-supplier remark into `papers/planck-area/main.md`.
+2. `Q34`: quality pass on the clarification insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -1559,3 +1559,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S45` on the string-tension/gauge-phase scale-supplier branch.
+
+## 2026-02-10 (S45: string tension as area-scale supplier, hypothesis-separated)
+- Focus: clarify what it means to use "string tension" as the missing area scale in the half-density scalarization program.
+- Work:
+  - separated two logically distinct branches:
+    1) a fundamental UV area parameter \(\alpha_\ast\) (Example E4),
+    2) an emergent confining string tension \(\sigma\) giving an effective area \(\sigma^{-1}\) (transmutation branch).
+  - recorded the distinction and a promotion target in `blackboards/2026-02-10-string-tension-as-area-scale-branch.md`.
+- Result: prepared a one-remark manuscript clarification to avoid mixing H2.5 and H2.13 branches.
+- Sources touched (keys + status changes): none.
