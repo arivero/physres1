@@ -92,6 +92,7 @@
 - `B04` Completed.
 - `B05` Completed.
 - `B06` Completed.
+- `B07` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -196,8 +197,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `B07`: if we open the gauge/string-tension branch, ingest Wilson-loop/confinement anchors (OA first).
-2. `S56`: explore a clean kernel-level bridge from Wilson-loop area law to an "area scale supplier" \(\sigma^{-1}\) (keep it hypothesis-separated).
+1. `S56`: explore a clean kernel-level bridge from Wilson-loop area law to an "area scale supplier" \(\sigma^{-1}\) (keep it hypothesis-separated).
+2. `C82`: if S56 yields a crisp statement, add a short hypothesis-separated paragraph to `papers/planck-area/main.md` (near `Remark E4a`).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

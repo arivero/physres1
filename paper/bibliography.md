@@ -36,6 +36,8 @@ Use this file as a source ledger.
 22. `[BoscagginDambrosioFeltrin2020RelKepler]` Alberto Boscaggin, Walter Dambrosio, and Guglielmo Feltrin, "Periodic solutions to a perturbed relativistic Kepler problem," arXiv:`2003.03110` (v1, 6 Mar 2020). (Contains the unperturbed SR relativistic Kepler equation and discusses circular solutions/constraints.)
 23. `[Carroll1997LectureGR]` Sean M. Carroll, "Lecture Notes on General Relativity," arXiv:`gr-qc/9712019` (v1, 3 Dec 1997). (Includes black holes/geodesic applications used as baseline GR anchors.)
 24. `[Velhinho2017InfDimMeasure]` José Velhinho, "Topics of Measure Theory on Infinite Dimensional Spaces," *Mathematics* 5(3) (2017), 44. DOI `10.3390/math5030044`. OA: MDPI.
+25. `[Greensite2003Confinement]` Jeff Greensite, "The Confinement Problem in Lattice Gauge Theory," arXiv:`hep-lat/0301023` (v2, 5 Mar 2003), *Progress in Particle and Nuclear Physics* 51 (2003) 1. DOI `10.1016/S0146-6410(03)90012-3`. (Review; includes Wilson-loop definition of static potential and area-law/string-tension criterion.)
+26. `[Wilson1974Confinement]` Kenneth G. Wilson, "Confinement of quarks," *Physical Review D* 10 (1974), 2445. DOI `10.1103/PhysRevD.10.2445`. (Original Wilson-loop confinement/area-law context; OA status uncertain.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -63,6 +65,8 @@ Use this file as a source ledger.
 23. `[BoscagginDambrosioFeltrin2020RelKepler]`: arXiv primary anchor used (`2003.03110`).
 24. `[Carroll1997LectureGR]`: arXiv primary anchor used (`gr-qc/9712019`).
 25. `[Velhinho2017InfDimMeasure]`: DOI `10.3390/math5030044`.
+26. `[Greensite2003Confinement]`: DOI `10.1016/S0146-6410(03)90012-3`; arXiv primary anchor used (`hep-lat/0301023`).
+27. `[Wilson1974Confinement]`: DOI `10.1103/PhysRevD.10.2445`.
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -89,6 +93,8 @@ Use this file as a source ledger.
 22. `[BoscagginDambrosioFeltrin2020RelKepler]`: acquired via arXiv preprint in `sources/2003-03110v1-c3bdce53.md`.
 23. `[Carroll1997LectureGR]`: acquired via arXiv preprint in `sources/9712019v1-1d38ccc6.md`.
 24. `[Velhinho2017InfDimMeasure]`: OA via MDPI article page/PDF (not yet ingested into `sources/`).
+25. `[Greensite2003Confinement]`: acquired via arXiv preprint (not yet ingested into `sources/`).
+26. `[Wilson1974Confinement]`: `PENDING` (publisher OA status not verified in this environment).
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004). Local mirror file: `/usr/local/var/www/wordpress/research/0404086.pdf`.

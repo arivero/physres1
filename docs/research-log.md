@@ -1819,3 +1819,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: open `B07` if we activate the gauge/string-tension branch.
+
+## 2026-02-10 (B07: Wilson-loop / confinement anchors for the string-tension branch)
+- Focus: add OA anchors for Wilson-loop definitions and the area-law/string-tension confinement criterion.
+- Work:
+  - Added `[Greensite2003Confinement]` (OA arXiv review) and `[Wilson1974Confinement]` (classic original; `PENDING` OA status) to `paper/bibliography.md`.
+  - Generated a local markdown capture of the OA review in gitignored `sources/` for internal reading.
+- Result: the gauge/string-tension branch now has at least one strong OA reference anchor.
+- Sources touched (keys + status changes): added `[Greensite2003Confinement]`; added `[Wilson1974Confinement]` as `PENDING`.
+- Next: run `S56` to attempt a clean kernel-level bridge note from Wilson-loop area law to an effective area-scale supplier \(\sigma^{-1}\), keeping hypothesis branches separated.
