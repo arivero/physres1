@@ -997,3 +997,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: a natural covariant candidate exists and resolves clock ambiguity structurally in this model; it reproduces D1.5c for \(\ell=2cL_P\).
 - Sources touched (keys + status changes): none.
 - Next: promote this as a short invariant-candidate outlook remark near D1.5c.
+
+## 2026-02-10 (C56: promote invariant-candidate remark)
+- Focus: insert the S29 covariant-candidate result into the Planck-area draft with minimal extra complexity.
+- Work:
+  - Added `Remark D1.5d` in `papers/planck-area/main.md`, defining a source-covariant specific angular momentum scalar \(\ell\) from projected \(L_{\mu\nu}\).
+  - Recorded source-rest reduction \(\ell=\gamma rv\), \(\dot A_t=\ell/(2\gamma)\), \(\dot A_\tau=\ell/2\), and inverse-square branch
+    \[
+    r(M,\ell)=\frac{\ell^2}{GM}\sqrt{1-\left(\frac{GM}{\ell c}\right)^2}
+    \]
+    with domain \(\ell>GM/c\).
+- Result: the draft now includes a clock-independent candidate postulate that naturally reproduces D1.5c, while remaining explicitly framed as outlook/candidate (not a universal proof).
+- Sources touched (keys + status changes): none.
+- Next: run `Q18` on D1.5b/D1.5c/D1.5d for readability and claim discipline.

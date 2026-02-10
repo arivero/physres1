@@ -57,6 +57,7 @@
 53. `C53` Completed.
 54. `C54` Completed.
 55. `C55` Completed.
+56. `C56` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -120,8 +121,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C56`: promote the S29 invariant candidate as a short outlook remark near D1.5c.
-2. `Q18`: run a quality pass on the D1.5b/D1.5c + invariant-candidate block.
+1. `Q18`: run a quality pass on the D1.5b/D1.5c/D1.5d block.
+2. `S30`: explore whether a fully covariant area 2-form postulate can be phrased without explicit source-frame projection.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

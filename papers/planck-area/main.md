@@ -525,6 +525,25 @@ r(M)=\frac{4\hbar}{Mc}\sqrt{1-\frac{M^2}{4M_P^2}},
 so \(M\to2M_P^{-}\Rightarrow r\to0\), not \(2L_P\).
 Therefore the low-mass Compton-like branch is robust, while the high-mass asymptotic is clock-convention dependent in this mechanical SR setting.
 
+`Remark D1.5d (Invariant-candidate reformulation via specific angular momentum).`
+A clock-independent candidate in the same central-source setup is the specific angular momentum scalar
+\[
+\ell:=\frac1m\sqrt{\frac12\,L_{\mu\nu}L^{\mu\nu}},
+\]
+where \(L^{\mu\nu}\) is the source-rest-space projection of orbital \(J^{\mu\nu}\) (using source 4-velocity \(U^\mu\)). In the source rest frame this reduces to
+\[
+\ell=\gamma rv,\qquad
+\dot A_t=\frac{\ell}{2\gamma},\qquad
+\dot A_\tau=\frac{\ell}{2}.
+\]
+So fixing \(\ell\) selects the proper-time branch rather than the coordinate-time branch. For inverse-square gravity,
+\[
+r(M,\ell)=\frac{\ell^2}{GM}\sqrt{1-\left(\frac{GM}{\ell c}\right)^2},
+\qquad
+\ell>\frac{GM}{c},
+\]
+and \(\ell=2cL_P\) reproduces D1.5c. This does not yet prove universality, but it provides a structurally covariant way to encode the postulate without choosing a clock variable directly.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
