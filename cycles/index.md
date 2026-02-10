@@ -75,6 +75,7 @@
 71. `C71` Completed.
 72. `C72` Completed.
 73. `C73` Completed.
+74. `C74` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -174,8 +175,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C74`: promote the stabilized obstruction statement into `paper/main.md` (short heuristic/remark).
-2. `B06`: attach a standard reference for the "no Lebesgue measure in infinite dimensions" lemma (measure theory / functional analysis).
+1. `B06`: attach a standard reference for the "no Lebesgue measure in infinite dimensions" lemma (measure theory / functional analysis).
+2. `S48`: study distributional Euler-Lagrange variations for \(\delta\) and \(\delta'\) probes (value-at-zero vs derivative-at-zero).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

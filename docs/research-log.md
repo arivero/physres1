@@ -1620,9 +1620,18 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-10 (S47: "no Lebesgue measure" obstruction lemma for path space)
 - Focus: sharpen one "Newton-limit paradox" obstruction into a theorem-like statement usable in the main manuscript.
 - Work:
-  - wrote a lemma-like statement and proof sketch: no nontrivial translation-invariant locally finite Borel measure exists on infinite-dimensional Banach spaces.
+  - wrote a lemma-like statement and proof sketch: no nontrivial translation-invariant Borel measure finite on a neighborhood exists on infinite-dimensional Banach spaces (no Lebesgue/Haar measure).
   - recorded the operational moral for our refinement program: `Dφ` is formal, so refinement limits are constructions with control data (semigroup definition, regularization, scheme compatibility).
   - logged details in `blackboards/2026-02-10-no-lebesgue-measure-in-infinite-dim.md`.
 - Result: prepared a `C74` promotion target (short heuristic remark near `Heuristic H0.2` in `paper/main.md`).
 - Sources touched (keys + status changes): none.
 - Next: run `C74` to promote the remark into `paper/main.md`.
+
+## 2026-02-10 (C74: promote the "no Lebesgue measure on path space" obstruction)
+- Focus: make one refinement obstruction explicit in the cornerstone manuscript, without overclaiming.
+- Work:
+  - Added `Heuristic H0.2a` to `paper/main.md` stating that there is no translation-invariant Borel measure finite on neighborhoods in infinite dimensions, so the path-integral symbol \(Dq\) is not an ordinary measure and refinement limits are definitional constructions.
+  - Tightened the supporting lemma statement/proof sketch in `blackboards/2026-02-10-no-lebesgue-measure-in-infinite-dim.md` (added the missing "finite on an open set" hypothesis).
+- Result: the Introduction now has a concrete theorem-adjacent obstruction that supports the Zeno-style framing of quantization/renormalization as limit-control mechanisms.
+- Sources touched (keys + status changes): none.
+- Next: run `B06` to attach a standard measure-theory reference for the lemma (and/or run an `S` cycle on distributional Euler-Lagrange for delta derivatives).
