@@ -132,6 +132,24 @@ K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2}.
 \]
 Multiplication counterterms correspond to \(c(x)\,K_{\mathrm{Id}}(x,y)\), and derivative counterterms correspond to derivatives acting on the delta kernel (e.g. \(\partial_x\delta^{(D)}(x-y)\) and higher).
 
+`Remark D5.1 (Derivative of the diagonal delta kernel; coordinate-free identity).`
+The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” has a clean, connection-free formulation in the half-density kernel calculus. The identity kernel \(K_{\mathrm{Id}}\) is invariant under diagonal diffeomorphisms \((\Phi\times\Phi)\), so for any vector field \(V\) on \(M\) one has
+\[
+(\mathcal L_{V_x}+\mathcal L_{V_y})\,K_{\mathrm{Id}}=0,
+\qquad\text{hence}\qquad
+\mathcal L_{V_x}K_{\mathrm{Id}}=-\mathcal L_{V_y}K_{\mathrm{Id}},
+\]
+where \(\mathcal L\) is the Lie derivative acting on half-densities. In local coordinates, taking \(V=\partial/\partial x^\mu\) recovers \(\partial_{x^\mu}\delta^{(D)}(x-y)=-\partial_{y^\mu}\delta^{(D)}(x-y)\). This is the kernel-level mechanism behind “moving derivatives between slots” in integration by parts and in contact-term identities. For a compact derivation and context, see `blackboards/2026-02-10-derivatives-of-diagonal-delta-kernel.md`.
+
+`Remark D5.2 (Point splitting produces \u03b4' contact terms).`
+Point splitting makes the simplest derivative contact term explicit:
+in one dimension,
+\[
+\frac{\delta(x+\varepsilon)-\delta(x)}{\varepsilon}\xrightarrow[\varepsilon\to 0]{}\delta'(x),
+\qquad \langle\delta',\varphi\rangle=-\varphi'(0).
+\]
+This limit is the distributional companion of the “difference quotient as divergence + subtraction” toy model; see `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
+
 This framing is useful for two reasons:
 1. it makes “locality = diagonal support” literal at the kernel level,
 2. it separates the canonical distributional objects from scheme-dependent scalarizations and finite-subtraction conventions.

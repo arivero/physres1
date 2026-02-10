@@ -702,3 +702,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - links point splitting/difference quotients to \(\delta'\) and ties the story to diagonal-support counterterms in QFT.
 - Result: we have a compact “contact term algebra” dictionary entry that is compatible with the repo’s measure-free half-density semantics.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C47: promote delta-kernel derivative algebra into half-density QFT draft)
+- Focus: strengthen the QFT half-density draft’s contact-term section with a precise kernel identity for derivatives of the diagonal delta, and connect it to point splitting (\(\delta'\)).
+- Work: updated `papers/half-density-qft/main.md` Section 5 by adding:
+  - a coordinate-free identity for the diagonal delta kernel \(K_{\mathrm{Id}}\): \((\mathcal L_{V_x}+\mathcal L_{V_y})K_{\mathrm{Id}}=0\), hence \(\mathcal L_{V_x}K_{\mathrm{Id}}=-\mathcal L_{V_y}K_{\mathrm{Id}}\), presented as the intrinsic form of \(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\);
+  - a short point-splitting reminder \((\delta(x+\varepsilon)-\delta(x))/\varepsilon\to\delta'\) with sign fixed by pairing.
+  The draft links to `blackboards/2026-02-10-derivatives-of-diagonal-delta-kernel.md` (S18) and `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md` (S15).
+- Result: “derivative counterterms = derivatives of the diagonal delta kernel” is now stated in a measure-free, coordinate-invariant way within the QFT half-density draft.
+- Sources touched (keys + status changes): none.
