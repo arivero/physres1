@@ -1596,3 +1596,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - logged definition + promotion target in `blackboards/2026-02-10-uncuttable-as-controlled-refinement.md`.
 - Result: prepared a safe promotion target: a dependent note (`papers/uncuttable-controlled-refinement/main.md`) rather than adding historical terminology to `paper/main.md`.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C73: add dependent note on controlled-refinement "uncuttable")
+- Focus: codify the uncuttable definition in a publishable, historically neutral way.
+- Work:
+  - Created `papers/uncuttable-controlled-refinement/main.md` with:
+    - definition of "uncuttable" as a limit-control notion,
+    - toy model (Riemann sums defining an integral),
+    - bridge to `paper/main.md` (H0.2 failure modes).
+- Result: the repo now has a dedicated place to develop the uncuttable/refinement idea without contaminating the core manuscript with historical claims.
+- Sources touched (keys + status changes): none.
