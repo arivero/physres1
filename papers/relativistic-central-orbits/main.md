@@ -106,7 +106,54 @@ Baseline anchor for these standard results: [Carroll1997LectureGR].
 ### 4.2 Restoring units
 Replace \(M\) by \(GM/c^2\): \(r_{\mathrm{ph}}=3GM/c^2\), \(r_h=2GM/c^2\), and \(b=3\sqrt3\,GM/c^2\).
 
-## 5. Next Waves (Not Yet Done)
-1. Add a stability analysis (small radial perturbations) in SR for \(F=K/r^q\).
-2. Add timelike circular-orbit stability in Schwarzschild (ISCO at \(r=6M\)) and relate it to the effective potential.
-3. Decide whether any of these relativistic constraints should be cited in the cornerstone paper as an “outlook” sentence (likely not; keep the cornerstone paper tight).
+## 5. SR Stability of Circular Orbits (Small Radial Perturbations)
+This section stays within mechanical SR (a point particle in an external, time-independent central scalar potential \(U(r)\)). It is used as a kinematic witness: some restrictions already appear before GR or field-theoretic interactions enter.
+
+Fix the (conserved) angular momentum magnitude \(L\). For purely tangential motion (\(p_r=0\)), define the fixed-\(L\) energy function
+\[
+W_L(r)=\sqrt{m^2c^4+\frac{L^2c^2}{r^2}}+U(r).
+\]
+Assume the attractive power-law force \(F(r)=K/r^q\) so that \(U'(r)=K/r^q\).
+
+### 5.1 Circularity and the effective-potential viewpoint
+Circular orbits satisfy \(W_L'(r_0)=0\), i.e.
+\[
+\frac{K}{r_0^q}=\frac{L^2c^2}{r_0^3\sqrt{m^2c^4+L^2c^2/r_0^2}}
+\quad\Longleftrightarrow\quad
+L^2=K\,\gamma\,m\,r_0^{3-q},
+\]
+since \(\sqrt{m^2c^4+L^2c^2/r_0^2}=\gamma mc^2\). This recovers the SR circular-orbit condition used earlier.
+
+### 5.2 Stability inequality
+At fixed \(L\), stability under small radial perturbations is the local-minimum condition
+\[
+W_L''(r_0)>0.
+\]
+Writing the Lorentz factor at the orbit as
+\[
+\gamma^2 = 1+\frac{L^2}{m^2c^2r_0^2},
+\]
+one finds the compact expression
+\[
+\boxed{\;
+W_L''(r_0)=\frac{L^2}{m r_0^4\,\gamma^3}\Bigl(1+(2-q)\gamma^2\Bigr),
+\;}
+\]
+hence the stability criterion
+\[
+\boxed{\;1+(2-q)\gamma^2>0.\;}
+\]
+
+In the Newtonian limit \(\gamma\to 1\) this reduces to the standard condition \(q<3\).
+For \(2<q<3\) SR adds a speed bound:
+\[
+\gamma^2<\frac{1}{q-2}
+\quad\Longleftrightarrow\quad
+\frac{v^2}{c^2}<3-q.
+\]
+In particular, inverse-square forces (\(q=2\)) are stable for all \(\gamma\) in this model, while \(q\ge 3\) yields no stable circular orbits (beyond the Newtonian marginal case at \(q=3\)).
+
+## 6. Next Waves (Not Yet Done)
+1. Add timelike circular-orbit stability in Schwarzschild (ISCO at \(r=6M\)) and relate it to the effective potential.
+2. Decide whether any of these relativistic constraints should be cited in the cornerstone paper as an “outlook” sentence (likely not; keep the cornerstone paper tight).
+3. Revisit the “external potential” modeling assumption and compare against a field-mediated interaction model if this becomes load-bearing.

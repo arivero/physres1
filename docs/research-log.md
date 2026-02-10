@@ -871,3 +871,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: Newtonian stability \(q<3\) is recovered for \(\gamma\to1\), but for \(2<q<3\) SR adds a speed bound \(v^2/c^2<3-q\).
 - Sources touched (keys + status changes): none.
 - Next: promote the stability criterion into `papers/relativistic-central-orbits/main.md` as a new wave section.
+
+## 2026-02-10 (C53: promote SR stability wave into relativistic-central-orbits)
+- Focus: convert the S26 blackboard result into draft prose while keeping the dependent note scoped.
+- Work:
+  - Added Section 5 to `papers/relativistic-central-orbits/main.md` with the fixed-\(L\) energy function \(W_L(r)\) and the SR stability criterion \(1+(2-q)\gamma^2>0\).
+  - Recorded the Newtonian limit \(q<3\) and the SR speed bound \(v^2/c^2<3-q\) for \(2<q<3\), and updated “Next Waves”.
+- Result: the dependent note now has an explicit SR stability witness, not only existence/bound conditions for circular orbits.
+- Sources touched (keys + status changes): none.
+- Next: run a short `Q` pass on the new section (notation + scope discipline).

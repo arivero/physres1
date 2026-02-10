@@ -54,6 +54,7 @@
 50. `C50` Completed.
 51. `C51` Completed.
 52. `C52` Completed.
+53. `C53` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -111,8 +112,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C53`: promote S26 stability results into `papers/relativistic-central-orbits/main.md` if they produce a clean criterion.
-2. `Q15`: referee-style pass on the promoted stability section (notation + scope).
+1. `Q15`: referee-style pass on the promoted stability section (notation + scope).
+2. `S27`: decide whether to connect SR-stability bounds to the Planck-areal-speed witness (if any nontrivial link survives beyond inverse-square).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
