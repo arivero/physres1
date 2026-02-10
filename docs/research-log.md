@@ -1210,3 +1210,22 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; D1.5i integrates cleanly with prior caveats.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S35: minimal inference pipeline for projected tests)
+- Focus: make D1.5i implementation-concrete in one perturbed-orbit scenario.
+- Work:
+  - Wrote reconstruction pipeline with
+    \[
+    \mathbf r=\rho\hat{\mathbf n},\qquad
+    \mathbf v=\dot\rho\,\hat{\mathbf n}+\rho\,\dot{\hat{\mathbf n}},
+    \]
+    plus source-motion subtraction to obtain source-frame \((\mathbf r,\mathbf v)\).
+  - Linked outputs to projected observables and torque-residual channel:
+    \[
+    \dot A_{\mathbf n},\quad \frac{dA_{\mathbf n}}{d\tau},\quad
+    \mathcal T_{\mathbf n}.
+    \]
+  - Added reporting checklist (projection, clock, frame map, differentiation method, uncertainty propagation).
+- Result: branch now has a concrete data-to-test pipeline rather than only formal observability conditions.
+- Sources touched (keys + status changes): none.
+- Next: promote a short implementation note near D1.5i.
