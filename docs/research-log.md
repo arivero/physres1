@@ -610,3 +610,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - explicit warning not to conflate \(\delta'\) with stationary-set deltas \(\delta(f')\).
 - Result: we now have a compact, derivation-first toy model that can be promoted into the RG narrative without importing external literature.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C44: promote S15 micro-model + \u03b4' identity into RG/delta drafts)
+- Focus: incorporate the stable S15 results into the follow-up drafts, keeping the content minimal and cross-linked.
+- Work:
+  - Updated `papers/rg-fundamental/main.md` Section 3 to include:
+    - an explicit Taylor expansion that exposes the regulated \(1/\varepsilon\) divergence,
+    - a finite counterterm ambiguity \(z_0\) and a normalization condition \(D(1)=0\) that fixes it,
+    - a distributional “contact term” remark: \((\delta(x+\varepsilon)-\delta(x))/\varepsilon \to \delta'(x)\), with sign fixed by pairing.
+  - Added a one-line pointer in `papers/rg-fundamental/main.md` to `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` for unified 1D/2D/3D loop integral normalization.
+  - Extended `papers/delta-objects/main.md` with an explicit point-splitting realization of \(\delta'\) and a pointer to `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
+- Result: the RG draft’s calculus micro-model now better matches the renormalization skeleton (divergence + subtraction + finite scheme fixing), and the delta-objects note now includes a concrete identity tying \(\delta'\) to a regulated limit.
+- Sources touched (keys + status changes): none.

@@ -54,6 +54,25 @@ It should not be confused with \(\delta'\), the **distributional derivative** of
 \]
 So \(\delta'\) is the distribution that probes derivatives of test functions at a point (“value of the derivative at zero”, up to sign), whereas \(\delta(f')\) is a stationary-set localization distribution.
 
+### 3.1b \u03b4' from point splitting (difference quotient of shifted deltas)
+The distribution \(\delta'\) can be realized as a regulated point-splitting limit. Let \(\varepsilon\to 0\) and consider the shifted delta \(\delta(x+\varepsilon)\). For any test function \(\varphi\),
+\[
+\left\langle \frac{\delta(\,\cdot+\varepsilon)-\delta}{\varepsilon},\varphi\right\rangle
+=\frac{\varphi(-\varepsilon)-\varphi(0)}{\varepsilon}
+\xrightarrow[\varepsilon\to 0]{} -\varphi'(0)
+=\langle \delta',\varphi\rangle.
+\]
+Hence, in the sense of distributions,
+\[
+\frac{\delta(x+\varepsilon)-\delta(x)}{\varepsilon}\xrightarrow[\varepsilon\to 0]{}\delta'(x).
+\]
+
+This gives a clean dictionary item for “probing the derivative at a point”:
+\[
+f'(0)=\langle -\delta', f\rangle.
+\]
+For the parallel smooth-function toy model (“difference quotient as divergence + subtraction”) and further remarks, see `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
+
 ### 3.2 Multi-dimensional identity (\u03b4(\u2207f))
 Let \(f:\mathbb R^n\to\mathbb R\) have finitely many nondegenerate critical points \(x_i\) (so \(\nabla f(x_i)=0\) and \(\det(\mathrm{Hess}\,f)(x_i)\neq 0\)). Then
 \[

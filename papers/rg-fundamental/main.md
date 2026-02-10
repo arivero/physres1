@@ -1,7 +1,7 @@
 # Renormalization Group as a Fundamental Compatibility Principle (Draft)
 
 ## Abstract
-This note develops the viewpoint that the renormalization group (RG) is a *compatibility condition* forced by any definition of a continuum theory as a regulator-independent limit of composed refinements. The core claim is structural: once a theory is defined by composing local pieces across refinement steps, regulator dependence is unavoidable in intermediate objects, and RG invariance is the demand that the composed predictions remain stable. A simple calculus analogy makes the point vivid: the derivative can be viewed as a renormalized limit obtained by subtracting a divergent counterterm from two individually divergent quantities (this interpretation is noted explicitly in [RiveroOde2002]). We connect this perspective to rooted-tree bookkeeping (Butcher group) and the Hopf-algebra formulation of perturbative renormalization [Brouder1999] [ConnesKreimer2000] [McLachlan2017].
+This note develops the viewpoint that the renormalization group (RG) is a *compatibility condition* forced by any definition of a continuum theory as a regulator-independent limit of composed refinements. The core claim is structural: once a theory is defined by composing local pieces across refinement steps, regulator dependence is unavoidable in intermediate objects, and RG invariance is the demand that the composed predictions remain stable. A simple calculus analogy makes the point vivid: even defining the derivative can be written in the pattern “regulate \(\to\) subtract a local divergence \(\to\) fix a scheme by a normalization condition \(\to\) take a limit”. We connect this perspective to rooted-tree bookkeeping (Butcher group) and the Hopf-algebra formulation of perturbative renormalization [Brouder1999] [ConnesKreimer2000] [McLachlan2017].
 
 ## 1. Scope
 Dependent follow-up to `paper/main.md`, focusing on:
@@ -27,8 +27,29 @@ $$
 $$
 
 `Heuristic H1.1 (Interpretation as renormalization).`
-View \(f(x)/\varepsilon\) as a local counterterm subtracting the divergence of \(f(x+\varepsilon)/\varepsilon\). The renormalized limit is the derivative \(f'(x)\). This is the simplest instance of the general pattern:
-regulated intermediate objects diverge, counterterms remove local divergences, and the renormalized quantity is the cutoff-stable remainder [RiveroOde2002].
+View \(f(x)/\varepsilon\) as a local counterterm subtracting the divergence of \(f(x+\varepsilon)/\varepsilon\). The renormalized limit is the derivative \(f'(x)\).
+
+To make the divergence explicit, expand by Taylor:
+\[
+\frac{f(x+\varepsilon)}{\varepsilon}
+=\frac{f(x)}{\varepsilon}+f'(x)+O(\varepsilon).
+\]
+So one may start from the regulated operator \(D_\varepsilon f(x):=f(x+\varepsilon)/\varepsilon\) and subtract a counterterm proportional to \(f(x)\).
+
+`Heuristic H1.1a (Finite ambiguity and renormalization condition).`
+More generally, subtract
+\[
+\left(\frac{1}{\varepsilon}+z_0\right)f(x),
+\]
+which yields the finite limit \(f'(x)-z_0 f(x)\). A normalization condition fixes the scheme: the ordinary calculus axiom \(D(1)=0\) forces \(z_0=0\).
+
+`Remark H1.1b (Contact-term / distribution version).`
+The same “regulated difference quotient \(\to\) new local object” pattern appears at the level of distributions. In the sense of distributions,
+\[
+\frac{\delta(x+\varepsilon)-\delta(x)}{\varepsilon}\xrightarrow[\varepsilon\to 0]{}\delta'(x),
+\qquad \langle\delta',\varphi\rangle=-\varphi'(0).
+\]
+This is a minimal toy prototype of how point-splitting limits generate contact terms (often involving derivatives of \(\delta\)) in field-theoretic identities. For details and sign conventions, see `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
 
 ## 4. Rooted Trees: Bookkeeping for Composed Refinements
 Runge–Kutta composition and perturbative renormalization share rooted-tree combinatorics. Butcher’s group organizes method composition, while the Hopf-algebra approach organizes subtraction/recursion patterns in renormalization [Brouder1999] [McLachlan2017] [ConnesKreimer2000].
@@ -43,6 +64,8 @@ The cleanest “RG appears before QFT” example is the contact (delta) interact
 3. a renormalization prescription plus RG invariance *defines* the theory.
 
 For a standard overview of delta-function potentials in two and three dimensions, see [Jackiw1991DeltaPotentials]. For a compact treatment that explicitly parallels QFT-style renormalization in a two-dimensional delta interaction (and also treats the Aharonov–Bohm case), see [ManuelTarrach1994PertRenQM]. The derivation below matches the same logarithmic short-distance divergence and dimensional transmutation scale, up to conventions for normalization and for where one places scheme-dependent constants. For a complementary Wilson–Kogut-style RG study of contact interactions in \(1\)D quantum mechanics (including a scaling analysis on the full line), see [BoyaRivero1994Contact]. The \(2\)D delta model below is chosen because it is the simplest setting where the contact coupling is marginal and the renormalization produces genuine logarithmic running and dimensional transmutation.
+
+For a compact normalization sheet of the cutoff loop integrals in \(1\)D/\(2\)D/\(3\)D (aligned with this draft’s conventions, including the \(+i0\) imaginary parts), see `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md`.
 
 ### 5.1 Setup
 Consider \(H = -\frac{\hbar^2}{2m}\Delta + g\,\delta^{(2)}(x)\) on \(\mathbb R^2\).
