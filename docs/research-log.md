@@ -1412,3 +1412,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S40` to connect weak-derivative contact-term mechanism to the 1D/2D/3D contact-flow section.
+
+## 2026-02-10 (S40: cross-dimensional contact-flow data-space map)
+- Focus: connect the weak-derivative/contact-term mechanism to dimensional differences in contact-interaction RG behavior.
+- Work:
+  - Mapped \(1\)D/\(2\)D/\(3\)D cases to effective compatibility data spaces:
+    - \(1\)D: matrix-valued boundary-data family (U(2) full-line contact class),
+    - \(2\)D: one transmutation scale \(\kappa_\ast\),
+    - \(3\)D: one scattering-length parameter \(a\) (s-wave contact branch).
+  - Framed this as: grammar stays the same (local subtraction + compatibility), data-space geometry changes by dimension.
+  - Logged map in `blackboards/2026-02-10-contact-flow-data-space-map-1d-2d-3d.md`.
+- Result: generated a concise Section 5.8 promotion candidate clarifying why fixed-point complexity can be richer in \(1\)D.
+- Sources touched (keys + status changes): none.
+- Next: promote one short heuristic bridge remark in `C67`.

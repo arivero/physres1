@@ -118,6 +118,7 @@
 - `S37` Completed.
 - `S38` Completed.
 - `S39` Completed.
+- `S40` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -152,8 +153,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S40`: design a compact bridge from weak-derivative contact terms to 1D/2D/3D contact-flow comparison.
-2. `C67`: promote one concise cross-dimensional bridge remark in RG draft.
+1. `C67`: promote one concise cross-dimensional bridge remark in RG draft.
+2. `Q29`: quality pass on the Section 5.8 bridge insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
