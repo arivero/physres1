@@ -854,3 +854,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Verified cited keys exist in `paper/bibliography.md`: `[BoscagginDambrosioFeltrin2020RelKepler]`, `[Carroll1997LectureGR]`.
 - Findings: draft remains disciplined (two concrete derivations + explicit next waves), and does not overclaim novelty; units are explicit and restored for the GR baseline.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q14: add diffstat accountability for `C` cycles)
+- Focus: make every `Cnn` cycle self-auditing (promote manuscript edits or explicitly say why not).
+- Work:
+  - Added `scripts/paper-diffstat.sh` to report line additions/deletions for `paper/main.md` and `papers/*/main.md` via `git diff --numstat`.
+  - Updated `cycles/README.md`, `docs/research-state.md`, and `docs/handoff.md` to require logging this diffstat in `cycles/Cnn-execution.md` (recommended: `--cached` after staging).
+- Result: every future `C` execution log will include an explicit `+added/-removed` summary for the draft manuscripts, and “no promotion” cycles become explicit rather than silent.
+- Sources touched (keys + status changes): none.

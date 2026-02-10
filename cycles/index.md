@@ -106,6 +106,7 @@
 - `Q11` Completed.
 - `Q12` Completed.
 - `Q13` Completed.
+- `Q14` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).

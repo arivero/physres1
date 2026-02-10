@@ -48,6 +48,19 @@ Each cycle uses four files:
 - `cycles/<ID>-debate.md`: one hard question + the current resolution.
 - `cycles/<ID>-redteam.md`: failure modes + mitigations.
 
+## Content-Cycle Logging Requirement (Diffstat)
+Every `Cnn` cycle must satisfy both:
+1. Either produce substantive edits to at least one draft manuscript (`paper/main.md` and/or `papers/*/main.md`), **or** explicitly explain why promotion did not happen in this cycle.
+2. Record the line-level diffstat for those draft manuscripts in `cycles/Cnn-execution.md`.
+
+Command (run after staging changes, just before `git commit`):
+```bash
+scripts/paper-diffstat.sh --cached
+```
+
+Paste the output under a `## Diffstat` heading in the execution log.
+If the command reports `TOTAL +0 -0`, include a “Why no promotion” paragraph and (usually) spawn an `S` and/or `B` cycle instead of forcing prose.
+
 ## Build Hygiene
 After a successful TeX build, delete auxiliary files explicitly (never recursively), e.g.:
 ```bash

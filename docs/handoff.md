@@ -48,6 +48,13 @@ Environment notes:
 2. Ensure manuscript does not mention `conv_patched.md`:
    - `rg -n 'conv_patched' paper/main.md`
 
+## Content-Cycle Diffstat (Required)
+For every `Cnn` cycle, record the manuscript diffstat in `cycles/Cnn-execution.md`:
+```bash
+scripts/paper-diffstat.sh --cached
+```
+If this reports `TOTAL +0 -0`, the execution log must explicitly explain why no promotion happened in that cycle.
+
 ## Bibliography + Sources Workflow (OA-First)
 Ledger:
 - Track citation keys and acquisition status in `paper/bibliography.md`.

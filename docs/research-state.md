@@ -33,7 +33,10 @@ The goal is not to repackage standard narratives. Default to:
    - add/refresh `sources/<...>.md` or `sources/pending-<key>.md`.
    If this becomes a dedicated effort, open a Bibliography cycle (`Bnn`) to keep it separate from prose iteration.
 5. Promote only “stable” results into `paper/main.md` (or a new follow-up manuscript directory when needed).
-6. Run consistency checks + rebuild the PDF when manuscript text changes (delete `.aux`/`.log` after successful generation).
+6. **Content-cycle accountability:** for every `Cnn` cycle, record the manuscript diffstat in `cycles/Cnn-execution.md` by running:
+   - `scripts/paper-diffstat.sh --cached`
+   If the diffstat reports `TOTAL +0 -0`, the execution log must explicitly explain why no promotion happened (and usually spawn an `S` and/or `B` cycle instead).
+7. Run consistency checks + rebuild the PDF when manuscript text changes (delete `.aux`/`.log` after successful generation).
 
 ## S-Cycle Tool Use (Verification)
 During `S` cycles we may use heavier verification tooling to keep manuscripts lean:
