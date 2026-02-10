@@ -1,7 +1,7 @@
-# Follow-up Papers (Drafts)
+# Follow-up Papers (Companion Notes)
 
 This repository’s publishable manuscript is `paper/main.md`.
-This `papers/` folder holds follow-up drafts that **depend on** (and cite) the main paper’s narrative and bibliography ledger.
+This `papers/` folder holds companion notes that **depend on** (and cite) the main paper’s narrative and bibliography ledger.
 
 ## Manuscripts
 - `papers/delta-objects/main.md`: identity delta kernel, stationary-set delta, and point interactions (draft).
@@ -14,7 +14,13 @@ This `papers/` folder holds follow-up drafts that **depend on** (and cite) the m
 - Source captures live in `sources/` (OA-first; local PDFs ok).
 
 ## Build (Markdown -> TeX -> PDF)
-Use the same pandoc math extension as the main paper:
+Use the same pandoc math extension as the main paper. For a one-shot build of all manuscripts (including reference section updates), run:
+
+```bash
+scripts/finish_manuscripts.sh
+```
+
+Manual per-paper build:
 
 ```bash
 pandoc -f markdown+tex_math_single_backslash -s papers/<paper>/main.md -o papers/<paper>/main.tex

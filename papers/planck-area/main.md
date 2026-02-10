@@ -1,12 +1,15 @@
-# Planck Area from Half-Density Normalization (Draft)
+---
+title: "Planck Area from Half-Density Normalization"
+author: []
+date: ""
+abstract: |
+  Half-densities are the natural “coordinate-free integrands” for composing kernels without choosing a background measure. But choosing a *universal* convention for turning half-density objects into dimensionless numerical amplitudes introduces a \(\text{length}^{d/2}\) scale. In \(d=4\), this is an *area*. This note sharpens the hypothesis ladder needed for the claim “half-density normalization selects a universal area scale”, and isolates a simple dimension-matching condition under which the Planck area appears without fractional powers of couplings. A gravitational anchor based on a minimal-areal-speed principle is recorded as a separate heuristic thread [RiveroAreal] [RiveroSimple].
+  
+  Minimal claim (proved under stated hypotheses): half-density composition is intrinsic, but any scalar “amplitude function” representation requires extra scalarization structure, and if that scalar representative is demanded dimensionless then a \(\text{length}^{d/2}\) constant is unavoidable. Conjectural claim (additional universality hypotheses): the scalarization constant is fixed by universal couplings and becomes a universal area scale in \(D=4\).
+---
 
-## Abstract
-Half-densities are the natural “coordinate-free integrands” for composing kernels without choosing a background measure. But choosing a *universal* convention for turning half-density objects into dimensionless numerical amplitudes introduces a \(\text{length}^{d/2}\) scale. In \(d=4\), this is an *area*. This note sharpens the hypothesis ladder needed for the claim “half-density normalization selects a universal area scale”, and isolates a simple dimension-matching condition under which the Planck area appears without fractional powers of couplings. A gravitational anchor based on a minimal-areal-speed principle is recorded as a separate heuristic thread [RiveroAreal] [RiveroSimple].
-
-Minimal claim (proved under stated hypotheses): half-density composition is intrinsic, but any scalar “amplitude function” representation requires extra scalarization structure, and if that scalar representative is demanded dimensionless then a \(\text{length}^{d/2}\) constant is unavoidable. Conjectural claim (additional universality hypotheses): the scalarization constant is fixed by universal couplings and becomes a universal area scale in \(D=4\).
-
-## 1. Purpose and Status
-This is a dependent follow-up to `paper/main.md`. It is not yet a finished paper; its goal is to isolate one technical point that is only implicit in the main manuscript:
+# 1. Purpose and Scope
+This is a companion to `paper/main.md`. Its goal is to isolate one technical point that is only implicit in the main manuscript:
 the role of half-densities (and their scaling) in making composition laws coordinate-invariant *and* dimensionally well-defined.
 
 Claims below are labeled as `Proposition` (math-precise under hypotheses) or `Heuristic` (programmatic bridge).
@@ -14,7 +17,7 @@ Claims below are labeled as `Proposition` (math-precise under hypotheses) or `He
 **Notation (dimensions).**
 The half-density weight \(\text{length}^{d/2}\) uses the dimension of the manifold being integrated over in the composition law (the “composition variable” dimension). In nonrelativistic time-slicing this is typically spatial dimension; in covariant/field-theory settings it is spacetime dimension. In the gravity-only sieve (Derivation D1.3), read \(d\) as the spacetime dimension \(D\) if that avoids confusion: the “\(D=4\Rightarrow\) area” conclusion is about spacetime \(D=4\), not a claim that *spatial* \(d=4\) is privileged.
 
-## 2. Half-Densities and Composition Kernels
+# 2. Half-Densities and Composition Kernels
 Let \(M\) be a \(d\)-dimensional manifold. A (positive) density is a section of \(|\Lambda^d T^\ast M|\), and a half-density is a section of \(|\Lambda^d T^\ast M|^{1/2}\).
 
 The key operational point is:
@@ -37,7 +40,7 @@ and its integral is chart-independent:
 
 Kernel composition is the same mechanism: if \(K_1(x,y)\) and \(K_2(y,z)\) are half-densities in \(y\), then \(K_1K_2\) is a density in \(y\) and \(\int_M K_1K_2\) is coordinate invariant.
 
-## 3. Dimensional Analysis: Normalizing a Half-Density Requires a Scale
+# 3. Dimensional Analysis: Normalizing a Half-Density Requires a Scale
 A density on \(M\) carries the units of \(\text{length}^d\) once physical units are assigned to coordinates. A half-density therefore carries units \(\text{length}^{d/2}\).
 
 `Proposition P1.1 (No canonical “half-density = function” identification).`
@@ -99,7 +102,7 @@ Assume the only available dimensionful coupling used to build the universal norm
 which holds if and only if \(d=4\).
 In that case \(G_4\) itself has dimension of area, and the corresponding area scale is the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
-### 3.1 Hypotheses as Separate Knobs (What Is Forced vs Chosen)
+## 3.1 Hypotheses as Separate Knobs (What Is Forced vs Chosen)
 The discussion above mixes three different kinds of statements:
 1. **Geometric facts** (what half-densities are, how they compose, how they scale),
 2. **Representational choices** (how one turns half-density objects into scalar numbers),
@@ -162,7 +165,7 @@ Thus the quadratic-gradient term \((\partial\sigma)^2\psi\) cancels at \(D=4\) (
 
 This filter is independent of H2.5 and, by itself, does not supply a length scale; it is recorded only as an additional “special dimension” candidate knob to compare against the scale-sieve hypotheses.
 
-### 3.2 What Changes When a Hypothesis Is Relaxed?
+## 3.2 What Changes When a Hypothesis Is Relaxed?
 This subsection records the main “branches” that need separate study.
 
 1. **Drop H2.3 (allow dimensionful \(f\)).**
@@ -182,7 +185,7 @@ There are three distinct “scale supplier” mechanisms in play:
 2. **Fractional/non-analytic coupling dependence:** allow fractional powers or other non-analytic dependence directly in couplings (dimensional analysis becomes permissive; the \(d=4\) sieve disappears).
 3. **Dimensional transmutation:** generate a scale from RG compatibility (Derivation D1.6a / Example E5), which is typically non-analytic in naive coupling expansions.
 
-### 3.3 Starting with H2.5a: Integrality as a Dimension Sieve
+## 3.3 Starting with H2.5a: Integrality as a Dimension Sieve
 The point of H2.5a/H2.5b is not that dimensional analysis alone selects a unique scale (it does not), but that *restricting allowed functional dependence on couplings* can turn dimensional analysis into a selection principle.
 
 `Derivation D1.6 (H2.5a: integer-exponent form of “no fractional powers”).`
@@ -305,7 +308,7 @@ In the \(2\)D delta interaction, the contact coupling is marginal and the renorm
 \]
 so \(\kappa_\ast\) is independent of the subtraction scale \(\mu\) and sets a bound-state/scattering scale [ManuelTarrach1994PertRenQM]. This is a minimal witness that “a scale is forced by compatibility” can occur even without a dimensionful coupling, via renormalization rather than via analytic monomials.
 
-### 3.4 Running H2.3: Is “Dimensionless \(f\)” Physics or Convention?
+## 3.4 Running H2.3: Is “Dimensionless \(f\)” Physics or Convention?
 The half-density formalism (H2.1) gives a canonical pairing \(\int \bar\psi\,\psi\) that does not require choosing a background measure. But when we write \(\psi=f\,\sigma_\ast\) (H2.2), we are choosing a *representation* of the same object as a scalar function with respect to a chosen positive density \(\rho_\ast=\sigma_\ast^2\).
 
 `Proposition P1.3 (Scalarization is a choice of measure, not new physics).`
@@ -331,7 +334,7 @@ Requiring instead that the scalar representative \(f\) be dimensionless (H2.3) s
 \]
 so “dimensionless \(f\)” is a convention unless the scale \(L_\ast^{d/2}\) is fixed by an additional universality principle (H2.4–H2.5).
 
-### 3.5 Running H2.4: What Does “Background-Free Constancy” Mean?
+## 3.5 Running H2.4: What Does “Background-Free Constancy” Mean?
 From Derivation D1.7, changing the reference half-density \(\sigma_\ast\) by a positive function \(r(x)\) changes the scalar representative by \(f\mapsto r^{-1}f\) and changes the scalar measure by \(\rho_\ast\mapsto r^2\rho_\ast\). So the raw half-density formulation has a large “scalarization gauge freedom”.
 
 `Heuristic H2.10 (Constancy = no extra background function).`
@@ -363,7 +366,7 @@ So an \(x\)-independent running of scalarization is *formally equivalent* to a w
 `Heuristic H2.11a (Guardrail: geometric weight \(\neq\) anomalous dimension).`
 The half-density square-root Jacobian is a geometric transformation law under coordinate changes; anomalous dimensions are RG scaling data in interacting theories. They should not be conflated: allowing \(\sigma_\ast(\mu)\) to run is a representation convenience, not a claim that geometry “produces” anomalous scaling.
 
-## 4. Stationary Phase Produces Half-Density Prefactors (Short-Time Kernel)
+# 4. Stationary Phase Produces Half-Density Prefactors (Short-Time Kernel)
 The main manuscript uses stationary phase to explain why classical extremals dominate refinement limits. Here we add the complementary kernel-level fact:
 stationary phase does not only pick the extremal; it also produces a determinant prefactor that transforms as a half-density, i.e. the object needed for coordinate-free kernel composition.
 
@@ -420,7 +423,7 @@ The exponent \(N/2\) in the prefactor is exactly the half-density scaling: it ca
 Derivation D1.3 isolates one minimal route by which a Planck-scale quantity can enter:
 if the theory supplies a single universal coupling with dimension of length (Newton’s constant) and one demands that the half-density normalization constant be built from that coupling *without fractional powers*, then \(d=4\) is singled out and the resulting constant has the dimension of an area, naturally identified with the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
-## 5. A Gravitational Anchor: Minimal Areal Speed and the \(D=4\) Cancellation
+# 5. A Gravitational Anchor: Minimal Areal Speed and the \(D=4\) Cancellation
 Rivero’s “Planck areal speed” observation gives a concrete route by which Planck-scale discreteness reappears at Compton scales in inverse-square gravity [RiveroAreal] [RiveroSimple].
 
 `Heuristic H1.3 (Areal-speed selection).`
@@ -665,16 +668,26 @@ The trigger in D1.5l should be calibrated by uncertainty regime, not treated as 
 \]
 with \(\Sigma_r,\Sigma_v\) the position/velocity covariance blocks in the chosen reconstruction model. Pilot scans in correlated-noise families can then map \(\epsilon_{\rm nl}(\chi)\) for the instrument/model pair; the "few-percent" policy corresponds to selecting an operational \(\epsilon_{\rm nl}\) band after this calibration, rather than imposing a context-free constant.
 
-## 6. Interface with the Main Paper
+# 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
 2. refinement across scales forces RG-style consistency conditions when naive limits diverge.
 
-This draft adds a complementary ingredient: the kernel side is most naturally formulated in half-density language, and stationary phase produces the bi-half-density prefactor directly. A universal convention for turning those half-densities into scalar amplitudes then requires a \(\text{length}^{d/2}\) scale; in \(d=4\) this is an area scale.
+This note adds a complementary ingredient: the kernel side is most naturally formulated in half-density language, and stationary phase produces the bi-half-density prefactor directly. A universal convention for turning those half-densities into scalar amplitudes then requires a \(\text{length}^{d/2}\) scale; in \(d=4\) this is an area scale.
 
-## 7. Open Problems (Needed for a Real Paper)
+# 7. Open Problems and Outlook
 1. Make the half-density normalization argument precise for a concrete groupoid or kernel model (tangent-groupoid or short-time propagator model).
 2. Show how the area scale enters stationary-phase prefactors and how this interacts with RG scaling.
 3. General-dimension analysis: clarify what replaces “area” in odd dimensions and whether a universal normalization is still defensible.
 4. Identify minimal hypotheses under which “need of half-density scale \(\Rightarrow\) Planck area” is more than dimensional bookkeeping.
 5. Track minimal-length/GUP scenarios as a comparison branch: do they implement the “needed scale” at the level of kinematics (modified commutators/dispersion) or can they be reframed as a refinement-compatibility condition? Use [Hossenfelder2013MinimalLength] as an OA entry point.
+
+# References
+
+1. [ManuelTarrach1994PertRenQM] Cristina Manuel and Rolf Tarrach, "Perturbative Renormalization in Quantum Mechanics," *Physics Letters B* 328 (1994), 113--118. arXiv:`hep-th/9309013` (v1, 2 Sep 1993). DOI `10.1016/0370-2693(94)90437-5`.
+2. [VanVleck1928Correspondence] J. H. Van Vleck, "The Correspondence Principle in the Statistical Interpretation of Quantum Mechanics," *Proceedings of the National Academy of Sciences of the United States of America* 14(2) (1928), 178–188. DOI `10.1073/pnas.14.2.178`.
+3. [Tanaka2021KernelQuadrature] Ken’ichiro Tanaka, "Kernel quadrature by applying a point-wise gradient descent method to discrete energies," arXiv:`2102.10887` (v2, 23 Feb 2021). (Contains an explicit formula for the \(d\)-dimensional fundamental solution of the Laplacian on \(\mathbb R^d\), including the \(d=2\) logarithmic case.)
+4. [Hossenfelder2013MinimalLength] Sabine Hossenfelder, "Minimal Length Scale Scenarios for Quantum Gravity," *Living Reviews in Relativity* 16 (2013), 2. arXiv:`1203.6191` (v2, 30 Apr 2013). DOI `10.12942/lrr-2013-2`.
+5. [Greensite2003Confinement] Jeff Greensite, "The Confinement Problem in Lattice Gauge Theory," arXiv:`hep-lat/0301023` (v2, 5 Mar 2003), *Progress in Particle and Nuclear Physics* 51 (2003) 1. DOI `10.1016/S0146-6410(03)90012-3`. (Review; includes Wilson-loop definition of static potential and area-law/string-tension criterion.)
+6. [RiveroSimple] Alejandro Rivero, "Constraints on space-time dimensionality in the classical approximation" (unpublished note, undated).
+7. [RiveroAreal] Alejandro Rivero, "On Planck Areal Speed" (letter; DOI `10.32388/Q7SKTZ`).

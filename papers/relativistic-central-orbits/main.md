@@ -1,17 +1,18 @@
-# Relativistic Central Orbits as Refinement-Witnesses (Draft)
+---
+title: "Relativistic Central Orbits as Refinement-Witnesses"
+author: []
+date: ""
+abstract: |
+  Central-force motion is a clean domain where “refinement” arguments can be made explicit: Newton’s polygonal limit gives exact finite-step invariants, while relativistic kinematics introduces new admissibility constraints even before general relativity is invoked. This dependent note records one such constraint in special relativity for inverse-square forces: circular orbits obey \(v=K/L\) and therefore require \(L>K/c\). The goal is not to replace standard treatments, but to keep a minimal derivation-first record of what changes when the same geometric refinement story is pushed into relativistic regimes.
+---
 
-## Abstract
-Central-force motion is a clean domain where “refinement” arguments can be made explicit: Newton’s polygonal limit gives exact finite-step invariants, while relativistic kinematics introduces new admissibility constraints even before general relativity is invoked. This dependent note records one such constraint in special relativity for inverse-square forces: circular orbits obey \(v=K/L\) and therefore require \(L>K/c\). The goal is not to replace standard treatments, but to keep a minimal derivation-first record of what changes when the same geometric refinement story is pushed into relativistic regimes.
-
-Status: working draft (derivations first; stability extensions still deferred).
-
-## 1. Purpose and Relation to the Cornerstone Paper
+# 1. Purpose and Relation to the Cornerstone Paper
 The cornerstone manuscript (`paper/main.md`) uses central-force refinement as a structural bridge (equal areas / angular momentum preservation \(\leftrightarrow\) action additivity \(\leftrightarrow\) composition).
 
 This note is “outside scope” of the cornerstone paper but tracks a conversation branch:
 how relativistic kinematics modifies the simplest central-force circular-orbit conditions. The inverse-square case is singled out by an exact simplification already at the SR level.
 
-## 2. SR Circular Motion Under a Power-Law Force
+# 2. SR Circular Motion Under a Power-Law Force
 Assume a particle of rest mass \(m\) executes uniform circular motion of radius \(r\) and speed \(v\). The Lorentz factor is
 \[
 \gamma=\frac{1}{\sqrt{1-v^2/c^2}}.
@@ -43,7 +44,7 @@ L^2 = K\,\gamma\,m\, r^{3-q}.
 
 This reduces to the Newtonian relation when \(\gamma\to 1\) (i.e. \(c\to\infty\)).
 
-## 3. Inverse-Square (\(q=2\)) Special Case: \(v=K/L\) and the Bound \(L>K/c\)
+# 3. Inverse-Square (\(q=2\)) Special Case: \(v=K/L\) and the Bound \(L>K/c\)
 For \(q=2\),
 \[
 K=\gamma m v^2 r,\qquad L=\gamma m r v.
@@ -65,7 +66,7 @@ r=\frac{L^2}{Km}\sqrt{1-\frac{K^2}{c^2L^2}}
 
 This bound and the circular-solution branch appear in standard treatments of the relativistic Kepler problem (see e.g. [BoscagginDambrosioFeltrin2020RelKepler] for a dynamical-systems/variational analysis of the same SR equation).
 
-## 4. GR Baseline: Schwarzschild Geodesics, Effective Potential, Photon Sphere
+# 4. GR Baseline: Schwarzschild Geodesics, Effective Potential, Photon Sphere
 This section records the standard Schwarzschild baseline in a form parallel to the SR “effective 1D radial motion” viewpoint.
 
 Conventions: set \(G=c=1\). Then the Schwarzschild metric is
@@ -90,7 +91,7 @@ i.e. \(\dot r^2 + V_{\mathrm{eff}}(r)=E^2\) with
 V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\left(\epsilon+\frac{L^2}{r^2}\right).
 \]
 
-### 4.1 Null circular orbit (photon sphere)
+## 4.1 Null circular orbit (photon sphere)
 For null geodesics \(\epsilon=0\),
 \[
 V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\frac{L^2}{r^2}.
@@ -103,10 +104,10 @@ The impact parameter \(b=L/E\) obeys \(b^2=r^2/(1-2M/r)\), so at \(r=3M\) one ha
 
 Baseline anchor for these standard results: [Carroll1997LectureGR].
 
-### 4.2 Restoring units
+## 4.2 Restoring units
 Replace \(M\) by \(GM/c^2\): \(r_{\mathrm{ph}}=3GM/c^2\), \(r_h=2GM/c^2\), and \(b=3\sqrt3\,GM/c^2\).
 
-### 4.3 Timelike circular orbits and ISCO
+## 4.3 Timelike circular orbits and ISCO
 For timelike geodesics \(\epsilon=1\),
 \[
 V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\left(1+\frac{L^2}{r^2}\right).
@@ -147,7 +148,7 @@ At the ISCO,
 L=2\sqrt3\,M,\qquad E=\frac{2\sqrt2}{3}.
 \]
 
-## 5. SR Stability of Circular Orbits (Small Radial Perturbations)
+# 5. SR Stability of Circular Orbits (Small Radial Perturbations)
 This section stays within mechanical SR (a point particle in an external, time-independent central scalar potential \(U(r)\)). It is used as a kinematic witness: some restrictions already appear before GR or field-theoretic interactions enter.
 
 Fix the (conserved) angular momentum magnitude \(L\). For purely tangential motion (\(p_r=0\)), define the fixed-\(L\) energy function
@@ -156,7 +157,7 @@ W_L(r)=\sqrt{m^2c^4+\frac{L^2c^2}{r^2}}+U(r).
 \]
 Assume the attractive power-law force \(F(r)=K/r^q\) so that \(U'(r)=K/r^q\).
 
-### 5.1 Circularity and the effective-potential viewpoint
+## 5.1 Circularity and the effective-potential viewpoint
 Circular orbits satisfy \(W_L'(r_0)=0\), i.e.
 \[
 \frac{K}{r_0^q}=\frac{L^2c^2}{r_0^3\sqrt{m^2c^4+L^2c^2/r_0^2}}
@@ -165,7 +166,7 @@ L^2=K\,\gamma\,m\,r_0^{3-q},
 \]
 since \(\sqrt{m^2c^4+L^2c^2/r_0^2}=\gamma mc^2\). This recovers the SR circular-orbit condition used earlier.
 
-### 5.2 Stability inequality
+## 5.2 Stability inequality
 At fixed \(L\), stability under small radial perturbations is the local-minimum condition
 \[
 W_L''(r_0)>0.
@@ -194,7 +195,12 @@ For \(2<q<3\) SR adds a speed bound:
 \]
 In particular, inverse-square forces (\(q=2\)) are stable for all \(\gamma\) in this model, while \(q\ge 3\) yields no stable circular orbits (beyond the Newtonian marginal case at \(q=3\)).
 
-## 6. Next Waves (Not Yet Done)
-1. Add timelike circular-orbit stability in Schwarzschild (ISCO at \(r=6M\)) and relate it to the effective potential.
-2. Decide whether any of these relativistic constraints should be cited in the cornerstone paper as an “outlook” sentence (likely not; keep the cornerstone paper tight).
-3. Revisit the “external potential” modeling assumption and compare against a field-mediated interaction model if this becomes load-bearing.
+# 6. Outlook
+Two natural extensions are:
+1. replace the “external potential” modeling assumption by an explicitly field-mediated interaction model, and compare which orbit admissibility/stability bounds survive that change;
+2. connect the SR/GR orbit constraints more explicitly to the refinement-compatibility spine (what is preserved under refinement, and what new kinematic admissibility conditions appear when the refinement rules are Lorentz/GR-consistent).
+
+# References
+
+1. [BoscagginDambrosioFeltrin2020RelKepler] Alberto Boscaggin, Walter Dambrosio, and Guglielmo Feltrin, "Periodic solutions to a perturbed relativistic Kepler problem," arXiv:`2003.03110` (v1, 6 Mar 2020). (Contains the unperturbed SR relativistic Kepler equation and discusses circular solutions/constraints.)
+2. [Carroll1997LectureGR] Sean M. Carroll, "Lecture Notes on General Relativity," arXiv:`gr-qc/9712019` (v1, 3 Dec 1997). (Includes black holes/geodesic applications used as baseline GR anchors.)

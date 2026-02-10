@@ -1,15 +1,18 @@
-# Renormalization Group as a Fundamental Compatibility Principle (Draft)
+---
+title: "Renormalization Group as a Fundamental Compatibility Principle"
+author: []
+date: ""
+abstract: |
+  This note develops the viewpoint that the renormalization group (RG) is a *compatibility condition* forced by any definition of a continuum theory as a regulator-independent limit of composed refinements. The core claim is structural: once a theory is defined by composing local pieces across refinement steps, regulator dependence is unavoidable in intermediate objects, and RG invariance is the demand that the composed predictions remain stable. A simple calculus analogy makes the point vivid: even defining the derivative can be written in the pattern “regulate \(\to\) subtract a local divergence \(\to\) fix a scheme by a normalization condition \(\to\) take a limit”. We connect this perspective to rooted-tree bookkeeping (Butcher group) and the Hopf-algebra formulation of perturbative renormalization [Brouder1999] [ConnesKreimer2000] [McLachlan2017].
+---
 
-## Abstract
-This note develops the viewpoint that the renormalization group (RG) is a *compatibility condition* forced by any definition of a continuum theory as a regulator-independent limit of composed refinements. The core claim is structural: once a theory is defined by composing local pieces across refinement steps, regulator dependence is unavoidable in intermediate objects, and RG invariance is the demand that the composed predictions remain stable. A simple calculus analogy makes the point vivid: even defining the derivative can be written in the pattern “regulate \(\to\) subtract a local divergence \(\to\) fix a scheme by a normalization condition \(\to\) take a limit”. We connect this perspective to rooted-tree bookkeeping (Butcher group) and the Hopf-algebra formulation of perturbative renormalization [Brouder1999] [ConnesKreimer2000] [McLachlan2017].
-
-## 1. Scope
+# 1. Scope
 Dependent follow-up to `paper/main.md`, focusing on:
 1. RG as “scale-compatibility” within the Refinement Compatibility Principle (RCP) perspective.
 2. Why RG is semigroup-like (information loss under coarse-graining).
 3. A minimal worked analogy (difference quotients) showing “counterterm subtraction = taking a derivative”.
 
-## 2. RG as Composition Consistency
+# 2. RG as Composition Consistency
 `Proposition P1.1 (Semigroup compatibility).`
 Let \(W_{\Lambda\to\mu}\) map effective data at cutoff \(\Lambda\) to effective data at scale \(\mu\). If refinement/coarse-graining is composable,
 \(W_{\kappa\to\mu}\circ W_{\Lambda\to\kappa}=W_{\Lambda\to\mu}\),
@@ -17,7 +20,7 @@ then an infinitesimal generator exists under differentiability assumptions, yiel
 
 This is the main manuscript’s Section 8 claim restated as a “fundamental” postulate: a theory is well-defined only if it survives composed changes of scale.
 
-## 3. A Calculus Micro-Model: Derivative as Counterterm Subtraction
+# 3. A Calculus Micro-Model: Derivative as Counterterm Subtraction
 Let \(f\) be smooth and consider \(\varepsilon\to 0^+\). The quantities \(f(x+\varepsilon)/\varepsilon\) and \(f(x)/\varepsilon\) individually diverge as \(1/\varepsilon\), but their difference is finite:
 
 $$
@@ -62,13 +65,13 @@ The same grammar appears in Euler-Lagrange weak form. For \(p(t)\in L^1_{\rm loc
 \]
 So the distributional derivative is again obtained by regulated local subtraction before the limit. If \(p\) has a jump \(p_+-p_-\) at \(t_0\), then \(\dot p=(p_+-p_-)\delta(t-t_0)\), making the contact term explicit in the weak Euler-Lagrange equation.
 
-## 4. Rooted Trees: Bookkeeping for Composed Refinements
+# 4. Rooted Trees: Bookkeeping for Composed Refinements
 Runge–Kutta composition and perturbative renormalization share rooted-tree combinatorics. Butcher’s group organizes method composition, while the Hopf-algebra approach organizes subtraction/recursion patterns in renormalization [Brouder1999] [McLachlan2017] [ConnesKreimer2000].
 
 `Heuristic H1.2 (One compatibility story, two domains).`
 The shared tree bookkeeping suggests that “RG is fundamental” can be understood as: whenever you define a theory by iterating/composing local approximations, you must control the discrepancy between “two steps” and “one step”. That discrepancy is the counterterm/correction data, and the RG is the law governing how those corrections change with scale.
 
-## 5. Worked Singular QM Model: The 2D Delta Potential
+# 5. Worked Singular QM Model: The 2D Delta Potential
 The cleanest “RG appears before QFT” example is the contact (delta) interaction in two spatial dimensions. The point is not that this is the most physical model; it is that:
 1. the interaction is Dirac-supported (singular),
 2. the naive continuum limit is ill-defined,
@@ -76,9 +79,9 @@ The cleanest “RG appears before QFT” example is the contact (delta) interact
 
 For a standard overview of delta-function potentials in two and three dimensions, see [Jackiw1991DeltaPotentials]. For a compact treatment that explicitly parallels QFT-style renormalization in a two-dimensional delta interaction (and also treats the Aharonov–Bohm case), see [ManuelTarrach1994PertRenQM]. The derivation below matches the same logarithmic short-distance divergence and dimensional transmutation scale, up to conventions for normalization and for where one places scheme-dependent constants. For a complementary Wilson–Kogut-style RG study of contact interactions in \(1\)D quantum mechanics (including a scaling analysis on the full line), see [BoyaRivero1994Contact]. The \(2\)D delta model below is chosen because it is the simplest setting where the contact coupling is marginal and the renormalization produces genuine logarithmic running and dimensional transmutation.
 
-For a compact normalization sheet of the cutoff loop integrals in \(1\)D/\(2\)D/\(3\)D (aligned with this draft’s conventions, including the \(+i0\) imaginary parts), see `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md`.
+For a compact normalization sheet of the cutoff loop integrals in \(1\)D/\(2\)D/\(3\)D (aligned with this note’s conventions, including the \(+i0\) imaginary parts), see `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md`.
 
-### 5.1 Setup
+## 5.1 Setup
 Consider \(H = -\frac{\hbar^2}{2m}\Delta + g\,\delta^{(2)}(x)\) on \(\mathbb R^2\).
 At the level of formal perturbation theory, the contact interaction generates momentum integrals that diverge logarithmically.
 
@@ -108,7 +111,7 @@ $$
 
 The key feature is the logarithmic divergence \(\sim -\frac{m}{2\pi\hbar^2}\ln \Lambda^2\).
 
-### 5.2 Renormalized Coupling and RG Equation
+## 5.2 Renormalized Coupling and RG Equation
 For a contact interaction the \(T\)-matrix is algebraic:
 
 $$
@@ -157,7 +160,7 @@ $$
 =\frac{1}{g_R(\mu_1)}-\frac{m}{\pi\hbar^2}\ln\!\left(\frac{\mu_2}{\mu_1}\right).
 $$
 
-### 5.3 Dimensional Transmutation via the Bound State
+## 5.3 Dimensional Transmutation via the Bound State
 For \(E<0\) write \(E=-\hbar^2\kappa^2/(2m)\) with \(\kappa>0\). Analytic continuation removes the \(i\pi\) term and the pole condition \(T(E)^{-1}=0\) becomes
 
 $$
@@ -183,7 +186,7 @@ $$
 
 Thus the renormalized delta interaction trades the bare coupling for a physical scale \(\kappa_\ast\) (equivalently a bound-state energy \(E_B=\hbar^2\kappa_\ast^2/(2m)\)).
 
-### 5.4 Scheme Dependence: What Changes vs What Is Invariant
+## 5.4 Scheme Dependence: What Changes vs What Is Invariant
 The subtraction condition defining \(g_R(\mu)\) is not unique: one may add a finite constant to the definition. For example, define an alternative coupling \(g_R^{(C)}\) by
 
 $$
@@ -210,7 +213,7 @@ $$
 
 Thus, in this one-scale model, scheme dependence is exactly a rescaling of the dimensional transmutation scale. Once one physical datum is used to fix \(\kappa_\ast\) (equivalently \(E_B\)), all predictions are scheme-independent.
 
-### 5.5 Bubble Chains as Ladder Trees (Explicit Recursion)
+## 5.5 Bubble Chains as Ladder Trees (Explicit Recursion)
 The contact interaction has a particularly transparent perturbative structure:
 
 $$
@@ -252,7 +255,7 @@ $$
 
 and the antipode recursion generates the alternating subtraction pattern (e.g. \(S(L_1)=-L_1\), \(S(L_2)=-L_2+L_1^2\), \(S(L_3)=-L_3+2L_1L_2-L_1^3\)). This is the algebraic skeleton underlying the Bogoliubov counterterm recursion in perturbative renormalization [ConnesKreimer2000] and the rooted-tree bookkeeping emphasized in the Runge–Kutta/RG bridge literature [Brouder1999] [McLachlan2017].
 
-### 5.6 Why This Supports “RG Is Definitional”
+## 5.6 Why This Supports “RG Is Definitional”
 This model is the precise analog of the calculus micro-model in Section 3:
 1. The regulated object \(I(E;\Lambda)\) diverges.
 2. A local counterterm (here the subtraction defining \(g_R(\mu)\)) removes the divergence.
@@ -260,7 +263,7 @@ This model is the precise analog of the calculus micro-model in Section 3:
 
 In short: in a singular interaction, “the theory” is the triple (regularization, subtraction condition, RG invariance). The RG is not an afterthought; it is the compatibility condition that makes the refinement limit meaningful.
 
-### 5.7 Point Interactions as Short-Distance Boundary Conditions (Where the Scale Lives)
+## 5.7 Point Interactions as Short-Distance Boundary Conditions (Where the Scale Lives)
 The renormalized \(2\)D contact interaction can be understood without momentum cutoffs:
 it can be formulated as a boundary condition at the removed point \(r=0\) (a self-adjoint extension parameter). This makes the “scale from a point” intuition explicit.
 For a perturbative-QFT-style presentation of this mechanism in the delta model, including the explicit short-distance logarithm, see [ManuelTarrach1994PertRenQM].
@@ -292,7 +295,7 @@ Thus the boundary-condition parameter \(R\) is equivalent to the bound-state sca
 `Heuristic H1.6 (Scheme dependence is the constant in “\(\ln r\)”).`
 The only ambiguity in the short-distance matching is the additive constant accompanying \(\ln r\) (here \(-\ln(\kappa/2)-\gamma\)). Changing that finite constant is exactly the finite-subtraction freedom of Section 5.4, and it rescales the physical length/energy scale (\(R\), \(\kappa_\ast\)) without changing the beta function.
 
-### 5.8 Contact Interactions Across Dimensions: 1D vs 2D vs 3D
+## 5.8 Contact Interactions Across Dimensions: 1D vs 2D vs 3D
 The \(2\)D delta is singled out above because its coupling is marginal and produces a clean log-running and transmutation scale. But contact interactions exist in all dimensions, and comparing \(1\)D/\(2\)D/\(3\)D is a good sanity-check on the “RG = compatibility” thesis: the dimension controls which kind of divergence (or boundary-condition flow) appears.
 
 `Proposition P1.6 (Canonical dimension of the delta coupling).`
@@ -309,7 +312,7 @@ Across \(1\)D/\(2\)D/\(3\)D contact branches, the compatibility principle is the
 3. in \(3\)D s-wave contact reduction, low-energy data are effectively one-parameter (scattering length \(a\)).
 This helps explain why fixed-point structure can be richer in \(1\)D without changing the underlying "RG as compatibility" thesis.
 
-#### 5.8.1 The 3D delta: scattering length and (Wilsonian) fixed points
+### 5.8.1 The 3D delta: scattering length and (Wilsonian) fixed points
 In \(3\)D, the loop integral \(I(E)\) diverges linearly with a momentum cutoff. With \(E=\hbar^2k^2/(2m)\) and \(|q|<\Lambda\),
 \[
 I_{3D}(E;\Lambda)
@@ -340,7 +343,7 @@ This is the standard “scattering length parameterization” of the contact int
 `Heuristic H1.9 (3D “no log” does not mean “no RG”).`
 Because the divergence is power-like, a minimal-subtraction style scheme can hide running. But in a Wilsonian parameterization with a dimensionless coupling (roughly \( \hat g(\Lambda)\propto \Lambda g_B(\Lambda)\)), the flow can exhibit fixed points corresponding to \(a=0\) (free/transparent) and \(a=\infty\) (unitarity). The point for this note is structural: even when running is not logarithmic, a compatibility condition still controls how the effective description must change with scale.
 
-#### 5.8.2 The 1D line: U(2) contact family and richer fixed-point set
+### 5.8.2 The 1D line: U(2) contact family and richer fixed-point set
 In \(1\)D, the pure \(\delta(x)\) interaction is already a well-defined self-adjoint Hamiltonian and does not require a UV subtraction to make scattering finite. However, the *space of all* contact interactions on the full line is richer: it is naturally parameterized by boundary conditions at the origin (a self-adjoint extension of the free Hamiltonian on \(\mathbb R\setminus\{0\}\)); see, for example, [BonneauFarautValent2001SAE] and the point-interaction “connection condition” formulation in [TsutsuiFulopCheon2002Connection]. Scaling then acts nontrivially on that boundary-condition parameter space.
 
 One convenient description is in terms of the (dimensionless) cutoff-\(a\) scattering matrix \(\tilde S_{\tilde k,a}\) as a function of \(\tilde k=ak\). A Wilson--Kogut style scaling transformation acts by
@@ -413,7 +416,7 @@ Thus the scattering depends only on the dimensionless ratio \(\kappa/k\) (equiva
 2. \(k\ll \kappa\) (IR/long distance): \(t(k)\to 0\), \(r(k)\to -1\) (perfect reflection fixed point).
 In this sense the “RG flow of the \(S\)-matrix” is simply the statement that, for a dimensionful contact strength, changing the probing scale moves one along a trajectory between scale-invariant endpoint matrices.
 
-### 5.9 Convention Map: Measures, Loop Integrals, and Scheme Constants
+## 5.9 Convention Map: Measures, Loop Integrals, and Scheme Constants
 The \((2\pi)^d\) factors and the finite constants in the logarithms are the usual source of “same result up to conventions” confusion. In this note we fix the conventions as follows:
 we define the loop integral (free resolvent at the origin) by
 \[
@@ -451,7 +454,7 @@ K_V(x,y)=g\;\delta^{(d)}(x)\,\delta^{(d)}(y)\,|dx|^{1/2}|dy|^{1/2}.
 \]
 This makes explicit what is convention and what is physics: the delta kernel is canonical as a half-density object (no background measure chosen), while any scalar representative requires a scalarization choice; RG-invariant scales (like \(\kappa_\ast\) in the 2D delta model) are candidates to supply such scalarization scales only after adding a universality hypothesis.
 
-## 6. Semigroup vs Group: What Is (Not) Invertible
+# 6. Semigroup vs Group: What Is (Not) Invertible
 The phrase “renormalization group” hides two different notions:
 1. an information-losing *coarse-graining map* on descriptions of the system, and
 2. the induced *flow* of a chosen parameterization (couplings) needed to keep predictions stable.
@@ -469,7 +472,7 @@ In general there is no inverse \(W_{\mu\to\Lambda}\) that reconstructs the UV de
 `Heuristic H1.5 (Why coupling “running” can look invertible anyway).`
 If one restricts attention to a finite-dimensional ansatz for the effective description (a truncation to finitely many couplings), then the RG flow becomes an ordinary differential equation for those couplings. Such flows can often be integrated “up” or “down” in scale given initial data, but this mathematical reversibility should not be confused with physical invertibility of coarse-graining. It is an artifact of restricting to (and assuming closure of) a low-dimensional manifold of descriptions.
 
-### 6.1 A Fully Explicit Coarse-Graining Map: Gaussian Integration (Schur Complement)
+## 6.1 A Fully Explicit Coarse-Graining Map: Gaussian Integration (Schur Complement)
 This toy model is deliberately “too simple” in the same way the difference quotient is “too simple”: it makes the semigroup structure and non-invertibility *visible*.
 
 `Derivation D1.7 (Exact coarse-graining in a quadratic model).`
@@ -517,9 +520,20 @@ In this quadratic model, integrating out \(y\) is equivalent to:
 
 Thus even the simplest exact coarse-graining step already splits into “extremal selection” plus a one-loop prefactor, matching the main manuscript’s stationary-phase narrative.
 
-## 7. What This Paper Must Still Do
-This is an explicit forward queue, tagged by cycle type (`C` content, `S` study/blackboard, `B` bibliography).
+# 7. Conclusion and Outlook
+This note argues for a simple foundational reading: whenever a continuum theory is defined by composing local refinement steps, *scale compatibility* is not optional. Regulator dependence appears in intermediate objects, and RG invariance is the condition that composed predictions are stable under changes of scale.
 
-1. `C`: Decide whether the rooted-tree/Hopf-algebra material is core to this note’s thesis or should be moved to an appendix-style section; keep the main flow centered on compatibility + explicit witnesses.
-2. `C`: Make the 3D Wilsonian fixed-point statement more explicit by defining a dimensionless coupling (e.g. \(\hat g(\Lambda)\propto \Lambda g_B(\Lambda)\)) and stating which endpoints correspond to \(a=0\) vs \(a=\infty\).
-3. `B` (optional): add an independent non-Rivero anchor for the 1D “U(2) point interactions” classification (OA-first; otherwise mark `PENDING`).
+The micro-models used here are deliberately elementary (difference quotients, Gaussian elimination, and contact interactions), but they already exhibit the three structural features emphasized by the main manuscript: (i) composition/semigroup structure at the level of coarse-graining, (ii) parameter flow as the compatibility data needed to compare descriptions across scale, and (iii) dimensional transmutation as the replacement of regulator-dependent couplings by RG-invariant physical scales.
+
+Natural extensions include adding one explicit Wilsonian fixed-point computation in a standard QFT example, and sharpening the rooted-tree bookkeeping discussion into a compact “dictionary section” that separates literal identities from analogy.
+
+# References
+
+1. [ConnesKreimer2000] Alain Connes and Dirk Kreimer, "Renormalization in quantum field theory and the Riemann-Hilbert problem I," *Communications in Mathematical Physics* 210 (2000), 249–273. DOI `10.1007/s002200050779`.
+2. [Brouder1999] Ch. Brouder, "Runge-Kutta methods and renormalization," arXiv:`hep-th/9904014` (2 Apr 1999).
+3. [McLachlan2017] Robert I. McLachlan, Klas Modin, Hans Munthe-Kaas, Olivier Verdier, "Butcher series: A story of rooted trees and numerical methods for evolution equations," arXiv:`1512.00906` (v3, 27 Feb 2017).
+4. [BoyaRivero1994Contact] Luis J. Boya and Alejandro Rivero, "Renormalization in 1-D Quantum Mechanics: contact interactions," arXiv:`hep-th/9411081` (v1, 11 Nov 1994).
+5. [ManuelTarrach1994PertRenQM] Cristina Manuel and Rolf Tarrach, "Perturbative Renormalization in Quantum Mechanics," *Physics Letters B* 328 (1994), 113--118. arXiv:`hep-th/9309013` (v1, 2 Sep 1993). DOI `10.1016/0370-2693(94)90437-5`.
+6. [BonneauFarautValent2001SAE] Guy Bonneau, Jacques Faraut, and Galliano Valent, "Self-adjoint extensions of operators and the teaching of quantum mechanics," *American Journal of Physics* 69 (2001), 322–331. arXiv:`quant-ph/0103153`. DOI `10.1119/1.1328351`.
+7. [TsutsuiFulopCheon2002Connection] Izumi Tsutsui, Tamás Fülöp, and Taksu Cheon, "Connection Conditions and the Spectral Family under Singular Potentials," arXiv:`quant-ph/0209110` (v1, 20 Sep 2002).
+8. [Jackiw1991DeltaPotentials] R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.

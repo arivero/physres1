@@ -43,19 +43,17 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
+  pdftitle={From Newton to the Path Integral},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
+\title{From Newton to the Path Integral}
 \author{}
 \date{}
 
 \begin{document}
-
-\section{From Newton to the Path
-Integral}\label{from-newton-to-the-path-integral}
-
-\subsection{Abstract}\label{abstract}
-
+\maketitle
+\begin{abstract}
 This paper develops a single structural thesis across classical and
 quantum theory: physically meaningful laws arise as controlled limits of
 composable local refinements. We begin with Newton's polygonal
@@ -73,8 +71,9 @@ emphasizing where they are mathematically valid and where regularization
 is mandatory. The result is a staged program from Newtonian limit
 methods to quantum amplitudes in which the classical equations are
 recovered as stationary limits of a broader compositional framework.
+\end{abstract}
 
-\subsection{1. Introduction}\label{introduction}
+\section{1. Introduction}\label{introduction}
 
 The historical and technical problem addressed here is not merely ``how
 to quantize,'' but ``how to define a stable continuum theory from
@@ -97,6 +96,58 @@ multiplicatively while the underlying functional is additive,
 exponential weighting is structurally natural {[}Dirac1933{]}
 {[}Feynman1948{]}.
 
+The long-standing foundational tension can be phrased as a Zeno-style
+refinement paradox: a refinement description is an \emph{infinite-limit}
+construction, and the limit is not automatically unique or even defined
+once the refined objects become singular (Dirac-supported probes,
+distributional derivatives) or once intermediate quantities diverge.
+Classical mechanics often hides this by treating ``send the refinement
+parameter to zero'' as an axiomatically legitimate operation. The
+program pursued here is instead: keep refinement explicit, isolate where
+limit-taking needs extra control, and treat \textbf{quantization} and
+\textbf{renormalization} as two distinct mechanisms for making refined
+composition stable when the naive Newtonian limit is not rigorous as
+written.
+
+\texttt{Heuristic\ H0.2\ (Concrete\ failure\ modes\ of\ naive\ refinement-to-zero).}
+Three recurring obstructions that make ``refine \(\to 0\)'' nontrivial
+in practice are: 1. \textbf{Singular probes:} point-supported variations
+and corners/impulses force distributional weak forms (mollifiers and
+contact terms). 2. \textbf{Non-uniqueness:} refinement/composition can
+admit multiple classically equivalent but quantum-distinct schemes
+(ordering/discretization choices), requiring an explicit equivalence or
+control map. (Minimal witness: time-slicing \(H=pq\) can yield
+\(-\hat p\hat q\) vs \(-\hat q\hat p\), differing by \(O(\hbar)\);
+requiring unitarity selects a symmetric (half-density) convention.) 3.
+\textbf{Divergence:} some refinement limits do not converge without
+subtraction/parameter flow (renormalization). (Toy witness: the
+derivative exists only after subtracting a \(1/\varepsilon\) divergence
+in the difference quotient.) This manuscript treats these as
+limit-control problems rather than as postulates about ``nature at the
+smallest scale.''
+
+\texttt{Heuristic\ H0.2a\ (No\ Lebesgue\ measure\ on\ path\ space).} In
+infinite-dimensional spaces there is no nontrivial translation-invariant
+\(\sigma\)-finite Borel measure (no Lebesgue/Haar measure)
+{[}Velhinho2017InfDimMeasure{]}, so the formal symbol \(Dq\) in a path
+integral cannot be interpreted as an ordinary ``Lebesgue measure on
+trajectories.'' Therefore the slogan ``refine the time slicing,
+integrate over paths, and send \(\Delta t\to0\)'' is not a raw Newtonian
+limit statement but a definition-by-refinement that must specify
+normalization and, when singularities are present, regulator/subtraction
+rules.
+
+\texttt{Heuristic\ H0.3\ (Constants\ as\ control\ parameters\ for\ compatibility\ limits).}
+In this program, \(\hbar\), \(c\), and \(G\) can be read as control
+parameters for three distinct compatibilities: \(\hbar\to0\) recovers
+classical stationarity from oscillatory composition, \(c\to\infty\)
+recovers Galilean/Newtonian kinematics from Lorentz-compatible
+refinement, and \(G\to0\) switches off geometric backreaction (with
+\(\hbar,c,G\) together defining the Planck scale where quantum and
+gravitational refinement controls meet). \texttt{Derivation\ D0.2} below
+gives a concrete example of a \(c\to\infty\) passage requiring an
+explicit subtraction convention.
+
 The third anchor is methodological. In this manuscript, deformation
 quantization and renormalization are not presented as detached
 specialist topics. They are two ways to control limits: 1. Deformation
@@ -113,10 +164,30 @@ assumes only that they are operational definitions of stable predictive
 objects. This narrowed statement will be stress-tested in later
 sections.
 
-\subsection{2. Notation and Claim
+\textbf{Contributions (what is new here).} 1. A refinement/composition
+reading of the Newton \(\to\) action \(\to\) kernel chain in which each
+stage is retained as a compatibility condition, not replaced. 2. An
+intrinsic half-density formulation of the composition law for
+propagators, separating coordinate-free kernel composition from
+scalarization conventions. 3. A semigroup-closure derivation showing the
+short-time normalization exponent \(t^{-d/2}\) is forced by composition
+(the ``square-root Jacobian''). 4. A refinement-compatibility framing of
+renormalization in which RG invariance is the consistency condition
+demanded by divergent refinement limits. 5. A fully explicit ``RG
+appears before QFT'' computation (2D delta/contact interaction) included
+as an appendix-level witness.
+
+\section{2. Notation and Claim
 Taxonomy}\label{notation-and-claim-taxonomy}
 
-\subsubsection{2.1 Core Objects}\label{core-objects}
+\textbf{Dimension bookkeeping.} Throughout Sections 2--7, \(d\) denotes
+the dimension of the manifold being integrated over in the composition
+law (typically configuration-space/spatial dimension in nonrelativistic
+kernels). When we write field-theory-style spacetime integrals, we will
+denote spacetime dimension by \(D\) to avoid conflating it with the
+composition-variable dimension.
+
+\subsection{2.1 Core Objects}\label{core-objects}
 
 Let \(q:[t_i,t_f]\to \mathbb{R}^d\) be a configuration-space trajectory
 and \(\mathcal{L}(q,\dot q,t)\) a Lagrangian density. Define the action:
@@ -143,7 +214,7 @@ L_{\mathrm{ang}} = m r^2\dot\theta = 2m\dot A.
 These definitions are used as the Newtonian-to-variational bridge in
 Section 3 and Section 4.
 
-\subsubsection{2.2 Weak-Form Preliminaries for Point-Like
+\subsection{2.2 Weak-Form Preliminaries for Point-Like
 Probes}\label{weak-form-preliminaries-for-point-like-probes}
 
 Let \(\eta\in C_c^\infty((t_i,t_f);\mathbb{R}^d)\) be a smooth compactly
@@ -157,7 +228,7 @@ distributions as \(\varepsilon\to 0^+\). Any use of Dirac-supported
 variations in this manuscript is understood as a mollified limit unless
 explicitly labeled heuristic.
 
-\subsubsection{2.3 Claim Taxonomy}\label{claim-taxonomy}
+\subsection{2.3 Claim Taxonomy}\label{claim-taxonomy}
 
 Every substantive claim is marked by one of: 1. \texttt{Proposition}:
 statement intended as mathematically valid under explicit assumptions.
@@ -165,7 +236,7 @@ statement intended as mathematically valid under explicit assumptions.
 \texttt{Heuristic}: physically motivated bridge that is not presented as
 full proof.
 
-\subsubsection{2.4 Seed Claims for the
+\subsection{2.4 Seed Claims for the
 Program}\label{seed-claims-for-the-program}
 
 \texttt{Proposition\ P0.1\ (Additive\ refinement\ structure).} Given a
@@ -191,7 +262,26 @@ contributions concentrate near stationary-action trajectories. This is
 the structural claim later made precise through stationary-phase
 analysis.
 
-\subsubsection{2.5 Scope Boundary
+\texttt{Derivation\ D0.2\ (Nonrelativistic\ limit\ as\ a\ controlled\ \textbackslash{}(c\textbackslash{}to\textbackslash{}infty\textbackslash{})\ subtraction).}
+Consider the relativistic free-particle action written with an explicit
+speed-of-light parameter: \[
+S_{\mathrm{rel}}[q]
+=-mc^2\int_{t_i}^{t_f} dt\;\sqrt{1-\frac{\|\dot q(t)\|^2}{c^2}}.
+\] For \(\|\dot q\|\ll c\), expand the square root: \[
+S_{\mathrm{rel}}[q]
+=\int_{t_i}^{t_f} dt\left(-mc^2+\frac12 m\|\dot q(t)\|^2+O(c^{-2})\right).
+\] The term \(-mc^2(t_f-t_i)\) diverges as \(c\to\infty\). Classically
+it is inert (adding a constant to \(\mathcal L\) does not change the
+Euler-Lagrange equations), so one may subtract it as an allowed additive
+counterterm to obtain a finite \(c\to\infty\) limit: the Newtonian
+kinetic action \(\int \frac12 m\|\dot q\|^2 dt\) plus higher-order
+relativistic corrections. In quantum amplitudes, the same subtraction
+corresponds to an overall phase \(e^{-imc^2(t_f-t_i)/\hbar}\). This
+remark is at the particle-mechanics level; field-theory and gravity
+effects of constant terms (vacuum energy) are a separate issue not
+addressed here.
+
+\subsection{2.5 Scope Boundary
 Established}\label{scope-boundary-established}
 
 This section fixes notation and methodological boundaries: 1. Historical
@@ -205,11 +295,10 @@ Transition to Section 3: with notation fixed, the next section derives
 the Newtonian area-law refinement argument in modern symbols and links
 it to \(L_{\mathrm{ang}}\) conservation.
 
-\subsection{3. Newtonian Refinement and Area
+\section{3. Newtonian Refinement and Area
 Law}\label{newtonian-refinement-and-area-law}
 
-\subsubsection{3.1 Source-Critical
-Framing}\label{source-critical-framing}
+\subsection{3.1 Source-Critical Framing}\label{source-critical-framing}
 
 In Book I, Proposition I of the \emph{Principia}, Newton proves that a
 centripetal forcing rule implies equal areas swept in equal times by the
@@ -227,7 +316,7 @@ The reformulation is mathematically equivalent under the same
 assumptions, but it is an interpretive translation, not a verbatim
 historical rendering.
 
-\subsubsection{3.2 Discrete Refinement
+\subsection{3.2 Discrete Refinement
 Model}\label{discrete-refinement-model}
 
 Fix equal time steps \(\Delta t>0\), times \(t_k=t_0+k\Delta t\), and a
@@ -290,7 +379,7 @@ The swept area in step \(k\) is the triangle area
 Therefore for fixed \(\Delta t\), \(\Delta A_k\) is independent of
 \(k\). This is the equal-areas statement at finite polygonal level.
 
-\subsubsection{3.3 Continuum Passage and Central-Force
+\subsection{3.3 Continuum Passage and Central-Force
 Generality}\label{continuum-passage-and-central-force-generality}
 
 \texttt{Proposition\ P1.1\ (Refinement\ limit\ of\ areal\ velocity).} If
@@ -322,7 +411,7 @@ literal claim that nature acts by discrete kicks. Its value is
 structural: invariants proven exactly at finite step survive controlled
 refinement.
 
-\subsubsection{3.4 Closed Question from the Section 2
+\subsection{3.4 Closed Question from the Section 2
 Setup}\label{closed-question-from-the-section-2-setup}
 
 Section 2 left one key ambiguity open: is Newton's area law a small-step
@@ -336,10 +425,10 @@ notation, the next section derives Euler-Lagrange equations and Noether
 charge conservation to show the same structure directly in action
 language.
 
-\subsection{4. Action as Additive
+\section{4. Action as Additive
 Invariant}\label{action-as-additive-invariant}
 
-\subsubsection{4.1 Stationarity Setup}\label{stationarity-setup}
+\subsection{4.1 Stationarity Setup}\label{stationarity-setup}
 
 The Section 3 invariant was derived from a refinement model in
 configuration geometry. We now restate the same physics through
@@ -375,7 +464,7 @@ Stationarity means
 \(\eta\in C_c^\infty((t_i,t_f);\mathbb R^d)\), then \(F(t)=0\) for all
 \(t\in(t_i,t_f)\).
 
-\subsubsection{4.2 Euler-Lagrange
+\subsection{4.2 Euler-Lagrange
 Derivation}\label{euler-lagrange-derivation}
 
 \texttt{Derivation\ D2.1\ (Euler-Lagrange\ equation).} Differentiate
@@ -423,7 +512,7 @@ implies:
 
 This is the Euler-Lagrange equation.
 
-\subsubsection{4.3 Rotational Symmetry and Angular
+\subsection{4.3 Rotational Symmetry and Angular
 Momentum}\label{rotational-symmetry-and-angular-momentum}
 
 For planar central motion with
@@ -486,7 +575,7 @@ showing the standard reduction to one-dimensional radial motion with
 effective potential
 \(V_{\mathrm{eff}}(r)=V(r)+L_{\mathrm{ang}}^2/(2mr^2)\).
 
-\subsubsection{4.4 Additivity and Composition
+\subsection{4.4 Additivity and Composition
 Pre-Bridge}\label{additivity-and-composition-pre-bridge}
 
 Recall the discrete action functional from the refinement viewpoint:
@@ -501,19 +590,18 @@ additivity is the structural input used later for composition-based
 quantum weighting in Section 6.
 
 \texttt{Heuristic\ H2.1\ (Toward\ distributional\ probes).} Point-like
-probes of extrema can be expressed in distributional language; the idea
-appears in explicit form in {[}Rivero9803035{]}. In this manuscript,
-technical use of such probes is deferred to Section 5, where mollifier
-limits and admissibility are stated explicitly.
+probes of extrema can be expressed in distributional language. In this
+manuscript, technical use of such probes is deferred to Section 5, where
+mollifier limits and admissibility are stated explicitly.
 
 Transition to Section 5: with Euler-Lagrange and Noether structure
 fixed, we next extend stationarity analysis to weak/distributional
 settings and clarify where Dirac-supported constructions are valid.
 
-\subsection{5. Dirac Distributions and Extremal
+\section{5. Dirac Distributions and Extremal
 Action}\label{dirac-distributions-and-extremal-action}
 
-\subsubsection{5.1 Why Weak Formulations Appear
+\subsection{5.1 Why Weak Formulations Appear
 Here}\label{why-weak-formulations-appear-here}
 
 The story so far treated trajectories as classically smooth. Two themes
@@ -527,7 +615,7 @@ used as linear functionals on test functions and as limits of smooth
 approximations. Nonlinear operations on distributions are not assumed
 unless regularized.
 
-\subsubsection{5.2 Weak Euler-Lagrange
+\subsection{5.2 Weak Euler-Lagrange
 Equation}\label{weak-euler-lagrange-equation}
 
 Let \(q\in C^1([t_i,t_f];\mathbb R^d)\) be a candidate trajectory and
@@ -569,7 +657,7 @@ from the first-variation identity (as in Section 4):
 Integrate the second term by parts. Compact support eliminates the
 boundary term and yields the stated distributional identity.
 
-\subsubsection{5.3 Point-Like Probes via Mollifiers (Not Raw
+\subsection{5.3 Point-Like Probes via Mollifiers (Not Raw
 Deltas)}\label{point-like-probes-via-mollifiers-not-raw-deltas}
 
 Pick a nonnegative mollifier \(\rho\in C_c^\infty(\mathbb R)\) with
@@ -597,7 +685,7 @@ This is the precise sense in which ``Dirac-supported probes'' recover
 pointwise Euler-Lagrange equations: they do so through mollifier limits,
 not by inserting nonlinear expressions involving \(\delta(t-t_0)\).
 
-\subsubsection{5.4 Corners and Impulses: Jump
+\subsection{5.4 Corners and Impulses: Jump
 Conditions}\label{corners-and-impulses-jump-conditions}
 
 There are two distinct phenomena that look ``singular'' in time: 1.
@@ -667,7 +755,7 @@ This connects directly to the Section 3 impulse scaffold: central
 impulses preserve angular momentum because they change momentum only in
 the radial direction.
 
-\subsubsection{5.5 Extremal Measures: Finite-Dimensional Analogy and
+\subsection{5.5 Extremal Measures: Finite-Dimensional Analogy and
 Limits}\label{extremal-measures-finite-dimensional-analogy-and-limits}
 
 The phrase ``Dirac distributions to calculate extrema'' is unambiguous
@@ -688,18 +776,29 @@ This exhibits the pattern ``density = \(|\text{amplitude}|^2\)'', with
 the exponent \(N/2\) matching the half-density scaling needed to cancel
 Jacobians under refinement.
 
+\texttt{Derivation\ D3.5a\ (Nondegenerate\ critical\ points:\ why\ the\ weights\ are\ square\ roots).}
+In one dimension, if \(f\) has finitely many nondegenerate critical
+points \(x_i\) (so \(f'(x_i)=0\) and \(f''(x_i)\neq 0\)), then the
+distributional identity \[
+\delta(f'(x))=\sum_i \frac{\delta(x-x_i)}{|f''(x_i)|}
+\] makes explicit that \(\delta(f')\,dx\) is a density supported on
+stationary points with weights \(1/|f''|\). Stationary phase, by
+contrast, gives amplitude contributions weighted by
+\(1/\sqrt{|f''(x_i)|}\). This is the clean finite-dimensional reason the
+``half-density first'' viewpoint is natural: amplitude weights are
+square roots of density weights.
+
 Section 6 recovers the same ``square-root Jacobian'' in the dynamical
 setting: semigroup composition of short-time kernels forces the
 characteristic \(t^{-d/2}\) normalization (Derivation D4.1a).
 
 In infinite-dimensional settings (paths), one is tempted to write
-``formal measures'' supported on stationary-action trajectories. A
-concrete version of this idea, and its relation to exponential weighting
-and consistency, is developed in {[}Rivero9803035{]}. In this manuscript
-we treat such expressions as roadmap heuristics until they are
-regularized and made compatible with composition (Section 6).
+``formal measures'' supported on stationary-action trajectories. In this
+manuscript we treat such expressions as roadmap heuristics until they
+are regularized and made compatible with composition (Section 6); see
+also \texttt{Heuristic\ H0.2a}.
 
-\subsubsection{5.6 Caveats (Nonlinear Distribution
+\subsection{5.6 Caveats (Nonlinear Distribution
 Pitfalls)}\label{caveats-nonlinear-distribution-pitfalls}
 
 \begin{enumerate}
@@ -724,10 +823,10 @@ classical dynamics'' (including impulses and corners) and a precise
 language for refinement-local probes. The next section uses composition
 under time slicing to motivate amplitude weights and the path integral.
 
-\subsection{6. Composition and Path
+\section{6. Composition and Path
 Integral}\label{composition-and-path-integral}
 
-\subsubsection{6.1 Composition Postulate for
+\subsection{6.1 Composition Postulate for
 Amplitudes}\label{composition-postulate-for-amplitudes}
 
 Let \(K(q_f,t_f;q_i,t_i)\) denote the transition amplitude. The
@@ -765,7 +864,32 @@ unitarily equivalent scalar representations. If one additionally demands
 scalar amplitudes be dimensionless, then \(\sigma_\ast\) must carry the
 full \(\text{length}^{d/2}\) weight, so a universal choice of
 \(\sigma_\ast\) is equivalent to choosing a universal
-\(\text{length}^{d/2}\) scale.
+\(\text{length}^{d/2}\) scale. In a spacetime QFT setting where the
+scalarization problem is formulated over an integration variable of
+dimension \(D\), this is a \(\text{length}^{D/2}\) scale; in \(D=4\) it
+is an area, with the Planck area \(\ell_P^2=\hbar G/c^3\) a natural
+universal candidate. The dependent note
+\texttt{papers/planck-area/main.md} explores further (optional)
+hypotheses about such scale suppliers; no such identification is
+required for the present paper's structural chain.
+
+\texttt{Heuristic\ H4.0b\ (Independent\ \textbackslash{}(D=4\textbackslash{})\ filter:\ operator\ simplicity\ under\ conformal\ scalarization\ changes).}
+The ``scale supplier'' question above is distinct from a different way
+\(D=4\) can appear once one insists on scalar representatives:
+simplicity of how \emph{kinetic operators} depend on scalarization
+choices. In a covariant/QFT setting (spacetime dimension \(D\)), the
+scalar Laplacian \(\Delta_g\) induces an operator on half-densities by
+conjugation, \[
+\widetilde\Delta_g := |g|^{1/4}\Delta_g|g|^{-1/4}.
+\] Under a conformal rescaling \(g=e^{2\sigma}\bar g\), the half-density
+conjugation produces a quadratic-gradient term
+\(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\),
+hence it cancels at \(D=4\) (within the conformal class). This is an
+operator-simplicity filter (scale-neutral) and is independent of the
+coupling-dimension sieve in \texttt{papers/planck-area/main.md}; for
+details and an invariant derivation see
+\texttt{papers/half-density-qft/main.md} and
+\texttt{blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md}.
 
 \texttt{Derivation\ D4.1\ (Time\ slicing\ from\ repeated\ composition).}
 Iterating the composition law over a partition
@@ -787,8 +911,9 @@ kernel of the form \(K_t(x,y)=k_t(x-y)\,|dx|^{1/2}|dy|^{1/2}\), so the
 semigroup law becomes a scalar convolution: \(k_{t+s}=k_t*k_s\). Assume
 a quadratic short-time phase and write \[
 k_t(u)=A(t)\,\exp\!\left(\frac{i m}{2\hbar}\frac{\|u\|^2}{t}\right),
-\] interpreting the Gaussian integral in Euclidean time or with the
-usual \(i0\) prescription. Then \[
+\] interpreting the Gaussian integral in Euclidean time (heat kernel)
+and then analytically continuing, or with the usual \(i0\) prescription.
+Then \[
 (k_t*k_s)(u)=A(t)A(s)\int_{\mathbb R^d}
 \exp\!\left(\frac{i m}{2\hbar}\left(\frac{\|u-v\|^2}{t}+\frac{\|v\|^2}{s}\right)\right)\,dv.
 \] Completing the square yields \[
@@ -799,9 +924,12 @@ A(t+s)=A(t)A(s)\left(\frac{ts}{t+s}\right)^{d/2}\times(\text{phase}).
 \] The unique solution (up to an overall constant phase) is
 \(A(t)\propto t^{-d/2}\). Thus the exponent \(d/2\) is forced by
 semigroup composition: it is the half-density ``square-root Jacobian''
-needed for refinement-stable kernel composition.
+needed for refinement-stable kernel composition. Imposing the delta
+initial condition as \(t\to0^+\) fixes the remaining normalization
+constant and forces \(\hbar\) into the prefactor (in standard flat-space
+scalar conventions, \(A(t)=(m/2\pi i\hbar t)^{d/2}\) up to phase).
 
-\subsubsection{6.2 From Additive Action to Multiplicative
+\subsection{6.2 From Additive Action to Multiplicative
 Weights}\label{from-additive-action-to-multiplicative-weights}
 
 The Section 4/Section 5 structure gives an additive discrete action:
@@ -835,7 +963,7 @@ Choosing oscillatory quantum time evolution gives \(c_0=i/\hbar\), hence
 the standard phase factor \(\exp(iS_N/\hbar)\) {[}Dirac1933{]}
 {[}Feynman1948{]}.
 
-\subsubsection{6.3 Ordering, Discretization, and Quantum
+\subsection{6.3 Ordering, Discretization, and Quantum
 Ambiguity}\label{ordering-discretization-and-quantum-ambiguity}
 
 Different short-time discretizations (left/right/midpoint or more
@@ -843,7 +971,7 @@ general \(\alpha\)-schemes) typically correspond to different operator
 orderings. In deformation language, this is the same ambiguity as
 choosing a star-product representative; these constructions agree in the
 classical limit but can differ at subleading quantum order
-{[}Rivero0302285{]} {[}Landsman1998{]}.
+{[}Landsman1998{]} {[}deGosson2018ShortTimePropagators{]}.
 
 \texttt{Heuristic\ H4.1\ (Same\ classical\ limit,\ different\ quantum\ corrections).}
 Two discretizations that differ by \(O(\Delta t)\) in each slice can
@@ -851,7 +979,7 @@ produce equivalent classical equations while shifting \(O(\hbar)\) terms
 in quantum generators. Thus ordering is a controlled modeling choice,
 not a contradiction.
 
-\subsubsection{6.4 Formal Continuum Limit and Stationary
+\subsection{6.4 Formal Continuum Limit and Stationary
 Phase}\label{formal-continuum-limit-and-stationary-phase}
 
 Formally, as mesh size \(\max_k\Delta t_k\to0\):
@@ -881,6 +1009,30 @@ neighborhoods of stationary paths contribute coherently. This is the
 precise sense in which the classical equations reappear as \(\hbar\to0\)
 asymptotics.
 
+\texttt{Derivation\ D4.2a\ (Soft\ extremum\ and\ why\ a\ finite\ \textbackslash{}(\textbackslash{}hbar\textbackslash{})\ stabilizes\ refinement).}
+Even before any infinite-dimensional measure issues, the
+refinement-composition pattern forces a ``softened'' version of
+extremization. Consider a finite-dimensional two-slice action
+\(S(q_2,q_1)+S(q_1,q_0)\) and form the Euclideanized composed weight \[
+W_\hbar(q_2,q_0):=\int dq_1\;\exp\!\left(-\frac{1}{\hbar}\big(S(q_2,q_1)+S(q_1,q_0)\big)\right).
+\] Define the associated coarse effective action (a log-partition
+functional) \[
+S_{\mathrm{eff}}^{(\hbar)}(q_2,q_0):=-\hbar\ln W_\hbar(q_2,q_0).
+\] Then refinement-composition is exact at the level of weights (add
+actions in the exponent, integrate the intermediate variable), and the
+hard elimination/extremization rule appears only as the sharpening
+limit: under standard nondegeneracy assumptions, Laplace's method gives
+\[
+S_{\mathrm{eff}}^{(\hbar)}(q_2,q_0)
+\xrightarrow{\hbar\to0}
+\inf_{q_1}\big(S(q_2,q_1)+S(q_1,q_0)\big),
+\] with \(O(\hbar)\) corrections determined by local quadratic data near
+the minimizer(s). So \(\hbar\) plays the role of a universal control
+parameter that makes ``refine then compare'' stable, with classical
+extremals recovered as a limit. In real time, the same pattern appears
+with \(e^{iS/\hbar}\) and stationary phase in place of positivity and
+Laplace concentration.
+
 \texttt{Derivation\ D4.3\ (Van\ Vleck\ prefactor\ is\ a\ bi-half-density).}
 In the semiclassical approximation, the endpoint kernel has the standard
 form \[
@@ -901,9 +1053,16 @@ the chain rule, and \[
 \(|\det(\partial q_f/\partial q_f')|^{1/2}|\det(\partial q_i/\partial q_i')|^{1/2}\),
 so the prefactor transforms as a half-density in each endpoint variable.
 This is the concrete semiclassical origin of the half-density viewpoint
-in \texttt{Heuristic\ H4.0}.
+in \texttt{Heuristic\ H4.0}. For an early
+semiclassical/correspondence-principle anchor in the ``Van Vleck''
+tradition, see {[}VanVleck1928Correspondence{]}. For a modern OA
+statement of the Van Vleck propagator/prefactor and the associated ``Van
+Vleck density'', see {[}deGosson2018ShortTimePropagators{]}. For an
+explicit finite-dimensional quadratic-elimination template showing how
+mixed endpoint Hessians arise via Schur complements (a time-slicing
+analogue), see \texttt{paper/notes/van-vleck-schur-complement.md}.
 
-\subsubsection{6.5 Link Back to Section 5 Singular
+\subsection{6.5 Link Back to Section 5 Singular
 Dynamics}\label{link-back-to-section-5-singular-dynamics}
 
 The composition picture naturally includes piecewise-smooth
@@ -927,10 +1086,10 @@ classical-recovery logic in place, we can now present quantization as
 deformation of algebraic products, linking path-integral discretization
 choices to tangent/cotangent groupoid deformation structure.
 
-\subsection{7. Deformation Quantization
+\section{7. Deformation Quantization
 Bridge}\label{deformation-quantization-bridge}
 
-\subsubsection{7.1 From Path Weights to Product
+\subsection{7.1 From Path Weights to Product
 Deformation}\label{from-path-weights-to-product-deformation}
 
 Section 6 established that discretized composition introduces nonunique
@@ -969,7 +1128,7 @@ f\star_\hbar g-g\star_\hbar f
 So first-order noncommutativity is fully determined by
 \(B_1^{\mathrm{anti}}\).
 
-\subsubsection{7.2 Commutator-to-Poisson
+\subsection{7.2 Commutator-to-Poisson
 Recovery}\label{commutator-to-poisson-recovery}
 
 \texttt{Derivation\ D5.1\ (Correspondence\ limit).} Impose the
@@ -1003,7 +1162,7 @@ coordinates, so \(i\hbar\{f,g\}\) has the same physical dimension as
 \(fg\). This is the same unit-consistency condition already used in
 Section 6 for \(\exp(iS/\hbar)\).
 
-\subsubsection{7.3 Concrete Model and Ordering
+\subsection{7.3 Concrete Model and Ordering
 Content}\label{concrete-model-and-ordering-content}
 
 For flat phase space, the Moyal product provides an explicit
@@ -1027,9 +1186,9 @@ corrections at higher orders {[}Landsman1998{]}.
 The Section 6 discretization ambiguity is naturally interpreted as
 choosing different but deformation-equivalent star products; they share
 the same classical bracket data but differ in \(O(\hbar)\) and higher
-corrections {[}Rivero0302285{]}.
+corrections {[}Landsman1998{]}.
 
-\subsubsection{7.4 Equivalence Classes and Groupoid
+\subsection{7.4 Equivalence Classes and Groupoid
 Viewpoint}\label{equivalence-classes-and-groupoid-viewpoint}
 
 \texttt{Proposition\ P5.2\ (Equivalent\ star\ products,\ same\ classical\ limit).}
@@ -1051,10 +1210,9 @@ This is the algebraic side of the same continuity narrative:
 quantization data are organized into equivalence classes compatible with
 one classical limit. Geometric deformation programs (including
 tangent-groupoid viewpoints) encode the same bridge from commutative
-classical data to noncommutative quantum products {[}Connes1994{]}
-{[}Rivero9710026{]}.
+classical data to noncommutative quantum products {[}Connes1994{]}.
 
-\subsubsection{7.5 Formal Deformation
+\subsection{7.5 Formal Deformation
 Boundary}\label{formal-deformation-boundary}
 
 In this section we use formal/asymptotic deformation language for local
@@ -1069,10 +1227,10 @@ but how to keep refined predictions finite and scale-consistent when
 naive limits diverge. That control problem is precisely the
 renormalization step.
 
-\subsection{8. Renormalization as Controlled
+\section{8. Renormalization as Controlled
 Refinement}\label{renormalization-as-controlled-refinement}
 
-\subsubsection{8.1 Why Renormalization Appears in Refinement
+\subsection{8.1 Why Renormalization Appears in Refinement
 Limits}\label{why-renormalization-appears-in-refinement-limits}
 
 The previous sections treated refinement as benign: polygonal refinement
@@ -1103,7 +1261,7 @@ not optional bookkeeping: it is part of the definition of the continuum
 theory, because it specifies which composed/refined predictions are
 declared physically stable.
 
-\subsubsection{8.2 Regulator, Bare Data, and Renormalized
+\subsection{8.2 Regulator, Bare Data, and Renormalized
 Observables}\label{regulator-bare-data-and-renormalized-observables}
 
 Let \(\Lambda\) denote a refinement cutoff (e.g., momentum cutoff
@@ -1148,9 +1306,37 @@ R_{\Lambda\to\mu} = R_{\kappa\to\mu}\circ R_{\Lambda\to\kappa}.
 \]
 
 This is the renormalization-group (RG) semigroup property in refinement
-language.
+language; for a standard Wilsonian/ERG discussion of coarse-graining
+flows and fixed points, see {[}Rosten2012ERG{]}.
 
-\subsubsection{8.3 RG Equation from Cutoff
+\texttt{Derivation\ D6.0\ (Control\ map\ \textbackslash{}(\textbackslash{}tau\textbackslash{}):\ comparing\ refinements\ at\ fixed\ ruler).}
+The same compatibility condition can be stated without committing to a
+particular regulator. Fix a reference ruler \(h>0\) (the resolution at
+which we compare predictions), and let \(A_{h,\theta}\) denote a family
+of amplitudes/prediction functionals indexed by parameters \(\theta\)
+(couplings, normalizations, and any fixed conventions such as
+scalarization gauge). For a refinement factor \(b>1\), choose a
+``compare at ruler \(h\)'' operation \(\mathcal C_{b,h}\): take a
+prediction written at finer ruler \(h/b\) and express it back at ruler
+\(h\) (e.g.~by composing fine steps or integrating intermediate
+variables when such a representation exists). Scale compatibility is the
+closure requirement that refinement-comparison lands back in the same
+family after a parameter update:
+
+\[
+\mathcal C_{b,h}\!\big(A_{h/b,\theta}\big)=A_{h,\tau_b(\theta)}.
+\]
+
+Here \(\tau_b\) is the control/flow map induced by the
+compare-at-fixed-ruler operation. When no such \(\tau_b\) exists within
+the chosen parameter family, refinement generates new operators and the
+family must be enlarged (counterterms/effective operators). A concrete
+micro-witness is \texttt{Derivation\ D6.2a}, where step-halving induces
+\(\tau_2(a)=a/2+1/4\) with fixed point \(a_\ast=1/2\). In the cutoff
+notation above, one may view \(R_{\Lambda\to\mu}\) as a special case of
+\(\tau\) written with explicit reference scales.
+
+\subsection{8.3 RG Equation from Cutoff
 Independence}\label{rg-equation-from-cutoff-independence}
 
 \texttt{Derivation\ D6.1\ (RG\ equation\ as\ consistency\ under\ refinement).}
@@ -1244,7 +1430,7 @@ illustrating how renormalization turns the divergent \(\ln\Lambda\)
 refinement effect into a scale-dependent coupling consistent with stable
 observables.
 
-\subsubsection{8.4 Refinement Control Before QFT: Scale-Halving as a
+\subsection{8.4 Refinement Control Before QFT: Scale-Halving as a
 Model}\label{refinement-control-before-qft-scale-halving-as-a-model}
 
 One can see the same logic in purely classical numerical refinement.
@@ -1255,14 +1441,31 @@ refinement-control question is then: what correction to
 \(\Phi_\varepsilon\) makes the two-step composition agree with a
 one-step method after rescaling back to the same reference resolution?
 
+\texttt{Derivation\ D6.2a\ (Step-halving\ induces\ a\ control\ map\ \textbackslash{}(\textbackslash{}tau\textbackslash{})\ in\ a\ toy\ ODE).}
+Consider the scalar ODE \(y'=f(y)\) and a one-parameter family of
+one-step maps at step size \(h\), \[
+\Phi_h^{(a)}(y)=y+h f(y)+a\,h^2 f'(y)f(y)+O(h^3).
+\] Define the step-halving comparison
+\(H(\Phi_h):=\Phi_{h/2}\circ \Phi_{h/2}\). A direct expansion to order
+\(h^2\) gives \[
+H(\Phi_h^{(a)})(y)=y+h f(y)+\left(\frac14+\frac{a}{2}\right)h^2 f'(y)f(y)+O(h^3).
+\] Thus, within this ansatz family, refinement comparison closes by a
+parameter update \[
+H(\Phi_h^{(a)})=\Phi_h^{(\tau_2(a))}+O(h^3),\qquad \tau_2(a)=\frac{a}{2}+\frac14,
+\] with fixed point \(a_\ast=1/2\) (the second-order Taylor coefficient
+of the exact flow). This is a clean micro-model for
+\texttt{Derivation\ D6.0}: \(\tau_b\) is the control map required so
+that ``refine and compare'' lands back in the chosen family; failure of
+closure forces enlarging the family (counterterms).
+
 \texttt{Heuristic\ H6.2\ (Rooted\ trees\ as\ refinement\ bookkeeping).}
 In Runge-Kutta and related integrators, the comparison between composed
 steps and a single step organizes into rooted-tree expansions; the
-corresponding composition law forms a group (the Butcher group). Rivero
-observes that ``scale-halving then rescaling back'' is an RG-like
-operation on method coefficients, and the same rooted-tree/Hopf-algebra
-combinatorics appears in perturbative renormalization bookkeeping
-{[}RiveroOde2002{]} {[}Brouder1999{]} {[}McLachlan2017{]}
+corresponding composition law forms a group (the Butcher group).
+Interpreting ``step-halving then rescaling back'' as a scale-update
+operation makes the analogy with RG bookkeeping explicit, and
+rooted-tree/Hopf-algebra combinatorics also appears in perturbative
+renormalization {[}Brouder1999{]} {[}McLachlan2017{]}
 {[}ConnesKreimer2000{]}.
 
 This example is included not to replace QFT renormalization, but to
@@ -1272,7 +1475,7 @@ Butcher \emph{group} concerns formal method composition, whereas
 Wilsonian coarse-graining is generally a \emph{semigroup} because
 information is discarded at each coarse-graining step.
 
-\subsubsection{8.5 Counterterms as Refinement
+\subsection{8.5 Counterterms as Refinement
 Corrections}\label{counterterms-as-refinement-corrections}
 
 In field theory language, refinement is implemented by a regulated
@@ -1281,7 +1484,7 @@ action \(S_\Lambda\) with cutoff-dependent parameters. Schematically,
 \[
 S_\Lambda[\phi]
 =
-\int d^d x\left(
+\int d^D x\left(
 \frac{Z(\Lambda)}{2}(\partial\phi)^2
 +\frac{m^2(\Lambda)}{2}\phi^2
 +\frac{\lambda(\Lambda)}{4!}\phi^4
@@ -1289,13 +1492,13 @@ S_\Lambda[\phi]
 \right),
 \]
 
-where the ``\(\cdots\)'' stands for additional operators allowed by
-symmetries and by the desired accuracy. The counterterm viewpoint is
-simply the statement that \(Z,m^2,\lambda,\ldots\) must be chosen as
-functions of \(\Lambda\) so that the cutoff-stable limits of observables
-exist. In this compositional narrative, counterterms are refinement
-corrections required to keep the ``same theory'' after integrating out
-short scales.
+where \(D\) is the spacetime dimension and the ``\(\cdots\)'' stands for
+additional operators allowed by symmetries and by the desired accuracy.
+The counterterm viewpoint is simply the statement that
+\(Z,m^2,\lambda,\ldots\) must be chosen as functions of \(\Lambda\) so
+that the cutoff-stable limits of observables exist. In this
+compositional narrative, counterterms are refinement corrections
+required to keep the ``same theory'' after integrating out short scales.
 
 \texttt{Derivation\ D6.3\ (Difference\ quotient\ as\ counterterm\ subtraction).}
 Let \(f\in C^1\) and \(\varepsilon\to 0^+\). The two regulated
@@ -1312,8 +1515,7 @@ each diverge like \(1/\varepsilon\). Subtracting the local counterterm
 This is a minimal model of renormalization: divergent regulated
 expressions become finite after subtracting a divergence that depends
 only on local data, and the renormalized quantity is the cutoff-stable
-remainder. (This ``derivative as renormalized limit'' viewpoint is
-stated explicitly in {[}RiveroOde2002{]}.)
+remainder.
 
 The Connes-Kreimer framework makes this consistency structural by
 encoding perturbative renormalization as a factorization problem with a
@@ -1323,7 +1525,7 @@ alignment: renormalization is a principled method for producing
 regulator-independent predictions from composable local pieces when
 refinement alone does not converge.
 
-\subsubsection{8.6 Assumptions and Boundaries
+\subsection{8.6 Assumptions and Boundaries
 Audit}\label{assumptions-and-boundaries-audit}
 
 \texttt{Proposition\ P6.3\ (Closure\ assumption\ for\ finite-parameter\ flow).}
@@ -1345,10 +1547,10 @@ final synthesis section stress-tests the transitions, labels what
 remains heuristic, and consolidates the manuscript into a single
 coherent argument.
 
-\subsection{9. Unified Perspective and Open
+\section{9. Unified Perspective and Open
 Problems}\label{unified-perspective-and-open-problems}
 
-\subsubsection{9.1 End-to-End Claim Graph}\label{end-to-end-claim-graph}
+\subsection{9.1 End-to-End Claim Graph}\label{end-to-end-claim-graph}
 
 The manuscript has built one chain across seven technical steps: 1.
 Section 3: refinement geometry in central-force motion yields an exact
@@ -1394,7 +1596,7 @@ constraints on one staged construction: classical extremals, quantum
 composition, algebraic deformation, and scale consistency must match in
 their overlap domains.
 
-\subsubsection{9.2 Transition Stress Test}\label{transition-stress-test}
+\subsection{9.2 Transition Stress Test}\label{transition-stress-test}
 
 \texttt{Derivation\ D7.1\ (No\ hidden\ leap\ audit\ across\ transitions).}
 The manuscript can be stress-tested by checking each transition against
@@ -1437,46 +1639,45 @@ The audit criterion is simple: every bridge states its assumptions and
 carries an explicit invariant or equation through the transition. Where
 this fails, the claim is downgraded to heuristic.
 
-\subsubsection{9.3 What Is Proven vs
+\subsection{9.3 What Is Proven vs
 Heuristic}\label{what-is-proven-vs-heuristic}
 
-The section-level status map requested by Section 9 is:
+For navigation, Sections 3--8 contain the following mix of results and
+bridges:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Section 3: polygonal central-impulse refinement preserves angular
-  momentum and equal areas at finite step. Status: \texttt{Proposition}
-  + \texttt{Derivation}. Main boundary: central impulses and consistent
-  refinement limit.
+  \textbf{Section 3:} polygonal central-impulse refinement preserves
+  angular momentum and equal areas at finite step.
+  (\texttt{Proposition}, \texttt{Derivation}) Boundary: central impulses
+  and consistent refinement limit.
 \item
-  Section 4: Euler-Lagrange plus Noether recover angular-momentum and
-  energy invariants. Status: \texttt{Derivation} + \texttt{Proposition}.
-  Main boundary: \(C^2\) trajectory regularity and standard variational
-  hypotheses.
+  \textbf{Section 4:} Euler--Lagrange plus Noether recover
+  angular-momentum and energy invariants. (\texttt{Derivation},
+  \texttt{Proposition}) Boundary: \(C^2\) trajectory regularity and
+  standard variational hypotheses.
 \item
-  Section 5: weak Euler-Lagrange, mollifier probes, and jump laws for
-  corners/impulses. Status: \texttt{Proposition} + \texttt{Derivation}.
-  Main boundary: distribution linearity and no undefined nonlinear
-  products.
+  \textbf{Section 5:} weak Euler--Lagrange, mollifier probes, and jump
+  laws for corners/impulses. (\texttt{Proposition}, \texttt{Derivation})
+  Boundary: distribution linearity and no undefined nonlinear products.
 \item
-  Section 6: composition plus additivity imply exponential weighting;
-  stationary phase yields classical recovery. Status: mixed
-  (\texttt{Proposition} + \texttt{Derivation} + \texttt{Heuristic}).
-  Main boundary: formal path-integral usage and local stationary-phase
+  \textbf{Section 6:} composition plus additivity imply exponential
+  weighting; stationary phase yields classical recovery. (mixed:
+  \texttt{Proposition}, \texttt{Derivation}, \texttt{Heuristic})
+  Boundary: formal path-integral usage and local stationary-phase
   assumptions.
 \item
-  Section 7: deformation products recover the Poisson bracket; ordering
-  appears as deformation-equivalence choice. Status: mixed
-  (\texttt{Proposition} + \texttt{Derivation} + \texttt{Heuristic}).
-  Main boundary: formal/asymptotic deformation setting and scope of
+  \textbf{Section 7:} deformation products recover the Poisson bracket;
+  ordering appears as deformation-equivalence choice. (mixed:
+  \texttt{Proposition}, \texttt{Derivation}, \texttt{Heuristic})
+  Boundary: formal/asymptotic deformation setting and scope of
   equivalence.
 \item
-  Section 8: RG appears as semigroup consistency under composed
-  refinement; counterterms appear as refinement corrections. Status:
-  mixed (\texttt{Proposition} + \texttt{Derivation} +
-  \texttt{Heuristic}). Main boundary: closure/truncation assumptions and
-  regulator-scheme choice.
+  \textbf{Section 8:} RG appears as semigroup consistency under composed
+  refinement; counterterms appear as refinement corrections. (mixed:
+  \texttt{Proposition}, \texttt{Derivation}, \texttt{Heuristic})
+  Boundary: closure/truncation assumptions and regulator-scheme choice.
 \end{enumerate}
 
 \texttt{Heuristic\ H7.1\ (Programmatic\ interpretation).} The
@@ -1484,7 +1685,7 @@ Newton-to-path-integral narrative is best read as a \emph{compatibility
 program} rather than a single theorem: each layer adds new consistency
 constraints while preserving prior invariants in its domain of validity.
 
-\subsubsection{9.4 Residual
+\subsection{9.4 Residual
 Vulnerabilities}\label{residual-vulnerabilities}
 
 \begin{enumerate}
@@ -1508,27 +1709,43 @@ These are not hidden defects; they are explicit scope boundaries. The
 manuscript now separates proven derivations from heuristic bridges,
 which was a core objective of the staged design.
 
-\subsubsection{9.5 Next-Paper Agenda}\label{next-paper-agenda}
+\subsection{9.5 Future Work}\label{future-work}
 
-The remaining extensions beyond the continuation appendices are: 1. Add
-a fully model-specific loop computation (beyond the template-level
-calculation in section \texttt{10.1}). 2. Add a short dimensional-aside
-appendix (from \texttt{{[}RiveroSimple{]}}) clearly labeled as
-heuristic/exploratory. 3. Add one diagram-level summary figure of the
-compatibility chain for publication readability. 4. Add a final
-notation-normalization pass for submission formatting.
+The present manuscript emphasizes explicit derivations at the level of
+mechanics and simple quantum models. Natural extensions include: 1. one
+field-theory loop computation in a fixed scheme, to complement the
+structural RG discussion, 2. a consolidated diagram/figure summarizing
+the refinement-compatibility chain for reader navigation, 3. a final
+notation/normalization pass tailored to the submission venue.
 
-Roadmap status: with Section 9, the planned section sequence through
-Section 9 is complete.
+\subsection{9.6 Conclusion}\label{conclusion}
 
-\subsection{10. Technical Appendices (Continuation
+The paper's central thesis is that ``continuum laws'' are most cleanly
+understood as \emph{stable targets of controlled refinement}:
+finite-step invariants (Newton's polygonal dynamics) persist through the
+action formulation, and action additivity is the algebraic structure
+that forces a consistent composition law. In the quantum setting,
+multiplicative composition together with local additivity makes
+exponential weighting structurally natural, and classical dynamics are
+recovered by stationary-phase concentration. Two further control
+mechanisms enter when naive refinement is not uniquely defined:
+deformation quantization organizes ordering/discretization choices into
+equivalence classes compatible with a common classical limit, and
+renormalization supplies the compatibility condition required when
+refinement limits diverge.
+
+Throughout, the manuscript keeps refinement explicit, separates
+derivations from heuristics, and highlights the additional hypotheses
+needed for each continuum passage.
+
+\section{10. Technical Appendices (Continuation
 Stages)}\label{technical-appendices-continuation-stages}
 
 This section executes the continuation appendices announced at the end
 of Section 9. Each subsection is a compact worked extension tied to one
 residual vulnerability.
 
-\subsubsection{10.1 Worked Renormalization Template (Single
+\subsection{10.1 Worked Renormalization Template (Single
 Coupling)}\label{worked-renormalization-template-single-coupling}
 
 The objective is to replace purely structural RG language with one
@@ -1600,7 +1817,7 @@ leading coefficient of \(\beta\) is unchanged:
 So scheme changes shift higher-order terms while preserving the first
 nontrivial flow coefficient in this template.
 
-\subsubsection{10.2 Ordering/Discretization Pair with Same Classical
+\subsection{10.2 Ordering/Discretization Pair with Same Classical
 Limit}\label{orderingdiscretization-pair-with-same-classical-limit}
 
 This appendix gives an explicit example of the Section 6/Section 7 claim
@@ -1644,12 +1861,12 @@ If two short-time kernel prescriptions map to \(Q_L\)-type and
 \(Q_W\)-type representatives of the same classical symbol algebra, then
 they define the same classical equations and differ only by controlled
 \(O(\hbar)\) corrections. This is the worked version of the Section 6 to
-Section 7 transition claim {[}Rivero0302285{]} {[}Landsman1998{]}.
+Section 7 transition claim {[}Landsman1998{]}.
 
-\subsubsection{10.3 Foundational Compatibility
+\subsection{10.3 Foundational Compatibility
 Principle}\label{foundational-compatibility-principle}
 
-This appendix replaces the earlier continuation draft with a
+This appendix replaces the earlier continuation version with a
 foundational concept aimed at the manuscript's core objective.
 
 \texttt{Proposition\ P10.1\ (Refinement\ Compatibility\ Principle,\ RCP).}
@@ -1695,7 +1912,7 @@ interpreted as a candidate foundational postulate: physical laws are
 those statements that survive controlled changes of partition,
 representation, and scale.
 
-\subsubsection{10.4 Continuation Outcome}\label{continuation-outcome}
+\subsection{10.4 Continuation Outcome}\label{continuation-outcome}
 
 Continuation appendices in sections 10.1--10.3 close the three technical
 gaps identified in Section 9: 1. explicit renormalization subtraction
@@ -1709,7 +1926,7 @@ bibliography items are intentionally deferred as \texttt{PENDING} for
 later local-PDF ingestion (\texttt{Dirac1933}, \texttt{Feynman1948},
 \texttt{Connes1994}, \texttt{Landsman1998}).
 
-\subsubsection{10.5 Singular Contact Interaction as an Explicit RG
+\subsection{10.5 Singular Contact Interaction as an Explicit RG
 Computation (2D
 Delta)}\label{singular-contact-interaction-as-an-explicit-rg-computation-2d-delta}
 
@@ -1719,7 +1936,9 @@ example in a singular quantum-mechanical model where the continuum
 theory is defined only after a renormalization prescription is chosen.
 For a perturbative-QFT-style treatment of this mechanism in quantum
 mechanics (including the 2D delta interaction), see
-{[}ManuelTarrach1994PertRenQM{]}.
+{[}ManuelTarrach1994PertRenQM{]}. For a standard discussion of
+delta-function potentials in two and three dimensions (and their
+renormalization issues), see {[}Jackiw1991DeltaPotentials{]}.
 
 Consider the two-dimensional contact interaction
 
@@ -1845,5 +2064,86 @@ Thus, in this one-scale model, ``scheme dependence'' is precisely the
 freedom to rescale the single physical scale. Fixing one physical datum
 (e.g.~\(E_B\)) fixes \(\kappa_\ast\) and removes the ambiguity from
 predictions.
+
+\section{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  {[}Newton1687{]} Isaac Newton, \emph{Philosophiae Naturalis Principia
+  Mathematica} (1687), Book I (limit methods and central-force
+  geometry). Reference access point: Newton Project and standard
+  translated editions.
+\item
+  {[}Noether1918{]} Emmy Noether, ``Invariante Variationsprobleme''
+  (1918). English translation commonly used in modern mechanics
+  references.
+\item
+  {[}Dirac1933{]} P. A. M. Dirac, ``The Lagrangian in Quantum
+  Mechanics,'' \emph{Physikalische Zeitschrift der Sowjetunion} 3
+  (1933), 64--72. (Commonly cited as the earliest explicit path-integral
+  style phase-weighting statement.)
+\item
+  {[}Feynman1948{]} R. P. Feynman, ``Space-Time Approach to
+  Non-Relativistic Quantum Mechanics,'' \emph{Reviews of Modern Physics}
+  20 (1948), 367--387. DOI \texttt{10.1103/RevModPhys.20.367}.
+\item
+  {[}Connes1994{]} Alain Connes, \emph{Noncommutative Geometry}
+  (Academic Press, 1994). ISBN \texttt{978-0-12-185860-5}.
+\item
+  {[}Landsman1998{]} N. P. Landsman, \emph{Mathematical Topics Between
+  Classical and Quantum Mechanics} (Springer, 1998), Springer Monographs
+  in Mathematics. DOI \texttt{10.1007/978-1-4612-1680-3}. ISBN
+  \texttt{978-0-387-98318-9}.
+\item
+  {[}ConnesKreimer2000{]} Alain Connes and Dirk Kreimer,
+  ``Renormalization in quantum field theory and the Riemann-Hilbert
+  problem I,'' \emph{Communications in Mathematical Physics} 210 (2000),
+  249--273. DOI \texttt{10.1007/s002200050779}.
+\item
+  {[}Brouder1999{]} Ch. Brouder, ``Runge-Kutta methods and
+  renormalization,'' arXiv:\texttt{hep-th/9904014} (2 Apr 1999).
+\item
+  {[}McLachlan2017{]} Robert I. McLachlan, Klas Modin, Hans Munthe-Kaas,
+  Olivier Verdier, ``Butcher series: A story of rooted trees and
+  numerical methods for evolution equations,'' arXiv:\texttt{1512.00906}
+  (v3, 27 Feb 2017).
+\item
+  {[}BoyaRivero1994Contact{]} Luis J. Boya and Alejandro Rivero,
+  ``Renormalization in 1-D Quantum Mechanics: contact interactions,''
+  arXiv:\texttt{hep-th/9411081} (v1, 11 Nov 1994).
+\item
+  {[}ManuelTarrach1994PertRenQM{]} Cristina Manuel and Rolf Tarrach,
+  ``Perturbative Renormalization in Quantum Mechanics,'' \emph{Physics
+  Letters B} 328 (1994), 113--118. arXiv:\texttt{hep-th/9309013} (v1, 2
+  Sep 1993). DOI \texttt{10.1016/0370-2693(94)90437-5}.
+\item
+  {[}Jackiw1991DeltaPotentials{]} R. Jackiw, ``Delta-function potentials
+  in two- and three-dimensional quantum mechanics,'' MIT-CTP-1937 (Jan
+  1991). Reprinted in \emph{M.A.B. Bég Memorial Volume} (World
+  Scientific, 1991), pp.~25--42. OA mirror:
+  \url{https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf}.
+\item
+  {[}VanVleck1928Correspondence{]} J. H. Van Vleck, ``The Correspondence
+  Principle in the Statistical Interpretation of Quantum Mechanics,''
+  \emph{Proceedings of the National Academy of Sciences of the United
+  States of America} 14(2) (1928), 178--188. DOI
+  \texttt{10.1073/pnas.14.2.178}.
+\item
+  {[}deGosson2018ShortTimePropagators{]} Maurice A. de Gosson,
+  ``Short-Time Propagators and the Born--Jordan Quantization Rule,''
+  \emph{Entropy} 20(11) (2018), 869. DOI \texttt{10.3390/e20110869}. OA:
+  PubMed Central (PMCID: PMC 7512447).
+\item
+  {[}Rosten2012ERG{]} Oliver J. Rosten, ``Fundamentals of the Exact
+  Renormalization Group,'' \emph{Physics Reports} 511 (2012), 177--272.
+  arXiv:\texttt{1003.1366} (v4, 15 Feb 2012). DOI
+  \texttt{10.1016/j.physrep.2011.12.003}.
+\item
+  {[}Velhinho2017InfDimMeasure{]} José Velhinho, ``Topics of Measure
+  Theory on Infinite Dimensional Spaces,'' \emph{Mathematics} 5(3)
+  (2017), 44. DOI \texttt{10.3390/math5030044}. OA: MDPI.
+\end{enumerate}
 
 \end{document}

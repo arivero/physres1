@@ -43,19 +43,17 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
+  pdftitle={Planck Area from Half-Density Normalization},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
+\title{Planck Area from Half-Density Normalization}
 \author{}
 \date{}
 
 \begin{document}
-
-\section{Planck Area from Half-Density Normalization
-(Draft)}\label{planck-area-from-half-density-normalization-draft}
-
-\subsection{Abstract}\label{abstract}
-
+\maketitle
+\begin{abstract}
 Half-densities are the natural ``coordinate-free integrands'' for
 composing kernels without choosing a background measure. But choosing a
 \emph{universal} convention for turning half-density objects into
@@ -68,18 +66,36 @@ fractional powers of couplings. A gravitational anchor based on a
 minimal-areal-speed principle is recorded as a separate heuristic thread
 {[}RiveroAreal{]} {[}RiveroSimple{]}.
 
-\subsection{1. Purpose and Status}\label{purpose-and-status}
+Minimal claim (proved under stated hypotheses): half-density composition
+is intrinsic, but any scalar ``amplitude function'' representation
+requires extra scalarization structure, and if that scalar
+representative is demanded dimensionless then a \(\text{length}^{d/2}\)
+constant is unavoidable. Conjectural claim (additional universality
+hypotheses): the scalarization constant is fixed by universal couplings
+and becomes a universal area scale in \(D=4\).
+\end{abstract}
 
-This is a dependent follow-up to \texttt{paper/main.md}. It is not yet a
-finished paper; its goal is to isolate one technical point that is only
-implicit in the main manuscript: the role of half-densities (and their
-scaling) in making composition laws coordinate-invariant \emph{and}
-dimensionally well-defined.
+\section{1. Purpose and Scope}\label{purpose-and-scope}
+
+This is a companion to \texttt{paper/main.md}. Its goal is to isolate
+one technical point that is only implicit in the main manuscript: the
+role of half-densities (and their scaling) in making composition laws
+coordinate-invariant \emph{and} dimensionally well-defined.
 
 Claims below are labeled as \texttt{Proposition} (math-precise under
 hypotheses) or \texttt{Heuristic} (programmatic bridge).
 
-\subsection{2. Half-Densities and Composition
+\textbf{Notation (dimensions).} The half-density weight
+\(\text{length}^{d/2}\) uses the dimension of the manifold being
+integrated over in the composition law (the ``composition variable''
+dimension). In nonrelativistic time-slicing this is typically spatial
+dimension; in covariant/field-theory settings it is spacetime dimension.
+In the gravity-only sieve (Derivation D1.3), read \(d\) as the spacetime
+dimension \(D\) if that avoids confusion: the ``\(D=4\Rightarrow\)
+area'' conclusion is about spacetime \(D=4\), not a claim that
+\emph{spatial} \(d=4\) is privileged.
+
+\section{2. Half-Densities and Composition
 Kernels}\label{half-densities-and-composition-kernels}
 
 Let \(M\) be a \(d\)-dimensional manifold. A (positive) density is a
@@ -114,8 +130,7 @@ Kernel composition is the same mechanism: if \(K_1(x,y)\) and
 \(K_2(y,z)\) are half-densities in \(y\), then \(K_1K_2\) is a density
 in \(y\) and \(\int_M K_1K_2\) is coordinate invariant.
 
-\subsection{3. Dimensional Analysis: Normalizing a Half-Density Requires
-a
+\section{3. Dimensional Analysis: Normalizing a Half-Density Requires a
 Scale}\label{dimensional-analysis-normalizing-a-half-density-requires-a-scale}
 
 A density on \(M\) carries the units of \(\text{length}^d\) once
@@ -153,7 +168,25 @@ factor from the half-density Jacobian, and the corresponding scalar
 representative must be renormalized by \(\varepsilon^{-d/2}\) to stay
 finite. This is the same exponent as in the finite-dimensional
 ``square-root delta'' normalization: the half-density is the square root
-of the density Jacobian.
+of the density Jacobian. For a canonical distributional witness carrying
+the same exponent, see Derivation D1.2b.
+
+\texttt{Derivation\ D1.2b\ (Identity\ kernel:\ the\ delta\ bi-half-density\ carries\ the\ same\ exponent).}
+The identity operator on half-densities has Schwartz kernel \[
+K_{\mathrm{Id}}(x,y)=\delta^{(d)}(x-y)\,|dx|^{1/2}|dy|^{1/2}.
+\] Under the same near-diagonal change of variables
+\(y=x+\varepsilon v\), one has
+\(\delta^{(d)}(x-y)=\varepsilon^{-d}\delta^{(d)}(v)\) and
+\(|dy|^{1/2}=\varepsilon^{d/2}|dv|^{1/2}\), hence \[
+K_{\mathrm{Id}}(x,x+\varepsilon v)
+=\varepsilon^{-d/2}\,\delta^{(d)}(v)\,|dx|^{1/2}|dv|^{1/2}.
+\] So the universal \(\varepsilon^{-d/2}\) exponent is already encoded
+in the half-density identity kernel. If one scalarizes by choosing a
+dimensionless reference half-density
+\(\sigma_\ast:=L_\ast^{-d/2}|dx|^{1/2}\) (for a constant length scale
+\(L_\ast\)), then the scalar representative of the identity kernel is
+the \textbf{dimensionless} distribution
+\(k_{\mathrm{Id}}(x,y)=L_\ast^{d}\delta^{(d)}(x-y)\).
 
 \texttt{Proposition\ P1.2\ (Universal\ *dimensionless*\ amplitudes\ force\ a\ \textbackslash{}(\textbackslash{}text\{length\}\^{}\{d/2\}\textbackslash{})\ constant).}
 If one imposes the extra requirement that the scalar representative
@@ -194,7 +227,7 @@ sense. Then the normalization constant has dimension
 \(d=4\). In that case \(G_4\) itself has dimension of area, and the
 corresponding area scale is the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
-\subsubsection{3.1 Hypotheses as Separate Knobs (What Is Forced vs
+\subsection{3.1 Hypotheses as Separate Knobs (What Is Forced vs
 Chosen)}\label{hypotheses-as-separate-knobs-what-is-forced-vs-chosen}
 
 The discussion above mixes three different kinds of statements: 1.
@@ -236,8 +269,32 @@ reading:} the constant is a monomial in the available couplings with
 integer exponents (possibly allowing negative powers). Equivalently,
 dimension-matching becomes an integer (Diophantine) constraint on the
 exponents. 2. \textbf{Perturbative analyticity reading (stronger):} the
-constant admits a Taylor expansion around zero couplings, so only
-nonnegative integer powers appear.
+constant admits a Taylor expansion around a specified weak-coupling
+limit, so only nonnegative integer powers appear.
+
+To keep the branches explicit, we will refer to these as: -
+\texttt{Hypothesis\ H2.5a\ (Integrality\ /\ monomial\ sieve).} The
+normalization constant is a monomial in admitted couplings with integer
+exponents. -
+\texttt{Hypothesis\ H2.5b\ (Perturbative\ analyticity\ sieve).} The
+dependence is analytic at a specified weak-coupling point (hence forbids
+negative powers and other non-analytic dependence).
+
+\texttt{Heuristic\ H2.5b1\ (Analyticity\ for\ dimensionful\ couplings\ needs\ a\ reference\ scale).}
+If a coupling \(g_i\) is dimensionful, ``weak coupling'' is only
+meaningful after choosing a reference scale \(\mu\) and forming a
+dimensionless parameter \(\hat g_i(\mu):=\mu^{-a_i}g_i\) (where
+\([g_i]=\text{length}^{a_i}\)). In that sense, perturbative analyticity
+is naturally analyticity in \(\hat g_i(\mu)\) near \(\hat g_i=0\).
+Demanding at the same time that the scalarization constant be a
+\(\mu\)-independent universal constant pushes one back to either: 1. an
+engineering-dimension monomial in admitted dimensionful couplings with
+nonnegative integer exponents (the sieve branch), or 2. a non-analytic
+RG-invariant transmutation scale (outside H2.5b).
+
+Separately, the RG ``dimensional transmutation'' mechanism (Heuristic
+H2.13 / Derivation D1.6a) supplies a scale \emph{outside} both H2.5a and
+H2.5b: it is typically non-analytic in the coupling.
 
 Derivation D1.3 is the simplest gravity-only instance under the
 integrality reading: ``use \(G_d\) without fractional powers'' singles
@@ -249,7 +306,42 @@ H2.1). They appear only after adding a selection principle like
 H2.4--H2.5: the requirement that the scalarization choice be universal,
 background-free, and coupling-built in a restricted (e.g.~analytic) way.
 
-\subsubsection{3.2 What Changes When a Hypothesis Is
+\texttt{Heuristic\ H2.6a\ (Independent\ D=4\ filter:\ conformal\ scalarization-gauge\ simplicity).}
+The ``dimension sieve'' (H2.5) is not the only way a special dimension
+can appear once one insists on scalar representatives. A different kind
+of filter comes from asking for \emph{simplicity of how kinetic
+operators depend on the scalarization gauge}.
+
+In the QFT-facing half-density calculus, a background metric supplies a
+reference half-density \(|g|^{1/4}|dx|^{1/2}\), and the scalar Laplacian
+\(\Delta_g\) conjugates to an operator on half-densities \[
+\widetilde\Delta:=|g|^{1/4}\Delta_g|g|^{-1/4}.
+\] In a conformal background
+\(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) in spacetime dimension
+\(D\), one finds (Derivation D1.3 in
+\texttt{papers/half-density-qft/main.md}, and the derivation/check notes
+in
+\texttt{blackboards/2026-02-10-conformal-rescaling-and-half-density-laplacian-family.md})
+\[
+\widetilde\Delta\psi
+=e^{-2\sigma}\Big(
+\partial^2\psi
+-2\,\partial\sigma\cdot\partial\psi
+-\frac{D}{2}(\partial^2\sigma)\,\psi
++\frac{D(4-D)}{4}(\partial\sigma)^2\,\psi
+\Big).
+\] Thus the quadratic-gradient term \((\partial\sigma)^2\psi\) cancels
+at \(D=4\) (within the conformal ansatz). If one adopts the extra
+criterion that scalarization-gauge changes should not generate such
+quadratic-gradient ``potentials'' in the half-density kinetic operator,
+then \(D=4\) is singled out by \emph{operator simplicity} rather than by
+coupling-dimension matching.
+
+This filter is independent of H2.5 and, by itself, does not supply a
+length scale; it is recorded only as an additional ``special dimension''
+candidate knob to compare against the scale-sieve hypotheses.
+
+\subsection{3.2 What Changes When a Hypothesis Is
 Relaxed?}\label{what-changes-when-a-hypothesis-is-relaxed}
 
 This subsection records the main ``branches'' that need separate study.
@@ -267,8 +359,9 @@ This subsection records the main ``branches'' that need separate study.
   can be chosen from a metric (or other structure), and the ``universal
   constant'' is replaced by background-dependent normalization.
 \item
-  \textbf{Drop H2.5 (allow fractional powers).} Then in any \(d>2\) one
-  can build a \(\text{length}^{d/2}\) constant from gravity via
+  \textbf{Drop H2.5a/H2.5b (allow fractional powers or other
+  non-analytic dependence).} Then in any \(d>2\) one can build a
+  \(\text{length}^{d/2}\) constant from gravity via
   \(G_d^{\,d/(2(d-2))}\) (in \(c=\hbar=1\) units), so \(d=4\) is no
   longer singled out; instead, \(d=4\) is simply the unique case where
   the exponent is an integer.
@@ -281,17 +374,36 @@ This subsection records the main ``branches'' that need separate study.
   (division algebras, special holonomy, supersymmetry), but those
   filters are separate from the half-density story and should not be
   conflated.
+\item
+  \textbf{Replace H2.5 by transmutation (RG as the scale supplier).} If
+  one allows RG-invariant scales generated by compatibility (dimensional
+  transmutation), then even dimensionless couplings can supply a
+  physical length scale (Heuristic H2.13 / Derivation D1.6a). This
+  branch does not ``sieve dimensions'' in the same way as H2.5a/H2.5b;
+  it supplies a scale by non-analytic RG invariants rather than by
+  monomials in couplings.
 \end{enumerate}
 
-\subsubsection{3.3 Starting with H2.5: Integrality as a Dimension
-Sieve}\label{starting-with-h2.5-integrality-as-a-dimension-sieve}
+\textbf{Branch summary (keep the knobs separate).} There are three
+distinct ``scale supplier'' mechanisms in play: 1. \textbf{Monomial
+sieve} (H2.5a/H2.5b): build the needed \(\text{length}^{d/2}\) constant
+from admitted couplings using restricted (e.g.~analytic) dependence. 2.
+\textbf{Fractional/non-analytic coupling dependence:} allow fractional
+powers or other non-analytic dependence directly in couplings
+(dimensional analysis becomes permissive; the \(d=4\) sieve disappears).
+3. \textbf{Dimensional transmutation:} generate a scale from RG
+compatibility (Derivation D1.6a / Example E5), which is typically
+non-analytic in naive coupling expansions.
 
-The point of H2.5 is not that dimensional analysis alone selects a
-unique scale (it does not), but that \emph{restricting allowed
+\subsection{3.3 Starting with H2.5a: Integrality as a Dimension
+Sieve}\label{starting-with-h2.5a-integrality-as-a-dimension-sieve}
+
+The point of H2.5a/H2.5b is not that dimensional analysis alone selects
+a unique scale (it does not), but that \emph{restricting allowed
 functional dependence on couplings} can turn dimensional analysis into a
 selection principle.
 
-\texttt{Derivation\ D1.6\ (Integer-exponent\ form\ of\ “no\ fractional\ powers”).}
+\texttt{Derivation\ D1.6\ (H2.5a:\ integer-exponent\ form\ of\ “no\ fractional\ powers”).}
 Work in \(c=\hbar=1\) units for dimension counting. Let the available
 couplings \(\{g_i\}\) have length dimensions
 \([g_i]=\text{length}^{a_i}\). Under the integrality reading of H2.5,
@@ -317,6 +429,28 @@ becomes vacuous: the forbidden root has simply been renamed as an
 allowed coupling. H2.5 is meaningful only together with a prior
 criterion for admissible coupling dependence (e.g.~perturbative
 analyticity around a distinguished limit such as \(G_d\to0\)).
+
+\texttt{Heuristic\ H2.7a\ (Admissible\ couplings:\ exclude\ scheme\ parameters\ and\ non-analytic\ reparametrizations).}
+To keep H2.5 from collapsing into a coordinate artifact, we implicitly
+adopt the following convention: 1. \textbf{Admitted couplings} are the
+independent parameters that appear as coefficients of local operators in
+the UV action after fixing a canonical normalization convention for
+fields (so that field-rescaling freedom is not used to hide
+roots/powers). 2. We allow only \textbf{analytic} reparametrizations
+near a chosen base point (``weak coupling''), so adjoining
+\(\tilde g=g^{1/2}\) is disallowed when it is non-analytic at that base
+point. 3. We explicitly exclude scheme/scale conventions from the
+coupling set: the renormalization scale \(\mu\), regulator cutoffs
+\(\Lambda\), and finite-subtraction constants; and we also exclude the
+scalarization gauge scale \(L_\ast\) itself (since constraining
+\(L_\ast\) is the point of the ladder).
+
+Under this convention, H2.5a is best viewed as a computational proxy
+once coupling coordinates are fixed, while H2.5b (analyticity at the
+base point) is the more invariant ``no roots'' statement. The phrase
+``canonical normalization of fields'' in (1) is itself a convention
+choice; the point is that fixing such a convention makes the
+admissibility rule a controlled knob rather than an implicit loophole.
 
 \texttt{Example\ E1\ (Gravity-only).} With only \(G_d\) available,
 \(a_1=d-2\) and the condition becomes \(n(d-2)=d/2\). For integer
@@ -360,33 +494,50 @@ half-density scalarization; in that case the scale must come from
 another dimensionful coupling (e.g.~gravity) or from a non-analytic
 mechanism (dimensional transmutation).
 
-\texttt{Example\ E4\ (String\ tension\ /\ \textbackslash{}(\textbackslash{}alpha\textquotesingle{}\textbackslash{})\ as\ a\ source\ of\ a\ universal\ area\ scale).}
-In perturbative string theory a fundamental length scale \(l_s\) is
-built in from the start; equivalently one has a parameter
-\(\alpha'=l_s^2\) with dimension \(\text{length}^2\) (string tension
-\(T\sim 1/\alpha'\)). If one allows the half-density normalization
-constant to be built from \(\alpha'\) alone as a monomial
-\(C\sim (\alpha')^n\) with integer \(n\), then \[
+\texttt{Example\ E4\ (A\ universal\ area\ parameter\ \textbackslash{}(\textbackslash{}alpha\_\textbackslash{}ast\textbackslash{})\ as\ a\ scale\ supplier).}
+Suppose the UV theory admits a universal area parameter \(\alpha_\ast\)
+with dimension \([\alpha_\ast]=\text{length}^2\) (for example, in
+perturbative string theory \(\alpha_\ast\) is the familiar
+\(\alpha'=l_s^2\), with string tension \(T\sim 1/\alpha'\)). If one
+allows the half-density normalization constant to be built from
+\(\alpha_\ast\) alone as a monomial \(C\sim (\alpha_\ast)^n\) with
+integer \(n\), then \[
 [C]=\text{length}^{2n},
 \] and matching \([C]=\text{length}^{d/2}\) forces \(2n=d/2\),
-i.e.~\(d=4n\). So \(\alpha'\) provides a ``background-free'' source of
-scale but does not single out \(d=4\) on its own; it selects dimensions
-divisible by \(4\) under the strict integrality reading of H2.5. In
-\(d=4\) it yields directly an area scale \(C\sim \alpha'\).
+i.e.~\(d=4n\). So \(\alpha_\ast\) provides a ``background-free'' source
+of scale but does not single out \(d=4\) on its own; it selects
+dimensions divisible by \(4\) under the strict integrality reading of
+H2.5. In \(d=4\) it yields directly an area scale \(C\sim \alpha_\ast\)
+(e.g.~\(C\sim \alpha'\) in the string example).
+
+\texttt{Remark\ E4a\ (Emergent\ string\ tension\ is\ a\ transmutation-scale\ instance,\ not\ a\ UV\ parameter).}
+In confining phases one often defines an effective string tension
+\(\sigma\) with \([\sigma]=\text{length}^{-2}\), so \(\sigma^{-1}\)
+supplies an area scale. Operationally, for a large rectangular Wilson
+loop of spatial size \(R\) and Euclidean time extent \(T\), one defines
+\(V(R)=-\lim_{T\to\infty}\frac{1}{T}\ln\langle W(R\times T)\rangle\),
+and an area law \(\langle W(R\times T)\rangle\sim e^{-\sigma RT}\)
+implies \(V(R)\sim\sigma R\) and identifies \(\sigma\)
+{[}Greensite2003Confinement{]}. In \(d=4\) gauge theories with
+dimensionless couplings, such a scale is expected to arise (when it
+exists) as an RG-invariant transmutation scale rather than as a new
+analytic monomial in the couplings. Logically, this places ``string
+tension as area supplier'' in the H2.13 branch unless one is explicitly
+assuming a fundamental UV area parameter \(\alpha_\ast\).
 
 \texttt{Heuristic\ H2.12\ (Link\ to\ gravity/Planck\ length\ in\ a\ UV\ completion).}
 The gravity-only sieve (Derivation D1.3) uses \(G_d\) as the unique
-universal coupling supplying dimension. In a stringy UV completion,
-\(G_d\) is not independent: it is generated by the string sector and
-depends on \(\alpha'\) and a dimensionless coupling (e.g.~the string
-coupling \(g_s\)), and in compactified settings also on compactification
-volumes. At the level of scaling, one expects \[
-G_d \propto g_s^2\,(\alpha')^{(d-2)/2}\times(\text{volume factors}),
-\] so the Planck length/area is \emph{derived} from \(\alpha'\) and
-\(g_s\) rather than fundamental. In that framing the half-density
-``universal area scale'' could naturally be \(\alpha'\) (or a simple
-function of it), while the Planck area is recovered as a consequence of
-how gravity emerges.
+universal coupling supplying dimension. In a UV completion where gravity
+is emergent from a sector with a universal area parameter
+\(\alpha_\ast\) and a dimensionless coupling \(g\), dimensional analysis
+suggests \[
+G_d \propto g^{2}\,(\alpha_\ast)^{(d-2)/2}\times(\text{volume factors}),
+\] so the Planck length/area is \emph{derived} from \(\alpha_\ast\) and
+\(g\) rather than fundamental. In perturbative string theory, one has
+\(\alpha_\ast=\alpha'\) and \(g=g_s\) (up to compactification-volume
+factors). In that framing the half-density ``universal area scale''
+could naturally be \(\alpha_\ast\) (or a simple function of it), while
+the Planck area is recovered as a consequence of how gravity emerges.
 
 \texttt{Heuristic\ H2.8\ (What\ H2.5\ is\ really\ buying).} The value of
 H2.5 is comparative: it distinguishes dimensions in which the needed
@@ -456,8 +607,8 @@ and sets a bound-state/scattering scale
 scale is forced by compatibility'' can occur even without a dimensionful
 coupling, via renormalization rather than via analytic monomials.
 
-\subsubsection{\texorpdfstring{3.4 Running H2.3: Is ``Dimensionless
-\(f\)'' Physics or
+\subsection{\texorpdfstring{3.4 Running H2.3: Is ``Dimensionless \(f\)''
+Physics or
 Convention?}{3.4 Running H2.3: Is ``Dimensionless f'' Physics or Convention?}}\label{running-h2.3-is-dimensionless-f-physics-or-convention}
 
 The half-density formalism (H2.1) gives a canonical pairing
@@ -500,7 +651,7 @@ representative \(f\) be dimensionless (H2.3) shifts the
 \(L_\ast^{d/2}\) is fixed by an additional universality principle
 (H2.4--H2.5).
 
-\subsubsection{3.5 Running H2.4: What Does ``Background-Free Constancy''
+\subsection{3.5 Running H2.4: What Does ``Background-Free Constancy''
 Mean?}\label{running-h2.4-what-does-background-free-constancy-mean}
 
 From Derivation D1.7, changing the reference half-density
@@ -550,7 +701,29 @@ still appear, but typically as an RG invariant (dimensional
 transmutation scale) rather than as a fixed analytic monomial in
 couplings.
 
-\subsection{4. Stationary Phase Produces Half-Density Prefactors
+\texttt{Derivation\ D1.8a\ (Running\ scalarization\ \textbackslash{}(\textbackslash{}sigma\_\textbackslash{}ast(\textbackslash{}mu)\textbackslash{})\ is\ a\ \textbackslash{}(Z(\textbackslash{}mu)\textbackslash{})\ factor\ on\ scalar\ representatives).}
+Assume the intrinsic (half-density) state \(\psi\) is fixed, and
+consider two scalarizations related by a \(\mu\)-dependent
+\emph{constant} rescaling, \(\sigma_\ast(\mu)=c(\mu)\,\sigma_0\) with
+\(c(\mu)>0\). Writing \(\psi=f(\mu)\,\sigma_\ast(\mu)\) gives
+\(f(\mu)=c(\mu)^{-1}f_0\), where \(f_0\) is the scalar representative in
+the \(\sigma_0\) convention. Defining \(Z(\mu):=c(\mu)^2\), this becomes
+the familiar multiplicative form \[
+f(\mu)=Z(\mu)^{-1/2}\,f_0.
+\] So an \(x\)-independent running of scalarization is \emph{formally
+equivalent} to a wavefunction renormalization factor on scalar
+representatives. This is bookkeeping: \(\sigma_\ast(\mu)\) is a
+convention/scheme choice; only RG-invariant combinations
+(e.g.~transmutation scales) are candidates for physical statements.
+
+\texttt{Heuristic\ H2.11a\ (Guardrail:\ geometric\ weight\ \textbackslash{}(\textbackslash{}neq\textbackslash{})\ anomalous\ dimension).}
+The half-density square-root Jacobian is a geometric transformation law
+under coordinate changes; anomalous dimensions are RG scaling data in
+interacting theories. They should not be conflated: allowing
+\(\sigma_\ast(\mu)\) to run is a representation convenience, not a claim
+that geometry ``produces'' anomalous scaling.
+
+\section{4. Stationary Phase Produces Half-Density Prefactors
 (Short-Time
 Kernel)}\label{stationary-phase-produces-half-density-prefactors-short-time-kernel}
 
@@ -590,7 +763,9 @@ Taking square roots shows that the prefactor transforms with
 i.e.~exactly as a half-density factor at each endpoint. Thus the
 stationary-phase prefactor is naturally interpreted as making \(K\) a
 half-density in each variable, so that kernel composition does not
-depend on a background measure choice.
+depend on a background measure choice. This is the standard ``Van Vleck
+type'' semiclassical prefactor in the correspondence/semiclassical
+tradition {[}VanVleck1928Correspondence{]}.
 
 \texttt{Derivation\ D1.9\ (Square-root\ delta\ normalization\ has\ half-density\ weight).}
 In finite dimension, the ``localize on critical points'' distribution is
@@ -625,8 +800,8 @@ half-density normalization constant be built from that coupling
 resulting constant has the dimension of an area, naturally identified
 with the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
-\subsection{\texorpdfstring{5. A Gravitational Anchor: Minimal Areal
-Speed and the \(D=4\)
+\section{\texorpdfstring{5. A Gravitational Anchor: Minimal Areal Speed
+and the \(D=4\)
 Cancellation}{5. A Gravitational Anchor: Minimal Areal Speed and the D=4 Cancellation}}\label{a-gravitational-anchor-minimal-areal-speed-and-the-d4-cancellation}
 
 Rivero's ``Planck areal speed'' observation gives a concrete route by
@@ -678,7 +853,228 @@ Thus \(r\) becomes a multiple of the reduced Compton length
 time \(\Rightarrow\) Compton scale'' cancellation highlighted in
 {[}RiveroAreal{]} and summarized in {[}RiveroSimple{]}.
 
-\subsection{6. Interface with the Main
+\texttt{Remark\ D1.5a\ (Generic\ \textbackslash{}(F=K/r\^{}q\textbackslash{}):\ only\ \textbackslash{}(q=2\textbackslash{})\ yields\ linear\ Compton\ scaling;\ \textbackslash{}(q\textbackslash{})\ links\ to\ dimension).}
+For a power-law central force \(F(r)=K/r^q\) with \(K>0\), circular
+balance gives \(m v^2/r=K/r^q\), i.e.~\(m v^2=K r^{1-q}\). Using the
+circular areal speed \(\dot A=\tfrac12 r v\) (so \(v=2\dot A/r\)) yields
+\[
+4m\dot A^2 = K\,r^{3-q}.
+\] Hence, for \(q\neq 3\), \[
+r=\left(\frac{4m\dot A^2}{K}\right)^{\frac{1}{3-q}},
+\] while for \(q=3\) the radius drops out and \(4m\dot A^2=K\).
+
+In the gravitational specialization \(K=GMm\), the test mass cancels as
+before and \[
+r=\left(\frac{4\dot A^2}{GM}\right)^{\frac{1}{3-q}}.
+\] If one imposes \(\dot A=cL_P\) and uses the \(D=4\) identity
+\(L_P^2=G\hbar/c^3\), then \[
+r=\left(\frac{4\hbar}{cM}\right)^{\frac{1}{3-q}}.
+\] Thus the Planck-areal-speed substitution produces \emph{linear}
+reduced-Compton scaling \(r\propto \hbar/(cM)\) only for \(q=2\)
+(inverse-square). For Newtonian long-range fields in \(n\) spatial
+dimensions, the Laplacian Green function gives
+\(\Phi(r)\propto r^{2-n}\) (for \(n>2\)), so
+\(F\sim|\nabla\Phi|\propto r^{1-n}\), i.e.~\(q=n-1\) (with the \(n=2\)
+logarithmic exception) {[}Tanaka2021KernelQuadrature{]}. In this sense
+the \(q=2\) special case corresponds to \(n=3\) spatial dimensions
+(spacetime \(D=4\)). Equivalently, substituting \(q=n-1\) into the mass
+scaling gives \(r\propto M^{-1/(4-n)}\) (for \(n\neq 4\)), so the linear
+Compton scaling (and the \(G\)-cancellation in the \(D=4\) identity
+\(L_P^2=G\hbar/c^3\)) is uniquely \(n=3\); the \(n=4\) case is the
+degenerate \(q=3\) condition where the radius drops out.
+
+\texttt{Remark\ D1.5b\ (SR\ continuation\ of\ the\ inverse-square\ witness:\ Compton\ branch\ \textbackslash{}(\textbackslash{}to\textbackslash{})\ Planck\ floor).}
+Inside the same mechanical SR model used in
+\texttt{papers/relativistic-central-orbits/main.md} (external
+inverse-square force, no GR field dynamics), one can keep the fixed
+coordinate-time areal speed \(\dot A_0=dA/dt\) and continue D1.5
+exactly.
+
+For inverse-square forces, SR circular motion gives \(v=K/L\), while \[
+L=\gamma mrv=2\gamma m\dot A_0,
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2/c^2}}.
+\] Hence \[
+\gamma v=\frac{K}{2m\dot A_0},
+\] so \[
+v=\frac{\tfrac{K}{2m\dot A_0}}{\sqrt{1+\left(\tfrac{K}{2m\dot A_0c}\right)^2}},
+\qquad
+r=\frac{2\dot A_0}{v}
+=\frac{4m\dot A_0^2}{K}\sqrt{1+\left(\frac{K}{2m\dot A_0c}\right)^2}.
+\]
+
+For gravity \(K=GMm\), \(m\) cancels: \[
+r(M,\dot A_0)
+=\frac{4\dot A_0^2}{GM}\sqrt{1+\left(\frac{GM}{2\dot A_0c}\right)^2}.
+\] With \(\dot A_0=cL_P\), using \(L_P^2=\hbar G/c^3\) and
+\(M_P^2=\hbar c/G\), \[
+r(M)
+=\frac{4\hbar}{Mc}\sqrt{1+\frac{M^2}{4M_P^2}}.
+\] Therefore \(M\ll M_P\) reproduces the D1.5 Compton-like branch
+\(r\approx 4\hbar/(Mc)\), while \(M\gg M_P\) saturates at \[
+r\to 2L_P.
+\] So in this SR continuation, the inverse-square Planck-areal-speed
+witness is not destroyed; it is regularized into a bounded
+interpolation.
+
+\texttt{Remark\ D1.5c\ (Clock-choice\ sensitivity:\ fixed\ \textbackslash{}(dA/dt\textbackslash{})\ vs\ fixed\ \textbackslash{}(dA/d\textbackslash{}tau\textbackslash{})).}
+The \(2L_P\) high-mass saturation in D1.5b is tied to fixing the
+coordinate-time areal speed \(\dot A_t=dA/dt\). If one instead fixes
+proper-time areal speed \(\dot A_\tau=dA/d\tau\) in the same
+inverse-square SR model, then \[
+r(M,\dot A_\tau)
+=\frac{4\dot A_\tau^2}{GM}\sqrt{1-\left(\frac{GM}{2\dot A_\tau c}\right)^2},
+\] which is defined only for \(GM<2\dot A_\tau c\). With
+\(\dot A_\tau=cL_P\), \[
+r(M)=\frac{4\hbar}{Mc}\sqrt{1-\frac{M^2}{4M_P^2}},
+\] so \(M\to2M_P^{-}\Rightarrow r\to0\), not \(2L_P\). Therefore the
+low-mass Compton-like branch is robust, while the high-mass asymptotic
+is clock-convention dependent in this mechanical SR setting.
+
+\texttt{Remark\ D1.5d\ (Invariant-candidate\ reformulation\ via\ specific\ angular\ momentum).}
+A clock-independent candidate in the same central-source setup is the
+specific angular momentum scalar \[
+\ell:=\frac1m\sqrt{\frac12\,L_{\mu\nu}L^{\mu\nu}},
+\] where \(L^{\mu\nu}\) is the source-rest-space projection of orbital
+\(J^{\mu\nu}\) (using source 4-velocity \(U^\mu\)). In the source rest
+frame this reduces to \[
+\ell=\gamma rv,\qquad
+\dot A_t=\frac{\ell}{2\gamma},\qquad
+\dot A_\tau=\frac{\ell}{2}.
+\] So fixing \(\ell\) selects the proper-time branch rather than the
+coordinate-time branch. For inverse-square gravity, \[
+r(M,\ell)=\frac{\ell^2}{GM}\sqrt{1-\left(\frac{GM}{\ell c}\right)^2},
+\qquad
+\ell>\frac{GM}{c},
+\] and \(\ell=2cL_P\) reproduces D1.5c. This does not yet prove
+universality, but it provides a structurally covariant way to encode the
+postulate without choosing a clock variable directly.
+
+\texttt{Remark\ D1.5e\ (Why\ simple\ frame-free\ bivector\ invariants\ are\ insufficient\ here).}
+One might try to avoid the source-velocity projection entirely and use
+only Lorentz invariants of \[
+M^{\mu\nu}=R^\mu p^\nu-R^\nu p^\mu,
+\] namely \[
+I_1=\frac12 M_{\mu\nu}M^{\mu\nu}=R^2p^2-(R\cdot p)^2,
+\qquad
+I_2=\frac12 M_{\mu\nu}{}^\star M^{\mu\nu}.
+\] But for the circular central branch (\(R\cdot p=0\), \(R^2=r^2\),
+\(p^2=-m^2c^2\)), this gives \[
+I_1=-m^2c^2r^2,
+\] independent of orbital speed, while \(I_2\) vanishes in the planar
+case. So these simple frame-free invariants do not encode the areal-rate
+branch parameter. In this setup, a timelike direction (e.g.~source
+\(U^\mu\)) appears to be minimal extra structure for a useful covariant
+postulate.
+
+\texttt{Remark\ D1.5f\ (Minimal\ timelike-structure\ rule\ for\ this\ branch).}
+For the present central-source inverse-square model, a practical
+``minimal structure'' rule is: 1. use the source worldline 4-velocity
+\(U^\mu\) as the distinguished timelike direction (already part of the
+model input), and 2. formulate the postulate on \[
+\ell_{(U)}:=\frac1m\sqrt{\frac12\,M^{(U)}_{\mu\nu}M_{(U)}^{\mu\nu}},
+\qquad
+M^{(U)\mu\nu}=h(U)^\mu{}_\alpha h(U)^\nu{}_\beta M^{\alpha\beta},
+\] rather than directly on coordinate-time areal rate. In the source
+rest frame this is equivalent to fixing
+\(\dot A_{\tau,U}=\ell_{(U)}/2\), while coordinate-time rates are
+derived via the corresponding lapse factor. This keeps the branch
+covariant-with-source and avoids introducing an additional arbitrary
+observer field \(u^\mu(x)\).
+
+\texttt{Remark\ D1.5g\ (Non-circular\ planar\ extension\ is\ kinematic).}
+The \(\ell\)-based rule is not restricted to circular trajectories. For
+general planar motion with tangential component \(v_\perp=r\dot\phi\),
+\[
+\ell=\gamma r v_\perp=\gamma r^2\dot\phi,\qquad
+\frac{dA}{dt}=\frac12 r^2\dot\phi=\frac{\ell}{2\gamma},\qquad
+\frac{dA}{d\tau}=\frac{\ell}{2}.
+\] Thus ``fix \(\ell\)'' remains equivalent to fixing proper-time areal
+rate in the source frame even away from circular orbits; this part is
+kinematic and does not depend on the specific force law.
+
+\texttt{Remark\ D1.5h\ (Non-planar\ caution:\ vector\ area\ rate\ is\ fundamental).}
+For general 3D motion the natural identity is vector-valued: \[
+\boldsymbol\ell=\frac1m(\mathbf r\times\mathbf p)=\gamma(\mathbf r\times\mathbf v),
+\qquad
+\frac{d\mathbf A}{d\tau}=\frac{\boldsymbol\ell}{2}.
+\] So the \(\ell\)-rule still survives kinematically, but scalar areal
+rates require a chosen normal \(\mathbf n\): \[
+\frac{dA_{\mathbf n}}{d\tau}=\frac{\boldsymbol\ell\cdot\mathbf n}{2}.
+\] In non-planar perturbations, interpreting a scalar ``areal speed
+postulate'' without specifying this projection is ambiguous; the
+projection choice is part of the model specification.
+
+\texttt{Remark\ D1.5i\ (Observability\ criterion\ for\ projected\ areal-rate\ postulates).}
+In perturbed-orbit settings, a projected areal-rate claim is empirically
+meaningful only after specifying: 1. projection normal \(\mathbf n\), 2.
+clock convention (\(t\)-based or \(\tau\)-based), 3. reconstruction map
+for \((\mathbf r,\mathbf v)\) in the source frame. With those choices
+fixed, the observable is \[
+\dot A_{\mathbf n}(t)=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v),
+\qquad
+\frac{dA_{\mathbf n}}{d\tau}=\frac12\,\mathbf n\cdot\boldsymbol\ell,
+\] and departures from constant projected areal rate are governed by
+projected torque \[
+\frac{d}{dt}\big(\mathbf n\cdot\boldsymbol\ell\big)
+=\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F).
+\] So the postulate becomes falsifiable precisely when projection,
+clock, and reconstruction are part of the model declaration.
+
+\texttt{Remark\ D1.5j\ (Minimal\ implementation\ pipeline).} A compact
+data-to-test pipeline is: 1. reconstruct object state in observer frame
+from direction \(\hat{\mathbf n}(t)\), range \(\rho(t)\), and
+line-of-sight velocity \(\dot\rho(t)\): \[
+\mathbf r_{\rm obj}=\rho\hat{\mathbf n},\qquad
+\mathbf v_{\rm obj}=\dot\rho\,\hat{\mathbf n}+\rho\,\dot{\hat{\mathbf n}},
+\] 2. subtract source ephemeris to obtain source-frame relative state
+\((\mathbf r,\mathbf v)\), 3. evaluate \[
+\dot A_{\mathbf n}=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v),\quad
+\frac{dA_{\mathbf n}}{d\tau}=\frac12\,\mathbf n\cdot\boldsymbol\ell,
+\] and, if a force model is supplied, the projected-torque residual \[
+\mathcal T_{\mathbf n}:=
+\frac{d}{dt}\big(\mathbf n\cdot\boldsymbol\ell\big)-\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F).
+\] This keeps the postulate test tied to explicit reconstruction and
+uncertainty handling rather than to abstract kinematic statements alone.
+
+\texttt{Remark\ D1.5k\ (Minimal\ uncertainty\ scaffold).} At first
+order, uncertainty in projected observables can be propagated by
+Jacobians: \[
+q:=\dot A_{\mathbf n}
+\quad\Rightarrow\quad
+\sigma_q^2\approx J_q\,\Sigma_x\,J_q^\top,
+\] for reconstructed state vector \(x\) and covariance \(\Sigma_x\), and
+\[
+\sigma_{\mathcal T}^2\approx J_{\mathcal T}\,\Sigma_z\,J_{\mathcal T}^\top
+\] for residual \(\mathcal T_{\mathbf n}\) with augmented state \(z\).
+This linear scaffold is a baseline; in strongly nonlinear regimes the
+same quantities should be cross-checked with nonlinear propagation
+(e.g.~Monte Carlo) before interpretation.
+
+\texttt{Remark\ D1.5l\ (Practical\ nonlinear-validation\ trigger).} A
+lightweight policy is to run a pilot nonlinear propagation check and
+compare against the linear \(\sigma\) estimate; if the discrepancy is at
+the few-percent level (or larger), treat linearized errors as
+insufficient and switch to nonlinear uncertainty propagation for
+reporting.
+
+\texttt{Remark\ D1.5m\ (Regime-dependent\ trigger\ calibration).} The
+trigger in D1.5l should be calibrated by uncertainty regime, not treated
+as universal. A practical diagnostic pair is \[
+\epsilon_{\rm nl}:=\frac{|\sigma_{\rm MC}-\sigma_{\rm lin}|}{\sigma_{\rm lin}},
+\qquad
+\chi:=\max\!\left(
+\frac{\sqrt{\mathrm{tr}\,\Sigma_r}}{\|\mathbf r\|},
+\frac{\sqrt{\mathrm{tr}\,\Sigma_v}}{\|\mathbf v\|}
+\right),
+\] with \(\Sigma_r,\Sigma_v\) the position/velocity covariance blocks in
+the chosen reconstruction model. Pilot scans in correlated-noise
+families can then map \(\epsilon_{\rm nl}(\chi)\) for the
+instrument/model pair; the ``few-percent'' policy corresponds to
+selecting an operational \(\epsilon_{\rm nl}\) band after this
+calibration, rather than imposing a context-free constant.
+
+\section{6. Interface with the Main
 Paper}\label{interface-with-the-main-paper}
 
 The main manuscript argues that: 1. classical dynamics are recovered
@@ -686,14 +1082,13 @@ from quantum composition by stationary-phase concentration, and 2.
 refinement across scales forces RG-style consistency conditions when
 naive limits diverge.
 
-This draft adds a complementary ingredient: the kernel side is most
+This note adds a complementary ingredient: the kernel side is most
 naturally formulated in half-density language, and stationary phase
 produces the bi-half-density prefactor directly. A universal convention
 for turning those half-densities into scalar amplitudes then requires a
 \(\text{length}^{d/2}\) scale; in \(d=4\) this is an area scale.
 
-\subsection{7. Open Problems (Needed for a Real
-Paper)}\label{open-problems-needed-for-a-real-paper}
+\section{7. Open Problems and Outlook}\label{open-problems-and-outlook}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -711,6 +1106,56 @@ Paper)}\label{open-problems-needed-for-a-real-paper}
 \item
   Identify minimal hypotheses under which ``need of half-density scale
   \(\Rightarrow\) Planck area'' is more than dimensional bookkeeping.
+\item
+  Track minimal-length/GUP scenarios as a comparison branch: do they
+  implement the ``needed scale'' at the level of kinematics (modified
+  commutators/dispersion) or can they be reframed as a
+  refinement-compatibility condition? Use
+  {[}Hossenfelder2013MinimalLength{]} as an OA entry point.
+\end{enumerate}
+
+\section{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  {[}ManuelTarrach1994PertRenQM{]} Cristina Manuel and Rolf Tarrach,
+  ``Perturbative Renormalization in Quantum Mechanics,'' \emph{Physics
+  Letters B} 328 (1994), 113--118. arXiv:\texttt{hep-th/9309013} (v1, 2
+  Sep 1993). DOI \texttt{10.1016/0370-2693(94)90437-5}.
+\item
+  {[}VanVleck1928Correspondence{]} J. H. Van Vleck, ``The Correspondence
+  Principle in the Statistical Interpretation of Quantum Mechanics,''
+  \emph{Proceedings of the National Academy of Sciences of the United
+  States of America} 14(2) (1928), 178--188. DOI
+  \texttt{10.1073/pnas.14.2.178}.
+\item
+  {[}Tanaka2021KernelQuadrature{]} Ken'ichiro Tanaka, ``Kernel
+  quadrature by applying a point-wise gradient descent method to
+  discrete energies,'' arXiv:\texttt{2102.10887} (v2, 23 Feb 2021).
+  (Contains an explicit formula for the \(d\)-dimensional fundamental
+  solution of the Laplacian on \(\mathbb R^d\), including the \(d=2\)
+  logarithmic case.)
+\item
+  {[}Hossenfelder2013MinimalLength{]} Sabine Hossenfelder, ``Minimal
+  Length Scale Scenarios for Quantum Gravity,'' \emph{Living Reviews in
+  Relativity} 16 (2013), 2. arXiv:\texttt{1203.6191} (v2, 30 Apr 2013).
+  DOI \texttt{10.12942/lrr-2013-2}.
+\item
+  {[}Greensite2003Confinement{]} Jeff Greensite, ``The Confinement
+  Problem in Lattice Gauge Theory,'' arXiv:\texttt{hep-lat/0301023} (v2,
+  5 Mar 2003), \emph{Progress in Particle and Nuclear Physics} 51 (2003)
+  1. DOI \texttt{10.1016/S0146-6410(03)90012-3}. (Review; includes
+  Wilson-loop definition of static potential and area-law/string-tension
+  criterion.)
+\item
+  {[}RiveroSimple{]} Alejandro Rivero, ``Constraints on space-time
+  dimensionality in the classical approximation'' (unpublished note,
+  undated).
+\item
+  {[}RiveroAreal{]} Alejandro Rivero, ``On Planck Areal Speed'' (letter;
+  DOI \texttt{10.32388/Q7SKTZ}).
 \end{enumerate}
 
 \end{document}

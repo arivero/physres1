@@ -1,0 +1,282 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Relativistic Central Orbits as Refinement-Witnesses},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Relativistic Central Orbits as Refinement-Witnesses}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Central-force motion is a clean domain where ``refinement'' arguments
+can be made explicit: Newton's polygonal limit gives exact finite-step
+invariants, while relativistic kinematics introduces new admissibility
+constraints even before general relativity is invoked. This dependent
+note records one such constraint in special relativity for
+inverse-square forces: circular orbits obey \(v=K/L\) and therefore
+require \(L>K/c\). The goal is not to replace standard treatments, but
+to keep a minimal derivation-first record of what changes when the same
+geometric refinement story is pushed into relativistic regimes.
+\end{abstract}
+
+\section{1. Purpose and Relation to the Cornerstone
+Paper}\label{purpose-and-relation-to-the-cornerstone-paper}
+
+The cornerstone manuscript (\texttt{paper/main.md}) uses central-force
+refinement as a structural bridge (equal areas / angular momentum
+preservation \(\leftrightarrow\) action additivity \(\leftrightarrow\)
+composition).
+
+This note is ``outside scope'' of the cornerstone paper but tracks a
+conversation branch: how relativistic kinematics modifies the simplest
+central-force circular-orbit conditions. The inverse-square case is
+singled out by an exact simplification already at the SR level.
+
+\section{2. SR Circular Motion Under a Power-Law
+Force}\label{sr-circular-motion-under-a-power-law-force}
+
+Assume a particle of rest mass \(m\) executes uniform circular motion of
+radius \(r\) and speed \(v\). The Lorentz factor is \[
+\gamma=\frac{1}{\sqrt{1-v^2/c^2}}.
+\] For uniform circular motion the acceleration is perpendicular to the
+velocity, so \[
+F=\frac{dp}{dt}=\gamma m a_\perp=\gamma m \frac{v^2}{r}.
+\]
+
+Assume an attractive central force magnitude \[
+F(r)=\frac{K}{r^q},\qquad K>0.
+\] Then the circular-orbit condition is \[
+\frac{K}{r^q}=\gamma m \frac{v^2}{r}
+\quad\Longleftrightarrow\quad
+K=\gamma m v^2 r^{q-1}.
+\]
+
+The angular momentum magnitude is \[
+L=r p=\gamma m r v.
+\] Eliminating \(v\) gives the SR circular-orbit condition \[
+L^2 = K\,\gamma\,m\, r^{3-q}.
+\]
+
+This reduces to the Newtonian relation when \(\gamma\to 1\)
+(i.e.~\(c\to\infty\)).
+
+\section{\texorpdfstring{3. Inverse-Square (\(q=2\)) Special Case:
+\(v=K/L\) and the Bound
+\(L>K/c\)}{3. Inverse-Square (q=2) Special Case: v=K/L and the Bound L\textgreater K/c}}\label{inverse-square-q2-special-case-vkl-and-the-bound-lkc}
+
+For \(q=2\), \[
+K=\gamma m v^2 r,\qquad L=\gamma m r v.
+\] Dividing yields the exact identity \[
+\boxed{\,v=\frac{K}{L}\,}.
+\] Therefore a relativistic circular orbit requires \(v<c\), hence the
+angular-momentum bound \[
+\boxed{\,L>\frac{K}{c}\,}.
+\]
+
+The radius follows from \(r=L^2/(K\gamma m)\) with
+\(\gamma=(1-v^2/c^2)^{-1/2}\) and \(v=K/L\): \[
+r=\frac{L^2}{Km}\sqrt{1-\frac{K^2}{c^2L^2}}
+\xrightarrow[c\to\infty]{}\frac{L^2}{Km}.
+\]
+
+This bound and the circular-solution branch appear in standard
+treatments of the relativistic Kepler problem (see
+e.g.~{[}BoscagginDambrosioFeltrin2020RelKepler{]} for a
+dynamical-systems/variational analysis of the same SR equation).
+
+\section{4. GR Baseline: Schwarzschild Geodesics, Effective Potential,
+Photon
+Sphere}\label{gr-baseline-schwarzschild-geodesics-effective-potential-photon-sphere}
+
+This section records the standard Schwarzschild baseline in a form
+parallel to the SR ``effective 1D radial motion'' viewpoint.
+
+Conventions: set \(G=c=1\). Then the Schwarzschild metric is \[
+ds^2 = -\left(1-\frac{2M}{r}\right)dt^2 + \left(1-\frac{2M}{r}\right)^{-1}dr^2 + r^2(d\theta^2+\sin^2\theta\,d\phi^2),
+\] with horizon at \(r=2M\). Restrict to the equatorial plane
+\(\theta=\pi/2\).
+
+Using an affine parameter \(\lambda\), define \(\epsilon=1\) (timelike,
+\(\lambda=\tau\)) and \(\epsilon=0\) (null). Energy and angular momentum
+from the Killing fields \(\partial_t,\partial_\phi\) are \[
+E=\left(1-\frac{2M}{r}\right)\dot t,\qquad L=r^2\dot\phi,
+\] so \(\dot t=E/(1-2M/r)\), \(\dot\phi=L/r^2\).
+
+The normalization condition \(g_{\mu\nu}\dot x^\mu\dot x^\nu=-\epsilon\)
+yields the radial equation \[
+\dot r^2 = E^2 - \left(1-\frac{2M}{r}\right)\left(\epsilon+\frac{L^2}{r^2}\right),
+\] i.e.~\(\dot r^2 + V_{\mathrm{eff}}(r)=E^2\) with \[
+V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\left(\epsilon+\frac{L^2}{r^2}\right).
+\]
+
+\subsection{4.1 Null circular orbit (photon
+sphere)}\label{null-circular-orbit-photon-sphere}
+
+For null geodesics \(\epsilon=0\), \[
+V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\frac{L^2}{r^2}.
+\] Circular null orbits satisfy \(\dot r=0\) and
+\(dV_{\mathrm{eff}}/dr=0\), which gives the photon-sphere radius \[
+\boxed{\,r_{\mathrm{ph}}=3M\,}.
+\] The impact parameter \(b=L/E\) obeys \(b^2=r^2/(1-2M/r)\), so at
+\(r=3M\) one has \(b=3\sqrt3\,M\).
+
+Baseline anchor for these standard results: {[}Carroll1997LectureGR{]}.
+
+\subsection{4.2 Restoring units}\label{restoring-units}
+
+Replace \(M\) by \(GM/c^2\): \(r_{\mathrm{ph}}=3GM/c^2\),
+\(r_h=2GM/c^2\), and \(b=3\sqrt3\,GM/c^2\).
+
+\subsection{4.3 Timelike circular orbits and
+ISCO}\label{timelike-circular-orbits-and-isco}
+
+For timelike geodesics \(\epsilon=1\), \[
+V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\left(1+\frac{L^2}{r^2}\right).
+\] Circular orbits satisfy \(\dot r=0\) and \(dV_{\mathrm{eff}}/dr=0\).
+Writing \[
+V_{\mathrm{eff}}(r)=1-\frac{2M}{r}+\frac{L^2}{r^2}-\frac{2ML^2}{r^3},
+\] one finds \[
+\frac{dV_{\mathrm{eff}}}{dr}=\frac{2M}{r^2}-\frac{2L^2}{r^3}+\frac{6ML^2}{r^4}.
+\] Thus the circular branch obeys \[
+Mr^2=L^2(r-3M)
+\quad\Rightarrow\quad
+\boxed{\,L^2(r)=\frac{Mr^2}{r-3M}\,},\qquad r>3M,
+\] and using \(E^2=V_{\mathrm{eff}}(r)\) on the circular orbit gives \[
+\boxed{\,E^2(r)=\frac{(r-2M)^2}{r(r-3M)}\,}.
+\]
+
+Stability requires \(V_{\mathrm{eff}}''(r)>0\) at the circular orbit.
+Differentiating once more, \[
+V_{\mathrm{eff}}''(r)=-\frac{4M}{r^3}+\frac{6L^2}{r^4}-\frac{24ML^2}{r^5},
+\] and substituting the circular-orbit value \(L^2=Mr^2/(r-3M)\) yields
+\[
+V_{\mathrm{eff}}''(r)=\frac{2M(r-6M)}{r^3(r-3M)}.
+\] So circular timelike orbits are stable iff \(r>6M\), and the
+innermost stable circular orbit is \[
+\boxed{\,r_{\mathrm{ISCO}}=6M\,}.
+\] At the ISCO, \[
+L=2\sqrt3\,M,\qquad E=\frac{2\sqrt2}{3}.
+\]
+
+\section{5. SR Stability of Circular Orbits (Small Radial
+Perturbations)}\label{sr-stability-of-circular-orbits-small-radial-perturbations}
+
+This section stays within mechanical SR (a point particle in an
+external, time-independent central scalar potential \(U(r)\)). It is
+used as a kinematic witness: some restrictions already appear before GR
+or field-theoretic interactions enter.
+
+Fix the (conserved) angular momentum magnitude \(L\). For purely
+tangential motion (\(p_r=0\)), define the fixed-\(L\) energy function \[
+W_L(r)=\sqrt{m^2c^4+\frac{L^2c^2}{r^2}}+U(r).
+\] Assume the attractive power-law force \(F(r)=K/r^q\) so that
+\(U'(r)=K/r^q\).
+
+\subsection{5.1 Circularity and the effective-potential
+viewpoint}\label{circularity-and-the-effective-potential-viewpoint}
+
+Circular orbits satisfy \(W_L'(r_0)=0\), i.e. \[
+\frac{K}{r_0^q}=\frac{L^2c^2}{r_0^3\sqrt{m^2c^4+L^2c^2/r_0^2}}
+\quad\Longleftrightarrow\quad
+L^2=K\,\gamma\,m\,r_0^{3-q},
+\] since \(\sqrt{m^2c^4+L^2c^2/r_0^2}=\gamma mc^2\). This recovers the
+SR circular-orbit condition used earlier.
+
+\subsection{5.2 Stability inequality}\label{stability-inequality}
+
+At fixed \(L\), stability under small radial perturbations is the
+local-minimum condition \[
+W_L''(r_0)>0.
+\] Writing the Lorentz factor at the orbit as \[
+\gamma^2 = 1+\frac{L^2}{m^2c^2r_0^2},
+\] one finds the compact expression \[
+\boxed{\;
+W_L''(r_0)=\frac{L^2}{m r_0^4\,\gamma^3}\Bigl(1+(2-q)\gamma^2\Bigr),
+\;}
+\] hence the stability criterion \[
+\boxed{\;1+(2-q)\gamma^2>0.\;}
+\]
+
+In the Newtonian limit \(\gamma\to 1\) this reduces to the standard
+condition \(q<3\). For \(2<q<3\) SR adds a speed bound: \[
+\gamma^2<\frac{1}{q-2}
+\quad\Longleftrightarrow\quad
+\frac{v^2}{c^2}<3-q.
+\] In particular, inverse-square forces (\(q=2\)) are stable for all
+\(\gamma\) in this model, while \(q\ge 3\) yields no stable circular
+orbits (beyond the Newtonian marginal case at \(q=3\)).
+
+\section{6. Outlook}\label{outlook}
+
+Two natural extensions are: 1. replace the ``external potential''
+modeling assumption by an explicitly field-mediated interaction model,
+and compare which orbit admissibility/stability bounds survive that
+change; 2. connect the SR/GR orbit constraints more explicitly to the
+refinement-compatibility spine (what is preserved under refinement, and
+what new kinematic admissibility conditions appear when the refinement
+rules are Lorentz/GR-consistent).
+
+\section{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  {[}BoscagginDambrosioFeltrin2020RelKepler{]} Alberto Boscaggin, Walter
+  Dambrosio, and Guglielmo Feltrin, ``Periodic solutions to a perturbed
+  relativistic Kepler problem,'' arXiv:\texttt{2003.03110} (v1, 6 Mar
+  2020). (Contains the unperturbed SR relativistic Kepler equation and
+  discusses circular solutions/constraints.)
+\item
+  {[}Carroll1997LectureGR{]} Sean M. Carroll, ``Lecture Notes on General
+  Relativity,'' arXiv:\texttt{gr-qc/9712019} (v1, 3 Dec 1997). (Includes
+  black holes/geodesic applications used as baseline GR anchors.)
+\end{enumerate}
+
+\end{document}
