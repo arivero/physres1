@@ -135,6 +135,7 @@
 - `S45` Completed.
 - `S46` Completed.
 - `S47` Completed.
+- `S48` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -176,8 +177,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S48`: study distributional Euler-Lagrange variations for \(\delta\) and \(\delta'\) probes (value-at-zero vs derivative-at-zero).
-2. `C75`: insert an inline citation for `Heuristic H0.2a` (and ensure the statement matches the reference hypotheses).
+1. `C75`: insert an inline citation for `Heuristic H0.2a` (and ensure the statement matches the reference hypotheses).
+2. `Q36`: quality pass on the Introduction heuristics (H0.2/H0.2a) for claim hygiene and flow.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

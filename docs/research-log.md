@@ -1643,3 +1643,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the measure-theory obstruction now has at least one citable external anchor in the repo ledger.
 - Sources touched (keys + status changes): added `[Velhinho2017InfDimMeasure]`.
 - Next: optionally add an inline citation to `paper/main.md` at `Heuristic H0.2a` in a small `C` cycle.
+
+## 2026-02-10 (S48: weak Euler-Lagrange jump conditions for δ and δ′ sources)
+- Focus: clarify, in a toy variational model, what δ and δ′ mean operationally in weak Euler-Lagrange form.
+- Work:
+  - Wrote `paper/notes/weak-euler-lagrange-jump-conditions.md` deriving two explicit signatures:
+    - δ forcing produces a jump in conjugate momentum (impulse),
+    - δ′ forcing produces a step in the configuration variable.
+- Result: we now have a concrete internal bridge between "singular probes" and distribution theory that can be selectively promoted into manuscripts if needed.
+- Sources touched (keys + status changes): none.
+- Next: run `C75` to add an inline citation for `Heuristic H0.2a` (and optionally add a one-line pointer to this jump-condition note near the "singular probes" discussion).
