@@ -1144,3 +1144,19 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: rule survives in vector/bivector form; scalar form is projection-dependent in non-planar motion.
 - Sources touched (keys + status changes): none.
 - Next: promote a short cautionary non-planar note after D1.5g.
+
+## 2026-02-10 (C60: promote non-planar vector-area caution)
+- Focus: prevent overextension of scalar areal formulas into generic 3D motion.
+- Work:
+  - Added `Remark D1.5h` in `papers/planck-area/main.md` with vector identities
+    \[
+    \boldsymbol\ell=\frac1m(\mathbf r\times\mathbf p),\quad
+    \frac{d\mathbf A}{d\tau}=\frac{\boldsymbol\ell}{2},
+    \]
+    and projection statement
+    \[
+    \frac{dA_{\mathbf n}}{d\tau}=\frac{\boldsymbol\ell\cdot\mathbf n}{2}.
+    \]
+- Result: manuscript now states explicitly that in non-planar perturbations the scalar postulate requires a chosen projection/normal.
+- Sources touched (keys + status changes): none.
+- Next: run `Q22` on D1.5b-h for coherence and readability.

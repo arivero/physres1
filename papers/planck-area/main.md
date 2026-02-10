@@ -582,6 +582,19 @@ The \(\ell\)-based rule is not restricted to circular trajectories. For general 
 \]
 Thus “fix \(\ell\)” remains equivalent to fixing proper-time areal rate in the source frame even away from circular orbits; this part is kinematic and does not depend on the specific force law.
 
+`Remark D1.5h (Non-planar caution: vector area rate is fundamental).`
+For general 3D motion the natural identity is vector-valued:
+\[
+\boldsymbol\ell=\frac1m(\mathbf r\times\mathbf p)=\gamma(\mathbf r\times\mathbf v),
+\qquad
+\frac{d\mathbf A}{d\tau}=\frac{\boldsymbol\ell}{2}.
+\]
+So the \(\ell\)-rule still survives kinematically, but scalar areal rates require a chosen normal \(\mathbf n\):
+\[
+\frac{dA_{\mathbf n}}{d\tau}=\frac{\boldsymbol\ell\cdot\mathbf n}{2}.
+\]
+In non-planar perturbations, interpreting a scalar “areal speed postulate” without specifying this projection is ambiguous; the projection choice is part of the model specification.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
