@@ -38,6 +38,7 @@
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
 - `B01` Completed.
+- `B02` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -58,9 +59,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `B02` (blocked until DNS/network works): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
-2. Optional `Q03`: quick check that Section 5.5 remains concise after D3.5a, and that D3.5/D3.5a still read as one unit.
-3. Optional `C32`: add a one-sentence pointer near `Derivation D4.3` to the new Schur-complement note once `B02` is unblocked (so the semiclassical prefactor has a modern anchor).
+1. Optional `C32`: add a one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` now that `B02` is anchored (referee-friendliness).
+2. Optional `S09`: study whether the contact-interaction rank-one kernel \(g|0\rangle\langle0|\) admits a clean half-density scalarization narrative parallel to the identity-kernel discussion (keep geometry vs RG separate).
+3. Next `B` (when DNS works): expand semiclassical anchor set (book-level references) if desired; low priority now that `B02` is in place.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -435,3 +435,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: D3.5/D3.5a read as one unit and remain short; no edits needed.
 - Sources touched (keys + status changes): none.
 - Next: `B02` when DNS/network works; otherwise continue local derivations.
+
+## 2026-02-10 (B02: modern semiclassical prefactor anchor)
+- Focus: add one modern OA reference that explicitly states the Van Vleck propagator prefactor formula, to complement the heritage `[VanVleck1928Correspondence]` citation.
+- Question: can we cite an OA source that writes the Van Vleck propagator/prefactor and “Van Vleck density” explicitly (so D4.3 has a modern anchor)?
+- Work:
+  - Added `[deGosson2018ShortTimePropagators]` (Entropy 2018; PMCID `PMC7512447`) to `paper/bibliography.md`.
+  - Threaded the citation into `paper/main.md` at `Derivation D4.3`.
+- Result: `Derivation D4.3` is now supported by both an early Van Vleck tradition anchor and a modern explicit OA formula reference.
+- Sources touched (keys + status changes): added `[deGosson2018ShortTimePropagators]` (OA via PMC).
+- Next: optional tiny `C` pass to add a one-sentence pointer to `paper/notes/van-vleck-schur-complement.md` near D4.3 for referee-friendliness.

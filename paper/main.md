@@ -612,7 +612,7 @@ Under changes of coordinates \(q_f=q_f(q_f')\), \(q_i=q_i(q_i')\), the mixed Hes
 Taking square roots yields a factor
 \(|\det(\partial q_f/\partial q_f')|^{1/2}|\det(\partial q_i/\partial q_i')|^{1/2}\),
 so the prefactor transforms as a half-density in each endpoint variable. This is the concrete semiclassical origin of the half-density viewpoint in `Heuristic H4.0`.
-For an early semiclassical/correspondence-principle anchor in the “Van Vleck” tradition, see [VanVleck1928Correspondence].
+For an early semiclassical/correspondence-principle anchor in the “Van Vleck” tradition, see [VanVleck1928Correspondence]. For a modern OA statement of the Van Vleck propagator/prefactor and the associated “Van Vleck density”, see [deGosson2018ShortTimePropagators].
 
 ### 6.5 Link Back to Section 5 Singular Dynamics
 The composition picture naturally includes piecewise-smooth trajectories. At impulses, the dominant classical skeleton must satisfy the jump laws from Section 5:
