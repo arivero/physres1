@@ -84,6 +84,7 @@
 - `S20` Completed.
 - `S21` Completed.
 - `S22` Completed.
+- `S23` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -102,7 +103,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. Optional `S23`: decide whether “point interactions in the momentum along the path” deserves a separate note, distinct from point *potentials* (distributional Lagrangians / impulses).
+1. `S24`: re-derive SR central-force circular-orbit constraints (inverse-square special case), in a restart-stable blackboard note (no transcript dependence).
+2. `B05`: independent SR/GR orbit anchors (OA-first) if S24 becomes promotable.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

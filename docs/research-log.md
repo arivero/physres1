@@ -805,3 +805,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Added a lightweight citation to `[Rosten2012ERG]` immediately after the RG semigroup statement in `paper/main.md` Section 8.2.
 - Result: the new \(\tau_b\) closure paragraph and the existing semigroup discussion are now anchored to a standard ERG review without changing the derivation-first structure of the manuscript.
 - Sources touched (keys + status changes): added `[Rosten2012ERG]`.
+
+## 2026-02-10 (S23: momentum point-interactions along the path vs point potentials)
+- Focus: follow the steering that “point potentials” are not the central delta-like object for an action-extremum/quantization narrative; emphasize time-localized defects (impulses/corners) that act on momentum along the path.
+- Work: added `blackboards/2026-02-10-momentum-point-interactions-along-path.md`, deriving the momentum jump condition produced by a delta-in-time action defect \(-U(q)\delta(t-t_0)\) and recording a short time-slicing “kick factor” dictionary; added a cautionary note about \(\delta'\)-type defects as distributional (pairing-defined) objects.
+- Result: we now have a restart-stable note that separates spatial contact potentials from trajectory-level impulse defects, aligning the delta thread with the “stationary extremes + composition” spine.
+- Sources touched (keys + status changes): none.
