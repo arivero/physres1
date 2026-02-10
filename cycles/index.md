@@ -81,6 +81,7 @@
 - `S19` Completed.
 - `S20` Completed.
 - `S21` Completed.
+- `S22` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -98,9 +99,9 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S22`: formalize the “control map \(\tau\)” refinement comparison story (9803035 thread) in our own derivation language, notes-first.
-2. `C50`: promote the minimal \(\tau\)-formalism into `paper/main.md` (or `paper/notes/` if not ready).
-3. `Q12`: quality pass focused on Sections 6–8 coherence (scalarization gauge, \(\tau\), RG compatibility).
+1. `C50`: promote the minimal \(\tau\)-formalism into `paper/main.md` (or `paper/notes/` if not ready).
+2. `Q12`: quality pass focused on Sections 6–8 coherence (scalarization gauge, \(\tau\), RG compatibility).
+3. Optional `S23`: decide whether “point interactions in the momentum along the path” deserves a separate note, distinct from point *potentials* (distributional Lagrangians / impulses).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

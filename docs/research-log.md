@@ -775,3 +775,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
     - added an “Open problems” pointer to `[Hossenfelder2013MinimalLength]`.
 - Result: the \(q=n-1\) dimension link and the \(n=2\) log caveat now have an explicit OA anchor, and “minimal length” is tracked as a literature branch without being imported as a driver of the main argument.
 - Sources touched (keys + status changes): added `[Tanaka2021KernelQuadrature]`, `[Hossenfelder2013MinimalLength]`.
+
+## 2026-02-10 (S22: control map \(\tau\) as refinement compatibility)
+- Focus: formalize the missing “compare discretizations at fixed ruler” ingredient behind the 9803035 thread, in a transcript-independent way.
+- Work: added `blackboards/2026-02-10-control-map-tau-refinement-compatibility.md`, defining coarse-graining operators \(\mathcal C_b\) between resolutions and stating the compatibility equation
+  \(\mathcal C_b(A_{h/b,\theta})=A_{h,\tau_b(\theta)}\) as the precise meaning of “a control map \(\tau\)”. Included a Gaussian kernel semigroup as the exactly-closing toy model (trivial \(\tau\)).
+- Result: the “RG = refinement compatibility” thesis now has a clean diagrammatic formulation ready to be promoted into `paper/main.md` without depending on any preprint wording.
+- Sources touched (keys + status changes): none.
