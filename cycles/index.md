@@ -204,11 +204,12 @@
 - `Q41` Completed.
 - `Q42` Completed.
 - `Q43` Completed.
+- `Q44` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q44`: (optional) referee-pass the new \(c\) witness block for novelty and claim hygiene.
-2. `C86`: (optional) add an analogous concrete witness for \(G\) tied to the half-density scale-supplier ladder (likely promoted from `papers/planck-area/main.md`).
+1. `C86`: (optional) add an analogous concrete witness for \(G\) tied to the half-density scale-supplier ladder (likely promoted from `papers/planck-area/main.md`).
+2. `Q45`: (optional) referee-pass the \(G\) witness block for novelty and claim hygiene.
 3. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
 
 Deprioritized unless blocking a revision:

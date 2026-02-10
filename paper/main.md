@@ -110,6 +110,7 @@ S_{\mathrm{rel}}[q]
 The term \(-mc^2(t_f-t_i)\) diverges as \(c\to\infty\). Classically it is inert (adding a constant to \(\mathcal L\) does not change the Euler-Lagrange equations), so one may subtract it as an allowed additive counterterm to obtain a finite \(c\to\infty\) limit:
 the Newtonian kinetic action \(\int \frac12 m\|\dot q\|^2 dt\) plus higher-order relativistic corrections.
 In quantum amplitudes, the same subtraction corresponds to an overall phase \(e^{-imc^2(t_f-t_i)/\hbar}\).
+This remark is at the particle-mechanics level; field-theory and gravity effects of constant terms (vacuum energy) are a separate issue not addressed here.
 
 ### 2.5 Scope Boundary Established
 This section fixes notation and methodological boundaries:

@@ -1928,3 +1928,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the manuscript now exhibits an explicit \(c\to\infty\) limit that is not well-defined until a subtraction convention is specified (parallel in spirit to renormalization/counterterm control of other refinement limits).
 - Sources touched (keys + status changes): none.
 - Next: optional `Q44` to referee-pass this new block, and optional work toward a similarly concrete \(G\) witness tied to the half-density area-scale ladder.
+
+## 2026-02-10 (Q44: referee pass on `Derivation D0.2` \(c\to\infty\) subtraction witness)
+- Focus: ensure the new \(c\) witness reads as limit-control and does not overgeneralize the irrelevance of constant shifts beyond particle mechanics.
+- Finding:
+  - add one sentence explicitly scoping the "constant shift is inert" remark to particle mechanics.
+- Edit:
+  - appended a one-sentence disclaimer in `paper/main.md` `Derivation D0.2` that vacuum-energy issues in QFT/GR are separate and not addressed.
+- Sources touched (keys + status changes): none.
+- Next: optional `C86` if we want an analogous concrete witness for \(G\) tied to the half-density area-scale ladder.
