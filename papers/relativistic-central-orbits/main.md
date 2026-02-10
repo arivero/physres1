@@ -106,6 +106,47 @@ Baseline anchor for these standard results: [Carroll1997LectureGR].
 ### 4.2 Restoring units
 Replace \(M\) by \(GM/c^2\): \(r_{\mathrm{ph}}=3GM/c^2\), \(r_h=2GM/c^2\), and \(b=3\sqrt3\,GM/c^2\).
 
+### 4.3 Timelike circular orbits and ISCO
+For timelike geodesics \(\epsilon=1\),
+\[
+V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\left(1+\frac{L^2}{r^2}\right).
+\]
+Circular orbits satisfy \(\dot r=0\) and \(dV_{\mathrm{eff}}/dr=0\). Writing
+\[
+V_{\mathrm{eff}}(r)=1-\frac{2M}{r}+\frac{L^2}{r^2}-\frac{2ML^2}{r^3},
+\]
+one finds
+\[
+\frac{dV_{\mathrm{eff}}}{dr}=\frac{2M}{r^2}-\frac{2L^2}{r^3}+\frac{6ML^2}{r^4}.
+\]
+Thus the circular branch obeys
+\[
+Mr^2=L^2(r-3M)
+\quad\Rightarrow\quad
+\boxed{\,L^2(r)=\frac{Mr^2}{r-3M}\,},\qquad r>3M,
+\]
+and using \(E^2=V_{\mathrm{eff}}(r)\) on the circular orbit gives
+\[
+\boxed{\,E^2(r)=\frac{(r-2M)^2}{r(r-3M)}\,}.
+\]
+
+Stability requires \(V_{\mathrm{eff}}''(r)>0\) at the circular orbit. Differentiating once more,
+\[
+V_{\mathrm{eff}}''(r)=-\frac{4M}{r^3}+\frac{6L^2}{r^4}-\frac{24ML^2}{r^5},
+\]
+and substituting the circular-orbit value \(L^2=Mr^2/(r-3M)\) yields
+\[
+V_{\mathrm{eff}}''(r)=\frac{2M(r-6M)}{r^3(r-3M)}.
+\]
+So circular timelike orbits are stable iff \(r>6M\), and the innermost stable circular orbit is
+\[
+\boxed{\,r_{\mathrm{ISCO}}=6M\,}.
+\]
+At the ISCO,
+\[
+L=2\sqrt3\,M,\qquad E=\frac{2\sqrt2}{3}.
+\]
+
 ## 5. SR Stability of Circular Orbits (Small Radial Perturbations)
 This section stays within mechanical SR (a point particle in an external, time-independent central scalar potential \(U(r)\)). It is used as a kinematic witness: some restrictions already appear before GR or field-theoretic interactions enter.
 

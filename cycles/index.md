@@ -72,6 +72,7 @@
 68. `C68` Completed.
 69. `C69` Completed.
 70. `C70` Completed.
+71. `C71` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -165,8 +166,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C71`: promote one concise ISCO derivation block in `papers/relativistic-central-orbits/main.md`.
-2. `Q33`: quality pass on the ISCO insertion.
+1. `Q33`: quality pass on the ISCO insertion.
+2. `S45`: return to gauge-phase/string-tension scale-supplier branch (keep it hypothesis-separated).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

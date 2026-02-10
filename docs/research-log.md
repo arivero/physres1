@@ -1540,3 +1540,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - recorded derivation + ISCO invariants in `blackboards/2026-02-10-schwarzschild-timelike-circular-orbits-isco.md`.
 - Result: prepared a clean `C71` promotion target: add a `4.3 Timelike circular orbits and ISCO` subsection.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C71: promote ISCO subsection in relativistic-central-orbits)
+- Focus: close the GR baseline TODO in the relativistic central-orbits draft.
+- Work:
+  - Added `4.3 Timelike circular orbits and ISCO` in `papers/relativistic-central-orbits/main.md`.
+  - Promoted circular-branch formulas for \(L^2(r)\), \(E^2(r)\) and derived stability condition \(r>6M\), with ISCO at \(r=6M\).
+  - Included one-line invariants at the ISCO: \(L=2\sqrt3 M\), \(E=2\sqrt2/3\).
+- Result: Section 4 now has both null (photon sphere) and timelike (ISCO) baseline witnesses in a parallel effective-potential style.
+- Sources touched (keys + status changes): none.
