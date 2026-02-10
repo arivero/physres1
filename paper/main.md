@@ -658,6 +658,17 @@ with \(O(\hbar)\) corrections determined by local quadratic data near the minimi
 So \(\hbar\) plays the role of a universal control parameter that makes "refine then compare" stable, with classical extremals recovered as a limit.
 In real time, the same pattern appears with \(e^{iS/\hbar}\) and stationary phase in place of positivity and Laplace concentration.
 
+`Remark D4.2b (Delocalized angles in angular-momentum eigenstates).`
+The stationary-phase mechanism explains how classical trajectories reappear in semiclassical packets. It does not imply that a single stationary eigenstate is a localized classical orbit. A simple witness occurs already in central potentials: in polar coordinates the azimuthal angle \(\phi\) is conjugate to \(L_z\), and separation of variables yields
+\[
+\psi(r,\phi)=R(r)\,e^{im\phi}.
+\]
+Therefore
+\[
+|\psi(r,\phi)|^2=|R(r)|^2
+\]
+is independent of \(\phi\), i.e. the azimuthal angle is uniformly distributed in an \(L_z\) eigenstate. Localized “orbit phase” pictures correspond to coherent superpositions/wavepackets, consistent with the manuscript’s use of stationary-phase concentration rather than “eigenstate \(=\) orbit” identification.
+
 `Derivation D4.3 (Van Vleck prefactor is a bi-half-density).`
 In the semiclassical approximation, the endpoint kernel has the standard form
 \[

@@ -1997,3 +1997,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: Theme L now has a concrete, independently anchored statement of the Grassmann-source formalism suitable for citation in the dependent note.
 - Sources touched (keys + status changes): added `[Floerchinger2024QFT1Lecture21]`.
 - Next: start `C87` to draft `papers/fermionic-mediators-contact-limits/main.md` and promote the `S61` matching witness.
+
+## 2026-02-10 (D01: discovery — strengthen main paper with a minimal action–angle clarification)
+- Focus: queue the next “main paper strengthening” wave after completing the Theme L dependent note.
+- Question: what minimal addition improves foundations-level reader understanding of the paper’s semiclassical stance without expanding scope?
+- Work:
+  - selected a bounded remark: in central potentials, \(L_z\) eigenstates have uniform azimuthal distribution, so classical orbit pictures correspond to semiclassical packets/superpositions rather than single stationary eigenstates.
+  - opened discovery cycle artifacts: `cycles/D01-*.md`.
+- Result: next cycles are specified: `C88` (promote the remark into `paper/main.md` + rebuild PDF) and `Q46` (referee pass on `C88`).
+- Sources touched (keys + status changes): none.
