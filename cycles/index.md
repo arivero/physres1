@@ -104,6 +104,7 @@
 - `S30` Completed.
 - `S31` Completed.
 - `S32` Completed.
+- `S33` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -131,8 +132,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S33`: probe whether the same \(\ell\)-rule survives mild non-planar perturbations (precessing/orbit-tilt settings).
-2. `C60`: if S33 yields a clean statement, promote as a cautionary non-planar note near D1.5g.
+1. `C60`: promote S33 as a cautionary non-planar vector/bivector note near D1.5g.
+2. `Q22`: quality pass on D1.5b-h after the non-planar caveat.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

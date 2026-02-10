@@ -1127,3 +1127,20 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; D1.5g integrates cleanly without scope drift.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S33: non-planar perturbation study)
+- Focus: test \(\ell\)-rule robustness beyond planar/circular assumptions.
+- Work:
+  - Derived full-3D kinematic identities:
+    \[
+    \boldsymbol\ell=\frac1m(\mathbf r\times\mathbf p)=\gamma(\mathbf r\times\mathbf v),\quad
+    \frac{d\mathbf A}{d\tau}=\frac{\boldsymbol\ell}{2}.
+    \]
+  - Noted scalar areal rates require a chosen normal \(\mathbf n\):
+    \[
+    \frac{dA_{\mathbf n}}{d\tau}=\frac{\boldsymbol\ell\cdot\mathbf n}{2}.
+    \]
+  - Separated kinematics from dynamics (\(d\boldsymbol\ell/d\tau=(1/m)\mathbf r\times\mathbf F_{(\tau)}\)).
+- Result: rule survives in vector/bivector form; scalar form is projection-dependent in non-planar motion.
+- Sources touched (keys + status changes): none.
+- Next: promote a short cautionary non-planar note after D1.5g.
