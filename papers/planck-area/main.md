@@ -613,6 +613,26 @@ and departures from constant projected areal rate are governed by projected torq
 \]
 So the postulate becomes falsifiable precisely when projection, clock, and reconstruction are part of the model declaration.
 
+`Remark D1.5j (Minimal implementation pipeline).`
+A compact data-to-test pipeline is:
+1. reconstruct object state in observer frame from direction \(\hat{\mathbf n}(t)\), range \(\rho(t)\), and line-of-sight velocity \(\dot\rho(t)\):
+\[
+\mathbf r_{\rm obj}=\rho\hat{\mathbf n},\qquad
+\mathbf v_{\rm obj}=\dot\rho\,\hat{\mathbf n}+\rho\,\dot{\hat{\mathbf n}},
+\]
+2. subtract source ephemeris to obtain source-frame relative state \((\mathbf r,\mathbf v)\),
+3. evaluate
+\[
+\dot A_{\mathbf n}=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v),\quad
+\frac{dA_{\mathbf n}}{d\tau}=\frac12\,\mathbf n\cdot\boldsymbol\ell,
+\]
+and, if a force model is supplied, the projected-torque residual
+\[
+\mathcal T_{\mathbf n}:=
+\frac{d}{dt}\big(\mathbf n\cdot\boldsymbol\ell\big)-\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F).
+\]
+This keeps the postulate test tied to explicit reconstruction and uncertainty handling rather than to abstract kinematic statements alone.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and

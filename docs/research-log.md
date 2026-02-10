@@ -1229,3 +1229,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: branch now has a concrete data-to-test pipeline rather than only formal observability conditions.
 - Sources touched (keys + status changes): none.
 - Next: promote a short implementation note near D1.5i.
+
+## 2026-02-10 (C62: promote implementation note)
+- Focus: translate S35 pipeline into a concise manuscript remark.
+- Work:
+  - Added `Remark D1.5j` in `papers/planck-area/main.md` with:
+    - observer-frame state reconstruction \((\mathbf r_{\rm obj},\mathbf v_{\rm obj})\),
+    - source-frame subtraction,
+    - projected observables and torque-residual channel \(\mathcal T_{\mathbf n}\).
+- Result: manuscript now includes a minimal “how to test” implementation path adjacent to the observability criterion.
+- Sources touched (keys + status changes): none.
+- Next: run `Q24` on D1.5b-j for coherence and readability.

@@ -63,6 +63,7 @@
 59. `C59` Completed.
 60. `C60` Completed.
 61. `C61` Completed.
+62. `C62` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -138,8 +139,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C62`: promote S35 as a brief implementation note near D1.5i.
-2. `Q24`: quality pass on D1.5b-j after implementation note insertion.
+1. `Q24`: quality pass on D1.5b-j after implementation note insertion.
+2. `S36`: draft an uncertainty-propagation skeleton for \(\dot A_{\mathbf n}\) and \(\mathcal T_{\mathbf n}\).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
