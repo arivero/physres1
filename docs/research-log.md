@@ -673,3 +673,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   The note records a SymPy check (generic \(D,a\)) in a reduced \(\sigma=\sigma(x)\) toy model.
 - Result: we have a cleaner, knob-separated statement of the D=4 simplification as an “intersection point” for half-density scalarization within the conformal class; interpretation as a dimension filter remains explicitly heuristic.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C46: add conformal operator-simplicity D=4 filter to planck-area draft)
+- Focus: record an independent “special dimension” filter in `papers/planck-area/main.md` that is distinct from the H2.5 coupling-dimension sieve: simplicity of scalarization-gauge dependence of the half-density kinetic operator in a conformal class.
+- Work: added `Heuristic H2.6a` to `papers/planck-area/main.md`, stating that for \(g_{\mu\nu}=e^{2\sigma}\delta_{\mu\nu}\),
+  \[
+  \widetilde\Delta=|g|^{1/4}\Delta_g|g|^{-1/4}
+  \]
+  contains a \((\partial\sigma)^2\) term with coefficient \(D(4-D)/4\), hence cancels at \(D=4\) within the conformal ansatz. The draft explicitly contrasts this operator-simplicity filter with the H2.5 scale sieve and links to `papers/half-density-qft/main.md` (Derivation D1.3) and `blackboards/2026-02-10-conformal-rescaling-and-half-density-laplacian-family.md`.
+- Result: the Planck-area draft now tracks two orthogonal ways \(D=4\) can appear once extra criteria are added: (i) coupling-dimension sieve, and (ii) operator-simplicity under scalarization-gauge (conformal) changes.
+- Sources touched (keys + status changes): none.

@@ -141,6 +141,27 @@ Derivation D1.3 is the simplest gravity-only instance under the integrality read
 `Heuristic H2.6 (Where “special dimensions” can appear).`
 Special dimensions do not come from half-densities alone (Hypothesis H2.1). They appear only after adding a selection principle like H2.4–H2.5: the requirement that the scalarization choice be universal, background-free, and coupling-built in a restricted (e.g. analytic) way.
 
+`Heuristic H2.6a (Independent D=4 filter: conformal scalarization-gauge simplicity).`
+The “dimension sieve” (H2.5) is not the only way a special dimension can appear once one insists on scalar representatives. A different kind of filter comes from asking for *simplicity of how kinetic operators depend on the scalarization gauge*.
+
+In the QFT-facing half-density calculus, a background metric supplies a reference half-density \(|g|^{1/4}|dx|^{1/2}\), and the scalar Laplacian \(\Delta_g\) conjugates to an operator on half-densities
+\[
+\widetilde\Delta:=|g|^{1/4}\Delta_g|g|^{-1/4}.
+\]
+In a conformal background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) in spacetime dimension \(D\), one finds (Derivation D1.3 in `papers/half-density-qft/main.md`, and the derivation/check notes in `blackboards/2026-02-10-conformal-rescaling-and-half-density-laplacian-family.md`)
+\[
+\widetilde\Delta\psi
+=e^{-2\sigma}\Big(
+\partial^2\psi
+-2\,\partial\sigma\cdot\partial\psi
+-\frac{D}{2}(\partial^2\sigma)\,\psi
++\frac{D(4-D)}{4}(\partial\sigma)^2\,\psi
+\Big).
+\]
+Thus the quadratic-gradient term \((\partial\sigma)^2\psi\) cancels at \(D=4\) (within the conformal ansatz). If one adopts the extra criterion that scalarization-gauge changes should not generate such quadratic-gradient “potentials” in the half-density kinetic operator, then \(D=4\) is singled out by *operator simplicity* rather than by coupling-dimension matching.
+
+This filter is independent of H2.5 and, by itself, does not supply a length scale; it is recorded only as an additional “special dimension” candidate knob to compare against the scale-sieve hypotheses.
+
 ### 3.2 What Changes When a Hypothesis Is Relaxed?
 This subsection records the main “branches” that need separate study.
 
