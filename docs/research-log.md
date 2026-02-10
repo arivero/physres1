@@ -888,3 +888,20 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Verified the stability inequality reduces to Newtonian \(q<3\) as \(\gamma\to1\).
 - Findings: the promotion stays within stated scope (“mechanical SR + external potential”), does not overclaim universality, and keeps “Next Waves” appropriately bounded.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S27: SR continuation of the Planck-areal-speed witness)
+- Focus: test whether the new SR-stability wave yields a robust extension of the inverse-square Planck-areal-speed branch.
+- Work:
+  - Derived the inverse-square fixed-areal-speed SR radius formula
+    \[
+    r(M,\dot A_0)=\frac{4\dot A_0^2}{GM}\sqrt{1+\left(\frac{GM}{2\dot A_0 c}\right)^2}.
+    \]
+  - Specialized to \(\dot A_0=cL_P\), obtaining
+    \[
+    r(M)=\frac{4\hbar}{Mc}\sqrt{1+\frac{M^2}{4M_P^2}}.
+    \]
+  - Recorded limits: Compton-like branch for \(M\ll M_P\), and saturation \(r\to2L_P\) for \(M\gg M_P\).
+  - Noted that for \(2<q<3\), S26 stability plus fixed \(\dot A_0\) gives only a lower-radius bound (no equally clean closed interpolation).
+- Result: the inverse-square branch has a clean promotable SR continuation; beyond inverse-square the link is presently bound-level only.
+- Sources touched (keys + status changes): none.
+- Next: promote the inverse-square SR interpolation into `papers/planck-area/main.md` with explicit model-scope caveat.
