@@ -509,3 +509,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Action queue:
   - `C`: optional micro-edit in `papers/delta-objects/main.md` §3.4 to soften the \(\delta'\) claim (and optionally add a one-line pointer to `blackboards/2026-02-10-distribution-theory-for-extremals.md`).
   - `S`: if needed, do an explicit toy corner/jump computation in a blackboard note.
+
+## 2026-02-10 (C36: micro-edit half-density QFT draft kernel dictionary)
+- Focus: small clarity/precision improvements in `papers/half-density-qft/main.md` (wave 1).
+- Work: softened abstract wording about counterterms/contact terms to “distributions supported on the diagonal”, and added an explicit relation between the scalar Green function \(G_g\) (defined with the \(\sqrt{|g|}\,d^Dx\) pairing) and the half-density Green kernel \(\widetilde G\): \(\widetilde G=|g|^{1/4}G_g|g|^{1/4}\).
+- Result: the QFT follow-up draft now makes the “this is mostly a convention change” dictionary explicit, reducing the chance of measure/delta-normalization confusion.
+- Sources touched (keys + status changes): none.

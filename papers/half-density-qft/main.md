@@ -1,7 +1,7 @@
 # Half-Densities in QFT: Propagators as Bi-Half-Density Kernels (Draft)
 
 ## Abstract
-In QFT, the basic free object is the inverse of a kinetic operator, i.e. a propagator/Green kernel. On a manifold, writing “\(P_x G(x,y)=\delta(x,y)\)” hides conventions: which volume form defines the adjoint, and which delta normalization realizes the identity. This draft promotes a simple organizing choice consistent with the repo’s main paper: treat fields (or kernels) as **half-densities**, so the identity kernel is canonical and kernel composition is coordinate-invariant without choosing a background measure. A worked computation shows how a scalar field on \((M,g)\) becomes a half-density \(\psi=|g|^{1/4}\phi\), with kinetic operator \(\widetilde P=|g|^{1/4}P|g|^{-1/4}\) symmetric in the coordinate pairing. We also record a kernel-level remark: local counterterms/contact terms are precisely diagonal \(\delta(x-y)\) (and derivatives) in the kernel, which is most naturally expressed as the canonical bi-half-density delta.
+In QFT, the basic free object is the inverse of a kinetic operator, i.e. a propagator/Green kernel. On a manifold, writing “\(P_x G(x,y)=\delta(x,y)\)” hides conventions: which volume form defines the adjoint, and which delta normalization realizes the identity. This draft promotes a simple organizing choice consistent with the repo’s main paper: treat fields (or kernels) as **half-densities**, so the identity kernel is canonical and kernel composition is coordinate-invariant without choosing a background measure. A worked computation shows how a scalar field on \((M,g)\) becomes a half-density \(\psi=|g|^{1/4}\phi\), with kinetic operator \(\widetilde P=|g|^{1/4}P|g|^{-1/4}\) symmetric in the coordinate pairing. We also record a kernel-level remark: local counterterms/contact terms appear as distributions supported on the diagonal \((x=y)\) (delta kernels and their derivatives), which are most naturally expressed using the canonical bi-half-density delta.
 
 This note is a dependent follow-up to `paper/main.md` and relates to `papers/planck-area/main.md` (scalarization scales) and `papers/rg-fundamental/main.md` (RG as compatibility).
 
@@ -99,6 +99,11 @@ Then the corresponding canonical bi-half-density kernel is
 K_{\widetilde P^{-1}}(x,y)=\widetilde G(x,y)\,|dx|^{1/2}|dy|^{1/2}.
 \]
 
+Equivalently, if \(G_g(x,y)\) denotes the usual **scalar** Green function for \(P\) defined with respect to the metric pairing \(\int \sqrt{|g|}\,d^Dy\) (so \((P^{-1}J)(x)=\int G_g(x,y)\,J(y)\,\sqrt{|g(y)|}\,d^Dy\)), then the kernels are related by
+\[
+\widetilde G(x,y)=|g(x)|^{1/4}\,G_g(x,y)\,|g(y)|^{1/4}.
+\]
+
 This is exactly the same “kernel as bi-half-density” structure used for QM propagators in the main manuscript, now applied to spacetime Green functions in QFT.
 
 ## 5. Contact terms and counterterms as diagonal delta kernels (kernel-level remark)
@@ -126,4 +131,3 @@ This paper’s role is only to show that half-densities are not a QM quirk: the 
 
 ## 7. Outlook: BV half-densities (queued for a later bibliography cycle)
 Gauge theories suggest a second, deeper appearance of half-densities: the BV formalism treats the integrand as a (half-)density on an (odd) symplectic space of fields/antifields, and the quantum master equation expresses independence of gauge-fixing choices. This draft will not develop BV without independent anchors; if we promote this beyond an “outlook” paragraph, open a dedicated `B` cycle and ingest authoritative sources.
-
