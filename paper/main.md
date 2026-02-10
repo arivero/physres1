@@ -12,6 +12,13 @@ The second anchor is the action formulation. Action is additive under temporal p
 
 The long-standing foundational tension can be phrased as a Zeno-style refinement paradox: a refinement description is an *infinite-limit* construction, and the limit is not automatically unique or even defined once the refined objects become singular (Dirac-supported probes, distributional derivatives) or once intermediate quantities diverge. Classical mechanics often hides this by treating "send the refinement parameter to zero" as an axiomatically legitimate operation. The program pursued here is instead: keep refinement explicit, isolate where limit-taking needs extra control, and treat **quantization** and **renormalization** as two distinct mechanisms for making refined composition stable when the naive Newtonian limit is not rigorous as written.
 
+`Heuristic H0.2 (Concrete failure modes of naive refinement-to-zero).`
+Three recurring obstructions that make "refine \(\to 0\)" nontrivial in practice are:
+1. **Singular probes:** point-supported variations and corners/impulses force distributional weak forms (mollifiers and contact terms).
+2. **Non-uniqueness:** refinement/composition can admit multiple classically equivalent but quantum-distinct schemes (ordering/discretization choices), requiring an explicit equivalence or control map.
+3. **Divergence:** some refinement limits do not converge without subtraction/parameter flow (renormalization).
+This manuscript treats these as limit-control problems rather than as postulates about "nature at the smallest scale."
+
 The third anchor is methodological. In this manuscript, deformation quantization and renormalization are not presented as detached specialist topics. They are two ways to control limits:
 1. Deformation quantization controls the classical-to-quantum passage through algebraic deformation and recovery of Poisson structure in the small-parameter limit [Landsman1998] [Connes1994].
 2. Renormalization controls divergent refinement procedures by regulator-dependent intermediate steps and regulator-independent observables [ConnesKreimer2000].

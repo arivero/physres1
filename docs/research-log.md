@@ -1510,3 +1510,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - compiled a short list of failure modes (non-uniqueness, non-existence, divergence, singular probes) with toy-level statements and repo loci in `blackboards/2026-02-10-newton-limit-obstruction-candidates.md`.
 - Result: prepared a compact `C70` promotion target: add a labeled heuristic list near the Zeno-style paragraph in `paper/main.md`.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C70: promote obstruction-candidate heuristic list)
+- Focus: make the "Newton limit paradox" goal operational in the manuscript by naming concrete failure modes.
+- Work:
+  - Added `Heuristic H0.2` in the Introduction of `paper/main.md` with three items: singular probes, scheme non-uniqueness (ordering/discretization), and divergence (renormalization).
+- Result: the cornerstone paper now states a crisp, testable set of motivations for why extra limit-control mechanisms are needed beyond naive refinement.
+- Sources touched (keys + status changes): none.

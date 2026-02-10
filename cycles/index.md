@@ -71,6 +71,7 @@
 67. `C67` Completed.
 68. `C68` Completed.
 69. `C69` Completed.
+70. `C70` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -162,8 +163,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C70`: promote one precise obstruction-candidate list into `paper/main.md` as a labeled heuristic.
-2. `Q32`: quality pass on the heuristic insertion.
+1. `Q32`: quality pass on the heuristic insertion.
+2. `S44`: return to GR extension (timelike circular stability / ISCO) as next missing theme.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
