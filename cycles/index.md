@@ -202,11 +202,12 @@
 - `Q40` Completed.
 - `Q41` Completed.
 - `Q42` Completed.
+- `Q43` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q43`: referee-pass the new \(\hbar\) witness block for novelty and claim hygiene.
-2. `C85`: (optional) extend the "constants as controls" heuristic with one concrete, nonstandard witness for \(c\) or \(G\) (avoid textbook restatement).
+1. `C85`: (optional) extend the "constants as controls" heuristic with one concrete, nonstandard witness for \(c\) or \(G\) (avoid textbook restatement).
+2. `Q44`: (optional) referee-pass the new \(c/G\) witness block for novelty and claim hygiene.
 3. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
 
 Deprioritized unless blocking a revision:

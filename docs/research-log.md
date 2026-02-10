@@ -1909,3 +1909,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the manuscript now contains a concrete mathematical pattern explaining why a finite \(\hbar\) is a natural control parameter in the refinement program.
 - Sources touched (keys + status changes): none.
 - Next: run `Q43` to referee-pass the new block for novelty/clarity, then consider a similarly nonstandard witness for \(c\) or \(G\).
+
+## 2026-02-10 (Q43: referee pass on `Derivation D4.2a` soft-extremum witness)
+- Focus: verify the new \(\hbar\) witness reads as a finite-dimensional refinement-composition pattern (not a Wick-rotation claim) and does not conflate stationarity with minimum.
+- Finding:
+  - one phrase ("Newtonian elimination") risked mixing stationary vs minimum language.
+- Edit:
+  - adjusted `paper/main.md` `Derivation D4.2a` wording to "hard elimination/extremization" rather than "Newtonian elimination".
+- Sources touched (keys + status changes): none.
+- Next: consider a similarly nonstandard witness for \(c\) or \(G\) (optional `C85`).

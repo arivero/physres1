@@ -627,7 +627,7 @@ Define the associated coarse effective action (a log-partition functional)
 S_{\mathrm{eff}}^{(\hbar)}(q_2,q_0):=-\hbar\ln W_\hbar(q_2,q_0).
 \]
 Then refinement-composition is exact at the level of weights (add actions in the exponent, integrate the intermediate variable),
-and the hard Newtonian elimination rule appears only as the sharpening limit:
+and the hard elimination/extremization rule appears only as the sharpening limit:
 under standard nondegeneracy assumptions, Laplace's method gives
 \[
 S_{\mathrm{eff}}^{(\hbar)}(q_2,q_0)
