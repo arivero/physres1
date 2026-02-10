@@ -1867,3 +1867,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: wrote `blackboards/2026-02-10-string-tension-draft-decision.md`.
 - Sources touched (keys + status changes): none.
 - Next: run `S58` (regulator-independent \(\tau\) lemma), then a `C` promotion cycle.
+
+## 2026-02-10 (S58: compare-at-fixed-ruler lemma for the control map \(\tau\))
+- Focus: restate `Derivation D6.0` in regulator-independent language: \(\tau_b\) is induced by "refine then compare at a fixed ruler."
+- Work:
+  - wrote `paper/notes/compare-at-fixed-ruler-control-map-tau.md` defining:
+    - closure equation \(\mathcal C_{b,h}(A_{h/b,\theta})=A_{h,\tau_b(\theta)}\),
+    - semigroup property \(\tau_{bc}=\tau_b\circ\tau_c\) under consistent comparison,
+    - explicit scheme dependence (coordinate conjugation) and the invariants we expect to survive.
+  - attached the step-halving witness \(\tau_2(a)=a/2+1/4\) (already derived in `paper/notes/control-map-tau-step-halving.md`).
+- Result: we now have a crisp, copyable lemma to tighten Section 8 without leaning on cutoff-specific language.
+- Sources touched (keys + status changes): none.
+- Next: run `C83` to promote the lemma into `paper/main.md` and record diffstat.

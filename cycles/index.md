@@ -154,6 +154,7 @@
 - `S55` Completed.
 - `S56` Completed.
 - `S57` Completed.
+- `S58` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -201,8 +202,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S58`: return to the \(\tau\) formalization agenda: re-express `Derivation D6.0` as a “compare-at-fixed-ruler” lemma independent of regulator language.
-2. `C83`: promote the regulator-independent \(\tau\) lemma into `paper/main.md` (with a concrete toy witness) and record diffstat.
+1. `C83`: promote the regulator-independent \(\tau\) lemma into `paper/main.md` (with a concrete toy witness) and record diffstat.
+2. `Q42`: referee-pass the revised Section 8 for claim hygiene and reader flow.
 3. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
 
 Deprioritized unless blocking a revision:
