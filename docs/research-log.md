@@ -295,7 +295,7 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: recorded a short referee-style review and actionable queue in `cycles/Q01-execution.md`.
 - Result: the next concrete steps are now: (i) `S` convention-map note for delta normalizations, (ii) `B` ingest the intended Cristina 2D-delta reference, (iii) add one modern semiclassical-propagator reference (OA or `PENDING`) to support the prefactor formula beyond attributional anchors.
 - Sources touched (keys + status changes): none (review only).
-- Next: execute the next support cycle on the half-density priority thread (default: `S` for the convention-map blackboard), then return to `C`.
+- Next: execute the next `S` cycle on the half-density priority thread (default: the convention-map blackboard), then return to `C`.
 
 ## 2026-02-10 (S02: scalarization gauge running ↔ wavefunction renormalization)
 - Focus: explore whether the “scalarization gauge” for half-densities admits a useful RG interpretation (without category errors).
@@ -327,4 +327,4 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added `Heuristic H2.5b1` explaining that analyticity is naturally in dimensionless \(\hat g(\mu)\), and that \(\mu\)-independent universal constants then require either the monomial sieve (analytic, no explicit \(\mu\)) or non-analytic transmutation (outside H2.5b).
 - Result: the H2.5 branch structure is now explicit enough that readers can see exactly where \(D=4\) enters (gravity-only sieve) versus where it does not (fractional powers / transmutation).
 - Sources touched (keys + status changes): none.
-- Next: per cadence, follow with one support cycle (likely `B` when network is available) to find a modern OA semiclassical-prefactor reference; otherwise proceed with local-only study tasks.
+- Next: per cadence, follow with one `B` cycle (bibliography search/ingest) when network is available to find a modern OA semiclassical-prefactor reference; otherwise proceed with local-only `S` tasks.

@@ -42,6 +42,12 @@ During `S` cycles we may use heavier verification tooling to keep manuscripts le
 ## Default Scheduling Policy (Automatic)
 We prioritize *topics*, but we alternate *cycle types*.
 
+**Cycle type meaning (terminology).**
+- `C`: content/prose/derivations promoted into drafts.
+- `S`: study (blackboards, checks, SymPy/Lean, toy computations).
+- `B`: bibliography (search/ingest/verify independent anchors; OA-first).
+- `Q`: quality (referee-style pass + actionable `C`/`S`/`B` queue).
+
 ### Topic priority (what we push first)
 1. Half-densities (and the Planck-area / universal scale hypothesis ladder).
 2. Cornerstone paper coherence (`paper/main.md`) as the integration target.
