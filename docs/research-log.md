@@ -683,3 +683,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   contains a \((\partial\sigma)^2\) term with coefficient \(D(4-D)/4\), hence cancels at \(D=4\) within the conformal ansatz. The draft explicitly contrasts this operator-simplicity filter with the H2.5 scale sieve and links to `papers/half-density-qft/main.md` (Derivation D1.3) and `blackboards/2026-02-10-conformal-rescaling-and-half-density-laplacian-family.md`.
 - Result: the Planck-area draft now tracks two orthogonal ways \(D=4\) can appear once extra criteria are added: (i) coupling-dimension sieve, and (ii) operator-simplicity under scalarization-gauge (conformal) changes.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q09: quality pass after adding H2.6a operator-simplicity filter)
+- Focus: referee-style check of the new conformal D=4 operator-simplicity heuristic (H2.6a), plus the manuscript-policy guardrail scan.
+- Checks:
+  - `rg -n 'C[0-9]{2}' paper/main.md` (no matches).
+  - Read-through of `papers/planck-area/main.md` around `Heuristic H2.6a` for caveats and separation from H2.5.
+  - Cross-link verification to `papers/half-density-qft/main.md` (Derivation D1.3) and `blackboards/2026-02-10-conformal-rescaling-and-half-density-laplacian-family.md`.
+- Findings: no correctness issues found; the coefficient \(D(4-D)/4\) and the \(D=4\) cancellation match S16/S17; wording stays explicitly heuristic and scale-neutral.
+- Action queue: none (an optional future S-cycle would be to seek an invariant formulation or test beyond the conformal ansatz).
+- Sources touched (keys + status changes): none.
