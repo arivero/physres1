@@ -1010,3 +1010,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the draft now includes a clock-independent candidate postulate that naturally reproduces D1.5c, while remaining explicitly framed as outlook/candidate (not a universal proof).
 - Sources touched (keys + status changes): none.
 - Next: run `Q18` on D1.5b/D1.5c/D1.5d for readability and claim discipline.
+
+## 2026-02-10 (Q18: quality pass on D1.5b-D1.5d block)
+- Focus: coherence and claim hygiene after adding D1.5d.
+- Checks:
+  - read-through of D1.5b/D1.5c/D1.5d continuity and scope statements;
+  - symbolic sanity: D1.5b high-\(M\) limit, D1.5c endpoint, D1.5d domain/endpoint behavior;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; chain is coherent and cautionary wording is adequate.
+- Sources touched (keys + status changes): none.

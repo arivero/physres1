@@ -118,11 +118,12 @@
 - `Q15` Completed.
 - `Q16` Completed.
 - `Q17` Completed.
+- `Q18` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q18`: run a quality pass on the D1.5b/D1.5c/D1.5d block.
-2. `S30`: explore whether a fully covariant area 2-form postulate can be phrased without explicit source-frame projection.
+1. `S30`: explore whether a fully covariant area 2-form postulate can be phrased without explicit source-frame projection.
+2. `C57`: if S30 yields a clear statement, promote as a compact “covariant-area outlook” remark.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
