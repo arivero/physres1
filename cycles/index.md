@@ -121,11 +121,12 @@
 - `Q16` Completed.
 - `Q17` Completed.
 - `Q18` Completed.
+- `Q19` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q19`: quality pass on the full D1.5b-D1.5e block.
-2. `S31`: map what minimal timelike structure is acceptable in a background-light formulation (source worldline vs observer field).
+1. `S31`: map what minimal timelike structure is acceptable in a background-light formulation (source worldline vs observer field).
+2. `C58`: if S31 stabilizes, add a short “minimal structure axiom” note to the D1.5 sequence.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

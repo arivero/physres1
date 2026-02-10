@@ -1047,3 +1047,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: D1.5 sequence now explicitly distinguishes what covariant structure is sufficient (S29/D1.5d) and what is insufficient (D1.5e), reducing overinterpretation risk.
 - Sources touched (keys + status changes): none.
 - Next: run `Q19` to verify readability and claim discipline across D1.5b-D1.5e.
+
+## 2026-02-10 (Q19: quality pass on D1.5b-D1.5e)
+- Focus: validate coherence after adding D1.5e.
+- Checks:
+  - read-through of D1.5b-D1.5e as a sequential argument;
+  - symbolic sanity of D1.5e circular reduction \(I_1=-m^2c^2r^2\);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; branch assumptions and bounded claims are explicit.
+- Sources touched (keys + status changes): none.
