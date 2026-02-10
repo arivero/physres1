@@ -551,3 +551,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: quick referee-style consistency check of `papers/rg-fundamental/main.md` after correcting the 3D \(I_3\) imaginary sign.
 - Findings: §5.8.1 and §5.9 now agree on the 3D sign/prefactors; no remaining occurrences of the old \(+i\) term were found; the 3D scattering-length parameterization is consistent with the corrected convention (up to overall \(T\) normalization).
 - Action queue: none required for correctness.
+
+## 2026-02-10 (S13: scale-sieve note: gravity-only vs \u03b1' allowed)
+- Focus: study which admissible universal couplings can supply the half-density scalarization scale \(\text{length}^{D/2}\) under an “integer powers only” sieve, clarifying the string-tension/area-scale logic.
+- Work: added `blackboards/2026-02-10-scale-sieve-gravity-vs-alpha-prime.md` deriving:
+  - gravity-only \((G_D)^n\) forces \(D=4\) (no fractional powers),
+  - \(\alpha'\)-allowed \((\alpha')^m\) forces \(D\equiv0\pmod 4\) via \((\alpha')^{D/4}\),
+  - mixed \((G_D)^n(\alpha')^m\) gives a dimension-matching constraint but no unique \(D\) without further admissibility rules.
+- Result: we now have a clean “sieve comparison” block ready to promote into `papers/planck-area/main.md` without importing string dynamics.
+- Sources touched (keys + status changes): none.

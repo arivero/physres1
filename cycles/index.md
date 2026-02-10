@@ -61,6 +61,7 @@
 - `S10` Completed.
 - `S11` Completed.
 - `S12` Completed.
+- `S13` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -73,8 +74,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Optional `C39`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
-2. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
+1. `C39`: promote the S13 “gravity-only vs \(\alpha'\)-allowed” sieve block into `papers/planck-area/main.md` (as a separate hypothesis knob).
+2. Optional `C40`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
+3. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
