@@ -81,7 +81,7 @@ for test variations \(\eta(t)\) of compact support,
 \]
 If \(\delta S[q;\eta]=0\) for all \(\eta\), then the Euler\u2013Lagrange expression vanishes as a distribution. Approximating \(\eta\) by bump functions converging to \(\delta(t-t_\ast)\) localizes the equation at \(t_\ast\) under regularity.
 
-When \(\partial L/\partial \dot q\) has jumps (corners/impulses), the distributional derivative produces delta terms automatically; derivative information is encoded by \(\delta'\) (equivalently, by derivatives of the delta kernel).
+When \(\partial L/\partial \dot q\) has jumps (corners/impulses), the distributional derivative produces delta terms automatically; more generally, point-supported singularities are encoded by delta kernels and their derivatives (\(\delta,\delta',\ldots\)), depending on distributional order. For a short dictionary, see `blackboards/2026-02-10-distribution-theory-for-extremals.md`.
 
 ## 4. Delta at a point: point interactions as rank-one kernels
 A point interaction is naturally the rank-one operator

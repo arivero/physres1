@@ -515,3 +515,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: softened abstract wording about counterterms/contact terms to “distributions supported on the diagonal”, and added an explicit relation between the scalar Green function \(G_g\) (defined with the \(\sqrt{|g|}\,d^Dx\) pairing) and the half-density Green kernel \(\widetilde G\): \(\widetilde G=|g|^{1/4}G_g|g|^{1/4}\).
 - Result: the QFT follow-up draft now makes the “this is mostly a convention change” dictionary explicit, reducing the chance of measure/delta-normalization confusion.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C37: soften \u03b4' corner phrasing in delta-objects)
+- Focus: implement the minor precision tweak queued by `Q05` in `papers/delta-objects/main.md` §3.4.
+- Work: softened the corner/jump remark so it refers to delta kernels and their derivatives (\(\delta,\delta',\ldots\)) depending on distributional order, and added a pointer to `blackboards/2026-02-10-distribution-theory-for-extremals.md`.
+- Result: the synthesis note no longer suggests \(\delta'\) is the generic corner term, while preserving the “extremals are distributional” message.
+- Sources touched (keys + status changes): none.
