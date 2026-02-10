@@ -169,11 +169,12 @@
 - `Q32` Completed.
 - `Q33` Completed.
 - `Q34` Completed.
+- `Q35` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q35`: quality pass on the new dependent note (scope + wording).
-2. `S47`: revisit the "Newton-limit paradox" and attempt a single crisp mathematical statement (candidate theorem/lemma form).
+1. `S47`: revisit the "Newton-limit paradox" and attempt a single crisp mathematical statement (candidate theorem/lemma form).
+2. `C74`: promote the stabilized obstruction statement into `paper/main.md` (short heuristic/remark).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

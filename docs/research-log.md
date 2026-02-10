@@ -1606,3 +1606,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
     - bridge to `paper/main.md` (H0.2 failure modes).
 - Result: the repo now has a dedicated place to develop the uncuttable/refinement idea without contaminating the core manuscript with historical claims.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q35: quality pass on uncuttable controlled-refinement note)
+- Focus: scope/wording check for the new dependent note.
+- Checks:
+  - verified the note defines "uncuttable" as a controlled-limit notion (not indivisibility);
+  - checked toy example phrasing (limit needs hypotheses for existence/uniqueness);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S47` to attempt a single crisp lemma-like obstruction statement.
