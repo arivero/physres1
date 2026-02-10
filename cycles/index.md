@@ -148,11 +148,12 @@
 - `Q25` Completed.
 - `Q26` Completed.
 - `Q27` Completed.
+- `Q28` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q28`: quality pass on the promoted RG-section addition.
-2. `S40`: design a compact bridge from weak-derivative contact terms to 1D/2D/3D contact-flow comparison.
+1. `S40`: design a compact bridge from weak-derivative contact terms to 1D/2D/3D contact-flow comparison.
+2. `C67`: promote one concise cross-dimensional bridge remark in RG draft.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

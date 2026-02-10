@@ -1402,3 +1402,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: RG Section 3 now links the derivative-as-counterterm intuition to weak Euler-Lagrange structure without relying on point-potential specificity.
 - Sources touched (keys + status changes): none.
 - Next: run `Q28` for readability and claim-hygiene check of Section 3 after H1.1c.
+
+## 2026-02-10 (Q28: quality pass on RG Section 3 after H1.1c)
+- Focus: readability/scope check for the new weak-derivative bridge.
+- Checks:
+  - reviewed Section 3 flow H1.1 -> H1.1c and transition to Section 4;
+  - verified H1.1c stays pattern-level (not "RG = weak derivatives");
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S40` to connect weak-derivative contact-term mechanism to the 1D/2D/3D contact-flow section.
