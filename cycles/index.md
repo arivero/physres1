@@ -136,11 +136,12 @@
 - `Q21` Completed.
 - `Q22` Completed.
 - `Q23` Completed.
+- `Q24` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q24`: quality pass on D1.5b-j after implementation note insertion.
-2. `S36`: draft an uncertainty-propagation skeleton for \(\dot A_{\mathbf n}\) and \(\mathcal T_{\mathbf n}\).
+1. `S36`: draft an uncertainty-propagation skeleton for \(\dot A_{\mathbf n}\) and \(\mathcal T_{\mathbf n}\).
+2. `C63`: if S36 stabilizes, promote as a compact uncertainty addendum near D1.5j.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

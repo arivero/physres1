@@ -1240,3 +1240,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: manuscript now includes a minimal “how to test” implementation path adjacent to the observability criterion.
 - Sources touched (keys + status changes): none.
 - Next: run `Q24` on D1.5b-j for coherence and readability.
+
+## 2026-02-10 (Q24: quality pass on D1.5b-j)
+- Focus: consistency review after adding implementation note D1.5j.
+- Checks:
+  - read-through of D1.5b-j chain;
+  - verified D1.5j matches D1.5i assumptions and remains concise;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; flow remains coherent and scoped.
+- Sources touched (keys + status changes): none.
