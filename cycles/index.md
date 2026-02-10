@@ -151,6 +151,7 @@
 - `S53` Completed.
 - `S54` Completed.
 - `S55` Completed.
+- `S56` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -197,8 +198,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S56`: explore a clean kernel-level bridge from Wilson-loop area law to an "area scale supplier" \(\sigma^{-1}\) (keep it hypothesis-separated).
-2. `C82`: if S56 yields a crisp statement, add a short hypothesis-separated paragraph to `papers/planck-area/main.md` (near `Remark E4a`).
+1. `C82`: add a short hypothesis-separated paragraph to `papers/planck-area/main.md` (near `Remark E4a`) using `[Greensite2003Confinement]` as an anchor.
+2. `Q41`: quality pass on the updated scale-supplier section (keep branch separation crisp).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

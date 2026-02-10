@@ -1828,3 +1828,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the gauge/string-tension branch now has at least one strong OA reference anchor.
 - Sources touched (keys + status changes): added `[Greensite2003Confinement]`; added `[Wilson1974Confinement]` as `PENDING`.
 - Next: run `S56` to attempt a clean kernel-level bridge note from Wilson-loop area law to an effective area-scale supplier \(\sigma^{-1}\), keeping hypothesis branches separated.
+
+## 2026-02-10 (S56: Wilson-loop area law as an area-scale supplier \(\sigma^{-1}\))
+- Focus: connect confinement/string tension to the half-density scalarization "area scale supplier" ladder without mixing hypothesis branches.
+- Work:
+  - wrote `blackboards/2026-02-10-wilson-loop-area-law-as-area-scale-supplier.md` summarizing:
+    - static potential from rectangular Wilson loops,
+    - area law \(\Rightarrow\) string tension \(\sigma\),
+    - \(\sigma^{-1}\) as an area scale in \(D=4\),
+    - placement of \(\sigma\) in the transmutation (RG-invariant) scale-supplier branch.
+- Result: prepared a `C82` promotion target: add one short hypothesis-separated paragraph near `Remark E4a` in `papers/planck-area/main.md`, anchored by `[Greensite2003Confinement]`.
+- Sources touched (keys + status changes): none.
+- Next: run `C82` to promote the paragraph into `papers/planck-area/main.md` and record diffstat.
