@@ -144,6 +144,7 @@
 - `S50` Completed.
 - `S51` Completed.
 - `S52` Completed.
+- `S53` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -189,7 +190,7 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S53`: generic-\(q\) areal-speed derivation (then `C79` promote into `papers/planck-area/main.md`).
+1. `C79`: tighten `Remark D1.5a` in `papers/planck-area/main.md` (dimension-selection clarity) and record diffstat.
 2. `S54`: control-map \(\tau\) formalization note (then `C80` promote minimally into `paper/main.md`).
 
 Deprioritized unless blocking a revision:

@@ -1758,3 +1758,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: remaining high-ROI gaps are now clearly listed as cycle-ready next goals (generic-\(q\) derivation; \(\tau\) formalization; gauge/string-tension branch with `B` anchors).
 - Sources touched (keys + status changes): none.
 - Next: run `S53` (generic-\(q\) areal-speed derivation) and `S54` (\(\tau\) formalization note); open `B07` if the gauge branch is activated.
+
+## 2026-02-10 (S53: areal-speed scaling by force exponent and spatial dimension)
+- Focus: make the generic-\(q\) scaling and the dimension link explicit and self-contained (beyond the in-paper remark).
+- Work:
+  - derived the circular-orbit scaling \(4m\dot A^2 = K r^{3-q}\) for \(F=K/r^q\), including the \(q=3\) degenerate case;
+  - specialized to Gauss-law Newtonian gravity in \(n\) spatial dimensions (\(q=n-1\) for \(n>2\), log exception at \(n=2\));
+  - recorded the resulting mass scaling \(r\propto M^{-1/(4-n)}\) and why linear Compton scaling is uniquely \(n=3\) (spacetime \(D=4\)).
+  - logged details in `blackboards/2026-02-10-areal-speed-scaling-by-dimension.md`.
+- Result: prepared a small `C79` promotion target to tighten `Remark D1.5a` in `papers/planck-area/main.md`.
+- Sources touched (keys + status changes): none.
+- Next: run `C79` to apply the remark wording improvement and record diffstat.
