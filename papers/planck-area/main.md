@@ -183,6 +183,14 @@ Existence (and non-uniqueness) of solutions depends on:
 `Heuristic H2.7 (Why H2.5 needs a “what counts as a coupling” rule).`
 If one allows arbitrary redefinitions of couplings (e.g. adjoining a new symbol \(\tilde G = G_d^{1/(d-2)}\)), then “no fractional powers” becomes vacuous: the forbidden root has simply been renamed as an allowed coupling. H2.5 is meaningful only together with a prior criterion for admissible coupling dependence (e.g. perturbative analyticity around a distinguished limit such as \(G_d\to0\)).
 
+`Heuristic H2.7a (Admissible couplings: exclude scheme parameters and non-analytic reparametrizations).`
+To keep H2.5 from collapsing into a coordinate artifact, we implicitly adopt the following convention:
+1. **Admitted couplings** are the independent parameters that appear as coefficients of local operators in the UV action after fixing a canonical normalization convention for fields (so that field-rescaling freedom is not used to hide roots/powers).
+2. We allow only **analytic** reparametrizations near a chosen base point (“weak coupling”), so adjoining \(\tilde g=g^{1/2}\) is disallowed when it is non-analytic at that base point.
+3. We explicitly exclude scheme/scale conventions from the coupling set: the renormalization scale \(\mu\), regulator cutoffs \(\Lambda\), and finite-subtraction constants; and we also exclude the scalarization gauge scale \(L_\ast\) itself (since constraining \(L_\ast\) is the point of the ladder).
+
+Under this convention, H2.5a is best viewed as a computational proxy once coupling coordinates are fixed, while H2.5b (analyticity at the base point) is the more invariant “no roots” statement.
+
 `Example E1 (Gravity-only).`
 With only \(G_d\) available, \(a_1=d-2\) and the condition becomes \(n(d-2)=d/2\). For integer \(d\ge 3\), this has a solution only at \(d=4\) with \(n=1\), reproducing Derivation D1.3.
 

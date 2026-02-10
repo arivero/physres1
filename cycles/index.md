@@ -30,6 +30,7 @@
 26. `C25` Completed.
 27. `C26` Completed.
 28. `C27` Completed.
+29. `C28` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.

@@ -371,3 +371,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a concrete, promotable “admissible couplings” knob to keep H2.5 meaningful and to avoid mixing the gravity-only sieve with other scale suppliers.
 - Sources touched (keys + status changes): none (study only).
 - Next: return to a content cycle to promote Rule A + the coordinate-(in)variance clarification into `papers/planck-area/main.md`.
+
+## 2026-02-10 (C28: promote admissible-couplings knob)
+- Focus: make H2.5 “no fractional powers” non-vacuous in the Planck-area draft by stating an admissibility rule for which symbols count as couplings.
+- Question: can we block the trivial loophole “rename a root as a coupling” without over-formalizing theory space?
+- Work: added `Heuristic H2.7a` to `papers/planck-area/main.md`, stating a lightweight admissibility convention: couplings come from local action coefficients after canonical field normalization; only analytic reparametrizations near a base point are allowed; and \(\mu\)/cutoffs/finite subtraction constants and the scalarization scale \(L_\ast\) are excluded from the coupling set.
+- Result: H2.5a is now explicitly presented as coordinate dependent unless the admissibility convention is fixed, while H2.5b (analyticity) is flagged as the more invariant “no roots” form.
+- Sources touched (keys + status changes): none.
+- Next: policy check + commit; then consider an optional `Q02` pass (redundancy/notation) or proceed to `B02` when network allows.
