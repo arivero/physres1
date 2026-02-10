@@ -825,3 +825,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Ingested `gr-qc/9712019` into `sources/9712019v1-1d38ccc6.md` (untracked); used existing ingested record for `2003.03110` (`sources/2003-03110v1-c3bdce53.md`).
 - Result: the SR “relativistic Kepler” equation and the GR geodesic/black-hole baseline now have stable OA anchors for any future dependent draft.
 - Sources touched (keys + status changes): added `[BoscagginDambrosioFeltrin2020RelKepler]`, `[Carroll1997LectureGR]`.
+
+## 2026-02-10 (C51: start `papers/relativistic-central-orbits/` dependent draft)
+- Focus: turn the S24 SR circular-orbit derivation into a dependent manuscript that can be extended in waves (SR stability; GR baseline).
+- Work: added `papers/relativistic-central-orbits/main.md`, seeding it with:
+  - SR power-law circular-orbit condition \(L^2=K\gamma m r^{3-q}\),
+  - inverse-square special case \(v=K/L\) and the bound \(L>K/c\),
+  - a short “next waves” roadmap for stability + Schwarzschild/photon-sphere baseline.
+- Result: the relativistic-orbit branch is now captured as a real draft (not just a sketch) without bloating the cornerstone manuscript.
+- Sources touched (keys + status changes): none.

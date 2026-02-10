@@ -52,6 +52,7 @@
 48. `C48` Completed.
 49. `C49` Completed.
 50. `C50` Completed.
+51. `C51` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -105,8 +106,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. Optional `C51`: start `papers/relativistic-central-orbits/main.md` with the SR \(q=2\) derivation as the first concrete result (no stability claims yet).
-2. Optional `S25`: GR effective potential and photon sphere derivation in our notation (Schwarzschild baseline).
+1. `S25`: GR effective potential and photon sphere derivation in our notation (Schwarzschild baseline).
+2. `C52`: promote S25 into `papers/relativistic-central-orbits/main.md` as the GR baseline chapter.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
