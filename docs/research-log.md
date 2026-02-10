@@ -1249,3 +1249,24 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; flow remains coherent and scoped.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S36: uncertainty-propagation skeleton)
+- Focus: add minimal uncertainty scaffold for projected observables and residuals.
+- Work:
+  - Added first-order propagation for
+    \[
+    \dot A_{\mathbf n}=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v),
+    \quad
+    \sigma_q^2\approx J_q\Sigma_xJ_q^\top.
+    \]
+  - Added residual-channel template
+    \[
+    \mathcal T_{\mathbf n}=
+    \frac{d}{dt}(\mathbf n\cdot\boldsymbol\ell)-\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F),
+    \quad
+    \sigma_{\mathcal T}^2\approx J_{\mathcal T}\Sigma_zJ_{\mathcal T}^\top.
+    \]
+  - Recorded practical cautions: derivative-noise dominance, covariance coupling, linearization limits.
+- Result: branch now has a consistent uncertainty baseline ready for concise manuscript promotion.
+- Sources touched (keys + status changes): none.
+- Next: promote a compact uncertainty addendum near D1.5j.

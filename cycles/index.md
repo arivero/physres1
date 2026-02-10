@@ -110,6 +110,7 @@
 - `S33` Completed.
 - `S34` Completed.
 - `S35` Completed.
+- `S36` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -140,8 +141,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S36`: draft an uncertainty-propagation skeleton for \(\dot A_{\mathbf n}\) and \(\mathcal T_{\mathbf n}\).
-2. `C63`: if S36 stabilizes, promote as a compact uncertainty addendum near D1.5j.
+1. `C63`: promote S36 as a compact uncertainty addendum near D1.5j.
+2. `Q25`: quality pass on D1.5b-k after uncertainty insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
