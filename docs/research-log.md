@@ -379,3 +379,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: H2.5a is now explicitly presented as coordinate dependent unless the admissibility convention is fixed, while H2.5b (analyticity) is flagged as the more invariant “no roots” form.
 - Sources touched (keys + status changes): none.
 - Next: policy check + commit; then consider an optional `Q02` pass (redundancy/notation) or proceed to `B02` when network allows.
+
+## 2026-02-10 (Q02: quality pass after C26–C28)
+- Focus: referee-style sanity check on the Planck-area and RG follow-up drafts after the delta/identity-kernel and admissible-couplings additions.
+- Question: did the recent clarifiers introduce redundancy, hidden assumptions, or new “convention fight” surfaces?
+- Work: recorded findings + action queue in `cycles/Q02-execution.md`.
+- Result: the drafts remain hypothesis-clean; the main open blocker is still `B02` (modern semiclassical prefactor anchor), plus optional future compression of D1.2a/D1.2b if Section 3 grows.
+- Sources touched (keys + status changes): none.
+- Next: run `B02` when network is available; optionally do a small `C` compression pass later.
