@@ -42,6 +42,7 @@
 - `S03` Completed.
 - `S04` Completed.
 - `S05` Completed.
+- `S06` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -49,7 +50,7 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `S06`: tighten the half-density \(\Rightarrow\) universal area-scale ladder by studying the “what counts as a coupling” rule behind H2.5 (gravity-only vs \(\Lambda\), \(\alpha'\), other dimensionful scales) and keeping the filters separate.
+1. `C28`: promote `S06` into `papers/planck-area/main.md` (make the “admissible couplings” knob explicit; clarify H2.5a vs H2.5b invariance).
 2. `B02` (when network is available): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
 3. Optional `Q02`: quick quality pass on the Planck-area + RG notes after the recent delta/identity-kernel additions (notation + redundancy check).
 

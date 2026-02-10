@@ -363,3 +363,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the draft now has an explicit “delta” witness that (i) lives naturally in the half-density formalism and (ii) exhibits the same normalization exponent as the general near-diagonal scaling lemma.
 - Sources touched (keys + status changes): none.
 - Next: per cadence, run policy checks + commit; then pick the next study target (likely tightening the half-density \(\Rightarrow\) universal area-scale branch conditions, or a B-cycle for the semiclassical-prefactor modern anchor when network is available).
+
+## 2026-02-10 (S06: admissible couplings behind H2.5)
+- Focus: keep the half-density \(\Rightarrow\) scale ladder honest by stating what “counts as a coupling” in H2.5 and by separating coordinate-dependent vs invariant sieve statements.
+- Question: is “no fractional powers of couplings” a real hypothesis, or just a coordinate artifact unless we fix an admissibility rule?
+- Work: wrote `blackboards/2026-02-10-h2-5-coupling-admissibility.md` clarifying that H2.5a (integrality/monomial sieve) is coordinate dependent unless one fixes an admissibility rule, while H2.5b (analyticity at a base point) is stable under analytic reparametrizations; proposed a tentative Rule A excluding scheme parameters (\(\mu\), cutoffs, finite subtraction constants) and scalarization gauges from the coupling set; and recorded how admitting \(\Lambda_d\) or \(\alpha'\) changes the “dimension sieve” without changing half-density facts.
+- Result: we now have a concrete, promotable “admissible couplings” knob to keep H2.5 meaningful and to avoid mixing the gravity-only sieve with other scale suppliers.
+- Sources touched (keys + status changes): none (study only).
+- Next: return to a content cycle to promote Rule A + the coordinate-(in)variance clarification into `papers/planck-area/main.md`.
