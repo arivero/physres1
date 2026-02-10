@@ -34,6 +34,7 @@
 30. `C29` Completed.
 31. `C30` Completed.
 32. `C31` Completed.
+33. `C32` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -60,9 +61,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `C32`: promote `S09` into `papers/rg-fundamental/main.md` (very short kernel/half-density remark) and optionally into `papers/planck-area/main.md` (one bridge sentence).
-2. Optional new paper: start a short draft unifying “half-densities + point interactions + RG scale suppliers” if C32 feels too cramped.
-3. Optional `C33`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
+1. Optional new paper (`C33`): start a short draft unifying “delta objects” (identity kernel, critical-set delta, point interaction) in the half-density-first language, with ≥1 worked computation (not just an outline).
+2. Optional `C34`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
+3. Optional `Q04`: quick quality pass on the RG note after adding H1.12 (redundancy/flow).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -401,6 +401,13 @@ I_3(E;\Lambda)
 Finally, the finite constant accompanying the logarithm is a scheme choice:
 adding a fixed constant \(C\) to the subtraction condition does not change the beta function, but it rescales the RG-invariant transmutation scale \(\kappa_\ast^2\mapsto e^{C}\kappa_\ast^2\) (hence the boundary-condition length \(R\sim 1/\kappa_\ast\) rescales by \(R\mapsto e^{-C/2}R\)). The universal content is the existence of the single scale, not its convention-dependent normalization.
 
+`Heuristic H1.12 (Point interaction as a rank-one half-density kernel).`
+Formally, a point interaction is the rank-one operator \(V=g\,|0\rangle\langle0|\), so its Schwartz kernel is supported at coincident points. In the coordinate-free half-density kernel calculus, this is naturally written as the bi-half-density distribution
+\[
+K_V(x,y)=g\;\delta^{(d)}(x)\,\delta^{(d)}(y)\,|dx|^{1/2}|dy|^{1/2}.
+\]
+This makes explicit what is convention and what is physics: the delta kernel is canonical as a half-density object (no background measure chosen), while any scalar representative requires a scalarization choice; RG-invariant scales (like \(\kappa_\ast\) in the 2D delta model) are candidates to supply such scalarization scales only after adding a universality hypothesis.
+
 ## 6. Semigroup vs Group: What Is (Not) Invertible
 The phrase “renormalization group” hides two different notions:
 1. an information-losing *coarse-graining map* on descriptions of the system, and

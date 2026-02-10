@@ -453,3 +453,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a concrete “delta/contact” bridge that reinforces the half-density priority thread without mixing it with RG running as a category error.
 - Sources touched (keys + status changes): none (study only).
 - Next: promote a short remark into `papers/rg-fundamental/main.md` (and optionally a bridge sentence into `papers/planck-area/main.md`) if it reads cleanly.
+
+## 2026-02-10 (C32: promote point-interaction half-density remark)
+- Focus: make the point-interaction kernel statement explicit in the RG follow-up draft to reduce “delta as a scalar function” confusion.
+- Question: can we add a minimal half-density kernel remark without derailing the RG computation narrative?
+- Work: added `Heuristic H1.12` to `papers/rg-fundamental/main.md`, writing the point interaction as a rank-one operator \(g|0\rangle\langle0|\) with kernel \(g\,\delta(x)\delta(y)|dx|^{1/2}|dy|^{1/2}\), and explicitly separating canonical half-density kernels from scalarization conventions (and from RG-invariant physical scales).
+- Result: the RG note now contains a coordinate-free kernel statement that aligns the delta witness with the repo’s half-density-first stance.
+- Sources touched (keys + status changes): none.
+- Next: commit; then decide whether to start a new short draft unifying “delta objects” (identity kernel, critical-set delta, point interaction) or keep promoting small bridges into existing drafts.
