@@ -461,3 +461,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the RG note now contains a coordinate-free kernel statement that aligns the delta witness with the repo’s half-density-first stance.
 - Sources touched (keys + status changes): none.
 - Next: commit; then decide whether to start a new short draft unifying “delta objects” (identity kernel, critical-set delta, point interaction) or keep promoting small bridges into existing drafts.
+
+## 2026-02-10 (C33: new draft unifying delta objects)
+- Focus: create a coherent synthesis note collecting the repo’s three main “delta” roles under the half-density-first viewpoint.
+- Question: can we unify (i) the identity delta kernel, (ii) \(\delta(\nabla f)\) concentration on stationary points, and (iii) point interactions \(g|0\rangle\langle0|\) into one consistent semantics?
+- Work: started `papers/delta-objects/main.md`, including (a) the identity kernel as a bi-half-density with the explicit near-diagonal \(\varepsilon^{-d/2}\) scaling computation, (b) the nondegenerate identities for \(\delta(f')\) and \(\delta^{(n)}(\nabla f)\) with determinant weights, and (c) the rank-one point-interaction kernel as a bi-half-density distribution; kept the functional-integral extension explicitly heuristic.
+- Result: we now have a dedicated bridge draft that can later be merged into an appendix or spun into a standalone short note, and it is not just an outline (it contains explicit computations).
+- Sources touched (keys + status changes): none.
+- Next: commit; then start a QFT-oriented study cycle extending the half-density-first stance beyond QM/statics (e.g. propagators as bi-half-densities, BV half-densities).

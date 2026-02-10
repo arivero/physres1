@@ -35,6 +35,7 @@
 31. `C30` Completed.
 32. `C31` Completed.
 33. `C32` Completed.
+34. `C33` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -61,7 +62,7 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Optional new paper (`C33`): start a short draft unifying “delta objects” (identity kernel, critical-set delta, point interaction) in the half-density-first language, with ≥1 worked computation (not just an outline).
+1. `S10`: study half-densities in QFT (propagators/Green functions as bi-half-densities; densitized fields; BV half-densities) and extract promotion candidates.
 2. Optional `C34`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
 3. Optional `Q04`: quick quality pass on the RG note after adding H1.12 (redundancy/flow).
 
