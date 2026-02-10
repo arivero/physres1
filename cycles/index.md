@@ -94,6 +94,7 @@
 - `S25` Completed.
 - `S26` Completed.
 - `S27` Completed.
+- `S28` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -116,8 +117,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S28`: investigate the proper-time areal-speed variant and whether the \(2L_P\) floor is gauge/convention dependent.
-2. `C55`: if S28 gives a clear invariant takeaway, promote it to `papers/planck-area/main.md` as a convention-sensitivity remark.
+1. `C55`: promote S28 as a convention-sensitivity caveat next to D1.5b in `papers/planck-area/main.md`.
+2. `Q17`: quality pass on the D1.5/D1.5b block after the caveat insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

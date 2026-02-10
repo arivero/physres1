@@ -935,3 +935,21 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no prose or formula fixes needed; caveat language is sufficient to keep D1.5b as a model-level continuation.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S28: clock-choice study for areal-speed postulate)
+- Focus: test convention sensitivity of the SR continuation by comparing fixed \(dA/dt\) vs fixed \(dA/d\tau\).
+- Work:
+  - Derived the fixed-proper-time branch for inverse-square gravity:
+    \[
+    r(M,\dot A_\tau)=\frac{4\dot A_\tau^2}{GM}\sqrt{1-\left(\frac{GM}{2\dot A_\tau c}\right)^2},
+    \]
+    with admissibility \(GM<2\dot A_\tau c\).
+  - For \(\dot A_\tau=cL_P\), obtained
+    \[
+    r(M)=\frac{4\hbar}{Mc}\sqrt{1-\frac{M^2}{4M_P^2}},
+    \]
+    so \(M\to2M_P^{-}\Rightarrow r\to0\).
+  - Compared to fixed-\(dA/dt\) branch (D1.5b), which gives \(r\to2L_P\) at large \(M\).
+- Result: low-mass Compton-like behavior is shared, but the high-mass “Planck floor” is clock-convention dependent in this model.
+- Sources touched (keys + status changes): none.
+- Next: promote a caveat remark into the planck-area draft so D1.5b is explicitly framed as \(dA/dt\)-specific.
