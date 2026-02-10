@@ -153,6 +153,7 @@
 - `S54` Completed.
 - `S55` Completed.
 - `S56` Completed.
+- `S57` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -200,8 +201,9 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S57`: decide whether to open a dedicated `papers/string-tension-as-area-scale/main.md` draft (only if multiple waves justify it).
-2. `S58`: return to the \(\tau\) formalization agenda: re-express `Derivation D6.0` as a “compare-at-fixed-ruler” lemma independent of regulator language.
+1. `S58`: return to the \(\tau\) formalization agenda: re-express `Derivation D6.0` as a “compare-at-fixed-ruler” lemma independent of regulator language.
+2. `C83`: promote the regulator-independent \(\tau\) lemma into `paper/main.md` (with a concrete toy witness) and record diffstat.
+3. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

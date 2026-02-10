@@ -1857,3 +1857,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S57` to decide whether to open a dedicated string-tension dependent draft or keep this as a bounded option in `papers/planck-area/main.md`.
+
+## 2026-02-10 (S57: decision on whether to open a dedicated string-tension dependent draft)
+- Focus: decide whether the gauge/string-tension branch has enough multi-wave substance to justify opening `papers/string-tension-as-area-scale/main.md`.
+- Work:
+  - reviewed current assets: OA anchor `[Greensite2003Confinement]` and hypothesis-separated definition-level paragraph already promoted into `papers/planck-area/main.md` (`Remark E4a`).
+  - evaluated missing content: no technical section yet connecting \(\sigma^{-1}\) to half-density scalarization beyond dimensional matching.
+- Decision: do **not** open a dedicated draft yet; keep the option bounded inside `papers/planck-area/main.md` until one nontrivial technical result exists.
+- Result: wrote `blackboards/2026-02-10-string-tension-draft-decision.md`.
+- Sources touched (keys + status changes): none.
+- Next: run `S58` (regulator-independent \(\tau\) lemma), then a `C` promotion cycle.
