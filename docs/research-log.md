@@ -1169,3 +1169,22 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; sequence remains coherent and scoped.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S34: observability criterion for projected areal rates)
+- Focus: make D1.5h empirically actionable in perturbed/non-planar settings.
+- Work:
+  - Defined projected observable
+    \[
+    \dot A_{\mathbf n}=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v),
+    \qquad
+    \frac{dA_{\mathbf n}}{d\tau}=\frac12\,\mathbf n\cdot\boldsymbol\ell.
+    \]
+  - Derived projected torque evolution:
+    \[
+    \frac{d}{dt}\big(\mathbf n\cdot\boldsymbol\ell\big)
+    =\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F).
+    \]
+  - Added a three-item observability checklist (projection, clock convention, frame reconstruction).
+- Result: projected areal-rate postulates are now sharply falsifiable when those three model choices are explicit.
+- Sources touched (keys + status changes): none.
+- Next: promote this criterion as a short remark after D1.5h.

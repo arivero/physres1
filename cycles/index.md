@@ -106,6 +106,7 @@
 - `S31` Completed.
 - `S32` Completed.
 - `S33` Completed.
+- `S34` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -134,8 +135,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S34`: test whether projected areal-rate postulates can be tied to measurable observables in perturbed-orbit settings.
-2. `C61`: if S34 yields a clean criterion, promote as a short observability note near D1.5h.
+1. `C61`: promote S34 as a short observability criterion note near D1.5h.
+2. `Q23`: quality pass on D1.5b-i after observability insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
