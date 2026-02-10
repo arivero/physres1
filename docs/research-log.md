@@ -387,3 +387,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the drafts remain hypothesis-clean; the main open blocker is still `B02` (modern semiclassical prefactor anchor), plus optional future compression of D1.2a/D1.2b if Section 3 grows.
 - Sources touched (keys + status changes): none.
 - Next: run `B02` when network is available; optionally do a small `C` compression pass later.
+
+## 2026-02-10 (C29: tiny clarity tweaks after Q02)
+- Focus: incorporate the lowest-friction Q02 readability fixes into the Planck-area draft without churning content.
+- Question: can we preempt redundancy/confusion between the general near-diagonal scaling lemma and the identity-kernel witness?
+- Work: in `papers/planck-area/main.md`, added (i) a one-sentence cross-pointer from D1.2a to D1.2b, and (ii) a one-sentence disclaimer that “canonical normalization” in the admissible-couplings rule is itself a convention knob.
+- Result: the draft reads more intentionally (general lemma → canonical example) while keeping the hypothesis ladder unchanged.
+- Sources touched (keys + status changes): none.
+- Next: attempt `B02` when network/DNS permits; otherwise continue with local `S` cycles (e.g. transmutation scale supplier from compatibility).

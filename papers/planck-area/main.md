@@ -62,6 +62,7 @@ K_\varepsilon(x,x+\varepsilon v)
 =\big(\varepsilon^{d/2}k_\varepsilon(x,x+\varepsilon v)\big)\,|dx|^{1/2}|dv|^{1/2}.
 \]
 Thus, any attempt to define a nontrivial “\(\varepsilon\to0\)” near-diagonal limit of kernels (the scaling step that tangent-groupoid quantization packages) inevitably produces an \(\varepsilon^{d/2}\) factor from the half-density Jacobian, and the corresponding scalar representative must be renormalized by \(\varepsilon^{-d/2}\) to stay finite. This is the same exponent as in the finite-dimensional “square-root delta” normalization: the half-density is the square root of the density Jacobian.
+For a canonical distributional witness carrying the same exponent, see Derivation D1.2b.
 
 `Derivation D1.2b (Identity kernel: the delta bi-half-density carries the same exponent).`
 The identity operator on half-densities has Schwartz kernel
@@ -190,6 +191,7 @@ To keep H2.5 from collapsing into a coordinate artifact, we implicitly adopt the
 3. We explicitly exclude scheme/scale conventions from the coupling set: the renormalization scale \(\mu\), regulator cutoffs \(\Lambda\), and finite-subtraction constants; and we also exclude the scalarization gauge scale \(L_\ast\) itself (since constraining \(L_\ast\) is the point of the ladder).
 
 Under this convention, H2.5a is best viewed as a computational proxy once coupling coordinates are fixed, while H2.5b (analyticity at the base point) is the more invariant “no roots” statement.
+The phrase “canonical normalization of fields” in (1) is itself a convention choice; the point is that fixing such a convention makes the admissibility rule a controlled knob rather than an implicit loophole.
 
 `Example E1 (Gravity-only).`
 With only \(G_d\) available, \(a_1=d-2\) and the condition becomes \(n(d-2)=d/2\). For integer \(d\ge 3\), this has a solution only at \(d=4\) with \(n=1\), reproducing Derivation D1.3.
