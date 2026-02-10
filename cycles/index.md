@@ -124,6 +124,7 @@
 - `S40` Completed.
 - `S41` Completed.
 - `S42` Completed.
+- `S43` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -161,8 +162,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S43`: return to the "Newton limit paradox" and list candidate precise obstructions.
-2. `C70`: promote one precise obstruction candidate into `paper/main.md` as a labeled heuristic.
+1. `C70`: promote one precise obstruction-candidate list into `paper/main.md` as a labeled heuristic.
+2. `Q32`: quality pass on the heuristic insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

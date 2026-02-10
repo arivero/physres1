@@ -1503,3 +1503,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S43` to list precise candidates for the Newton-limit obstruction.
+
+## 2026-02-10 (S43: Newton-limit obstruction candidates)
+- Focus: turn the long-term "Newton limit is not automatically rigorous" goal into concrete candidate obstructions.
+- Work:
+  - compiled a short list of failure modes (non-uniqueness, non-existence, divergence, singular probes) with toy-level statements and repo loci in `blackboards/2026-02-10-newton-limit-obstruction-candidates.md`.
+- Result: prepared a compact `C70` promotion target: add a labeled heuristic list near the Zeno-style paragraph in `paper/main.md`.
+- Sources touched (keys + status changes): none.
