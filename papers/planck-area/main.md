@@ -595,6 +595,24 @@ So the \(\ell\)-rule still survives kinematically, but scalar areal rates requir
 \]
 In non-planar perturbations, interpreting a scalar “areal speed postulate” without specifying this projection is ambiguous; the projection choice is part of the model specification.
 
+`Remark D1.5i (Observability criterion for projected areal-rate postulates).`
+In perturbed-orbit settings, a projected areal-rate claim is empirically meaningful only after specifying:
+1. projection normal \(\mathbf n\),
+2. clock convention (\(t\)-based or \(\tau\)-based),
+3. reconstruction map for \((\mathbf r,\mathbf v)\) in the source frame.
+With those choices fixed, the observable is
+\[
+\dot A_{\mathbf n}(t)=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v),
+\qquad
+\frac{dA_{\mathbf n}}{d\tau}=\frac12\,\mathbf n\cdot\boldsymbol\ell,
+\]
+and departures from constant projected areal rate are governed by projected torque
+\[
+\frac{d}{dt}\big(\mathbf n\cdot\boldsymbol\ell\big)
+=\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F).
+\]
+So the postulate becomes falsifiable precisely when projection, clock, and reconstruction are part of the model declaration.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and

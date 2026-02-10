@@ -62,6 +62,7 @@
 58. `C58` Completed.
 59. `C59` Completed.
 60. `C60` Completed.
+61. `C61` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -135,8 +136,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C61`: promote S34 as a short observability criterion note near D1.5h.
-2. `Q23`: quality pass on D1.5b-i after observability insertion.
+1. `Q23`: quality pass on D1.5b-i after observability insertion.
+2. `S35`: sketch a minimal data-inference pipeline for extracting \((\mathbf r,\mathbf v)\) in one concrete perturbed-orbit scenario.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

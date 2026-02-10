@@ -1188,3 +1188,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: projected areal-rate postulates are now sharply falsifiable when those three model choices are explicit.
 - Sources touched (keys + status changes): none.
 - Next: promote this criterion as a short remark after D1.5h.
+
+## 2026-02-10 (C61: promote observability criterion remark)
+- Focus: encode S34 operational criterion directly in the manuscript flow.
+- Work:
+  - Added `Remark D1.5i` to `papers/planck-area/main.md`.
+  - Included three-item declaration (projection \(\mathbf n\), clock convention, reconstruction map), projected observable formulas, and projected torque evolution:
+    \[
+    \frac{d}{dt}\big(\mathbf n\cdot\boldsymbol\ell\big)
+    =\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F).
+    \]
+- Result: D1.5 chain now states explicit conditions under which projected areal-rate postulates are empirically falsifiable.
+- Sources touched (keys + status changes): none.
+- Next: run `Q23` on D1.5b-i for coherence and readability.
