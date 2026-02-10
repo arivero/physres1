@@ -502,3 +502,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added a short subsection distinguishing \(\delta(f')\) (delta applied to a derivative constraint, localizing stationary points) from \(\delta'\) (derivative of the delta distribution, probing derivatives of test functions), and added a brief weak Euler\u2013Lagrange bridge noting how corners/impulses generate delta terms automatically.
 - Result: the delta-objects synthesis note now cleanly separates stationary-set deltas from derivative-of-delta probes, aligning the “delta for extremals” language with distribution theory.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q05: review delta-objects clarifier)
+- Focus: quick referee-style pass on `papers/delta-objects/main.md` after adding the \(\delta(f')\) vs \(\delta'\) distinction.
+- Findings: the clarifier works and the half-density spine remains intact; one minor precision tweak is queued for §3.4 (corners/jumps often yield \(\delta\)-type terms, while \(\delta'\) typically appears at higher distributional order).
+- Action queue:
+  - `C`: optional micro-edit in `papers/delta-objects/main.md` §3.4 to soften the \(\delta'\) claim (and optionally add a one-line pointer to `blackboards/2026-02-10-distribution-theory-for-extremals.md`).
+  - `S`: if needed, do an explicit toy corner/jump computation in a blackboard note.

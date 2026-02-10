@@ -63,12 +63,13 @@
 - `Q02` Completed.
 - `Q03` Completed.
 - `Q04` Completed.
+- `Q05` Completed.
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Optional `Q05`: quick referee-style pass on the delta-objects clarifier (and on any follow-up drafts touched next).
-2. Optional `C36`: micro-edit `papers/half-density-qft/main.md` wording (soften “precisely” and optionally add a one-line scalar-vs-half-density Green-function relation).
-3. Optional `C37`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
+1. `C36`: micro-edit `papers/half-density-qft/main.md` wording (soften “precisely” and optionally add a one-line scalar-vs-half-density Green-function relation).
+2. Optional `C37`: micro-edit `papers/delta-objects/main.md` §3.4 to soften the \(\delta'\) claim and optionally point to the distribution toolbox note.
+3. Optional `C38`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
 4. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
 
 Deprioritized unless blocking a revision:
