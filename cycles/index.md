@@ -145,11 +145,12 @@
 - `Q24` Completed.
 - `Q25` Completed.
 - `Q26` Completed.
+- `Q27` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q27`: quality pass on D1.5b-m after regime-calibration note.
-2. `S39`: start distribution-derivative study branch for action-variation kernels.
+1. `S39`: start distribution-derivative study branch for action-variation kernels.
+2. `C66`: promote one concise distribution-kernel result into a manuscript draft.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

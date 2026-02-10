@@ -1358,3 +1358,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: D1.5 uncertainty policy now has a reproducible regime-calibration handle without asserting universal thresholds.
 - Sources touched (keys + status changes): none.
 - Next: run `Q27` to check readability/scope after D1.5m.
+
+## 2026-02-10 (Q27: quality pass on D1.5b-m)
+- Focus: consistency and readability review after adding regime-calibration note D1.5m.
+- Checks:
+  - read-through of D1.5b-m progression;
+  - verified D1.5m remains diagnostic/reporting guidance and does not claim universality;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required; branch remains coherent.
+- Sources touched (keys + status changes): none.
+- Next: run `S39` on distribution-derivative variational kernels for a new manuscript promotion outside D1.5.
