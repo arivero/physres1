@@ -631,3 +631,20 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no correctness issues found; sign conventions for \(\delta'\) are consistent with \(\langle\delta',\varphi\rangle=-\varphi'(0)\); “toy model” framing is explicit.
 - Action queue: none (bibliography anchoring remains a separate, future `B` cycle when needed).
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S16: conformal half-density Laplacian; D=4 simplification)
+- Focus: compute \(\widetilde\Delta=|g|^{1/4}\Delta_g|g|^{-1/4}\) explicitly in a conformally flat metric \(g_{\mu\nu}=e^{2\sigma}\delta_{\mu\nu}\), and see whether any dimensions are singled out by simplifications.
+- Work: added `blackboards/2026-02-10-half-density-laplacian-conformal-metric.md` deriving
+  \[
+  \widetilde\Delta\psi
+  =e^{-2\sigma}\Big(
+  \partial^2\psi
+  -2\,\partial\sigma\cdot\partial\psi
+  -\frac{D}{2}(\partial^2\sigma)\psi
+  +\frac{D(4-D)}{4}(\partial\sigma)^2\psi
+  \Big),
+  \]
+  and highlighting that the \((\partial\sigma)^2\) coefficient cancels at \(D=4\) in this conformal ansatz.
+  The note records a SymPy coefficient/sign check in a reduced \(\sigma=\sigma(x)\) toy case (D=2,3,4,5) with zero difference.
+- Result: we have a concrete, derivation-first “special dimension” observation for half-density conjugation in a conformal background; it is queued as heuristic until given a coordinate-free interpretation.
+- Sources touched (keys + status changes): none.
