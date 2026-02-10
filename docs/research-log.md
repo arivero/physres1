@@ -1937,3 +1937,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - appended a one-sentence disclaimer in `paper/main.md` `Derivation D0.2` that vacuum-energy issues in QFT/GR are separate and not addressed.
 - Sources touched (keys + status changes): none.
 - Next: optional `C86` if we want an analogous concrete witness for \(G\) tied to the half-density area-scale ladder.
+
+## 2026-02-10 (C86: concrete \(G\) hook via the half-density scalarization scale in \(D=4\))
+- Focus: make the \(G\) part of the "constants as controls" slogan less abstract by tying it to the half-density scalarization scale question.
+- Work:
+  - extended `paper/main.md` `Heuristic H4.0a` with a concrete dimensional witness:
+    - in a spacetime integration setting of dimension \(D\), scalarization scale carries \(\text{length}^{D/2}\),
+    - in \(D=4\) this is an area, with \(\ell_P^2=\hbar G/c^3\) a natural universal candidate.
+- Result: the manuscript now names an explicit place where \(G\) enters as a scale-conversion constant in the refinement/scalarization story, while keeping the identification optional.
+- Sources touched (keys + status changes): none.
+- Next: optional `Q45` to referee-pass this block for claim hygiene; optional blackboard work on the "Planck areal speed" orbit question.

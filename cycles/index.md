@@ -87,6 +87,7 @@
 83. `C83` Completed.
 84. `C84` Completed.
 85. `C85` Completed.
+86. `C86` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -208,8 +209,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C86`: (optional) add an analogous concrete witness for \(G\) tied to the half-density scale-supplier ladder (likely promoted from `papers/planck-area/main.md`).
-2. `Q45`: (optional) referee-pass the \(G\) witness block for novelty and claim hygiene.
+1. `Q45`: (optional) referee-pass the \(G\) witness block for novelty and claim hygiene.
+2. `S60`: (optional) answer the "Planck areal speed" circular-orbit question as a blackboard witness (and decide whether to promote).
 3. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
 
 Deprioritized unless blocking a revision:
