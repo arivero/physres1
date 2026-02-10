@@ -521,3 +521,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: softened the corner/jump remark so it refers to delta kernels and their derivatives (\(\delta,\delta',\ldots\)) depending on distributional order, and added a pointer to `blackboards/2026-02-10-distribution-theory-for-extremals.md`.
 - Result: the synthesis note no longer suggests \(\delta'\) is the generic corner term, while preserving the “extremals are distributional” message.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S11: corners/impulses as explicit \u03b4 defects in weak Euler\u2013Lagrange)
+- Focus: one explicit toy computation showing how corners/jumps generate \(\delta\) terms in distributional Euler–Lagrange, and when \(\delta'\) can appear (higher distributional order).
+- Work: added `blackboards/2026-02-10-corners-and-impulses-weak-euler-lagrange.md` deriving:
+  - a corner (jump in \(\dot q\)) implies \(\ddot q\sim (v_+-v_-)\delta(t-t_\ast)\),
+  - for \(L=\frac{m}{2}\dot q^2\), extremality forces \(v_+=v_-\),
+  - a delta forcing in time produces a controlled jump \(m(v_+-v_-)=J\),
+  - \(\delta'\) arises for discontinuous \(q\) (or differentiated impulses / higher-derivative actions).
+- Result: we now have a concrete “worked corner” computation that can be cited if we later promote the corners/impulses thread beyond a remark.
+- Sources touched (keys + status changes): none.

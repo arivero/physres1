@@ -58,6 +58,7 @@
 - `S08` Completed.
 - `S09` Completed.
 - `S10` Completed.
+- `S11` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
