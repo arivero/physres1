@@ -130,6 +130,7 @@
 - `S43` Completed.
 - `S44` Completed.
 - `S45` Completed.
+- `S46` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -170,8 +171,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S46`: revisit "uncuttable" clarification and add a definition note (careful wording).
-2. `C73`: promote one definition note into an appropriate draft.
+1. `C73`: create a dependent note for "uncuttable = controlled refinement" and add a toy example.
+2. `Q35`: quality pass on the new dependent note (scope + wording).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

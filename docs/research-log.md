@@ -1587,3 +1587,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S46` on "uncuttable" clarification.
+
+## 2026-02-10 (S46: define "uncuttable" as controlled refinement)
+- Focus: correct the "uncuttable" misread by fixing project terminology.
+- Work:
+  - defined "uncuttable" as "not computable from a finite number of cuts without a controlled refinement/limit-comparison rule" (not indivisibility).
+  - tied this to the repo's refinement-compatibility thesis (limit control as extra structure).
+  - logged definition + promotion target in `blackboards/2026-02-10-uncuttable-as-controlled-refinement.md`.
+- Result: prepared a safe promotion target: a dependent note (`papers/uncuttable-controlled-refinement/main.md`) rather than adding historical terminology to `paper/main.md`.
+- Sources touched (keys + status changes): none.
