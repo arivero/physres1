@@ -1777,3 +1777,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the "only \(n=3\) yields linear Compton scaling" message is now explicit rather than implicit.
 - Sources touched (keys + status changes): none.
 - Next: run `S54` on formalizing the control map \(\tau\) and then promote minimally into `paper/main.md`.
+
+## 2026-02-10 (S54: explicit \(\tau\) control map from step-halving, with a fixed point)
+- Focus: make the "control map \(\tau_b\)" idea explicit with one clean refinement-comparison computation.
+- Work:
+  - wrote `paper/notes/control-map-tau-step-halving.md` deriving the induced map \(\tau_2(a)=a/2+1/4\) for a one-parameter one-step ODE ansatz under step-halving \(H(\Phi_h)=\Phi_{h/2}\circ\Phi_{h/2}\),
+  - identified the fixed point \(a_\ast=1/2\) as the second-order exact-flow value.
+- Result: prepared a `C80` promotion target for `paper/main.md` Section 8.4: add a short derivation block exhibiting \(\tau_2\) and its fixed point.
+- Sources touched (keys + status changes): none.
+- Next: run `C80` to promote the step-halving \(\tau\) witness into `paper/main.md` and record diffstat.

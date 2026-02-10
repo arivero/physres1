@@ -146,6 +146,7 @@
 - `S51` Completed.
 - `S52` Completed.
 - `S53` Completed.
+- `S54` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -191,7 +192,7 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S54`: control-map \(\tau\) formalization note (then `C80` promote minimally into `paper/main.md`).
+1. `C80`: promote the step-halving \(\tau\) witness into `paper/main.md` (Section 8.4) and record diffstat.
 2. `S55`: sketch a "why \(c\), why \(G\)" control-parameter view (separate from \(\hbar\)) for possible future promotion.
 
 Deprioritized unless blocking a revision:
