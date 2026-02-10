@@ -181,11 +181,12 @@
 - `Q35` Completed.
 - `Q36` Completed.
 - `Q37` Completed.
+- `Q38` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q38`: quality pass on the Introduction after the wording tighten (if applied).
-2. `S51`: revisit the "Newton-limit paradox" thread and decide whether to add a third crisp witness (divergent refinement -> RG) directly in the Introduction or keep it later.
+1. `S51`: revisit the "Newton-limit paradox" thread and decide whether to add a third crisp witness (divergent refinement -> RG) directly in the Introduction or keep it later.
+2. `C78`: if warranted, add a single divergence/RG witness clause to `Heuristic H0.2` item 3 without inflating the Introduction.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

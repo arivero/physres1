@@ -1714,3 +1714,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the ordering witness remains short while better matching the project’s half-density/compatibility framing.
 - Sources touched (keys + status changes): none.
 - Next: run `Q38` to quality-pass the Introduction after this wording tighten.
+
+## 2026-02-10 (Q38: quality pass on Introduction after wording tighten)
+- Focus: referee-style flow/claim hygiene check after adding the unitarity/half-density clause to the ordering witness.
+- Checks:
+  - verified the ordering-witness remains a short illustrative parenthetical and the unitarity clause is scoped to the toy case;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S51` to decide whether to add a similarly crisp divergence/RG witness line in the Introduction or keep it later.
