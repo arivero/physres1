@@ -58,6 +58,7 @@
 - `B01` Completed.
 - `B02` Completed.
 - `B03` Completed.
+- `B04` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -102,7 +103,6 @@
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
 1. Optional `S23`: decide whether “point interactions in the momentum along the path” deserves a separate note, distinct from point *potentials* (distributional Lagrangians / impulses).
-2. Optional `B04`: if we publish the \(\tau\) paragraph, add one standard (non-preprint) RG/coarse-graining anchor (OA-first).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

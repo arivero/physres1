@@ -796,3 +796,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Read-through of Section 6.1 (H4.0a/H4.0b) and Section 8.2–8.3 (D6.0–D6.2) for notation and “no overclaim” scope.
 - Findings: D6.0 reads as a closure requirement (not a theorem), uses \(\mathcal G_b\) to avoid collision with the RCP \(\mathcal C_t\) notation, and cleanly points back to the existing \(R_{\Lambda\to\mu}\) semigroup paragraph.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (B04: add an OA Wilsonian/ERG anchor for the coarse-graining semigroup framing)
+- Focus: add one standard (non-Rivero) RG reference to anchor the “coarse-graining flow/semigroup” viewpoint used in Section 8.2.
+- Work:
+  - Added `[Rosten2012ERG]` (Phys. Repts. 2012; arXiv:`1003.1366`; DOI `10.1016/j.physrep.2011.12.003`) to `paper/bibliography.md`.
+  - Ingested the arXiv PDF into `sources/1003-1366v4-d87db096.md` (untracked).
+  - Added a lightweight citation to `[Rosten2012ERG]` immediately after the RG semigroup statement in `paper/main.md` Section 8.2.
+- Result: the new \(\tau_b\) closure paragraph and the existing semigroup discussion are now anchored to a standard ERG review without changing the derivation-first structure of the manuscript.
+- Sources touched (keys + status changes): added `[Rosten2012ERG]`.

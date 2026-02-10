@@ -777,7 +777,7 @@ $$
 R_{\Lambda\to\mu} = R_{\kappa\to\mu}\circ R_{\Lambda\to\kappa}.
 $$
 
-This is the renormalization-group (RG) semigroup property in refinement language.
+This is the renormalization-group (RG) semigroup property in refinement language; for a standard Wilsonian/ERG discussion of coarse-graining flows and fixed points, see [Rosten2012ERG].
 
 `Derivation D6.0 (Control map \(\tau\): comparing refinements at fixed ruler).`
 The same compatibility condition can be stated without committing to a particular regulator. Let \(h>0\) be a resolution parameter (e.g. \(h\sim 1/\Lambda\) for a cutoff \(\Lambda\)), and let \(A_{h,\theta}\) denote a family of regulated amplitudes/prediction functionals indexed by parameters \(\theta\) (couplings, normalizations, and any fixed conventions such as scalarization gauge). Let \(\mathcal G_b\) be coarse-graining by factor \(b>1\): integrate out the degrees of freedom present at resolution \(h/b\) and re-express the result at resolution \(h\). Scale compatibility is the closure requirement that coarse-graining lands back in the same family after a parameter redefinition:
