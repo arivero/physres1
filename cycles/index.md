@@ -79,6 +79,7 @@
 - `Q05` Completed.
 - `Q06` Completed.
 - `Q07` Completed.
+- `Q08` Completed.
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.

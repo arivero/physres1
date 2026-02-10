@@ -622,3 +622,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Extended `papers/delta-objects/main.md` with an explicit point-splitting realization of \(\delta'\) and a pointer to `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
 - Result: the RG draft’s calculus micro-model now better matches the renormalization skeleton (divergence + subtraction + finite scheme fixing), and the delta-objects note now includes a concrete identity tying \(\delta'\) to a regulated limit.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q08: quality pass after S15/C44 promotions)
+- Focus: referee-style verification of the newly promoted “derivative as counterterm” micro-model and the \(\delta'\) point-splitting identity, plus a manuscript-policy guardrail scan.
+- Checks:
+  - `rg -n 'C[0-9]{2}' paper/main.md` (no matches).
+  - Read-through of `papers/rg-fundamental/main.md` Section 3 and `papers/delta-objects/main.md` Section 3.1b for sign/wording consistency.
+- Findings: no correctness issues found; sign conventions for \(\delta'\) are consistent with \(\langle\delta',\varphi\rangle=-\varphi'(0)\); “toy model” framing is explicit.
+- Action queue: none (bibliography anchoring remains a separate, future `B` cycle when needed).
+- Sources touched (keys + status changes): none.
