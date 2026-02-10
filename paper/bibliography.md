@@ -30,6 +30,8 @@ Use this file as a source ledger.
 16. `[Jackiw1991DeltaPotentials]` R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.
 17. `[VanVleck1928Correspondence]` J. H. Van Vleck, "The Correspondence Principle in the Statistical Interpretation of Quantum Mechanics," *Proceedings of the National Academy of Sciences of the United States of America* 14(2) (1928), 178–188. DOI `10.1073/pnas.14.2.178`.
 18. `[deGosson2018ShortTimePropagators]` Maurice A. de Gosson, "Short-Time Propagators and the Born–Jordan Quantization Rule," *Entropy* 20(11) (2018), 869. DOI `10.3390/e20110869`. OA: PMC7512447.
+19. `[Tanaka2021KernelQuadrature]` Ken’ichiro Tanaka, "Kernel quadrature by applying a point-wise gradient descent method to discrete energies," arXiv:`2102.10887` (v2, 23 Feb 2021). (Contains an explicit formula for the \(d\)-dimensional fundamental solution of the Laplacian on \(\mathbb R^d\), including the \(d=2\) logarithmic case.)
+20. `[Hossenfelder2013MinimalLength]` Sabine Hossenfelder, "Minimal Length Scale Scenarios for Quantum Gravity," *Living Reviews in Relativity* 16 (2013), 2. arXiv:`1203.6191` (v2, 30 Apr 2013). DOI `10.12942/lrr-2013-2`.
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -51,6 +53,8 @@ Use this file as a source ledger.
 17. `[Jackiw1991DeltaPotentials]`: no DOI pinned (report/proceedings); use report number `MIT-CTP-1937` as the stable anchor.
 18. `[VanVleck1928Correspondence]`: DOI `10.1073/pnas.14.2.178`.
 19. `[deGosson2018ShortTimePropagators]`: DOI `10.3390/e20110869`.
+20. `[Tanaka2021KernelQuadrature]`: arXiv primary anchor used (`2102.10887`).
+21. `[Hossenfelder2013MinimalLength]`: DOI `10.12942/lrr-2013-2`; arXiv primary anchor used (`1203.6191`).
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -71,6 +75,8 @@ Use this file as a source ledger.
 16. `[Jackiw1991DeltaPotentials]`: acquired via OA PDF mirror in `sources/jackiw-d3bfc358.md`.
 17. `[VanVleck1928Correspondence]`: acquired via PMC HTML record in `sources/pmc1085402-e8895437.md`.
 18. `[deGosson2018ShortTimePropagators]`: acquired via PMC HTML record in `sources/de-gosson-2018-a2bad87d.md` (PMCID `PMC7512447`).
+19. `[Tanaka2021KernelQuadrature]`: acquired via arXiv preprint in `sources/2102-10887v2-b370c928.md`.
+20. `[Hossenfelder2013MinimalLength]`: acquired via arXiv preprint in `sources/1203-6191v2-95175764.md`.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004). Local mirror file: `/usr/local/var/www/wordpress/research/0404086.pdf`.

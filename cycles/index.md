@@ -56,6 +56,7 @@
 - `B00` Completed.
 - `B01` Completed.
 - `B02` Completed.
+- `B03` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -96,10 +97,10 @@
 - `Q11` Completed.
 
 ## Next Action
-Priority: half-densities + dependent follow-up drafts.
-1. `C49`: promote S21 generic-\(q\) areal-speed remark into `papers/planck-area/main.md`.
-2. `B03`: independent anchors for (i) \(n\)-dimensional Poisson/Green-function scaling and (ii) minimal-length/GUP branch notes (OA-first; otherwise mark `PENDING`).
-3. `S22`: formalize the “control map \(\tau\)” refinement comparison story (9803035 thread) in our own derivation language, notes-first.
+Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
+1. `S22`: formalize the “control map \(\tau\)” refinement comparison story (9803035 thread) in our own derivation language, notes-first.
+2. `C50`: promote the minimal \(\tau\)-formalism into `paper/main.md` (or `paper/notes/` if not ready).
+3. `Q12`: quality pass focused on Sections 6–8 coherence (scalarization gauge, \(\tau\), RG compatibility).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

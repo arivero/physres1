@@ -764,3 +764,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: inserted `Remark D1.5a` into `papers/planck-area/main.md` immediately after `Derivation D1.5`, deriving \(4m\dot A^2=K r^{3-q}\) (and the \(q=3\) special case), showing that substituting \(\dot A=cL_P\) with \(L_P^2=G\hbar/c^3\) yields \(r=(4\hbar/(cM))^{1/(3-q)}\), hence linear reduced-Compton scaling only for \(q=2\); recorded the Newtonian dimension link \(q=n-1\) (with the \(n=2\) logarithmic exception).
 - Result: the inverse-square witness is now explicitly demarcated as an inverse-square feature, and its relation to \(D=4\) is split into two transparent steps: (i) long-range Newtonian fields in \(n=3\) spatial dimensions give \(q=2\), and (ii) the Planck-length identity \(L_P^2=G\hbar/c^3\) is a \(D=4\) input.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (B03: OA anchors for Laplacian Green scaling + minimal-length/GUP)
+- Focus: add independent, OA-stable anchors for two branches referenced in the Planck-area draft: (i) dimension dependence of Laplacian fundamental solutions (and the \(d=2\) logarithmic exception) and (ii) minimal-length/GUP scenarios as a comparison branch.
+- Work:
+  - Added `[Tanaka2021KernelQuadrature]` (arXiv:`2102.10887`) and `[Hossenfelder2013MinimalLength]` (Living Rev. Rel. 2013; arXiv:`1203.6191`) to `paper/bibliography.md`.
+  - Ingested both arXiv PDFs into `sources/` (untracked by policy) via `skills/source-to-markdown`.
+  - Updated `papers/planck-area/main.md`:
+    - cited `[Tanaka2021KernelQuadrature]` at the dimension-link sentence in `Remark D1.5a`,
+    - added an “Open problems” pointer to `[Hossenfelder2013MinimalLength]`.
+- Result: the \(q=n-1\) dimension link and the \(n=2\) log caveat now have an explicit OA anchor, and “minimal length” is tracked as a literature branch without being imported as a driver of the main argument.
+- Sources touched (keys + status changes): added `[Tanaka2021KernelQuadrature]`, `[Hossenfelder2013MinimalLength]`.

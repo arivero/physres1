@@ -472,7 +472,7 @@ If one imposes \(\dot A=cL_P\) and uses the \(D=4\) identity \(L_P^2=G\hbar/c^3\
 \[
 r=\left(\frac{4\hbar}{cM}\right)^{\frac{1}{3-q}}.
 \]
-Thus the Planck-areal-speed substitution produces *linear* reduced-Compton scaling \(r\propto \hbar/(cM)\) only for \(q=2\) (inverse-square). For Newtonian long-range fields in \(n\) spatial dimensions, the Laplacian Green function gives \(\Phi(r)\propto r^{2-n}\) (for \(n>2\)), so \(F\sim|\nabla\Phi|\propto r^{1-n}\), i.e. \(q=n-1\) (with the \(n=2\) logarithmic exception). In this sense the \(q=2\) special case corresponds to \(n=3\) spatial dimensions (spacetime \(D=4\)).
+Thus the Planck-areal-speed substitution produces *linear* reduced-Compton scaling \(r\propto \hbar/(cM)\) only for \(q=2\) (inverse-square). For Newtonian long-range fields in \(n\) spatial dimensions, the Laplacian Green function gives \(\Phi(r)\propto r^{2-n}\) (for \(n>2\)), so \(F\sim|\nabla\Phi|\propto r^{1-n}\), i.e. \(q=n-1\) (with the \(n=2\) logarithmic exception) [Tanaka2021KernelQuadrature]. In this sense the \(q=2\) special case corresponds to \(n=3\) spatial dimensions (spacetime \(D=4\)).
 
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
@@ -486,3 +486,4 @@ This draft adds a complementary ingredient: the kernel side is most naturally fo
 2. Show how the area scale enters stationary-phase prefactors and how this interacts with RG scaling.
 3. General-dimension analysis: clarify what replaces “area” in odd dimensions and whether a universal normalization is still defensible.
 4. Identify minimal hypotheses under which “need of half-density scale \(\Rightarrow\) Planck area” is more than dimensional bookkeeping.
+5. Track minimal-length/GUP scenarios as a comparison branch: do they implement the “needed scale” at the level of kinematics (modified commutators/dispersion) or can they be reframed as a refinement-compatibility condition? Use [Hossenfelder2013MinimalLength] as an OA entry point.
