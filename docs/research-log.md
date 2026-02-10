@@ -443,5 +443,5 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Added `[deGosson2018ShortTimePropagators]` (Entropy 2018; PMCID `PMC7512447`) to `paper/bibliography.md`.
   - Threaded the citation into `paper/main.md` at `Derivation D4.3`.
 - Result: `Derivation D4.3` is now supported by both an early Van Vleck tradition anchor and a modern explicit OA formula reference.
-- Sources touched (keys + status changes): added `[deGosson2018ShortTimePropagators]` (OA via PMC).
+- Sources touched (keys + status changes): added `[deGosson2018ShortTimePropagators]` (OA via PMC; captured in `sources/de-gosson-2018-a2bad87d.md`).
 - Next: optional tiny `C` pass to add a one-sentence pointer to `paper/notes/van-vleck-schur-complement.md` near D4.3 for referee-friendliness.

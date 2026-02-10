@@ -70,7 +70,7 @@ Use this file as a source ledger.
 15. `[TsutsuiFulopCheon2002Connection]`: acquired via arXiv preprint in `sources/0209110-d9d8cbab.md`.
 16. `[Jackiw1991DeltaPotentials]`: acquired via OA PDF mirror in `sources/jackiw-d3bfc358.md`.
 17. `[VanVleck1928Correspondence]`: acquired via PMC HTML record in `sources/pmc1085402-e8895437.md`.
-18. `[deGosson2018ShortTimePropagators]`: OA via PMC HTML record (PMCID `PMC7512447`).
+18. `[deGosson2018ShortTimePropagators]`: acquired via PMC HTML record in `sources/de-gosson-2018-a2bad87d.md` (PMCID `PMC7512447`).
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004). Local mirror file: `/usr/local/var/www/wordpress/research/0404086.pdf`.
