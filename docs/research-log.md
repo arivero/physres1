@@ -721,3 +721,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Fix: changed the S18 note to use pullback notation \((\Phi\times\Phi)^\ast\delta_{\mathrm{diag}}=\delta_{\mathrm{diag}}\) to avoid pushforward/pullback confusion.
 - Findings: no correctness issues; the Lie-derivative identity is properly framed as the intrinsic form of \(\partial_x\delta=-\partial_y\delta\), and the \(\delta'\) identity is signed via pairing.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S19: invariant conformal-rescaling formula for the half-density Laplacian)
+- Focus: strengthen the D=4 operator-simplicity filter (H2.6a) by removing the “flat base” restriction: derive the conformal-rescaling behavior of \(\widetilde\Delta_g:=|g|^{1/4}\Delta_g|g|^{-1/4}\) for \(g=e^{2\sigma}\bar g\).
+- Work: added `blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md`, deriving a coordinate-free formula in terms of \(\bar g\) and \(\sigma\) and making explicit that the \(|\nabla\sigma|^2\) coefficient is universally \(D(4-D)/4\).
+- Result: the \(|\nabla\sigma|^2\) cancellation at \(D=4\) is robust within the conformal class for any base metric \(\bar g\); this gives a cleaner invariant phrasing of the operator-simplicity filter while keeping it explicitly distinct from the H2.5 scale sieve.
+- Sources touched (keys + status changes): none.
