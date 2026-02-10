@@ -1309,3 +1309,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: in mild regimes, first-order propagation is accurate; motivates a concise manuscript caveat to run nonlinear checks in stronger-nonlinearity cases.
 - Sources touched (keys + status changes): none.
 - Next: promote one-sentence nonlinear-validation caveat near D1.5k.
+
+## 2026-02-10 (C64: promote nonlinear-validation trigger note)
+- Focus: add practical escalation guidance for uncertainty treatment.
+- Work:
+  - Added `Remark D1.5l` in `papers/planck-area/main.md` stating a pragmatic trigger: if pilot nonlinear-vs-linear discrepancy reaches a few-percent scale, escalate to nonlinear uncertainty propagation for reporting.
+- Result: uncertainty section now has an actionable guardrail connecting S37 numerical check style to manuscript practice.
+- Sources touched (keys + status changes): none.
+- Next: run `Q26` on D1.5b-l for coherence and wording discipline.

@@ -646,6 +646,9 @@ for reconstructed state vector \(x\) and covariance \(\Sigma_x\), and
 \]
 for residual \(\mathcal T_{\mathbf n}\) with augmented state \(z\). This linear scaffold is a baseline; in strongly nonlinear regimes the same quantities should be cross-checked with nonlinear propagation (e.g. Monte Carlo) before interpretation.
 
+`Remark D1.5l (Practical nonlinear-validation trigger).`
+A lightweight policy is to run a pilot nonlinear propagation check and compare against the linear \(\sigma\) estimate; if the discrepancy is at the few-percent level (or larger), treat linearized errors as insufficient and switch to nonlinear uncertainty propagation for reporting.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
