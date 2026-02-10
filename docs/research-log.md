@@ -811,3 +811,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added `blackboards/2026-02-10-momentum-point-interactions-along-path.md`, deriving the momentum jump condition produced by a delta-in-time action defect \(-U(q)\delta(t-t_0)\) and recording a short time-slicing “kick factor” dictionary; added a cautionary note about \(\delta'\)-type defects as distributional (pairing-defined) objects.
 - Result: we now have a restart-stable note that separates spatial contact potentials from trajectory-level impulse defects, aligning the delta thread with the “stationary extremes + composition” spine.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S24: SR central-force circular-orbit constraints)
+- Focus: re-derive the special-relativistic circular-orbit constraints under a power-law central force \(F=K/r^q\), emphasizing the inverse-square (\(q=2\)) special simplification present in the conversation backlog.
+- Work: added `blackboards/2026-02-10-sr-central-force-circular-orbits.md`, using the perpendicular-acceleration identity \(F=\gamma m v^2/r\) and angular momentum \(L=\gamma m r v\) to derive the SR circular-orbit condition \(L^2=K\gamma m r^{3-q}\). Specialized to \(q=2\) to obtain the exact identity \(v=K/L\) and the admissibility bound \(L>K/c\), plus the radius formula \(r=\frac{L^2}{Km}\sqrt{1-\frac{K^2}{c^2L^2}}\) with its Newtonian limit \(c\to\infty\).
+- Result: the “inverse-square is special” claim is now derivation-first and restart-stable, ready for a later follow-up draft if desired.
+- Sources touched (keys + status changes): none.
