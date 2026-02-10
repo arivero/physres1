@@ -1160,3 +1160,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: manuscript now states explicitly that in non-planar perturbations the scalar postulate requires a chosen projection/normal.
 - Sources touched (keys + status changes): none.
 - Next: run `Q22` on D1.5b-h for coherence and readability.
+
+## 2026-02-10 (Q22: quality pass on D1.5b-h)
+- Focus: consistency check after adding non-planar caution D1.5h.
+- Checks:
+  - read-through of D1.5b-h progression;
+  - verified D1.5h remains cautionary and projection-explicit;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; sequence remains coherent and scoped.
+- Sources touched (keys + status changes): none.

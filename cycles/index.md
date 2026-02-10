@@ -130,11 +130,12 @@
 - `Q19` Completed.
 - `Q20` Completed.
 - `Q21` Completed.
+- `Q22` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q22`: quality pass on D1.5b-h after the non-planar caveat.
-2. `S34`: test whether projected areal-rate postulates can be tied to measurable observables in perturbed-orbit settings.
+1. `S34`: test whether projected areal-rate postulates can be tied to measurable observables in perturbed-orbit settings.
+2. `C61`: if S34 yields a clean criterion, promote as a short observability note near D1.5h.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
