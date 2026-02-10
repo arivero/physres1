@@ -328,3 +328,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the H2.5 branch structure is now explicit enough that readers can see exactly where \(D=4\) enters (gravity-only sieve) versus where it does not (fractional powers / transmutation).
 - Sources touched (keys + status changes): none.
 - Next: per cadence, follow with one `B` cycle (bibliography search/ingest) when network is available to find a modern OA semiclassical-prefactor reference; otherwise proceed with local-only `S` tasks.
+
+## 2026-02-10 (S04: delta convention map)
+- Focus: pin the 2D/3D delta-contact loop integrals and scheme constants in *our* conventions (to preempt factor objections).
+- Question: do the \(I_d(E;\Lambda)\) asymptotics and imaginary parts match the formulas used in `papers/rg-fundamental/main.md` / `paper/main.md`, and how does the \(2e^{-\gamma}\) constant map to finite-subtraction scheme dependence?
+- Work: wrote `blackboards/2026-02-10-delta-convention-map.md` with explicit cutoff integrals, SymPy checks (commands + outputs), and the scheme-constant ↔ transmutation-scale rescaling map.
+- Result: the 2D/3D loop formulas match once the \(1/(2\pi)^d\) measures and log-branch choice are fixed; scheme dependence is cleanly a rescaling of \(\kappa_\ast\) (hence of the boundary-length \(R\)).
+- Sources touched (keys + status changes): none (study only).
+- Next: per cadence, return to `C` to optionally promote a short “convention map” paragraph into `papers/rg-fundamental/main.md` (or keep it blackboard-only until the Cristina 2D-delta reference is ingested).
