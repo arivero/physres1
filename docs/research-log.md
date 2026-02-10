@@ -1033,3 +1033,17 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: strengthens S29 interpretation: covariance is retained with explicit \(U^\mu\), but a completely frame-free scalar encoding of the needed branch parameter is not obtained in this setup.
 - Sources touched (keys + status changes): none.
 - Next: promote this as a short cautionary outlook remark after D1.5d.
+
+## 2026-02-10 (C57: promote bivector-invariant limitation remark)
+- Focus: close the frame-free loophole in manuscript prose with a compact technical guardrail.
+- Work:
+  - Added `Remark D1.5e` to `papers/planck-area/main.md` with:
+    \[
+    I_1=\frac12 M_{\mu\nu}M^{\mu\nu},\quad
+    I_2=\frac12 M_{\mu\nu}{}^\star M^{\mu\nu}
+    \]
+    for \(M^{\mu\nu}=R^\mu p^\nu-R^\nu p^\mu\), and circular-branch reduction \(I_1=-m^2c^2r^2\), \(I_2=0\) (planar).
+  - Stated the limited conclusion: these simple frame-free invariants do not encode the areal-rate branch parameter in this setup.
+- Result: D1.5 sequence now explicitly distinguishes what covariant structure is sufficient (S29/D1.5d) and what is insufficient (D1.5e), reducing overinterpretation risk.
+- Sources touched (keys + status changes): none.
+- Next: run `Q19` to verify readability and claim discipline across D1.5b-D1.5e.

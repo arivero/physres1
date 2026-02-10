@@ -544,6 +544,23 @@ r(M,\ell)=\frac{\ell^2}{GM}\sqrt{1-\left(\frac{GM}{\ell c}\right)^2},
 \]
 and \(\ell=2cL_P\) reproduces D1.5c. This does not yet prove universality, but it provides a structurally covariant way to encode the postulate without choosing a clock variable directly.
 
+`Remark D1.5e (Why simple frame-free bivector invariants are insufficient here).`
+One might try to avoid the source-velocity projection entirely and use only Lorentz invariants of
+\[
+M^{\mu\nu}=R^\mu p^\nu-R^\nu p^\mu,
+\]
+namely
+\[
+I_1=\frac12 M_{\mu\nu}M^{\mu\nu}=R^2p^2-(R\cdot p)^2,
+\qquad
+I_2=\frac12 M_{\mu\nu}{}^\star M^{\mu\nu}.
+\]
+But for the circular central branch (\(R\cdot p=0\), \(R^2=r^2\), \(p^2=-m^2c^2\)), this gives
+\[
+I_1=-m^2c^2r^2,
+\]
+independent of orbital speed, while \(I_2\) vanishes in the planar case. So these simple frame-free invariants do not encode the areal-rate branch parameter. In this setup, a timelike direction (e.g. source \(U^\mu\)) appears to be minimal extra structure for a useful covariant postulate.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and

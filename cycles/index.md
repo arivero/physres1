@@ -58,6 +58,7 @@
 54. `C54` Completed.
 55. `C55` Completed.
 56. `C56` Completed.
+57. `C57` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -123,8 +124,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C57`: promote S30 as a compact “simple bivector invariants are insufficient” outlook remark.
-2. `Q19`: quality pass on the full D1.5b-D1.5d plus covariant-outlook block.
+1. `Q19`: quality pass on the full D1.5b-D1.5e block.
+2. `S31`: map what minimal timelike structure is acceptable in a background-light formulation (source worldline vs observer field).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
