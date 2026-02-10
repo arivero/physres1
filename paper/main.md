@@ -530,6 +530,7 @@ so the convolution closes on the same family with
 A(t+s)=A(t)A(s)\left(\frac{ts}{t+s}\right)^{d/2}\times(\text{phase}).
 \]
 The unique solution (up to an overall constant phase) is \(A(t)\propto t^{-d/2}\). Thus the exponent \(d/2\) is forced by semigroup composition: it is the half-density “square-root Jacobian” needed for refinement-stable kernel composition.
+Imposing the delta initial condition as \(t\to0^+\) fixes the remaining normalization constant and forces \(\hbar\) into the prefactor (in standard flat-space scalar conventions, \(A(t)=(m/2\pi i\hbar t)^{d/2}\) up to phase).
 
 ### 6.2 From Additive Action to Multiplicative Weights
 The Section 4/Section 5 structure gives an additive discrete action:

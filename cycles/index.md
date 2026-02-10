@@ -43,6 +43,7 @@
 39. `C38` Completed.
 40. `C39` Completed.
 41. `C40` Completed.
+42. `C42` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.

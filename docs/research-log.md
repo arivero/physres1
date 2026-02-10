@@ -588,3 +588,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - the short-time kernel normalization showing \(\hbar\) enters the prefactor once delta initial condition and composition are imposed.
 - Result: we have a compact support note aligning the repo’s “stationary extremes + refinement compatibility” narrative with the unavoidable appearance of an action-scale constant in quantization.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C42: promote \u03b7-prefactor point into main paper)
+- Focus: integrate the S14 “\(\hbar\) enters the prefactor via delta normalization” point into the cornerstone manuscript with minimal prose.
+- Work: added one sentence after `Derivation D4.1a` in `paper/main.md` noting that the delta initial condition fixes the remaining normalization constant and forces \(\hbar\) into the prefactor (standard scalar constant given parenthetically).
+- Result: the kernel-composition normalization story now makes explicit that \(\hbar\) is required not only for a dimensionless phase but also for delta-normalized composition.
+- Sources touched (keys + status changes): none.
