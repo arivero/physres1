@@ -1527,3 +1527,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S44` on timelike Schwarzschild circular stability / ISCO.
+
+## 2026-02-10 (S44: Schwarzschild timelike circular orbits and ISCO)
+- Focus: close the open GR baseline item in `papers/relativistic-central-orbits/main.md` by deriving the timelike circular stability threshold.
+- Work:
+  - derived circular branch:
+    \[
+    L^2=\frac{Mr^2}{r-3M},\qquad
+    E^2=\frac{(r-2M)^2}{r(r-3M)}.
+    \]
+  - derived stability condition \(V_{\rm eff}''(r)>0\Rightarrow r>6M\) and ISCO \(r_{\rm ISCO}=6M\).
+  - recorded derivation + ISCO invariants in `blackboards/2026-02-10-schwarzschild-timelike-circular-orbits-isco.md`.
+- Result: prepared a clean `C71` promotion target: add a `4.3 Timelike circular orbits and ISCO` subsection.
+- Sources touched (keys + status changes): none.

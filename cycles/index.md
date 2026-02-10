@@ -126,6 +126,7 @@
 - `S41` Completed.
 - `S42` Completed.
 - `S43` Completed.
+- `S44` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -164,8 +165,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S44`: return to GR extension (timelike circular stability / ISCO) as next missing theme.
-2. `C71`: promote one concise ISCO derivation block in `papers/relativistic-central-orbits/main.md`.
+1. `C71`: promote one concise ISCO derivation block in `papers/relativistic-central-orbits/main.md`.
+2. `Q33`: quality pass on the ISCO insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
