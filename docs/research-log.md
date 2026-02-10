@@ -758,3 +758,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the “Planck areal speed \(\Rightarrow\) Compton radius” cancellation is cleanly identified as an inverse-square (\(q=2\)) feature; the note also records the Newtonian dimension link \(q=n-1\) from Laplacian Green-function scaling (with the \(n=2\) log-potential caveat).
 - Sources touched (keys + status changes): none.
 - Next: `C` promote a compact generic-\(q\) remark into `papers/planck-area/main.md` after `Derivation D1.5`, and open a `B` cycle for independent anchors on the \(n\)-dimensional Poisson/Green scaling and on minimal-length/GUP literature if we want that branch.
+
+## 2026-02-10 (C49: promote generic-\(q\) areal-speed remark into planck-area draft)
+- Focus: make the Planck-areal-speed witness precise by stating what changes for a generic power-law force \(F=K/r^q\) and how \(q\) ties to spatial dimension for Newtonian long-range fields.
+- Work: inserted `Remark D1.5a` into `papers/planck-area/main.md` immediately after `Derivation D1.5`, deriving \(4m\dot A^2=K r^{3-q}\) (and the \(q=3\) special case), showing that substituting \(\dot A=cL_P\) with \(L_P^2=G\hbar/c^3\) yields \(r=(4\hbar/(cM))^{1/(3-q)}\), hence linear reduced-Compton scaling only for \(q=2\); recorded the Newtonian dimension link \(q=n-1\) (with the \(n=2\) logarithmic exception).
+- Result: the inverse-square witness is now explicitly demarcated as an inverse-square feature, and its relation to \(D=4\) is split into two transparent steps: (i) long-range Newtonian fields in \(n=3\) spatial dimensions give \(q=2\), and (ii) the Planck-length identity \(L_P^2=G\hbar/c^3\) is a \(D=4\) input.
+- Sources touched (keys + status changes): none.

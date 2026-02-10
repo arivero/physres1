@@ -453,6 +453,27 @@ $$
 
 Thus \(r\) becomes a multiple of the reduced Compton length \(L_M=\hbar/(cM)\), with Newton’s constant canceled out. In particular, \(k=\tfrac12\) gives \(r=L_M\). This is the “Planck area per Planck time \(\Rightarrow\) Compton scale” cancellation highlighted in [RiveroAreal] and summarized in [RiveroSimple].
 
+`Remark D1.5a (Generic \(F=K/r^q\): only \(q=2\) yields linear Compton scaling; \(q\) links to dimension).`
+For a power-law central force \(F(r)=K/r^q\) with \(K>0\), circular balance gives \(m v^2/r=K/r^q\), i.e. \(m v^2=K r^{1-q}\). Using the circular areal speed \(\dot A=\tfrac12 r v\) (so \(v=2\dot A/r\)) yields
+\[
+4m\dot A^2 = K\,r^{3-q}.
+\]
+Hence, for \(q\neq 3\),
+\[
+r=\left(\frac{4m\dot A^2}{K}\right)^{\frac{1}{3-q}},
+\]
+while for \(q=3\) the radius drops out and \(4m\dot A^2=K\).
+
+In the gravitational specialization \(K=GMm\), the test mass cancels as before and
+\[
+r=\left(\frac{4\dot A^2}{GM}\right)^{\frac{1}{3-q}}.
+\]
+If one imposes \(\dot A=cL_P\) and uses the \(D=4\) identity \(L_P^2=G\hbar/c^3\), then
+\[
+r=\left(\frac{4\hbar}{cM}\right)^{\frac{1}{3-q}}.
+\]
+Thus the Planck-areal-speed substitution produces *linear* reduced-Compton scaling \(r\propto \hbar/(cM)\) only for \(q=2\) (inverse-square). For Newtonian long-range fields in \(n\) spatial dimensions, the Laplacian Green function gives \(\Phi(r)\propto r^{2-n}\) (for \(n>2\)), so \(F\sim|\nabla\Phi|\propto r^{1-n}\), i.e. \(q=n-1\) (with the \(n=2\) logarithmic exception). In this sense the \(q=2\) special case corresponds to \(n=3\) spatial dimensions (spacetime \(D=4\)).
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
