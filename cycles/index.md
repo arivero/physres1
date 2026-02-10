@@ -178,11 +178,12 @@
 - `Q34` Completed.
 - `Q35` Completed.
 - `Q36` Completed.
+- `Q37` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q37`: quality pass on the Introduction after the promotion (flow + tone).
-2. `S50`: study whether the \(H=pq\) witness has a cleaner "control-map equivalence" phrasing (similarity transforms vs genuinely different physics).
+1. `S50`: study whether the \(H=pq\) witness has a cleaner "control-map equivalence" phrasing (similarity transforms vs genuinely different physics).
+2. `C77`: if warranted, tighten the `Heuristic H0.2` item-2 wording to match "control map / equivalence class" language.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

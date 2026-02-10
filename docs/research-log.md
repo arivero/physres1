@@ -1688,3 +1688,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the Introduction now has concrete examples for both non-existence (measure obstruction) and non-uniqueness (ordering ambiguity).
 - Sources touched (keys + status changes): none.
 - Next: run `Q37` to quality-pass the Introduction after this addition (flow + tone).
+
+## 2026-02-10 (Q37: quality pass on Introduction after ordering-witness promotion)
+- Focus: referee-style flow/claim hygiene check after adding the ordering ambiguity witness.
+- Checks:
+  - verified the ordering-witness remains a short illustrative parenthetical (not an overclaim);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S50` to see whether the ordering ambiguity can be phrased more directly as a "control map / equivalence class" statement, matching the manuscript’s language.
