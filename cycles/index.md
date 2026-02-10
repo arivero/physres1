@@ -53,6 +53,7 @@
 49. `C49` Completed.
 50. `C50` Completed.
 51. `C51` Completed.
+52. `C52` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -107,8 +108,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C52`: promote S25 into `papers/relativistic-central-orbits/main.md` as the GR baseline chapter.
-2. `Q13`: quality pass on the new relativistic-central-orbits draft (scope, notation, and claims).
+1. `Q13`: quality pass on the new relativistic-central-orbits draft (scope, notation, and claims).
+2. Optional `S26`: SR stability for circular orbits (small radial perturbations) as the next wave.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

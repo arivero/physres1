@@ -3,7 +3,7 @@
 ## Abstract
 Central-force motion is a clean domain where “refinement” arguments can be made explicit: Newton’s polygonal limit gives exact finite-step invariants, while relativistic kinematics introduces new admissibility constraints even before general relativity is invoked. This dependent note records one such constraint in special relativity for inverse-square forces: circular orbits obey \(v=K/L\) and therefore require \(L>K/c\). The goal is not to replace standard treatments, but to keep a minimal derivation-first record of what changes when the same geometric refinement story is pushed into relativistic regimes.
 
-Status: working draft (derivations first; stability/GR extensions deferred).
+Status: working draft (derivations first; stability extensions still deferred).
 
 ## 1. Purpose and Relation to the Cornerstone Paper
 The cornerstone manuscript (`paper/main.md`) uses central-force refinement as a structural bridge (equal areas / angular momentum preservation \(\leftrightarrow\) action additivity \(\leftrightarrow\) composition).
@@ -65,8 +65,48 @@ r=\frac{L^2}{Km}\sqrt{1-\frac{K^2}{c^2L^2}}
 
 This bound and the circular-solution branch appear in standard treatments of the relativistic Kepler problem (see e.g. [BoscagginDambrosioFeltrin2020RelKepler] for a dynamical-systems/variational analysis of the same SR equation).
 
-## 4. Next Waves (Not Yet Done)
-1. Add a stability analysis (small radial perturbations) in SR for \(F=K/r^q\).
-2. Add a GR chapter (Schwarzschild baseline): conserved \(E,L\) from Killing fields, effective potential, circular-orbit conditions, and photon sphere (baseline anchor: [Carroll1997LectureGR]).
-3. Decide whether any of these relativistic constraints should be cited in the cornerstone paper as an “outlook” sentence (likely not; keep the cornerstone paper tight).
+## 4. GR Baseline: Schwarzschild Geodesics, Effective Potential, Photon Sphere
+This section records the standard Schwarzschild baseline in a form parallel to the SR “effective 1D radial motion” viewpoint.
 
+Conventions: set \(G=c=1\). Then the Schwarzschild metric is
+\[
+ds^2 = -\left(1-\frac{2M}{r}\right)dt^2 + \left(1-\frac{2M}{r}\right)^{-1}dr^2 + r^2(d\theta^2+\sin^2\theta\,d\phi^2),
+\]
+with horizon at \(r=2M\).
+Restrict to the equatorial plane \(\theta=\pi/2\).
+
+Using an affine parameter \(\lambda\), define \(\epsilon=1\) (timelike, \(\lambda=\tau\)) and \(\epsilon=0\) (null). Energy and angular momentum from the Killing fields \(\partial_t,\partial_\phi\) are
+\[
+E=\left(1-\frac{2M}{r}\right)\dot t,\qquad L=r^2\dot\phi,
+\]
+so \(\dot t=E/(1-2M/r)\), \(\dot\phi=L/r^2\).
+
+The normalization condition \(g_{\mu\nu}\dot x^\mu\dot x^\nu=-\epsilon\) yields the radial equation
+\[
+\dot r^2 = E^2 - \left(1-\frac{2M}{r}\right)\left(\epsilon+\frac{L^2}{r^2}\right),
+\]
+i.e. \(\dot r^2 + V_{\mathrm{eff}}(r)=E^2\) with
+\[
+V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\left(\epsilon+\frac{L^2}{r^2}\right).
+\]
+
+### 4.1 Null circular orbit (photon sphere)
+For null geodesics \(\epsilon=0\),
+\[
+V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\frac{L^2}{r^2}.
+\]
+Circular null orbits satisfy \(\dot r=0\) and \(dV_{\mathrm{eff}}/dr=0\), which gives the photon-sphere radius
+\[
+\boxed{\,r_{\mathrm{ph}}=3M\,}.
+\]
+The impact parameter \(b=L/E\) obeys \(b^2=r^2/(1-2M/r)\), so at \(r=3M\) one has \(b=3\sqrt3\,M\).
+
+Baseline anchor for these standard results: [Carroll1997LectureGR].
+
+### 4.2 Restoring units
+Replace \(M\) by \(GM/c^2\): \(r_{\mathrm{ph}}=3GM/c^2\), \(r_h=2GM/c^2\), and \(b=3\sqrt3\,GM/c^2\).
+
+## 5. Next Waves (Not Yet Done)
+1. Add a stability analysis (small radial perturbations) in SR for \(F=K/r^q\).
+2. Add timelike circular-orbit stability in Schwarzschild (ISCO at \(r=6M\)) and relate it to the effective potential.
+3. Decide whether any of these relativistic constraints should be cited in the cornerstone paper as an “outlook” sentence (likely not; keep the cornerstone paper tight).

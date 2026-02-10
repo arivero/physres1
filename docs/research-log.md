@@ -840,3 +840,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added `blackboards/2026-02-10-schwarzschild-geodesics-effective-potential.md`, deriving conserved \(E,L\), the radial equation \(\dot r^2=E^2-(1-2M/r)(\epsilon+L^2/r^2)\), and the null circular orbit (photon sphere) radius \(r_{\mathrm{ph}}=3M\) (with impact parameter \(b=3\sqrt3\,M\) in \(G=c=1\) units).
 - Result: the GR baseline is now derivation-first and ready for promotion into `papers/relativistic-central-orbits/main.md` as the next content wave.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C52: add Schwarzschild baseline chapter to relativistic-central-orbits draft)
+- Focus: extend the dependent relativistic-orbit draft with the minimal GR baseline (Schwarzschild effective potential + photon sphere).
+- Work: updated `papers/relativistic-central-orbits/main.md` by adding a GR section deriving conserved \(E,L\), the radial equation \(\dot r^2=E^2-(1-2M/r)(\epsilon+L^2/r^2)\), and recording the photon-sphere result \(r_{\mathrm{ph}}=3M\) with \(b=3\sqrt3\,M\). The section cites `[Carroll1997LectureGR]` as a baseline OA anchor.
+- Result: the relativistic-central-orbits draft now has two concrete pillars (SR inverse-square bound + GR photon-sphere baseline) and can be expanded in future waves (stability, timelike orbits).
+- Sources touched (keys + status changes): none.
