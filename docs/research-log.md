@@ -1723,3 +1723,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S51` to decide whether to add a similarly crisp divergence/RG witness line in the Introduction or keep it later.
+
+## 2026-02-10 (S51: choose a divergence/RG witness line for the Introduction)
+- Focus: decide whether `Heuristic H0.2` item 3 ("Divergence") should get a one-line concrete witness in the Introduction.
+- Work:
+  - compared a specific 2D contact/RG witness against a universal toy calculus witness;
+  - selected the toy calculus witness ("derivative as counterterm subtraction") as the least distracting Introduction-level example.
+- Result: prepared exact `C78` wording: add a short "(Toy witness ...)" parenthetical to H0.2 item 3.
+- Sources touched (keys + status changes): none.
+- Next: run `C78` to apply the wording change and record diffstat.
