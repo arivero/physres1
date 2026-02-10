@@ -411,3 +411,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the manuscript now makes explicit (in the finite-dimensional sanity-check setting) why “amplitudes are half-densities; probabilities are densities” is the natural scaling pattern behind the square-root Jacobian exponent.
 - Sources touched (keys + status changes): none.
 - Next: policy check + commit; then either attempt `B02` again if DNS recovers, or run an `S` cycle on the multi-dimensional \(\delta(\nabla f)\) / Van Vleck determinant link.
+
+## 2026-02-10 (S08: \u03b4(\u2207f) determinant weights and Van Vleck structure)
+- Focus: extend the \(\delta(f')\) critical-set identity to \(n\) dimensions and clarify how its determinant weights mirror the semiclassical Van Vleck prefactor.
+- Question: what is the precise multi-dimensional form of \(\delta(\nabla f)\), and why does stationary phase produce the square-root of the same determinant?
+- Work: wrote `blackboards/2026-02-10-delta-gradient-and-van-vleck.md` recording the vector identity \(\delta^{(n)}(F)=\sum \delta^{(n)}(x-x_i)/|\det DF|\), specializing to \(F=\nabla f\) (Hessian determinant), and noting the stationary-phase amplitude weights \(1/\sqrt{|\det \mathrm{Hess}\,f|}\); also sketched (structurally) how mixed Hessians like Van Vleck’s arise after eliminating intermediate variables (Schur complements/Jacobi fields).
+- Result: we now have a clean determinant-level bridge between “delta on stationary conditions” and the semiclassical prefactor, in a form that can be promoted into a short `paper/notes/` lemma or a one-sentence clarifier near D4.3 if desired.
+- Sources touched (keys + status changes): none (study only).
+- Next: decide whether to promote a one-sentence clarifier into `paper/main.md` near D4.3, or keep this determinant story in `paper/notes/` until `B02` is unblocked.
