@@ -727,3 +727,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added `blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md`, deriving a coordinate-free formula in terms of \(\bar g\) and \(\sigma\) and making explicit that the \(|\nabla\sigma|^2\) coefficient is universally \(D(4-D)/4\).
 - Result: the \(|\nabla\sigma|^2\) cancellation at \(D=4\) is robust within the conformal class for any base metric \(\bar g\); this gives a cleaner invariant phrasing of the operator-simplicity filter while keeping it explicitly distinct from the H2.5 scale sieve.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C48: promote invariant D=4 operator-simplicity filter into cornerstone paper)
+- Focus: add a short, clearly scoped sidebar to the cornerstone manuscript recording the conformal operator-simplicity D=4 filter, distinct from the Planck-area scale sieve.
+- Work: added `Heuristic H4.0b` to `paper/main.md` near the scalarization-gauge discussion (H4.0a), stating that the half-density conjugated Laplacian \(\widetilde\Delta_g=|g|^{1/4}\Delta_g|g|^{-1/4}\) acquires a \(|\nabla\sigma|^2\) term with coefficient \(D(4-D)/4\) under conformal rescaling \(g=e^{2\sigma}\bar g\), hence cancels at \(D=4\) (within the conformal class). The sidebar links to `papers/half-density-qft/main.md` and `blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md` for the invariant derivation and details.
+- Result: the main paper now tracks, briefly, a second orthogonal appearance of \(D=4\) as an operator-simplicity filter under scalarization choices, while keeping the scale-sieve story in the dependent Planck-area draft.
+- Sources touched (keys + status changes): none.

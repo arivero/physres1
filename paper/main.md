@@ -494,6 +494,13 @@ is a density in \(q\), so \(\int_M K_{t_f-t}(q_f,q)K_{t-t_i}(q,q_i)\) is coordin
 Writing a half-density kernel as an ordinary scalar function with an explicit “\(dq\)” implicitly chooses a reference density \(\rho_\ast\) on \(M\) (equivalently a reference half-density \(\sigma_\ast=\rho_\ast^{1/2}\)). Different choices are related by pointwise multiplication and give unitarily equivalent scalar representations. If one additionally demands scalar amplitudes be dimensionless, then \(\sigma_\ast\) must carry the full \(\text{length}^{d/2}\) weight, so a universal choice of \(\sigma_\ast\) is equivalent to choosing a universal \(\text{length}^{d/2}\) scale.
 The dependent note `papers/planck-area/main.md` explores the further (optional) hypothesis that such a scale is fixed by universal couplings and, in \(D=4\), is naturally an area scale; that identification is not required for the present paper’s structural chain.
 
+`Heuristic H4.0b (Independent \(D=4\) filter: operator simplicity under conformal scalarization changes).`
+The “scale supplier” question above is distinct from a different way \(D=4\) can appear once one insists on scalar representatives: simplicity of how *kinetic operators* depend on scalarization choices. In a covariant/QFT setting (spacetime dimension \(D\)), the scalar Laplacian \(\Delta_g\) induces an operator on half-densities by conjugation,
+\[
+\widetilde\Delta_g := |g|^{1/4}\Delta_g|g|^{-1/4}.
+\]
+Under a conformal rescaling \(g=e^{2\sigma}\bar g\), the half-density conjugation produces a quadratic-gradient term \(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\), hence it cancels at \(D=4\) (within the conformal class). This is an operator-simplicity filter (scale-neutral) and is independent of the coupling-dimension sieve in `papers/planck-area/main.md`; for details and an invariant derivation see `papers/half-density-qft/main.md` and `blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md`.
+
 `Derivation D4.1 (Time slicing from repeated composition).`
 Iterating the composition law over a partition \(t_i=t_0<\cdots<t_N=t_f\) gives
 
