@@ -1810,3 +1810,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the Introduction now includes a compact foundations-level answer for why \(\hbar\), \(c\), and \(G\) appear in a refinement-based construction, without claiming derivability from logic alone.
 - Sources touched (keys + status changes): none.
 - Next: run `Q40` to quality-pass the Introduction for bloat/claim hygiene after this addition.
+
+## 2026-02-10 (Q40: quality pass on Introduction after adding `Heuristic H0.3`)
+- Focus: referee-style check for bloat and overclaims after adding the constants-as-controls heuristic.
+- Checks:
+  - verified H0.3 stays explicitly heuristic ("can be read as", "in this program") and does not claim derivability;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: open `B07` if we activate the gauge/string-tension branch.

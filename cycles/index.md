@@ -192,11 +192,12 @@
 - `Q37` Completed.
 - `Q38` Completed.
 - `Q39` Completed.
+- `Q40` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q40`: quality pass on the Introduction after the addition (check bloat and claim hygiene).
-2. `B07`: if we open the gauge/string-tension branch, ingest Wilson-loop/confinement anchors (OA first).
+1. `B07`: if we open the gauge/string-tension branch, ingest Wilson-loop/confinement anchors (OA first).
+2. `S56`: explore a clean kernel-level bridge from Wilson-loop area law to an "area scale supplier" \(\sigma^{-1}\) (keep it hypothesis-separated).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
