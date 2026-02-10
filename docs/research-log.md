@@ -594,3 +594,8 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added one sentence after `Derivation D4.1a` in `paper/main.md` noting that the delta initial condition fixes the remaining normalization constant and forces \(\hbar\) into the prefactor (standard scalar constant given parenthetically).
 - Result: the kernel-composition normalization story now makes explicit that \(\hbar\) is required not only for a dimensionless phase but also for delta-normalized composition.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C43: durable steering: avoid BV detours; prioritize \u03b7/regulator thread)
+- Focus: record the current research steering decision so it survives restarts.
+- Work: updated `docs/research-state.md` to explicitly avoid BV/BRST beyond outlook (no dedicated cycles unless later requested), and updated `cycles/index.md` to deprioritize BV bibliography accordingly.
+- Result: the repo’s “anti-herd” guardrail now explicitly keeps us focused on quantization via stationary extremes + refinement-compatible composition and on the structural emergence of an action-scale regulator (\(\hbar\)).

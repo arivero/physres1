@@ -44,6 +44,7 @@
 40. `C39` Completed.
 41. `C40` Completed.
 42. `C42` Completed.
+43. `C43` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -79,9 +80,8 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
-2. Optional `C41`: tighten the RG follow-up’s 1D/2D/3D comparison with a one-line pointer to `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` (if helpful).
-3. Optional `C42`: promote one sentence from S14 into `paper/main.md` Section 6.2/6.4 highlighting that an \(\hbar\)-like action scale is forced by dimensionless oscillatory weights plus delta-normalized kernel composition.
+1. Optional `C41`: tighten the RG follow-up’s 1D/2D/3D comparison with a one-line pointer to `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` (if helpful).
+2. Optional `B03` (deprioritized): only if BV is explicitly requested, ingest BV half-density anchors (OA-first).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

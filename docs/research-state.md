@@ -22,6 +22,7 @@ The goal is not to repackage standard narratives. Default to:
 2. **One computation per concept:** if a section is conceptual, attach at least one toy model (delta interaction, Gaussian coarse-grain, free kernel) that actually computes something.
 3. **Separate filters:** keep “half-density/normalization” distinct from other dimension-selection filters (SUSY/division algebras/hopf bundles); track them as separate hypotheses and compare outcomes rather than mixing them.
 4. **Literature as anchor, not driver:** use standard sources to sanity-check and attribute, but let the argument be forced by refinement/half-density compatibility constraints.
+5. **Avoid known-land detours:** keep BV/BRST material as at most an outlook paragraph; do not allocate dedicated cycles (especially bibliography cycles) to BV unless explicitly requested later. The current priority is quantization as “stationary extremes + refinement-compatible composition” and the structural emergence of an action-scale regulator (\(\hbar\)).
 
 ## Operational Loop (One Session)
 1. Pick one thread + one concrete question (keep scope ≤ 1–2 pages of derivation).
