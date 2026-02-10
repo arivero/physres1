@@ -905,3 +905,20 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the inverse-square branch has a clean promotable SR continuation; beyond inverse-square the link is presently bound-level only.
 - Sources touched (keys + status changes): none.
 - Next: promote the inverse-square SR interpolation into `papers/planck-area/main.md` with explicit model-scope caveat.
+
+## 2026-02-10 (C54: promote SR interpolation into planck-area draft)
+- Focus: integrate the S27 result into the Planck-area paper as a compact follow-up to D1.5.
+- Work:
+  - Added `Remark D1.5b` in `papers/planck-area/main.md` with the fixed-areal-speed SR continuation for inverse-square forces.
+  - Recorded the gravitational specialization
+    \[
+    r(M,\dot A_0)=\frac{4\dot A_0^2}{GM}\sqrt{1+\left(\frac{GM}{2\dot A_0c}\right)^2}
+    \]
+    and the \(\dot A_0=cL_P\) interpolation
+    \[
+    r(M)=\frac{4\hbar}{Mc}\sqrt{1+\frac{M^2}{4M_P^2}},
+    \]
+    with limits \(M\ll M_P\) (Compton-like) and \(M\gg M_P\) (\(2L_P\) saturation).
+- Result: the inverse-square Planck-areal-speed witness now has a relativistic continuation in the same draft, with explicit scope caveat (model-level SR mechanics, not a GR/QFT theorem).
+- Sources touched (keys + status changes): none.
+- Next: run a `Q` cycle to check claim hygiene and notation consistency around D1.5a/D1.5b.

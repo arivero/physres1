@@ -55,6 +55,7 @@
 51. `C51` Completed.
 52. `C52` Completed.
 53. `C53` Completed.
+54. `C54` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -114,8 +115,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C54`: promote the S27 inverse-square SR interpolation into `papers/planck-area/main.md`.
-2. `Q16`: run a referee-style pass on the promoted section and scope language.
+1. `Q16`: run a referee-style pass on the promoted section and scope language.
+2. `S28`: investigate the proper-time areal-speed variant and whether the \(2L_P\) floor is gauge/convention dependent.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

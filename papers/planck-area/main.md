@@ -474,6 +474,43 @@ r=\left(\frac{4\hbar}{cM}\right)^{\frac{1}{3-q}}.
 \]
 Thus the Planck-areal-speed substitution produces *linear* reduced-Compton scaling \(r\propto \hbar/(cM)\) only for \(q=2\) (inverse-square). For Newtonian long-range fields in \(n\) spatial dimensions, the Laplacian Green function gives \(\Phi(r)\propto r^{2-n}\) (for \(n>2\)), so \(F\sim|\nabla\Phi|\propto r^{1-n}\), i.e. \(q=n-1\) (with the \(n=2\) logarithmic exception) [Tanaka2021KernelQuadrature]. In this sense the \(q=2\) special case corresponds to \(n=3\) spatial dimensions (spacetime \(D=4\)).
 
+`Remark D1.5b (SR continuation of the inverse-square witness: Compton branch \(\to\) Planck floor).`
+Inside the same mechanical SR model used in `papers/relativistic-central-orbits/main.md` (external inverse-square force, no GR field dynamics), one can keep the fixed coordinate-time areal speed \(\dot A_0=dA/dt\) and continue D1.5 exactly.
+
+For inverse-square forces, SR circular motion gives \(v=K/L\), while
+\[
+L=\gamma mrv=2\gamma m\dot A_0,
+\qquad
+\gamma=\frac{1}{\sqrt{1-v^2/c^2}}.
+\]
+Hence
+\[
+\gamma v=\frac{K}{2m\dot A_0},
+\]
+so
+\[
+v=\frac{\tfrac{K}{2m\dot A_0}}{\sqrt{1+\left(\tfrac{K}{2m\dot A_0c}\right)^2}},
+\qquad
+r=\frac{2\dot A_0}{v}
+=\frac{4m\dot A_0^2}{K}\sqrt{1+\left(\frac{K}{2m\dot A_0c}\right)^2}.
+\]
+
+For gravity \(K=GMm\), \(m\) cancels:
+\[
+r(M,\dot A_0)
+=\frac{4\dot A_0^2}{GM}\sqrt{1+\left(\frac{GM}{2\dot A_0c}\right)^2}.
+\]
+With \(\dot A_0=cL_P\), using \(L_P^2=\hbar G/c^3\) and \(M_P^2=\hbar c/G\),
+\[
+r(M)
+=\frac{4\hbar}{Mc}\sqrt{1+\frac{M^2}{4M_P^2}}.
+\]
+Therefore \(M\ll M_P\) reproduces the D1.5 Compton-like branch \(r\approx 4\hbar/(Mc)\), while \(M\gg M_P\) saturates at
+\[
+r\to 2L_P.
+\]
+So in this SR continuation, the inverse-square Planck-areal-speed witness is not destroyed; it is regularized into a bounded interpolation.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
