@@ -15,7 +15,7 @@ The long-standing foundational tension can be phrased as a Zeno-style refinement
 `Heuristic H0.2 (Concrete failure modes of naive refinement-to-zero).`
 Three recurring obstructions that make "refine \(\to 0\)" nontrivial in practice are:
 1. **Singular probes:** point-supported variations and corners/impulses force distributional weak forms (mollifiers and contact terms).
-2. **Non-uniqueness:** refinement/composition can admit multiple classically equivalent but quantum-distinct schemes (ordering/discretization choices), requiring an explicit equivalence or control map. (Minimal witness: time-slicing \(H=pq\) with left vs right endpoint evaluation yields \(-\hat p\hat q\) vs \(-\hat q\hat p\), differing by \(O(\hbar)\).)
+2. **Non-uniqueness:** refinement/composition can admit multiple classically equivalent but quantum-distinct schemes (ordering/discretization choices), requiring an explicit equivalence or control map. (Minimal witness: time-slicing \(H=pq\) can yield \(-\hat p\hat q\) vs \(-\hat q\hat p\), differing by \(O(\hbar)\); requiring unitarity selects a symmetric (half-density) convention.)
 3. **Divergence:** some refinement limits do not converge without subtraction/parameter flow (renormalization).
 This manuscript treats these as limit-control problems rather than as postulates about "nature at the smallest scale."
 

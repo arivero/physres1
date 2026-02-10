@@ -78,6 +78,7 @@
 74. `C74` Completed.
 75. `C75` Completed.
 76. `C76` Completed.
+77. `C77` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -183,8 +184,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C77`: if warranted, tighten the `Heuristic H0.2` item-2 wording to match "control map / equivalence class" language.
-2. `Q38`: quality pass on the Introduction after the wording tighten (if applied).
+1. `Q38`: quality pass on the Introduction after the wording tighten (if applied).
+2. `S51`: revisit the "Newton-limit paradox" thread and decide whether to add a third crisp witness (divergent refinement -> RG) directly in the Introduction or keep it later.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

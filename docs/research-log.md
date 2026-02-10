@@ -1706,3 +1706,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: prepared an optional wording improvement for the Introduction parenthetical: "unitarity selects the symmetric (half-density) convention" for this toy witness.
 - Sources touched (keys + status changes): none.
 - Next: run `C77` if we decide to tighten the Introduction wording accordingly.
+
+## 2026-02-10 (C77: tighten ordering-witness wording with a unitarity/half-density clause)
+- Focus: connect the ordering ambiguity witness more directly to the manuscript’s "control/compatibility" language.
+- Work:
+  - Updated `paper/main.md` `Heuristic H0.2` item 2 parenthetical to add: "requiring unitarity selects a symmetric (half-density) convention" (scoped to the toy \(H=pq\) witness).
+- Result: the ordering witness remains short while better matching the project’s half-density/compatibility framing.
+- Sources touched (keys + status changes): none.
+- Next: run `Q38` to quality-pass the Introduction after this wording tighten.
