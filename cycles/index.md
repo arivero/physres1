@@ -45,6 +45,7 @@
 - `S04` Completed.
 - `S05` Completed.
 - `S06` Completed.
+- `S07` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -53,9 +54,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `B02` (when network is available): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
-2. `C29` (optional): small compression pass in `papers/planck-area/main.md` if D1.2a/D1.2b redundancy grows, and a one-sentence “canonical normalization is a knob” disclaimer near H2.7a.
-3. `S07` (optional): explore whether a transmutation-generated \(\Lambda_\ast\) can be forced by scalarization-gauge compatibility alone (without importing QFT machinery).
+1. `B02` (blocked until DNS/network works): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
+2. `C30`: promote the stable delta/critical-set paragraph into `paper/main.md` (keep it short; no new citations required) now that `S07` is complete.
+3. Optional `S08`: multi-dimensional version \(\delta(\nabla f)\) and the Van Vleck determinant as the Hessian weight.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -395,3 +395,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the draft reads more intentionally (general lemma → canonical example) while keeping the hypothesis ladder unchanged.
 - Sources touched (keys + status changes): none.
 - Next: attempt `B02` when network/DNS permits; otherwise continue with local `S` cycles (e.g. transmutation scale supplier from compatibility).
+
+## 2026-02-10 (S07: \u03b4(f') on the critical set and stationary-phase weights)
+- Focus: clarify the “delta” objects behind the “stationary extremes of action” argument in a half-density-first way.
+- Question: in the clean finite-dimensional, nondegenerate case, how does \(\delta(f')\) concentrate on critical points and how do its weights relate to the stationary-phase prefactor?
+- Work: wrote `blackboards/2026-02-10-delta-on-critical-set.md` deriving \(\delta(\varphi)=\sum \delta_{x_i}/|\varphi'(x_i)|\), specializing to \(\delta(f')=\sum \delta_{x_i}/|f''(x_i)|\), defining a distributional half-density \(\delta^{1/2}_f\sim \sum \delta_{x_i}/\sqrt{|f''(x_i)|}\,|dx|^{1/2}\), and noting that stationary phase produces the same \(1/\sqrt{|f''|}\) amplitude weights.
+- Result: we now have a clean bridge between (i) “stationarity as a delta-supported density” and (ii) “amplitudes as half-densities whose squared modulus gives densities”, without invoking any transcript or functional-integral claims as theorems.
+- Sources touched (keys + status changes): none (study only).
+- Next: open a content cycle to promote a short paragraph into `paper/main.md` (and optionally a longer note in `paper/notes/`), keeping it citation-light and hypothesis-labeled.
