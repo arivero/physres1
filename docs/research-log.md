@@ -560,3 +560,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - mixed \((G_D)^n(\alpha')^m\) gives a dimension-matching constraint but no unique \(D\) without further admissibility rules.
 - Result: we now have a clean “sieve comparison” block ready to promote into `papers/planck-area/main.md` without importing string dynamics.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q07: review H2.5/H2.7 sieve examples in planck-area draft)
+- Focus: referee-style pass on `papers/planck-area/main.md` around H2.5/H2.7 and Examples E1–E4 to ensure hypotheses are cleanly separated and \(\alpha'\) is framed as an admissibility variant.
+- Findings: the knob separation is strong; “gravity-only ⇒ \(d=4\)” is correctly scoped; \(\alpha'\) is correctly presented as changing the sieve outcome (dimensions divisible by 4), but could be rephrased slightly to reduce “string-theory-true” overtones.
+- Action queue:
+  - `C`: optional micro-edit to reframe Example E4 as “universal area parameter admitted” (string as example), keeping UV-completion remarks heuristic/outlook.
+  - `B`: only if the UV-completion scaling becomes load-bearing, ingest an authoritative anchor.

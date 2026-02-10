@@ -71,10 +71,11 @@
 - `Q04` Completed.
 - `Q05` Completed.
 - `Q06` Completed.
+- `Q07` Completed.
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `C39`: promote the S13 “gravity-only vs \(\alpha'\)-allowed” sieve block into `papers/planck-area/main.md` (as a separate hypothesis knob).
+1. Optional `C39`: micro-edit `papers/planck-area/main.md` Example E4/H2.12 to emphasize \(\alpha'\) as an admissibility knob (anti-herd clarity).
 2. Optional `C40`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
 3. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
 
