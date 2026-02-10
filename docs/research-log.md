@@ -975,3 +975,25 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; the robust-vs-convention-sensitive split is explicit and avoids overclaiming.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S29: covariant invariant candidate for areal postulate)
+- Focus: seek a clock-independent replacement for fixed \(dA/dt\) and fixed \(dA/d\tau\).
+- Work:
+  - Defined a covariant scalar from projected orbital angular momentum:
+    \[
+    \ell=\frac1m\sqrt{\frac12\,L_{\mu\nu}L^{\mu\nu}},
+    \]
+    with \(L^{\mu\nu}=h^\mu{}_\alpha h^\nu{}_\beta J^{\alpha\beta}\), \(h^\mu{}_\nu=\delta^\mu{}_\nu+U^\mu U_\nu/c^2\).
+  - In source rest frame, recovered
+    \[
+    \ell=\gamma rv,\quad \dot A_t=\ell/(2\gamma),\quad \dot A_\tau=\ell/2,
+    \]
+    showing fixed \(\ell\) selects the proper-time branch.
+  - Derived inverse-square gravitational radius:
+    \[
+    r(M,\ell)=\frac{\ell^2}{GM}\sqrt{1-\left(\frac{GM}{\ell c}\right)^2},
+    \]
+    domain \(\ell>GM/c\).
+- Result: a natural covariant candidate exists and resolves clock ambiguity structurally in this model; it reproduces D1.5c for \(\ell=2cL_P\).
+- Sources touched (keys + status changes): none.
+- Next: promote this as a short invariant-candidate outlook remark near D1.5c.

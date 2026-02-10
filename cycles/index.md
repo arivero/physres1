@@ -96,6 +96,7 @@
 - `S26` Completed.
 - `S27` Completed.
 - `S28` Completed.
+- `S29` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -119,8 +120,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S29`: test whether a covariant (clock-independent) areal invariant can replace both \(dA/dt\) and \(dA/d\tau\) postulates.
-2. `C56`: if S29 yields a clean invariant candidate, promote as a short outlook remark in `papers/planck-area/main.md`.
+1. `C56`: promote the S29 invariant candidate as a short outlook remark near D1.5c.
+2. `Q18`: run a quality pass on the D1.5b/D1.5c + invariant-candidate block.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
