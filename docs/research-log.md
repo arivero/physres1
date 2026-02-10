@@ -751,3 +751,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the backlog is now file-targeted (e.g. generic-\(q\) areal-speed derivation for `papers/planck-area/main.md`, and a full “control map \(\tau\)” formalization note before promoting any 9803035-inspired claims).
 - Note (correction from discussion): “uncuttable” is interpreted as “not computable with a finite number of cuts” (requires a controlled refinement/limit), not “cannot be subdivided”.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S21: generic-\(q\) areal-speed circular orbits + dimension link)
+- Focus: close the general-\(q\) gap in the Planck-areal-speed thread and state precisely what is special about inverse-square.
+- Work: added `blackboards/2026-02-10-areal-speed-generic-q-and-dimension-link.md`, deriving the circular-orbit condition \(4m\dot A^2=K r^{3-q}\) for \(F=K/r^q\), recording the \(q=3\) special case, and showing that substituting \(\dot A=cL_P\) with \(L_P^2=G\hbar/c^3\) yields \(r\propto(\hbar/(cM))^{1/(3-q)}\), hence linear reduced-Compton scaling only for \(q=2\).
+- Result: the “Planck areal speed \(\Rightarrow\) Compton radius” cancellation is cleanly identified as an inverse-square (\(q=2\)) feature; the note also records the Newtonian dimension link \(q=n-1\) from Laplacian Green-function scaling (with the \(n=2\) log-potential caveat).
+- Sources touched (keys + status changes): none.
+- Next: `C` promote a compact generic-\(q\) remark into `papers/planck-area/main.md` after `Derivation D1.5`, and open a `B` cycle for independent anchors on the \(n\)-dimensional Poisson/Green scaling and on minimal-length/GUP literature if we want that branch.

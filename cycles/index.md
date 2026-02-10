@@ -78,6 +78,7 @@
 - `S18` Completed.
 - `S19` Completed.
 - `S20` Completed.
+- `S21` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -95,7 +96,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Optional `B03` (deprioritized): only if BV is explicitly requested, ingest BV half-density anchors (OA-first).
+1. `C49`: promote S21 generic-\(q\) areal-speed remark into `papers/planck-area/main.md`.
+2. `B03`: independent anchors for (i) \(n\)-dimensional Poisson/Green-function scaling and (ii) minimal-length/GUP branch notes (OA-first; otherwise mark `PENDING`).
+3. `S22`: formalize the “control map \(\tau\)” refinement comparison story (9803035 thread) in our own derivation language, notes-first.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
