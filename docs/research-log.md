@@ -1517,3 +1517,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Added `Heuristic H0.2` in the Introduction of `paper/main.md` with three items: singular probes, scheme non-uniqueness (ordering/discretization), and divergence (renormalization).
 - Result: the cornerstone paper now states a crisp, testable set of motivations for why extra limit-control mechanisms are needed beyond naive refinement.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q32: quality pass on Heuristic H0.2 insertion)
+- Focus: check that H0.2 reads as motivation and matches later sections.
+- Checks:
+  - reviewed intro flow around Zeno-style paragraph and H0.2 list;
+  - verified each item corresponds to later concrete loci (weak form, scheme non-uniqueness, renormalization);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S44` on timelike Schwarzschild circular stability / ISCO.
