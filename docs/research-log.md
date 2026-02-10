@@ -817,3 +817,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added `blackboards/2026-02-10-sr-central-force-circular-orbits.md`, using the perpendicular-acceleration identity \(F=\gamma m v^2/r\) and angular momentum \(L=\gamma m r v\) to derive the SR circular-orbit condition \(L^2=K\gamma m r^{3-q}\). Specialized to \(q=2\) to obtain the exact identity \(v=K/L\) and the admissibility bound \(L>K/c\), plus the radius formula \(r=\frac{L^2}{Km}\sqrt{1-\frac{K^2}{c^2L^2}}\) with its Newtonian limit \(c\to\infty\).
 - Result: the “inverse-square is special” claim is now derivation-first and restart-stable, ready for a later follow-up draft if desired.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (B05: OA anchors for SR/GR orbit thread)
+- Focus: attach OA anchors to the SR/GR orbit branch opened by S24 so it can be promoted later without transcript dependence.
+- Work:
+  - Added `[BoscagginDambrosioFeltrin2020RelKepler]` (arXiv:`2003.03110`) and `[Carroll1997LectureGR]` (arXiv:`gr-qc/9712019`) to `paper/bibliography.md`.
+  - Ingested `gr-qc/9712019` into `sources/9712019v1-1d38ccc6.md` (untracked); used existing ingested record for `2003.03110` (`sources/2003-03110v1-c3bdce53.md`).
+- Result: the SR “relativistic Kepler” equation and the GR geodesic/black-hole baseline now have stable OA anchors for any future dependent draft.
+- Sources touched (keys + status changes): added `[BoscagginDambrosioFeltrin2020RelKepler]`, `[Carroll1997LectureGR]`.

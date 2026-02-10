@@ -33,6 +33,8 @@ Use this file as a source ledger.
 19. `[Tanaka2021KernelQuadrature]` Ken’ichiro Tanaka, "Kernel quadrature by applying a point-wise gradient descent method to discrete energies," arXiv:`2102.10887` (v2, 23 Feb 2021). (Contains an explicit formula for the \(d\)-dimensional fundamental solution of the Laplacian on \(\mathbb R^d\), including the \(d=2\) logarithmic case.)
 20. `[Hossenfelder2013MinimalLength]` Sabine Hossenfelder, "Minimal Length Scale Scenarios for Quantum Gravity," *Living Reviews in Relativity* 16 (2013), 2. arXiv:`1203.6191` (v2, 30 Apr 2013). DOI `10.12942/lrr-2013-2`.
 21. `[Rosten2012ERG]` Oliver J. Rosten, "Fundamentals of the Exact Renormalization Group," *Physics Reports* 511 (2012), 177–272. arXiv:`1003.1366` (v4, 15 Feb 2012). DOI `10.1016/j.physrep.2011.12.003`.
+22. `[BoscagginDambrosioFeltrin2020RelKepler]` Alberto Boscaggin, Walter Dambrosio, and Guglielmo Feltrin, "Periodic solutions to a perturbed relativistic Kepler problem," arXiv:`2003.03110` (v1, 6 Mar 2020). (Contains the unperturbed SR relativistic Kepler equation and discusses circular solutions/constraints.)
+23. `[Carroll1997LectureGR]` Sean M. Carroll, "Lecture Notes on General Relativity," arXiv:`gr-qc/9712019` (v1, 3 Dec 1997). (Includes black holes/geodesic applications used as baseline GR anchors.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -57,6 +59,8 @@ Use this file as a source ledger.
 20. `[Tanaka2021KernelQuadrature]`: arXiv primary anchor used (`2102.10887`).
 21. `[Hossenfelder2013MinimalLength]`: DOI `10.12942/lrr-2013-2`; arXiv primary anchor used (`1203.6191`).
 22. `[Rosten2012ERG]`: DOI `10.1016/j.physrep.2011.12.003`; arXiv primary anchor used (`1003.1366`).
+23. `[BoscagginDambrosioFeltrin2020RelKepler]`: arXiv primary anchor used (`2003.03110`).
+24. `[Carroll1997LectureGR]`: arXiv primary anchor used (`gr-qc/9712019`).
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -80,6 +84,8 @@ Use this file as a source ledger.
 19. `[Tanaka2021KernelQuadrature]`: acquired via arXiv preprint in `sources/2102-10887v2-b370c928.md`.
 20. `[Hossenfelder2013MinimalLength]`: acquired via arXiv preprint in `sources/1203-6191v2-95175764.md`.
 21. `[Rosten2012ERG]`: acquired via arXiv preprint in `sources/1003-1366v4-d87db096.md`.
+22. `[BoscagginDambrosioFeltrin2020RelKepler]`: acquired via arXiv preprint in `sources/2003-03110v1-c3bdce53.md`.
+23. `[Carroll1997LectureGR]`: acquired via arXiv preprint in `sources/9712019v1-1d38ccc6.md`.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004). Local mirror file: `/usr/local/var/www/wordpress/research/0404086.pdf`.

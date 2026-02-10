@@ -59,6 +59,7 @@
 - `B02` Completed.
 - `B03` Completed.
 - `B04` Completed.
+- `B05` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -104,8 +105,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `B05`: independent SR/GR orbit anchors (OA-first) if S24 becomes promotable.
-2. Optional `C51`: start `papers/relativistic-central-orbits/main.md` with the SR \(q=2\) derivation as the first concrete result (no stability claims yet).
+1. Optional `C51`: start `papers/relativistic-central-orbits/main.md` with the SR \(q=2\) derivation as the first concrete result (no stability claims yet).
+2. Optional `S25`: GR effective potential and photon sphere derivation in our notation (Schwarzschild baseline).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
