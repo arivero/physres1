@@ -61,13 +61,14 @@
 - `Q01` Completed.
 - `Q02` Completed.
 - `Q03` Completed.
+- `Q04` Completed.
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `Q04`: quick referee-style pass on `papers/half-density-qft/main.md` (concision + overreach check).
-2. `C35`: tighten `papers/delta-objects/main.md` with an explicit \(\delta(f')\) vs \(\delta'\) clarifier and a weak Euler–Lagrange corner/jump remark.
-3. Optional `C36`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
-4. Optional `Q05`: quality pass on the RG note after H1.12 and on the delta-objects clarifier once promoted.
+1. `C35`: tighten `papers/delta-objects/main.md` with an explicit \(\delta(f')\) vs \(\delta'\) clarifier and a weak Euler–Lagrange corner/jump remark.
+2. Optional `C36`: micro-edit `papers/half-density-qft/main.md` wording (soften “precisely” and optionally add a one-line scalar-vs-half-density Green-function relation).
+3. Optional `C37`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
+4. Optional `Q05`: quality pass on the delta-objects clarifier (and RG note if changed).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

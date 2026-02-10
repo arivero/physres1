@@ -489,3 +489,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the repo now has a concrete QFT-facing follow-up paper that extends the half-density-first stance beyond QM kernels, while keeping BV/field-space themes explicitly “outlook only” pending independent anchors.
 - Sources touched (keys + status changes): none.
 - Next: a short `Q` pass for concision/overreach, then `C35` to tighten `papers/delta-objects/main.md` with a \(\delta(f')\) vs \(\delta'\) clarifier and a weak Euler–Lagrange/corners bridge.
+
+## 2026-02-10 (Q04: quality pass on half-density QFT draft)
+- Focus: quick referee-style check of `papers/half-density-qft/main.md` to ensure wave-1 scope, conservative phrasing, and clean separation of canonical kernels vs scalarization conventions.
+- Findings: the draft stays concise; the densitized-field derivation is explicit; BV is contained as outlook only; one minor wording risk (“precisely”) is queued as an optional micro-edit.
+- Action queue:
+  - `C`: optional soften “precisely” → “appear as diagonal-supported distributions” and optionally add a one-line relation between scalar Green functions (with \(d^Dx\sqrt{|g|}\)) and the half-density Green kernel (with \(d^Dx\)).
+  - `B`: if BV is promoted, open a bibliography cycle and ingest authoritative anchors.
