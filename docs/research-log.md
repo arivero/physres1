@@ -1019,3 +1019,17 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
 - Findings: no edits required; chain is coherent and cautionary wording is adequate.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S30: frame-free area-2-form invariants test)
+- Focus: test whether fully frame-free bivector invariants can replace source-projected \(\ell\).
+- Work:
+  - Evaluated \(I_1=\frac12 M_{\mu\nu}M^{\mu\nu}\), \(I_2=\frac12 M_{\mu\nu}{}^\star M^{\mu\nu}\) for \(M^{\mu\nu}=R^\mu p^\nu-R^\nu p^\mu\).
+  - In circular central motion (\(R\cdot p=0\), \(R^2=r^2\), \(p^2=-m^2c^2\)) obtained
+    \[
+    I_1=-m^2c^2r^2,
+    \]
+    independent of \(v\), and \(I_2=0\) in the planar branch.
+  - Concluded these simple frame-free invariants are too coarse to encode areal-rate branch data; a timelike projection (source \(U^\mu\)) is still needed.
+- Result: strengthens S29 interpretation: covariance is retained with explicit \(U^\mu\), but a completely frame-free scalar encoding of the needed branch parameter is not obtained in this setup.
+- Sources touched (keys + status changes): none.
+- Next: promote this as a short cautionary outlook remark after D1.5d.

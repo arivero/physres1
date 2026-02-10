@@ -98,6 +98,7 @@
 - `S27` Completed.
 - `S28` Completed.
 - `S29` Completed.
+- `S30` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -122,8 +123,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S30`: explore whether a fully covariant area 2-form postulate can be phrased without explicit source-frame projection.
-2. `C57`: if S30 yields a clear statement, promote as a compact “covariant-area outlook” remark.
+1. `C57`: promote S30 as a compact “simple bivector invariants are insufficient” outlook remark.
+2. `Q19`: quality pass on the full D1.5b-D1.5d plus covariant-outlook block.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
