@@ -66,6 +66,7 @@
 62. `C62` Completed.
 63. `C63` Completed.
 64. `C64` Completed.
+65. `C65` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -147,8 +148,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C65`: promote one concise robustness qualifier from S38 results.
-2. `Q27`: quality pass on D1.5b-m after promotion.
+1. `Q27`: quality pass on D1.5b-m after regime-calibration note.
+2. `S39`: start distribution-derivative study branch for action-variation kernels.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

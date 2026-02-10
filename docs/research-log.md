@@ -1340,3 +1340,21 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: mismatch rises from \(0.505\%\) at \(s=1.0\) to \(6.311\%\) at \(s=4.0\), crossing the "few-percent" regime around \(s\approx3\) in this toy.
 - Sources touched (keys + status changes): none.
 - Next: promote one concise regime-dependence qualifier near D1.5l.
+
+## 2026-02-10 (C65: promote regime-dependent trigger calibration)
+- Focus: convert S38 robustness result into a concise manuscript qualifier.
+- Work:
+  - Added `Remark D1.5m` in `papers/planck-area/main.md`.
+  - Introduced a compact diagnostic pair for calibration:
+    \[
+    \epsilon_{\rm nl}=\frac{|\sigma_{\rm MC}-\sigma_{\rm lin}|}{\sigma_{\rm lin}},
+    \qquad
+    \chi=\max\!\left(
+      \frac{\sqrt{\mathrm{tr}\Sigma_r}}{\|\mathbf r\|},
+      \frac{\sqrt{\mathrm{tr}\Sigma_v}}{\|\mathbf v\|}
+    \right).
+    \]
+  - Stated explicitly that trigger calibration is instrument/model specific.
+- Result: D1.5 uncertainty policy now has a reproducible regime-calibration handle without asserting universal thresholds.
+- Sources touched (keys + status changes): none.
+- Next: run `Q27` to check readability/scope after D1.5m.

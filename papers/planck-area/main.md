@@ -649,6 +649,18 @@ for residual \(\mathcal T_{\mathbf n}\) with augmented state \(z\). This linear 
 `Remark D1.5l (Practical nonlinear-validation trigger).`
 A lightweight policy is to run a pilot nonlinear propagation check and compare against the linear \(\sigma\) estimate; if the discrepancy is at the few-percent level (or larger), treat linearized errors as insufficient and switch to nonlinear uncertainty propagation for reporting.
 
+`Remark D1.5m (Regime-dependent trigger calibration).`
+The trigger in D1.5l should be calibrated by uncertainty regime, not treated as universal. A practical diagnostic pair is
+\[
+\epsilon_{\rm nl}:=\frac{|\sigma_{\rm MC}-\sigma_{\rm lin}|}{\sigma_{\rm lin}},
+\qquad
+\chi:=\max\!\left(
+\frac{\sqrt{\mathrm{tr}\,\Sigma_r}}{\|\mathbf r\|},
+\frac{\sqrt{\mathrm{tr}\,\Sigma_v}}{\|\mathbf v\|}
+\right),
+\]
+with \(\Sigma_r,\Sigma_v\) the position/velocity covariance blocks in the chosen reconstruction model. Pilot scans in correlated-noise families can then map \(\epsilon_{\rm nl}(\chi)\) for the instrument/model pair; the "few-percent" policy corresponds to selecting an operational \(\epsilon_{\rm nl}\) band after this calibration, rather than imposing a context-free constant.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
