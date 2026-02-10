@@ -427,3 +427,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a self-contained algebraic template that explains the emergence of Van Vleck–type mixed Hessian determinants after time slicing/elimination.
 - Sources touched (keys + status changes): none.
 - Next: commit; optionally add a one-line pointer near `Derivation D4.3` once `B02` is available (so the semiclassical prefactor has a modern anchor).
+
+## 2026-02-10 (Q03: main-paper sanity check after D3.5a)
+- Focus: quick referee-style check that Section 5.5 stayed concise after adding D3.5a.
+- Question: does the new delta-weights remark read as clarification (not as an overclaim)?
+- Work: reviewed Section 5.5 and recorded findings in `cycles/Q03-execution.md`.
+- Result: D3.5/D3.5a read as one unit and remain short; no edits needed.
+- Sources touched (keys + status changes): none.
+- Next: `B02` when DNS/network works; otherwise continue local derivations.
