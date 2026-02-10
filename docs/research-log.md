@@ -711,3 +711,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   The draft links to `blackboards/2026-02-10-derivatives-of-diagonal-delta-kernel.md` (S18) and `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md` (S15).
 - Result: “derivative counterterms = derivatives of the diagonal delta kernel” is now stated in a measure-free, coordinate-invariant way within the QFT half-density draft.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q10: quality pass after C47 contact-term algebra promotion)
+- Focus: referee-style check of the Lie-derivative contact-term identity and the \(\delta'\) point-splitting remark promoted into the QFT half-density draft, plus the manuscript-policy guardrail scan.
+- Checks:
+  - `rg -n 'C[0-9]{2}' paper/main.md` (no matches).
+  - Read-through of `papers/half-density-qft/main.md` Section 5 (Remarks D5.1/D5.2).
+  - Read-through of `blackboards/2026-02-10-derivatives-of-diagonal-delta-kernel.md` Section 2 for diffeomorphism invariance notation.
+- Fix: changed the S18 note to use pullback notation \((\Phi\times\Phi)^\ast\delta_{\mathrm{diag}}=\delta_{\mathrm{diag}}\) to avoid pushforward/pullback confusion.
+- Findings: no correctness issues; the Lie-derivative identity is properly framed as the intrinsic form of \(\partial_x\delta=-\partial_y\delta\), and the \(\delta'\) identity is signed via pairing.
+- Sources touched (keys + status changes): none.

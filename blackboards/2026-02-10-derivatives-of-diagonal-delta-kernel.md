@@ -25,7 +25,7 @@ This kernel is canonical: it does not require choosing a background measure.
 The kernel \(\delta_{\mathrm{diag}}\) is invariant under the **diagonal action** of diffeomorphisms:
 for any diffeomorphism \(\Phi:M\to M\),
 \[
-(\Phi\times\Phi)_*\,\delta_{\mathrm{diag}}=\delta_{\mathrm{diag}}.
+(\Phi\times\Phi)^\ast\,\delta_{\mathrm{diag}}=\delta_{\mathrm{diag}}.
 \]
 Let \(V\) be a vector field with flow \(\Phi_t\). Differentiating at \(t=0\) gives the Lie-derivative identity
 \[
@@ -81,4 +81,3 @@ At the kernel level this means: modifications supported at \(x=y\), i.e. linear 
 and the corresponding expressions with \(x\leftrightarrow y\).
 
 In the half-density kernel formalism, these objects are canonically meaningful without first fixing a background integration measure: “locality = diagonal support” is literally a statement about the support of distributional kernels.
-
