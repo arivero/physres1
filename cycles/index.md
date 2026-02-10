@@ -175,11 +175,12 @@
 - `Q33` Completed.
 - `Q34` Completed.
 - `Q35` Completed.
+- `Q36` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q36`: quality pass on the Introduction heuristics (H0.2/H0.2a) for claim hygiene and flow.
-2. `S49`: study one concrete ordering/scheme non-uniqueness example (Itô/Stratonovich or midpoint rule) that fits the refinement narrative.
+1. `S49`: study one concrete ordering/scheme non-uniqueness example (Itô/Stratonovich or midpoint rule) that fits the refinement narrative.
+2. `C76`: promote the stabilized example into `paper/main.md` as a short companion to `Heuristic H0.2` (non-uniqueness obstruction).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

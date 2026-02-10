@@ -1661,3 +1661,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the measure-theory obstruction is now explicitly anchored to an external OA reference.
 - Sources touched (keys + status changes): none (reference key already added in `B06`).
 - Next: run `Q36` to quality-pass the Introduction heuristics (flow + claim hygiene).
+
+## 2026-02-10 (Q36: quality pass on Introduction heuristics)
+- Focus: referee-style check of the Introduction around `Heuristic H0.2` / `Heuristic H0.2a` (flow + claim hygiene).
+- Checks:
+  - verified H0.2/H0.2a remain explicitly "limit-control" claims, not "smallest scale" ontologies;
+  - verified H0.2a wording is hypothesis-qualified and now source-anchored (`[Velhinho2017InfDimMeasure]`);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S49` to add one concrete scheme/ordering non-uniqueness example to match the concreteness of the measure obstruction.
