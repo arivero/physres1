@@ -496,3 +496,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Action queue:
   - `C`: optional soften “precisely” → “appear as diagonal-supported distributions” and optionally add a one-line relation between scalar Green functions (with \(d^Dx\sqrt{|g|}\)) and the half-density Green kernel (with \(d^Dx\)).
   - `B`: if BV is promoted, open a bibliography cycle and ingest authoritative anchors.
+
+## 2026-02-10 (C35: clarify \u03b4(f') vs \u03b4' and weak Euler\u2013Lagrange in delta-objects draft)
+- Focus: resolve “which delta?” ambiguity in `papers/delta-objects/main.md`, especially for extremal conditions in Lagrangian mechanics.
+- Work: added a short subsection distinguishing \(\delta(f')\) (delta applied to a derivative constraint, localizing stationary points) from \(\delta'\) (derivative of the delta distribution, probing derivatives of test functions), and added a brief weak Euler\u2013Lagrange bridge noting how corners/impulses generate delta terms automatically.
+- Result: the delta-objects synthesis note now cleanly separates stationary-set deltas from derivative-of-delta probes, aligning the “delta for extremals” language with distribution theory.
+- Sources touched (keys + status changes): none.
