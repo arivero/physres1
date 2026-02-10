@@ -63,6 +63,18 @@ K_\varepsilon(x,x+\varepsilon v)
 \]
 Thus, any attempt to define a nontrivial “\(\varepsilon\to0\)” near-diagonal limit of kernels (the scaling step that tangent-groupoid quantization packages) inevitably produces an \(\varepsilon^{d/2}\) factor from the half-density Jacobian, and the corresponding scalar representative must be renormalized by \(\varepsilon^{-d/2}\) to stay finite. This is the same exponent as in the finite-dimensional “square-root delta” normalization: the half-density is the square root of the density Jacobian.
 
+`Derivation D1.2b (Identity kernel: the delta bi-half-density carries the same exponent).`
+The identity operator on half-densities has Schwartz kernel
+\[
+K_{\mathrm{Id}}(x,y)=\delta^{(d)}(x-y)\,|dx|^{1/2}|dy|^{1/2}.
+\]
+Under the same near-diagonal change of variables \(y=x+\varepsilon v\), one has \(\delta^{(d)}(x-y)=\varepsilon^{-d}\delta^{(d)}(v)\) and \(|dy|^{1/2}=\varepsilon^{d/2}|dv|^{1/2}\), hence
+\[
+K_{\mathrm{Id}}(x,x+\varepsilon v)
+=\varepsilon^{-d/2}\,\delta^{(d)}(v)\,|dx|^{1/2}|dv|^{1/2}.
+\]
+So the universal \(\varepsilon^{-d/2}\) exponent is already encoded in the half-density identity kernel. If one scalarizes by choosing a dimensionless reference half-density \(\sigma_\ast:=L_\ast^{-d/2}|dx|^{1/2}\) (for a constant length scale \(L_\ast\)), then the scalar representative of the identity kernel is the **dimensionless** distribution \(k_{\mathrm{Id}}(x,y)=L_\ast^{d}\delta^{(d)}(x-y)\).
+
 `Proposition P1.2 (Universal *dimensionless* amplitudes force a \(\text{length}^{d/2}\) constant).`
 If one imposes the extra requirement that the scalar representative \(f\) in \(\psi=f\,\sigma_\ast\) be dimensionless in physical units, then the reference half-density \(\sigma_\ast\) must carry all of the \(\text{length}^{d/2}\) dimension. In particular, a *constant* (field-independent) choice of \(\sigma_\ast\) is equivalent to choosing a universal \(\text{length}^{d/2}\) scale.
 

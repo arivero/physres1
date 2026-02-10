@@ -355,3 +355,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: we now have a clean, coordinate-free “delta” witness that supports the half-density normalization exponent and clarifies what “\(\delta^{1/2}\)” can safely mean in operator/kernel terms.
 - Sources touched (keys + status changes): none (study only).
 - Next: promote the stable paragraph(s) into `papers/planck-area/main.md` (and optionally add a one-line clarifier in `paper/main.md` if it improves the cornerstone narrative without bloating it).
+
+## 2026-02-10 (C27: promote S05 delta-kernel witness)
+- Focus: strengthen the Planck-area draft’s half-density scaling section with the cleanest concrete example: the half-density identity (delta) kernel.
+- Question: can we make the \(\varepsilon^{-d/2}\) exponent and the scalarization-scale \(L_\ast^{d/2}\) appear in one short labeled derivation without adding distribution-theory baggage?
+- Work: added `Derivation D1.2b` to `papers/planck-area/main.md` stating the identity kernel \(K_{\mathrm{Id}}=\delta^{(d)}(x-y)|dx|^{1/2}|dy|^{1/2}\), computing its near-diagonal scaling, and showing how choosing \(\sigma_\ast=L_\ast^{-d/2}|dx|^{1/2}\) makes the scalar representative \(k_{\mathrm{Id}}=L_\ast^d\delta^{(d)}\) dimensionless.
+- Result: the draft now has an explicit “delta” witness that (i) lives naturally in the half-density formalism and (ii) exhibits the same normalization exponent as the general near-diagonal scaling lemma.
+- Sources touched (keys + status changes): none.
+- Next: per cadence, run policy checks + commit; then pick the next study target (likely tightening the half-density \(\Rightarrow\) universal area-scale branch conditions, or a B-cycle for the semiclassical-prefactor modern anchor when network is available).

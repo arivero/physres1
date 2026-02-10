@@ -28,6 +28,8 @@
 24. `C23` Completed.
 25. `C24` Completed.
 26. `C25` Completed.
+27. `C26` Completed.
+28. `C27` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -39,6 +41,7 @@
 - `S02` Completed.
 - `S03` Completed.
 - `S04` Completed.
+- `S05` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -46,9 +49,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. `C26`: promote `S04` into `papers/rg-fundamental/main.md` (short convention-map paragraph + explicit scheme-constant statement) and refresh its forward queue (remove completed items).
-2. `S05`: study “delta as a half-density kernel / identity operator” and how it interfaces with the scalarization-gauge story (blackboard first).
-3. `B02` (when network is available): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
+1. `S06`: tighten the half-density \(\Rightarrow\) universal area-scale ladder by studying the “what counts as a coupling” rule behind H2.5 (gravity-only vs \(\Lambda\), \(\alpha'\), other dimensionful scales) and keeping the filters separate.
+2. `B02` (when network is available): add a modern semiclassical-propagator reference supporting the Van Vleck prefactor formula (OA-first; otherwise mark `PENDING`).
+3. Optional `Q02`: quick quality pass on the Planck-area + RG notes after the recent delta/identity-kernel additions (notation + redundancy check).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
