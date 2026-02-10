@@ -862,3 +862,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Updated `cycles/README.md`, `docs/research-state.md`, and `docs/handoff.md` to require logging this diffstat in `cycles/Cnn-execution.md` (recommended: `--cached` after staging).
 - Result: every future `C` execution log will include an explicit `+added/-removed` summary for the draft manuscripts, and “no promotion” cycles become explicit rather than silent.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S26: SR stability for circular orbits under \(F=K/r^q\))
+- Focus: add a stability wave to the relativistic central-orbits branch without over-expanding scope.
+- Work:
+  - Derived the fixed-\(L\) energy function \(W_L(r)=\sqrt{m^2c^4+L^2c^2/r^2}+U(r)\) with \(U'(r)=K/r^q\), and used \(W_L'(r_0)=0\) to recover \(L^2=K\gamma m r_0^{3-q}\).
+  - Computed \(W_L''(r_0)\) and obtained the compact SR stability criterion \(1+(2-q)\gamma^2>0\); recorded derivation + limiting checks in `blackboards/2026-02-10-sr-circular-orbit-stability.md`.
+- Result: Newtonian stability \(q<3\) is recovered for \(\gamma\to1\), but for \(2<q<3\) SR adds a speed bound \(v^2/c^2<3-q\).
+- Sources touched (keys + status changes): none.
+- Next: promote the stability criterion into `papers/relativistic-central-orbits/main.md` as a new wave section.
