@@ -84,6 +84,7 @@
 - `B03` Completed.
 - `B04` Completed.
 - `B05` Completed.
+- `B06` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -175,8 +176,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `B06`: attach a standard reference for the "no Lebesgue measure in infinite dimensions" lemma (measure theory / functional analysis).
-2. `S48`: study distributional Euler-Lagrange variations for \(\delta\) and \(\delta'\) probes (value-at-zero vs derivative-at-zero).
+1. `S48`: study distributional Euler-Lagrange variations for \(\delta\) and \(\delta'\) probes (value-at-zero vs derivative-at-zero).
+2. `C75`: insert an inline citation for `Heuristic H0.2a` (and ensure the statement matches the reference hypotheses).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

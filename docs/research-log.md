@@ -1635,3 +1635,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the Introduction now has a concrete theorem-adjacent obstruction that supports the Zeno-style framing of quantization/renormalization as limit-control mechanisms.
 - Sources touched (keys + status changes): none.
 - Next: run `B06` to attach a standard measure-theory reference for the lemma (and/or run an `S` cycle on distributional Euler-Lagrange for delta derivatives).
+
+## 2026-02-10 (B06: OA anchor for the infinite-dimensional measure obstruction)
+- Focus: attach an external OA reference supporting the "no Lebesgue/Haar measure in infinite dimensions" heuristic.
+- Work:
+  - Added `[Velhinho2017InfDimMeasure]` (OA, MDPI *Mathematics*) to `paper/bibliography.md` as an explicit discussion of translation-invariant measures in infinite dimensions.
+- Result: the measure-theory obstruction now has at least one citable external anchor in the repo ledger.
+- Sources touched (keys + status changes): added `[Velhinho2017InfDimMeasure]`.
+- Next: optionally add an inline citation to `paper/main.md` at `Heuristic H0.2a` in a small `C` cycle.
