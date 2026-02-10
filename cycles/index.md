@@ -127,11 +127,12 @@
 - `Q18` Completed.
 - `Q19` Completed.
 - `Q20` Completed.
+- `Q21` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q21`: quality pass on D1.5b-g plus non-circular extension statement.
-2. `S33`: probe whether the same \(\ell\)-rule survives mild non-planar perturbations (precessing/orbit-tilt settings).
+1. `S33`: probe whether the same \(\ell\)-rule survives mild non-planar perturbations (precessing/orbit-tilt settings).
+2. `C60`: if S33 yields a clean statement, promote as a cautionary non-planar note near D1.5g.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

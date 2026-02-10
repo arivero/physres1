@@ -1118,3 +1118,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: manuscript now explicitly carries the minimal-structure rule beyond circular trajectories.
 - Sources touched (keys + status changes): none.
 - Next: run `Q21` over D1.5b-g for clarity and scope control.
+
+## 2026-02-10 (Q21: quality pass on D1.5b-g)
+- Focus: consistency check after adding D1.5g.
+- Checks:
+  - read-through of D1.5b-g as one progression;
+  - explicit assumption check that D1.5g remains planar/kinematic;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; D1.5g integrates cleanly without scope drift.
+- Sources touched (keys + status changes): none.
