@@ -1387,3 +1387,18 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: obtained a concise promotion candidate for RG paper Section 3 that aligns with the derivative-as-counterterm intuition while staying distribution-theoretic.
 - Sources touched (keys + status changes): none.
 - Next: promote the remark in `C66`.
+
+## 2026-02-10 (C66: promote weak variational-derivative bridge in RG draft)
+- Focus: add a distribution-theoretic bridge in the RG paper's calculus section.
+- Work:
+  - Added `Remark H1.1c` in `papers/rg-fundamental/main.md` after H1.1b.
+  - Promoted weak finite-difference identity
+    \[
+    \int \frac{p(t+\varepsilon)-p(t)}{\varepsilon}\eta(t)\,dt\to\langle \dot p,\eta\rangle
+    \]
+    as an explicit regulate/subtract/limit pattern.
+  - Added jump case \(p_+-p_-\) at \(t_0\), yielding
+    \(\dot p=(p_+-p_-)\delta(t-t_0)\) as a contact-term mechanism.
+- Result: RG Section 3 now links the derivative-as-counterterm intuition to weak Euler-Lagrange structure without relying on point-potential specificity.
+- Sources touched (keys + status changes): none.
+- Next: run `Q28` for readability and claim-hygiene check of Section 3 after H1.1c.

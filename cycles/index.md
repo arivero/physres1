@@ -67,6 +67,7 @@
 63. `C63` Completed.
 64. `C64` Completed.
 65. `C65` Completed.
+66. `C66` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -150,8 +151,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C66`: promote one concise distribution-kernel result into a manuscript draft.
-2. `Q28`: quality pass on the promoted RG-section addition.
+1. `Q28`: quality pass on the promoted RG-section addition.
+2. `S40`: design a compact bridge from weak-derivative contact terms to 1D/2D/3D contact-flow comparison.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

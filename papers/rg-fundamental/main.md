@@ -51,6 +51,17 @@ The same “regulated difference quotient \(\to\) new local object” pattern ap
 \]
 This is a minimal toy prototype of how point-splitting limits generate contact terms (often involving derivatives of \(\delta\)) in field-theoretic identities. For details and sign conventions, see `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
 
+`Remark H1.1c (Weak variational-derivative version).`
+The same grammar appears in Euler-Lagrange weak form. For \(p(t)\in L^1_{\rm loc}\) and \(\eta\in C_c^\infty\),
+\[
+\int \frac{p(t+\varepsilon)-p(t)}{\varepsilon}\,\eta(t)\,dt
+=
+\int p(t)\,\frac{\eta(t-\varepsilon)-\eta(t)}{\varepsilon}\,dt
+\xrightarrow[\varepsilon\to 0]{}
+\langle \dot p,\eta\rangle.
+\]
+So the distributional derivative is again obtained by regulated local subtraction before the limit. If \(p\) has a jump \(p_+-p_-\) at \(t_0\), then \(\dot p=(p_+-p_-)\delta(t-t_0)\), making the contact term explicit in the weak Euler-Lagrange equation.
+
 ## 4. Rooted Trees: Bookkeeping for Composed Refinements
 Runge–Kutta composition and perturbative renormalization share rooted-tree combinatorics. Butcher’s group organizes method composition, while the Hopf-algebra approach organizes subtraction/recursion patterns in renormalization [Brouder1999] [McLachlan2017] [ConnesKreimer2000].
 
