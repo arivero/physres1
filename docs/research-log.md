@@ -922,3 +922,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the inverse-square Planck-areal-speed witness now has a relativistic continuation in the same draft, with explicit scope caveat (model-level SR mechanics, not a GR/QFT theorem).
 - Sources touched (keys + status changes): none.
 - Next: run a `Q` cycle to check claim hygiene and notation consistency around D1.5a/D1.5b.
+
+## 2026-02-10 (Q16: quality pass on D1.5b SR continuation)
+- Focus: referee-style check on scope, notation, and asymptotics of the new D1.5b block.
+- Checks:
+  - read-through of D1.5/D1.5a/D1.5b continuity and claim boundaries;
+  - symbolic limit sanity for
+    \[
+    r(M)=\frac{4\hbar}{Mc}\sqrt{1+\frac{M^2}{4M_P^2}}
+    \]
+    confirming \(M\ll M_P\) Compton branch and \(M\gg M_P\to 2L_P\);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no prose or formula fixes needed; caveat language is sufficient to keep D1.5b as a model-level continuation.
+- Sources touched (keys + status changes): none.
