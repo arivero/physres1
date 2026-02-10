@@ -42,6 +42,7 @@
 38. `C37` Completed.
 39. `C38` Completed.
 40. `C39` Completed.
+41. `C40` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -76,8 +77,8 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Optional `C40`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
-2. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
+1. Optional `B03`: if BV is promoted beyond outlook, ingest authoritative BV half-density anchors (OA-first).
+2. Optional `C41`: tighten the RG follow-up’s 1D/2D/3D comparison with a one-line pointer to `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md` (if helpful).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

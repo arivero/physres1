@@ -573,3 +573,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: updated `papers/planck-area/main.md` Example E4 to use \(\alpha_\ast\) generically (keeping the \(d\equiv0\pmod4\) sieve), and rewrote H2.12 to state the gravity-from-\(\alpha_\ast\) scaling relation dimensionally (\(G_d\propto g^2(\alpha_\ast)^{(d-2)/2}\)) before specializing to the string case.
 - Result: the scale-sieve content is unchanged, but the narrative no longer sounds like it depends on string dynamics; \(\alpha'\) is now clearly an admissibility variant.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C40: add Schur-complement pointer near Van Vleck derivation)
+- Focus: referee-friendliness in the cornerstone manuscript’s semiclassical prefactor discussion.
+- Work: added a single pointer sentence near `Derivation D4.3` in `paper/main.md` to the explicit Schur-complement elimination template note `paper/notes/van-vleck-schur-complement.md`.
+- Result: readers can see, without extra prose, where the “mixed Hessian after eliminating intermediates” mechanism is worked out algebraically.
+- Sources touched (keys + status changes): none.
