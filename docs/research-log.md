@@ -1740,3 +1740,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: all three H0.2 obstructions now have minimal concrete witness lines (measure, ordering, subtraction).
 - Sources touched (keys + status changes): none.
 - Next: run `Q39` to quality-pass the Introduction after this addition (flow + tone).
+
+## 2026-02-10 (Q39: quality pass on Introduction after divergence witness)
+- Focus: referee-style flow/claim hygiene check after adding the toy divergence witness to H0.2 item 3.
+- Checks:
+  - verified the parenthetical stays explicitly a toy witness and does not conflate calculus with QFT renormalization;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S52` to scan `conv_patched.md` for remaining unincorporated themes and spawn study goals (update `docs/conv-coverage-map.md`).

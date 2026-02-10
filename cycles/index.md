@@ -184,11 +184,12 @@
 - `Q36` Completed.
 - `Q37` Completed.
 - `Q38` Completed.
+- `Q39` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q39`: quality pass on the Introduction after the change (flow + tone).
-2. `S52`: scan `conv_patched.md` for any remaining unincorporated themes and spawn study goals (update `docs/conv-coverage-map.md`).
+1. `S52`: scan `conv_patched.md` for any remaining unincorporated themes and spawn study goals (update `docs/conv-coverage-map.md`).
+2. `B07`: for any new load-bearing claims that emerge from S52, attach at least one OA anchor (or mark `PENDING`).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
