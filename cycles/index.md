@@ -133,11 +133,12 @@
 - `Q20` Completed.
 - `Q21` Completed.
 - `Q22` Completed.
+- `Q23` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q23`: quality pass on D1.5b-i after observability insertion.
-2. `S35`: sketch a minimal data-inference pipeline for extracting \((\mathbf r,\mathbf v)\) in one concrete perturbed-orbit scenario.
+1. `S35`: sketch a minimal data-inference pipeline for extracting \((\mathbf r,\mathbf v)\) in one concrete perturbed-orbit scenario.
+2. `C62`: if S35 yields a compact formulation, promote as a brief implementation note near D1.5i.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

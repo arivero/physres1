@@ -1201,3 +1201,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: D1.5 chain now states explicit conditions under which projected areal-rate postulates are empirically falsifiable.
 - Sources touched (keys + status changes): none.
 - Next: run `Q23` on D1.5b-i for coherence and readability.
+
+## 2026-02-10 (Q23: quality pass on D1.5b-i)
+- Focus: consistency review after adding observability criterion D1.5i.
+- Checks:
+  - read-through of D1.5b-i chain;
+  - verified D1.5i test equations and declaration items are explicit;
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; D1.5i integrates cleanly with prior caveats.
+- Sources touched (keys + status changes): none.
