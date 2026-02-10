@@ -1848,3 +1848,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the scale-supplier branch now has an explicit definition-level anchor consistent with the OA-first bibliography policy.
 - Sources touched (keys + status changes): none (key already added in `B07`).
 - Next: run `Q41` to quality-pass the scale-supplier section for branch separation and tone.
+
+## 2026-02-10 (Q41: quality pass on the scale-supplier branch after adding the Wilson-loop anchor)
+- Focus: referee-style check that the updated `Example E4` / `Remark E4a` flow stays hypothesis-separated and not overclaimed.
+- Checks:
+  - verified the Wilson-loop potential definition and area-law \(\Rightarrow\) \(\sigma\) identification are operational and properly cited (`[Greensite2003Confinement]`);
+  - verified the string-tension option remains explicitly a transmutation-scale branch ("when it exists"), separate from assuming a fundamental UV \(\alpha_\ast\).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S57` to decide whether to open a dedicated string-tension dependent draft or keep this as a bounded option in `papers/planck-area/main.md`.
