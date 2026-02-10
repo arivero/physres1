@@ -105,11 +105,12 @@
 - `Q10` Completed.
 - `Q11` Completed.
 - `Q12` Completed.
+- `Q13` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q13`: quality pass on the new relativistic-central-orbits draft (scope, notation, and claims).
-2. Optional `S26`: SR stability for circular orbits (small radial perturbations) as the next wave.
+1. `S26`: SR stability for circular orbits (small radial perturbations) as the next wave.
+2. `C53`: promote S26 stability results into `papers/relativistic-central-orbits/main.md` if they produce a clean criterion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -846,3 +846,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: updated `papers/relativistic-central-orbits/main.md` by adding a GR section deriving conserved \(E,L\), the radial equation \(\dot r^2=E^2-(1-2M/r)(\epsilon+L^2/r^2)\), and recording the photon-sphere result \(r_{\mathrm{ph}}=3M\) with \(b=3\sqrt3\,M\). The section cites `[Carroll1997LectureGR]` as a baseline OA anchor.
 - Result: the relativistic-central-orbits draft now has two concrete pillars (SR inverse-square bound + GR photon-sphere baseline) and can be expanded in future waves (stability, timelike orbits).
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q13: quality pass on the relativistic-central-orbits draft)
+- Focus: referee-style scope/notation/claim check on `papers/relativistic-central-orbits/main.md`.
+- Checks:
+  - Read-through of the SR and GR sections for convention clarity.
+  - Verified cited keys exist in `paper/bibliography.md`: `[BoscagginDambrosioFeltrin2020RelKepler]`, `[Carroll1997LectureGR]`.
+- Findings: draft remains disciplined (two concrete derivations + explicit next waves), and does not overclaim novelty; units are explicit and restored for the GR baseline.
+- Sources touched (keys + status changes): none.
