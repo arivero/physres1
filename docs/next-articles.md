@@ -96,6 +96,25 @@ Suggested deliverables:
 2. A precise semigroup vs group discussion (coarse-graining vs reversible composition).
 3. A rooted-tree dictionary section that is explicit about what is analogy vs literal equivalence [Brouder1999] [ConnesKreimer2000] [McLachlan2017].
 
+## I. Relativistic Central Orbits (SR/GR Follow-up)
+`conv_patched.md` contains a self-contained thread on SR/GR circular-orbit admissibility and stability under central forces (and the GR photon-sphere/impact-parameter story).
+This is outside the cornerstone paper’s scope but can be a clean dependent note.
+
+Suggested deliverables:
+1. SR worldline action with a central potential; effective potential reduction.
+2. Circular-orbit conditions and stability; special simplifications for inverse-square.
+3. GR geodesic reduction (Schwarzschild as baseline); circular orbits + photon sphere via effective potential.
+4. A short bridge back to the project spine: “areal invariants survive refinement, while relativistic kinematics adds admissibility bounds.”
+
+## J. String Tension as a Universal Area-Scale Supplier (Gauge-Theory Follow-up)
+If the half-density scalarization ladder needs “a source of area scale” that is not *assumed* to be Planckian, confinement provides a canonical candidate: \(\sigma\) with \([\sigma]=\text{length}^{-2}\).
+
+Suggested deliverables:
+1. Wilson-loop definition of the static potential: \(\langle W\rangle \sim e^{-T V(r)}\).
+2. Area law \(\Rightarrow\) string tension \(\sigma\) and the associated area scale \(\alpha_\ast\sim\sigma^{-1}\).
+3. Connection to `papers/planck-area/main.md` (scale supplier for scalarization) and to `papers/rg-fundamental/main.md` (running/transmutation).
+4. Clearly separate “heuristic bridge” from any claim of fundamental primacy.
+
 ## Tooling Notes (Paper Ops)
 1. PDF build uses pandoc's single-backslash math extension:
    - `pandoc -f markdown+tex_math_single_backslash -s paper/main.md -o paper/main.tex`

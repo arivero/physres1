@@ -742,3 +742,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Verified the referenced files exist: `papers/half-density-qft/main.md` and `blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md`.
 - Findings: no issues; H4.0b is short, explicitly conformal-class scoped, and clearly distinguished from the Planck-area sieve.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S20: map `conv_patched.md` coverage to the current paper set)
+- Focus: restart-stable planning map: which conversation themes are already in the drafts vs still missing/outside scope.
+- Work:
+  - Read `conv_patched.md` strictly as a non-citable idea log.
+  - Wrote `docs/conv-coverage-map.md` mapping: topic → current coverage → best incorporation target → next cycle type (`S`/`C`/`B`).
+- Result: the backlog is now file-targeted (e.g. generic-\(q\) areal-speed derivation for `papers/planck-area/main.md`, and a full “control map \(\tau\)” formalization note before promoting any 9803035-inspired claims).
+- Note (correction from discussion): “uncuttable” is interpreted as “not computable with a finite number of cuts” (requires a controlled refinement/limit), not “cannot be subdivided”.
+- Sources touched (keys + status changes): none.
