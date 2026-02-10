@@ -1947,3 +1947,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the manuscript now names an explicit place where \(G\) enters as a scale-conversion constant in the refinement/scalarization story, while keeping the identification optional.
 - Sources touched (keys + status changes): none.
 - Next: optional `Q45` to referee-pass this block for claim hygiene; optional blackboard work on the "Planck areal speed" orbit question.
+
+## 2026-02-10 (S60: Planck areal speed circular orbit witness)
+- Focus: answer the "one Planck area per Planck time" circular-orbit question in Newtonian gravity as a concrete algebraic witness.
+- Work:
+  - derived \(r=4\hbar/(Mc)=4\lambda_C(M)\) from \(\dot A=\ell_P^2/t_P\), \(\dot A=\frac12 r v\), and \(v^2=GM/r\).
+  - noted Newtonian consistency requires \(M\ll 2m_P\) (otherwise \(v\sim c\) and relativistic corrections enter).
+- Result: wrote `blackboards/2026-02-10-planck-areal-speed-circular-orbit.md`.
+- Sources touched (keys + status changes): none.
+- Next: decide whether to promote as a short remark in Section 3 or keep as a dependent-draft witness.
