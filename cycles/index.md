@@ -69,6 +69,7 @@
 65. `C65` Completed.
 66. `C66` Completed.
 67. `C67` Completed.
+68. `C68` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -156,8 +157,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C68`: promote the Newton-limit paradox / Zeno-style limit-control motivation into `paper/main.md`.
-2. `Q30`: quality pass on the new motivation insertion.
+1. `Q30`: quality pass on the new motivation insertion.
+2. `S42`: return to QFT doubling bridge (half-density continuation) for the next promotion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

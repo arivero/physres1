@@ -1455,3 +1455,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - selected the next promotion focus: make the "Newton-limit paradox / limit-control" motivation explicit as a Zeno-style refinement issue.
 - Result: queued `C68` to promote one concise motivation remark in the cornerstone manuscript.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C68: promote Newton-limit paradox motivation in main paper)
+- Focus: make the long thinking goal explicit in the cornerstone narrative.
+- Work:
+  - Added a compact Zeno-style refinement-paradox paragraph in the Introduction of `paper/main.md`.
+  - Framed the issue structurally (limit control for singular/divergent refinements), and positioned quantization/renormalization as distinct control mechanisms.
+- Result: the paper now states the foundational "why this program" motivation in one place, tied to concrete loci already treated later (Dirac-supported probes and divergent refinement).
+- Sources touched (keys + status changes): none.
