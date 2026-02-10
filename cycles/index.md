@@ -50,6 +50,7 @@
 - `S06` Completed.
 - `S07` Completed.
 - `S08` Completed.
+- `S09` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -59,9 +60,9 @@
 
 ## Next Action
 Priority: half-densities + dependent follow-up drafts.
-1. Optional `C32`: add a one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` now that `B02` is anchored (referee-friendliness).
-2. Optional `S09`: study whether the contact-interaction rank-one kernel \(g|0\rangle\langle0|\) admits a clean half-density scalarization narrative parallel to the identity-kernel discussion (keep geometry vs RG separate).
-3. Next `B` (when DNS works): expand semiclassical anchor set (book-level references) if desired; low priority now that `B02` is in place.
+1. `C32`: promote `S09` into `papers/rg-fundamental/main.md` (very short kernel/half-density remark) and optionally into `papers/planck-area/main.md` (one bridge sentence).
+2. Optional new paper: start a short draft unifying “half-densities + point interactions + RG scale suppliers” if C32 feels too cramped.
+3. Optional `C33`: add the one-sentence pointer near `Derivation D4.3` to `paper/notes/van-vleck-schur-complement.md` (referee-friendliness).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

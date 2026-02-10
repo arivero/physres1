@@ -445,3 +445,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: `Derivation D4.3` is now supported by both an early Van Vleck tradition anchor and a modern explicit OA formula reference.
 - Sources touched (keys + status changes): added `[deGosson2018ShortTimePropagators]` (OA via PMC; captured in `sources/de-gosson-2018-a2bad87d.md`).
 - Next: optional tiny `C` pass to add a one-sentence pointer to `paper/notes/van-vleck-schur-complement.md` near D4.3 for referee-friendliness.
+
+## 2026-02-10 (S09: point interaction as half-density kernel)
+- Focus: unify the delta/contact RG witness with the half-density-first kernel calculus.
+- Question: what is the coordinate-free kernel of a point interaction, and how does its scaling clarify where a physical length scale can enter upon scalarization?
+- Work: wrote `blackboards/2026-02-10-point-interaction-as-half-density-kernel.md` formulating the point interaction as a rank-one operator \(g|0\rangle\langle0|\) with kernel \(g\,\delta(x)\delta(y)|dx|^{1/2}|dy|^{1/2}\), and checking the dilation scaling of the point-supported half-density \(\delta(x)|dx|^{1/2}\) to make the \(d/2\) exponent explicit; recorded a conditional interpretation that RG invariants (e.g. \(\kappa_\ast\) in 2D) can supply scalarization scales if one adds a universality hypothesis, keeping convention vs physics separation explicit.
+- Result: we now have a concrete “delta/contact” bridge that reinforces the half-density priority thread without mixing it with RG running as a category error.
+- Sources touched (keys + status changes): none (study only).
+- Next: promote a short remark into `papers/rg-fundamental/main.md` (and optionally a bridge sentence into `papers/planck-area/main.md`) if it reads cleanly.
