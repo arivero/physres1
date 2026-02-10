@@ -1425,3 +1425,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: generated a concise Section 5.8 promotion candidate clarifying why fixed-point complexity can be richer in \(1\)D.
 - Sources touched (keys + status changes): none.
 - Next: promote one short heuristic bridge remark in `C67`.
+
+## 2026-02-10 (C67: promote Section 5.8 cross-dimensional bridge)
+- Focus: codify the S40 data-space map directly inside the RG manuscript.
+- Work:
+  - Added `Heuristic H1.8a` after `Proposition P1.6` in `papers/rg-fundamental/main.md`.
+  - Stated that the compatibility grammar is shared across \(1\)D/\(2\)D/\(3\)D, while flowed-data complexity differs:
+    - \(1\)D full contact family: boundary-condition manifold (U(2)-type data),
+    - \(2\)D marginal branch: effective one-scale transmutation data,
+    - \(3\)D s-wave branch: effective one-parameter scattering-length data.
+- Result: Section 5.8 now has a compact conceptual bridge explaining dimensional fixed-point richness without changing the core RG thesis.
+- Sources touched (keys + status changes): none.
+- Next: run `Q29` on Section 5.8 wording/scope.

@@ -68,6 +68,7 @@
 64. `C64` Completed.
 65. `C65` Completed.
 66. `C66` Completed.
+67. `C67` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -153,8 +154,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C67`: promote one concise cross-dimensional bridge remark in RG draft.
-2. `Q29`: quality pass on the Section 5.8 bridge insertion.
+1. `Q29`: quality pass on the Section 5.8 bridge insertion.
+2. `S41`: map unresolved conv-patched themes not yet represented in manuscripts.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -302,6 +302,13 @@ Thus:
 2. \(d=2\): \([g]=\text{length}^{0}\) (marginal; logarithms),
 3. \(d=3\): \([g]=\text{length}^{+1}\) (the natural dimensionless combination at momentum scale \(\mu\) is \(\mu g\); cutoff schemes show power divergences).
 
+`Heuristic H1.8a (Same compatibility grammar, different data-space complexity).`
+Across \(1\)D/\(2\)D/\(3\)D contact branches, the compatibility principle is the same, but the object being flowed is not:
+1. in \(1\)D (full-line contact family), scale acts on a higher-dimensional boundary-condition manifold (U(2)-type data),
+2. in \(2\)D, the marginal log branch is effectively captured by one transmutation scale (\(\kappa_\ast\) or \(R\)),
+3. in \(3\)D s-wave contact reduction, low-energy data are effectively one-parameter (scattering length \(a\)).
+This helps explain why fixed-point structure can be richer in \(1\)D without changing the underlying "RG as compatibility" thesis.
+
 #### 5.8.1 The 3D delta: scattering length and (Wilsonian) fixed points
 In \(3\)D, the loop integral \(I(E)\) diverges linearly with a momentum cutoff. With \(E=\hbar^2k^2/(2m)\) and \(|q|<\Lambda\),
 \[
