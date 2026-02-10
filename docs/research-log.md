@@ -1549,3 +1549,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Included one-line invariants at the ISCO: \(L=2\sqrt3 M\), \(E=2\sqrt2/3\).
 - Result: Section 4 now has both null (photon sphere) and timelike (ISCO) baseline witnesses in a parallel effective-potential style.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (Q33: quality pass on ISCO subsection)
+- Focus: correctness/scope check after adding Schwarzschild timelike ISCO baseline.
+- Checks:
+  - verified consistency with Section 4 definitions for \(E,L,\epsilon\);
+  - checked circular-branch algebra and stability criterion \(r_{\rm ISCO}=6M\);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean; no matches).
+- Findings: no edits required.
+- Sources touched (keys + status changes): none.
+- Next: run `S45` on the string-tension/gauge-phase scale-supplier branch.
