@@ -82,6 +82,7 @@
 78. `C78` Completed.
 79. `C79` Completed.
 80. `C80` Completed.
+81. `C81` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -194,8 +195,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C81`: if warranted, add a short heuristic in `paper/main.md` (Intro or Section 9) summarizing "constants as control parameters" without overclaiming.
-2. `Q40`: quality pass on the Introduction after the addition (check bloat and claim hygiene).
+1. `Q40`: quality pass on the Introduction after the addition (check bloat and claim hygiene).
+2. `B07`: if we open the gauge/string-tension branch, ingest Wilson-loop/confinement anchors (OA first).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

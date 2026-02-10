@@ -1802,3 +1802,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: prepared a minimal `C81` promotion target: a short heuristic block in `paper/main.md` Introduction connecting these constants to the already-stated obstruction/control narrative.
 - Sources touched (keys + status changes): none.
 - Next: run `C81` if we can insert the block without inflating the Introduction.
+
+## 2026-02-10 (C81: add a "why \(\hbar,c,G\)" heuristic to the Introduction)
+- Focus: address "why these constants" explicitly in the cornerstone manuscript using the same compatibility language as the rest of the paper.
+- Work:
+  - Added `Heuristic H0.3` to `paper/main.md` framing \(\hbar\to0\), \(c\to\infty\), and \(G\to0\) as three compatibility limits (quantum, relativistic, gravitational) in the staged refinement program.
+- Result: the Introduction now includes a compact foundations-level answer for why \(\hbar\), \(c\), and \(G\) appear in a refinement-based construction, without claiming derivability from logic alone.
+- Sources touched (keys + status changes): none.
+- Next: run `Q40` to quality-pass the Introduction for bloat/claim hygiene after this addition.

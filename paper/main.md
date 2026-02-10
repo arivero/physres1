@@ -22,6 +22,9 @@ This manuscript treats these as limit-control problems rather than as postulates
 `Heuristic H0.2a (No Lebesgue measure on path space).`
 In infinite-dimensional spaces there is no nontrivial translation-invariant \(\sigma\)-finite Borel measure (no Lebesgue/Haar measure) [Velhinho2017InfDimMeasure], so the formal symbol \(Dq\) in a path integral cannot be interpreted as an ordinary "Lebesgue measure on trajectories." Therefore the slogan "refine the time slicing, integrate over paths, and send \(\Delta t\to0\)" is not a raw Newtonian limit statement but a definition-by-refinement that must specify normalization and, when singularities are present, regulator/subtraction rules.
 
+`Heuristic H0.3 (Constants as control parameters for compatibility limits).`
+In this program, \(\hbar\), \(c\), and \(G\) can be read as control parameters for three distinct compatibilities: \(\hbar\to0\) recovers classical stationarity from oscillatory composition, \(c\to\infty\) recovers Galilean/Newtonian kinematics from Lorentz-compatible refinement, and \(G\to0\) switches off geometric backreaction (with \(\hbar,c,G\) together defining the Planck scale where quantum and gravitational refinement controls meet).
+
 The third anchor is methodological. In this manuscript, deformation quantization and renormalization are not presented as detached specialist topics. They are two ways to control limits:
 1. Deformation quantization controls the classical-to-quantum passage through algebraic deformation and recovery of Poisson structure in the small-parameter limit [Landsman1998] [Connes1994].
 2. Renormalization controls divergent refinement procedures by regulator-dependent intermediate steps and regulator-independent observables [ConnesKreimer2000].
