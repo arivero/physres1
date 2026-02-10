@@ -7,39 +7,88 @@ They are **not** citable sources.
 Cycle IDs (e.g. `C13`, `B02`, `S00`) are planning metadata only.
 Do **not** place them in rendered manuscript content (`paper/main.md`, generated `.tex`, or PDF-visible text).
 
+## Hard Rules (Workflow Contract)
+These rules are strict and exist to keep the repo stable across many agents.
+
+### 1) Only `Cnn` edits manuscripts
+Manuscripts are:
+- `paper/main.md`
+- `papers/*/main.md`
+
+No other cycle type (`D/S/B/Q`) may edit those files. If you have text ready to promote, keep it in `blackboards/` or `paper/notes/` and open a `Cnn` to promote it.
+
+### 2) Every `Cnn` must change ≥1 manuscript (and should be substantive)
+A `Cnn` cycle is invalid if it does not modify at least one manuscript file.
+If you discover you cannot (or should not) promote, close out the work as `D/S/B` and do **not** open a `C` cycle.
+
+Preference: treat `Cnn` as a **promotion wave**. Avoid opening a `C` cycle for tiny edits; bundle them into the next promotion wave so the change is “preferably verbose” (paragraph-level, derivation-block, or subsection-level).
+
+### 3) `Qnn` answers `Cnn` only
+`Qnn` cycles are referee-style responses to a specific `Cnn` diff (the parent cycle). `Q` is not used to review `D/S/B` outputs directly.
+
+If you want critique on a discovery/study/bibliography result, either:
+- red-team it inside the same cycle’s `*-redteam.md`, or
+- promote it in a `Cnn`, then run `Qnn` on the manuscript change.
+
 ## Cycle Types
-We use four independent numbered tracks:
+We use five independent numbered tracks:
 
-1. **Content cycles** (`Cnn`): writing/derivation cycles that change manuscript text.
-   - Typical outputs: `paper/main.md`, `papers/*/main.md`, and their rebuilt PDFs.
+1. **Discovery cycles** (`Dnn`): novelty/discovery planning and triage (no manuscript edits).
+   - Typical outputs: updated backlog/priority in `docs/research-state.md` and/or `docs/next-articles.md`, plus spawned `S`/`B`/`C` cycles.
 
-2. **Bibliography cycles** (`Bnn`): search/ingest/verify cycles for references.
+2. **Study cycles** (`Snn`): exploratory “blackboard” work (scratch derivations, checks, toy computations).
+   - Typical outputs: `blackboards/*.md` and/or `paper/notes/*.md`.
+   - Promotion rule: results are promotion candidates only; promote only via a `Cnn`.
+
+3. **Bibliography cycles** (`Bnn`): search/ingest/verify cycles for references.
    - Typical outputs: `paper/bibliography.md`, `sources/` captures, and `sources/pending-<Key>.md`.
    - Rule: never cite `conv_patched.md` (or any transcript) as a bibliography source.
 
-3. **Study cycles** (`Snn`): exploratory “blackboard” work (scratch derivations, checks, toy computations).
-   - Typical outputs: `blackboards/*.md` and/or `paper/notes/*.md`.
-   - Promotion rule: only promote results into manuscripts once they are stable and (when needed) independently anchored.
+4. **Content cycles** (`Cnn`): writing/derivation cycles that change manuscript text.
+   - Typical outputs: `paper/main.md`, `papers/*/main.md`, and their rebuilt PDFs.
 
-4. **Quality cycles** (`Qnn`): “PhysRev quality” passes (clarity, correctness, claim hygiene, and reader experience).
-   - Typical outputs: the `cycles/Qnn-*.md` review itself plus any spawned `C`/`S`/`B` cycles.
+5. **Quality cycles** (`Qnn`): referee-style pass on a specific `Cnn` (clarity, correctness, claim hygiene, reader experience).
+   - Typical outputs: the `cycles/Qnn-*.md` review itself plus spawned follow-up cycles (`D/S/B/C`).
 
-These tracks are designed to be *interleaved*: between two `C` cycles it is normal to run a `B` cycle (anchor a claim), an `S` cycle (explore without committing prose), or a `Q` cycle (sanity-check quality before promoting).
+These tracks are designed to be *interleaved*, but under the strict rule that only `C` edits manuscripts and `Q` reviews `C`.
+
+## Allowed/Forbidden Files by Cycle Type
+This table is the operational “permissions model” for agents.
+
+| Cycle | Allowed edits | Forbidden edits (examples) |
+|---|---|---|
+| `Dnn` | `docs/research-state.md`, `docs/next-articles.md`, `docs/research-log.md`, `cycles/Dnn-*.md` | Manuscripts (`paper/main.md`, `papers/*/main.md`), bibliography (`paper/bibliography.md`), `sources/` |
+| `Snn` | `blackboards/*.md`, `paper/notes/*.md`, `docs/research-log.md`, `cycles/Snn-*.md` | Manuscripts, bibliography ledger, `sources/` |
+| `Bnn` | `paper/bibliography.md`, `sources/*`, `sources/pending-*.md`, `cycles/Bnn-*.md` | Manuscripts, blackboards/notes (unless spawning an `S`) |
+| `Cnn` | Manuscripts (`paper/main.md`, `papers/*/main.md`) + `cycles/Cnn-*.md` (and tracked build artifacts if used) | `blackboards/`, `paper/notes/`, bibliography ledger, `sources/` |
+| `Qnn` | `cycles/Qnn-*.md` only | Manuscripts, blackboards/notes, bibliography ledger, `sources/` |
+
+If a task would require touching forbidden files, spawn the appropriate cycle type instead of “just doing it.”
+
+## Canonical Interleavings (Recipes)
+### Recipe A (default discovery-to-prose loop)
+`D → S → (B if load-bearing) → C → Q`
+- `D`: choose the novelty target and define success criteria.
+- `S`: produce at least one concrete derivation/computation witness.
+- `B` (optional): acquire an independent anchor if the claim will be load-bearing in prose.
+- `C`: promote into manuscripts (must change at least one manuscript; preferably a wave).
+- `Q`: referee-pass the `C` diff.
+
+### Recipe B (hardening after a promotion wave)
+`C → Q → (S/B) → C`
+Use when `Q` identifies a missing derivation, an unclear claim boundary, or a weak anchor.
+
+### Recipe C (bibliography hardening before promotion)
+`B → S → C → Q`
+Use when a claim is known to be standard but needs both an anchor and a local reproduction.
 
 ## Cross-Cycle Spawning (How Work Begets Work)
-Any cycle may suggest tasks for any other track. The rule of thumb is:
-- If the task is “write or restructure prose”: spawn a `C` cycle.
-- If the task is “derive/check something uncertain”: spawn an `S` cycle (blackboard first).
-- If the task is “find/ingest/verify a reference”: spawn a `B` cycle.
-- If the task is “referee-style evaluation / polish for submission”: spawn a `Q` cycle.
-
-Common patterns:
-- `C → B`: a derivation becomes load-bearing and needs an independent anchor.
-- `C → S`: a derivation is plausible but not yet tight; do blackboard work before locking prose.
-- `S → C`: a blackboard result stabilizes and is ready to promote.
-- `S → B`: a blackboard thread points to a known standard reference; fetch/ingest it.
-- `B → S`: a newly ingested source suggests a computation we should reproduce ourselves.
-- `Q → (C,S,B)`: the quality pass identifies missing derivations, unclear prose, or weak anchoring.
+Use this rule of thumb:
+- If the task is “choose novelty + triage”: spawn `D`.
+- If the task is “derive/check”: spawn `S`.
+- If the task is “find/ingest/verify a reference”: spawn `B`.
+- If the task is “write or restructure manuscripts”: spawn `C`.
+- If the task is “referee review of a manuscript change”: spawn `Q` (and name the parent `C`).
 
 ## File Convention (per cycle)
 Each cycle uses four files:
@@ -48,9 +97,11 @@ Each cycle uses four files:
 - `cycles/<ID>-debate.md`: one hard question + the current resolution.
 - `cycles/<ID>-redteam.md`: failure modes + mitigations.
 
+Templates live in `cycles/templates/` and should be copied/renamed when starting a new cycle.
+
 ## Content-Cycle Logging Requirement (Diffstat)
-Every `Cnn` cycle must satisfy both:
-1. Either produce substantive edits to at least one draft manuscript (`paper/main.md` and/or `papers/*/main.md`), **or** explicitly explain why promotion did not happen in this cycle.
+Every `Cnn` cycle must:
+1. Produce substantive edits to at least one draft manuscript (`paper/main.md` and/or `papers/*/main.md`).
 2. Record the line-level diffstat for those draft manuscripts in `cycles/Cnn-execution.md`.
 
 Command (run after staging changes, just before `git commit`):
@@ -59,7 +110,7 @@ scripts/paper-diffstat.sh --cached
 ```
 
 Paste the output under a `## Diffstat` heading in the execution log.
-If the command reports `TOTAL +0 -0`, include a “Why no promotion” paragraph and (usually) spawn an `S` and/or `B` cycle instead of forcing prose.
+If the command reports `TOTAL +0 -0`, the cycle should not have been a `C` cycle; close it out as `D/S/B` and open a new `C` only when promotion is ready.
 
 ## Build Hygiene
 After a successful TeX build, delete auxiliary files explicitly (never recursively), e.g.:

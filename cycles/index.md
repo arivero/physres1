@@ -208,11 +208,15 @@
 - `Q43` Completed.
 - `Q44` Completed.
 
+### Discovery Cycles (`Dnn`)
+- None yet.
+
 ## Next Action
-Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q45`: (optional) referee-pass the \(G\) witness block for novelty and claim hygiene.
-2. `C87`: (optional) promote the Planck-areal-speed orbit witness as a short remark in Section 3 (only if it strengthens the narrative).
-3. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
+Priority: shift into discovery/novelty mode (generate promotable novelty via `D → S → (B) → C → Q`).
+1. `D00`: pick one novelty thread (and spawn a bounded `S` deliverable).
+2. `Q45`: (optional) referee-pass `C86`’s \(G\) witness block for novelty and claim hygiene.
+3. `C87`: (optional) promote the Planck-areal-speed orbit witness as a short remark in Section 3 (only if it strengthens the narrative), then run a `Q` on that `C`.
+4. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

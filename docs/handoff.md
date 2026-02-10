@@ -22,6 +22,7 @@ Key policies:
 - Source ledger: `paper/bibliography.md`
 - Follow-up drafts: `papers/`
 - Planning artifacts: `cycles/`
+- Cycle playbook + templates: `cycles/README.md`, `cycles/templates/`
 - Regenerable captures (gitignored): `sources/`, `bibliography/sources/`
 
 ## Research Continuation (Durable State)
