@@ -259,6 +259,9 @@ and matching \([C]=\text{length}^{d/2}\) forces \(2n=d/2\), i.e. \(d=4n\).
 So \(\alpha_\ast\) provides a “background-free” source of scale but does not single out \(d=4\) on its own; it selects dimensions divisible by \(4\) under the strict integrality reading of H2.5.
 In \(d=4\) it yields directly an area scale \(C\sim \alpha_\ast\) (e.g. \(C\sim \alpha'\) in the string example).
 
+`Remark E4a (Emergent string tension is a transmutation-scale instance, not a UV parameter).`
+In confining phases one often defines an effective string tension \(\sigma\) with \([\sigma]=\text{length}^{-2}\), so \(\sigma^{-1}\) supplies an area scale. In \(d=4\) gauge theories with dimensionless couplings, such a scale is expected to arise (when it exists) as an RG-invariant transmutation scale rather than as a new analytic monomial in the couplings. Logically, this places "string tension as area supplier" in the H2.13 branch unless one is explicitly assuming a fundamental UV area parameter \(\alpha_\ast\).
+
 `Heuristic H2.12 (Link to gravity/Planck length in a UV completion).`
 The gravity-only sieve (Derivation D1.3) uses \(G_d\) as the unique universal coupling supplying dimension. In a UV completion where gravity is emergent from a sector with a universal area parameter \(\alpha_\ast\) and a dimensionless coupling \(g\), dimensional analysis suggests
 \[

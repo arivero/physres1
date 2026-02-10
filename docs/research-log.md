@@ -1569,3 +1569,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - recorded the distinction and a promotion target in `blackboards/2026-02-10-string-tension-as-area-scale-branch.md`.
 - Result: prepared a one-remark manuscript clarification to avoid mixing H2.5 and H2.13 branches.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C72: clarify string-tension area-scale branch in planck-area draft)
+- Focus: prevent hypothesis mixing in the area-scale supplier discussion.
+- Work:
+  - Added `Remark E4a` in `papers/planck-area/main.md` after Example E4.
+  - Stated explicitly that emergent string tension \(\sigma\) (when defined) provides an area scale \(\sigma^{-1}\) but in \(d=4\) belongs logically to the transmutation branch (H2.13) rather than to H2.5 analytic monomial sieves, unless one assumes a fundamental UV area parameter \(\alpha_\ast\).
+- Result: the string-tension option is now cleanly separated into "fundamental input" vs "RG-emergent invariant" branches.
+- Sources touched (keys + status changes): none.

@@ -73,6 +73,7 @@
 69. `C69` Completed.
 70. `C70` Completed.
 71. `C71` Completed.
+72. `C72` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -168,8 +169,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C72`: promote one concise string-tension scale-supplier remark into `papers/planck-area/main.md`.
-2. `Q34`: quality pass on the clarification insertion.
+1. `Q34`: quality pass on the clarification insertion.
+2. `S46`: revisit "uncuttable" clarification and add a definition note (careful wording).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
