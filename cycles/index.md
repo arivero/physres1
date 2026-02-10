@@ -124,11 +124,12 @@
 - `Q17` Completed.
 - `Q18` Completed.
 - `Q19` Completed.
+- `Q20` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q20`: quality pass on the D1.5b-D1.5f block.
-2. `S32`: explore whether the same minimal-structure rule extends to non-circular bound orbits.
+1. `S32`: explore whether the same minimal-structure rule extends to non-circular bound orbits.
+2. `C59`: if S32 yields a compact statement, promote as a one-paragraph extension note near D1.5f.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

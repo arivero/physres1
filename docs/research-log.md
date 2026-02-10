@@ -1079,3 +1079,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: D1.5 sequence now ends with an operational rule that stabilizes clock/congruence choices for this branch.
 - Sources touched (keys + status changes): none.
 - Next: run `Q20` for readability and scope discipline across D1.5b-f.
+
+## 2026-02-10 (Q20: quality pass on D1.5b-D1.5f)
+- Focus: validate coherence after adding the D1.5f operational rule.
+- Checks:
+  - read-through of D1.5b through D1.5f as a single progression;
+  - assumption-tracking check (clock branches -> covariant candidate -> invariant limits -> minimal rule);
+  - guardrail scan `rg -n 'C[0-9]{2}' paper/main.md` (clean).
+- Findings: no edits required; progression is readable and branch scope remains explicit.
+- Sources touched (keys + status changes): none.
