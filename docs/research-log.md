@@ -1671,3 +1671,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S49` to add one concrete scheme/ordering non-uniqueness example to match the concreteness of the measure obstruction.
+
+## 2026-02-10 (S49: time-slicing ordering ambiguity witness for \(H=pq\))
+- Focus: make the "non-uniqueness" obstruction concrete with a minimal time-slicing example.
+- Work:
+  - Derived a one-parameter family of time-sliced propagators for \(H=pq\) where endpoint/midpoint evaluation yields different \(O(\hbar)\) generators (ordering ambiguity).
+  - Recorded the full calculation in `blackboards/2026-02-10-ordering-ambiguity-from-time-slicing-pq.md`.
+- Result: prepared a clean promotion target for `paper/main.md`: a 2-3 sentence companion to `Heuristic H0.2` item 2.
+- Sources touched (keys + status changes): none.
+- Next: run `C76` to promote the companion sentence into `paper/main.md` and record diffstat.
