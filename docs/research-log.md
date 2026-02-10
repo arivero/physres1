@@ -599,3 +599,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: record the current research steering decision so it survives restarts.
 - Work: updated `docs/research-state.md` to explicitly avoid BV/BRST beyond outlook (no dedicated cycles unless later requested), and updated `cycles/index.md` to deprioritize BV bibliography accordingly.
 - Result: the repo’s “anti-herd” guardrail now explicitly keeps us focused on quantization via stationary extremes + refinement-compatible composition and on the structural emergence of an action-scale regulator (\(\hbar\)).
+- Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S15: difference quotients as counterterm subtractions; \u03b4' from point splitting)
+- Focus: make the slogan “even the derivative is a counterterm” precise as a toy model for “regulate \(\to\) subtract \(\to\) limit”, with an explicit distributional companion producing \(\delta'\).
+- Work: added `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`:
+  - smooth case: \(f(x+\varepsilon)/\varepsilon = f(x)/\varepsilon + f'(x) + O(\varepsilon)\), so subtraction cancels the \(1/\varepsilon\) divergence;
+  - “scheme dependence”: subtracting \((1/\varepsilon+z_0)f(x)\) leaves \(f'(x)-z_0 f(x)\), fixed by the condition \(D(1)=0\Rightarrow z_0=0\);
+  - distribution case: \((\delta(\cdot+\varepsilon)-\delta)/\varepsilon \to \delta'\) with \(\langle\delta',\varphi\rangle=-\varphi'(0)\);
+  - explicit warning not to conflate \(\delta'\) with stationary-set deltas \(\delta(f')\).
+- Result: we now have a compact, derivation-first toy model that can be promoted into the RG narrative without importing external literature.
+- Sources touched (keys + status changes): none.
