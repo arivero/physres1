@@ -51,6 +51,7 @@
 47. `C47` Completed.
 48. `C48` Completed.
 49. `C49` Completed.
+50. `C50` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -99,9 +100,9 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `C50`: promote the minimal \(\tau\)-formalism into `paper/main.md` (or `paper/notes/` if not ready).
-2. `Q12`: quality pass focused on Sections 6–8 coherence (scalarization gauge, \(\tau\), RG compatibility).
-3. Optional `S23`: decide whether “point interactions in the momentum along the path” deserves a separate note, distinct from point *potentials* (distributional Lagrangians / impulses).
+1. `Q12`: quality pass focused on Sections 6–8 coherence (scalarization gauge, \(\tau\), RG compatibility).
+2. Optional `S23`: decide whether “point interactions in the momentum along the path” deserves a separate note, distinct from point *potentials* (distributional Lagrangians / impulses).
+3. Optional `B04`: if we publish the \(\tau\) paragraph, add one standard (non-preprint) RG/coarse-graining anchor (OA-first).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

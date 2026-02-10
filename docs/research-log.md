@@ -782,3 +782,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   \(\mathcal C_b(A_{h/b,\theta})=A_{h,\tau_b(\theta)}\) as the precise meaning of “a control map \(\tau\)”. Included a Gaussian kernel semigroup as the exactly-closing toy model (trivial \(\tau\)).
 - Result: the “RG = refinement compatibility” thesis now has a clean diagrammatic formulation ready to be promoted into `paper/main.md` without depending on any preprint wording.
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (C50: promote \(\tau\) refinement-compatibility formalism into the cornerstone paper)
+- Focus: insert a concise, manuscript-ready statement of the “control map \(\tau\)” compatibility condition in the RG/refinement section.
+- Work: added `Derivation D6.0` to `paper/main.md` Section 8.2, defining a resolution parameter \(h\), a coarse-graining operator \(\mathcal G_b\), and the closure requirement \(\mathcal G_b(A_{h/b,\theta})=A_{h,\tau_b(\theta)}\). The paragraph explicitly frames \(\tau_b\) as the parameter flow induced by refinement and notes that failure of closure forces an enlarged operator/coupling family (counterterms).
+- Result: the cornerstone paper now contains a transcript-independent formulation of “compare discretizations at fixed ruler” that dovetails with the existing renormalization-map semigroup discussion.
+- Sources touched (keys + status changes): none.
