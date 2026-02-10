@@ -1447,3 +1447,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required; bridge improves section coherence.
 - Sources touched (keys + status changes): none.
 - Next: run `S41` to map unresolved `conv_patched.md` themes still outside manuscript coverage.
+
+## 2026-02-10 (S41: unresolved theme coverage map + promotion target)
+- Focus: identify high-value themes from `conv_patched.md` still underrepresented in current drafts.
+- Work:
+  - built a concrete coverage matrix (covered/partial/missing + next actions) in `blackboards/2026-02-10-unresolved-conv-themes-coverage-map.md`.
+  - selected the next promotion focus: make the "Newton-limit paradox / limit-control" motivation explicit as a Zeno-style refinement issue.
+- Result: queued `C68` to promote one concise motivation remark in the cornerstone manuscript.
+- Sources touched (keys + status changes): none.

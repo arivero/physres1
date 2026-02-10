@@ -120,6 +120,7 @@
 - `S38` Completed.
 - `S39` Completed.
 - `S40` Completed.
+- `S41` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -155,8 +156,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S41`: map unresolved conv-patched themes not yet represented in manuscripts.
-2. `C68`: promote one high-value unresolved theme into manuscript prose.
+1. `C68`: promote the Newton-limit paradox / Zeno-style limit-control motivation into `paper/main.md`.
+2. `Q30`: quality pass on the new motivation insertion.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

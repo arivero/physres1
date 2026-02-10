@@ -9,6 +9,7 @@ Date: 2026-02-10
 - Manuscript: `paper/main.md` (publishable artifact).
 - Thesis: physically meaningful laws are those that survive controlled refinement in partition/representation/scale (Section 10: Refinement Compatibility Principle, RCP).
 - Structural spine: Newton polygonal refinement → action additivity/Noether → composition law → path integral → deformation quantization + renormalization as limit-control mechanisms.
+- Long thinking goal: identify the precise **mathematical obstruction/ambiguity** in the naive Newtonian "refinement \(\to 0\)" limit that motivates retaining a finite deformation parameter (the role played by \(\hbar\)) as the minimal fix, analogously to how Newton’s limit methods resolve Zeno-style refinement paradoxes.
 
 ## Hard Guardrails
 1. Do not put cycle IDs like `C00` in rendered manuscript content (`paper/main.md`, generated `.tex`, PDF-visible text).
