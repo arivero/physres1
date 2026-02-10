@@ -139,6 +139,7 @@
 - `S47` Completed.
 - `S48` Completed.
 - `S49` Completed.
+- `S50` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -182,8 +183,8 @@
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `S50`: study whether the \(H=pq\) witness has a cleaner "control-map equivalence" phrasing (similarity transforms vs genuinely different physics).
-2. `C77`: if warranted, tighten the `Heuristic H0.2` item-2 wording to match "control map / equivalence class" language.
+1. `C77`: if warranted, tighten the `Heuristic H0.2` item-2 wording to match "control map / equivalence class" language.
+2. `Q38`: quality pass on the Introduction after the wording tighten (if applied).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

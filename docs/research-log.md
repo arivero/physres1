@@ -1697,3 +1697,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no edits required.
 - Sources touched (keys + status changes): none.
 - Next: run `S50` to see whether the ordering ambiguity can be phrased more directly as a "control map / equivalence class" statement, matching the manuscript’s language.
+
+## 2026-02-10 (S50: unitarity/half-density as a control condition selecting symmetric ordering)
+- Focus: reinterpret the \(H=pq\) time-slicing ordering ambiguity in "control map / equivalence" terms.
+- Work:
+  - showed that the symmetric generator \(-i\hbar(q\partial_q+\tfrac12)\) is selected by requiring unitary dilations on \(L^2(\mathbb R_+,dq)\), i.e. by the half-density Jacobian factor.
+  - recorded the derivation in `blackboards/2026-02-10-dilation-generator-unitarity-and-half-density.md`.
+- Result: prepared an optional wording improvement for the Introduction parenthetical: "unitarity selects the symmetric (half-density) convention" for this toy witness.
+- Sources touched (keys + status changes): none.
+- Next: run `C77` if we decide to tighten the Introduction wording accordingly.
