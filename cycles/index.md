@@ -73,6 +73,7 @@
 - `S15` Completed.
 - `S16` Completed.
 - `S17` Completed.
+- `S18` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.

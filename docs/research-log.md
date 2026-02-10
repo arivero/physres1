@@ -693,3 +693,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: no correctness issues found; the coefficient \(D(4-D)/4\) and the \(D=4\) cancellation match S16/S17; wording stays explicitly heuristic and scale-neutral.
 - Action queue: none (an optional future S-cycle would be to seek an invariant formulation or test beyond the conformal ansatz).
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (S18: derivatives of the diagonal delta kernel via Lie derivatives)
+- Focus: clarify “derivatives of the delta” in the half-density kernel language used across QM/QFT/RG drafts, emphasizing a connection-free (Lie derivative) formulation suitable for contact terms and counterterms.
+- Work: added `blackboards/2026-02-10-derivatives-of-diagonal-delta-kernel.md`:
+  - records the canonical identity kernel \(\delta_{\mathrm{diag}}=\delta^{(D)}(x-y)|dx|^{1/2}|dy|^{1/2}\),
+  - derives the coordinate-free identity \((\mathcal L_{V_x}+\mathcal L_{V_y})\delta_{\mathrm{diag}}=0\), hence \(\mathcal L_{V_x}\delta_{\mathrm{diag}}=-\mathcal L_{V_y}\delta_{\mathrm{diag}}\) (generalizing \(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)),
+  - links point splitting/difference quotients to \(\delta'\) and ties the story to diagonal-support counterterms in QFT.
+- Result: we have a compact “contact term algebra” dictionary entry that is compatible with the repo’s measure-free half-density semantics.
+- Sources touched (keys + status changes): none.
