@@ -109,11 +109,12 @@
 - `Q12` Completed.
 - `Q13` Completed.
 - `Q14` Completed.
+- `Q15` Completed.
 
 ## Next Action
 Priority: integrate the “control map \(\tau\)” refinement story and strengthen RG-as-compatibility framing (half-densities now treated as established background).
-1. `Q15`: referee-style pass on the promoted stability section (notation + scope).
-2. `S27`: decide whether to connect SR-stability bounds to the Planck-areal-speed witness (if any nontrivial link survives beyond inverse-square).
+1. `S27`: decide whether to connect SR-stability bounds to the Planck-areal-speed witness (if any nontrivial link survives beyond inverse-square).
+2. `C54`: if S27 yields a clean link, promote it into `papers/planck-area/main.md` or `papers/relativistic-central-orbits/main.md` (whichever is conceptually tighter).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

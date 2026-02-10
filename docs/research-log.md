@@ -880,3 +880,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: the dependent note now has an explicit SR stability witness, not only existence/bound conditions for circular orbits.
 - Sources touched (keys + status changes): none.
 - Next: run a short `Q` pass on the new section (notation + scope discipline).
+
+## 2026-02-10 (Q15: quality pass on SR stability promotion)
+- Focus: referee-style pass on the new SR stability section in `papers/relativistic-central-orbits/main.md`.
+- Checks:
+  - Read-through of Sections 2–6 for scope/notation/claim hygiene.
+  - Verified the stability inequality reduces to Newtonian \(q<3\) as \(\gamma\to1\).
+- Findings: the promotion stays within stated scope (“mechanical SR + external potential”), does not overclaim universality, and keeps “Next Waves” appropriately bounded.
+- Sources touched (keys + status changes): none.
