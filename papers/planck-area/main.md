@@ -511,6 +511,20 @@ r\to 2L_P.
 \]
 So in this SR continuation, the inverse-square Planck-areal-speed witness is not destroyed; it is regularized into a bounded interpolation.
 
+`Remark D1.5c (Clock-choice sensitivity: fixed \(dA/dt\) vs fixed \(dA/d\tau\)).`
+The \(2L_P\) high-mass saturation in D1.5b is tied to fixing the coordinate-time areal speed \(\dot A_t=dA/dt\). If one instead fixes proper-time areal speed \(\dot A_\tau=dA/d\tau\) in the same inverse-square SR model, then
+\[
+r(M,\dot A_\tau)
+=\frac{4\dot A_\tau^2}{GM}\sqrt{1-\left(\frac{GM}{2\dot A_\tau c}\right)^2},
+\]
+which is defined only for \(GM<2\dot A_\tau c\).
+With \(\dot A_\tau=cL_P\),
+\[
+r(M)=\frac{4\hbar}{Mc}\sqrt{1-\frac{M^2}{4M_P^2}},
+\]
+so \(M\to2M_P^{-}\Rightarrow r\to0\), not \(2L_P\).
+Therefore the low-mass Compton-like branch is robust, while the high-mass asymptotic is clock-convention dependent in this mechanical SR setting.
+
 ## 6. Interface with the Main Paper
 The main manuscript argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and

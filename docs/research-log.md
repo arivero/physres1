@@ -953,3 +953,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: low-mass Compton-like behavior is shared, but the high-mass “Planck floor” is clock-convention dependent in this model.
 - Sources touched (keys + status changes): none.
 - Next: promote a caveat remark into the planck-area draft so D1.5b is explicitly framed as \(dA/dt\)-specific.
+
+## 2026-02-10 (C55: promote clock-choice caveat next to D1.5b)
+- Focus: make convention sensitivity explicit in the manuscript thread, not only in blackboard notes.
+- Work:
+  - Added `Remark D1.5c` in `papers/planck-area/main.md` contrasting fixed \(dA/dt\) and fixed \(dA/d\tau\) branches.
+  - Promoted the proper-time branch formula
+    \[
+    r(M,\dot A_\tau)=\frac{4\dot A_\tau^2}{GM}\sqrt{1-\left(\frac{GM}{2\dot A_\tau c}\right)^2},
+    \]
+    with domain condition and \(\dot A_\tau=cL_P\) specialization.
+- Result: the draft now states explicitly that low-mass Compton-like behavior is robust, while high-mass asymptotics are clock-convention dependent in the present SR-mechanical model.
+- Sources touched (keys + status changes): none.
+- Next: run `Q17` on D1.5/D1.5b/D1.5c for clarity and overclaim control.
