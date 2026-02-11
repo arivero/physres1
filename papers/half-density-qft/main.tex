@@ -70,9 +70,9 @@ counterterms/contact terms appear as distributions supported on the
 diagonal \((x=y)\) (delta kernels and their derivatives), which are most
 naturally expressed using the canonical bi-half-density delta.
 
-This note is a dependent follow-up to \texttt{paper/main.md} and relates
-to \texttt{papers/planck-area/main.md} (scalarization scales) and
-\texttt{papers/rg-fundamental/main.md} (RG as compatibility).
+This note is a dependent follow-up to the main manuscript and relates to
+companion notes on scalarization scales (the Planck-area program) and on
+RG as compatibility.
 \end{abstract}
 
 \section{1. Purpose and Scope}\label{purpose-and-scope}
@@ -108,10 +108,10 @@ K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2},
 \] which is canonical: it does not require choosing a background
 density/volume form.
 
-This is the same object used repeatedly in the repo's half-density
+This is the same object used repeatedly in the project's half-density
 scaling thread: the diagonal delta kernel is the universal
-distributional witness of the \(\varepsilon^{-D/2}\) exponent (see
-\texttt{papers/planck-area/main.md}, Derivation D1.2b).
+distributional witness of the \(\varepsilon^{-D/2}\) exponent (see the
+companion Planck-area note, Derivation D1.2b).
 
 \section{\texorpdfstring{3. Worked computation: densitized scalar field
 \(\psi=|g|^{1/4}\phi\)}{3. Worked computation: densitized scalar field \textbackslash psi=\textbar g\textbar\^{}\{1/4\}\textbackslash phi}}\label{worked-computation-densitized-scalar-field-psig14phi}
@@ -168,9 +168,8 @@ Then \(\sqrt{|g|}=e^{D\sigma}\), \(|g|^{1/4}=e^{D\sigma/2}\),
 proportional to \(D(4-D)(\partial\sigma)^2\), which cancels at \(D=4\)
 in this conformal ansatz. This is recorded only as a concrete
 simplification in a natural metric class; its broader meaning (if any)
-is a separate question. For the derivation and a SymPy coefficient/sign
-check, see
-\texttt{blackboards/2026-02-10-half-density-laplacian-conformal-metric.md}.
+is a separate question. A symbolic coefficient/sign check (SymPy)
+confirms this expansion.
 
 Interpretation: - the metric half-density \(|g|^{1/4}|dx|^{1/2}\) is a
 \textbf{scalarization gauge} (a choice of reference half-density) on a
@@ -245,9 +244,7 @@ diffeomorphisms \((\Phi\times\Phi)\), so for any vector field \(V\) on
 In local coordinates, taking \(V=\partial/\partial x^\mu\) recovers
 \(\partial_{x^\mu}\delta^{(D)}(x-y)=-\partial_{y^\mu}\delta^{(D)}(x-y)\).
 This is the kernel-level mechanism behind ``moving derivatives between
-slots'' in integration by parts and in contact-term identities. For a
-compact derivation and context, see
-\texttt{blackboards/2026-02-10-derivatives-of-diagonal-delta-kernel.md}.
+slots'' in integration by parts and in contact-term identities.
 
 \texttt{Remark\ D5.2\ (Point\ splitting\ produces\ \textbackslash{}u03b4\textquotesingle{}\ contact\ terms).}
 Point splitting makes the simplest derivative contact term explicit: in
@@ -255,17 +252,12 @@ one dimension, \[
 \frac{\delta(x+\varepsilon)-\delta(x)}{\varepsilon}\xrightarrow[\varepsilon\to 0]{}\delta'(x),
 \qquad \langle\delta',\varphi\rangle=-\varphi'(0).
 \] This limit is the distributional companion of the ``difference
-quotient as divergence + subtraction'' toy model; see
-\texttt{blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md}.
+quotient as divergence + subtraction'' toy model.
 
 This framing is useful for two reasons: 1. it makes ``locality =
 diagonal support'' literal at the kernel level, 2. it separates the
 canonical distributional objects from scheme-dependent scalarizations
 and finite-subtraction conventions.
-
-For a quick distribution-theory dictionary distinguishing \(\delta\),
-\(\delta'\), and \(\delta(f')\), see
-\texttt{blackboards/2026-02-10-distribution-theory-for-extremals.md}.
 
 \section{6. Link to the half-density scale program (where Planck-area
 enters
@@ -275,8 +267,8 @@ On a fixed background \((M,g)\), the metric provides a natural reference
 half-density \(|g|^{1/4}|dx|^{1/2}\). The Planck-area program begins
 only when we ask for a \textbf{background-free} scalarization convention
 that turns half-density amplitudes into universal dimensionless numbers.
-That stronger hypothesis ladder is developed in
-\texttt{papers/planck-area/main.md}.
+That stronger hypothesis ladder is developed in the companion
+Planck-area note.
 
 This paper's role is only to show that half-densities are not a QM
 quirk: the same kernel semantics is already present in standard QFT

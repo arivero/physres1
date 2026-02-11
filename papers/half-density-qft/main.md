@@ -5,7 +5,7 @@ date: ""
 abstract: |
   In QFT, the basic free object is the inverse of a kinetic operator, i.e. a propagator/Green kernel. On a manifold, writing “\(P_x G(x,y)=\delta(x,y)\)” hides conventions: which volume form defines the adjoint, and which delta normalization realizes the identity. This note adopts an organizing choice consistent with the repo’s main paper: treat fields (or kernels) as **half-densities**, so the identity kernel is canonical and kernel composition is coordinate-invariant without choosing a background measure. A worked computation shows how a scalar field on \((M,g)\) becomes a half-density \(\psi=|g|^{1/4}\phi\), with kinetic operator \(\widetilde P=|g|^{1/4}P|g|^{-1/4}\) symmetric in the coordinate pairing. We also record a kernel-level remark: local counterterms/contact terms appear as distributions supported on the diagonal \((x=y)\) (delta kernels and their derivatives), which are most naturally expressed using the canonical bi-half-density delta.
   
-  This note is a dependent follow-up to `paper/main.md` and relates to `papers/planck-area/main.md` (scalarization scales) and `papers/rg-fundamental/main.md` (RG as compatibility).
+  This note is a dependent follow-up to the main manuscript and relates to companion notes on scalarization scales (the Planck-area program) and on RG as compatibility.
 ---
 
 # 1. Purpose and Scope
@@ -37,7 +37,7 @@ K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2},
 \]
 which is canonical: it does not require choosing a background density/volume form.
 
-This is the same object used repeatedly in the repo’s half-density scaling thread: the diagonal delta kernel is the universal distributional witness of the \(\varepsilon^{-D/2}\) exponent (see `papers/planck-area/main.md`, Derivation D1.2b).
+This is the same object used repeatedly in the project’s half-density scaling thread: the diagonal delta kernel is the universal distributional witness of the \(\varepsilon^{-D/2}\) exponent (see the companion Planck-area note, Derivation D1.2b).
 
 # 3. Worked computation: densitized scalar field \(\psi=|g|^{1/4}\phi\)
 Consider a real scalar field on a fixed Lorentzian/Euclidean background \((M,g)\) with quadratic action
@@ -98,7 +98,7 @@ As a worked expansion, take a conformally flat background \(g_{\mu\nu}=e^{2\sigm
 +\frac{D(4-D)}{4}(\partial\sigma)^2\,\psi
 \Big),
 \]
-so the kinetic operator \(\widetilde P_{\mathrm{kin}}=-\widetilde\Delta\) contains a term proportional to \(D(4-D)(\partial\sigma)^2\), which cancels at \(D=4\) in this conformal ansatz. This is recorded only as a concrete simplification in a natural metric class; its broader meaning (if any) is a separate question. For the derivation and a SymPy coefficient/sign check, see `blackboards/2026-02-10-half-density-laplacian-conformal-metric.md`.
+so the kinetic operator \(\widetilde P_{\mathrm{kin}}=-\widetilde\Delta\) contains a term proportional to \(D(4-D)(\partial\sigma)^2\), which cancels at \(D=4\) in this conformal ansatz. This is recorded only as a concrete simplification in a natural metric class; its broader meaning (if any) is a separate question. A symbolic coefficient/sign check (SymPy) confirms this expansion.
 
 Interpretation:
 - the metric half-density \(|g|^{1/4}|dx|^{1/2}\) is a **scalarization gauge** (a choice of reference half-density) on a fixed background,
@@ -150,7 +150,7 @@ The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” has a clean, c
 \qquad\text{hence}\qquad
 \mathcal L_{V_x}K_{\mathrm{Id}}=-\mathcal L_{V_y}K_{\mathrm{Id}},
 \]
-where \(\mathcal L\) is the Lie derivative acting on half-densities. In local coordinates, taking \(V=\partial/\partial x^\mu\) recovers \(\partial_{x^\mu}\delta^{(D)}(x-y)=-\partial_{y^\mu}\delta^{(D)}(x-y)\). This is the kernel-level mechanism behind “moving derivatives between slots” in integration by parts and in contact-term identities. For a compact derivation and context, see `blackboards/2026-02-10-derivatives-of-diagonal-delta-kernel.md`.
+where \(\mathcal L\) is the Lie derivative acting on half-densities. In local coordinates, taking \(V=\partial/\partial x^\mu\) recovers \(\partial_{x^\mu}\delta^{(D)}(x-y)=-\partial_{y^\mu}\delta^{(D)}(x-y)\). This is the kernel-level mechanism behind “moving derivatives between slots” in integration by parts and in contact-term identities.
 
 `Remark D5.2 (Point splitting produces \u03b4' contact terms).`
 Point splitting makes the simplest derivative contact term explicit:
@@ -159,16 +159,14 @@ in one dimension,
 \frac{\delta(x+\varepsilon)-\delta(x)}{\varepsilon}\xrightarrow[\varepsilon\to 0]{}\delta'(x),
 \qquad \langle\delta',\varphi\rangle=-\varphi'(0).
 \]
-This limit is the distributional companion of the “difference quotient as divergence + subtraction” toy model; see `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
+This limit is the distributional companion of the “difference quotient as divergence + subtraction” toy model.
 
 This framing is useful for two reasons:
 1. it makes “locality = diagonal support” literal at the kernel level,
 2. it separates the canonical distributional objects from scheme-dependent scalarizations and finite-subtraction conventions.
 
-For a quick distribution-theory dictionary distinguishing \(\delta\), \(\delta'\), and \(\delta(f')\), see `blackboards/2026-02-10-distribution-theory-for-extremals.md`.
-
 # 6. Link to the half-density scale program (where Planck-area enters conditionally)
-On a fixed background \((M,g)\), the metric provides a natural reference half-density \(|g|^{1/4}|dx|^{1/2}\). The Planck-area program begins only when we ask for a **background-free** scalarization convention that turns half-density amplitudes into universal dimensionless numbers. That stronger hypothesis ladder is developed in `papers/planck-area/main.md`.
+On a fixed background \((M,g)\), the metric provides a natural reference half-density \(|g|^{1/4}|dx|^{1/2}\). The Planck-area program begins only when we ask for a **background-free** scalarization convention that turns half-density amplitudes into universal dimensionless numbers. That stronger hypothesis ladder is developed in the companion Planck-area note.
 
 This paper’s role is only to show that half-densities are not a QM quirk: the same kernel semantics is already present in standard QFT propagator definitions, once the hidden measure conventions are made explicit.
 
