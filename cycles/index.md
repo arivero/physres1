@@ -101,6 +101,8 @@
 97. `C97` Completed.
 98. `C98` Completed.
 99. `C99` Completed.
+100. `C100` Completed.
+101. `C101` In progress.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -263,9 +265,9 @@
 - `D14` Completed.
 
 ## Next Action
-Priority: complete the queued promotion/referee chain (`C → Q`) while keeping bibliography follow-ups time-capped.
-1. `C100`: promote unified notation (and the next-term remark from `S68`) into the step-halving witnesses in `paper/main.md` and `papers/rg-fundamental/main.md`.
-2. `Q57`: referee pass on `C100` (claim hygiene + notation consistency).
+Priority: close the `C100 → Q57` chain and capture the new Newton area-law clarification.
+1. `Q57`: referee pass on `C100` (claim hygiene + notation consistency).
+2. `C101` (in progress): add a short note that Newton’s polygonal area conservation is stronger than the smooth Noether statement while keeping their equivalence clear.
 
 Optional (time-capped):
 - `B12`: one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
