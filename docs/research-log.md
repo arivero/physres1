@@ -2191,3 +2191,8 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-11 (D10: discovery — step-doubling/rooted-tree witness for the RG analogy)
 - Focus: pick a bounded novelty target that makes the Butcher↔RG bookkeeping analogy concrete with one checkable computation.
 - Result: spawned `S66` (derive the first nontrivial step-doubling discrepancy and phrase it in elementary-differential/rooted-tree language), queued `C98 → Q55` for promotion and referee pass in `papers/rg-fundamental/main.md`.
+
+## 2026-02-11 (S66: study — Euler step-doubling discrepancy as the first rooted tree)
+- Focus: derive the leading “two half-steps vs one full step” discrepancy for explicit Euler and identify it with the elementary differential \(f'(f)\) (rooted-tree order 2).
+- Work: wrote a self-contained blackboard derivation + a SymPy check in the scalar model \(y'=y^2\).
+- Result: promotion-ready block for `papers/rg-fundamental/main.md` Section 4.
