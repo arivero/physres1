@@ -868,8 +868,7 @@ full \(\text{length}^{d/2}\) weight, so a universal choice of
 scalarization problem is formulated over an integration variable of
 dimension \(D\), this is a \(\text{length}^{D/2}\) scale; in \(D=4\) it
 is an area, with the Planck area \(\ell_P^2=\hbar G/c^3\) a natural
-universal candidate. The dependent note
-\texttt{papers/planck-area/main.md} explores further (optional)
+universal candidate. A companion note explores further (optional)
 hypotheses about such scale suppliers; no such identification is
 required for the present paper's structural chain.
 
@@ -886,10 +885,7 @@ conjugation produces a quadratic-gradient term
 \(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\),
 hence it cancels at \(D=4\) (within the conformal class). This is an
 operator-simplicity filter (scale-neutral) and is independent of the
-coupling-dimension sieve in \texttt{papers/planck-area/main.md}; for
-details and an invariant derivation see
-\texttt{papers/half-density-qft/main.md} and
-\texttt{blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md}.
+coupling-dimension sieve discussed above.
 
 \texttt{Derivation\ D4.1\ (Time\ slicing\ from\ repeated\ composition).}
 Iterating the composition law over a partition
@@ -1073,10 +1069,10 @@ in \texttt{Heuristic\ H4.0}. For an early
 semiclassical/correspondence-principle anchor in the ``Van Vleck''
 tradition, see {[}VanVleck1928Correspondence{]}. For a modern OA
 statement of the Van Vleck propagator/prefactor and the associated ``Van
-Vleck density'', see {[}deGosson2018ShortTimePropagators{]}. For an
-explicit finite-dimensional quadratic-elimination template showing how
-mixed endpoint Hessians arise via Schur complements (a time-slicing
-analogue), see \texttt{paper/notes/van-vleck-schur-complement.md}.
+Vleck density'', see {[}deGosson2018ShortTimePropagators{]}. An explicit
+finite-dimensional quadratic-elimination template (Schur complement)
+shows how mixed endpoint Hessians arise in time slicing; we omit it
+here.
 
 \subsection{6.5 Link Back to Section 5 Singular
 Dynamics}\label{link-back-to-section-5-singular-dynamics}
@@ -1912,6 +1908,30 @@ where \(\mathcal C_t\) is temporal composition/refinement,
 \(\mathcal Q_\hbar\) is representation change within a fixed
 classical-limit class, and \(\mathcal R_\Lambda\) is
 scale-refinement/renormalization flow.
+
+\texttt{Derivation\ D10.1a\ (Operational\ closure\ form:\ compatibility\ as\ “there\ exists\ \textbackslash{}(\textbackslash{}theta\textquotesingle{}\textbackslash{})”).}
+The schematic equalities above suppress the crucial fact that each
+operation generally requires a \textbf{parameter update} (coupling flow,
+normalization change, or a controlled representation change) to land
+back in the same admissible family. An operational way to state RCP is
+to write predictions as a family \(\{\mathcal O_{h,\theta}\}\) indexed
+by a ruler \(h>0\) (time step, coarse-graining scale, etc.) and
+parameters \(\theta\), and require that for each operation there exists
+an update map \(\tau\) such that the post-operation object is again
+representable inside the same family: \[
+\mathcal O_{h,\theta}
+=
+\mathcal O_{h,\tau_C(b,h;\theta)}\circ \mathcal C_{b,h}
+=
+\mathcal O_{h,\tau_Q(\alpha;\theta)}\circ \mathcal Q_\alpha
+=
+\mathcal O_{h,\tau_R(b;\theta)}\circ \mathcal R_b.
+\] Written this way, compatibility is falsifiable: closure can fail when
+no admissible \(\theta'\) exists. The manuscript's simplest explicit
+witness is the free short-time kernel ansatz: demanding semigroup
+closure under time-slice composition fixes the normalization exponent
+\(A(t)\propto t^{-d/2}\) (Derivation D4.1a); choosing any other power
+breaks closure.
 
 \texttt{Derivation\ D10.1\ (Bridge\ to\ sections\ 3-\/-8).} 1. Section
 3/Section 4 provide partition compatibility via area-law and

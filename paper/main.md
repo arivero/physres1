@@ -527,14 +527,14 @@ is a density in \(q\), so \(\int_M K_{t_f-t}(q_f,q)K_{t-t_i}(q,q_i)\) is coordin
 
 `Heuristic H4.0a (Scalarization gauge and scale).`
 Writing a half-density kernel as an ordinary scalar function with an explicit “\(dq\)” implicitly chooses a reference density \(\rho_\ast\) on \(M\) (equivalently a reference half-density \(\sigma_\ast=\rho_\ast^{1/2}\)). Different choices are related by pointwise multiplication and give unitarily equivalent scalar representations. If one additionally demands scalar amplitudes be dimensionless, then \(\sigma_\ast\) must carry the full \(\text{length}^{d/2}\) weight, so a universal choice of \(\sigma_\ast\) is equivalent to choosing a universal \(\text{length}^{d/2}\) scale.
-In a spacetime QFT setting where the scalarization problem is formulated over an integration variable of dimension \(D\), this is a \(\text{length}^{D/2}\) scale; in \(D=4\) it is an area, with the Planck area \(\ell_P^2=\hbar G/c^3\) a natural universal candidate. The dependent note `papers/planck-area/main.md` explores further (optional) hypotheses about such scale suppliers; no such identification is required for the present paper’s structural chain.
+In a spacetime QFT setting where the scalarization problem is formulated over an integration variable of dimension \(D\), this is a \(\text{length}^{D/2}\) scale; in \(D=4\) it is an area, with the Planck area \(\ell_P^2=\hbar G/c^3\) a natural universal candidate. A companion note explores further (optional) hypotheses about such scale suppliers; no such identification is required for the present paper’s structural chain.
 
 `Heuristic H4.0b (Independent \(D=4\) filter: operator simplicity under conformal scalarization changes).`
 The “scale supplier” question above is distinct from a different way \(D=4\) can appear once one insists on scalar representatives: simplicity of how *kinetic operators* depend on scalarization choices. In a covariant/QFT setting (spacetime dimension \(D\)), the scalar Laplacian \(\Delta_g\) induces an operator on half-densities by conjugation,
 \[
 \widetilde\Delta_g := |g|^{1/4}\Delta_g|g|^{-1/4}.
 \]
-Under a conformal rescaling \(g=e^{2\sigma}\bar g\), the half-density conjugation produces a quadratic-gradient term \(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\), hence it cancels at \(D=4\) (within the conformal class). This is an operator-simplicity filter (scale-neutral) and is independent of the coupling-dimension sieve in `papers/planck-area/main.md`; for details and an invariant derivation see `papers/half-density-qft/main.md` and `blackboards/2026-02-10-half-density-laplacian-conformal-rescaling-invariant.md`.
+Under a conformal rescaling \(g=e^{2\sigma}\bar g\), the half-density conjugation produces a quadratic-gradient term \(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\), hence it cancels at \(D=4\) (within the conformal class). This is an operator-simplicity filter (scale-neutral) and is independent of the coupling-dimension sieve discussed above.
 
 `Derivation D4.1 (Time slicing from repeated composition).`
 Iterating the composition law over a partition \(t_i=t_0<\cdots<t_N=t_f\) gives
@@ -690,7 +690,7 @@ Taking square roots yields a factor
 \(|\det(\partial q_f/\partial q_f')|^{1/2}|\det(\partial q_i/\partial q_i')|^{1/2}\),
 so the prefactor transforms as a half-density in each endpoint variable. This is the concrete semiclassical origin of the half-density viewpoint in `Heuristic H4.0`.
 For an early semiclassical/correspondence-principle anchor in the “Van Vleck” tradition, see [VanVleck1928Correspondence]. For a modern OA statement of the Van Vleck propagator/prefactor and the associated “Van Vleck density”, see [deGosson2018ShortTimePropagators].
-For an explicit finite-dimensional quadratic-elimination template showing how mixed endpoint Hessians arise via Schur complements (a time-slicing analogue), see `paper/notes/van-vleck-schur-complement.md`.
+An explicit finite-dimensional quadratic-elimination template (Schur complement) shows how mixed endpoint Hessians arise in time slicing; we omit it here.
 
 ## 6.5 Link Back to Section 5 Singular Dynamics
 The composition picture naturally includes piecewise-smooth trajectories. At impulses, the dominant classical skeleton must satisfy the jump laws from Section 5:
@@ -1219,6 +1219,19 @@ $$
 $$
 
 where \(\mathcal C_t\) is temporal composition/refinement, \(\mathcal Q_\hbar\) is representation change within a fixed classical-limit class, and \(\mathcal R_\Lambda\) is scale-refinement/renormalization flow.
+
+`Derivation D10.1a (Operational closure form: compatibility as “there exists \(\theta'\)”).`
+The schematic equalities above suppress the crucial fact that each operation generally requires a **parameter update** (coupling flow, normalization change, or a controlled representation change) to land back in the same admissible family. An operational way to state RCP is to write predictions as a family \(\{\mathcal O_{h,\theta}\}\) indexed by a ruler \(h>0\) (time step, coarse-graining scale, etc.) and parameters \(\theta\), and require that for each operation there exists an update map \(\tau\) such that the post-operation object is again representable inside the same family:
+\[
+\mathcal O_{h,\theta}
+=
+\mathcal O_{h,\tau_C(b,h;\theta)}\circ \mathcal C_{b,h}
+=
+\mathcal O_{h,\tau_Q(\alpha;\theta)}\circ \mathcal Q_\alpha
+=
+\mathcal O_{h,\tau_R(b;\theta)}\circ \mathcal R_b.
+\]
+Written this way, compatibility is falsifiable: closure can fail when no admissible \(\theta'\) exists. The manuscript’s simplest explicit witness is the free short-time kernel ansatz: demanding semigroup closure under time-slice composition fixes the normalization exponent \(A(t)\propto t^{-d/2}\) (Derivation D4.1a); choosing any other power breaks closure.
 
 `Derivation D10.1 (Bridge to sections 3--8).`
 1. Section 3/Section 4 provide partition compatibility via area-law and Noether-action equivalence.
