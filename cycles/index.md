@@ -88,6 +88,16 @@
 84. `C84` Completed.
 85. `C85` Completed.
 86. `C86` Completed.
+87. `C87` Completed.
+88. `C88` Completed.
+89. `C89` Completed.
+90. `C90` Completed.
+91. `C91` Completed.
+92. `C92` Completed.
+93. `C93` Completed.
+94. `C94` Completed.
+95. `C95` Completed.
+96. `C96` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -98,6 +108,10 @@
 - `B05` Completed.
 - `B06` Completed.
 - `B07` Completed.
+- `B08` Completed.
+- `B09` Completed.
+- `B10` Completed.
+- `B11` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -160,6 +174,10 @@
 - `S57` Completed.
 - `S58` Completed.
 - `S60` Completed.
+- `S61` Completed.
+- `S62` Completed.
+- `S63` Completed.
+- `S64` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -207,16 +225,31 @@
 - `Q42` Completed.
 - `Q43` Completed.
 - `Q44` Completed.
+- `Q45` Completed.
+- `Q46` Completed.
+- `Q47` Completed.
+- `Q48` Completed.
+- `Q49` Completed.
+- `Q50` Completed.
+- `Q51` Completed.
+- `Q52` Completed.
+- `Q53` Completed.
 
 ### Discovery Cycles (`Dnn`)
-- None yet.
+- `D00` Completed.
+- `D01` Completed.
+- `D02` Completed.
+- `D03` Completed.
+- `D04` Completed.
+- `D05` Completed.
+- `D06` Completed.
+- `D07` Completed.
 
 ## Next Action
-Priority: shift into discovery/novelty mode (generate promotable novelty via `D → S → (B) → C → Q`).
-1. `D00`: pick one novelty thread (and spawn a bounded `S` deliverable).
-2. `Q45`: (optional) referee-pass `C86`’s \(G\) witness block for novelty and claim hygiene.
-3. `C87`: (optional) promote the Planck-areal-speed orbit witness as a short remark in Section 3 (only if it strengthens the narrative), then run a `Q` on that `C`.
-4. `S59`: (optional) gauge-theory follow-up only if it produces one half-density-aligned technical statement beyond dimensional matching.
+Priority: return to bounded technical novelty work (`D → S → (B) → C → Q`), keeping submission-hygiene follow-ups time-capped.
+1. `D08`: pick one novelty thread (and spawn a bounded `S` deliverable).
+2. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
+3. `C97` (optional): make `papers/half-density-qft/main.md` fully standalone (inline minimal support or add standard citations) if it becomes a submission target.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

@@ -2126,3 +2126,43 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-11 (Q50: referee pass on C93)
 - Focus: verify editorial cleanup improves readability without altering technical meaning.
 - Result: no blocking issues; optional future improvement is a textbook/journal anchor for the spherical-harmonic separation statement if demanded by referees.
+
+## 2026-02-11 (C94: main paper — add compatibility reader map)
+- Focus: reader experience and navigation at the Section 2.5 → Section 3 transition.
+- Work:
+  - inserted a compact “Reader map” block mapping partition/representation/scale compatibilities to their sections,
+  - aligned Appendix 10.3 bridge bullets to use the same operator symbols,
+  - rebuilt `paper/main.pdf`.
+- Result: readers get a one-screen orientation for the paper’s compatibility spine without introducing new claims.
+- Sources touched (keys + status changes): none.
+- Next: referee-pass the placement/redundancy (ran `Q51`).
+
+## 2026-02-11 (Q51: referee pass on C94)
+- Focus: verify the reader map orients rather than distracts.
+- Result: placement is appropriate; optional micro-follow-up is to add a “symbols defined in Appendix 10.3” cue if needed.
+
+## 2026-02-11 (C95: main paper — clarify reader map symbol definitions + update Future Work wording)
+- Focus: reduce early-symbol friction in the reader map without adding new prose scope.
+- Work:
+  - updated the reader map footer to explicitly point to Appendix 10.3 for symbol definitions,
+  - updated the “Future Work” navigation item to be phrased as an optional upgrade,
+  - rebuilt `paper/main.pdf`.
+- Result: reader map remains compact and now includes the minimal “defined later” cue.
+- Sources touched (keys + status changes): none.
+- Next: ran `Q52` (referee pass).
+
+## 2026-02-11 (Q52: referee pass on C95)
+- Result: no required follow-ups.
+
+## 2026-02-11 (C96: dependent note — half-densities in QFT submission hygiene)
+- Focus: remove repo-internal file-path references from rendered dependent-note prose.
+- Work:
+  - rephrased abstract/body sentences that pointed to `paper/`, `papers/`, and `blackboards/` paths,
+  - removed internal “see blackboard note” pointers when the remark is already self-contained,
+  - rebuilt `papers/half-density-qft/main.pdf`.
+- Result: the dependent note reads more like a standalone manuscript draft (internal provenance stays in planning artifacts, not rendered prose).
+- Sources touched (keys + status changes): none.
+- Next: ran `Q53` (referee pass).
+
+## 2026-02-11 (Q53: referee pass on C96)
+- Result: no required follow-ups; optional future improvement is to inline/cite minimal support if the note becomes a submission target.
