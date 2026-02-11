@@ -126,7 +126,7 @@ This section fixes notation and methodological boundaries:
 > - **Representation compatibility** (\(\mathcal Q_\hbar\)): ordering/discretization choices with the same \(\hbar\to0\) limit. See Sections 6--7.
 > - **Scale compatibility** (\(\mathcal R_\Lambda\)): coarse/fine scale comparison after parameter running (RG). See Section 8 (and Appendix 10.5 for an explicit witness).
 >
-> Formal summary: Appendix 10.3.
+> Symbol definitions and formal summary: Appendix 10.3.
 
 Transition to Section 3:
 with notation fixed, the next section derives the Newtonian area-law refinement argument in modern symbols and links it to \(L_{\mathrm{ang}}\) conservation.
@@ -1090,7 +1090,7 @@ These are not hidden defects; they are explicit scope boundaries. The manuscript
 ## 9.5 Future Work
 The present manuscript emphasizes explicit derivations at the level of mechanics and simple quantum models. Natural extensions include:
 1. one field-theory loop computation in a fixed scheme, to complement the structural RG discussion,
-2. a consolidated diagram/figure summarizing the refinement-compatibility chain for reader navigation,
+2. upgrade the compact reader map into a consolidated diagram/figure for reader navigation,
 3. a final notation/normalization pass tailored to the submission venue.
 
 ## 9.6 Conclusion
