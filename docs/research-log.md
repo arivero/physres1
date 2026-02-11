@@ -2166,3 +2166,7 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 
 ## 2026-02-11 (Q53: referee pass on C96)
 - Result: no required follow-ups; optional future improvement is to inline/cite minimal support if the note becomes a submission target.
+
+## 2026-02-11 (D08: discovery — conformal half-density Laplacian witness)
+- Focus: verify and make reproducible the conformal expansion used in the half-density QFT note (\(\widetilde\Delta=|g|^{1/4}\Delta_g|g|^{-1/4}\)) and record its \(D(4-D)\) coefficient structure.
+- Result: spawned `S65` (SymPy check + blackboard note); queued `C97` as an optional promotion if the dependent note is intended to stand fully alone.
