@@ -82,14 +82,14 @@ Then composing two half-steps gives
 \[
 E_{h/2}\!\circ E_{h/2}(y)
 =y+\frac{h}{2}f(y)+\frac{h}{2}f\!\Big(y+\frac{h}{2}f(y)\Big)
-=y+h f(y)+\frac{h^2}{4}\,f'(y)f(y)+O(h^3),
+=y+h f(y)+\frac{h^2}{4}\,f'(y)[f(y)]+\frac{h^3}{16}\,f''(y)[f(y),f(y)]+O(h^4),
 \]
-where \(f'(y)\) is the Jacobian (derivative). We write \(f'(y)[v]\) for its action on a vector \(v\), so \(f'(y)f(y)=f'(y)[f(y)]\).
+where \(f'(y)\) is the Jacobian (derivative), and \(f'(y)[v]\) denotes its action on a vector \(v\). Likewise \(f''(y)[v,w]\) denotes the bilinear second derivative.
 Therefore the leading step-doubling discrepancy is
 \[
-E_{h/2}\!\circ E_{h/2}(y)-E_h(y)=\frac{h^2}{4}\,f'(y)[f(y)]+O(h^3).
+E_{h/2}\!\circ E_{h/2}(y)-E_h(y)=\frac{h^2}{4}\,f'(y)[f(y)]+\frac{h^3}{16}\,f''(y)[f(y),f(y)]+O(h^4).
 \]
-In rooted-tree language, this is exactly the order-2 elementary differential associated to the length-2 chain tree \([\bullet]\), i.e. \(F([\bullet])=f'(y)[f(y)]\).
+In rooted-tree language, the leading term is the order-2 elementary differential associated to the length-2 chain tree \([\bullet]\), i.e. \(F([\bullet])=f'(y)[f(y)]\), and the next term is the order-3 branch tree \([\bullet,\bullet]\) with \(F([\bullet,\bullet])=f''(y)[f(y),f(y)]\).
 
 `Remark D1.0a (Modified equation: “effective data runs with the scale \(h\)”).`
 If one seeks a step-size-dependent vector field \(f_h=f+h g+O(h^2)\) whose *exact* time-\(h\) flow agrees with Euler through \(O(h^2)\), then the exact-flow expansion gives

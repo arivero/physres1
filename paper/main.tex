@@ -1467,13 +1467,14 @@ refinement-control question is then: what correction to
 one-step method after rescaling back to the same reference resolution?
 
 \texttt{Derivation\ D6.2a\ (Step-halving\ induces\ a\ control\ map\ \textbackslash{}(\textbackslash{}tau\textbackslash{})\ in\ a\ toy\ ODE).}
-Consider the scalar ODE \(y'=f(y)\) and a one-parameter family of
-one-step maps at step size \(h\), \[
-\Phi_h^{(a)}(y)=y+h f(y)+a\,h^2 f'(y)f(y)+O(h^3).
-\] Define the step-halving comparison
+Consider the autonomous ODE \(y'=f(y)\) on \(\mathbb R^n\) and a
+one-parameter family of one-step maps at step size \(h\), \[
+\Phi_h^{(a)}(y)=y+h f(y)+a\,h^2 f'(y)[f(y)]+O(h^3).
+\] Here \(f'(y)\) is the Jacobian (derivative), and \(f'(y)[v]\) denotes
+its action on an increment \(v\). Define the step-halving comparison
 \(H(\Phi_h):=\Phi_{h/2}\circ \Phi_{h/2}\). A direct expansion to order
 \(h^2\) gives \[
-H(\Phi_h^{(a)})(y)=y+h f(y)+\left(\frac14+\frac{a}{2}\right)h^2 f'(y)f(y)+O(h^3).
+H(\Phi_h^{(a)})(y)=y+h f(y)+\left(\frac14+\frac{a}{2}\right)h^2 f'(y)[f(y)]+O(h^3).
 \] Thus, within this ansatz family, refinement comparison closes by a
 parameter update \[
 H(\Phi_h^{(a)})=\Phi_h^{(\tau_2(a))}+O(h^3),\qquad \tau_2(a)=\frac{a}{2}+\frac14,
@@ -1482,6 +1483,15 @@ of the exact flow). This is a clean micro-model for
 \texttt{Derivation\ D6.0}: \(\tau_b\) is the control map required so
 that ``refine and compare'' lands back in the chosen family; failure of
 closure forces enlarging the family (counterterms).
+
+\texttt{Remark\ D6.2a1\ (Next\ discrepancy\ term\ and\ the\ next\ rooted\ tree\ in\ Euler\ step-doubling).}
+For the explicit Euler map \(E_h(y):=y+h f(y)\), expanding one order
+further gives \[
+E_{h/2}\!\circ E_{h/2}(y)-E_h(y)
+=\frac{h^2}{4}\,f'(y)[f(y)]+\frac{h^3}{16}\,f''(y)[f(y),f(y)]+O(h^4),
+\] where \(f''(y)[v,w]\) is the bilinear second derivative. In
+rooted-tree language, the new \(O(h^3)\) term is the order-3 branch-tree
+elementary differential \(F([\bullet,\bullet])\).
 
 \texttt{Heuristic\ H6.2\ (Rooted\ trees\ as\ refinement\ bookkeeping).}
 In Runge-Kutta and related integrators, the comparison between composed

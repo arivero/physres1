@@ -2238,3 +2238,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: extend the explicit Euler “two half-steps vs one step” discrepancy by one term (through cubic order) and state it in unambiguous rooted-tree elementary-differential notation.
 - Work: wrote a self-contained blackboard derivation and ran a SymPy scalar sanity check (\(y'=y^2\)).
 - Result: promotion-ready block for `C100` (adds the order-3 branch-tree term \(f''(y)[f(y),f(y)]\) with coefficient \(h^3/16\) and cleans notation to \(f'(y)[v]\)).
+
+## 2026-02-11 (C100: unify elementary-differential notation in step-halving witnesses)
+- Focus: unify the step-halving/step-doubling witness notation across the main paper and the RG follow-up note, and (optionally) inline the next explicit discrepancy term as a second rooted-tree data point.
+- Work:
+  - updated `paper/main.md` Section 8.4 (`Derivation D6.2a`) to use \(f'(y)[v]\) notation and added a one-line \(O(h^3)\) Euler step-doubling remark,
+  - updated `papers/rg-fundamental/main.md` Section 4.1 to remove the remaining \(f'(y)f(y)\) shorthand and include the \(O(h^3)\) branch-tree term,
+  - rebuilt `paper/main.pdf` and `papers/rg-fundamental/main.pdf`.
+- Result: the refinement-bookkeeping witness now uses a single, unambiguous elementary-differential convention and exhibits the next rooted-tree term without invoking full B-series machinery.
+- Next: run `Q57` (referee pass).
