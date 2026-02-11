@@ -126,9 +126,9 @@ Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and imm
 - Dependent note draft: `papers/fermionic-mediators-contact-limits/main.md`.
 - Intended role: connect “mediator-field talk” to the repo’s point-interaction + RG themes in a controlled, falsifiable way.
 
-## Next Cycle Target (Foundations-Journal Hardening)
-- Make RCP operational as an explicit compatibility/closure diagram with a toy-family witness:
-  - `S63 → C90 → Q48`.
+## Next Cycle Target (Finishing Research)
+- Reduce `PENDING` core anchors used early in `paper/main.md`:
+  - `B11`: attempt OA ingestion for `Dirac1933` and `Feynman1948` (or document why blocked and keep `PENDING`).
 
 ## Immediate Next Actions (Low Friction)
 1. Add a dated entry to `docs/research-log.md` at the start of each session (even if work is exploratory).

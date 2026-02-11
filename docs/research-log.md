@@ -2062,3 +2062,23 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
     - closure form \(\mathcal O_{h,\theta}=\mathcal O_{h,\tau(\theta)}\circ(\cdot)\) for \(\mathcal C,\mathcal Q,\mathcal R\),
     - toy witness: free Gaussian semigroup fixes \(A(h)\propto h^{-d/2}\) (half-density exponent).
 - Result: produced a copyable promotion block for `C90` (RCP appendix).
+
+## 2026-02-11 (C90: main paper — make RCP operational as closure-with-update)
+- Focus: foundations-journal hardening of the main paper by making RCP falsifiable/operational in Appendix 10.3.
+- Work:
+  - promoted an explicit closure form with parameter-update maps \(\tau_C,\tau_Q,\tau_R\) into the RCP appendix (`Derivation D10.1a`),
+  - pointed to the existing semigroup-normalization witness (`Derivation D4.1a`) as the concrete “closure can fail” example,
+  - removed repo-internal file-path references from the half-density section and replaced them with publication-safe wording.
+- Result: RCP now reads as a checkable closure condition rather than a slogan.
+- Sources touched (keys + status changes): none.
+
+## 2026-02-11 (Q48: referee pass on C90)
+- Focus: clarity + notation hygiene for the new operational RCP block.
+- Finding: minor notation drift risk (\(\mathcal C_t,\mathcal Q_\hbar,\mathcal R_\Lambda\) vs indexed \(\mathcal C_{b,h},\mathcal Q_\alpha,\mathcal R_b\)); recommended adding a one-sentence mapping bridge.
+- Result: spawned `C91` for a notation bridge (no other blocking issues).
+
+## 2026-02-11 (C91: main paper — notation bridge for the RCP closure block)
+- Focus: reduce reader cognitive load in Appendix 10.3.
+- Work:
+  - added a short mapping paragraph defining \(h\), \(b\), \(\alpha\) and explicitly relating the schematic operators in `Proposition P10.1` to the indexed operations in `Derivation D10.1a`.
+- Result: the appendix now reads smoothly for skimming readers.
