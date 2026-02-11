@@ -2211,3 +2211,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-11 (D12: discovery — modified-equation witness for “running data” in step-doubling)
 - Focus: pick a bounded novelty target that strengthens the rooted-tree ↔ RG analogy with one checkable computation.
 - Result: chose “explicit Euler modified equation (order \(h^2\)) + explicit \(f'(y)f(y)\) notation” as the next low-friction deliverable; spawned `S67` as the derivation/verification cycle and queued `C99 → Q56` for promotion + referee pass.
+
+## 2026-02-11 (S67: study — promotion-ready Euler modified equation + explicit \(f'(y)[f(y)]\) notation)
+- Focus: produce a copy/paste-ready derivation block to polish `papers/rg-fundamental/main.md` Section 4.1 (clarify \(f'(f)\) shorthand; show the modified-equation expansion).
+- Work:
+  - wrote `blackboards/2026-02-11-explicit-euler-modified-equation-promotion-block.md` (explicit notation + bounded derivation),
+  - ran a SymPy series sanity check in the scalar model \(y'=y^2\) confirming the \(O(h^2)\) coefficients.
+- Result: promotion-ready block prepared for `C99`.

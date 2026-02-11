@@ -182,6 +182,7 @@
 - `S64` Completed.
 - `S65` Completed.
 - `S66` Completed.
+- `S67` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -258,10 +259,9 @@
 
 ## Next Action
 Priority: return to bounded technical novelty work (`D → S → (B) → C → Q`), keeping submission-hygiene follow-ups time-capped.
-1. `S67`: derive and verify the explicit Euler modified-equation expansion (order \(h^2\)) and make the \(f'(y)f(y)\) notation promotion-ready.
-2. `C99`: promote the clarity polish into `papers/rg-fundamental/main.md` (bundle with any other small readability improvements in that section).
-3. `Q56`: referee-pass the C99 diff.
-4. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
+1. `C99`: promote the clarity polish into `papers/rg-fundamental/main.md` (bundle with any other small readability improvements in that section).
+2. `Q56`: referee-pass the C99 diff.
+3. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
