@@ -172,6 +172,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes): none.
 - Next: decide whether to add a single forward-pointer sentence from the main manuscript to the dependent Planck-area draft, or keep that discussion entirely out of the cornerstone paper.
 
+## 2026-02-11
+- Focus: reader experience and navigation (compatibility map).
+- Question: can we give readers a one-screen orientation for the partition/representation/scale compatibilities without introducing new claims?
+- Work: drafted a compact “reader map” block (3-line boxed list) mapping \(\mathcal C_t,\mathcal Q_\hbar,\mathcal R_\Lambda\) to one-line meanings and where each is treated in `paper/main.md`.
+- Result: a promotion-ready navigation block exists in `blackboards/2026-02-11-reader-navigation-compatibility-map.md` for insertion into `paper/main.md` by a future `C` cycle.
+- Sources touched (keys + status changes): none.
+- Next: `C94` to promote the navigation block into the manuscript; then `Q51` to referee-pass the reader map placement/redundancy.
+
 ## 2026-02-09 (C16 start: near-diagonal scaling as the concrete witness)
 - Focus: make the \(\varepsilon^{-d/2}\) factor appear explicitly from near-diagonal scaling rather than as an abstract “half-density weight”.
 - Question: can we show, in the simplest coordinates \(y=x+\varepsilon v\), that half-density pullback forces the square-root Jacobian factor used in refinement limits?
