@@ -99,6 +99,7 @@
 95. `C95` Completed.
 96. `C96` Completed.
 97. `C97` Completed.
+98. `C98` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -180,6 +181,7 @@
 - `S63` Completed.
 - `S64` Completed.
 - `S65` Completed.
+- `S66` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -237,6 +239,7 @@
 - `Q52` Completed.
 - `Q53` Completed.
 - `Q54` Completed.
+- `Q55` Completed.
 
 ### Discovery Cycles (`Dnn`)
 - `D00` Completed.
@@ -250,15 +253,13 @@
 - `D08` Completed.
 - `D09` Completed.
 - `D10` Completed.
+- `D11` Completed.
 
 ## Next Action
 Priority: return to bounded technical novelty work (`D → S → (B) → C → Q`), keeping submission-hygiene follow-ups time-capped.
-1. `S66`: derive a minimal step-doubling/rooted-tree witness for the “composed refinement forces correction data” claim.
-2. `C98`: promote the worked example into `papers/rg-fundamental/main.md` (expand Section 4 with one concrete computation).
-3. `Q55`: referee pass on `C98`.
-
-Optional / time-capped:
-- `B12`: one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
+1. `D12`: pick the next bounded novelty thread (spawn one concrete `S` deliverable).
+2. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
+3. `C99` (optional, bundle): small clarity polish in `papers/rg-fundamental/main.md` (make \(f'(f)\) notation fully explicit; display the modified-equation expansion) as part of the next substantive promotion wave.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

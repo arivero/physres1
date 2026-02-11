@@ -2196,3 +2196,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: derive the leading “two half-steps vs one full step” discrepancy for explicit Euler and identify it with the elementary differential \(f'(f)\) (rooted-tree order 2).
 - Work: wrote a self-contained blackboard derivation + a SymPy check in the scalar model \(y'=y^2\).
 - Result: promotion-ready block for `papers/rg-fundamental/main.md` Section 4.
+
+## 2026-02-11 (C98: rg-fundamental note — add Euler step-doubling rooted-tree witness)
+- Focus: make the rooted-tree/Butcher bookkeeping analogy checkable with one explicit “two half-steps vs one step” computation.
+- Work:
+  - added Section 4.1 to `papers/rg-fundamental/main.md` (Euler step-doubling discrepancy + minimal modified-equation remark),
+  - rebuilt `papers/rg-fundamental/main.pdf`.
+- Result: the RG note now contains a one-screen toy witness for “composed refinement forces correction data”, without adding new citations.
+- Sources touched (keys + status changes): none.
+
+## 2026-02-11 (Q55: referee pass on C98 step-doubling witness)
+- Result: no required follow-ups; optional micro-polish is to make the \(f'(f)\) shorthand fully explicit and display the modified-equation expansion for readability.
