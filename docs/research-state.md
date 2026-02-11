@@ -3,7 +3,7 @@
 This file is the durable "working memory" for continuing research in this repo across context resets.
 It is **not** a citable source and may reference `conv_patched.md` only as an idea log.
 
-Date: 2026-02-10
+Date: 2026-02-11
 
 ## North Star (Current Paper)
 - Manuscript: `paper/main.md` (publishable artifact).
@@ -117,12 +117,18 @@ Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and imm
 ### 10) Action–Angle indeterminacy (central potentials)
 - Goal: formulate a clean “sharp actions \(\Rightarrow\) delocalized conjugate angles” statement for integrable central potentials, with at least one explicit computation in the \((\phi,L_z)\) sector.
 - Seed note: `blackboards/2026-02-10-action-angle-indeterminacy-central-potentials.md`.
+- Dependent note draft: `papers/action-angle-indeterminacy-central-potentials/main.md`.
 - Intended role: foundations-level clarification of what is (and is not) “undetermined” in stationary states, compatible with the project’s semiclassical/stationary-phase narrative.
 
 ### 11) Fermionic mediators → contact limits / boundary-condition data
 - Goal: clarify whether (and in what sense) a fermionic field can generate an effective central potential, emphasizing the Grassmann-source obstruction and the EFT/contact-interaction route (delta kernels, derivative contact terms, self-adjoint extensions).
 - Seed note: `blackboards/2026-02-10-fermionic-mediators-central-potentials-and-contact-limits.md`.
+- Dependent note draft: `papers/fermionic-mediators-contact-limits/main.md`.
 - Intended role: connect “mediator-field talk” to the repo’s point-interaction + RG themes in a controlled, falsifiable way.
+
+## Next Cycle Target (Foundations-Journal Hardening)
+- Make RCP operational as an explicit compatibility/closure diagram with a toy-family witness:
+  - `S63 → C90 → Q48`.
 
 ## Immediate Next Actions (Low Friction)
 1. Add a dated entry to `docs/research-log.md` at the start of each session (even if work is exploratory).

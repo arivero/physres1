@@ -2027,3 +2027,30 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: Theme K now has a derivation-first core that can be promoted without entering angle-operator subtleties.
 - Sources touched (keys + status changes): none.
 - Next: run `B10` to add one OA anchor for the \(e^{im\phi}\) separation-of-variables factor, then start `C89` to write `papers/action-angle-indeterminacy-central-potentials/main.md`.
+
+## 2026-02-11 (B10: OA anchor for central potentials (\(e^{im\phi}\) factor / spherical harmonics))
+- Focus: acquire one OA anchor for the standard separation-of-variables statement used in Theme K.
+- Work:
+  - added `[TongQMLectures]` to `paper/bibliography.md` (OA lecture-note PDF).
+  - ingested a local capture to `sources/qm-6a8ebd24.md` (gitignored by repo policy).
+- Result: Theme K now has a citation-safe attribution anchor for the \(e^{im\phi}\) azimuthal factor.
+- Sources touched (keys + status changes): added `[TongQMLectures]`.
+
+## 2026-02-11 (C89: dependent note — action–angle indeterminacy in central potentials)
+- Focus: complete Theme K as a short dependent note in a foundations-journal tone.
+- Work:
+  - wrote `papers/action-angle-indeterminacy-central-potentials/main.md` (bounded scope; unitary \(e^{i\phi}\) + Fourier witness; explicit Dirichlet-kernel packet example).
+  - built `papers/action-angle-indeterminacy-central-potentials/main.tex` and `papers/action-angle-indeterminacy-central-potentials/main.pdf`.
+- Result: Theme K is now a standalone dependent note emphasizing “eigenstates vs packets” without angle-operator controversies.
+- Sources touched (keys + status changes): none (uses `[TongQMLectures]` added in `B10`).
+
+## 2026-02-11 (Q47: referee pass on C89)
+- Focus: claim hygiene + reader experience for the new dependent note.
+- Findings:
+  - scope is appropriately bounded; the note stays derivation-first and avoids force-range assertions,
+  - minor style caution: prefer “uniform/delocalized” over “maximally delocalized” to avoid pedantry.
+- Result: no correctness-blocking issues found.
+
+## 2026-02-11 (D03: discovery — RCP as an explicit compatibility diagram)
+- Focus: foundations-journal hardening of `paper/main.md` by making the Refinement Compatibility Principle operational (closure/commutation form + one toy-family witness).
+- Result: specified next cycles `S63 → C90 → Q48`.

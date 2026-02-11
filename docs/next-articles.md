@@ -118,6 +118,8 @@ Suggested deliverables:
 ## K. Action–Angle Indeterminacy for Central Potentials (Foundations Note)
 Central potentials are integrable and admit action–angle variables. Quantization makes actions discrete (or sharply specifiable), and the conjugate angles become delocalized—this is the number–phase theme in a mechanics setting.
 
+Status: drafted as a dependent note in `papers/action-angle-indeterminacy-central-potentials/` (referee-safe \((\phi,L_z)\) witness + explicit Fourier packet example).
+
 Suggested deliverables:
 1. Define action–angle variables for a central potential and identify the clean canonical pair \((\phi,L_z)\) (and the radial action \(J_r\)).
 2. State a minimal, referee-safe “indeterminacy” claim: in an \(L_z\) eigenstate, \(\phi\) is uniformly distributed; sharp actions imply delocalized conjugate angles.
@@ -128,6 +130,8 @@ Seed blackboard: `blackboards/2026-02-10-action-angle-indeterminacy-central-pote
 
 ## L. Fermionic Mediators, Central Potentials, and Contact/Boundary-Condition Limits
 Bosonic exchange yields textbook central potentials via linear couplings to classical sources. Fermionic fields are Grassmann-valued, so the “classical source \(\Rightarrow\) potential” derivation does not transplant directly; however, fermions can still induce effective interactions via loops, condensates, and EFT contact limits.
+
+Status: drafted as a dependent note in `papers/fermionic-mediators-contact-limits/` (Grassmann-source obstruction + contact/boundary-condition IR replacement).
 
 Suggested deliverables:
 1. Precisely state what “a fermionic field generates a potential” would mean, and why linear sourcing requires Grassmann sources (hence no ordinary classical potential from single-fermion exchange between commuting charges).
