@@ -2170,3 +2170,8 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-11 (D08: discovery — conformal half-density Laplacian witness)
 - Focus: verify and make reproducible the conformal expansion used in the half-density QFT note (\(\widetilde\Delta=|g|^{1/4}\Delta_g|g|^{-1/4}\)) and record its \(D(4-D)\) coefficient structure.
 - Result: spawned `S65` (SymPy check + blackboard note); queued `C97` as an optional promotion if the dependent note is intended to stand fully alone.
+
+## 2026-02-11 (S65: study — conformal half-density Laplacian derivation + check)
+- Focus: derivation-first and symbolic verification of \(\widetilde\Delta:=|g|^{1/4}\Delta_g|g|^{-1/4}\) in the conformally flat class \(g_{\mu\nu}=e^{2\sigma}\delta_{\mu\nu}\).
+- Work: reproduced the closed-form expansion and verified in SymPy (checked \(D=3,4\)).
+- Result: the “\(D(4-D)\) coefficient” witness is now reproducible and ready to be inlined as optional support in the half-density QFT note.

@@ -178,6 +178,7 @@
 - `S62` Completed.
 - `S63` Completed.
 - `S64` Completed.
+- `S65` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -248,9 +249,8 @@
 
 ## Next Action
 Priority: return to bounded technical novelty work (`D → S → (B) → C → Q`), keeping submission-hygiene follow-ups time-capped.
-1. `S65`: reproduce/verify the conformal expansion used in the half-density QFT note (record SymPy code + output in a blackboard note).
-2. `C97` (optional): if `papers/half-density-qft/main.md` is intended to stand alone, inline minimal support for the “canonical delta kernel” remark and tighten the \(D=4\) simplification wording.
-3. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
+1. `C97` (optional): if `papers/half-density-qft/main.md` is intended to stand alone, inline minimal support for the “canonical delta kernel” remark and tighten the \(D=4\) simplification wording.
+2. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
