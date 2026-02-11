@@ -2082,3 +2082,22 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work:
   - added a short mapping paragraph defining \(h\), \(b\), \(\alpha\) and explicitly relating the schematic operators in `Proposition P10.1` to the indexed operations in `Derivation D10.1a`.
 - Result: the appendix now reads smoothly for skimming readers.
+
+## 2026-02-11 (D04: discovery — queue PENDING source hardening for Dirac/Feynman anchors)
+- Focus: finishing research for foundations-journal readiness by reducing early-paper `PENDING` anchors.
+- Result: spawned `B11` to attempt OA ingestion for `[Dirac1933]` and `[Feynman1948]`.
+
+## 2026-02-11 (B11: OA ingest — core path-integral anchors)
+- Focus: OA-first ingestion for `[Dirac1933]` and `[Feynman1948]`.
+- Work:
+  - `[Feynman1948]`: acquired GREEN-OA PDF hosted by Caltech and ingested a local capture.
+  - `[Dirac1933]`: no lawful OA PDF found in this environment; kept as `PENDING_LOCAL_PDF`.
+- Result: the Feynman anchor is now locally acquired; Dirac remains pending.
+- Sources touched (keys + status changes): `[Feynman1948]` moved `PENDING` → acquired; `[Dirac1933]` unchanged.
+
+## 2026-02-11 (C92: submission hygiene — remove internal `PENDING` process note)
+- Focus: remove repo-process metadata from rendered manuscript prose.
+- Work:
+  - deleted the internal operational note about local-PDF ingestion status from Appendix 10.4.
+  - rebuilt `paper/main.pdf`.
+- Result: `paper/main.md` no longer contains `PENDING` workflow metadata.
