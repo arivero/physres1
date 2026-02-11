@@ -163,6 +163,38 @@ approximations, you must control the discrepancy between ``two steps''
 and ``one step''. That discrepancy is the counterterm/correction data,
 and the RG is the law governing how those corrections change with scale.
 
+\subsection{4.1 Worked witness: Euler step-doubling and the first rooted
+tree}\label{worked-witness-euler-step-doubling-and-the-first-rooted-tree}
+
+Even before QFT, the ``two steps vs one step'' discrepancy can be
+computed explicitly in a toy refinement problem. This gives a checkable
+instance of the rooted-tree bookkeeping slogan, without introducing the
+full B-series formalism.
+
+\texttt{Derivation\ D1.0\ (Two\ half-steps\ vs\ one\ coarse\ step).}
+Consider the autonomous ODE \(y'=f(y)\) on \(\mathbb R^n\), with smooth
+\(f\). Define the explicit Euler one-step map \(E_h(y):=y+h\,f(y)\).
+Then composing two half-steps gives \[
+E_{h/2}\!\circ E_{h/2}(y)
+=y+\frac{h}{2}f(y)+\frac{h}{2}f\!\Big(y+\frac{h}{2}f(y)\Big)
+=y+h f(y)+\frac{h^2}{4}\,f'(y)f(y)+O(h^3),
+\] where \(f'(y)\) is the Jacobian and \(f'(y)f(y)\) denotes its action
+on the vector \(f(y)\). Therefore the leading step-doubling discrepancy
+is \[
+E_{h/2}\!\circ E_{h/2}(y)-E_h(y)=\frac{h^2}{4}\,f'(f)+O(h^3).
+\] In rooted-tree language, this is exactly the order-2 elementary
+differential associated to the length-2 chain tree \([\bullet]\),
+i.e.~\(F([\bullet])=f'(f)\).
+
+\texttt{Remark\ D1.0a\ (Modified\ equation:\ “effective\ data\ runs\ with\ the\ scale\ \textbackslash{}(h\textbackslash{})”).}
+If one seeks a step-size-dependent vector field \(f_h=f+h g+O(h^2)\)
+whose \emph{exact} time-\(h\) flow agrees with Euler through \(O(h^2)\),
+then the exact-flow expansion gives
+\(\Phi_h^{(f_h)}(y)=y+h f+h^2(g+\tfrac12 f'(f))+O(h^3)\), so matching
+\(E_h(y)=y+h f(y)\) forces \(g=-\tfrac12 f'(f)\). Thus even this toy
+refinement problem exhibits ``running'' of effective data with the
+refinement scale \(h\).
+
 \section{5. Worked Singular QM Model: The 2D Delta
 Potential}\label{worked-singular-qm-model-the-2d-delta-potential}
 

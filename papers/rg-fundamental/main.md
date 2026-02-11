@@ -71,6 +71,32 @@ Runge–Kutta composition and perturbative renormalization share rooted-tree com
 `Heuristic H1.2 (One compatibility story, two domains).`
 The shared tree bookkeeping suggests that “RG is fundamental” can be understood as: whenever you define a theory by iterating/composing local approximations, you must control the discrepancy between “two steps” and “one step”. That discrepancy is the counterterm/correction data, and the RG is the law governing how those corrections change with scale.
 
+## 4.1 Worked witness: Euler step-doubling and the first rooted tree
+Even before QFT, the “two steps vs one step” discrepancy can be computed explicitly in a toy refinement problem.
+This gives a checkable instance of the rooted-tree bookkeeping slogan, without introducing the full B-series formalism.
+
+`Derivation D1.0 (Two half-steps vs one coarse step).`
+Consider the autonomous ODE \(y'=f(y)\) on \(\mathbb R^n\), with smooth \(f\).
+Define the explicit Euler one-step map \(E_h(y):=y+h\,f(y)\).
+Then composing two half-steps gives
+\[
+E_{h/2}\!\circ E_{h/2}(y)
+=y+\frac{h}{2}f(y)+\frac{h}{2}f\!\Big(y+\frac{h}{2}f(y)\Big)
+=y+h f(y)+\frac{h^2}{4}\,f'(y)f(y)+O(h^3),
+\]
+where \(f'(y)\) is the Jacobian and \(f'(y)f(y)\) denotes its action on the vector \(f(y)\).
+Therefore the leading step-doubling discrepancy is
+\[
+E_{h/2}\!\circ E_{h/2}(y)-E_h(y)=\frac{h^2}{4}\,f'(f)+O(h^3).
+\]
+In rooted-tree language, this is exactly the order-2 elementary differential associated to the length-2 chain tree \([\bullet]\), i.e. \(F([\bullet])=f'(f)\).
+
+`Remark D1.0a (Modified equation: “effective data runs with the scale \(h\)”).`
+If one seeks a step-size-dependent vector field \(f_h=f+h g+O(h^2)\) whose *exact* time-\(h\) flow agrees with Euler through \(O(h^2)\), then the exact-flow expansion gives
+\(\Phi_h^{(f_h)}(y)=y+h f+h^2(g+\tfrac12 f'(f))+O(h^3)\),
+so matching \(E_h(y)=y+h f(y)\) forces \(g=-\tfrac12 f'(f)\).
+Thus even this toy refinement problem exhibits “running” of effective data with the refinement scale \(h\).
+
 # 5. Worked Singular QM Model: The 2D Delta Potential
 The cleanest “RG appears before QFT” example is the contact (delta) interaction in two spatial dimensions. The point is not that this is the most physical model; it is that:
 1. the interaction is Dirac-supported (singular),
