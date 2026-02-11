@@ -659,7 +659,7 @@ So \(\hbar\) plays the role of a universal control parameter that makes "refine 
 In real time, the same pattern appears with \(e^{iS/\hbar}\) and stationary phase in place of positivity and Laplace concentration.
 
 `Remark D4.2b (Delocalized angles in angular-momentum eigenstates).`
-The stationary-phase mechanism explains how classical trajectories reappear in semiclassical packets. It does not imply that a single stationary eigenstate is a localized classical orbit. A simple witness occurs already in central potentials: in polar coordinates the azimuthal angle \(\phi\) is conjugate to \(L_z\), and separation of variables yields
+The stationary-phase mechanism explains how classical trajectories reappear in semiclassical packets. It does not imply that a single stationary eigenstate is a localized classical orbit. A simple witness occurs already in central potentials: in polar coordinates the azimuthal angle \(\phi\) is conjugate to \(L_z\), and separation of variables yields [TongQMLectures]
 \[
 \psi(r,\phi)=R(r)\,e^{im\phi}.
 \]
@@ -1091,8 +1091,8 @@ The paper’s central thesis is that “continuum laws” are most cleanly under
 
 Throughout, the manuscript keeps refinement explicit, separates derivations from heuristics, and highlights the additional hypotheses needed for each continuum passage.
 
-# 10. Technical Appendices (Continuation Stages)
-This section executes the continuation appendices announced at the end of Section 9. Each subsection is a compact worked extension tied to one residual vulnerability.
+# 10. Technical Appendices
+This section provides the appendices announced at the end of Section 9. Each subsection is a compact worked extension tied to one residual vulnerability.
 
 ## 10.1 Worked Renormalization Template (Single Coupling)
 The objective is to replace purely structural RG language with one explicit subtraction-and-running calculation.
@@ -1198,7 +1198,7 @@ in the formal classical limit, while quantum generators differ at subleading ord
 If two short-time kernel prescriptions map to \(Q_L\)-type and \(Q_W\)-type representatives of the same classical symbol algebra, then they define the same classical equations and differ only by controlled \(O(\hbar)\) corrections. This is the worked version of the Section 6 to Section 7 transition claim [Landsman1998].
 
 ## 10.3 Foundational Compatibility Principle
-This appendix replaces the earlier continuation version with a foundational concept aimed at the manuscript's core objective.
+This appendix states a foundational compatibility principle aimed at the manuscript's core objective.
 
 `Proposition P10.1 (Refinement Compatibility Principle, RCP).`
 A dynamical framework is admissible when three compatibility conditions hold simultaneously:
@@ -1245,8 +1245,8 @@ Therefore the Newton-to-path-integral narrative is an implementation of RCP rath
 `Heuristic H10.1 (Foundational reading).`
 RCP can be interpreted as a candidate foundational postulate: physical laws are those statements that survive controlled changes of partition, representation, and scale.
 
-## 10.4 Continuation Outcome
-Continuation appendices in sections 10.1--10.3 close the three technical gaps identified in Section 9:
+## 10.4 Appendix Summary
+Appendix sections 10.1--10.3 close the three technical gaps identified in Section 9:
 1. explicit renormalization subtraction and running,
 2. explicit ordering/discretization \(O(\hbar)\) shift with fixed classical limit,
 3. explicit foundational compatibility principle unifying the full chain.
@@ -1370,7 +1370,7 @@ Thus, in this one-scale model, “scheme dependence” is precisely the freedom 
 1. [Newton1687] Isaac Newton, *Philosophiae Naturalis Principia Mathematica* (1687), Book I (limit methods and central-force geometry). Reference access point: Newton Project and standard translated editions.
 2. [Noether1918] Emmy Noether, "Invariante Variationsprobleme" (1918). English translation commonly used in modern mechanics references.
 3. [Dirac1933] P. A. M. Dirac, "The Lagrangian in Quantum Mechanics," *Physikalische Zeitschrift der Sowjetunion* 3 (1933), 64–72. (Commonly cited as the earliest explicit path-integral style phase-weighting statement.)
-4. [Feynman1948] R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* 20 (1948), 367–387. DOI `10.1103/RevModPhys.20.367`.
+4. [Feynman1948] R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* 20 (1948), 367–387. DOI `10.1103/RevModPhys.20.367`. OA: Caltech author-repository PDF.
 5. [Connes1994] Alain Connes, *Noncommutative Geometry* (Academic Press, 1994). ISBN `978-0-12-185860-5`.
 6. [Landsman1998] N. P. Landsman, *Mathematical Topics Between Classical and Quantum Mechanics* (Springer, 1998), Springer Monographs in Mathematics. DOI `10.1007/978-1-4612-1680-3`. ISBN `978-0-387-98318-9`.
 7. [ConnesKreimer2000] Alain Connes and Dirk Kreimer, "Renormalization in quantum field theory and the Riemann-Hilbert problem I," *Communications in Mathematical Physics* 210 (2000), 249–273. DOI `10.1007/s002200050779`.
@@ -1383,3 +1383,4 @@ Thus, in this one-scale model, “scheme dependence” is precisely the freedom 
 14. [deGosson2018ShortTimePropagators] Maurice A. de Gosson, "Short-Time Propagators and the Born–Jordan Quantization Rule," *Entropy* 20(11) (2018), 869. DOI `10.3390/e20110869`. OA: PubMed Central (PMCID: PMC 7512447).
 15. [Rosten2012ERG] Oliver J. Rosten, "Fundamentals of the Exact Renormalization Group," *Physics Reports* 511 (2012), 177–272. arXiv:`1003.1366` (v4, 15 Feb 2012). DOI `10.1016/j.physrep.2011.12.003`.
 16. [Velhinho2017InfDimMeasure] José Velhinho, "Topics of Measure Theory on Infinite Dimensional Spaces," *Mathematics* 5(3) (2017), 44. DOI `10.3390/math5030044`. OA: MDPI.
+17. [TongQMLectures] David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)
