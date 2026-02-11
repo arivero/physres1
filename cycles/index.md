@@ -102,7 +102,8 @@
 98. `C98` Completed.
 99. `C99` Completed.
 100. `C100` Completed.
-101. `C101` In progress.
+101. `C101` Completed.
+102. `C102` Planned.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -246,6 +247,7 @@
 - `Q54` Completed.
 - `Q55` Completed.
 - `Q56` Completed.
+- `Q57` Completed.
 
 ### Discovery Cycles (`Dnn`)
 - `D00` Completed.
@@ -265,9 +267,10 @@
 - `D14` Completed.
 
 ## Next Action
-Priority: close the `C100 → Q57` chain and capture the new Newton area-law clarification.
-1. `Q57`: referee pass on `C100` (claim hygiene + notation consistency).
-2. `C101` (in progress): add a short note that Newton’s polygonal area conservation is stronger than the smooth Noether statement while keeping their equivalence clear.
+Priority: backfill the `C100` logging gap and address the rooted-tree notation/scope polish.
+1. `D15`: record the cached diffstat and guard checks for `C100` in its execution log.
+2. `C102`: define the \(F([\bullet])\) / \(F([\bullet,\bullet])\) notation on first use and state the \(C^2\) scope for the \(O(h^3)\) remark in both manuscripts.
+3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Optional (time-capped):
 - `B12`: one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.

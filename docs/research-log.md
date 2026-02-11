@@ -2253,3 +2253,7 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added a concise paragraph in `paper/main.md` Section 4.3 noting that the equal-area law is exact at finite impulse steps without smoothness or a Lagrangian, while Noether recovers the same invariant once those assumptions hold; updated `cycles/index.md` to mark `C101` in progress.
 - Result: readers can see why the geometric area law is strictly stronger in scope even though both formalisms report the same conserved quantity in the smooth limit.
 - Next: run `Q57` on `C100`, then plan a short `Q` pass if the new clarification needs referee review.
+
+## 2026-02-11 (Q57: referee pass on C100 step-halving/rooted-tree polish)
+- Findings: expansions and coefficients look consistent; main paper uses \(F([\bullet,\bullet])\) without defining \(F(\cdot)\); `C100` execution log is missing the required diffstat and guard-check outputs; both manuscripts should state the \(C^2\) scope next to the \(O(h^3)\) branch-tree remark.
+- Follow-ups: `D15` to backfill the `C100` diffstat/guard outputs; `C102` to define \(F([\bullet])\)/\(F([\bullet,\bullet])\) at first use and note the smoothness assumptions; optional `S69` to precompute the next rooted-tree term if the dictionary expands.
