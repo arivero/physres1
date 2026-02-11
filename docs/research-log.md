@@ -2101,3 +2101,20 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - deleted the internal operational note about local-PDF ingestion status from Appendix 10.4.
   - rebuilt `paper/main.pdf`.
 - Result: `paper/main.md` no longer contains `PENDING` workflow metadata.
+
+## 2026-02-11 (Q49: submission-readiness referee pass)
+- Focus: identify remaining reader-flow and claim-hygiene issues for a foundations-journal submission.
+- Finding: Appendix 10 still contained small editorial/versioning language (“continuation…”); recommended rewriting as neutral standalone prose and adding one lightweight attribution anchor for the central-potential \(e^{im\phi}\) separation statement.
+- Result: spawned `C93`.
+
+## 2026-02-11 (C93: main paper — remove “continuation” language + add `[TongQMLectures]` anchor)
+- Focus: submission-readiness cleanup in `paper/main.md`.
+- Work:
+  - rewrote Section/Appendix 10 headings/intro sentences to remove editorial “continuation” wording,
+  - added `[TongQMLectures]` attribution anchor in `Remark D4.2b`,
+  - regenerated `# References` for `paper/main.md` and rebuilt the PDF.
+- Result: Appendix 10 now reads as standard appendices in a standalone paper.
+
+## 2026-02-11 (Q50: referee pass on C93)
+- Focus: verify editorial cleanup improves readability without altering technical meaning.
+- Result: no blocking issues; optional future improvement is a textbook/journal anchor for the spherical-harmonic separation statement if demanded by referees.

@@ -126,9 +126,9 @@ Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and imm
 - Dependent note draft: `papers/fermionic-mediators-contact-limits/main.md`.
 - Intended role: connect “mediator-field talk” to the repo’s point-interaction + RG themes in a controlled, falsifiable way.
 
-## Next Cycle Target (Submission Readiness)
-- Run a referee-style pass on the current main paper (parent: `C92`) to surface concrete edits for a foundations-journal submission:
-  - `Q49`.
+## Next Cycle Target (Reader Experience)
+- Add a compact reader-navigation table/boxed block mapping the three compatibilities (partition/representation/scale) to the concrete operations and where they are treated in the manuscript:
+  - `S64 → C94 → Q51`.
 - Optional (time-capped) finishing-research follow-up:
   - `B12`: one more OA attempt for `[Dirac1933]` via alternative lawful repositories; otherwise keep `PENDING_LOCAL_PDF`.
 
