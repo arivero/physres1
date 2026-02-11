@@ -2054,3 +2054,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-11 (D03: discovery — RCP as an explicit compatibility diagram)
 - Focus: foundations-journal hardening of `paper/main.md` by making the Refinement Compatibility Principle operational (closure/commutation form + one toy-family witness).
 - Result: specified next cycles `S63 → C90 → Q48`.
+
+## 2026-02-11 (S63: blackboard — RCP as compatibility diagram + toy-family closure witness)
+- Focus: make RCP operational and falsifiable without adding bibliography debt.
+- Work:
+  - wrote `blackboards/2026-02-11-rcp-compatibility-diagram-toy-family.md`:
+    - closure form \(\mathcal O_{h,\theta}=\mathcal O_{h,\tau(\theta)}\circ(\cdot)\) for \(\mathcal C,\mathcal Q,\mathcal R\),
+    - toy witness: free Gaussian semigroup fixes \(A(h)\propto h^{-d/2}\) (half-density exponent).
+- Result: produced a copyable promotion block for `C90` (RCP appendix).
