@@ -3,9 +3,9 @@ title: "Half-Densities in QFT: Propagators as Bi-Half-Density Kernels"
 author: []
 date: ""
 abstract: |
-  In QFT, the basic free object is the inverse of a kinetic operator, i.e. a propagator/Green kernel. On a manifold, writing “\(P_x G(x,y)=\delta(x,y)\)” hides conventions: which volume form defines the adjoint, and which delta normalization realizes the identity. This note adopts an organizing choice consistent with the repo’s main paper: treat fields (or kernels) as **half-densities**, so the identity kernel is canonical and kernel composition is coordinate-invariant without choosing a background measure. A worked computation shows how a scalar field on \((M,g)\) becomes a half-density \(\psi=|g|^{1/4}\phi\), with kinetic operator \(\widetilde P=|g|^{1/4}P|g|^{-1/4}\) symmetric in the coordinate pairing. We also record a kernel-level remark: local counterterms/contact terms appear as distributions supported on the diagonal \((x=y)\) (delta kernels and their derivatives), which are most naturally expressed using the canonical bi-half-density delta.
+  In QFT, the basic free object is the inverse of a kinetic operator, i.e. a propagator/Green kernel. On a manifold, writing “\(P_x G(x,y)=\delta(x,y)\)” hides conventions: which volume form defines the adjoint, and which delta normalization realizes the identity. This note adopts a single organizing choice: treat fields (or kernels) as **half-densities**, so the identity kernel is canonical and kernel composition is coordinate-invariant without choosing a background measure. A worked computation shows how a scalar field on \((M,g)\) becomes a half-density \(\psi=|g|^{1/4}\phi\), with kinetic operator \(\widetilde P=|g|^{1/4}P|g|^{-1/4}\) symmetric in the coordinate pairing. We also record a kernel-level remark: local counterterms/contact terms appear as distributions supported on the diagonal \((x=y)\) (delta kernels and their derivatives), which are most naturally expressed using the canonical bi-half-density delta.
   
-  This note is a dependent follow-up to the main manuscript and relates to companion notes on scalarization scales (the Planck-area program) and on RG as compatibility.
+  This note is written to be readable on its own; it also connects to broader themes (scalarization scales and RG as compatibility) developed elsewhere.
 ---
 
 # 1. Purpose and Scope
@@ -37,7 +37,19 @@ K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2},
 \]
 which is canonical: it does not require choosing a background density/volume form.
 
-This is the same object used repeatedly in the project’s half-density scaling thread: the diagonal delta kernel is the universal distributional witness of the \(\varepsilon^{-D/2}\) exponent (see the companion Planck-area note, Derivation D1.2b).
+`Derivation D1.1a (Normalization witness: why \(\varepsilon^{-D/2}\) appears).`
+In local coordinates on \(\mathbb{R}^D\), a standard approximate identity is the Gaussian family
+\[
+\rho_\varepsilon(x)=\frac{1}{(2\pi\varepsilon)^{D/2}}\exp\!\Bigl(-\frac{|x|^2}{2\varepsilon}\Bigr),
+\qquad \varepsilon>0.
+\]
+The exponent \(D/2\) is forced by normalization: by the change of variables \(x=\sqrt{\varepsilon}\,u\),
+\[
+\int_{\mathbb{R}^D}\rho_\varepsilon(x)\,d^Dx
+=(2\pi\varepsilon)^{-D/2}\,\varepsilon^{D/2}\int_{\mathbb{R}^D}e^{-|u|^2/2}\,d^Du
+=1.
+\]
+Thus \(\rho_\varepsilon\rightharpoonup\delta^{(D)}\) as \(\varepsilon\to0^+\), and the diagonal delta kernel is the distributional limit of families whose normalization scales as \(\varepsilon^{-D/2}\).
 
 # 3. Worked computation: densitized scalar field \(\psi=|g|^{1/4}\phi\)
 Consider a real scalar field on a fixed Lorentzian/Euclidean background \((M,g)\) with quadratic action
@@ -90,6 +102,12 @@ which is manifestly symmetric under \((1\leftrightarrow 2)\).
 As a worked expansion, take a conformally flat background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) (Euclidean for simplicity). Then
 \(\sqrt{|g|}=e^{D\sigma}\), \(|g|^{1/4}=e^{D\sigma/2}\), \(g^{\mu\nu}=e^{-2\sigma}\delta^{\mu\nu}\), and one finds
 \[
+\Delta_g f
+=|g|^{-1/2}\partial_\mu\!\bigl(\sqrt{|g|}\,g^{\mu\nu}\partial_\nu f\bigr)
+=e^{-2\sigma}\bigl(\partial^2 f+(D-2)\,\partial\sigma\cdot\partial f\bigr).
+\]
+Setting \(\phi=|g|^{-1/4}\psi=e^{-D\sigma/2}\psi\) and expanding derivatives gives the conjugated operator
+\[
 \widetilde\Delta\psi:=|g|^{1/4}\Delta_g|g|^{-1/4}\psi
 =e^{-2\sigma}\Big(
 \partial^2\psi
@@ -98,7 +116,9 @@ As a worked expansion, take a conformally flat background \(g_{\mu\nu}=e^{2\sigm
 +\frac{D(4-D)}{4}(\partial\sigma)^2\,\psi
 \Big),
 \]
-so the kinetic operator \(\widetilde P_{\mathrm{kin}}=-\widetilde\Delta\) contains a term proportional to \(D(4-D)(\partial\sigma)^2\), which cancels at \(D=4\) in this conformal ansatz. This is recorded only as a concrete simplification in a natural metric class; its broader meaning (if any) is a separate question. A symbolic coefficient/sign check (SymPy) confirms this expansion.
+so the kinetic operator \(\widetilde P_{\mathrm{kin}}=-\widetilde\Delta\) contains a term proportional to \(D(4-D)(\partial\sigma)^2\), which cancels at \(D=4\) in this conformal ansatz.
+
+Scope disclaimer: this is recorded only as a checked simplification for \(\widetilde\Delta\) in this metric class; it is not, by itself, a dimension-selection claim or a conformal-invariance statement. A symbolic coefficient/sign check (SymPy) confirms the expansion.
 
 Interpretation:
 - the metric half-density \(|g|^{1/4}|dx|^{1/2}\) is a **scalarization gauge** (a choice of reference half-density) on a fixed background,
@@ -166,7 +186,7 @@ This framing is useful for two reasons:
 2. it separates the canonical distributional objects from scheme-dependent scalarizations and finite-subtraction conventions.
 
 # 6. Link to the half-density scale program (where Planck-area enters conditionally)
-On a fixed background \((M,g)\), the metric provides a natural reference half-density \(|g|^{1/4}|dx|^{1/2}\). The Planck-area program begins only when we ask for a **background-free** scalarization convention that turns half-density amplitudes into universal dimensionless numbers. That stronger hypothesis ladder is developed in the companion Planck-area note.
+On a fixed background \((M,g)\), the metric provides a natural reference half-density \(|g|^{1/4}|dx|^{1/2}\). The Planck-area program begins only when we ask for a **background-free** scalarization convention that turns half-density amplitudes into universal dimensionless numbers. A separate note develops that stronger hypothesis ladder; it is not needed for the present kernel/propagator semantics.
 
 This paper’s role is only to show that half-densities are not a QM quirk: the same kernel semantics is already present in standard QFT propagator definitions, once the hidden measure conventions are made explicit.
 
