@@ -2006,3 +2006,24 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - opened discovery cycle artifacts: `cycles/D01-*.md`.
 - Result: next cycles are specified: `C88` (promote the remark into `paper/main.md` + rebuild PDF) and `Q46` (referee pass on `C88`).
 - Sources touched (keys + status changes): none.
+
+## 2026-02-10 (D02: discovery — action–angle indeterminacy for central potentials → dependent note)
+- Focus: start the next follow-up paper pipeline (Theme K).
+- Question: what is the referee-safe meaning of “action–angle indeterminacy” in a central potential, and what is the minimal explicit witness?
+- Work:
+  - selected a bounded target: show \(\phi\) is delocalized in an \(L_z\) eigenstate (uniform azimuthal distribution), and explain that localized orbit-phase pictures require superpositions.
+  - opened discovery cycle artifacts: `cycles/D02-*.md`.
+- Result: next cycles are specified: `S62` (derivation witness + copyable promotion block), `B10` (OA anchor for spherical harmonics/azimuthal phase), then `C89` (new dependent note) followed by `Q47` (referee pass on `C89`).
+- Sources touched (keys + status changes): none (deferred to `B10`).
+
+## 2026-02-10 (S62: action–angle indeterminacy witness via Fourier on the circle)
+- Focus: produce one explicit, bounded derivation usable in a foundations-style dependent note.
+- Question: what is the cleanest “sharp action \(\Rightarrow\) delocalized conjugate angle” witness in a central potential?
+- Work:
+  - wrote `blackboards/2026-02-10-action-angle-central-potentials-fourier-witness.md`:
+    - \(L_z=-i\hbar\partial_\phi\), eigenmodes \(e^{im\phi}\),
+    - \(|\psi|^2\) independent of \(\phi\) in an \(L_z\) eigenstate,
+    - localization in \(\phi\) requires broad Fourier support in \(m\).
+- Result: Theme K now has a derivation-first core that can be promoted without entering angle-operator subtleties.
+- Sources touched (keys + status changes): none.
+- Next: run `B10` to add one OA anchor for the \(e^{im\phi}\) separation-of-variables factor, then start `C89` to write `papers/action-angle-indeterminacy-central-potentials/main.md`.

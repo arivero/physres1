@@ -41,6 +41,7 @@ Use this file as a source ledger.
 27. `[Groenewold1946ElementaryQM]` H. J. Groenewold, "On the Principles of Elementary Quantum Mechanics," *Physica* 12 (1946), 405–460. DOI `10.1016/S0031-8914(46)80059-4`.
 28. `[Moyal1949StatisticalQM]` J. E. Moyal, "Quantum mechanics as a statistical theory," *Proceedings of the Cambridge Philosophical Society* 45 (1949), 99–124. DOI `10.1017/S0305004100000487`.
 29. `[Floerchinger2024QFT1Lecture21]` Stefan Floerchinger, "Quantum field theory 1, lecture 21" (updated 11 Jun 2024). (States the Dirac-fermion generating functional \(Z[\bar\eta,\eta]\) with Grassmann-valued sources.) OA: lecture webpage.
+30. `[TongQMLectures]` David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -73,6 +74,7 @@ Use this file as a source ledger.
 28. `[Groenewold1946ElementaryQM]`: DOI `10.1016/S0031-8914(46)80059-4`.
 29. `[Moyal1949StatisticalQM]`: DOI `10.1017/S0305004100000487`.
 30. `[Floerchinger2024QFT1Lecture21]`: OA web lecture page (no DOI); used as a primary anchor for the fermionic generating functional with Grassmann sources.
+31. `[TongQMLectures]`: OA lecture-note PDF (no DOI).
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -104,6 +106,7 @@ Use this file as a source ledger.
 27. `[Groenewold1946ElementaryQM]`: `PENDING` (publisher/journal PDF not retrieved via OA routes in this environment).
 28. `[Moyal1949StatisticalQM]`: `PENDING` (publisher/journal PDF not retrieved via OA routes in this environment).
 29. `[Floerchinger2024QFT1Lecture21]`: acquired via OA lecture-page capture in `sources/lecture21-2cc5b4d3.md`.
+30. `[TongQMLectures]`: acquired via OA PDF capture in `sources/qm-6a8ebd24.md`.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).
