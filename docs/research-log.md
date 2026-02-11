@@ -2229,3 +2229,7 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 
 ## 2026-02-11 (Q56: referee pass on C99 step-doubling polish)
 - Result: no required follow-ups; optional future work is to unify notation to a single convention (or extend to order-3 trees if the tree dictionary grows).
+
+## 2026-02-11 (D14: discovery — extend step-halving rooted-tree witness)
+- Focus: pick a bounded “rooted trees as refinement bookkeeping” follow-up that reduces notation friction and (optionally) adds one more explicit, checkable rooted-tree term in the Euler step-halving witness.
+- Result: queued `S68` (derive/check the next term and identify the corresponding tree), then `C100 → Q57` (promote unified notation + the next-term remark into `paper/main.md` and `papers/rg-fundamental/main.md`, followed by a referee pass).

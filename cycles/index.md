@@ -259,12 +259,16 @@
 - `D11` Completed.
 - `D12` Completed.
 - `D13` Completed.
+- `D14` Completed.
 
 ## Next Action
-Priority: return to bounded technical novelty work (`D → S → (B) → C → Q`), keeping submission-hygiene follow-ups time-capped.
-1. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
-2. `D14`: pick the next bounded novelty thread (spawn one concrete `S` deliverable).
-3. `C100` (optional, bundle): unify the elementary-differential notation in the step-doubling witness if desired.
+Priority: complete the queued refinement-bookkeeping chain (`S → C → Q`) while keeping bibliography follow-ups time-capped.
+1. `S68`: derive/check the next Euler step-halving discrepancy term and state it in rooted-tree (elementary-differential) language.
+2. `C100`: promote unified notation (and the next-term remark if stable) into the step-halving witnesses in `paper/main.md` and `papers/rg-fundamental/main.md`.
+3. `Q57`: referee pass on `C100` (claim hygiene + notation consistency).
+
+Optional (time-capped):
+- `B12`: one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
