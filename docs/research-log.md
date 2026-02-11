@@ -2187,3 +2187,7 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 
 ## 2026-02-11 (Q54: referee pass on C97)
 - Result: no required follow-ups; optional future micro-clarification is to state explicitly that the Gaussian normalization witness is a local coordinate-patch argument.
+
+## 2026-02-11 (D10: discovery — step-doubling/rooted-tree witness for the RG analogy)
+- Focus: pick a bounded novelty target that makes the Butcher↔RG bookkeeping analogy concrete with one checkable computation.
+- Result: spawned `S66` (derive the first nontrivial step-doubling discrepancy and phrase it in elementary-differential/rooted-tree language), queued `C98 → Q55` for promotion and referee pass in `papers/rg-fundamental/main.md`.
