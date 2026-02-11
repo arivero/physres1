@@ -121,6 +121,13 @@ This section fixes notation and methodological boundaries:
 2. Mathematical validity requires explicit assumptions and, for singular objects, explicit regularization.
 3. Quantum and QFT-level statements are introduced only after the composition law and refinement language are fixed.
 
+> **Reader map (compatibilities; where to look).**
+> - **Partition compatibility** (\(\mathcal C_t\)): temporal refinement/composition (time slicing). See Sections 3--4.
+> - **Representation compatibility** (\(\mathcal Q_\hbar\)): ordering/discretization choices with the same \(\hbar\to0\) limit. See Sections 6--7.
+> - **Scale compatibility** (\(\mathcal R_\Lambda\)): coarse/fine scale comparison after parameter running (RG). See Section 8 (and Appendix 10.5 for an explicit witness).
+>
+> Formal summary: Appendix 10.3.
+
 Transition to Section 3:
 with notation fixed, the next section derives the Newtonian area-law refinement argument in modern symbols and links it to \(L_{\mathrm{ang}}\) conservation.
 
@@ -1236,9 +1243,9 @@ An operational way to state RCP is to write predictions as a family \(\{\mathcal
 Written this way, compatibility is falsifiable: closure can fail when no admissible \(\theta'\) exists. The manuscript’s simplest explicit witness is the free short-time kernel ansatz: demanding semigroup closure under time-slice composition fixes the normalization exponent \(A(t)\propto t^{-d/2}\) (Derivation D4.1a); choosing any other power breaks closure.
 
 `Derivation D10.1 (Bridge to sections 3--8).`
-1. Section 3/Section 4 provide partition compatibility via area-law and Noether-action equivalence.
-2. Section 6/Section 7 provide representation compatibility via ordering/deformation equivalence with identical \(\hbar\to0\) limit.
-3. Section 8 provides scale compatibility via RG semigroup consistency.
+1. **Partition compatibility** (\(\mathcal C_t\)): Sections 3--4 (area-law refinement; action/Noether bridge).
+2. **Representation compatibility** (\(\mathcal Q_\hbar\)): Sections 6--7 (ordering/discretization choices with identical \(\hbar\to0\) limit).
+3. **Scale compatibility** (\(\mathcal R_\Lambda\)): Section 8 (RG semigroup consistency).
 
 Therefore the Newton-to-path-integral narrative is an implementation of RCP rather than a sequence of disconnected formalisms.
 
