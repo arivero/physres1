@@ -15,7 +15,7 @@ Use this file as a source ledger.
 1. `[Newton1687]` Isaac Newton, *Philosophiae Naturalis Principia Mathematica* (1687), Book I (limit methods and central-force geometry). Reference access point: Newton Project and standard translated editions.
 2. `[Noether1918]` Emmy Noether, "Invariante Variationsprobleme" (1918). English translation commonly used in modern mechanics references.
 3. `[Dirac1933]` P. A. M. Dirac, "The Lagrangian in Quantum Mechanics," *Physikalische Zeitschrift der Sowjetunion* 3 (1933), 64–72. (Commonly cited as the earliest explicit path-integral style phase-weighting statement.)
-4. `[Feynman1948]` R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* 20 (1948), 367–387. DOI `10.1103/RevModPhys.20.367`.
+4. `[Feynman1948]` R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* 20 (1948), 367–387. DOI `10.1103/RevModPhys.20.367`. OA: Caltech author-repository PDF.
 5. `[Connes1994]` Alain Connes, *Noncommutative Geometry* (Academic Press, 1994). ISBN `978-0-12-185860-5`.
 6. `[Landsman1998]` N. P. Landsman, *Mathematical Topics Between Classical and Quantum Mechanics* (Springer, 1998), Springer Monographs in Mathematics. DOI `10.1007/978-1-4612-1680-3`. ISBN `978-0-387-98318-9`.
 7. `[ConnesKreimer2000]` Alain Connes and Dirk Kreimer, "Renormalization in quantum field theory and the Riemann-Hilbert problem I," *Communications in Mathematical Physics* 210 (2000), 249–273. DOI `10.1007/s002200050779`.
@@ -80,7 +80,7 @@ Use this file as a source ledger.
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
 2. `[Noether1918]`: acquired via open English translation in `sources/0503066-d7b0b7b3.md`.
 3. `[Dirac1933]`: pending local copy; see `sources/pending-dirac1933.md`.
-4. `[Feynman1948]`: pending local copy; see `sources/pending-feynman1948.md`.
+4. `[Feynman1948]`: acquired via Caltech author-repository PDF (GREEN OA) capture in `sources/feyrmp48-282cef74.md` (OA URL: <https://authors.library.caltech.edu/47756/1/FEYrmp48.pdf>).
 5. `[Connes1994]`: pending local copy; see `sources/pending-connes1994.md`.
 6. `[Landsman1998]`: pending local copy; see `sources/pending-landsman1998.md`.
 7. `[ConnesKreimer2000]`: acquired via arXiv preprint in `sources/9912092-6e62bce5.md`.
