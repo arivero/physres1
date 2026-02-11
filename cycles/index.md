@@ -184,6 +184,7 @@
 - `S65` Completed.
 - `S66` Completed.
 - `S67` Completed.
+- `S68` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -262,10 +263,9 @@
 - `D14` Completed.
 
 ## Next Action
-Priority: complete the queued refinement-bookkeeping chain (`S → C → Q`) while keeping bibliography follow-ups time-capped.
-1. `S68`: derive/check the next Euler step-halving discrepancy term and state it in rooted-tree (elementary-differential) language.
-2. `C100`: promote unified notation (and the next-term remark if stable) into the step-halving witnesses in `paper/main.md` and `papers/rg-fundamental/main.md`.
-3. `Q57`: referee pass on `C100` (claim hygiene + notation consistency).
+Priority: complete the queued promotion/referee chain (`C → Q`) while keeping bibliography follow-ups time-capped.
+1. `C100`: promote unified notation (and the next-term remark from `S68`) into the step-halving witnesses in `paper/main.md` and `papers/rg-fundamental/main.md`.
+2. `Q57`: referee pass on `C100` (claim hygiene + notation consistency).
 
 Optional (time-capped):
 - `B12`: one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.

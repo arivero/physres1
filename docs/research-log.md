@@ -2233,3 +2233,8 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-11 (D14: discovery — extend step-halving rooted-tree witness)
 - Focus: pick a bounded “rooted trees as refinement bookkeeping” follow-up that reduces notation friction and (optionally) adds one more explicit, checkable rooted-tree term in the Euler step-halving witness.
 - Result: queued `S68` (derive/check the next term and identify the corresponding tree), then `C100 → Q57` (promote unified notation + the next-term remark into `paper/main.md` and `papers/rg-fundamental/main.md`, followed by a referee pass).
+
+## 2026-02-11 (S68: study — Euler step-doubling discrepancy through \(O(h^3)\))
+- Focus: extend the explicit Euler “two half-steps vs one step” discrepancy by one term (through cubic order) and state it in unambiguous rooted-tree elementary-differential notation.
+- Work: wrote a self-contained blackboard derivation and ran a SymPy scalar sanity check (\(y'=y^2\)).
+- Result: promotion-ready block for `C100` (adds the order-3 branch-tree term \(f''(y)[f(y),f(y)]\) with coefficient \(h^3/16\) and cleans notation to \(f'(y)[v]\)).
