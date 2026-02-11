@@ -1252,7 +1252,6 @@ Continuation appendices in sections 10.1--10.3 close the three technical gaps id
 3. explicit foundational compatibility principle unifying the full chain.
 
 These additions do not alter the thesis; they increase computational accountability of the existing chain.
-Operational note: four bibliography items are intentionally deferred as `PENDING` for later local-PDF ingestion (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
 
 ## 10.5 Singular Contact Interaction as an Explicit RG Computation (2D Delta)
 Section 8 argues that RG is the scale-compatibility condition required when refinement limits diverge. This appendix supplies a fully explicit example in a singular quantum-mechanical model where the continuum theory is defined only after a renormalization prescription is chosen. For a perturbative-QFT-style treatment of this mechanism in quantum mechanics (including the 2D delta interaction), see [ManuelTarrach1994PertRenQM].
