@@ -2247,3 +2247,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - rebuilt `paper/main.pdf` and `papers/rg-fundamental/main.pdf`.
 - Result: the refinement-bookkeeping witness now uses a single, unambiguous elementary-differential convention and exhibits the next rooted-tree term without invoking full B-series machinery.
 - Next: run `Q57` (referee pass).
+
+## 2026-02-11 (C101: finite-step strength of Newton’s area law vs Noether)
+- Focus: clarify the domain-of-validity gap between Newton’s polygonal area invariant and the smooth Noether statement.
+- Work: added a concise paragraph in `paper/main.md` Section 4.3 noting that the equal-area law is exact at finite impulse steps without smoothness or a Lagrangian, while Noether recovers the same invariant once those assumptions hold; updated `cycles/index.md` to mark `C101` in progress.
+- Result: readers can see why the geometric area law is strictly stronger in scope even though both formalisms report the same conserved quantity in the smooth limit.
+- Next: run `Q57` on `C100`, then plan a short `Q` pass if the new clarification needs referee review.

@@ -330,6 +330,7 @@ $$
 $$
 
 Thus Section 3 and Section 4 do not provide competing derivations; they provide geometric and variational presentations of one conserved structure.
+Newton’s polygonal proof is also strictly stronger in scope: the equal-area statement is exact at each finite impulse step without assuming smoothness or even a Lagrangian, whereas Noether’s charge conservation requires a smooth trajectory and rotational symmetry of \(\mathcal L\) to reproduce the same invariant.
 
 `Proposition P2.2 (Energy for autonomous central motion).`
 If \(\mathcal L\) has no explicit time dependence, then the energy function
