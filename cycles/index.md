@@ -98,6 +98,7 @@
 94. `C94` Completed.
 95. `C95` Completed.
 96. `C96` Completed.
+97. `C97` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -235,6 +236,7 @@
 - `Q51` Completed.
 - `Q52` Completed.
 - `Q53` Completed.
+- `Q54` Completed.
 
 ### Discovery Cycles (`Dnn`)
 - `D00` Completed.
@@ -246,11 +248,13 @@
 - `D06` Completed.
 - `D07` Completed.
 - `D08` Completed.
+- `D09` Completed.
 
 ## Next Action
 Priority: return to bounded technical novelty work (`D → S → (B) → C → Q`), keeping submission-hygiene follow-ups time-capped.
-1. `C97` (optional): if `papers/half-density-qft/main.md` is intended to stand alone, inline minimal support for the “canonical delta kernel” remark and tighten the \(D=4\) simplification wording.
+1. `D10`: pick one novelty thread (and spawn a bounded `S` deliverable).
 2. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
+3. `C98` (optional): if preparing `papers/half-density-qft/main.md` for external circulation, add a one-sentence “local coordinate patch” clarification for the Gaussian normalization witness (bundle with the next substantive promotion wave if possible).
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

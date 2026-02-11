@@ -2175,3 +2175,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: derivation-first and symbolic verification of \(\widetilde\Delta:=|g|^{1/4}\Delta_g|g|^{-1/4}\) in the conformally flat class \(g_{\mu\nu}=e^{2\sigma}\delta_{\mu\nu}\).
 - Work: reproduced the closed-form expansion and verified in SymPy (checked \(D=3,4\)).
 - Result: the “\(D(4-D)\) coefficient” witness is now reproducible and ready to be inlined as optional support in the half-density QFT note.
+
+## 2026-02-11 (C97: dependent note — inline standalone support in half-density QFT note)
+- Focus: make `papers/half-density-qft/main.md` fully readable without companion-note derivation pointers.
+- Work:
+  - rephrased the abstract to remove “dependent follow-up” framing,
+  - replaced the remaining companion-note dependency with an inline Gaussian normalization witness for the \(\varepsilon^{-D/2}\) scaling,
+  - tightened the conformal \(D=4\) cancellation remark with an explicit scope disclaimer,
+  - rebuilt `papers/half-density-qft/main.pdf`.
+- Result: the note is more standalone while staying within scope (no new citations).
+
+## 2026-02-11 (Q54: referee pass on C97)
+- Result: no required follow-ups; optional future micro-clarification is to state explicitly that the Gaussian normalization witness is a local coordinate-patch argument.
