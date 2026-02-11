@@ -100,6 +100,7 @@
 96. `C96` Completed.
 97. `C97` Completed.
 98. `C98` Completed.
+99. `C99` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -241,6 +242,7 @@
 - `Q53` Completed.
 - `Q54` Completed.
 - `Q55` Completed.
+- `Q56` Completed.
 
 ### Discovery Cycles (`Dnn`)
 - `D00` Completed.
@@ -256,12 +258,13 @@
 - `D10` Completed.
 - `D11` Completed.
 - `D12` Completed.
+- `D13` Completed.
 
 ## Next Action
 Priority: return to bounded technical novelty work (`D → S → (B) → C → Q`), keeping submission-hygiene follow-ups time-capped.
-1. `C99`: promote the clarity polish into `papers/rg-fundamental/main.md` (bundle with any other small readability improvements in that section).
-2. `Q56`: referee-pass the C99 diff.
-3. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
+1. `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
+2. `D14`: pick the next bounded novelty thread (spawn one concrete `S` deliverable).
+3. `C100` (optional, bundle): unify the elementary-differential notation in the step-doubling witness if desired.
 
 Deprioritized unless blocking a revision:
 - ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).

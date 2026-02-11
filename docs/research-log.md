@@ -2218,3 +2218,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - wrote `blackboards/2026-02-11-explicit-euler-modified-equation-promotion-block.md` (explicit notation + bounded derivation),
   - ran a SymPy series sanity check in the scalar model \(y'=y^2\) confirming the \(O(h^2)\) coefficients.
 - Result: promotion-ready block prepared for `C99`.
+
+## 2026-02-11 (C99: rg-fundamental note — clarify Euler step-doubling witness notation)
+- Focus: address the optional readability polish noted in `Q55` for the Section 4.1 worked witness.
+- Work:
+  - replaced the ambiguous shorthand \(f'(f)\) with explicit action notation \(f'(y)[f(y)]\) (and defined the shorthand once),
+  - expanded the modified-equation remark to display the exact-flow expansion used to solve for \(g(y)=-\\tfrac12 f'(y)[f(y)]\),
+  - rebuilt `papers/rg-fundamental/main.pdf`.
+- Result: the worked witness is now independently readable without relying on implicit elementary-differential shorthand.
+
+## 2026-02-11 (Q56: referee pass on C99 step-doubling polish)
+- Result: no required follow-ups; optional future work is to unify notation to a single convention (or extend to order-3 trees if the tree dictionary grows).
