@@ -114,6 +114,7 @@
 110. `C110` Completed.
 111. `C111` Completed.
 112. `C112` Completed.
+113. `C113` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -306,11 +307,11 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: DX03 found two Section 9 signaling gaps. No open anomalies. RCP v4 reinforced.
-1. Cadence: ... → C112 → Q67 → DX03 complete.
-2. Per DX03 spawns: next cycle should be C113 (add D6.2a-sg witness to Section 9.1 + half-density ordering note to Section 9.3).
-3. Then Q68 (referee pass on C113).
-4. DX check: DX03 just completed. Next DX due in ~10 cycles.
+Priority: C113 fixed both Section 9 signaling gaps. No open anomalies. RCP v4 reinforced.
+1. Cadence: ... → DX03 → C113 complete.
+2. Per cadence: next cycle should be Q68 (referee pass on C113).
+3. After Q68: S or B cycle on a priority thread from research-state.md.
+4. DX check: DX03 was 1 cycle ago. Next DX due in ~9 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

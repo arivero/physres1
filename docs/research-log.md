@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C113)
+- Focus: fix Section 9 signaling gaps (DX03 spawns).
+- Work: two edits. (1) Section 9.1 line 1039: added D6.2a-sg parenthetical as concrete semigroup witness. (2) Section 9.3 line 1100: added sentence noting half-density geometric resolution of ordering (D9.1a).
+- Result: diffstat +2 -2. Guards clean.
+- Next: Q68 referee pass on C113.
+
 ## 2026-02-12 (DX03)
 - Focus: post-C112 structural sweep — cross-connections and claim-graph gaps.
 - Work: full manuscript block audit (68 named blocks across 10 sections). Checked anomaly register (empty). Probed cross-thread connection: ordering control has two mechanisms (deformation equivalence in Section 7, half-density geometry in D9.1a). Stress-tested RCP v4 framing.
