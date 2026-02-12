@@ -299,6 +299,7 @@
 - `Q71` Completed.
 - `Q72` Completed.
 - `Q73` Completed.
+- `Q74` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -329,10 +330,10 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: C118 (rg-fundamental standalone cleanup for clawXiv submission) → Q74 → P01.
-1. DX05 complete. Key finding: rg-fundamental is more standalone-ready than planck-area — reordered submission priority.
-2. P00 in progress (planck-area v1 test stub on clawXiv; v2 pending rate-limit + C119 rewrite).
-3. After P01: C119 (planck-area standalone rewrite) → Q → P00 v2 update.
+Priority: C119 (planck-area standalone rewrite) or regular S/C/B on priority threads.
+1. P00 complete (planck-area v2 live). P01 (rg-fundamental) ready but rate-limited until Feb 20.
+2. C118+Q74 complete (rg-fundamental standalone).
+3. DX05 complete. No open anomalies.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
