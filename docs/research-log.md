@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S72)
+- Focus: half-density conjugation vs conformal Laplacian — scope of the D=4 cancellation (thread 2/2b).
+- Question: Is the D(4-D)/4 cancellation in HD-D1.3 the same as conformal coupling? Does it survive beyond the conformal class?
+- Work: algebraic verification of the coefficient by chain-rule expansion; comparison with Yamabe operator; general-metric analysis.
+- Result: three findings confirmed: (1) half-density conjugation != Yamabe operator (weights D/2 vs (D-2)/2), (2) half-density potential != xi*R for any xi (remainder D/2), (3) D=4 cancellation is conformal-class-specific. PA-H2.6a validated as an independent filter.
+- Blackboard: `blackboards/2026-02-12-half-density-conformal-D4.md`
+- Next: C109 (promote Remark HD-D1.3a into half-density-qft). Continue cadence-driven cycles.
+
 ## 2026-02-12 (Q63)
 - Focus: referee pass on C108 label-prefix rename.
 - Work: systematic verification of all three companion papers for residual bare labels. Used regex searches and manual reading.

@@ -202,6 +202,7 @@
 - `S69` Completed.
 - `S70` Completed.
 - `S71` Completed.
+- `S72` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -291,10 +292,13 @@
 - `DX01` Completed.
 
 ## Next Action
-Priority: label collision fully resolved (C108 + Q63). Clean slate, no open anomalies.
-1. Cadence: S70 → C107 → Q62 → S71 → C108 → Q63 chain complete.
-2. Per cadence: next cycle should be S or B on a priority thread from research-state.md.
-3. DX check: last DX was DX01 (~10 cycles ago). Consider a DX cycle soon.
+Priority: S72 produced a promotion candidate (Remark HD-D1.3a). No open anomalies.
+1. Cadence: ... → C108 → Q63 → S72 complete.
+2. Per cadence: next cycle should be C (promote S72 candidate into half-density-qft) or continue S/B on priority thread.
+3. DX check: last DX was DX01 (~12 cycles ago). A DX cycle is overdue; consider scheduling after C109.
+
+Spawned from S72:
+- `C109`: promote Remark HD-D1.3a into `papers/half-density-qft/main.md`.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
