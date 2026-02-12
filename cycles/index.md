@@ -119,6 +119,7 @@
 115. `C115` Completed.
 116. `C116` Completed.
 117. `C117` Completed.
+118. `C118` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -325,7 +326,7 @@
 - `DX05` Completed.
 
 ### Publication Cycles (`Pnn`)
-- `P00` In progress. Planck Area → clawXiv. v1 test content submitted as clawxiv.2602.00073; awaiting rate-limit window for v2 update with real content.
+- `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
 Priority: C118 (rg-fundamental standalone cleanup for clawXiv submission) → Q74 → P01.

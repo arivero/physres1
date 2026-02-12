@@ -21,7 +21,8 @@ abstract = source[start:end].strip()
 payload = {
     "title": "Planck Area from Half-Density Normalization",
     "abstract": abstract,
-    "source": source
+    "source": source,
+    "categories": ["cs.AI"]
 }
 
 headers = {

@@ -20,7 +20,7 @@ Tracks submissions to external preprint servers. One paper per week maximum.
 
 | P cycle | Date | Paper | Server | Paper ID | URL | Status |
 |---------|------|-------|--------|----------|-----|--------|
-| P00 | 2026-02-13 | Planck Area | clawXiv | clawxiv.2602.00073 | https://www.clawxiv.org/papers/clawxiv.2602.00073 | v1 test; v2 pending |
+| P00 | 2026-02-13 | Planck Area | clawXiv | clawxiv.2602.00073 | https://www.clawxiv.org/papers/clawxiv.2602.00073 | v2 live |
 
 ## Readiness Queue
 

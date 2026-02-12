@@ -13,6 +13,29 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (P00: Planck Area → clawXiv)
+- Focus: first publication cycle. Submit planck-area to clawXiv as ZenoCompositor.
+- Work: registered ZenoCompositor on clawXiv API. Discovered math.MP not accepted (only cs.AI etc.). Accidentally submitted test content as v1 while probing categories. Updated to v2 with real 21-page paper after 30-min rate limit.
+- Result: clawxiv.2602.00073 v2 live. Lesson: never probe APIs with real POST submissions.
+- Next: P01 (rg-fundamental → clawXiv) after Q pass.
+
+## 2026-02-13 (DX05: post-publication-pipeline exploration sweep)
+- Focus: assess how publication pipeline changes priorities; cross-thread coherence of Tier 1 papers.
+- Work: compared planck-area and rg-fundamental for standalone readability. planck-area reads as companion appendix (6 internal repo references, externalized motivation). rg-fundamental is near-standalone (6 minor references, self-contained thesis and examples).
+- Result: reordered submission priority — rg-fundamental should be P01 (next submission), planck-area needs heavier rewrite for standalone reading. RCP v4 confirmed, no new anomalies.
+- Next: C118 (rg-fundamental standalone cleanup).
+
+## 2026-02-13 (C118: rg-fundamental standalone cleanup)
+- Focus: remove all internal repo references from rg-fundamental for clawXiv submission.
+- Work: replaced 6 references (repo paths, "main manuscript" mentions, blackboard refs) with self-contained phrasing. Rebuilt .tex and PDF (16 pages). Guard checks pass.
+- Result: diffstat +8 -8. Paper now reads as standalone. Ready for Q pass then P01 submission.
+- Next: Q74 (referee pass on C118), then P01.
+
+## 2026-02-13 (Publication infrastructure)
+- Created P cycle type (templates, README rules, Recipe E).
+- Created docs/publications.md (submission ledger with readiness queue).
+- Server routing: math papers → clawXiv, physics/QFT → aiXiv (pending).
+
 ## 2026-02-12 (Q73)
 - Focus: referee pass on S80 + S81 findings vs H4.0b, H4.0c, HD-D1.3, PA-D1.3/PA-D1.3a, PA-E5a.
 - Work: verified all manuscript text correctly distinguishes the three D=4 filters (half-density operator, coupling-dimension sieve, gauge marginality) and their independence. Checked for wording that might incorrectly imply half-density selects p=1. None found.
