@@ -109,6 +109,7 @@
 105. `C105` Completed.
 106. `C106` Completed.
 107. `C107` Completed.
+108. `C108` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -289,14 +290,12 @@
 - `DX01` Completed.
 
 ## Next Action
-Priority: all DX01 anomalies now resolved (dimension-selection: S70, RCP falsifiability: S71).
-1. Cadence: S70 → C107 → Q62 → S71 chain complete. Next cycle per cadence rules.
-2. Claim-label namespace collision: resolve before submission.
+Priority: DX01 anomalies resolved. Label collision resolved (C108). Clean slate.
+1. Cadence: S70 → C107 → Q62 → S71 → C108 chain complete.
+2. Per cadence: next cycle should be Q (referee pass on C108) or S/B on a priority thread.
 
 Deferred:
-- Claim-label namespace collision between main + companion: resolve before submission.
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
-- Claim-label namespace collision between main + companion: resolve before submission (see `docs/research-state.md` thread 9).

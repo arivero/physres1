@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C108)
+- Focus: resolve claim-label namespace collision between main and companion papers (Q59 action item, thread 9).
+- Work: added paper-specific prefixes to all claim labels in 3 companion papers: RG- (rg-fundamental, 33 labels), PA- (planck-area, ~65 labels + ~50 inline refs), HD- (half-density-qft, 7 labels). Main paper labels remain unprefixed (canonical namespace).
+- Result: diffstat net 0 lines (pure mechanical rename). One cross-paper reference (planck-area → half-density-qft D1.3) updated to HD-D1.3.
+- Next: submission-blocking label collision resolved. Continue cadence-driven cycles.
+
 ## 2026-02-12 (S71)
 - Focus: enumerate concrete structural predictions of RCP to address tautology/falsifiability concern (DX01 anomaly).
 - Question: is RCP falsifiable? What specific consequences does it generate that could fail?
