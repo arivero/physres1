@@ -207,6 +207,7 @@
 - `S71` Completed.
 - `S72` Completed.
 - `S73` Completed.
+- `S74` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -299,11 +300,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: Q65 passed C110 clean. No open anomalies. No pending S results awaiting promotion.
-1. Cadence: ... → B17 → C110 → Q65 complete.
-2. Per cadence: next cycle should be S or B on a priority thread.
-3. Natural candidates: (a) S cycle to advance a priority thread (half-density, main paper coherence, or RG), (b) B cycle if any claim needs an independent anchor.
-4. DX check: DX02 was ~5 cycles ago. Next DX due in ~6 cycles.
+Priority: S74 computed quadratic-symbol ordering ambiguity and found cross-thread bridge (ordering → half-density). Promotion candidate ready. No open anomalies.
+1. Cadence: ... → C110 → Q65 → S74 complete.
+2. Per cadence: next cycle should be C (promote S74 result as remark extending D9.1 in Section 10.2).
+3. Natural candidate: C111 (add quadratic-symbol remark + half-density connection to Section 10.2).
+4. DX check: DX02 was ~6 cycles ago. Next DX due in ~5 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

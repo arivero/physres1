@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S74)
+- Focus: ordering ambiguity for quadratic symbols — extend Section 10.2 to A = f(q)p².
+- Question: what is the structure of Q_W(fp²) - Q_L(fp²), and how does it connect to the half-density resolution?
+- Work: computed Q_W(fp²) - Q_L(fp²) = -iℏf'p̂ - ¼ℏ²f'' by two independent methods (operator algebra + Weyl kernel). Applied to position-dependent mass. Connected to half-density conjugated Laplacian.
+- Result: quadratic symbols give a richer correction than linear (differential O(ℏ) + potential O(ℏ²)). Half-density conjugation eliminates the first-derivative ambiguity geometrically — bridges thread 6 (ordering) to thread 2b (half-densities).
+- Blackboard: `blackboards/2026-02-12-ordering-quadratic-symbols.md`
+- Next: C cycle to promote as a remark extending D9.1 in Section 10.2. DX due in ~5 cycles.
+
 ## 2026-02-12 (Q65)
 - Focus: referee pass on C110 (Nauenberg 2018 citation added to H1.2).
 - Work: verified claim accuracy (both papers support "symplectic Euler integrator"), citation format (consistent with manuscript convention), bibliography metadata (DOIs correct), side effects (none), guard checks (clean).
