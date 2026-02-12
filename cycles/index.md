@@ -104,6 +104,7 @@
 100. `C100` Completed.
 101. `C101` Completed.
 102. `C102` Completed.
+103. `C103` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -269,14 +270,15 @@
 - `D12` Completed.
 - `D13` Completed.
 - `D14` Completed.
+- `D15` Completed.
 
 ### Discovery Cycles — Explore (`DXnn`)
 (none yet — first DX cycle should run soon per the ~10-cycle cadence rule)
 
 ## Next Action
-Priority: small fixes from Q59, Newton limit anchoring from B13, then housekeeping.
-1. `C103`: port minimal-regularity parenthetical to companion D1.0 + fix "Runge-Kutta" → "Runge--Kutta" in main paper line 972. Also: add Nauenberg (2003) + Pourciau (2003) citations to Section 3 (Newton limit convergence anchor from B13).
-2. `D15`: record the cached diffstat and guard checks for `C100` in its execution log.
+Priority: bibliography entries for new citations, then referee pass on C103.
+1. `B14`: add [Nauenberg2003KeplerArea] and [Pourciau2003] entries to `paper/bibliography.md` (citation keys are referenced in manuscript since C103 but not yet in the ledger). Nauenberg2003 is arXiv OA (math/0112048); Pourciau2003 is likely paywalled (Springer).
+2. `Q60`: referee pass on C103 (Runge--Kutta fix, Newton-limit remark R1.1, companion regularity parenthetical).
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deprioritized unless blocking a revision:

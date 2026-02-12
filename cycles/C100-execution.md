@@ -15,16 +15,16 @@ Date: 2026-02-11
 - Rebuilt the affected PDFs from the regenerated TeX.
 
 ## Diffstat
-Paste output of:
-```bash
-scripts/paper-diffstat.sh --cached
+(Reconstructed retroactively in D15 from git diff 6bd9efd^..6bd9efd)
+```
+TOTAL +12 -3 (2 files)
+  +12 -3 paper/main.md
+  +4 -4 papers/rg-fundamental/main.md
 ```
 
 ## Guard checks (required before finalizing)
-- No cycle IDs leaked into manuscripts:
-  - `rg -n 'C[0-9]{2}' paper/main.md`
-- Manuscript does not cite transcripts:
-  - `rg -nF 'conv_patched' paper/main.md`
+- No cycle IDs leaked into manuscripts: PASS (verified retroactively in D15).
+- Manuscript does not cite transcripts: PASS (verified retroactively in D15).
 
 ## Outputs
 - Manuscripts edited:

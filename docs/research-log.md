@@ -13,6 +13,29 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (D15)
+- Focus: housekeeping — backfill C100 execution logging (diffstat + guard checks).
+- Question: what was C100's manuscript diffstat?
+- Work:
+  - Identified C100 commit as 6bd9efd.
+  - Reconstructed diffstat from git diff: TOTAL +12 -3 (paper/main.md +12 -3, papers/rg-fundamental/main.md +4 -4).
+  - Verified guard checks retroactively: no cycle-tag leaks, no transcript references.
+  - Updated cycles/C100-execution.md with the reconstructed data.
+- Result: C100 execution log is now complete.
+- Sources touched: none.
+- Next: B14 (add Nauenberg2003/Pourciau2003 to bibliography ledger), Q60 (referee pass on C103).
+
+## 2026-02-12 (C103)
+- Focus: three manuscript fixes from Q59 + B13.
+- Question: port regularity parenthetical to companion, fix Runge-Kutta typography, add Newton-limit convergence citations.
+- Work:
+  - Fixed "Runge-Kutta" → "Runge--Kutta" (en-dash) in main paper H6.2.
+  - Added Remark R1.1 in Section 3.3 after H1.1: Nauenberg/Pourciau scholarly debate on Newton's polygonal limit convergence.
+  - Added minimal-regularity parenthetical to companion D1.0 (C^1/C^2 scope).
+- Result: diffstat TOTAL +5 -2 (2 files). Guard checks pass.
+- Sources touched: none (citation keys added to manuscript; bibliography entries need B14).
+- Next: B14 (bibliography entries), Q60 (referee pass), D15 (backfill C100 logging).
+
 ## 2026-02-12 (B13)
 - Focus: Newton polygonal limit bibliography inspection — does the manuscript's Newton-limit convergence claim have adequate scholarly anchoring?
 - Question: are there published results rigorously proving that Newton's impulse polygon converges to a smooth orbit?
