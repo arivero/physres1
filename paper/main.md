@@ -1220,6 +1220,14 @@ $$
 
 in the formal classical limit, while quantum generators differ at subleading order.
 
+`Remark D9.1a (Quadratic symbols and half-density resolution).`
+For the quadratic symbol \(A(q,p)=f(q)p^2\) (e.g.\ kinetic energy with position-dependent mass \(f=1/m\)), the same comparison yields
+\[
+Q_W(fp^2)-Q_L(fp^2)=-i\hbar f'(\hat q)\hat p-\tfrac{1}{4}\hbar^2 f''(\hat q).
+\]
+The correction now has two layers: an \(O(\hbar)\) first-order differential operator and an \(O(\hbar^2)\) potential. In particular, different orderings of \(p^2/m(q)\) disagree in the coefficient of the first-derivative term \(i\hbar(m'/m^2)\hat p\).
+The half-density conjugation \(|g|^{1/4}\Delta_g|g|^{-1/4}\) eliminates this first-derivative ambiguity entirely: it selects the unique second-order operator with no connection term in the scalar picture, providing a geometric resolution of the ordering ambiguity for kinetic operators (cf.\ Derivation HD-D1.3 in the half-density companion note).
+
 `Proposition P9.1 (Discretization-ordering equivalence class statement).`
 If two short-time kernel prescriptions map to \(Q_L\)-type and \(Q_W\)-type representatives of the same classical symbol algebra, then they define the same classical equations and differ only by controlled \(O(\hbar)\) corrections. This is the worked version of the Section 6 to Section 7 transition claim [Landsman1998].
 
