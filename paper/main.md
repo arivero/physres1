@@ -969,6 +969,13 @@ H(\Phi_h^{(a)})=\Phi_h^{(\tau_2(a))}+O(h^3),\qquad \tau_2(a)=\frac{a}{2}+\frac14
 \]
 with fixed point \(a_\ast=1/2\) (the second-order Taylor coefficient of the exact flow). This is a clean micro-model for `Derivation D6.0`: \(\tau_b\) is the control map required so that "refine and compare" lands back in the chosen family; failure of closure forces enlarging the family (counterterms).
 
+`Remark D6.2a-sg (Semigroup law and beta function for general refinement).`
+Replacing step-halving by a general \(b\)-fold refinement (composing \(b\) copies of \(\Phi_{h/b}^{(a)}\) and reading off the \(O(h^2)\) coefficient) gives
+\[
+\tau_b(a)=\frac{a}{b}+\frac{b-1}{2b},\qquad a_\ast=\tfrac12\;\;\text{for all }b>0.
+\]
+These maps satisfy the semigroup law \(\tau_b\circ\tau_c=\tau_{bc}\). Setting \(b=1+\varepsilon\) and expanding yields the infinitesimal generator \(\beta(a)=\tfrac12-a\), a linear flow with universal attractor \(a_\ast=1/2\). Thus the "RG semigroup" language invoked in `Heuristic H6.2` is not merely an analogy: the step-refinement control maps form a one-parameter semigroup whose beta function, fixed point, and exponential relaxation to universality are all explicit.
+
 `Remark D6.2a1 (Next discrepancy term and the next rooted tree in Euler step-doubling).`
 For the explicit Euler map \(E_h(y):=y+h f(y)\) with \(f\in C^2\), expanding one order further gives
 \[
