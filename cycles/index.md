@@ -194,6 +194,7 @@
 - `S66` Completed.
 - `S67` Completed.
 - `S68` Completed.
+- `S69` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -281,8 +282,8 @@
 
 ## Next Action
 Priority: follow up on DX01 findings (symplectic-Euler connection, Berkeley source).
-1. `S69`: derive Newton-impulse ↔ symplectic-Euler connection explicitly in manuscript notation (blackboard).
-2. C cycle (after S69): add symplectic-Euler remark to Section 3 or 8, and Berkeley citation to Section 1.
+1. `C105`: promote symplectic-Euler remark (from S69) into Section 3.3 + add Berkeley citation to Section 1 or 3.1. Bundle both into one promotion wave.
+2. `Q61`: referee pass on C105.
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deferred:

@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S69)
+- Focus: derive Newton-impulse ↔ symplectic-Euler connection.
+- Question: is Section 3.2's kick-drift scheme literally a symplectic integrator?
+- Work: wrote blackboard note identifying the map, reproving L-conservation from symplecticity, comparing to Section 8's explicit Euler, drafting a promotion paragraph.
+- Result: yes, it's symplectic Euler. Constrained corrections (preserve ω) ↔ gauge-invariant counterterms analogy. Promotion candidate ready.
+- Sources touched: none.
+- Next: C105 (promote remark + Berkeley citation).
+
 ## 2026-02-12 (B15)
 - Focus: add Berkeley (1734) "The Analyst" to bibliography.
 - Work: added [Berkeley1734Analyst] to Sources, DOI Audit, OA Acquisition Status. OA via Wikisource + Internet Archive.
