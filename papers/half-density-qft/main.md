@@ -30,14 +30,14 @@ and composition is intrinsic:
 \]
 because the product in the intermediate variable \(y\) is a density.
 
-`Derivation D1.1 (Identity kernel).`
+`Derivation HD-D1.1 (Identity kernel).`
 The identity operator on half-densities has kernel
 \[
 K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2},
 \]
 which is canonical: it does not require choosing a background density/volume form.
 
-`Derivation D1.1a (Normalization witness: why \(\varepsilon^{-D/2}\) appears).`
+`Derivation HD-D1.1a (Normalization witness: why \(\varepsilon^{-D/2}\) appears).`
 In local coordinates on \(\mathbb{R}^D\), a standard approximate identity is the Gaussian family
 \[
 \rho_\varepsilon(x)=\frac{1}{(2\pi\varepsilon)^{D/2}}\exp\!\Bigl(-\frac{|x|^2}{2\varepsilon}\Bigr),
@@ -78,7 +78,7 @@ S[\phi]
 \]
 so the pairing is now just the coordinate density \(d^Dx\).
 
-`Derivation D1.2 (Explicit form of the conjugated kinetic operator).`
+`Derivation HD-D1.2 (Explicit form of the conjugated kinetic operator).`
 For \(P_{\mathrm{kin}}=-\nabla^2\) one has in coordinates
 \[
 \nabla^2\phi=|g|^{-1/2}\partial_\mu\!\Bigl(\sqrt{|g|}\,g^{\mu\nu}\partial_\nu\phi\Bigr),
@@ -98,7 +98,7 @@ Assuming compact support (or boundary conditions killing boundary terms),
 \]
 which is manifestly symmetric under \((1\leftrightarrow 2)\).
 
-`Derivation D1.3 (Conformal metric expansion; D=4 simplification in the conformal class).`
+`Derivation HD-D1.3 (Conformal metric expansion; D=4 simplification in the conformal class).`
 As a worked expansion, take a conformally flat background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) (Euclidean for simplicity). Then
 \(\sqrt{|g|}=e^{D\sigma}\), \(|g|^{1/4}=e^{D\sigma/2}\), \(g^{\mu\nu}=e^{-2\sigma}\delta^{\mu\nu}\), and one finds
 \[
@@ -143,7 +143,7 @@ Equivalently, if \(G_g(x,y)\) denotes the usual **scalar** Green function for \(
 
 This is exactly the same “kernel as bi-half-density” structure used for QM propagators in the main manuscript, now applied to spacetime Green functions in QFT.
 
-`Remark D4.1 (Doubling: densities live on \(M\times M\)).`
+`Remark HD-D4.1 (Doubling: densities live on \(M\times M\)).`
 Half-density kernels also make the amplitude-vs-density doubling completely explicit. Let \(U_t\) be a (unitary) evolution operator on half-densities with kernel \(K_t(x,y)\). Then a density operator \(\rho_t=U_t\rho_0U_t^{-1}\) has a kernel satisfying
 \[
 K_{\rho_t}(x,y)
@@ -163,7 +163,7 @@ K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2}.
 \]
 Multiplication counterterms correspond to \(c(x)\,K_{\mathrm{Id}}(x,y)\), and derivative counterterms correspond to derivatives acting on the delta kernel (e.g. \(\partial_x\delta^{(D)}(x-y)\) and higher).
 
-`Remark D5.1 (Derivative of the diagonal delta kernel; coordinate-free identity).`
+`Remark HD-D5.1 (Derivative of the diagonal delta kernel; coordinate-free identity).`
 The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” has a clean, connection-free formulation in the half-density kernel calculus. The identity kernel \(K_{\mathrm{Id}}\) is invariant under diagonal diffeomorphisms \((\Phi\times\Phi)\), so for any vector field \(V\) on \(M\) one has
 \[
 (\mathcal L_{V_x}+\mathcal L_{V_y})\,K_{\mathrm{Id}}=0,
@@ -172,7 +172,7 @@ The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” has a clean, c
 \]
 where \(\mathcal L\) is the Lie derivative acting on half-densities. In local coordinates, taking \(V=\partial/\partial x^\mu\) recovers \(\partial_{x^\mu}\delta^{(D)}(x-y)=-\partial_{y^\mu}\delta^{(D)}(x-y)\). This is the kernel-level mechanism behind “moving derivatives between slots” in integration by parts and in contact-term identities.
 
-`Remark D5.2 (Point splitting produces \u03b4' contact terms).`
+`Remark HD-D5.2 (Point splitting produces \u03b4' contact terms).`
 Point splitting makes the simplest derivative contact term explicit:
 in one dimension,
 \[
