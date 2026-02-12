@@ -282,6 +282,7 @@
 - `Q65` Completed.
 - `Q66` Completed.
 - `Q67` Completed.
+- `Q68` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -307,11 +308,11 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: C113 fixed both Section 9 signaling gaps. No open anomalies. RCP v4 reinforced.
-1. Cadence: ... → DX03 → C113 complete.
-2. Per cadence: next cycle should be Q68 (referee pass on C113).
-3. After Q68: S or B cycle on a priority thread from research-state.md.
-4. DX check: DX03 was 1 cycle ago. Next DX due in ~9 cycles.
+Priority: Q68 clean pass on C113. No open anomalies. RCP v4 reinforced. DX03 recent.
+1. Cadence: ... → DX03 → C113 → Q68 complete.
+2. Per cadence: next cycle should be S or B on a priority thread from research-state.md.
+3. Thread priorities: (1) half-density / Planck-area, (2) main paper coherence, (3) RG follow-up.
+4. DX check: DX03 was 2 cycles ago. Next DX due in ~8 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
