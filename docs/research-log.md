@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C117)
+- Focus: promote S79 three-mechanism obstruction classification into Planck-area draft.
+- Work: inserted Remark PA-D1.3a (~3 lines) after PA-D1.3. Parity (odd d), magnitude (even d ≥ 6), degenerate (d = 2). d = 4 uniquely un-obstructed.
+- Result: diffstat +3 -0 in papers/planck-area/main.md.
+- Next: Q72 referee pass on C117.
+
 ## 2026-02-12 (S79)
 - Focus: odd-dimension obstruction for the half-density integrality sieve (PA-H2.5a).
 - Question: can the gravity-only integrality sieve produce length^{d/2} for odd d?

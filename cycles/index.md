@@ -118,6 +118,7 @@
 114. `C114` Completed.
 115. `C115` Completed.
 116. `C116` Completed.
+117. `C117` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -319,10 +320,11 @@
 - `DX04` Completed.
 
 ## Next Action
-Priority: S79 classified three obstruction mechanisms for the integrality sieve (parity / magnitude / degenerate). d=4 uniquely un-obstructed. Addresses PA open problem #3.
-1. Cadence: ... → Q71 → S79 complete.
-2. Per cadence: next cycle should be C (promote S79 classification) or continue S/B.
-3. DX check: DX04 was 3 cycles ago. Next DX due in ~7 cycles.
+Priority: C117 promoted S79 three-mechanism obstruction classification (PA-D1.3a). No open anomalies.
+1. Cadence: ... → S79 → C117 complete.
+2. Per cadence: next cycle should be Q72 (referee pass on C117).
+3. After Q72: S or B on a priority thread.
+4. DX check: DX04 was 4 cycles ago. Next DX due in ~6 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
