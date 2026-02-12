@@ -1036,7 +1036,7 @@ The manuscript has built one chain across seven technical steps:
 3. Section 5: weak/distributional formulation extends stationarity to singular limits (mollifiers, corners, impulses) with explicit admissibility boundaries.
 4. Section 6: composition under slicing plus additive action yields exponential weighting and stationary-phase classical recovery.
 5. Section 7: ordering ambiguity is recast as deformation-equivalence data with a shared Poisson classical limit.
-6. Section 8: divergent refinement is controlled by renormalization maps and RG semigroup consistency.
+6. Section 8: divergent refinement is controlled by renormalization maps and RG semigroup consistency (`Remark D6.2a-sg` gives the explicit semigroup law and beta function in a toy model).
 
 The unifying thesis is therefore not "classical then quantum then QFT" as disconnected layers, but "one refinement/composition problem under progressively stricter consistency requirements."
 
@@ -1097,7 +1097,7 @@ For navigation, Sections 3–8 contain the following mix of results and bridges:
 
 4. **Section 6:** composition plus additivity imply exponential weighting; stationary phase yields classical recovery. (mixed: `Proposition`, `Derivation`, `Heuristic`) Boundary: formal path-integral usage and local stationary-phase assumptions.
 
-5. **Section 7:** deformation products recover the Poisson bracket; ordering appears as deformation-equivalence choice. (mixed: `Proposition`, `Derivation`, `Heuristic`) Boundary: formal/asymptotic deformation setting and scope of equivalence.
+5. **Section 7:** deformation products recover the Poisson bracket; ordering appears as deformation-equivalence choice. A complementary geometric resolution exists: half-density conjugation selects a canonical ordering for kinetic operators by eliminating the connection term (`Remark D9.1a`, Appendix \S\,10.2). (mixed: `Proposition`, `Derivation`, `Heuristic`) Boundary: formal/asymptotic deformation setting and scope of equivalence.
 
 6. **Section 8:** RG appears as semigroup consistency under composed refinement; counterterms appear as refinement corrections. (mixed: `Proposition`, `Derivation`, `Heuristic`) Boundary: closure/truncation assumptions and regulator-scheme choice.
 
