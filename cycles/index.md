@@ -108,6 +108,7 @@
 104. `C104` Completed.
 105. `C105` Completed.
 106. `C106` Completed.
+107. `C107` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -286,8 +287,8 @@
 - `DX01` Completed.
 
 ## Next Action
-Priority: promote S70 findings into manuscript.
-1. `C107`: promote H4.0c remark (RG-side echo of D=4 half-density cancellation) into `paper/main.md` near H4.0b.
+Priority: referee pass on C107, then continue cadence.
+1. `Q62`: referee pass on C107 (H4.0c insertion).
 2. Continue monitoring anomalies from DX01 (RCP falsifiability — still OPEN).
 3. Claim-label namespace collision: resolve before submission.
 

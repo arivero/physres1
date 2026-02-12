@@ -13,6 +13,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C107)
+- Focus: promote S70 finding (H4.0c) into paper/main.md.
+- Work: inserted Heuristic H4.0c (RG-side echo: gauge-coupling marginality at D=4) immediately after H4.0b in Section 6. Notes the kinematic/dynamic filter distinction and the form-degree matching D=2(p+1) for p=1.
+- Result: diffstat TOTAL +3 -0. Guard checks pass. Spawned Q62.
+- Sources touched: none (no new citations).
+- Next: Q62 (referee pass on C107).
+
 ## 2026-02-12 (S70)
 - Focus: check whether D=4 conformal half-density result has an RG-side analog (DX01 anomaly follow-up).
 - Question: does the RG / renormalization side of the manuscript also single out D=4?
