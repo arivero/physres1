@@ -117,6 +117,7 @@
 113. `C113` Completed.
 114. `C114` Completed.
 115. `C115` Completed.
+116. `C116` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -316,11 +317,11 @@
 - `DX04` Completed.
 
 ## Next Action
-Priority: DX04 sweep clean. Key promotable gap: S78's Van Vleck × transmutation kernel-level separation.
-1. Cadence: ... → S78 → DX04 complete.
-2. Per cadence: next cycle should be C116 (promote S78 into Planck-area draft).
-3. After C116: Q71 (referee pass on C116), then S or B.
-4. DX check: DX04 just completed. Next DX due in ~10 cycles.
+Priority: C116 promoted S78 kernel-level separation into Planck-area draft (PA-E5b). No open anomalies.
+1. Cadence: ... → DX04 → C116 complete.
+2. Per cadence: next cycle should be Q71 (referee pass on C116).
+3. After Q71: S or B on a priority thread.
+4. DX check: DX04 was 1 cycle ago. Next DX due in ~9 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

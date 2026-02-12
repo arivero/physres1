@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C116)
+- Focus: promote S78 Van Vleck × transmutation kernel-level separation into Planck-area draft.
+- Work: inserted Remark PA-E5b (~3 lines) after PA-E5a. Lippmann–Schwinger factorization: Van Vleck = geometric transformation law (PA-H2.1), κ* = dynamical scalarization constant (PA-H2.2–H2.4). Structurally independent, multiply in kernel.
+- Result: diffstat +3 -0 in papers/planck-area/main.md.
+- Next: Q71 referee pass on C116.
+
 ## 2026-02-12 (DX04)
 - Focus: post-S78 structural sweep — cross-thread audit and anomaly probe.
 - Work: full manuscript audit (74+ blocks in main paper, 68 in Planck-area, 8 in HD-QFT, 4 in RG-fundamental). All cross-references valid. No forward-reference dangling. Section 9 correctly cites recent additions. Checked anomaly register (no open entries). Reviewed principle evolution log (v4 confirmed). Catalogued unpromoted blackboard findings.
