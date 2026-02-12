@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q71)
+- Focus: referee pass on C116 (Remark PA-E5b in Planck-area draft).
+- Work: verified Lippmann–Schwinger factorization claim, T-matrix scalarity (confirmed against D11.1), all cross-references (PA-D1.4, PA-H2.1–H2.4), notation consistency, claim-label hygiene.
+- Result: clean pass. All claims verified. PA-E5/PA-E5a/PA-E5b now form a self-contained 2D delta discussion trio.
+- Next: S or B on a priority thread.
+
 ## 2026-02-12 (C116)
 - Focus: promote S78 Van Vleck × transmutation kernel-level separation into Planck-area draft.
 - Work: inserted Remark PA-E5b (~3 lines) after PA-E5a. Lippmann–Schwinger factorization: Van Vleck = geometric transformation law (PA-H2.1), κ* = dynamical scalarization constant (PA-H2.2–H2.4). Structurally independent, multiply in kernel.

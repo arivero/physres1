@@ -291,6 +291,7 @@
 - `Q68` Completed.
 - `Q69` Completed.
 - `Q70` Completed.
+- `Q71` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -317,11 +318,10 @@
 - `DX04` Completed.
 
 ## Next Action
-Priority: C116 promoted S78 kernel-level separation into Planck-area draft (PA-E5b). No open anomalies.
-1. Cadence: ... → DX04 → C116 complete.
-2. Per cadence: next cycle should be Q71 (referee pass on C116).
-3. After Q71: S or B on a priority thread.
-4. DX check: DX04 was 1 cycle ago. Next DX due in ~9 cycles.
+Priority: Q71 clean pass on C116. PA-E5/PA-E5a/PA-E5b trio complete. No open anomalies.
+1. Cadence: ... → C116 → Q71 complete.
+2. Per cadence: next cycle should be S or B on a priority thread.
+3. DX check: DX04 was 2 cycles ago. Next DX due in ~8 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
