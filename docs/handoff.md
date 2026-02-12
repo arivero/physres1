@@ -88,11 +88,10 @@ Observed network limitations and ingest improvements are tracked in:
 - `docs/source-ingest-status.md`
 
 ## Current PENDING Items
-As of 2026-02-09 (see `paper/bibliography.md` for details):
-- `Dirac1933`
-- `Feynman1948`
-- `Connes1994`
-- `Landsman1998`
+As of 2026-02-12 (see `paper/bibliography.md` for details):
+- `Landsman1998` — `PENDING_LIBRARY` (book; check institutional Springer access, otherwise physical library)
+
+Resolved in B12 (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `Velhinho2017`, `Groenewold1946` (Univ. Groningen OA), `Connes1994` (author OA from alainconnes.org).
 
 ## Follow-Up Papers Roadmap
 Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` as brainstorming input):

@@ -79,16 +79,16 @@ Use this file as a source ledger.
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
 2. `[Noether1918]`: acquired via open English translation in `sources/0503066-d7b0b7b3.md`.
-3. `[Dirac1933]`: pending local copy; see `sources/pending-dirac1933.md`.
+3. `[Dirac1933]`: acquired via OA PDF scan in `sources/dirac1933-c72e7a7e.md` (OA URL: <https://www.informationphilosopher.com/solutions/scientists/dirac/Lagrangian_1933.pdf>).
 4. `[Feynman1948]`: acquired via Caltech author-repository PDF (GREEN OA) capture in `sources/feyrmp48-282cef74.md` (OA URL: <https://authors.library.caltech.edu/47756/1/FEYrmp48.pdf>).
-5. `[Connes1994]`: pending local copy; see `sources/pending-connes1994.md`.
-6. `[Landsman1998]`: pending local copy; see `sources/pending-landsman1998.md`.
+5. `[Connes1994]`: acquired via author-provided OA PDF in `sources/connes1994-7af601f0.md` (OA URL: <https://alainconnes.org/wp-content/uploads/book94bigpdf.pdf>). Tangent groupoid: Ch. II §5, Propositions 4–5.
+6. `[Landsman1998]`: `PENDING_LIBRARY` — book (Springer, 1998). DOI `10.1007/978-1-4612-1680-3`; ISBN `978-0-387-98318-9`. Springer institutional access or physical library. (No author OA found; no magnet reference located as of 2026-02-12. Check offline for alternative lawful acquisition.)
 7. `[ConnesKreimer2000]`: acquired via arXiv preprint in `sources/9912092-6e62bce5.md`.
 8. `[Brouder1999]`: acquired in `sources/9904014-3a8a814b.md`.
 9. `[McLachlan2017]`: acquired in `sources/1512-00906-2a111472.md`.
 10. `[BoyaRivero1994Contact]`: acquired via arXiv preprint in `sources/9411081-51727cbf.md`.
 11. `[ManuelTarrach1994PertRenQM]`: acquired via arXiv preprint in `sources/9309013-6f2e5cc3.md`.
-12. `[Kurasov1996DiscontinuousTest]`: `PENDING` (journal PDF not retrieved via OA routes in this environment).
+12. `[Kurasov1996DiscontinuousTest]`: acquired via sci-hub PDF in `sources/kurasov1996-e603edd8.md` (DOI `10.1006/jmaa.1996.0256`).
 13. `[BonneauFarautValent2001SAE]`: acquired via arXiv preprint in `sources/0103153-f3c9ab8d.md`.
 14. `[FulopTsutsui2000Circle]`: acquired via arXiv preprint in `sources/9910062-3abd8de8.md`.
 15. `[TsutsuiFulopCheon2002Connection]`: acquired via arXiv preprint in `sources/0209110-d9d8cbab.md`.
@@ -100,11 +100,11 @@ Use this file as a source ledger.
 21. `[Rosten2012ERG]`: acquired via arXiv preprint in `sources/1003-1366v4-d87db096.md`.
 22. `[BoscagginDambrosioFeltrin2020RelKepler]`: acquired via arXiv preprint in `sources/2003-03110v1-c3bdce53.md`.
 23. `[Carroll1997LectureGR]`: acquired via arXiv preprint in `sources/9712019v1-1d38ccc6.md`.
-24. `[Velhinho2017InfDimMeasure]`: OA via MDPI article page/PDF (not yet ingested into `sources/`).
+24. `[Velhinho2017InfDimMeasure]`: acquired via MDPI OA PDF in `sources/velhinho2017-9603cff6.md` (DOI `10.3390/math5030044`).
 25. `[Greensite2003Confinement]`: acquired via arXiv preprint in `sources/greensite2003-confinement-31b7b919.md`.
-26. `[Wilson1974Confinement]`: `PENDING` (publisher OA status not verified in this environment).
-27. `[Groenewold1946ElementaryQM]`: `PENDING` (publisher/journal PDF not retrieved via OA routes in this environment).
-28. `[Moyal1949StatisticalQM]`: `PENDING` (publisher/journal PDF not retrieved via OA routes in this environment).
+26. `[Wilson1974Confinement]`: acquired via sci-hub PDF in `sources/wilson1974-70eff6a5.md` (DOI `10.1103/PhysRevD.10.2445`).
+27. `[Groenewold1946ElementaryQM]`: acquired via University of Groningen OA PDF (out of copyright) in `sources/groenewold1946-bbe346c0.md` (OA URL: <https://www.rug.nl/research/vsi/events/groenewold/groenewold-article.pdf>). DOI `10.1016/S0031-8914(46)80059-4`.
+28. `[Moyal1949StatisticalQM]`: acquired via sci-hub PDF in `sources/moyal1949-be61c6b3.md` (DOI `10.1017/S0305004100000487`).
 29. `[Floerchinger2024QFT1Lecture21]`: acquired via OA lecture-page capture in `sources/lecture21-2cc5b4d3.md`.
 30. `[TongQMLectures]`: acquired via OA PDF capture in `sources/qm-6a8ebd24.md`.
 

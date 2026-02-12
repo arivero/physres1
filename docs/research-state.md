@@ -111,8 +111,9 @@ Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and imm
 - Seed roadmap: `docs/next-articles.md` (F).
 
 ### 9) Paper closure / hygiene (deprioritized unless blocking)
-- Close the `PENDING` acquisition gaps (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`) when they become blocking for revisions.
+- Remaining `PENDING_LIBRARY` gaps: `Landsman1998` only (require institutional Springer access or physical library). All other PENDING items resolved in B12: `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `Velhinho2017`, `Groenewold1946` (Univ. Groningen OA), `Connes1994` (author OA from alainconnes.org; tangent groupoid in Ch. II §5).
 - Optional: switch to pandoc `[@Key]` citations + a `.bib` file if a formal reference list is desired (keep `sources/` out of git).
+- **Claim-label namespace collision** (Q59): main paper and companion (rg-fundamental) use overlapping label schemes (D1.1, P1.1, H1.1 etc.) for different claims. Resolve before submission by adding paper-specific prefixes to companion labels. Not blocking until cross-references by label are introduced.
 
 ### 10) Action–Angle indeterminacy (central potentials)
 - Goal: formulate a clean “sharp actions \(\Rightarrow\) delocalized conjugate angles” statement for integrable central potentials, with at least one explicit computation in the \((\phi,L_z)\) sector.

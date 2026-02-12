@@ -118,6 +118,7 @@
 - `B09` Completed.
 - `B10` Completed.
 - `B11` Completed.
+- `B12` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -248,6 +249,8 @@
 - `Q55` Completed.
 - `Q56` Completed.
 - `Q57` Completed.
+- `Q58` Completed.
+- `Q59` Completed.
 
 ### Discovery Cycles (`Dnn`)
 - `D00` Completed.
@@ -267,13 +270,11 @@
 - `D14` Completed.
 
 ## Next Action
-Priority: backfill the `C100` logging gap and continue quality monitoring.
-1. `D15`: record the cached diffstat and guard checks for `C100` in its execution log.
-2. `Q59`: referee pass on `C102` (verify notation consistency across main + rg-fundamental).
+Priority: small fixes from Q59, then housekeeping.
+1. `C103`: port minimal-regularity parenthetical to companion D1.0 + fix "Runge-Kutta" → "Runge--Kutta" in main paper line 972.
+2. `D15`: record the cached diffstat and guard checks for `C100` in its execution log.
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
-Optional (time-capped):
-- `B12`: one more OA attempt for `[Dirac1933]`; otherwise keep `PENDING_LOCAL_PDF`.
-
 Deprioritized unless blocking a revision:
-- ingest local PDFs for pending keys (`Dirac1933`, `Feynman1948`, `Connes1994`, `Landsman1998`).
+- `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
+- Claim-label namespace collision between main + companion: resolve before submission (see `docs/research-state.md` thread 9).
