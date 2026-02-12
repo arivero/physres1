@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (C120: promote S82 into planck-area Section 4)
+- Focus: insert Derivation PA-D1.4a (free-propagator semigroup as half-density witness) after PA-D1.4.
+- Work: condensed S82 blackboard into ~18-line derivation. Three-way d/2 cancellation + tangent-groupoid connection. Rebuilt .tex/.pdf (22 pages, clean). Guard checks pass.
+- Result: diffstat +19 -1 main.md. Open Problem #1 now has a concrete model witness in the manuscript.
+- Next: Q76 (referee pass on C120).
+
 ## 2026-02-13 (S82: free-propagator composition closes the half-density normalization loop)
 - Focus: concrete computation addressing Planck-area Open Problem #1.
 - Question: does the semigroup property of the free propagator concretely demonstrate that the d/2 exponent is the half-density weight, and that scalarization forces a length^{d/2} constant?
