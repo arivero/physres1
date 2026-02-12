@@ -113,6 +113,7 @@
 109. `C109` Completed.
 110. `C110` Completed.
 111. `C111` Completed.
+112. `C112` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -303,11 +304,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: S75 derived semigroup structure of D6.2a control map. Promotion candidate ready. No open anomalies.
-1. Cadence: ... → C111 → Q66 → S75 complete.
-2. Per cadence: next cycle should be C (promote S75 result as remark extending D6.2a in Section 8.4).
-3. Natural candidate: C112 (add general τ_b formula, semigroup law, and beta function to Section 8.4).
-4. DX check: DX02 was ~9 cycles ago. Next DX due in ~2 cycles (trigger at ~10).
+Priority: C112 promoted S75 semigroup result. No open anomalies.
+1. Cadence: ... → S75 → C112 complete.
+2. Per cadence: next cycle should be Q (referee pass on C112).
+3. Natural candidate: Q67 (verify Remark D6.2a-sg formulas, semigroup law, and relationship to H6.2).
+4. DX check: DX02 was ~10 cycles ago. Next DX due soon (trigger at ~10–12).
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

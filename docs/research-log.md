@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C112)
+- Focus: promote S75 semigroup result to Section 8.4.
+- Work: inserted Remark D6.2a-sg (7 lines) after D6.2a, before D6.2a1. Contains general formula τ_b(a), semigroup law τ_b ∘ τ_c = τ_{bc}, beta function β(a) = 1/2 - a, interpretive closing sentence.
+- Result: diffstat +7 -0. Guards clean.
+- Next: Q67 referee pass on C112. DX due in ~1 cycle.
+
 ## 2026-02-12 (S75)
 - Focus: semigroup structure of the step-refinement control map (extending D6.2a).
 - Question: does τ_b ∘ τ_c = τ_{bc} for the toy ODE control map? What is the continuous beta function?
