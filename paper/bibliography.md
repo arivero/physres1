@@ -46,6 +46,7 @@ Use this file as a source ledger.
 32. `[Pourciau2003]` Bruce Pourciau, "Newton's Argument for Proposition 1 of the Principia," *Archive for History of Exact Sciences* 57 (2003), 267–311. DOI `10.1007/s00407-002-0062-x`. (Critically analyses the impulse assumption and identifies error-accumulation and planarity problems in Newton's limit argument.)
 33. `[Berkeley1734Analyst]` George Berkeley, *The Analyst; or, A Discourse Addressed to an Infidel Mathematician* (Dublin/London, 1734). (Foundational critique of Newton's fluxions and Leibniz's infinitesimals — the "ghosts of departed quantities" objection to evanescent limits. Historical precursor to modern constructive refinement approaches.)
 34. `[Nauenberg1994SymplecticNewton]` Michael Nauenberg, "Newton's early computational method for dynamics," *Archive for History of Exact Sciences* 46 (1994), 221–252. DOI `10.1007/BF01686278`. (The impulse equations correspond to a canonical/symplectic mapping — exact solutions of a Hamiltonian with impulsive forces. Discusses convergence and adaptive time-stepping.)
+35. `[Nauenberg2018GraphicalMethod]` Michael Nauenberg, "Newton's graphical method for central force orbits," *American Journal of Physics* 86(10) (2018), 765–771. DOI `10.1119/1.5046424`. arXiv:`1810.05264`. (Explicitly identifies Newton's Proposition 1 construction as a first-order symplectic integrator; shows discrete energy conservation and time-reversal invariance. OA author copy: UCSC Emeriti.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -83,6 +84,7 @@ Use this file as a source ledger.
 33. `[Pourciau2003]`: DOI `10.1007/s00407-002-0062-x`.
 34. `[Berkeley1734Analyst]`: no DOI (18th-century primary source, 1734).
 35. `[Nauenberg1994SymplecticNewton]`: DOI `10.1007/BF01686278`.
+36. `[Nauenberg2018GraphicalMethod]`: DOI `10.1119/1.5046424`; arXiv primary anchor used (`1810.05264`).
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -116,9 +118,10 @@ Use this file as a source ledger.
 29. `[Floerchinger2024QFT1Lecture21]`: acquired via OA lecture-page capture in `sources/lecture21-2cc5b4d3.md`.
 30. `[TongQMLectures]`: acquired via OA PDF capture in `sources/qm-6a8ebd24.md`.
 31. `[Nauenberg2003KeplerArea]`: arXiv OA (`math/0112048`). Not yet ingested into `sources/`.
-32. `[Pourciau2003]`: publisher (Springer), likely paywalled. `PENDING` — no OA route identified.
+32. `[Pourciau2003]`: publisher (Springer), paywalled. `PENDING` — no OA route identified (DOI `10.1007/s00407-002-0062-x` confirmed; ResearchGate listing exists but no confirmed free full text). B17 searched web, Semantic Scholar, PhilPapers, arXiv, author homepage — all negative.
 33. `[Berkeley1734Analyst]`: OA via Wikisource (<https://en.wikisource.org/wiki/The_Analyst:_a_Discourse_addressed_to_an_Infidel_Mathematician>) and Internet Archive (<https://archive.org/details/analystordiscour00berkrich>). Not yet ingested into `sources/`.
-34. `[Nauenberg1994SymplecticNewton]`: publisher (Springer), likely paywalled. `PENDING` — no OA route identified.
+34. `[Nauenberg1994SymplecticNewton]`: publisher (Springer), paywalled. `PENDING` — no OA route identified (DOI `10.1007/BF01686278`; Springer and JSTOR both require subscription). B17 note: the "symplectic Euler integrator" language used in H1.2 is more explicitly from Nauenberg 2018 (see #35); the 1994 paper uses "canonical/symplectic mapping" but not the modern numerical-analysis terminology. Consider citing both in a future C cycle.
+35. `[Nauenberg2018GraphicalMethod]`: OA via arXiv (`1810.05264`) and UCSC Emeriti author copy (<https://emeriti.ucsc.edu/files/newtongraphicmethodAJPSept22.pdf>). Not yet ingested into `sources/`.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).
