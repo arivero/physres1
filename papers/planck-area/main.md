@@ -306,9 +306,16 @@ In the \(2\)D delta interaction, the contact coupling is marginal and the renorm
 \equiv
 \mu^2\exp\!\left(\frac{2\pi\hbar^2}{m}\frac{1}{g_R(\mu)}\right),
 \]
-so \(\kappa_\ast\) is independent of the subtraction scale \(\mu\) and sets a bound-state/scattering scale [ManuelTarrach1994PertRenQM]. This is a minimal witness that “a scale is forced by compatibility” can occur even without a dimensionful coupling, via renormalization rather than via analytic monomials.
+so \(\kappa_\ast\) is independent of the subtraction scale \(\mu\) and sets a bound-state/scattering scale [ManuelTarrach1994PertRenQM]. This is a minimal witness that "a scale is forced by compatibility" can occur even without a dimensionful coupling, via renormalization rather than via analytic monomials.
 
-## 3.4 Running PA-H2.3: Is “Dimensionless \(f\)” Physics or Convention?
+`Remark PA-E5a (Half-density match and three-level RG hierarchy).`
+In the \(2\)D delta, the transmutation scale \(\kappa_\ast^{-1}\) has dimension \(\text{length}^1=\text{length}^{d/2}\) for \(d=2\), exactly the half-density scalarization weight required by PA-H2.3--PA-H2.4. The beta function \(\beta(g_R)\propto g_R^2\) vanishes to order \(2\) at the Gaussian fixed point; as noted in the main manuscript (Section 8.4), transmutation requires this nonlinearity — a linear beta function produces only algebraic (power-law) RG invariants without generating a new scale. Three levels of the RG hierarchy are now witnessed by explicit computations:
+1. *Semigroup structure* (Proposition P6.2 in main text): shared by all refinement flows, including linear beta functions. Witness: Remark D6.2a-sg (toy ODE, \(\beta(a)=\tfrac12-a\)).
+2. *Transmutation*: requires \(\beta\) of order \(\ge 2\) at the fixed point, producing a non-analytic RG-invariant scale. Witness: this example (2D delta, \(\beta\propto g_R^2\)).
+3. *Dimension sieve* (PA-H2.5): demands the scale be an analytic monomial in couplings, selecting \(d=4\) under the gravity-only hypothesis. Witness: Derivation PA-D1.3.
+Transmutation (level 2) supplies a scale in any \(d\) where a marginal coupling exists, so it does not sieve dimensions. The half-density weight \(\text{length}^{d/2}\) correctly tracks the geometric type of the resulting scale: a length in \(d=2\), an area in \(d=4\).
+
+## 3.4 Running PA-H2.3: Is "Dimensionless \(f\)" Physics or Convention?
 The half-density formalism (PA-H2.1) gives a canonical pairing \(\int \bar\psi\,\psi\) that does not require choosing a background measure. But when we write \(\psi=f\,\sigma_\ast\) (PA-H2.2), we are choosing a *representation* of the same object as a scalar function with respect to a chosen positive density \(\rho_\ast=\sigma_\ast^2\).
 
 `Proposition PA-P1.3 (Scalarization is a choice of measure, not new physics).`
