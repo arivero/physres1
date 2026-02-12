@@ -116,6 +116,7 @@
 112. `C112` Completed.
 113. `C113` Completed.
 114. `C114` Completed.
+115. `C115` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -312,11 +313,11 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: S77 verified Section 10.5 as d=2 PA-H2.13 instance. Three-level hierarchy: semigroup ⊃ transmutation ⊃ sieve. No open anomalies.
-1. Cadence: ... → Q69 → S77 complete.
-2. Per cadence: next cycle should be C (promote S77 result or work on another priority thread).
-3. S77 promotion candidate: optional note in PA-E5 (Planck-area draft). Alternatively, C on main paper.
-4. DX check: DX03 was 6 cycles ago. Next DX due in ~4 cycles.
+Priority: C115 promoted S77 hierarchy into Planck-area draft. No open anomalies.
+1. Cadence: ... → S77 → C115 complete.
+2. Per cadence: next cycle should be Q70 (referee pass on C115).
+3. After Q70: S or B on a priority thread.
+4. DX check: DX03 was 7 cycles ago. Next DX due in ~3 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

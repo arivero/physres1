@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C115)
+- Focus: promote S77 hierarchy into Planck-area draft as Remark PA-E5a.
+- Work: inserted Remark PA-E5a (~9 lines) after PA-E5. Half-density dimension match (κ*^{-1} = length^{d/2} for d = 2), three-level hierarchy with witnesses, transmutation is dimension-permissive.
+- Result: diffstat +9 -2 in papers/planck-area/main.md.
+- Next: Q70 referee pass on C115.
+
 ## 2026-02-12 (S77)
 - Focus: cross-thread verification — 2D delta (Section 10.5) as PA-H2.13 transmutation instance.
 - Question: does the main paper's only explicit RG computation realize the Planck-area draft's transmutation branch?
