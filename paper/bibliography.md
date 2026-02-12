@@ -42,6 +42,8 @@ Use this file as a source ledger.
 28. `[Moyal1949StatisticalQM]` J. E. Moyal, "Quantum mechanics as a statistical theory," *Proceedings of the Cambridge Philosophical Society* 45 (1949), 99–124. DOI `10.1017/S0305004100000487`.
 29. `[Floerchinger2024QFT1Lecture21]` Stefan Floerchinger, "Quantum field theory 1, lecture 21" (updated 11 Jun 2024). (States the Dirac-fermion generating functional \(Z[\bar\eta,\eta]\) with Grassmann-valued sources.) OA: lecture webpage.
 30. `[TongQMLectures]` David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)
+31. `[Nauenberg2003KeplerArea]` Michael Nauenberg, "Kepler's Area Law in the Principia: Filling in some details in Newton's proof of Prop. 1," *Historia Mathematica* 30 (2003), 441–456. arXiv:`math/0112048`. DOI `10.1016/S0315-0860(02)00027-7`. (Defends Newton's continuum limit via Lemma 3; the polygonal construction has a well-defined limit parameterizing a continuous planar curve.)
+32. `[Pourciau2003]` Bruce Pourciau, "Newton's Argument for Proposition 1 of the Principia," *Archive for History of Exact Sciences* 57 (2003), 267–311. DOI `10.1007/s00407-002-0062-x`. (Critically analyses the impulse assumption and identifies error-accumulation and planarity problems in Newton's limit argument.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -75,6 +77,8 @@ Use this file as a source ledger.
 29. `[Moyal1949StatisticalQM]`: DOI `10.1017/S0305004100000487`.
 30. `[Floerchinger2024QFT1Lecture21]`: OA web lecture page (no DOI); used as a primary anchor for the fermionic generating functional with Grassmann sources.
 31. `[TongQMLectures]`: OA lecture-note PDF (no DOI).
+32. `[Nauenberg2003KeplerArea]`: DOI `10.1016/S0315-0860(02)00027-7`; arXiv primary anchor used (`math/0112048`).
+33. `[Pourciau2003]`: DOI `10.1007/s00407-002-0062-x`.
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -107,6 +111,8 @@ Use this file as a source ledger.
 28. `[Moyal1949StatisticalQM]`: acquired via sci-hub PDF in `sources/moyal1949-be61c6b3.md` (DOI `10.1017/S0305004100000487`).
 29. `[Floerchinger2024QFT1Lecture21]`: acquired via OA lecture-page capture in `sources/lecture21-2cc5b4d3.md`.
 30. `[TongQMLectures]`: acquired via OA PDF capture in `sources/qm-6a8ebd24.md`.
+31. `[Nauenberg2003KeplerArea]`: arXiv OA (`math/0112048`). Not yet ingested into `sources/`.
+32. `[Pourciau2003]`: publisher (Springer), likely paywalled. `PENDING` — no OA route identified.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).
