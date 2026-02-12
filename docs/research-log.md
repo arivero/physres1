@@ -13,6 +13,28 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q60)
+- Focus: referee pass on C103.
+- Question: are the C103 changes (Runge--Kutta fix, R1.1, companion regularity) correct and consistent?
+- Work:
+  - Verified Runge--Kutta en-dash is correct; remaining hyphens are in bibliography titles (correct).
+  - Verified companion regularity parenthetical matches main paper.
+  - Verified R1.1 content accurately summarizes Nauenberg/Pourciau debate.
+  - Found: label prefix `R` in R1.1 is not defined in Section 2.3 taxonomy. Existing remarks use parent-claim prefix (D4.2b, D6.2a1).
+  - Verified guard checks on companion (no cycle-tag or transcript leaks).
+- Result: C103 clean except label prefix issue. Spawned C104 to rename R1.1 → H1.1a.
+- Sources touched: none.
+- Next: C104 (label rename), DX01 (exploration cycle overdue).
+
+## 2026-02-12 (B14)
+- Focus: add Nauenberg2003 + Pourciau2003 bibliography entries.
+- Question: are citation keys referenced in manuscript now backed by bibliography ledger entries?
+- Work:
+  - Added [Nauenberg2003KeplerArea] (arXiv OA, math/0112048) and [Pourciau2003] (Springer, PENDING) to Sources, DOI Audit, and OA Acquisition Status sections.
+- Result: both entries added. Nauenberg2003 is OA; Pourciau2003 is PENDING (non-blocking).
+- Sources touched: paper/bibliography.md.
+- Next: Q60 (referee pass on C103).
+
 ## 2026-02-12 (D15)
 - Focus: housekeeping — backfill C100 execution logging (diffstat + guard checks).
 - Question: what was C100's manuscript diffstat?

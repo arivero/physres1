@@ -121,6 +121,7 @@
 - `B11` Completed.
 - `B12` Completed.
 - `B13` Completed.
+- `B14` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -253,6 +254,7 @@
 - `Q57` Completed.
 - `Q58` Completed.
 - `Q59` Completed.
+- `Q60` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -276,9 +278,9 @@
 (none yet — first DX cycle should run soon per the ~10-cycle cadence rule)
 
 ## Next Action
-Priority: bibliography entries for new citations, then referee pass on C103.
-1. `B14`: add [Nauenberg2003KeplerArea] and [Pourciau2003] entries to `paper/bibliography.md` (citation keys are referenced in manuscript since C103 but not yet in the ledger). Nauenberg2003 is arXiv OA (math/0112048); Pourciau2003 is likely paywalled (Springer).
-2. `Q60`: referee pass on C103 (Runge--Kutta fix, Newton-limit remark R1.1, companion regularity parenthetical).
+Priority: fix label taxonomy issue from Q60, then consider exploration cycle.
+1. `C104`: rename `Remark R1.1` to `Remark H1.1a` (label prefix not in taxonomy; Q60 finding). Small edit, can be bundled with other work.
+2. Consider `DX01`: first divergent exploration cycle (overdue per ~10-cycle cadence rule; last full Recipe A chain completed).
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deprioritized unless blocking a revision:
