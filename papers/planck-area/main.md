@@ -406,7 +406,25 @@ $$
 
 Taking square roots shows that the prefactor transforms with
 \(|\det(\partial x/\partial x')|^{1/2}|\det(\partial z/\partial z')|^{1/2}\), i.e. exactly as a half-density factor at each endpoint. Thus the stationary-phase prefactor is naturally interpreted as making \(K\) a half-density in each variable, so that kernel composition does not depend on a background measure choice.
-This is the standard “Van Vleck type” semiclassical prefactor in the correspondence/semiclassical tradition [VanVleck1928Correspondence].
+This is the standard "Van Vleck type" semiclassical prefactor in the correspondence/semiclassical tradition [VanVleck1928Correspondence].
+
+`Derivation PA-D1.4a (Free-propagator semigroup: the \(d/2\) exponent is forced by composition).`
+The free quantum propagator on \(\mathbb{R}^d\),
+\(K(x,z;t) = \left(\frac{m}{2\pi i\hbar t}\right)^{d/2}\exp\!\left(\frac{im|x-z|^2}{2\hbar t}\right)\),
+provides a concrete witness. As a bi-half-density, the product \(\mathbf{K}(x,y;t_1)\,\mathbf{K}(y,z;t_2)\) pairs the two \(|dy|^{1/2}\) factors into a density \(|dy|\), which integrates without a background measure.
+The \(d\)-dimensional Gaussian integral over \(y\) gives a volume factor \(\left(\frac{2\pi i\hbar\,t_1 t_2}{m(t_1+t_2)}\right)^{d/2}\).
+Combining with the two kernel prefactors:
+
+$$
+\left(\frac{m}{2\pi i\hbar t_1}\right)^{d/2}
+\left(\frac{m}{2\pi i\hbar t_2}\right)^{d/2}
+\left(\frac{2\pi i\hbar\,t_1 t_2}{m(t_1+t_2)}\right)^{d/2}
+=\left(\frac{m}{2\pi i\hbar(t_1+t_2)}\right)^{d/2},
+$$
+
+which is the prefactor of \(K(x,z;t_1+t_2)\). The semigroup property holds because the \(d/2\) exponent appears three times (twice from the kernels, once from the Gaussian) and the cancellation is exact only for this exponent. This is the Van Vleck determinant in disguise: for the free particle, \(\det(-\partial^2 S_{\mathrm{cl}}/\partial x\,\partial z)=(m/t)^d\), so the square root is \((m/t)^{d/2}\).
+
+In the tangent-groupoid near-diagonal picture, the parameter \(\varepsilon=\hbar t/m\) (diffusion scale) plays the role of the rescaling parameter in PA-D1.2a: the prefactor is proportional to \(\varepsilon^{-d/2}\), and the passage from kernel to symbol on \(TM\) absorbs this half-density Jacobian.
 
 `Derivation PA-D1.9 (Square-root delta normalization has half-density weight).`
 In finite dimension, the “localize on critical points” distribution is \(\delta(\nabla f)\), supported on \(\mathrm{Crit}(f)\). A concrete way it appears is via a “halved” oscillatory integral with a normalization exponent fixed by dimension.
