@@ -4,10 +4,9 @@ Date: 2026-02-12
 
 ## Failure modes
 
-### 1. Groenewold1946 not acquired — does this block anything?
-- **Risk**: Groenewold–van Hove theorem is referenced in the deformation quantization discussion (Section 7). Without the primary source, the claim relies on secondary descriptions.
-- **Mitigation**: The theorem statement is well-known and reproduced in many secondary sources (including Landsman1998 and standard QM textbooks). The manuscript labels its use as attribution, not as proof. Mark `PENDING_LIBRARY` and acquire on next library visit.
-- **Severity**: Low — not a load-bearing gap.
+### 1. ~~Groenewold1946 not acquired~~ — RESOLVED
+- User provided University of Groningen OA link. Paper is out of copyright (1946); source file committed to repo.
+- No-go theorem (§4.02, eqs. 4.12–4.13) verified: V' is self-contradictory for degree ≥ 3 (deficiency of order ℏ²).
 
 ### 2. Books (Connes1994, Landsman1998) remain PENDING_LIBRARY
 - **Risk**: These are cited for general framing (noncommutative geometry, classical-quantum bridge) rather than specific theorems. Claims attributed to them are either well-known or independently supported.
@@ -31,6 +30,6 @@ Date: 2026-02-12
 
 ## Items requiring physical library visit
 The following items cannot be resolved online and require the user to visit a library:
-1. `[Groenewold1946ElementaryQM]` — Physica 12 (1946), 405–460. Check university library for bound Physica volumes or ScienceDirect institutional access.
-2. `[Connes1994]` — Alain Connes, *Noncommutative Geometry* (Academic Press, 1994). ISBN 978-0-12-185860-5. (Note: a partial OA version may exist on Connes' personal website — worth checking.)
+1. ~~`[Groenewold1946ElementaryQM]`~~ — RESOLVED (OA from Univ. Groningen).
+2. ~~`[Connes1994]`~~ — RESOLVED (author OA from alainconnes.org; tangent groupoid in Ch. II §5).
 3. `[Landsman1998]` — N. P. Landsman, *Mathematical Topics Between Classical and Quantum Mechanics* (Springer, 1998). ISBN 978-0-387-98318-9. Check Springer institutional access.

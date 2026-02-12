@@ -36,15 +36,17 @@ Wilson formulates lattice gauge theory by placing gauge variables on links of a 
 
 **Relevant section references:** Section II (pp. 2447–2449, path integral); Section III.B (pp. 2449–2452, lattice quantization); Section IV (pp. 2453–2456, strong-coupling expansion and area law).
 
-### 4. `[Groenewold1946ElementaryQM]` — NOT ACQUIRED (PENDING_LIBRARY)
+### 4. `[Groenewold1946ElementaryQM]` — ACQUIRED (OA, out of copyright)
 - DOI: `10.1016/S0031-8914(46)80059-4`
-- Attempted sci-hub: HTML page returned, but CDN PDF returned 404.
-- Attempted Semantic Scholar: no direct PDF available.
-- ScienceDirect: paywall.
-- **Status: PENDING_LIBRARY** — requires institutional access or physical library visit.
+- Initially attempted sci-hub: CDN PDF returned 404.
+- User provided University of Groningen OA link: <https://www.rug.nl/research/vsi/events/groenewold/groenewold-article.pdf>
+- Paper is out of copyright (1946); source file committed to repo.
+- Ingested into `sources/groenewold1946-bbe346c0.md` (125,139 chars).
 
-**Known content (from secondary sources):**
-Groenewold's paper establishes the no-go theorem (Groenewold–van Hove theorem): there is no map from classical observables to quantum operators that preserves both the Lie algebra structure (commutators ↔ Poisson brackets) and the associative algebra structure beyond degree-2 polynomials. This is the key obstruction that motivates deformation quantization as a controlled departure from exact correspondence.
+**Key content (for durable record):**
+Groenewold addresses two problems: (α) the correspondence a ↔ â between classical observables and quantum operators (quantization), and (β) whether quantum statistics can be understood by averaging over uniquely determined processes as in classical statistical mechanics. The central no-go result is in Section 4.02 (eqs. 4.12–4.13): rule V' (that Poisson brackets map to commutators) is self-contradictory for polynomials of degree ≥ 3. Specifically, computing p²q² via two different bracket routes yields results that agree only if c₁ = c₂ = 0 AND ℏ = 0. "Therefore V' is self inconsistent (the deficiency is of the order of h²)." This is the Groenewold–van Hove no-go theorem: there is no quantization map preserving both the Lie algebra (commutators ↔ Poisson brackets) and the associative algebra beyond degree-2 polynomials. Section 4.03 then derives Weyl's correspondence as the "best" partial solution satisfying rules III and IV but not V'.
+
+**Relevant section references:** §1.18 (correspondence problem formulation); §4.02 eqs. (4.06)–(4.13) (no-go proof); §4.03 (Weyl correspondence as partial solution).
 
 ### 5. `[Moyal1949StatisticalQM]` — ACQUIRED (sci-hub)
 - DOI: `10.1017/S0305004100000487`
@@ -66,9 +68,15 @@ Velhinho reviews measure construction on infinite-dimensional spaces via project
 
 **Relevant section references:** §4 Theorem 5 (pp. 7–9); §5 Theorem 6 (pp. 10–11); eq. (40) (consistency = marginalization).
 
-### 7. `[Connes1994]` — PENDING_LIBRARY
-- Book (Academic Press, 1994). Not available via OA or sci-hub.
-- Requires physical library visit.
+### 7. `[Connes1994]` — ACQUIRED (author OA)
+- User provided URL: <https://alainconnes.org/wp-content/uploads/book94bigpdf.pdf>
+- Author-provided OA PDF of full book (4.2 MB).
+- Ingested into `sources/connes1994-7af601f0.md` (1,450,984 chars).
+
+**Key content for tangent groupoid (for durable record):**
+Chapter II, Section 5: "The Tangent Groupoid of a Manifold." For a compact smooth manifold M, Connes defines G = (M×M×]0,1]) ∪ TM, with composition (x,y,ε)∘(y,z,ε) = (x,z,ε) for ε>0 and (x,X)∘(x,Y) = (x,X+Y) for tangent vectors. The topology is such that (xₙ,yₙ,εₙ) → (x,X) iff xₙ→x, yₙ→x, and (xₙ-yₙ)/εₙ→X. This encodes the deformation of T*M to a single point. Proposition 4: G is a smooth groupoid (the tangent groupoid Gₘ). Proposition 5: the exact sequence 0→C*(G₁)→C*(G)→C*(G₂)→0 with C*(G₁)≅C₀(]0,1])⊗K (contractible) and C*(G₂)≅C₀(T*M), giving K-theory isomorphisms σ*: Kᵢ(C*(G))≅Kᵢ(T*M).
+
+**Relevant section references:** Ch. II §5, Definition 1 (groupoid), Propositions 4–5 (tangent groupoid structure and C*-algebra exact sequence).
 
 ### 8. `[Landsman1998]` — PENDING_LIBRARY
 - Book (Springer, 1998). Not available via OA or sci-hub.
@@ -80,8 +88,8 @@ Velhinho reviews measure construction on infinite-dimensional spaces via project
 - `[Wilson1974Confinement]`: PENDING → ACQUIRED (sci-hub)
 - `[Moyal1949StatisticalQM]`: PENDING → ACQUIRED (sci-hub)
 - `[Velhinho2017InfDimMeasure]`: not-yet-ingested → ACQUIRED (MDPI OA)
-- `[Groenewold1946ElementaryQM]`: PENDING → PENDING_LIBRARY (sci-hub CDN 404)
-- `[Connes1994]`: pending → PENDING_LIBRARY (book, no online source)
+- `[Groenewold1946ElementaryQM]`: PENDING → ACQUIRED (University of Groningen OA, out of copyright; committed to repo)
+- `[Connes1994]`: pending → ACQUIRED (author OA from alainconnes.org)
 - `[Landsman1998]`: pending → PENDING_LIBRARY (book, no online source)
 
 ## Artifacts produced
@@ -91,6 +99,8 @@ Velhinho reviews measure construction on infinite-dimensional spaces via project
 - `sources/wilson1974-70eff6a5.md`: added
 - `sources/moyal1949-be61c6b3.md`: added
 - `sources/velhinho2017-9603cff6.md`: added
+- `sources/groenewold1946-bbe346c0.md`: added (committed — out of copyright)
+- `sources/connes1994-7af601f0.md`: added (gitignored — author OA)
 
 ## Notes for promotion
 - `[Dirac1933]`: already cited in Introduction (Section 1). No new citations needed, but the composition law eqs. (11)–(12) could be referenced more explicitly in Section 5 (composition law).

@@ -276,5 +276,5 @@ Priority: small fixes from Q59, then housekeeping.
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deprioritized unless blocking a revision:
-- `[Groenewold1946ElementaryQM]`, `[Connes1994]`, `[Landsman1998]`: PENDING_LIBRARY — require physical library visit or institutional access.
+- `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
 - Claim-label namespace collision between main + companion: resolve before submission (see `docs/research-state.md` thread 9).
