@@ -9,7 +9,7 @@ abstract: |
 ---
 
 # 1. Purpose and Scope
-This is a companion to `paper/main.md`. Its goal is to isolate one technical point that is only implicit in the main manuscript:
+This note isolates one technical point that is often implicit in treatments of path integrals and quantum composition:
 the role of half-densities (and their scaling) in making composition laws coordinate-invariant *and* dimensionally well-defined.
 
 Claims below are labeled as `Proposition` (math-precise under hypotheses) or `Heuristic` (programmatic bridge).
@@ -26,7 +26,7 @@ when a kernel is a half-density in its integration variable, composition of kern
 `Heuristic PA-H1.1 (Why half-densities).`
 If \(K_1(x,y)\) and \(K_2(y,z)\) are chosen so that their product in the intermediate variable \(y\) is a density, then
 \(\int_M K_1(x,y)K_2(y,z)\) is coordinate-invariant without fixing a preferred \(dy\).
-This matches the structural role of kernel composition used in `paper/main.md` (Section 6).
+This is the structural reason why kernel composition in the path-integral formalism is coordinate-invariant.
 
 `Derivation PA-D1.1 (Coordinate invariance of half-density pairing and composition).`
 In a local chart \(y=(y^1,\ldots,y^d)\), write a half-density as \(\psi(y)=\varphi(y)\,|dy|^{1/2}\).
@@ -154,7 +154,7 @@ In the QFT-facing half-density calculus, a background metric supplies a referenc
 \[
 \widetilde\Delta:=|g|^{1/4}\Delta_g|g|^{-1/4}.
 \]
-In a conformal background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) in spacetime dimension \(D\), one finds (Derivation HD-D1.3 in `papers/half-density-qft/main.md`, and the derivation/check notes in `blackboards/2026-02-10-conformal-rescaling-and-half-density-laplacian-family.md`)
+In a conformal background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) in spacetime dimension \(D\), a direct computation gives
 \[
 \widetilde\Delta\psi
 =e^{-2\sigma}\Big(
@@ -312,8 +312,8 @@ In the \(2\)D delta interaction, the contact coupling is marginal and the renorm
 so \(\kappa_\ast\) is independent of the subtraction scale \(\mu\) and sets a bound-state/scattering scale [ManuelTarrach1994PertRenQM]. This is a minimal witness that "a scale is forced by compatibility" can occur even without a dimensionful coupling, via renormalization rather than via analytic monomials.
 
 `Remark PA-E5a (Half-density match and three-level RG hierarchy).`
-In the \(2\)D delta, the transmutation scale \(\kappa_\ast^{-1}\) has dimension \(\text{length}^1=\text{length}^{d/2}\) for \(d=2\), exactly the half-density scalarization weight required by PA-H2.3--PA-H2.4. The beta function \(\beta(g_R)\propto g_R^2\) vanishes to order \(2\) at the Gaussian fixed point; as noted in the main manuscript (Section 8.4), transmutation requires this nonlinearity — a linear beta function produces only algebraic (power-law) RG invariants without generating a new scale. Three levels of the RG hierarchy are now witnessed by explicit computations:
-1. *Semigroup structure* (Proposition P6.2 in main text): shared by all refinement flows, including linear beta functions. Witness: Remark D6.2a-sg (toy ODE, \(\beta(a)=\tfrac12-a\)).
+In the \(2\)D delta, the transmutation scale \(\kappa_\ast^{-1}\) has dimension \(\text{length}^1=\text{length}^{d/2}\) for \(d=2\), exactly the half-density scalarization weight required by PA-H2.3--PA-H2.4. The beta function \(\beta(g_R)\propto g_R^2\) vanishes to order \(2\) at the Gaussian fixed point; transmutation requires this nonlinearity — a linear beta function produces only algebraic (power-law) RG invariants without generating a new scale. Three levels of the RG hierarchy are now witnessed by explicit computations:
+1. *Semigroup structure*: shared by all refinement flows, including linear beta functions (any toy ODE with a linear beta, e.g. \(\beta(a)=\tfrac12-a\), exhibits the semigroup property without transmutation).
 2. *Transmutation*: requires \(\beta\) of order \(\ge 2\) at the fixed point, producing a non-analytic RG-invariant scale. Witness: this example (2D delta, \(\beta\propto g_R^2\)).
 3. *Dimension sieve* (PA-H2.5): demands the scale be an analytic monomial in couplings, selecting \(d=4\) under the gravity-only hypothesis. Witness: Derivation PA-D1.3.
 Transmutation (level 2) supplies a scale in any \(d\) where a marginal coupling exists, so it does not sieve dimensions. The half-density weight \(\text{length}^{d/2}\) correctly tracks the geometric type of the resulting scale: a length in \(d=2\), an area in \(d=4\).
@@ -380,7 +380,7 @@ So an \(x\)-independent running of scalarization is *formally equivalent* to a w
 The half-density square-root Jacobian is a geometric transformation law under coordinate changes; anomalous dimensions are RG scaling data in interacting theories. They should not be conflated: allowing \(\sigma_\ast(\mu)\) to run is a representation convenience, not a claim that geometry “produces” anomalous scaling.
 
 # 4. Stationary Phase Produces Half-Density Prefactors (Short-Time Kernel)
-The main manuscript uses stationary phase to explain why classical extremals dominate refinement limits. Here we add the complementary kernel-level fact:
+In the standard path-integral formalism, stationary phase explains why classical extremals dominate refinement limits. Here we add the complementary kernel-level fact:
 stationary phase does not only pick the extremal; it also produces a determinant prefactor that transforms as a half-density, i.e. the object needed for coordinate-free kernel composition.
 
 `Derivation PA-D1.4 (Van Vleck prefactor is a bi-half-density).`
@@ -495,7 +495,7 @@ Thus the Planck-areal-speed substitution produces *linear* reduced-Compton scali
 Equivalently, substituting \(q=n-1\) into the mass scaling gives \(r\propto M^{-1/(4-n)}\) (for \(n\neq 4\)), so the linear Compton scaling (and the \(G\)-cancellation in the \(D=4\) identity \(L_P^2=G\hbar/c^3\)) is uniquely \(n=3\); the \(n=4\) case is the degenerate \(q=3\) condition where the radius drops out.
 
 `Remark PA-D1.5b (SR continuation of the inverse-square witness: Compton branch \(\to\) Planck floor).`
-Inside the same mechanical SR model used in `papers/relativistic-central-orbits/main.md` (external inverse-square force, no GR field dynamics), one can keep the fixed coordinate-time areal speed \(\dot A_0=dA/dt\) and continue PA-D1.5 exactly.
+Inside a mechanical special-relativistic model with an external inverse-square force (no GR field dynamics), one can keep the fixed coordinate-time areal speed \(\dot A_0=dA/dt\) and continue PA-D1.5 exactly.
 
 For inverse-square forces, SR circular motion gives \(v=K/L\), while
 \[
@@ -681,8 +681,8 @@ The trigger in PA-D1.5l should be calibrated by uncertainty regime, not treated 
 \]
 with \(\Sigma_r,\Sigma_v\) the position/velocity covariance blocks in the chosen reconstruction model. Pilot scans in correlated-noise families can then map \(\epsilon_{\rm nl}(\chi)\) for the instrument/model pair; the "few-percent" policy corresponds to selecting an operational \(\epsilon_{\rm nl}\) band after this calibration, rather than imposing a context-free constant.
 
-# 6. Interface with the Main Paper
-The main manuscript argues that:
+# 6. Connection to the Refinement-Composition Framework
+The broader program in which this note sits argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
 2. refinement across scales forces RG-style consistency conditions when naive limits diverge.
 
