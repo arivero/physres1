@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S82: free-propagator composition closes the half-density normalization loop)
+- Focus: concrete computation addressing Planck-area Open Problem #1.
+- Question: does the semigroup property of the free propagator concretely demonstrate that the d/2 exponent is the half-density weight, and that scalarization forces a length^{d/2} constant?
+- Work: composed two free-particle propagators on R^d. Showed three-way d/2 cancellation (two kernel prefactors + Gaussian volume). Identified Van Vleck and near-diagonal scaling origins. Showed scalarization forces L_*^{d/2}. Connected to tangent-groupoid rescaling.
+- Result: yes. The semigroup property requires exactly d/2 as the prefactor exponent. Scalarization unavoidably introduces a length^{d/2} constant. For d=4: Planck area (under PA-D1.3). Concrete model witness for abstract half-density composition.
+- Blackboard: `blackboards/2026-02-13-free-propagator-half-density-composition.md`
+- Next: C120 (promote condensed version into planck-area Section 4).
+
 ## 2026-02-13 (Q75: referee pass on C119)
 - Focus: referee pass on planck-area standalone cleanup.
 - Work: edit-by-edit review of all 7 changes. Verified no internal repo references remain, all 7 external citations intact, PA-label namespace consistent. Section 6 rewrite coherent for external reader.
