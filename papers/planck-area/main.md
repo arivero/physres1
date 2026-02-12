@@ -315,6 +315,9 @@ In the \(2\)D delta, the transmutation scale \(\kappa_\ast^{-1}\) has dimension 
 3. *Dimension sieve* (PA-H2.5): demands the scale be an analytic monomial in couplings, selecting \(d=4\) under the gravity-only hypothesis. Witness: Derivation PA-D1.3.
 Transmutation (level 2) supplies a scale in any \(d\) where a marginal coupling exists, so it does not sieve dimensions. The half-density weight \(\text{length}^{d/2}\) correctly tracks the geometric type of the resulting scale: a length in \(d=2\), an area in \(d=4\).
 
+`Remark PA-E5b (Where in the kernel the transmutation scale acts).`
+The full resolvent of the \(2\)D delta interaction factorizes via the Lippmann--Schwinger identity as \(G=G_0+G_0\,T\,G_0\), where \(G_0(x,z;E)\) is the free resolvent and \(T(E)\) is the scalar \(T\)-matrix at the contact vertex. Each \(G_0\) factor carries the Van Vleck half-density weight at its endpoint (Derivation PA-D1.4), while \(T(E)\) is a scalar amplitude containing the transmutation scale \(\kappa_\ast\). Thus the two ingredients play complementary roles: the Van Vleck prefactor implements the half-density *transformation law* (PA-H2.1), and the transmutation scale supplies the *scalarization constant* needed to extract dimensionless amplitudes (PA-H2.2--PA-H2.4). They are structurally independent and combine multiplicatively in the kernel; the geometric weight comes from free propagation between vertices, while the dynamical scale comes from RG invariance at the vertex.
+
 ## 3.4 Running PA-H2.3: Is "Dimensionless \(f\)" Physics or Convention?
 The half-density formalism (PA-H2.1) gives a canonical pairing \(\int \bar\psi\,\psi\) that does not require choosing a background measure. But when we write \(\psi=f\,\sigma_\ast\) (PA-H2.2), we are choosing a *representation* of the same object as a scalar function with respect to a chosen positive density \(\rho_\ast=\sigma_\ast^2\).
 
