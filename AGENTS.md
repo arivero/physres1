@@ -16,6 +16,16 @@ This file applies to the entire repository.
 2. **Paper notes** (`paper/notes/`): max **10 files** (see `paper/notes/README.md`). Retire integrated notes.
 3. Promoted content must not linger as a duplicate in the scratch layer.
 
+## Commit Policy
+1. **When to commit:** only when finishing a work cycle (not mid-cycle).
+2. **Two-commit rule:** split each cycle's commit into two:
+   - **First commit:** manuscript source files that generate output — `.md` files in `paper/` and `papers/*/`, `.tex` files, `.bib` files, and `paper/bibliography.md`.
+   - **Second commit:** everything else — `cycles/`, `docs/`, `blackboards/`, `paper/notes/`, config files.
+3. This keeps the manuscript-generating history cleanly separable from planning/logging artifacts.
+4. **Commit metadata (required in every commit message):**
+   - Include a tag identifying the orchestrating agent/model (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`).
+   - Include a token/usage estimate if the tooling exposes it (e.g., `tokens: ~12k in / ~8k out`). If not available, write `tokens: N/A`.
+
 ## Sources Policy
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING` for later local ingestion.

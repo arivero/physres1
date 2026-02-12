@@ -49,6 +49,14 @@ Every invocation should finish with a meaningful git commit (no empty commits):
 - Commit with a message like: `S26: ...`, `B06: ...`, `C54: ...`, `Q15: ...`
 - Push if credentials are available; otherwise leave the commit locally and say so in your final response.
 
+**Commit metadata (required in every commit message):**
+- Include a tag identifying the orchestrating agent/model (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`).
+- Include a token/usage estimate if the tooling exposes it (e.g., `tokens: ~12k in / ~8k out`). If not available, note `tokens: N/A`.
+
+**Two-commit rule:** split each cycle into two commits:
+1. Manuscript-generating files first: `paper/*.md`, `papers/*/*.md`, `.tex`, `.bib`, `paper/bibliography.md`.
+2. Everything else second: `cycles/`, `docs/`, `blackboards/`, `paper/notes/`, config.
+
 ## Quick Pre-Commit Checks (When Relevant)
 - Cycle-tag leak check (only needed if `paper/main.md` changed):
   - `rg -n 'C[0-9]{2}' paper/main.md`
