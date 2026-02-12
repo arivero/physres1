@@ -45,6 +45,7 @@ Use this file as a source ledger.
 31. `[Nauenberg2003KeplerArea]` Michael Nauenberg, "Kepler's Area Law in the Principia: Filling in some details in Newton's proof of Prop. 1," *Historia Mathematica* 30 (2003), 441–456. arXiv:`math/0112048`. DOI `10.1016/S0315-0860(02)00027-7`. (Defends Newton's continuum limit via Lemma 3; the polygonal construction has a well-defined limit parameterizing a continuous planar curve.)
 32. `[Pourciau2003]` Bruce Pourciau, "Newton's Argument for Proposition 1 of the Principia," *Archive for History of Exact Sciences* 57 (2003), 267–311. DOI `10.1007/s00407-002-0062-x`. (Critically analyses the impulse assumption and identifies error-accumulation and planarity problems in Newton's limit argument.)
 33. `[Berkeley1734Analyst]` George Berkeley, *The Analyst; or, A Discourse Addressed to an Infidel Mathematician* (Dublin/London, 1734). (Foundational critique of Newton's fluxions and Leibniz's infinitesimals — the "ghosts of departed quantities" objection to evanescent limits. Historical precursor to modern constructive refinement approaches.)
+34. `[Nauenberg1994SymplecticNewton]` Michael Nauenberg, "Newton's early computational method for dynamics," *Archive for History of Exact Sciences* 46 (1994), 221–252. DOI `10.1007/BF01686278`. (The impulse equations correspond to a canonical/symplectic mapping — exact solutions of a Hamiltonian with impulsive forces. Discusses convergence and adaptive time-stepping.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -81,6 +82,7 @@ Use this file as a source ledger.
 32. `[Nauenberg2003KeplerArea]`: DOI `10.1016/S0315-0860(02)00027-7`; arXiv primary anchor used (`math/0112048`).
 33. `[Pourciau2003]`: DOI `10.1007/s00407-002-0062-x`.
 34. `[Berkeley1734Analyst]`: no DOI (18th-century primary source, 1734).
+35. `[Nauenberg1994SymplecticNewton]`: DOI `10.1007/BF01686278`.
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -116,6 +118,7 @@ Use this file as a source ledger.
 31. `[Nauenberg2003KeplerArea]`: arXiv OA (`math/0112048`). Not yet ingested into `sources/`.
 32. `[Pourciau2003]`: publisher (Springer), likely paywalled. `PENDING` — no OA route identified.
 33. `[Berkeley1734Analyst]`: OA via Wikisource (<https://en.wikisource.org/wiki/The_Analyst:_a_Discourse_addressed_to_an_Infidel_Mathematician>) and Internet Archive (<https://archive.org/details/analystordiscour00berkrich>). Not yet ingested into `sources/`.
+34. `[Nauenberg1994SymplecticNewton]`: publisher (Springer), likely paywalled. `PENDING` — no OA route identified.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).

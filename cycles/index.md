@@ -107,6 +107,7 @@
 103. `C103` Completed.
 104. `C104` Completed.
 105. `C105` Completed.
+106. `C106` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -125,6 +126,7 @@
 - `B13` Completed.
 - `B14` Completed.
 - `B15` Completed.
+- `B16` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -284,9 +286,9 @@
 
 ## Next Action
 Priority: follow up on DX01 findings (symplectic-Euler connection, Berkeley source).
-1. `B16`: add [Nauenberg1994SymplecticNewton] to bibliography (symplectic structure of Newton's method; Q61 finding).
-2. `C106` (micro): add Nauenberg (1994) citation to H1.2.
-3. Continue monitoring anomalies from DX01 (dimension-selection asymmetry, RCP falsifiability).
+1. Continue monitoring anomalies from DX01 (dimension-selection asymmetry, RCP falsifiability).
+2. Consider `S70`: check whether D=4 conformal half-density result has an RG-side analog.
+3. Claim-label namespace collision: resolve before submission.
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deferred:
