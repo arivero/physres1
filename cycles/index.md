@@ -303,13 +303,14 @@
 ### Discovery Cycles — Explore (`DXnn`)
 - `DX01` Completed.
 - `DX02` Completed.
+- `DX03` Completed.
 
 ## Next Action
-Priority: Q67 clean pass on C112. No open anomalies. DX overdue.
-1. Cadence: ... → S75 → C112 → Q67 complete.
-2. DX check: DX02 was ~11 cycles ago. **DX overdue** — next cycle should be DX03.
-3. Fallback: if no DX candidate, S cycle on a priority thread from research-state.md.
-4. Natural DX candidate: DX03 — sweep manuscript for new cross-connection opportunities or structural anomalies.
+Priority: DX03 found two Section 9 signaling gaps. No open anomalies. RCP v4 reinforced.
+1. Cadence: ... → C112 → Q67 → DX03 complete.
+2. Per DX03 spawns: next cycle should be C113 (add D6.2a-sg witness to Section 9.1 + half-density ordering note to Section 9.3).
+3. Then Q68 (referee pass on C113).
+4. DX check: DX03 just completed. Next DX due in ~10 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

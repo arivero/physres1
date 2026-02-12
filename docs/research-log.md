@@ -13,6 +13,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (DX03)
+- Focus: post-C112 structural sweep — cross-connections and claim-graph gaps.
+- Work: full manuscript block audit (68 named blocks across 10 sections). Checked anomaly register (empty). Probed cross-thread connection: ordering control has two mechanisms (deformation equivalence in Section 7, half-density geometry in D9.1a). Stress-tested RCP v4 framing.
+- Result: two claim-graph signaling gaps found in Section 9. (1) Line 1039 does not cite D6.2a-sg as concrete semigroup witness. (2) Line 1100 mentions only deformation ordering, not the complementary half-density resolution in D9.1a. No new anomalies. Principle v4 (RCP) reinforced, not extended.
+- Spawned: C113 (fix both Section 9 gaps in one edit pass).
+- Next: C113 to add forward-signaling in Sections 9.1 and 9.3.
+
 ## 2026-02-12 (Q67)
 - Focus: referee pass on C112 (Remark D6.2a-sg — semigroup law and beta function).
 - Work: re-derived τ_b(a) formula, verified semigroup law algebraically, checked beta function expansion, confirmed cross-reference to H6.2, assessed "not merely an analogy" claim scope.
