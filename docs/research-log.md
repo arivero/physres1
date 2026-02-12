@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (DX04)
+- Focus: post-S78 structural sweep — cross-thread audit and anomaly probe.
+- Work: full manuscript audit (74+ blocks in main paper, 68 in Planck-area, 8 in HD-QFT, 4 in RG-fundamental). All cross-references valid. No forward-reference dangling. Section 9 correctly cites recent additions. Checked anomaly register (no open entries). Reviewed principle evolution log (v4 confirmed). Catalogued unpromoted blackboard findings.
+- Result: structural health STRONG. Key gap: S78's Van Vleck × transmutation kernel-level separation not yet in any manuscript. Spawned C116 to promote. RCP v4 holds; three-level hierarchy is a structural prediction, not extension. No new anomalies.
+- Next: C116 (promote S78 into Planck-area draft), then Q71.
+
 ## 2026-02-12 (S78)
 - Focus: Van Vleck prefactor × transmutation scale in the 2D delta model.
 - Question: how does κ* interact with the Van Vleck half-density prefactor? Does it modify the transformation law or only the scalar amplitude?

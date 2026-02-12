@@ -313,12 +313,14 @@
 - `DX01` Completed.
 - `DX02` Completed.
 - `DX03` Completed.
+- `DX04` Completed.
 
 ## Next Action
-Priority: S78 found structural separation — Van Vleck = geometric half-density, κ* = dynamical scalarization. No open anomalies.
-1. Cadence: ... → Q70 → S78 complete.
-2. Per cadence: next cycle should be C (promote S78 into Planck-area draft) or DX.
-3. DX check: DX03 was 9 cycles ago. DX04 is overdue — run next or within 1 cycle.
+Priority: DX04 sweep clean. Key promotable gap: S78's Van Vleck × transmutation kernel-level separation.
+1. Cadence: ... → S78 → DX04 complete.
+2. Per cadence: next cycle should be C116 (promote S78 into Planck-area draft).
+3. After C116: Q71 (referee pass on C116), then S or B.
+4. DX check: DX04 just completed. Next DX due in ~10 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
