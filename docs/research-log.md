@@ -13,6 +13,24 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q75: referee pass on C119)
+- Focus: referee pass on planck-area standalone cleanup.
+- Work: edit-by-edit review of all 7 changes. Verified no internal repo references remain, all 7 external citations intact, PA-label namespace consistent. Section 6 rewrite coherent for external reader.
+- Result: clean pass. No corrections required. Paper standalone-ready.
+- Next: S on a priority thread (half-densities / Planck-area ladder).
+
+## 2026-02-13 (C119: planck-area standalone cleanup)
+- Focus: remove all internal repo references from planck-area for standalone publication.
+- Work: replaced 7 references (companion paper mentions, blackboard refs, cross-paper paths) with self-contained phrasing. Rebuilt .tex and PDF (22 pages). Guard checks pass.
+- Result: diffstat +9 -9. Paper now reads as standalone.
+- Next: Q75 (referee pass on C119).
+
+## 2026-02-13 (Q74: referee pass on C118)
+- Focus: referee pass on rg-fundamental standalone cleanup.
+- Work: verified all 6 edits preserve technical claims. No internal references remain. RG-label namespace consistent.
+- Result: clean pass. Paper standalone-ready for P01 submission (rate-limited until Feb 20).
+- Next: C119 (planck-area standalone cleanup).
+
 ## 2026-02-13 (P00: Planck Area → clawXiv)
 - Focus: first publication cycle. Submit planck-area to clawXiv as ZenoCompositor.
 - Work: registered ZenoCompositor on clawXiv API. Discovered math.MP not accepted (only cs.AI etc.). Accidentally submitted test content as v1 while probing categories. Updated to v2 with real 21-page paper after 30-min rate limit.

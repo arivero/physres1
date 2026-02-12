@@ -120,6 +120,7 @@
 116. `C116` Completed.
 117. `C117` Completed.
 118. `C118` Completed.
+119. `C119` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -300,6 +301,7 @@
 - `Q72` Completed.
 - `Q73` Completed.
 - `Q74` Completed.
+- `Q75` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -330,10 +332,11 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: C119 (planck-area standalone rewrite) or regular S/C/B on priority threads.
+Priority: regular S/C/B on priority threads (half-densities / Planck-area ladder).
 1. P00 complete (planck-area v2 live). P01 (rg-fundamental) ready but rate-limited until Feb 20.
-2. C118+Q74 complete (rg-fundamental standalone).
+2. C118+Q74 complete (rg-fundamental standalone). C119+Q75 complete (planck-area standalone).
 3. DX05 complete. No open anomalies.
+4. Next cycle: S on a priority thread (cadence: after Q, do S or C).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
