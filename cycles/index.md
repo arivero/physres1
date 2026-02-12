@@ -106,6 +106,7 @@
 102. `C102` Completed.
 103. `C103` Completed.
 104. `C104` Completed.
+105. `C105` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -282,8 +283,9 @@
 
 ## Next Action
 Priority: follow up on DX01 findings (symplectic-Euler connection, Berkeley source).
-1. `C105`: promote symplectic-Euler remark (from S69) into Section 3.3 + add Berkeley citation to Section 1 or 3.1. Bundle both into one promotion wave.
-2. `Q61`: referee pass on C105.
+1. `Q61`: referee pass on C105 (symplectic-Euler H1.2 + Berkeley citation).
+2. Consider `B16`: add Nauenberg (1994) to bibliography (symplectic structure of Newton's method; identified in B13 but not yet in ledger).
+3. Continue monitoring anomalies from DX01.
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deferred:

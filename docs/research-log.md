@@ -13,6 +13,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C105)
+- Focus: promote symplectic-Euler remark + Berkeley citation.
+- Work:
+  - Section 1: added Berkeley's "ghosts of departed quantities" as historical precursor [Berkeley1734Analyst].
+  - Section 3.3: added Heuristic H1.2 (symplectic Euler identification, constrained-corrections analogy).
+- Result: diffstat TOTAL +4 -1. Guard checks pass. Spawned Q61.
+- Sources touched: none (citation keys already in bibliography from B15).
+- Next: Q61 (referee pass on C105).
+
 ## 2026-02-12 (S69)
 - Focus: derive Newton-impulse ↔ symplectic-Euler connection.
 - Question: is Section 3.2's kick-drift scheme literally a symplectic integrator?
