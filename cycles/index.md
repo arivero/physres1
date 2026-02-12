@@ -111,6 +111,7 @@
 107. `C107` Completed.
 108. `C108` Completed.
 109. `C109` Completed.
+110. `C110` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -297,11 +298,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: B17 added Nauenberg 2018 as better anchor for H1.2. Two PENDING sources remain (Pourciau2003, Nauenberg1994 — both paywalled Springer, search exhausted). No open anomalies.
-1. Cadence: ... → Q64 → S73 → B17 complete.
-2. Per cadence: next cycle should be C (promote B17 finding: update H1.2 citation to include Nauenberg2018).
-3. Natural candidate: C110 (update H1.2 citation in paper/main.md to add [Nauenberg2018GraphicalMethod]).
-4. DX check: DX02 was ~3 cycles ago. Next DX due in ~8 cycles.
+Priority: C110 promoted B17 finding (Nauenberg 2018 citation added to H1.2). No open anomalies.
+1. Cadence: ... → S73 → B17 → C110 complete.
+2. Per cadence: Q pass on C110 (paper/main.md changed), then S or B on a priority thread.
+3. Natural candidate: Q65 (referee pass on C110).
+4. DX check: DX02 was ~4 cycles ago. Next DX due in ~7 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

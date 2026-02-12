@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C110)
+- Focus: promote B17 finding — add Nauenberg 2018 citation to H1.2 in paper/main.md.
+- Work: single-line edit adding `[Nauenberg2018GraphicalMethod]` alongside `[Nauenberg1994SymplecticNewton]` in H1.2.
+- Result: diffstat +1 -1. Guard checks clean. Both Nauenberg papers now cited for the symplectic integrator claim.
+- Next: Q pass on C110, then per cadence S or B on a priority thread. DX due in ~7 cycles.
+
 ## 2026-02-12 (B17)
 - Focus: anchor PENDING Newton-polygon bibliography + add Nauenberg 2018.
 - Question: can we find OA copies of Pourciau2003 and Nauenberg1994SymplecticNewton? Is there a better anchor for H1.2's "symplectic Euler integrator" claim?
