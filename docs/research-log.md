@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q67)
+- Focus: referee pass on C112 (Remark D6.2a-sg — semigroup law and beta function).
+- Work: re-derived τ_b(a) formula, verified semigroup law algebraically, checked beta function expansion, confirmed cross-reference to H6.2, assessed "not merely an analogy" claim scope.
+- Result: clean pass. All mathematics correct, claims appropriately scoped, notation consistent.
+- Next: DX overdue (~11 cycles since DX02). Next cycle should be DX or S on a priority thread.
+
 ## 2026-02-12 (C112)
 - Focus: promote S75 semigroup result to Section 8.4.
 - Work: inserted Remark D6.2a-sg (7 lines) after D6.2a, before D6.2a1. Contains general formula τ_b(a), semigroup law τ_b ∘ τ_c = τ_{bc}, beta function β(a) = 1/2 - a, interpretive closing sentence.

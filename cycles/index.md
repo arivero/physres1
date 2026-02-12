@@ -280,6 +280,7 @@
 - `Q64` Completed.
 - `Q65` Completed.
 - `Q66` Completed.
+- `Q67` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -304,11 +305,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: C112 promoted S75 semigroup result. No open anomalies.
-1. Cadence: ... → S75 → C112 complete.
-2. Per cadence: next cycle should be Q (referee pass on C112).
-3. Natural candidate: Q67 (verify Remark D6.2a-sg formulas, semigroup law, and relationship to H6.2).
-4. DX check: DX02 was ~10 cycles ago. Next DX due soon (trigger at ~10–12).
+Priority: Q67 clean pass on C112. No open anomalies. DX overdue.
+1. Cadence: ... → S75 → C112 → Q67 complete.
+2. DX check: DX02 was ~11 cycles ago. **DX overdue** — next cycle should be DX03.
+3. Fallback: if no DX candidate, S cycle on a priority thread from research-state.md.
+4. Natural DX candidate: DX03 — sweep manuscript for new cross-connection opportunities or structural anomalies.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
