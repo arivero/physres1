@@ -200,6 +200,7 @@
 - `S68` Completed.
 - `S69` Completed.
 - `S70` Completed.
+- `S71` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -288,10 +289,9 @@
 - `DX01` Completed.
 
 ## Next Action
-Priority: continue cadence after S70 → C107 → Q62 chain.
-1. Continue monitoring anomalies from DX01 (RCP falsifiability — still OPEN).
+Priority: all DX01 anomalies now resolved (dimension-selection: S70, RCP falsifiability: S71).
+1. Cadence: S70 → C107 → Q62 → S71 chain complete. Next cycle per cadence rules.
 2. Claim-label namespace collision: resolve before submission.
-3. Per cadence: next cycle should be S or B (verification support after C107).
 
 Deferred:
 - Claim-label namespace collision between main + companion: resolve before submission.

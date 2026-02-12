@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S71)
+- Focus: enumerate concrete structural predictions of RCP to address tautology/falsifiability concern (DX01 anomaly).
+- Question: is RCP falsifiable? What specific consequences does it generate that could fail?
+- Work: traced through Sections 3–8 and 10.3–10.5, identifying every "closure forces X" or "compatibility requires Y" derivation. Classified 11 predictions across partition (3), representation (2), scale (4), and cross-leg (2) categories. Assessed falsifiability strength.
+- Result: RCP is falsifiable — closure can fail (explicit witness: t^{-α} ≠ t^{-d/2} breaks semigroup composition). 4 strong predictions, 2 medium, 5 weak/organizational. Anomaly entry RESOLVED. No manuscript edit needed (D10.1a already contains the falsifiability statement).
+- Blackboard: `blackboards/2026-02-12-rcp-predictions.md`
+- Next: all DX01 anomalies now resolved. Continue with cadence-driven cycles.
+
 ## 2026-02-12 (Q62)
 - Focus: referee pass on C107 (H4.0c insertion).
 - Result: clean. All claims correct, label consistent, placement natural, forward-reference hygiene OK. No corrections needed.
