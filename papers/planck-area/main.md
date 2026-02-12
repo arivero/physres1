@@ -102,6 +102,9 @@ Assume the only available dimensionful coupling used to build the universal norm
 which holds if and only if \(d=4\).
 In that case \(G_4\) itself has dimension of area, and the corresponding area scale is the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
+`Remark PA-D1.3a (Three obstruction mechanisms: why \(d=4\) is uniquely un-obstructed).`
+The failure of the gravity-only sieve away from \(d=4\) has three qualitatively distinct causes. For odd \(d\), the target exponent \(d/2\) is a half-integer, while any monomial in couplings with integer length dimensions has integer total dimension — a *parity* obstruction that is categorical regardless of which integer-dimensional couplings are admitted (including \(\Lambda_d\)). For even \(d\ge 6\), the target \(d/2\) is an integer but \(k=d/(2(d-2))<1\), so no positive-integer power of \(G_d\) alone suffices — a *magnitude* obstruction. For \(d=2\), \(G_2\) is dimensionless and gravity provides no scale. Thus \(d=4\) is not merely the solution of a single Diophantine equation; it is the unique integer dimension that evades all three obstructions simultaneously.
+
 ## 3.1 Hypotheses as Separate Knobs (What Is Forced vs Chosen)
 The discussion above mixes three different kinds of statements:
 1. **Geometric facts** (what half-densities are, how they compose, how they scale),
