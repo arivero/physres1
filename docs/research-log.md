@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C111)
+- Focus: promote S74 — add Remark D9.1a (quadratic-symbol ordering + half-density bridge) to Section 10.2.
+- Work: inserted 8-line remark after D9.1, before P9.1. Formula Q_W(fp²) - Q_L(fp²), position-dependent mass application, half-density resolution cross-ref.
+- Result: diffstat +8 -0. Guard checks clean.
+- Next: Q pass on C111, then per cadence S or B. DX due in ~4 cycles.
+
 ## 2026-02-12 (S74)
 - Focus: ordering ambiguity for quadratic symbols — extend Section 10.2 to A = f(q)p².
 - Question: what is the structure of Q_W(fp²) - Q_L(fp²), and how does it connect to the half-density resolution?

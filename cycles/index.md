@@ -112,6 +112,7 @@
 108. `C108` Completed.
 109. `C109` Completed.
 110. `C110` Completed.
+111. `C111` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -300,11 +301,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: S74 computed quadratic-symbol ordering ambiguity and found cross-thread bridge (ordering → half-density). Promotion candidate ready. No open anomalies.
-1. Cadence: ... → C110 → Q65 → S74 complete.
-2. Per cadence: next cycle should be C (promote S74 result as remark extending D9.1 in Section 10.2).
-3. Natural candidate: C111 (add quadratic-symbol remark + half-density connection to Section 10.2).
-4. DX check: DX02 was ~6 cycles ago. Next DX due in ~5 cycles.
+Priority: C111 promoted S74 (Remark D9.1a in Section 10.2). No open anomalies.
+1. Cadence: ... → Q65 → S74 → C111 complete.
+2. Per cadence: Q pass on C111 (paper/main.md changed), then S or B on a priority thread.
+3. Natural candidate: Q66 (referee pass on C111).
+4. DX check: DX02 was ~7 cycles ago. Next DX due in ~4 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
