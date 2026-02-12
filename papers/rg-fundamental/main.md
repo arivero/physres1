@@ -7,10 +7,10 @@ abstract: |
 ---
 
 # 1. Scope
-Dependent follow-up to `paper/main.md`, focusing on:
-1. RG as “scale-compatibility” within the Refinement Compatibility Principle (RCP) perspective.
+This note develops the viewpoint that the renormalization group is a *compatibility condition* rather than a calculational afterthought. Its three main threads are:
+1. RG as "scale-compatibility" within a refinement-composition framework: a theory is well-defined only if predictions survive composed changes of scale.
 2. Why RG is semigroup-like (information loss under coarse-graining).
-3. A minimal worked analogy (difference quotients) showing “counterterm subtraction = taking a derivative”.
+3. A minimal worked analogy (difference quotients) showing "counterterm subtraction = taking a derivative".
 
 # 2. RG as Composition Consistency
 `Proposition RG-P1.1 (Semigroup compatibility).`
@@ -18,7 +18,7 @@ Let \(W_{\Lambda\to\mu}\) map effective data at cutoff \(\Lambda\) to effective 
 \(W_{\kappa\to\mu}\circ W_{\Lambda\to\kappa}=W_{\Lambda\to\mu}\),
 then an infinitesimal generator exists under differentiability assumptions, yielding beta functions as the differential form of scale-compatibility.
 
-This is the main manuscript’s Section 8 claim restated as a “fundamental” postulate: a theory is well-defined only if it survives composed changes of scale.
+In other words, scale-compatibility is not optional: a theory is well-defined only if it survives composed changes of scale.
 
 # 3. A Calculus Micro-Model: Derivative as Counterterm Subtraction
 Let \(f\) be smooth and consider \(\varepsilon\to 0^+\). The quantities \(f(x+\varepsilon)/\varepsilon\) and \(f(x)/\varepsilon\) individually diverge as \(1/\varepsilon\), but their difference is finite:
@@ -52,7 +52,7 @@ The same “regulated difference quotient \(\to\) new local object” pattern ap
 \frac{\delta(x+\varepsilon)-\delta(x)}{\varepsilon}\xrightarrow[\varepsilon\to 0]{}\delta'(x),
 \qquad \langle\delta',\varphi\rangle=-\varphi'(0).
 \]
-This is a minimal toy prototype of how point-splitting limits generate contact terms (often involving derivatives of \(\delta\)) in field-theoretic identities. For details and sign conventions, see `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
+This is a minimal toy prototype of how point-splitting limits generate contact terms (often involving derivatives of \(\delta\)) in field-theoretic identities.
 
 `Remark RG-H1.1c (Weak variational-derivative version).`
 The same grammar appears in Euler-Lagrange weak form. For \(p(t)\in L^1_{\rm loc}\) and \(\eta\in C_c^\infty\),
@@ -109,7 +109,7 @@ The cleanest “RG appears before QFT” example is the contact (delta) interact
 
 For a standard overview of delta-function potentials in two and three dimensions, see [Jackiw1991DeltaPotentials]. For a compact treatment that explicitly parallels QFT-style renormalization in a two-dimensional delta interaction (and also treats the Aharonov–Bohm case), see [ManuelTarrach1994PertRenQM]. The derivation below matches the same logarithmic short-distance divergence and dimensional transmutation scale, up to conventions for normalization and for where one places scheme-dependent constants. For a complementary Wilson–Kogut-style RG study of contact interactions in \(1\)D quantum mechanics (including a scaling analysis on the full line), see [BoyaRivero1994Contact]. The \(2\)D delta model below is chosen because it is the simplest setting where the contact coupling is marginal and the renormalization produces genuine logarithmic running and dimensional transmutation.
 
-For a compact normalization sheet of the cutoff loop integrals in \(1\)D/\(2\)D/\(3\)D (aligned with this note’s conventions, including the \(+i0\) imaginary parts), see `blackboards/2026-02-10-contact-loop-integrals-1d-2d-3d.md`.
+The cutoff loop integrals in \(1\)D/\(2\)D/\(3\)D (aligned with this note's conventions, including the \(+i0\) imaginary parts) are collected in the supplementary material.
 
 ## 5.1 Setup
 Consider \(H = -\frac{\hbar^2}{2m}\Delta + g\,\delta^{(2)}(x)\) on \(\mathbb R^2\).
@@ -548,12 +548,12 @@ In this quadratic model, integrating out \(y\) is equivalent to:
 2. substituting \(y_\ast\) into \(S\), yielding the classical effective action \(\frac12(a-b^2/c)x^2\);
 3. multiplying by the fluctuation determinant factor \(\sim c^{-1/2}\) (the \(\frac{\hbar}{2}\ln c\) term).
 
-Thus even the simplest exact coarse-graining step already splits into “extremal selection” plus a one-loop prefactor, matching the main manuscript’s stationary-phase narrative.
+Thus even the simplest exact coarse-graining step already splits into "extremal selection" plus a one-loop prefactor — the same stationary-phase structure that appears in path-integral composition laws.
 
 # 7. Conclusion and Outlook
 This note argues for a simple foundational reading: whenever a continuum theory is defined by composing local refinement steps, *scale compatibility* is not optional. Regulator dependence appears in intermediate objects, and RG invariance is the condition that composed predictions are stable under changes of scale.
 
-The micro-models used here are deliberately elementary (difference quotients, Gaussian elimination, and contact interactions), but they already exhibit the three structural features emphasized by the main manuscript: (i) composition/semigroup structure at the level of coarse-graining, (ii) parameter flow as the compatibility data needed to compare descriptions across scale, and (iii) dimensional transmutation as the replacement of regulator-dependent couplings by RG-invariant physical scales.
+The micro-models used here are deliberately elementary (difference quotients, Gaussian elimination, and contact interactions), but they already exhibit the three structural features that any refinement-based definition of a continuum theory must face: (i) composition/semigroup structure at the level of coarse-graining, (ii) parameter flow as the compatibility data needed to compare descriptions across scale, and (iii) dimensional transmutation as the replacement of regulator-dependent couplings by RG-invariant physical scales.
 
 Natural extensions include adding one explicit Wilsonian fixed-point computation in a standard QFT example, and sharpening the rooted-tree bookkeeping discussion into a compact “dictionary section” that separates literal identities from analogy.
 
