@@ -297,6 +297,7 @@
 - `Q70` Completed.
 - `Q71` Completed.
 - `Q72` Completed.
+- `Q73` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -323,10 +324,10 @@
 - `DX04` Completed.
 
 ## Next Action
-Priority: S81 resolved the deferred DX04 item — p=1 selection is NOT from volume half-density, but from middle-form conformal weight / RG marginality. No open anomalies. No deferred items remaining.
-1. Cadence: ... → S80 → S81 complete.
-2. Per cadence: next cycle should be Q (referee pass on recent S81 finding) or C (promote a result) or B.
-3. DX check: DX04 was 8 cycles ago. Next DX due in ~2 cycles.
+Priority: Q73 clean pass on S80+S81. All D=4 filter framing verified correct. No open anomalies. No deferred items.
+1. Cadence: ... → S80 → S81 → Q73 complete.
+2. Per cadence: next cycle should be DX05 (exploration sweep, overdue — DX04 was 9 cycles ago) or S/C/B.
+3. DX check: DX04 was 9 cycles ago. **DX05 is now due.**
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

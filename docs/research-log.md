@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q73)
+- Focus: referee pass on S80 + S81 findings vs H4.0b, H4.0c, HD-D1.3, PA-D1.3/PA-D1.3a, PA-E5a.
+- Work: verified all manuscript text correctly distinguishes the three D=4 filters (half-density operator, coupling-dimension sieve, gauge marginality) and their independence. Checked for wording that might incorrectly imply half-density selects p=1. None found.
+- Result: clean pass. No corrections needed. Minor optional improvement flagged: adding "(for the scalar kinetic operator)" to H4.0b's "universal coefficient" for clarity.
+- Next: DX05 due in ~1 cycle. Or S/B/C on a priority thread.
+
 ## 2026-02-12 (S81)
 - Focus: does the p=1 gauge-field preference at D=4 have an independent half-density origin?
 - Question: H4.0c states D = 2(p+1) for p-form marginality. At D=4, this gives p=1. Does the volume half-density framework independently select p=1?
