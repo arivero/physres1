@@ -217,6 +217,9 @@ So the areal law is independent of the inverse-power index \(n\) in \(\mathbf F=
 `Heuristic H1.1 (Impulse-to-continuous interpretation).`
 The impulse model is a refinement scaffold for continuous forcing, not a literal claim that nature acts by discrete kicks. Its value is structural: invariants proven exactly at finite step survive controlled refinement.
 
+`Remark R1.1 (Convergence of the polygonal construction).`
+The passage from discrete polygonal orbits to a continuous trajectory is non-trivial: it depends on Newton's Lemma 3 (Book I, Section 1 of the *Principia*) and has been the subject of a scholarly debate. Nauenberg [Nauenberg2003KeplerArea] gives a modern reconstruction showing the polygonal construction has a well-defined continuum limit parameterizing a continuous planar curve; Pourciau [Pourciau2003] critically analyses the same limit and identifies conditions under which the impulse assumption requires additional care. For the purposes of this paper, the hedging in P1.1 ("whenever the limit exists in the standard differentiable sense") is sufficient: the structural content of the equal-area invariant at finite step is independent of the convergence subtleties.
+
 ## 3.4 Closed Question from the Section 2 Setup
 Section 2 left one key ambiguity open: is Newton’s area law a small-step approximation or a genuine invariant statement? The derivations above close that point:
 within the polygonal central-impulse model, the equal-area law is exact at each finite step and only the curve interpolation is a limiting passage.
@@ -969,7 +972,7 @@ E_{h/2}\!\circ E_{h/2}(y)-E_h(y)
 where \(f'(y)[v]\) denotes the Jacobian acting on a vector and \(f''(y)[v,w]\) is the bilinear second derivative. In rooted-tree language, each monomial in the Taylor expansion is an *elementary differential* labelled by a rooted tree: the leading \(O(h^2)\) term is the chain tree \(F([\bullet]):=f'(y)[f(y)]\), and the new \(O(h^3)\) term is the branch tree \(F([\bullet,\bullet]):=f''(y)[f(y),f(y)]\). (The \(O(h^3)\) contribution requires \(f\in C^2\); the \(O(h^2)\) term only needs \(f\in C^1\).)
 
 `Heuristic H6.2 (Rooted trees as refinement bookkeeping).`
-In Runge-Kutta and related integrators, the comparison between composed steps and a single step organizes into rooted-tree expansions; the corresponding composition law forms a group (the Butcher group). Interpreting “step-halving then rescaling back” as a scale-update operation makes the analogy with RG bookkeeping explicit, and rooted-tree/Hopf-algebra combinatorics also appears in perturbative renormalization [Brouder1999] [McLachlan2017] [ConnesKreimer2000].
+In Runge--Kutta and related integrators, the comparison between composed steps and a single step organizes into rooted-tree expansions; the corresponding composition law forms a group (the Butcher group). Interpreting “step-halving then rescaling back” as a scale-update operation makes the analogy with RG bookkeeping explicit, and rooted-tree/Hopf-algebra combinatorics also appears in perturbative renormalization [Brouder1999] [McLachlan2017] [ConnesKreimer2000].
 
 This example is included not to replace QFT renormalization, but to reinforce the paper's thesis with a clean model: renormalization is what you do when "refine and compare" is not automatically stable. The Butcher *group* concerns formal method composition, whereas Wilsonian coarse-graining is generally a *semigroup* because information is discarded at each coarse-graining step.
 

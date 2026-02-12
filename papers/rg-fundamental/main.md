@@ -89,7 +89,7 @@ Therefore the leading step-doubling discrepancy is
 \[
 E_{h/2}\!\circ E_{h/2}(y)-E_h(y)=\frac{h^2}{4}\,f'(y)[f(y)]+\frac{h^3}{16}\,f''(y)[f(y),f(y)]+O(h^4).
 \]
-In rooted-tree language, the leading term is the order-2 elementary differential associated to the length-2 chain tree \([\bullet]\), i.e. \(F([\bullet])=f'(y)[f(y)]\), and the next term is the order-3 branch tree \([\bullet,\bullet]\) with \(F([\bullet,\bullet])=f''(y)[f(y),f(y)]\).
+In rooted-tree language, the leading term is the order-2 elementary differential associated to the length-2 chain tree \([\bullet]\), i.e. \(F([\bullet])=f'(y)[f(y)]\), and the next term is the order-3 branch tree \([\bullet,\bullet]\) with \(F([\bullet,\bullet])=f''(y)[f(y),f(y)]\). (The \(O(h^2)\) term requires \(f\in C^1\); the \(O(h^3)\) term requires \(f\in C^2\).)
 
 `Remark D1.0a (Modified equation: “effective data runs with the scale \(h\)”).`
 If one seeks a step-size-dependent vector field \(f_h=f+h g+O(h^2)\) whose *exact* time-\(h\) flow agrees with Euler through \(O(h^2)\), then the exact-flow expansion gives
