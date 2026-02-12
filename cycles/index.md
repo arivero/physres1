@@ -274,6 +274,7 @@
 - `Q62` Completed.
 - `Q63` Completed.
 - `Q64` Completed.
+- `Q65` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -298,11 +299,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: C110 promoted B17 finding (Nauenberg 2018 citation added to H1.2). No open anomalies.
-1. Cadence: ... → S73 → B17 → C110 complete.
-2. Per cadence: Q pass on C110 (paper/main.md changed), then S or B on a priority thread.
-3. Natural candidate: Q65 (referee pass on C110).
-4. DX check: DX02 was ~4 cycles ago. Next DX due in ~7 cycles.
+Priority: Q65 passed C110 clean. No open anomalies. No pending S results awaiting promotion.
+1. Cadence: ... → B17 → C110 → Q65 complete.
+2. Per cadence: next cycle should be S or B on a priority thread.
+3. Natural candidates: (a) S cycle to advance a priority thread (half-density, main paper coherence, or RG), (b) B cycle if any claim needs an independent anchor.
+4. DX check: DX02 was ~5 cycles ago. Next DX due in ~6 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
