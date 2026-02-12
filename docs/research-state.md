@@ -71,6 +71,19 @@ Default cadence:
 
 Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and immediately after any cycle that threads new citations or changes dimension/notation conventions.
 
+Exploration rule: run a `DX` (D-explore) cycle at least once every ~10 cycles, or after completing any full Recipe A chain (D → S → B → C → Q). DX cycles read `docs/anomalies.md`, probe cross-thread connections, and stress-test the central framing.
+
+## Principle Evolution Log
+Track how the central thesis has been refined. Update during D-explore (DX) cycles.
+
+- **v0** (initial): "Physically meaningful laws are those that survive controlled refinement in partition/representation/scale."
+- **v1** (composition): Added that the *mechanism* is a composition law — refinement compatibility requires that composed predictions agree with single-step predictions.
+- **v2** (action additivity → Noether): The structural spine crystalized: Newton polygonal refinement → action additivity/Noether → composition law → path integral.
+- **v3** (deformation parameter): The naive "refinement → 0" limit is obstructed/ambiguous; retaining a finite deformation parameter (the role of hbar) is the minimal fix. Deformation quantization + renormalization as limit-control mechanisms.
+- **v4** (RCP as principle): Named the overarching idea "Refinement Compatibility Principle" (RCP): partition/representation/scale changes must commute with physical predictions.
+
+(Next version should emerge from a DX cycle that identifies a genuine extension or correction.)
+
 ## Active Threads (Pick One)
 ### 1) Main paper: RG as foundational compatibility
 - Goal: strengthen the manuscript’s thesis that RG is the scale-compatibility condition forced by composed refinement when naive limits diverge.

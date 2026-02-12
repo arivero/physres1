@@ -34,7 +34,10 @@ If you want critique on a discovery/study/bibliography result, either:
 We use five independent numbered tracks:
 
 1. **Discovery cycles** (`Dnn`): novelty/discovery planning and triage (no manuscript edits).
-   - Typical outputs: updated backlog/priority in `docs/research-state.md` and/or `docs/next-articles.md`, plus spawned `S`/`B`/`C` cycles.
+   Two subtypes:
+   - **D-triage** (`Dnn`, default): pick a novelty target from the backlog, define it, spawn production cycles. Convergent.
+   - **D-explore** (`DXnn`): divergent exploration — surprise inventory, cross-thread probes, framing stress-tests, candidate principles. Uses `docs/anomalies.md` as input/output. Does not commit to a production target; may spawn S or D-triage.
+   - Typical outputs: updated backlog/priority in `docs/research-state.md` and/or `docs/next-articles.md`, plus spawned `S`/`B`/`C` cycles. D-explore also updates `docs/anomalies.md` and the principle evolution log in `docs/research-state.md`.
 
 2. **Study cycles** (`Snn`): exploratory “blackboard” work (scratch derivations, checks, toy computations).
    - Typical outputs: `blackboards/*.md` and/or `paper/notes/*.md`.
@@ -57,7 +60,8 @@ This table is the operational “permissions model” for agents.
 
 | Cycle | Allowed edits | Forbidden edits (examples) |
 |---|---|---|
-| `Dnn` | `docs/research-state.md`, `docs/next-articles.md`, `docs/research-log.md`, `cycles/Dnn-*.md` | Manuscripts (`paper/main.md`, `papers/*/main.md`), bibliography (`paper/bibliography.md`), `sources/` |
+| `Dnn` (triage) | `docs/research-state.md`, `docs/next-articles.md`, `docs/research-log.md`, `cycles/Dnn-*.md` | Manuscripts (`paper/main.md`, `papers/*/main.md`), bibliography (`paper/bibliography.md`), `sources/` |
+| `DXnn` (explore) | `docs/research-state.md`, `docs/next-articles.md`, `docs/anomalies.md`, `docs/research-log.md`, `cycles/DXnn-*.md` | Manuscripts, bibliography, `sources/` |
 | `Snn` | `blackboards/*.md`, `paper/notes/*.md`, `docs/research-log.md`, `cycles/Snn-*.md` | Manuscripts, bibliography ledger, `sources/` |
 | `Bnn` | `paper/bibliography.md`, `sources/*`, `sources/pending-*.md`, `cycles/Bnn-*.md` | Manuscripts, blackboards/notes (unless spawning an `S`) |
 | `Cnn` | Manuscripts (`paper/main.md`, `papers/*/main.md`) + `cycles/Cnn-*.md` (and tracked build artifacts if used) | `blackboards/`, `paper/notes/`, bibliography ledger, `sources/` |
@@ -82,13 +86,20 @@ Use when `Q` identifies a missing derivation, an unclear claim boundary, or a we
 `B → S → C → Q`
 Use when a claim is known to be standard but needs both an anchor and a local reproduction.
 
+### Recipe D (divergent exploration)
+`DX → (S) → D-triage → ...`
+Use periodically (at least once every ~10 cycles) to check for surprises, cross-thread connections, and framing drift. DX does not directly spawn C cycles; it feeds back into D-triage or S.
+
 ## Cross-Cycle Spawning (How Work Begets Work)
 Use this rule of thumb:
-- If the task is “choose novelty + triage”: spawn `D`.
-- If the task is “derive/check”: spawn `S`.
-- If the task is “find/ingest/verify a reference”: spawn `B`.
-- If the task is “write or restructure manuscripts”: spawn `C`.
-- If the task is “referee review of a manuscript change”: spawn `Q` (and name the parent `C`).
+- If the task is "choose novelty + triage": spawn `D` (triage).
+- If the task is "look for surprises / cross-thread connections / framing stress-test": spawn `DX` (explore).
+- If the task is "derive/check": spawn `S`.
+- If the task is "find/ingest/verify a reference": spawn `B`.
+- If the task is "write or restructure manuscripts": spawn `C`.
+- If the task is "referee review of a manuscript change": spawn `Q` (and name the parent `C`).
+
+**Exploration cadence rule:** run a `DX` (explore) cycle at least once every ~10 cycles, or after completing any full Recipe A chain. This prevents the system from grinding forward without questioning its framing.
 
 ## File Convention (per cycle)
 Each cycle uses four files:

@@ -253,7 +253,7 @@
 - `Q58` Completed.
 - `Q59` Completed.
 
-### Discovery Cycles (`Dnn`)
+### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
 - `D01` Completed.
 - `D02` Completed.
@@ -269,6 +269,9 @@
 - `D12` Completed.
 - `D13` Completed.
 - `D14` Completed.
+
+### Discovery Cycles — Explore (`DXnn`)
+(none yet — first DX cycle should run soon per the ~10-cycle cadence rule)
 
 ## Next Action
 Priority: small fixes from Q59, Newton limit anchoring from B13, then housekeeping.

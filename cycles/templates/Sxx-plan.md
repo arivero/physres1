@@ -24,4 +24,5 @@ Produce a concrete derivation/computation/check as a promotion candidate (no man
 ## Acceptance criteria
 - A self-contained derivation/check with enough detail to be promoted by a later `C` cycle.
 - Any commands run are recorded (command + output summary).
+- The **discovery flag** in the execution log is filled in (yes/no + one sentence if yes).
 
