@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S80)
+- Focus: independence check — D(4-D)/4 operator vanishing (H4.0b) vs integrality sieve (PA-D1.3).
+- Question: are these two D=4 filters logically independent or the same filter in disguise?
+- Work: compared hypotheses and objects. Sieve operates on coupling constants (scale leg), operator on differential operators (representation leg). Neither implies the other. Identified common origin: both probe half-density weight d/2, which equals 2 (area) at d = 4.
+- Result: logically independent, but agree at D = 4 as a cross-leg consistency check within RCP. Already correctly framed in H4.0c.
+- Blackboard: `blackboards/2026-02-12-d4-operator-vs-sieve-independence.md`
+- Next: optional C to add cross-reference in Planck-area draft; or continue S/B.
+
 ## 2026-02-12 (Q72)
 - Focus: referee pass on C117 (Remark PA-D1.3a in Planck-area draft).
 - Work: verified parity argument (half-integer target for odd d), magnitude inequality (k < 1 for even d ≥ 6), degenerate case (d = 2), uniqueness of d = 4, scope consistency with PA-D1.3.

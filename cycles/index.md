@@ -220,6 +220,7 @@
 - `S77` Completed.
 - `S78` Completed.
 - `S79` Completed.
+- `S80` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -321,10 +322,10 @@
 - `DX04` Completed.
 
 ## Next Action
-Priority: Q72 clean pass on C117. PA-D1.3 + PA-D1.3a now give complete gravity-only sieve. No open anomalies.
-1. Cadence: ... → C117 → Q72 complete.
-2. Per cadence: next cycle should be S or B on a priority thread.
-3. DX check: DX04 was 5 cycles ago. Next DX due in ~5 cycles.
+Priority: S80 confirmed D(4-D)/4 operator filter and integrality sieve are independent, cross-leg RCP check. No open anomalies.
+1. Cadence: ... → Q72 → S80 complete.
+2. Per cadence: next cycle should be C (promote S80 or another result) or S/B.
+3. DX check: DX04 was 6 cycles ago. Next DX due in ~4 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
