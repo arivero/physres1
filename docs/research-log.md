@@ -13,6 +13,30 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (B12)
+- Focus: resolve all remaining PENDING bibliography items using sci-hub (authorized) + OA routes.
+- Question: can we close the acquisition gaps for Dirac1933, Kurasov1996, Wilson1974, Groenewold1946, Moyal1949, Velhinho2017, and the two books (Connes1994, Landsman1998)?
+- Work:
+  - Acquired `[Dirac1933]` via OA PDF scan from informationphilosopher.com (composition law eqs. 11–12 verified).
+  - Acquired `[Kurasov1996DiscontinuousTest]` via sci-hub (4-parameter self-adjoint extension theorem verified).
+  - Acquired `[Wilson1974Confinement]` via sci-hub (area-law confinement, surface-sum structure verified).
+  - Acquired `[Moyal1949StatisticalQM]` via sci-hub (phase-space composition law eq. 9-8, Moyal bracket eq. 7-10 verified).
+  - Acquired `[Velhinho2017InfDimMeasure]` via MDPI OA PDF (Theorem 5: projective-limit measure existence verified).
+  - `[Groenewold1946ElementaryQM]`: sci-hub CDN returned 404; ScienceDirect paywall. Marked PENDING_LIBRARY.
+  - `[Connes1994]`, `[Landsman1998]`: books, not available online. Marked PENDING_LIBRARY.
+  - Key content summaries captured in `cycles/B12-execution.md` (since `sources/` is gitignored).
+- Result: 5 of 8 targeted items acquired; 3 remain as PENDING_LIBRARY (require physical library visit).
+- Sources touched (keys + status changes):
+  - `[Dirac1933]`: PENDING → ACQUIRED
+  - `[Kurasov1996DiscontinuousTest]`: PENDING → ACQUIRED
+  - `[Wilson1974Confinement]`: PENDING → ACQUIRED
+  - `[Moyal1949StatisticalQM]`: PENDING → ACQUIRED
+  - `[Velhinho2017InfDimMeasure]`: not-yet-ingested → ACQUIRED
+  - `[Groenewold1946ElementaryQM]`: PENDING → PENDING_LIBRARY
+  - `[Connes1994]`: pending → PENDING_LIBRARY
+  - `[Landsman1998]`: pending → PENDING_LIBRARY
+- Next: Q59 (referee pass on C102 notation consistency).
+
 ## 2026-02-12 (Q58 + C102)
 - Focus: workspace hygiene and rooted-tree notation polish.
 - Question: (Q58) blackboards have grown to 65 files with all content promoted — can they be cleaned? (C102) F([•]) notation is used without definition in main paper.
