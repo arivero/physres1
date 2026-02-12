@@ -550,6 +550,9 @@ The “scale supplier” question above is distinct from a different way \(D=4\)
 \]
 Under a conformal rescaling \(g=e^{2\sigma}\bar g\), the half-density conjugation produces a quadratic-gradient term \(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\), hence it cancels at \(D=4\) (within the conformal class). This is an operator-simplicity filter (scale-neutral) and is independent of the coupling-dimension sieve discussed above.
 
+`Heuristic H4.0c (RG-side echo: gauge-coupling marginality at \(D=4\)).`
+On the renormalization side, \(D=4\) is the unique dimension in which 1-form gauge couplings are marginal by power counting (\([g^2]=\text{length}^{D-4}\)), and in which the classical Yang--Mills action is conformally invariant (the action-density weight factor \(e^{(D-4)\sigma}\) equals unity). Both this statement and the half-density cancellation in H4.0b share the algebraic root \((D-4)=0\), but they apply to different objects: the half-density version is universal (independent of matter content), while the RG version is coupling-specific (tied to the form degree of the gauge connection via \(D=2(p+1)\) for a \(p\)-form field; \(p=1\) gives \(D=4\)). The consistency of these two logically independent filters at \(D=4\) is a nontrivial structural check: the half-density filter selects the kinematic arena, and the RG filter constrains the dynamics within it.
+
 `Derivation D4.1 (Time slicing from repeated composition).`
 Iterating the composition law over a partition \(t_i=t_0<\cdots<t_N=t_f\) gives
 
