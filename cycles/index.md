@@ -288,6 +288,7 @@
 - `Q67` Completed.
 - `Q68` Completed.
 - `Q69` Completed.
+- `Q70` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -313,11 +314,10 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: C115 promoted S77 hierarchy into Planck-area draft. No open anomalies.
-1. Cadence: ... → S77 → C115 complete.
-2. Per cadence: next cycle should be Q70 (referee pass on C115).
-3. After Q70: S or B on a priority thread.
-4. DX check: DX03 was 7 cycles ago. Next DX due in ~3 cycles.
+Priority: Q70 clean pass on C115. No open anomalies. Three-level RG hierarchy fully witnessed in both manuscripts.
+1. Cadence: ... → C115 → Q70 complete.
+2. Per cadence: next cycle should be S or B on a priority thread.
+3. DX check: DX03 was 8 cycles ago. Next DX due in ~2 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

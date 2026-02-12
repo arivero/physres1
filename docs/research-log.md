@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q70)
+- Focus: referee pass on C115 (Remark PA-E5a in Planck-area draft).
+- Work: verified dimension match (κ*^{-1} = length^{d/2} for d = 2), β order claim, three-level hierarchy witnesses (D6.2a-sg, PA-E5, PA-D1.3), containment logic, cross-references to main manuscript Section 8.4 and P6.2.
+- Result: clean pass. All claims verified, notation consistent, placement appropriate.
+- Next: S or B on a priority thread. DX due in ~2 cycles.
+
 ## 2026-02-12 (C115)
 - Focus: promote S77 hierarchy into Planck-area draft as Remark PA-E5a.
 - Work: inserted Remark PA-E5a (~9 lines) after PA-E5. Half-density dimension match (κ*^{-1} = length^{d/2} for d = 2), three-level hierarchy with witnesses, transmutation is dimension-permissive.
