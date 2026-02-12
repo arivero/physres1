@@ -115,6 +115,7 @@
 111. `C111` Completed.
 112. `C112` Completed.
 113. `C113` Completed.
+114. `C114` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -309,11 +310,11 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: S76 clarified linear vs nonlinear beta boundary (D6.2a-sg ↔ PA-H2.13). No open anomalies.
-1. Cadence: ... → Q68 → S76 complete.
-2. Per cadence: next cycle should be C (promote into main manuscript or Planck-area draft).
-3. S76 promotion candidate: optional parenthetical on linear/nonlinear beta boundary. Low priority — the blackboard provides the reference. Alternatively, C on another priority thread.
-4. DX check: DX03 was 3 cycles ago. Next DX due in ~7 cycles.
+Priority: C114 promoted S76 linear/nonlinear beta boundary. No open anomalies.
+1. Cadence: ... → S76 → C114 complete.
+2. Per cadence: next cycle should be Q69 (referee pass on C114).
+3. After Q69: S or B on a priority thread.
+4. DX check: DX03 was 4 cycles ago. Next DX due in ~6 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

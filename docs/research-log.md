@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C114)
+- Focus: promote S76 — add linear-vs-nonlinear beta boundary paragraph to Section 8.4/8.5 transition.
+- Work: inserted one paragraph (3 sentences) after closing remark of Section 8.4, before §8.5. Contrasts D6.2a-sg's linear β (algebraic invariant, no transmutation) with D6.2's nonlinear β (essential singularity, transmutation). Cross-references D6.2a-sg, D6.2, P6.2.
+- Result: diffstat +1 -0. Guards clean.
+- Next: Q69 referee pass on C114.
+
 ## 2026-02-12 (S76)
 - Focus: linear vs nonlinear beta functions — when does a semigroup generate a transmutation scale?
 - Question: is D6.2a-sg (linear β, ODE step-refinement) a witness for PA-H2.13 (dimensional transmutation), or are they structurally different?
