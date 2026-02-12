@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q69)
+- Focus: referee pass on C114 (linear/nonlinear beta boundary paragraph).
+- Work: verified all three cross-references (D6.2a-sg, D6.2, P6.2). Re-derived both RG invariants (algebraic for linear β, essential singularity for quadratic β). Checked sign convention, claim scope, placement, notation.
+- Result: clean pass. All formulas correct, claims accurate, no issues.
+- Next: S or B on a priority thread from research-state.md.
+
 ## 2026-02-12 (C114)
 - Focus: promote S76 — add linear-vs-nonlinear beta boundary paragraph to Section 8.4/8.5 transition.
 - Work: inserted one paragraph (3 sentences) after closing remark of Section 8.4, before §8.5. Contrasts D6.2a-sg's linear β (algebraic invariant, no transmutation) with D6.2's nonlinear β (essential singularity, transmutation). Cross-references D6.2a-sg, D6.2, P6.2.

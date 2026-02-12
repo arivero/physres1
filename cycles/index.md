@@ -285,6 +285,7 @@
 - `Q66` Completed.
 - `Q67` Completed.
 - `Q68` Completed.
+- `Q69` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -310,11 +311,11 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: C114 promoted S76 linear/nonlinear beta boundary. No open anomalies.
-1. Cadence: ... → S76 → C114 complete.
-2. Per cadence: next cycle should be Q69 (referee pass on C114).
-3. After Q69: S or B on a priority thread.
-4. DX check: DX03 was 4 cycles ago. Next DX due in ~6 cycles.
+Priority: Q69 clean pass on C114. No open anomalies. RCP v4 holds.
+1. Cadence: ... → S76 → C114 → Q69 complete.
+2. Per cadence: next cycle should be S or B on a priority thread from research-state.md.
+3. Thread priorities: (1) half-density / Planck-area, (2) main paper coherence, (3) RG follow-up.
+4. DX check: DX03 was 5 cycles ago. Next DX due in ~5 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
