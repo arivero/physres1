@@ -250,6 +250,7 @@
 - `Q56` Completed.
 - `Q57` Completed.
 - `Q58` Completed.
+- `Q59` Completed.
 
 ### Discovery Cycles (`Dnn`)
 - `D00` Completed.
@@ -269,10 +270,11 @@
 - `D14` Completed.
 
 ## Next Action
-Priority: quality monitoring and housekeeping.
-1. `Q59`: referee pass on `C102` (verify notation consistency across main + rg-fundamental). **In progress.**
+Priority: small fixes from Q59, then housekeeping.
+1. `C103`: port minimal-regularity parenthetical to companion D1.0 + fix "Runge-Kutta" → "Runge--Kutta" in main paper line 972.
 2. `D15`: record the cached diffstat and guard checks for `C100` in its execution log.
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deprioritized unless blocking a revision:
 - `[Groenewold1946ElementaryQM]`, `[Connes1994]`, `[Landsman1998]`: PENDING_LIBRARY — require physical library visit or institutional access.
+- Claim-label namespace collision between main + companion: resolve before submission (see `docs/research-state.md` thread 9).

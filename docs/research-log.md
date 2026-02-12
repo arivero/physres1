@@ -13,6 +13,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q59)
+- Focus: referee pass on C102 (rooted-tree notation consistency between main + rg-fundamental).
+- Question: is the F([•]) notation now consistent across both papers after C102?
+- Work:
+  - Full cross-paper comparison of tree notation, Euler map definition, Jacobian notation, regularity assumptions, claim labels, typography, and references.
+  - Found: notation is consistent. Three minor actionable items: (1) regularity annotation not ported to companion D1.0, (2) claim-label namespace collision (deferred), (3) "Runge-Kutta" hyphen vs en-dash.
+- Result: C102 changes verified correct and consistent. Spawned C103 for two small fixes. Label collision noted in research-state.md for later.
+- Sources touched: none.
+- Next: C103 (port regularity parenthetical to companion + fix Runge-Kutta typography).
+
 ## 2026-02-12 (B12)
 - Focus: resolve all remaining PENDING bibliography items using sci-hub (authorized) + OA routes.
 - Question: can we close the acquisition gaps for Dirac1933, Kurasov1996, Wilson1974, Groenewold1946, Moyal1949, Velhinho2017, and the two books (Connes1994, Landsman1998)?
