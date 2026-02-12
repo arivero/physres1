@@ -291,12 +291,16 @@
 
 ### Discovery Cycles — Explore (`DXnn`)
 - `DX01` Completed.
+- `DX02` Completed.
 
 ## Next Action
-Priority: C109 promoted HD-D1.3a. No open anomalies. DX overdue.
-1. Cadence: ... → Q63 → S72 → C109 complete.
-2. Per cadence: next cycle should be Q (referee pass on C109) or DX (overdue, ~13 cycles since DX01).
-3. DX check: last DX was DX01 (~13 cycles ago). **DX is overdue.** Consider DX02 next.
+Priority: DX02 complete. One new OPEN anomaly (scalarization ↔ ordering parallel).
+1. Cadence: ... → S72 → C109 → DX02 complete.
+2. Per cadence: next cycle should be Q (referee pass on C109) or S/B on a priority thread.
+3. DX check: DX02 just completed. Next DX due in ~10 cycles.
+
+Spawned from DX02 (optional):
+- `S73`: test scalarization-gauge ↔ ordering-ambiguity connection in a toy model.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

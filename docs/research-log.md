@@ -13,6 +13,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (DX02)
+- Focus: cross-thread exploration — half-density bridge, conformal filter, and RCP scope.
+- Question: (1) Is the half-density/RG bridge (RG-H1.12) a gap in the main paper? (2) Does the conformal D=4 cancellation challenge the RCP framing? (3) Are scalarization gauge freedom and ordering ambiguity the same freedom?
+- Work: systematic search across main paper, 3 companion papers, and blackboards. Two cross-thread probes (half-density+RG, scalarization+ordering). Framing stress-test.
+- Result: (1) RG-H1.12 gap is informational, not blocking (bridge belongs in companion). (2) RCP framing is adequate; conformal cancellation is a "selection filter" complementing RCP's "compatibility filter," already implicit in v4. (3) Scalarization ↔ ordering parallel is a genuine new observation, needs S73 computation. One new anomaly registered.
+- Next: per cadence, Q or S/B. Optional S73 to test scalarization ↔ ordering.
+
 ## 2026-02-12 (C109)
 - Focus: promote S72 candidate (Remark HD-D1.3a) into `papers/half-density-qft/main.md`.
 - Work: added remark after HD-D1.3 recording three structural distinctions (half-density != Yamabe, != xi*R, D=4 conformal-class-specific).
