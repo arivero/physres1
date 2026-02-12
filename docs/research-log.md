@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (C109)
+- Focus: promote S72 candidate (Remark HD-D1.3a) into `papers/half-density-qft/main.md`.
+- Work: added remark after HD-D1.3 recording three structural distinctions (half-density != Yamabe, != xi*R, D=4 conformal-class-specific).
+- Result: diffstat +8 -1 in half-density-qft. `paper/main.md` untouched.
+- Next: per cadence, Q pass or continue S/B. DX overdue (~12 cycles since DX01).
+
 ## 2026-02-12 (S72)
 - Focus: half-density conjugation vs conformal Laplacian — scope of the D=4 cancellation (thread 2/2b).
 - Question: Is the D(4-D)/4 cancellation in HD-D1.3 the same as conformal coupling? Does it survive beyond the conformal class?

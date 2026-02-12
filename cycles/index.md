@@ -110,6 +110,7 @@
 106. `C106` Completed.
 107. `C107` Completed.
 108. `C108` Completed.
+109. `C109` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -292,13 +293,10 @@
 - `DX01` Completed.
 
 ## Next Action
-Priority: S72 produced a promotion candidate (Remark HD-D1.3a). No open anomalies.
-1. Cadence: ... → C108 → Q63 → S72 complete.
-2. Per cadence: next cycle should be C (promote S72 candidate into half-density-qft) or continue S/B on priority thread.
-3. DX check: last DX was DX01 (~12 cycles ago). A DX cycle is overdue; consider scheduling after C109.
-
-Spawned from S72:
-- `C109`: promote Remark HD-D1.3a into `papers/half-density-qft/main.md`.
+Priority: C109 promoted HD-D1.3a. No open anomalies. DX overdue.
+1. Cadence: ... → Q63 → S72 → C109 complete.
+2. Per cadence: next cycle should be Q (referee pass on C109) or DX (overdue, ~13 cycles since DX01).
+3. DX check: last DX was DX01 (~13 cycles ago). **DX is overdue.** Consider DX02 next.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
