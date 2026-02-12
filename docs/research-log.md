@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (B17)
+- Focus: anchor PENDING Newton-polygon bibliography + add Nauenberg 2018.
+- Question: can we find OA copies of Pourciau2003 and Nauenberg1994SymplecticNewton? Is there a better anchor for H1.2's "symplectic Euler integrator" claim?
+- Work: searched web, Google Scholar, Semantic Scholar, PhilPapers, arXiv, author homepages, institutional repos for both PENDING sources. Found that Nauenberg's 2018 AJP paper ("Newton's graphical method for central force orbits") is the one that explicitly identifies the construction as a "symplectic integrator" in modern terminology. OA available via arXiv:1810.05264 and UCSC Emeriti author copy.
+- Result: Pourciau2003 stays PENDING (paywalled, no OA). Nauenberg1994 stays PENDING (paywalled, no OA) but note added that the 2018 paper is the better anchor for H1.2. New entry `[Nauenberg2018GraphicalMethod]` added with OA links.
+- Sources touched: `[Pourciau2003]` (PENDING, search exhausted), `[Nauenberg1994SymplecticNewton]` (PENDING, search exhausted), `[Nauenberg2018GraphicalMethod]` (NEW, OA).
+- Next: C cycle to update H1.2 citation to include Nauenberg 2018.
+
 ## 2026-02-12 (S73)
 - Focus: test scalarization-gauge ↔ ordering-ambiguity connection (DX02 anomaly).
 - Question: does changing σ_* in a half-density kernel produce a known ordering correction, or does it act orthogonally?

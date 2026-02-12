@@ -130,6 +130,7 @@
 - `B14` Completed.
 - `B15` Completed.
 - `B16` Completed.
+- `B17` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -296,11 +297,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: S73 resolved the DX02 anomaly (scalarization ↔ ordering: notational parallel only). No open anomalies.
-1. Cadence: ... → C109 → DX02 → Q64 → S73 complete.
-2. Per cadence: next cycle should be C or B on a priority thread. No pending S results awaiting promotion.
-3. Natural candidates: (a) B cycle to anchor any pending bibliography, (b) C cycle on a priority thread if there are mature S results to promote, (c) new S cycle to advance a priority thread.
-4. DX check: DX02 was ~2 cycles ago. Next DX due in ~9 cycles.
+Priority: B17 added Nauenberg 2018 as better anchor for H1.2. Two PENDING sources remain (Pourciau2003, Nauenberg1994 — both paywalled Springer, search exhausted). No open anomalies.
+1. Cadence: ... → Q64 → S73 → B17 complete.
+2. Per cadence: next cycle should be C (promote B17 finding: update H1.2 citation to include Nauenberg2018).
+3. Natural candidate: C110 (update H1.2 citation in paper/main.md to add [Nauenberg2018GraphicalMethod]).
+4. DX check: DX02 was ~3 cycles ago. Next DX due in ~8 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

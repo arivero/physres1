@@ -93,7 +93,7 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 - Draft: `papers/planck-area/main.md`.
 - Goal: make precise why half-density normalization forces a \(\text{length}^{d/2}\) scale, and why in \(d=4\) this is naturally an area scale (candidate: Planck area), with at least one concrete model computation.
 - Current sub-questions: evaluate `H2.3` (dimensionless scalarization), `H2.4` (background-free constancy), `H2.5` (analyticity/no fractional powers) separately; current focus is `H2.5`.
-- DX02 observation: scalarization gauge freedom (PA-D1.7) may parallel ordering ambiguity (Section 10.2). If sigma_*-rescaling of a half-density kernel maps to a quantization-prescription change, then representation compatibility (RCP's Q_hbar) would have a geometric origin. Status: OPEN (anomalies.md), optional S73.
+- DX02 observation (RESOLVED by S73): scalarization gauge freedom (PA-D1.7) and ordering ambiguity (Section 10.2) are structurally analogous but algebraically independent. σ_*-rescaling acts on kernel amplitude (zeroth-order in ℏ), generating connection-type corrections orthogonal to ordering corrections. Notational parallel only.
 
 ### 2b) Half-densities in QFT (follow-up draft candidate)
 - Seed note: `blackboards/2026-02-10-half-densities-in-qft.md`.
