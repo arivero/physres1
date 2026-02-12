@@ -126,7 +126,7 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 ### 9) Paper closure / hygiene (deprioritized unless blocking)
 - Remaining `PENDING_LIBRARY` gaps: `Landsman1998` only (require institutional Springer access or physical library). All other PENDING items resolved in B12: `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `Velhinho2017`, `Groenewold1946` (Univ. Groningen OA), `Connes1994` (author OA from alainconnes.org; tangent groupoid in Ch. II §5).
 - Optional: switch to pandoc `[@Key]` citations + a `.bib` file if a formal reference list is desired (keep `sources/` out of git).
-- **Claim-label namespace collision** (Q59): main paper and companion (rg-fundamental) use overlapping label schemes (D1.1, P1.1, H1.1 etc.) for different claims. Resolve before submission by adding paper-specific prefixes to companion labels. Not blocking until cross-references by label are introduced.
+- **Claim-label namespace collision** (Q59): RESOLVED (C108 + Q63). All companion papers now use paper-specific prefixes (RG-, PA-, HD-). Main paper labels remain unprefixed (canonical namespace). Q63 verified zero residual bare labels.
 
 ### 10) Action–Angle indeterminacy (central potentials)
 - Goal: formulate a clean “sharp actions \(\Rightarrow\) delocalized conjugate angles” statement for integrable central potentials, with at least one explicit computation in the \((\phi,L_z)\) sector.

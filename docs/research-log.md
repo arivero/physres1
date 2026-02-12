@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q63)
+- Focus: referee pass on C108 label-prefix rename.
+- Work: systematic verification of all three companion papers for residual bare labels. Used regex searches and manual reading.
+- Result: found and fixed 2 residual bare references in planck-area: `Example E5` → `Example PA-E5` (line 186), `H2.4 asserts` → `PA-H2.4 asserts` (line 351). rg-fundamental and half-density-qft clean. Cross-paper reference (HD-D1.3) verified correct. Main paper untouched.
+- Next: label namespace fully resolved. Continue cadence-driven cycles (S or B on a priority thread).
+
 ## 2026-02-12 (C108)
 - Focus: resolve claim-label namespace collision between main and companion papers (Q59 action item, thread 9).
 - Work: added paper-specific prefixes to all claim labels in 3 companion papers: RG- (rg-fundamental, 33 labels), PA- (planck-area, ~65 labels + ~50 inline refs), HD- (half-density-qft, 7 labels). Main paper labels remain unprefixed (canonical namespace).
