@@ -123,6 +123,7 @@
 - `B12` Completed.
 - `B13` Completed.
 - `B14` Completed.
+- `B15` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -281,7 +282,7 @@
 ## Next Action
 Priority: follow up on DX01 findings (symplectic-Euler connection, Berkeley source).
 1. `S69`: derive Newton-impulse ↔ symplectic-Euler connection explicitly in manuscript notation (blackboard).
-2. `B15`: add Berkeley (1734) "The Analyst" to bibliography (user-suggested; OA via Project Gutenberg or similar).
+2. C cycle (after S69): add symplectic-Euler remark to Section 3 or 8, and Berkeley citation to Section 1.
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deferred:

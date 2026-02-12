@@ -13,6 +13,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (B15)
+- Focus: add Berkeley (1734) "The Analyst" to bibliography.
+- Work: added [Berkeley1734Analyst] to Sources, DOI Audit, OA Acquisition Status. OA via Wikisource + Internet Archive.
+- Result: entry added. Not yet cited in manuscripts (future C cycle).
+- Sources touched: paper/bibliography.md.
+- Next: S69 (symplectic-Euler connection).
+
 ## 2026-02-12 (DX01)
 - Focus: first divergent exploration cycle — cross-thread probes and framing stress-tests.
 - Question: what cross-thread connections and structural tensions exist in the manuscript?

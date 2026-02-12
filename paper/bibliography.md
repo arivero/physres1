@@ -44,6 +44,7 @@ Use this file as a source ledger.
 30. `[TongQMLectures]` David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)
 31. `[Nauenberg2003KeplerArea]` Michael Nauenberg, "Kepler's Area Law in the Principia: Filling in some details in Newton's proof of Prop. 1," *Historia Mathematica* 30 (2003), 441–456. arXiv:`math/0112048`. DOI `10.1016/S0315-0860(02)00027-7`. (Defends Newton's continuum limit via Lemma 3; the polygonal construction has a well-defined limit parameterizing a continuous planar curve.)
 32. `[Pourciau2003]` Bruce Pourciau, "Newton's Argument for Proposition 1 of the Principia," *Archive for History of Exact Sciences* 57 (2003), 267–311. DOI `10.1007/s00407-002-0062-x`. (Critically analyses the impulse assumption and identifies error-accumulation and planarity problems in Newton's limit argument.)
+33. `[Berkeley1734Analyst]` George Berkeley, *The Analyst; or, A Discourse Addressed to an Infidel Mathematician* (Dublin/London, 1734). (Foundational critique of Newton's fluxions and Leibniz's infinitesimals — the "ghosts of departed quantities" objection to evanescent limits. Historical precursor to modern constructive refinement approaches.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -79,6 +80,7 @@ Use this file as a source ledger.
 31. `[TongQMLectures]`: OA lecture-note PDF (no DOI).
 32. `[Nauenberg2003KeplerArea]`: DOI `10.1016/S0315-0860(02)00027-7`; arXiv primary anchor used (`math/0112048`).
 33. `[Pourciau2003]`: DOI `10.1007/s00407-002-0062-x`.
+34. `[Berkeley1734Analyst]`: no DOI (18th-century primary source, 1734).
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -113,6 +115,7 @@ Use this file as a source ledger.
 30. `[TongQMLectures]`: acquired via OA PDF capture in `sources/qm-6a8ebd24.md`.
 31. `[Nauenberg2003KeplerArea]`: arXiv OA (`math/0112048`). Not yet ingested into `sources/`.
 32. `[Pourciau2003]`: publisher (Springer), likely paywalled. `PENDING` — no OA route identified.
+33. `[Berkeley1734Analyst]`: OA via Wikisource (<https://en.wikisource.org/wiki/The_Analyst:_a_Discourse_addressed_to_an_Infidel_Mathematician>) and Internet Archive (<https://archive.org/details/analystordiscour00berkrich>). Not yet ingested into `sources/`.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).
