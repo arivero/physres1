@@ -216,6 +216,7 @@
 - `S75` Completed.
 - `S76` Completed.
 - `S77` Completed.
+- `S78` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -314,10 +315,10 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: Q70 clean pass on C115. No open anomalies. Three-level RG hierarchy fully witnessed in both manuscripts.
-1. Cadence: ... → C115 → Q70 complete.
-2. Per cadence: next cycle should be S or B on a priority thread.
-3. DX check: DX03 was 8 cycles ago. Next DX due in ~2 cycles.
+Priority: S78 found structural separation — Van Vleck = geometric half-density, κ* = dynamical scalarization. No open anomalies.
+1. Cadence: ... → Q70 → S78 complete.
+2. Per cadence: next cycle should be C (promote S78 into Planck-area draft) or DX.
+3. DX check: DX03 was 9 cycles ago. DX04 is overdue — run next or within 1 cycle.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

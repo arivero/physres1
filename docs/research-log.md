@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S78)
+- Focus: Van Vleck prefactor × transmutation scale in the 2D delta model.
+- Question: how does κ* interact with the Van Vleck half-density prefactor? Does it modify the transformation law or only the scalar amplitude?
+- Work: analyzed Lippmann–Schwinger factorization G = G₀ + G₀·T·G₀. G₀ factors carry half-density weight at endpoints; T(E) is a scalar at the interaction point containing κ*. Rewrote T in terms of κ*, confirmed structural separation.
+- Result: Van Vleck = geometric (half-density transformation law); κ* = dynamical (scalarization constant). They are structurally independent, combine multiplicatively. Addresses Planck-area open problem #2 for the 2D delta witness.
+- Blackboard: `blackboards/2026-02-12-van-vleck-transmutation-2d-delta.md`
+- Next: optional C to promote this into Planck-area draft; or DX (due in ~1 cycle).
+
 ## 2026-02-12 (Q70)
 - Focus: referee pass on C115 (Remark PA-E5a in Planck-area draft).
 - Work: verified dimension match (κ*^{-1} = length^{d/2} for d = 2), β order claim, three-level hierarchy witnesses (D6.2a-sg, PA-E5, PA-D1.3), containment logic, cross-references to main manuscript Section 8.4 and P6.2.
