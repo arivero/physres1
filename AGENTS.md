@@ -11,6 +11,11 @@ This file applies to the entire repository.
 5. Before finalizing manuscript output, verify:
    `rg -n 'C[0-9]{2}' paper/main.md`
 
+## Workspace Hygiene
+1. **Blackboards** (`blackboards/`): max **7 files** (see `blackboards/README.md`). Delete before creating when at cap.
+2. **Paper notes** (`paper/notes/`): max **10 files** (see `paper/notes/README.md`). Retire integrated notes.
+3. Promoted content must not linger as a duplicate in the scratch layer.
+
 ## Sources Policy
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING` for later local ingestion.
