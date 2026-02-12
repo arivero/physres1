@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q66)
+- Focus: referee pass on C111 (Remark D9.1a — quadratic-symbol ordering + half-density bridge).
+- Work: re-derived the formula by operator algebra, verified physical application (position-dependent mass), confirmed half-density claim (standard diff-geom), checked cross-reference HD-D1.3 exists, verified notation consistency and placement logic.
+- Result: clean pass. All mathematics correct. No issues.
+- Next: per cadence, S or B on a priority thread. DX due in ~3 cycles.
+
 ## 2026-02-12 (C111)
 - Focus: promote S74 — add Remark D9.1a (quadratic-symbol ordering + half-density bridge) to Section 10.2.
 - Work: inserted 8-line remark after D9.1, before P9.1. Formula Q_W(fp²) - Q_L(fp²), position-dependent mass application, half-density resolution cross-ref.
