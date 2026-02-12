@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S81)
+- Focus: does the p=1 gauge-field preference at D=4 have an independent half-density origin?
+- Question: H4.0c states D = 2(p+1) for p-form marginality. At D=4, this gives p=1. Does the volume half-density framework independently select p=1?
+- Work: identified two mechanisms — (A) scalar half-density conjugation D(4-D)/4 = 0 (form-degree-independent, selects D=4), (B) middle-form conformal invariance D = 2(p+1) (form-degree-dependent, selects D=4 for p=1). Checked whether p-form Hodge Laplacian conjugation shifts the cancellation — it does, to D = 2(p+1), which is Mechanism B.
+- Result: p=1 is NOT forced by volume half-density. It requires RG marginality or middle-form conformal weight. The coincidence D/2 = 2 = p+1 at (D=4, p=1) is structural but traces back to a single arithmetic fact. Resolves deferred DX04 item.
+- Blackboard: `blackboards/2026-02-12-p1-gauge-half-density-origin.md`
+- Next: Q or C on a priority thread.
+
 ## 2026-02-12 (S80)
 - Focus: independence check — D(4-D)/4 operator vanishing (H4.0b) vs integrality sieve (PA-D1.3).
 - Question: are these two D=4 filters logically independent or the same filter in disguise?

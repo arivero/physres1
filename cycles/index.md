@@ -221,6 +221,7 @@
 - `S78` Completed.
 - `S79` Completed.
 - `S80` Completed.
+- `S81` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -322,13 +323,10 @@
 - `DX04` Completed.
 
 ## Next Action
-Priority: S80 confirmed D(4-D)/4 operator filter and integrality sieve are independent, cross-leg RCP check. No open anomalies.
-1. Cadence: ... → Q72 → S80 complete.
-2. Per cadence: next cycle should be C (promote S80 or another result) or S/B.
-3. DX check: DX04 was 6 cycles ago. Next DX due in ~4 cycles.
-
-Deferred:
-- Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
+Priority: S81 resolved the deferred DX04 item — p=1 selection is NOT from volume half-density, but from middle-form conformal weight / RG marginality. No open anomalies. No deferred items remaining.
+1. Cadence: ... → S80 → S81 complete.
+2. Per cadence: next cycle should be Q (referee pass on recent S81 finding) or C (promote a result) or B.
+3. DX check: DX04 was 8 cycles ago. Next DX due in ~2 cycles.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
