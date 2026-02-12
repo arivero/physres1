@@ -217,7 +217,7 @@ So the areal law is independent of the inverse-power index \(n\) in \(\mathbf F=
 `Heuristic H1.1 (Impulse-to-continuous interpretation).`
 The impulse model is a refinement scaffold for continuous forcing, not a literal claim that nature acts by discrete kicks. Its value is structural: invariants proven exactly at finite step survive controlled refinement.
 
-`Remark R1.1 (Convergence of the polygonal construction).`
+`Remark H1.1a (Convergence of the polygonal construction).`
 The passage from discrete polygonal orbits to a continuous trajectory is non-trivial: it depends on Newton's Lemma 3 (Book I, Section 1 of the *Principia*) and has been the subject of a scholarly debate. Nauenberg [Nauenberg2003KeplerArea] gives a modern reconstruction showing the polygonal construction has a well-defined continuum limit parameterizing a continuous planar curve; Pourciau [Pourciau2003] critically analyses the same limit and identifies conditions under which the impulse assumption requires additional care. For the purposes of this paper, the hedging in P1.1 ("whenever the limit exists in the standard differentiable sense") is sufficient: the structural content of the equal-area invariant at finite step is independent of the convergence subtleties.
 
 ## 3.4 Closed Question from the Section 2 Setup
