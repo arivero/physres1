@@ -13,6 +13,26 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (DX01)
+- Focus: first divergent exploration cycle — cross-thread probes and framing stress-tests.
+- Question: what cross-thread connections and structural tensions exist in the manuscript?
+- Work:
+  - Identified Newton impulse model = symplectic Euler integrator (connects Sections 3 ↔ 8).
+  - Identified half-density ↔ step-doubling complementarity (normalization vs functional corrections).
+  - Noted Berkeley's "The Analyst" (1734) as historical precursor to the refinement-paradox framing (user-suggested).
+  - Found dimension-selection asymmetry: half-density selects D=4, RG doesn't.
+  - Stress-tested RCP falsifiability: meta-principle risk, but concrete structural predictions provide escape.
+  - Populated docs/anomalies.md with 3 open entries.
+- Result: three anomalies registered, three follow-up cycles identified (S69, B15, deferred S70).
+- Sources touched: none (DX cycles don't edit bibliography).
+- Next: S69 (symplectic-Euler connection), B15 (Berkeley 1734), C104 done (label fix).
+
+## 2026-02-12 (C104)
+- Focus: rename Remark R1.1 → H1.1a (label taxonomy fix from Q60).
+- Work: one-line edit in paper/main.md.
+- Result: diffstat TOTAL +1 -1. Guard checks pass.
+- Next: DX01 (exploration).
+
 ## 2026-02-12 (Q60)
 - Focus: referee pass on C103.
 - Question: are the C103 changes (Runge--Kutta fix, R1.1, companion regularity) correct and consistent?

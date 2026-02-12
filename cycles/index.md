@@ -105,6 +105,7 @@
 101. `C101` Completed.
 102. `C102` Completed.
 103. `C103` Completed.
+104. `C104` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -275,13 +276,17 @@
 - `D15` Completed.
 
 ### Discovery Cycles — Explore (`DXnn`)
-(none yet — first DX cycle should run soon per the ~10-cycle cadence rule)
+- `DX01` Completed.
 
 ## Next Action
-Priority: fix label taxonomy issue from Q60, then consider exploration cycle.
-1. `C104`: rename `Remark R1.1` to `Remark H1.1a` (label prefix not in taxonomy; Q60 finding). Small edit, can be bundled with other work.
-2. Consider `DX01`: first divergent exploration cycle (overdue per ~10-cycle cadence rule; last full Recipe A chain completed).
+Priority: follow up on DX01 findings (symplectic-Euler connection, Berkeley source).
+1. `S69`: derive Newton-impulse ↔ symplectic-Euler connection explicitly in manuscript notation (blackboard).
+2. `B15`: add Berkeley (1734) "The Analyst" to bibliography (user-suggested; OA via Project Gutenberg or similar).
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
+
+Deferred:
+- `S70`: check whether D=4 conformal half-density result has an RG-side echo (dimension-selection asymmetry from DX01).
+- Claim-label namespace collision between main + companion: resolve before submission.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
