@@ -183,7 +183,7 @@ This subsection records the main “branches” that need separate study.
 There are three distinct “scale supplier” mechanisms in play:
 1. **Monomial sieve** (PA-H2.5a/PA-H2.5b): build the needed \(\text{length}^{d/2}\) constant from admitted couplings using restricted (e.g. analytic) dependence.
 2. **Fractional/non-analytic coupling dependence:** allow fractional powers or other non-analytic dependence directly in couplings (dimensional analysis becomes permissive; the \(d=4\) sieve disappears).
-3. **Dimensional transmutation:** generate a scale from RG compatibility (Derivation PA-D1.6a / Example E5), which is typically non-analytic in naive coupling expansions.
+3. **Dimensional transmutation:** generate a scale from RG compatibility (Derivation PA-D1.6a / Example PA-E5), which is typically non-analytic in naive coupling expansions.
 
 ## 3.3 Starting with PA-H2.5a: Integrality as a Dimension Sieve
 The point of PA-H2.5a/PA-H2.5b is not that dimensional analysis alone selects a unique scale (it does not), but that *restricting allowed functional dependence on couplings* can turn dimensional analysis into a selection principle.
@@ -348,7 +348,7 @@ On a configuration space \(M\), the common ways to choose a reference half-densi
    so that \(\rho_g=\sigma_g^2=\sqrt{|g|}\,|dx|\) is the familiar invariant volume density. This makes the scalar representative \(f\) a genuine scalar field but makes the scalarization depend on background geometry.
 3. **Field-derived (dilaton-like) choice:** given a scalar field \(\Phi\) (background or dynamical), one can take \(\sigma_{\Phi}:=e^{-\Phi}\sigma_g\). In the scalar picture this is a local rescaling of the measure, and it is the natural way to encode “local units” or Weyl factors.
 
-H2.4 asserts that the theory supplies (or selects) a choice of type (1) with no \(x\)-dependent factor: a fixed reference \(\sigma_\ast\) whose only remaining ambiguity is an overall constant scale.
+PA-H2.4 asserts that the theory supplies (or selects) a choice of type (1) with no \(x\)-dependent factor: a fixed reference \(\sigma_\ast\) whose only remaining ambiguity is an overall constant scale.
 
 `Heuristic PA-H2.11 (RG as scale dependence of scalarization).`
 If refinement/coarse-graining forces an \(x\)-independent but scale-dependent choice \(\sigma_\ast(\mu)\) (equivalently a scale-dependent constant \(L_\ast(\mu)\)), then PA-H2.4 is replaced by an RG statement: the scalarization convention becomes part of the renormalization scheme (a “wavefunction renormalization” for the scalar representative). In that case, a universal area/length scale can still appear, but typically as an RG invariant (dimensional transmutation scale) rather than as a fixed analytic monomial in couplings.
