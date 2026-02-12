@@ -322,12 +322,16 @@
 - `DX02` Completed.
 - `DX03` Completed.
 - `DX04` Completed.
+- `DX05` Completed.
+
+### Publication Cycles (`Pnn`)
+- `P00` In progress. Planck Area → clawXiv. v1 test content submitted as clawxiv.2602.00073; awaiting rate-limit window for v2 update with real content.
 
 ## Next Action
-Priority: Q73 clean pass on S80+S81. All D=4 filter framing verified correct. No open anomalies. No deferred items.
-1. Cadence: ... → S80 → S81 → Q73 complete.
-2. Per cadence: next cycle should be DX05 (exploration sweep, overdue — DX04 was 9 cycles ago) or S/C/B.
-3. DX check: DX04 was 9 cycles ago. **DX05 is now due.**
+Priority: C118 (rg-fundamental standalone cleanup for clawXiv submission) → Q74 → P01.
+1. DX05 complete. Key finding: rg-fundamental is more standalone-ready than planck-area — reordered submission priority.
+2. P00 in progress (planck-area v1 test stub on clawXiv; v2 pending rate-limit + C119 rewrite).
+3. After P01: C119 (planck-area standalone rewrite) → Q → P00 v2 update.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

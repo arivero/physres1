@@ -53,7 +53,14 @@ We use five independent numbered tracks:
 5. **Quality cycles** (`Qnn`): referee-style pass on a specific `Cnn` (clarity, correctness, claim hygiene, reader experience).
    - Typical outputs: the `cycles/Qnn-*.md` review itself plus spawned follow-up cycles (`D/S/B/C`).
 
-These tracks are designed to be *interleaved*, but under the strict rule that only `C` edits manuscripts and `Q` reviews `C`.
+6. **Publication cycles** (`Pnn`): polish-and-push cycles that prepare a finished manuscript for submission to an external preprint server (clawXiv, aiXiv).
+   - Typical outputs: compiled `.tex`/`.bib` in the target paper directory, API submission, `docs/publications.md` ledger update.
+   - Rule: **no content changes** — if content needs fixing, spawn a `C` cycle first.
+   - Rule: a `P` cycle requires a completed `Q` on the most recent `C` for that paper.
+   - Rule: **max 1 P cycle per 7 days** (self-imposed rate limit).
+   - Server routing: math papers (`math.MP`, `math.FA`, `math.QA`) → clawXiv; physics/QFT (`hep-th`) → aiXiv.
+
+These tracks are designed to be *interleaved*, but under the strict rule that only `C` edits manuscripts, `Q` reviews `C`, and `P` only submits (never edits content).
 
 ## Allowed/Forbidden Files by Cycle Type
 This table is the operational “permissions model” for agents.
@@ -66,8 +73,9 @@ This table is the operational “permissions model” for agents.
 | `Bnn` | `paper/bibliography.md`, `sources/*`, `sources/pending-*.md`, `cycles/Bnn-*.md` | Manuscripts, blackboards/notes (unless spawning an `S`) |
 | `Cnn` | Manuscripts (`paper/main.md`, `papers/*/main.md`) + `cycles/Cnn-*.md` (and tracked build artifacts if used) | `blackboards/`, `paper/notes/`, bibliography ledger, `sources/` |
 | `Qnn` | `cycles/Qnn-*.md` only | Manuscripts, blackboards/notes, bibliography ledger, `sources/` |
+| `Pnn` | `cycles/Pnn-*.md`, `.tex`/`.bib` in target paper dir (compile only), `docs/publications.md` | Manuscripts (`.md`), blackboards/notes, bibliography ledger, `sources/` |
 
-If a task would require touching forbidden files, spawn the appropriate cycle type instead of “just doing it.”
+If a task would require touching forbidden files, spawn the appropriate cycle type instead of "just doing it."
 
 ## Canonical Interleavings (Recipes)
 ### Recipe A (default discovery-to-prose loop)
@@ -90,6 +98,10 @@ Use when a claim is known to be standard but needs both an anchor and a local re
 `DX → (S) → D-triage → ...`
 Use periodically (at least once every ~10 cycles) to check for surprises, cross-thread connections, and framing drift. DX does not directly spawn C cycles; it feeds back into D-triage or S.
 
+### Recipe E (publication pipeline)
+`C → Q → P`
+Use when a paper is content-complete. The `P` cycle does final LaTeX polish, .bib generation, compilation check, and API submission. If `P` discovers content issues, it spawns `C` (not direct edits). Max 1 `P` per 7 days.
+
 ## Cross-Cycle Spawning (How Work Begets Work)
 Use this rule of thumb:
 - If the task is "choose novelty + triage": spawn `D` (triage).
@@ -98,6 +110,7 @@ Use this rule of thumb:
 - If the task is "find/ingest/verify a reference": spawn `B`.
 - If the task is "write or restructure manuscripts": spawn `C`.
 - If the task is "referee review of a manuscript change": spawn `Q` (and name the parent `C`).
+- If the task is "submit a finished paper to a preprint server": spawn `P` (requires a recent `Q` pass).
 
 **Exploration cadence rule:** run a `DX` (explore) cycle at least once every ~10 cycles, or after completing any full Recipe A chain. This prevents the system from grinding forward without questioning its framing.
 
