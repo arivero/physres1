@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q72)
+- Focus: referee pass on C117 (Remark PA-D1.3a in Planck-area draft).
+- Work: verified parity argument (half-integer target for odd d), magnitude inequality (k < 1 for even d ≥ 6), degenerate case (d = 2), uniqueness of d = 4, scope consistency with PA-D1.3.
+- Result: clean pass. All algebraic claims verified. PA-D1.3 + PA-D1.3a now give complete gravity-only sieve.
+- Next: S or B on a priority thread.
+
 ## 2026-02-12 (C117)
 - Focus: promote S79 three-mechanism obstruction classification into Planck-area draft.
 - Work: inserted Remark PA-D1.3a (~3 lines) after PA-D1.3. Parity (odd d), magnitude (even d ≥ 6), degenerate (d = 2). d = 4 uniquely un-obstructed.

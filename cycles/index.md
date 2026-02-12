@@ -294,6 +294,7 @@
 - `Q69` Completed.
 - `Q70` Completed.
 - `Q71` Completed.
+- `Q72` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -320,11 +321,10 @@
 - `DX04` Completed.
 
 ## Next Action
-Priority: C117 promoted S79 three-mechanism obstruction classification (PA-D1.3a). No open anomalies.
-1. Cadence: ... → S79 → C117 complete.
-2. Per cadence: next cycle should be Q72 (referee pass on C117).
-3. After Q72: S or B on a priority thread.
-4. DX check: DX04 was 4 cycles ago. Next DX due in ~6 cycles.
+Priority: Q72 clean pass on C117. PA-D1.3 + PA-D1.3a now give complete gravity-only sieve. No open anomalies.
+1. Cadence: ... → C117 → Q72 complete.
+2. Per cadence: next cycle should be S or B on a priority thread.
+3. DX check: DX04 was 5 cycles ago. Next DX due in ~5 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
