@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S76)
+- Focus: linear vs nonlinear beta functions — when does a semigroup generate a transmutation scale?
+- Question: is D6.2a-sg (linear β, ODE step-refinement) a witness for PA-H2.13 (dimensional transmutation), or are they structurally different?
+- Work: computed RG invariants for both cases. Linear β → algebraic (power-law) invariant, no transmutation. Nonlinear β (order ≥ 2 at fixed point) → essential singularity, transmutation. Cross-thread probe: Thread 1 (main paper RG) ↔ Thread 2 (Planck-area scale-supplier).
+- Result: D6.2a-sg witnesses P6.2 (semigroup axioms) but NOT PA-H2.13 (transmutation). The structural boundary is the order of vanishing of β at the fixed point: n=1 (linear) vs n≥2 (nonlinear).
+- Blackboard: `blackboards/2026-02-12-linear-vs-nonlinear-beta-transmutation.md`
+- Next: optional C cycle for a parenthetical clarifying the linear/nonlinear boundary. Regular cadence: C cycle on priority thread.
+
 ## 2026-02-12 (Q68)
 - Focus: referee pass on C113 (Section 9 signaling edits).
 - Work: verified all three cross-references (D6.2a-sg at line 972, D9.1a at line 1230, §10.2 at line 1195). Checked accuracy, claim scope, LaTeX format, paragraph structure.

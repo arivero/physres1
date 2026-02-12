@@ -212,6 +212,7 @@
 - `S73` Completed.
 - `S74` Completed.
 - `S75` Completed.
+- `S76` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -308,11 +309,11 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: Q68 clean pass on C113. No open anomalies. RCP v4 reinforced. DX03 recent.
-1. Cadence: ... → DX03 → C113 → Q68 complete.
-2. Per cadence: next cycle should be S or B on a priority thread from research-state.md.
-3. Thread priorities: (1) half-density / Planck-area, (2) main paper coherence, (3) RG follow-up.
-4. DX check: DX03 was 2 cycles ago. Next DX due in ~8 cycles.
+Priority: S76 clarified linear vs nonlinear beta boundary (D6.2a-sg ↔ PA-H2.13). No open anomalies.
+1. Cadence: ... → Q68 → S76 complete.
+2. Per cadence: next cycle should be C (promote into main manuscript or Planck-area draft).
+3. S76 promotion candidate: optional parenthetical on linear/nonlinear beta boundary. Low priority — the blackboard provides the reference. Alternatively, C on another priority thread.
+4. DX check: DX03 was 3 cycles ago. Next DX due in ~7 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
