@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S75)
+- Focus: semigroup structure of the step-refinement control map (extending D6.2a).
+- Question: does τ_b ∘ τ_c = τ_{bc} for the toy ODE control map? What is the continuous beta function?
+- Work: computed τ_b(a) = a/b + (b-1)/(2b) for general refinement factor b. Verified semigroup law algebraically. Computed continuous limit: β(a) = 1/2 - a, exponential relaxation to a* = 1/2.
+- Result: semigroup law holds exactly at O(h²). The control map is a concrete closed-form RG semigroup with a universally attractive fixed point. Converts H6.2's "analogy" into a derived structure.
+- Blackboard: `blackboards/2026-02-12-step-refinement-semigroup.md`
+- Next: C cycle to promote as a remark extending D6.2a. DX due in ~2 cycles.
+
 ## 2026-02-12 (Q66)
 - Focus: referee pass on C111 (Remark D9.1a — quadratic-symbol ordering + half-density bridge).
 - Work: re-derived the formula by operator algebra, verified physical application (position-dependent mass), confirmed half-density claim (standard diff-geom), checked cross-reference HD-D1.3 exists, verified notation consistency and placement logic.

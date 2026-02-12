@@ -209,6 +209,7 @@
 - `S72` Completed.
 - `S73` Completed.
 - `S74` Completed.
+- `S75` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -302,11 +303,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: Q66 passed C111 clean. No open anomalies. No pending S results awaiting promotion.
-1. Cadence: ... → S74 → C111 → Q66 complete.
-2. Per cadence: next cycle should be S or B on a priority thread.
-3. Natural candidates: (a) S cycle to advance a priority thread, (b) B cycle if any claim needs an independent anchor.
-4. DX check: DX02 was ~8 cycles ago. Next DX due in ~3 cycles (trigger at ~10).
+Priority: S75 derived semigroup structure of D6.2a control map. Promotion candidate ready. No open anomalies.
+1. Cadence: ... → C111 → Q66 → S75 complete.
+2. Per cadence: next cycle should be C (promote S75 result as remark extending D6.2a in Section 8.4).
+3. Natural candidate: C112 (add general τ_b formula, semigroup law, and beta function to Section 8.4).
+4. DX check: DX02 was ~9 cycles ago. Next DX due in ~2 cycles (trigger at ~10).
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
