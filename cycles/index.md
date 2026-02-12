@@ -259,6 +259,7 @@
 - `Q58` Completed.
 - `Q59` Completed.
 - `Q60` Completed.
+- `Q61` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -283,9 +284,9 @@
 
 ## Next Action
 Priority: follow up on DX01 findings (symplectic-Euler connection, Berkeley source).
-1. `Q61`: referee pass on C105 (symplectic-Euler H1.2 + Berkeley citation).
-2. Consider `B16`: add Nauenberg (1994) to bibliography (symplectic structure of Newton's method; identified in B13 but not yet in ledger).
-3. Continue monitoring anomalies from DX01.
+1. `B16`: add [Nauenberg1994SymplecticNewton] to bibliography (symplectic structure of Newton's method; Q61 finding).
+2. `C106` (micro): add Nauenberg (1994) citation to H1.2.
+3. Continue monitoring anomalies from DX01 (dimension-selection asymmetry, RCP falsifiability).
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deferred:

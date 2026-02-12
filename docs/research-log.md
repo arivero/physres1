@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q61)
+- Focus: referee pass on C105.
+- Result: clean. H1.2 label collision with companion (known, deferred). Missing Nauenberg (1994) attribution → spawn B16.
+- Next: B16 + micro-C106.
+
 ## 2026-02-12 (C105)
 - Focus: promote symplectic-Euler remark + Berkeley citation.
 - Work:
