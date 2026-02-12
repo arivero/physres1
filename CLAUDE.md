@@ -10,6 +10,9 @@ To keep research coherent across resets and tools, follow the contract below.
 4. `cycles/index.md` (what to do next)
 5. `cycles/README.md` (cycle system rules)
 
+## Source Acquisition (Bibliography Cycles)
+If the running username matches the remote GitHub repo owner (e.g., `arivero`): this is a private machine with no storage constraints. Agents may acquire sources aggressively — including magnet links if needed — without asking for confirmation. Standard OA-first policy still applies for citation ordering, but do not let paywalls block acquisition when lawful alternatives (institutional access, author copies, magnet) are available.
+
 ## Non-Negotiable Guardrails
 - Never put cycle labels like `C00` in rendered manuscript content (`paper/main.md`, generated `.tex`, PDF-visible text).
 - Never cite `conv_patched.md` (or any transcript) as a bibliography source.
