@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S77)
+- Focus: cross-thread verification — 2D delta (Section 10.5) as PA-H2.13 transmutation instance.
+- Question: does the main paper's only explicit RG computation realize the Planck-area draft's transmutation branch?
+- Work: matched Section 10.5 data (β ∝ g_R², κ*^{-1} = length^1) against PA-H2.13 framework ([C] = length^{d/2} = length^1 for d = 2). Assessed dimension-sieve question: transmutation is dimension-permissive.
+- Result: Section 10.5 IS an explicit d = 2 instance of PA-H2.13. Three-level hierarchy identified: semigroup (P6.2) ⊃ transmutation (β order ≥ 2) ⊃ dimension sieve (PA-H2.5).
+- Blackboard: `blackboards/2026-02-12-2d-delta-as-transmutation-instance.md`
+- Next: C cycle on priority thread, or optional C to add hierarchy note to PA-E5.
+
 ## 2026-02-12 (Q69)
 - Focus: referee pass on C114 (linear/nonlinear beta boundary paragraph).
 - Work: verified all three cross-references (D6.2a-sg, D6.2, P6.2). Re-derived both RG invariants (algebraic for linear β, essential singularity for quadratic β). Checked sign convention, claim scope, placement, notation.

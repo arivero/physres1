@@ -214,6 +214,7 @@
 - `S74` Completed.
 - `S75` Completed.
 - `S76` Completed.
+- `S77` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -311,11 +312,11 @@
 - `DX03` Completed.
 
 ## Next Action
-Priority: Q69 clean pass on C114. No open anomalies. RCP v4 holds.
-1. Cadence: ... → S76 → C114 → Q69 complete.
-2. Per cadence: next cycle should be S or B on a priority thread from research-state.md.
-3. Thread priorities: (1) half-density / Planck-area, (2) main paper coherence, (3) RG follow-up.
-4. DX check: DX03 was 5 cycles ago. Next DX due in ~5 cycles.
+Priority: S77 verified Section 10.5 as d=2 PA-H2.13 instance. Three-level hierarchy: semigroup ⊃ transmutation ⊃ sieve. No open anomalies.
+1. Cadence: ... → Q69 → S77 complete.
+2. Per cadence: next cycle should be C (promote S77 result or work on another priority thread).
+3. S77 promotion candidate: optional note in PA-E5 (Planck-area draft). Alternatively, C on main paper.
+4. DX check: DX03 was 6 cycles ago. Next DX due in ~4 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
