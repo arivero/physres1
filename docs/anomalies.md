@@ -17,12 +17,13 @@ file as input and either resolve, promote, or carry forward each open entry.
 
 ## Open entries
 
-### 2026-02-12 — Scalarization gauge ↔ ordering ambiguity parallel (source: DX02)
-- **What happened:** DX02 Probe B found a structural parallel between scalarization gauge freedom (PA-D1.7: changing sigma_* rescales the scalar representative by r^{-1}) and ordering ambiguity (Section 10.2: different quantization prescriptions differ by O(hbar)). Both are "representative choices with controlled freedom." The connection would be: scalarizing a half-density kernel by different sigma_* choices yields different scalar kernels, which define different quantization maps.
-- **Why it matters:** if confirmed, this would give a geometric origin for representation compatibility (RCP's Q_hbar leg): changing the scalarization gauge IS changing the ordering prescription, and RCP says these must yield the same classical limit.
-- **Status:** OPEN — needs a toy computation (spawned S73, optional). Could be refuted if sigma_* rescaling acts on kernel amplitude (zeroth-order in hbar) rather than on phase (which controls ordering).
+*(No open entries.)*
 
 ## Resolved / promoted entries
+
+### 2026-02-12 — Scalarization gauge ↔ ordering ambiguity parallel (source: DX02)
+- **What happened:** DX02 Probe B found a structural parallel between scalarization gauge freedom (PA-D1.7: changing sigma_* rescales the scalar representative by r^{-1}) and ordering ambiguity (Section 10.2: different quantization prescriptions differ by O(hbar)). Both are "representative choices with controlled freedom."
+- **Status:** RESOLVED (S73) — notational parallel only. 1D toy computation shows sigma_* rescaling acts on kernel amplitude (zeroth-order in hbar), not on phase. x-dependent rescaling generates connection-type O(hbar) corrections (∝ ∂ ln r · f), which are algebraically independent of ordering corrections (∝ ∂f). Scalarization is a gauge transformation on the Hilbert-space bundle; ordering is a choice of quantization map on the observable algebra.
 
 ### 2026-02-12 — RCP falsifiability / tautology risk (source: DX01)
 - **What happened:** RCP could be read as tautological (quantum anomalies interpretable as both violations and confirmations).

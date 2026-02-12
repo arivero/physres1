@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S73)
+- Focus: test scalarization-gauge ↔ ordering-ambiguity connection (DX02 anomaly).
+- Question: does changing σ_* in a half-density kernel produce a known ordering correction, or does it act orthogonally?
+- Work: 1D QM toy model. Compared flat (σ₁ = |dx|^{1/2}) and metric-derived (σ₂ = g^{1/4}|dx|^{1/2}) scalarizations. Applied PA-D1.7 rescaling to kernel of Q_L(f(q)p). Expanded near diagonal using distributional identities. Compared correction structure with Weyl–left ordering difference from Section 10.2.
+- Result: **DX02 anomaly resolved as "notational parallel only."** σ_*-rescaling acts on kernel amplitude (ℏ-independent), not phase. x-dependent rescaling generates connection-type O(ℏ) corrections (∝ ∂ ln r · f), algebraically independent of ordering corrections (∝ ∂f). Scalarization = gauge on Hilbert-space bundle; ordering = choice on observable algebra. These commute.
+- Blackboard: `blackboards/2026-02-12-scalarization-vs-ordering-1D.md`
+- Next: per cadence, C or B on a priority thread. No open anomalies. DX due in ~9 cycles.
+
 ## 2026-02-12 (Q64)
 - Focus: referee pass on C109 (Remark HD-D1.3a in half-density-qft).
 - Work: verified claim boundaries, notation, mathematics (xi = D/(4(D-1)), residual D/2), placement, and cross-reference with PA-H2.6a.

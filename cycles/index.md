@@ -204,6 +204,7 @@
 - `S70` Completed.
 - `S71` Completed.
 - `S72` Completed.
+- `S73` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -295,14 +296,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: Q64 passed C109 clean. One OPEN anomaly (scalarization ↔ ordering, from DX02).
-1. Cadence: ... → C109 → DX02 → Q64 complete.
-2. Per cadence: next cycle should be S or B on a priority thread.
-3. Natural candidate: S73 (test scalarization ↔ ordering connection), which addresses the DX02 anomaly and is on the half-density priority thread.
-4. DX check: DX02 just completed. Next DX due in ~10 cycles.
-
-Spawned from DX02 (optional):
-- `S73`: test scalarization-gauge ↔ ordering-ambiguity connection in a toy model.
+Priority: S73 resolved the DX02 anomaly (scalarization ↔ ordering: notational parallel only). No open anomalies.
+1. Cadence: ... → C109 → DX02 → Q64 → S73 complete.
+2. Per cadence: next cycle should be C or B on a priority thread. No pending S results awaiting promotion.
+3. Natural candidates: (a) B cycle to anchor any pending bibliography, (b) C cycle on a priority thread if there are mature S results to promote, (c) new S cycle to advance a priority thread.
+4. DX check: DX02 was ~2 cycles ago. Next DX due in ~9 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
