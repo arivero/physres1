@@ -218,6 +218,7 @@
 - `S76` Completed.
 - `S77` Completed.
 - `S78` Completed.
+- `S79` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -318,10 +319,10 @@
 - `DX04` Completed.
 
 ## Next Action
-Priority: Q71 clean pass on C116. PA-E5/PA-E5a/PA-E5b trio complete. No open anomalies.
-1. Cadence: ... → C116 → Q71 complete.
-2. Per cadence: next cycle should be S or B on a priority thread.
-3. DX check: DX04 was 2 cycles ago. Next DX due in ~8 cycles.
+Priority: S79 classified three obstruction mechanisms for the integrality sieve (parity / magnitude / degenerate). d=4 uniquely un-obstructed. Addresses PA open problem #3.
+1. Cadence: ... → Q71 → S79 complete.
+2. Per cadence: next cycle should be C (promote S79 classification) or continue S/B.
+3. DX check: DX04 was 3 cycles ago. Next DX due in ~7 cycles.
 
 Deferred:
 - Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.

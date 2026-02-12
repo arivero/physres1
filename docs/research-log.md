@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S79)
+- Focus: odd-dimension obstruction for the half-density integrality sieve (PA-H2.5a).
+- Question: can the gravity-only integrality sieve produce length^{d/2} for odd d?
+- Work: checked parity — for odd d, d/2 is half-integer but monomial dimensions are always integer. Categorical exclusion. Enumerated even-d cases. Classified three distinct obstruction mechanisms: parity (odd d), magnitude (even d ≥ 6), degenerate (d = 2). Noted fermionic escape route (half-integer coupling dimensions).
+- Result: d = 4 is uniquely un-obstructed. Odd-d exclusion is qualitatively different (parity) from even-d exclusion (magnitude). Transmutation bypasses all obstructions. Addresses Planck-area open problem #3.
+- Blackboard: `blackboards/2026-02-12-odd-dimension-half-density-obstruction.md`
+- Next: optional C to promote three-mechanism classification; or continue S/B.
+
 ## 2026-02-12 (Q71)
 - Focus: referee pass on C116 (Remark PA-E5b in Planck-area draft).
 - Work: verified Lippmann–Schwinger factorization claim, T-matrix scalarity (confirmed against D11.1), all cross-references (PA-D1.4, PA-H2.1–H2.4), notation consistency, claim-label hygiene.
