@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (S70)
+- Focus: check whether D=4 conformal half-density result has an RG-side analog (DX01 anomaly follow-up).
+- Question: does the RG / renormalization side of the manuscript also single out D=4?
+- Work: analyzed three candidate RG echoes — (1) YM power-counting marginality, (2) YM conformal invariance, (3) trace-anomaly/beta-function link. Identified form-degree matching 2(p+1)=4 for p=1.
+- Result: yes, RG echoes D=4, but the echo is coupling-specific/dynamic (not universal/kinematic like the half-density one). The asymmetry is real: half-density selects the arena, RG constrains the dynamics within it. DX01 dimension-selection anomaly resolved. Promotion candidate H4.0c ready.
+- Sources touched: none.
+- Next: C107 (promote H4.0c remark into paper/main.md near H4.0b).
+
 ## 2026-02-12 (Q61)
 - Focus: referee pass on C105.
 - Result: clean. H1.2 label collision with companion (known, deferred). Missing Nauenberg (1994) attribution → spawn B16.

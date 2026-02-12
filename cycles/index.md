@@ -198,6 +198,7 @@
 - `S67` Completed.
 - `S68` Completed.
 - `S69` Completed.
+- `S70` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -285,15 +286,14 @@
 - `DX01` Completed.
 
 ## Next Action
-Priority: follow up on DX01 findings (symplectic-Euler connection, Berkeley source).
-1. Continue monitoring anomalies from DX01 (dimension-selection asymmetry, RCP falsifiability).
-2. Consider `S70`: check whether D=4 conformal half-density result has an RG-side analog.
+Priority: promote S70 findings into manuscript.
+1. `C107`: promote H4.0c remark (RG-side echo of D=4 half-density cancellation) into `paper/main.md` near H4.0b.
+2. Continue monitoring anomalies from DX01 (RCP falsifiability — still OPEN).
 3. Claim-label namespace collision: resolve before submission.
-3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Deferred:
-- `S70`: check whether D=4 conformal half-density result has an RG-side echo (dimension-selection asymmetry from DX01).
 - Claim-label namespace collision between main + companion: resolve before submission.
+- Future DX: revisit whether p=1 gauge-field preference has an independent half-density origin.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
