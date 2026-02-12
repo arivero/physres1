@@ -13,6 +13,17 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (B13)
+- Focus: Newton polygonal limit bibliography inspection — does the manuscript's Newton-limit convergence claim have adequate scholarly anchoring?
+- Question: are there published results rigorously proving that Newton's impulse polygon converges to a smooth orbit?
+- Work:
+  - Web search for Pourciau–Nauenberg debate on Newton's Proposition I convergence.
+  - Identified key references: Pourciau (2003) Arch. Hist. Exact Sci. 57, Nauenberg (2003) Hist. Math. 30, Nauenberg (1994) Arch. Hist. Exact Sci. 46, Erlichson (2003) Hist. Math. 30, Pourciau (2001) Hist. Math. 28, Chandrasekhar (1995) OUP.
+  - Created a recommended chat prompt for the user to explore the topic further.
+- Result: two candidate citations (Nauenberg 2003, Pourciau 2003) recommended for Section 3 Newton-limit anchoring in C103.
+- Sources touched: none (references identified but not acquired).
+- Next: C103 (port regularity parenthetical + Runge-Kutta fix + Newton-limit citations).
+
 ## 2026-02-12 (Q59)
 - Focus: referee pass on C102 (rooted-tree notation consistency between main + rg-fundamental).
 - Question: is the F([•]) notation now consistent across both papers after C102?

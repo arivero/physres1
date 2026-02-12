@@ -119,6 +119,7 @@
 - `B10` Completed.
 - `B11` Completed.
 - `B12` Completed.
+- `B13` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -270,8 +271,8 @@
 - `D14` Completed.
 
 ## Next Action
-Priority: small fixes from Q59, then housekeeping.
-1. `C103`: port minimal-regularity parenthetical to companion D1.0 + fix "Runge-Kutta" → "Runge--Kutta" in main paper line 972.
+Priority: small fixes from Q59, Newton limit anchoring from B13, then housekeeping.
+1. `C103`: port minimal-regularity parenthetical to companion D1.0 + fix "Runge-Kutta" → "Runge--Kutta" in main paper line 972. Also: add Nauenberg (2003) + Pourciau (2003) citations to Section 3 (Newton limit convergence anchor from B13).
 2. `D15`: record the cached diffstat and guard checks for `C100` in its execution log.
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
