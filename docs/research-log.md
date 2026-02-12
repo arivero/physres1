@@ -13,6 +13,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q58 + C102)
+- Focus: workspace hygiene and rooted-tree notation polish.
+- Question: (Q58) blackboards have grown to 65 files with all content promoted — can they be cleaned? (C102) F([•]) notation is used without definition in main paper.
+- Work:
+  - Q58: deleted all 65 dated blackboard files. Updated `blackboards/README.md` with 7-board hard cap and delete-before-create policy. Created `paper/notes/README.md` with 10-notebook cap and retire-when-integrated lifecycle. Added Workspace Hygiene section to `AGENTS.md`.
+  - C102: in `paper/main.md` Remark D6.2a1, added f ∈ C² scope, defined F([•]):=f'(y)[f(y)] and F([•,•]):=f''(y)[f(y),f(y)] inline, clarified that O(h³) needs C² while O(h²) only needs C¹.
+- Result: blackboards clean (0 files), policy enforced going forward. Rooted-tree notation now defined at point of use with minimal regularity stated.
+- Sources touched: none.
+- Next: D15 (backfill C100 logging), Q59 (referee pass on C102).
+
 ## 2026-02-09
 - Focus: establish a durable workflow for continuing research after `paper/main.tex` exists.
 - Question: how to keep exploration “free” while preventing policy violations in the manuscript and bibliography?

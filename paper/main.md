@@ -961,12 +961,12 @@ H(\Phi_h^{(a)})=\Phi_h^{(\tau_2(a))}+O(h^3),\qquad \tau_2(a)=\frac{a}{2}+\frac14
 with fixed point \(a_\ast=1/2\) (the second-order Taylor coefficient of the exact flow). This is a clean micro-model for `Derivation D6.0`: \(\tau_b\) is the control map required so that "refine and compare" lands back in the chosen family; failure of closure forces enlarging the family (counterterms).
 
 `Remark D6.2a1 (Next discrepancy term and the next rooted tree in Euler step-doubling).`
-For the explicit Euler map \(E_h(y):=y+h f(y)\), expanding one order further gives
+For the explicit Euler map \(E_h(y):=y+h f(y)\) with \(f\in C^2\), expanding one order further gives
 \[
 E_{h/2}\!\circ E_{h/2}(y)-E_h(y)
 =\frac{h^2}{4}\,f'(y)[f(y)]+\frac{h^3}{16}\,f''(y)[f(y),f(y)]+O(h^4),
 \]
-where \(f''(y)[v,w]\) is the bilinear second derivative. In rooted-tree language, the new \(O(h^3)\) term is the order-3 branch-tree elementary differential \(F([\bullet,\bullet])\).
+where \(f'(y)[v]\) denotes the Jacobian acting on a vector and \(f''(y)[v,w]\) is the bilinear second derivative. In rooted-tree language, each monomial in the Taylor expansion is an *elementary differential* labelled by a rooted tree: the leading \(O(h^2)\) term is the chain tree \(F([\bullet]):=f'(y)[f(y)]\), and the new \(O(h^3)\) term is the branch tree \(F([\bullet,\bullet]):=f''(y)[f(y),f(y)]\). (The \(O(h^3)\) contribution requires \(f\in C^2\); the \(O(h^2)\) term only needs \(f\in C^1\).)
 
 `Heuristic H6.2 (Rooted trees as refinement bookkeeping).`
 In Runge-Kutta and related integrators, the comparison between composed steps and a single step organizes into rooted-tree expansions; the corresponding composition law forms a group (the Butcher group). Interpreting “step-halving then rescaling back” as a scale-update operation makes the analogy with RG bookkeeping explicit, and rooted-tree/Hopf-algebra combinatorics also appears in perturbative renormalization [Brouder1999] [McLachlan2017] [ConnesKreimer2000].

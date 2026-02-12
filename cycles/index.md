@@ -103,7 +103,7 @@
 99. `C99` Completed.
 100. `C100` Completed.
 101. `C101` Completed.
-102. `C102` Planned.
+102. `C102` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -267,9 +267,9 @@
 - `D14` Completed.
 
 ## Next Action
-Priority: backfill the `C100` logging gap and address the rooted-tree notation/scope polish.
+Priority: backfill the `C100` logging gap and continue quality monitoring.
 1. `D15`: record the cached diffstat and guard checks for `C100` in its execution log.
-2. `C102`: define the \(F([\bullet])\) / \(F([\bullet,\bullet])\) notation on first use and state the \(C^2\) scope for the \(O(h^3)\) remark in both manuscripts.
+2. `Q59`: referee pass on `C102` (verify notation consistency across main + rg-fundamental).
 3. Continue monitoring for any `Q` follow-up on `C101` if new clarifications are added.
 
 Optional (time-capped):
