@@ -226,6 +226,7 @@
 - `S80` Completed.
 - `S81` Completed.
 - `S82` Completed.
+- `S83` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -335,10 +336,11 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: continue S/C on priority threads (half-densities / Planck-area ladder).
+Priority: C121 to promote S83 (2D delta Van Vleck/transmutation separation), then Q.
 1. P00 complete (planck-area v2 live). P01 (rg-fundamental) rate-limited until Feb 20.
-2. S82+C120+Q76 complete: PA-D1.4a verified. Open Problem #1 addressed.
-3. Next: S cycle on a priority thread. Candidates: Open Problem #2 (area scale in stationary-phase + RG), Open Problem #4 (minimal hypotheses for Planck area).
+2. S82+C120+Q76: Open Problem #1 addressed (PA-D1.4a).
+3. S83 complete: Open Problem #2 addressed in 2D delta model (Van Vleck vs transmutation separation via Lippmann–Schwinger).
+4. Next: C121 (promote S83 as Remark PA-E5c), then Q77.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

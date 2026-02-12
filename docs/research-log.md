@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S83: 2D delta resolvent — Van Vleck vs transmutation separation)
+- Focus: concrete computation for Open Problem #2 — how the area scale (generalized to length^{d/2}) enters prefactors and how it interacts with RG.
+- Question: in the 2D delta resolvent G = G₀ + G₀TG₀, do the half-density weight and transmutation scale separate cleanly?
+- Work: wrote out G₀ as bi-half-density ([G₀] = length^{-d}), T-matrix as scalar ([T] = length^d, contains κ_*). Showed Lippmann–Schwinger factorization cleanly separates geometric (Van Vleck, from G₀) and dynamical (transmutation, from T) scales. Scalarization constant = κ_*^{-d/2} = κ_*^{-1} for d=2.
+- Result: PA-E5b's abstract claim is now concrete. Van Vleck and transmutation are structurally independent, combine multiplicatively. For d=4: same structure with scalarization = Λ_*^{-2} = area.
+- Blackboard: `blackboards/2026-02-13-2d-delta-resolvent-half-density-separation.md`
+- Next: C121 (promote as Remark PA-E5c), then Q77.
+
 ## 2026-02-13 (Q76: referee pass on C120)
 - Focus: verify PA-D1.4a algebra (three-way d/2 cancellation, "only for d/2" claim, Van Vleck identification).
 - Work: SymPy verification of the semigroup prefactor product. Confirmed ratio = 1 for d/2, nontrivial for general α. Line-by-line review of 8 statements in PA-D1.4a.
