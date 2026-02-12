@@ -264,6 +264,7 @@
 - `Q59` Completed.
 - `Q60` Completed.
 - `Q61` Completed.
+- `Q62` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -287,10 +288,10 @@
 - `DX01` Completed.
 
 ## Next Action
-Priority: referee pass on C107, then continue cadence.
-1. `Q62`: referee pass on C107 (H4.0c insertion).
-2. Continue monitoring anomalies from DX01 (RCP falsifiability — still OPEN).
-3. Claim-label namespace collision: resolve before submission.
+Priority: continue cadence after S70 → C107 → Q62 chain.
+1. Continue monitoring anomalies from DX01 (RCP falsifiability — still OPEN).
+2. Claim-label namespace collision: resolve before submission.
+3. Per cadence: next cycle should be S or B (verification support after C107).
 
 Deferred:
 - Claim-label namespace collision between main + companion: resolve before submission.
