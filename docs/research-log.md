@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-12 (Q64)
+- Focus: referee pass on C109 (Remark HD-D1.3a in half-density-qft).
+- Work: verified claim boundaries, notation, mathematics (xi = D/(4(D-1)), residual D/2), placement, and cross-reference with PA-H2.6a.
+- Result: clean pass. All claims correct. Minor precision note on "conformal weight" wording (non-blocking). Pre-existing stale blackboard reference in PA-H2.6a noted (not from C109). No follow-up cycles required.
+- Next: per cadence, S or B on a priority thread. Optional S73 (DX02 anomaly) is natural next target.
+
 ## 2026-02-12 (DX02)
 - Focus: cross-thread exploration — half-density bridge, conformal filter, and RCP scope.
 - Question: (1) Is the half-density/RG bridge (RG-H1.12) a gap in the main paper? (2) Does the conformal D=4 cancellation challenge the RCP framing? (3) Are scalarization gauge freedom and ordering ambiguity the same freedom?

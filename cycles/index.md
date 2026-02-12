@@ -270,6 +270,7 @@
 - `Q61` Completed.
 - `Q62` Completed.
 - `Q63` Completed.
+- `Q64` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -294,10 +295,11 @@
 - `DX02` Completed.
 
 ## Next Action
-Priority: DX02 complete. One new OPEN anomaly (scalarization ↔ ordering parallel).
-1. Cadence: ... → S72 → C109 → DX02 complete.
-2. Per cadence: next cycle should be Q (referee pass on C109) or S/B on a priority thread.
-3. DX check: DX02 just completed. Next DX due in ~10 cycles.
+Priority: Q64 passed C109 clean. One OPEN anomaly (scalarization ↔ ordering, from DX02).
+1. Cadence: ... → C109 → DX02 → Q64 complete.
+2. Per cadence: next cycle should be S or B on a priority thread.
+3. Natural candidate: S73 (test scalarization ↔ ordering connection), which addresses the DX02 anomaly and is on the half-density priority thread.
+4. DX check: DX02 just completed. Next DX due in ~10 cycles.
 
 Spawned from DX02 (optional):
 - `S73`: test scalarization-gauge ↔ ordering-ambiguity connection in a toy model.
