@@ -287,13 +287,14 @@ Störmer--Verlet (leapfrog) integrator. The discrete map is
 Poisson brackets (or, quantum-mechanically, unitarity) not just
 asymptotically but at each approximation level. Backward error analysis
 shows that the numerical flow is the exact flow of a nearby ``shadow
-Hamiltonian'' \(\tilde H = H + O(\Delta t^2)\), so energy is conserved
-along the discrete orbit up to exponentially small corrections.
-Higher-order symplectic splittings (Yoshida, Forest--Ruth)
-systematically cancel further Baker--Campbell--Hausdorff commutators,
-paralleling the counterterm tower of Remark 2.2. This is refinement
-compatibility made precise: the approximants at every level carry a
-structural invariant (symplecticity) that the continuum limit inherits.
+Hamiltonian'' \(\tilde H = H + O(\Delta t^2)\), which is conserved
+exactly along the discrete orbit; the original \(H\) oscillates with
+amplitude \(O(\Delta t^2)\) without secular drift. Higher-order
+symplectic splittings (Yoshida, Forest--Ruth) systematically cancel
+further Baker--Campbell--Hausdorff commutators, paralleling the
+counterterm tower of Remark 2.2. This is refinement compatibility made
+precise: the approximants at every level carry a structural invariant
+(symplecticity) that the continuum limit inherits.
 
 \hypertarget{outlook-refinement-compatibility-as-the-extra-structure}{%
 \section{4. Outlook: refinement compatibility as ``the extra

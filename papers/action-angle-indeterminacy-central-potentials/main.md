@@ -83,7 +83,10 @@ The rectangular Fourier profile of the Dirichlet kernel wastes angular-momentum 
 This witness supports a simple interpretive guardrail for central-force intuition:
 a single stationary eigenstate (even when it carries classical-sounding quantum numbers) is typically **not** a localized classical orbit with a definite phase/orientation. Variables like the azimuthal phase \(\phi\) (and, in more structured integrable cases, other angle variables on the invariant torus) become localized only in **coherent superpositions** of many stationary modes.
 
-In other words, “classical orbit pictures” correspond to semiclassical packets and stationary-phase concentration, not to exact eigenstates that are sharp in the conserved actions.
+In other words, "classical orbit pictures" correspond to semiclassical packets and stationary-phase concentration, not to exact eigenstates that are sharp in the conserved actions.
+
+`Remark 5.1 (Temporal coherence and quantum revivals).`
+The superpositions that localize an angle variable also have a temporal constraint: for anharmonic spectra (\(d^2E/dm^2\neq 0\)), the packet disperses on a timescale \(t_{\mathrm{disp}}\sim\hbar/(|d^2E/dm^2|\,\Delta m)\) and reforms at the revival time \(t_{\mathrm{rev}}\sim 2\pi\hbar/|d^2E/dm^2|\). Only for a linear spectrum (\(d^2E/dm^2=0\)) does the packet rotate rigidly like a classical orbit for all time. Thus classical orbit pictures require not only spatial localization (many \(m\)-modes, Section 4) but also approximate spectral linearity for temporal coherence.
 
 # 6. A second witness: the harmonic oscillator
 
