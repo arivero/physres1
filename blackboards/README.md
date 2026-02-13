@@ -29,7 +29,7 @@ relevant slot. Deletion criteria (in priority order):
 | 0 | Unitarity limit / universal few-body physics | Promoted (C166) |
 | 1 | KAM theorem / integrability boundary | Promoted (C167) |
 | 2 | Richardson extrapolation / minimal subtraction | Promoted (C168) |
-| 3 | (empty) | Free |
+| 3 | Husimi function / action-angle visualization | Promoted (C169) |
 | 4 | (empty) | Free |
 | 5 | (empty) | Free |
 | 6 | (empty) | Free |

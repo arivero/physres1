@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S128+C169: Husimi function + infrastructure)
+- Focus: expand action-angle satellite; organize repo.
+- Work: S128 studied Husimi Q-function as phase-space diagnostic. Quantum optics experimentalist subagent reviewed and edited blackboard directly — fixed squeezed-state terminology confusion. Promoted as Remark 6.4 (ring vs blob = Fourier tradeoff in phase space).
+- Infrastructure: created `notebooks/` folder (append-only, not for publication). Moved 1780 finished cycle files to `cycles/archive/`.
+- Result: action-angle 123→126 (+3 net).
+
 ## 2026-02-13 (S127+C168+Q110: Richardson extrapolation + quality review)
 - Focus: expand uncuttable satellite; review latest additions.
 - Work: S127 studied Richardson extrapolation as minimal subtraction analogy. Numerical analyst subagent reviewed and edited blackboard directly (new workflow: reviewer writes on blackboard). All claims CORRECT. Promoted as Remark 2.4 connecting Remarks 2.2/2.3 to Romberg/MS-bar. Q110 reviewed Remarks 5.3/7.1: both CLEAN.

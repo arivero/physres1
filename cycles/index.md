@@ -170,6 +170,7 @@
 166. `C166` Completed.
 167. `C167` Completed.
 168. `C168` Completed.
+169. `C169` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -323,6 +324,7 @@
 - `S125` Completed.
 - `S126` Completed.
 - `S127` Completed.
+- `S128` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -474,15 +476,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S127+C168: Richardson extrapolation Remark 2.4 in uncuttable (+3 lines, 128→131).
-2. S125+C166: unitarity limit Remark 5.3 in fermionic mediators (+3 lines, 135→138).
-3. S126+C167: KAM boundary Remark 7.1 in action-angle (+3 lines, 120→123).
-4. Q109+S124+C165: fixed Uehling integral, quantum revival Remark 5.1 in action-angle.
+1. S128+C169: Husimi function Remark 6.4 in action-angle (+3 lines, 123→126).
+2. S127+C168: Richardson extrapolation Remark 2.4 in uncuttable (+3 lines, 128→131).
+3. S125+C166: unitarity limit Remark 5.3 in fermionic mediators (+3 lines, 135→138).
+4. S126+C167: KAM boundary Remark 7.1 in action-angle (+3 lines, 120→123).
 5. Q110: reviewed Remarks 5.3 and 7.1 — both CLEAN.
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (action-angle 123, uncuttable 131, fermionic mediators 138).
+- Expand shorter satellites (action-angle 126, uncuttable 131, fermionic mediators 138).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
