@@ -20,7 +20,7 @@ BV/BRST/field-space half-densities are only flagged as outlook here; a full trea
 Let \(M\) be a \(D\)-dimensional manifold. A half-density is a section of \(|\Lambda^D T^\ast M|^{1/2}\).
 
 The key operational point (as in the main paper’s kernel-composition spine) is:
-if an operator acts on half-densities, then its Schwartz kernel is naturally a **bi-half-density**
+if an operator acts on half-densities, then its Schwartz kernel is naturally a **bi-half-density** [BatesWeinstein1997] [Hormander2003]
 \[
 K_A(x,y)=a(x,y)\,|dx|^{1/2}|dy|^{1/2},
 \]
@@ -52,7 +52,7 @@ The exponent \(D/2\) is forced by normalization: by the change of variables \(x=
 Thus \(\rho_\varepsilon\rightharpoonup\delta^{(D)}\) as \(\varepsilon\to0^+\), and the diagonal delta kernel is the distributional limit of families whose normalization scales as \(\varepsilon^{-D/2}\).
 
 # 3. Worked computation: densitized scalar field \(\psi=|g|^{1/4}\phi\)
-Consider a real scalar field on a fixed Lorentzian/Euclidean background \((M,g)\) with quadratic action
+Consider a real scalar field on a fixed Lorentzian/Euclidean background \((M,g)\) [Wald1984] with quadratic action
 \[
 S[\phi]=\frac12\int_M d^Dx\,\sqrt{|g|}\;\phi\,P\,\phi,
 \qquad
@@ -148,7 +148,7 @@ Equivalently, if \(G_g(x,y)\) denotes the usual **scalar** Green function for \(
 \widetilde G(x,y)=|g(x)|^{1/4}\,G_g(x,y)\,|g(y)|^{1/4}.
 \]
 
-This is exactly the same “kernel as bi-half-density” structure used for QM propagators in the main manuscript, now applied to spacetime Green functions in QFT.
+This is exactly the same "kernel as bi-half-density" structure used for QM propagators [BatesWeinstein1997] [deGosson2018ShortTimePropagators], now applied to spacetime Green functions in QFT.
 
 `Remark HD-D4.1 (Doubling: densities live on \(M\times M\)).`
 Half-density kernels also make the amplitude-vs-density doubling completely explicit. Let \(U_t\) be a (unitary) evolution operator on half-densities with kernel \(K_t(x,y)\). Then a density operator \(\rho_t=U_t\rho_0U_t^{-1}\) has a kernel satisfying
@@ -198,4 +198,12 @@ On a fixed background \((M,g)\), the metric provides a natural reference half-de
 This paper’s role is only to show that half-densities are not a QM quirk: the same kernel semantics is already present in standard QFT propagator definitions, once the hidden measure conventions are made explicit.
 
 # 7. Outlook: BV half-densities
-Gauge theories suggest a second, deeper appearance of half-densities: the BV formalism treats the integrand as a (half-)density on an (odd) symplectic space of fields/antifields, and the quantum master equation expresses independence of gauge-fixing choices. This note does not develop BV beyond this remark; doing so responsibly would require additional authoritative sources and a separate dedicated treatment.
+Gauge theories suggest a second, deeper appearance of half-densities: the BV formalism treats the integrand as a (half-)density on an (odd) symplectic space of fields/antifields, and the quantum master equation expresses independence of gauge-fixing choices [Costello2011]. This note does not develop BV beyond this remark; doing so responsibly would require additional authoritative sources and a separate dedicated treatment.
+
+# References
+
+1. [BatesWeinstein1997] Sean Bates and Alan Weinstein, "Lectures on the Geometry of Quantization," Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. ISBN `978-0-8218-0798-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>.
+2. [deGosson2018ShortTimePropagators] Maurice A. de Gosson, "Short-Time Propagators and the Born–Jordan Quantization Rule," *Entropy* 20(11) (2018), 869. DOI `10.3390/e20110869`. OA: PubMed Central.
+3. [Wald1984] Robert M. Wald, *General Relativity*, University of Chicago Press, 1984. ISBN `978-0-226-87033-5`.
+4. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003. DOI `10.1007/978-3-642-61497-2`.
+5. [Costello2011] Kevin Costello, *Renormalization and Effective Field Theory*, Mathematical Surveys and Monographs, vol. 170, AMS, 2011. ISBN `978-0-8218-5288-0`.
