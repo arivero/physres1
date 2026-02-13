@@ -314,6 +314,7 @@
 - `Q76` Completed.
 - `Q77` Completed.
 - `Q78` Completed.
+- `Q79` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -346,9 +347,9 @@
 
 ## Next Action
 Priority: rg-fundamental (Tier 1, P01 candidate).
-1. S85 done, C124 done: Wilsonian shell derivation promoted as RG-D1.2a in rg-fundamental.
-2. Next: Q79 (referee pass on rg-fundamental after C124).
-3. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after Q79.
+1. S85 done, C124 done, Q79 done: RG-D1.2a verified clean. Two minor follow-ups identified.
+2. Next: C125 (update rg-fundamental conclusion to reflect RG-D1.2a), then C126 (supplementary material reference fix).
+3. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after C125+C126.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

@@ -2788,3 +2788,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: promote the Wilsonian shell-integration derivation from S85 into rg-fundamental Section 5.2.
 - Work: inserted `Derivation RG-D1.2a` (27 new lines) after the integrated flow equation, before Section 5.3. Covers shell integral, effective coupling matching, semigroup composition, and Section 6 bridge. Guard checks clean. PDF rebuilt: 16 pages.
 - Next: Q79 (referee pass on rg-fundamental).
+
+## 2026-02-13 (Q79: referee pass on C124 — RG-D1.2a in rg-fundamental)
+- Focus: verify RG-D1.2a correctness, check cross-references, assess P01 readiness.
+- Findings: RG-D1.2a mathematically clean (shell integral, matching, semigroup, beta function all verified). Cross-references to RG-P1.1/H1.4/D1.7 correct. Two minor issues: (1) Section 7 conclusion should acknowledge the new Wilsonian computation; (2) pre-existing supplementary material reference at line 112 with no actual supplementary section.
+- Follow-ups: C125 (conclusion update), C126 (supplementary material fix). Neither is blocking for correctness.
+- Next: C125.
