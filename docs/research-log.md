@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S133+C174: Wigner Remark 6.6 in action-angle)
+- Focus: complete the phase-space portrait sequence in action-angle satellite.
+- Work: S133 studied Wigner function as fine-grained complement to Husimi. Quantum foundations specialist reviewed — found Laguerre argument error (4H→2H), all else correct. Promoted as Remark 6.6: Husimi = Gaussian-smoothed Wigner, alternating-sign rings reveal sub-Planck structure.
+- Result: action-angle 129→132 (+3 net).
+
 ## 2026-02-13 (S132+C173: WKB Remark 3.6 in uncuttable)
 - Focus: expand uncuttable satellite with WKB as ℏ-refinement limit.
 - Work: S132 studied WKB approximation. Semiclassical analyst reviewed — all CORRECT. Promoted as Remark 3.6: connection formulas as control data, Bohr-Sommerfeld from Maslov index. Natural capstone for Section 3 (after Berry phase).

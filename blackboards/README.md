@@ -28,7 +28,7 @@ relevant slot. Deletion criteria (in priority order):
 |------|-------|--------|
 | 0 | Dimensional contact divergences (d=1,2,3) | Promoted (C172) |
 | 1 | WKB / connection formulas / Maslov index | Promoted (C173) |
-| 2 | Richardson extrapolation / minimal subtraction | Promoted (C168) |
+| 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Husimi function / action-angle visualization | Promoted (C169) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
 | 5 | Rooted trees research direction | Active (future satellite D) |

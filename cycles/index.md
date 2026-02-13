@@ -175,6 +175,7 @@
 171. `C171` Completed.
 172. `C172` Completed.
 173. `C173` Completed.
+174. `C174` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -333,6 +334,7 @@
 - `S130` Completed.
 - `S131` Completed.
 - `S132` Completed.
+- `S133` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -487,7 +489,8 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S132+C173: WKB Remark 3.6 in uncuttable (+3 lines, 134→137).
+1. S133+C174: Wigner Remark 6.6 in action-angle (+3 lines, 129→132).
+2. S132+C173: WKB Remark 3.6 in uncuttable (+3 lines, 134→137).
 2. S131+C172: Dimensional contact Remark 5.4 in fermionic mediators (+3 lines, 138→141).
 3. S130+C171: Squeezed states Remark 6.5 in action-angle (+3 lines, 126→129).
 4. S129+C170: Adiabatic limit Remark 3.5 in uncuttable (+3 lines, 131→134).
@@ -495,7 +498,7 @@ Recent completed:
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (action-angle 126, uncuttable 131, fermionic mediators 138).
+- Expand shorter satellites (action-angle 132, uncuttable 137, fermionic mediators 141).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
