@@ -34,6 +34,34 @@ A concrete failure case appears already in calculus. Consider the difference quo
 In the present program, this is the basic moral:
 finite cuts approximate, but the value is defined by **controlled refinement**.
 
+## 2.5 Worked example: the derivative as a renormalized refinement limit
+
+The paragraph above describes the difference-quotient subtraction informally. We now make it explicit as a minimal model of renormalization.
+
+`Example 2.1 (Derivative as counterterm-subtracted limit).`
+Let \(f:\mathbb{R}\to\mathbb{R}\) be differentiable at \(x\). The naive "refinement" approximant at scale \(\varepsilon\) is
+\[
+R(\varepsilon):=\frac{f(x+\varepsilon)}{\varepsilon}.
+\]
+This diverges as \(\varepsilon\to 0\) whenever \(f(x)\neq 0\). To extract a finite limit, subtract a counterterm:
+\[
+R_{\mathrm{ren}}(\varepsilon):=\frac{f(x+\varepsilon)-f(x)}{\varepsilon}.
+\]
+Now \(\lim_{\varepsilon\to 0}R_{\mathrm{ren}}(\varepsilon)=f'(x)\), which is finite and independent of the "regulator" \(\varepsilon\). The structure is:
+
+1. **Regulated quantity**: \(R(\varepsilon)\), finite for each \(\varepsilon>0\) but divergent as \(\varepsilon\to 0\).
+2. **Counterterm**: \(f(x)/\varepsilon\), which absorbs the divergence.
+3. **Renormalized observable**: \(f'(x)\), the \(\varepsilon\)-independent limit.
+
+This is formally identical to the pattern in perturbative renormalization: a bare quantity diverges as the regulator is removed, but a systematic subtraction yields a finite, physically meaningful result. The subtraction rule is not ad hoc; it is forced by the requirement that the result depend smoothly on the data and be independent of the regulator.
+
+`Remark 2.2 (Higher-order counterterms).`
+If \(f\) is \(C^n\), the Taylor expansion
+\[
+f(x+\varepsilon)=f(x)+f'(x)\varepsilon+\tfrac{1}{2}f''(x)\varepsilon^2+\cdots+\tfrac{1}{n!}f^{(n)}(x)\varepsilon^n+o(\varepsilon^n)
+\]
+provides a systematic tower of subtractions, one per order. Removing terms through order \(k-1\) and dividing by \(\varepsilon^k\) gives \(f^{(k)}(x)/k!\) plus vanishing corrections. Each derivative is a "counterterm-subtracted refinement limit at the next order" — the analog of loop-by-loop renormalization in QFT.
+
 # 3. Dynamics: action, stationarity, and the need for control data
 The cornerstone manuscript uses the same template in mechanics.
 Given a partition of time, the discrete action

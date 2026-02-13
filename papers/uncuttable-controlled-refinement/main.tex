@@ -80,6 +80,16 @@ interest is not any finite \(Q_N\); it is a controlled limit
 refinement} and the \emph{comparison across refinements} is part of the
 definition of \(Q\).
 
+The historical resonance is deliberate. The Greek
+\(\acute\alpha\tau o\mu o\varsigma\) (``a-tomos,'' uncuttable) was
+coined by Leucippus and Democritus to denote indivisible substance ---
+matter that cannot be divided further. The shift proposed here is from
+ontology to procedure: what is ``uncuttable'' is not a smallest piece of
+stuff, but a limit object that no single finite dissection captures. The
+indivisibility is not in the substance but in the definition: you cannot
+``cut'' the limit into finitely many pieces and recover it without
+specifying how the pieces are to be reassembled and refined.
+
 This is the ordinary situation in analysis: finite partitions
 approximate, but the object is defined by a limiting procedure together
 with hypotheses that ensure convergence/uniqueness.
@@ -99,8 +109,69 @@ the limit is independent of the tags \(\xi_k\). But this is not a
 tautology: the limit can fail to exist or can depend on the refinement
 rule unless hypotheses are stated.
 
+A concrete failure case appears already in calculus. Consider the
+difference quotient \(f(x+\varepsilon)/\varepsilon\): for each finite
+\(\varepsilon\), the quantity diverges as \(\varepsilon\to 0\). The
+``refinement limit'' exists only after subtracting a counterterm
+\(f(x)/\varepsilon\), yielding the derivative \(f'(x)\). The subtraction
+is part of the definition of the limit --- without it, the refinement
+procedure does not converge. This is the simplest model of
+renormalization: a ``cut'' at finite \(\varepsilon\) is not the answer;
+the answer requires a controlled \(\varepsilon\to 0\) limit with
+explicit subtraction rules.
+
 In the present program, this is the basic moral: finite cuts
 approximate, but the value is defined by \textbf{controlled refinement}.
+
+\hypertarget{worked-example-the-derivative-as-a-renormalized-refinement-limit}{%
+\subsection{2.5 Worked example: the derivative as a renormalized
+refinement
+limit}\label{worked-example-the-derivative-as-a-renormalized-refinement-limit}}
+
+The paragraph above describes the difference-quotient subtraction
+informally. We now make it explicit as a minimal model of
+renormalization.
+
+\texttt{Example\ 2.1\ (Derivative\ as\ counterterm-subtracted\ limit).}
+Let \(f:\mathbb{R}\to\mathbb{R}\) be differentiable at \(x\). The naive
+``refinement'' approximant at scale \(\varepsilon\) is \[
+R(\varepsilon):=\frac{f(x+\varepsilon)}{\varepsilon}.
+\] This diverges as \(\varepsilon\to 0\) whenever \(f(x)\neq 0\). To
+extract a finite limit, subtract a counterterm: \[
+R_{\mathrm{ren}}(\varepsilon):=\frac{f(x+\varepsilon)-f(x)}{\varepsilon}.
+\] Now \(\lim_{\varepsilon\to 0}R_{\mathrm{ren}}(\varepsilon)=f'(x)\),
+which is finite and independent of the ``regulator'' \(\varepsilon\).
+The structure is:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Regulated quantity}: \(R(\varepsilon)\), finite for each
+  \(\varepsilon>0\) but divergent as \(\varepsilon\to 0\).
+\item
+  \textbf{Counterterm}: \(f(x)/\varepsilon\), which absorbs the
+  divergence.
+\item
+  \textbf{Renormalized observable}: \(f'(x)\), the
+  \(\varepsilon\)-independent limit.
+\end{enumerate}
+
+This is formally identical to the pattern in perturbative
+renormalization: a bare quantity diverges as the regulator is removed,
+but a systematic subtraction yields a finite, physically meaningful
+result. The subtraction rule is not ad hoc; it is forced by the
+requirement that the result depend smoothly on the data and be
+independent of the regulator.
+
+\texttt{Remark\ 2.2\ (Higher-order\ counterterms).} If \(f\) is \(C^n\),
+the Taylor expansion \[
+f(x+\varepsilon)=f(x)+f'(x)\varepsilon+\tfrac{1}{2}f''(x)\varepsilon^2+\cdots+\tfrac{1}{n!}f^{(n)}(x)\varepsilon^n+o(\varepsilon^n)
+\] provides a systematic tower of subtractions, one per order. Removing
+terms through order \(k-1\) and dividing by \(\varepsilon^k\) gives
+\(f^{(k)}(x)/k!\) plus vanishing corrections. Each derivative is a
+``counterterm-subtracted refinement limit at the next order'' --- the
+analog of loop-by-loop renormalization in QFT.
 
 \hypertarget{dynamics-action-stationarity-and-the-need-for-control-data}{%
 \section{3. Dynamics: action, stationarity, and the need for control
@@ -122,6 +193,22 @@ refined objects unless an equivalence or control map is specified.
 
 These are exactly the obstructions discussed in the cornerstone
 manuscript: the point is not indivisible atoms, but limit control.
+
+In the quantum setting, the ``uncuttable'' character becomes sharper.
+The path-integral amplitude \[
+K(q_f,t_f;q_i,t_i)=\int \prod_{k=1}^{N-1}dq_k\;\prod_{k=0}^{N-1}K_\Delta(q_{k+1},q_k;t_k)
+\] is a product of short-time kernels composed over a time partition of
+depth \(N\). No finite \(N\) gives the exact propagator; the propagator
+is the \(N\to\infty\) refinement limit. Crucially, the control parameter
+\(\hbar\) enters the short-time kernels as \(\exp(iS_\Delta/\hbar)\),
+and different discretization conventions (left-point, midpoint,
+symmetric) can produce distinct \(O(\hbar)\) corrections even though
+they share the same classical \(\hbar\to 0\) limit
+{[}FeynmanHibbs1965{]}. Thus the quantum amplitude is doubly
+``uncuttable'': it requires both a refinement rule (time-slicing
+prescription) and a comparison/equivalence structure (ordering
+convention or half-density normalization) before the limit is
+well-defined.
 
 \hypertarget{outlook-refinement-compatibility-as-the-extra-structure}{%
 \section{4. Outlook: refinement compatibility as ``the extra

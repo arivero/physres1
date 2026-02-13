@@ -685,7 +685,8 @@ Therefore
 \[
 |\psi(r,\phi)|^2=|R(r)|^2
 \]
-is independent of \(\phi\), i.e. the azimuthal angle is uniformly distributed in an \(L_z\) eigenstate. Localized “orbit phase” pictures correspond to coherent superpositions/wavepackets, consistent with the manuscript’s use of stationary-phase concentration rather than “eigenstate \(=\) orbit” identification.
+is independent of \(\phi\), i.e. the azimuthal angle is uniformly distributed in an \(L_z\) eigenstate. Localized "orbit phase" pictures correspond to coherent superpositions/wavepackets, consistent with the manuscript's use of stationary-phase concentration rather than "eigenstate \(=\) orbit" identification.
+(A companion note on action-angle indeterminacy expands this observation to a second witness — the harmonic oscillator, where Fock states delocalize the orbit phase and coherent states spread across Fock modes — and formulates the general structure as an uncertainty relation between action and angle variables.)
 
 `Derivation D4.3 (Van Vleck prefactor is a bi-half-density).`
 In the semiclassical approximation, the endpoint kernel has the standard form
