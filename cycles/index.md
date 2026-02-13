@@ -200,6 +200,8 @@
 196. `C196` Completed.
 197. `C197` Completed.
 198. `C198` Completed.
+199. `C199` Completed.
+200. `C200` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -384,6 +386,8 @@
 - `S155` Completed.
 - `S156` Completed.
 - `S157` Completed.
+- `S158` Completed.
+- `S159` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -541,15 +545,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S156+C197: Neutrino forces Remark 6.2 in fermionic (+3 lines, 162→165).
-2. S157+C198: Conformal symmetry Remark 4.6 in uncuttable (+3 lines, 163→166).
-3. S154+C195: Anomalies Remark 4.5 in uncuttable.
-4. S155+C196: Gutzwiller trace formula Remark 7.4 in action-angle.
+1. S158+C199: Geometric quantization Remark 7.5 in action-angle (+3 lines, 164→167).
+2. S159+C200: Anomalous magnetic moment Remark 3.3 in fermionic (+3 lines, 165→168).
+3. S156+C197: Neutrino forces Remark 6.2 in fermionic.
+4. S157+C198: Conformal symmetry Remark 4.6 in uncuttable.
 5. B22: 13 bibliography entries added across all three satellites.
 
 Next:
-- Satellites: uncuttable 166, fermionic 165, action-angle 164.
-- Action-angle is now the shortest — next S+C cycle should target it.
+- Satellites: fermionic 168, action-angle 167, uncuttable 166.
+- Uncuttable is now the shortest — next S+C cycle should target it.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

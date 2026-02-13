@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S158+C199+S159+C200: Geometric quantization + Anomalous magnetic moment)
+- Focus: expand action-angle Section 7 (geometric quantization) and fermionic Section 3 (anomalous magnetic moment).
+- Work: S158 studied geometric quantization. Mathematical physicist reviewer caught Souriau date (1970 not 1966) and real polarization → Fock states specification. Promoted as Remark 7.5: prequantization = EBK = Chern class integrality, action polarization → rings, complex → Bargmann, metaplectic correction, spin-j from S². S159 studied anomalous magnetic moment. QED expert caught Schwinger date error (pair production 1951 not 1948), (α/π)³ coefficient discrepancy, muon g-2 status outdated. Promoted as Remark 3.3 (old 3.3 became 3.4): α/(2π), vertex correction, 10^{-12} agreement, muon EFT sensitivity.
+- Result: action-angle 164→167 (+3, 10pp). Fermionic 165→168 (+3, 9pp). Uncuttable 166 (unchanged).
+
 ## 2026-02-13 (S156+C197+S157+C198: Neutrino forces + Conformal symmetry)
 - Focus: expand fermionic Section 6 (neutrino-mediated forces) and uncuttable Section 4 (conformal symmetry at RG fixed points).
 - Work: S156 studied Feinberg-Sucher neutrino force. Weak interactions reviewer caught coefficient error (factor 4) — fixed by using proportionality. Promoted as Remark 6.2: V(r) ∝ G_F²/r⁵, box diagram loop effect, 1/r⁵ from two-fermion exchange, contact limit. S157 studied conformal symmetry. CFT reviewer caught conformal group error (SO(d,2) → SO(d+1,1) for Euclidean) and scale→conformal status. Promoted as Remark 4.6: c-theorem, a-theorem, conformal bootstrap, 3D Ising.
