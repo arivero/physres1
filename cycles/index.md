@@ -187,6 +187,8 @@
 183. `C183` Completed.
 184. `C184` Completed.
 185. `C185` Completed.
+186. `C186` Completed.
+187. `C187` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -357,6 +359,8 @@
 - `S142` Completed.
 - `S143` Completed.
 - `S144` Completed.
+- `S145` Completed.
+- `S146` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -473,6 +477,7 @@
 - `Q113` Completed.
 - `Q114` Completed.
 - `Q115` Completed.
+- `Q116` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -512,16 +517,16 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S143+C184: Ehrenfest time Remark 7.3 in action-angle (+3 lines, 145→148).
-2. S144+C185: Dim reg Remark 4.2 in uncuttable (+3 lines, 146→149).
-3. S141+C182: Spin coherent states Remark 6.7 in action-angle (+3 lines, 142→145).
-4. S142+C183: Wilson RG Remark 4.1 in uncuttable (+3 lines, 143→146).
-5. S139+C180: Real harmonics Remark 3.1 in action-angle (+3 lines, 139→142).
-6. S140+C181: Pseudopotential Remark 4.3 in fermionic mediators (+3 lines, 144→147).
+1. S145+C186: Feshbach resonances Remark 5.6 in fermionic mediators (+3 lines, 147→150).
+2. S146+C187: Mandelstam-Tamm Remark 5.3 in action-angle (+3 lines, 148→151).
+3. Q116: Review of 6 new remarks — 4 PASS, 2 CONDITIONAL PASS (fixes applied).
+4. S143+C184: Ehrenfest time Remark 7.3 in action-angle (+3 lines, 145→148).
+5. S144+C185: Dim reg Remark 4.2 in uncuttable (+3 lines, 146→149).
+6. S141+C182: Spin coherent states Remark 6.7 in action-angle (+3 lines, 142→145).
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (fermionic mediators 147, action-angle 148, uncuttable 149).
+- All three satellites ~150 lines (action-angle 151, fermionic 150, uncuttable 149).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

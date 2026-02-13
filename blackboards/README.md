@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Ehrenfest time / classical correspondence breakdown | Promoted (C184) |
-| 1 | Dimensional regularization / refinement-scheme independence | Promoted (C185) |
+| 0 | Feshbach resonances / tunable contact interactions | Promoted (C186) |
+| 1 | Mandelstam-Tamm energy-time uncertainty | Promoted (C187) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

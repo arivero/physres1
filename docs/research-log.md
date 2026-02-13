@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S145+C186+S146+C187+Q116: Feshbach + Mandelstam-Tamm + quality review)
+- Focus: expand fermionic mediators Section 5 (Feshbach resonances) and action-angle Section 5 (energy-time uncertainty). Quality review of 6 recent remarks.
+- Work: S145 studied Feshbach resonances. Cold-atom experimentalist reviewed — all CORRECT. Promoted as Remark 5.6: a(B) formula, BEC-BCS crossover, Efimov connection. S146 studied Mandelstam-Tamm relation. Quantum foundations specialist reviewed — caught harmonic oscillator error (Δt_x ≠ 1/ω, should saturate at ℏ/2). Promoted as Remark 5.3 with corrected saturation claim. Q116 reviewed all 6 recent remarks: 4 PASS, 2 CONDITIONAL PASS (Remark 7.3 dispersal/revival wording, Remark 4.2 forest formula attribution — both fixed).
+- Result: fermionic 147→150 (+3, 7pp), action-angle 148→151 (+3, 9pp). Uncuttable 149 (8pp, fixes only).
+
 ## 2026-02-13 (S143+C184+S144+C185: Ehrenfest time + dim reg)
 - Focus: expand action-angle Section 7 (temporal boundary of classical orbits) and uncuttable Section 4 (refinement-scheme independence).
 - Work: S143 studied Ehrenfest time. Semiclassical dynamics expert reviewed — all 8 claims CORRECT (Ehrenfest theorem, quadratic exactness, t_E formula, algebraic-vs-logarithmic contrast, all references). Promoted as Remark 7.3: completes triptych of phase-space/spectral/temporal transitions. S144 studied dim reg. Perturbative QFT expert reviewed — all physics CORRECT, recommended softening lattice gauge claim. Promoted as Remark 4.2: d=4-ε, MS-bar subtraction, refinement-scheme independence.
