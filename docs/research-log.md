@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (B21: restore inline citations in Dirac probes satellite)
+- Focus: Dirac probes satellite had zero inline citations; build script removed its entire References section.
+- Work: added 6 inline citations from existing master bibliography: [Hormander2003] (Remark 2.2), [Nauenberg2003KeplerArea] (Section 4.4), [BatesWeinstein1997] + [FeynmanHibbs1965] (Section 4.5), [AlbeverioGesztesyHoeghKrohnHolden2005] + [Jackiw1991DeltaPotentials] (Section 5.2).
+- Result: satellite 188→196 lines (+8, References section restored with 6 entries). No new bibliography entries needed.
+
 ## 2026-02-13 (S113+C154: HO Van Vleck Example 3.5b in delta objects satellite)
 - Focus: expand delta objects satellite with harmonic oscillator Van Vleck example.
 - Work: added Example 3.5b showing D = |mω/sin ωΔt|, free-particle recovery at ωΔt→0, caustic at ωΔt = π.

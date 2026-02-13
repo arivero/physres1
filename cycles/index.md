@@ -179,6 +179,7 @@
 - `B18` Completed.
 - `B19` Completed.
 - `B20` Completed.
+- `B21` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
