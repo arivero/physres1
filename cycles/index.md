@@ -228,6 +228,8 @@
 224. `C224` Completed.
 225. `C225` Completed.
 226. `C226` Completed.
+227. `C227` Completed.
+228. `C228` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -442,6 +444,8 @@
 - `S183` Completed.
 - `S184` Completed.
 - `S185` Completed.
+- `S186` Completed.
+- `S187` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -604,14 +608,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S184+C225: Cauchy completion Remark 1.1 in uncuttable (+4 lines).
-2. S185+C226: Stone-von Neumann Remark 3.8 in uncuttable (+4 lines).
-3. Q122: 3/4 PASS; Remark 2.1 fixed (spin-sign + fermion spectral claims).
+1. S186+C227: Dipole selection rules Remark 3.2 in action-angle (+4 lines).
+2. S187+C228: QND measurement Remark 5.7 in action-angle (+4 lines).
+3. Fix: finish_manuscripts.sh no longer runs update_references.py on satellites.
 
 Next:
-- Satellites: fermionic 218 (16pp), uncuttable 218 (17pp), action-angle 213 (16pp).
-- Action-angle is shortest — prioritize next remarks there.
-- Continue S+C expansion. All three now at 213+ lines.
+- Satellites: action-angle 221 (17pp), uncuttable 218 (17pp), fermionic 218 (16pp).
+- Fermionic or uncuttable is shortest — prioritize next remarks there.
+- Continue S+C expansion. All three now at 218+ lines.
+- Q123 reviewing C227-C228 (background).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
