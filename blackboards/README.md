@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Dipole selection rules | Promoted (C227) |
-| 1 | QND measurement | Promoted (C228) |
+| 0 | Crossing symmetry | Promoted (C229) |
+| 1 | Hubbard-Stratonovich | Promoted (C230) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
