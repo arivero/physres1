@@ -428,7 +428,8 @@ $$
 
 As \(\varepsilon\to 0^+\), the convolution integral tends to \(F[q](t_0)\) by continuity. Since \(u\) was arbitrary, \(F[q](t_0)=0\).
 
-This is the precise sense in which “Dirac-supported probes” recover pointwise Euler-Lagrange equations: they do so through mollifier limits, not by inserting nonlinear expressions involving \(\delta(t-t_0)\).
+This is the precise sense in which "Dirac-supported probes" recover pointwise Euler-Lagrange equations: they do so through mollifier limits, not by inserting nonlinear expressions involving \(\delta(t-t_0)\).
+(For an expanded treatment with explicit functional-analytic hypotheses, a fully worked delta-kick model, and the connection from \(N\)-impulse matching to the time-sliced path integral, cf.\ Theorem 2.1 and Section 4 in the Dirac Probes companion note.)
 
 ## 5.4 Corners and Impulses: Jump Conditions
 There are two distinct phenomena that look “singular” in time:
