@@ -111,4 +111,14 @@ Answer (in the 2D delta witness):
 2. The RG interaction enters through the T-matrix, which contains the transmutation scale \(\kappa_\ast\). This scale is RG-invariant and has the correct dimension \(\text{length}^{d/2}\) to serve as the scalarization constant.
 3. They interact by **multiplication** (Lippmann–Schwinger factorization), not by modification of each other. The Van Vleck weight does not run; the transmutation scale does not transform as a half-density. They are complementary structures.
 
-For \(d = 4\): the same separation should hold, with \([G_0] = \text{length}^{-4}\), \([T] = \text{length}^4\), and the scalarization constant \(\Lambda_\ast^{-2} = \text{area}\).
+For \(d = 4\): the same factorization should hold, with scalarization constant \(\Lambda_\ast^{-2} = \text{area}\).
+
+## 7. Errata (Q77 correction)
+
+**Dimensional error in Sections 1, 2, 4, 5:** The resolvent (energy-domain Green function) has \([G_0] = \text{length}^{-(d-1)}\) in \(\hbar = c = 1\) units, NOT \(\text{length}^{-d}\). The propagator (time-domain) has \([K] = \text{length}^{-d}\); the resolvent picks up an extra factor of \(\text{length}\) from the Fourier transform in time. Specifically:
+- \(d = 2\): \([G_0] = \text{length}^{-1}\), \([T] = \text{length}^{1}\)
+- The bi-half-density resolvent has dimension \(\text{length} = \text{energy}^{-1}\), not dimensionless
+- The scalarization \(f = g_0 L_\ast^d\) has dimension \(\text{length}\), not dimensionless
+- Scalarization to a dimensionless number additionally requires an energy factor (e.g., \(E \cdot f\))
+
+The structural separation (Sections 2–3) and the claim that \(\kappa_\ast^{-1}\) supplies a \(\text{length}^{d/2}\) scale are **unaffected** by this correction: the half-density pairing mechanism at the vertex and the T-matrix's scalar character are transformation-law statements, not dimensional ones. The corrected manuscript remark PA-E5c avoids specific \([G_0]\) claims.
