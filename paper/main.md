@@ -505,7 +505,8 @@ makes explicit that \(\delta(f')\,dx\) is a density supported on stationary poin
 
 Section 6 recovers the same “square-root Jacobian” in the dynamical setting: semigroup composition of short-time kernels forces the characteristic \(t^{-d/2}\) normalization (Derivation D4.1a).
 
-In infinite-dimensional settings (paths), one is tempted to write “formal measures” supported on stationary-action trajectories. In this manuscript we treat such expressions as roadmap heuristics until they are regularized and made compatible with composition (Section 6); see also `Heuristic H0.2a`.
+In infinite-dimensional settings (paths), one is tempted to write "formal measures" supported on stationary-action trajectories. In this manuscript we treat such expressions as roadmap heuristics until they are regularized and made compatible with composition (Section 6); see also `Heuristic H0.2a`.
+(A companion note on delta objects collects the finite-dimensional scaling computations — identity kernel, stationary-set concentration, point interactions as rank-one kernels — and traces the Van Vleck determinant as the propagator instance of the square-root Hessian.)
 
 ## 5.6 Caveats (Nonlinear Distribution Pitfalls)
 1. Products like \(\delta(t)^2\) are not defined in standard distribution theory; any appearance requires a regularization scheme and a proof of scheme-independence for claimed observables.
