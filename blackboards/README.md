@@ -16,18 +16,18 @@ relevant slot. Deletion criteria (in priority order):
 4. **Lowest priority** — least aligned with the current top thread.
 
 ## Rules
-1. These notes are **not citable sources**.
+1. The blackboards are **not citable sources**.
 2. They may reference idea logs, but nothing here should be cited as evidence.
-3. When an argument stabilizes, promote it into a **paper** or **notebook**.
+3. When an argument stabilizes, promote it into a **paper** (if in a Cxxx task) or **notebook**.
    - **Paper** (`paper/`, `papers/*/`): editable, aimed for publication.
-   - **Notebook**: append-only (add content or discard fully, no edits), not aimed for publication.
+   - **Notebook** (`notebooks/`) : append-only (add content or discard fully, no edits), not aimed for publication.
 4. Promotion is the exit path. Once fully promoted, a slot is free for reuse.
 
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Geometric quantization / Kostant-Souriau | Promoted (C199) |
-| 1 | Anomalous magnetic moment / g-2 | Promoted (C200) |
+| 0 | Deformation quantization / Moyal star product | Promoted (C201) |
+| 1 | Quantum state tomography / Radon transform | Promoted (C202) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

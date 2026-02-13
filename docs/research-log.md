@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S160+C201+S161+C202+Q118: Star product + Tomography + Review)
+- Focus: expand uncuttable Section 3 (deformation quantization) and action-angle Section 6 (tomography). Review all 7 recent additions.
+- Work: S160 studied Moyal star product. Mathematical physicist caught Kontsevich Fields Medal date (1998 not 2003). Promoted as Remark 3.7: ★ as ℏ-deformation, Kontsevich formality. S161 studied quantum state tomography. Quantum optics reviewer flagged Radon transform sign convention. Promoted as Remark 6.7 (with renumbering chain: old 6.7→6.8, old 6.8→6.9, cross-references updated). Q118 reviewed all 7 remarks from C195-C202: all CONDITIONAL PASS, physics correct, ~16 bibliography entries needed.
+- Result: uncuttable 166→169 (+3, 11pp). Action-angle 167→170 (+3, 11pp). Fermionic 168 (unchanged). All three satellites now 11pp/11pp/9pp.
+
 ## 2026-02-13 (S158+C199+S159+C200: Geometric quantization + Anomalous magnetic moment)
 - Focus: expand action-angle Section 7 (geometric quantization) and fermionic Section 3 (anomalous magnetic moment).
 - Work: S158 studied geometric quantization. Mathematical physicist reviewer caught Souriau date (1970 not 1966) and real polarization → Fock states specification. Promoted as Remark 7.5: prequantization = EBK = Chern class integrality, action polarization → rings, complex → Bargmann, metaplectic correction, spin-j from S². S159 studied anomalous magnetic moment. QED expert caught Schwinger date error (pair production 1951 not 1948), (α/π)³ coefficient discrepancy, muon g-2 status outdated. Promoted as Remark 3.3 (old 3.3 became 3.4): α/(2π), vertex correction, 10^{-12} agreement, muon EFT sensitivity.
