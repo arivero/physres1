@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q85: referee pass on fermionic-mediators)
+- Focus: full referee pass for Tier assessment.
+- Work: checked math (clean), notation, citations (4 refs, all OA), encoding, repo language.
+- Result: two fixable issues — repo language (3 lines), empty metadata. Math clean.
+- Next: C130 (fix), then promote to Tier 1.
+
 ## 2026-02-13 (Q84: delta-objects promoted to Tier 1)
 - Focus: follow-up referee pass after C129 + B19.
 - Work: verified all Q83 issues resolved. Math clean, encoding clean, bibliography adequate.

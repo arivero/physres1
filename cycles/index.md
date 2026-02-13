@@ -327,6 +327,7 @@
 - `Q82` Completed.
 - `Q83` Completed.
 - `Q84` Completed.
+- `Q85` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -358,10 +359,10 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: advance remaining Tier 2 papers.
-1. Q84 done: delta-objects promoted to Tier 1. Now 5 papers at Tier 1.
-2. Next: fermionic-mediators (has bib, needs Q pass for Tier assessment).
-3. Tier 3: action-angle-indeterminacy, uncuttable-controlled-refinement (need content).
+Priority: fermionic-mediators Tier 1 promotion.
+1. Q85 done: two fixable issues (repo language, empty metadata).
+2. C130: fix repo language (3 lines) and YAML metadata. Then promote to Tier 1.
+3. After all Tier 2 cleared: Tier 3 papers need content C cycles.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
