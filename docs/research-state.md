@@ -111,7 +111,7 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 ### 5) Dirac-supported probes / corners / impulses
 - Goal: a clean weak Euler–Lagrange + mollifier theorem + corner/jump conditions with one anchored model.
 - Seed roadmap: `docs/next-articles.md` (B).
-- **Status**: initial draft complete (S97, 172 lines). Needs Q pass for Tier 1 promotion.
+- **Status**: Tier 1 (S97 draft, Q94 clean, 172 lines).
 
 ### 6) Ordering/discretization as equivalence class
 - Goal: extend the simple \(f(q)p\) example to a richer symbol family and present ordering as a conjugation/gauge equivalence.
@@ -153,8 +153,8 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 7. Action-Angle Indeterminacy (87 lines, 4 pages, 2 refs) — expanded C137: harmonic oscillator witness
 8. Uncuttable Controlled Refinement (68 lines, 3 pages, 2 refs) — expanded C135: etymology + failure + path integral
 
-**New satellite #9 (initial draft, needs Q pass):**
-9. Dirac Probes / Corners / Impulses (172 lines, 5 pages, 3 refs) — S97 initial draft
+**Satellite #9 (Tier 1, Q94 clean):**
+9. Dirac Probes / Corners / Impulses (172 lines, 5 pages, 3 refs) — S97 draft, Q94 clean
 
 Tier 2 and Tier 3: empty. Cornerstone: paper/main.md (1435 lines, Q89 clean). Cross-references to HD and RG satellites (C136).
 

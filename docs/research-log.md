@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q94: referee pass on Dirac Probes satellite)
+- Focus: referee-style quality check on new Dirac Probes paper.
+- Work: verified all 12 display equations, checked encoding/paths/cycle-labels (all clean), verified worked-model algebra, fixed "nonneg" typo.
+- Result: paper promoted to Tier 1. 9 satellites total (all Tier 1).
+- Next: further content expansion or next satellite.
+
 ## 2026-02-13 (S97: Dirac Probes satellite paper initial draft)
 - Focus: draft satellite #9 (Dirac Probes, roadmap item B) — "Dirac-Supported Probes, Corners, and Impulses."
 - Work: created `papers/dirac-probes-corners-impulses/main.md` (172 lines). Mollifier Localization Theorem with explicit hypotheses (H1–H3), corner and impulse theorems, complete delta-kick free-particle model, safe-vs-unsafe taxonomy table.

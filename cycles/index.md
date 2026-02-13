@@ -359,6 +359,7 @@
 - `Q91` Completed.
 - `Q92` Completed.
 - `Q93` Completed.
+- `Q94` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -404,8 +405,9 @@ Recent completed:
 5. DX09: ranked roadmap items for next satellite — top pick: B (Dirac Probes). Done.
 
 Next:
-- Q94: referee pass on Dirac Probes satellite (promote to Tier 1).
+- Dirac Probes at Tier 1 (Q94 clean). All 9 satellites at Tier 1.
 - P cycles for satellite submissions when ready.
+- Content expansion for Dirac Probes (thin at 172 lines — add more worked examples or extend taxonomy).
 - Cornerstone deeper content work (new computations).
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
