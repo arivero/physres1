@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (C122: promote S84 as Remark PA-H2.6b)
+- Focus: insert minimal-hypotheses summary into planck-area Section 3.1.
+- Work: 4-line remark after PA-H2.6. Minimal set stated, non-bookkeeping content identified. 23 pages, clean.
+- Result: diffstat +4 -1. Open Problem #4 now addressed in manuscript.
+- Next: Q78 (referee pass on C122).
+
 ## 2026-02-13 (S84: minimal hypotheses for half-density → Planck area)
 - Focus: Open Problem #4 — identify what is "more than dimensional bookkeeping" in the hypothesis chain.
 - Question: what is the minimal set of hypotheses, and where is the non-trivial content?

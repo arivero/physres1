@@ -123,6 +123,7 @@
 119. `C119` Completed.
 120. `C120` Completed.
 121. `C121` Completed.
+122. `C122` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -339,13 +340,11 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: C122 (promote S84 minimal-hypotheses analysis), then Q.
-1. P00 complete (planck-area v2 live). P01 rate-limited until Feb 20.
-2. Open Problem #1: addressed (S82+C120+Q76, PA-D1.4a).
-3. Open Problem #2: addressed (S83+C121+Q77, PA-E5c).
-4. Open Problem #4: addressed (S84). Minimal set: PA-H2.1 + PA-H2.4 + PA-H2.5a + gravity-only.
-5. Remaining: #3 (odd-d, partially by S79/C117), #5 (GUP comparison).
-6. Next: C122 (promote S84 minimal-set summary), then Q78.
+Priority: Q78 (referee pass on C122), then continue.
+1. P00 complete. P01 rate-limited until Feb 20.
+2. Open Problems addressed: #1 (PA-D1.4a), #2 (PA-E5c), #4 (PA-H2.6b).
+3. Open Problem #3: partially addressed (S79/C117). #5: not started.
+4. Next: Q78, then assess — most planck-area open problems now addressed.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
