@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q104: full cornerstone cold referee review)
+- Focus: thorough cold referee review of entire cornerstone (~1486 lines), emphasis on recent additions.
+- Work: subagent found 5 issues. 1 CRITICAL (H0.2 "differing by O(ℏ)" ambiguous — fixed by adding "as operators"), 2 IMPORTANT (one false positive on Section 10.2 forward ref; one deferred — D5.1b monomial formula citation), 2 MODERATE (navigation/flow). No mathematical errors in D4.1b, D4.2b, or D5.1b.
+- Result: one-word clarification applied to H0.2.
+
 ## 2026-02-13 (B21: restore inline citations in Dirac probes satellite)
 - Focus: Dirac probes satellite had zero inline citations; build script removed its entire References section.
 - Work: added 6 inline citations from existing master bibliography: [Hormander2003] (Remark 2.2), [Nauenberg2003KeplerArea] (Section 4.4), [BatesWeinstein1997] + [FeynmanHibbs1965] (Section 4.5), [AlbeverioGesztesyHoeghKrohnHolden2005] + [Jackiw1991DeltaPotentials] (Section 5.2).
