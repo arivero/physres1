@@ -114,6 +114,9 @@ where \(\alpha_k\) is the Maslov index of the \(k\)-th cycle (counting caustic/t
 # 7. Outlook (kept minimal)
 The preceding witnesses illustrate the action–angle tradeoff in systems with one, two, and three action–angle pairs, and Remark 6.3 shows that EBK quantization makes the same structural point in general: the more sharply the actions are specified, the less information remains in the conjugate phases.
 
+`Remark 7.1 (Boundary at integrability breaking).`
+The action–angle framework of Sections 3–6 presupposes the existence of global action variables, hence applies exactly to integrable systems. For nearly integrable Hamiltonians, the KAM theorem guarantees persistence of most invariant tori (those with sufficiently irrational frequency ratios), on which the framework remains valid. In fully chaotic systems, the absence of conserved actions replaces the structured Fourier tradeoff with eigenstate thermalization — a more drastic delocalization where individual energy eigenstates appear thermal for local observables, with no residual action–angle structure to organize the uncertainty.
+
 # References
 
 1. [TongQMLectures] David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)

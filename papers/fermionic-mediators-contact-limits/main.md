@@ -123,6 +123,9 @@ f_0(k) = \frac{-a}{1+ika},
 \]
 where the scattering length \(a\) is defined by absorbing the \(\Lambda\)-dependent bare coupling into a single physical parameter via a renormalization condition of the form \(1/g_0 \propto \Lambda + \text{(finite part depending on } a\text{)}\). When \(a>0\), a pole at \(k=i/a\) gives a bound state with energy \(E=-\hbar^2/(2ma^2)\) [AlbeverioGesztesyHoeghKrohnHolden2005]. The comparison with Example 5.1 highlights how the divergence character changes with dimension — logarithmic (\(d=2\)) versus linear (\(d=3\)) — while the structural lesson is identical: the "coupling constant" of a contact interaction is not a bare number but a renormalization-group datum, defined only through a refinement rule (cutoff removal + physical matching condition).
 
+`Remark 5.3 (Unitarity limit: universality at the RG fixed point).`
+When the scattering length diverges (\(|a|\to\infty\)), the contact coupling sits at a non-trivial RG fixed point and the theory becomes scale-invariant: no microscopic length survives beyond the interparticle spacing. Thermodynamic ratios become universal — for a spin-\(\tfrac12\) Fermi gas the ground-state energy is \(E=\xi\,E_{\mathrm{FG}}\) with Bertsch parameter \(\xi\approx 0.37\), independent of the short-range physics that produced the large scattering length. This fixed point controls the BEC–BCS crossover in cold atomic gases, where a magnetic Feshbach resonance tunes \(a\) through \(\pm\infty\), providing a laboratory realization of the structural lesson in Examples 5.1–5.2: the contact coupling is not a number but a flow, and the fixed point of that flow generates universality.
+
 # 6. Outlook (kept minimal)
 Longer-range effects associated to fermionic degrees of freedom can arise through loop-induced mechanisms or through emergent bosonic composite modes. Treating those responsibly would require a separate bibliography-hardening pass and is outside this note’s scope.
 
