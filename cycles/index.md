@@ -127,6 +127,7 @@
 123. `C123` Completed.
 124. `C124` Completed.
 125. `C125` Completed.
+126. `C126` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -348,9 +349,10 @@
 
 ## Next Action
 Priority: rg-fundamental (Tier 1, P01 candidate).
-1. S85 → C124 → Q79 → C125 done: rg-fundamental Wilsonian derivation promoted and verified, conclusion updated.
-2. Next: C126 (fix supplementary material reference at line 112 — pre-existing issue).
-3. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after C126.
+1. S85 → C124 → Q79 → C125 → C126 done: rg-fundamental Wilsonian derivation promoted, verified, conclusion and references fixed.
+2. rg-fundamental is P01-ready (all Q79 findings addressed).
+3. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after Feb 20.
+4. Next: Q80 (light coherence pass on main paper after 14+ satellite cycles, per DX06 recommendation).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

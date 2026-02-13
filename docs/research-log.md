@@ -2799,3 +2799,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: reflect RG-D1.2a in Section 7 conclusion, per Q79 finding #4.
 - Work: added one sentence noting the Wilsonian derivation; adjusted outlook to say "a standard QFT example (with nontrivial fixed-point structure)" remains as extension. Diffstat: +1 -1. PDF rebuilt: 16 pages.
 - Next: C126 (supplementary material reference fix).
+
+## 2026-02-13 (C126: fix supplementary material reference in rg-fundamental)
+- Focus: replace dangling "supplementary material" reference with pointer to Section 5.9.
+- Work: changed "1D/2D/3D... supplementary material" to "2D and 3D... convention map (Section 5.9)". Diffstat: +1 -1. PDF rebuilt: 17 pages.
+- Result: all Q79 findings addressed. rg-fundamental is P01-ready.
+- Next: Q80 (light coherence pass on main paper, per DX06 recommendation #3).
