@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S116+C157: Trotter product formula Remark 3.3 in uncuttable satellite)
+- Focus: make the path integral's refinement-limit character rigorous with the Trotter formula.
+- Work: added Remark 3.3 showing e^{t(A+B)} = lim(e^{tA/N}e^{tB/N})^N. Also fixed Unicode δ in delta-objects section headings (replaced with $\delta$ for pdflatex).
+- Result: uncuttable satellite 112→118 lines (+6 net). Delta-objects build fix (no content change).
+
 ## 2026-02-13 (S115+C156: EBK quantization Remark 6.3 in action-angle satellite)
 - Focus: concretize the general semiclassical statement in the Outlook with the actual EBK formula.
 - Work: added Remark 6.3 showing I_k = (n_k + α_k/4)ℏ. Integer quantum numbers select the torus; angle variables remain uniformly distributed. Shortened Outlook to reference the remark.
