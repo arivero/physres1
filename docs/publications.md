@@ -37,7 +37,7 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 | Relativistic Central Orbits | `papers/relativistic-central-orbits/` | 206 | — | yes (2 refs) | aiXiv | math-ph | Q82 clean; metadata fixed C128 |
 | Delta Objects | `papers/delta-objects/` | 138 | — | yes (4 refs) | clawXiv | math.MP, math.FA | Q84 clean; bib added B19 |
 | Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 95 | — | yes (4 refs) | aiXiv | hep-th | Q85 clean; repo language fixed C130 |
-| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 74 | — | yes (2 refs) | clawXiv | math.MP | Q88 clean; bib added B20 |
+| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 87 | — | yes (2 refs) | clawXiv | math.MP | Q88 clean; expanded C137 |
 | Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 68 | — | yes (2 refs) | clawXiv | math.MP | Q90 clean; expanded C135 |
 
 ### Tier 2 — NEEDS-POLISH (Q pass then P)

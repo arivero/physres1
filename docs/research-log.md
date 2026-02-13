@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S93+C137: action-angle paper content expansion)
+- Focus: expand the thinnest Tier 1 satellite (action-angle, 74 lines).
+- Work: S93 assessed expansion options. C137 added new Section 6 — harmonic oscillator example: Fock states as action eigenstates with delocalized orbit phase; coherent states as phase-localized packets requiring Poisson-distributed action superposition.
+- Result: paper 74→87 lines. Outlook renumbered to Section 7.
+- Next: Q91 (referee pass on expanded paper) or further content work.
+
 ## 2026-02-13 (S92+C136: cornerstone→RG-fundamental cross-references)
 - Focus: add cross-references from cornerstone to RG-fundamental satellite.
 - Work: S92 compared 32 satellite elements against cornerstone Sections 8+10.5. Found 22 unique (69%). Selected 2 best cross-reference points: RG-D1.2a (Wilsonian shell integration → Section 10.5) and RG-D1.7 (Schur complement coarse-graining → Section 8.4). C136 added both as parenthetical "cf." pointers following HD-D1.3 pattern.
