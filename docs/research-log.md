@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S125+C166+S126+C167: unitarity limit + KAM boundary)
+- Focus: expand fermionic mediators and action-angle satellites.
+- Work: S125 studied unitarity limit (|a|→∞ RG fixed point, Bertsch parameter ξ≈0.37, BEC-BCS crossover). Cold-atom experimentalist subagent confirmed all claims. Promoted as Remark 5.3. S126 studied KAM/integrability boundary (KAM persistence, BGS conjecture, ETH). Mathematical physicist subagent confirmed all claims. Promoted as Remark 7.1.
+- Infrastructure: restructured blackboards to numbered slots 0–7 (from 19 named files). Updated README with slot index.
+- Result: fermionic mediators 135→138 (+3 net). Action-angle 120→123 (+3 net).
+
 ## 2026-02-13 (Q109+S124+C165: quality fixes + quantum revival Remark 5.1 in action-angle)
 - Focus: Q109 reviewed Example 3.2 (Uehling) and Remark 3.4 (symplectic). S124 studied quantum revivals.
 - Work: Q109 found Uehling integral error (u⁻² → u⁻¹, wrong power breaks logarithmic short-distance behavior), fixed. Shadow Hamiltonian phrasing clarified (H̃ exact, H approximate). S124 blackboard studied dispersion/revival timescales; subagent (semiclassical specialist) confirmed all claims correct, recommended compact forward pointer. Promoted as Remark 5.1.

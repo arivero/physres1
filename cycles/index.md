@@ -167,6 +167,8 @@
 163. `C163` Completed.
 164. `C164` Completed.
 165. `C165` Completed.
+166. `C166` Completed.
+167. `C167` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -317,6 +319,8 @@
 - `S122` Completed.
 - `S123` Completed.
 - `S124` Completed.
+- `S125` Completed.
+- `S126` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -468,15 +472,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. Q109+S124+C165: fixed Uehling integral (u⁻² → u⁻¹), clarified shadow Hamiltonian, added quantum revival Remark 5.1 in action-angle (+3 lines, 117→120).
-2. S122+C163: Uehling potential Example 3.2 in fermionic mediators satellite (+3 lines, 132→135).
-3. S123+C164: symplectic integrators Remark 3.4 in uncuttable satellite (+3 lines, 125→128).
-4. Q108: fixed sign error and Simpson's claim in E-M Remark 2.3 (uncuttable).
-5. S121+C162: von Mises near-optimal Remark 4.4 in action-angle satellite (+3 lines, 114→117).
+1. S125+C166: unitarity limit Remark 5.3 in fermionic mediators (+3 lines, 135→138).
+2. S126+C167: KAM boundary Remark 7.1 in action-angle (+3 lines, 120→123).
+3. Q109+S124+C165: fixed Uehling integral, clarified shadow Hamiltonian, quantum revival Remark 5.1 in action-angle (+3 lines, 117→120).
+4. S122+C163: Uehling potential Example 3.2 in fermionic mediators (+3 lines, 132→135).
+5. S123+C164: symplectic integrators Remark 3.4 in uncuttable (+3 lines, 125→128).
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (action-angle 120, uncuttable 128, fermionic mediators 135).
+- Expand shorter satellites (action-angle 123, uncuttable 128, fermionic mediators 138).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
