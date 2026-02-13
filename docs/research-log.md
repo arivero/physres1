@@ -13,6 +13,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S84: minimal hypotheses for half-density → Planck area)
+- Focus: Open Problem #4 — identify what is "more than dimensional bookkeeping" in the hypothesis chain.
+- Question: what is the minimal set of hypotheses, and where is the non-trivial content?
+- Work: classified each hypothesis as forced / physical principle / convention / UV hypothesis. Identified four non-bookkeeping elements: (a) composition forces d/2, (b) background-freeness is physical, (c) integrality is a UV hypothesis, (d) three-mechanism obstruction classifies failures. Stated minimal set: PA-H2.1 + PA-H2.4 + PA-H2.5a + gravity-only.
+- Result: Open Problem #4 answered. Each ingredient is necessary; dropping any one defeats the conclusion. Alternative route via conformal simplicity (PA-H2.6a) coincides with the integrality route at d=4.
+- Blackboard: `blackboards/2026-02-13-minimal-hypotheses-planck-area.md`
+- Next: C122 (promote minimal-set summary into planck-area).
+
 ## 2026-02-13 (Q77: referee pass on C121 — caught dimensional error)
 - Focus: verify PA-E5c claims and dimensional analysis.
 - Work: SymPy + manual verification revealed [G₀] = length^{-(d-1)} (not length^{-d}) for the resolvent. Rewrote PA-E5c to avoid specific [G₀] claims, focusing on structural separation (which is correct). Added errata to blackboard.

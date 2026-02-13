@@ -228,6 +228,7 @@
 - `S81` Completed.
 - `S82` Completed.
 - `S83` Completed.
+- `S84` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -338,12 +339,13 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: S/C on priority threads. Open Problems #1 and #2 addressed.
+Priority: C122 (promote S84 minimal-hypotheses analysis), then Q.
 1. P00 complete (planck-area v2 live). P01 rate-limited until Feb 20.
 2. Open Problem #1: addressed (S82+C120+Q76, PA-D1.4a).
-3. Open Problem #2: addressed (S83+C121+Q77, PA-E5c). Q77 caught and corrected a dimensional error.
-4. Remaining open problems: #3 (odd-d analysis, partially by S79/C117), #4 (minimal hypotheses), #5 (GUP comparison).
-5. Next: S on a priority thread or explore remaining open problems.
+3. Open Problem #2: addressed (S83+C121+Q77, PA-E5c).
+4. Open Problem #4: addressed (S84). Minimal set: PA-H2.1 + PA-H2.4 + PA-H2.5a + gravity-only.
+5. Remaining: #3 (odd-d, partially by S79/C117), #5 (GUP comparison).
+6. Next: C122 (promote S84 minimal-set summary), then Q78.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
