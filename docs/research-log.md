@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (B22: bibliography additions for Q117 fix)
+- Focus: add missing formal bibliography entries flagged by Q117.
+- Work: Added 13 reference entries: uncuttable +5 (Wilson, Gross-Wilczek, Politzer, Weinberg, Grzadkowski), fermionic +4 (Casimir, Lamoreaux, Chin, BCS), action-angle +4 (Bargmann, Perelomov, Mandelstam-Tamm, Berry-Tabor). All with DOIs where available.
+- Result: uncuttable 155→160, fermionic 155→159, action-angle 154→158 (bibliography lines only).
+
 ## 2026-02-13 (S151+C192+Q117: Cooper pairing + quality review)
 - Focus: expand fermionic mediators Section 6 (Cooper pairing as emergent bosonic mediator) and quality review of 4 recent remarks.
 - Work: S151 studied Cooper pairing. Condensed matter expert reviewed — caught photon mass error (m_A ∝ √(n_s), not |Δ|/v_F). Promoted as Remark 6.1: BCS gap, bosonic condensate, Anderson-Higgs/Meissner with corrected formula, BEC-BCS crossover connection. Q117 reviewed Remarks 4.3, 4.4, 5.7, 6.8: all CONDITIONAL PASS — physics correct but missing formal bibliography entries (~10 entries needed across three satellites).

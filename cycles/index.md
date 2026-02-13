@@ -218,6 +218,7 @@
 - `B19` Completed.
 - `B20` Completed.
 - `B21` Completed.
+- `B22` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -536,7 +537,7 @@ Recent completed:
 
 Next:
 - All three satellites at 154-155 lines (uncuttable 155, fermionic 155, action-angle 154).
-- **B cycle urgently needed**: Q117 found ~10 missing bibliography entries across all three satellites.
+- B22 completed: 13 bibliography entries added across all three satellites (Q117 fix).
 - Action-angle is now the shortest — next S+C cycle should target it.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
