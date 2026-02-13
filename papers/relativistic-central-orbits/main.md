@@ -81,6 +81,9 @@ As \(r \to 0^+\), the leading behavior is \(W_L \approx (Lc - K)/r\). Three regi
 
 Therefore **\(L > K/c\) is necessary and sufficient for the existence of bound orbits** (not just circular ones) in the SR inverse-square problem. In the Newtonian limit \(c \to \infty\), this reduces to \(L > 0\), the trivially satisfied condition for elliptical Kepler orbits. Structurally, SR lowers the Newtonian critical exponent from \(q_{\mathrm{crit}} = 3\) to \(q_{\mathrm{crit}} = 2\): the inverse-square force is the unique power law where the bound is non-trivial.
 
+`Remark 3.1a (Newtonian limit: structural cleanliness).`
+The \(c\to\infty\) limit is structurally clean: all relativistic corrections vanish (Lorentz factor \(\gamma\to 1\), radius contraction \(\sqrt{1-K^2/(c^2L^2)}\to 1\)), the admissibility bound \(L>K/c\) relaxes to the trivial \(L>0\), and core geometric relations (orbit radius \(r=L^2/(Km)\), binding energy \(mK^2/(2L^2)\)) are recovered in the limit. SR refines Newtonian mechanics by adding constraints that become trivial in the non-relativistic limit while preserving the underlying geometric content — a characteristic of the refinement-witness viewpoint.
+
 `Remark 3.2 (SR precession: the orbit is a precessing ellipse).`
 For general (non-circular) bound orbits under \(F=K/r^2\), the standard Binet substitution \(u=1/r\) applied to the SR equations of motion (cf.\ [BoscagginDambrosioFeltrin2020RelKepler] for the Hamiltonian treatment) yields the orbit equation
 \[
@@ -196,6 +199,9 @@ For stable circular orbits at radius \(r_0>6M\), the ratio of orbital to radial 
 `Remark 4.3f (Kepler's third law survives in coordinate time).`
 The coordinate orbital frequency for Schwarzschild circular orbits is \(\omega_\phi=d\phi/dt=(L/r_0^2)\cdot(1-2M/r_0)/E\). Substituting \(L^2=Mr_0^2/(r_0-3M)\) and \(E^2=(r_0-2M)^2/(r_0(r_0-3M))\) gives \(\omega_\phi^2=M/r_0^3\) — identically the Newtonian Kepler law, exact at all radii \(r_0>3M\). However, the proper orbital period \(T_\tau=T_t\sqrt{1-3M/r_0}\) includes a gravitational time-dilation factor; at the ISCO \(T_\tau/T_t=1/\sqrt{2}\approx 0.707\). The coordinate Kepler law is thus a "gauge accident" of Schwarzschild coordinates, while the proper-time period encodes the curvature effects that also produce the ISCO and the precession of Remarks 4.3a–e.
 
+`Remark 4.3g (Quantifying the SR→GR angular-momentum floor).`
+The SR existence threshold for bound inverse-square orbits is \(\ell>GM/c\) (Section 3.1, with \(K=GMm\) and specific angular momentum \(\ell=L/m\)), while the GR stability floor is \(\ell_{\mathrm{ISCO}}=2\sqrt{3}\,GM/c\) (Remark 4.3b). The ratio \(\ell_{\mathrm{ISCO}}/\ell_{\mathrm{SR}}=2\sqrt{3}\approx 3.46\) is a pure number quantifying the curvature-induced tightening of the angular-momentum constraint, paralleling the \(1/6\) precession ratio of Remark 3.2.
+
 # 5. SR Stability of Circular Orbits (Small Radial Perturbations)
 This section stays within mechanical SR (a point particle in an external, time-independent central scalar potential \(U(r)\)). It is used as a kinematic witness: some restrictions already appear before GR or field-theoretic interactions enter.
 
@@ -253,6 +259,9 @@ For concreteness, enumerate representative cases from the criterion \(1+(2-q)\ga
 - \(q=5/2\): stable iff \(\gamma^2<2\), i.e.\ \(v/c<1/\sqrt{2}\approx 0.707\).
 - \(q=3\) (inverse-cube): \(1-\gamma^2\le 0\) for all \(\gamma\ge 1\) — no stable circular orbit.
 As \(q\to 3^-\), the SR speed ceiling \(v_{\max}=c\sqrt{3-q}\to 0\), so the Newtonian threshold \(q<3\) is recovered as the non-relativistic shadow of a speed-dependent bound.
+
+`Remark 5.2c (Stability–precession duality at q=2).`
+For \(q=2\), the stability factor \(1+(2-q)\gamma^2\) reduces to \(1\), while Remark 3.2's precession frequency satisfies \(\omega^2=1/\gamma^2\). These are related: the stability factor equals \(\gamma^2\omega^2\). Thus unconditional stability at \(q=2\) is equivalent to the precession frequency being real and nonzero for all speeds — orbital shape (precession) and radial response (stability) are unified by the dimensionless invariant \(\gamma^2\omega^2=1\).
 
 # 6. Outlook
 Two natural extensions are:
