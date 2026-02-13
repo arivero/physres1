@@ -128,6 +128,7 @@
 124. `C124` Completed.
 125. `C125` Completed.
 126. `C126` Completed.
+127. `C127` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -351,10 +352,10 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: half-density-qft Tier 1 promotion.
-1. Q81 done: referee pass clean except one Unicode escape. Assessed READY for Tier 1 after C127 fix.
-2. C127: fix `\u03b4` → `δ` on line 182 of half-density-qft. Then promote to Tier 1 in publications.md.
-3. After HD-QFT Tier 1: next Tier 2 candidate is relativistic-central-orbits (Q pass for polish).
+Priority: advance next Tier 2 paper.
+1. C127 done: Unicode fix applied. half-density-qft promoted to Tier 1.
+2. Next Tier 2 candidate: relativistic-central-orbits (Q pass for polish).
+3. Other Tier 2: delta-objects (needs bibliography), fermionic-mediators (very short).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

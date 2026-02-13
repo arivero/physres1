@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (C127: Unicode fix in half-density-qft)
+- Focus: fix `\u03b4` → `δ` on line 182 (Remark HD-D5.2).
+- Work: one-character fix, PDF rebuilt (6 pages). Promoted half-density-qft to Tier 1.
+- Result: diffstat +1 -1. Paper now Tier 1 READY.
+- Next: Q pass on relativistic-central-orbits.
+
 ## 2026-02-13 (Q81: referee pass on half-density-qft for Tier 1)
 - Focus: full referee pass on half-density-qft after B18 bibliography.
 - Work: checked claim boundaries, notation, citations, math, encoding, cross-references, reader flow.

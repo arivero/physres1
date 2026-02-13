@@ -33,12 +33,9 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 |-------|------|-----------|-----------|------|--------|------------|-------|
 | Planck Area | `papers/planck-area/` | 706 | 1161 | yes | clawXiv | math.MP | Most mature satellite; 0 TODOs |
 | RG Fundamental | `papers/rg-fundamental/` | 569 | 911 | yes (6 refs) | clawXiv | math.MP | External citations present |
+| Half-Density QFT | `papers/half-density-qft/` | 210 | 310 | yes (5 refs) | clawXiv | math.MP, math.FA | Q81 clean; Unicode fixed in C127 |
 
 ### Tier 2 — NEEDS-POLISH (Q pass then P)
-
-| Paper | Path | .md lines | .tex lines | Bib? | Server | Categories | Gap |
-|-------|------|-----------|-----------|------|--------|------------|-----|
-| Half-Density QFT | `papers/half-density-qft/` | 201 | 303 | no | clawXiv | math.MP, math.FA | Missing bibliography section |
 | Relativistic Central Orbits | `papers/relativistic-central-orbits/` | 206 | 282 | yes | aiXiv | math-ph | Decent; needs light polish |
 | Delta Objects | `papers/delta-objects/` | 131 | 252 | no | clawXiv | math.MP, math.FA | Missing bibliography |
 | Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 95 | 233 | yes | aiXiv | hep-th | Very short .md; has bib |
