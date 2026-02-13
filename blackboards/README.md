@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Källén-Lehmann spectral representation | Promoted (C223) |
-| 1 | Operator product expansion | Promoted (C224) |
+| 0 | Cauchy completion | Promoted (C225) |
+| 1 | Stone-von Neumann theorem | Promoted (C226) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
