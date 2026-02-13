@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Schwinger model (QED₁₊₁) | Promoted (C235) |
-| 1 | 't Hooft anomaly matching | Promoted (C236) |
+| 0 | Dedekind cuts vs Cauchy sequences | Promoted (C237) |
+| 1 | Feynman-Kac formula (Euclidean path integral) | Promoted (C238) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

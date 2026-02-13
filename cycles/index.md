@@ -238,6 +238,8 @@
 234. `C234` Completed.
 235. `C235` Completed.
 236. `C236` Completed.
+237. `C237` Completed.
+238. `C238` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -462,6 +464,8 @@
 - `S193` Completed.
 - `S194` Completed.
 - `S195` Completed.
+- `S196` Completed.
+- `S197` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -588,6 +592,7 @@
 - `Q123` Completed.
 - `Q124` Completed.
 - `Q125` Completed.
+- `Q126` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -627,16 +632,14 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S192+C233: OAM Remark 3.3 in action-angle (+5 lines).
-2. S193+C234: Gabor limit Remark 4.6 in action-angle (+5 lines).
-3. Q125: Completed — C233-C234 reviewed (2/2 PASS).
-4. S194+C235: Schwinger model Remark 3.7 in fermionic (+6 lines).
-5. S195+C236: Anomaly matching Remark 6.6 in fermionic (+5 lines).
+1. S196+C237: Dedekind cuts Remark 1.3 in uncuttable (+5 lines).
+2. S197+C238: Feynman-Kac Remark 3.9 in uncuttable (+8 lines).
+3. Q126: Completed — C235-C236 reviewed (CONDITIONAL PASS, 3 fixes applied).
 
 Next:
-- Satellites: uncuttable 227 (18pp), fermionic 237 (19pp), action-angle 231 (18pp).
-- Uncuttable is now shortest — prioritize next remarks there.
-- Continue S+C expansion. All three now at 227+ lines.
+- Satellites: uncuttable 240 (19pp), fermionic 237 (19pp), action-angle 231 (18pp).
+- Action-angle is now shortest — prioritize next remarks there.
+- Continue S+C expansion. All three now at 231+ lines.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
