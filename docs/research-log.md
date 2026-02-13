@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (C129: fix encoding and paths in delta-objects)
+- Focus: fix Q83 issues — Unicode escapes, internal paths, YAML metadata.
+- Work: 12 lines changed, PDF rebuilt (4 pages).
+- Result: all encoding clean, paths generic, metadata filled. Still needs B19 (bibliography).
+- Next: B19 (add references).
+
 ## 2026-02-13 (Q83: referee pass on delta-objects)
 - Focus: full referee pass for Tier assessment.
 - Work: checked math (clean), notation, encoding, paths, bibliography status.

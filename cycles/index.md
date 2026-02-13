@@ -130,6 +130,7 @@
 126. `C126` Completed.
 127. `C127` Completed.
 128. `C128` Completed.
+129. `C129` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -356,10 +357,9 @@
 
 ## Next Action
 Priority: delta-objects Tier 1 promotion.
-1. Q83 done: referee pass found Unicode escapes (7 lines), internal paths (3 lines), empty metadata, no bibliography.
-2. C129: fix encoding, paths, metadata.
-3. B19: add bibliography (Hörmander, Bates–Weinstein, Albeverio et al.).
-4. Q84: follow-up referee pass after fixes.
+1. C129 done: encoding/paths/metadata fixed.
+2. B19: add bibliography (Hörmander, Bates–Weinstein, Albeverio et al.).
+3. Q84: follow-up referee pass after B19.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
