@@ -133,6 +133,7 @@
 129. `C129` Completed.
 130. `C130` Completed.
 131. `C131` Completed.
+132. `C132` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -360,16 +361,17 @@
 - `DX04` Completed.
 - `DX05` Completed.
 - `DX06` Completed.
+- `DX07` Completed.
 
 ### Publication Cycles (`Pnn`)
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
 **All 8 satellite papers at Tier 1.** Tier 2 and Tier 3 empty.
-1. Q88 done: both former Tier 3 papers promoted to Tier 1.
-2. All satellites have: clean encoding, proper metadata, adequate bibliography, no internal paths.
-3. Cornerstone: paper/main.md (~2200 lines, Q73 clean). Submit last.
-4. No further satellite promotion work needed. Future work: P cycles for submission, or content expansion.
+1. DX07+C132 done: comprehensive sweep found/fixed 3 papers with empty metadata.
+2. All satellites now fully consistent: metadata, encoding, paths, bibliography.
+3. research-state.md updated to 2026-02-13.
+4. Future: P cycles for satellite submissions, content expansion, cornerstone polish.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

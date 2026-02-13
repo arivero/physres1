@@ -3,7 +3,7 @@
 This file is the durable "working memory" for continuing research in this repo across context resets.
 It is **not** a citable source and may reference `conv_patched.md` only as an idea log.
 
-Date: 2026-02-11
+Date: 2026-02-13
 
 ## North Star (Current Paper)
 - Manuscript: `paper/main.md` (publishable artifact).
@@ -141,16 +141,25 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 - Dependent note draft: `papers/fermionic-mediators-contact-limits/main.md`.
 - Intended role: connect “mediator-field talk” to the repo’s point-interaction + RG themes in a controlled, falsifiable way.
 
-## Next Cycle Target (Reader Experience)
-- Completed: `S64 → C94 → Q51` (compact reader map added at the Section 2.5 → Section 3 transition).
-- Completed: `C95 → Q52` (explicit pointer to Appendix 10.3 symbol definitions; Future Work wording updated).
-- Completed: `C96 → Q53` (removed repo-internal path references from the half-density QFT dependent note).
+## Publication Readiness (2026-02-13)
+**All 8 satellite papers at Tier 1 (READY for P cycles):**
+1. Planck Area (706 lines, 23 pages, 9 refs)
+2. RG Fundamental (569 lines, 17 pages, 6 refs)
+3. Half-Density QFT (210 lines, 6 pages, 5 refs)
+4. Relativistic Central Orbits (207 lines, 6 pages, 2 refs)
+5. Delta Objects (139 lines, 5 pages, 4 refs)
+6. Fermionic Mediators (96 lines, 4 pages, 4 refs)
+7. Action-Angle Indeterminacy (75 lines, 3 pages, 2 refs)
+8. Uncuttable Controlled Refinement (59 lines, 3 pages, 2 refs)
 
-Optional follow-ups:
-- `C97` (optional): if `papers/half-density-qft/main.md` becomes a submission target, inline minimal support for the conformal conjugation identity (or add a standard citation) and reduce “companion note” dependence.
-- `B12` (optional, time-capped): one more OA attempt for `[Dirac1933]` via alternative lawful repositories; otherwise keep `PENDING_LOCAL_PDF`.
+Tier 2 and Tier 3: empty. Cornerstone: paper/main.md (~2200 lines, Q73 clean).
+
+All papers verified: clean encoding (no Unicode escapes), proper YAML metadata, no internal file paths, adequate bibliography.
+
+P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless explicitly requested.
 
 ## Immediate Next Actions (Low Friction)
 1. Add a dated entry to `docs/research-log.md` at the start of each session (even if work is exploratory).
 2. When a derivation starts to stabilize, create a dedicated note in `paper/notes/` and link it from the log.
-3. Keep `docs/next-articles.md` as the “topic backlog”; keep `docs/research-log.md` as the “what happened” record.
+3. Keep `docs/next-articles.md` as the "topic backlog"; keep `docs/research-log.md` as the "what happened" record.
+4. Future work: P cycles for satellite submissions, content expansion for shorter papers, cornerstone polish.
