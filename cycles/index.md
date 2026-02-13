@@ -232,6 +232,8 @@
 228. `C228` Completed.
 229. `C229` Completed.
 230. `C230` Completed.
+231. `C231` Completed.
+232. `C232` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -450,6 +452,8 @@
 - `S187` Completed.
 - `S188` Completed.
 - `S189` Completed.
+- `S190` Completed.
+- `S191` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -574,6 +578,7 @@
 - `Q121` Completed.
 - `Q122` Completed.
 - `Q123` Completed.
+- `Q124` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -613,14 +618,14 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S188+C229: Crossing symmetry Remark 2.2 in fermionic (+4 lines).
-2. S189+C230: Hubbard-Stratonovich Remark 6.5 in fermionic (+4 lines).
-3. Q123: 2/2 PASS for C227-C228 (action-angle).
+1. S190+C231: Zeno's paradoxes Remark 1.2 in uncuttable (+4 lines).
+2. S191+C232: Constructive QFT Remark 4.11 in uncuttable (+5 lines).
+3. Q124: In progress — reviewing C231-C232 (uncuttable).
 
 Next:
-- Satellites: fermionic 226 (17pp), action-angle 221 (17pp), uncuttable 218 (17pp).
-- Uncuttable is shortest — prioritize next remarks there.
-- Continue S+C expansion. All three now at 218+ lines.
+- Satellites: uncuttable 227 (18pp), fermionic 226 (17pp), action-angle 221 (17pp).
+- Action-angle is shortest — prioritize next remarks there.
+- Continue S+C expansion. All three now at 221+ lines.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
