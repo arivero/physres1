@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S101+C143: action-angle cross-ref + uncuttable expansion)
+- Focus: cross-reference action-angle satellite from D4.2b; expand uncuttable paper.
+- Work: added parenthetical pointer from D4.2b to action-angle note (HO witness). Expanded uncuttable paper with Section 2.5: derivative as counterterm-subtracted limit (Example 2.1) + higher-order counterterms (Remark 2.2).
+- Result: cornerstone +2 lines (6th satellite cross-ref), uncuttable 68→96 lines (+28 net).
+- Next: Q97 broad pass or further work.
+
 ## 2026-02-13 (S100+C142: Moyal product worked examples in Section 7.3)
 - Focus: fill content gap in Section 7.3 — the Moyal product formula had no explicit computation.
 - Work: added Derivation D5.1a with q⋆p = qp+iℏ/2, [q,p]_⋆ = iℏ; q²⋆p = q²p+iℏq, [q²,p]_⋆ = 2iℏq; general [qⁿ,p]_⋆ = niℏq^{n-1}.
