@@ -93,6 +93,9 @@ As of 2026-02-12 (see `paper/bibliography.md` for details):
 
 Resolved in B12 (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `Velhinho2017`, `Groenewold1946` (Univ. Groningen OA), `Connes1994` (author OA from alainconnes.org).
 
+## Subagent Orchestration (Optional)
+Agents that support subagent orchestration (e.g., Claude Code with Task tool) can delegate Q-cycle referee passes and S-cycle blackboard reviews to fresh-context subagents for improved independent criticism. See `AGENTS.md` § "Subagent Recipes" for prompt templates and a persona library. Agents without subagent support (Codex CLI, Copilot) should perform these reviews in-context instead — the cycle logic is identical.
+
 ## Follow-Up Papers Roadmap
 Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` as brainstorming input):
 - `docs/next-articles.md`

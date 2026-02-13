@@ -146,6 +146,8 @@
 142. `C142` Completed.
 143. `C143` Completed.
 144. `C144` Completed.
+145. `C145` Completed.
+146. `C146` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -272,6 +274,9 @@
 - `S99` Completed.
 - `S100` Completed.
 - `S101` Completed.
+- `S102` Completed.
+- `S103` Completed.
+- `S104` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -373,6 +378,7 @@
 - `Q96` Completed.
 - `Q97` Completed.
 - `Q98` Completed.
+- `Q99` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -408,22 +414,21 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-**9 satellite papers (8 at Tier 1, 1 new draft needing Q pass).**
-Cornerstone polished, self-consistent, cross-references HD + RG satellites.
+**9 satellite papers all at Tier 1. All cross-referenced from cornerstone.**
+Cornerstone at ~1457 lines, Q99 clean.
 
 Recent completed:
-1. S97: Dirac Probes satellite #9 initial draft (172 lines, 5 pages).
-2. S96: research state refresh.
-3. S95+C139: fermionic mediators expanded (vacuum polarization, 95→112).
-4. S94+C138: delta-objects expanded (Van Vleck section, 138→164).
-5. DX09: ranked roadmap items for next satellite — top pick: B (Dirac Probes). Done.
+1. S104: bound-orbit L > K/c extension via effective potential (+13 lines to relativistic-orbits satellite).
+2. Q99: subagent referee pass caught sign error (e^{1/(cg)} → e^{-1/(cg)}), 3 more fixes.
+3. C146: cross-references to remaining 3 satellites — all 9 now linked.
+4. S103+C145: numerical witness D1.2a in Section 3.2 (+5 lines cornerstone).
+5. Subagent recipes documented in AGENTS.md (optional, for agents supporting orchestration).
 
 Next:
-- All 9 satellites at Tier 1. Cornerstone at 1452 lines, Q97 clean.
-- This session added: Dirac Probes satellite (#9), Moyal product D5.1a, uncuttable expansion, 6 satellite cross-refs.
 - P cycles for satellite submissions when ready.
-- Cornerstone content opportunities: Section 8 QFT witness (hard), Section 3 numerical example (medium).
+- Cornerstone content opportunities: Section 8 QFT witness (hard).
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
+- Expand shorter satellites (action-angle 87 lines, uncuttable 96 lines, fermionic mediators 112 lines).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

@@ -13,6 +13,25 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S104: bound-orbit L > K/c extension via effective potential)
+- Focus: extend the L > K/c angular momentum bound from circular orbits to all bound orbits in SR inverse-square force.
+- Work: wrote blackboard with effective-potential analysis. Subagent review (intuitive physicist persona) confirmed correctness, suggested fixes for marginal case description and closed-form well depth. Promoted Section 3.1 to relativistic-central-orbits satellite.
+- Result: satellite 207→220 lines (+13 net). Cornerstone cross-ref updated to "bound orbits."
+
+## 2026-02-13 (Q99: subagent-delegated referee pass on cornerstone)
+- Focus: referee pass on cornerstone after D1.2a + 3 new cross-references. Two parallel subagent referees.
+- Work: Section 3 referee (math physicist): caught "bound orbits" overstatement, O(Δt) terminology error. Introduction+Section 8 referee (theoretical physicist): caught sign error in dimensional transmutation (e^{1/(cg)} → e^{-1/(cg)}), restructured fermionic mediators parenthetical.
+- Result: 4 fixes applied. Sign error is the most significant — had survived all previous Q passes.
+
+## 2026-02-13 (C146: cross-references to remaining 3 satellites)
+- Focus: add parenthetical cross-references to Uncuttable (Introduction), Relativistic Central Orbits (Section 3.3), Fermionic Mediators (Section 8.1).
+- Result: all 9 satellite papers now cross-referenced from the cornerstone.
+
+## 2026-02-13 (S103+C145: numerical witness D1.2a for Section 3.2)
+- Focus: concrete numerical example of kick-drift polygonal construction for inverse-square force.
+- Work: wrote blackboard, subagent review (skeptical applied mathematician persona) caught arithmetic rounding, e=9/25 exact, marginal case phrasing. Promoted D1.2a after D1.2 in Section 3.2.
+- Result: cornerstone +5 lines. First use of new blackboard subagent policy.
+
 ## 2026-02-13 (S101+C143: action-angle cross-ref + uncuttable expansion)
 - Focus: cross-reference action-angle satellite from D4.2b; expand uncuttable paper.
 - Work: added parenthetical pointer from D4.2b to action-angle note (HO witness). Expanded uncuttable paper with Section 2.5: derivative as counterterm-subtracted limit (Example 2.1) + higher-order counterterms (Remark 2.2).
