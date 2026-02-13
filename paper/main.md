@@ -9,7 +9,7 @@ abstract: |
 # 1. Introduction
 The historical and technical problem addressed here is not merely "how to quantize," but "how to define a stable continuum theory from iterative refinement." The paper therefore treats Newtonian mechanics, action principles, path integration, deformation quantization, and renormalization as parts of one continuity problem.
 
-The first anchor is Newton’s geometric method in central-force motion: replace a curve by a sequence of short segments, impose a local update rule, and pass to a limit while controlling what is meant by "vanishing" quantities. In modern language, the key object is not a smallest geometric piece but a refinement procedure with invariant content [Newton1687].
+The first anchor is Newton’s geometric method in central-force motion: replace a curve by a sequence of short segments, impose a local update rule, and pass to a limit while controlling what is meant by "vanishing" quantities. In modern language, the key object is not a smallest geometric piece but a refinement procedure with invariant content [Newton1687]. (A companion note, "Uncuttable as Controlled Refinement," develops this distinction: "uncuttable" means defined only via a refinement limit, not indivisible in the ontological sense.)
 
 The second anchor is the action formulation. Action is additive under temporal partitioning, and that additivity is exactly the algebraic structure needed to compare coarse and fine descriptions. This creates the bridge to quantum composition: if local contributions compose multiplicatively while the underlying functional is additive, exponential weighting is structurally natural [Dirac1933] [Feynman1948].
 
@@ -217,7 +217,7 @@ $$
 \frac{d\mathbf L}{dt}=\mathbf r\times \mathbf F=\mathbf 0.
 $$
 
-So the areal law is independent of the inverse-power index \(n\) in \(\mathbf F=-(K/r^n)\hat{\mathbf r}\): \(n\) changes radial dynamics and orbit families, but not the areal-velocity conservation mechanism itself.
+So the areal law is independent of the inverse-power index \(n\) in \(\mathbf F=-(K/r^n)\hat{\mathbf r}\): \(n\) changes radial dynamics and orbit families, but not the areal-velocity conservation mechanism itself. (A companion note on relativistic central orbits examines what happens when the kinematics is Lorentz-compatible: the inverse-square case admits exact relativistic simplification, with bound orbits requiring \(L>K/c\).)
 
 `Heuristic H1.1 (Impulse-to-continuous interpretation).`
 The impulse model is a refinement scaffold for continuous forcing, not a literal claim that nature acts by discrete kicks. Its value is structural: invariants proven exactly at finite step survive controlled refinement.
@@ -845,7 +845,7 @@ with the deformation bridge in place, the remaining problem is not how to define
 
 # 8. Renormalization as Controlled Refinement
 ## 8.1 Why Renormalization Appears in Refinement Limits
-The previous sections treated refinement as benign: polygonal refinement in Section 3, time-slicing in Section 6, and deformation parameter limits in Section 7. In quantum field theory and in several singular quantum-mechanical models (e.g. contact interactions), the same refinement step can instead *diverge* [ManuelTarrach1994PertRenQM] [BoyaRivero1994Contact]:
+The previous sections treated refinement as benign: polygonal refinement in Section 3, time-slicing in Section 6, and deformation parameter limits in Section 7. In quantum field theory and in several singular quantum-mechanical models (e.g. contact interactions), the same refinement step can instead *diverge* [ManuelTarrach1994PertRenQM] [BoyaRivero1994Contact] (a companion note on fermionic mediators traces how contact-interaction limits arise as the natural effective-theory residue when quantum loops replace classical sources):
 as the cutoff scale is removed, intermediate quantities blow up even when low-energy physics is expected to remain finite.
 
 Renormalization is the mechanism that restores the program's central thesis in the divergent case:
