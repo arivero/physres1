@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q82: referee pass on relativistic-central-orbits)
+- Focus: full referee pass for Tier 1 assessment.
+- Work: checked math (all clean), notation, citations (2 OA refs), encoding, structure.
+- Result: three fixable issues — internal path on line 10, meta-language on line 12, empty YAML metadata. Math and structure clean. Not yet Tier 1.
+- Next: C128 (fix three issues), then promote to Tier 1.
+
 ## 2026-02-13 (C127: Unicode fix in half-density-qft)
 - Focus: fix `\u03b4` → `δ` on line 182 (Remark HD-D5.2).
 - Work: one-character fix, PDF rebuilt (6 pages). Promoted half-density-qft to Tier 1.

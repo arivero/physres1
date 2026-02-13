@@ -321,6 +321,7 @@
 - `Q79` Completed.
 - `Q80` Completed.
 - `Q81` Completed.
+- `Q82` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -352,10 +353,10 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: advance next Tier 2 paper.
-1. C127 done: Unicode fix applied. half-density-qft promoted to Tier 1.
-2. Next Tier 2 candidate: relativistic-central-orbits (Q pass for polish).
-3. Other Tier 2: delta-objects (needs bibliography), fermionic-mediators (very short).
+Priority: relativistic-central-orbits Tier 1 promotion.
+1. Q82 done: three fixable issues found (internal path, meta-language, empty metadata).
+2. C128: fix lines 10, 12 and YAML metadata. Then promote to Tier 1.
+3. After RCO Tier 1: next Tier 2 candidates are delta-objects (needs bibliography) and fermionic-mediators (very short).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
