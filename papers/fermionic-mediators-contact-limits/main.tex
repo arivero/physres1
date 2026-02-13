@@ -335,6 +335,33 @@ threshold (open production channels) is precisely what the contact
 expansion cannot capture --- it is the absorptive physics that the
 dispersion integral reconstructs from the branch-cut singularity.
 
+\texttt{Remark\ 3.7\ (Schwinger\ model:\ exact\ fermion-to-boson\ transmutation\ in\ 1+1\ dimensions).}
+The Schwinger model --- QED in 1+1 dimensions with massless fermions
+coupled to a U(1) gauge field (Schwinger, 1962) --- is exactly solvable
+via bosonization (Coleman, 1975) and provides the simplest demonstration
+of how fermionic fields produce a purely bosonic physical spectrum
+{[}Schwinger1962Mass{]}. The model confines: the photon acquires a mass
+\(m=e/\sqrt{\pi}\) (where \(e\) is the gauge coupling, with mass
+dimension 1 in 1+1D), and the physical spectrum consists of a single
+massive boson --- the ``Schwinger boson,'' a fermion-antifermion
+composite. No free fermions appear as asymptotic states: the exact
+fermion propagator has its pole completely cancelled by gauge
+interactions {[}ColemanJackiwSusskind1975{]}. The chiral anomaly plays
+the central role: the axial current satisfies
+\(\partial_\mu j^{\mu 5}=(e/\pi)\,\varepsilon^{\mu\nu}F_{\mu\nu}\), and
+it is this anomaly that generates the boson mass --- the mass formula
+\(m^2=e^2/\pi\) is exact to all orders, receiving no higher-loop
+corrections. For the massive Schwinger model (fermion mass
+\(m_f\neq 0\)), a non-trivial \(\theta\)-vacuum structure appears: the
+topological vacuum angle produces a background electric field, giving
+the 1+1D analog of the QCD vacuum structure of Remark 6.4. The model
+demonstrates the full fermion \(\to\) boson chain of Section 6 in an
+exactly solvable setting: fermions are permanently confined into bosonic
+composites, the mass scale arises from dimensional transmutation (no
+dimensionful parameter in the classical Lagrangian), and at distances
+\(r\gg 1/m\) the interaction is exponentially screened, collapsing to
+the contact expansion of Section 4.
+
 \hypertarget{ir-replacement-local-operators-rightarrow-contact-kernels-boundary-condition-data}{%
 \section{\texorpdfstring{4. IR replacement: local operators
 \(\Rightarrow\) contact kernels / boundary-condition
@@ -786,6 +813,37 @@ with matching at the compositeness scale connecting the fermionic UV
 description to the bosonic IR effective theory --- the same structural
 chain as the pion-exchange story of Remark 6.3.
 
+\texttt{Remark\ 6.6\ (\textquotesingle{}t\ Hooft\ anomaly\ matching:\ the\ topological\ constraint\ on\ the\ fermion-to-composite\ chain).}
+The fermion \(\to\) emergent boson chain of Section 6 is constrained by
+anomaly matching ('t Hooft, 1980): if a global symmetry \(G\) has an
+anomaly in the UV theory (computed from the fundamental fermion
+content), then the same anomaly must appear in the IR theory --- either
+from massless composite fermions, from Goldstone bosons (via the
+Wess-Zumino-Witten term), or from symmetry-protected topological phases
+{[}'tHooft1980{]}. The anomaly coefficients are discrete (related to
+topological invariants via the Atiyah-Singer index theorem) and cannot
+vary under continuous RG flow, making 't Hooft anomalies for global
+symmetries exact RG invariants --- unlike gauge-current anomalies, which
+can run with the coupling {[}WessZumino1971{]}. For QCD (Remarks
+6.3--6.4), the fundamental theory has \(N_f\) quarks giving anomaly
+coefficients for
+\(\mathrm{SU}(N_f)_L\times\mathrm{SU}(N_f)_R\times\mathrm{U}(1)_B\);
+with chiral symmetry breaking
+\(\mathrm{SU}(N_f)_L\times\mathrm{SU}(N_f)_R\to\mathrm{SU}(N_f)_V\), the
+pions (Goldstone bosons) carry the anomaly through the
+Wess-Zumino-Witten topological term (Witten, 1983) {[}Witten1983WZW{]}.
+The quantitative test: the \(\pi^0\to\gamma\gamma\) decay rate,
+completely fixed by the anomaly coefficient (proportional to \(N_c\),
+the number of colors), agrees with experiment --- directly verifying
+that pions carry the quark anomaly. When the Hubbard-Stratonovich
+auxiliary field of Remark 6.5 is interpreted as a dynamical IR degree of
+freedom, anomaly matching constrains which channels can consistently
+realize the fundamental symmetries: not every Fierz channel produces an
+anomaly-compatible low-energy theory. Anomaly matching thus provides a
+non-perturbative selection rule on the fermion-to-composite chain: the
+composites are not arbitrary but must be ``anomaly-compatible'' with the
+fundamental fermions.
+
 \hypertarget{references}{%
 \section{References}\label{references}}
 
@@ -979,6 +1037,33 @@ chain as the pion-exchange story of Remark 6.3.
   Superconductivity. I,'' \emph{Physical Review} 122 (1961), 345--358.
   DOI \texttt{10.1103/PhysRev.122.345}. (NJL model; chiral symmetry
   breaking via four-fermion interaction; used in Remark 6.5.)
+\item
+  {[}Schwinger1962Mass{]} Julian Schwinger, ``Gauge invariance and mass.
+  II,'' \emph{Physical Review} 128 (1962), 2425--2429. DOI
+  \texttt{10.1103/PhysRev.128.2425}. (Schwinger model: photon mass
+  generation in QED\(_{1+1}\); used in Remark 3.7.)
+\item
+  {[}ColemanJackiwSusskind1975{]} Sidney Coleman, Roman Jackiw, and
+  Leonard Susskind, ``Charge shielding and quark confinement in the
+  massive Schwinger model,'' \emph{Annals of Physics} 93 (1975),
+  267--275. DOI \texttt{10.1016/0003-4916(75)90212-2}. (Massive
+  Schwinger model, confinement, \(\theta\)-vacuum; used in Remark 3.7.)
+\item
+  {[}'tHooft1980{]} Gerard 't Hooft, ``Naturalness, chiral symmetry, and
+  spontaneous chiral symmetry breaking,'' in \emph{Recent Developments
+  in Gauge Theories}, NATO ASI Series B 59, Plenum, 1980, pp.~135--157.
+  DOI \texttt{10.1007/978-1-4684-7571-5\_9}. ('t Hooft anomaly matching
+  condition; used in Remark 6.6.)
+\item
+  {[}WessZumino1971{]} Julius Wess and Bruno Zumino, ``Consequences of
+  anomalous Ward identities,'' \emph{Physics Letters B} 37 (1971),
+  95--97. DOI \texttt{10.1016/0370-2693(71)90582-X}. (Anomalous Ward
+  identities; used in Remark 6.6.)
+\item
+  {[}Witten1983WZW{]} Edward Witten, ``Global aspects of current
+  algebra,'' \emph{Nuclear Physics B} 223 (1983), 422--432. DOI
+  \texttt{10.1016/0550-3213(83)90063-9}. (Wess-Zumino-Witten topological
+  term; used in Remark 6.6.)
 \end{enumerate}
 
 \end{document}
