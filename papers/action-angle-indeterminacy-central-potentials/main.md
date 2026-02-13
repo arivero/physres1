@@ -65,8 +65,21 @@ a single stationary eigenstate (even when it carries classical-sounding quantum 
 
 In other words, “classical orbit pictures” correspond to semiclassical packets and stationary-phase concentration, not to exact eigenstates that are sharp in the conserved actions.
 
-# 6. Outlook (kept minimal)
-Beyond the \((\phi,L_z)\) sector, integrable central problems admit a fuller action–angle description (with a radial action and additional angle variables on the invariant torus). EBK/WKB quantization makes the same structural point: the more sharply the actions are specified, the less information remains in the conjugate phases. Hardening that broader story into a standalone foundations claim would require a separate study cycle to avoid conflating (i) action–angle existence/global issues with (ii) semiclassical quantization conditions.
+# 6. A second witness: the harmonic oscillator
+
+The same structure appears in the simplest one-dimensional integrable system.
+
+`Example 6.1 (Harmonic oscillator: Fock states vs coherent states).`
+For a harmonic oscillator of frequency \(\omega\), define the classical action variable \(J=E/\omega\). The quantum Fock states \(|n\rangle\) are the action eigenstates (\(J_n=(n+\tfrac12)\hbar\)), and their phase-space (Husimi) distribution is a ring centered at the origin — the orbit phase \(\theta\) is uniformly delocalized, exactly as \(\phi\) is delocalized in an \(L_z\) eigenstate. Conversely, a coherent state
+\[
+|\alpha\rangle
+=e^{-|\alpha|^2/2}\sum_{n=0}^{\infty}\frac{\alpha^n}{\sqrt{n!}}\,|n\rangle,
+\qquad \alpha=|\alpha|\,e^{i\theta_0},
+\]
+is the closest quantum analog of a classical orbit with definite amplitude \(|\alpha|\) and phase \(\theta_0\). Its Fock-state weights follow a Poisson distribution with mean \(\bar n=|\alpha|^2\), so localizing the phase to width \(\Delta\theta\sim 1/|\alpha|\) requires spreading the action over \(\Delta n\sim |\alpha|\) modes. The tradeoff is the same as in Section 4: sharp action implies delocalized phase, and vice versa.
+
+# 7. Outlook (kept minimal)
+Beyond the \((\phi,L_z)\) sector and the harmonic oscillator above, integrable central problems admit a fuller action–angle description (with a radial action and additional angle variables on the invariant torus). EBK/WKB quantization makes the same structural point: the more sharply the actions are specified, the less information remains in the conjugate phases. Hardening that broader story into a standalone foundations claim would require a separate study cycle to avoid conflating (i) action–angle existence/global issues with (ii) semiclassical quantization conditions.
 
 # References
 
