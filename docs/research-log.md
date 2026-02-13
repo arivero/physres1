@@ -2783,3 +2783,8 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: self-contained Wilsonian derivation in `blackboards/2026-02-13-wilsonian-shell-2d-delta.md`. Makes RG-P1.1 semigroup composition concrete. Also bridges to Section 6 (Schur complement) via shell-as-coarse-graining interpretation.
 - Discovery: none (confirms existing result, adds structural clarity).
 - Next: C124 (promote S85 into rg-fundamental Section 5), then Q79.
+
+## 2026-02-13 (C124: promote S85 → RG-D1.2a in rg-fundamental)
+- Focus: promote the Wilsonian shell-integration derivation from S85 into rg-fundamental Section 5.2.
+- Work: inserted `Derivation RG-D1.2a` (27 new lines) after the integrated flow equation, before Section 5.3. Covers shell integral, effective coupling matching, semigroup composition, and Section 6 bridge. Guard checks clean. PDF rebuilt: 16 pages.
+- Next: Q79 (referee pass on rg-fundamental).

@@ -125,6 +125,7 @@
 121. `C121` Completed.
 122. `C122` Completed.
 123. `C123` Completed.
+124. `C124` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -345,10 +346,9 @@
 
 ## Next Action
 Priority: rg-fundamental (Tier 1, P01 candidate).
-1. S85 done: Wilsonian shell-integration beta function for 2D delta. Ready for promotion.
-2. Next: C124 (promote S85 → new subsection in rg-fundamental Section 5).
-3. Then: Q79 (referee pass on rg-fundamental after C124).
-4. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after Q.
+1. S85 done, C124 done: Wilsonian shell derivation promoted as RG-D1.2a in rg-fundamental.
+2. Next: Q79 (referee pass on rg-fundamental after C124).
+3. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after Q79.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
