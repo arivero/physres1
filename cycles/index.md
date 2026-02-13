@@ -283,6 +283,7 @@
 - `S105` Completed.
 - `S106` Completed.
 - `S107` Completed.
+- `S108` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -425,15 +426,15 @@
 Cornerstone at ~1475 lines.
 
 Recent completed:
-1. S107+C149: cubic Moyal bracket witness D5.1b in Section 7.3 (+7 lines). Gap 3 filled.
-2. Q100: fixed α↔ordering correspondence in D4.1b (prepoint/postpoint labels + operator formula).
-3. S106+C148: ordering witness D4.1b in Section 6.3 (+5 lines).
-4. S105+C147: harmonic-oscillator step-halving witness D6.2a-HO in Section 8.4 (+5 lines).
-5. S104: bound-orbit L > K/c extension via effective potential (+13 lines satellite).
+1. S108: circular uncertainty relation Prop 4.2 in action-angle satellite (+7 lines, 87→94).
+2. S107+C149: cubic Moyal bracket witness D5.1b in Section 7.3 (+7 lines). Gap 3 filled.
+3. Q100: fixed α↔ordering correspondence in D4.1b.
+4. S106+C148: ordering witness D4.1b in Section 6.3 (+5 lines).
+5. S105+C147: step-halving witness D6.2a-HO in Section 8.4 (+5 lines).
 
 Next:
 - Content gaps: Gap 2 (stationary phase numerical verification, medium), Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (action-angle 87 lines, uncuttable 96 lines, fermionic mediators 112 lines).
+- Expand shorter satellites (uncuttable 96 lines, fermionic mediators 112 lines, action-angle now 94).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

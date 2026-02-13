@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S108: circular uncertainty relation in action-angle satellite)
+- Focus: expand shortest satellite (action-angle, 87 lines) with a quantitative uncertainty relation for (φ, L_z).
+- Work: blackboard explored multiple derivation routes; settled on adding Robertson inequalities for (L_z, cos φ) and (L_z, sin φ) using Var(cos φ)+Var(sin φ)=1-R². Subagent (rigorous mathematician) caught missing factor i in [L_z, sin φ]. Promoted Proposition 4.2.
+- Result: satellite 87→94 lines (+7 net). Clean quantitative bound Var(L_z)·(1-R²) ≥ ℏ²R²/4.
+
 ## 2026-02-13 (S107+C149: cubic Moyal bracket witness D5.1b for Section 7.3)
 - Focus: fill Gap 3 — show the first genuine O(ℏ³) quantum correction in the Moyal bracket, beyond the Poisson bracket.
 - Work: derived general formula for [q^m, p^n]_⋆ for pure monomials. When min(m,n)≤2, only k=1 contributes (no corrections). At m=n=3, the k=3 term gives [q³,p³]_⋆ = iℏ{q³,p³} - (3/2)iℏ³. Subagent review (hostile referee) caught off-by-one in term count, sum notation ambiguity, sharpened min(m,n)≤2 condition.
