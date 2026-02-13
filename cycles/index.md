@@ -417,10 +417,10 @@ Recent completed:
 5. DX09: ranked roadmap items for next satellite — top pick: B (Dirac Probes). Done.
 
 Next:
-- Dirac Probes at Tier 1 (Q94 clean). All 9 satellites at Tier 1.
+- All 9 satellites at Tier 1. Cornerstone at 1452 lines, Q97 clean.
+- This session added: Dirac Probes satellite (#9), Moyal product D5.1a, uncuttable expansion, 6 satellite cross-refs.
 - P cycles for satellite submissions when ready.
-- Content expansion for Dirac Probes (thin at 172 lines — add more worked examples or extend taxonomy).
-- Cornerstone deeper content work (new computations).
+- Cornerstone content opportunities: Section 8 QFT witness (hard), Section 3 numerical example (medium).
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
 Deprioritized unless blocking a revision:
