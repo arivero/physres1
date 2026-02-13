@@ -152,7 +152,7 @@ In one dimension the rank-one structure is particularly explicit. For \(H=-\frac
 \[
 G(x,x';E)=G_0(x,x';E)+\frac{g\,G_0(x,0;E)\,G_0(0,x';E)}{1-g\,G_0(0,0;E)}.
 \]
-The correction term factors as \(f(x)\cdot f(x')\) with \(f(x)=G_0(x,0;E)\) — this is the rank-one kernel in action: the point interaction contributes a term proportional to \(|0\rangle\langle0|\) in the resolvent. The denominator vanishes at \(\kappa=|g|m/\hbar^2\), yielding the unique bound state \(E=-mg^2/(2\hbar^2)\), and the residue at this pole factors as \(\psi_b(x)\,\psi_b(x')\) with \(\psi_b(x)=\sqrt{\kappa}\,e^{-\kappa|x|}\) — a rank-one projector \(|\psi_b\rangle\langle\psi_b|\) [AlbeverioGesztesyHoeghKrohnHolden2005]. In the half-density kernel language, the factored piece reads \((e^{-\kappa|x|}|dx|^{1/2})\otimes(e^{-\kappa|x'|}|dx'|^{1/2})\), manifestly a product of half-densities.
+The correction term factors as \(f(x)\cdot f(x')\) with \(f(x)=G_0(x,0;E)\) — this is the rank-one kernel in action: the point interaction contributes a term proportional to \(|0\rangle\langle0|\) in the resolvent. The denominator vanishes at \(\kappa=|g|m/\hbar^2\), yielding the unique bound state \(E=-mg^2/(2\hbar^2)\), and the residue at this pole factors as \(\psi_b(x)\,\psi_b(x')\) with \(\psi_b(x)=\sqrt{\kappa}\,e^{-\kappa|x|}\) — a rank-one projector \(|\psi_b\rangle\langle\psi_b|\) [AlbeverioGesztesyHoeghKrohnHolden2005]. In the half-density kernel language, the factored piece reads \((\sqrt{\kappa}\,e^{-\kappa|x|}|dx|^{1/2})\otimes(\sqrt{\kappa}\,e^{-\kappa|x'|}|dx'|^{1/2})\), manifestly a product of half-densities.
 
 # 5. Where scales enter upon scalarization (and why RG invariants are natural candidates)
 Half-density kernels are canonical; scalar representatives are not.

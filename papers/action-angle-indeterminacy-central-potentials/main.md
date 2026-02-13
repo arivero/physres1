@@ -68,6 +68,14 @@ For any state on the circle, define the circular concentration \(R=|\langle e^{i
 \]
 When \(R=0\) (uniform distribution, as in an \(L_z\) eigenstate) the bound is trivial. As \(R\to1\) (sharply localized angle) the bound forces \(\mathrm{Var}(L_z)\to\infty\): angular localization requires spreading across many \(m\)-modes. This quantifies the Fourier tradeoff above without invoking a self-adjoint angle operator.
 
+`Example 4.3 (Verifying the bound for the Dirichlet-kernel packet).`
+For the state \(\psi_M\) of Example 4.1, the circular concentration is \(R=\langle e^{i\phi}\rangle = 2M/(2M+1)\) (by orthogonality, only the \(2M\) consecutive pairs \((m,m+1)\) with both in \(\{-M,\dots,M\}\) contribute). The angular-momentum variance is \(\mathrm{Var}(L_z)=\hbar^2 M(M+1)/3\) (using \(\sum_{m=1}^M m^2 = M(M+1)(2M+1)/6\) and \(\langle L_z\rangle=0\) by symmetry). The ratio of the left-hand side to the right-hand side of the bound in Proposition 4.2 is
+\[
+\frac{\mathrm{Var}(L_z)\,(1-R^2)}{(\hbar^2/4)\,R^2}
+=\frac{(M+1)(4M+1)}{3M},
+\]
+which equals \(10/3\approx 3.3\) at \(M=1\) and grows as \(4M/3\) for large \(M\). The inequality is satisfied with increasing slack: the Dirichlet kernel is far from a minimum-uncertainty state for the circular relation. Physically, narrower angular packets (\(R\to 1\)) require disproportionately more angular-momentum spread than the bound demands.
+
 # 5. Foundations message: orbit pictures require packets/superpositions
 This witness supports a simple interpretive guardrail for central-force intuition:
 a single stationary eigenstate (even when it carries classical-sounding quantum numbers) is typically **not** a localized classical orbit with a definite phase/orientation. Variables like the azimuthal phase \(\phi\) (and, in more structured integrable cases, other angle variables on the invariant torus) become localized only in **coherent superpositions** of many stationary modes.
