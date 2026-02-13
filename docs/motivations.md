@@ -55,8 +55,18 @@ at each stage; the cornerstone paper tells the story as a whole.
 The conformal-class computation in the half-density QFT paper shows a term
 D(4-D)(∂σ)² that cancels at D=4. Is this a genuine dimension-selection
 mechanism, or a conformal-class artifact? What happens for general metrics?
-**Status**: partially explored (HD-D1.3, HD-D1.3a). Needs a non-conformal
-computation or a no-go argument.
+**Status**: S204 derived V(p) = (1/6)R from normal-coordinate expansion
+(dimension-independent). This matches conformal coupling ξ_conf = (D−2)/(4(D−1))
+only at D=4. Extends HD-D1.3 beyond the conformal class. Ready for C-cycle
+promotion as Remark HD-D1.3b.
+
+**Sub-question 1a (Lp vs ℏ).** If gravity is forced to exist (as part of the
+RCP chain), then G and c are fundamental constants. In D=4, half-density
+normalization requires an area scale — the Planck area Lp². Then ℏ = Lp²c³/G
+is *derived*, not fundamental. Exercise: rewrite the Feynman path integral as
+exp(iS·G/(Lp²c³)), making the action measured in gravitational-area units.
+Which is the more fundamental input: the action quantum ℏ, or the
+geometric area Lp²? The half-density program suggests the latter.
 
 ### 2. What is the minimal axiom set for RCP?
 Can the Refinement Compatibility Principle be stated as a small set of

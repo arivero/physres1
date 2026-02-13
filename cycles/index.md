@@ -10,10 +10,10 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 243 | C00–C243 |
+| Content (`Cnn`) | 245 | C00–C245 |
 | Bibliography (`Bnn`) | 25 | B00–B24 |
-| Study (`Snn`) | 204 | S00–S203 |
-| Quality (`Qnn`) | 119 | Q00–Q128 (gaps: Q110–Q111) |
+| Study (`Snn`) | 206 | S00–S205 |
+| Quality (`Qnn`) | 121 | Q00–Q130 (gaps: Q110–Q111) |
 | Discovery triage (`Dnn`) | 16 | D00–D15 |
 | Discovery explore (`DXnn`) | 10 | DX01–DX10 |
 | Publication (`Pnn`) | 1 | P00 (Planck Area → clawXiv v2) |
@@ -22,22 +22,25 @@
 
 ## Active / In Progress
 
-- `Q129` — Referee pass on C243 (delta-objects Remark 4.2). Running.
+(none)
 
 ## Next Action
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
-- PLB-length (≤6pp): HD-QFT 4pp, delta 4pp, dirac 4pp, relativistic 4pp.
+- PLB-length (≤6pp): HD-QFT 4pp (234 lines), delta 4pp (188), dirac 4pp (196), relativistic 4pp (233).
 - PRD-length (>6pp): action-angle 13pp, fermionic 13pp, uncuttable 13pp, rg-fund 9pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
 
 **Recent completed:**
-- S203+C243: Self-adjoint extensions → Remark 4.2 in delta-objects (+10 lines, now 188, 4pp).
-  Corrected H¹→H² Sobolev, ε^{-d/2}→Λ^{d-2} resolvent exponent, added Derezinski 2024.
+- S204+C244+Q130: V=(1/6)R general-metric matching → Remark HD-D1.3b in HD-QFT (+7 lines).
+  Open question #1 partially addressed: D=4 matching is general-metric, not conformal-class-specific.
+- S205+C245: SR orbit precession → Remark 3.2 in relativistic orbits (+15 lines).
+  Precession = (1/6)×GR, ω = 1/γ_circ.
 
 **Immediate:**
-- Apply Q129 fixes if any.
-- Below PLB limit, room for expansion: HD-QFT (4pp), delta (4pp), dirac (4pp), relativistic (4pp).
+- Q cycle on C245 (relativistic orbits Remark 3.2).
+- Below PLB limit, room for expansion: delta (4pp, 188), dirac (4pp, 196).
+- Open questions 2–5 from `docs/motivations.md`.
 
 **Standing priorities:**
 - Open questions from `docs/motivations.md` have priority over expansion.

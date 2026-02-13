@@ -36,9 +36,9 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Heat kernel as bi-half-density (HD-QFT §4) | Promoted (C242) |
+| 0 | Half-density conjugation V=(1/6)R, D=4 selection (HD-QFT §3) | Active (S204) |
 | 1 | Self-adjoint extensions / point interactions (delta §4) | Active |
-| 2 | Wigner function / sub-Planck structure | Promoted (C174) |
+| 2 | SR orbit precession / 1/6 GR ratio | Active (S205) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
 | 5 | Rooted trees research direction | Active (future satellite D) |
