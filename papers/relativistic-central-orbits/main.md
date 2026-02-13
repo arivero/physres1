@@ -178,6 +178,9 @@ L=2\sqrt3\,M,\qquad E=\frac{2\sqrt2}{3}.
 `Remark 4.3a (SR vs GR stability).`
 In the flat-spacetime SR model of Section 5, inverse-square circular orbits are stable at *all* radii — no ISCO exists. The entire stability boundary at \(r=6M\) is a consequence of the \(-2ML^2/r^3\) curvature term in the Schwarzschild effective potential, the same term responsible for the \(5/6\) curvature fraction of the precession identified in Remark 3.2. The transition from "stable everywhere" (SR) to "stable only for \(r>6M\)" (GR) is thus a pure curvature effect, sharply separating kinematic from geometric contributions to orbit admissibility.
 
+`Remark 4.3b (ISCO as a curvature-induced angular-momentum floor).`
+At the ISCO \(r=6M\), the formula \(L^2=Mr^2/(r-3M)\) gives \(L_{\mathrm{ISCO}}^2=12M^2\), i.e.\ \(L_{\mathrm{ISCO}}=2\sqrt{3}\,M\). In the SR model (Section 3.1), any \(L>K/c\) admits a stable bound orbit — there is no minimum angular momentum for stability. The Schwarzschild geometry introduces a finite floor: for \(L<2\sqrt{3}\,M\) no stable circular orbit exists, regardless of radius. This floor is again a consequence of the \(-2ML^2/r^3\) term, which steepens the effective potential well until the local minimum disappears.
+
 # 5. SR Stability of Circular Orbits (Small Radial Perturbations)
 This section stays within mechanical SR (a point particle in an external, time-independent central scalar potential \(U(r)\)). It is used as a kinematic witness: some restrictions already appear before GR or field-theoretic interactions enter.
 
@@ -227,6 +230,14 @@ In particular, inverse-square forces (\(q=2\)) are stable for all \(\gamma\) in 
 
 `Remark 5.2a (The inverse-square law as a stability boundary).`
 The stability criterion \(1+(2-q)\gamma^2>0\) partitions the power laws into three regimes. For \(q<2\), the coefficient \(2-q\) is positive, so the criterion holds for all \(\gamma\): every circular orbit is stable regardless of speed. For \(q=2\), the criterion reduces to \(1>0\): still unconditionally stable. For \(2<q<3\), the criterion imposes a speed bound \(v/c<\sqrt{3-q}\), which tightens to zero as \(q\to3^-\). Thus \(q=2\) is the unique boundary between unconditional and speed-conditional stability — the inverse-square law is the last power law for which SR permits stable orbits at arbitrarily high speeds.
+
+`Example 5.2b (Stability thresholds for specific power laws).`
+For concreteness, enumerate representative cases from the criterion \(1+(2-q)\gamma^2>0\):
+- \(q=1\) (Hooke / isotropic oscillator): \(1+\gamma^2>0\) — unconditionally stable at all speeds.
+- \(q=2\) (inverse-square / Kepler): \(1>0\) — unconditionally stable; the boundary case.
+- \(q=5/2\): stable iff \(\gamma^2<2\), i.e.\ \(v/c<1/\sqrt{2}\approx 0.707\).
+- \(q=3\) (inverse-cube): \(1-\gamma^2\le 0\) for all \(\gamma\ge 1\) — no stable circular orbit.
+As \(q\to 3^-\), the SR speed ceiling \(v_{\max}=c\sqrt{3-q}\to 0\), so the Newtonian threshold \(q<3\) is recovered as the non-relativistic shadow of a speed-dependent bound.
 
 # 6. Outlook
 Two natural extensions are:

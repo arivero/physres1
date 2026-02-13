@@ -157,6 +157,13 @@ Equivalently, if \(G_g(x,y)\) denotes the usual **scalar** Green function for \(
 
 This is exactly the same "kernel as bi-half-density" structure used for QM propagators [BatesWeinstein1997] [deGosson2018ShortTimePropagators], now applied to spacetime Green functions in QFT.
 
+`Example HD-D4.3 (Flat-space massless propagator).`
+On flat \(D\)-dimensional Euclidean space, the massless scalar propagator is
+\[
+G(x,y)=\frac{\Gamma(D/2-1)}{(4\pi)^{D/2}\,|x-y|^{D-2}}.
+\]
+The exponent \(D/2\) in \((4\pi)^{D/2}\) is the same normalization exponent as in Derivation HD-D1.1a: it encodes the volume-scaling of the approximate identity. The singularity \(|x-y|^{2-D}\) has the same dimensional behavior as \(\varepsilon^{-D/2}\) when the regularization scale \(\varepsilon\) scales as \(|x-y|^2\) (the natural diffusion time scale). In flat space \(|g|=1\), so the bi-half-density kernel \(\widetilde G=G\); the propagator's normalization is canonically tied to the identity kernel's \(D/2\) scaling.
+
 `Remark HD-D4.1 (Doubling: densities live on \(M\times M\)).`
 Half-density kernels also make the amplitude-vs-density doubling completely explicit. Let \(U_t\) be a (unitary) evolution operator on half-densities with kernel \(K_t(x,y)\). Then a density operator \(\rho_t=U_t\rho_0U_t^{-1}\) has a kernel satisfying
 \[
@@ -180,6 +187,16 @@ At coincidence (\(s=0\), \(\Delta=1\)), the leading behavior \(\widetilde K(t;x,
 \]
 where the \(\sqrt{|g|}\) factor of the standard trace formula has been absorbed into the definition of \(\widetilde K\). For the massless operator \(P=-\nabla^2+\xi R\), the first Seeley-DeWitt coefficients at coincidence are \(a_1(x,x)=(1/6-\xi)R\) and \(a_2(x,x)\) is a linear combination of \(R^2\), \(R_{\mu\nu}R^{\mu\nu}\), \(\Box R\); these encode the curvature counterterms that appear in Section 5's contact-term analysis.
 
+`Remark HD-D4.4 (Van Vleck determinant as the geometric half-density factor).`
+The Van Vleck determinant \(\Delta(x,y)\) appearing in Remark HD-D4.2 satisfies the transport equation [DeWitt1965]
+\[
+\nabla_\mu\!\bigl(\Delta^{1/2}(x,y)\,\nabla^{\mu}s(x,y)\bigr)=D\,\Delta^{1/2}(x,y),
+\]
+where the derivative acts in the \(x\) variable. This means \(\Delta^{1/2}\) is the Jacobian converting coordinate volume to geodesic normal-coordinate volume: it is the half-density factor intrinsic to the geometry. Its appearance in the heat kernel expansion is therefore not accidental — it ensures the leading kernel \((4\pi t)^{-D/2}\Delta^{1/2}(x,y)\,e^{-s/(2t)}\) transforms as a proper bi-half-density under coordinate changes in both slots.
+
+`Remark HD-D4.5 (Proper-time representation unifies the D/2 exponent).`
+The propagator is the proper-time (Schwinger) integral of the heat kernel: \(G(x,y)=\int_0^\infty K(t;x,y)\,dt\). The exponent \(D/2\) recurs throughout: identity-kernel normalization \((2\pi\varepsilon)^{-D/2}\) (Derivation HD-D1.1a), heat-kernel short-time behavior \((4\pi t)^{-D/2}\) (Remark HD-D4.2), flat propagator prefactor \(\Gamma(D/2-1)/(4\pi)^{D/2}\) (Example HD-D4.3), and mass-counterterm UV degree \(\Lambda^{D-2}=\Lambda^{2(D/2-1)}\) (Remark HD-D5.3). The proper-time integral converts the heat kernel's \(t^{-D/2}\) into the propagator's \(\Gamma(D/2-1)\) via Schwinger parametrization, making explicit that all four manifestations trace back to the same half-density volume-scaling origin.
+
 # 5. Contact terms and counterterms as diagonal delta kernels (kernel-level remark)
 In QFT, divergences are removed by adding local counterterms to the action, e.g.
 \(\delta m^2\,\phi^2\), \(\delta Z\,(\partial\phi)^2\), curvature couplings, etc.
@@ -191,6 +208,9 @@ In the half-density kernel language the diagonal object is canonical:
 K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2}.
 \]
 Multiplication counterterms correspond to \(c(x)\,K_{\mathrm{Id}}(x,y)\), and derivative counterterms correspond to derivatives acting on the delta kernel (e.g. \(\partial_x\delta^{(D)}(x-y)\) and higher).
+
+`Remark HD-D5.3 (Mass counterterm scaling from the D/2 exponent).`
+The mass counterterm \(\delta m^2\) is a scalar multiple of \(K_{\mathrm{Id}}\). Its UV degree of divergence follows from the heat kernel at coincidence: the propagator at \(x=y\) is formally \(\int_0^\infty K(t;x,x)\,dt\), and Remark HD-D4.2 gives \(K(t;x,x)\sim(4\pi t)^{-D/2}\) as \(t\to 0^+\). The UV divergence arises from small proper times (large momenta \(k^2\sim 1/t\)); introducing a proper-time cutoff at \(t_{\min}=\Lambda^{-2}\) removes the divergent piece \(\int_0^{\Lambda^{-2}} t^{-D/2}\,dt\sim\Lambda^{D-2}\) for \(D>2\). Thus the same \(D/2\) exponent that normalizes the identity kernel (Derivation HD-D1.1a) controls the UV degree of divergence of the mass correction: \(\Lambda^{D-2}=\Lambda^{2(D/2-1)}\).
 
 `Remark HD-D5.1 (Derivative of the diagonal delta kernel; coordinate-free identity).`
 The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” has a clean, connection-free formulation in the half-density kernel calculus. The identity kernel \(K_{\mathrm{Id}}\) is invariant under diagonal diffeomorphisms \((\Phi\times\Phi)\), so for any vector field \(V\) on \(M\) one has

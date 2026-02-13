@@ -65,6 +65,13 @@ Assume \(q\) is piecewise \(C^2\) with a single velocity discontinuity at \(t_0\
 `Proof.`
 Integrate the Euler–Lagrange equation over \([t_0-\varepsilon,t_0+\varepsilon]\). The integral of \(\partial_q\mathcal{L}\) vanishes as \(\varepsilon\to0\) by boundedness; the derivative term yields the momentum jump. \(\square\)
 
+`Remark 3.1b (Energy condition — Weierstrass–Erdmann second condition).`
+Theorem 3.1 follows from test variations with fixed support. Allowing variations that shift the corner time \(t_0\) yields a second condition: the Hamiltonian \(H=(\partial_{\dot{q}}\mathcal{L})\cdot\dot{q}-\mathcal{L}\) is continuous at the corner,
+\[
+\left[\frac{\partial\mathcal{L}}{\partial\dot{q}}\cdot\dot{q}-\mathcal{L}\right]_{t_0^-}^{t_0^+}=0.
+\]
+Together, Theorem 3.1 (momentum continuity) and this energy condition constitute the classical Weierstrass–Erdmann corner conditions. For autonomous \(\mathcal{L}\), the second condition reduces to energy conservation across the junction.
+
 `Example 3.1a (No corner for a free particle).`
 For a free particle (\(\mathcal{L}=\tfrac{m}{2}\dot{q}^2\)) with a piecewise-linear trajectory and velocities \(v_-\), \(v_+\) on either side of \(t_0\), Theorem 3.1 demands \(mv_+=mv_-\), so \(v_+=v_-\) — the trajectory is a single straight line and no genuine corner exists. In contrast, the impulse condition of Section 3.2 permits \(v_+\neq v_-\) with jump \(v_+-v_-=J/m\). Corners are the *homogeneous* case of the impulse condition: the momentum is continuous (soft junction), while an impulse breaks that continuity (hard junction).
 
@@ -135,6 +142,9 @@ S-S_0=\frac{m}{2}\frac{t_0(T-t_0)}{T}\,(\Delta v)^2>0\quad(J\neq0).
 \]
 This confirms that the delta-kick raises the action above the free minimum — the impulsive trajectory is not an extremum of the unforced problem.
 
+`Remark 4.3a (Midpoint kick maximizes the action excess).`
+The factor \(t_0(T-t_0)/T\) achieves its maximum value \(T/4\) at the midpoint \(t_0=T/2\) and vanishes at the endpoints \(t_0\to0\) or \(t_0\to T\). Physically, a midpoint kick divides the trajectory into two equal segments, maximizing the "leverage" for kinetic-energy cost; an endpoint kick leaves no time for the velocity perturbation to accumulate path deviation.
+
 ## 4.4 Angular momentum preservation under central impulses
 
 For a central force in the plane, the impulse is radial: \(J=J_r\,\hat{r}\). Decomposing the velocity into radial and transverse components, \(\mathbf{v}=v_r\,\hat{r}+r\dot{\theta}\,\hat{\theta}\), the impulse jump of Theorem 3.2 reads
@@ -179,6 +189,12 @@ Using mollifier sequences \(\rho_\varepsilon\to\delta\) as *test functions* agai
 ## 5.2 Delta potentials (require renormalization)
 
 A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different object [AlbeverioGesztesyHoeghKrohnHolden2005]. In dimensions \(d\ge2\), the naive coupling constant \(g\) requires renormalization (the resolvent acquires a logarithmic or power-law divergence depending on \(d\)) [Jackiw1991DeltaPotentials]. In \(d=1\) the delta potential is well-defined without renormalization, but this is an accident of low dimension, not a general principle. The companion note on delta objects treats the half-density kernel structure of point interactions in detail.
+
+`Example 5.2a (Dimensional hierarchy of point interactions).`
+The classification is controlled by the diagonal Green function \(G_0(0,0;E)\), which inherits its singularity from the heat kernel exponent \(d/2\) (Remark 5.2b below). Concretely: in \(d=1\), \(G_0(0,0;E)\) is finite, so the rank-one perturbation formula gives a unique bound state at \(E=-mg^2/(2\hbar^2)\) without renormalization. In \(d=2\), \(G_0(0,0;E)\sim\ln(\Lambda/\kappa)\) diverges logarithmically; the bare coupling must run as \(g(\Lambda)\sim 2\pi\hbar^2/(m\ln(\Lambda/\alpha))\) to produce a finite amplitude, generating a transmutation scale \(\alpha\) (dimensional transmutation) [Jackiw1991DeltaPotentials]. In \(d=3\), \(G_0(0,0;E)\sim\Lambda\) diverges linearly and the physical parameter is the scattering length \(a\). For \(d\ge4\), no non-trivial self-adjoint extension exists: \(H^2(\mathbb{R}^d)\) functions need not be continuous (Morrey embedding requires \(d<4\)), so the point is invisible to the Laplacian [AlbeverioGesztesyHoeghKrohnHolden2005].
+
+`Remark 5.2b (The exponent \(d/2\) links path-integral normalization to renormalization thresholds).`
+The connection is made explicit by the Laplace representation: \(G_0(0,0;E)\propto\int_0^\infty t^{-d/2}\,e^{-\kappa^2 t}\,dt\), where \(\kappa^2=-2mE/\hbar^2\). The short-time singularity \(t^{-d/2}\) is the same exponent that normalizes each segment of Section 4.5's path integral. The integral converges iff \(d<2\); at the marginal dimension \(d=2\) the coupling acquires scale dependence and dimensional transmutation first appears. Thus the half-density exponent that makes the composition law intrinsic (Section 4.5) simultaneously controls whether a point interaction can be defined without renormalization.
 
 ## 5.3 Summary table
 
