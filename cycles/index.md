@@ -212,6 +212,8 @@
 208. `C208` Completed.
 209. `C209` Completed.
 210. `C210` Completed.
+211. `C211` Completed.
+212. `C212` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -410,6 +412,8 @@
 - `S167` Completed.
 - `S168` Completed.
 - `S169` Completed.
+- `S170` Completed.
+- `S171` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -569,15 +573,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S168+C209: Dispersion relations / Kramers-Kronig Remark 3.5 in fermionic (+3 lines).
-2. S169+C210: Hamiltonian monodromy Remark 6.10 in action-angle (+5 lines).
-3. Q119: quality review of C203-C208 remarks — all PASS.
+1. S170+C211: Resurgence/trans-series Remark 2.8 in uncuttable (+4 lines).
+2. S171+C212: Dualities Remark 4.8 in uncuttable (+3 lines).
+3. B24: bibliography entries for C209-C210 remarks.
 
 Next:
-- Satellites: action-angle ~190 (13pp), fermionic ~189 (12pp), uncuttable ~187 (12pp).
-- Uncuttable is shortest — prioritize next remark there.
-- B24 needed for missing bib entries from C207-C210 (Kramers, Kronig, Duistermaat, Vu Ngoc, etc.).
-- Continue S+C expansion. Target ~200 lines each.
+- Satellites: uncuttable 200 (14pp), action-angle 193 (13pp), fermionic 191 (12pp).
+- Fermionic is shortest — prioritize next remarks there.
+- Continue S+C expansion. Target ~200+ lines each.
+- Q120 review of C209-C212 when batch complete.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

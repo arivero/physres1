@@ -3327,3 +3327,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added 5 entries — fermionic: Kramers1927, Kronig1926; action-angle: Duistermaat1980, CushmanDuistermaat1988, VuNgoc1999. Both PDFs rebuilt.
 - Line counts: fermionic 191, action-angle 193, uncuttable 189.
 - Next: continue S+C expansion (uncuttable shortest at 189).
+
+## 2026-02-13 (S170+C211: resurgence in uncuttable)
+- Focus: resurgence and trans-series as the ultimate "uncuttable" object (uncuttable Section 2).
+- Work: wrote blackboard on resurgence (Bender-Wu, Écalle, trans-series, renormalons). Reviewed by mathematical physicist — caught: (1) UV→IR renormalons (IR on positive Borel axis encode power corrections, not UV), (2) sign convention wrong for positive-coupling quartic oscillator, (3) "factorial growth rate" imprecise (should be exponential A^{-n}), (4) missing BW 1973 large-order paper. All corrected. Promoted as Remark 2.8 in uncuttable.
+- Result: connects optimal truncation remainder to instanton ambiguity. Trans-series ties all sectors via Stokes phenomena.
+
+## 2026-02-13 (S171+C212: dualities in uncuttable)
+- Focus: dualities as multiple descriptions of the same "uncuttable" limit (uncuttable Section 4).
+- Work: wrote blackboard on dualities (Kramers-Wannier, T-duality, Montonen-Olive/SL(2,Z)). Reviewed by string theorist — caught: (1) g↔1/g oversimplified (full SL(2,Z)), (2) N=4 exactness overstated (conjectured), (3) refinement framing too vague, (4) UV/IR=asymptotic safety too loose. All corrected. Promoted as Remark 4.8 in uncuttable.
+- Line counts: uncuttable 200 (14pp), action-angle 193 (13pp), fermionic 191 (12pp).
+- Next: S+C expansion targeting fermionic (shortest), then Q120.

@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Dispersion relations / Kramers-Kronig | Promoted (C209) |
-| 1 | Monodromy and Bohr-Sommerfeld | Promoted (C210) |
+| 0 | Resurgence and trans-series | Promoted (C211) |
+| 1 | Dualities as refinement equivalences | Promoted (C212) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
