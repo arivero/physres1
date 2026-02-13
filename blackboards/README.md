@@ -27,7 +27,7 @@ relevant slot. Deletion criteria (in priority order):
 | Slot | Topic | Status |
 |------|-------|--------|
 | 0 | Efimov effect / 3-body limit cycle | Promoted (C175) |
-| 1 | WKB / connection formulas / Maslov index | Promoted (C173) |
+| 1 | Decoherence / pointer states | Promoted (C176) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Husimi function / action-angle visualization | Promoted (C169) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

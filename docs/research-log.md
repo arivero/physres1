@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S135+C176: Decoherence Remark 5.2 in action-angle)
+- Focus: complete Section 5's foundations message with decoherence mechanism.
+- Work: S135 studied pointer states. Decoherence specialist reviewed — confirmed coherent states as pointer states (Zurek, Habib & Paz 1993), flagged timescale formula as imprecise, corrected attribution. Promoted as Remark 5.2 without quantitative timescale claims.
+- Result: action-angle 132→136 (+4 net). Now 7 pages.
+
 ## 2026-02-13 (S134+C175: Efimov Remark 5.5 in fermionic mediators)
 - Focus: extend 2-body contact theme to 3-body in fermionic mediators satellite.
 - Work: S134 studied Efimov effect as 3-body limit cycle. Few-body nuclear theorist reviewed — found RG period error (π/s_0, not 2π/s_0), all else correct. Promoted as Remark 5.5: limit cycle vs fixed point, geometric tower, additional 3-body parameter.
