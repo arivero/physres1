@@ -163,6 +163,9 @@ The one-dimensional delta potential of Example 4.1 is the simplest instance of a
 
 For \(d\geq4\), no non-trivial self-adjoint extensions exist: \(H^2(\mathbb R^d)\) functions need not be continuous (Morrey embedding requires \(2\cdot 2>d\), i.e.\ \(d\leq3\)), so the point is invisible to the Laplacian and removing it does not change the operator closure [Derezinski2024]. The diagonal singularity of the free Green function controls which case applies: \(G_0(0,0;E)\) is finite (\(d=1\)), log-divergent \(\sim\ln(\Lambda/\kappa)\) (\(d=2\)), linearly divergent \(\sim\Lambda\) (\(d=3\)), or power-divergent \(\sim\Lambda^{d-2}\) with no remedy (\(d\geq4\)). The resolvent exponent \(d-2\) arises from the heat kernel exponent \(d/2\) of Section 2 via a Laplace transform in the spectral parameter. In each admissible dimension, the self-adjoint extension parameter is the RG-invariant contact datum that survives all regularization schemes — a concrete instance of the scalarization perspective of Section 5.
 
+`Remark 4.3 (Heat kernel exponent determines the extension classification).`
+The connection between the half-density exponent \(d/2\) (Section 2) and the self-adjoint extension hierarchy above is made explicit by the Laplace representation of the Green function: \(G_0(0,0;E)\propto\int_0^\infty t^{-d/2}e^{-\kappa^2 t}\,dt\) where \(E=-\hbar^2\kappa^2/(2m)\). The integrand's short-time singularity \(t^{-d/2}\) is precisely the identity-kernel scaling of Section 2. The integral equals \(\Gamma(1-d/2)\,\kappa^{d-2}\) (up to constants) and converges iff \(d<2\); this is why \(d=2\) is the critical dimension where the contact coupling is classically marginal and dimensional transmutation first appears. The same exponent that ensures coordinate-free composition of half-density kernels (the \(t^{-d/2}\) normalization) thus controls whether a point interaction can be defined without renormalization.
+
 # 5. Where scales enter upon scalarization (and why RG invariants are natural candidates)
 Half-density kernels are canonical; scalar representatives are not.
 Choosing a reference half-density \(\sigma_\ast\) identifies any half-density \(\psi\) with a scalar \(f\) via \(\psi=f\,\sigma_\ast\).
@@ -172,6 +175,9 @@ In marginal cases (notably the 2D point interaction), renormalization generates 
 if one adds a universality hypothesis that scalarization scales must be built from physical invariants, then RG-invariant scales are natural candidates to supply the missing \(\text{length}^{d/2}\) factors required by scalarization.
 
 This note treats that identification as an organizing perspective, not as a theorem.
+
+`Remark 5.1 (The exponent \(d/2\) as the unifying thread).`
+The half-density weight \(d/2\) that fixes the identity-kernel scaling \(\varepsilon^{-d/2}\) (Section 2) is the same exponent that controls the heat-kernel convergence condition \(d<2\) (Remark 4.3) and the Sobolev embedding threshold \(H^k\hookrightarrow C^0\) iff \(k>d/2\) (the Morrey condition underlying Remark 4.2's \(d\leq3\) restriction for \(k=2\)). These are not three independent coincidences but one geometric fact: the half-density bundle is the borderline object whose sections scale at the exact dimensional rate that separates convergent from divergent short-distance behavior. The scalarization scale \(\text{length}^{d/2}\) of this section is therefore determined by the same exponent that governs which point interactions are definable without renormalization.
 
 # 6. Outlook
 1. ~~Relate determinant weights to Van Vleck type.~~ Addressed: Section 3.5 makes the connection explicit.

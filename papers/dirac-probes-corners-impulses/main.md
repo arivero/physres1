@@ -47,6 +47,9 @@ By (H3) the convolution converges to \(F[q](t_0)\) as \(\varepsilon\to0^+\). Sin
 `Remark 2.2 (Role of each hypothesis).`
 (H1) ensures \(F[q]\) is locally integrable so the distributional pairing makes sense [Hormander2003]. (H2) is the global stationarity input. (H3) is the local regularity gate: without it, mollifier limits may fail to converge or may converge to an averaged value rather than a pointwise one. If \(F[q]\) is continuous on all of \((t_i,t_f)\), iteration of Theorem 2.1 recovers the classical Euler–Lagrange equation everywhere.
 
+`Remark 2.3 (Structural parallel with polygonal refinement).`
+The mollifier-localization argument of Theorem 2.1 shares its logical structure with Newton's polygonal construction (cornerstone, Section 3): both begin with an invariant that holds exactly at finite resolution (stationarity against every test function / equal areas at every polygon step), introduce a refinement parameter (\(\varepsilon\) / \(\Delta t\)), and extract a continuous or pointwise statement in the limit under a local regularity hypothesis (continuity of \(F[q]\) / controlled vertex convergence; see [Nauenberg2003KeplerArea] for the polygon limit). The equal-area law is algebraically exact at every polygon step; the stationarity integral vanishes exactly at every mollifier width. In the time-slicing bridge of Section 4.5, the same pattern recurs a third time, with the half-density normalization playing the role of the regularity gate that ensures the \(N\to\infty\) limit yields a well-defined composition law.
+
 # 3. Corners and Impulses: Formal Statements
 
 When hypothesis (H3) fails — because \(\dot{q}\) or external forcing is discontinuous — two distinct situations arise.
