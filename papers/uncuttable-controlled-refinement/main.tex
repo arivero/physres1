@@ -404,6 +404,29 @@ theory is the stable limit of the refinement flow, defined by the
 fixed-point structure and the relevant couplings that parameterize
 departures from it.
 
+\texttt{Remark\ 4.2\ (Dimensional\ regularization:\ refinement-scheme\ independence\ made\ explicit).}
+The counterterm towers of Section 2 use a momentum cutoff \(\Lambda\) as
+the finite-resolution regulator. Dimensional regularization ('t Hooft
+and Veltman, 1972) provides a structurally different scheme: loop
+integrals are evaluated in \(d=4-\varepsilon\) dimensions, and UV
+divergences appear as poles in \(1/\varepsilon\) rather than as
+\(\Lambda\to\infty\) power laws. The minimal subtraction prescription
+(MS-bar) --- subtracting the \(1/\varepsilon\) pole together with
+universal constants \(\ln(4\pi)-\gamma_E\) --- is the counterterm
+convention, analogous to the evaluation-point convention \(\alpha\) of
+Example 3.1. At \(L\) loops, poles up to \(1/\varepsilon^L\) arise from
+nested subdivergences, and the recursive forest formula ensures that
+order-by-order pole subtraction leaves a finite result --- the dim-reg
+version of the counterterm tower in Remark 2.2. Crucially, cutoff and
+dim-reg regularization produce the same physical S-matrix elements: the
+renormalized observables are independent of the specific regulator, just
+as the integral in Section 2 is independent of the partition rule.
+Dimensional regularization additionally preserves gauge invariance
+(Ward-Takahashi identities) and Lorentz covariance, structural
+invariants that a naive momentum cutoff would break --- paralleling the
+symplectic integrators of Remark 3.4, which preserve Hamiltonian
+structure that generic discretizations destroy.
+
 This note is therefore a small conceptual bridge: it isolates an early,
 analysis-level instance of the same meta-problem that reappears in
 quantization and in QFT.
