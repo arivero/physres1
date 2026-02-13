@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S86: cross-paper notation consistency audit)
+- Focus: d vs D dimension notation across all 8 satellite papers.
+- Work: grepped each paper for dimension notation patterns.
+- Result: no inconsistencies. QFT papers use D (spacetime), QM/geometry papers use d (spatial/manifold). Coherent and defensible. No action needed.
+- Next: cornerstone paper quality work or new content.
+
 ## 2026-02-13 (DX07+C132: comprehensive encoding sweep + metadata fix)
 - Focus: sweep all 8 satellite papers for residual encoding/consistency issues.
 - Work: grepped for Unicode escapes (none), internal paths (none), empty metadata (3 found: planck-area, rg-fundamental, half-density-qft). Fixed in C132.

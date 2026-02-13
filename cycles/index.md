@@ -244,6 +244,7 @@
 - `S83` Completed.
 - `S84` Completed.
 - `S85` Completed.
+- `S86` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
