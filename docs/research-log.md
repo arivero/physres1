@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S111+C152: hydrogen atom Example 6.2 in action-angle satellite)
+- Focus: expand shortest satellite (action-angle, 96 lines) with a hydrogen atom witness showing the full 3-torus action-angle structure.
+- Work: subagent (pedantic atomic physics professor) verified n²-fold degeneracy, fixed "orbital plane" language to use Runge-Lenz selection rules, added semiclassical qualifier. Updated outlook to reference d=1,2,3 progression.
+- Result: satellite 96→100 lines (+4 net). Three witnesses now: HO (d=1), φ/L_z (d=1 in central potential), hydrogen (d=3 with SO(4)).
+
 ## 2026-02-13 (S110+C151: Itô vs Stratonovich in uncuttable satellite)
 - Focus: expand uncuttable satellite (103 lines) with a stochastic calculus witness of refinement non-uniqueness.
 - Work: blackboard explored Itô vs Stratonovich integral difference; correction ½∫f'dt arises from non-zero quadratic variation. Subagent (probability theorist) found no critical errors; suggested "bounded variation" instead of "smooth" for precision. Promoted Remark 3.2 after Example 3.1.
