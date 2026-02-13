@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Orbital angular momentum of light | Promoted (C233) |
-| 1 | Gabor limit / time-frequency duality | Promoted (C234) |
+| 0 | Schwinger model (QED₁₊₁) | Promoted (C235) |
+| 1 | 't Hooft anomaly matching | Promoted (C236) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
