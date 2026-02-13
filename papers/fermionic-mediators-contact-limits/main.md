@@ -1,11 +1,11 @@
 ---
 title: "Fermionic Mediators, Static Potentials, and Contact/Boundary-Condition Limits"
-author: []
-date: ""
+author: "Alejandro Rivero"
+date: "2026"
 abstract: |
   The textbook derivation of a static potential from “field exchange” uses a bosonic mediator linearly sourced by a commuting classical density, yielding an effective action quadratic in the source and (in a static limit) a central Yukawa/Coulomb potential. This derivation does not transplant verbatim to fermionic fields: the linear source terms for fermions require Grassmann-valued sources, so there is no ordinary commuting classical source whose elimination produces a classical potential in the same way. This note isolates the precise obstruction and records the robust infrared replacement: when a microscopic description reduces to local operators at low resolution, the effective interaction is encoded by contact terms (delta kernels and their derivatives) or, equivalently, boundary-condition/self-adjoint-extension data, with renormalization-group running when the contact limit is singular.
   
-  This is a dependent note aligned with the repository’s “refinement compatibility” program: contact terms are diagonal-support kernels, and their scale dependence is a compatibility condition rather than an afterthought.
+  This is a dependent note aligned with the broader refinement-compatibility program: contact terms are diagonal-support kernels, and their scale dependence is a compatibility condition rather than an afterthought.
 ---
 
 # 1. Purpose and scope
@@ -16,7 +16,7 @@ We keep the scope bounded:
 1. state the bosonic sourcing \(\Rightarrow\) potential mechanism (derivation-first, brief),
 2. state the fermionic obstruction precisely (Grassmann sources),
 3. give one explicit IR matching witness: **local operators \(\Rightarrow\) contact/derivative-contact kernels**,
-4. connect contact kernels to the repo’s point-interaction/RG witnesses.
+4. connect contact kernels to related point-interaction/RG witnesses.
 
 We do **not** claim that fermions cannot affect forces; we only isolate which parts of the “classical source \(\Rightarrow\) potential” story fail, and what the correct replacement statement is at low resolution.
 
@@ -81,7 +81,7 @@ In singular cases (notably \(\delta\) interactions in \(d\ge 2\) in various chan
 # 5. Boundary-condition reading (point interactions)
 Point-supported interactions can be encoded as self-adjoint extension / boundary-condition data rather than as ordinary functions \(V(r)\). This is the natural operator-theoretic counterpart of “diagonal-support kernels.” For standard references and pedagogical framing, see [BonneauFarautValent2001SAE] and the delta-potential discussion in [Jackiw1991DeltaPotentials].
 
-This viewpoint matches the repo’s “controlled refinement” theme:
+This viewpoint matches the controlled-refinement perspective:
 when a continuum description is defined as a refinement limit, UV data can survive in the limit precisely as boundary-condition parameters (contact terms), with RG flow expressing compatibility across resolutions.
 
 # 6. Outlook (kept minimal)

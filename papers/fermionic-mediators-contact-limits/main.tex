@@ -1,24 +1,20 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+%
 \documentclass[
 ]{article}
-\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math} % this also loads fontspec
+  \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-\usepackage{lmodern}
-\ifPDFTeX\else
-  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -36,21 +32,27 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Fermionic Mediators, Static Potentials, and Contact/Boundary-Condition Limits},
+  pdfauthor={Alejandro Rivero},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\usepackage{bookmark}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same}
-\hypersetup{
-  pdftitle={Fermionic Mediators{,} Static Potentials{,} and Contact/Boundary-Condition Limits},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 
 \title{Fermionic Mediators, Static Potentials, and
 Contact/Boundary-Condition Limits}
-\author{}
-\date{}
+\author{Alejandro Rivero}
+\date{2026}
 
 \begin{document}
 \maketitle
@@ -70,13 +72,14 @@ derivatives) or, equivalently, boundary-condition/self-adjoint-extension
 data, with renormalization-group running when the contact limit is
 singular.
 
-This is a dependent note aligned with the repository's ``refinement
-compatibility'' program: contact terms are diagonal-support kernels, and
-their scale dependence is a compatibility condition rather than an
-afterthought.
+This is a dependent note aligned with the broader
+refinement-compatibility program: contact terms are diagonal-support
+kernels, and their scale dependence is a compatibility condition rather
+than an afterthought.
 \end{abstract}
 
-\section{1. Purpose and scope}\label{purpose-and-scope}
+\hypertarget{purpose-and-scope}{%
+\section{1. Purpose and scope}\label{purpose-and-scope}}
 
 This note answers a narrowly phrased question: what can it mean for a
 \textbf{fermionic} field to ``generate a (central) potential'' in the
@@ -86,17 +89,18 @@ We keep the scope bounded: 1. state the bosonic sourcing \(\Rightarrow\)
 potential mechanism (derivation-first, brief), 2. state the fermionic
 obstruction precisely (Grassmann sources), 3. give one explicit IR
 matching witness: \textbf{local operators \(\Rightarrow\)
-contact/derivative-contact kernels}, 4. connect contact kernels to the
-repo's point-interaction/RG witnesses.
+contact/derivative-contact kernels}, 4. connect contact kernels to
+related point-interaction/RG witnesses.
 
 We do \textbf{not} claim that fermions cannot affect forces; we only
 isolate which parts of the ``classical source \(\Rightarrow\)
 potential'' story fail, and what the correct replacement statement is at
 low resolution.
 
+\hypertarget{what-a-field-generates-a-potential-means-in-the-bosonic-source-story}{%
 \section{2. What ``a field generates a potential'' means in the bosonic
 source
-story}\label{what-a-field-generates-a-potential-means-in-the-bosonic-source-story}
+story}\label{what-a-field-generates-a-potential-means-in-the-bosonic-source-story}}
 
 The archetypal construction is a bosonic mediator \(\varphi\) linearly
 coupled to a commuting source \(J(x)\): \[
@@ -111,9 +115,10 @@ potential (Yukawa for \(m\neq 0\), Coulomb-type when \(m=0\)).
 The key structural ingredient is that the source is an ordinary
 commuting function (a classical background density).
 
+\hypertarget{fermionic-fields-linear-sources-are-grassmann-so-the-classical-source-story-does-not-transplant}{%
 \section{3. Fermionic fields: linear sources are Grassmann, so the
 classical-source story does not
-transplant}\label{fermionic-fields-linear-sources-are-grassmann-so-the-classical-source-story-does-not-transplant}
+transplant}\label{fermionic-fields-linear-sources-are-grassmann-so-the-classical-source-story-does-not-transplant}}
 
 For a Dirac fermion \(\Psi\), the generating functional with sources is
 written with \textbf{Grassmann-valued} sources \(\eta,\bar\eta\): \[
@@ -143,9 +148,10 @@ composite modes (bilinears), and through low-energy EFT operators. The
 point is that the meaning of ``generates a potential'' must be stated
 through one of these controlled mechanisms.
 
+\hypertarget{ir-replacement-local-operators-rightarrow-contact-kernels-boundary-condition-data}{%
 \section{\texorpdfstring{4. IR replacement: local operators
 \(\Rightarrow\) contact kernels / boundary-condition
-data}{4. IR replacement: local operators \textbackslash Rightarrow contact kernels / boundary-condition data}}\label{ir-replacement-local-operators-rightarrow-contact-kernels-boundary-condition-data}
+data}{4. IR replacement: local operators \textbackslash Rightarrow contact kernels / boundary-condition data}}\label{ir-replacement-local-operators-rightarrow-contact-kernels-boundary-condition-data}}
 
 At low resolution, integrating out heavy degrees of freedom typically
 produces local operators. In a two-body, nonrelativistic sector, this
@@ -179,8 +185,9 @@ defined by a renormalization condition and can generate RG-invariant
 scales and bound states {[}Jackiw1991DeltaPotentials{]}
 {[}ManuelTarrach1994PertRenQM{]}.
 
+\hypertarget{boundary-condition-reading-point-interactions}{%
 \section{5. Boundary-condition reading (point
-interactions)}\label{boundary-condition-reading-point-interactions}
+interactions)}\label{boundary-condition-reading-point-interactions}}
 
 Point-supported interactions can be encoded as self-adjoint extension /
 boundary-condition data rather than as ordinary functions \(V(r)\). This
@@ -189,19 +196,21 @@ kernels.'' For standard references and pedagogical framing, see
 {[}BonneauFarautValent2001SAE{]} and the delta-potential discussion in
 {[}Jackiw1991DeltaPotentials{]}.
 
-This viewpoint matches the repo's ``controlled refinement'' theme: when
-a continuum description is defined as a refinement limit, UV data can
+This viewpoint matches the controlled-refinement perspective: when a
+continuum description is defined as a refinement limit, UV data can
 survive in the limit precisely as boundary-condition parameters (contact
 terms), with RG flow expressing compatibility across resolutions.
 
-\section{6. Outlook (kept minimal)}\label{outlook-kept-minimal}
+\hypertarget{outlook-kept-minimal}{%
+\section{6. Outlook (kept minimal)}\label{outlook-kept-minimal}}
 
 Longer-range effects associated to fermionic degrees of freedom can
 arise through loop-induced mechanisms or through emergent bosonic
 composite modes. Treating those responsibly would require a separate
 bibliography-hardening pass and is outside this note's scope.
 
-\section{References}\label{references}
+\hypertarget{references}{%
+\section{References}\label{references}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
