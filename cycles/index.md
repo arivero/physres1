@@ -240,6 +240,8 @@
 236. `C236` Completed.
 237. `C237` Completed.
 238. `C238` Completed.
+239. `C239` Completed.
+240. `C240` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -466,6 +468,8 @@
 - `S195` Completed.
 - `S196` Completed.
 - `S197` Completed.
+- `S198` Completed.
+- `S199` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -632,14 +636,13 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S196+C237: Dedekind cuts Remark 1.3 in uncuttable (+5 lines).
-2. S197+C238: Feynman-Kac Remark 3.9 in uncuttable (+8 lines).
-3. Q126: Completed — C235-C236 reviewed (CONDITIONAL PASS, 3 fixes applied).
+1. S198+C239: Pegg-Barnett Remark 2.3 in action-angle (+5 lines).
+2. S199+C240: Superfluid vortices Remark 3.4 in action-angle (+4 lines).
 
 Next:
-- Satellites: uncuttable 240 (19pp), fermionic 237 (19pp), action-angle 231 (18pp).
-- Action-angle is now shortest — prioritize next remarks there.
-- Continue S+C expansion. All three now at 231+ lines.
+- Satellites: uncuttable 240 (19pp), action-angle 240 (19pp), fermionic 237 (19pp).
+- Fermionic is now shortest — prioritize next remarks there.
+- Continue S+C expansion. All three now at 237+ lines.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
