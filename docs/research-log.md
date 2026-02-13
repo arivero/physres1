@@ -18,21 +18,21 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
-## 2026-02-13 (S233–S237+C268–C272+Q152–Q156: three PLB satellites expanded, five Q reviews)
+## 2026-02-13 (S233–S241+C268–C276+Q152–Q160: three PLB satellites expanded)
 - Focus: continued PLB expansion across HD-QFT, relativistic, dirac-probes.
 - Work:
-  - S233+C268: HD-QFT Remark HD-D5.3a (Seeley-DeWitt hierarchy, derivative counterterm scaling) (+3, 259→262).
-  - S234+C269: dirac-probes Remark 4.4a (Noether charges across impulses: ΔQ=J·ξ, conserved iff J⊥ξ) (+3, 237).
-  - S235+C270: relativistic Remark 4.3f (coordinate Kepler law ω_φ²=M/r₀³; proper period T_τ=T_t√(1-3M/r₀)) (+3, 259→262).
-  - S236+C271: HD-QFT Remark HD-D5.3b (dim-reg pole structure: Γ(n+1-D/2), poles at D=2(n+1)) (+3, 262).
-  - S237+C272: dirac-probes Remark 3.2a (impulse-work formula ΔH=J·v̄; corner/impulse dichotomy) (+3, 237→240).
-  - Q152: PASS for C267 (dirac-probes Remark 4.5b).
-  - Q153: PASS for C268 (HD-QFT Remark HD-D5.3a).
-  - Q154: PASS for C269 (dirac-probes Remark 4.4a).
-  - Q155: PASS for C270 (relativistic Remark 4.3f). All derivations verified.
-  - Q156: CONDITIONAL PASS for C271 (HD-QFT HD-D5.3b). Found index mismatch: cutoff formula "Λ^{D-2n}" inconsistent with examples. Fix applied: Λ^{D-2n} → Λ^{D-2(n+1)}.
-- Result: dirac 240 lines (5pp), relativistic 262 (5pp), HD-QFT 262 (5pp). All within budget.
-- Next: Q157 for C272; further PLB expansion; commit batch.
+  - S233+C268: HD-QFT Remark HD-D5.3a (Seeley-DeWitt hierarchy) (+3, 259→262).
+  - S234+C269: dirac-probes Remark 4.4a (Noether charges across impulses) (+3, 237).
+  - S235+C270: relativistic Remark 4.3f (coordinate Kepler law ω_φ²=M/r₀³) (+3, 259→262).
+  - S236+C271: HD-QFT Remark HD-D5.3b (dim-reg poles D=2(n+1)) (+3, 262).
+  - S237+C272: dirac-probes Remark 3.2a (impulse-work formula ΔH=J·v̄) (+3, 237→240).
+  - S238+C273: dirac-probes Remark 5.1a (universality of mollifier convergence) (+3, 240→243).
+  - S239+C274: HD-QFT Remark HD-D4.2a (trace anomaly + index theorem from a_{D/2}) (+3, 262→265).
+  - S240+C275: dirac-probes Remark 5.3a (Schwartz impossibility, δ² undefined) (+3, 243→246).
+  - S241+C276: dirac-probes Outlook item 4 (Stratonovich midpoint convention) (+1, 246→247).
+  - Q152–Q160: all PASS except Q156 CONDITIONAL PASS (cutoff formula Λ^{D-2n} → Λ^{D-2(n+1)} in HD-D5.3b, fix applied).
+- Result: dirac 247 lines (5pp), relativistic 262 (5pp), HD-QFT 265 (5pp). All within budget.
+- Next: further PLB expansion; commit batch.
 
 ## 2026-02-13 (S213+C249+B25+infra: caustics/Maslov, Hamilton1834, token counter, serendipity convention)
 - Focus: delta-objects expansion; bibliography; infrastructure.

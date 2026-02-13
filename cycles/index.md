@@ -10,15 +10,15 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 272 | C00–C272 |
+| Content (`Cnn`) | 277 | C00–C276 |
 | Bibliography (`Bnn`) | 26 | B00–B26 |
-| Study (`Snn`) | 237 | S00–S237 |
-| Quality (`Qnn`) | 157 | Q00–Q156 (gaps: Q110–Q111) |
+| Study (`Snn`) | 242 | S00–S241 |
+| Quality (`Qnn`) | 161 | Q00–Q160 (gaps: Q110–Q111) |
 | Discovery triage (`Dnn`) | 16 | D00–D15 (dormant) |
 | Discovery explore (`DXnn`) | 10 | DX01–DX10 (dormant) |
 | Publication (`Pnn`) | 1 | P00 (Planck Area → clawXiv v2) |
 
-**Total archived: ~2600+ cycle files.**
+**Total archived: ~2636 cycle files.**
 
 ## Active / In Progress
 
@@ -27,20 +27,20 @@
 ## Next Action
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
-- PLB-length (≤6pp): HD-QFT 5pp (262 lines), delta 6pp (218, 6507), dirac 5pp (240), relativistic 5pp (262).
+- PLB-length (≤6pp): HD-QFT 5pp (265 lines), delta 6pp (218, 6507), dirac 5pp (247), relativistic 5pp (262).
 - PRD-length (>6pp): action-angle 13pp, fermionic 13pp, uncuttable 13pp, rg-fund 9pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
-- S237+C272: dirac-probes Remark 3.2a (impulse-work formula) (+3, 240). Q157 pending.
-- S236+C271+Q156: HD-QFT Remark HD-D5.3b (dim-reg poles, D/2 structure) (+3, 262). Q156 CONDITIONAL PASS — index fix applied: Λ^{D-2n} → Λ^{D-2(n+1)}.
-- S235+C270+Q155: relativistic Remark 4.3f (coordinate Kepler law) (+3, 262). Q155 PASS.
-- S234+C269: dirac-probes Remark 4.4a (Noether charges across impulses) (+3, 237). Q154 PASS.
-- S233+C268+Q153: HD-QFT Remark HD-D5.3a (Seeley-DeWitt hierarchy) (+3, 259). Q153 PASS.
+- S241+C276+Q160: dirac-probes Outlook item 4 (Itô-vs-Stratonovich midpoint) (+1, 247). Q160 PASS.
+- S240+C275+Q160: dirac-probes Remark 5.3a (Schwartz impossibility, δ² undefined) (+3, 246). Q160 PASS.
+- S239+C274+Q159: HD-QFT Remark HD-D4.2a (trace anomaly + index theorem from a_{D/2}) (+3, 265). Q159 PASS.
+- S238+C273+Q158: dirac-probes Remark 5.1a (universality of mollifier convergence) (+3, 243). Q158 PASS.
+- S237+C272+Q157: dirac-probes Remark 3.2a (impulse-work formula) (+3, 240). Q157 PASS.
 
 **Immediate:**
-- Room for further PLB expansion: dirac (240/5pp), relativistic (262/5pp), HD-QFT (262/5pp). Delta at 6pp boundary.
+- Room for further PLB expansion: dirac (247/5pp), relativistic (262/5pp), HD-QFT (265/5pp). Delta at 6pp boundary.
 - Delta-objects at PLB limit — any further content needs line cuts or stays frozen.
 - Bibliography: Lanczos, Fraser-Nakane, Delaunay, Nauenberg2003 source ingestion.
 - AGENTS.md updated: docs/motivations.md is agent-editable.
