@@ -13,6 +13,21 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q100: focused referee on D6.2a-HO + D4.1b, α-convention fix)
+- Focus: subagent referee pass on the two newly promoted derivations.
+- Work: D6.2a-HO clean. D4.1b had α↔ordering correspondence reversed: the operator formula Ĥ_α=(1-α)q̂p̂+αp̂q̂ does not match the path-integral convention q_α=(1-α)q_k+αq_{k+1}. Fixed to Ĥ_α=αq̂p̂+(1-α)p̂q̂=p̂q̂+αiℏ. Labels changed from left/right-point to prepoint/postpoint (standard Kleinert terminology).
+- Result: error caught and fixed. Root cause: blackboard conflated operator-ordering α with path-integral α; these are complementary.
+
+## 2026-02-13 (S106+C148: ordering witness D4.1b for Section 6.3)
+- Focus: concrete discretization→ordering example for Section 6.3.
+- Work: blackboard exploration of H=qp under α-discretization. Subagent review (pedagogical expositor) caught label collision (D4.1a→D4.1b), derivation gap (added matrix-element verification). Promoted D4.1b to Section 6.3.
+- Result: cornerstone +5 lines. Note: α-convention error in promoted text caught and fixed in Q100.
+
+## 2026-02-13 (S105+C147: harmonic-oscillator step-halving witness D6.2a-HO)
+- Focus: concrete ODE example for the step-halving/control-map construction in Section 8.4.
+- Work: blackboard exploration of y''+y=0. Subagent review (rigorous pure mathematician) caught critical error: false energy-preservation claim (det=1+h⁴/4≠1, not symplectic) and fabricated numerical table. Fixed to "second-order accurate," removed table. Promoted D6.2a-HO to Section 8.4.
+- Result: cornerstone +5 lines.
+
 ## 2026-02-13 (S104: bound-orbit L > K/c extension via effective potential)
 - Focus: extend the L > K/c angular momentum bound from circular orbits to all bound orbits in SR inverse-square force.
 - Work: wrote blackboard with effective-potential analysis. Subagent review (intuitive physicist persona) confirmed correctness, suggested fixes for marginal case description and closed-form well depth. Promoted Section 3.1 to relativistic-central-orbits satellite.

@@ -148,6 +148,8 @@
 144. `C144` Completed.
 145. `C145` Completed.
 146. `C146` Completed.
+147. `C147` Completed.
+148. `C148` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -277,6 +279,8 @@
 - `S102` Completed.
 - `S103` Completed.
 - `S104` Completed.
+- `S105` Completed.
+- `S106` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -379,6 +383,7 @@
 - `Q97` Completed.
 - `Q98` Completed.
 - `Q99` Completed.
+- `Q100` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -415,20 +420,20 @@
 
 ## Next Action
 **9 satellite papers all at Tier 1. All cross-referenced from cornerstone.**
-Cornerstone at ~1457 lines, Q99 clean.
+Cornerstone at ~1467 lines, Q100 clean.
 
 Recent completed:
-1. S104: bound-orbit L > K/c extension via effective potential (+13 lines to relativistic-orbits satellite).
-2. Q99: subagent referee pass caught sign error (e^{1/(cg)} → e^{-1/(cg)}), 3 more fixes.
-3. C146: cross-references to remaining 3 satellites — all 9 now linked.
-4. S103+C145: numerical witness D1.2a in Section 3.2 (+5 lines cornerstone).
-5. Subagent recipes documented in AGENTS.md (optional, for agents supporting orchestration).
+1. Q100: fixed α↔ordering correspondence in D4.1b (prepoint/postpoint labels + operator formula).
+2. S106+C148: ordering witness D4.1b in Section 6.3 (+5 lines).
+3. S105+C147: harmonic-oscillator step-halving witness D6.2a-HO in Section 8.4 (+5 lines).
+4. S104: bound-orbit L > K/c extension via effective potential (+13 lines satellite).
+5. Q99: sign error (e^{1/(cg)} → e^{-1/(cg)}) + 3 more fixes.
 
 Next:
-- P cycles for satellite submissions when ready.
-- Cornerstone content opportunities: Section 8 QFT witness (hard).
-- Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
+- Content gaps: Gap 2 (stationary phase numerical verification, medium), Gap 3 (Moyal beyond quadratic, med-high), Gap 4 (RG flow on realistic coupling, high).
 - Expand shorter satellites (action-angle 87 lines, uncuttable 96 lines, fermionic mediators 112 lines).
+- P cycles for satellite submissions when ready.
+- Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
