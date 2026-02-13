@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q81: referee pass on half-density-qft for Tier 1)
+- Focus: full referee pass on half-density-qft after B18 bibliography.
+- Work: checked claim boundaries, notation, citations, math, encoding, cross-references, reader flow.
+- Result: one Unicode escape found (line 182: `\u03b4` should be `δ`). All else clean. Assessed READY for Tier 1 after C127 fix.
+- Next: C127 (Unicode fix), promote to Tier 1.
+
 ## 2026-02-13 (Q78: clean referee pass on C122)
 - Focus: verify PA-H2.6b necessity claims and cross-references.
 - Work: checked all four necessity claims (drop each → conclusion fails). Structural checks pass.
