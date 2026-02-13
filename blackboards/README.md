@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Spin coherent states on S² | Promoted (C182) |
-| 1 | Wilson's renormalization group | Promoted (C183) |
+| 0 | Ehrenfest time / classical correspondence breakdown | Promoted (C184) |
+| 1 | Dimensional regularization / refinement-scheme independence | Promoted (C185) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

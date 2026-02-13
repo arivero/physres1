@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S143+C184+S144+C185: Ehrenfest time + dim reg)
+- Focus: expand action-angle Section 7 (temporal boundary of classical orbits) and uncuttable Section 4 (refinement-scheme independence).
+- Work: S143 studied Ehrenfest time. Semiclassical dynamics expert reviewed — all 8 claims CORRECT (Ehrenfest theorem, quadratic exactness, t_E formula, algebraic-vs-logarithmic contrast, all references). Promoted as Remark 7.3: completes triptych of phase-space/spectral/temporal transitions. S144 studied dim reg. Perturbative QFT expert reviewed — all physics CORRECT, recommended softening lattice gauge claim. Promoted as Remark 4.2: d=4-ε, MS-bar subtraction, refinement-scheme independence.
+- Result: action-angle 145→148 (+3, 8pp), uncuttable 146→149 (+3, 8pp). Fermionic 147 lines (8pp).
+
 ## 2026-02-13 (S141+C182+S142+C183: Spin coherent states + Wilson RG)
 - Focus: expand action-angle Section 6 (angular-momentum coherent states) and uncuttable Section 4 (definitive refinement framework).
 - Work: S141 studied spin coherent states on S². Mathematical physicist reviewed — all 7 claims CORRECT (definition, variance, angular uncertainty, |⟨J⟩|=jℏ, minimum uncertainty, resolution of identity, references). Promoted as Remark 6.7: ring-vs-blob from flat to spherical phase space. S142 studied Wilson's RG. Statistical field theorist reviewed — all 6 claims CORRECT, recommended softening "QFT = fixed point." Promoted as Remark 4.1: blocking = refinement map, relevant operators = counterterms, fixed points = continuum limits.
