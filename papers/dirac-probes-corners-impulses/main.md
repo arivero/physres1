@@ -97,6 +97,9 @@ Same integration argument: the delta integrates to \(J\), the smooth remainder v
 
 The distinction is structural: corners arise from variational boundary conditions (matching at a junction), while impulses arise from external forcing (a source term in the equation of motion).
 
+`Remark 3.2a (Energy jump across an impulse — the impulse-work formula).`
+For the free particle \(\mathcal{L}=\frac{m}{2}\dot{q}^2\), the Hamiltonian \(H=\frac{m}{2}\dot{q}^2\) jumps by \(\Delta H=\frac{m}{2}(v_+^2-v_-^2)=J\cdot\bar{v}\), where \(\bar{v}=(v_++v_-)/2\) is the average velocity at the impulse. This is the discrete analog of the power relation \(P=F\cdot v\): the impulse does work \(J\cdot\bar{v}\) at the mean velocity. Contrast with Remark 3.1b: at an unforced corner \(J=0\), so the energy is automatically continuous. The corner/impulse dichotomy thus has matched momentum and energy statements — corners preserve both \(p\) and \(H\); impulses shift \(p\) by \(J\) and \(H\) by \(J\cdot\bar{v}\).
+
 # 4. Worked Model: Free Particle with a Single Delta-Kick
 
 We give a complete computation that illustrates both Theorem 3.2 and the evaluation of action on a kinked trajectory.
@@ -148,6 +151,9 @@ The factor \(t_0(T-t_0)/T\) achieves its maximum value \(T/4\) at the midpoint \
 `Remark 4.3b (Strict minimality of the free path — Jacobi sufficiency).`
 The strong Legendre condition \(\partial^2\mathcal{L}/\partial\dot{q}^2=m>0\) holds everywhere. For \(\mathcal{L}=\frac{m}{2}\dot{q}^2\), the Jacobi equation is \(\ddot{q}_J=0\), whose non-trivial solutions \(q_J(t)=At\) (with \(q_J(0)=0\)) have no further zeros in \((0,T]\) — no conjugate points. Together these give Jacobi's sufficiency theorem: the straight-line path is a strict weak local minimum of the action. The action excess \(S-S_0>0\) of Section 4.3 is a direct manifestation of this sufficiency: every kinked trajectory (an admissible weak competitor) has strictly higher action.
 
+`Remark 4.3c (Weierstrass excess function — strong minimality).`
+The Weierstrass excess function for \(\mathcal{L}=\frac{m}{2}\dot{q}^2\) is \(\mathcal{E}(\dot{q},\dot{q}')=\frac{m}{2}(\dot{q}'-\dot{q})^2\ge 0\), with equality only when \(\dot{q}'=\dot{q}\). Combined with the no-conjugate-point condition of Remark 4.3b, this gives Weierstrass's sufficiency theorem: the straight-line path is a *strong* local minimum — competitors need only be \(C^0\)-close, not \(C^1\)-close. The kinked trajectory of Section 4.3, with its velocity discontinuity, is precisely a strong competitor: \(C^0\)-close to the straight path but not \(C^1\)-close. Its positive action excess \(S-S_0>0\) is thus a concrete manifestation of Weierstrass sufficiency.
+
 ## 4.4 Angular momentum preservation under central impulses
 
 For a central force in the plane, the impulse is radial: \(J=J_r\,\hat{r}\). Decomposing the velocity into radial and transverse components, \(\mathbf{v}=v_r\,\hat{r}+r\dot{\theta}\,\hat{\theta}\), the impulse jump of Theorem 3.2 reads
@@ -159,6 +165,9 @@ so the angular momentum \(L=mr^2\dot{\theta}\) is unchanged across the kick.
 This is precisely the mechanism behind Newton's proof of the equal-area law (*Principia*, Proposition 1). A particle moves freely from \(A\) to \(B\) in time \(\Delta t\), sweeping out triangle \(SAB\). At \(B\), a central impulse directed toward the force center \(S\) adds a radial velocity component, deflecting the inertial continuation \(Bc\) to \(C\) with \(cC\parallel BS\) (the parallelogram construction). Since \(c\) and \(C\) are equidistant from line \(SB\), the triangles \(SBc\) and \(SBC\) have the same area, so \(\text{Area}(SAB)=\text{Area}(SBC)\). The construction repeats at every vertex: the swept-area equality is an algebraic identity at each polygon step, exact for any finite number of impulses.
 
 In the language of Section 4.5, a sequence of \(N\) central impulses produces a polygon whose area-sweep rate is constant at every step. As \(N\to\infty\) and \(\Delta t\to0\) (Newton's Lemma 3 on "ultimate ratios"), the polygon converges to a smooth orbit under a continuous central force, recovering Kepler's second law [Nauenberg2003KeplerArea]. The distributional impulse-matching of Theorem 3.2 thus provides the modern functional-analytic underpinning of Newton's original polygonal argument.
+
+`Remark 4.4a (Noether charges across impulses: the general criterion).`
+For a Lagrangian admitting a continuous symmetry \(\delta q=\varepsilon\,\xi(q)\), the Noether charge \(Q=(\partial\mathcal{L}/\partial\dot{q})\cdot\xi\) is conserved on each smooth segment. Across an impulse \(J\,\delta(t-t_0)\), Theorem 3.2 gives \(\Delta(\partial\mathcal{L}/\partial\dot{q})=J\), and since \(q\) is continuous at \(t_0\), the charge jump is \(\Delta Q=J\cdot\xi(q(t_0))\). The charge is therefore conserved if and only if \(J\cdot\xi=0\): the impulse must be orthogonal to the symmetry generator in configuration space. Section 4.4's angular-momentum preservation under central impulses is the special case \(\xi=r\,\hat\theta\), \(J=J_r\hat r\), where radial-tangential orthogonality gives \(J\cdot\xi=0\) identically.
 
 ## 4.5 From N impulses to the time-sliced path integral
 
@@ -180,6 +189,12 @@ K(q_f,q_i;T)=\lim_{N\to\infty}\left(\frac{m}{2\pi i\hbar\,\Delta t}\right)^{(N+1
 \exp\!\left(\frac{i}{\hbar}\,S_N[\{q_k\}]\right).
 \]
 There are \(N+1\) segments and \(N\) intermediate integrations; each segment contributes one factor of \(\sqrt{m/(2\pi i\hbar\,\Delta t)}\), giving the exponent \((N+1)/2\). This is precisely the half-density normalization required for the composition law to hold at each intermediate integration [BatesWeinstein1997] — a point treated systematically in the cornerstone's half-density framework. The distributional impulse-matching of Theorem 3.2 thus connects, through this \(N\to\infty\) limit [FeynmanHibbs1965], to the composition postulate for transition amplitudes.
+
+`Remark 4.5a (Exact evaluation for the free particle).`
+For \(\mathcal{L}=\frac{m}{2}\dot{q}^2\), each of the \(N\) intermediate Gaussian integrals can be performed in closed form. The result is \(K(q_f,q_i;T)=\sqrt{m/(2\pi i\hbar T)}\,\exp(iS_0/\hbar)\) with \(S_0=m(q_f-q_i)^2/(2T)\), independent of the slicing parameter \(N\): each intermediate integration reproduces the same functional form with the segment endpoints merged (the composition law). The prefactor \(\sqrt{m/T}\) is the Van Vleck determinant \(\sqrt{\det(-\partial^2 S_0/\partial q_f\,\partial q_i)}\), confirming that the half-density normalization of each segment (Section 4.5 above) encodes precisely the information needed for the composition to produce the correct semiclassical prefactor without any extraneous measure choice.
+
+`Remark 4.5b (Multi-dimensional propagator and the d/2 exponent).`
+In \(d\) spatial dimensions, the free-particle propagator generalizes to \(K(\mathbf{q}_f,\mathbf{q}_i;T)=(m/(2\pi i\hbar T))^{d/2}\exp(iS_0/\hbar)\) with \(S_0=m|\mathbf{q}_f-\mathbf{q}_i|^2/(2T)\). The Van Vleck determinant is now \(\det(-\partial^2 S_0/\partial q_f^i\,\partial q_i^j)=(m/T)^d\), and the prefactor \((m/T)^{d/2}\) is its square root. The exponent \(d/2\) is the same one that controls the convergence of the diagonal Green function \(G_0(0,0;E)\propto\int_0^\infty t^{-d/2}e^{-\kappa^2 t}\,dt\) (Remark 5.2b): the path-integral normalization and the renormalization threshold for delta potentials share a common half-density origin.
 
 # 5. Safe vs Unsafe Uses of the Dirac Delta in Variational Mechanics
 

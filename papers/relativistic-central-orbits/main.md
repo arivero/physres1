@@ -187,6 +187,12 @@ The Schwarzschild geometry produces a clean radius hierarchy: the photon sphere 
 `Remark 4.3d (ISCO binding energy and accretion efficiency).`
 A particle spiraling quasi-statically from \(r\to\infty\) to the ISCO radiates a fraction \(\eta=1-E_{\mathrm{ISCO}}\) of its rest mass energy. With \(E_{\mathrm{ISCO}}=2\sqrt{2}/3\) (i.e.\ \(E^2=8/9\)) this gives \(\eta=1-2\sqrt{2}/3\approx5.72\%\), the maximum radiative efficiency of thin-disk accretion onto a Schwarzschild black hole. The SR model of Section 3.1 has no ISCO, hence no finite efficiency bound — the \(5.72\%\) ceiling is a curvature consequence, like the ISCO itself.
 
+`Remark 4.3e (Exact apsidal advance and its ISCO divergence).`
+For stable circular orbits at radius \(r_0>6M\), the ratio of orbital to radial oscillation frequency is \(\omega_\phi/\omega_r=\sqrt{r_0/(r_0-6M)}\), giving an exact apsidal advance \(\Delta\phi=2\pi\bigl(\sqrt{r_0/(r_0-6M)}-1\bigr)\). For \(r_0\gg 6M\) this reduces to \(\Delta\phi\approx 6\pi M/r_0\), the standard weak-field result that yields Mercury's \(43''\) per century; as \(r_0\to 6M^+\), it diverges because the radial oscillation frequency \(\omega_r\propto\sqrt{V_{\mathrm{eff}}''}\to 0\) at the ISCO. The ISCO is thus simultaneously a stability threshold (Remarks 4.3a–b), an efficiency ceiling (Remark 4.3d), and a precession barrier.
+
+`Remark 4.3f (Kepler's third law survives in coordinate time).`
+The coordinate orbital frequency for Schwarzschild circular orbits is \(\omega_\phi=d\phi/dt=(L/r_0^2)\cdot(1-2M/r_0)/E\). Substituting \(L^2=Mr_0^2/(r_0-3M)\) and \(E^2=(r_0-2M)^2/(r_0(r_0-3M))\) gives \(\omega_\phi^2=M/r_0^3\) — identically the Newtonian Kepler law, exact at all radii \(r_0>3M\). However, the proper orbital period \(T_\tau=T_t\sqrt{1-3M/r_0}\) includes a gravitational time-dilation factor; at the ISCO \(T_\tau/T_t=1/\sqrt{2}\approx 0.707\). The coordinate Kepler law is thus a "gauge accident" of Schwarzschild coordinates, while the proper-time period encodes the curvature effects that also produce the ISCO and the precession of Remarks 4.3a–e.
+
 # 5. SR Stability of Circular Orbits (Small Radial Perturbations)
 This section stays within mechanical SR (a point particle in an external, time-independent central scalar potential \(U(r)\)). It is used as a kinematic witness: some restrictions already appear before GR or field-theoretic interactions enter.
 
