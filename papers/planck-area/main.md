@@ -713,11 +713,11 @@ The broader program in which this note sits argues that:
 This note adds a complementary ingredient: the kernel side is most naturally formulated in half-density language, and stationary phase produces the bi-half-density prefactor directly. A universal convention for turning those half-densities into scalar amplitudes then requires a \(\text{length}^{d/2}\) scale; in \(d=4\) this is an area scale.
 
 # 7. Open Problems and Outlook
-1. Make the half-density normalization argument precise for a concrete groupoid or kernel model (tangent-groupoid or short-time propagator model).
-2. Show how the area scale enters stationary-phase prefactors and how this interacts with RG scaling.
-3. General-dimension analysis: clarify what replaces “area” in odd dimensions and whether a universal normalization is still defensible.
-4. Identify minimal hypotheses under which “need of half-density scale \(\Rightarrow\) Planck area” is more than dimensional bookkeeping.
-5. Track minimal-length/GUP scenarios as a comparison branch: do they implement the “needed scale” at the level of kinematics (modified commutators/dispersion) or can they be reframed as a refinement-compatibility condition? Use [Hossenfelder2013MinimalLength] as an OA entry point.
+1. *(Addressed: Derivation PA-D1.4a.)* The free-propagator semigroup computation provides a concrete witness; a full tangent-groupoid treatment remains desirable.
+2. *(Addressed: Remark PA-E5c.)* The Van Vleck / transmutation separation is explicit in the 2D delta model; a \(d=4\) gauge-theory witness is still open.
+3. General-dimension analysis: clarify what replaces "area" in odd dimensions and whether a universal normalization is still defensible. *(Partially addressed: Remark PA-D1.3a classifies the three obstruction mechanisms. An explicit odd-\(d\) transmutation witness is still open.)*
+4. *(Addressed: Remark PA-H2.6b.)* The minimal hypothesis set is PA-H2.1 + PA-H2.4 + PA-H2.5a + gravity-only; each is necessary.
+5. Track minimal-length/GUP scenarios as a comparison branch: do they implement the "needed scale" at the level of kinematics (modified commutators/dispersion) or can they be reframed as a refinement-compatibility condition? Use [Hossenfelder2013MinimalLength] as an OA entry point.
 
 # References
 
