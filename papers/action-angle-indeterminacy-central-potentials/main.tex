@@ -154,6 +154,33 @@ shift cannot map the discrete spectrum \(\mathbb{Z}\) to itself (Holevo,
 nonexistent self-adjoint operator with a well-defined probability
 measure.
 
+\texttt{Remark\ 2.3\ (Pegg–Barnett\ hermitian\ phase\ operator:\ self-adjointness\ via\ truncation\ and\ limit).}
+The POVM of Remark 2.2 provides angle probabilities without a
+self-adjoint operator. Pegg and Barnett (1989) showed that a
+complementary route exists: in a truncated \((s{+}1)\)-dimensional
+Hilbert space \(\mathrm{span}\{|0\rangle,\ldots,|s\rangle\}\), define
+\((s{+}1)\) phase states
+\(|\theta_m\rangle=(s{+}1)^{-1/2}\sum_{n=0}^{s}e^{in\theta_m}|n\rangle\)
+with \(\theta_m=\theta_0+2\pi m/(s{+}1)\), and a Hermitian phase
+operator
+\(\hat\Phi_{\mathrm{PB}}=\sum_{m=0}^{s}\theta_m|\theta_m\rangle\langle\theta_m|\)
+{[}PeggBarnett1989{]}. In the truncated space, the number states
+\(\{|n\rangle\}\) and phase states \(\{|\theta_m\rangle\}\) form
+complementary bases with uniform overlap
+\(|\langle n|\theta_m\rangle|^2=1/(s{+}1)\) for all \(n,m\) --- making
+number and phase maximally complementary observables. The matrix
+elements of the commutator \([\hat N,\hat\Phi_{\mathrm{PB}}]\) between
+physical states (those in the original \(\ell^2(\mathbb{N}_0)\) space)
+approach the canonical value \(i\) as \(s\to\infty\), with corrections
+of order \(1/(s{+}1)\); all expectation values and moments of
+\(\hat\Phi_{\mathrm{PB}}\) likewise converge to the POVM results of
+Remark 2.2 in this limit. The strategy --- self-adjoint operator in
+finite dimension, physical predictions extracted via limiting ---
+sidesteps the Pauli obstruction (Remark 2.1) and the POVM detour (Remark
+2.2) by a third route: the phase operator is not defined at any single
+finite truncation, but as a controlled limit of well-defined
+finite-dimensional operators.
+
 \hypertarget{central-potentials-l_z-eigenstates-have-uniform-phi-distribution}{%
 \section{\texorpdfstring{3. Central potentials: \(L_z\) eigenstates have
 uniform \(\phi\)
@@ -243,6 +270,38 @@ modes, and the phase vortex at the beam axis --- where the phase winds
 by \(2\pi\ell\) around the optical axis, topologically forcing zero
 intensity --- is the photonic manifestation of the single-valuedness
 condition that quantizes \(m\) in Section 3.
+
+\texttt{Remark\ 3.4\ (Quantized\ vortices\ in\ superfluids:\ the\ macroscopic\ face\ of\ azimuthal\ quantization).}
+The azimuthal structure \(e^{im\phi}\) of Section 3 is not limited to
+single-particle wavefunctions: it governs the macroscopic order
+parameter of a superfluid or Bose--Einstein condensate,
+\(\Psi(\mathbf{r})=\sqrt{\rho(\mathbf{r})}\,e^{iS(\mathbf{r})/\hbar}\).
+Single-valuedness of \(\Psi\) around any closed loop forces the
+circulation to be quantized:
+\(\oint\mathbf{v}\cdot d\boldsymbol{\ell}=(h/m)\,n\) with integer \(n\),
+where \(\mathbf{v}=(\hbar/m)\nabla S\) is the superfluid velocity
+(Onsager, 1949; Feynman, 1955) {[}Feynman1955{]}. At a vortex with
+winding number \(n\), the phase winds by \(2\pi n\), topologically
+forcing \(|\Psi|\to 0\) at the core --- the same mechanism as the OAM
+beam's on-axis singularity (Remark 3.3), with the core radius set by the
+healing length \(\xi=1/\sqrt{8\pi\rho a}\) (typically tens to hundreds
+of nanometers in dilute BECs). In dilute-gas BECs, singly quantized
+vortices (\(n=1\)) have been directly imaged (Matthews et al., 1999;
+Madison et al., 2000); multiply charged vortices (\(n>1\)) are
+dynamically unstable in uniform condensates and decay into \(n\)
+single-quantum vortices on millisecond timescales {[}Matthews1999{]}. In
+type-II superconductors, the circulation quantization becomes magnetic
+flux quantization: each flux tube carries \(\Phi_0=h/(2e)\) (reflecting
+the Cooper-pair charge \(2e\)), and the tubes self-organize into
+Abrikosov's triangular lattice (1957; Nobel Prize 2003). The
+action--angle connection is direct: the winding number \(n\) is the
+quantized action variable, while the overall condensate phase is the
+conjugate angle --- delocalized when particle number \(N\) is sharp (the
+macroscopic version of the number--phase tradeoff of Remark 2.1). The
+Anderson--Josephson relation \(d\varphi/dt=-\mu/\hbar\) (where \(\mu\)
+is the chemical potential) makes the phase dynamics explicit: Josephson
+oscillations between weakly coupled condensates are the macroscopic
+manifestation of the number--phase tradeoff.
 
 \hypertarget{fourier-tradeoff-localizing-phi-forces-a-broad-m-superposition}{%
 \section{\texorpdfstring{4. Fourier tradeoff: localizing \(\phi\) forces
@@ -1047,6 +1106,23 @@ prequantization integrality condition in Remark 7.5.
   {[}Daubechies1992{]} Ingrid Daubechies, \emph{Ten Lectures on
   Wavelets}, SIAM, 1992. ISBN \texttt{0-89871-274-2}. (Gabor frames,
   Balian--Low theorem, time-frequency analysis; used in Remark 4.6.)
+\item
+  {[}PeggBarnett1989{]} D. T. Pegg and S. M. Barnett, ``Phase properties
+  of the quantized single-mode electromagnetic field,'' \emph{Physical
+  Review A} 39 (1989), 1665--1681. DOI
+  \texttt{10.1103/PhysRevA.39.1665}. (Hermitian phase operator via
+  truncation and limit; used in Remark 2.3.)
+\item
+  {[}Feynman1955{]} Richard P. Feynman, ``Application of quantum
+  mechanics to liquid helium,'' in \emph{Progress in Low Temperature
+  Physics}, Vol. 1, ed.~C. J. Gorter, North-Holland, 1955, pp.~17--53.
+  (Quantized circulation in superfluid helium; used in Remark 3.4.)
+\item
+  {[}Matthews1999{]} M. R. Matthews, B. P. Anderson, P. C. Haljan, D. S.
+  Hall, C. E. Wieman, and E. A. Cornell, ``Vortices in a Bose-Einstein
+  condensate,'' \emph{Physical Review Letters} 83 (1999), 2498--2501.
+  DOI \texttt{10.1103/PhysRevLett.83.2498}. (First direct imaging of BEC
+  vortex; used in Remark 3.4.)
 \end{enumerate}
 
 \end{document}
