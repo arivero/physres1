@@ -141,18 +141,18 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 - Dependent note draft: `papers/fermionic-mediators-contact-limits/main.md`.
 - Intended role: connect “mediator-field talk” to the repo’s point-interaction + RG themes in a controlled, falsifiable way.
 
-## Publication Readiness (2026-02-13)
+## Publication Readiness (2026-02-13, refreshed)
 **All 8 satellite papers at Tier 1 (READY for P cycles):**
-1. Planck Area (706 lines, 23 pages, 9 refs)
-2. RG Fundamental (569 lines, 17 pages, 6 refs)
-3. Half-Density QFT (210 lines, 6 pages, 5 refs)
-4. Relativistic Central Orbits (207 lines, 6 pages, 2 refs)
-5. Delta Objects (139 lines, 5 pages, 4 refs)
-6. Fermionic Mediators (96 lines, 4 pages, 4 refs)
-7. Action-Angle Indeterminacy (75 lines, 3 pages, 2 refs)
-8. Uncuttable Controlled Refinement (59 lines, 3 pages, 2 refs)
+1. Planck Area (730 lines, 23 pages, 9 refs)
+2. RG Fundamental (596 lines, 17 pages, 8 refs)
+3. Half-Density QFT (209 lines, 6 pages, 5 refs)
+4. Relativistic Central Orbits (206 lines, 6 pages, 2 refs)
+5. Delta Objects (164 lines, 5 pages, 5 refs) — expanded C138: Van Vleck determinant section
+6. Fermionic Mediators (112 lines, 5 pages, 4 refs) — expanded C139: vacuum polarization example
+7. Action-Angle Indeterminacy (87 lines, 4 pages, 2 refs) — expanded C137: harmonic oscillator witness
+8. Uncuttable Controlled Refinement (68 lines, 3 pages, 2 refs) — expanded C135: etymology + failure + path integral
 
-Tier 2 and Tier 3: empty. Cornerstone: paper/main.md (~2200 lines, Q73 clean).
+Tier 2 and Tier 3: empty. Cornerstone: paper/main.md (1435 lines, Q89 clean). Cross-references to HD and RG satellites (C136).
 
 All papers verified: clean encoding (no Unicode escapes), proper YAML metadata, no internal file paths, adequate bibliography.
 

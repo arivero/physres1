@@ -13,6 +13,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S96: research state refresh)
+- Focus: update docs/research-state.md with current line counts after C135-C139 expansions.
+- Result: all 8 satellite line counts refreshed. Cornerstone updated to 1435 lines, Q89, cross-refs to HD+RG.
+
 ## 2026-02-13 (S95+C139: fermionic mediators — vacuum polarization example)
 - Focus: expand fermionic mediators paper (95 lines) with concrete loop-induced example.
 - Work: S95 assessed options. C139 added Section 3.1: vacuum polarization formula α_eff(q²) with Π(q²), noting low-q expansion gives local operators of Section 4.
