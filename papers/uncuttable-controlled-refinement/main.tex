@@ -428,6 +428,27 @@ invariants that a naive momentum cutoff would break --- paralleling the
 symplectic integrators of Remark 3.4, which preserve Hamiltonian
 structure that generic discretizations destroy.
 
+\texttt{Remark\ 4.3\ (Lattice\ gauge\ theory:\ the\ definitive\ finite-resolution\ approximant).}
+Wilson's lattice gauge theory (1974) provides the most concrete physical
+realization of the ``uncuttable'' pattern. Spacetime is discretized on a
+hypercubic lattice with spacing \(a\); the gauge field lives on links as
+group elements \(U_\mu(x)\in SU(N)\), and the action is built from the
+smallest closed loops (plaquettes):
+\(S_W=\beta\sum_P\mathrm{Re}\,\mathrm{Tr}(1-U_P)\) with
+\(\beta=2N/g^2\). Crucially, this formulation maintains exact gauge
+invariance at every lattice spacing --- the action is a sum of traces of
+closed loops, which are invariant under local gauge transformations ---
+paralleling the symplectic integrators of Remark 3.4, which preserve
+Hamiltonian structure at every finite time step. The continuum limit
+\(a\to 0\) requires tuning the bare coupling \(g(a)\) along the critical
+surface \(\beta\to\infty\); for non-abelian theories with
+\(\beta_0=(11N-2N_f)/3>0\), asymptotic freedom (Gross--Wilczek and
+Politzer, 1973) guarantees that \(g(a)\to 0\) as \(a\to 0\), making this
+tuning controllable. No finite lattice is the theory: the continuum QCD
+is the refinement limit, and proving that confinement (the area law for
+large Wilson loops) and a mass gap survive this limit is the content of
+the Clay Millennium Prize problem for Yang--Mills theory.
+
 This note is therefore a small conceptual bridge: it isolates an early,
 analysis-level instance of the same meta-problem that reappears in
 quantization and in QFT.
