@@ -89,6 +89,14 @@ For the classical Hamiltonian \(H(q,p)=qp\), different time-slicing prescription
 \]
 At \(\alpha=0\) (prepoint): \(\hat p\hat q\). At \(\alpha=1/2\) (midpoint/Weyl): \(\tfrac12(\hat q\hat p+\hat p\hat q)\). At \(\alpha=1\) (postpoint): \(\hat q\hat p\). All three share the classical limit \(H=qp\) as \(\hbar\to0\), but they are distinct quantum objects. The "uncuttable" message: the continuum quantum Hamiltonian is not determined by any single finite time-slicing; it requires specifying the refinement convention \(\alpha\) as part of the definition.
 
+`Remark 3.2 (Stochastic counterpart: Itô versus Stratonovich).`
+The same refinement non-uniqueness appears in stochastic calculus. For a Wiener process \(W_t\), the stochastic integral \(\int f(W_t)\,dW_t\) can be defined using left-point (Itô) or midpoint (Stratonovich) evaluation in the Riemann sums:
+\[
+\text{Itô:}\;\sum_k f(W_{t_k})\,\Delta W_k,\qquad
+\text{Stratonovich:}\;\sum_k f\!\left(\tfrac{W_{t_k}+W_{t_{k+1}}}{2}\right)\Delta W_k.
+\]
+Both converge as mesh \(\to 0\) (for \(f\in C^2\)), but to different limits related by \(\int f(W)\circ dW = \int f(W)\,dW + \tfrac12\int f'(W)\,dt\) [Oksendal2003]. The correction \(\tfrac12 f'\,dt\) arises because Brownian paths have non-zero quadratic variation (\(\sum(\Delta W_k)^2\to T\neq 0\)); for paths of bounded variation, the quadratic variation vanishes and all evaluation-point prescriptions agree. This parallels Example 3.1: the ordering correction \(\alpha\,i\hbar\) vanishes when \(\hbar\to 0\) (smooth classical paths), but is unavoidable at finite \(\hbar\). Both cases instantiate the "uncuttable" pattern: when paths are rough enough, the refinement prescription becomes part of the definition.
+
 # 4. Outlook: refinement compatibility as "the extra structure"
 In the companion papers, the "extra structure" used to control refinement limits is made explicit:
 - half-densities make kernel composition coordinate-free without hidden measure choices,
@@ -99,5 +107,5 @@ This note is therefore a small conceptual bridge: it isolates an early, analysis
 
 # References
 
-1. [BatesWeinstein1997] Sean Bates and Alan Weinstein, *Lectures on the Geometry of Quantization*, Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Half-density formalism for coordinate-free kernel composition.)
-2. [FeynmanHibbs1965] Richard P. Feynman and Albert R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as a refinement limit of time-sliced amplitudes.)
+1. [FeynmanHibbs1965] Richard P. Feynman and Albert R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as refinement limit of time-sliced amplitudes; foundational treatment.)
+2. [Oksendal2003] Bernt Øksendal, *Stochastic Differential Equations: An Introduction with Applications*, 6th ed., Springer, 2003. ISBN `978-3-540-04758-2`. DOI `10.1007/978-3-642-14394-6`. (Standard textbook on Itô vs Stratonovich integrals and their relationship; used in uncuttable satellite for Remark 3.2.)

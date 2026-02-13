@@ -93,4 +93,3 @@ Beyond the \((\phi,L_z)\) sector and the harmonic oscillator above, integrable c
 # References
 
 1. [TongQMLectures] David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)
-2. [Sakurai2020] J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University Press, 2020. (Standard treatment of angular momentum eigenstates, spherical harmonics, and the angle-operator subtlety.)

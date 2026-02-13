@@ -168,10 +168,12 @@ independent of the regulator.
 the Taylor expansion \[
 f(x+\varepsilon)=f(x)+f'(x)\varepsilon+\tfrac{1}{2}f''(x)\varepsilon^2+\cdots+\tfrac{1}{n!}f^{(n)}(x)\varepsilon^n+o(\varepsilon^n)
 \] provides a systematic tower of subtractions, one per order. Removing
-terms through order \(k-1\) and dividing by \(\varepsilon^k\) gives
-\(f^{(k)}(x)/k!\) plus vanishing corrections. Each derivative is a
-``counterterm-subtracted refinement limit at the next order'' --- the
-analog of loop-by-loop renormalization in QFT.
+terms through order \(k-1\) and dividing by \(\varepsilon^k\) gives the
+\(k\)-th Taylor coefficient \(f^{(k)}(x)/k!\) plus vanishing corrections
+--- or equivalently, dividing by \(\varepsilon^k/k!\) recovers the
+derivative \(f^{(k)}(x)\) itself. Each order is a
+``counterterm-subtracted refinement limit'' --- the analog of
+loop-by-loop renormalization in QFT.
 
 \hypertarget{dynamics-action-stationarity-and-the-need-for-control-data}{%
 \section{3. Dynamics: action, stationarity, and the need for control

@@ -55,6 +55,7 @@ Use this file as a source ledger.
 41. `[Morette1951]` C. Morette, "On the Definition and Approximation of Feynman's Path Integrals," *Phys. Rev.* **81**, 848–852 (1951). DOI `10.1103/PhysRev.81.848`. (Van Vleck determinant in path integral; semiclassical expansion weights.)
 42. `[Sakurai2020]` J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University Press, 2020. ISBN `978-1-108-47322-4`. (Standard treatment of angular momentum, spherical harmonics, and quantum measurement.)
 43. `[FeynmanHibbs1965]` Richard P. Feynman and Albert R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as refinement limit of time-sliced amplitudes; foundational treatment.)
+44. `[Oksendal2003]` Bernt Øksendal, *Stochastic Differential Equations: An Introduction with Applications*, 6th ed., Springer, 2003. ISBN `978-3-540-04758-2`. DOI `10.1007/978-3-642-14394-6`. (Standard textbook on Itô vs Stratonovich integrals and their relationship; used in uncuttable satellite for Remark 3.2.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).

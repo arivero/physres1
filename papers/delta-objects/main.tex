@@ -41,6 +41,9 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
+\usepackage[normalem]{ulem}
+% Avoid problems with \sout in headers with hyperref
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -210,6 +213,39 @@ generally, point-supported singularities are encoded by delta kernels
 and their derivatives (\(\delta,\delta',\ldots\)), depending on
 distributional order.
 
+\hypertarget{van-vleck-determinant-the-propagator-instance-of-the-square-root-hessian}{%
+\subsection{3.5 Van Vleck determinant: the propagator instance of the
+square-root
+Hessian}\label{van-vleck-determinant-the-propagator-instance-of-the-square-root-hessian}}
+
+The square-root Hessian weight of Section 3.3 has a distinguished
+physical instance: the Van Vleck determinant
+{[}VanVleck1928Correspondence{]} {[}Morette1951{]} in the semiclassical
+propagator.
+
+For the short-time quantum propagator between positions \(q_i\) and
+\(q_f\) with time interval \(\Delta t\), stationary-phase evaluation of
+the path integral gives \[
+K(q_f,q_i;\Delta t)
+\;\propto\;
+\sqrt{D(q_f,q_i;\Delta t)}\;e^{(i/\hbar)\,S_{\mathrm{cl}}(q_f,q_i;\Delta t)},
+\] where \(S_{\mathrm{cl}}\) is the classical action on the extremal
+path and \[
+D(q_f,q_i;\Delta t)
+\;:=\;
+\left|\det\!\left(-\frac{\partial^2 S_{\mathrm{cl}}}{\partial q_f^a\,\partial q_i^b}\right)\right|
+\] is the Van Vleck determinant --- a \emph{mixed} Hessian (derivatives
+at the two endpoints of the classical path), as opposed to the full
+Hessian of \(f\) that appears in \(\delta(\nabla f)\). Despite this
+difference, it arises by the same stationary-phase mechanism:
+square-root Hessian weights at the amplitude level, confirming the
+``amplitudes are half-densities'' pattern.
+
+\texttt{Example\ 3.5a\ (Free\ particle).} For the free particle in \(d\)
+dimensions, \(S_{\mathrm{cl}}=m|q_f-q_i|^2/(2\Delta t)\), so \[
+D = (m/\Delta t)^d,\qquad \sqrt{D}=(m/\Delta t)^{d/2},
+\] reproducing the \((\Delta t)^{-d/2}\) normalization of Section 2.
+
 \hypertarget{delta-at-a-point-point-interactions-as-rank-one-kernels}{%
 \section{4. Delta at a point: point interactions as rank-one
 kernels}\label{delta-at-a-point-point-interactions-as-rank-one-kernels}}
@@ -252,13 +288,14 @@ as a theorem.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Relate the determinant weights in \(\delta(\nabla f)\) to the mixed
-  Hessian determinants (Van Vleck type {[}Morette1951{]}) that appear
-  after eliminating intermediate variables in time slicing (Schur
-  complement template).
+  \sout{Relate determinant weights to Van Vleck type.} Addressed:
+  Section 3.5 makes the connection explicit.
 \item
   Clarify which parts of the ``functional delta \(\delta(\delta S)\)''
   story survive rigorous regularization and which remain heuristic.
+\item
+  Extend the half-density treatment to spacetime (Lorentzian)
+  propagators and distributional kernels in field theory.
 \end{enumerate}
 
 \hypertarget{references}{%
@@ -268,22 +305,36 @@ as a theorem.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  {[}BatesWeinstein1997{]} Sean Bates and Alan Weinstein, \emph{Lectures
-  on the Geometry of Quantization}, Berkeley Mathematics Lecture Notes,
-  vol.~8, AMS, 1997. OA:
-  \url{https://math.berkeley.edu/~alanw/GofQ.pdf}.
+  {[}VanVleck1928Correspondence{]} J. H. Van Vleck, ``The Correspondence
+  Principle in the Statistical Interpretation of Quantum Mechanics,''
+  \emph{Proceedings of the National Academy of Sciences of the United
+  States of America} 14(2) (1928), 178--188. DOI
+  \texttt{10.1073/pnas.14.2.178}.
+\item
+  {[}BatesWeinstein1997{]} Sean Bates and Alan Weinstein, ``Lectures on
+  the Geometry of Quantization,'' Berkeley Mathematics Lecture Notes,
+  vol.~8, AMS, 1997. ISBN \texttt{978-0-8218-0798-9}. OA:
+  \url{https://math.berkeley.edu/~alanw/GofQ.pdf}. (Canonical reference
+  for half-density formalism in geometric quantization; half-density
+  kernels and composition.)
 \item
   {[}Hormander2003{]} Lars Hörmander, \emph{The Analysis of Linear
   Partial Differential Operators I: Distribution Theory and Fourier
-  Analysis}, 2nd ed., Springer, 2003.
+  Analysis}, 2nd ed., Springer, 2003. DOI
+  \texttt{10.1007/978-3-642-61497-2}. (Schwartz kernel theorem;
+  distributional calculus for PDE Green functions.)
 \item
   {[}AlbeverioGesztesyHoeghKrohnHolden2005{]} S. Albeverio, F. Gesztesy,
   R. Høegh-Krohn, and H. Holden, \emph{Solvable Models in Quantum
-  Mechanics}, 2nd ed., AMS Chelsea Publishing, 2005.
+  Mechanics}, 2nd ed., AMS Chelsea Publishing, 2005. ISBN
+  \texttt{978-0-8218-3624-4}. (Canonical reference for point
+  interactions in quantum mechanics; self-adjoint extensions, delta
+  potentials.)
 \item
   {[}Morette1951{]} C. Morette, ``On the Definition and Approximation of
   Feynman's Path Integrals,'' \emph{Phys. Rev.} \textbf{81}, 848--852
-  (1951).
+  (1951). DOI \texttt{10.1103/PhysRev.81.848}. (Van Vleck determinant in
+  path integral; semiclassical expansion weights.)
 \end{enumerate}
 
 \end{document}

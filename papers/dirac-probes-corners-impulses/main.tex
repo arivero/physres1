@@ -51,9 +51,6 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage[normalem]{ulem}
-% Avoid problems with \sout in headers with hyperref
-\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -79,8 +76,8 @@ a complete model --- the free particle with a single delta-kick --- to
 illustrate corners, impulse jumps, and the role of distributional
 forcing. A clean separation is maintained between \emph{Dirac-supported
 variations} (always safe under stated regularity) and \emph{delta
-potentials} (which require renormalization and are a distinct
-mathematical object).
+potentials} (which in dimension \(d\ge 2\) require renormalization and
+are a distinct mathematical object).
 \end{abstract}
 
 This note is a companion to the cornerstone manuscript. It expands the
@@ -354,10 +351,9 @@ Products \(\delta(t)^2\) & Undefined & Always \\
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \sout{Extend the single-impulse model to a sequence of \(N\) impulses
-  and take the continuum limit.} Addressed in Section 4.5. The
-  stochastic-forcing interpretation (random impulses with prescribed
-  statistics) remains open.
+  The stochastic-forcing interpretation of Section 4.5's \(N\)-impulse
+  model --- random impulses with prescribed statistics --- remains open
+  as a bridge to stochastic mechanics.
 \item
   Treat the piecewise-smooth trajectory as a weak solution and examine
   whether the Hamilton--Jacobi equation acquires viscosity-solution
@@ -383,6 +379,10 @@ Products \(\delta(t)^2\) & Undefined & Always \\
   {[}AlbeverioGesztesyHoeghKrohnHolden2005{]} S. Albeverio, F. Gesztesy,
   R. Høegh-Krohn, and H. Holden, \emph{Solvable Models in Quantum
   Mechanics}, 2nd ed., AMS Chelsea Publishing, 2005.
+\item
+  {[}FeynmanHibbs1965{]} R. P. Feynman and A. R. Hibbs, \emph{Quantum
+  Mechanics and Path Integrals}, McGraw-Hill, 1965. (Path integral as
+  refinement limit of time-sliced amplitudes.)
 \end{enumerate}
 
 \end{document}

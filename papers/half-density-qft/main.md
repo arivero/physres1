@@ -202,8 +202,8 @@ Gauge theories suggest a second, deeper appearance of half-densities: the BV for
 
 # References
 
-1. [BatesWeinstein1997] Sean Bates and Alan Weinstein, "Lectures on the Geometry of Quantization," Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. ISBN `978-0-8218-0798-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>.
-2. [deGosson2018ShortTimePropagators] Maurice A. de Gosson, "Short-Time Propagators and the Born–Jordan Quantization Rule," *Entropy* 20(11) (2018), 869. DOI `10.3390/e20110869`. OA: PubMed Central.
-3. [Wald1984] Robert M. Wald, *General Relativity*, University of Chicago Press, 1984. ISBN `978-0-226-87033-5`.
-4. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003. DOI `10.1007/978-3-642-61497-2`.
-5. [Costello2011] Kevin Costello, *Renormalization and Effective Field Theory*, Mathematical Surveys and Monographs, vol. 170, AMS, 2011. ISBN `978-0-8218-5288-0`.
+1. [deGosson2018ShortTimePropagators] Maurice A. de Gosson, "Short-Time Propagators and the Born–Jordan Quantization Rule," *Entropy* 20(11) (2018), 869. DOI `10.3390/e20110869`. OA: PubMed Central (PMCID: PMC 7512447).
+2. [BatesWeinstein1997] Sean Bates and Alan Weinstein, "Lectures on the Geometry of Quantization," Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. ISBN `978-0-8218-0798-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Canonical reference for half-density formalism in geometric quantization; half-density kernels and composition.)
+3. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003. DOI `10.1007/978-3-642-61497-2`. (Schwartz kernel theorem; distributional calculus for PDE Green functions.)
+4. [Wald1984] Robert M. Wald, *General Relativity*, University of Chicago Press, 1984. ISBN `978-0-226-87033-5`. (Conformal coupling, scalar fields on curved backgrounds, standard baseline for QFT on curved spacetimes.)
+5. [Costello2011] Kevin Costello, *Renormalization and Effective Field Theory*, Mathematical Surveys and Monographs, vol. 170, AMS, 2011. ISBN `978-0-8218-5288-0`. (BV formalism with half-density integration on field space.)

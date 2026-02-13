@@ -185,10 +185,3 @@ A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different obje
 1. The stochastic-forcing interpretation of Section 4.5's \(N\)-impulse model — random impulses with prescribed statistics — remains open as a bridge to stochastic mechanics.
 2. Treat the piecewise-smooth trajectory as a weak solution and examine whether the Hamilton–Jacobi equation acquires viscosity-solution structure at the kink.
 3. Connect the corner-condition analysis to broken geodesics in Riemannian geometry (Synge's world function approach).
-
-# References
-
-1. [Gelfand1963] I. M. Gelfand and S. V. Fomin, *Calculus of Variations*, Prentice-Hall, 1963. (Reprinted by Dover, 2000.)
-2. [Giaquinta1996] M. Giaquinta and S. Hildebrandt, *Calculus of Variations I: The Lagrangian Formalism*, Springer, 1996.
-3. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005.
-4. [FeynmanHibbs1965] R. P. Feynman and A. R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as refinement limit of time-sliced amplitudes.)
