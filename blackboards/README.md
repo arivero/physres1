@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Feshbach resonances / tunable contact interactions | Promoted (C186) |
-| 1 | Mandelstam-Tamm energy-time uncertainty | Promoted (C187) |
+| 0 | Lattice gauge theory / refinement limit | Promoted (C188) |
+| 1 | Casimir effect / vacuum forces from BCs | Promoted (C189) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

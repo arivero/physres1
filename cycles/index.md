@@ -189,6 +189,8 @@
 185. `C185` Completed.
 186. `C186` Completed.
 187. `C187` Completed.
+188. `C188` Completed.
+189. `C189` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -361,6 +363,8 @@
 - `S144` Completed.
 - `S145` Completed.
 - `S146` Completed.
+- `S147` Completed.
+- `S148` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -517,16 +521,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S145+C186: Feshbach resonances Remark 5.6 in fermionic mediators (+3 lines, 147→150).
-2. S146+C187: Mandelstam-Tamm Remark 5.3 in action-angle (+3 lines, 148→151).
-3. Q116: Review of 6 new remarks — 4 PASS, 2 CONDITIONAL PASS (fixes applied).
-4. S143+C184: Ehrenfest time Remark 7.3 in action-angle (+3 lines, 145→148).
-5. S144+C185: Dim reg Remark 4.2 in uncuttable (+3 lines, 146→149).
-6. S141+C182: Spin coherent states Remark 6.7 in action-angle (+3 lines, 142→145).
+1. S147+C188: Lattice gauge theory Remark 4.3 in uncuttable (+2 lines, 150→152).
+2. S148+C189: Casimir effect Remark 5.7 in fermionic mediators (+2 lines, 151→153).
+3. S145+C186: Feshbach resonances Remark 5.6 in fermionic mediators.
+4. S146+C187: Mandelstam-Tamm Remark 5.3 in action-angle.
+5. Q116: Review of 6 new remarks — 4 PASS, 2 CONDITIONAL PASS (fixes applied).
 
 Next:
-- Content gaps: Gap 4 (RG flow on realistic coupling, high).
-- All three satellites ~150 lines (action-angle 151, fermionic 150, uncuttable 149).
+- All three satellites ~152 lines (fermionic 153, uncuttable 152, action-angle 151).
+- Action-angle is now the shortest — next cycle should target it.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

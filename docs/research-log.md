@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S147+C188+S148+C189: Lattice gauge theory + Casimir effect)
+- Focus: expand uncuttable Section 4 (lattice gauge theory as definitive refinement limit) and fermionic mediators Section 5 (Casimir effect as macroscopic boundary-condition force).
+- Work: S147 studied Wilson's lattice gauge theory. Lattice QCD practitioner reviewed — all correct except compact U(1) phase transition (second-order, not first-order as stated; omitted from promoted remark). Clay Prize correctly stated as mass gap. Promoted as Remark 4.3: plaquette action, exact gauge invariance, asymptotic freedom, confinement/mass gap. S148 studied Casimir effect. QFT vacuum effects expert reviewed — energy/force formulas correct, zeta function argument imprecise (ζ_H(-1/2) should be ζ(-3); stated generically in promoted remark). Promoted as Remark 5.7: F/A = -π²ℏc/(240d⁴), no source needed, scheme independence.
+- Result: uncuttable 150→152 (+2, 8pp), fermionic 151→153 (+2, 8pp). Action-angle 151 lines (9pp, unchanged).
+
 ## 2026-02-13 (S145+C186+S146+C187+Q116: Feshbach + Mandelstam-Tamm + quality review)
 - Focus: expand fermionic mediators Section 5 (Feshbach resonances) and action-angle Section 5 (energy-time uncertainty). Quality review of 6 recent remarks.
 - Work: S145 studied Feshbach resonances. Cold-atom experimentalist reviewed — all CORRECT. Promoted as Remark 5.6: a(B) formula, BEC-BCS crossover, Efimov connection. S146 studied Mandelstam-Tamm relation. Quantum foundations specialist reviewed — caught harmonic oscillator error (Δt_x ≠ 1/ω, should saturate at ℏ/2). Promoted as Remark 5.3 with corrected saturation claim. Q116 reviewed all 6 recent remarks: 4 PASS, 2 CONDITIONAL PASS (Remark 7.3 dispersal/revival wording, Remark 4.2 forest formula attribution — both fixed).
