@@ -84,6 +84,9 @@ Therefore **\(L > K/c\) is necessary and sufficient for the existence of bound o
 `Remark 3.1a (Newtonian limit: structural cleanliness).`
 The \(c\to\infty\) limit is structurally clean: all relativistic corrections vanish (Lorentz factor \(\gamma\to 1\), radius contraction \(\sqrt{1-K^2/(c^2L^2)}\to 1\)), the admissibility bound \(L>K/c\) relaxes to the trivial \(L>0\), and core geometric relations (orbit radius \(r=L^2/(Km)\), binding energy \(mK^2/(2L^2)\)) are recovered in the limit. SR refines Newtonian mechanics by adding constraints that become trivial in the non-relativistic limit while preserving the underlying geometric content — a characteristic of the refinement-witness viewpoint.
 
+`Remark 3.1b (Why the critical exponent drops by one).`
+The shift from \(q_{\mathrm{crit}}=3\) (Newtonian) to \(q_{\mathrm{crit}}=2\) (SR) has a transparent kinematic origin. In Newtonian mechanics, \(E=p^2/(2m)\) makes the centrifugal barrier scale as \(L^2/(2mr^2)\propto r^{-2}\); this overwhelms the attractive potential \(\propto r^{-(q-1)}\) iff \(q<3\). In SR, the ultrarelativistic limit \(E\approx pc\) replaces the barrier by \(Lc/r\propto r^{-1}\) — one power weaker — so the barrier wins iff \(q<2\). The critical exponent drops by exactly one because the energy-momentum relation changes from quadratic to linear in the high-momentum limit relevant as \(r\to 0\).
+
 `Remark 3.2 (SR precession: the orbit is a precessing ellipse).`
 For general (non-circular) bound orbits under \(F=K/r^2\), the standard Binet substitution \(u=1/r\) applied to the SR equations of motion (cf.\ [BoscagginDambrosioFeltrin2020RelKepler] for the Hamiltonian treatment) yields the orbit equation
 \[
@@ -98,6 +101,9 @@ The condition \(\omega^2>0\) is precisely the bound \(L>K/c\) of Section 3. Sinc
 \quad(v\ll c).
 \]
 For gravity (\(K=GMm\)), writing \(L^2=GMm^2 a(1-e^2)\) from the semi-latus rectum of the precessing conic gives \(\Delta\phi_{\mathrm{SR}}=\pi GM/(c^2 a(1-e^2))\). Comparing with the Schwarzschild result \(\Delta\phi_{\mathrm{GR}}=6\pi GM/(c^2 a(1-e^2))\) (Section 4.3), the SR precession is exactly \(1/6\) of the GR precession. In the post-Newtonian expansion this \(1/6\) is the 1PN kinematic contribution (from velocity-dependent inertia); the remaining \(5/6\) arises from the \(-2ML^2/r^3\) term in the Schwarzschild effective potential, which encodes spacetime curvature absent from the flat-spacetime SR model.
+
+`Remark 3.2a (SR and Bertrand's theorem).`
+Bertrand's theorem states that in Newtonian mechanics, only the inverse-square (\(q=2\)) and Hooke (\(F\propto r\)) forces produce closed orbits for all bound initial conditions. SR eliminates the closure property for \(q=2\): since \(\omega=\sqrt{1-K^2/(c^2L^2)}\) depends continuously on \(L\), it is generically irrational, and the orbit is a precessing ellipse that never closes. The passage from Newtonian to relativistic mechanics thus reduces the class of all-conditions-closed inverse-square orbits from an open family to a measure-zero subset.
 
 # 4. GR Baseline: Schwarzschild Geodesics, Effective Potential, Photon Sphere
 This section records the standard Schwarzschild baseline in a form parallel to the SR “effective 1D radial motion” viewpoint.
@@ -254,7 +260,7 @@ The stability criterion \(1+(2-q)\gamma^2>0\) partitions the power laws into thr
 
 `Example 5.2b (Stability thresholds for specific power laws).`
 For concreteness, enumerate representative cases from the criterion \(1+(2-q)\gamma^2>0\):
-- \(q=1\) (Hooke / isotropic oscillator): \(1+\gamma^2>0\) — unconditionally stable at all speeds.
+- \(q=1\) (inverse-linear): \(1+\gamma^2>0\) — unconditionally stable at all speeds.
 - \(q=2\) (inverse-square / Kepler): \(1>0\) — unconditionally stable; the boundary case.
 - \(q=5/2\): stable iff \(\gamma^2<2\), i.e.\ \(v/c<1/\sqrt{2}\approx 0.707\).
 - \(q=3\) (inverse-cube): \(1-\gamma^2\le 0\) for all \(\gamma\ge 1\) — no stable circular orbit.
