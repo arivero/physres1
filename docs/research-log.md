@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S127+C168+Q110: Richardson extrapolation + quality review)
+- Focus: expand uncuttable satellite; review latest additions.
+- Work: S127 studied Richardson extrapolation as minimal subtraction analogy. Numerical analyst subagent reviewed and edited blackboard directly (new workflow: reviewer writes on blackboard). All claims CORRECT. Promoted as Remark 2.4 connecting Remarks 2.2/2.3 to Romberg/MS-bar. Q110 reviewed Remarks 5.3/7.1: both CLEAN.
+- Infrastructure: blackboard system refined to 7 slots (0–6), 300-line limit, editable. Exit paths: paper (editable, for publication) or notebook (append-only).
+- Result: uncuttable 128→131 (+3 net).
+
 ## 2026-02-13 (S125+C166+S126+C167: unitarity limit + KAM boundary)
 - Focus: expand fermionic mediators and action-angle satellites.
 - Work: S125 studied unitarity limit (|a|→∞ RG fixed point, Bertsch parameter ξ≈0.37, BEC-BCS crossover). Cold-atom experimentalist subagent confirmed all claims. Promoted as Remark 5.3. S126 studied KAM/integrability boundary (KAM persistence, BGS conjecture, ETH). Mathematical physicist subagent confirmed all claims. Promoted as Remark 7.1.

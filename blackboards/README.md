@@ -26,9 +26,9 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Unitarity limit / universal few-body physics | Active (S125) |
-| 1 | KAM theorem / integrability boundary | Active (S126) |
-| 2 | (empty) | Free |
+| 0 | Unitarity limit / universal few-body physics | Promoted (C166) |
+| 1 | KAM theorem / integrability boundary | Promoted (C167) |
+| 2 | Richardson extrapolation / minimal subtraction | Promoted (C168) |
 | 3 | (empty) | Free |
 | 4 | (empty) | Free |
 | 5 | (empty) | Free |
