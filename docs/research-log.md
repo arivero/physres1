@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (C128: clean up relativistic-central-orbits for Tier 1)
+- Focus: fix three Q82 issues in relativistic-central-orbits.
+- Work: removed internal path, fixed meta-language, filled YAML metadata. PDF rebuilt (6 pages).
+- Result: diffstat +4 -4. Promoted to Tier 1. Now 4 papers at Tier 1.
+- Next: advance next Tier 2 paper (delta-objects needs B19, fermionic-mediators needs Q pass).
+
 ## 2026-02-13 (Q82: referee pass on relativistic-central-orbits)
 - Focus: full referee pass for Tier 1 assessment.
 - Work: checked math (all clean), notation, citations (2 OA refs), encoding, structure.
