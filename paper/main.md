@@ -217,7 +217,7 @@ $$
 \frac{d\mathbf L}{dt}=\mathbf r\times \mathbf F=\mathbf 0.
 $$
 
-So the areal law is independent of the inverse-power index \(n\) in \(\mathbf F=-(K/r^n)\hat{\mathbf r}\): \(n\) changes radial dynamics and orbit families, but not the areal-velocity conservation mechanism itself. (A companion note on relativistic central orbits examines what happens when the kinematics is Lorentz-compatible: the inverse-square case admits exact relativistic simplification, with circular orbits requiring \(L>K/c\).)
+So the areal law is independent of the inverse-power index \(n\) in \(\mathbf F=-(K/r^n)\hat{\mathbf r}\): \(n\) changes radial dynamics and orbit families, but not the areal-velocity conservation mechanism itself. (A companion note on relativistic central orbits examines what happens when the kinematics is Lorentz-compatible: the inverse-square case admits exact relativistic simplification, with bound orbits requiring \(L>K/c\).)
 
 `Heuristic H1.1 (Impulse-to-continuous interpretation).`
 The impulse model is a refinement scaffold for continuous forcing, not a literal claim that nature acts by discrete kicks. Its value is structural: invariants proven exactly at finite step survive controlled refinement.

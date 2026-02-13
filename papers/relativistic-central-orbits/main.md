@@ -66,6 +66,18 @@ r=\frac{L^2}{Km}\sqrt{1-\frac{K^2}{c^2L^2}}
 
 This bound and the circular-solution branch appear in standard treatments of the relativistic Kepler problem (see e.g. [BoscagginDambrosioFeltrin2020RelKepler] for a dynamical-systems/variational analysis of the same SR equation).
 
+## 3.1 Extension to all bound orbits (effective-potential argument)
+The bound \(L > K/c\) is not limited to circular orbits. Consider the effective radial potential at fixed \(L\):
+\[
+W_L(r) = \sqrt{m^2c^4 + \frac{L^2c^2}{r^2}} - \frac{K}{r}.
+\]
+As \(r \to 0^+\), the leading behavior is \(W_L \approx (Lc - K)/r\). Three regimes appear:
+- If \(L > K/c\): the potential rises to \(+\infty\) at the origin, creating a centrifugal barrier. Combined with \(W_L \to mc^2\) as \(r \to \infty\), this produces a well admitting bound orbits. At the unique minimum \(r_0\), the well depth is \(W_{\min} = mc^2\sqrt{1 - K^2/(c^2L^2)}\), recovering the Newtonian binding energy \(mK^2/(2L^2)\) as \(c \to \infty\).
+- If \(L < K/c\): the potential plunges to \(-\infty\) — the particle falls to center. No stable bound orbit exists.
+- If \(L = K/c\): marginal — no barrier and no potential well; \(W_L\) increases monotonically from \(0\) to \(mc^2\).
+
+Therefore **\(L > K/c\) is necessary and sufficient for the existence of bound orbits** (not just circular ones) in the SR inverse-square problem. In the Newtonian limit \(c \to \infty\), this reduces to \(L > 0\), the trivially satisfied condition for elliptical Kepler orbits. Structurally, SR lowers the Newtonian critical exponent from \(q_{\mathrm{crit}} = 3\) to \(q_{\mathrm{crit}} = 2\): the inverse-square force is the unique power law where the bound is non-trivial.
+
 # 4. GR Baseline: Schwarzschild Geodesics, Effective Potential, Photon Sphere
 This section records the standard Schwarzschild baseline in a form parallel to the SR “effective 1D radial motion” viewpoint.
 
