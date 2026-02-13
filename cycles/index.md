@@ -151,6 +151,7 @@
 147. `C147` Completed.
 148. `C148` Completed.
 149. `C149` Completed.
+150. `C150` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -435,7 +436,7 @@ Recent completed:
 
 Next:
 - Content gaps: Gap 2 (stationary phase numerical verification, medium), Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (uncuttable 96 lines, fermionic mediators 112 lines, action-angle now 94).
+- Expand shorter satellites (fermionic mediators 112 lines, action-angle 96, uncuttable now 103).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

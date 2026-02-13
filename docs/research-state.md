@@ -147,17 +147,19 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 1. Planck Area (730 lines, 23 pages, 9 refs)
 2. RG Fundamental (596 lines, 17 pages, 8 refs)
 3. Half-Density QFT (209 lines, 6 pages, 5 refs)
-4. Relativistic Central Orbits (206 lines, 6 pages, 2 refs)
-5. Dirac Probes / Corners / Impulses (193 lines, 6 pages, 3 refs) — NEW: S97 draft, expanded C140, Q95 clean
-6. Delta Objects (164 lines, 5 pages, 5 refs) — expanded C138: Van Vleck determinant section
-7. Fermionic Mediators (112 lines, 5 pages, 4 refs) — expanded C139: vacuum polarization example
-8. Uncuttable Controlled Refinement (96 lines, 4 pages, 2 refs) — expanded C143: derivative-as-renormalization example
-9. Action-Angle Indeterminacy (87 lines, 4 pages, 2 refs) — expanded C137: harmonic oscillator witness
+4. Relativistic Central Orbits (218 lines, 6 pages, 2 refs) — expanded S104: bound-orbit L>K/c extension
+5. Dirac Probes / Corners / Impulses (194 lines, 6 pages, 3 refs)
+6. Delta Objects (164 lines, 5 pages, 5 refs)
+7. Fermionic Mediators (112 lines, 5 pages, 4 refs)
+8. Uncuttable Controlled Refinement (96 lines, 4 pages, 2 refs)
+9. Action-Angle Indeterminacy (96 lines, 4 pages, 2 refs) — expanded S108: circular uncertainty Prop 4.2
 
-Tier 2 and Tier 3: empty. Cornerstone: paper/main.md (1452 lines, Q97 clean, 39 pages).
-Cross-references to 5 satellites: HD-QFT, RG (×2), Dirac Probes, Action-Angle.
+Tier 2 and Tier 3: empty. Cornerstone: paper/main.md (1475 lines, Q101 clean).
+**All 9 satellites cross-referenced from cornerstone** (C146 completed the network).
 
-All papers verified: clean encoding (no Unicode escapes), proper YAML metadata, no internal file paths, adequate bibliography.
+Recent cornerstone additions: D1.2a (numerical area law), D4.1b (α-ordering witness, Q100-fixed), D5.1b (cubic Moyal correction), D6.2a-HO (HO step-halving witness).
+
+All papers verified: clean encoding, proper YAML metadata, no internal file paths, adequate bibliography.
 
 P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless explicitly requested.
 
