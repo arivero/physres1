@@ -76,6 +76,9 @@ For the state \(\psi_M\) of Example 4.1, the circular concentration is \(R=\lang
 \]
 which equals \(10/3\approx 3.3\) at \(M=1\) and grows as \(4M/3\) for large \(M\). The inequality is satisfied with increasing slack: the Dirichlet kernel is far from a minimum-uncertainty state for the circular relation. Physically, narrower angular packets (\(R\to 1\)) require disproportionately more angular-momentum spread than the bound demands.
 
+`Remark 4.4 (Near-optimal angular localization: the von Mises state).`
+The rectangular Fourier profile of the Dirichlet kernel wastes angular-momentum variance on sidelobes, driving the ratio LHS/RHS to \(4M/3\). The angular analog of a Gaussian — the von Mises wavefunction \(\psi(\phi)\propto \exp(\kappa\cos\phi)\) — has Fourier coefficients \(c_m\propto I_m(\kappa)\) (modified Bessel functions) that decay smoothly. For large \(\kappa\) the coefficients are approximately Gaussian in \(m\) with width \(\sqrt{\kappa}\), giving \(\mathrm{Var}(L_z)\approx\hbar^2\kappa/2\), while the circular concentration satisfies \(1-R^2\approx 1/(2\kappa)\) (since the probability \(|\psi|^2\propto\exp(2\kappa\cos\phi)\) is a von Mises distribution with parameter \(2\kappa\)). The ratio \(\mathrm{Var}(L_z)(1-R^2)/[(\hbar^2/4)R^2]\to 1\) as \(\kappa\to\infty\): the von Mises state asymptotically saturates the bound in Proposition 4.2.
+
 # 5. Foundations message: orbit pictures require packets/superpositions
 This witness supports a simple interpretive guardrail for central-force intuition:
 a single stationary eigenstate (even when it carries classical-sounding quantum numbers) is typically **not** a localized classical orbit with a definite phase/orientation. Variables like the azimuthal phase \(\phi\) (and, in more structured integrable cases, other angle variables on the invariant torus) become localized only in **coherent superpositions** of many stationary modes.
