@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S137+C178+S138+C179: Berry-Tabor + optimal truncation)
+- Focus: expand action-angle Section 7 (spectral statistics) and uncuttable Section 2 (exponential accuracy barrier).
+- Work: S137 studied Berry-Tabor/BGS conjectures. Quantum chaos specialist reviewed — all correct, references verified. Promoted as Remark 7.2. S138 studied asymptotic expansions and optimal truncation. Asymptotic analyst reviewed — all correct except minor Poincaré convention mismatch (fixed). Promoted as Remark 2.6.
+- Result: action-angle 136→139 (+3), uncuttable 140→143 (+3). Both 7 pages.
+
 ## 2026-02-13 (S136+C177: Padé/Borel Remark 2.5 in uncuttable)
 - Focus: extend counterterm tower to divergent series regime.
 - Work: S136 studied Padé approximants and Borel-Padé resummation. Numerical analyst reviewed — corrected matching order (L+M not L+M+1), clarified Borel notation, confirmed Montessus de Ballore description. Promoted as Remark 2.5: rational extrapolation, Borel transform, resummation as part of the definition.
