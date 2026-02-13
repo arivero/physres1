@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (C130: fermionic-mediators promoted to Tier 1)
+- Focus: fix Q85 issues — repo language, YAML metadata.
+- Work: 3 repo references replaced with generic phrasing. Metadata filled. PDF rebuilt (4 pages).
+- Result: diffstat +5 -5. Promoted to Tier 1. **All Tier 2 papers cleared.** 6 papers at Tier 1.
+- Next: Tier 3 papers (action-angle-indeterminacy, uncuttable-controlled-refinement) need content C cycles.
+
 ## 2026-02-13 (Q85: referee pass on fermionic-mediators)
 - Focus: full referee pass for Tier assessment.
 - Work: checked math (clean), notation, citations (4 refs, all OA), encoding, repo language.

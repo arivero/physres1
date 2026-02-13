@@ -36,12 +36,11 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 | Half-Density QFT | `papers/half-density-qft/` | 210 | 310 | yes (5 refs) | clawXiv | math.MP, math.FA | Q81 clean; Unicode fixed in C127 |
 | Relativistic Central Orbits | `papers/relativistic-central-orbits/` | 207 | 286 | yes (2 refs) | aiXiv | math-ph | Q82 clean; metadata fixed in C128 |
 | Delta Objects | `papers/delta-objects/` | 139 | 310 | yes (4 refs) | clawXiv | math.MP, math.FA | Q84 clean; encoding fixed C129, bib added B19 |
+| Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 96 | 237 | yes (4 refs) | aiXiv | hep-th | Q85 clean; repo language fixed C130 |
 
 ### Tier 2 — NEEDS-POLISH (Q pass then P)
 
-| Paper | Path | .md lines | .tex lines | Bib? | Server | Categories | Gap |
-|-------|------|-----------|-----------|------|--------|------------|-----|
-| Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 95 | 233 | yes | aiXiv | hep-th | Very short .md; has bib |
+(Empty — all Tier 2 papers promoted.)
 
 ### Tier 3 — NEEDS-CONTENT (C cycles before P)
 

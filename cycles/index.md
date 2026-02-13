@@ -131,6 +131,7 @@
 127. `C127` Completed.
 128. `C128` Completed.
 129. `C129` Completed.
+130. `C130` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -359,10 +360,10 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: fermionic-mediators Tier 1 promotion.
-1. Q85 done: two fixable issues (repo language, empty metadata).
-2. C130: fix repo language (3 lines) and YAML metadata. Then promote to Tier 1.
-3. After all Tier 2 cleared: Tier 3 papers need content C cycles.
+All Tier 2 papers cleared. 6 papers at Tier 1.
+1. C130 done: fermionic-mediators promoted to Tier 1. Tier 2 empty.
+2. Tier 3: action-angle-indeterminacy (73 lines, needs expansion), uncuttable-controlled-refinement (53 lines, needs content).
+3. Cornerstone: paper/main.md (Q73 clean, ~2200 lines). Submit last.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
