@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S121+C162: von Mises near-optimal Remark 4.4 in action-angle)
+- Focus: identify near-optimal states for the circular uncertainty bound (Proposition 4.2).
+- Work: S121 blackboard analyzed the von Mises wavefunction ψ ∝ exp(κ cos φ). Initial calculation had wrong concentration parameter (used κ instead of 2κ for probability), giving ratio ≈ 2. Corrected: R = I_1(2κ)/I_0(2κ), giving ratio → 1 (asymptotic saturation). Subagent (rigorous mathematician) confirmed all 5 checks correct. Promoted as Remark 4.4.
+- Result: action-angle 114→117 lines (+3 net).
+
 ## 2026-02-13 (S120+C161: Euler-Maclaurin Remark 2.3 in uncuttable)
 - Focus: complete the pedagogical arc in Section 2 (point tower → interval tower with boundary data).
 - Work: S120 blackboard studied Euler-Maclaurin formula as correction tower for Riemann sum. Subagent (pedagogical expositor) verified formula correct, structural parallel valid, genuine value (not redundant). Also studied squeezed states for action-angle — subagent (quantum optician) recommended NOT promoting (Δn·Δθ heuristic less rigorous than paper's Fourier approach). Promoted E-M as Remark 2.3 only.
