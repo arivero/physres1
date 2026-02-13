@@ -421,6 +421,7 @@
 - `Q105` Completed.
 - `Q106` Completed.
 - `Q107` Completed.
+- `Q108` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -460,11 +461,11 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S121+C162: von Mises near-optimal Remark 4.4 in action-angle satellite (+3 lines, 114→117).
-2. S120+C161: Euler-Maclaurin correction tower Remark 2.3 in uncuttable satellite (+7 lines, 118→125).
-3. S119+C160: ERE↔contact connection Remark 4.2 in fermionic mediators satellite (+3 lines, 129→132).
-4. Q107+S118+C159: circular uncertainty Example 4.3 in action-angle satellite (+7 lines, 107→114). Q107 fixed √κ in delta-objects Example 4.1.
-5. Q106+S117+C158: 1D delta resolvent Example 4.1 in delta-objects satellite (+6 lines, 172→178). Q106 fixed Trotter Remark 3.3 in uncuttable.
+1. Q108: fixed sign error and Simpson's claim in E-M Remark 2.3 (uncuttable). Remark 4.2 (fermionic) accepted. Remark 4.4 (action-angle) clean.
+2. S121+C162: von Mises near-optimal Remark 4.4 in action-angle satellite (+3 lines, 114→117).
+3. S120+C161: Euler-Maclaurin correction tower Remark 2.3 in uncuttable satellite (+7 lines, 118→125).
+4. S119+C160: ERE↔contact connection Remark 4.2 in fermionic mediators satellite (+3 lines, 129→132).
+5. Q107+S118+C159: circular uncertainty Example 4.3 in action-angle satellite (+7 lines, 107→114). Q107 fixed √κ in delta-objects Example 4.1.
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).

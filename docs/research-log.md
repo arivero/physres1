@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q108: quality review of S119–S121 / C160–C162 additions)
+- Focus: independent referee pass on three new satellite remarks.
+- Work: subagent reviewed Remark 4.2 (fermionic, ERE), Remark 2.3 (uncuttable, E-M), Remark 4.4 (action-angle, von Mises).
+- Findings: (1) Remark 4.4 CLEAN. (2) Remark 4.2 minor (Born-level qualifier sufficient, accepted). (3) Remark 2.3 had sign error in boundary terms [f(a)−f(b)] should be [f(b)−f(a)], and Simpson's rule claim was wrong (replaced with "corrected trapezoidal rule" language). Both fixed.
+- Result: uncuttable Remark 2.3 corrected (+2 −2 lines, no net change).
+
 ## 2026-02-13 (S121+C162: von Mises near-optimal Remark 4.4 in action-angle)
 - Focus: identify near-optimal states for the circular uncertainty bound (Proposition 4.2).
 - Work: S121 blackboard analyzed the von Mises wavefunction ψ ∝ exp(κ cos φ). Initial calculation had wrong concentration parameter (used κ instead of 2κ for probability), giving ratio ≈ 2. Corrected: R = I_1(2κ)/I_0(2κ), giving ratio → 1 (asymptotic saturation). Subagent (rigorous mathematician) confirmed all 5 checks correct. Promoted as Remark 4.4.
