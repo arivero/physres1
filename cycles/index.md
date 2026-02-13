@@ -135,6 +135,7 @@
 131. `C131` Completed.
 132. `C132` Completed.
 133. `C133` Completed.
+134. `C134` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -247,6 +248,7 @@
 - `S85` Completed.
 - `S86` Completed.
 - `S87` Completed.
+- `S88` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -371,11 +373,11 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-**All 8 satellite papers at Tier 1.** Cornerstone polish in progress.
-1. S87: bibliography coverage audit found 5 orphan citations + empty YAML in cornerstone.
-2. C133: fixed YAML metadata + added 5 missing references. Cornerstone now has 22 refs.
-3. All satellites fully consistent; cornerstone reference list now complete.
-4. Future: Q89 (cornerstone referee pass), deeper content work, P cycles.
+**All 8 satellite papers at Tier 1.** Cornerstone polished and self-consistent.
+1. S87+C133: bibliography audit fixed 5 orphan citations + YAML metadata.
+2. Q89: full referee pass — all checks clean (encoding, bib, LaTeX, metadata, cross-refs).
+3. S88+C134: self-assessment consistency fix — 9.4/9.5/10.4 now acknowledge 10.5 computation.
+4. Future: deeper content work (new computations, new satellite papers), P cycles.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S88+C134: self-assessment consistency fix)
+- Focus: check whether Sections 9.4, 9.5, 10.4 are consistent with the actual 10.5 appendix.
+- Work: found that 10.5 (2D delta computation) provides explicit RG witness not acknowledged in self-assessment. C134 updated 9.4.3, 9.5.1, 10.4 to reference 10.5. Kept QFT extension as future work.
+- Result: self-assessment now honest and complete. +8 -6 in manuscript.
+- Next: deeper content or new satellite work.
+
 ## 2026-02-13 (Q89: cornerstone referee pass — clean)
 - Focus: full referee-style audit of `paper/main.md` post-C133.
 - Work: checked encoding, paths, meta-language, bibliography coverage, LaTeX, TODOs, cross-refs, YAML, cycle tags, conv_patched.
