@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S149+C190+S150+C191: Bargmann representation + EFT)
+- Focus: expand action-angle Section 6 (Bargmann representation as algebraic form of action-angle duality) and uncuttable Section 4 (effective field theory as systematic refinement hierarchy).
+- Work: S149 studied Bargmann-Segal representation. Mathematical physicist reviewed — α/ᾱ convention inconsistency found (not a physics error). Fixed in promoted remark using K_α(z)=e^{ᾱz} consistently. Promoted as Remark 6.8: Fock states as monomials, coherent states as reproducing kernels, creation/annihilation as multiplication/differentiation, Husimi as squared Bargmann modulus. S150 studied EFT paradigm. Particle phenomenologist reviewed — Wilson date 1969 wrong (should be early 1970s); all formulas correct. Fixed by citing Weinberg 1979. Promoted as Remark 4.4: matching conditions as comparison across refinements, Wilson coefficients as extra data, SM as EFT.
+- Result: action-angle 151→154 (+3, 9pp), uncuttable 152→155 (+3, 9pp). Fermionic 153 lines (8pp, unchanged).
+
 ## 2026-02-13 (S147+C188+S148+C189: Lattice gauge theory + Casimir effect)
 - Focus: expand uncuttable Section 4 (lattice gauge theory as definitive refinement limit) and fermionic mediators Section 5 (Casimir effect as macroscopic boundary-condition force).
 - Work: S147 studied Wilson's lattice gauge theory. Lattice QCD practitioner reviewed — all correct except compact U(1) phase transition (second-order, not first-order as stated; omitted from promoted remark). Clay Prize correctly stated as mass gap. Promoted as Remark 4.3: plaquette action, exact gauge invariance, asymptotic freedom, confinement/mass gap. S148 studied Casimir effect. QFT vacuum effects expert reviewed — energy/force formulas correct, zeta function argument imprecise (ζ_H(-1/2) should be ζ(-3); stated generically in promoted remark). Promoted as Remark 5.7: F/A = -π²ℏc/(240d⁴), no source needed, scheme independence.
