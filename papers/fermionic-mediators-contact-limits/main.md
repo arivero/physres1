@@ -52,7 +52,24 @@ Two immediate consequences follow.
 The bosonic derivation “choose a commuting classical source \(J\), integrate out the field, and read off a classical potential” does not directly apply to fermions, because the linear source terms that couple to \(\Psi\) require Grassmann sources rather than commuting c-number densities. Therefore, “fermion exchange generates a classical potential between commuting sources” is not a well-posed transplant of the bosonic story.
 
 This does **not** mean fermions are irrelevant:
-fermions can and do affect effective interactions through loop effects, through bosonic composite modes (bilinears), and through low-energy EFT operators. The point is that the meaning of “generates a potential” must be stated through one of these controlled mechanisms.
+fermions can and do affect effective interactions through loop effects, through bosonic composite modes (bilinears), and through low-energy EFT operators. The point is that the meaning of "generates a potential" must be stated through one of these controlled mechanisms.
+
+## 3.1 The controlled alternative: fermion loops modify bosonic propagators
+The standard example is vacuum polarization in quantum electrodynamics.
+A closed electron–positron loop inserted into the photon propagator gives a momentum-dependent correction to the effective electromagnetic coupling,
+\[
+\alpha_{\mathrm{eff}}(q^2)
+=
+\frac{\alpha}{1-\Pi(q^2)},
+\qquad
+\Pi(q^2)
+=
+-\frac{\alpha}{3\pi}\ln\!\left(\frac{q^2}{\mu^2}\right)+\cdots,
+\]
+where \(\Pi(q^2)\) is the vacuum polarization function (the photon self-energy from a fermion one-loop diagram).
+At low momentum transfer (\(|q|\ll m_e\)), the loop correction is analytic in \(q^2\) and generates precisely the local operators \(C_0 + C_2 q^2 + \cdots\) discussed in Section 4 below.
+
+The structural point: fermions affect forces, but the path from "fermion field" to "effective interaction" runs through a quantum loop (not through a tree-level Gaussian elimination of a classical source), and the low-energy residue takes the form of local/contact operators.
 
 # 4. IR replacement: local operators \(\Rightarrow\) contact kernels / boundary-condition data
 At low resolution, integrating out heavy degrees of freedom typically produces local operators. In a two-body, nonrelativistic sector, this appears as an amplitude expansion analytic in momentum transfer \(q\):
