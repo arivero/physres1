@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q102: referee pass on S109 + C150 additions)
+- Focus: verify recent satellite additions (Example 5.1 in fermionic mediators, Example 3.1 in uncuttable).
+- Work: two parallel subagent reviews. Skeptical referee flagged 4 "critical" sign errors in Example 5.1 — all false positives (subagent algebra error). Cross-checked against cornerstone D11.2 (Section 10.5): β(g_R) = +(m/πℏ²)g_R² confirmed correct. Rigorous mathematician found uncuttable Example 3.1 CLEAN.
+- Result: both additions verified correct. No changes needed. Lesson: subagent false positives require cross-checking against established derivations.
+
 ## 2026-02-13 (S109: 2D delta potential Example 5.1 in fermionic mediators satellite)
 - Focus: expand fermionic mediators satellite with concrete contact-coupling RG example.
 - Work: added Example 5.1 showing the 2D delta potential T-matrix, quadratic beta function, dimensional transmutation. Subagent caught two CRITICAL errors: factor-of-2 in T-matrix coefficient (m/(2πℏ²)→m/(πℏ²)) and sign in dimensional transmutation exponent (-→+). Both fixed.

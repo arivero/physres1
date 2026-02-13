@@ -390,6 +390,7 @@
 - `Q99` Completed.
 - `Q100` Completed.
 - `Q101` Completed.
+- `Q102` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -429,11 +430,11 @@
 Cornerstone at ~1475 lines.
 
 Recent completed:
-1. S108: circular uncertainty relation Prop 4.2 in action-angle satellite (+7 lines, 87→94).
-2. S107+C149: cubic Moyal bracket witness D5.1b in Section 7.3 (+7 lines). Gap 3 filled.
-3. Q100: fixed α↔ordering correspondence in D4.1b.
-4. S106+C148: ordering witness D4.1b in Section 6.3 (+5 lines).
-5. S105+C147: step-halving witness D6.2a-HO in Section 8.4 (+5 lines).
+1. Q102: referee pass on S109+C150 additions — both CLEAN.
+2. S109: 2D delta potential Example 5.1 in fermionic mediators satellite (+9 lines, 112→121).
+3. C150: α-ordering Example 3.1 in uncuttable satellite (+7 lines, 96→103).
+4. S108: circular uncertainty relation Prop 4.2 in action-angle satellite (+7 lines, 87→94).
+5. S107+C149: cubic Moyal bracket witness D5.1b in Section 7.3 (+7 lines). Gap 3 filled.
 
 Next:
 - Content gaps: Gap 2 (stationary phase numerical verification, medium), Gap 4 (RG flow on realistic coupling, high).
