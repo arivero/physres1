@@ -796,6 +796,21 @@ $$
 
 which reproduces the Poisson bracket at leading order and higher quantum corrections at higher orders [Landsman1998].
 
+`Derivation D5.1a (Moyal product for linear and quadratic observables).`
+For the canonical pair \(f=q\), \(g=p\), the exponential terminates at first order (all higher derivatives vanish):
+\[
+(q\star_M p)(q,p)
+=qp+\frac{i\hbar}{2}(\partial_q q)(\partial_p p)
+=qp+\frac{i\hbar}{2}.
+\]
+By symmetry, \((p\star_M q)=pq-\frac{i\hbar}{2}\), so \([q,p]_{\star_M}=i\hbar\), exactly reproducing the canonical commutation relation with no higher-order corrections (as expected for linear functions).
+
+For \(f=q^2\), \(g=p\), the second-order derivative \(\partial_q^2(q^2)=2\) is constant, but it multiplies \(\partial_p^2 p=0\), so the expansion again terminates at first order:
+\[
+(q^2\star_M p)=q^2p+\frac{i\hbar}{2}(2q)(1)=q^2p+i\hbar\,q.
+\]
+Thus \([q^2,p]_{\star_M}=2i\hbar\,q\), matching \([\hat q^2,\hat p]=2i\hbar\,\hat q\) in Weyl ordering. More generally, \([q^n,p]_{\star_M}=ni\hbar\,q^{n-1}\), recovering the Leibniz rule for the Poisson bracket \(\{q^n,p\}=nq^{n-1}\) at leading order with no further corrections.
+
 `Heuristic H5.1 (Ordering as deformation gauge choice).`
 The Section 6 discretization ambiguity is naturally interpreted as choosing different but deformation-equivalent star products; they share the same classical bracket data but differ in \(O(\hbar)\) and higher corrections [Landsman1998].
 
