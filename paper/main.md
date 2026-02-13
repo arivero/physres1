@@ -988,7 +988,7 @@ where \(f'(y)[v]\) denotes the Jacobian acting on a vector and \(f''(y)[v,w]\) i
 In Runge--Kutta and related integrators, the comparison between composed steps and a single step organizes into rooted-tree expansions; the corresponding composition law forms a group (the Butcher group). Interpreting “step-halving then rescaling back” as a scale-update operation makes the analogy with RG bookkeeping explicit, and rooted-tree/Hopf-algebra combinatorics also appears in perturbative renormalization [Brouder1999] [McLachlan2017] [ConnesKreimer2000].
 
 This example is included not to replace QFT renormalization, but to reinforce the paper's thesis with a clean model: renormalization is what you do when "refine and compare" is not automatically stable. The Butcher *group* concerns formal method composition, whereas Wilsonian coarse-graining is generally a *semigroup* because information is discarded at each coarse-graining step.
-A structural gap remains between the toy model and full RG: the beta function \(\beta(a)=\tfrac12 - a\) of `Remark D6.2a-sg` is *linear*, so the RG invariant is algebraic in the coupling and no new scale is generated. Dimensional transmutation (`Derivation D6.2`, Section 8.3) requires a beta function of order \(\ge 2\) at the fixed point, producing an essential singularity \(\Lambda_\ast\sim\mu\,e^{1/(cg)}\) that is non-analytic in the coupling. The semigroup axioms (`Proposition P6.2`) are shared by both regimes; what separates them is the order of vanishing of \(\beta\) at the fixed point.
+A structural gap remains between the toy model and full RG: the beta function \(\beta(a)=\tfrac12 - a\) of `Remark D6.2a-sg` is *linear*, so the RG invariant is algebraic in the coupling and no new scale is generated. Dimensional transmutation (`Derivation D6.2`, Section 8.3) requires a beta function of order \(\ge 2\) at the fixed point, producing an essential singularity \(\Lambda_\ast\sim\mu\,e^{1/(cg)}\) that is non-analytic in the coupling. The semigroup axioms (`Proposition P6.2`) are shared by both regimes; what separates them is the order of vanishing of \(\beta\) at the fixed point. (For an exactly solvable coarse-graining model — Gaussian integration as Schur complement — that makes the semigroup property and non-invertibility of coarse-graining concretely visible, cf.\ Derivation RG-D1.7 in the RG companion note.)
 
 ## 8.5 Counterterms as Refinement Corrections
 In field theory language, refinement is implemented by a regulated action \(S_\Lambda\) with cutoff-dependent parameters. Schematically,
@@ -1368,7 +1368,7 @@ $$
 =\frac{m}{\pi\hbar^2}\,g_R^2.
 $$
 
-This is the explicit “scale-compatibility vector field” promised by Section 8, obtained from the demand that the subtraction scale not affect the composed prediction.
+This is the explicit "scale-compatibility vector field" promised by Section 8, obtained from the demand that the subtraction scale not affect the composed prediction. (For an alternative derivation via explicit Wilsonian shell integration — making the semigroup composition \(W_{\Lambda_1\to\Lambda_2}\circ W_{\Lambda\to\Lambda_1} = W_{\Lambda\to\Lambda_2}\) directly visible as an identity of momentum-shell integrals — cf.\ Derivation RG-D1.2a in the RG companion note.)
 
 `Proposition P11.1 (Dimensional transmutation: an RG-invariant bound-state scale).`
 For \(E<0\), write \(E=-\hbar^2\kappa^2/(2m)\). The bound state corresponds to a pole of \(T\), which occurs when
