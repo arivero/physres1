@@ -582,7 +582,7 @@ This note argues for a simple foundational reading: whenever a continuum theory 
 
 The micro-models used here are deliberately elementary (difference quotients, Gaussian elimination, and contact interactions), but they already exhibit the three structural features that any refinement-based definition of a continuum theory must face: (i) composition/semigroup structure at the level of coarse-graining, (ii) parameter flow as the compatibility data needed to compare descriptions across scale, and (iii) dimensional transmutation as the replacement of regulator-dependent couplings by RG-invariant physical scales.
 
-Natural extensions include adding one explicit Wilsonian fixed-point computation in a standard QFT example, and sharpening the rooted-tree bookkeeping discussion into a compact “dictionary section” that separates literal identities from analogy.
+The Wilsonian shell-integration derivation (RG-D1.2a) complements the renormalization-condition approach and makes the semigroup property, information loss, and Schur-complement structure of Section 6 directly visible in the physical model. Natural extensions include carrying the same Wilsonian analysis into a standard QFT example (with a nontrivial fixed-point structure), and sharpening the rooted-tree bookkeeping discussion into a compact "dictionary section" that separates literal identities from analogy.
 
 # References
 
