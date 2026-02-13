@@ -1109,14 +1109,14 @@ each layer adds new consistency constraints while preserving prior invariants in
 ## 9.4 Residual Vulnerabilities
 1. The path integral remains formal at full measure-theoretic level; constructive control is not provided here.
 2. Deformation equivalence is stated at the structural level; explicit model-by-model operator-domain analysis is deferred.
-3. RG flow is derived structurally; no full one-loop or higher-loop field-theory computation is included in the main text.
+3. RG flow is derived structurally; a fully explicit quantum-mechanical computation (2D contact interaction) is provided in Appendix 10.5, but a field-theory-level loop computation is not included.
 4. Truncation closure in section 8 is identified but not benchmarked by an explicit truncation-error study.
 
 These are not hidden defects; they are explicit scope boundaries. The manuscript now separates proven derivations from heuristic bridges, which was a core objective of the staged design.
 
 ## 9.5 Future Work
 The present manuscript emphasizes explicit derivations at the level of mechanics and simple quantum models. Natural extensions include:
-1. one field-theory loop computation in a fixed scheme, to complement the structural RG discussion,
+1. a field-theory loop computation in a fixed scheme, extending the quantum-mechanical RG witness of Appendix 10.5 to a genuine QFT setting,
 2. upgrade the compact reader map into a consolidated diagram/figure for reader navigation,
 3. a final notation/normalization pass tailored to the submission venue.
 
@@ -1288,10 +1288,12 @@ Therefore the Newton-to-path-integral narrative is an implementation of RCP rath
 RCP can be interpreted as a candidate foundational postulate: physical laws are those statements that survive controlled changes of partition, representation, and scale.
 
 ## 10.4 Appendix Summary
-Appendix sections 10.1--10.3 close the three technical gaps identified in Section 9:
-1. explicit renormalization subtraction and running,
-2. explicit ordering/discretization \(O(\hbar)\) shift with fixed classical limit,
-3. explicit foundational compatibility principle unifying the full chain.
+Appendix sections 10.1--10.3 close three technical gaps identified in Section 9:
+1. explicit renormalization subtraction and running (10.1),
+2. explicit ordering/discretization \(O(\hbar)\) shift with fixed classical limit (10.2),
+3. explicit foundational compatibility principle unifying the full chain (10.3).
+
+Appendix 10.5 supplies a fully worked quantum-mechanical RG computation (2D contact interaction) demonstrating divergence, subtraction, running coupling, dimensional transmutation, and scheme dependence in a concrete model.
 
 These additions do not alter the thesis; they increase computational accountability of the existing chain.
 
