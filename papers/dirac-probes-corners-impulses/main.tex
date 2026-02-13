@@ -282,18 +282,20 @@ v_k=\frac{q_{k+1}-q_k}{\Delta t},\qquad k=0,\ldots,N.
 S_N[\{q_k\}]=\sum_{k=0}^{N}\frac{m}{2}\frac{(q_{k+1}-q_k)^2}{\Delta t}.
 \] At each junction \(t_k\), the velocity jumps from \(v_{k-1}\) to
 \(v_k\). By Theorem 3.2, each jump requires an impulse
-\(J_k=m(v_k-v_{k-1})\). The \textit{classical} stationary condition
+\(J_k=m(v_k-v_{k-1})\). The \emph{classical} stationary condition
 \(\partial S_N/\partial q_k=0\) imposes \(v_k=v_{k-1}\) for all \(k\)
 --- that is, Theorem 3.1's corner condition (momentum continuity) at
 every junction --- and the path collapses to a single straight line.
 
 In the quantum theory, one instead sums over all intermediate
 configurations with amplitude weights: \[
-K(q_f,q_i;T)=\lim_{N\to\infty}\left(\frac{m}{2\pi i\hbar\,\Delta t}\right)^{N/2}\int\prod_{k=1}^{N}dq_k\;
+K(q_f,q_i;T)=\lim_{N\to\infty}\left(\frac{m}{2\pi i\hbar\,\Delta t}\right)^{(N+1)/2}\int\prod_{k=1}^{N}dq_k\;
 \exp\!\left(\frac{i}{\hbar}\,S_N[\{q_k\}]\right).
-\] The prefactor \((m/(2\pi i\hbar\,\Delta t))^{N/2}\) is precisely the
-half-density normalization required for the composition law to hold at
-each intermediate integration --- a point treated systematically in the
+\] There are \(N+1\) segments and \(N\) intermediate integrations; each
+segment contributes one factor of \(\sqrt{m/(2\pi i\hbar\,\Delta t)}\),
+giving the exponent \((N+1)/2\). This is precisely the half-density
+normalization required for the composition law to hold at each
+intermediate integration --- a point treated systematically in the
 cornerstone's half-density framework. The distributional
 impulse-matching of Theorem 3.2 thus connects, through this
 \(N\to\infty\) limit, to the composition postulate for transition
