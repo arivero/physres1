@@ -78,6 +78,21 @@ As \(r \to 0^+\), the leading behavior is \(W_L \approx (Lc - K)/r\). Three regi
 
 Therefore **\(L > K/c\) is necessary and sufficient for the existence of bound orbits** (not just circular ones) in the SR inverse-square problem. In the Newtonian limit \(c \to \infty\), this reduces to \(L > 0\), the trivially satisfied condition for elliptical Kepler orbits. Structurally, SR lowers the Newtonian critical exponent from \(q_{\mathrm{crit}} = 3\) to \(q_{\mathrm{crit}} = 2\): the inverse-square force is the unique power law where the bound is non-trivial.
 
+`Remark 3.2 (SR precession: the orbit is a precessing ellipse).`
+For general (non-circular) bound orbits under \(F=K/r^2\), the standard Binet substitution \(u=1/r\) applied to the SR energy-momentum conservation laws [BoscagginDambrosioFeltrin2020RelKepler] yields the orbit equation
+\[
+\frac{d^2u}{d\phi^2}+\omega^2 u = \frac{mK}{L^2}\,\omega^2,
+\qquad
+\omega^2 := 1 - \frac{K^2}{c^2L^2}.
+\]
+The condition \(\omega^2>0\) is precisely the bound \(L>K/c\) of Section 3. Since \(v_{\mathrm{circ}}=K/L\), the precession frequency satisfies \(\omega=1/\gamma_{\mathrm{circ}}\), directly linking precession to the Lorentz factor. The general solution is a precessing conic, \(u=mK/L^2+A\cos(\omega\phi+\phi_0)\), and the apsidal advance per orbit is
+\[
+\Delta\phi_{\mathrm{prec}} = \frac{2\pi}{\omega}-2\pi
+\approx \frac{\pi K^2}{c^2L^2}
+\quad(v\ll c).
+\]
+For gravity (\(K=GMm\)), writing \(L^2=GMm^2 a(1-e^2)\) from the semi-latus rectum of the precessing conic gives \(\Delta\phi_{\mathrm{SR}}=\pi GM/(c^2 a(1-e^2))\). Comparing with the Schwarzschild result \(\Delta\phi_{\mathrm{GR}}=6\pi GM/(c^2 a(1-e^2))\) (Section 4.3), the SR precession is exactly \(1/6\) of the GR precession — the remaining \(5/6\) coming from the \(-2ML^2/r^3\) spacetime-curvature term in the Schwarzschild effective potential that has no SR analog.
+
 # 4. GR Baseline: Schwarzschild Geodesics, Effective Potential, Photon Sphere
 This section records the standard Schwarzschild baseline in a form parallel to the SR “effective 1D radial motion” viewpoint.
 
