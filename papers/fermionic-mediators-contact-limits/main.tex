@@ -115,6 +115,32 @@ potential (Yukawa for \(m\neq 0\), Coulomb-type when \(m=0\)).
 The key structural ingredient is that the source is an ordinary
 commuting function (a classical background density).
 
+\texttt{Remark\ 2.1\ (Källén-Lehmann\ spectral\ representation:\ the\ structural\ backbone\ of\ bosonic\ exchange).}
+The Gaussian-elimination mechanism above has a deeper structural
+underpinning in the Källén-Lehmann spectral representation (Källén,
+1952; Lehmann, 1954). For any scalar field satisfying the Wightman
+axioms, the full interacting propagator decomposes as
+\(D(p^2)=Z/(p^2-m_{\mathrm{phys}}^2+i\epsilon)+\int_{s_0}^\infty d\mu^2\;\rho(\mu^2)/(p^2-\mu^2+i\epsilon)\),
+where \(Z=|\langle 0|\varphi(0)|1\text{-particle}\rangle|^2\) is the
+field-strength renormalization and the spectral function
+\(\rho(\mu^2)\ge 0\) from unitarity (positive-definiteness of the
+Hilbert-space inner product). For the free field, \(\rho=0\) and
+\(Z=1\), recovering \(K^{-1}\) of Section 2. The static limit of each
+spectral component gives a Yukawa potential \(e^{-\mu r}/r\) with
+non-negative weight; combined with the negative sign from the Gaussian
+elimination \(S_{\mathrm{eff}}=-(1/2)\int J\,K^{-1}J\), this yields an
+attractive static potential for same-sign scalar sources --- the sign
+alternates with the spin of the exchanged particle (attractive for even
+spin, repulsive for odd spin), a separate vertex-structure effect. The
+spectral positivity holds equally for the leading spectral function of
+the fermion propagator; the difference between bosonic and fermionic
+cases is not the spectral weight's sign but the Grassmann nature of the
+source terms (Section 3). The spectral representation also underlies the
+dispersion relation of Remark 3.5: the once-subtracted dispersion
+integral for \(\Pi(q^2)\) is the spectral decomposition of the photon
+self-energy, with the spectral weight \(\mathrm{Im}\,\Pi(s)\) related to
+production cross-sections via the optical theorem (Remark 3.6).
+
 \hypertarget{fermionic-fields-linear-sources-are-grassmann-so-the-classical-source-story-does-not-transplant}{%
 \section{3. Fermionic fields: linear sources are Grassmann, so the
 classical-source story does not
@@ -364,6 +390,35 @@ scattering length), an alternative counting due to Kaplan, Savage, and
 Wise (1998) resums \(C_0\) to all orders --- precisely the \(T\)-matrix
 resummation of Examples 5.1--5.2 --- treating higher-order contacts and
 pion exchanges as perturbative corrections.
+
+\texttt{Remark\ 4.5\ (Operator\ product\ expansion:\ the\ QFT\ generalization\ of\ the\ contact\ hierarchy).}
+Wilson's operator product expansion (OPE, 1969) extends the contact
+hierarchy of Derivation 4.1 to relativistic quantum field theory. When
+two local operators \(\mathcal{O}_A(x)\) and \(\mathcal{O}_B(0)\) are
+brought together inside time-ordered correlation functions, their
+product admits an expansion in local operators at the coincidence point:
+\(\mathcal{O}_A(x)\,\mathcal{O}_B(0)\sim\sum_k C_k^{AB}(x)\,\mathcal{O}_k(0)\),
+where the Wilson coefficient functions scale as
+\(C_k\sim|x|^{d_k-d_A-d_B}\) (with \(d_i\) the engineering dimensions),
+up to logarithmic corrections from anomalous dimensions in non-conformal
+theories. The identity-operator contribution
+(\(\mathcal{O}_k=\mathbf{1}\)) yields a c-number equal to the
+interacting two-point function (reducing to the propagator \(K^{-1}\) of
+Section 2 in the free-field limit), while subleading operators are
+suppressed by positive powers of \(|x|\) times a physical mass scale ---
+the same hierarchy principle as the \(C_0+C_2 q^2+\cdots\) contact
+expansion, though the two operate in opposite regimes: the OPE is a
+short-distance (UV) expansion (\(|x|\to 0\)), while the contact
+expansion is a low-momentum (IR) expansion (\(q\to 0\)). The structural
+parallel lies in the shared organizational principle: unresolved physics
+is encoded by a tower of local operators ordered by dimension. The OPE
+is a general structural feature of local QFT --- in conformal field
+theories (no mass gap) it is exact and convergent, constituting the
+fundamental algebraic data of the theory; in massive theories it is an
+asymptotic short-distance expansion. The scale dependence of OPE
+coefficients in non-conformal theories is governed by the
+Callan-Symanzik equation, whose beta function is the direct QFT
+counterpart of the contact-coupling beta function in Examples 5.1--5.2.
 
 \hypertarget{boundary-condition-reading-point-interactions}{%
 \section{5. Boundary-condition reading (point
@@ -655,11 +710,14 @@ bosonic potentials. The pattern echoes --- without being logically
 equivalent to --- the Grassmann-source obstruction of Section 3: the
 fundamental fermionic degrees of freedom are not directly accessible as
 asymptotic states, and the effective low-energy description (chiral
-perturbation theory) is built entirely from bosonic meson fields.
-Proving that pure Yang-Mills gauge theory in four dimensions has a mass
-gap from first principles is one of the Clay Millennium Prize Problems;
-lattice QCD provides numerical evidence for confinement and a mass gap,
-but a rigorous proof remains open.
+perturbation theory) is built entirely from bosonic meson fields. The
+large-\(N\) expansion ('t Hooft, 1974), in which planar gluon diagrams
+dominate, provides complementary analytical evidence for string-like
+behavior of the confining flux tube. Proving that pure Yang-Mills gauge
+theory in four dimensions has a mass gap from first principles is one of
+the Clay Millennium Prize Problems; lattice QCD provides numerical
+evidence for confinement and a mass gap, but a rigorous proof remains
+open.
 
 \hypertarget{references}{%
 \section{References}\label{references}}
@@ -826,6 +884,23 @@ but a rigorous proof remains open.
   interactions,'' \emph{Nuclear Physics B} 72 (1974), 461--473. DOI
   \texttt{10.1016/0550-3213(74)90154-0}. (Large-N expansion and planar
   dominance in QCD; used in Remark 6.4.)
+\item
+  {[}Kallen1952{]} Gunnar Källén, ``On the definition of the
+  renormalization constants in quantum electrodynamics,''
+  \emph{Helvetica Physica Acta} 25 (1952), 417--434. DOI
+  \texttt{10.5169/seals-112316}. (Källén-Lehmann spectral
+  representation; used in Remark 2.1.)
+\item
+  {[}Lehmann1954{]} Harry Lehmann, ``Über Eigenschaften von
+  Ausbreitungsfunktionen und Renormierungskonstanten quantisierter
+  Felder,'' \emph{Il Nuovo Cimento} 11 (1954), 342--357. DOI
+  \texttt{10.1007/BF02783624}. (Lehmann spectral representation; used in
+  Remark 2.1.)
+\item
+  {[}Wilson1969OPE{]} Kenneth G. Wilson, ``Non-Lagrangian models of
+  current algebra,'' \emph{Physical Review} 179 (1969), 1499--1512. DOI
+  \texttt{10.1103/PhysRev.179.1499}. (Operator product expansion; used
+  in Remark 4.5.)
 \end{enumerate}
 
 \end{document}
