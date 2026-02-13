@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (B19: add bibliography to delta-objects)
+- Focus: add references to delta-objects paper.
+- Work: 4 references (BatesWeinstein1997, Hormander2003, Albeverio et al. 2005, Morette 1951). Ledger entries 40-41.
+- Result: PDF 5 pages. Paper now has bibliography. Ready for Q84.
+- Next: Q84 (referee pass for Tier 1 assessment).
+
 ## 2026-02-13 (C129: fix encoding and paths in delta-objects)
 - Focus: fix Q83 issues — Unicode escapes, internal paths, YAML metadata.
 - Work: 12 lines changed, PDF rebuilt (4 pages).

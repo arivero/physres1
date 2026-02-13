@@ -152,6 +152,7 @@
 - `B16` Completed.
 - `B17` Completed.
 - `B18` Completed.
+- `B19` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -357,9 +358,9 @@
 
 ## Next Action
 Priority: delta-objects Tier 1 promotion.
-1. C129 done: encoding/paths/metadata fixed.
-2. B19: add bibliography (Hörmander, Bates–Weinstein, Albeverio et al.).
-3. Q84: follow-up referee pass after B19.
+1. B19 done: bibliography added (4 references, ledger entries 40-41).
+2. Q84: follow-up referee pass on delta-objects for Tier 1 assessment.
+3. After delta-objects: fermionic-mediators (has bib, needs Q pass).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
