@@ -486,6 +486,50 @@ removed), not any single regulated approximant. This is the
 boundary-condition paradigm of Section 5 elevated from a mathematical
 framework to a laboratory-observable phenomenon.
 
+\texttt{Remark\ 5.8\ (Levinson\textquotesingle{}s\ theorem:\ boundary-condition\ data\ counts\ bound\ states).}
+The self-adjoint-extension framework of Examples 5.1--5.2 organizes both
+scattering and bound-state data through a single boundary-condition
+parameter \(a\). Levinson's theorem (1949) makes this spectral
+connection precise: for an s-wave (\(l=0\)) potential with sufficient
+decay at infinity (short-range), the phase shift satisfies
+\(\delta_0(0)=n_0\pi\), where \(n_0\) is the number of s-wave bound
+states and the convention \(\delta_0(k\to\infty)=0\) is adopted. The
+total phase accumulated from high to low energy exactly counts the bound
+states --- each bound state contributes \(\pi\) of phase. When a
+zero-energy resonance (half-bound state) exists --- a solution at
+\(k=0\) that is finite but not square-integrable --- the relation
+becomes \(\delta_0(0)=(n_0+\tfrac12)\pi\). For the contact interaction
+of Example 5.2, this half-bound-state condition corresponds precisely to
+\(|a|=\infty\), the unitarity limit of Remark 5.3: the divergent
+scattering length signals the threshold between having and not having a
+bound state. The theorem thus connects the infrared boundary-condition
+datum \(a\) (the effective range expansion of Remark 4.2) to the
+spectral content (bound-state count) of the self-adjoint extension.
+
+\texttt{Remark\ 5.9\ (Tan\textquotesingle{}s\ contact:\ many-body\ thermodynamics\ from\ boundary-condition\ data).}
+The boundary-condition parameter \(a\) of Examples 5.1--5.2 governs not
+only two-body scattering but also universal properties of many-body
+systems. Tan (2008) showed that for a two-component Fermi gas with
+s-wave contact interactions, the short-range pair structure is
+characterized by a single extensive quantity \(\mathcal{C}\) (the
+``contact'') through a family of exact relations: the momentum
+distribution obeys \(n_\sigma(k)\to\mathcal{C}/k^4\) as \(k\to\infty\)
+(the \(k^{-4}\) tail being the momentum-space signature of the contact
+interaction of Section 4); the adiabatic sweep theorem
+\(dE/d(-1/a)=\hbar^2\mathcal{C}/(4\pi m)\) relates the energy response
+to scattering-length variation; and for a homogeneous system the
+pressure satisfies
+\(P=\tfrac{2}{3}(E/V)+\hbar^2\mathcal{C}/(12\pi maV)\). The contact
+\(\mathcal{C}\) is a many-body observable that is sensitive to the
+self-adjoint-extension parameter \(a\): it measures the number of pairs
+at short range (the opposite-spin pair density diverges as
+\(\rho_2(r\to 0)\sim\mathcal{C}/(4\pi r)^2\)), thereby elevating the
+two-body boundary-condition datum to a thermodynamic quantity. These
+relations have been verified experimentally in ultracold Fermi gases
+(Stewart et al., 2010), where the momentum-distribution tail and the
+equation of state were measured in the same system across the BEC--BCS
+crossover of Remark 5.6.
+
 \hypertarget{outlook-emergent-bosonic-composites}{%
 \section{6. Outlook: emergent bosonic
 composites}\label{outlook-emergent-bosonic-composites}}
@@ -696,6 +740,24 @@ providing the systematic power counting that relates the two regimes.
   X-rays,'' \emph{Journal of the Optical Society of America} 12 (1926),
   547--557. DOI \texttt{10.1364/JOSA.12.000547}. (Kramers--Kronig
   dispersion relation; used in Remark 3.5.)
+\item
+  {[}Levinson1949{]} Norman Levinson, ``On the uniqueness of the
+  potential in a Schrödinger equation for a given asymptotic phase,''
+  \emph{Kgl. Danske Videnskab. Selskab, Mat.-Fys. Medd.} 25, No.~9
+  (1949), 1--29. (Levinson's theorem; used in Remark 5.8.)
+\item
+  {[}Tan2008{]} Shina Tan, ``Energetics of a strongly correlated Fermi
+  gas,'' \emph{Annals of Physics} 323 (2008), 2952--2970; ``Large
+  momentum part of a strongly correlated Fermi gas,'' ibid. 2971--2986;
+  ``Generalized virial theorem and pressure relation for a strongly
+  correlated Fermi gas,'' ibid. 2987--2990. (Tan contact and universal
+  relations; used in Remark 5.9.)
+\item
+  {[}Stewart2010{]} J. T. Stewart, J. P. Gaebler, T. E. Drake, and D. S.
+  Jin, ``Verification of universal relations in a strongly interacting
+  Fermi gas,'' \emph{Physical Review Letters} 104 (2010), 235301. DOI
+  \texttt{10.1103/PhysRevLett.104.235301}. (Experimental verification of
+  Tan relations; used in Remark 5.9.)
 \end{enumerate}
 
 \end{document}
