@@ -155,6 +155,7 @@
 151. `C151` Completed.
 152. `C152` Completed.
 153. `C153` Completed.
+154. `C154` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -292,6 +293,7 @@
 - `S110` Completed.
 - `S111` Completed.
 - `S112` Completed.
+- `S113` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -434,7 +436,7 @@
 
 ## Next Action
 **9 satellite papers all at Tier 1. All cross-referenced from cornerstone.**
-Cornerstone at ~1475 lines.
+Cornerstone at ~1486 lines.
 
 Recent completed:
 1. S112+C153: free-particle two-slice Example D4.2b in cornerstone Section 6.4 (+11 lines). Gap 2 filled.

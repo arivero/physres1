@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S113+C154: HO Van Vleck Example 3.5b in delta objects satellite)
+- Focus: expand delta objects satellite with harmonic oscillator Van Vleck example.
+- Work: added Example 3.5b showing D = |mω/sin ωΔt|, free-particle recovery at ωΔt→0, caustic at ωΔt = π.
+- Result: satellite 165→171 lines (+6 net).
+
 ## 2026-02-13 (S112+C153: free-particle two-slice example in cornerstone Section 6.4)
 - Focus: fill Gap 2 (stationary phase numerical verification) with a concrete worked example.
 - Work: free particle on two time slices. Gaussian integral gives S_eff^{(ℏ)} = m(q₂-q₀)²/(4Δt) + (ℏ/2)ln(m/(πℏΔt)). As ℏ→0, S_eff → classical minimum (midpoint, uniform velocity). Example D4.2b placed after D4.2a; old D4.2b renumbered to D4.2c.
