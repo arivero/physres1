@@ -238,6 +238,7 @@
 - `B21` Completed.
 - `B22` Completed.
 - `B23` Completed.
+- `B24` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.

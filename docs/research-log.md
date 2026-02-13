@@ -3321,3 +3321,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: wrote blackboard 1 on monodromy (Duistermaat 1980, GL(d,Z) transport, quantum lattice defect). Reviewed by integrable systems expert — **caught critical reference error**: Duistermaat 1980 is Comm. Pure Appl. Math. 33, 687 (NOT CMP 77, 65). Promoted as Remark 6.10 in action-angle (+5 lines).
 - Result: extends local Fourier tradeoff to global topological obstruction. Connects to quantum monodromy.
 - Next: B24 (bibliography entries for C207-C210), then more S+C expansion.
+
+## 2026-02-13 (B24: bibliography entries for C209-C210)
+- Focus: add missing bibliography entries for Remarks 3.5 (fermionic) and 6.10 (action-angle).
+- Work: added 5 entries — fermionic: Kramers1927, Kronig1926; action-angle: Duistermaat1980, CushmanDuistermaat1988, VuNgoc1999. Both PDFs rebuilt.
+- Line counts: fermionic 191, action-angle 193, uncuttable 189.
+- Next: continue S+C expansion (uncuttable shortest at 189).
