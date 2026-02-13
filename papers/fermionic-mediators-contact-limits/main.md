@@ -110,6 +110,13 @@ which diverges as \(\Lambda\to\infty\) unless \(g_0\) is tuned. Define a renorma
 
 The structural lesson: the "contact" limit of the effective interaction is not a number (coupling constant) but a flow — a scale-dependent parameter whose RG trajectory is part of the definition. This is "uncuttable" in the sense of the companion note: the continuum theory requires the refinement rule (cutoff removal + beta function) and not merely a single-cutoff value.
 
+`Example 5.2 (3D contact interaction: scattering length).`
+In three spatial dimensions, the same contact interaction \(V(r)=g_0\,\delta^{(3)}(r)\) with UV cutoff \(\Lambda\) produces a linearly divergent loop integral (compared to the logarithmic divergence in \(d=2\)). After resummation, the s-wave scattering amplitude takes the standard effective-range form with zero effective range:
+\[
+f_0(k) = \frac{-a}{1+ika},
+\]
+where the scattering length \(a\) is defined by absorbing the \(\Lambda\)-dependent bare coupling into a single physical parameter via a renormalization condition of the form \(1/g_0 \propto \Lambda + \text{(finite part depending on } a\text{)}\). When \(a>0\), a pole at \(k=i/a\) gives a bound state with energy \(E=-\hbar^2/(2ma^2)\) [AlbeverioGesztesyHoeghKrohnHolden2005]. The comparison with Example 5.1 highlights how the divergence character changes with dimension — logarithmic (\(d=2\)) versus linear (\(d=3\)) — while the structural lesson is identical: the "coupling constant" of a contact interaction is not a bare number but a renormalization-group datum, defined only through a refinement rule (cutoff removal + physical matching condition).
+
 # 6. Outlook (kept minimal)
 Longer-range effects associated to fermionic degrees of freedom can arise through loop-induced mechanisms or through emergent bosonic composite modes. Treating those responsibly would require a separate bibliography-hardening pass and is outside this note’s scope.
 
@@ -119,3 +126,4 @@ Longer-range effects associated to fermionic degrees of freedom can arise throug
 2. [BonneauFarautValent2001SAE] Guy Bonneau, Jacques Faraut, and Galliano Valent, "Self-adjoint extensions of operators and the teaching of quantum mechanics," *American Journal of Physics* 69 (2001), 322–331. arXiv:`quant-ph/0103153`. DOI `10.1119/1.1328351`.
 3. [Jackiw1991DeltaPotentials] R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.
 4. [Floerchinger2024QFT1Lecture21] Stefan Floerchinger, "Quantum field theory 1, lecture 21" (updated 11 Jun 2024). (States the Dirac-fermion generating functional \(Z[\bar\eta,\eta]\) with Grassmann-valued sources.) OA: lecture webpage.
+5. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005. ISBN `978-0-8218-3624-4`. (Canonical reference for point interactions in quantum mechanics; self-adjoint extensions, delta potentials.)
