@@ -310,6 +310,7 @@
 - `Q75` Completed.
 - `Q76` Completed.
 - `Q77` Completed.
+- `Q78` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -340,11 +341,12 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: Q78 (referee pass on C122), then continue.
+Priority: planck-area Open Problems largely addressed. Assess next direction.
 1. P00 complete. P01 rate-limited until Feb 20.
 2. Open Problems addressed: #1 (PA-D1.4a), #2 (PA-E5c), #4 (PA-H2.6b).
-3. Open Problem #3: partially addressed (S79/C117). #5: not started.
-4. Next: Q78, then assess — most planck-area open problems now addressed.
+3. Open Problem #3: partially by S79/C117 (odd-d parity obstruction + three-mechanism classification). Remaining: odd-d transmutation witness (low priority).
+4. Open Problem #5: GUP comparison (not started, lower priority).
+5. Next: update Open Problems list in manuscript, or pivot to main paper / other satellite.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

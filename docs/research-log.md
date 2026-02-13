@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q78: clean referee pass on C122)
+- Focus: verify PA-H2.6b necessity claims and cross-references.
+- Work: checked all four necessity claims (drop each → conclusion fails). Structural checks pass.
+- Result: clean pass. No corrections required.
+- Next: update Open Problems list or pivot to other work.
+
 ## 2026-02-13 (C122: promote S84 as Remark PA-H2.6b)
 - Focus: insert minimal-hypotheses summary into planck-area Section 3.1.
 - Work: 4-line remark after PA-H2.6. Minimal set stated, non-bookkeeping content identified. 23 pages, clean.
