@@ -193,6 +193,7 @@
 189. `C189` Completed.
 190. `C190` Completed.
 191. `C191` Completed.
+192. `C192` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -369,6 +370,7 @@
 - `S148` Completed.
 - `S149` Completed.
 - `S150` Completed.
+- `S151` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -486,6 +488,7 @@
 - `Q114` Completed.
 - `Q115` Completed.
 - `Q116` Completed.
+- `Q117` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -525,16 +528,16 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S149+C190: Bargmann representation Remark 6.8 in action-angle (+3 lines, 151→154).
-2. S150+C191: EFT Remark 4.4 in uncuttable (+3 lines, 152→155).
-3. S147+C188: Lattice gauge theory Remark 4.3 in uncuttable.
-4. S148+C189: Casimir effect Remark 5.7 in fermionic mediators.
-5. Q116: Review of 6 new remarks — 4 PASS, 2 CONDITIONAL PASS (fixes applied).
+1. S151+C192: Cooper pairing Remark 6.1 in fermionic mediators (+2 net lines, 153→155).
+2. Q117: Review of 4 remarks (4.3, 4.4, 5.7, 6.8) — all CONDITIONAL PASS (missing bibliography entries).
+3. S149+C190: Bargmann representation Remark 6.8 in action-angle.
+4. S150+C191: EFT Remark 4.4 in uncuttable.
+5. S147+C188: Lattice gauge theory Remark 4.3 in uncuttable.
 
 Next:
-- All three satellites ~154 lines (uncuttable 155, action-angle 154, fermionic 153).
-- Fermionic is now the shortest — next cycle should target it.
-- Q cycle due: 8 new remarks since Q116 (Remarks 4.3, 4.4, 5.7, 6.8 plus previous batch).
+- All three satellites at 154-155 lines (uncuttable 155, fermionic 155, action-angle 154).
+- **B cycle urgently needed**: Q117 found ~10 missing bibliography entries across all three satellites.
+- Action-angle is now the shortest — next S+C cycle should target it.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

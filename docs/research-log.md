@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S151+C192+Q117: Cooper pairing + quality review)
+- Focus: expand fermionic mediators Section 6 (Cooper pairing as emergent bosonic mediator) and quality review of 4 recent remarks.
+- Work: S151 studied Cooper pairing. Condensed matter expert reviewed — caught photon mass error (m_A ∝ √(n_s), not |Δ|/v_F). Promoted as Remark 6.1: BCS gap, bosonic condensate, Anderson-Higgs/Meissner with corrected formula, BEC-BCS crossover connection. Q117 reviewed Remarks 4.3, 4.4, 5.7, 6.8: all CONDITIONAL PASS — physics correct but missing formal bibliography entries (~10 entries needed across three satellites).
+- Result: fermionic 153→155 (+2, 8pp). Action-angle 154, uncuttable 155 (unchanged). B cycle needed for bibliography.
+
 ## 2026-02-13 (S149+C190+S150+C191: Bargmann representation + EFT)
 - Focus: expand action-angle Section 6 (Bargmann representation as algebraic form of action-angle duality) and uncuttable Section 4 (effective field theory as systematic refinement hierarchy).
 - Work: S149 studied Bargmann-Segal representation. Mathematical physicist reviewed — α/ᾱ convention inconsistency found (not a physics error). Fixed in promoted remark using K_α(z)=e^{ᾱz} consistently. Promoted as Remark 6.8: Fock states as monomials, coherent states as reproducing kernels, creation/annihilation as multiplication/differentiation, Husimi as squared Bargmann modulus. S150 studied EFT paradigm. Particle phenomenologist reviewed — Wilson date 1969 wrong (should be early 1970s); all formulas correct. Fixed by citing Weinberg 1979. Promoted as Remark 4.4: matching conditions as comparison across refinements, Wilson coefficients as extra data, SM as EFT.

@@ -26,7 +26,7 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Bargmann representation / action-angle duality | Promoted (C190) |
+| 0 | Cooper pairing / emergent bosonic mediators | Promoted (C192) |
 | 1 | Effective field theory / refinement hierarchy | Promoted (C191) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
