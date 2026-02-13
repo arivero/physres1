@@ -397,6 +397,7 @@
 - `DX07` Completed.
 - `DX08` Completed.
 - `DX09` Completed.
+- `DX10` Completed.
 
 ### Publication Cycles (`Pnn`)
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
