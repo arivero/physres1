@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q106+S117+C158: delta resolvent Example 4.1 in delta-objects + Trotter fix)
+- Focus: expand delta-objects Section 4 with worked example; Q pass on Trotter Remark 3.3.
+- Work: S117 blackboard studied 1D delta-potential resolvent as rank-one perturbation. Subagent (pedagogical expositor) reviewed: all formulas correct, excellent fit. Promoted as Example 4.1 showing factored resolvent, bound-state pole as rank-one projector, half-density interpretation. Q106 subagent found CRITICAL convergence-order phrasing issue in Trotter Remark 3.3 ("O(1/N) error" ambiguous) plus domain conditions and citation gap — all three fixed.
+- Result: delta-objects 172→178 lines (+6 net). Uncuttable Remark 3.3 improved (net 0 lines).
+
 ## 2026-02-13 (S116+C157: Trotter product formula Remark 3.3 in uncuttable satellite)
 - Focus: make the path integral's refinement-limit character rigorous with the Trotter formula.
 - Work: added Remark 3.3 showing e^{t(A+B)} = lim(e^{tA/N}e^{tB/N})^N. Also fixed Unicode δ in delta-objects section headings (replaced with $\delta$ for pdflatex).
