@@ -30,6 +30,6 @@ relevant slot. Deletion criteria (in priority order):
 | 1 | KAM theorem / integrability boundary | Promoted (C167) |
 | 2 | Richardson extrapolation / minimal subtraction | Promoted (C168) |
 | 3 | Husimi function / action-angle visualization | Promoted (C169) |
-| 4 | (empty) | Free |
-| 5 | (empty) | Free |
+| 4 | Adiabatic limit / Berry phase | Promoted (C170) |
+| 5 | Rooted trees research direction | Active (future satellite D) |
 | 6 | (empty) | Free |

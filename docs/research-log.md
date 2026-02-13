@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S129+C170: Adiabatic limit Remark 3.5 in uncuttable)
+- Focus: expand uncuttable satellite with adiabatic theorem as refinement limit.
+- Work: S129 studied adiabatic limit — condensed matter theorist subagent reviewed blackboard (slot 4), fixed adiabatic condition (was dimensionally incorrect), approved structural parallel. Promoted as Remark 3.5: Berry phase as holonomy of U(1) connection on eigenstate bundle, connecting to "extra structure" theme. Q112 review in progress.
+- Result: uncuttable 131→134 (+3 net).
+
 ## 2026-02-13 (S128+C169: Husimi function + infrastructure)
 - Focus: expand action-angle satellite; organize repo.
 - Work: S128 studied Husimi Q-function as phase-space diagnostic. Quantum optics experimentalist subagent reviewed and edited blackboard directly — fixed squeezed-state terminology confusion. Promoted as Remark 6.4 (ring vs blob = Fourier tradeoff in phase space).
