@@ -323,6 +323,7 @@
 - `Q80` Completed.
 - `Q81` Completed.
 - `Q82` Completed.
+- `Q83` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -354,10 +355,11 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: advance next Tier 2 paper.
-1. C128 done: relativistic-central-orbits cleaned up and promoted to Tier 1.
-2. Next Tier 2 candidates: delta-objects (needs bibliography B19), fermionic-mediators (very short, has bib).
-3. Tier 3: action-angle-indeterminacy, uncuttable-controlled-refinement (need content C cycles).
+Priority: delta-objects Tier 1 promotion.
+1. Q83 done: referee pass found Unicode escapes (7 lines), internal paths (3 lines), empty metadata, no bibliography.
+2. C129: fix encoding, paths, metadata.
+3. B19: add bibliography (Hörmander, Bates–Weinstein, Albeverio et al.).
+4. Q84: follow-up referee pass after fixes.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

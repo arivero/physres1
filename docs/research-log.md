@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q83: referee pass on delta-objects)
+- Focus: full referee pass for Tier assessment.
+- Work: checked math (clean), notation, encoding, paths, bibliography status.
+- Result: Unicode escapes on 7 lines, 3 internal paths, no bibliography. Math clean. Needs C129 + B19 before Tier 1.
+- Next: C129 (encoding/paths fix), B19 (bibliography).
+
 ## 2026-02-13 (C128: clean up relativistic-central-orbits for Tier 1)
 - Focus: fix three Q82 issues in relativistic-central-orbits.
 - Work: removed internal path, fixed meta-language, filled YAML metadata. PDF rebuilt (6 pages).
