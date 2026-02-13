@@ -1,7 +1,7 @@
 ---
 title: "From Newton to the Path Integral"
-author: []
-date: ""
+author: "Alejandro Rivero"
+date: "2026"
 abstract: |
   This paper develops a single structural thesis across classical and quantum theory: physically meaningful laws arise as controlled limits of composable local refinements. We begin with Newton’s polygonal approximation of central-force motion and its limit to continuous dynamics, then re-express the same logic in modern variational form through additive action functionals. We treat the path integral as a composition law over refined time slices, not as an isolated quantum postulate, and we frame deformation quantization and renormalization as two mathematically distinct control mechanisms for limit consistency. The narrative is constructive: each stage retains the previous one as a limiting or compatibility condition rather than replacing it. Within this architecture we reserve a dedicated role for point-like (Dirac-supported) probes in weak formulations of the action principle, emphasizing where they are mathematically valid and where regularization is mandatory. The result is a staged program from Newtonian limit methods to quantum amplitudes in which the classical equations are recovered as stationary limits of a broader compositional framework.
 ---
@@ -1426,3 +1426,8 @@ Thus, in this one-scale model, “scheme dependence” is precisely the freedom 
 15. [Rosten2012ERG] Oliver J. Rosten, "Fundamentals of the Exact Renormalization Group," *Physics Reports* 511 (2012), 177–272. arXiv:`1003.1366` (v4, 15 Feb 2012). DOI `10.1016/j.physrep.2011.12.003`.
 16. [Velhinho2017InfDimMeasure] José Velhinho, "Topics of Measure Theory on Infinite Dimensional Spaces," *Mathematics* 5(3) (2017), 44. DOI `10.3390/math5030044`. OA: MDPI.
 17. [TongQMLectures] David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)
+18. [Berkeley1734Analyst] George Berkeley, *The Analyst; or, A Discourse Addressed to an Infidel Mathematician* (Dublin/London, 1734). (Foundational critique of Newton's fluxions and Leibniz's infinitesimals — the "ghosts of departed quantities" objection.)
+19. [Nauenberg2003KeplerArea] Michael Nauenberg, "Kepler's Area Law in the Principia: Filling in some details in Newton's proof of Prop. 1," *Historia Mathematica* 30 (2003), 441–456. arXiv:`math/0112048`. DOI `10.1016/S0315-0860(02)00027-7`.
+20. [Pourciau2003] Bruce Pourciau, "Newton's Argument for Proposition 1 of the Principia," *Archive for History of Exact Sciences* 57 (2003), 267–311. DOI `10.1007/s00407-002-0062-x`.
+21. [Nauenberg1994SymplecticNewton] Michael Nauenberg, "Newton's early computational method for dynamics," *Archive for History of Exact Sciences* 46 (1994), 221–252. DOI `10.1007/BF01686278`.
+22. [Nauenberg2018GraphicalMethod] Michael Nauenberg, "Newton's graphical method for central force orbits," *American Journal of Physics* 86(10) (2018), 765–771. DOI `10.1119/1.5046424`. arXiv:`1810.05264`.
