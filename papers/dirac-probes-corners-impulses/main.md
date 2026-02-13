@@ -47,6 +47,9 @@ By (H3) the convolution converges to \(F[q](t_0)\) as \(\varepsilon\to0^+\). Sin
 `Remark 2.2 (Role of each hypothesis).`
 (H1) ensures \(F[q]\) is locally integrable so the distributional pairing makes sense [Hormander2003]. (H2) is the global stationarity input. (H3) is the local regularity gate: without it, mollifier limits may fail to converge or may converge to an averaged value rather than a pointwise one. If \(F[q]\) is continuous on all of \((t_i,t_f)\), iteration of Theorem 2.1 recovers the classical Euler–Lagrange equation everywhere.
 
+`Remark 2.2a (Regularity chain: from a.e. to pointwise to smooth).`
+Theorem 2.1 is the mollifier-specific form of the du Bois-Reymond lemma (1879): for \(f\in L^1_{\mathrm{loc}}\), vanishing against all \(\eta\in C_c^\infty\) gives \(f=0\) only a.e. Hypothesis (H3) upgrades the conclusion to pointwise: continuity at \(t_0\) is the minimal gate. If \(\mathcal{L}\) is smooth, Hilbert's differentiability theorem further bootstraps \(q\in C^1\) to \(q\in C^\infty\) by iterating the Euler–Lagrange equation — so (H3) is genuinely the weakest hypothesis for pointwise recovery.
+
 `Remark 2.3 (Structural parallel with polygonal refinement).`
 The mollifier-localization argument of Theorem 2.1 shares its logical structure with Newton's polygonal construction (cornerstone, Section 3): both begin with an invariant that holds exactly at finite resolution (stationarity against every test function / equal areas at every polygon step), introduce a refinement parameter (\(\varepsilon\) / \(\Delta t\)), and extract a continuous or pointwise statement in the limit under a local regularity hypothesis (continuity of \(F[q]\) / controlled vertex convergence; see [Nauenberg2003KeplerArea] for the polygon limit). The equal-area law is algebraically exact at every polygon step; the stationarity integral vanishes exactly at every mollifier width. In the time-slicing bridge of Section 4.5, the same pattern recurs a third time, with the half-density normalization playing the role of the regularity gate that ensures the \(N\to\infty\) limit yields a well-defined composition law.
 
@@ -195,6 +198,9 @@ For \(\mathcal{L}=\frac{m}{2}\dot{q}^2\), each of the \(N\) intermediate Gaussia
 
 `Remark 4.5b (Multi-dimensional propagator and the d/2 exponent).`
 In \(d\) spatial dimensions, the free-particle propagator generalizes to \(K(\mathbf{q}_f,\mathbf{q}_i;T)=(m/(2\pi i\hbar T))^{d/2}\exp(iS_0/\hbar)\) with \(S_0=m|\mathbf{q}_f-\mathbf{q}_i|^2/(2T)\). The Van Vleck determinant is now \(\det(-\partial^2 S_0/\partial q_f^i\,\partial q_i^j)=(m/T)^d\), and the prefactor \((m/T)^{d/2}\) is its square root. The exponent \(d/2\) is the same one that controls the convergence of the diagonal Green function \(G_0(0,0;E)\propto\int_0^\infty t^{-d/2}e^{-\kappa^2 t}\,dt\) (Remark 5.2b): the path-integral normalization and the renormalization threshold for delta potentials share a common half-density origin.
+
+`Remark 4.5c (Trotter product formula: the operator-theoretic backbone).`
+The \(N\)-impulse time-slicing is the configuration-space face of the Trotter product formula: each composition step alternates \(e^{-iH_0\Delta t/\hbar}\) (free segment) with the impulse operator \(e^{-iV\Delta t/\hbar}\) (junction phase kick). The Trotter–Kato theorem provides the strong-operator convergence guarantee for the \(N\to\infty\) limit, complementing the pointwise semiclassical argument with a rigorous \(L^2\) result. The companion refinement note (Remark 3.3 there) develops this connection systematically.
 
 # 5. Safe vs Unsafe Uses of the Dirac Delta in Variational Mechanics
 

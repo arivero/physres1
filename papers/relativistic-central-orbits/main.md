@@ -66,6 +66,9 @@ r=\frac{L^2}{Km}\sqrt{1-\frac{K^2}{c^2L^2}}
 
 This bound and the circular-solution branch appear in standard treatments of the relativistic Kepler problem (see e.g. [BoscagginDambrosioFeltrin2020RelKepler] for a dynamical-systems/variational analysis of the same SR equation).
 
+`Remark 3.1 (Dimensional origin of the identity).`
+The identity \(v=K/L\) is a dimensional consequence of \(q=2\) being the unique power-law exponent for which \([K]=[\text{energy}\cdot\text{length}]=[\text{angular momentum}\cdot\text{velocity}]\), so that \(K/L\) is automatically a velocity. For general \(q\), the circular-orbit condition gives \(K/L=v\cdot r^{q-2}\); eliminating the residual \(r^{q-2}\) re-introduces the mass and Lorentz factor, and no clean mass-independent identity survives.
+
 ## 3.1 Extension to all bound orbits (effective-potential argument)
 The bound \(L > K/c\) is not limited to circular orbits. Consider the effective radial potential at fixed \(L\):
 \[
