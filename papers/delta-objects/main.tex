@@ -1,24 +1,20 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+%
 \documentclass[
 ]{article}
-\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math} % this also loads fontspec
+  \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-\usepackage{lmodern}
-\ifPDFTeX\else
-  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -36,21 +32,27 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Delta Objects as Half-Density Kernels: Identity, Stationary-Set Concentration, and Point Interactions},
+  pdfauthor={Alejandro Rivero},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\usepackage{bookmark}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same}
-\hypersetup{
-  pdftitle={Delta Objects as Half-Density Kernels: Identity{,} Stationary-Set Concentration{,} and Point Interactions},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 
 \title{Delta Objects as Half-Density Kernels: Identity, Stationary-Set
 Concentration, and Point Interactions}
-\author{}
-\date{}
+\author{Alejandro Rivero}
+\date{2026}
 
 \begin{document}
 \maketitle
@@ -71,11 +73,12 @@ physical length scale may enter when one insists on scalar
 representatives.
 \end{abstract}
 
-This note is a companion to \texttt{paper/main.md}. Statements are kept
-finite-dimensional unless explicitly labeled heuristic.
+This note is a companion to the cornerstone manuscript. Statements are
+kept finite-dimensional unless explicitly labeled heuristic.
 
+\hypertarget{half-densities-and-kernels-coordinate-free}{%
 \section{1. Half-densities and kernels (coordinate
-free)}\label{half-densities-and-kernels-coordinate-free}
+free)}\label{half-densities-and-kernels-coordinate-free}}
 
 Let \(M\) be a \(d\)-dimensional manifold and \(|\Omega|^{1/2}\) the
 half-density bundle. An operator
@@ -91,15 +94,17 @@ Scalarizing kernels (writing \(\int dy\) with a scalar integrand)
 implicitly chooses a reference density/half-density; the half-density
 formalism keeps this choice explicit.
 
+\hypertarget{delta-as-the-identity-kernel-and-near-diagonal-scaling}{%
 \section{2. Delta as the identity kernel (and near-diagonal
-scaling)}\label{delta-as-the-identity-kernel-and-near-diagonal-scaling}
+scaling)}\label{delta-as-the-identity-kernel-and-near-diagonal-scaling}}
 
 The identity operator on half-densities has Schwartz kernel \[
 \mathsf K_{\mathrm{Id}}(x,y)=\delta^{(d)}(x-y)\,|dx|^{1/2}|dy|^{1/2}.
 \]
 
+\hypertarget{worked-scaling-computation-the-d2-exponent}{%
 \subsection{\texorpdfstring{Worked scaling computation (the \(d/2\)
-exponent)}{Worked scaling computation (the d/2 exponent)}}\label{worked-scaling-computation-the-d2-exponent}
+exponent)}{Worked scaling computation (the d/2 exponent)}}\label{worked-scaling-computation-the-d2-exponent}}
 
 Introduce near-diagonal coordinates \(y=x+\varepsilon v\). Then
 \(\delta^{(d)}(x-y)=\delta^{(d)}(\varepsilon v)=\varepsilon^{-d}\delta^{(d)}(v)\)
@@ -110,12 +115,13 @@ and \(|dy|^{1/2}=\varepsilon^{d/2}|dv|^{1/2}\), so \[
 already present in the identity delta kernel, once kernels are treated
 as half-densities.
 
-\section{\texorpdfstring{3. Delta on the stationary set: \u03b4(\u2207f)
-and determinant
-weights}{3. Delta on the stationary set: 3b4(207f) and determinant weights}}\label{delta-on-the-stationary-set-3b4207f-and-determinant-weights}
+\hypertarget{delta-on-the-stationary-set-ux3b4f-and-determinant-weights}{%
+\section{3. Delta on the stationary set: δ(∇f) and determinant
+weights}\label{delta-on-the-stationary-set-ux3b4f-and-determinant-weights}}
 
-\subsection{\texorpdfstring{3.1 One-dimensional identity
-(\u03b4(f'))}{3.1 One-dimensional identity (3b4(f'))}}\label{one-dimensional-identity-3b4f}
+\hypertarget{one-dimensional-identity-ux3b4f}{%
+\subsection{3.1 One-dimensional identity
+(δ(f'))}\label{one-dimensional-identity-ux3b4f}}
 
 Let \(f:\mathbb R\to\mathbb R\) have finitely many nondegenerate
 critical points \(x_i\) (so \(f'(x_i)=0\), \(f''(x_i)\neq 0\)). Then, as
@@ -124,9 +130,9 @@ distributions, \[
 \] So \(\delta(f')\,dx\) is a density supported at stationary points
 with weights \(1/|f''|\).
 
-\subsection{\texorpdfstring{3.1a \u03b4(f') versus \u03b4': delta of a
-derivative vs derivative of
-delta}{3.1a 3b4(f') versus 3b4': delta of a derivative vs derivative of delta}}\label{a-3b4f-versus-3b4-delta-of-a-derivative-vs-derivative-of-delta}
+\hypertarget{a-ux3b4f-versus-ux3b4-delta-of-a-derivative-vs-derivative-of-delta}{%
+\subsection{3.1a δ(f') versus δ': delta of a derivative vs derivative of
+delta}\label{a-ux3b4f-versus-ux3b4-delta-of-a-derivative-vs-derivative-of-delta}}
 
 The notation \(\delta(f')\) above means: apply the Dirac delta
 distribution \(\delta(\cdot)\) to the \textbf{function} \(f'(x)\),
@@ -138,9 +144,9 @@ confused with \(\delta'\), the \textbf{distributional derivative} of
 functions at a point (``value of the derivative at zero'', up to sign),
 whereas \(\delta(f')\) is a stationary-set localization distribution.
 
-\subsection{\texorpdfstring{3.1b \u03b4' from point splitting
-(difference quotient of shifted
-deltas)}{3.1b 3b4' from point splitting (difference quotient of shifted deltas)}}\label{b-3b4-from-point-splitting-difference-quotient-of-shifted-deltas}
+\hypertarget{b-ux3b4-from-point-splitting-difference-quotient-of-shifted-deltas}{%
+\subsection{3.1b δ' from point splitting (difference quotient of shifted
+deltas)}\label{b-ux3b4-from-point-splitting-difference-quotient-of-shifted-deltas}}
 
 The distribution \(\delta'\) can be realized as a regulated
 point-splitting limit. Let \(\varepsilon\to 0\) and consider the shifted
@@ -157,11 +163,12 @@ This gives a clean dictionary item for ``probing the derivative at a
 point'': \[
 f'(0)=\langle -\delta', f\rangle.
 \] For the parallel smooth-function toy model (``difference quotient as
-divergence + subtraction'') and further remarks, see
-\texttt{blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md}.
+divergence + subtraction'') and further remarks, see the companion
+notes.
 
-\subsection{\texorpdfstring{3.2 Multi-dimensional identity
-(\u03b4(\u2207f))}{3.2 Multi-dimensional identity (3b4(207f))}}\label{multi-dimensional-identity-3b4207f}
+\hypertarget{multi-dimensional-identity-ux3b4f}{%
+\subsection{3.2 Multi-dimensional identity
+(δ(∇f))}\label{multi-dimensional-identity-ux3b4f}}
 
 Let \(f:\mathbb R^n\to\mathbb R\) have finitely many nondegenerate
 critical points \(x_i\) (so \(\nabla f(x_i)=0\) and
@@ -170,8 +177,9 @@ critical points \(x_i\) (so \(\nabla f(x_i)=0\) and
 =\sum_i \frac{\delta^{(n)}(x-x_i)}{|\det(\mathrm{Hess}\,f)(x_i)|}.
 \]
 
+\hypertarget{stationary-phase-and-square-root-weights-amplitudes-vs-densities}{%
 \subsection{3.3 Stationary phase and square-root weights (amplitudes vs
-densities)}\label{stationary-phase-and-square-root-weights-amplitudes-vs-densities}
+densities)}\label{stationary-phase-and-square-root-weights-amplitudes-vs-densities}}
 
 For the oscillatory integral \[
 I(\hbar)=\int_{\mathbb R^n} e^{\frac{i}{\hbar}f(x)}\,a(x)\,dx,\qquad \hbar\to 0^+,
@@ -183,28 +191,28 @@ Squaring amplitude weights produces the density weights in
 the slogan: \textbf{amplitudes are half-densities; probabilities are
 densities.}
 
-\subsection{\texorpdfstring{3.4 Extremals in weak form: where \u03b4 and
-\u03b4' appear in
-Euler\u2013Lagrange}{3.4 Extremals in weak form: where 3b4 and 3b4' appear in Euler013Lagrange}}\label{extremals-in-weak-form-where-3b4-and-3b4-appear-in-euler013lagrange}
+\hypertarget{extremals-in-weak-form-where-ux3b4-and-ux3b4-appear-in-eulerlagrange}{%
+\subsection{3.4 Extremals in weak form: where δ and δ' appear in
+Euler--Lagrange}\label{extremals-in-weak-form-where-ux3b4-and-ux3b4-appear-in-eulerlagrange}}
 
 For an action \(S[q]=\int L(q,\dot q,t)\,dt\), the extremal condition is
 naturally distributional: for test variations \(\eta(t)\) of compact
 support, \[
 \delta S[q;\eta]=\int \Bigl(\frac{\partial L}{\partial q}-\frac{d}{dt}\frac{\partial L}{\partial \dot q}\Bigr)\eta(t)\,dt.
-\] If \(\delta S[q;\eta]=0\) for all \(\eta\), then the
-Euler\u2013Lagrange expression vanishes as a distribution. Approximating
-\(\eta\) by bump functions converging to \(\delta(t-t_\ast)\) localizes
-the equation at \(t_\ast\) under regularity.
+\] If \(\delta S[q;\eta]=0\) for all \(\eta\), then the Euler--Lagrange
+expression vanishes as a distribution. Approximating \(\eta\) by bump
+functions converging to \(\delta(t-t_\ast)\) localizes the equation at
+\(t_\ast\) under regularity.
 
 When \(\partial L/\partial \dot q\) has jumps (corners/impulses), the
 distributional derivative produces delta terms automatically; more
 generally, point-supported singularities are encoded by delta kernels
 and their derivatives (\(\delta,\delta',\ldots\)), depending on
-distributional order. For a short dictionary, see
-\texttt{blackboards/2026-02-10-distribution-theory-for-extremals.md}.
+distributional order.
 
+\hypertarget{delta-at-a-point-point-interactions-as-rank-one-kernels}{%
 \section{4. Delta at a point: point interactions as rank-one
-kernels}\label{delta-at-a-point-point-interactions-as-rank-one-kernels}
+kernels}\label{delta-at-a-point-point-interactions-as-rank-one-kernels}}
 
 A point interaction is naturally the rank-one operator \[
 V=g\,|0\rangle\langle0|.
@@ -214,9 +222,10 @@ bi-half-density distribution supported at \((0,0)\): \[
 \] This is the ``projector-like delta'' object underlying contact
 interactions.
 
+\hypertarget{where-scales-enter-upon-scalarization-and-why-rg-invariants-are-natural-candidates}{%
 \section{5. Where scales enter upon scalarization (and why RG invariants
 are natural
-candidates)}\label{where-scales-enter-upon-scalarization-and-why-rg-invariants-are-natural-candidates}
+candidates)}\label{where-scales-enter-upon-scalarization-and-why-rg-invariants-are-natural-candidates}}
 
 Half-density kernels are canonical; scalar representatives are not.
 Choosing a reference half-density \(\sigma_\ast\) identifies any
@@ -235,7 +244,8 @@ scalarization.
 This note treats that identification as an organizing perspective, not
 as a theorem.
 
-\section{6. Outlook}\label{outlook}
+\hypertarget{outlook}{%
+\section{6. Outlook}\label{outlook}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}

@@ -1,7 +1,7 @@
 ---
 title: "Delta Objects as Half-Density Kernels: Identity, Stationary-Set Concentration, and Point Interactions"
-author: []
-date: ""
+author: "Alejandro Rivero"
+date: "2026"
 abstract: |
   Three seemingly different uses of the Dirac delta share one geometric meaning when amplitudes are treated as **half-densities**:
   1. the delta as the Schwartz kernel of the identity operator,
@@ -11,7 +11,7 @@ abstract: |
   In each case, the amplitude-level object carries **square-root Jacobian** weights (half-density weights), while the corresponding “probability”/density-level object carries the unsquared Jacobians. This note collects the finite-dimensional identities and scaling computations that make this pattern explicit, and isolates where a physical length scale may enter when one insists on scalar representatives.
 ---
 
-This note is a companion to `paper/main.md`. Statements are kept finite-dimensional unless explicitly labeled heuristic.
+This note is a companion to the cornerstone manuscript. Statements are kept finite-dimensional unless explicitly labeled heuristic.
 
 # 1. Half-densities and kernels (coordinate free)
 Let \(M\) be a \(d\)-dimensional manifold and \(|\Omega|^{1/2}\) the half-density bundle.
@@ -41,15 +41,15 @@ Introduce near-diagonal coordinates \(y=x+\varepsilon v\). Then \(\delta^{(d)}(x
 \]
 Thus the universal \(\varepsilon^{-d/2}\) normalization exponent is already present in the identity delta kernel, once kernels are treated as half-densities.
 
-# 3. Delta on the stationary set: \u03b4(\u2207f) and determinant weights
-## 3.1 One-dimensional identity (\u03b4(f'))
+# 3. Delta on the stationary set: δ(∇f) and determinant weights
+## 3.1 One-dimensional identity (δ(f'))
 Let \(f:\mathbb R\to\mathbb R\) have finitely many nondegenerate critical points \(x_i\) (so \(f'(x_i)=0\), \(f''(x_i)\neq 0\)). Then, as distributions,
 \[
 \delta(f'(x))=\sum_i \frac{\delta(x-x_i)}{|f''(x_i)|}.
 \]
 So \(\delta(f')\,dx\) is a density supported at stationary points with weights \(1/|f''|\).
 
-## 3.1a \u03b4(f') versus \u03b4': delta of a derivative vs derivative of delta
+## 3.1a δ(f') versus δ': delta of a derivative vs derivative of delta
 The notation \(\delta(f')\) above means: apply the Dirac delta distribution \(\delta(\cdot)\) to the **function** \(f'(x)\), thereby localizing to the stationary set \(f'(x)=0\).
 It should not be confused with \(\delta'\), the **distributional derivative** of \(\delta\), defined by duality:
 \[
@@ -57,7 +57,7 @@ It should not be confused with \(\delta'\), the **distributional derivative** of
 \]
 So \(\delta'\) is the distribution that probes derivatives of test functions at a point (“value of the derivative at zero”, up to sign), whereas \(\delta(f')\) is a stationary-set localization distribution.
 
-## 3.1b \u03b4' from point splitting (difference quotient of shifted deltas)
+## 3.1b δ' from point splitting (difference quotient of shifted deltas)
 The distribution \(\delta'\) can be realized as a regulated point-splitting limit. Let \(\varepsilon\to 0\) and consider the shifted delta \(\delta(x+\varepsilon)\). For any test function \(\varphi\),
 \[
 \left\langle \frac{\delta(\,\cdot+\varepsilon)-\delta}{\varepsilon},\varphi\right\rangle
@@ -74,9 +74,9 @@ This gives a clean dictionary item for “probing the derivative at a point”:
 \[
 f'(0)=\langle -\delta', f\rangle.
 \]
-For the parallel smooth-function toy model (“difference quotient as divergence + subtraction”) and further remarks, see `blackboards/2026-02-10-difference-quotients-counterterms-and-delta-prime.md`.
+For the parallel smooth-function toy model ("difference quotient as divergence + subtraction") and further remarks, see the companion notes.
 
-## 3.2 Multi-dimensional identity (\u03b4(\u2207f))
+## 3.2 Multi-dimensional identity (δ(∇f))
 Let \(f:\mathbb R^n\to\mathbb R\) have finitely many nondegenerate critical points \(x_i\) (so \(\nabla f(x_i)=0\) and \(\det(\mathrm{Hess}\,f)(x_i)\neq 0\)). Then
 \[
 \delta^{(n)}(\nabla f(x))
@@ -95,15 +95,15 @@ stationary phase gives amplitude contributions weighted by
 up to a universal \(\hbar\)-dependent factor and a signature phase. Squaring amplitude weights produces the density weights in \(\delta^{(n)}(\nabla f)\). This is the finite-dimensional prototype of the slogan:
 **amplitudes are half-densities; probabilities are densities.**
 
-## 3.4 Extremals in weak form: where \u03b4 and \u03b4' appear in Euler\u2013Lagrange
+## 3.4 Extremals in weak form: where δ and δ' appear in Euler–Lagrange
 For an action \(S[q]=\int L(q,\dot q,t)\,dt\), the extremal condition is naturally distributional:
 for test variations \(\eta(t)\) of compact support,
 \[
 \delta S[q;\eta]=\int \Bigl(\frac{\partial L}{\partial q}-\frac{d}{dt}\frac{\partial L}{\partial \dot q}\Bigr)\eta(t)\,dt.
 \]
-If \(\delta S[q;\eta]=0\) for all \(\eta\), then the Euler\u2013Lagrange expression vanishes as a distribution. Approximating \(\eta\) by bump functions converging to \(\delta(t-t_\ast)\) localizes the equation at \(t_\ast\) under regularity.
+If \(\delta S[q;\eta]=0\) for all \(\eta\), then the Euler–Lagrange expression vanishes as a distribution. Approximating \(\eta\) by bump functions converging to \(\delta(t-t_\ast)\) localizes the equation at \(t_\ast\) under regularity.
 
-When \(\partial L/\partial \dot q\) has jumps (corners/impulses), the distributional derivative produces delta terms automatically; more generally, point-supported singularities are encoded by delta kernels and their derivatives (\(\delta,\delta',\ldots\)), depending on distributional order. For a short dictionary, see `blackboards/2026-02-10-distribution-theory-for-extremals.md`.
+When \(\partial L/\partial \dot q\) has jumps (corners/impulses), the distributional derivative produces delta terms automatically; more generally, point-supported singularities are encoded by delta kernels and their derivatives (\(\delta,\delta',\ldots\)), depending on distributional order.
 
 # 4. Delta at a point: point interactions as rank-one kernels
 A point interaction is naturally the rank-one operator
