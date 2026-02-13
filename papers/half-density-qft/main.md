@@ -187,6 +187,9 @@ At coincidence (\(s=0\), \(\Delta=1\)), the leading behavior \(\widetilde K(t;x,
 \]
 where the \(\sqrt{|g|}\) factor of the standard trace formula has been absorbed into the definition of \(\widetilde K\). For the massless operator \(P=-\nabla^2+\xi R\), the first Seeley-DeWitt coefficients at coincidence are \(a_1(x,x)=(1/6-\xi)R\) and \(a_2(x,x)\) is a linear combination of \(R^2\), \(R_{\mu\nu}R^{\mu\nu}\), \(\Box R\); these encode the curvature counterterms that appear in Section 5's contact-term analysis.
 
+`Remark HD-D4.2a (Trace anomaly and the index theorem from \(a_{D/2}\)).`
+In even dimension \(D=2n\), the coefficient \(a_n(x,x)\) is a local curvature polynomial of mass dimension \(D\), and its integral \(\int_M a_n\,d^Dx\) is scheme-independent. Two fundamental results follow: the conformal trace anomaly \(\langle T^\mu{}_\mu\rangle\propto a_{D/2}(x,x)\) for quantum fields on curved backgrounds [Vassilevich2003], and the Atiyah-Singer index theorem, where the index of a Dirac-type operator equals \(\int_M a_{D/2}\,d^Dx\) (up to normalization) via the McKean-Singer supertrace formula. In the half-density framework, both calculations are manifestly coordinate-free: the intrinsic trace of Remark HD-D4.2 absorbs the metric factor, and the topological content resides entirely in the Seeley-DeWitt coefficients — geometric invariants of \(P\), not of the coordinate choice.
+
 `Remark HD-D4.4 (Van Vleck determinant as the geometric half-density factor).`
 The Van Vleck determinant \(\Delta(x,y)\) appearing in Remark HD-D4.2 satisfies the transport equation [DeWitt1965]
 \[

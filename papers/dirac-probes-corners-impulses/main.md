@@ -204,6 +204,9 @@ The preceding sections involve two related but *logically distinct* mathematical
 
 Using mollifier sequences \(\rho_\varepsilon\to\delta\) as *test functions* against a continuous integrand is always safe — it is standard distribution theory. This is Theorem 2.1. No renormalization or regularization ambiguity arises; the \(\varepsilon\to0\) limit is unique and controlled by continuity.
 
+`Remark 5.1a (Universality of mollifier convergence — the functional-analytic root of "safe").`
+The limit \(\int F[q](t)\,\rho_\varepsilon(t-t_0)\,dt\to F[q](t_0)\) holds for *every* mollifier kernel \(\rho\in C_c^\infty\) with \(\int\rho=1\), because the integrand is continuous at \(t_0\). This universality is the mathematical content of "safe": the result is independent of the regularization kernel. By contrast, the diagonal Green function \(G_0(0,0;E)\) of Section 5.2 evaluates a *singular* kernel at coincidence — the result depends on the UV cutoff \(\Lambda\), and physical predictions require a renormalization condition to fix the scheme dependence. The safe/unsafe classification of this section thus reduces to a single functional-analytic test: is the functional being evaluated continuous at the relevant point?
+
 ## 5.2 Delta potentials (require renormalization)
 
 A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different object [AlbeverioGesztesyHoeghKrohnHolden2005]. In dimensions \(d\ge2\), the naive coupling constant \(g\) requires renormalization (the resolvent acquires a logarithmic or power-law divergence depending on \(d\)) [Jackiw1991DeltaPotentials]. In \(d=1\) the delta potential is well-defined without renormalization, but this is an accident of low dimension, not a general principle. The companion note on delta objects treats the half-density kernel structure of point interactions in detail.
@@ -224,11 +227,15 @@ The connection is made explicit by the Laplace representation: \(G_0(0,0;E)\prop
 | \(\delta\) potential, \(d\ge 2\) | Requires care | Yes |
 | Products \(\delta(t)^2\) | Undefined | Always |
 
+`Remark 5.3a (Why \(\delta^2\) is undefined — the Schwartz impossibility).`
+A classical theorem of Schwartz (1954) shows that no associative algebra containing the distributions \(\mathcal{D}'(\mathbb{R})\) can extend the pointwise multiplication of continuous functions — in particular, \(\delta(t)^2\) has no distributional meaning. This is the mathematical obstruction behind perturbative UV divergences in QFT: loop integrals involve products of propagators \(G(x,y)^2\) at coincident points, and the diagonal singularity \(G(x,x)\sim t^{-d/2}\) (Remark 5.2b) makes the product undefined in exactly the Schwartz sense. The table's hierarchy is thus: rows 1–2 involve no products (safe); rows 3–4 involve a single diagonal evaluation (manageable via self-adjoint extensions, Section 5.2); row 5 involves genuine products of singular distributions, requiring the full machinery of renormalization theory.
+
 # 6. Outlook
 
 1. The stochastic-forcing interpretation of Section 4.5's \(N\)-impulse model — random impulses with prescribed statistics — remains open as a bridge to stochastic mechanics.
 2. Treat the piecewise-smooth trajectory as a weak solution and examine whether the Hamilton–Jacobi equation acquires viscosity-solution structure at the kink.
 3. Connect the corner-condition analysis to broken geodesics in Riemannian geometry (Synge's world function approach).
+4. The impulse-work formula \(J\cdot\bar{v}\) of Remark 3.2a uses the midpoint velocity \(\bar{v}=(v_++v_-)/2\). In stochastic calculus, the midpoint (Stratonovich) convention arises from the symmetric limit of discrete approximations, while the pre-point (Itô) convention would give \(\Delta H=J\cdot v_-\). The variational principle selects the Stratonovich result; the distinction becomes physical for the random-impulse model of item 1, where the Itô correction is non-vanishing.
 
 # References
 
