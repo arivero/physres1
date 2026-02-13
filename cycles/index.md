@@ -152,6 +152,7 @@
 148. `C148` Completed.
 149. `C149` Completed.
 150. `C150` Completed.
+151. `C151` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -286,6 +287,7 @@
 - `S107` Completed.
 - `S108` Completed.
 - `S109` Completed.
+- `S110` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -430,15 +432,15 @@
 Cornerstone at ~1475 lines.
 
 Recent completed:
-1. Q102: referee pass on S109+C150 additions — both CLEAN.
-2. S109: 2D delta potential Example 5.1 in fermionic mediators satellite (+9 lines, 112→121).
-3. C150: α-ordering Example 3.1 in uncuttable satellite (+7 lines, 96→103).
-4. S108: circular uncertainty relation Prop 4.2 in action-angle satellite (+7 lines, 87→94).
-5. S107+C149: cubic Moyal bracket witness D5.1b in Section 7.3 (+7 lines). Gap 3 filled.
+1. S110+C151: Itô vs Stratonovich Remark 3.2 in uncuttable satellite (+9 lines, 103→112).
+2. Q102: referee pass on S109+C150 additions — both CLEAN.
+3. S109: 2D delta potential Example 5.1 in fermionic mediators satellite (+9 lines, 112→121).
+4. C150: α-ordering Example 3.1 in uncuttable satellite (+7 lines, 96→103).
+5. S108: circular uncertainty relation Prop 4.2 in action-angle satellite (+7 lines, 87→94).
 
 Next:
 - Content gaps: Gap 2 (stationary phase numerical verification, medium), Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (fermionic mediators now 121, action-angle 96, uncuttable 103).
+- Expand shorter satellites (fermionic mediators now 121, uncuttable 112, action-angle 96).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

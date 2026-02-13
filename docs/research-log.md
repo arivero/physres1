@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S110+C151: Itô vs Stratonovich in uncuttable satellite)
+- Focus: expand uncuttable satellite (103 lines) with a stochastic calculus witness of refinement non-uniqueness.
+- Work: blackboard explored Itô vs Stratonovich integral difference; correction ½∫f'dt arises from non-zero quadratic variation. Subagent (probability theorist) found no critical errors; suggested "bounded variation" instead of "smooth" for precision. Promoted Remark 3.2 after Example 3.1.
+- Result: satellite 103→112 lines (+9 net). Reference [Oksendal2003] added.
+
 ## 2026-02-13 (Q102: referee pass on S109 + C150 additions)
 - Focus: verify recent satellite additions (Example 5.1 in fermionic mediators, Example 3.1 in uncuttable).
 - Work: two parallel subagent reviews. Skeptical referee flagged 4 "critical" sign errors in Example 5.1 — all false positives (subagent algebra error). Cross-checked against cornerstone D11.2 (Section 10.5): β(g_R) = +(m/πℏ²)g_R² confirmed correct. Rigorous mathematician found uncuttable Example 3.1 CLEAN.
