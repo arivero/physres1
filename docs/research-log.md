@@ -18,6 +18,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-14 (S266: Section 2 remark candidates)
+- Focus: investigate whether Section 2 (general-q kinematic setup) deserves a structural remark.
+- Work: evaluated three candidates — (1) general-q velocity v=(K/L)r^{2-q} mass-dependence, (2) general-q circular-orbit energy E_circ=γmc²(1-v²/((q-1)c²)), (3) algebraic vs transcendental orbit condition at q=2 vs q≠2. All three overlap existing remarks (Remark 3.1 covers Q1 and Q3; Section 3.1 covers Q2) or add no new physics.
+- Result: **NOT PROMOTE**. Section 2 correctly remains remark-free — it is pure setup; all structural observations are captured downstream in Sections 3 and 5.
+
 ## 2026-02-13 (Q168: referee review of C284 — relativistic Remarks 3.1b, 3.2a, Example 5.2b fix)
 - Focus: referee-style quality review of C284 (3 changes in relativistic-central-orbits paper).
 - Work:
@@ -407,3 +412,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   3. Role 4 (Sommerfeld) is a consequence of Role 3.
 - Red-team: strongest attack is that the "single structural root" claim is incorrect — there are two independent mechanisms whose outputs coincide in SR. Revised phrasing distinguishes these carefully.
 - Verdict: NO standalone consolidation remark (would be the fourth time saying q=2 is special; existing remarks cover the content). A 1-sentence Outlook addition noting the coincidence is deferred to a future C cycle that touches the Outlook.
+
+## 2026-02-14 (S267: SR epicyclic frequency for general q)
+- Focus: compute the radial oscillation frequency ratio omega_r/omega_phi for SR circular orbits under a general power-law force F=K/r^q.
+- Work: derived omega_r^2/omega_phi^2 = 3-q-v^2/c^2 from the Hamiltonian framework. Key steps: (1) effective radial mass is gamma*m (from d^2H/dp_r^2 at p_r=0), NOT gamma^3*m; (2) the SR correction to the Newtonian epicyclic ratio 3-q is a universal subtraction of beta^2, independent of q. Cross-checks: Newtonian limit recovers 3-q; q=2 gives 1/gamma^2 = omega^2 matching Remark 3.2; positivity reproduces the stability criterion of Section 5.2; GR comparison shows SR part is 1/6 of total Schwarzschild correction (consistent with Remark 3.2). The formula unifies stability (positivity), precession (q=2 specialization), and the duality of Remark 5.2c (special case).
+- Result: **PROMOTE** as Remark 5.2d (5 lines, after Remark 5.2c). The general-q epicyclic ratio formula is compact, non-trivially new, and subsumes Remark 5.2c as a special case.
+
+## 2026-02-14 (S268: E=mc^2 omega energy-precession identity revisit)
+- Focus: revisit S260 deferred finding (E_circ = mc^2 omega at q=2 circular orbits) to determine if it clears the promotion bar as a remark distinct from Remark 5.2c.
+- Work: analyzed overlap with existing content via two independent routes: (1) W_min = mc^2 sqrt(1-K^2/(c^2 L^2)) [Section 3.1] and omega^2 = 1-K^2/(c^2 L^2) [Remark 3.2] are 12 lines apart, making W_min = mc^2 omega visible by inspection; (2) gamma^2 omega^2 = 1 [Remark 5.2c] plus standard E = mc^2/gamma gives E = mc^2 omega in one step. Physical interpretation (omega as binding fraction) already conveyed by W_min formula. Forward-reference problem: E = mc^2/gamma requires virial relation from Section 5, so placement in Section 3 is awkward. No clean GR analogue exists (S260 confirmed).
+- Result: **NOT PROMOTE.** The identity is correct and elegant but fully derivable in one step from existing adjacent text. Remark 5.2c's structural content subsumes it. S260 deferral resolved and closed. Minor parenthetical "(so that W_min = mc^2 omega)" noted as a possible future C-cycle editorial annotation if Section 3.1 is revisited.
