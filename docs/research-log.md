@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q86+Q87: Tier 3 referee passes)
+- Focus: assess both Tier 3 papers.
+- Work: Q86 on action-angle-indeterminacy (near Tier 1, needs metadata + refs). Q87 on uncuttable-controlled-refinement (needs paths, bibliography, possibly content).
+- Result: action-angle can be promoted quickly; uncuttable needs more work.
+- Next: C131 + B20 for action-angle; C132 + B21 for uncuttable.
+
 ## 2026-02-13 (C130: fermionic-mediators promoted to Tier 1)
 - Focus: fix Q85 issues — repo language, YAML metadata.
 - Work: 3 repo references replaced with generic phrasing. Metadata filled. PDF rebuilt (4 pages).

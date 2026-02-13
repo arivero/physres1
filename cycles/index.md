@@ -329,6 +329,8 @@
 - `Q83` Completed.
 - `Q84` Completed.
 - `Q85` Completed.
+- `Q86` Completed.
+- `Q87` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -360,10 +362,10 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-All Tier 2 papers cleared. 6 papers at Tier 1.
-1. C130 done: fermionic-mediators promoted to Tier 1. Tier 2 empty.
-2. Tier 3: action-angle-indeterminacy (73 lines, needs expansion), uncuttable-controlled-refinement (53 lines, needs content).
-3. Cornerstone: paper/main.md (Q73 clean, ~2200 lines). Submit last.
+Tier 3 assessment complete.
+1. Q86: action-angle-indeterminacy — near Tier 1, needs metadata + 1-2 refs.
+2. Q87: uncuttable-controlled-refinement — needs paths fix, bibliography, possibly content expansion.
+3. Next: C131 (metadata for action-angle), B20 (bibliography for both Tier 3 papers), then fix uncuttable paths.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
