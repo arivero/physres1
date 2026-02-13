@@ -18,6 +18,17 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S242–S245+C277–C279+Q161–Q163: dirac-probes + relativistic expanded)
+- Focus: targeted expansion of dirac-probes and relativistic papers.
+- Work:
+  - S242+C277: dirac-probes Remark 2.2a (du Bois-Reymond regularity chain: a.e.→pointwise→smooth) (+3, 247→250).
+  - S243+C278: dirac-probes Remark 4.5c (Trotter product formula as operator-theoretic backbone) (+3, 250→253).
+  - S244+C279: relativistic Remark 3.1 (dimensional origin of v=K/L — q=2 unique) (+3, 262→265).
+  - S245: Casimir/zeta for HD-QFT — decided NOT to promote (already covered in fermionic Remark 5.7 and uncuttable Remark 2.7).
+  - Q161–Q163: pending (reviewing C277, C278, C279).
+- Result: dirac 253 lines (5pp), relativistic 265 (5pp), HD-QFT 265 (5pp).
+- Next: Q results; commit batch; continue expansion.
+
 ## 2026-02-13 (S233–S241+C268–C276+Q152–Q160: three PLB satellites expanded)
 - Focus: continued PLB expansion across HD-QFT, relativistic, dirac-probes.
 - Work:
