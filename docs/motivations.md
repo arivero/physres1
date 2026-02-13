@@ -73,29 +73,50 @@ Can the Refinement Compatibility Principle be stated as a small set of
 commuting-diagram axioms that *derive* quantum mechanics (path integral,
 deformation quantization) as consequences? The main paper has the narrative
 but not the formal axioms.
-**Status**: conceptual (main paper Section 10). Needs formalization.
+**Status**: S211 analysis — P10.1's three conditions (partition,
+representation, scale) form a clean hierarchy: C alone → classical
+mechanics, C+Q → quantum mechanics, C+Q+R → QFT. Each condition is
+logically independent (counterexamples sketched). However, P10.1 is a
+classification (organizing existing physics), not a derivation (the
+composition law and exponential form are assumed, not proved unique).
+Closing the formalization gap requires axiomatizing "amplitude" and
+proving uniqueness theorems — a multi-year research program beyond
+the scope of these papers. Current §10.3 P10.1 + D10.1a is the best
+available semi-formal statement.
 
 ### 3. Does the contact-expansion universality produce new constraints?
 The fermionic paper shows that different UV completions give the same contact
 data C₀. Does this universality, combined with RCP, constrain the space of
 consistent low-energy theories beyond what standard EFT already says?
-**Status**: open. The fermionic paper states the universality but doesn't
-extract novel constraints.
+**Status**: S207 analysis — RCP reframes contact universality as
+composition-law consistency (conceptual gain, Level 1). Two potential
+sources of new constraints remain open: (a) half-density curvature
+corrections to contact operators in d=4 (Level 2); (b) positivity bounds
+on C₂n from composition unitarity (Level 3, speculative).
 
 ### 4. Is there a non-perturbative analog of the contact expansion?
 The contact expansion C₀ + C₂q² + ... is perturbative in q/M. Resurgence
 (uncuttable paper Remark 2.8) suggests that the non-perturbative content
 (bound states, instantons) should be recoverable from the perturbative
 coefficients. Is there a concrete worked example connecting the two?
-**Status**: the uncuttable paper discusses resurgence abstractly. Needs a
-concrete model computation.
+**Status**: S208 analysis — Padé [0/1] of the contact expansion exactly
+recovers the Yukawa mediator pole from two Wilson coefficients (C₀, C₂),
+a concrete "non-perturbative from perturbative" worked example. Loop-level
+extension (Borel–Padé recovery of vacuum-polarization pair-production
+threshold from Taylor coefficients) is structural but unworked.
 
 ### 5. What is the "uncuttable" content of anomalies?
 Anomalies are topological constraints on the refinement limit (uncuttable
 Remark 4.5). How does the RCP framing add to the standard anomaly-matching
 story? Is there a refinement-compatibility characterization that's cleaner
 than the standard one?
-**Status**: open. The anomaly matching is stated but not reframed via RCP.
+**Status**: S210 analysis — RCP reframes anomalies as composition-law
+defects (failure of a symmetry to commute with the sewing operation on
+propagators). The half-density measure's Jacobian under chiral rotations
+IS the anomaly (Fujikawa in geometric dress). Three-level verdict:
+(1) conceptual reframing YES, (2) geometric localization PARTIAL,
+(3) new constraints NO. Standard anomaly matching is already complete.
+No promotion recommended.
 
 ## Satellite Paper Status and Aims
 

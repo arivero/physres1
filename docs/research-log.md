@@ -18,6 +18,31 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S210–S212+C248+Q132–Q134: open questions 2+5 analyzed, delta-objects expanded)
+- Focus: analyze remaining open questions; targeted delta-objects expansion.
+- Work:
+  - S210: open Q#5 (anomalies + RCP) — reframes anomalies as composition-law defects (half-density Jacobian = Fujikawa). Conceptual gain only, no new constraints.
+  - S211: open Q#2 (minimal RCP axioms) — formalization gap identified. P10.1 is a classification, not a derivation. Closing the gap requires multi-year research program.
+  - Q132: referee review of C246 (dirac Remark 2.3) — PASS.
+  - Q133: referee review of C247 (delta Remark 4.3) — CONDITIONAL PASS. Fix applied: (2π)^{-d/2} → proportionality sign.
+  - S212+C248: d/2 unifying thread → Remark 5.1 in delta-objects. Connects identity kernel, heat kernel convergence, and Sobolev embedding via the half-density exponent (+3 lines, now 194).
+- Result: all 5 open questions now analyzed. delta-objects 194 lines (4pp). Cumulative batch diffstat: +12 -3 across 3 manuscripts.
+- Sources touched: none new.
+- Next: Q134 on C248; further PLB expansion; commit batch.
+
+## 2026-02-13 (S206–S209+C246–C247+Q131: three satellites expanded, two open questions analyzed)
+- Focus: expand PLB-length satellites; analyze open questions #3 and #4.
+- Work:
+  - S204+C244: V=(1/6)R Remark D4.3 in HD-QFT (+8 lines, now 234). Q130 referee: PASS.
+  - S205+C245: SR orbit precession Remark 3.2 in relativistic orbits (+6 lines, now 233). Q131 referee: CONDITIONAL PASS. 3 fixes applied (citation scope, ω=1/γ language, post-Newtonian framing).
+  - S206+C246: mollifier–polygon refinement parallel → Remark 2.3 in dirac-probes (+3 lines, now 199).
+  - S207: open Q#3 (RCP + contact universality) — three-level analysis. Primarily conceptual gain; two open calculation avenues.
+  - S208: open Q#4 (non-perturbative contact expansion) — Padé [0/1] recovers Yukawa pole exactly from C₀, C₂. Loop-level extension via dispersion relations.
+  - S209+C247: heat kernel exponent → extension classification → Remark 4.3 in delta-objects (+3 lines, now 191).
+- Result: all 4 PLB satellites expanded; 2 of 5 open questions partially resolved. Cumulative diffstat: +9 -3 across 3 manuscripts.
+- Sources touched: none new.
+- Next: Q cycles on C246+C247; open questions 2, 5; more satellite expansion.
+
 ## 2026-02-13 (S203+C243+Q129: self-adjoint extensions in delta-objects + infrastructure cleanup)
 - Focus: promote self-adjoint extensions remark; archive cleanup; foundational goals.
 - Work:
@@ -75,11 +100,6 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: expand fermionic Section 2 (crossing symmetry) and Section 6 (Hubbard-Stratonovich). Q123 review of C227-C228.
 - Work: S188 studied crossing symmetry. S-matrix theorist reviewer caught (1) Mandelstam analyticity assumptions not stated (HIGH), (2) crossing for fermions has spinor signs (MEDIUM), (3) t-channel obstruction conflates two issues (MEDIUM), (4) Froissart-Martin bound imprecise (MEDIUM). All corrections applied. Promoted as Remark 2.2: Mandelstam analyticity as assumption, Grassmann obstruction orthogonal to channel kinematics, fermion crossing has spinor structure. S189 studied Hubbard-Stratonovich transformation. Many-body theorist reviewer caught (1) fermion determinant needs trace-log (HIGH), (2) missing channel decomposition/Fierz caveat (HIGH), (3) RG inheritance imprecise — should be matching (MEDIUM). All corrections applied. Promoted as Remark 6.5: Gaussian identity → trace-log effective action, BCS gap parameter, NJL chiral symmetry breaking, Fierz channel decomposition caveat, large-N_f control. 2 new bib entries: Hubbard1959, NambuJonaLasinio1961. Q123 reviewed C227-C228: 2/2 PASS.
 - Result: fermionic 218→226 (+8, 17pp). Action-angle 221 (17pp). Uncuttable 218 (17pp). All three now 218+ lines.
-
-## 2026-02-13 (S204+C244+Q130+S205+C245: Half-density D=4 matching + SR orbit precession)
-- Focus: open question #1 (half-density d=4 selection) and relativistic orbits expansion.
-- Work: S204 derived V(p) = (1/6)R from normal-coordinate expansion of half-density conjugation potential — dimension-independent. Since ξ_conf = (D−2)/(4(D−1)) = 1/6 iff D=4, this gives a general-metric D=4 matching. SymPy verified. Pure mathematician reviewer confirmed correctness, suggested softening "selection" to "matching" and clarifying ω–σ notation. C244 promoted as Remark HD-D1.3b; updated HD-D1.3a transition. Q130 CONDITIONAL PASS → PASS after notation clarification. S205 derived SR orbit precession: Binet equation with ω² = 1 − K²/(c²L²), precessing ellipse solution, Δφ_SR = πGM/(c²a(1−e²)) = (1/6)Δφ_GR. Beautiful insight: ω = 1/γ_circ. Intuitive physicist reviewer confirmed correctness, flagged missing derivation sketch (resolved by citing BoscagginDambrosioFeltrin2020). C245 promoted as Remark 3.2 in relativistic orbits.
-- Result: HD-QFT 227→234 (+7, 4pp). Relativistic orbits 218→233 (+15, 4pp). Open question #1 status updated in motivations.md. Lp-vs-ℏ sub-question added.
 
 ## 2026-02-13 (S186+C227+S187+C228: Selection rules + QND measurement in action-angle)
 - Focus: expand action-angle Section 3 (selection rules) and Section 5 (QND measurement). Fix finish_manuscripts.sh.

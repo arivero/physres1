@@ -146,10 +146,10 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PLB format).
 
 **PLB-length satellites (≤6pp compiled):**
-1. Half-Density QFT (4pp, 226 lines, 7 refs) — C242: heat kernel remark added
-2. Delta Objects (4pp, 178 lines, 5 refs)
-3. Dirac Probes / Corners / Impulses (4pp, 196 lines, 3 refs)
-4. Relativistic Central Orbits (4pp, 218 lines, 2 refs)
+1. Half-Density QFT (4pp, 234 lines, 7 refs) — C244: V=(1/6)R remark
+2. Delta Objects (4pp, 194 lines, 6 refs) — C248: d/2 unifying thread
+3. Dirac Probes / Corners / Impulses (4pp, 199 lines, 6 refs) — C246: mollifier-polygon parallel
+4. Relativistic Central Orbits (4pp, 233 lines, 2 refs) — C245: SR precession
 
 **PRD-length satellites (>6pp compiled):**
 5. RG Fundamental (9pp, 596 lines, 8 refs)

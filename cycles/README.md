@@ -100,9 +100,12 @@ Use when `Q` identifies a missing derivation, an unclear claim boundary, or a we
 `B → S → C → Q`
 Use when a claim is known to be standard but needs both an anchor and a local reproduction.
 
-### Recipe D (divergent exploration)
+### Recipe D (divergent exploration — dormant)
 `DX → (S) → D-triage → ...`
-Use periodically (at least once every ~10 cycles) to check for surprises, cross-thread connections, and framing drift. DX does not directly spawn C cycles; it feeds back into D-triage or S.
+Historically used for surprise inventory and cross-thread probes (D00–D15,
+DX01–DX10). Now superseded by the `SERENDIPITY:` tag convention: any cycle
+can flag unexpected findings inline. Use Recipe D only if a deliberate
+structural audit is needed (e.g., after major refactoring).
 
 ### Recipe E (publication pipeline)
 `C → Q → P`
@@ -118,7 +121,23 @@ Use this rule of thumb:
 - If the task is "referee review of a manuscript change": spawn `Q` (and name the parent `C`).
 - If the task is "submit a finished paper to a preprint server": spawn `P` (requires a recent `Q` pass).
 
-**Exploration cadence rule:** run a `DX` (explore) cycle at least once every ~10 cycles, or after completing any full Recipe A chain. This prevents the system from grinding forward without questioning its framing.
+**Serendipity awareness:** stay alert for unexpected findings during any cycle.
+Flag them with `SERENDIPITY:` in the execution log. If a deliberate structural
+audit seems warranted (e.g., after major refactoring), use Recipe D.
+
+## Serendipity Tags
+Any cycle (S, C, Q, B) can flag an unexpected finding in its execution log
+with a `SERENDIPITY:` tag. Format:
+
+```
+SERENDIPITY: <one-line description of the unexpected finding>
+```
+
+This replaces the earlier practice of scheduling dedicated D/DX cycles for
+surprise discovery. Real surprises emerge mid-work (e.g., S204 found
+V=(1/6)R matching conformal coupling iff D=4; S208 found Padé recovering
+Yukawa exactly). The tag lets `cycles/index.md` pick up serendipitous
+findings during routine updates without a dedicated discovery track.
 
 ## File Convention (per cycle)
 Each cycle uses four files:

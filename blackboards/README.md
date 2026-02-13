@@ -36,10 +36,10 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Half-density conjugation V=(1/6)R, D=4 selection (HD-QFT §3) | Active (S204) |
+| 0 | Minimal RCP axiom set analysis (open Q#2) | Active (S211) |
 | 1 | Self-adjoint extensions / point interactions (delta §4) | Active |
 | 2 | SR orbit precession / 1/6 GR ratio | Active (S205) |
-| 3 | Padé approximants / Borel resummation | Promoted (C177) |
-| 4 | Adiabatic limit / Berry phase | Promoted (C170) |
-| 5 | Rooted trees research direction | Active (future satellite D) |
-| 6 | Squeezed states / action-angle asymmetry | Promoted (C171) |
+| 3 | Mollifier–polygon refinement parallel | Active (S206) |
+| 4 | RCP + contact universality constraints | Active (S207) |
+| 5 | Anomalies as half-density composition defects (open Q#5) | Active (S210) |
+| 6 | Non-perturbative contact expansion (Padé) | Active (S208) |

@@ -10,15 +10,15 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 245 | C00–C245 |
+| Content (`Cnn`) | 248 | C00–C248 |
 | Bibliography (`Bnn`) | 25 | B00–B24 |
-| Study (`Snn`) | 206 | S00–S205 |
-| Quality (`Qnn`) | 121 | Q00–Q130 (gaps: Q110–Q111) |
+| Study (`Snn`) | 212 | S00–S211 |
+| Quality (`Qnn`) | 135 | Q00–Q134 (gaps: Q110–Q111) |
 | Discovery triage (`Dnn`) | 16 | D00–D15 |
 | Discovery explore (`DXnn`) | 10 | DX01–DX10 |
 | Publication (`Pnn`) | 1 | P00 (Planck Area → clawXiv v2) |
 
-**Total archived: ~2400 cycle files (4 files each × ~600 cycles).**
+**Total archived: ~2400+ cycle files.**
 
 ## Active / In Progress
 
@@ -27,20 +27,22 @@
 ## Next Action
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
-- PLB-length (≤6pp): HD-QFT 4pp (234 lines), delta 4pp (188), dirac 4pp (196), relativistic 4pp (233).
+- PLB-length (≤6pp): HD-QFT 4pp (234 lines), delta 4pp (194), dirac 4pp (199), relativistic 4pp (233).
 - PRD-length (>6pp): action-angle 13pp, fermionic 13pp, uncuttable 13pp, rg-fund 9pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
 
 **Recent completed:**
-- S204+C244+Q130: V=(1/6)R general-metric matching → Remark HD-D1.3b in HD-QFT (+7 lines).
-  Open question #1 partially addressed: D=4 matching is general-metric, not conformal-class-specific.
-- S205+C245: SR orbit precession → Remark 3.2 in relativistic orbits (+15 lines).
-  Precession = (1/6)×GR, ω = 1/γ_circ.
+- S212+C248: d/2 unifying thread → Remark 5.1 in delta-objects (+3 lines, 194).
+- S210: open Q#5 (anomalies + RCP) — conceptual reframing only, no new constraints.
+- S211: open Q#2 (minimal RCP axioms) — formalization gap identified, multi-year program.
+- Q132: referee review of C246 — PASS. Q133: review of C247 — CONDITIONAL PASS (prefactor fix applied).
+- S209+C247: heat kernel exponent → Remark 4.3 in delta-objects.
+- S206+C246: mollifier–polygon → Remark 2.3 in dirac-probes.
 
 **Immediate:**
-- Q cycle on C245 (relativistic orbits Remark 3.2).
-- Below PLB limit, room for expansion: delta (4pp, 188), dirac (4pp, 196).
-- Open questions 2–5 from `docs/motivations.md`.
+- All 5 open questions from `docs/motivations.md` now analyzed (Q1-Q4 partially resolved, Q5 reframed).
+- Q cycle on C248 (delta-objects Remark 5.1).
+- Room for further PLB expansion: delta (194), dirac (199).
 
 **Standing priorities:**
 - Open questions from `docs/motivations.md` have priority over expansion.
