@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S141+C182+S142+C183: Spin coherent states + Wilson RG)
+- Focus: expand action-angle Section 6 (angular-momentum coherent states) and uncuttable Section 4 (definitive refinement framework).
+- Work: S141 studied spin coherent states on S². Mathematical physicist reviewed — all 7 claims CORRECT (definition, variance, angular uncertainty, |⟨J⟩|=jℏ, minimum uncertainty, resolution of identity, references). Promoted as Remark 6.7: ring-vs-blob from flat to spherical phase space. S142 studied Wilson's RG. Statistical field theorist reviewed — all 6 claims CORRECT, recommended softening "QFT = fixed point." Promoted as Remark 4.1: blocking = refinement map, relevant operators = counterterms, fixed points = continuum limits.
+- Result: action-angle 142→145 (+3, 8pp), uncuttable 143→146 (+3, 8pp).
+
 ## 2026-02-13 (S139+C180+S140+C181: Real harmonics + pseudopotential)
 - Focus: expand action-angle Section 3 (angle localization witness) and fermionic mediators Section 4 (regularized contact kernel).
 - Work: S139 studied real spherical harmonics as minimal m-superposition. Atomic physics pedagogue reviewed — caught phase convention error in explicit formulas; promoted using descriptive language to sidestep convention. S140 studied Huang-Yang pseudopotential. Cold atom theorist reviewed — corrected prefactor from 2π to 4π; promoted with corrected 4πℏ²a/m.

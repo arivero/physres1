@@ -183,6 +183,8 @@
 179. `C179` Completed.
 180. `C180` Completed.
 181. `C181` Completed.
+182. `C182` Completed.
+183. `C183` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -349,6 +351,8 @@
 - `S138` Completed.
 - `S139` Completed.
 - `S140` Completed.
+- `S141` Completed.
+- `S142` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -504,16 +508,16 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S139+C180: Real harmonics Remark 3.1 in action-angle (+3 lines, 139→142).
-2. S140+C181: Pseudopotential Remark 4.3 in fermionic mediators (+3 lines, 144→147).
-3. S137+C178: Berry-Tabor Remark 7.2 in action-angle (+3 lines, 136→139).
-4. S138+C179: Optimal truncation Remark 2.6 in uncuttable (+3 lines, 140→143).
-5. S136+C177: Padé/Borel Remark 2.5 in uncuttable (+3 lines, 137→140).
-6. S135+C176: Decoherence Remark 5.2 in action-angle (+4 lines, 132→136).
+1. S141+C182: Spin coherent states Remark 6.7 in action-angle (+3 lines, 142→145).
+2. S142+C183: Wilson RG Remark 4.1 in uncuttable (+3 lines, 143→146).
+3. S139+C180: Real harmonics Remark 3.1 in action-angle (+3 lines, 139→142).
+4. S140+C181: Pseudopotential Remark 4.3 in fermionic mediators (+3 lines, 144→147).
+5. S137+C178: Berry-Tabor Remark 7.2 in action-angle (+3 lines, 136→139).
+6. S138+C179: Optimal truncation Remark 2.6 in uncuttable (+3 lines, 140→143).
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (action-angle 142, uncuttable 143, fermionic mediators 147).
+- Expand shorter satellites (action-angle 145, uncuttable 146, fermionic mediators 147).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
