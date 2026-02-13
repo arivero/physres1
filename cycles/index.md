@@ -150,6 +150,7 @@
 146. `C146` Completed.
 147. `C147` Completed.
 148. `C148` Completed.
+149. `C149` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -281,6 +282,7 @@
 - `S104` Completed.
 - `S105` Completed.
 - `S106` Completed.
+- `S107` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -420,17 +422,17 @@
 
 ## Next Action
 **9 satellite papers all at Tier 1. All cross-referenced from cornerstone.**
-Cornerstone at ~1467 lines, Q100 clean.
+Cornerstone at ~1475 lines.
 
 Recent completed:
-1. Q100: fixed α↔ordering correspondence in D4.1b (prepoint/postpoint labels + operator formula).
-2. S106+C148: ordering witness D4.1b in Section 6.3 (+5 lines).
-3. S105+C147: harmonic-oscillator step-halving witness D6.2a-HO in Section 8.4 (+5 lines).
-4. S104: bound-orbit L > K/c extension via effective potential (+13 lines satellite).
-5. Q99: sign error (e^{1/(cg)} → e^{-1/(cg)}) + 3 more fixes.
+1. S107+C149: cubic Moyal bracket witness D5.1b in Section 7.3 (+7 lines). Gap 3 filled.
+2. Q100: fixed α↔ordering correspondence in D4.1b (prepoint/postpoint labels + operator formula).
+3. S106+C148: ordering witness D4.1b in Section 6.3 (+5 lines).
+4. S105+C147: harmonic-oscillator step-halving witness D6.2a-HO in Section 8.4 (+5 lines).
+5. S104: bound-orbit L > K/c extension via effective potential (+13 lines satellite).
 
 Next:
-- Content gaps: Gap 2 (stationary phase numerical verification, medium), Gap 3 (Moyal beyond quadratic, med-high), Gap 4 (RG flow on realistic coupling, high).
+- Content gaps: Gap 2 (stationary phase numerical verification, medium), Gap 4 (RG flow on realistic coupling, high).
 - Expand shorter satellites (action-angle 87 lines, uncuttable 96 lines, fermionic mediators 112 lines).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).

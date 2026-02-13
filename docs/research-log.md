@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S107+C149: cubic Moyal bracket witness D5.1b for Section 7.3)
+- Focus: fill Gap 3 — show the first genuine O(ℏ³) quantum correction in the Moyal bracket, beyond the Poisson bracket.
+- Work: derived general formula for [q^m, p^n]_⋆ for pure monomials. When min(m,n)≤2, only k=1 contributes (no corrections). At m=n=3, the k=3 term gives [q³,p³]_⋆ = iℏ{q³,p³} - (3/2)iℏ³. Subagent review (hostile referee) caught off-by-one in term count, sum notation ambiguity, sharpened min(m,n)≤2 condition.
+- Result: cornerstone +7 lines. Gap 3 filled. D5.1b placed between D5.1a and H5.1 in Section 7.3.
+
 ## 2026-02-13 (Q100: focused referee on D6.2a-HO + D4.1b, α-convention fix)
 - Focus: subagent referee pass on the two newly promoted derivations.
 - Work: D6.2a-HO clean. D4.1b had α↔ordering correspondence reversed: the operator formula Ĥ_α=(1-α)q̂p̂+αp̂q̂ does not match the path-integral convention q_α=(1-α)q_k+αq_{k+1}. Fixed to Ĥ_α=αq̂p̂+(1-α)p̂q̂=p̂q̂+αiℏ. Labels changed from left/right-point to prepoint/postpoint (standard Kleinert terminology).
