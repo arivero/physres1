@@ -163,6 +163,16 @@ G(x,x';E)=G_0(x,x';E)+\frac{g\,G_0(x,0;E)\,G_0(0,x';E)}{1-g\,G_0(0,0;E)}.
 \]
 The correction term factors as \(f(x)\cdot f(x')\) with \(f(x)=G_0(x,0;E)\) — this is the rank-one kernel in action: the point interaction contributes a term proportional to \(|0\rangle\langle0|\) in the resolvent. The denominator vanishes at \(\kappa=|g|m/\hbar^2\), yielding the unique bound state \(E=-mg^2/(2\hbar^2)\), and the residue at this pole factors as \(\psi_b(x)\,\psi_b(x')\) with \(\psi_b(x)=\sqrt{\kappa}\,e^{-\kappa|x|}\) — a rank-one projector \(|\psi_b\rangle\langle\psi_b|\) [AlbeverioGesztesyHoeghKrohnHolden2005]. In the half-density kernel language, the factored piece reads \((\sqrt{\kappa}\,e^{-\kappa|x|}|dx|^{1/2})\otimes(\sqrt{\kappa}\,e^{-\kappa|x'|}|dx'|^{1/2})\), manifestly a product of half-densities.
 
+`Example 4.1b (2D delta potential: logarithmic divergence and transmutation scale).`
+In \(d=2\), the free Green function at the origin is \(G_0(0,0;E)=\frac{m}{2\pi\hbar^2}\ln(\Lambda/\kappa)\), logarithmically divergent in the UV cutoff \(\Lambda\). The rank-one perturbation formula of Example 4.1 still applies: the denominator \(1-g\,G_0(0,0;E)=0\) determines the bound state. Inserting the running coupling \(g(\Lambda)=2\pi\hbar^2/(m\ln(\Lambda/\alpha))\) from Remark 4.2, the \(\Lambda\)-dependent terms cancel:
+\[
+1-\frac{2\pi\hbar^2}{m\ln(\Lambda/\alpha)}\cdot\frac{m}{2\pi\hbar^2}\ln(\Lambda/\kappa)
+=1-\frac{\ln(\Lambda/\kappa)}{\ln(\Lambda/\alpha)}
+=0
+\quad\text{iff}\quad \kappa=\alpha.
+\]
+The transmutation scale \(\alpha\) (dimension length\(^{-1}\)) is the sole physical parameter: it replaces the bare coupling \(g\) that has no well-defined continuum limit [Jackiw1991DeltaPotentials]. The bound state energy is \(E=-\hbar^2\alpha^2/(2m)\), fully determined by the RG-invariant scale. Compare Example 5.1a for the scalarization perspective on this same result.
+
 `Remark 4.2 (Self-adjoint extensions: the classification of point interactions).`
 The one-dimensional delta potential of Example 4.1 is the simplest instance of a general classification [AlbeverioGesztesyHoeghKrohnHolden2005] [Derezinski2024]. The free Hamiltonian \(H_0=-\frac{\hbar^2}{2m}\nabla^2\) on \(\mathbb R^d\), initially defined on \(C_c^\infty(\mathbb R^d\setminus\{0\})\), is symmetric but not self-adjoint when \(d\leq3\). Its self-adjoint extensions — the mathematically well-defined point interactions — include a distinguished one-parameter family of spherically symmetric extensions in each admissible dimension:
 
@@ -205,3 +215,4 @@ In \(d=2\), the scalarization exponent is \(d/2=1\): expressing kernels as scala
 5. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005. ISBN `978-0-8218-3624-4`. (Canonical reference for point interactions in quantum mechanics; self-adjoint extensions, delta potentials.)
 6. [Morette1951] C. Morette, "On the Definition and Approximation of Feynman's Path Integrals," *Phys. Rev.* **81**, 848–852 (1951). DOI `10.1103/PhysRev.81.848`. (Van Vleck determinant in path integral; semiclassical expansion weights.)
 7. [Derezinski2024] J. Dereziński, "Point potentials on Euclidean space, hyperbolic space and sphere in any dimension," arXiv:2403.17583 (2024). (Self-adjoint extensions of the Laplacian restricted to \(\mathbb R^d\setminus\{0\}\); essential self-adjointness for \(d\geq4\); complete treatment for all \(d\).)
+8. [Jackiw1991DeltaPotentials] R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>. (Renormalization of contact interactions in d=2,3; dimensional transmutation.)

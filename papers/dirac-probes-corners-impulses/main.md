@@ -145,6 +145,9 @@ This confirms that the delta-kick raises the action above the free minimum — t
 `Remark 4.3a (Midpoint kick maximizes the action excess).`
 The factor \(t_0(T-t_0)/T\) achieves its maximum value \(T/4\) at the midpoint \(t_0=T/2\) and vanishes at the endpoints \(t_0\to0\) or \(t_0\to T\). Physically, a midpoint kick divides the trajectory into two equal segments, maximizing the "leverage" for kinetic-energy cost; an endpoint kick leaves no time for the velocity perturbation to accumulate path deviation.
 
+`Remark 4.3b (Strict minimality of the free path — Jacobi sufficiency).`
+The strong Legendre condition \(\partial^2\mathcal{L}/\partial\dot{q}^2=m>0\) holds everywhere. For \(\mathcal{L}=\frac{m}{2}\dot{q}^2\), the Jacobi equation is \(\ddot{q}_J=0\), whose non-trivial solutions \(q_J(t)=At\) (with \(q_J(0)=0\)) have no further zeros in \((0,T]\) — no conjugate points. Together these give Jacobi's sufficiency theorem: the straight-line path is a strict weak local minimum of the action. The action excess \(S-S_0>0\) of Section 4.3 is a direct manifestation of this sufficiency: every kinked trajectory (an admissible weak competitor) has strictly higher action.
+
 ## 4.4 Angular momentum preservation under central impulses
 
 For a central force in the plane, the impulse is radial: \(J=J_r\,\hat{r}\). Decomposing the velocity into radial and transverse components, \(\mathbf{v}=v_r\,\hat{r}+r\dot{\theta}\,\hat{\theta}\), the impulse jump of Theorem 3.2 reads

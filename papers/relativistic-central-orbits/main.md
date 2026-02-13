@@ -181,6 +181,12 @@ In the flat-spacetime SR model of Section 5, inverse-square circular orbits are 
 `Remark 4.3b (ISCO as a curvature-induced angular-momentum floor).`
 At the ISCO \(r=6M\), the formula \(L^2=Mr^2/(r-3M)\) gives \(L_{\mathrm{ISCO}}^2=12M^2\), i.e.\ \(L_{\mathrm{ISCO}}=2\sqrt{3}\,M\). In the SR model (Section 3.1), any \(L>K/c\) admits a stable bound orbit — there is no minimum angular momentum for stability. The Schwarzschild geometry introduces a finite floor: for \(L<2\sqrt{3}\,M\) no stable circular orbit exists, regardless of radius. This floor is again a consequence of the \(-2ML^2/r^3\) term, which steepens the effective potential well until the local minimum disappears.
 
+`Remark 4.3c (Hierarchy of circular-orbit radii).`
+The Schwarzschild geometry produces a clean radius hierarchy: the photon sphere at \(r=3M\) (Section 4.1), unstable timelike circular orbits for \(3M<r<6M\), and stable orbits for \(r>6M\) (ISCO). The ratio \(r_{\mathrm{ISCO}}/r_{\mathrm{ph}}=2\) is exact and independent of angular momentum. In the SR model (Section 3.1), by contrast, stable circular orbits exist at all radii (given sufficient \(L\)), with no unstable band and no photon sphere. The entire unstable-orbit band \(3M<r<6M\) is a pure curvature effect, consistent with the curvature attribution of Remarks 4.3a–b.
+
+`Remark 4.3d (ISCO binding energy and accretion efficiency).`
+A particle spiraling quasi-statically from \(r\to\infty\) to the ISCO radiates a fraction \(\eta=1-E_{\mathrm{ISCO}}\) of its rest mass energy. With \(E_{\mathrm{ISCO}}=2\sqrt{2}/3\) (i.e.\ \(E^2=8/9\)) this gives \(\eta=1-2\sqrt{2}/3\approx5.72\%\), the maximum radiative efficiency of thin-disk accretion onto a Schwarzschild black hole. The SR model of Section 3.1 has no ISCO, hence no finite efficiency bound — the \(5.72\%\) ceiling is a curvature consequence, like the ISCO itself.
+
 # 5. SR Stability of Circular Orbits (Small Radial Perturbations)
 This section stays within mechanical SR (a point particle in an external, time-independent central scalar potential \(U(r)\)). It is used as a kinematic witness: some restrictions already appear before GR or field-theoretic interactions enter.
 

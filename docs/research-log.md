@@ -180,3 +180,54 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: S223 drafted (1) Remark 3.1b: Weierstrass–Erdmann second condition (energy/Hamiltonian continuity at corners), completing the treatment alongside Theorem 3.1's momentum condition; (2) Remark 4.3a: midpoint kick maximizes action excess (t₀(T-t₀)/T maximized at T/2). Promoted as Remark 3.1b + Remark 4.3a. Q143 referee: pending.
 - Result: dirac 212→222 (+10, 5pp, 5486 tok).
 
+## 2026-02-13 (S224+C259+Q144: delta-objects d=2 resolvent example)
+- Focus: expand delta-objects Section 4 with d=2 delta potential computation.
+- Work: S224 identified clean target: rank-one perturbation in d=2 showing logarithmic divergence and exact Λ-cancellation via running coupling. Promoted as Example 4.1b (after d=1 Example 4.1). Added [Jackiw1991DeltaPotentials] to bibliography. Q144 referee: CONDITIONAL PASS — two MEDIUM (citation for G₀ formula, vague forward reference). Both presentation polish, no math errors.
+- Result: delta 207→218 (+11, 6pp, 6507 tok). At PLB boundary — no further additions without cuts.
+
+## 2026-02-13 (S225+C260+Q145: relativistic hierarchy remark)
+- Focus: expand relativistic Section 4.3 with radius hierarchy observation.
+- Work: S225 identified structural remark: r_ph=3M, unstable band 3M<r<6M, ISCO at 6M, ratio r_ISCO/r_ph=2 exact. SR has no unstable band or photon sphere — entire unstable band is pure curvature effect. Promoted as Remark 4.3c. Q145 referee: PASS (lightweight, no new formulas).
+- Result: relativistic 250→253 (+3, 5pp, 4844 tok).
+
+## 2026-02-13 (S226+C261+Q146: relativistic ISCO binding energy)
+- Focus: expand relativistic Section 4.3 with accretion efficiency consequence.
+- Work: S226 verified E²(6M)=8/9, η=1-2√2/3≈5.72%. Promoted as Remark 4.3d (ISCO binding energy and accretion efficiency). Q146 referee: PASS — standard GR result, no issues.
+- Result: relativistic 253→256 (+3, 5pp).
+
+## 2026-02-13 (S227+C262+Q147: dirac-probes Jacobi sufficiency)
+- Focus: add variational calculus foundation for action excess formula in Section 4.3.
+- Work: S227 verified Jacobi sufficiency conditions for free particle: strong Legendre (m>0), Jacobi equation (ẍ_J=0), no conjugate points. Promoted as Remark 4.3b. Q147 referee: CONDITIONAL PASS — fixed conjugate-point phrasing (MEDIUM).
+- Result: dirac 222→225 (+3, 5pp).
+
+## 2026-02-13 (S228+C263: HD-QFT ζ-function determinant)
+- Focus: expand HD-QFT Section 5 with spectral ζ-function connection.
+- Work: S228 studied ζ-function ζ_P(s) = Γ(s)^{-1}∫t^{s-1}Tr K(t)dt. Poles at s=D/2-n from Seeley-DeWitt expansion. Functional determinant det P = exp(-ζ'_P(0)) is finite and coordinate-independent. Promoted as Remark HD-D5.4. Q148 referee: PASS.
+- Result: HD-QFT 253→256 (+3, 5pp).
+
+## 2026-02-13 (S229+C264+Q149: dirac-probes free-particle propagator)
+- Focus: add exact free-particle propagator evaluation in Section 4.5.
+- Work: S229 studied Gaussian time-slicing integrals. Result independent of N (composition law). Prefactor √(m/T) = Van Vleck determinant. Promoted as Remark 4.5a. Q149 referee: PASS.
+- Result: dirac 225→228 (+3, 5pp).
+
+## 2026-02-13 (S230+C265+Q150: dirac-probes Weierstrass excess function)
+- Focus: upgrade Jacobi sufficiency (weak minimum) to Weierstrass sufficiency (strong minimum).
+- Work: S230 computed E = m/2(ẋ'-ẋ)² ≥ 0. Combined with 4.3b → strong local minimum. Kinked trajectory is concrete strong competitor. Promoted as Remark 4.3c. Q150 referee: PASS.
+- Result: dirac 228→231 (+3, 5pp).
+
+## 2026-02-13 (S231+C266+Q151: relativistic apsidal advance)
+- Focus: exact apsidal advance formula bridging weak-field to ISCO regime.
+- Work: S231 derived ω_φ/ω_r = √(r₀/(r₀-6M)). Exact advance Δφ = 2π(√(r₀/(r₀-6M))-1). Weak-field → 6πM/r₀ (Mercury). Diverges at ISCO. Promoted as Remark 4.3e. Q151 referee: PASS.
+- Result: relativistic 256→259 (+3, 5pp).
+
+## 2026-02-13 (S232+C267: dirac-probes multi-dimensional propagator)
+- Focus: connect d/2 exponent in path-integral normalization to renormalization threshold.
+- Work: S232 computed d-dimensional Van Vleck det = (m/T)^d, prefactor (m/T)^{d/2}. Same d/2 as diagonal Green function. Promoted as Remark 4.5b. Q152 pending.
+- Result: dirac 231→234 (+3, 5pp).
+
+## 2026-02-13 (Q147: Referee review of C270 Remark 4.3f)
+- Focus: referee-style mathematical and physical review of C270 (Kepler third law in Schwarzschild coordinates).
+- Work: verified all derivations: (1) ω_φ² = M/r₀³ from circular-orbit L², E² formulas — correct via direct substitution; (2) proper-time correction T_τ/T_t = √(1-3M/r₀) derived from metric and E — correct; (3) ISCO numerical check √(1-1/2) = 1/√2 — correct; (4) "gauge accident" characterization physically sound (coordinate-dependent simplification vs proper-time reality); (5) all cross-references to Remarks 4.3a-e verified. Also checked red-team attacks: algebra verification, independent proper-time derivation using both metric and E, no contradiction with Remark 3.2's precession (circular vs radial frequencies), page budget satisfied (259→262, 5pp).
+- Result: Remark 4.3f PASS. No required fixes. Optional refinement: "gauge accident" could be "coordinate artifact" for stricter GR terminology, but current phrasing acceptable for remark format.
+- Next: Q152 on C267; continue PLB expansion.
+
