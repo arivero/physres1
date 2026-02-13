@@ -57,7 +57,14 @@ The normalized superposition of modes \(-M\le m\le M\),
 \[
 \psi_M(\phi)=\frac{1}{\sqrt{2\pi(2M+1)}}\sum_{m=-M}^{M} e^{im\phi},
 \]
-is peaked near \(\phi=0\) with an angular width that scales like \(1/M\), while its \(m\)-distribution is spread across \(\{-M,\dots,M\}\). This makes the “sharpening \(\phi\) \(\Rightarrow\) broadening \(L_z\)” tradeoff completely explicit without invoking any disputed angle-operator formalism.
+is peaked near \(\phi=0\) with an angular width that scales like \(1/M\), while its \(m\)-distribution is spread across \(\{-M,\dots,M\}\). This makes the "sharpening \(\phi\) \(\Rightarrow\) broadening \(L_z\)" tradeoff completely explicit without invoking any disputed angle-operator formalism.
+
+`Proposition 4.2 (Circular uncertainty relation).`
+For any state on the circle, define the circular concentration \(R=|\langle e^{i\phi}\rangle|\in[0,1]\). Adding the Robertson inequalities for the two self-adjoint pairs \((L_z,\cos\phi)\) and \((L_z,\sin\phi)\) — using \([L_z,\cos\phi]=i\hbar\sin\phi\) and \([L_z,\sin\phi]=-i\hbar\cos\phi\) — and the identity \(\mathrm{Var}(\cos\phi)+\mathrm{Var}(\sin\phi)=1-R^2\), gives
+\[
+\mathrm{Var}(L_z)\cdot(1-R^2)\ge\frac{\hbar^2}{4}\,R^2.
+\]
+When \(R=0\) (uniform distribution, as in an \(L_z\) eigenstate) the bound is trivial. As \(R\to1\) (sharply localized angle) the bound forces \(\mathrm{Var}(L_z)\to\infty\): angular localization requires spreading across many \(m\)-modes. This quantifies the Fourier tradeoff above without invoking a self-adjoint angle operator.
 
 # 5. Foundations message: orbit pictures require packets/superpositions
 This witness supports a simple interpretive guardrail for central-force intuition:
