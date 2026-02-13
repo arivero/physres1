@@ -137,6 +137,7 @@
 133. `C133` Completed.
 134. `C134` Completed.
 135. `C135` Completed.
+136. `C136` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -253,6 +254,7 @@
 - `S89` Completed.
 - `S90` Completed.
 - `S91` Completed.
+- `S92` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -383,7 +385,8 @@
 1. S87+C133: bibliography audit fixed 5 orphan citations + YAML metadata.
 2. Q89: full referee pass — all checks clean (encoding, bib, LaTeX, metadata, cross-refs).
 3. S88+C134: self-assessment consistency fix — 9.4/9.5/10.4 now acknowledge 10.5 computation.
-4. Future: deeper content work (new computations, new satellite papers), P cycles.
+4. S92+C136: cornerstone now cross-references RG satellite (RG-D1.2a, RG-D1.7), matching HD-D1.3 pattern.
+5. Future: deeper content work (new computations, new satellite papers), P cycles.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

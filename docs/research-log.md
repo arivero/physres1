@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S92+C136: cornerstone→RG-fundamental cross-references)
+- Focus: add cross-references from cornerstone to RG-fundamental satellite.
+- Work: S92 compared 32 satellite elements against cornerstone Sections 8+10.5. Found 22 unique (69%). Selected 2 best cross-reference points: RG-D1.2a (Wilsonian shell integration → Section 10.5) and RG-D1.7 (Schur complement coarse-graining → Section 8.4). C136 added both as parenthetical "cf." pointers following HD-D1.3 pattern.
+- Result: cornerstone now cross-references 2 satellites (HD and RG). Self-contained; cross-refs are supplementary.
+- Next: Q91 (post-crossref referee pass) or content expansion on thinner papers.
+
 ## 2026-02-13 (S91: publications ledger refresh)
 - Focus: update line counts and metadata in `docs/publications.md`.
 - Result: all 9 papers updated with current .md line counts. Cornerstone corrected (was ~2200, actually 1435). Last Q updated to Q89.
