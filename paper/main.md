@@ -196,6 +196,11 @@ $$
 
 Therefore for fixed \(\Delta t\), \(\Delta A_k\) is independent of \(k\). This is the equal-areas statement at finite polygonal level.
 
+`Derivation D1.2a (Numerical witness for the finite-step area law).`
+Consider an inverse-square force with \(GM=m=1\). Place a body at \(\mathbf r_0=(1,0)\) with velocity \(\mathbf v_0=(0,0.8)\) — this is apoapsis of an ellipse with eccentricity \(e=9/25=0.36\) and semi-major axis \(a\approx 0.735\). The angular momentum is \(L=0.8\).
+
+Running the kick-drift scheme of Section 3.2 with \(N=12\) equal steps over one period (\(T\approx 3.96\)): every triangular area \(\Delta A_k\) equals \(L\,\Delta t/(2m)\approx 0.132\) exactly in the algebraic sense of D1.1–D1.2, despite the radial distance varying by a factor \(r_{\mathrm{apo}}/r_{\mathrm{peri}}=(1+e)/(1-e)=17/8\approx 2.1\) between apoapsis and periapsis. The equality is not a numerical coincidence or a continuum approximation — it is an algebraic identity at each finite step, holding for any central force. Only the trajectory shape converges under refinement; the swept-area invariant is exact at every \(N\).
+
 ## 3.3 Continuum Passage and Central-Force Generality
 `Proposition P1.1 (Refinement limit of areal velocity).`
 If \(\max_k \Delta t_k\to 0\) under consistent refinement, the finite-step law above yields
