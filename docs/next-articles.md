@@ -21,7 +21,8 @@ Suggested deliverables:
    - Quantum mechanics (ordering changes as equivalence/gauge).
    - A toy RG flow (single coupling) with explicit semigroup generator.
 
-## B. Dirac-Supported Probes, Corners, and Impulses (Rigorous Variational Note)
+## B. Dirac-Supported Probes, Corners, and Impulses — **DRAFT (S97)**
+Draft: `papers/dirac-probes-corners-impulses/main.md` (172 lines, 5 pages, 3 refs). Needs Q pass.
 Spin out Section 5 into a short, sharp note that focuses on what is actually
 mathematically legal when "Dirac deltas probe extrema."
 
