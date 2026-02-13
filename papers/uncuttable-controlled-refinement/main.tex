@@ -237,6 +237,31 @@ the full resummation machinery: the ultimate illustration that the
 intended quantity is not captured by any single approximant but lives in
 the controlled limit.
 
+\texttt{Remark\ 2.7\ (Zeta-function\ regularization:\ finite\ values\ without\ a\ cutoff).}
+The counterterm towers of Remarks 2.2--2.4 and the resummation methods
+of Remarks 2.5--2.6 all work by explicitly handling a regulator (mesh
+size, truncation index, Borel parameter). Zeta-function regularization
+takes a different route: the formally divergent sum
+\(\sum_{n=1}^\infty n^{-s}\) converges for \(\mathrm{Re}(s)>1\) and
+extends meromorphically to all \(s\) (with a single pole at \(s=1\));
+the analytic continuation value \(\zeta(-1)=-1/12\) is the regularized
+assignment to the divergent sum \(1+2+3+\cdots\). For a differential
+operator \(A\) with eigenvalues \(\{\lambda_n\}\), the spectral zeta
+function \(\zeta_A(s)=\sum\lambda_n^{-s}\) regularizes the functional
+determinant via \(\ln\det A=-\zeta_A'(0)\) (Ray and Singer, 1971;
+Hawking, 1977). No cutoff appears; the finite answer is extracted from
+the analytic structure of the sum across the complex \(s\)-plane. The
+connection to Section 2's earlier methods is through Bernoulli numbers:
+\(\zeta(-n)=-B_{n+1}/(n+1)\), the same numbers that control the
+Euler--Maclaurin corrections of Remark 2.3. In physics, zeta
+regularization computes the Casimir energy (Remark 5.7 of the fermionic
+companion) and determines the critical dimension of the bosonic string
+(\(d=26\)), where the normal-ordering constant involves both
+\(\zeta(0)=-1/2\) and \(\zeta(-1)=-1/12\). This is the ``uncuttable''
+pattern at its most algebraic: the quantity is defined not by removing a
+regulator but by the unique meromorphic continuation of a family of
+convergent sums.
+
 \hypertarget{dynamics-action-stationarity-and-the-need-for-control-data}{%
 \section{3. Dynamics: action, stationarity, and the need for control
 data}\label{dynamics-action-stationarity-and-the-need-for-control-data}}
