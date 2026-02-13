@@ -111,6 +111,9 @@ I_k=\left(n_k+\frac{\alpha_k}{4}\right)\hbar,\qquad n_k\in\mathbb{Z}_{\ge0},
 \]
 where \(\alpha_k\) is the Maslov index of the \(k\)-th cycle (counting caustic/turning-point contributions). The integer quantum numbers \(n_k\) select the torus; the conjugate angle variables \(\theta_k\in[0,2\pi)\) are uniformly distributed on that torus and carry no quantum-number information. This is the semiclassical counterpart of the fully quantum statement: stationary eigenstates (sharp actions) have delocalized angles. Examples 6.1 and 6.2 are the exact quantum versions of this principle for the \(d=1\) and \(d=3\) cases.
 
+`Remark 6.4 (Husimi function: visualizing action–angle states in phase space).`
+The Husimi \(Q\)-function \(Q(\alpha)=\langle\alpha|\hat\rho|\alpha\rangle/\pi\) assigns a non-negative quasiprobability to each phase-space point \(\alpha\), using coherent states as the reference frame. For a Fock state \(|n\rangle\), \(Q(\alpha)=e^{-|\alpha|^2}|\alpha|^{2n}/(\pi\,n!)\) — a ring at radius \(|\alpha|=\sqrt{n}\), uniform in the phase angle: sharp action, fully delocalized angle. For a coherent state \(|\alpha_0\rangle\), \(Q(\alpha)=e^{-|\alpha-\alpha_0|^2}/\pi\) — a Gaussian blob centered at \(\alpha_0\), simultaneously localizing both action and angle to uncertainty-limited width. The ring-versus-blob distinction is the phase-space portrait of the Fourier tradeoff in Section 4, with the Husimi function providing a literal (non-negative) probability picture that the Wigner function's sign changes would obscure.
+
 # 7. Outlook (kept minimal)
 The preceding witnesses illustrate the action–angle tradeoff in systems with one, two, and three action–angle pairs, and Remark 6.3 shows that EBK quantization makes the same structural point in general: the more sharply the actions are specified, the less information remains in the conjugate phases.
 
