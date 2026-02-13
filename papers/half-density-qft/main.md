@@ -179,7 +179,7 @@ The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” has a clean, c
 \]
 where \(\mathcal L\) is the Lie derivative acting on half-densities. In local coordinates, taking \(V=\partial/\partial x^\mu\) recovers \(\partial_{x^\mu}\delta^{(D)}(x-y)=-\partial_{y^\mu}\delta^{(D)}(x-y)\). This is the kernel-level mechanism behind “moving derivatives between slots” in integration by parts and in contact-term identities.
 
-`Remark HD-D5.2 (Point splitting produces \u03b4' contact terms).`
+`Remark HD-D5.2 (Point splitting produces δ' contact terms).`
 Point splitting makes the simplest derivative contact term explicit:
 in one dimension,
 \[
