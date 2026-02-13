@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Anomalies / chiral anomaly / refinement constraints | Promoted (C195) |
-| 1 | Gutzwiller trace formula / periodic orbits | Promoted (C196) |
+| 0 | Neutrino-mediated forces / Feinberg-Sucher | Promoted (C197) |
+| 1 | Conformal symmetry / RG fixed points / c-theorem | Promoted (C198) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

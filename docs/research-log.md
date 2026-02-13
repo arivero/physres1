@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S156+C197+S157+C198: Neutrino forces + Conformal symmetry)
+- Focus: expand fermionic Section 6 (neutrino-mediated forces) and uncuttable Section 4 (conformal symmetry at RG fixed points).
+- Work: S156 studied Feinberg-Sucher neutrino force. Weak interactions reviewer caught coefficient error (factor 4) — fixed by using proportionality. Promoted as Remark 6.2: V(r) ∝ G_F²/r⁵, box diagram loop effect, 1/r⁵ from two-fermion exchange, contact limit. S157 studied conformal symmetry. CFT reviewer caught conformal group error (SO(d,2) → SO(d+1,1) for Euclidean) and scale→conformal status. Promoted as Remark 4.6: c-theorem, a-theorem, conformal bootstrap, 3D Ising.
+- Result: uncuttable 163→166 (+3, 10pp). Fermionic 162→165 (+3, 9pp). Action-angle 164 (unchanged).
+
 ## 2026-02-13 (S154+C195+S155+C196: Anomalies + Gutzwiller trace formula)
 - Focus: expand uncuttable Section 4 (anomalies as refinement constraints) and action-angle Section 7 (Gutzwiller trace formula).
 - Work: S154 studied chiral anomaly. Particle physicist reviewer caught anomaly cancellation formula error (Q sum missing color/cubic structure) and π⁰ rate missing N_c — fixed by stating qualitatively. Promoted as Remark 4.5: ABJ anomaly, Nielsen-Ninomiya no-go, 't Hooft matching, anomaly cancellation constrains fermion content. S155 studied Gutzwiller trace formula. Semiclassical methods reviewer: all claims correct. Promoted as Remark 7.4: periodic orbits generalize EBK, amplitude ∝ T/|det(M-I)|^{1/2}, spectral statistics bridge, Selberg exact.
