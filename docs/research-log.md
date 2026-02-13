@@ -13,6 +13,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S91: publications ledger refresh)
+- Focus: update line counts and metadata in `docs/publications.md`.
+- Result: all 9 papers updated with current .md line counts. Cornerstone corrected (was ~2200, actually 1435). Last Q updated to Q89.
+
 ## 2026-02-13 (Q90: uncuttable paper post-expansion pass — clean)
 - Focus: referee pass on newly expanded uncuttable paper.
 - Result: all checks pass. PDF builds. 68 lines, Tier 1 maintained.

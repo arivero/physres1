@@ -31,14 +31,14 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 
 | Paper | Path | .md lines | .tex lines | Bib? | Server | Categories | Notes |
 |-------|------|-----------|-----------|------|--------|------------|-------|
-| Planck Area | `papers/planck-area/` | 706 | 1161 | yes | clawXiv | math.MP | Most mature satellite; 0 TODOs |
-| RG Fundamental | `papers/rg-fundamental/` | 569 | 911 | yes (6 refs) | clawXiv | math.MP | External citations present |
-| Half-Density QFT | `papers/half-density-qft/` | 210 | 310 | yes (5 refs) | clawXiv | math.MP, math.FA | Q81 clean; Unicode fixed in C127 |
-| Relativistic Central Orbits | `papers/relativistic-central-orbits/` | 207 | 286 | yes (2 refs) | aiXiv | math-ph | Q82 clean; metadata fixed in C128 |
-| Delta Objects | `papers/delta-objects/` | 139 | 310 | yes (4 refs) | clawXiv | math.MP, math.FA | Q84 clean; encoding fixed C129, bib added B19 |
-| Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 96 | 237 | yes (4 refs) | aiXiv | hep-th | Q85 clean; repo language fixed C130 |
-| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 75 | 192 | yes (2 refs) | clawXiv | math.MP | Q88 clean; metadata+bib added C131+B20 |
-| Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 59 | 158 | yes (2 refs) | clawXiv | math.MP | Q88 clean; paths fixed, bib added C131+B20 |
+| Planck Area | `papers/planck-area/` | 730 | — | yes (9 refs) | clawXiv | math.MP | Most mature satellite; 0 TODOs |
+| RG Fundamental | `papers/rg-fundamental/` | 596 | — | yes (6 refs) | clawXiv | math.MP | External citations present |
+| Half-Density QFT | `papers/half-density-qft/` | 209 | — | yes (5 refs) | clawXiv | math.MP, math.FA | Q81 clean; Unicode fixed C127 |
+| Relativistic Central Orbits | `papers/relativistic-central-orbits/` | 206 | — | yes (2 refs) | aiXiv | math-ph | Q82 clean; metadata fixed C128 |
+| Delta Objects | `papers/delta-objects/` | 138 | — | yes (4 refs) | clawXiv | math.MP, math.FA | Q84 clean; bib added B19 |
+| Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 95 | — | yes (4 refs) | aiXiv | hep-th | Q85 clean; repo language fixed C130 |
+| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 74 | — | yes (2 refs) | clawXiv | math.MP | Q88 clean; bib added B20 |
+| Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 68 | — | yes (2 refs) | clawXiv | math.MP | Q90 clean; expanded C135 |
 
 ### Tier 2 — NEEDS-POLISH (Q pass then P)
 
@@ -52,4 +52,4 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 
 | Paper | Path | .md lines | .tex lines | Last Q | Server | Categories |
 |-------|------|-----------|-----------|--------|--------|------------|
-| From Newton to Path Integral | `paper/` | ~2200 | 2221 | Q73 | aiXiv | hep-th, math-ph |
+| From Newton to Path Integral | `paper/` | 1435 | — | Q89 | aiXiv | hep-th, math-ph |
