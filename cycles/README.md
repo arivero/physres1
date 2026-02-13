@@ -21,7 +21,13 @@ No other cycle type (`D/S/B/Q`) may edit those files. If you have text ready to 
 A `Cnn` cycle is invalid if it does not modify at least one manuscript file.
 If you discover you cannot (or should not) promote, close out the work as `D/S/B` and do **not** open a `C` cycle.
 
-Preference: treat `Cnn` as a **promotion wave**. Avoid opening a `C` cycle for tiny edits; bundle them into the next promotion wave so the change is “preferably verbose” (paragraph-level, derivation-block, or subsection-level).
+Preference: treat `Cnn` as a **promotion wave**. A single C cycle may:
+- Add multiple remarks, paragraphs, or derivation blocks at once.
+- **Refactor** existing content: split a remark across two sections, merge overlapping remarks, restructure a section's logical flow.
+- **Reorganize** section structure if the paper's architecture has drifted.
+- Combine new content with structural tightening of existing content.
+
+Avoid opening a `C` cycle for tiny edits; bundle them into the next promotion wave. There is **no restriction to "one remark per C cycle"** — larger, structurally coherent changes are preferred.
 
 ### 3) `Qnn` answers `Cnn` only
 `Qnn` cycles are referee-style responses to a specific `Cnn` diff (the parent cycle). `Q` is not used to review `D/S/B` outputs directly.

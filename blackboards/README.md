@@ -18,16 +18,26 @@ relevant slot. Deletion criteria (in priority order):
 ## Rules
 1. The blackboards are **not citable sources**.
 2. They may reference idea logs, but nothing here should be cited as evidence.
-3. When an argument stabilizes, promote it into a **paper** (if in a Cxxx task) or **notebook**.
-   - **Paper** (`paper/`, `papers/*/`): editable, aimed for publication.
-   - **Notebook** (`notebooks/`) : append-only (add content or discard fully, no edits), not aimed for publication.
-4. Promotion is the exit path. Once fully promoted, a slot is free for reuse.
+3. When an argument stabilizes, it exits the blackboard via one of two paths:
+   - **To a manuscript** (via a `Cnn` cycle): content is promoted directly into
+     `paper/main.md` or `papers/*/main.md`. Use this when the material is
+     ready for publication prose.
+   - **To a notebook** (`notebooks/`): the primary exit for stable material
+     that is **not yet aimed at a specific paper section**. Append the
+     blackboard content to the appropriate notebook. This is the default
+     exit when no `C` cycle is imminent — notebooks are memory, blackboards
+     are scratch.
+   - **To paper notes** (`paper/notes/`, `papers/*/notes/`): use sparingly,
+     only when the material directly supports a specific manuscript section
+     as a detailed derivation or expansion. Paper notes feed `P` cycles.
+4. Promotion is the exit path. Once fully promoted (to paper, notebook, or
+   notes), a slot is free for reuse.
 
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Pegg-Barnett hermitian phase operator | Promoted (C239) |
-| 1 | Quantized vortices in superfluids | Promoted (C240) |
+| 0 | Born approximation bridge (fermionic §2) | Active |
+| 1 | Heavy-mediator decoupling (fermionic §4) | Active |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

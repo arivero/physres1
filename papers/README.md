@@ -1,7 +1,9 @@
 # Follow-up Papers (Companion Notes)
 
-This repository’s publishable manuscript is `paper/main.md`.
-This `papers/` folder holds companion notes that **depend on** (and cite) the main paper’s narrative and bibliography ledger.
+This repository’s main publishable manuscript is `paper/main.md`.
+This `papers/` folder holds companion letters that **depend on** (and cite) the main paper’s narrative and bibliography ledger.
+They can have its independent notes folder in the same way than `paper/notes`
+If a Manuscript is demoted, their notes and the manuscripct inself can be collated into a notebook on the `notebooks` folder
 
 ## Manuscripts
 - `papers/delta-objects/main.md`: identity delta kernel, stationary-set delta, and point interactions (draft).

@@ -46,10 +46,8 @@ scripts/paper-diffstat.sh --cached
 Paste under a `## Diffstat` heading.
 If the output is `TOTAL +0 -0`, the execution log must explicitly explain why no promotion happened (and you should usually run an `S` and/or `B` cycle instead of forcing prose).
 
-### 3) End in a commit
+### 3) End in a commit by doing last a C phase
 Every invocation should finish with a meaningful git commit (no empty commits):
-- Stage changes (`git add ...`)
-- Commit with a message like: `S26: ...`, `B06: ...`, `C54: ...`, `Q15: ...`
 - Push if credentials are available; otherwise leave the commit locally and say so in your final response.
 
 **Commit metadata (required in every commit message):**

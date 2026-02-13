@@ -17,7 +17,7 @@ This file applies to the entire repository.
 3. Promoted content must not linger as a duplicate in the scratch layer.
 
 ## Commit Policy
-1. **When to commit:** only when finishing a work cycle (not mid-cycle).
+1. **When to commit:** only when finishing a work cycle of C type (not mid-cycle).
 2. **Two-commit rule:** split each cycle's commit into two:
    - **First commit:** manuscript source files that generate output — `.md` files in `paper/` and `papers/*/`, `.tex` files, `.bib` files, and `paper/bibliography.md`.
    - **Second commit:** everything else — `cycles/`, `docs/`, `blackboards/`, `paper/notes/`, config files.
