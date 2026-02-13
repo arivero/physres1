@@ -26,6 +26,11 @@ This file applies to the entire repository.
    - Include a tag identifying the orchestrating agent/model (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`).
    - Include a token/usage estimate if the tooling exposes it (e.g., `tokens: ~12k in / ~8k out`). If not available, write `tokens: N/A`.
 
+## Quality Cycle (Q) Policy
+1. **Delegate Q passes to subagents.** When running a Q (referee) cycle, spawn the review as a separate subagent (Task tool) with fresh context. The subagent reads the paper cold — without the authoring context — and is more likely to catch genuine errors, unclear passages, and missing references.
+2. The main agent collects the subagent's report, triages the findings, and applies fixes as appropriate.
+3. Multiple papers can be reviewed in parallel by launching several subagent Q passes simultaneously.
+
 ## Sources Policy
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING` for later local ingestion.

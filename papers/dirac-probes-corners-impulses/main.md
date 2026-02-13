@@ -3,7 +3,7 @@ title: "Dirac-Supported Probes, Corners, and Impulses: A Variational Note"
 author: "Alejandro Rivero"
 date: "2026"
 abstract: |
-  Variational principles routinely invoke "point-like probes" of extrema, yet the precise hypotheses under which such probes are safe are often left implicit. This note collects the functional-analytic conditions that make mollifier-based localization of the Euler–Lagrange equation rigorous, states them as an explicit theorem, and works through a complete model — the free particle with a single delta-kick — to illustrate corners, impulse jumps, and the role of distributional forcing. A clean separation is maintained between *Dirac-supported variations* (always safe under stated regularity) and *delta potentials* (which require renormalization and are a distinct mathematical object).
+  Variational principles routinely invoke "point-like probes" of extrema, yet the precise hypotheses under which such probes are safe are often left implicit. This note collects the functional-analytic conditions that make mollifier-based localization of the Euler–Lagrange equation rigorous, states them as an explicit theorem, and works through a complete model — the free particle with a single delta-kick — to illustrate corners, impulse jumps, and the role of distributional forcing. A clean separation is maintained between *Dirac-supported variations* (always safe under stated regularity) and *delta potentials* (which in dimension \(d\ge 2\) require renormalization and are a distinct mathematical object).
 ---
 
 This note is a companion to the cornerstone manuscript. It expands the content of Section 5 there into a self-contained treatment with sharper hypotheses and a worked model.
@@ -182,7 +182,7 @@ A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different obje
 
 # 6. Outlook
 
-1. ~~Extend the single-impulse model to a sequence of \(N\) impulses and take the continuum limit.~~ Addressed in Section 4.5. The stochastic-forcing interpretation (random impulses with prescribed statistics) remains open.
+1. The stochastic-forcing interpretation of Section 4.5's \(N\)-impulse model — random impulses with prescribed statistics — remains open as a bridge to stochastic mechanics.
 2. Treat the piecewise-smooth trajectory as a weak solution and examine whether the Hamilton–Jacobi equation acquires viscosity-solution structure at the kink.
 3. Connect the corner-condition analysis to broken geodesics in Riemannian geometry (Synge's world function approach).
 
@@ -191,3 +191,4 @@ A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different obje
 1. [Gelfand1963] I. M. Gelfand and S. V. Fomin, *Calculus of Variations*, Prentice-Hall, 1963. (Reprinted by Dover, 2000.)
 2. [Giaquinta1996] M. Giaquinta and S. Hildebrandt, *Calculus of Variations I: The Lagrangian Formalism*, Springer, 1996.
 3. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005.
+4. [FeynmanHibbs1965] R. P. Feynman and A. R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as refinement limit of time-sliced amplitudes.)
