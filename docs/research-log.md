@@ -18,6 +18,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-14 (Q170: Referee review of C286)
+- Focus: verify Remark 5.2d mathematics and content.
+- Result: **PASS**. Formula ω_r²/ω_φ² = 3−q−v²/c² verified end-to-end. All specializations (q=2 → 1/γ² = ω², v→0 → 3−q, γ²ω²=1 recovered). Effective mass γm (not γ³m) confirmed correct for transverse perturbation. Content genuinely new (general-q frequency ratio not previously stated). Two LOW optionals noted (Section reference precision, frequency-vs-ratio phrasing). No guardrail violations.
+
 ## 2026-02-14 (S266: Section 2 remark candidates)
 - Focus: investigate whether Section 2 (general-q kinematic setup) deserves a structural remark.
 - Work: evaluated three candidates — (1) general-q velocity v=(K/L)r^{2-q} mass-dependence, (2) general-q circular-orbit energy E_circ=γmc²(1-v²/((q-1)c²)), (3) algebraic vs transcendental orbit condition at q=2 vs q≠2. All three overlap existing remarks (Remark 3.1 covers Q1 and Q3; Section 3.1 covers Q2) or add no new physics.
