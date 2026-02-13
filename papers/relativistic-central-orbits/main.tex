@@ -1,24 +1,20 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+%
 \documentclass[
 ]{article}
-\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math} % this also loads fontspec
+  \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-\usepackage{lmodern}
-\ifPDFTeX\else
-  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -36,20 +32,26 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Relativistic Central Orbits as Refinement-Witnesses},
+  pdfauthor={Alejandro Rivero},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\usepackage{bookmark}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same}
-\hypersetup{
-  pdftitle={Relativistic Central Orbits as Refinement-Witnesses},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 
 \title{Relativistic Central Orbits as Refinement-Witnesses}
-\author{}
-\date{}
+\author{Alejandro Rivero}
+\date{2026}
 
 \begin{document}
 \maketitle
@@ -65,21 +67,22 @@ to keep a minimal derivation-first record of what changes when the same
 geometric refinement story is pushed into relativistic regimes.
 \end{abstract}
 
+\hypertarget{purpose-and-relation-to-the-cornerstone-paper}{%
 \section{1. Purpose and Relation to the Cornerstone
-Paper}\label{purpose-and-relation-to-the-cornerstone-paper}
+Paper}\label{purpose-and-relation-to-the-cornerstone-paper}}
 
-The cornerstone manuscript (\texttt{paper/main.md}) uses central-force
-refinement as a structural bridge (equal areas / angular momentum
-preservation \(\leftrightarrow\) action additivity \(\leftrightarrow\)
-composition).
+The cornerstone manuscript uses central-force refinement as a structural
+bridge (equal areas / angular momentum preservation \(\leftrightarrow\)
+action additivity \(\leftrightarrow\) composition).
 
-This note is ``outside scope'' of the cornerstone paper but tracks a
-conversation branch: how relativistic kinematics modifies the simplest
-central-force circular-orbit conditions. The inverse-square case is
-singled out by an exact simplification already at the SR level.
+This note is outside the scope of the cornerstone paper but examines how
+relativistic kinematics modifies the simplest central-force
+circular-orbit conditions. The inverse-square case is singled out by an
+exact simplification already at the SR level.
 
+\hypertarget{sr-circular-motion-under-a-power-law-force}{%
 \section{2. SR Circular Motion Under a Power-Law
-Force}\label{sr-circular-motion-under-a-power-law-force}
+Force}\label{sr-circular-motion-under-a-power-law-force}}
 
 Assume a particle of rest mass \(m\) executes uniform circular motion of
 radius \(r\) and speed \(v\). The Lorentz factor is \[
@@ -106,9 +109,10 @@ L^2 = K\,\gamma\,m\, r^{3-q}.
 This reduces to the Newtonian relation when \(\gamma\to 1\)
 (i.e.~\(c\to\infty\)).
 
+\hypertarget{inverse-square-q2-special-case-vkl-and-the-bound-lkc}{%
 \section{\texorpdfstring{3. Inverse-Square (\(q=2\)) Special Case:
 \(v=K/L\) and the Bound
-\(L>K/c\)}{3. Inverse-Square (q=2) Special Case: v=K/L and the Bound L\textgreater K/c}}\label{inverse-square-q2-special-case-vkl-and-the-bound-lkc}
+\(L>K/c\)}{3. Inverse-Square (q=2) Special Case: v=K/L and the Bound L\textgreater K/c}}\label{inverse-square-q2-special-case-vkl-and-the-bound-lkc}}
 
 For \(q=2\), \[
 K=\gamma m v^2 r,\qquad L=\gamma m r v.
@@ -130,9 +134,10 @@ treatments of the relativistic Kepler problem (see
 e.g.~{[}BoscagginDambrosioFeltrin2020RelKepler{]} for a
 dynamical-systems/variational analysis of the same SR equation).
 
+\hypertarget{gr-baseline-schwarzschild-geodesics-effective-potential-photon-sphere}{%
 \section{4. GR Baseline: Schwarzschild Geodesics, Effective Potential,
 Photon
-Sphere}\label{gr-baseline-schwarzschild-geodesics-effective-potential-photon-sphere}
+Sphere}\label{gr-baseline-schwarzschild-geodesics-effective-potential-photon-sphere}}
 
 This section records the standard Schwarzschild baseline in a form
 parallel to the SR ``effective 1D radial motion'' viewpoint.
@@ -155,8 +160,9 @@ yields the radial equation \[
 V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\left(\epsilon+\frac{L^2}{r^2}\right).
 \]
 
+\hypertarget{null-circular-orbit-photon-sphere}{%
 \subsection{4.1 Null circular orbit (photon
-sphere)}\label{null-circular-orbit-photon-sphere}
+sphere)}\label{null-circular-orbit-photon-sphere}}
 
 For null geodesics \(\epsilon=0\), \[
 V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\frac{L^2}{r^2}.
@@ -168,13 +174,15 @@ V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\frac{L^2}{r^2}.
 
 Baseline anchor for these standard results: {[}Carroll1997LectureGR{]}.
 
-\subsection{4.2 Restoring units}\label{restoring-units}
+\hypertarget{restoring-units}{%
+\subsection{4.2 Restoring units}\label{restoring-units}}
 
 Replace \(M\) by \(GM/c^2\): \(r_{\mathrm{ph}}=3GM/c^2\),
 \(r_h=2GM/c^2\), and \(b=3\sqrt3\,GM/c^2\).
 
+\hypertarget{timelike-circular-orbits-and-isco}{%
 \subsection{4.3 Timelike circular orbits and
-ISCO}\label{timelike-circular-orbits-and-isco}
+ISCO}\label{timelike-circular-orbits-and-isco}}
 
 For timelike geodesics \(\epsilon=1\), \[
 V_{\mathrm{eff}}(r)=\left(1-\frac{2M}{r}\right)\left(1+\frac{L^2}{r^2}\right).
@@ -204,8 +212,9 @@ innermost stable circular orbit is \[
 L=2\sqrt3\,M,\qquad E=\frac{2\sqrt2}{3}.
 \]
 
+\hypertarget{sr-stability-of-circular-orbits-small-radial-perturbations}{%
 \section{5. SR Stability of Circular Orbits (Small Radial
-Perturbations)}\label{sr-stability-of-circular-orbits-small-radial-perturbations}
+Perturbations)}\label{sr-stability-of-circular-orbits-small-radial-perturbations}}
 
 This section stays within mechanical SR (a point particle in an
 external, time-independent central scalar potential \(U(r)\)). It is
@@ -218,8 +227,9 @@ W_L(r)=\sqrt{m^2c^4+\frac{L^2c^2}{r^2}}+U(r).
 \] Assume the attractive power-law force \(F(r)=K/r^q\) so that
 \(U'(r)=K/r^q\).
 
+\hypertarget{circularity-and-the-effective-potential-viewpoint}{%
 \subsection{5.1 Circularity and the effective-potential
-viewpoint}\label{circularity-and-the-effective-potential-viewpoint}
+viewpoint}\label{circularity-and-the-effective-potential-viewpoint}}
 
 Circular orbits satisfy \(W_L'(r_0)=0\), i.e. \[
 \frac{K}{r_0^q}=\frac{L^2c^2}{r_0^3\sqrt{m^2c^4+L^2c^2/r_0^2}}
@@ -228,7 +238,8 @@ L^2=K\,\gamma\,m\,r_0^{3-q},
 \] since \(\sqrt{m^2c^4+L^2c^2/r_0^2}=\gamma mc^2\). This recovers the
 SR circular-orbit condition used earlier.
 
-\subsection{5.2 Stability inequality}\label{stability-inequality}
+\hypertarget{stability-inequality}{%
+\subsection{5.2 Stability inequality}\label{stability-inequality}}
 
 At fixed \(L\), stability under small radial perturbations is the
 local-minimum condition \[
@@ -252,7 +263,8 @@ condition \(q<3\). For \(2<q<3\) SR adds a speed bound: \[
 \(\gamma\) in this model, while \(q\ge 3\) yields no stable circular
 orbits (beyond the Newtonian marginal case at \(q=3\)).
 
-\section{6. Outlook}\label{outlook}
+\hypertarget{outlook}{%
+\section{6. Outlook}\label{outlook}}
 
 Two natural extensions are: 1. replace the ``external potential''
 modeling assumption by an explicitly field-mediated interaction model,
@@ -262,7 +274,8 @@ refinement-compatibility spine (what is preserved under refinement, and
 what new kinematic admissibility conditions appear when the refinement
 rules are Lorentz/GR-consistent).
 
-\section{References}\label{references}
+\hypertarget{references}{%
+\section{References}\label{references}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
