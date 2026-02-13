@@ -3338,3 +3338,13 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: wrote blackboard on dualities (Kramers-Wannier, T-duality, Montonen-Olive/SL(2,Z)). Reviewed by string theorist — caught: (1) g↔1/g oversimplified (full SL(2,Z)), (2) N=4 exactness overstated (conjectured), (3) refinement framing too vague, (4) UV/IR=asymptotic safety too loose. All corrected. Promoted as Remark 4.8 in uncuttable.
 - Line counts: uncuttable 200 (14pp), action-angle 193 (13pp), fermionic 191 (12pp).
 - Next: S+C expansion targeting fermionic (shortest), then Q120.
+
+## 2026-02-13 (S172+C213: Levinson's theorem in fermionic)
+- Focus: Levinson's theorem connecting phase shifts to bound-state counting (fermionic Section 5).
+- Work: wrote blackboard on Levinson's theorem. Reviewed by scattering theory expert — caught: (1) "(mod π)" misrepresents theorem (removed), (2) use n_0 not n_b, (3) state δ(∞)=0 convention, (4) note short-range requirement, (5) fix "crosses π" language. All corrected. Promoted as Remark 5.8.
+
+## 2026-02-13 (S173+C214: Tan contact in fermionic)
+- Focus: Tan's universal contact relations elevating boundary-condition data to thermodynamics (fermionic Section 5).
+- Work: wrote blackboard on Tan contact. Reviewed by cold-atom physicist — caught: (1) g₂ notation wrong (use pair density ρ₂), (2) "any statistics" too broad (specify two-component Fermi gas), (3) pressure relation is for homogeneous systems, (4) RF tail needs final-state caveat. All corrected. Promoted as Remark 5.9.
+- Line counts: fermionic 200 (13pp), uncuttable 200 (14pp), action-angle 193 (13pp).
+- Next: S+C expansion targeting action-angle (shortest), then Q120.
