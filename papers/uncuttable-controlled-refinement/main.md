@@ -82,6 +82,13 @@ K(q_f,t_f;q_i,t_i)=\int \prod_{k=1}^{N-1}dq_k\;\prod_{k=0}^{N-1}K_\Delta(q_{k+1}
 \]
 is a product of short-time kernels composed over a time partition of depth \(N\). No finite \(N\) gives the exact propagator; the propagator is the \(N\to\infty\) refinement limit. Crucially, the control parameter \(\hbar\) enters the short-time kernels as \(\exp(iS_\Delta/\hbar)\), and different discretization conventions (left-point, midpoint, symmetric) can produce distinct \(O(\hbar)\) corrections even though they share the same classical \(\hbar\to 0\) limit [FeynmanHibbs1965]. Thus the quantum amplitude is doubly "uncuttable": it requires both a refinement rule (time-slicing prescription) and a comparison/equivalence structure (ordering convention or half-density normalization) before the limit is well-defined.
 
+`Example 3.1 (Non-uniqueness of refinement: \(\alpha\)-ordering).`
+For the classical Hamiltonian \(H(q,p)=qp\), different time-slicing prescriptions — evaluating position at \(q_\alpha=(1-\alpha)q_k+\alpha q_{k+1}\) in each slice — produce different quantum operators:
+\[
+\hat H_\alpha=\alpha\hat q\hat p + (1-\alpha)\hat p\hat q = \hat p\hat q + \alpha\,i\hbar.
+\]
+At \(\alpha=0\) (prepoint): \(\hat p\hat q\). At \(\alpha=1/2\) (midpoint/Weyl): \(\tfrac12(\hat q\hat p+\hat p\hat q)\). At \(\alpha=1\) (postpoint): \(\hat q\hat p\). All three share the classical limit \(H=qp\) as \(\hbar\to0\), but they are distinct quantum objects. The "uncuttable" message: the continuum quantum Hamiltonian is not determined by any single finite time-slicing; it requires specifying the refinement convention \(\alpha\) as part of the definition.
+
 # 4. Outlook: refinement compatibility as "the extra structure"
 In the companion papers, the "extra structure" used to control refinement limits is made explicit:
 - half-densities make kernel composition coordinate-free without hidden measure choices,
