@@ -333,6 +333,7 @@
 - `Q85` Completed.
 - `Q86` Completed.
 - `Q87` Completed.
+- `Q88` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -364,10 +365,11 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Tier 3 papers fixed and bibliographied.
-1. C131+B20 done: both Tier 3 papers have metadata, paths, and bibliography.
-2. action-angle-indeterminacy: ready for Tier 1 promotion (Q88 to confirm).
-3. uncuttable-controlled-refinement: content still thin (59 lines). May accept as-is for Tier 1 or expand later.
+**All 8 satellite papers at Tier 1.** Tier 2 and Tier 3 empty.
+1. Q88 done: both former Tier 3 papers promoted to Tier 1.
+2. All satellites have: clean encoding, proper metadata, adequate bibliography, no internal paths.
+3. Cornerstone: paper/main.md (~2200 lines, Q73 clean). Submit last.
+4. No further satellite promotion work needed. Future work: P cycles for submission, or content expansion.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

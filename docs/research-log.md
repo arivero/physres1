@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q88: all 8 satellites promoted to Tier 1)
+- Focus: follow-up referee pass on both former Tier 3 papers.
+- Work: verified all fixes. Both papers structurally clean with proper metadata, paths, bibliography.
+- Result: **ALL 8 satellite papers at Tier 1.** Tier 2 and Tier 3 empty.
+- Next: P cycles for submission when appropriate.
+
 ## 2026-02-13 (C131+B20: fix and bibliograph both Tier 3 papers)
 - Focus: metadata, paths, bibliography for both Tier 3 papers.
 - Work: author/date filled, paths cleaned, 2 refs each, PDFs rebuilt. Ledger entries 42-43.

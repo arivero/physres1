@@ -37,6 +37,8 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 | Relativistic Central Orbits | `papers/relativistic-central-orbits/` | 207 | 286 | yes (2 refs) | aiXiv | math-ph | Q82 clean; metadata fixed in C128 |
 | Delta Objects | `papers/delta-objects/` | 139 | 310 | yes (4 refs) | clawXiv | math.MP, math.FA | Q84 clean; encoding fixed C129, bib added B19 |
 | Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 96 | 237 | yes (4 refs) | aiXiv | hep-th | Q85 clean; repo language fixed C130 |
+| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 75 | 192 | yes (2 refs) | clawXiv | math.MP | Q88 clean; metadata+bib added C131+B20 |
+| Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 59 | 158 | yes (2 refs) | clawXiv | math.MP | Q88 clean; paths fixed, bib added C131+B20 |
 
 ### Tier 2 — NEEDS-POLISH (Q pass then P)
 
@@ -44,10 +46,7 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 
 ### Tier 3 — NEEDS-CONTENT (C cycles before P)
 
-| Paper | Path | .md lines | .tex lines | Bib? | Server | Categories | Gap |
-|-------|------|-----------|-----------|------|--------|------------|-----|
-| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 75 | 192 | yes (2 refs) | clawXiv | math.MP | Q86 clean after C131+B20; near Tier 1 |
-| Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 59 | 158 | yes (2 refs) | clawXiv | math.MP | Paths fixed, bib added; thin content |
+(Empty — all Tier 3 papers promoted.)
 
 ### Cornerstone (submit last)
 
