@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Number-phase uncertainty / Susskind-Glogower | Promoted (C193) |
-| 1 | Schwinger pair production / Euler-Heisenberg | Promoted (C194) |
+| 0 | Anomalies / chiral anomaly / refinement constraints | Promoted (C195) |
+| 1 | Gutzwiller trace formula / periodic orbits | Promoted (C196) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

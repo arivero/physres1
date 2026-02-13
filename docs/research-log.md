@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S154+C195+S155+C196: Anomalies + Gutzwiller trace formula)
+- Focus: expand uncuttable Section 4 (anomalies as refinement constraints) and action-angle Section 7 (Gutzwiller trace formula).
+- Work: S154 studied chiral anomaly. Particle physicist reviewer caught anomaly cancellation formula error (Q sum missing color/cubic structure) and π⁰ rate missing N_c — fixed by stating qualitatively. Promoted as Remark 4.5: ABJ anomaly, Nielsen-Ninomiya no-go, 't Hooft matching, anomaly cancellation constrains fermion content. S155 studied Gutzwiller trace formula. Semiclassical methods reviewer: all claims correct. Promoted as Remark 7.4: periodic orbits generalize EBK, amplitude ∝ T/|det(M-I)|^{1/2}, spectral statistics bridge, Selberg exact.
+- Result: uncuttable 161→163 (+2, 10pp). Action-angle 162→164 (+2, 10pp). Fermionic 162 (unchanged).
+
 ## 2026-02-13 (S152+C193+S153+C194: Number-phase + Schwinger/EH)
 - Focus: expand action-angle Section 2 (number-phase uncertainty) and fermionic Section 3 (Schwinger pair production).
 - Work: S152 studied Susskind-Glogower operators. Quantum optics reviewer caught multiple operator-algebra errors (ordering, product identities). Promoted as Remark 2.1: E₋ = â(N+1)^{-1/2}, vacuum obstruction E₊E₋ = I-|0⟩⟨0|, Fock states have uniform phase. S153 studied Schwinger pair production. Strong-field QED reviewer caught rate prefactor dimensional error. Promoted as Remark 3.3: corrected rate ∝ m²(E/E_cr)² exp(-πE_cr/E), Euler-Heisenberg dimension-8 operators, non-perturbative complement.
