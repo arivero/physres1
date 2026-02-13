@@ -363,3 +363,38 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   3. Example 5.2b: "q=1 (Hooke / isotropic oscillator)" → "q=1 (inverse-linear)". Bug found in S258.
 - Diffstat: +7 -1 in relativistic paper. 274 → 280 lines, still 5pp.
 - Guardrails: no cycle-tag leaks, no transcript citations.
+
+## 2026-02-13 (S264: Reference scan — relativistic central orbits satellite)
+- Focus: identify 1-2 missing references for the relativistic paper (currently only 2 refs).
+- Evaluated 6 candidates: Sommerfeld 1916, Goldstein textbook, Weinberg 1972, Wald 1984, Bertrand 1873, Sommerfeld/Kramers old quantum theory.
+- Results:
+  1. **Sommerfeld 1916** (STRONGLY RECOMMENDED): the paper's SR orbit equation (omega^2 = 1 - K^2/(c^2 L^2), precessing ellipse, 1/6 of GR precession) is Sommerfeld's 1916 result. Omission would be a referee-flaggable gap.
+  2. **Bertrand 1873** (RECOMMENDED, secondary): Remark 3.2a explicitly names and analyzes Bertrand's theorem. Citing the original paper is consistent with the project's foundational-citation style.
+  3. Others NOT recommended: Weinberg/Wald redundant with Carroll; Goldstein unnecessary given self-contained derivations; old quantum theory out of scope.
+- Promotable: YES. Needs B cycle to pin exact Sommerfeld & Bertrand references, then C cycle to insert citations.
+
+## 2026-02-14 (S262: Sommerfeld fine structure connection)
+- Focus: verify the paper's SR orbit equation is identical to Sommerfeld's 1916 equation.
+- Work: confirmed omega^2 = 1 - K^2/(c^2 L^2) with K=Ze^2, L=k*hbar gives omega = sqrt(1 - Z^2 alpha^2/k^2). This enters the Sommerfeld energy formula via E = mc^2(1 + alpha^2 Z^2/(n_r + k*omega)^2)^{-1/2}. The Dirac spectrum is reproduced with k -> j + 1/2 ("Sommerfeld puzzle").
+- Result: RECOMMEND PROMOTE as Remark 3.2b.
+
+## 2026-02-14 (S263: Outlook expansion — third extension point)
+- Focus: identify best candidate for a third Outlook item.
+- Evaluated: (a) Sommerfeld/quantum, (b) post-Newtonian, (c) multi-body, (d) experimental.
+- Winner: (a) Sommerfeld/quantum connection — orthogonal to items 1-2, connects to existing results, adds forward direction (semiclassical quantization of refinement-witness bounds).
+- Result: RECOMMEND PROMOTE as Outlook item 3.
+
+## 2026-02-14 (C285: Promote Remark 3.2b + Outlook item 3 + references)
+- Focus: promote Sommerfeld remark, expand Outlook, add 2 references.
+- Changes:
+  1. Remark 3.2b (Sommerfeld fine structure): inserted after Remark 3.2a. Source: S262.
+  2. Outlook item 3 (semiclassical quantization): added to Section 6. Source: S263.
+  3. References [3] Sommerfeld 1916, [4] Bertrand 1873. Source: S264.
+  4. Citation [Bertrand1873ClosedOrbits] added to Remark 3.2a.
+- Diffstat: +10 -4 in relativistic paper. 280 → 286 lines, still 5pp.
+- Guardrails: no cycle-tag leaks, no transcript citations.
+
+## 2026-02-14 (Q169: Referee review of C285)
+- Focus: verify Remark 3.2b mathematics, Outlook item 3 scope, reference formatting.
+- Checked: omega substitution algebra (K=Zαℏc, L=kℏ → ω²=1-Z²α²/k²), Sommerfeld energy formula, Dirac reinterpretation k→j+½, Outlook item non-redundancy, reference formatting, scope creep.
+- Verdict: **PASS.** All items mathematically correct, internally consistent, within page budget. No required fixes.
