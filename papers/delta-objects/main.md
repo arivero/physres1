@@ -41,15 +41,15 @@ Introduce near-diagonal coordinates \(y=x+\varepsilon v\). Then \(\delta^{(d)}(x
 \]
 Thus the universal \(\varepsilon^{-d/2}\) normalization exponent is already present in the identity delta kernel, once kernels are treated as half-densities.
 
-# 3. Delta on the stationary set: δ(∇f) and determinant weights
-## 3.1 One-dimensional identity (δ(f'))
+# 3. Delta on the stationary set: $\delta(\nabla f)$ and determinant weights
+## 3.1 One-dimensional identity ($\delta(f')$)
 Let \(f:\mathbb R\to\mathbb R\) have finitely many nondegenerate critical points \(x_i\) (so \(f'(x_i)=0\), \(f''(x_i)\neq 0\)). Then, as distributions,
 \[
 \delta(f'(x))=\sum_i \frac{\delta(x-x_i)}{|f''(x_i)|}.
 \]
 So \(\delta(f')\,dx\) is a density supported at stationary points with weights \(1/|f''|\).
 
-## 3.1a δ(f') versus δ': delta of a derivative vs derivative of delta
+## 3.1a $\delta(f')$ versus $\delta'$: delta of a derivative vs derivative of delta
 The notation \(\delta(f')\) above means: apply the Dirac delta distribution \(\delta(\cdot)\) to the **function** \(f'(x)\), thereby localizing to the stationary set \(f'(x)=0\).
 It should not be confused with \(\delta'\), the **distributional derivative** of \(\delta\), defined by duality:
 \[
@@ -57,7 +57,7 @@ It should not be confused with \(\delta'\), the **distributional derivative** of
 \]
 So \(\delta'\) is the distribution that probes derivatives of test functions at a point (“value of the derivative at zero”, up to sign), whereas \(\delta(f')\) is a stationary-set localization distribution.
 
-## 3.1b δ' from point splitting (difference quotient of shifted deltas)
+## 3.1b $\delta'$ from point splitting (difference quotient of shifted deltas)
 The distribution \(\delta'\) can be realized as a regulated point-splitting limit. Let \(\varepsilon\to 0\) and consider the shifted delta \(\delta(x+\varepsilon)\). For any test function \(\varphi\),
 \[
 \left\langle \frac{\delta(\,\cdot+\varepsilon)-\delta}{\varepsilon},\varphi\right\rangle
@@ -76,7 +76,7 @@ f'(0)=\langle -\delta', f\rangle.
 \]
 For the parallel smooth-function toy model ("difference quotient as divergence + subtraction") and further remarks, see the companion notes.
 
-## 3.2 Multi-dimensional identity (δ(∇f))
+## 3.2 Multi-dimensional identity ($\delta(\nabla f)$)
 Let \(f:\mathbb R^n\to\mathbb R\) have finitely many nondegenerate critical points \(x_i\) (so \(\nabla f(x_i)=0\) and \(\det(\mathrm{Hess}\,f)(x_i)\neq 0\)). Then
 \[
 \delta^{(n)}(\nabla f(x))
@@ -95,7 +95,7 @@ stationary phase gives amplitude contributions weighted by
 up to a universal \(\hbar\)-dependent factor and a signature phase. Squaring amplitude weights produces the density weights in \(\delta^{(n)}(\nabla f)\). This is the finite-dimensional prototype of the slogan:
 **amplitudes are half-densities; probabilities are densities.**
 
-## 3.4 Extremals in weak form: where δ and δ' appear in Euler–Lagrange
+## 3.4 Extremals in weak form: where $\delta$ and $\delta'$ appear in Euler–Lagrange
 For an action \(S[q]=\int L(q,\dot q,t)\,dt\), the extremal condition is naturally distributional:
 for test variations \(\eta(t)\) of compact support,
 \[

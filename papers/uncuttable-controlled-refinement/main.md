@@ -97,6 +97,13 @@ The same refinement non-uniqueness appears in stochastic calculus. For a Wiener 
 \]
 Both converge as mesh \(\to 0\) (for \(f\in C^2\)), but to different limits related by \(\int f(W)\circ dW = \int f(W)\,dW + \tfrac12\int f'(W)\,dt\) [Oksendal2003]. The correction \(\tfrac12 f'\,dt\) arises because Brownian paths have non-zero quadratic variation (\(\sum(\Delta W_k)^2\to T\neq 0\)); for paths of bounded variation, the quadratic variation vanishes and all evaluation-point prescriptions agree. This parallels Example 3.1: the ordering correction \(\alpha\,i\hbar\) vanishes when \(\hbar\to 0\) (smooth classical paths), but is unavoidable at finite \(\hbar\). Both cases instantiate the "uncuttable" pattern: when paths are rough enough, the refinement prescription becomes part of the definition.
 
+`Remark 3.3 (Trotter product formula as a refinement theorem).`
+The mathematical backbone of the path-integral refinement limit is the Trotter product formula: for operators \(A\) and \(B\) on a Hilbert space (under suitable domain conditions),
+\[
+e^{t(A+B)}=\lim_{N\to\infty}\left(e^{tA/N}\,e^{tB/N}\right)^N.
+\]
+In the path-integral context, \(A=-i\hat T/\hbar\) (kinetic) and \(B=-i\hat V/\hbar\) (potential), so each factor is a free propagation or a potential phase-kick at one time slice. The formula states that the exact propagator is a refinement limit of \(N\)-fold compositions — and that this limit converges. The symmetric (Suzuki–Trotter) splitting \(e^{tA/(2N)}e^{tB/N}e^{tA/(2N)}\) cancels the leading \(O(1/N)\) error from the Baker–Campbell–Hausdorff commutator \([A,B]\), improving convergence from first to second order. This is the "uncuttable" pattern in operator-algebraic form: no finite product equals \(e^{t(A+B)}\), and the rate of convergence depends on controlling the non-commutativity of the pieces.
+
 # 4. Outlook: refinement compatibility as "the extra structure"
 In the companion papers, the "extra structure" used to control refinement limits is made explicit:
 - half-densities make kernel composition coordinate-free without hidden measure choices,
