@@ -105,6 +105,30 @@ If \(\delta S[q;\eta]=0\) for all \(\eta\), then the Euler–Lagrange expression
 
 When \(\partial L/\partial \dot q\) has jumps (corners/impulses), the distributional derivative produces delta terms automatically; more generally, point-supported singularities are encoded by delta kernels and their derivatives (\(\delta,\delta',\ldots\)), depending on distributional order.
 
+## 3.5 Van Vleck determinant: the propagator instance of the square-root Hessian
+The square-root Hessian weight of Section 3.3 has a distinguished physical instance: the Van Vleck determinant [VanVleck1928Correspondence] [Morette1951] in the semiclassical propagator.
+
+For the short-time quantum propagator between positions \(q_i\) and \(q_f\) with time interval \(\Delta t\), stationary-phase evaluation of the path integral gives
+\[
+K(q_f,q_i;\Delta t)
+\;\propto\;
+\sqrt{D(q_f,q_i;\Delta t)}\;e^{(i/\hbar)\,S_{\mathrm{cl}}(q_f,q_i;\Delta t)},
+\]
+where \(S_{\mathrm{cl}}\) is the classical action on the extremal path and
+\[
+D(q_f,q_i;\Delta t)
+\;:=\;
+\left|\det\!\left(-\frac{\partial^2 S_{\mathrm{cl}}}{\partial q_f^a\,\partial q_i^b}\right)\right|
+\]
+is the Van Vleck determinant — a *mixed* Hessian (derivatives at the two endpoints of the classical path), as opposed to the full Hessian of \(f\) that appears in \(\delta(\nabla f)\). Despite this difference, it arises by the same stationary-phase mechanism: square-root Hessian weights at the amplitude level, confirming the "amplitudes are half-densities" pattern.
+
+`Example 3.5a (Free particle).`
+For the free particle in \(d\) dimensions, \(S_{\mathrm{cl}}=m|q_f-q_i|^2/(2\Delta t)\), so
+\[
+D = (m/\Delta t)^d,\qquad \sqrt{D}=(m/\Delta t)^{d/2},
+\]
+reproducing the \((\Delta t)^{-d/2}\) normalization of Section 2.
+
 # 4. Delta at a point: point interactions as rank-one kernels
 A point interaction [AlbeverioGesztesyHoeghKrohnHolden2005] is naturally the rank-one operator
 \[
@@ -127,8 +151,9 @@ if one adds a universality hypothesis that scalarization scales must be built fr
 This note treats that identification as an organizing perspective, not as a theorem.
 
 # 6. Outlook
-1. Relate the determinant weights in \(\delta(\nabla f)\) to the mixed Hessian determinants (Van Vleck type [Morette1951]) that appear after eliminating intermediate variables in time slicing (Schur complement template).
+1. ~~Relate determinant weights to Van Vleck type.~~ Addressed: Section 3.5 makes the connection explicit.
 2. Clarify which parts of the "functional delta \(\delta(\delta S)\)" story survive rigorous regularization and which remain heuristic.
+3. Extend the half-density treatment to spacetime (Lorentzian) propagators and distributional kernels in field theory.
 
 # References
 
@@ -136,3 +161,4 @@ This note treats that identification as an organizing perspective, not as a theo
 2. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003.
 3. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005.
 4. [Morette1951] C. Morette, "On the Definition and Approximation of Feynman's Path Integrals," *Phys. Rev.* **81**, 848–852 (1951).
+5. [VanVleck1928Correspondence] J. H. Van Vleck, "The Correspondence Principle in the Statistical Interpretation of Quantum Mechanics," *Proceedings of the National Academy of Sciences of the United States of America* 14(2) (1928), 178–188. DOI `10.1073/pnas.14.2.178`.
