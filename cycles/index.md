@@ -194,6 +194,8 @@
 190. `C190` Completed.
 191. `C191` Completed.
 192. `C192` Completed.
+193. `C193` Completed.
+194. `C194` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -372,6 +374,8 @@
 - `S149` Completed.
 - `S150` Completed.
 - `S151` Completed.
+- `S152` Completed.
+- `S153` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -529,16 +533,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S151+C192: Cooper pairing Remark 6.1 in fermionic mediators (+2 net lines, 153→155).
-2. Q117: Review of 4 remarks (4.3, 4.4, 5.7, 6.8) — all CONDITIONAL PASS (missing bibliography entries).
-3. S149+C190: Bargmann representation Remark 6.8 in action-angle.
-4. S150+C191: EFT Remark 4.4 in uncuttable.
-5. S147+C188: Lattice gauge theory Remark 4.3 in uncuttable.
+1. S152+C193: Number-phase uncertainty Remark 2.1 in action-angle (+7 lines, 154→161).
+2. S153+C194: Schwinger/EH Remark 3.3 in fermionic mediators (+7 lines, 155→162).
+3. S151+C192: Cooper pairing Remark 6.1 in fermionic mediators.
+4. B22: 13 bibliography entries added across all three satellites.
+5. Q117: Review of 4 remarks — all CONDITIONAL PASS → fixed by B22.
 
 Next:
-- All three satellites at 154-155 lines (uncuttable 155, fermionic 155, action-angle 154).
-- B22 completed: 13 bibliography entries added across all three satellites (Q117 fix).
-- Action-angle is now the shortest — next S+C cycle should target it.
+- Satellites: action-angle 161, fermionic 162, uncuttable 160.
+- Uncuttable is now the shortest — next S+C cycle should target it.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

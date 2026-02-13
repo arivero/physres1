@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S152+C193+S153+C194: Number-phase + Schwinger/EH)
+- Focus: expand action-angle Section 2 (number-phase uncertainty) and fermionic Section 3 (Schwinger pair production).
+- Work: S152 studied Susskind-Glogower operators. Quantum optics reviewer caught multiple operator-algebra errors (ordering, product identities). Promoted as Remark 2.1: E₋ = â(N+1)^{-1/2}, vacuum obstruction E₊E₋ = I-|0⟩⟨0|, Fock states have uniform phase. S153 studied Schwinger pair production. Strong-field QED reviewer caught rate prefactor dimensional error. Promoted as Remark 3.3: corrected rate ∝ m²(E/E_cr)² exp(-πE_cr/E), Euler-Heisenberg dimension-8 operators, non-perturbative complement.
+- Result: action-angle 158→161 (+3, 10pp). Fermionic 159→162 (+3, 9pp). Uncuttable 160 (unchanged).
+
 ## 2026-02-13 (B22: bibliography additions for Q117 fix)
 - Focus: add missing formal bibliography entries flagged by Q117.
 - Work: Added 13 reference entries: uncuttable +5 (Wilson, Gross-Wilczek, Politzer, Weinberg, Grzadkowski), fermionic +4 (Casimir, Lamoreaux, Chin, BCS), action-angle +4 (Bargmann, Perelomov, Mandelstam-Tamm, Berry-Tabor). All with DOIs where available.
