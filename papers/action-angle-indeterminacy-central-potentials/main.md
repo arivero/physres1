@@ -1,7 +1,7 @@
 ---
 title: "Action–Angle Indeterminacy in Central Potentials: A Referee-Safe Witness"
-author: []
-date: ""
+author: "Alejandro Rivero"
+date: "2026"
 abstract: |
   “Action–angle indeterminacy” should not be read as a force-range heuristic (in the style of energy–time slogans), but as a clean conjugacy statement: sharpening an action variable broadens the conjugate angle variable. For central potentials the safest, most explicit instance is the azimuthal pair \((\phi,L_z)\): an \(L_z\) eigenstate has \(\phi\)-dependence \(e^{im\phi}\), hence a uniform azimuthal probability distribution; conversely, any state localized in \(\phi\) must involve a broad superposition of angular-momentum modes (Fourier on the circle). This note records that witness and explains its foundations-level message: classical orbit-phase/orientation pictures correspond to semiclassical packets/superpositions rather than single stationary eigenstates.
 ---
@@ -71,3 +71,4 @@ Beyond the \((\phi,L_z)\) sector, integrable central problems admit a fuller act
 # References
 
 1. [TongQMLectures] David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)
+2. [Sakurai2020] J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University Press, 2020. (Standard treatment of angular momentum eigenstates, spherical harmonics, and the angle-operator subtlety.)

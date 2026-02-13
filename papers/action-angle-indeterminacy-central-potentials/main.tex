@@ -1,24 +1,20 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+%
 \documentclass[
 ]{article}
-\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math} % this also loads fontspec
+  \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-\usepackage{lmodern}
-\ifPDFTeX\else
-  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -36,21 +32,27 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Action--Angle Indeterminacy in Central Potentials: A Referee-Safe Witness},
+  pdfauthor={Alejandro Rivero},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\usepackage{bookmark}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same}
-\hypersetup{
-  pdftitle={Action--Angle Indeterminacy in Central Potentials: A Referee-Safe Witness},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 
 \title{Action--Angle Indeterminacy in Central Potentials: A Referee-Safe
 Witness}
-\author{}
-\date{}
+\author{Alejandro Rivero}
+\date{2026}
 
 \begin{document}
 \maketitle
@@ -69,7 +71,8 @@ correspond to semiclassical packets/superpositions rather than single
 stationary eigenstates.
 \end{abstract}
 
-\section{1. Purpose and scope}\label{purpose-and-scope}
+\hypertarget{purpose-and-scope}{%
+\section{1. Purpose and scope}\label{purpose-and-scope}}
 
 This dependent note isolates one specific ``action--angle
 indeterminacy'' statement that is both explicit and referee-safe in a
@@ -84,9 +87,10 @@ We also do \textbf{not} make any claims about the range of forces or
 potentials; the point here is about \textbf{which variables can be
 simultaneously sharp} in stationary states.
 
+\hypertarget{the-safe-conjugate-pair-on-the-circle-phi-and-l_z}{%
 \section{\texorpdfstring{2. The safe conjugate pair on the circle:
 \(\phi\) and
-\(L_z\)}{2. The safe conjugate pair on the circle: \textbackslash phi and L\_z}}\label{the-safe-conjugate-pair-on-the-circle-phi-and-l_z}
+\(L_z\)}{2. The safe conjugate pair on the circle: \textbackslash phi and L\_z}}\label{the-safe-conjugate-pair-on-the-circle-phi-and-l_z}}
 
 In spherical coordinates the azimuthal angle is periodic,
 \(\phi\sim\phi+2\pi\). The generator of rotations about the \(z\)-axis
@@ -103,9 +107,10 @@ satisfies the canonical shift relation \[
 \] which already captures the operational content: sharp \(L_z\) implies
 maximal delocalization in the conjugate angle.
 
+\hypertarget{central-potentials-l_z-eigenstates-have-uniform-phi-distribution}{%
 \section{\texorpdfstring{3. Central potentials: \(L_z\) eigenstates have
 uniform \(\phi\)
-distribution}{3. Central potentials: L\_z eigenstates have uniform \textbackslash phi distribution}}\label{central-potentials-l_z-eigenstates-have-uniform-phi-distribution}
+distribution}{3. Central potentials: L\_z eigenstates have uniform \textbackslash phi distribution}}\label{central-potentials-l_z-eigenstates-have-uniform-phi-distribution}}
 
 For a central potential (or any Hamiltonian commuting with \(L_z\)), one
 may choose simultaneous eigenstates of \(L_z\). In the standard
@@ -124,9 +129,10 @@ Thus an \(L_z\) eigenstate may be written as \[
 \(\phi\) is uniform on \([0,2\pi)\). This is the minimal ``angle
 indeterminacy'' witness for central potentials.
 
+\hypertarget{fourier-tradeoff-localizing-phi-forces-a-broad-m-superposition}{%
 \section{\texorpdfstring{4. Fourier tradeoff: localizing \(\phi\) forces
 a broad
-\(m\)-superposition}{4. Fourier tradeoff: localizing \textbackslash phi forces a broad m-superposition}}\label{fourier-tradeoff-localizing-phi-forces-a-broad-m-superposition}
+\(m\)-superposition}{4. Fourier tradeoff: localizing \textbackslash phi forces a broad m-superposition}}\label{fourier-tradeoff-localizing-phi-forces-a-broad-m-superposition}}
 
 Any square-integrable \(2\pi\)-periodic function admits a Fourier series
 \[
@@ -147,8 +153,9 @@ superposition of modes \(-M\le m\le M\), \[
 broadening \(L_z\)'' tradeoff completely explicit without invoking any
 disputed angle-operator formalism.
 
+\hypertarget{foundations-message-orbit-pictures-require-packetssuperpositions}{%
 \section{5. Foundations message: orbit pictures require
-packets/superpositions}\label{foundations-message-orbit-pictures-require-packetssuperpositions}
+packets/superpositions}\label{foundations-message-orbit-pictures-require-packetssuperpositions}}
 
 This witness supports a simple interpretive guardrail for central-force
 intuition: a single stationary eigenstate (even when it carries
@@ -162,7 +169,8 @@ In other words, ``classical orbit pictures'' correspond to semiclassical
 packets and stationary-phase concentration, not to exact eigenstates
 that are sharp in the conserved actions.
 
-\section{6. Outlook (kept minimal)}\label{outlook-kept-minimal}
+\hypertarget{outlook-kept-minimal}{%
+\section{6. Outlook (kept minimal)}\label{outlook-kept-minimal}}
 
 Beyond the \((\phi,L_z)\) sector, integrable central problems admit a
 fuller action--angle description (with a radial action and additional
@@ -173,7 +181,8 @@ story into a standalone foundations claim would require a separate study
 cycle to avoid conflating (i) action--angle existence/global issues with
 (ii) semiclassical quantization conditions.
 
-\section{References}\label{references}
+\hypertarget{references}{%
+\section{References}\label{references}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -183,6 +192,11 @@ cycle to avoid conflating (i) action--angle existence/global issues with
   no DOI). OA: lecture-note PDF. (Contains
   \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous
   eigenstates of \(L^2\) and \(L_z\).)
+\item
+  {[}Sakurai2020{]} J. J. Sakurai and Jim Napolitano, \emph{Modern
+  Quantum Mechanics}, 3rd ed., Cambridge University Press, 2020.
+  (Standard treatment of angular momentum eigenstates, spherical
+  harmonics, and the angle-operator subtlety.)
 \end{enumerate}
 
 \end{document}

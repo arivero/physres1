@@ -1,24 +1,20 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+%
 \documentclass[
 ]{article}
-\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math} % this also loads fontspec
+  \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-\usepackage{lmodern}
-\ifPDFTeX\else
-  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -36,26 +32,32 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={``Uncuttable'' as Controlled Refinement},
+  pdfauthor={Alejandro Rivero},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\usepackage{bookmark}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same}
-\hypersetup{
-  pdftitle={``Uncuttable'' as Controlled Refinement},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 
 \title{``Uncuttable'' as Controlled Refinement}
-\author{}
-\date{}
+\author{Alejandro Rivero}
+\date{2026}
 
 \begin{document}
 \maketitle
 \begin{abstract}
-This note fixes a project-internal meaning of ``uncuttable'' aligned
-with the refinement-compatibility thesis of \texttt{paper/main.md}. Here
+This note fixes a meaning of ``uncuttable'' aligned with the
+refinement-compatibility thesis of the cornerstone manuscript. Here
 \textbf{uncuttable} does not mean ``indivisible.'' It means: the
 quantity of interest is not determined by any \emph{finite} dissection
 alone; it is a \textbf{limit object} whose definition requires a
@@ -67,7 +69,8 @@ refinement limit, and extra control data may be required for that limit
 to exist or be unique.
 \end{abstract}
 
-\section{1. Definition}\label{definition}
+\hypertarget{definition}{%
+\section{1. Definition}\label{definition}}
 
 Call a quantity \(Q\) \textbf{uncuttable} (in this note's sense) if: 1.
 there exists a family of finite approximants \(Q_N\) produced by a
@@ -81,8 +84,9 @@ This is the ordinary situation in analysis: finite partitions
 approximate, but the object is defined by a limiting procedure together
 with hypotheses that ensure convergence/uniqueness.
 
+\hypertarget{toy-model-an-integral-is-already-a-refinement-limit}{%
 \section{2. Toy model: an integral is already a refinement
-limit}\label{toy-model-an-integral-is-already-a-refinement-limit}
+limit}\label{toy-model-an-integral-is-already-a-refinement-limit}}
 
 Let \(f:[a,b]\to\mathbb R\). A prototypical refinement family is a
 partition \(P_N=\{a=t_0<\cdots<t_N=b\}\) with mesh
@@ -98,8 +102,9 @@ rule unless hypotheses are stated.
 In the present program, this is the basic moral: finite cuts
 approximate, but the value is defined by \textbf{controlled refinement}.
 
+\hypertarget{dynamics-action-stationarity-and-the-need-for-control-data}{%
 \section{3. Dynamics: action, stationarity, and the need for control
-data}\label{dynamics-action-stationarity-and-the-need-for-control-data}
+data}\label{dynamics-action-stationarity-and-the-need-for-control-data}}
 
 The cornerstone manuscript uses the same template in mechanics. Given a
 partition of time, the discrete action \[
@@ -115,22 +120,40 @@ point-supported variations require mollification. 2.
 conventions (even if classically equivalent) can produce distinct
 refined objects unless an equivalence or control map is specified.
 
-These are exactly the obstructions enumerated in \texttt{paper/main.md}
-(\texttt{Heuristic\ H0.2}): the point is not indivisible atoms, but
-limit control.
+These are exactly the obstructions discussed in the cornerstone
+manuscript: the point is not indivisible atoms, but limit control.
 
+\hypertarget{outlook-refinement-compatibility-as-the-extra-structure}{%
 \section{4. Outlook: refinement compatibility as ``the extra
-structure''}\label{outlook-refinement-compatibility-as-the-extra-structure}
+structure''}\label{outlook-refinement-compatibility-as-the-extra-structure}}
 
-In this repo, the ``extra structure'' used to control refinement limits
-is made explicit: - half-densities make kernel composition
-coordinate-free without hidden measure choices, - control maps \(\tau\)
-encode how parameters must flow under refinement to maintain stability,
-- renormalization is the compatibility rule when naive refinement limits
-diverge.
+In the companion papers, the ``extra structure'' used to control
+refinement limits is made explicit: - half-densities make kernel
+composition coordinate-free without hidden measure choices, - control
+maps \(\tau\) encode how parameters must flow under refinement to
+maintain stability, - renormalization is the compatibility rule when
+naive refinement limits diverge.
 
 This note is therefore a small conceptual bridge: it isolates an early,
 analysis-level instance of the same meta-problem that reappears in
 quantization and in QFT.
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  {[}BatesWeinstein1997{]} Sean Bates and Alan Weinstein, \emph{Lectures
+  on the Geometry of Quantization}, Berkeley Mathematics Lecture Notes,
+  vol.~8, AMS, 1997. OA:
+  \url{https://math.berkeley.edu/~alanw/GofQ.pdf}. (Half-density
+  formalism for coordinate-free kernel composition.)
+\item
+  {[}FeynmanHibbs1965{]} Richard P. Feynman and Albert R. Hibbs,
+  \emph{Quantum Mechanics and Path Integrals}, McGraw-Hill, 1965. (Path
+  integral as a refinement limit of time-sliced amplitudes.)
+\end{enumerate}
 
 \end{document}

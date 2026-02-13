@@ -1,9 +1,9 @@
 ---
 title: "\"Uncuttable\" as Controlled Refinement"
-author: []
-date: ""
+author: "Alejandro Rivero"
+date: "2026"
 abstract: |
-  This note fixes a project-internal meaning of "uncuttable" aligned with the refinement-compatibility thesis of `paper/main.md`.
+  This note fixes a meaning of "uncuttable" aligned with the refinement-compatibility thesis of the cornerstone manuscript.
   Here **uncuttable** does not mean "indivisible." It means: the quantity of interest is not determined by any *finite* dissection alone; it is a **limit object** whose definition requires a refinement rule and a comparison structure across refinements.
   
   The point is structural and mathematical: once a theory is built from composable local pieces, the continuum theory is the stable target of a refinement limit, and extra control data may be required for that limit to exist or be unique.
@@ -42,12 +42,17 @@ Two "uncuttable" features appear immediately when one pushes beyond smooth class
 1. **Singular probes and corners:** stationarity must be interpreted in weak/distributional form; point-supported variations require mollification.
 2. **Non-uniqueness of refinement schemes:** different discretization conventions (even if classically equivalent) can produce distinct refined objects unless an equivalence or control map is specified.
 
-These are exactly the obstructions enumerated in `paper/main.md` (`Heuristic H0.2`): the point is not indivisible atoms, but limit control.
+These are exactly the obstructions discussed in the cornerstone manuscript: the point is not indivisible atoms, but limit control.
 
 # 4. Outlook: refinement compatibility as "the extra structure"
-In this repo, the "extra structure" used to control refinement limits is made explicit:
+In the companion papers, the "extra structure" used to control refinement limits is made explicit:
 - half-densities make kernel composition coordinate-free without hidden measure choices,
 - control maps \(\tau\) encode how parameters must flow under refinement to maintain stability,
 - renormalization is the compatibility rule when naive refinement limits diverge.
 
 This note is therefore a small conceptual bridge: it isolates an early, analysis-level instance of the same meta-problem that reappears in quantization and in QFT.
+
+# References
+
+1. [BatesWeinstein1997] Sean Bates and Alan Weinstein, *Lectures on the Geometry of Quantization*, Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Half-density formalism for coordinate-free kernel composition.)
+2. [FeynmanHibbs1965] Richard P. Feynman and Albert R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as a refinement limit of time-sliced amplitudes.)
