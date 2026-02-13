@@ -10,15 +10,15 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 282 | C00–C281 |
+| Content (`Cnn`) | 284 | C00–C283 |
 | Bibliography (`Bnn`) | 26 | B00–B26 |
-| Study (`Snn`) | 257 | S00–S256 |
-| Quality (`Qnn`) | 166 | Q00–Q165 (gaps: Q110–Q111) |
+| Study (`Snn`) | 258 | S00–S257 |
+| Quality (`Qnn`) | 168 | Q00–Q167 (gaps: Q110–Q111) |
 | Discovery triage (`Dnn`) | 16 | D00–D15 (dormant) |
 | Discovery explore (`DXnn`) | 10 | DX01–DX10 (dormant) |
 | Publication (`Pnn`) | 1 | P00 (Planck Area → clawXiv v2) |
 
-**Total archived: ~2720 cycle files.**
+**Total archived: ~2780 cycle files.**
 
 ## Active / In Progress
 
@@ -27,15 +27,14 @@
 ## Next Action
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
-- PLB-length (≤6pp): relativistic 5pp (265), HD-QFT 6pp (265), delta 6pp (218).
+- PLB-length (≤6pp): relativistic 5pp (274), HD-QFT 6pp (265), delta 6pp (218).
 - PRD-length (>6pp): dirac 7pp (256), rg-fund 9pp, action-angle 13pp, fermionic 13pp, uncuttable 13pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
-- S256+C281+Q165: relativistic Remark 5.2c (stability–precession duality γ²ω²=1 at q=2) (+3, 265→268 at time of C281). Q165 PASS.
-- S250–S253: Green's function / HJ viscosity / Sobolev regularity / broken geodesics — all NOT promoted (dirac at 7pp, over PLB limit).
-- S246+C280+Q164: dirac-probes Remark 5.2a (self-adjoint extension = quantum impulse) (+3, 256). Q164 PASS.
+- S254–S257+C281–C283+Q165–Q167: relativistic expansion batch (+9, 265→274). 4 studies, 3 promoted, 3 Q reviews (all PASS). Q167 wording fix applied.
+- S250–S253: dirac-probes further studies — all FROZEN (7pp, over PLB limit).
 
 **Immediate:**
 - Dirac-probes at 7pp — FROZEN for PLB. Would need line cuts to return to ≤6pp.

@@ -293,3 +293,25 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: Q165 PASS. All five review criteria satisfied. C281 approved.
 - Next: continue relativistic expansion (5pp, most room).
 
+## 2026-02-13 (Q166: Referee review of C282 — relativistic Remark 4.3g)
+- Focus: referee review of Remark 4.3g (SR→GR angular-momentum floor ratio 2√3) in relativistic paper.
+- Work:
+  - Mathematical correctness: verified l_SR = GM/c from L>K/c with K=GMm, ℓ=L/m. Verified l_ISCO = 2√3 GM/c from L_ISCO=2√3 M (G=c=1) with unit restoration. Ratio 2√3 ≈ 3.46 correct.
+  - Unit consistency: Section 3 uses L (total), Section 4 uses l (specific, G=c=1). Conversion handled correctly but implicitly. Minor notation mismatch: remark cites "ℓ>GM/c (Section 3.1)" but Section 3.1 states L>K/c.
+  - Placement: after Remark 4.3f — appropriate, maintains SR–GR comparison flow.
+  - Cross-references: Section 3.1 (line 72–82), Remark 4.3b (line 187–188), Remark 3.2 (line 87–100) all verified.
+  - Cycle labels: none found in manuscript.
+- Result: Q166 PASS with optional wording revision (cross-reference to Section 3.1 could clarify L→ℓ conversion). Mathematical content verified correct. Remark adds value (quantifies curvature tightening, parallels 1/6 precession ratio).
+- Next: continue relativistic expansion; consider wording polish for Section 3.1 cross-reference.
+
+
+## 2026-02-13 (Q167: Referee review of C283 — relativistic Remark 3.1a)
+- Focus: referee review of Remark 3.1a (Newtonian limit: structural cleanliness) in relativistic paper.
+- Work:
+  - Content accuracy: verified three technical claims. MINOR WORDING ISSUE found: "Lorentz factors... vanish" imprecise (should be "Lorentz factor corrections vanish" or "γ→1, √(1-K²/(c²L²))→1"). Claims themselves correct: kinematic corrections vanish, L>K/c→L>0, r=L²/(Km) and mK²/(2L²) exact Newtonian forms recovered.
+  - Placement: line 84-85, after Section 3.1 conclusion, before Remark 3.2 — logically sound.
+  - Cross-references: "refinement-witness viewpoint" connection to Section 1 valid (abstract + Section 1 framing).
+  - Duplication vs synthesis: remark provides thematic synthesis of scattered limit statements (lines 64, 78) + connects to paper's conceptual agenda. Not mere repetition — adds "structural cleanliness" claim and refinement-witness link.
+  - Guardrails: no cycle labels, no transcript citations.
+- Result: Q167 CONDITIONAL PASS. Wording fix recommended: clarify "kinematic corrections (γ→1, √(1-K²/(c²L²))→1) vanish" rather than "Lorentz factors... vanish." Remark adds thematic value beyond technical content.
+- Next: apply wording fix if C283 cycle is executed; continue expansion.
