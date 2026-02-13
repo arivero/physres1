@@ -253,6 +253,30 @@ from that singular support, paralleling the way the effective range
 expansion of Remark 4.2 encodes scattering observables in a few
 parameters.
 
+\texttt{Remark\ 3.6\ (Optical\ theorem:\ unitarity\ as\ the\ physical\ engine\ behind\ dispersion).}
+The dispersion reconstruction of Remark 3.5 rests on analyticity
+(causality), but the physical content of the spectral weight
+\(\mathrm{Im}\,\Pi(s)\) comes from unitarity. The optical theorem --- a
+direct consequence of \(SS^\dagger=1\) --- states that the imaginary
+part of the forward elastic scattering amplitude is proportional to the
+total cross-section (summing over all open channels, elastic and
+inelastic). For the vacuum polarization, this connects
+\(\mathrm{Im}\,\Pi(s)\) to the cross-section \(\sigma(e^+e^-\to X)\) at
+center-of-mass energy \(\sqrt{s}\), through the specific structure of
+the photon self-energy: the photon propagator dressed by the fermion
+loop mediates the process, and its imaginary part above the
+pair-production threshold \(s=4m^2\) is the production rate. At the
+diagrammatic level, Cutkosky's cutting rules (1960) compute the
+discontinuity by replacing cut propagators with on-shell delta functions
+\(\delta(p^2-m^2)\,\theta(p^0)\), putting intermediate states on-shell
+--- each cut corresponds to a physical production channel in the
+unitarity sum. The structural point for Section 4's contact expansion is
+that the polynomial \(C_0+C_2 q^2+\cdots\) is manifestly real below
+threshold; the non-polynomial, imaginary content that appears above
+threshold (open production channels) is precisely what the contact
+expansion cannot capture --- it is the absorptive physics that the
+dispersion integral reconstructs from the branch-cut singularity.
+
 \hypertarget{ir-replacement-local-operators-rightarrow-contact-kernels-boundary-condition-data}{%
 \section{\texorpdfstring{4. IR replacement: local operators
 \(\Rightarrow\) contact kernels / boundary-condition
@@ -608,6 +632,35 @@ is the complete realization of the paper's structural chain: fermions
 range) \(+\) contact operators (short range), with the EFT framework
 providing the systematic power counting that relates the two regimes.
 
+\texttt{Remark\ 6.4\ (Color\ confinement:\ the\ dynamical\ completion\ of\ the\ fermion-to-composite\ chain).}
+The structural chain of Section 6 --- fermions \(\to\) emergent
+composites \(\to\) effective interactions --- reaches its most dramatic
+realization in QCD. Quarks interact via gluon exchange, but at long
+range the quark-antiquark potential grows linearly:
+\(V(r)\sim\sigma r\), with string tension \(\sigma\approx 0.18\)
+GeV\(^2\) (in natural units, equivalently \(\sim 0.9\) GeV/fm). Wilson's
+area-law criterion (1974) makes this precise: for a rectangular
+\(R\times T\) Wilson loop, \(\langle W(C)\rangle\sim\exp(-\sigma RT)\)
+signals confinement (linear potential), versus
+\(\langle W(C)\rangle\sim\exp(-\mu P)\) (perimeter law, \(P=2(R+T)\))
+for a deconfined/screened phase. When the flux-tube energy becomes
+sufficient to materialize a new quark-antiquark pair from the vacuum,
+the string fragments --- producing hadrons rather than free quarks.
+Confinement thus produces both bosonic color-singlet composites (mesons
+\(q\bar q\), glueballs) and fermionic ones (baryons \(qqq\)); the
+structural point for this paper is that all long-range hadronic
+interactions are mediated by the bosonic composites (pion exchange of
+Remark 6.3), completing the chain from fundamental fermions to effective
+bosonic potentials. The pattern echoes --- without being logically
+equivalent to --- the Grassmann-source obstruction of Section 3: the
+fundamental fermionic degrees of freedom are not directly accessible as
+asymptotic states, and the effective low-energy description (chiral
+perturbation theory) is built entirely from bosonic meson fields.
+Proving that pure Yang-Mills gauge theory in four dimensions has a mass
+gap from first principles is one of the Clay Millennium Prize Problems;
+lattice QCD provides numerical evidence for confinement and a mass gap,
+but a rigorous proof remains open.
+
 \hypertarget{references}{%
 \section{References}\label{references}}
 
@@ -758,6 +811,21 @@ providing the systematic power counting that relates the two regimes.
   Fermi gas,'' \emph{Physical Review Letters} 104 (2010), 235301. DOI
   \texttt{10.1103/PhysRevLett.104.235301}. (Experimental verification of
   Tan relations; used in Remark 5.9.)
+\item
+  {[}Cutkosky1960{]} Richard E. Cutkosky, ``Singularities and
+  discontinuities of Feynman amplitudes,'' \emph{Journal of Mathematical
+  Physics} 1 (1960), 429--433. DOI \texttt{10.1063/1.1703676}. (Cutting
+  rules for Feynman diagram discontinuities; used in Remark 3.6.)
+\item
+  {[}Wilson1974{]} Kenneth G. Wilson, ``Confinement of quarks,''
+  \emph{Physical Review D} 10 (1974), 2445--2459. DOI
+  \texttt{10.1103/PhysRevD.10.2445}. (Wilson loop confinement criterion
+  and lattice gauge theory; used in Remark 6.4.)
+\item
+  {[}tHooft1974{]} Gerard 't Hooft, ``A planar diagram theory for strong
+  interactions,'' \emph{Nuclear Physics B} 72 (1974), 461--473. DOI
+  \texttt{10.1016/0550-3213(74)90154-0}. (Large-N expansion and planar
+  dominance in QCD; used in Remark 6.4.)
 \end{enumerate}
 
 \end{document}
