@@ -153,3 +153,8 @@ This note is therefore a small conceptual bridge: it isolates an early, analysis
 
 1. [FeynmanHibbs1965] Richard P. Feynman and Albert R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as refinement limit of time-sliced amplitudes; foundational treatment.)
 2. [Oksendal2003] Bernt Øksendal, *Stochastic Differential Equations: An Introduction with Applications*, 6th ed., Springer, 2003. ISBN `978-3-540-04758-2`. DOI `10.1007/978-3-642-14394-6`. (Standard textbook on Itô vs Stratonovich integrals and their relationship; used in uncuttable satellite for Remark 3.2.)
+3. [Wilson1974] Kenneth G. Wilson, "Confinement of quarks," *Physical Review D* 10 (1974), 2445–2459. DOI `10.1103/PhysRevD.10.2445`. (Lattice gauge theory; used in Remark 4.3.)
+4. [GrossWilczek1973] David J. Gross and Frank Wilczek, "Ultraviolet behavior of non-abelian gauge theories," *Physical Review Letters* 30 (1973), 1343–1346. DOI `10.1103/PhysRevLett.30.1343`. (Asymptotic freedom; used in Remark 4.3.)
+5. [Politzer1973] H. David Politzer, "Reliable perturbative results for strong interactions?" *Physical Review Letters* 30 (1973), 1346–1349. DOI `10.1103/PhysRevLett.30.1346`. (Asymptotic freedom; used in Remark 4.3.)
+6. [Weinberg1979] Steven Weinberg, "Phenomenological Lagrangians," *Physica A* 96 (1979), 327–340. DOI `10.1016/0378-4371(79)90223-1`. (Foundations of EFT; used in Remark 4.4.)
+7. [Grzadkowski2010] B. Grzadkowski, M. Iskrzyński, M. Misiak, and J. Rosiek, "Dimension-six terms in the Standard Model Lagrangian," *JHEP* 2010:10 (2010), 085. arXiv:`1008.4884`. DOI `10.1007/JHEP10(2010)085`. (Warsaw basis for SM EFT dimension-6 operators; used in Remark 4.4.)
