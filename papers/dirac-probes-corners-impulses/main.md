@@ -45,7 +45,7 @@ Fix a nonnegative mollifier \(\rho\in C_c^\infty(\mathbb{R})\) with \(\int\rho=1
 By (H3) the convolution converges to \(F[q](t_0)\) as \(\varepsilon\to0^+\). Since \(u\) is arbitrary, \(F[q](t_0)=0\). \(\square\)
 
 `Remark 2.2 (Role of each hypothesis).`
-(H1) ensures \(F[q]\) is locally integrable so the distributional pairing makes sense. (H2) is the global stationarity input. (H3) is the local regularity gate: without it, mollifier limits may fail to converge or may converge to an averaged value rather than a pointwise one. If \(F[q]\) is continuous on all of \((t_i,t_f)\), iteration of Theorem 2.1 recovers the classical Euler–Lagrange equation everywhere.
+(H1) ensures \(F[q]\) is locally integrable so the distributional pairing makes sense [Hormander2003]. (H2) is the global stationarity input. (H3) is the local regularity gate: without it, mollifier limits may fail to converge or may converge to an averaged value rather than a pointwise one. If \(F[q]\) is continuous on all of \((t_i,t_f)\), iteration of Theorem 2.1 recovers the classical Euler–Lagrange equation everywhere.
 
 # 3. Corners and Impulses: Formal Statements
 
@@ -135,7 +135,7 @@ For a central force in the plane, the impulse is radial: \(J=J_r\,\hat{r}\). Sin
 \[
 L=m\,r\,\dot{\theta},
 \]
-a purely radial impulse leaves \(\dot{\theta}\) (and hence \(L\)) unchanged across the kick, recovering the equal-area property of Newton's polygon at the distributional level.
+a purely radial impulse leaves \(\dot{\theta}\) (and hence \(L\)) unchanged across the kick, recovering the equal-area property of Newton's polygon at the distributional level [Nauenberg2003KeplerArea].
 
 ## 4.5 From N impulses to the time-sliced path integral
 
@@ -156,7 +156,7 @@ In the quantum theory, one instead sums over all intermediate configurations wit
 K(q_f,q_i;T)=\lim_{N\to\infty}\left(\frac{m}{2\pi i\hbar\,\Delta t}\right)^{(N+1)/2}\int\prod_{k=1}^{N}dq_k\;
 \exp\!\left(\frac{i}{\hbar}\,S_N[\{q_k\}]\right).
 \]
-There are \(N+1\) segments and \(N\) intermediate integrations; each segment contributes one factor of \(\sqrt{m/(2\pi i\hbar\,\Delta t)}\), giving the exponent \((N+1)/2\). This is precisely the half-density normalization required for the composition law to hold at each intermediate integration — a point treated systematically in the cornerstone's half-density framework. The distributional impulse-matching of Theorem 3.2 thus connects, through this \(N\to\infty\) limit, to the composition postulate for transition amplitudes.
+There are \(N+1\) segments and \(N\) intermediate integrations; each segment contributes one factor of \(\sqrt{m/(2\pi i\hbar\,\Delta t)}\), giving the exponent \((N+1)/2\). This is precisely the half-density normalization required for the composition law to hold at each intermediate integration [BatesWeinstein1997] — a point treated systematically in the cornerstone's half-density framework. The distributional impulse-matching of Theorem 3.2 thus connects, through this \(N\to\infty\) limit [FeynmanHibbs1965], to the composition postulate for transition amplitudes.
 
 # 5. Safe vs Unsafe Uses of the Dirac Delta in Variational Mechanics
 
@@ -168,7 +168,7 @@ Using mollifier sequences \(\rho_\varepsilon\to\delta\) as *test functions* agai
 
 ## 5.2 Delta potentials (require renormalization)
 
-A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different object. In dimensions \(d\ge2\), the naive coupling constant \(g\) requires renormalization (the resolvent acquires a logarithmic or power-law divergence depending on \(d\)). In \(d=1\) the delta potential is well-defined without renormalization, but this is an accident of low dimension, not a general principle. The companion note on delta objects treats the half-density kernel structure of point interactions in detail.
+A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different object [AlbeverioGesztesyHoeghKrohnHolden2005]. In dimensions \(d\ge2\), the naive coupling constant \(g\) requires renormalization (the resolvent acquires a logarithmic or power-law divergence depending on \(d\)) [Jackiw1991DeltaPotentials]. In \(d=1\) the delta potential is well-defined without renormalization, but this is an accident of low dimension, not a general principle. The companion note on delta objects treats the half-density kernel structure of point interactions in detail.
 
 ## 5.3 Summary table
 
@@ -185,3 +185,12 @@ A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different obje
 1. The stochastic-forcing interpretation of Section 4.5's \(N\)-impulse model — random impulses with prescribed statistics — remains open as a bridge to stochastic mechanics.
 2. Treat the piecewise-smooth trajectory as a weak solution and examine whether the Hamilton–Jacobi equation acquires viscosity-solution structure at the kink.
 3. Connect the corner-condition analysis to broken geodesics in Riemannian geometry (Synge's world function approach).
+
+# References
+
+1. [Jackiw1991DeltaPotentials] R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.
+2. [Nauenberg2003KeplerArea] Michael Nauenberg, "Kepler's Area Law in the Principia: Filling in some details in Newton's proof of Prop. 1," *Historia Mathematica* 30 (2003), 441–456. arXiv:`math/0112048`. DOI `10.1016/S0315-0860(02)00027-7`. (Defends Newton's continuum limit via Lemma 3; the polygonal construction has a well-defined limit parameterizing a continuous planar curve.)
+3. [BatesWeinstein1997] Sean Bates and Alan Weinstein, "Lectures on the Geometry of Quantization," Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. ISBN `978-0-8218-0798-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Canonical reference for half-density formalism in geometric quantization; half-density kernels and composition.)
+4. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003. DOI `10.1007/978-3-642-61497-2`. (Schwartz kernel theorem; distributional calculus for PDE Green functions.)
+5. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005. ISBN `978-0-8218-3624-4`. (Canonical reference for point interactions in quantum mechanics; self-adjoint extensions, delta potentials.)
+6. [FeynmanHibbs1965] Richard P. Feynman and Albert R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as refinement limit of time-sliced amplitudes; foundational treatment.)
