@@ -37,7 +37,7 @@ is continuous at a point \(t_0\in(t_i,t_f)\).
 Then \(F[q](t_0)=0\).
 
 `Proof.`
-Fix a nonneg mollifier \(\rho\in C_c^\infty(\mathbb{R})\) with \(\int\rho=1\) and set \(\rho_\varepsilon(s)=\varepsilon^{-1}\rho(s/\varepsilon)\). For any unit vector \(u\in\mathbb{R}^d\), the test variation \(\eta_\varepsilon(t)=\rho_\varepsilon(t-t_0)\,u\) is in \(C_c^\infty\) for \(\varepsilon\) small enough. By (H2):
+Fix a nonnegative mollifier \(\rho\in C_c^\infty(\mathbb{R})\) with \(\int\rho=1\) and set \(\rho_\varepsilon(s)=\varepsilon^{-1}\rho(s/\varepsilon)\). For any unit vector \(u\in\mathbb{R}^d\), the test variation \(\eta_\varepsilon(t)=\rho_\varepsilon(t-t_0)\,u\) is in \(C_c^\infty\) for \(\varepsilon\) small enough. By (H2):
 \[
 0=\delta S[q;\eta_\varepsilon]=\int_{t_i}^{t_f}F[q](t)\cdot\rho_\varepsilon(t-t_0)\,u\,dt
 =u\cdot\int_{t_i}^{t_f}\rho_\varepsilon(t-t_0)\,F[q](t)\,dt.
