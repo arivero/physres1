@@ -1,0 +1,2 @@
+# S183 Execution
+Wrote blackboard 1: OPE as QFT contact expansion. Reviewed by QFT/OPE specialist. Key corrections applied: (1) CFTs have OPE too (not just mass-gap theories), (2) identity operator gives interacting two-point function not free propagator, (3) UV vs IR regimes explicitly distinguished, (4) engineering dimensions with log corrections clarified, (5) anomalous dimensions vs beta functions distinguished.

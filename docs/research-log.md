@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S182+C223+S183+C224: Spectral representation + OPE in fermionic)
+- Focus: expand fermionic Section 2 (spectral representation) and Section 4 (OPE). Fix tHooft1974 citation (Q121 flag).
+- Work: S182 studied Källén-Lehmann spectral representation. Axiomatic QFT reviewer caught (1) sign/i-factor convention (HIGH), (2) "always attractive for scalar" oversimplified — spin-dependent sign (HIGH), (3) fermion spectral decomposition imprecise (MEDIUM), (4) "positive-norm states" characterization misleading (MEDIUM). All corrections applied. Promoted as Remark 2.1: spectral decomposition, ρ≥0 from unitarity, spin-dependent force sign, connection to dispersion relations. S183 studied OPE as QFT contact expansion. OPE specialist caught (1) "mass gap" wrongly excludes CFTs (HIGH), (2) identity operator gives interacting two-point function not free propagator (HIGH), (3) UV vs IR conflation (MEDIUM), (4) dimensional analysis inconsistency (MEDIUM). All corrections applied. Promoted as Remark 4.5: engineering dimensions with log corrections, CFT convergence vs massive asymptotic, explicit UV/IR distinction. Fixed tHooft1974: added explicit citation in Remark 6.4 text. 3 new bib entries: Källén1952, Lehmann1954, Wilson1969OPE.
+- Result: fermionic 209→218 (+9, 16pp). Action-angle 213 (unchanged). Uncuttable 210 (unchanged). All three now 210+ lines.
+
 ## 2026-02-13 (S180+C221+S181+C222: Phase POVM + Quantum Zeno)
 - Focus: expand action-angle Section 2 (phase POVM) and Section 5 (quantum Zeno).
 - Work: S180 studied phase POVM. Quantum foundations reviewer caught separate obstructions for oscillator (semi-bounded) vs L_z (circle compactness), Susskind-Glogower conflation. Promoted as Remark 2.2: POVM formula, positivity, two distinct obstructions. S181 studied quantum Zeno effect. Measurement theory reviewer caught survival probability formula (use quadratic), "randomizes angle" misleading, decoherence contrast over-generalized. Promoted as Remark 5.6: frequent action measurement prevents angle localization, complementary to decoherence. Q121 reviewed all 4 C217-C220 remarks: ALL PASS.

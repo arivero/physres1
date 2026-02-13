@@ -224,6 +224,8 @@
 220. `C220` Completed.
 221. `C221` Completed.
 222. `C222` Completed.
+223. `C223` Completed.
+224. `C224` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -434,6 +436,8 @@
 - `S179` Completed.
 - `S180` Completed.
 - `S181` Completed.
+- `S182` Completed.
+- `S183` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -595,15 +599,14 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S180+C221: Phase POVM Remark 2.2 in action-angle (+5 lines).
-2. S181+C222: Quantum Zeno Remark 5.6 in action-angle (+4 lines).
-3. Q121: all 4 remarks from C217-C220 PASS.
+1. S182+C223: Källén-Lehmann spectral representation Remark 2.1 in fermionic (+5 lines).
+2. S183+C224: OPE Remark 4.5 in fermionic (+4 lines). tHooft1974 citation fix in 6.4.
+3. Q122: reviewing C221-C224 (in progress).
 
 Next:
-- Satellites: action-angle 213 (16pp), uncuttable 210 (15pp), fermionic 209 (14pp).
-- Fermionic is shortest — prioritize next remarks there.
-- Q122 review of C221-C222 when batch complete.
-- Continue S+C expansion. All three now at 209+ lines.
+- Satellites: fermionic 218 (16pp), action-angle 213 (16pp), uncuttable 210 (15pp).
+- Uncuttable is shortest — prioritize next remarks there.
+- Continue S+C expansion. All three now at 210+ lines.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
