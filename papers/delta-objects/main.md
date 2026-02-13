@@ -14,8 +14,8 @@ abstract: |
 This note is a companion to the cornerstone manuscript. Statements are kept finite-dimensional unless explicitly labeled heuristic.
 
 # 1. Half-densities and kernels (coordinate free)
-Let \(M\) be a \(d\)-dimensional manifold and \(|\Omega|^{1/2}\) the half-density bundle.
-An operator \(K:\Gamma_c(|\Omega|^{1/2})\to \Gamma(|\Omega|^{1/2})\) has a natural Schwartz kernel
+Let \(M\) be a \(d\)-dimensional manifold and \(|\Omega|^{1/2}\) the half-density bundle [BatesWeinstein1997].
+An operator \(K:\Gamma_c(|\Omega|^{1/2})\to \Gamma(|\Omega|^{1/2})\) has a natural Schwartz kernel [Hormander2003]
 \[
 \mathsf K\in \mathcal D'(M\times M;\;|\Omega|^{1/2}\boxtimes|\Omega|^{1/2}),
 \]
@@ -106,7 +106,7 @@ If \(\delta S[q;\eta]=0\) for all \(\eta\), then the Euler–Lagrange expression
 When \(\partial L/\partial \dot q\) has jumps (corners/impulses), the distributional derivative produces delta terms automatically; more generally, point-supported singularities are encoded by delta kernels and their derivatives (\(\delta,\delta',\ldots\)), depending on distributional order.
 
 # 4. Delta at a point: point interactions as rank-one kernels
-A point interaction is naturally the rank-one operator
+A point interaction [AlbeverioGesztesyHoeghKrohnHolden2005] is naturally the rank-one operator
 \[
 V=g\,|0\rangle\langle0|.
 \]
@@ -127,5 +127,12 @@ if one adds a universality hypothesis that scalarization scales must be built fr
 This note treats that identification as an organizing perspective, not as a theorem.
 
 # 6. Outlook
-1. Relate the determinant weights in \(\delta(\nabla f)\) to the mixed Hessian determinants (Van Vleck type) that appear after eliminating intermediate variables in time slicing (Schur complement template).
-2. Clarify which parts of the “functional delta \(\delta(\delta S)\)” story survive rigorous regularization and which remain heuristic.
+1. Relate the determinant weights in \(\delta(\nabla f)\) to the mixed Hessian determinants (Van Vleck type [Morette1951]) that appear after eliminating intermediate variables in time slicing (Schur complement template).
+2. Clarify which parts of the "functional delta \(\delta(\delta S)\)" story survive rigorous regularization and which remain heuristic.
+
+# References
+
+1. [BatesWeinstein1997] Sean Bates and Alan Weinstein, *Lectures on the Geometry of Quantization*, Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>.
+2. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003.
+3. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005.
+4. [Morette1951] C. Morette, "On the Definition and Approximation of Feynman's Path Integrals," *Phys. Rev.* **81**, 848–852 (1951).
