@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S100+C142: Moyal product worked examples in Section 7.3)
+- Focus: fill content gap in Section 7.3 — the Moyal product formula had no explicit computation.
+- Work: added Derivation D5.1a with q⋆p = qp+iℏ/2, [q,p]_⋆ = iℏ; q²⋆p = q²p+iℏq, [q²,p]_⋆ = 2iℏq; general [qⁿ,p]_⋆ = niℏq^{n-1}.
+- Result: +15 lines in paper/main.md. Section 7 now has concrete verification of Moyal product.
+- Next: Q96 or further content work.
+
 ## 2026-02-13 (S98+C140: Dirac Probes — N-impulse → path integral bridge)
 - Focus: expand Dirac Probes paper with second worked model connecting impulse matching to path integral.
 - Work: S98 drafted Section 4.5 showing N piecewise-linear segments, discrete action, classical stationarity recovering corner conditions, quantum sum with half-density normalization yielding time-sliced path integral.
