@@ -297,6 +297,29 @@ external regularization step but is part of the definition of the
 interaction, with different values of \(a\) selecting different
 self-adjoint extensions.
 
+\texttt{Remark\ 4.4\ (Weinberg\ power\ counting:\ the\ systematic\ hierarchy\ for\ contact\ EFTs).}
+The contact expansion of Derivation 4.1 is the leading term in a
+systematic effective field theory organized by Weinberg's power counting
+(1990, 1991). Each diagram is assigned a chiral order based on the
+number of loops \(L\), the number of derivatives \(d_i\) at each vertex,
+and the number of nucleon lines \(n_i\) --- with higher-order
+contributions suppressed by powers of \(Q/\Lambda\), the ratio of
+typical momentum to the breakdown scale. At leading order (LO), only the
+non-derivative contact \(C_0\) contributes; at next-to-leading order
+(NLO), the two-derivative contact \(C_2 q^2\) and one-loop diagrams with
+\(C_0\) insertions enter together; at NNLO, \(C_4 q^4\), mixed one-loop
+diagrams, and two-loop diagrams appear. Crucially, loops generate
+non-analytic momentum dependence --- terms like \(q^2\ln(q^2/\mu^2)\) in
+three dimensions --- that cannot be absorbed into the polynomial contact
+expansion. These infrared logarithms distinguish the full quantum EFT
+from a naive polynomial fit and provide the physical content (e.g., the
+running coupling of Examples 5.1--5.2) that transcends tree-level
+contact operators. When the leading contact interaction is strong (large
+scattering length), an alternative counting due to Kaplan, Savage, and
+Wise (1998) resums \(C_0\) to all orders --- precisely the \(T\)-matrix
+resummation of Examples 5.1--5.2 --- treating higher-order contacts and
+pion exchanges as perturbative corrections.
+
 \hypertarget{boundary-condition-reading-point-interactions}{%
 \section{5. Boundary-condition reading (point
 interactions)}\label{boundary-condition-reading-point-interactions}}
@@ -490,6 +513,35 @@ distances \(r\gg 1/m_\nu\). At short distances \(r\ll 1/M_W\), the two
 the force reduces to the contact expansion of Section 4 --- the
 neutrino-mediated potential is the long-range tail of a contact
 interaction viewed at low resolution.
+
+\texttt{Remark\ 6.3\ (Nuclear\ forces\ from\ pion\ exchange:\ the\ paradigmatic\ fermion-to-boson-to-potential\ chain).}
+The Grassmann-source obstruction of Section 3 is bypassed most famously
+in the nuclear force. Quarks (fermions) bind into pions --- pseudoscalar
+bosonic composites with the quantum numbers of
+\(\bar q\,\gamma_5\,\boldsymbol\tau\, q\) (where \(\boldsymbol\tau\) are
+isospin Pauli matrices) --- which are the pseudo-Goldstone bosons of
+spontaneously broken chiral symmetry. Once formed, pions mediate the
+longest-range part of the nucleon-nucleon interaction through one-pion
+exchange (OPEP), giving a Yukawa potential
+\(V(r)\propto e^{-m_\pi r}/r\) with range \(\sim 1/m_\pi\approx 1.4\)
+fm, as predicted by Yukawa (1935). The OPEP includes a tensor component
+(proportional to the spin-dependent operator
+\(S_{12}=3(\boldsymbol\sigma_1\cdot\hat r)(\boldsymbol\sigma_2\cdot\hat r)-\boldsymbol\sigma_1\cdot\boldsymbol\sigma_2\))
+responsible for the deuteron quadrupole moment and \(D\)-state
+admixture. At distances shorter than the pion Compton wavelength, the
+pion-exchange potential is not resolved and collapses into the contact
+expansion of Section 4 --- the same structural pattern as the
+neutrino-mediated force of Remark 6.2. Modern chiral effective field
+theory (Weinberg, 1990; Epelbaum, Hammer, and Meißner, 2009) organizes
+the nuclear force as a systematic hierarchy: pion exchanges provide the
+long-range, non-analytic-in-momentum contributions, while short-range
+physics is encoded by the contact operators \(C_0, C_2, \ldots\) of
+Derivation 4.1, with the expansion parameter \(Q/\Lambda_\chi\) (where
+\(\Lambda_\chi\sim 1\) GeV is the chiral symmetry breaking scale). This
+is the complete realization of the paper's structural chain: fermions
+(quarks) \(\to\) emergent bosons (pions) \(\to\) Yukawa potential (long
+range) \(+\) contact operators (short range), with the EFT framework
+providing the systematic power counting that relates the two regimes.
 
 \hypertarget{references}{%
 \section{References}\label{references}}
