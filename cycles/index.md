@@ -524,6 +524,7 @@
 - `Q116` Completed.
 - `Q117` Completed.
 - `Q118` Completed.
+- `Q119` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -563,10 +564,10 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S166+C207: Zeta-function regularization Remark 2.7 in uncuttable (+3 lines).
-2. S167+C208: Aharonov-Bohm Remark 5.4 in action-angle (+3 lines).
-3. B23: 33 bibliography entries across all three satellites.
-4. S162-S165+C203-C206: four remarks across all three satellites.
+1. Q119: quality review of six satellite remarks (fermionic 4.4, 6.3; action-angle 5.4, 7.6; uncuttable 2.7, 4.7). All PASS after bibliography fixes.
+2. Bibliography fixes: Tonomura1986, AharonovBohm1959 → action-angle; RaySinger1971, Hawking1977 → uncuttable; Weinberg1979b clarified.
+3. S166+C207: Zeta-function regularization Remark 2.7 in uncuttable (+3 lines).
+4. S167+C208: Aharonov-Bohm Remark 5.4 in action-angle (+3 lines).
 
 Next:
 - Satellites: uncuttable 187 (12pp), fermionic 186 (12pp), action-angle 185 (12pp).

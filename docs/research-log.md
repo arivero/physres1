@@ -3298,3 +3298,15 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: added 5 references (BatesWeinstein1997 OA, deGosson2018 OA, Wald1984, Hormander2003, Costello2011). Inline citations in Sections 2, 3, 4, 7. Updated bibliography ledger (entries 36–39). PDF rebuilt: 7 pages.
 - Result: half-density-qft now has proper bibliography. Ready for Q pass.
 - Next: Q81 (referee pass on half-density-qft for Tier 1 upgrade).
+
+## 2026-02-13 (Q119: quality review of six satellite remarks)
+- Focus: referee-level review of newly added remarks across three satellite papers.
+- Papers reviewed:
+  1. fermionic-mediators-contact-limits: Remarks 4.4 (Weinberg power counting), 6.3 (nuclear pion exchange)
+  2. action-angle-indeterminacy-central-potentials: Remarks 5.4 (Aharonov–Bohm), 7.6 (coherent-state path integral)
+  3. uncuttable-controlled-refinement: Remarks 2.7 (zeta regularization), 4.7 (asymptotic safety)
+- Findings: all physics content correct, formulas verified, integration with surrounding material strong. Three bibliography gaps detected: (1) Tonomura1986 mentioned in action-angle Remark 5.4 but not anchored; (2) RaySinger1971 and Hawking1977 mentioned in uncuttable Remark 2.7 but not anchored; (3) Weinberg1979 vs Weinberg1979b ambiguity in uncuttable Remark 4.7.
+- Fixes applied: (1) added Tonomura1986 and AharonovBohm1959 to action-angle References; (2) added RaySinger1971 and Hawking1977 to uncuttable References; (3) clarified inline citation in uncuttable Remark 4.7 to read "Weinberg (1979, General Relativity essay)".
+- Grades: fermionic-mediators 4.4 PASS, 6.3 PASS; action-angle 5.4 CONDITIONAL PASS → PASS (after fix), 7.6 PASS; uncuttable 2.7 CONDITIONAL PASS → PASS (after fix), 4.7 CONDITIONAL PASS → PASS (after fix).
+- Result: all six remarks publication-ready after bibliography fixes.
+- Next: commit.
