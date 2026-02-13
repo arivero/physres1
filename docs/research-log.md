@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q107+S118+C159: circular uncertainty Example 4.3 in action-angle + √κ fix)
+- Focus: make Proposition 4.2 concrete with a worked verification for the Dirichlet kernel state.
+- Work: S118 blackboard computed R = 2M/(2M+1), Var(L_z) = ℏ²M(M+1)/3, showed LHS/RHS = (M+1)(4M+1)/(3M) grows as 4M/3. Subagent (rigorous mathematician) verified all 6 computations correct. Promoted as Example 4.3. Q107 subagent caught missing √κ normalization in delta-objects Example 4.1 — fixed.
+- Result: action-angle 107→114 lines (+7 net). Delta-objects √κ fix (+0 net lines).
+
 ## 2026-02-13 (Q106+S117+C158: delta resolvent Example 4.1 in delta-objects + Trotter fix)
 - Focus: expand delta-objects Section 4 with worked example; Q pass on Trotter Remark 3.3.
 - Work: S117 blackboard studied 1D delta-potential resolvent as rank-one perturbation. Subagent (pedagogical expositor) reviewed: all formulas correct, excellent fit. Promoted as Example 4.1 showing factored resolvent, bound-state pole as rank-one projector, half-density interpretation. Q106 subagent found CRITICAL convergence-order phrasing issue in Trotter Remark 3.3 ("O(1/N) error" ambiguous) plus domain conditions and citation gap — all three fixed.
