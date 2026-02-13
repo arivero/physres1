@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S109: 2D delta potential Example 5.1 in fermionic mediators satellite)
+- Focus: expand fermionic mediators satellite with concrete contact-coupling RG example.
+- Work: added Example 5.1 showing the 2D delta potential T-matrix, quadratic beta function, dimensional transmutation. Subagent caught two CRITICAL errors: factor-of-2 in T-matrix coefficient (m/(2πℏ²)→m/(πℏ²)) and sign in dimensional transmutation exponent (-→+). Both fixed.
+- Result: satellite 112→121 lines (+9 net).
+
 ## 2026-02-13 (S108: circular uncertainty relation in action-angle satellite)
 - Focus: expand shortest satellite (action-angle, 87 lines) with a quantitative uncertainty relation for (φ, L_z).
 - Work: blackboard explored multiple derivation routes; settled on adding Robertson inequalities for (L_z, cos φ) and (L_z, sin φ) using Var(cos φ)+Var(sin φ)=1-R². Subagent (rigorous mathematician) caught missing factor i in [L_z, sin φ]. Promoted Proposition 4.2.

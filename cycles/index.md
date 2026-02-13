@@ -285,6 +285,7 @@
 - `S106` Completed.
 - `S107` Completed.
 - `S108` Completed.
+- `S109` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -436,7 +437,7 @@ Recent completed:
 
 Next:
 - Content gaps: Gap 2 (stationary phase numerical verification, medium), Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (fermionic mediators 112 lines, action-angle 96, uncuttable now 103).
+- Expand shorter satellites (fermionic mediators now 121, action-angle 96, uncuttable 103).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
