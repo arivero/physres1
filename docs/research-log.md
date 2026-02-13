@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (C121: promote S83 as Remark PA-E5c)
+- Focus: insert dimensional verification of Van Vleck / transmutation separation after PA-E5b.
+- Work: 4-line remark with [G₀] = length^{-d}, [T] = length^d, scalarization κ_*^{-d/2}, d=4 extrapolation. Rebuilt .tex/.pdf (22 pages, clean). Guard checks pass.
+- Result: diffstat +4 -0 main.md. Open Problem #2 now has a concrete dimensional witness in the manuscript.
+- Next: Q77 (referee pass on C121).
+
 ## 2026-02-13 (S83: 2D delta resolvent — Van Vleck vs transmutation separation)
 - Focus: concrete computation for Open Problem #2 — how the area scale (generalized to length^{d/2}) enters prefactors and how it interacts with RG.
 - Question: in the 2D delta resolvent G = G₀ + G₀TG₀, do the half-density weight and transmutation scale separate cleanly?
