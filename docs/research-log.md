@@ -18,6 +18,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S203+C243+Q129: self-adjoint extensions in delta-objects + infrastructure cleanup)
+- Focus: promote self-adjoint extensions remark; archive cleanup; foundational goals.
+- Work:
+  - S203+C243: Fixed BB1 reviewer errors (H¹→H², ε^{-d/2}→Λ^{d-2}). Promoted as Remark 4.2 in delta-objects. Added Derezinski 2024 ref. +10 lines, now 188 (4pp).
+  - Q129: Referee pass on C243 (running).
+  - Infrastructure: archived ~640 completed cycle files to cycles/archive/. Compacted index.md (664→47 lines). Split research-log.md (3428→73 lines). Added context-budget rules to CLAUDE.md, cycles/README.md, MEMORY.md. Added Foundational Goals section to motivations.md.
+- Result: delta-objects 4pp with self-adjoint extensions remark. Context startup cost reduced from ~4000 to ~700 lines.
+- Sources touched: [Derezinski2024] added.
+- Next: apply Q129 fixes; continue expansion of below-limit satellites; open questions.
+
 ## 2026-02-13 (S200+S201+C241+S202+C242+Q128+S203: fermionic + HD-QFT + delta + infrastructure)
 - Focus: targeted expansion of below-limit satellites; infrastructure (page counting, policy updates).
 - Work:

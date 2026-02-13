@@ -11,6 +11,16 @@ This file applies to the entire repository.
 5. Before finalizing manuscript output, verify:
    `rg -n 'C[0-9]{2}' paper/main.md`
 
+## Paper Relationship Model
+- **Satellite papers** (`papers/*/`) are **independent result papers** — publishable
+  on their own, like Phys. Lett. B articles. They have their own internal logic
+  and don't depend on reading the main paper.
+- **Main paper** (`paper/`) is a **review/survey** — Physics Reports scale. It
+  provides the overarching framework. The satellites relate to it the way
+  individual letters relate to a comprehensive review.
+- Cross-references between satellites and main should be light ("see companion
+  note" style), not load-bearing dependencies.
+
 ## Satellite Paper Page Limit
 Satellite papers (`papers/*/`) target **Phys. Lett. B-style letters**: max **6 compiled
 LaTeX pages** in `elsarticle` 3p twocolumn format. Phys. Lett. B traditionally allowed

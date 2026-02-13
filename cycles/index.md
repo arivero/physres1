@@ -10,9 +10,9 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 242 | C00–C242 |
+| Content (`Cnn`) | 243 | C00–C243 |
 | Bibliography (`Bnn`) | 25 | B00–B24 |
-| Study (`Snn`) | 203 | S00–S202 |
+| Study (`Snn`) | 204 | S00–S203 |
 | Quality (`Qnn`) | 119 | Q00–Q128 (gaps: Q110–Q111) |
 | Discovery triage (`Dnn`) | 16 | D00–D15 |
 | Discovery explore (`DXnn`) | 10 | DX01–DX10 |
@@ -22,9 +22,7 @@
 
 ## Active / In Progress
 
-- `S203` — Self-adjoint extensions blackboard (BB1) for delta-objects.
-  Status: blackboard written, reviewer annotations received. Needs error
-  fixes (H¹→H² Sobolev, ε^{-d/2} precision) before promotion.
+- `Q129` — Referee pass on C243 (delta-objects Remark 4.2). Running.
 
 ## Next Action
 
@@ -33,8 +31,12 @@
 - PRD-length (>6pp): action-angle 13pp, fermionic 13pp, uncuttable 13pp, rg-fund 9pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
 
+**Recent completed:**
+- S203+C243: Self-adjoint extensions → Remark 4.2 in delta-objects (+10 lines, now 188, 4pp).
+  Corrected H¹→H² Sobolev, ε^{-d/2}→Λ^{d-2} resolvent exponent, added Derezinski 2024.
+
 **Immediate:**
-- Fix BB1 reviewer errors → promote as C243 in delta-objects (currently 4pp, room).
+- Apply Q129 fixes if any.
 - Below PLB limit, room for expansion: HD-QFT (4pp), delta (4pp), dirac (4pp), relativistic (4pp).
 
 **Standing priorities:**
