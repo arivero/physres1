@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S97: Dirac Probes satellite paper initial draft)
+- Focus: draft satellite #9 (Dirac Probes, roadmap item B) — "Dirac-Supported Probes, Corners, and Impulses."
+- Work: created `papers/dirac-probes-corners-impulses/main.md` (172 lines). Mollifier Localization Theorem with explicit hypotheses (H1–H3), corner and impulse theorems, complete delta-kick free-particle model, safe-vs-unsafe taxonomy table.
+- Result: 172 lines, 5 pages, 3 refs. PDF builds cleanly. 9th satellite paper initiated.
+- Next: Q94 referee pass, then content expansion or next cycle.
+
 ## 2026-02-13 (S96: research state refresh)
 - Focus: update docs/research-state.md with current line counts after C135-C139 expansions.
 - Result: all 8 satellite line counts refreshed. Cornerstone updated to 1435 lines, Q89, cross-refs to HD+RG.

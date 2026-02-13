@@ -262,6 +262,7 @@
 - `S94` Completed.
 - `S95` Completed.
 - `S96` Completed.
+- `S97` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -392,20 +393,21 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-**All 8 satellite papers at Tier 1, all expanded with content additions (C135–C139).**
+**9 satellite papers (8 at Tier 1, 1 new draft needing Q pass).**
 Cornerstone polished, self-consistent, cross-references HD + RG satellites.
 
 Recent completed:
-1. S92+C136: cornerstone→RG cross-references (RG-D1.2a, RG-D1.7).
-2. S93+C137: action-angle expanded (HO witness, 74→87).
-3. S94+C138: delta-objects expanded (Van Vleck section, 138→164).
-4. S95+C139: fermionic mediators expanded (vacuum polarization, 95→112).
-5. DX09: ranked roadmap items for next satellite — top pick: B (Dirac Probes).
+1. S97: Dirac Probes satellite #9 initial draft (172 lines, 5 pages).
+2. S96: research state refresh.
+3. S95+C139: fermionic mediators expanded (vacuum polarization, 95→112).
+4. S94+C138: delta-objects expanded (Van Vleck section, 138→164).
+5. DX09: ranked roadmap items for next satellite — top pick: B (Dirac Probes). Done.
 
 Next:
-- Start satellite #9 from roadmap item B (Dirac Probes) or item D (Rooted Trees).
+- Q94: referee pass on Dirac Probes satellite (promote to Tier 1).
 - P cycles for satellite submissions when ready.
 - Cornerstone deeper content work (new computations).
+- Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
