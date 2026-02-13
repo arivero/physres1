@@ -173,6 +173,7 @@
 169. `C169` Completed.
 170. `C170` Completed.
 171. `C171` Completed.
+172. `C172` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -483,11 +484,11 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S130+C171: Squeezed states Remark 6.5 in action-angle (+3 lines, 126→129).
-2. S129+C170: Adiabatic limit Remark 3.5 in uncuttable (+3 lines, 131→134).
-3. S128+C169: Husimi function Remark 6.4 in action-angle (+3 lines, 123→126).
-4. S127+C168: Richardson extrapolation Remark 2.4 in uncuttable (+3 lines, 128→131).
-5. S125+C166: unitarity limit Remark 5.3 in fermionic mediators (+3 lines, 135→138).
+1. S131+C172: Dimensional contact Remark 5.4 in fermionic mediators (+3 lines, 138→141).
+2. S130+C171: Squeezed states Remark 6.5 in action-angle (+3 lines, 126→129).
+3. S129+C170: Adiabatic limit Remark 3.5 in uncuttable (+3 lines, 131→134).
+4. S128+C169: Husimi function Remark 6.4 in action-angle (+3 lines, 123→126).
+5. S127+C168: Richardson extrapolation Remark 2.4 in uncuttable (+3 lines, 128→131).
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
