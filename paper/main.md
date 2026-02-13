@@ -687,7 +687,18 @@ with \(O(\hbar)\) corrections determined by local quadratic data near the minimi
 So \(\hbar\) plays the role of a universal control parameter that makes "refine then compare" stable, with classical extremals recovered as a limit.
 In real time, the same pattern appears with \(e^{iS/\hbar}\) and stationary phase in place of positivity and Laplace concentration.
 
-`Remark D4.2b (Delocalized angles in angular-momentum eigenstates).`
+`Example D4.2b (Free-particle two-slice integral: explicit classical recovery).`
+For a free particle of mass \(m\), the two-slice action is \(S=\frac{m}{2\Delta t}\bigl[(q_2-q_1)^2+(q_1-q_0)^2\bigr]\). Completing the square gives \(S=\frac{m}{4\Delta t}(q_2-q_0)^2+\frac{m}{\Delta t}(q_1-\bar q)^2\) with \(\bar q=(q_0+q_2)/2\). The Euclideanized weight integral is Gaussian:
+\[
+W_\hbar(q_2,q_0)=\sqrt{\frac{\pi\hbar\Delta t}{m}}\;\exp\!\left(-\frac{m(q_2-q_0)^2}{4\hbar\Delta t}\right),
+\]
+giving the coarse effective action
+\[
+S_{\mathrm{eff}}^{(\hbar)}(q_2,q_0)=\frac{m(q_2-q_0)^2}{4\Delta t}+\frac\hbar2\ln\!\frac{m}{\pi\hbar\Delta t}.
+\]
+As \(\hbar\to0\), \(S_{\mathrm{eff}}^{(\hbar)}\to\inf_{q_1}S=\frac{m(q_2-q_0)^2}{4\Delta t}\) with a subleading \(O(\hbar\ln\hbar)\) correction from the Gaussian width. This makes the classical-recovery mechanism of D4.2a fully explicit: the extremal path (\(q_1=\bar q\), uniform velocity) is selected by sharpening, with no additional hypotheses.
+
+`Remark D4.2c (Delocalized angles in angular-momentum eigenstates).`
 The stationary-phase mechanism explains how classical trajectories reappear in semiclassical packets. It does not imply that a single stationary eigenstate is a localized classical orbit. A simple witness occurs already in central potentials: in polar coordinates the azimuthal angle \(\phi\) is conjugate to \(L_z\), and separation of variables yields [TongQMLectures]
 \[
 \psi(r,\phi)=R(r)\,e^{im\phi}.
