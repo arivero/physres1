@@ -26,10 +26,10 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Unitarity limit / universal few-body physics | Promoted (C166) |
+| 0 | Dimensional contact divergences (d=1,2,3) | Active (S131, for C172) |
 | 1 | KAM theorem / integrability boundary | Promoted (C167) |
 | 2 | Richardson extrapolation / minimal subtraction | Promoted (C168) |
 | 3 | Husimi function / action-angle visualization | Promoted (C169) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
 | 5 | Rooted trees research direction | Active (future satellite D) |
-| 6 | (empty) | Free |
+| 6 | Squeezed states / action-angle asymmetry | Reviewed (S130, promoted C171) |
