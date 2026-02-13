@@ -634,6 +634,11 @@ Different short-time discretizations (left/right/midpoint or more general \(\alp
 `Heuristic H4.1 (Same classical limit, different quantum corrections).`
 Two discretizations that differ by \(O(\Delta t)\) in each slice can produce equivalent classical equations while shifting \(O(\hbar)\) terms in quantum generators. Thus ordering is a controlled modeling choice, not a contradiction.
 
+`Derivation D4.1b (Ordering witness: \(H=qp\) under \(\alpha\)-discretization).`
+For the classical Hamiltonian \(H(q,p)=qp\), the phase-space path integral with \(\alpha\)-prescription (evaluating position at \(q_\alpha=(1-\alpha)q_k+\alpha q_{k+1}\) in each slice) produces the operator
+\[\hat H_\alpha=(1-\alpha)\hat q\hat p + \alpha\hat p\hat q = \hat q\hat p - \alpha\,i\hbar.\]
+To verify: the matrix element \(\langle q'|\hat H_\alpha|q\rangle = [(1-\alpha)q'+\alpha q](-i\hbar)\delta'(q'-q) = q_\alpha(-i\hbar)\delta'(q'-q)\), which matches the kernel's \(\alpha\)-interpolated integrand order by order in \(\Delta t\). At \(\alpha=0\) (left-point) this is standard ordering \(\hat q\hat p\); at \(\alpha=1/2\) (midpoint) it is the Weyl-symmetric form \(\tfrac12(\hat q\hat p+\hat p\hat q)\) connected to the Moyal product of Section 7; at \(\alpha=1\) (right-point) it is \(\hat p\hat q=\hat q\hat p-i\hbar\). All three share the classical limit \(H=qp\); the \(O(\hbar)\) corrections are discretization artifacts controlled by \(\alpha\). This is the simplest instance of the general \(f(q)p\) family treated in Section 10.2.
+
 ## 6.4 Formal Continuum Limit and Stationary Phase
 Formally, as mesh size \(\max_k\Delta t_k\to0\):
 
