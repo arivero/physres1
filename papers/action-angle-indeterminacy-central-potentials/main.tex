@@ -406,7 +406,25 @@ Remarks 6.4--6.5: Husimi shows where the state ``is'' in phase space,
 while Wigner reveals the quantum coherences that make ``where'' an
 incomplete description.
 
-\texttt{Remark\ 6.7\ (Spin\ coherent\ states:\ the\ angular-momentum\ analog\ of\ coherent-state\ localization).}
+\texttt{Remark\ 6.7\ (Quantum\ state\ tomography:\ reconstructing\ the\ phase-space\ portrait).}
+The Husimi and Wigner functions of Remarks 6.4--6.6 are not merely
+theoretical constructs: they can be reconstructed from experimental data
+via quantum state tomography. For an oscillator mode, measuring the
+rotated quadrature \(X_\theta=x\cos\theta+p\sin\theta\) at angle
+\(\theta\) yields a marginal distribution \(P_\theta(s)\) that is a
+Radon projection of the Wigner function. Collecting \(P_\theta\) for all
+\(\theta\in[0,\pi)\) and inverting the Radon transform (filtered
+back-projection) recovers the full \(W(x,p)\). This was first
+demonstrated by Smithey, Beck, Raymer, and Faridani (1993), who
+reconstructed the Wigner function of a squeezed vacuum state using
+optical homodyne detection, where the local oscillator phase selects the
+measured quadrature angle. The ring-versus-blob distinction of Remark
+6.4 is thus directly observable: Fock-state tomograms show the
+uniform-phase ring, while coherent-state tomograms show the localized
+Gaussian blob --- the action-angle tradeoff of Sections 3--4 made
+experimentally visible.
+
+\texttt{Remark\ 6.8\ (Spin\ coherent\ states:\ the\ angular-momentum\ analog\ of\ coherent-state\ localization).}
 The harmonic-oscillator coherent states of Example 6.1 have a direct
 angular-momentum counterpart. The spin coherent state
 \(|j,\hat n\rangle = R(\hat n)|j,j\rangle\) --- obtained by rotating the
@@ -426,7 +444,7 @@ ring-versus-blob picture of Remark 6.4 thus extends from the flat
 azimuthal rings with uniform \(\phi\), while spin coherent states are
 directional blobs that spread over \(\sim\sqrt{j}\) magnetic sub-levels.
 
-\texttt{Remark\ 6.8\ (Bargmann\ representation:\ action–angle\ duality\ made\ algebraic).}
+\texttt{Remark\ 6.9\ (Bargmann\ representation:\ action–angle\ duality\ made\ algebraic).}
 The Bargmann--Segal representation (Bargmann, 1961) maps the oscillator
 Hilbert space to the space of holomorphic functions on \(\mathbb{C}\)
 with Gaussian measure \(d\mu=\pi^{-1}e^{-|z|^2}d^2z\). Under this map,
@@ -440,7 +458,7 @@ localization. Creation and annihilation become multiplication and
 differentiation: \(\hat a^\dagger\mapsto z\), \(\hat a\mapsto d/dz\).
 The Husimi function of Remark 6.4 is then the squared modulus of the
 Bargmann representative (weighted by the Gaussian measure), so the
-ring-versus-blob distinction of Remarks 6.4--6.7 is literally monomials
+ring-versus-blob distinction of Remarks 6.4--6.8 is literally monomials
 versus peaked exponentials. For spin-\(j\) systems (Schwinger's
 oscillator construction), the Bargmann space truncates to polynomials of
 degree \(\le 2j\), and spin coherent states become evaluation points on
@@ -543,14 +561,14 @@ with action-angle coordinates \((I,\theta)\), the real (action)
 polarization gives wave functions depending on \(I\) alone, yielding the
 number/Fock states of Example 6.1 --- the ``rings'' of Remark 6.4 ---
 while the complex (Kähler) polarization gives holomorphic wave
-functions, recovering the Bargmann representation of Remark 6.8 --- the
+functions, recovering the Bargmann representation of Remark 6.9 --- the
 ``blobs.'' The metaplectic correction (Blattner, Kostant, Sternberg)
 accounts for the half-density structure of the cornerstone manuscript,
 adding the \(\tfrac12\hbar\omega\) zero-point energy that naive
 geometric quantization misses. For spin-\(j\) systems, geometric
 quantization of \(S^2\cong\mathbb{CP}^1\) with symplectic form
 proportional to the area form produces the spin coherent states of
-Remark 6.7, with the prequantization condition forcing
+Remark 6.8, with the prequantization condition forcing
 \(2j\in\mathbb{Z}\) --- the integrality of spin as a topological
 constraint.
 
@@ -581,12 +599,12 @@ constraint.
   analytic functions and an associated integral transform, Part I,''
   \emph{Communications on Pure and Applied Mathematics} 14 (1961),
   187--214. DOI \texttt{10.1002/cpa.3160140303}. (Bargmann--Segal
-  holomorphic representation; used in Remark 6.8.)
+  holomorphic representation; used in Remark 6.9.)
 \item
   {[}Perelomov1972{]} A. M. Perelomov, ``Coherent states for arbitrary
   Lie group,'' \emph{Communications in Mathematical Physics} 26 (1972),
   222--236. DOI \texttt{10.1007/BF01645091}. (Generalized coherent
-  states including spin coherent states; used in Remark 6.7.)
+  states including spin coherent states; used in Remark 6.8.)
 \item
   {[}MandelstamTamm1945{]} L. I. Mandelstam and I. E. Tamm, ``The
   uncertainty relation between energy and time in non-relativistic
