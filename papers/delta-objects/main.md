@@ -129,6 +129,13 @@ D = (m/\Delta t)^d,\qquad \sqrt{D}=(m/\Delta t)^{d/2},
 \]
 reproducing the \((\Delta t)^{-d/2}\) normalization of Section 2.
 
+`Example 3.5b (Harmonic oscillator).`
+For the harmonic oscillator (\(V=\tfrac12 m\omega^2 q^2\)) in \(d=1\), the classical action between \(q_i\) and \(q_f\) in time \(\Delta t\) is \(S_{\mathrm{cl}}=\frac{m\omega}{2\sin\omega\Delta t}\bigl[(q_f^2+q_i^2)\cos\omega\Delta t - 2q_f q_i\bigr]\), giving
+\[
+D = \left|\frac{m\omega}{\sin\omega\Delta t}\right|,\qquad \sqrt{D}=\sqrt{\frac{m\omega}{|\sin\omega\Delta t|}}.
+\]
+As \(\omega\Delta t\to 0\), \(\sin\omega\Delta t\approx\omega\Delta t\), recovering the free-particle result \(\sqrt{D}\to\sqrt{m/\Delta t}\). At \(\omega\Delta t=\pi\) (half-period), \(\sin\omega\Delta t\to 0\) and \(\sqrt{D}\to\infty\): this is the familiar caustic (focal point) where the semiclassical approximation breaks down because the classical flow focuses all initial momenta onto a single final point.
+
 # 4. Delta at a point: point interactions as rank-one kernels
 A point interaction [AlbeverioGesztesyHoeghKrohnHolden2005] is naturally the rank-one operator
 \[
