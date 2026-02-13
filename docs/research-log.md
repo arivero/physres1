@@ -258,3 +258,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: Remark 4.3f PASS. No required fixes. Optional refinement: "gauge accident" could be "coordinate artifact" for stricter GR terminology, but current phrasing acceptable for remark format.
 - Next: Q152 on C267; continue PLB expansion.
 
+## 2026-02-13 (S246–S249+C280+Q164: dirac-probes quantum impulse bridge)
+- Focus: expansion targets for dirac-probes (most room at 253 lines).
+- Work:
+  - S246+C280: dirac-probes Remark 5.2a (self-adjoint extension matching = quantum impulse condition, bridges Sections 3.2↔5.2) (+3, 253→256).
+  - S247: semiclassical loop expansion — NOT promoted (marginal, paper already implies quadratic=exact).
+  - S248: symplectic polygon interpretation — NOT promoted (redundant with Remark 4.4a + cornerstone H1.2).
+  - S249: Rankine-Hugoniot parallel — NOT promoted (needs too much qualification for 3 lines).
+  - Q164: pending (reviewing C280).
+- Result: dirac 256 lines (5pp). 3 studies no-promote, 1 promoted.
+- Next: Q164 result; commit batch; continue expansion.
+
