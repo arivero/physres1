@@ -31,6 +31,11 @@ This file applies to the entire repository.
 2. The main agent collects the subagent's report, triages the findings, and applies fixes as appropriate.
 3. Multiple papers can be reviewed in parallel by launching several subagent Q passes simultaneously.
 
+## Study Cycle (S) Blackboard Policy
+1. **Delegate blackboard reviews to subagents with random personas.** When an S cycle produces a blackboard note, spawn a subagent (Task tool) to review it. The subagent reads the blackboard cold and provides feedback.
+2. **Random persona assignment.** Each time, assign the subagent a different persona — e.g. a rigorous mathematician, an intuitive physicist, a skeptical referee, a pedagogical expositor — to get varied feedback reflecting the diverse nature of blackboard discussions.
+3. The main agent collects the subagent's feedback, triages it, and incorporates useful suggestions before promotion.
+
 ## Sources Policy
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING` for later local ingestion.
