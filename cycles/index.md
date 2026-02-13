@@ -337,16 +337,16 @@
 - `DX03` Completed.
 - `DX04` Completed.
 - `DX05` Completed.
+- `DX06` Completed.
 
 ### Publication Cycles (`Pnn`)
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: planck-area substantially strengthened. Consider pivoting to main paper or other satellites.
-1. P00 complete. P01 rate-limited until Feb 20. P00 v3 (with S82–C123 additions) after Feb 20.
-2. Planck-area Open Problems: #1 ✓, #2 ✓, #3 partial, #4 ✓, #5 not started.
-3. This session: S82→C120→Q76→S83→C121→Q77→S84→C122→Q78→C123 (10 cycles on planck-area).
-4. Next direction: main paper coherence, or rg-fundamental, or remaining planck-area items.
+Priority: pivot to rg-fundamental (Tier 1, P01 candidate).
+1. DX06 sweep: no anomalies, no cross-thread issues. RCP v4 confirmed.
+2. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after S85+Q.
+3. Next: S85 (2D delta beta-function computation for rg-fundamental).
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

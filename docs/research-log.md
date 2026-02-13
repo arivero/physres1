@@ -2769,3 +2769,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 ## 2026-02-11 (Q57: referee pass on C100 step-halving/rooted-tree polish)
 - Findings: expansions and coefficients look consistent; main paper uses \(F([\bullet,\bullet])\) without defining \(F(\cdot)\); `C100` execution log is missing the required diffstat and guard-check outputs; both manuscripts should state the \(C^2\) scope next to the \(O(h^3)\) branch-tree remark.
 - Follow-ups: `D15` to backfill the `C100` diffstat/guard outputs; `C102` to define \(F([\bullet])\)/\(F([\bullet,\bullet])\) at first use and note the smoothness assumptions; optional `S69` to precompute the next rooted-tree term if the dictionary expands.
+
+## 2026-02-13 (DX06: post-planck-area-strengthening structural sweep)
+- Focus: after 14 consecutive cycles on the planck-area thread (S82–C123, Q75–Q78), sweep for cross-thread inconsistencies and reassess priorities.
+- Work: checked main paper (Sections 8–10) against all new planck-area results; checked rg-fundamental for half-density references; probed anomaly register; assessed RCP v4 validity.
+- Findings: zero anomalies. Main paper consistent with all new results. Division of labor (main = structural, planck-area = scale-selection) is clean. RCP v4 confirmed valid, no v5 needed. All S82/S83/S84 findings already promoted.
+- Debate: should main paper reference PA-D1.4a explicitly? Resolution: no — Section 6 already establishes half-density composition as structural; PA-D1.4a is a specific witness belonging in the companion. Pointer at line 544 is sufficient.
+- Next: pivot to rg-fundamental. S85 (2D delta beta-function computation), then C/Q on rg-fundamental to clear path for P01.
