@@ -65,6 +65,9 @@ Assume \(q\) is piecewise \(C^2\) with a single velocity discontinuity at \(t_0\
 `Proof.`
 Integrate the Euler–Lagrange equation over \([t_0-\varepsilon,t_0+\varepsilon]\). The integral of \(\partial_q\mathcal{L}\) vanishes as \(\varepsilon\to0\) by boundedness; the derivative term yields the momentum jump. \(\square\)
 
+`Example 3.1a (No corner for a free particle).`
+For a free particle (\(\mathcal{L}=\tfrac{m}{2}\dot{q}^2\)) with a piecewise-linear trajectory and velocities \(v_-\), \(v_+\) on either side of \(t_0\), Theorem 3.1 demands \(mv_+=mv_-\), so \(v_+=v_-\) — the trajectory is a single straight line and no genuine corner exists. In contrast, the impulse condition of Section 3.2 permits \(v_+\neq v_-\) with jump \(v_+-v_-=J/m\). Corners are the *homogeneous* case of the impulse condition: the momentum is continuous (soft junction), while an impulse breaks that continuity (hard junction).
+
 ## 3.2 Impulses (delta forcing)
 
 `Theorem 3.2 (Impulse jump condition).`
@@ -134,11 +137,15 @@ This confirms that the delta-kick raises the action above the free minimum — t
 
 ## 4.4 Angular momentum preservation under central impulses
 
-For a central force in the plane, the impulse is radial: \(J=J_r\,\hat{r}\). Since angular momentum depends only on the transverse velocity component,
+For a central force in the plane, the impulse is radial: \(J=J_r\,\hat{r}\). Decomposing the velocity into radial and transverse components, \(\mathbf{v}=v_r\,\hat{r}+r\dot{\theta}\,\hat{\theta}\), the impulse jump of Theorem 3.2 reads
 \[
-L=m\,r\,\dot{\theta},
+v_r^+-v_r^-=J_r/m,\qquad \dot{\theta}^+=\dot{\theta}^-,
 \]
-a purely radial impulse leaves \(\dot{\theta}\) (and hence \(L\)) unchanged across the kick, recovering the equal-area property of Newton's polygon at the distributional level [Nauenberg2003KeplerArea].
+so the angular momentum \(L=mr^2\dot{\theta}\) is unchanged across the kick.
+
+This is precisely the mechanism behind Newton's proof of the equal-area law (*Principia*, Proposition 1). A particle moves freely from \(A\) to \(B\) in time \(\Delta t\), sweeping out triangle \(SAB\). At \(B\), a central impulse directed toward the force center \(S\) adds a radial velocity component, deflecting the inertial continuation \(Bc\) to \(C\) with \(cC\parallel BS\) (the parallelogram construction). Since \(c\) and \(C\) are equidistant from line \(SB\), the triangles \(SBc\) and \(SBC\) have the same area, so \(\text{Area}(SAB)=\text{Area}(SBC)\). The construction repeats at every vertex: the swept-area equality is an algebraic identity at each polygon step, exact for any finite number of impulses.
+
+In the language of Section 4.5, a sequence of \(N\) central impulses produces a polygon whose area-sweep rate is constant at every step. As \(N\to\infty\) and \(\Delta t\to0\) (Newton's Lemma 3 on "ultimate ratios"), the polygon converges to a smooth orbit under a continuous central force, recovering Kepler's second law [Nauenberg2003KeplerArea]. The distributional impulse-matching of Theorem 3.2 thus provides the modern functional-analytic underpinning of Newton's original polygonal argument.
 
 ## 4.5 From N impulses to the time-sliced path integral
 

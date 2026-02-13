@@ -13,15 +13,16 @@ Use this file as a source ledger.
 
 ## Sources
 1. `[Newton1687]` Isaac Newton, *Philosophiae Naturalis Principia Mathematica* (1687), Book I (limit methods and central-force geometry). Reference access point: Newton Project and standard translated editions.
-2. `[Noether1918]` Emmy Noether, "Invariante Variationsprobleme" (1918). English translation commonly used in modern mechanics references.
-3. `[Dirac1933]` P. A. M. Dirac, "The Lagrangian in Quantum Mechanics," *Physikalische Zeitschrift der Sowjetunion* 3 (1933), 64–72. (Commonly cited as the earliest explicit path-integral style phase-weighting statement.)
-4. `[Feynman1948]` R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* 20 (1948), 367–387. DOI `10.1103/RevModPhys.20.367`. OA: Caltech author-repository PDF.
-5. `[Connes1994]` Alain Connes, *Noncommutative Geometry* (Academic Press, 1994). ISBN `978-0-12-185860-5`.
-6. `[Landsman1998]` N. P. Landsman, *Mathematical Topics Between Classical and Quantum Mechanics* (Springer, 1998), Springer Monographs in Mathematics. DOI `10.1007/978-1-4612-1680-3`. ISBN `978-0-387-98318-9`.
-7. `[ConnesKreimer2000]` Alain Connes and Dirk Kreimer, "Renormalization in quantum field theory and the Riemann-Hilbert problem I," *Communications in Mathematical Physics* 210 (2000), 249–273. DOI `10.1007/s002200050779`.
-8. `[Brouder1999]` Ch. Brouder, "Runge-Kutta methods and renormalization," arXiv:`hep-th/9904014` (2 Apr 1999).
-9. `[McLachlan2017]` Robert I. McLachlan, Klas Modin, Hans Munthe-Kaas, Olivier Verdier, "Butcher series: A story of rooted trees and numerical methods for evolution equations," arXiv:`1512.00906` (v3, 27 Feb 2017).
-10. `[BoyaRivero1994Contact]` Luis J. Boya and Alejandro Rivero, "Renormalization in 1-D Quantum Mechanics: contact interactions," arXiv:`hep-th/9411081` (v1, 11 Nov 1994).
+2. `[Hamilton1834]` W. R. Hamilton, "On a General Method in Dynamics," *Philosophical Transactions of the Royal Society*, Part II, 247–308 (1834). OA: <https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/GenMeth.pdf>. (Hamilton's principal function S(q,Q,t) as the generating function for dynamics; the mixed Hessian ∂²S/∂q∂Q appears here a century before Van Vleck takes its determinant for the semiclassical propagator prefactor.)
+3. `[Noether1918]` Emmy Noether, "Invariante Variationsprobleme" (1918). English translation commonly used in modern mechanics references.
+4. `[Dirac1933]` P. A. M. Dirac, "The Lagrangian in Quantum Mechanics," *Physikalische Zeitschrift der Sowjetunion* 3 (1933), 64–72. (Commonly cited as the earliest explicit path-integral style phase-weighting statement.)
+5. `[Feynman1948]` R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* 20 (1948), 367–387. DOI `10.1103/RevModPhys.20.367`. OA: Caltech author-repository PDF.
+6. `[Connes1994]` Alain Connes, *Noncommutative Geometry* (Academic Press, 1994). ISBN `978-0-12-185860-5`.
+7. `[Landsman1998]` N. P. Landsman, *Mathematical Topics Between Classical and Quantum Mechanics* (Springer, 1998), Springer Monographs in Mathematics. DOI `10.1007/978-1-4612-1680-3`. ISBN `978-0-387-98318-9`.
+8. `[ConnesKreimer2000]` Alain Connes and Dirk Kreimer, "Renormalization in quantum field theory and the Riemann-Hilbert problem I," *Communications in Mathematical Physics* 210 (2000), 249–273. DOI `10.1007/s002200050779`.
+9. `[Brouder1999]` Ch. Brouder, "Runge-Kutta methods and renormalization," arXiv:`hep-th/9904014` (2 Apr 1999).
+10. `[McLachlan2017]` Robert I. McLachlan, Klas Modin, Hans Munthe-Kaas, Olivier Verdier, "Butcher series: A story of rooted trees and numerical methods for evolution equations," arXiv:`1512.00906` (v3, 27 Feb 2017).
+11. `[BoyaRivero1994Contact]` Luis J. Boya and Alejandro Rivero, "Renormalization in 1-D Quantum Mechanics: contact interactions," arXiv:`hep-th/9411081` (v1, 11 Nov 1994).
 11. `[ManuelTarrach1994PertRenQM]` Cristina Manuel and Rolf Tarrach, "Perturbative Renormalization in Quantum Mechanics," *Physics Letters B* 328 (1994), 113--118. arXiv:`hep-th/9309013` (v1, 2 Sep 1993). DOI `10.1016/0370-2693(94)90437-5`.
 12. `[Kurasov1996DiscontinuousTest]` Pavel Kurasov, "Distribution theory for discontinuous test functions and differential operators with generalized coefficients," *Journal of Mathematical Analysis and Applications* 201 (1996), 287–323. DOI `10.1006/jmaa.1996.0256`.
 13. `[BonneauFarautValent2001SAE]` Guy Bonneau, Jacques Faraut, and Galliano Valent, "Self-adjoint extensions of operators and the teaching of quantum mechanics," *American Journal of Physics* 69 (2001), 322–331. arXiv:`quant-ph/0103153`. DOI `10.1119/1.1328351`.

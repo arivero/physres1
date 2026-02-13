@@ -41,6 +41,9 @@ Introduce near-diagonal coordinates \(y=x+\varepsilon v\). Then \(\delta^{(d)}(x
 \]
 Thus the universal \(\varepsilon^{-d/2}\) normalization exponent is already present in the identity delta kernel, once kernels are treated as half-densities.
 
+`Remark 2.1 (Why d/2 is universal).`
+The exponent \(d/2\) is not a computational accident. Composing two half-density kernels requires integrating over an intermediate point: \(\int \mathsf{K}_1(x,z)\,\mathsf{K}_2(z,y)\,dz\). Each kernel carries \(|dz|^{1/2}\); their product gives \(|dz|\), which pairs with the integration measure to produce a scalar. The \(\varepsilon^{-d/2}\) prefactor is precisely what makes near-diagonal kernel scaling compatible with composition — the kernel analog of the \((N+1)/2\) normalization exponent in the time-sliced path integral (companion note, Section 4.5).
+
 # 3. Delta on the stationary set: $\delta(\nabla f)$ and determinant weights
 ## 3.1 One-dimensional identity ($\delta(f')$)
 Let \(f:\mathbb R\to\mathbb R\) have finitely many nondegenerate critical points \(x_i\) (so \(f'(x_i)=0\), \(f''(x_i)\neq 0\)). Then, as distributions,
@@ -105,8 +108,11 @@ If \(\delta S[q;\eta]=0\) for all \(\eta\), then the Euler–Lagrange expression
 
 When \(\partial L/\partial \dot q\) has jumps (corners/impulses), the distributional derivative produces delta terms automatically; more generally, point-supported singularities are encoded by delta kernels and their derivatives (\(\delta,\delta',\ldots\)), depending on distributional order.
 
+`Example 3.4a (Free particle: smooth vs kinked trajectories).`
+For \(L=\tfrac{m}{2}\dot q^2\), the Euler–Lagrange expression is \(E[q]=-m\ddot q\). If \(q(t)\) is smooth and \(\eta=\rho_\varepsilon(t-t_\ast)\) is a mollifier sequence, then \(\delta S[q;\eta]=-\int m\ddot q(t)\,\rho_\varepsilon(t-t_\ast)\,dt\to -m\ddot q(t_\ast)\) as \(\varepsilon\to0\), localizing the equation pointwise (the companion note's Theorem 2.1). If instead \(q\) has a velocity jump \(\Delta v\) at \(t_\ast\), the distributional derivative \(\ddot q\) acquires a delta term: \(\ddot q=(\Delta v)\,\delta(t-t_\ast)+\{\text{smooth}\}\), and the forced equation \(m\ddot q=J\,\delta(t-t_\ast)\) gives \(m\,\Delta v=J\) — the impulse-matching condition of the companion note's Theorem 3.2. The transition from smooth extremals to impulsive ones is thus captured entirely by the distributional order of the Euler–Lagrange expression.
+
 ## 3.5 Van Vleck determinant: the propagator instance of the square-root Hessian
-The square-root Hessian weight of Section 3.3 has a distinguished physical instance: the Van Vleck determinant [VanVleck1928Correspondence] [Morette1951] in the semiclassical propagator.
+The square-root Hessian weight of Section 3.3 has a distinguished physical instance: the Van Vleck determinant [Hamilton1834] [VanVleck1928Correspondence] [Morette1951] in the semiclassical propagator.
 
 For the short-time quantum propagator between positions \(q_i\) and \(q_f\) with time interval \(\Delta t\), stationary-phase evaluation of the path integral gives
 \[
@@ -135,6 +141,9 @@ For the harmonic oscillator (\(V=\tfrac12 m\omega^2 q^2\)) in \(d=1\), the class
 D = \left|\frac{m\omega}{\sin\omega\Delta t}\right|,\qquad \sqrt{D}=\sqrt{\frac{m\omega}{|\sin\omega\Delta t|}}.
 \]
 As \(\omega\Delta t\to 0\), \(\sin\omega\Delta t\approx\omega\Delta t\), recovering the free-particle result \(\sqrt{D}\to\sqrt{m/\Delta t}\). At \(\omega\Delta t=\pi\) (half-period), \(\sin\omega\Delta t\to 0\) and \(\sqrt{D}\to\infty\): this is the familiar caustic (focal point) where the semiclassical approximation breaks down because the classical flow focuses all initial momenta onto a single final point.
+
+`Remark 3.5c (Caustics and the Maslov index).`
+At caustics (conjugate points where \(D\to\infty\)), the amplitude \(|D|^{1/2}\) diverges and the branch choice for \(\sqrt{D}\) becomes ambiguous. In the half-density framework the singularity is a projection artifact: the semiclassical state is a smooth half-density on the Lagrangian submanifold \(L\subset T^\ast M\), and the caustic occurs because the projection \(\pi\colon L\to M\) develops a fold [BatesWeinstein1997]. The branch ambiguity of \(\sqrt{D}\) is resolved by the metaplectic structure: half-densities transform under the double cover \(\mathrm{Mp}(2n)\) of \(\mathrm{Sp}(2n)\), and the Maslov index \(\mu\) — counting conjugate points along the classical path — records the accumulated phase correction \(\exp(-i\pi\mu/2)\). This makes the "amplitudes are half-densities" pattern of Section 3.3 precise: the Van Vleck prefactor is not a scalar but a section of the half-density bundle on \(L\), globally well-defined even through caustics.
 
 # 4. Delta at a point: point interactions as rank-one kernels
 A point interaction [AlbeverioGesztesyHoeghKrohnHolden2005] is naturally the rank-one operator
@@ -186,9 +195,10 @@ The half-density weight \(d/2\) that fixes the identity-kernel scaling \(\vareps
 
 # References
 
-1. [VanVleck1928Correspondence] J. H. Van Vleck, "The Correspondence Principle in the Statistical Interpretation of Quantum Mechanics," *Proceedings of the National Academy of Sciences of the United States of America* 14(2) (1928), 178–188. DOI `10.1073/pnas.14.2.178`.
-2. [BatesWeinstein1997] Sean Bates and Alan Weinstein, "Lectures on the Geometry of Quantization," Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. ISBN `978-0-8218-0798-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Canonical reference for half-density formalism in geometric quantization; half-density kernels and composition.)
-3. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003. DOI `10.1007/978-3-642-61497-2`. (Schwartz kernel theorem; distributional calculus for PDE Green functions.)
-4. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005. ISBN `978-0-8218-3624-4`. (Canonical reference for point interactions in quantum mechanics; self-adjoint extensions, delta potentials.)
-5. [Morette1951] C. Morette, "On the Definition and Approximation of Feynman's Path Integrals," *Phys. Rev.* **81**, 848–852 (1951). DOI `10.1103/PhysRev.81.848`. (Van Vleck determinant in path integral; semiclassical expansion weights.)
-6. [Derezinski2024] J. Dereziński, "Point potentials on Euclidean space, hyperbolic space and sphere in any dimension," arXiv:2403.17583 (2024). (Self-adjoint extensions of the Laplacian restricted to \(\mathbb R^d\setminus\{0\}\); essential self-adjointness for \(d\geq4\); complete treatment for all \(d\).)
+1. [Hamilton1834] W. R. Hamilton, "On a General Method in Dynamics," *Philosophical Transactions of the Royal Society*, Part II, 247–308 (1834). OA: <https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/GenMeth.pdf>. (Hamilton's principal function \(S(q,Q,t)\); the mixed Hessian \(\partial^2 S/\partial q\,\partial Q\) appears here a century before Van Vleck takes its determinant for the semiclassical propagator prefactor.)
+2. [VanVleck1928Correspondence] J. H. Van Vleck, "The Correspondence Principle in the Statistical Interpretation of Quantum Mechanics," *Proceedings of the National Academy of Sciences of the United States of America* 14(2) (1928), 178–188. DOI `10.1073/pnas.14.2.178`.
+3. [BatesWeinstein1997] Sean Bates and Alan Weinstein, "Lectures on the Geometry of Quantization," Berkeley Mathematics Lecture Notes, vol. 8, AMS, 1997. ISBN `978-0-8218-0798-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Canonical reference for half-density formalism in geometric quantization; half-density kernels and composition.)
+4. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003. DOI `10.1007/978-3-642-61497-2`. (Schwartz kernel theorem; distributional calculus for PDE Green functions.)
+5. [AlbeverioGesztesyHoeghKrohnHolden2005] S. Albeverio, F. Gesztesy, R. Høegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005. ISBN `978-0-8218-3624-4`. (Canonical reference for point interactions in quantum mechanics; self-adjoint extensions, delta potentials.)
+6. [Morette1951] C. Morette, "On the Definition and Approximation of Feynman's Path Integrals," *Phys. Rev.* **81**, 848–852 (1951). DOI `10.1103/PhysRev.81.848`. (Van Vleck determinant in path integral; semiclassical expansion weights.)
+7. [Derezinski2024] J. Dereziński, "Point potentials on Euclidean space, hyperbolic space and sphere in any dimension," arXiv:2403.17583 (2024). (Self-adjoint extensions of the Laplacian restricted to \(\mathbb R^d\setminus\{0\}\); essential self-adjointness for \(d\geq4\); complete treatment for all \(d\).)
