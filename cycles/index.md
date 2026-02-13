@@ -139,6 +139,7 @@
 135. `C135` Completed.
 136. `C136` Completed.
 137. `C137` Completed.
+138. `C138` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -257,6 +258,7 @@
 - `S91` Completed.
 - `S92` Completed.
 - `S93` Completed.
+- `S94` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.

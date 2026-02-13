@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S94+C138: delta-objects paper — Van Vleck determinant section)
+- Focus: expand delta-objects paper (138 lines) with Van Vleck connection from Outlook item 1.
+- Work: S94 identified the Van Vleck determinant as the propagator instance of Section 3.3's square-root Hessian. C138 added Section 3.5 with semiclassical propagator formula, mixed vs full Hessian distinction, and free-particle example recovering (Δt)^{-d/2}. Added [VanVleck1928Correspondence] reference.
+- Result: paper 138→164 lines. Outlook item 1 marked as addressed.
+- Next: Q92 (referee pass on expanded delta-objects) or further content work.
+
 ## 2026-02-13 (DX09: cross-thread probe + next-direction assessment)
 - Focus: periodic DX cycle — anomaly check, cross-satellite links, roadmap prioritization.
 - Work: no open anomalies. Ranked unstarted roadmap items A–F, J by value/cycle. Top pick: B (Dirac Probes, 3–4 cycles, low risk, 80% content exists). No principle evolution update needed.
