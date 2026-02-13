@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S112+C153: free-particle two-slice example in cornerstone Section 6.4)
+- Focus: fill Gap 2 (stationary phase numerical verification) with a concrete worked example.
+- Work: free particle on two time slices. Gaussian integral gives S_eff^{(ℏ)} = m(q₂-q₀)²/(4Δt) + (ℏ/2)ln(m/(πℏΔt)). As ℏ→0, S_eff → classical minimum (midpoint, uniform velocity). Example D4.2b placed after D4.2a; old D4.2b renumbered to D4.2c.
+- Result: cornerstone +11 lines (~1486 total). Gap 2 filled.
+
 ## 2026-02-13 (S111+C152: hydrogen atom Example 6.2 in action-angle satellite)
 - Focus: expand shortest satellite (action-angle, 96 lines) with a hydrogen atom witness showing the full 3-torus action-angle structure.
 - Work: subagent (pedantic atomic physics professor) verified n²-fold degeneracy, fixed "orbital plane" language to use Runge-Lenz selection rules, added semiclassical qualifier. Updated outlook to reference d=1,2,3 progression.
