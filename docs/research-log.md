@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q77: referee pass on C121 — caught dimensional error)
+- Focus: verify PA-E5c claims and dimensional analysis.
+- Work: SymPy + manual verification revealed [G₀] = length^{-(d-1)} (not length^{-d}) for the resolvent. Rewrote PA-E5c to avoid specific [G₀] claims, focusing on structural separation (which is correct). Added errata to blackboard.
+- Result: pass with correction. Error caught before external publication. Corrected PA-E5c is clean (23 pages).
+- Next: S/C on remaining open problems.
+
 ## 2026-02-13 (C121: promote S83 as Remark PA-E5c)
 - Focus: insert dimensional verification of Van Vleck / transmutation separation after PA-E5b.
 - Work: 4-line remark with [G₀] = length^{-d}, [T] = length^d, scalarization κ_*^{-d/2}, d=4 extrapolation. Rebuilt .tex/.pdf (22 pages, clean). Guard checks pass.
