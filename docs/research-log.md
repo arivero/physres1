@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S180+C221+S181+C222: Phase POVM + Quantum Zeno)
+- Focus: expand action-angle Section 2 (phase POVM) and Section 5 (quantum Zeno).
+- Work: S180 studied phase POVM. Quantum foundations reviewer caught separate obstructions for oscillator (semi-bounded) vs L_z (circle compactness), Susskind-Glogower conflation. Promoted as Remark 2.2: POVM formula, positivity, two distinct obstructions. S181 studied quantum Zeno effect. Measurement theory reviewer caught survival probability formula (use quadratic), "randomizes angle" misleading, decoherence contrast over-generalized. Promoted as Remark 5.6: frequent action measurement prevents angle localization, complementary to decoherence. Q121 reviewed all 4 C217-C220 remarks: ALL PASS.
+- Result: action-angle 204→213 (+9, 16pp). Fermionic 209 (unchanged). Uncuttable 210 (unchanged). All three now 209+ lines.
+
 ## 2026-02-13 (S176+C217+S177+C218+S178+C219+S179+C220: Optical theorem + Confinement + CS + Kadanoff)
 - Focus: expand fermionic Section 3 (optical theorem) and Section 6 (confinement); uncuttable Section 4 (CS equation, Kadanoff block spins).
 - Work: S176 studied optical theorem. Scattering theory reviewer caught normalization convention (use structural statement), C_0 imaginary part claim wrong (contact expansion real below threshold). Promoted as Remark 3.6. S177 studied color confinement. Lattice QCD reviewer caught string tension units (GeV²/c→GeV²), baryons are fermionic (reframe narrative), Grassmann connection is analogical. Promoted as Remark 6.4. S178 studied Callan-Symanzik. QFT theorist caught sign convention ambiguity, physical interpretation imprecise. Promoted as Remark 4.9 with explicit connected-Green-function convention. S179 studied Kadanoff block spins. Condensed matter reviewer caught rescaling direction wrong, Wilson understated. Promoted as Remark 4.10 with proper attribution.
