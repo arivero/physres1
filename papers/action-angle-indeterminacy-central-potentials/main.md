@@ -90,8 +90,15 @@ is the closest quantum analog of a classical orbit with definite amplitude \(|\a
 `Example 6.2 (Hydrogen atom: three action–angle pairs).`
 In the hydrogen atom, the \(n^2\)-fold degeneracy (\(E_n\) depending only on the principal quantum number \(n\)) reflects an enhanced \(SO(4)\) symmetry [Sakurai2020]. Semiclassically, the bound orbits lie on a three-torus with action integrals quantized by \((n,\ell,m)\). A stationary eigenstate \(|n,\ell,m\rangle\) is sharp in all three actions and therefore delocalized in all three conjugate angles: the azimuthal phase \(\phi\) is uniform (Section 3), the in-plane orbit orientation has no preferred direction (the Runge–Lenz vector has vanishing expectation value, since it connects states of different \(\ell\)), and the radial probability \(|R_{n\ell}(r)|^2\) is time-independent — the sharp radial action leaves the conjugate radial phase uniformly delocalized. A classical Keplerian ellipse with definite eccentricity, orientation, and timing requires a coherent superposition over ranges of \((n,\ell,m)\), just as a coherent state in Example 6.1 requires superposing many Fock states.
 
+`Remark 6.3 (EBK quantization on the invariant torus).`
+For a classically integrable system with \(d\) degrees of freedom, the Arnold–Liouville theorem provides \(d\) action variables \(I_k=(2\pi)^{-1}\oint_{\gamma_k}p\cdot dq\), integrated around the independent cycles \(\gamma_k\) of the invariant \(d\)-torus. The EBK (Einstein–Brillouin–Keller) quantization condition requires
+\[
+I_k=\left(n_k+\frac{\alpha_k}{4}\right)\hbar,\qquad n_k\in\mathbb{Z}_{\ge0},
+\]
+where \(\alpha_k\) is the Maslov index of the \(k\)-th cycle (counting caustic/turning-point contributions). The integer quantum numbers \(n_k\) select the torus; the conjugate angle variables \(\theta_k\in[0,2\pi)\) are uniformly distributed on that torus and carry no quantum-number information. This is the semiclassical counterpart of the fully quantum statement: stationary eigenstates (sharp actions) have delocalized angles. Examples 6.1 and 6.2 are the exact quantum versions of this principle for the \(d=1\) and \(d=3\) cases.
+
 # 7. Outlook (kept minimal)
-The preceding witnesses illustrate the action–angle tradeoff in systems with one, two, and three action–angle pairs. More generally, any integrable system with \(d\) degrees of freedom admits \(d\) action–angle pairs on an invariant torus, and EBK/WKB quantization makes the same structural point: the more sharply the actions are specified, the less information remains in the conjugate phases.
+The preceding witnesses illustrate the action–angle tradeoff in systems with one, two, and three action–angle pairs, and Remark 6.3 shows that EBK quantization makes the same structural point in general: the more sharply the actions are specified, the less information remains in the conjugate phases.
 
 # References
 
