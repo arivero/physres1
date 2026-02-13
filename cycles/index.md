@@ -161,6 +161,7 @@
 157. `C157` Completed.
 158. `C158` Completed.
 159. `C159` Completed.
+160. `C160` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -305,6 +306,7 @@
 - `S116` Completed.
 - `S117` Completed.
 - `S118` Completed.
+- `S119` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -454,15 +456,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. Q107+S118+C159: circular uncertainty Example 4.3 in action-angle satellite (+7 lines, 107→114). Q107 fixed √κ in delta-objects Example 4.1.
-2. Q106+S117+C158: 1D delta resolvent Example 4.1 in delta-objects satellite (+6 lines, 172→178). Q106 fixed Trotter Remark 3.3 in uncuttable.
-3. S116+C157: Trotter product formula Remark 3.3 in uncuttable satellite (+6 lines, 112→118).
-4. S115+C156: EBK quantization Remark 6.3 in action-angle satellite (+6 lines, 100→106).
-5. S114+C155: 3D contact scattering-length Example 5.2 in fermionic mediators satellite (+7 lines, 122→129).
+1. S119+C160: ERE↔contact connection Remark 4.2 in fermionic mediators satellite (+3 lines, 129→132).
+2. Q107+S118+C159: circular uncertainty Example 4.3 in action-angle satellite (+7 lines, 107→114). Q107 fixed √κ in delta-objects Example 4.1.
+3. Q106+S117+C158: 1D delta resolvent Example 4.1 in delta-objects satellite (+6 lines, 172→178). Q106 fixed Trotter Remark 3.3 in uncuttable.
+4. S116+C157: Trotter product formula Remark 3.3 in uncuttable satellite (+6 lines, 112→118).
+5. S115+C156: EBK quantization Remark 6.3 in action-angle satellite (+6 lines, 100→106).
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (action-angle 114, uncuttable 118, fermionic mediators 129).
+- Expand shorter satellites (action-angle 114, uncuttable 118, fermionic mediators 132).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S119+C160: ERE↔contact connection Remark 4.2 in fermionic mediators)
+- Focus: make the ERE↔EFT contact connection explicit in the fermionic mediators satellite.
+- Work: S119 blackboard studied the effective range expansion k cot δ₀ = -1/a + r₀k²/2 and its Born-level map to the contact expansion C₀→a, C₂→r₀. Subagent (skeptical nuclear physicist) confirmed physics correct; flagged Born-level factor ambiguity (mitigated by paper's use of "∝"). Promoted as Remark 4.2 after Derivation 4.1.
+- Result: fermionic mediators 129→132 lines (+3 net).
+
 ## 2026-02-13 (Q107+S118+C159: circular uncertainty Example 4.3 in action-angle + √κ fix)
 - Focus: make Proposition 4.2 concrete with a worked verification for the Dirichlet kernel state.
 - Work: S118 blackboard computed R = 2M/(2M+1), Var(L_z) = ℏ²M(M+1)/3, showed LHS/RHS = (M+1)(4M+1)/(3M) grows as 4M/3. Subagent (rigorous mathematician) verified all 6 computations correct. Promoted as Example 4.3. Q107 subagent caught missing √κ normalization in delta-objects Example 4.1 — fixed.
