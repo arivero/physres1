@@ -101,6 +101,15 @@ Point-supported interactions can be encoded as self-adjoint extension / boundary
 This viewpoint matches the controlled-refinement perspective:
 when a continuum description is defined as a refinement limit, UV data can survive in the limit precisely as boundary-condition parameters (contact terms), with RG flow expressing compatibility across resolutions.
 
+`Example 5.1 (Contact coupling generates a scale: 2D delta potential).`
+In two spatial dimensions, a contact interaction \(V(r)=g_0\,\delta^{(2)}(r)\) with bare coupling \(g_0\) and UV cutoff \(\Lambda\) leads, after a standard loop integral, to a \(T\)-matrix with the structure
+\[
+T(k)^{-1}=\frac{1}{g_0}+\frac{m}{\pi\hbar^2}\ln\!\left(\frac{\Lambda}{k}\right),
+\]
+which diverges as \(\Lambda\to\infty\) unless \(g_0\) is tuned. Define a renormalized coupling at reference scale \(\mu\) by absorbing the \(\ln\Lambda\) divergence; cutoff independence then gives the beta function \(\beta(g_R)=\mu\,dg_R/d\mu=(m/\pi\hbar^2)\,g_R^2\). This is a quadratic beta function of the same form as the toy logarithmic model in the cornerstone (Section 8.3), with solution producing a dynamically generated scale \(\mu_\ast=\mu\,e^{\pi\hbar^2/(mg_R)}\). For attractive coupling (\(g_R<0\)) this scale is below the reference scale and sets the bound-state energy: \(E=-\hbar^2\mu_\ast^2/(2m)\).
+
+The structural lesson: the "contact" limit of the effective interaction is not a number (coupling constant) but a flow — a scale-dependent parameter whose RG trajectory is part of the definition. This is "uncuttable" in the sense of the companion note: the continuum theory requires the refinement rule (cutoff removal + beta function) and not merely a single-cutoff value.
+
 # 6. Outlook (kept minimal)
 Longer-range effects associated to fermionic degrees of freedom can arise through loop-induced mechanisms or through emergent bosonic composite modes. Treating those responsibly would require a separate bibliography-hardening pass and is outside this note’s scope.
 
