@@ -222,6 +222,21 @@ pattern at the level of series: the naive sum has no limit, but a
 systematic resummation prescription (transform, rational approximation,
 inverse transform) is part of the definition of the intended quantity.
 
+\texttt{Remark\ 2.6\ (Optimal\ truncation:\ the\ exponential\ accuracy\ barrier).}
+For an asymptotic (divergent) series whose coefficients grow as
+\(|a_n|\sim C\,n!/\rho^n\), the \(n\)-th term is minimized near
+\(n\approx\rho/x\). Truncating at this optimal index --- the smallest
+term --- yields an approximation with exponentially small error
+\(\sim e^{-\rho/x}\), far better than any fixed algebraic order. This
+``superasymptotic'' accuracy (Berry, 1991) is the best any finite
+truncation can achieve; the exponentially small remainder is precisely
+the non-perturbative content (instantons, tunneling amplitudes) that the
+Borel resummation of Remark 2.5 recovers. Optimal truncation thus marks
+the boundary between what finite ``cuts'' can reach and what requires
+the full resummation machinery: the ultimate illustration that the
+intended quantity is not captured by any single approximant but lives in
+the controlled limit.
+
 \hypertarget{dynamics-action-stationarity-and-the-need-for-control-data}{%
 \section{3. Dynamics: action, stationarity, and the need for control
 data}\label{dynamics-action-stationarity-and-the-need-for-control-data}}
