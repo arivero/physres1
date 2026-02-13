@@ -272,6 +272,9 @@ As \(q\to 3^-\), the SR speed ceiling \(v_{\max}=c\sqrt{3-q}\to 0\), so the Newt
 `Remark 5.2c (Stability–precession duality at q=2).`
 For \(q=2\), the stability factor \(1+(2-q)\gamma^2\) reduces to \(1\), while Remark 3.2's precession frequency satisfies \(\omega^2=1/\gamma^2\). These are related: the stability factor equals \(\gamma^2\omega^2\). Thus unconditional stability at \(q=2\) is equivalent to the precession frequency being real and nonzero for all speeds — orbital shape (precession) and radial response (stability) are unified by the dimensionless invariant \(\gamma^2\omega^2=1\).
 
+`Remark 5.2d (SR epicyclic frequency ratio).`
+The Hamiltonian expansion of Section 5.1 gives the radial oscillation frequency \(\omega_r^2/\omega_\phi^2 = 3-q-v^2/c^2\), where \(\omega_\phi=L/(\gamma m r_0^2)\) is the orbital frequency. The Newtonian epicyclic ratio \(3-q\) is reduced by exactly \(\beta^2\), independently of \(q\). Positivity recovers the stability criterion of Section 5.2; for \(q=2\), the ratio reduces to \(1/\gamma^2=\omega^2\) (Remark 3.2), so the orbit-equation precession parameter \(\omega\) is the radial-to-orbital frequency ratio — making the duality of Remark 5.2c a special case.
+
 # 6. Outlook
 Three natural extensions are:
 1. replace the "external potential" modeling assumption by an explicitly field-mediated interaction model, and compare which orbit admissibility/stability bounds survive that change;
