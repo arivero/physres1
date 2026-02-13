@@ -156,6 +156,7 @@
 152. `C152` Completed.
 153. `C153` Completed.
 154. `C154` Completed.
+155. `C155` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -295,6 +296,7 @@
 - `S111` Completed.
 - `S112` Completed.
 - `S113` Completed.
+- `S114` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -441,15 +443,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S112+C153: free-particle two-slice Example D4.2b in cornerstone Section 6.4 (+11 lines). Gap 2 filled.
-2. S111+C152: hydrogen atom Example 6.2 in action-angle satellite (+4 lines, 96→100).
-3. S110+C151: Itô vs Stratonovich Remark 3.2 in uncuttable satellite (+9 lines, 103→112).
-4. Q102: referee pass on S109+C150 additions — both CLEAN.
-5. S109: 2D delta potential Example 5.1 in fermionic mediators satellite (+9 lines, 112→121).
+1. S114+C155: 3D contact scattering-length Example 5.2 in fermionic mediators satellite (+7 lines, 122→129).
+2. Q104: full cornerstone cold referee review — one CRITICAL fix (H0.2 "as operators"), no math errors.
+3. B21: restored inline citations in Dirac probes satellite (+8 lines, 188→196).
+4. S113+C154: HO Van Vleck Example 3.5b in delta objects satellite (+6 lines, 165→171).
+5. S112+C153: free-particle two-slice Example D4.2b in cornerstone Section 6.4 (+11 lines). Gap 2 filled.
 
 Next:
-- Content gaps: Gap 4 (RG flow on realistic coupling, high). Gap 2 filled (S112+C153).
-- Expand shorter satellites (action-angle 100, uncuttable 112, fermionic mediators 121).
+- Content gaps: Gap 4 (RG flow on realistic coupling, high).
+- Expand shorter satellites (action-angle 100, uncuttable 112, fermionic mediators 129).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

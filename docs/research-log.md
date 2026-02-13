@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S114+C155: 3D contact interaction Example 5.2 in fermionic mediators satellite)
+- Focus: expand fermionic mediators satellite with 3D contact interaction scattering-length example.
+- Work: subagent (skeptical nuclear physicist) flagged T-matrix sign conventions — resolved by using universally defined scattering amplitude f₀(k) = -a/(1+ika) instead. Added Example 5.2 after Example 5.1 (2D), completing the dimensional comparison.
+- Result: satellite 122→129 lines (+7 net). New citation: [AlbeverioGesztesyHoeghKrohnHolden2005].
+
 ## 2026-02-13 (Q104: full cornerstone cold referee review)
 - Focus: thorough cold referee review of entire cornerstone (~1486 lines), emphasis on recent additions.
 - Work: subagent found 5 issues. 1 CRITICAL (H0.2 "differing by O(ℏ)" ambiguous — fixed by adding "as operators"), 2 IMPORTANT (one false positive on Section 10.2 forward ref; one deferred — D5.1b monomial formula citation), 2 MODERATE (navigation/flow). No mathematical errors in D4.1b, D4.2b, or D5.1b.
