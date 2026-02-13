@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (B23: add 33 bibliography entries across all three satellites)
+- Focus: resolve Q118 CONDITIONAL PASS by adding all missing bibliography entries.
+- Work: added 12 entries to fermionic, 9 to action-angle, 12 to uncuttable. All inline citations now have matching References entries. DOIs included where available; arXiv preprints noted.
+- Result: all three satellites now 12pp each (186/182/184 lines). Q118 conditions fully resolved.
+
 ## 2026-02-13 (S162+C203+S163+C204+S164+C205+S165+C206: Four new remarks across all satellites)
 - Focus: balance all three satellites with one remark each, plus two extra for fermionic (shortest).
 - Work: S162 studied Weinberg power counting. Nuclear theory reviewer caught incomplete formula — described hierarchy qualitatively. Promoted as Remark 4.4 in fermionic. S163 studied nuclear pion exchange. Nuclear physics reviewer caught pion bilinear notation (q̄γ₅q → q̄γ₅τq). Promoted as Remark 6.3 in fermionic. S164 studied coherent-state path integral. Mathematical physicist caught missing ℏ in semiclassical equation. Promoted as Remark 7.6 in action-angle. S165 studied asymptotic safety. Quantum gravity reviewer confirmed all claims; clarified G_N notation. Promoted as Remark 4.7 in uncuttable.
