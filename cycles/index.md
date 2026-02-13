@@ -204,6 +204,10 @@
 200. `C200` Completed.
 201. `C201` Completed.
 202. `C202` Completed.
+203. `C203` Completed.
+204. `C204` Completed.
+205. `C205` Completed.
+206. `C206` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -392,6 +396,10 @@
 - `S159` Completed.
 - `S160` Completed.
 - `S161` Completed.
+- `S162` Completed.
+- `S163` Completed.
+- `S164` Completed.
+- `S165` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -550,16 +558,16 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S160+C201: Moyal star product Remark 3.7 in uncuttable (+3 lines, 166→169).
-2. S161+C202: Quantum state tomography Remark 6.7 in action-angle (+3 lines, 167→170).
-3. S158+C199: Geometric quantization Remark 7.5 in action-angle.
-4. S159+C200: Anomalous magnetic moment Remark 3.3 in fermionic.
+1. S162+C203: Weinberg power counting Remark 4.4 in fermionic (+3 lines).
+2. S163+C204: Nuclear pion exchange Remark 6.3 in fermionic (+3 lines).
+3. S164+C205: Coherent-state path integral Remark 7.6 in action-angle (+3 lines).
+4. S165+C206: Asymptotic safety Remark 4.7 in uncuttable (+3 lines).
 5. Q118: all 7 recent remarks CONDITIONAL PASS (missing bib entries).
 
 Next:
-- Satellites: action-angle 170 (11pp), uncuttable 169 (11pp), fermionic 168 (9pp).
-- Fermionic is shortest — next S+C cycles should target it.
-- B23: add ~16 bibliography entries flagged by Q118.
+- Satellites: fermionic 174 (10pp), action-angle 173 (11pp), uncuttable 172 (11pp).
+- All three within 2 lines of each other — balanced.
+- B23: add ~20+ bibliography entries flagged by Q118 and new remarks.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

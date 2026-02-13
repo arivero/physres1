@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S162+C203+S163+C204+S164+C205+S165+C206: Four new remarks across all satellites)
+- Focus: balance all three satellites with one remark each, plus two extra for fermionic (shortest).
+- Work: S162 studied Weinberg power counting. Nuclear theory reviewer caught incomplete formula — described hierarchy qualitatively. Promoted as Remark 4.4 in fermionic. S163 studied nuclear pion exchange. Nuclear physics reviewer caught pion bilinear notation (q̄γ₅q → q̄γ₅τq). Promoted as Remark 6.3 in fermionic. S164 studied coherent-state path integral. Mathematical physicist caught missing ℏ in semiclassical equation. Promoted as Remark 7.6 in action-angle. S165 studied asymptotic safety. Quantum gravity reviewer confirmed all claims; clarified G_N notation. Promoted as Remark 4.7 in uncuttable.
+- Result: fermionic 168→174 (+6, 10pp). Action-angle 170→173 (+3, 11pp). Uncuttable 169→172 (+3, 11pp). All balanced within 2 lines.
+
 ## 2026-02-13 (S160+C201+S161+C202+Q118: Star product + Tomography + Review)
 - Focus: expand uncuttable Section 3 (deformation quantization) and action-angle Section 6 (tomography). Review all 7 recent additions.
 - Work: S160 studied Moyal star product. Mathematical physicist caught Kontsevich Fields Medal date (1998 not 2003). Promoted as Remark 3.7: ★ as ℏ-deformation, Kontsevich formality. S161 studied quantum state tomography. Quantum optics reviewer flagged Radon transform sign convention. Promoted as Remark 6.7 (with renumbering chain: old 6.7→6.8, old 6.8→6.9, cross-references updated). Q118 reviewed all 7 remarks from C195-C202: all CONDITIONAL PASS, physics correct, ~16 bibliography entries needed.

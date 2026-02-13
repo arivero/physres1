@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Deformation quantization / Moyal star product | Promoted (C201) |
-| 1 | Quantum state tomography / Radon transform | Promoted (C202) |
+| 0 | Coherent-state path integral | Promoted (C205) |
+| 1 | Asymptotic safety / non-perturbative refinement | Promoted (C206) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
