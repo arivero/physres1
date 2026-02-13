@@ -80,31 +80,14 @@ Suggested deliverables:
 2. Show the semigroup property explicitly in the chosen renormalization scheme.
 3. Record scheme dependence cleanly (what changes vs what is invariant).
 
-## G. Planck Area / Half-Density Scaling (Draft in `papers/planck-area/`)
-Goal: make the “Planck-length pivot” precise at the kernel/composition level by treating amplitudes as half-densities and tracking what scale is required to normalize them.
+## G. Planck Area / Half-Density Scaling — **COMPLETED (Tier 1)**
+Draft: `papers/planck-area/main.md` (706 lines, 23 pages, 9 refs). P00 v3 live on clawXiv.
 
-Suggested deliverables:
-1. A concrete half-density composition model (kernel calculus) showing why normalization requires a \(\text{length}^{d/2}\) scale.
-2. Specialize to \(d=4\) to isolate a universal area scale candidate and connect it to Planck area.
-3. Anchor example: Planck areal speed and the inverse-square \(D=4\) cancellation story, cleanly separated into proposition vs heuristic [RiveroAreal] [RiveroSimple].
+## H. RG as Fundamental — **COMPLETED (Tier 1)**
+Draft: `papers/rg-fundamental/main.md` (569 lines, 17 pages, 6 refs). Includes explicit Wilsonian shell-integration beta function (RG-D1.2a).
 
-## H. RG as Fundamental (Draft in `papers/rg-fundamental/`)
-Goal: elevate RG from “technical afterword” to a foundational compatibility principle within the main paper’s refinement/composition framework.
-
-Suggested deliverables:
-1. One explicit model computation producing a nontrivial beta function (not just the log-template), with a clear statement of scheme dependence.
-2. A precise semigroup vs group discussion (coarse-graining vs reversible composition).
-3. A rooted-tree dictionary section that is explicit about what is analogy vs literal equivalence [Brouder1999] [ConnesKreimer2000] [McLachlan2017].
-
-## I. Relativistic Central Orbits (SR/GR Follow-up)
-`conv_patched.md` contains a self-contained thread on SR/GR circular-orbit admissibility and stability under central forces (and the GR photon-sphere/impact-parameter story).
-This is outside the cornerstone paper’s scope but can be a clean dependent note.
-
-Suggested deliverables:
-1. SR worldline action with a central potential; effective potential reduction.
-2. Circular-orbit conditions and stability; special simplifications for inverse-square.
-3. GR geodesic reduction (Schwarzschild as baseline); circular orbits + photon sphere via effective potential.
-4. A short bridge back to the project spine: “areal invariants survive refinement, while relativistic kinematics adds admissibility bounds.”
+## I. Relativistic Central Orbits — **COMPLETED (Tier 1)**
+Draft: `papers/relativistic-central-orbits/main.md` (207 lines, 6 pages, 2 refs). SR circular orbits, Schwarzschild geodesics, stability analysis.
 
 ## J. String Tension as a Universal Area-Scale Supplier (Gauge-Theory Follow-up)
 If the half-density scalarization ladder needs “a source of area scale” that is not *assumed* to be Planckian, confinement provides a canonical candidate: \(\sigma\) with \([\sigma]=\text{length}^{-2}\).
@@ -115,31 +98,11 @@ Suggested deliverables:
 3. Connection to `papers/planck-area/main.md` (scale supplier for scalarization) and to `papers/rg-fundamental/main.md` (running/transmutation).
 4. Clearly separate “heuristic bridge” from any claim of fundamental primacy.
 
-## K. Action–Angle Indeterminacy for Central Potentials (Foundations Note)
-Central potentials are integrable and admit action–angle variables. Quantization makes actions discrete (or sharply specifiable), and the conjugate angles become delocalized—this is the number–phase theme in a mechanics setting.
+## K. Action–Angle Indeterminacy — **COMPLETED (Tier 1)**
+Draft: `papers/action-angle-indeterminacy-central-potentials/main.md` (75 lines, 3 pages, 2 refs). Referee-safe (φ,Lz) witness + Dirichlet-kernel packet example.
 
-Status: drafted as a dependent note in `papers/action-angle-indeterminacy-central-potentials/` (referee-safe \((\phi,L_z)\) witness + explicit Fourier packet example).
-
-Suggested deliverables:
-1. Define action–angle variables for a central potential and identify the clean canonical pair \((\phi,L_z)\) (and the radial action \(J_r\)).
-2. State a minimal, referee-safe “indeterminacy” claim: in an \(L_z\) eigenstate, \(\phi\) is uniformly distributed; sharp actions imply delocalized conjugate angles.
-3. Work one example explicitly (separation of variables; \(\psi\propto e^{im\phi}\) gives uniform \(\phi\)).
-4. Optional semiclassical bridge: show how the path integral on a circle encodes periodicity via winding sectors and how this interfaces with the project’s refinement/composition viewpoint.
-
-Seed blackboard: `blackboards/2026-02-10-action-angle-indeterminacy-central-potentials.md`.
-
-## L. Fermionic Mediators, Central Potentials, and Contact/Boundary-Condition Limits
-Bosonic exchange yields textbook central potentials via linear couplings to classical sources. Fermionic fields are Grassmann-valued, so the “classical source \(\Rightarrow\) potential” derivation does not transplant directly; however, fermions can still induce effective interactions via loops, condensates, and EFT contact limits.
-
-Status: drafted as a dependent note in `papers/fermionic-mediators-contact-limits/` (Grassmann-source obstruction + contact/boundary-condition IR replacement).
-
-Suggested deliverables:
-1. Precisely state what “a fermionic field generates a potential” would mean, and why linear sourcing requires Grassmann sources (hence no ordinary classical potential from single-fermion exchange between commuting charges).
-2. Identify the physically meaningful routes: loop-induced corrections, bosonic collective modes from fermion bilinears, and low-energy contact operators.
-3. Do one explicit EFT-to-QM match: derive a delta/derivative-delta potential from a local operator and interpret it as point interaction / boundary-condition data (with RG running when needed).
-4. Connect to existing repo witnesses: 1D point interactions (U(2) boundary conditions), 2D delta renormalization and dimensional transmutation, and “contact terms = diagonal delta kernels”.
-
-Seed blackboard: `blackboards/2026-02-10-fermionic-mediators-central-potentials-and-contact-limits.md`.
+## L. Fermionic Mediators — **COMPLETED (Tier 1)**
+Draft: `papers/fermionic-mediators-contact-limits/main.md` (96 lines, 4 pages, 4 refs). Grassmann-source obstruction + contact/boundary-condition IR replacement.
 
 ## Tooling Notes (Paper Ops)
 1. PDF build uses pandoc's single-backslash math extension:
