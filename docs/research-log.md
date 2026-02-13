@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S98+C140: Dirac Probes — N-impulse → path integral bridge)
+- Focus: expand Dirac Probes paper with second worked model connecting impulse matching to path integral.
+- Work: S98 drafted Section 4.5 showing N piecewise-linear segments, discrete action, classical stationarity recovering corner conditions, quantum sum with half-density normalization yielding time-sliced path integral.
+- Result: paper 172→193 lines (+21 net). Outlook item 1 addressed.
+- Next: Q95 or further content work.
+
 ## 2026-02-13 (Q94: referee pass on Dirac Probes satellite)
 - Focus: referee-style quality check on new Dirac Probes paper.
 - Work: verified all 12 display equations, checked encoding/paths/cycle-labels (all clean), verified worked-model algebra, fixed "nonneg" typo.
