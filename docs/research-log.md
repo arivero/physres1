@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S132+C173: WKB Remark 3.6 in uncuttable)
+- Focus: expand uncuttable satellite with WKB as ℏ-refinement limit.
+- Work: S132 studied WKB approximation. Semiclassical analyst reviewed — all CORRECT. Promoted as Remark 3.6: connection formulas as control data, Bohr-Sommerfeld from Maslov index. Natural capstone for Section 3 (after Berry phase).
+- Result: uncuttable 134→137 (+3 net).
+
 ## 2026-02-13 (S130+C171+S131: squeezed states + dimensional contact)
 - Focus: expand action-angle and fermionic mediators satellites.
 - Work: S130 studied squeezed states as action-angle asymmetry. Quantum information theorist subagent reviewed — all claims CORRECT. Promoted as Remark 6.5 (squeeze parameter interpolates ring/blob). S131 studied dimensional dependence of contact divergences (d=1 UV-finite, d=2 log, d=3 linear). Mathematical physicist reviewed — CORRECT WITH CAVEATS (d=1 still needs self-adjoint extension theory, just UV-finite).

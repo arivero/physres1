@@ -174,6 +174,7 @@
 170. `C170` Completed.
 171. `C171` Completed.
 172. `C172` Completed.
+173. `C173` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -331,6 +332,7 @@
 - `S129` Completed.
 - `S130` Completed.
 - `S131` Completed.
+- `S132` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -484,11 +486,11 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S131+C172: Dimensional contact Remark 5.4 in fermionic mediators (+3 lines, 138→141).
-2. S130+C171: Squeezed states Remark 6.5 in action-angle (+3 lines, 126→129).
-3. S129+C170: Adiabatic limit Remark 3.5 in uncuttable (+3 lines, 131→134).
-4. S128+C169: Husimi function Remark 6.4 in action-angle (+3 lines, 123→126).
-5. S127+C168: Richardson extrapolation Remark 2.4 in uncuttable (+3 lines, 128→131).
+1. S132+C173: WKB Remark 3.6 in uncuttable (+3 lines, 134→137).
+2. S131+C172: Dimensional contact Remark 5.4 in fermionic mediators (+3 lines, 138→141).
+3. S130+C171: Squeezed states Remark 6.5 in action-angle (+3 lines, 126→129).
+4. S129+C170: Adiabatic limit Remark 3.5 in uncuttable (+3 lines, 131→134).
+5. S128+C169: Husimi function Remark 6.4 in action-angle (+3 lines, 123→126).
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
