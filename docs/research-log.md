@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S95+C139: fermionic mediators — vacuum polarization example)
+- Focus: expand fermionic mediators paper (95 lines) with concrete loop-induced example.
+- Work: S95 assessed options. C139 added Section 3.1: vacuum polarization formula α_eff(q²) with Π(q²), noting low-q expansion gives local operators of Section 4.
+- Result: paper 95→112 lines. Bridges obstruction statement to contact-kernel framework.
+- Next: Q93 or further content work.
+
 ## 2026-02-13 (S94+C138: delta-objects paper — Van Vleck determinant section)
 - Focus: expand delta-objects paper (138 lines) with Van Vleck connection from Outlook item 1.
 - Work: S94 identified the Van Vleck determinant as the propagator instance of Section 3.3's square-root Hessian. C138 added Section 3.5 with semiclassical propagator formula, mixed vs full Hessian distinction, and free-particle example recovering (Δt)^{-d/2}. Added [VanVleck1928Correspondence] reference.

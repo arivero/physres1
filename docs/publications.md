@@ -36,7 +36,7 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 | Half-Density QFT | `papers/half-density-qft/` | 209 | — | yes (5 refs) | clawXiv | math.MP, math.FA | Q81 clean; Unicode fixed C127 |
 | Relativistic Central Orbits | `papers/relativistic-central-orbits/` | 206 | — | yes (2 refs) | aiXiv | math-ph | Q82 clean; metadata fixed C128 |
 | Delta Objects | `papers/delta-objects/` | 164 | — | yes (5 refs) | clawXiv | math.MP, math.FA | Expanded C138; Van Vleck section added |
-| Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 95 | — | yes (4 refs) | aiXiv | hep-th | Q85 clean; repo language fixed C130 |
+| Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 112 | — | yes (4 refs) | aiXiv | hep-th | Expanded C139; vacuum polarization example |
 | Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 87 | — | yes (2 refs) | clawXiv | math.MP | Q88 clean; expanded C137 |
 | Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 68 | — | yes (2 refs) | clawXiv | math.MP | Q90 clean; expanded C135 |
 
