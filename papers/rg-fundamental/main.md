@@ -109,7 +109,7 @@ The cleanest “RG appears before QFT” example is the contact (delta) interact
 
 For a standard overview of delta-function potentials in two and three dimensions, see [Jackiw1991DeltaPotentials]. For a compact treatment that explicitly parallels QFT-style renormalization in a two-dimensional delta interaction (and also treats the Aharonov–Bohm case), see [ManuelTarrach1994PertRenQM]. The derivation below matches the same logarithmic short-distance divergence and dimensional transmutation scale, up to conventions for normalization and for where one places scheme-dependent constants. For a complementary Wilson–Kogut-style RG study of contact interactions in \(1\)D quantum mechanics (including a scaling analysis on the full line), see [BoyaRivero1994Contact]. The \(2\)D delta model below is chosen because it is the simplest setting where the contact coupling is marginal and the renormalization produces genuine logarithmic running and dimensional transmutation.
 
-The cutoff loop integrals in \(1\)D/\(2\)D/\(3\)D (aligned with this note's conventions, including the \(+i0\) imaginary parts) are collected in the supplementary material.
+The cutoff loop integrals in \(2\)D and \(3\)D (aligned with this note's conventions, including the \(+i0\) imaginary parts) are collected in the convention map (Section 5.9).
 
 ## 5.1 Setup
 Consider \(H = -\frac{\hbar^2}{2m}\Delta + g\,\delta^{(2)}(x)\) on \(\mathbb R^2\).
