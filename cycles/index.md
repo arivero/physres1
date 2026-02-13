@@ -208,6 +208,8 @@
 204. `C204` Completed.
 205. `C205` Completed.
 206. `C206` Completed.
+207. `C207` Completed.
+208. `C208` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -401,6 +403,8 @@
 - `S163` Completed.
 - `S164` Completed.
 - `S165` Completed.
+- `S166` Completed.
+- `S167` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -559,16 +563,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S162+C203: Weinberg power counting Remark 4.4 in fermionic (+3 lines).
-2. S163+C204: Nuclear pion exchange Remark 6.3 in fermionic (+3 lines).
-3. S164+C205: Coherent-state path integral Remark 7.6 in action-angle (+3 lines).
-4. S165+C206: Asymptotic safety Remark 4.7 in uncuttable (+3 lines).
-5. Q118: all 7 recent remarks CONDITIONAL PASS (missing bib entries).
+1. S166+C207: Zeta-function regularization Remark 2.7 in uncuttable (+3 lines).
+2. S167+C208: Aharonov-Bohm Remark 5.4 in action-angle (+3 lines).
+3. B23: 33 bibliography entries across all three satellites.
+4. S162-S165+C203-C206: four remarks across all three satellites.
 
 Next:
-- Satellites: fermionic 174 (10pp), action-angle 173 (11pp), uncuttable 172 (11pp).
-- All three within 2 lines of each other — balanced.
-- B23: add ~20+ bibliography entries flagged by Q118 and new remarks.
+- Satellites: uncuttable 187 (12pp), fermionic 186 (12pp), action-angle 185 (12pp).
+- All three within 2 lines — perfectly balanced at 12pp each.
+- Continue S+C expansion. All three near equal; pick any.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

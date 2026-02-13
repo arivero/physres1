@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S166+C207+S167+C208: Zeta regularization + Aharonov-Bohm)
+- Focus: expand uncuttable Section 2 (zeta regularization) and action-angle Section 5 (AB effect).
+- Work: S166 studied zeta-function regularization. Reviewer confirmed ζ(-1)=-1/12, spectral determinant, Hawking ref. Promoted as Remark 2.7: meromorphic continuation, ln det A = -ζ'(0), Bernoulli connection, Casimir/string applications. S167 studied Aharonov-Bohm effect. Reviewer confirmed phase formula, flux quantum, ring spectrum. Promoted as Remark 5.4: action shift by gauge potential, E_m ∝ (m-Φ/Φ₀)², topological phase.
+- Result: uncuttable 184→187 (+3, 12pp). Action-angle 182→185 (+3, 12pp). Fermionic 186 (unchanged). All 12pp balanced.
+
 ## 2026-02-13 (B23: add 33 bibliography entries across all three satellites)
 - Focus: resolve Q118 CONDITIONAL PASS by adding all missing bibliography entries.
 - Work: added 12 entries to fermionic, 9 to action-angle, 12 to uncuttable. All inline citations now have matching References entries. DOIs included where available; arXiv preprints noted.
