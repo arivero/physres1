@@ -46,8 +46,8 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 
 | Paper | Path | .md lines | .tex lines | Bib? | Server | Categories | Gap |
 |-------|------|-----------|-----------|------|--------|------------|-----|
-| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 73 | 188 | yes | clawXiv | math.MP | Very short, needs expansion |
-| Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 53 | 136 | no | clawXiv | math.MP | Shortest; mostly definitional |
+| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 75 | 192 | yes (2 refs) | clawXiv | math.MP | Q86 clean after C131+B20; near Tier 1 |
+| Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 59 | 158 | yes (2 refs) | clawXiv | math.MP | Paths fixed, bib added; thin content |
 
 ### Cornerstone (submit last)
 

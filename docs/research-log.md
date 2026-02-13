@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (C131+B20: fix and bibliograph both Tier 3 papers)
+- Focus: metadata, paths, bibliography for both Tier 3 papers.
+- Work: author/date filled, paths cleaned, 2 refs each, PDFs rebuilt. Ledger entries 42-43.
+- Result: action-angle near Tier 1; uncuttable structurally clean but thin.
+- Next: Q88 (promote action-angle to Tier 1), assess uncuttable.
+
 ## 2026-02-13 (Q86+Q87: Tier 3 referee passes)
 - Focus: assess both Tier 3 papers.
 - Work: Q86 on action-angle-indeterminacy (near Tier 1, needs metadata + refs). Q87 on uncuttable-controlled-refinement (needs paths, bibliography, possibly content).

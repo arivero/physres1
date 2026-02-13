@@ -132,6 +132,7 @@
 128. `C128` Completed.
 129. `C129` Completed.
 130. `C130` Completed.
+131. `C131` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -154,6 +155,7 @@
 - `B17` Completed.
 - `B18` Completed.
 - `B19` Completed.
+- `B20` Completed.
 
 ### Study Cycles (`Snn`)
 - `S00` Completed.
@@ -362,10 +364,10 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Tier 3 assessment complete.
-1. Q86: action-angle-indeterminacy — near Tier 1, needs metadata + 1-2 refs.
-2. Q87: uncuttable-controlled-refinement — needs paths fix, bibliography, possibly content expansion.
-3. Next: C131 (metadata for action-angle), B20 (bibliography for both Tier 3 papers), then fix uncuttable paths.
+Tier 3 papers fixed and bibliographied.
+1. C131+B20 done: both Tier 3 papers have metadata, paths, and bibliography.
+2. action-angle-indeterminacy: ready for Tier 1 promotion (Q88 to confirm).
+3. uncuttable-controlled-refinement: content still thin (59 lines). May accept as-is for Tier 1 or expand later.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
