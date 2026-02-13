@@ -13,6 +13,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S123+C164: symplectic integrators Remark 3.4 in uncuttable)
+- Focus: connect Trotter product formula (Remark 3.3) to symplectic integrators.
+- Work: S123 blackboard studied Störmer-Verlet = symmetric Trotter, exact symplecticity at finite N, shadow Hamiltonian, higher-order splittings as BCH cancellation. Subagent (computational physicist) confirmed all 5 claims correct. Promoted as Remark 3.4.
+- Result: uncuttable 125→128 lines (+3 net).
+
+## 2026-02-13 (S122+C163: Uehling potential Example 3.2 in fermionic mediators)
+- Focus: make Section 3.1's abstract vacuum polarization statement concrete with the Uehling potential.
+- Work: S122 blackboard studied the Uehling potential integral, short/long-distance limits, Lamb shift connection. Subagent (QED specialist) confirmed all claims correct. Promoted as Example 3.2.
+- Result: fermionic mediators 132→135 lines (+3 net).
+
 ## 2026-02-13 (Q108: quality review of S119–S121 / C160–C162 additions)
 - Focus: independent referee pass on three new satellite remarks.
 - Work: subagent reviewed Remark 4.2 (fermionic, ERE), Remark 2.3 (uncuttable, E-M), Remark 4.4 (action-angle, von Mises).
