@@ -823,6 +823,13 @@ For \(f=q^2\), \(g=p\), the second-order derivative \(\partial_q^2(q^2)=2\) is c
 \]
 Thus \([q^2,p]_{\star_M}=2i\hbar\,q\), matching \([\hat q^2,\hat p]=2i\hbar\,\hat q\) in Weyl ordering. More generally, \([q^n,p]_{\star_M}=ni\hbar\,q^{n-1}\), recovering the Leibniz rule for the Poisson bracket \(\{q^n,p\}=nq^{n-1}\) at leading order with no further corrections.
 
+`Derivation D5.1b (Cubic witness: genuine \(O(\hbar^3)\) correction in the Moyal bracket).`
+For pure monomials \(f=q^m\), \(g=p^n\), all cross-derivatives vanish (\(\partial_p q^m=\partial_q p^n=0\)), so the Moyal product terminates at order \(\min(m,n)\) in \(\hbar\):
+\[[q^m,p^n]_{\star_M}=\sum_{\substack{k=1\\k\;\mathrm{odd}}}^{\min(m,n)}\frac{2(i\hbar/2)^k}{k!}\,\frac{m!\,n!}{(m\!-\!k)!\,(n\!-\!k)!}\,q^{m-k}p^{n-k}.\]
+When \(\min(m,n)\le 2\) only the \(k=1\) term contributes, giving \(i\hbar\{q^m,p^n\}\) exactly — the Poisson bracket suffices, as verified in D5.1a. The first case requiring a higher term is \(m=n=3\): the \(k=1\) term gives \(9i\hbar\,q^2p^2=i\hbar\{q^3,p^3\}\), and the \(k=3\) term gives \(2(i\hbar/2)^3/3!\cdot(3!)^2=-\tfrac32\,i\hbar^3\), so
+\[[q^3,p^3]_{\star_M}=i\hbar\{q^3,p^3\}-\tfrac32\,i\hbar^3.\]
+The constant \(-\tfrac32 i\hbar^3\) is a genuine quantum correction that cannot be recovered from the Poisson bracket. This makes the cubic pair the simplest witness that deformation quantization goes beyond a re-encoding of the Poisson algebra.
+
 `Heuristic H5.1 (Ordering as deformation gauge choice).`
 The Section 6 discretization ambiguity is naturally interpreted as choosing different but deformation-equivalent star products; they share the same classical bracket data but differ in \(O(\hbar)\) and higher corrections [Landsman1998].
 
