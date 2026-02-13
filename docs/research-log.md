@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S134+C175: Efimov Remark 5.5 in fermionic mediators)
+- Focus: extend 2-body contact theme to 3-body in fermionic mediators satellite.
+- Work: S134 studied Efimov effect as 3-body limit cycle. Few-body nuclear theorist reviewed — found RG period error (π/s_0, not 2π/s_0), all else correct. Promoted as Remark 5.5: limit cycle vs fixed point, geometric tower, additional 3-body parameter.
+- Result: fermionic mediators 141→144 (+3 net).
+
 ## 2026-02-13 (S133+C174: Wigner Remark 6.6 in action-angle)
 - Focus: complete the phase-space portrait sequence in action-angle satellite.
 - Work: S133 studied Wigner function as fine-grained complement to Husimi. Quantum foundations specialist reviewed — found Laguerre argument error (4H→2H), all else correct. Promoted as Remark 6.6: Husimi = Gaussian-smoothed Wigner, alternating-sign rings reveal sub-Planck structure.

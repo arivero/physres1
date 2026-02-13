@@ -26,7 +26,7 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Dimensional contact divergences (d=1,2,3) | Promoted (C172) |
+| 0 | Efimov effect / 3-body limit cycle | Promoted (C175) |
 | 1 | WKB / connection formulas / Maslov index | Promoted (C173) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Husimi function / action-angle visualization | Promoted (C169) |
