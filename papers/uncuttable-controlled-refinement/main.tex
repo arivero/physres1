@@ -190,6 +190,22 @@ is the interval counterpart of Remark 2.2's single-point tower: there
 the subtractions were local (Taylor coefficients at \(x\)); here they
 are boundary-localized (endpoint derivatives of \(f\)).
 
+\texttt{Remark\ 2.4\ (Richardson\ extrapolation:\ subtracting\ leading\ errors\ across\ refinement\ levels).}
+Given an approximation family \(Q(h)=Q+c_1 h^p+O(h^{p+1})\), the
+combination \(R(h)=(2^p\,Q(h/2)-Q(h))/(2^p-1)\) eliminates the leading
+error term without knowledge of \(c_1\) --- only the exponent \(p\) is
+needed. Iterating at mesh sizes \(h, h/2, h/4,\ldots\) produces a
+triangular tableau (Romberg) that peels off one order of correction per
+column, mirroring the counterterm tower of Remark 2.2. Applied to the
+trapezoidal rule (whose even-power error expansion follows from Remark
+2.3 with \(B_{2k+1}=0\) for \(k\ge1\)), the first Richardson step
+(\(p=2\)) yields Simpson's rule; the second (\(p=4\)) yields Boole's
+rule --- each time eliminating the next Euler--Maclaurin correction
+without computing endpoint derivatives. The structural parallel to
+minimal subtraction in dimensional regularization is precise: the
+exponent \(p\) plays the role of the pole order, and the subtraction
+procedure is universal --- independent of the specific integrand.
+
 \hypertarget{dynamics-action-stationarity-and-the-need-for-control-data}{%
 \section{3. Dynamics: action, stationarity, and the need for control
 data}\label{dynamics-action-stationarity-and-the-need-for-control-data}}

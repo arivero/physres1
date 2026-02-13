@@ -69,6 +69,9 @@ The same pattern applies to the integral approximation itself. The Euler–Macla
 \]
 where \(B_j\) are Bernoulli numbers (\(B_1=-\tfrac12,\;B_2=\tfrac16,\;B_3=0,\ldots\)). Each correction involves a power of the mesh (the "regulator"), multiplied by endpoint derivatives (boundary data). The leading correction \(j=1\) converts the left-point sum into the trapezoidal rule; the \(j=2\) term adds an endpoint-derivative correction that raises the order to \(O(h^4)\). This is the interval counterpart of Remark 2.2's single-point tower: there the subtractions were local (Taylor coefficients at \(x\)); here they are boundary-localized (endpoint derivatives of \(f\)).
 
+`Remark 2.4 (Richardson extrapolation: subtracting leading errors across refinement levels).`
+Given an approximation family \(Q(h)=Q+c_1 h^p+O(h^{p+1})\), the combination \(R(h)=(2^p\,Q(h/2)-Q(h))/(2^p-1)\) eliminates the leading error term without knowledge of \(c_1\) — only the exponent \(p\) is needed. Iterating at mesh sizes \(h, h/2, h/4,\ldots\) produces a triangular tableau (Romberg) that peels off one order of correction per column, mirroring the counterterm tower of Remark 2.2. Applied to the trapezoidal rule (whose even-power error expansion follows from Remark 2.3 with \(B_{2k+1}=0\) for \(k\ge1\)), the first Richardson step (\(p=2\)) yields Simpson's rule; the second (\(p=4\)) yields Boole's rule — each time eliminating the next Euler–Maclaurin correction without computing endpoint derivatives. The structural parallel to minimal subtraction in dimensional regularization is precise: the exponent \(p\) plays the role of the pole order, and the subtraction procedure is universal — independent of the specific integrand.
+
 # 3. Dynamics: action, stationarity, and the need for control data
 The cornerstone manuscript uses the same template in mechanics.
 Given a partition of time, the discrete action
