@@ -88,6 +88,9 @@ In other words, "classical orbit pictures" correspond to semiclassical packets a
 `Remark 5.1 (Temporal coherence and quantum revivals).`
 The superpositions that localize an angle variable also have a temporal constraint: for anharmonic spectra (\(d^2E/dm^2\neq 0\)), the packet disperses on a timescale \(t_{\mathrm{disp}}\sim\hbar/(|d^2E/dm^2|\,\Delta m)\) and reforms at the revival time \(t_{\mathrm{rev}}\sim 2\pi\hbar/|d^2E/dm^2|\). Only for a linear spectrum (\(d^2E/dm^2=0\)) does the packet rotate rigidly like a classical orbit for all time. Thus classical orbit pictures require not only spatial localization (many \(m\)-modes, Section 4) but also approximate spectral linearity for temporal coherence.
 
+`Remark 5.2 (Decoherence selects the localized packets).`
+Environment-induced decoherence provides the dynamical mechanism that selects the coherent packets of Section 4 over the sharp-action eigenstates of Section 3. For a harmonic oscillator coupled to a thermal bath through position, coherent states minimize the rate of entanglement with the environment and emerge as the preferred "pointer states" — the states most robust against decoherence [ZurekHabibPaz1993]. Fock states, by contrast, decohere rapidly: superpositions of well-separated number states lose coherence on timescales much shorter than the thermal relaxation time, because the position operator (through which the environment couples) does not commute with the number operator. Classical orbit pictures thus emerge not only from semiclassical wavepacket structure (Sections 4–5) but from the environment's dynamical selection of those packets as the robust states.
+
 # 6. A second witness: the harmonic oscillator
 
 The same structure appears in the simplest one-dimensional integrable system.
@@ -130,3 +133,4 @@ The action–angle framework of Sections 3–6 presupposes the existence of glob
 
 1. [TongQMLectures] David Tong, "Quantum Mechanics" (lecture notes, no DOI). OA: lecture-note PDF. (Contains \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous eigenstates of \(L^2\) and \(L_z\).)
 2. [Sakurai2020] J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University Press, 2020. ISBN `978-1-108-47322-4`. (Standard treatment of angular momentum, spherical harmonics, and quantum measurement.)
+3. [ZurekHabibPaz1993] W. H. Zurek, S. Habib, and J. P. Paz, "Coherent States via Decoherence," *Physical Review Letters* 70 (1993), 1187–1190. DOI `10.1103/PhysRevLett.70.1187`. (Shows coherent states minimize entropy production under environmental coupling, emerging as preferred pointer states.)
