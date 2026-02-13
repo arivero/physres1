@@ -240,6 +240,22 @@ leading-order case \(C_2 = 0\) (zero effective range, \(r_0 = 0\)), for
 which the full amplitude \(f_0(k) = -a/(1+ika)\) depends on a single
 parameter --- the scattering length.
 
+\texttt{Remark\ 4.3\ (Huang-Yang\ pseudopotential:\ regularization\ built\ into\ the\ operator).}
+The Huang-Yang pseudopotential
+\(V(r)=(4\pi\hbar^2 a/m)\,\delta^{(3)}(r)\,(\partial/\partial r)(r\,\cdot)\)
+builds the renormalization condition of Example 5.2 directly into the
+operator definition. The differential operator
+\((\partial/\partial r)(r\,\cdot)\) extracts the regular part of the
+wavefunction at the origin --- for a function with the s-wave
+asymptotics \(\psi(r)\sim A(1/r-1/a)+\text{(regular)}\), it yields the
+finite value \(-A/a\) rather than the divergent \(A/r\) --- and thereby
+automatically implements the scattering-length boundary condition
+without explicit cutoff manipulation. This is a ``smart'' contact
+kernel: the prescription for handling the \(r=0\) singularity is not an
+external regularization step but is part of the definition of the
+interaction, with different values of \(a\) selecting different
+self-adjoint extensions.
+
 \hypertarget{boundary-condition-reading-point-interactions}{%
 \section{5. Boundary-condition reading (point
 interactions)}\label{boundary-condition-reading-point-interactions}}
