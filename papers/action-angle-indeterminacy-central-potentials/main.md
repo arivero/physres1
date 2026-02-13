@@ -59,6 +59,8 @@ The normalized superposition of modes \(-M\le m\le M\),
 \]
 is peaked near \(\phi=0\) with an angular width that scales like \(1/M\), while its \(m\)-distribution is spread across \(\{-M,\dots,M\}\). This makes the "sharpening \(\phi\) \(\Rightarrow\) broadening \(L_z\)" tradeoff completely explicit without invoking any disputed angle-operator formalism.
 
+The Fourier tradeoff above can be made into a sharp quantitative bound using only the self-adjoint observables \(\cos\phi\) and \(\sin\phi\):
+
 `Proposition 4.2 (Circular uncertainty relation).`
 For any state on the circle, define the circular concentration \(R=|\langle e^{i\phi}\rangle|\in[0,1]\). Adding the Robertson inequalities for the two self-adjoint pairs \((L_z,\cos\phi)\) and \((L_z,\sin\phi)\) — using \([L_z,\cos\phi]=i\hbar\sin\phi\) and \([L_z,\sin\phi]=-i\hbar\cos\phi\) — and the identity \(\mathrm{Var}(\cos\phi)+\mathrm{Var}(\sin\phi)=1-R^2\), gives
 \[
