@@ -239,6 +239,29 @@ distribution with parameter \(2\kappa\)). The ratio
 \(\kappa\to\infty\): the von Mises state asymptotically saturates the
 bound in Proposition 4.2.
 
+\texttt{Remark\ 4.5\ (Entropic\ uncertainty:\ an\ always-nontrivial\ bound\ on\ the\ Fourier\ tradeoff).}
+The variance-based bound of Proposition 4.2 becomes trivial when \(R=0\)
+(uniform angle distribution, as in an \(L_z\) eigenstate). Entropic
+measures avoid this limitation. For a state with angular-momentum
+probabilities \(\{|c_m|^2\}\) and angular density
+\(p(\phi)=|\psi(\phi)|^2\), the Shannon entropy
+\(H(m)=-\sum|c_m|^2\ln|c_m|^2\) and differential entropy
+\(h(\phi)=-\int p(\phi)\ln p(\phi)\,d\phi\) satisfy the entropic
+uncertainty relation \(h(\phi)+H(m)\ge\ln(2\pi)\) (Bialynicki-Birula and
+Madajczyk, 1985). This bound is always nontrivial: for an \(L_z\)
+eigenstate, \(h(\phi)=\ln(2\pi)\) and \(H(m)=0\), saturating the bound;
+for any state with reduced angular entropy \(h(\phi)<\ln(2\pi)\), the
+angular-momentum entropy must compensate:
+\(H(m)\ge\ln(2\pi)-h(\phi)>0\). The mixed differential-discrete entropy
+formulation is valid because the Fourier series on the circle connects
+an \(L^2\) function on \([0,2\pi)\) to a sequence in
+\(\ell^2(\mathbb{Z})\), and the inequality follows from the
+Hausdorff--Young inequality on the circle group. This is the circular
+analog of the Hirschman--Beckner--Bialynicki-Birula--Mycielski bound
+\(h(x)+h(p)\ge 1+\ln\pi\) for position-momentum on the line (Beckner,
+1975; Bialynicki-Birula and Mycielski, 1975), which is saturated by
+Gaussians --- the coherent states of Example 6.1.
+
 \hypertarget{foundations-message-orbit-pictures-require-packetssuperpositions}{%
 \section{5. Foundations message: orbit pictures require
 packets/superpositions}\label{foundations-message-orbit-pictures-require-packetssuperpositions}}
@@ -322,6 +345,29 @@ structure as the Berry phase in Remark 3.5 of the companion uncuttable
 note (Tonomura et al., 1986, provided the definitive experimental
 demonstration using electron holography with completely shielded
 magnetic flux).
+
+\texttt{Remark\ 5.5\ (Heisenberg\ limit:\ the\ action–angle\ tradeoff\ as\ a\ metrological\ resource).}
+The Fourier tradeoff of Section 4 has a direct metrological consequence:
+the precision with which an angle (phase) can be estimated is limited by
+the spread of the conjugate action variable. For \(N\) independent probe
+particles (e.g., photons in an interferometer), each acquiring phase
+\(\varphi\) independently, the quantum Cramér--Rao bound with quantum
+Fisher information \(\mathcal{F}_Q=4\,\mathrm{Var}(\hat J)\) --- where
+\(\hat J\) is the generator of the phase shift \(e^{-i\varphi\hat J}\)
+--- gives a minimum phase uncertainty
+\(\delta\varphi\ge 1/\sqrt{\mathcal{F}_Q}\). For a coherent state
+(Poisson action distribution, \(\mathrm{Var}(\hat J)\approx N\)), this
+yields the shot-noise limit \(\delta\varphi\ge 1/\sqrt{N}\) (Braunstein
+and Caves, 1994). Entangled states can do better: a NOON state
+\((|N,0\rangle+|0,N\rangle)/\sqrt{2}\) achieves
+\(\mathrm{Var}(\hat J)=N^2/4\), saturating the Heisenberg limit
+\(\delta\varphi\ge 1/N\) --- the ultimate bound for linear
+phase-encoding unitaries (Giovannetti, Lloyd, and Maccone, 2006). The
+gap between \(1/\sqrt{N}\) (shot noise) and \(1/N\) (Heisenberg) is
+precisely the gap between classical and quantum exploitation of the
+action--angle tradeoff: the more action variance a state carries, the
+finer the angle resolution it permits. This is the Fourier tradeoff of
+Section 4 in its most operationally consequential form.
 
 \hypertarget{a-second-witness-the-harmonic-oscillator}{%
 \section{6. A second witness: the harmonic
@@ -761,6 +807,35 @@ prequantization integrality condition in Remark 7.5.
   systems,'' \emph{Communications in Mathematical Physics} 203 (1999),
   465--479. DOI \texttt{10.1007/s002200050621}. (Quantum lattice defect
   from classical monodromy; used in Remark 6.10.)
+\item
+  {[}BialynickiBirulaMadajczyk1985{]} Iwo Bialynicki-Birula and Jerzy L.
+  Madajczyk, ``Entropic uncertainty relations for angular
+  distributions,'' \emph{Physics Letters A} 108 (1985), 384--386. DOI
+  \texttt{10.1016/0375-9601(85)90277-4}. (Entropic uncertainty for
+  angle-angular momentum; used in Remark 4.5.)
+\item
+  {[}BialynickiBirulaMycielski1975{]} Iwo Bialynicki-Birula and Jerzy
+  Mycielski, ``Uncertainty relations for information entropy in wave
+  mechanics,'' \emph{Communications in Mathematical Physics} 44 (1975),
+  129--132. DOI \texttt{10.1007/BF01608825}. (Entropic uncertainty for
+  position-momentum; used in Remark 4.5.)
+\item
+  {[}Beckner1975{]} William Beckner, ``Inequalities in Fourier
+  analysis,'' \emph{Annals of Mathematics} 102 (1975), 159--182. DOI
+  \texttt{10.2307/1970980}. (Sharp Hausdorff--Young inequality; used in
+  Remark 4.5.)
+\item
+  {[}BraunsteinCaves1994{]} Samuel L. Braunstein and Carlton M. Caves,
+  ``Statistical distance and the geometry of quantum states,''
+  \emph{Physical Review Letters} 72 (1994), 3439--3443. DOI
+  \texttt{10.1103/PhysRevLett.72.3439}. (Quantum Fisher information and
+  Cramér--Rao bound; used in Remark 5.5.)
+\item
+  {[}GiovannettiLloydMaccone2006{]} Vittorio Giovannetti, Seth Lloyd,
+  and Lorenzo Maccone, ``Quantum metrology,'' \emph{Physical Review
+  Letters} 96 (2006), 010401. DOI
+  \texttt{10.1103/PhysRevLett.96.010401}. (Heisenberg limit for phase
+  estimation; used in Remark 5.5.)
 \end{enumerate}
 
 \end{document}
