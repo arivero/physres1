@@ -249,20 +249,21 @@ prescription becomes part of the definition.
 
 \texttt{Remark\ 3.3\ (Trotter\ product\ formula\ as\ a\ refinement\ theorem).}
 The mathematical backbone of the path-integral refinement limit is the
-Trotter product formula: for operators \(A\) and \(B\) on a Hilbert
-space (under suitable domain conditions), \[
+Trotter product formula: for self-adjoint operators \(A\) and \(B\) with
+\(A+B\) essentially self-adjoint on a common dense domain, \[
 e^{t(A+B)}=\lim_{N\to\infty}\left(e^{tA/N}\,e^{tB/N}\right)^N.
 \] In the path-integral context, \(A=-i\hat T/\hbar\) (kinetic) and
 \(B=-i\hat V/\hbar\) (potential), so each factor is a free propagation
 or a potential phase-kick at one time slice. The formula states that the
 exact propagator is a refinement limit of \(N\)-fold compositions ---
-and that this limit converges. The symmetric (Suzuki--Trotter) splitting
-\(e^{tA/(2N)}e^{tB/N}e^{tA/(2N)}\) cancels the leading \(O(1/N)\) error
-from the Baker--Campbell--Hausdorff commutator \([A,B]\), improving
-convergence from first to second order. This is the ``uncuttable''
-pattern in operator-algebraic form: no finite product equals
-\(e^{t(A+B)}\), and the rate of convergence depends on controlling the
-non-commutativity of the pieces.
+and that this limit converges, with total error \(O(1/N)\). The
+symmetric (Suzuki--Trotter) splitting \(e^{tA/(2N)}e^{tB/N}e^{tA/(2N)}\)
+reduces the total error to \(O(1/N^2)\) by canceling the leading
+Baker--Campbell--Hausdorff commutator \([A,B]\) contribution at each
+step. This is the ``uncuttable'' pattern in operator-algebraic form: no
+finite product equals \(e^{t(A+B)}\), and the rate of convergence
+depends on controlling the non-commutativity of the pieces
+{[}FeynmanHibbs1965{]}.
 
 \hypertarget{outlook-refinement-compatibility-as-the-extra-structure}{%
 \section{4. Outlook: refinement compatibility as ``the extra
