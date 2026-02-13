@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S89: SymPy verification of key derivations)
+- Focus: symbolic verification of D4.1a (semigroup), D6.2a/D6.2a-sg (step-halving/semigroup), D11.2 (2D delta RG).
+- Work: all 4 derivations confirmed by SymPy. Blackboard note written.
+- Result: cornerstone's strongest novel contributions are mathematically verified. No errors.
+- Next: new content or satellite paper work.
+
 ## 2026-02-13 (S88+C134: self-assessment consistency fix)
 - Focus: check whether Sections 9.4, 9.5, 10.4 are consistent with the actual 10.5 appendix.
 - Work: found that 10.5 (2D delta computation) provides explicit RG witness not acknowledged in self-assessment. C134 updated 9.4.3, 9.5.1, 10.4 to reference 10.5. Kept QFT extension as future work.
