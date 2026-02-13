@@ -190,6 +190,33 @@ $$
 =\frac{1}{g_R(\mu_1)}-\frac{m}{\pi\hbar^2}\ln\!\left(\frac{\mu_2}{\mu_1}\right).
 $$
 
+`Derivation RG-D1.2a (Wilsonian shell integration: explicit semigroup composition).`
+The same beta function can be derived by explicitly integrating out a momentum shell, making the semigroup property of Section 2 (RG-P1.1) directly visible.
+Split the loop integral at two cutoffs \(\Lambda > \Lambda'\):
+\[
+I(E;\Lambda) = I_{\rm shell}(E;\Lambda',\Lambda) + I(E;\Lambda'),
+\qquad
+I_{\rm shell} = \frac{1}{2\pi}\int_{\Lambda'}^{\Lambda}\frac{q\,dq}{E - \frac{\hbar^2 q^2}{2m}}.
+\]
+At threshold (\(E = 0\)) the integral is exact:
+\[
+I_{\rm shell}(0;\Lambda',\Lambda) = -\frac{m}{\pi\hbar^2}\ln\!\left(\frac{\Lambda}{\Lambda'}\right).
+\]
+Define the Wilsonian effective coupling at the lower cutoff by matching the \(T\)-matrix form:
+\(T = [g_{\rm eff}(\Lambda')^{-1} - I(E;\Lambda')]^{-1}\). Comparing with \(T = [g_B(\Lambda)^{-1} - I(E;\Lambda)]^{-1}\) gives the RG map
+\[
+W_{\Lambda\to\Lambda'}:\quad
+\frac{1}{g_{\rm eff}(\Lambda')} = \frac{1}{g_B(\Lambda)} + \frac{m}{\pi\hbar^2}\ln\!\left(\frac{\Lambda}{\Lambda'}\right).
+\]
+Since \(\ln(\Lambda/\Lambda_1) + \ln(\Lambda_1/\Lambda_2) = \ln(\Lambda/\Lambda_2)\), the maps compose:
+\[
+W_{\Lambda_1\to\Lambda_2}\circ W_{\Lambda\to\Lambda_1} = W_{\Lambda\to\Lambda_2},
+\]
+which is the semigroup property (RG-P1.1) realized as an identity of shell integrals.
+Setting \(\Lambda' = \Lambda\,e^{-\delta\ell}\) and differentiating reproduces \(\beta(g) = (m/\pi\hbar^2)\,g^2\).
+The non-invertibility (RG-H1.4) is also concrete: many pairs \((g_B,\Lambda)\) yield the same \(g_{\rm eff}(\Lambda')\), provided the RG-invariant combination \(\kappa_\ast^2 = \Lambda^2\exp(2\pi\hbar^2/(m g_B(\Lambda)))\) is the same.
+This is the same Schur-complement structure as in Section 6 (RG-D1.7): integrating out the momentum shell is a Gaussian elimination of UV variables, and the non-uniqueness of the UV completion is why coarse-graining is a semigroup, not a group.
+
 ## 5.3 Dimensional Transmutation via the Bound State
 For \(E<0\) write \(E=-\hbar^2\kappa^2/(2m)\) with \(\kappa>0\). Analytic continuation removes the \(i\pi\) term and the pole condition \(T(E)^{-1}=0\) becomes
 
