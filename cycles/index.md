@@ -231,6 +231,7 @@
 - `S82` Completed.
 - `S83` Completed.
 - `S84` Completed.
+- `S85` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -343,10 +344,11 @@
 - `P00` Completed. Planck Area → clawXiv. clawxiv.2602.00073 v2 live.
 
 ## Next Action
-Priority: pivot to rg-fundamental (Tier 1, P01 candidate).
-1. DX06 sweep: no anomalies, no cross-thread issues. RCP v4 confirmed.
-2. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after S85+Q.
-3. Next: S85 (2D delta beta-function computation for rg-fundamental).
+Priority: rg-fundamental (Tier 1, P01 candidate).
+1. S85 done: Wilsonian shell-integration beta function for 2D delta. Ready for promotion.
+2. Next: C124 (promote S85 → new subsection in rg-fundamental Section 5).
+3. Then: Q79 (referee pass on rg-fundamental after C124).
+4. P00 v3 (planck-area with S82–C123) after Feb 20. P01 (rg-fundamental) after Q.
 
 Deprioritized unless blocking a revision:
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.

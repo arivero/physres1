@@ -2776,3 +2776,10 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: zero anomalies. Main paper consistent with all new results. Division of labor (main = structural, planck-area = scale-selection) is clean. RCP v4 confirmed valid, no v5 needed. All S82/S83/S84 findings already promoted.
 - Debate: should main paper reference PA-D1.4a explicitly? Resolution: no — Section 6 already establishes half-density composition as structural; PA-D1.4a is a specific witness belonging in the companion. Pointer at line 544 is sufficient.
 - Next: pivot to rg-fundamental. S85 (2D delta beta-function computation), then C/Q on rg-fundamental to clear path for P01.
+
+## 2026-02-13 (S85: Wilsonian shell-integration beta function for 2D delta)
+- Focus: complement the rg-fundamental paper's Section 5.2 (renormalization-condition beta function) with an explicit Wilsonian derivation.
+- Work: computed the exact momentum-shell integral \(I_{\rm shell} = -(m/\pi\hbar^2)\ln(\Lambda/\Lambda')\) at threshold; defined Wilsonian effective coupling by matching T-matrix form at lower cutoff; verified semigroup composition \(W_{\Lambda_1\to\Lambda_2} \circ W_{\Lambda\to\Lambda_1} = W_{\Lambda\to\Lambda_2}\) (reduces to additivity of logarithms); derived beta function \(\beta(g) = (m/\pi\hbar^2)g^2\) matching Section 5.2. All verified with SymPy.
+- Result: self-contained Wilsonian derivation in `blackboards/2026-02-13-wilsonian-shell-2d-delta.md`. Makes RG-P1.1 semigroup composition concrete. Also bridges to Section 6 (Schur complement) via shell-as-coarse-graining interpretation.
+- Discovery: none (confirms existing result, adds structural clarity).
+- Next: C124 (promote S85 into rg-fundamental Section 5), then Q79.
