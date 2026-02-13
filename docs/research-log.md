@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S120+C161: Euler-Maclaurin Remark 2.3 in uncuttable)
+- Focus: complete the pedagogical arc in Section 2 (point tower → interval tower with boundary data).
+- Work: S120 blackboard studied Euler-Maclaurin formula as correction tower for Riemann sum. Subagent (pedagogical expositor) verified formula correct, structural parallel valid, genuine value (not redundant). Also studied squeezed states for action-angle — subagent (quantum optician) recommended NOT promoting (Δn·Δθ heuristic less rigorous than paper's Fourier approach). Promoted E-M as Remark 2.3 only.
+- Result: uncuttable 118→125 lines (+7 net).
+
 ## 2026-02-13 (S119+C160: ERE↔contact connection Remark 4.2 in fermionic mediators)
 - Focus: make the ERE↔EFT contact connection explicit in the fermionic mediators satellite.
 - Work: S119 blackboard studied the effective range expansion k cot δ₀ = -1/a + r₀k²/2 and its Born-level map to the contact expansion C₀→a, C₂→r₀. Subagent (skeptical nuclear physicist) confirmed physics correct; flagged Born-level factor ambiguity (mitigated by paper's use of "∝"). Promoted as Remark 4.2 after Derivation 4.1.
