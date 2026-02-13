@@ -166,6 +166,7 @@
 162. `C162` Completed.
 163. `C163` Completed.
 164. `C164` Completed.
+165. `C165` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -315,6 +316,7 @@
 - `S121` Completed.
 - `S122` Completed.
 - `S123` Completed.
+- `S124` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -426,6 +428,7 @@
 - `Q106` Completed.
 - `Q107` Completed.
 - `Q108` Completed.
+- `Q109` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -465,15 +468,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S122+C163: Uehling potential Example 3.2 in fermionic mediators satellite (+3 lines, 132→135).
-2. S123+C164: symplectic integrators Remark 3.4 in uncuttable satellite (+3 lines, 125→128).
-3. Q108: fixed sign error and Simpson's claim in E-M Remark 2.3 (uncuttable). Remark 4.2 (fermionic) accepted. Remark 4.4 (action-angle) clean.
-4. S121+C162: von Mises near-optimal Remark 4.4 in action-angle satellite (+3 lines, 114→117).
-5. S120+C161: Euler-Maclaurin correction tower Remark 2.3 in uncuttable satellite (+7 lines, 118→125).
+1. Q109+S124+C165: fixed Uehling integral (u⁻² → u⁻¹), clarified shadow Hamiltonian, added quantum revival Remark 5.1 in action-angle (+3 lines, 117→120).
+2. S122+C163: Uehling potential Example 3.2 in fermionic mediators satellite (+3 lines, 132→135).
+3. S123+C164: symplectic integrators Remark 3.4 in uncuttable satellite (+3 lines, 125→128).
+4. Q108: fixed sign error and Simpson's claim in E-M Remark 2.3 (uncuttable).
+5. S121+C162: von Mises near-optimal Remark 4.4 in action-angle satellite (+3 lines, 114→117).
 
 Next:
 - Content gaps: Gap 4 (RG flow on realistic coupling, high).
-- Expand shorter satellites (action-angle 117, uncuttable 128, fermionic mediators 135).
+- Expand shorter satellites (action-angle 120, uncuttable 128, fermionic mediators 135).
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

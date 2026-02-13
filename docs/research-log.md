@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q109+S124+C165: quality fixes + quantum revival Remark 5.1 in action-angle)
+- Focus: Q109 reviewed Example 3.2 (Uehling) and Remark 3.4 (symplectic). S124 studied quantum revivals.
+- Work: Q109 found Uehling integral error (u⁻² → u⁻¹, wrong power breaks logarithmic short-distance behavior), fixed. Shadow Hamiltonian phrasing clarified (H̃ exact, H approximate). S124 blackboard studied dispersion/revival timescales; subagent (semiclassical specialist) confirmed all claims correct, recommended compact forward pointer. Promoted as Remark 5.1.
+- Result: action-angle 117→120 lines (+3 net). Fermionic mediators and uncuttable: quality fixes only (0 net).
+
 ## 2026-02-13 (S123+C164: symplectic integrators Remark 3.4 in uncuttable)
 - Focus: connect Trotter product formula (Remark 3.3) to symplectic integrators.
 - Work: S123 blackboard studied Störmer-Verlet = symmetric Trotter, exact symplecticity at finite N, shadow Hamiltonian, higher-order splittings as BCH cancellation. Subagent (computational physicist) confirmed all 5 claims correct. Promoted as Remark 3.4.
