@@ -2811,3 +2811,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: all clean. Companion references (lines 544, 1237) are appropriately generic. Half-density Section 6 consistent with PA-D1.4a/E5c/H2.6b. RG Section 8 consistent with RG-D1.2a. Notation (d vs D) compatible. No stale claims.
 - Result: main paper remains coherent. No updates needed.
 - Next: session complete. Both satellites are P-ready. P00 v3 live. P01 after Feb 20.
+
+## 2026-02-13 (B18: add bibliography to half-density-qft)
+- Focus: add References section and inline citations to `papers/half-density-qft/main.md`.
+- Work: added 5 references (BatesWeinstein1997 OA, deGosson2018 OA, Wald1984, Hormander2003, Costello2011). Inline citations in Sections 2, 3, 4, 7. Updated bibliography ledger (entries 36–39). PDF rebuilt: 7 pages.
+- Result: half-density-qft now has proper bibliography. Ready for Q pass.
+- Next: Q81 (referee pass on half-density-qft for Tier 1 upgrade).
