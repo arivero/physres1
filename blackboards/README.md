@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Levinson's theorem | Promoted (C213) |
-| 1 | Tan's universal contact relations | Promoted (C214) |
+| 0 | Entropic uncertainty on the circle | Promoted (C215) |
+| 1 | Heisenberg limit in phase estimation | Promoted (C216) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |

@@ -216,6 +216,8 @@
 212. `C212` Completed.
 213. `C213` Completed.
 214. `C214` Completed.
+215. `C215` Completed.
+216. `C216` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -418,6 +420,8 @@
 - `S171` Completed.
 - `S172` Completed.
 - `S173` Completed.
+- `S174` Completed.
+- `S175` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -538,6 +542,7 @@
 - `Q117` Completed.
 - `Q118` Completed.
 - `Q119` Completed.
+- `Q120` Completed.
 
 ### Discovery Cycles — Triage (`Dnn`)
 - `D00` Completed.
@@ -577,15 +582,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S172+C213: Levinson's theorem Remark 5.8 in fermionic (+3 lines).
-2. S173+C214: Tan universal contact Remark 5.9 in fermionic (+6 lines).
-3. B24: bibliography entries for C209-C210 remarks.
+1. S174+C215: Entropic uncertainty Remark 4.5 in action-angle (+5 lines).
+2. S175+C216: Heisenberg limit Remark 5.5 in action-angle (+6 lines).
+3. Q120: all 6 remarks from C209-C214 PASS.
 
 Next:
-- Satellites: uncuttable 200 (14pp), fermionic 200 (13pp), action-angle 193 (13pp).
-- Action-angle is shortest — prioritize next remarks there.
-- Q120 review of C209-C214 when batch complete.
-- Continue S+C expansion. Target ~200+ lines each.
+- Satellites: action-angle 204 (15pp), uncuttable 200 (14pp), fermionic 200 (13pp).
+- Fermionic is shortest — prioritize next remarks there.
+- Continue S+C expansion. All three now at 200+ lines.
+- Q121 review of C215-C216 when batch complete.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

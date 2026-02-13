@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S174+C215+S175+C216: Entropic uncertainty + Heisenberg limit)
+- Focus: expand action-angle Section 4 (entropic uncertainty) and Section 5 (Heisenberg limit).
+- Work: S174 studied entropic uncertainty on the circle. Quantum info reviewer caught attribution error — circular bound is from Bialynicki-Birula & Madajczyk (1985), not Maassen-Uffink; coherent states do NOT saturate bound. Promoted as Remark 4.5: h(φ)+H(m)≥ln(2π), always nontrivial, Fock states saturate. S175 studied Heisenberg limit. Metrology reviewer caught "cannot be surpassed" overstated — only for linear phase-encoding. Promoted as Remark 5.5: F_Q=4Var(Ĵ), shot-noise 1/√N vs Heisenberg 1/N, linear-encoding qualifier. Q120 reviewed all 6 C209-C214 remarks: ALL PASS.
+- Result: action-angle 193→204 (+11, 15pp). Fermionic 200 (unchanged). Uncuttable 200 (unchanged). All three now 200+ lines.
+
 ## 2026-02-13 (S166+C207+S167+C208: Zeta regularization + Aharonov-Bohm)
 - Focus: expand uncuttable Section 2 (zeta regularization) and action-angle Section 5 (AB effect).
 - Work: S166 studied zeta-function regularization. Reviewer confirmed ζ(-1)=-1/12, spectral determinant, Hawking ref. Promoted as Remark 2.7: meromorphic continuation, ln det A = -ζ'(0), Bernoulli connection, Casimir/string applications. S167 studied Aharonov-Bohm effect. Reviewer confirmed phase formula, flux quantum, ring spectrum. Promoted as Remark 5.4: action shift by gauge potential, E_m ∝ (m-Φ/Φ₀)², topological phase.
