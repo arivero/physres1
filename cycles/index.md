@@ -234,6 +234,8 @@
 230. `C230` Completed.
 231. `C231` Completed.
 232. `C232` Completed.
+233. `C233` Completed.
+234. `C234` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -454,6 +456,8 @@
 - `S189` Completed.
 - `S190` Completed.
 - `S191` Completed.
+- `S192` Completed.
+- `S193` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -620,12 +624,14 @@ Cornerstone at ~1486 lines.
 Recent completed:
 1. S190+C231: Zeno's paradoxes Remark 1.2 in uncuttable (+4 lines).
 2. S191+C232: Constructive QFT Remark 4.11 in uncuttable (+5 lines).
-3. Q124: In progress — reviewing C231-C232 (uncuttable).
+3. Q124: Completed — C231-C232 reviewed (2/2 PASS).
+4. S192+C233: OAM Remark 3.3 in action-angle (+5 lines).
+5. S193+C234: Gabor limit Remark 4.6 in action-angle (+5 lines).
 
 Next:
-- Satellites: uncuttable 227 (18pp), fermionic 226 (17pp), action-angle 221 (17pp).
-- Action-angle is shortest — prioritize next remarks there.
-- Continue S+C expansion. All three now at 221+ lines.
+- Satellites: uncuttable 227 (18pp), fermionic 226 (17pp), action-angle 231 (18pp).
+- Fermionic is now shortest — prioritize next remarks there.
+- Continue S+C expansion. All three now at 226+ lines.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
