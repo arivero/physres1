@@ -12,7 +12,7 @@
 |-------|-------|-------|
 | Content (`Cnn`) | 286 | C00–C285 |
 | Bibliography (`Bnn`) | 26 | B00–B26 |
-| Study (`Snn`) | 265 | S00–S264 |
+| Study (`Snn`) | 266 | S00–S265 |
 | Quality (`Qnn`) | 170 | Q00–Q169 (gaps: Q110–Q111) |
 | Discovery triage (`Dnn`) | 16 | D00–D15 (dormant) |
 | Discovery explore (`DXnn`) | 10 | DX01–DX10 (dormant) |

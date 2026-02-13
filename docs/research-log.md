@@ -398,3 +398,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: verify Remark 3.2b mathematics, Outlook item 3 scope, reference formatting.
 - Checked: omega substitution algebra (K=Zαℏc, L=kℏ → ω²=1-Z²α²/k²), Sommerfeld energy formula, Dirac reinterpretation k→j+½, Outlook item non-redundancy, reference formatting, scope creep.
 - Verdict: **PASS.** All items mathematically correct, internally consistent, within page budget. No required fixes.
+
+## 2026-02-14 (S265: The inverse-square law as a triple threshold)
+- Focus: investigate whether the three special roles of q=2 in SR (critical exponent, stability boundary, dimensional identity) share a single structural root, and whether a consolidation remark is worth promoting.
+- Key findings:
+  1. Roles 1 (barrier) and 2 (stability) DO share a common root: both give q_crit = deg(E,p) + 1, where deg = 1 is the ultrarelativistic energy-momentum degree. They coincide at q = 2 in SR and at q = 3 in Newton.
+  2. Role 3 (dimensional identity v=K/L) is INDEPENDENT: it gives q = 2 in any kinematic framework (Newton or SR) because r^{q-2} = r^0 is algebraic, not asymptotic. The agreement of Roles 1-2 with Role 3 at q = 2 is specific to SR (deg + 1 = 1 + 1 = 2 happens to match q_dim = 2). In Newton, q_crit = 3 while q_dim = 2 — no coincidence.
+  3. Role 4 (Sommerfeld) is a consequence of Role 3.
+- Red-team: strongest attack is that the "single structural root" claim is incorrect — there are two independent mechanisms whose outputs coincide in SR. Revised phrasing distinguishes these carefully.
+- Verdict: NO standalone consolidation remark (would be the fourth time saying q=2 is special; existing remarks cover the content). A 1-sentence Outlook addition noting the coincidence is deferred to a future C cycle that touches the Outlook.
