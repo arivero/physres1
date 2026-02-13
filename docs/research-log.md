@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q84: delta-objects promoted to Tier 1)
+- Focus: follow-up referee pass after C129 + B19.
+- Work: verified all Q83 issues resolved. Math clean, encoding clean, bibliography adequate.
+- Result: READY for Tier 1. Promoted. Now 5 papers at Tier 1.
+- Next: fermionic-mediators Q pass.
+
 ## 2026-02-13 (B19: add bibliography to delta-objects)
 - Focus: add references to delta-objects paper.
 - Work: 4 references (BatesWeinstein1997, Hormander2003, Albeverio et al. 2005, Morette 1951). Ledger entries 40-41.
