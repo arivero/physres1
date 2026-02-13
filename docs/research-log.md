@@ -2805,3 +2805,9 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: changed "1D/2D/3D... supplementary material" to "2D and 3D... convention map (Section 5.9)". Diffstat: +1 -1. PDF rebuilt: 17 pages.
 - Result: all Q79 findings addressed. rg-fundamental is P01-ready.
 - Next: Q80 (light coherence pass on main paper, per DX06 recommendation #3).
+
+## 2026-02-13 (Q80: light coherence pass on main paper after satellite work)
+- Focus: check main paper's companion references, half-density discussion, and RG discussion against current state of planck-area and rg-fundamental papers.
+- Findings: all clean. Companion references (lines 544, 1237) are appropriately generic. Half-density Section 6 consistent with PA-D1.4a/E5c/H2.6b. RG Section 8 consistent with RG-D1.2a. Notation (d vs D) compatible. No stale claims.
+- Result: main paper remains coherent. No updates needed.
+- Next: session complete. Both satellites are P-ready. P00 v3 live. P01 after Feb 20.
