@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S176+C217+S177+C218+S178+C219+S179+C220: Optical theorem + Confinement + CS + Kadanoff)
+- Focus: expand fermionic Section 3 (optical theorem) and Section 6 (confinement); uncuttable Section 4 (CS equation, Kadanoff block spins).
+- Work: S176 studied optical theorem. Scattering theory reviewer caught normalization convention (use structural statement), C_0 imaginary part claim wrong (contact expansion real below threshold). Promoted as Remark 3.6. S177 studied color confinement. Lattice QCD reviewer caught string tension units (GeV²/c→GeV²), baryons are fermionic (reframe narrative), Grassmann connection is analogical. Promoted as Remark 6.4. S178 studied Callan-Symanzik. QFT theorist caught sign convention ambiguity, physical interpretation imprecise. Promoted as Remark 4.9 with explicit connected-Green-function convention. S179 studied Kadanoff block spins. Condensed matter reviewer caught rescaling direction wrong, Wilson understated. Promoted as Remark 4.10 with proper attribution.
+- Result: fermionic 200→209 (+9, 14pp). Uncuttable 200→210 (+10, 15pp). Action-angle 204 (unchanged). All three now 204+ lines.
+
 ## 2026-02-13 (S174+C215+S175+C216: Entropic uncertainty + Heisenberg limit)
 - Focus: expand action-angle Section 4 (entropic uncertainty) and Section 5 (Heisenberg limit).
 - Work: S174 studied entropic uncertainty on the circle. Quantum info reviewer caught attribution error — circular bound is from Bialynicki-Birula & Madajczyk (1985), not Maassen-Uffink; coherent states do NOT saturate bound. Promoted as Remark 4.5: h(φ)+H(m)≥ln(2π), always nontrivial, Fock states saturate. S175 studied Heisenberg limit. Metrology reviewer caught "cannot be surpassed" overstated — only for linear phase-encoding. Promoted as Remark 5.5: F_Q=4Var(Ĵ), shot-noise 1/√N vs Heisenberg 1/N, linear-encoding qualifier. Q120 reviewed all 6 C209-C214 remarks: ALL PASS.

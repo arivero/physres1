@@ -218,6 +218,10 @@
 214. `C214` Completed.
 215. `C215` Completed.
 216. `C216` Completed.
+217. `C217` Completed.
+218. `C218` Completed.
+219. `C219` Completed.
+220. `C220` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -422,6 +426,10 @@
 - `S173` Completed.
 - `S174` Completed.
 - `S175` Completed.
+- `S176` Completed.
+- `S177` Completed.
+- `S178` Completed.
+- `S179` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -582,15 +590,16 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. S174+C215: Entropic uncertainty Remark 4.5 in action-angle (+5 lines).
-2. S175+C216: Heisenberg limit Remark 5.5 in action-angle (+6 lines).
-3. Q120: all 6 remarks from C209-C214 PASS.
+1. S176+C217: Optical theorem Remark 3.6 in fermionic (+4 lines).
+2. S177+C218: Color confinement Remark 6.4 in fermionic (+5 lines).
+3. S178+C219: Callan-Symanzik Remark 4.9 in uncuttable (+5 lines).
+4. S179+C220: Kadanoff block spins Remark 4.10 in uncuttable (+5 lines).
 
 Next:
-- Satellites: action-angle 204 (15pp), uncuttable 200 (14pp), fermionic 200 (13pp).
-- Fermionic is shortest — prioritize next remarks there.
-- Continue S+C expansion. All three now at 200+ lines.
-- Q121 review of C215-C216 when batch complete.
+- Satellites: uncuttable 210 (15pp), fermionic 209 (14pp), action-angle 204 (15pp).
+- Action-angle is shortest by line count — prioritize next remarks there.
+- Q121 review of C217-C220 in progress.
+- Continue S+C expansion. All three now at 204+ lines.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
