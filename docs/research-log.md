@@ -13,6 +13,12 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S87+C133: cornerstone bibliography audit + fix)
+- Focus: bibliography coverage of `paper/main.md`.
+- Work: S87 cross-checked 22 body citations against 17 References entries. Found 5 orphan citations (Berkeley1734Analyst, Nauenberg2003/1994/2018, Pourciau2003). Also found empty YAML metadata.
+- Result: C133 added entries 18–22 to References, filled YAML author/date. Cornerstone now fully cross-referenced (22 citations, 22 reference entries, zero orphans).
+- Next: Q89 (cornerstone referee pass) or deeper content work.
+
 ## 2026-02-13 (S86: cross-paper notation consistency audit)
 - Focus: d vs D dimension notation across all 8 satellite papers.
 - Work: grepped each paper for dimension notation patterns.
