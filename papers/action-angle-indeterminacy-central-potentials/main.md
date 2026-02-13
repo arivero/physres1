@@ -29,6 +29,9 @@ Acting on \(2\pi\)-periodic wavefunctions, \(E\) is well-defined and satisfies t
 \]
 which already captures the operational content: sharp \(L_z\) implies maximal delocalization in the conjugate angle.
 
+`Remark 2.1 (Number–phase pair: the oscillator counterpart).`
+The same structure appears for the harmonic-oscillator number–phase pair \((N,\theta)\). The number operator \(N=\hat a^\dagger\hat a\) has non-negative integer spectrum, and the oscillation phase \(\theta\) is periodic — the same mathematical setting as \((L_z,\phi)\). The Susskind–Glogower operator \(\hat E_-=\sum_{n=0}^\infty|n\rangle\langle n+1|=\hat a\,(N+1)^{-1/2}\) (Susskind and Glogower, 1964) plays the role of \(E=e^{i\phi}\): it satisfies \([N,\hat E_-]=-\hat E_-\) (lowering \(n\) by one) and its adjoint \(\hat E_+\) satisfies \([N,\hat E_+]=+\hat E_+\). However, \(\hat E_+\hat E_-=I-|0\rangle\langle 0|\): the vacuum projection spoils exact unitarity because the spectrum of \(N\) is bounded below, and there is no state below \(|0\rangle\) to shift into. This is the Fock-space manifestation of the same obstruction that prevents a self-adjoint angle operator on the circle. The consequence: a Fock state \(|n\rangle\) has a completely uniform phase distribution (the ring of Remark 6.4), just as an \(L_z\) eigenstate has uniform \(\phi\) (Section 3), and localizing the oscillator phase requires a broad superposition over number states — exactly the coherent-state construction of Example 6.1.
+
 # 3. Central potentials: \(L_z\) eigenstates have uniform \(\phi\) distribution
 For a central potential (or any Hamiltonian commuting with \(L_z\)), one may choose simultaneous eigenstates of \(L_z\). In the standard separation of variables, the azimuthal dependence of an angular-momentum eigenstate is the Fourier mode \(e^{im\phi}\) with integer \(m\) (for example in the spherical-harmonic factor \(Y_{\ell m}(\theta,\phi)\propto P_{\ell m}(\cos\theta)e^{im\phi}\)) [TongQMLectures].
 
