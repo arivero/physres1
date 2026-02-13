@@ -34,7 +34,11 @@ count_one() {
   if [ -z "$pages" ]; then pages="?"; fi
   local lines
   lines=$(wc -l < "$md_path" | tr -d ' ')
-  printf "%-50s %3s pages  (%s lines md)\n" "$name" "$pages" "$lines"
+  # Token count via Claude tokenizer (if available)
+  local tokens
+  tokens=$(python3 "$root_dir/scripts/count-tokens.py" "$md_path" 2>/dev/null \
+    | grep -oE '[0-9]+ tokens' | head -1 | grep -oE '[0-9]+' || echo "?")
+  printf "%-45s %3s pp  %4s lines  %6s tok\n" "$name" "$pages" "$lines" "$tokens"
 }
 
 if [ $# -gt 0 ]; then
@@ -47,7 +51,7 @@ else
   targets+=("paper/main.md")
 fi
 
-echo "=== Page counts (elsarticle 3p twocolumn = Phys. Lett. B format) ==="
+echo "=== Page counts (elsarticle 3p twocolumn = PLB format) + token counts (Claude tokenizer) ==="
 echo ""
 for md in "${targets[@]}"; do
   count_one "$md"

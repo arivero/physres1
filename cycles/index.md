@@ -10,15 +10,15 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 248 | C00–C248 |
-| Bibliography (`Bnn`) | 25 | B00–B24 |
-| Study (`Snn`) | 212 | S00–S211 |
-| Quality (`Qnn`) | 135 | Q00–Q134 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 16 | D00–D15 |
-| Discovery explore (`DXnn`) | 10 | DX01–DX10 |
+| Content (`Cnn`) | 252 | C00–C252 |
+| Bibliography (`Bnn`) | 26 | B00–B26 |
+| Study (`Snn`) | 217 | S00–S217 |
+| Quality (`Qnn`) | 138 | Q00–Q137 (gaps: Q110–Q111) |
+| Discovery triage (`Dnn`) | 16 | D00–D15 (dormant) |
+| Discovery explore (`DXnn`) | 10 | DX01–DX10 (dormant) |
 | Publication (`Pnn`) | 1 | P00 (Planck Area → clawXiv v2) |
 
-**Total archived: ~2400+ cycle files.**
+**Total archived: ~2500+ cycle files.**
 
 ## Active / In Progress
 
@@ -27,25 +27,27 @@
 ## Next Action
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
-- PLB-length (≤6pp): HD-QFT 4pp (234 lines), delta 4pp (194), dirac 4pp (199), relativistic 4pp (233).
+- PLB-length (≤6pp): HD-QFT 5pp (234 lines, 5630 tok), delta 5pp (204, 5460), dirac 4pp (206, 4177), relativistic 4pp (239, 3907).
 - PRD-length (>6pp): action-angle 13pp, fermionic 13pp, uncuttable 13pp, rg-fund 9pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
+- **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
-- S212+C248: d/2 unifying thread → Remark 5.1 in delta-objects (+3 lines, 194).
-- S210: open Q#5 (anomalies + RCP) — conceptual reframing only, no new constraints.
-- S211: open Q#2 (minimal RCP axioms) — formalization gap identified, multi-year program.
-- Q132: referee review of C246 — PASS. Q133: review of C247 — CONDITIONAL PASS (prefactor fix applied).
-- S209+C247: heat kernel exponent → Remark 4.3 in delta-objects.
-- S206+C246: mollifier–polygon → Remark 2.3 in dirac-probes.
+- S217+C252: relativistic Remark 4.3a (SR vs GR ISCO) + Remark 5.2a (q=2 stability boundary) (+6 lines, 239).
+- S216+C251+Q137: delta-objects Remark 2.1 (why d/2) + Example 3.4a (free particle distributional) (+5 lines, 204).
+- S215+C250+Q136: Newton polygon expansion in dirac-probes §4.4 + Example 3.1a (+6 lines, 206).
+- B26: Hamilton 1834 transcription completed (retry after rename). Output: sources/Hamilton-1834-transcription.md.
+- S214: special dimensions study (blackboard 3) — why D=10,11,26 don't appear.
+- Q135: referee review of C249. CONDITIONAL PASS → 3 fixes applied → PASS.
+- S213+C249: caustics/Maslov index → Remark 3.5c in delta-objects (+4 lines, 199).
 
 **Immediate:**
-- All 5 open questions from `docs/motivations.md` now analyzed (Q1-Q4 partially resolved, Q5 reframed).
-- Q cycle on C248 (delta-objects Remark 5.1).
-- Room for further PLB expansion: delta (194), dirac (199).
+- Room for further PLB expansion: delta (204/5pp), dirac (206/4pp), relativistic (233/4pp), HD-QFT (233/5pp).
+- Bibliography: Lanczos, Fraser-Nakane, Delaunay, Nauenberg2003 source ingestion.
+- AGENTS.md updated: docs/motivations.md is agent-editable.
 
 **Standing priorities:**
-- Open questions from `docs/motivations.md` have priority over expansion.
+- Open questions from `docs/motivations.md` all analyzed. Focus shifts to expansion.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 

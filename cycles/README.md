@@ -133,11 +133,16 @@ with a `SERENDIPITY:` tag. Format:
 SERENDIPITY: <one-line description of the unexpected finding>
 ```
 
+**What happens next:**
+1. The finding **immediately gets a blackboard slot** (overwrite the
+   least-relevant slot per `blackboards/README.md` rules).
+2. The next `cycles/index.md` update notes it as a promotion candidate.
+3. If it merits manuscript space, a normal `S → C → Q` chain promotes it.
+
 This replaces the earlier practice of scheduling dedicated D/DX cycles for
 surprise discovery. Real surprises emerge mid-work (e.g., S204 found
 V=(1/6)R matching conformal coupling iff D=4; S208 found Padé recovering
-Yukawa exactly). The tag lets `cycles/index.md` pick up serendipitous
-findings during routine updates without a dedicated discovery track.
+Yukawa exactly).
 
 ## File Convention (per cycle)
 Each cycle uses four files:

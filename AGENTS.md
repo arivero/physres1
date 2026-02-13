@@ -76,6 +76,12 @@ Pick one per subagent invocation. Vary across cycles for diverse feedback.
 - **Pedagogical expositor**: focuses on clarity, accessibility, whether a graduate student could follow.
 - **Hostile referee**: actively looks for reasons to reject; stress-tests every claim.
 
+## Editable Documentation
+- `docs/motivations.md` — agents may edit this file if they discover new
+  motivations, research connections, or open questions during study cycles.
+  Add material under the appropriate heading. Do not remove existing content
+  without explicit user approval.
+
 ## Sources Policy
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING` for later local ingestion.

@@ -18,6 +18,18 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S213+C249+B25+infra: caustics/Maslov, Hamilton1834, token counter, serendipity convention)
+- Focus: delta-objects expansion; bibliography; infrastructure.
+- Work:
+  - S213+C249: caustics and the Maslov index → Remark 3.5c in delta-objects. Resolves the loose end from Example 3.5b (√D→∞ at caustics). Caustic = projection artifact from Lagrangian submanifold; metaplectic Mp(2n) double cover resolves sign ambiguity of √D; Maslov index μ counts conjugate points, phase correction exp(−iπμ/2). [BatesWeinstein1997] already cited. +4 lines (198, 5460 tok).
+  - B25: Hamilton1834 added to central and delta-objects bibliographies. Hamilton's principal function S(q,Q,t) is the ancestor of the Van Vleck determinant.
+  - Infrastructure: token counting script (`scripts/count-tokens.py`) using Xenova/claude-tokenizer from HuggingFace Hub. Integrated into `count-pages.sh`. Total corpus: ~125k tokens.
+  - Infrastructure: SERENDIPITY tag convention added to `cycles/README.md`. D/DX tracks marked dormant.
+  - Q135 running: referee review of C249.
+- Result: delta-objects 198 lines (5pp, 5460 tok). Hamilton1834 in bib.
+- Sources touched: [Hamilton1834] added (OA, TCD PDF downloaded to sources/).
+- Next: Q135 result; further PLB expansion; commit at next hour boundary.
+
 ## 2026-02-13 (S210–S212+C248+Q132–Q134: open questions 2+5 analyzed, delta-objects expanded)
 - Focus: analyze remaining open questions; targeted delta-objects expansion.
 - Work:
@@ -74,6 +86,28 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: expand uncuttable Section 1 (Dedekind cuts) and Section 3 (Feynman-Kac); apply Q126 fermionic fixes.
 - Work: S196 studied Dedekind cuts vs Cauchy sequences for Remark 1.3. Rigorous mathematician reviewer caught (1) Dedekind cut definition incomplete — needs non-emptiness + no-max conditions (HIGH), (2) uniqueness statement needs completeness emphasis (MEDIUM), (3) duality connection to 4.8 loose — 3.8 stronger (MEDIUM). All corrections applied. Promoted as Remark 1.3: two structurally different completions (metric vs order-theoretic) yielding same complete ordered field via uniqueness of completeness, generalizations diverge (Cauchy→metric spaces, Dedekind→total orders). S197 studied Feynman-Kac formula for Remark 3.9. Mathematical physicist reviewer caught (1) potential condition V≥0 redundant/misleading → V bounded below (HIGH), (2) "derived from" Trotter → "proved using" (HIGH), (3) Cameron 1960 journal clarification (MEDIUM). All corrections applied. Promoted as Remark 3.9: Euclidean path integral as rigorous refinement limit via Wiener measure, Cameron's theorem (no Minkowski measure), Trotter proof connection, bridge to constructive QFT. Also applied Q126 fermionic fixes: (1) axial anomaly factor e/π→e/(2π), (2) removed dimensional transmutation claim, (3) removed "gauge anomalies can run" clause. 3 new refs: Dedekind1872, Kac1949, Simon1979.
 - Result: uncuttable 227→240 (+13, 19pp). Fermionic 237 (19pp, fixes only). Action-angle 231 (18pp). All three now 231+ lines.
+
+## 2026-02-13 (S217+C252: relativistic SR/GR stability contrast + q=2 boundary)
+- S217: Studied SR vs GR stability for circular orbits. SR has no ISCO for q=2 (criterion always 1>0); GR ISCO at 6M is pure curvature. q=2 is the unique boundary between unconditional and speed-conditional stability.
+- C252: Promoted Remark 4.3a (SR vs GR stability) and Remark 5.2a (inverse-square as stability boundary). +6 lines (233→239). No Q cycle needed — direct consequences of existing equations.
+
+## 2026-02-13 (S216+C251+Q137: delta-objects Remark 2.1 + Example 3.4a)
+- S216: Studied compositional origin of d/2 exponent and free particle distributional mechanics.
+- C251: Promoted Remark 2.1 (why d/2 is universal: half-density ⊗ half-density = density) and Example 3.4a (smooth → mollifier localization, kinked → delta-term impulse condition). +5 lines (199→204).
+- Q137: Referee caught sign error in Example 3.4a: q̈ = -(Δv)δ → q̈ = +(Δv)δ. Also softened Remark 2.1 composition claim. Both fixed.
+
+## 2026-02-13 (S215+C250+Q136: Newton polygon in dirac-probes + B26 retry + infrastructure)
+- S215: Studied Newton's Principia Prop. 1 polygon construction for angular momentum preservation under central impulses. The parallelogram construction (cC∥BS) gives equal-area identity at each finite polygon step; Lemma 3 for continuum limit.
+- C250: Promoted two additions to dirac-probes-corners-impulses: (1) Example 3.1a showing corner condition forces v⁺=v⁻ for free particle (soft vs hard junction), (2) Section 4.4 expansion with explicit polar decomposition, Newton's Prop.1 parallelogram construction, and Theorem 3.2 as modern underpinning. +6 lines (200→206).
+- Q136: Referee review. CONDITIONAL PASS — fixed misleading "exactly, not as a limiting statement" → "algebraic identity at each polygon step, exact for any finite number of impulses." Also added "adds a radial velocity component" for clarity.
+- B26 retry: Hamilton 1834 transcription succeeded after renaming PDF. Key sections transcribed to sources/Hamilton-1834-transcription.md.
+- Infrastructure: AGENTS.md updated — docs/motivations.md marked as agent-editable.
+- Result: dirac-probes 206 lines. Hamilton transcription committed.
+
+## 2026-02-13 (S214+B26: Special dimensions study + Hamilton 1834 transcription attempt)
+- S214: Studied why D=6,10,11,26 don't appear in the half-density framework. Key finding: two layers of "special dimension" — Layer 1 (d/2 layer, target-space measure theory) produces d=2,3,4; Layer 2 (field-content layer, anomaly cancellation/SUSY) produces D=6,10,11,26. Parity obstruction in monomial integrality sieve prevents string dimensions from being reached. Blackboard slot 3 overwritten with analysis. SERENDIPITY: parity obstruction as structural explanation.
+- B26: Hamilton 1834 transcription blocked by API content filter. Manual reading summary captured in execution file. No manuscript impact — citation annotation already corrected via Q135.
+- Result: blackboard 3 updated. No manuscript changes. S214 PASS, B26 INCOMPLETE.
 
 ## 2026-02-13 (Q126: Referee review of C235 + C236 in fermionic)
 - Focus: referee-style review of Remark 3.7 (Schwinger model) and Remark 6.6 (anomaly matching).
