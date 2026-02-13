@@ -2794,3 +2794,8 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Findings: RG-D1.2a mathematically clean (shell integral, matching, semigroup, beta function all verified). Cross-references to RG-P1.1/H1.4/D1.7 correct. Two minor issues: (1) Section 7 conclusion should acknowledge the new Wilsonian computation; (2) pre-existing supplementary material reference at line 112 with no actual supplementary section.
 - Follow-ups: C125 (conclusion update), C126 (supplementary material fix). Neither is blocking for correctness.
 - Next: C125.
+
+## 2026-02-13 (C125: update rg-fundamental conclusion)
+- Focus: reflect RG-D1.2a in Section 7 conclusion, per Q79 finding #4.
+- Work: added one sentence noting the Wilsonian derivation; adjusted outlook to say "a standard QFT example (with nontrivial fixed-point structure)" remains as extension. Diffstat: +1 -1. PDF rebuilt: 16 pages.
+- Next: C126 (supplementary material reference fix).
