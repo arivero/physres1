@@ -65,9 +65,9 @@ provides a systematic tower of subtractions, one per order. Removing terms throu
 `Remark 2.3 (Euler–Maclaurin: correction tower for the Riemann sum).`
 The same pattern applies to the integral approximation itself. The Euler–Maclaurin formula expresses the error of the left-point Riemann sum as a systematic expansion in the mesh size \(h=(b-a)/N\):
 \[
-\sum_{k=0}^{N-1}f(a+kh)\,h = \int_a^b f(t)\,dt + \sum_{j=1}^{p}\frac{B_j}{j!}\,h^j\,\bigl[f^{(j-1)}(a)-f^{(j-1)}(b)\bigr] + O(h^{p+1}),
+\sum_{k=0}^{N-1}f(a+kh)\,h = \int_a^b f(t)\,dt + \sum_{j=1}^{p}\frac{B_j}{j!}\,h^j\,\bigl[f^{(j-1)}(b)-f^{(j-1)}(a)\bigr] + O(h^{p+1}),
 \]
-where \(B_j\) are Bernoulli numbers. Each correction involves a power of the mesh (the "regulator"), multiplied by endpoint derivatives (boundary data). The leading correction \(j=1\) gives the trapezoidal rule; including \(j=2\) gives Simpson's rule. This is the interval counterpart of Remark 2.2's single-point tower: there the subtractions were local (Taylor coefficients at \(x\)); here they are boundary-localized (endpoint derivatives of \(f\)).
+where \(B_j\) are Bernoulli numbers (\(B_1=-\tfrac12,\;B_2=\tfrac16,\;B_3=0,\ldots\)). Each correction involves a power of the mesh (the "regulator"), multiplied by endpoint derivatives (boundary data). The leading correction \(j=1\) converts the left-point sum into the trapezoidal rule; the \(j=2\) term adds an endpoint-derivative correction that raises the order to \(O(h^4)\). This is the interval counterpart of Remark 2.2's single-point tower: there the subtractions were local (Taylor coefficients at \(x\)); here they are boundary-localized (endpoint derivatives of \(f\)).
 
 # 3. Dynamics: action, stationarity, and the need for control data
 The cornerstone manuscript uses the same template in mechanics.
