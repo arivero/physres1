@@ -103,7 +103,10 @@ The condition \(\omega^2>0\) is precisely the bound \(L>K/c\) of Section 3. Sinc
 For gravity (\(K=GMm\)), writing \(L^2=GMm^2 a(1-e^2)\) from the semi-latus rectum of the precessing conic gives \(\Delta\phi_{\mathrm{SR}}=\pi GM/(c^2 a(1-e^2))\). Comparing with the Schwarzschild result \(\Delta\phi_{\mathrm{GR}}=6\pi GM/(c^2 a(1-e^2))\) (Section 4.3), the SR precession is exactly \(1/6\) of the GR precession. In the post-Newtonian expansion this \(1/6\) is the 1PN kinematic contribution (from velocity-dependent inertia); the remaining \(5/6\) arises from the \(-2ML^2/r^3\) term in the Schwarzschild effective potential, which encodes spacetime curvature absent from the flat-spacetime SR model.
 
 `Remark 3.2a (SR and Bertrand's theorem).`
-Bertrand's theorem states that in Newtonian mechanics, only the inverse-square (\(q=2\)) and Hooke (\(F\propto r\)) forces produce closed orbits for all bound initial conditions. SR eliminates the closure property for \(q=2\): since \(\omega=\sqrt{1-K^2/(c^2L^2)}\) depends continuously on \(L\), it is generically irrational, and the orbit is a precessing ellipse that never closes. The passage from Newtonian to relativistic mechanics thus reduces the class of all-conditions-closed inverse-square orbits from an open family to a measure-zero subset.
+Bertrand's theorem [Bertrand1873ClosedOrbits] states that in Newtonian mechanics, only the inverse-square (\(q=2\)) and Hooke (\(F\propto r\)) forces produce closed orbits for all bound initial conditions. SR eliminates the closure property for \(q=2\): since \(\omega=\sqrt{1-K^2/(c^2L^2)}\) depends continuously on \(L\), it is generically irrational, and the orbit is a precessing ellipse that never closes. The passage from Newtonian to relativistic mechanics thus reduces the class of all-conditions-closed inverse-square orbits from an open family to a measure-zero subset.
+
+`Remark 3.2b (Connection to Sommerfeld fine structure).`
+For the Coulomb force \(K=Ze^2/(4\pi\epsilon_0)\), the precession parameter \(\omega^2=1-K^2/(c^2L^2)\) is precisely the quantity Sommerfeld [Sommerfeld1916FineStructure] used to derive the relativistic hydrogen fine structure. Applying Bohr–Sommerfeld quantization \(L=k\hbar\) yields \(\omega=\sqrt{1-Z^2\alpha^2/k^2}\), where \(\alpha\) is the fine structure constant, and the resulting energy levels \(E_{n_r,k}=mc^2\bigl(1+\alpha^2Z^2/(n_r+k\omega)^2\bigr)^{-1/2}\) reproduce the exact Dirac spectrum (with \(k\to j+\tfrac{1}{2}\)). The classical orbit equation of this section is thus the backbone of one of the earliest quantum-relativistic results.
 
 # 4. GR Baseline: Schwarzschild Geodesics, Effective Potential, Photon Sphere
 This section records the standard Schwarzschild baseline in a form parallel to the SR “effective 1D radial motion” viewpoint.
@@ -270,11 +273,14 @@ As \(q\to 3^-\), the SR speed ceiling \(v_{\max}=c\sqrt{3-q}\to 0\), so the Newt
 For \(q=2\), the stability factor \(1+(2-q)\gamma^2\) reduces to \(1\), while Remark 3.2's precession frequency satisfies \(\omega^2=1/\gamma^2\). These are related: the stability factor equals \(\gamma^2\omega^2\). Thus unconditional stability at \(q=2\) is equivalent to the precession frequency being real and nonzero for all speeds — orbital shape (precession) and radial response (stability) are unified by the dimensionless invariant \(\gamma^2\omega^2=1\).
 
 # 6. Outlook
-Two natural extensions are:
-1. replace the “external potential” modeling assumption by an explicitly field-mediated interaction model, and compare which orbit admissibility/stability bounds survive that change;
-2. connect the SR/GR orbit constraints more explicitly to the refinement-compatibility spine (what is preserved under refinement, and what new kinematic admissibility conditions appear when the refinement rules are Lorentz/GR-consistent).
+Three natural extensions are:
+1. replace the "external potential" modeling assumption by an explicitly field-mediated interaction model, and compare which orbit admissibility/stability bounds survive that change;
+2. connect the SR/GR orbit constraints more explicitly to the refinement-compatibility spine (what is preserved under refinement, and what new kinematic admissibility conditions appear when the refinement rules are Lorentz/GR-consistent);
+3. apply semiclassical quantization (Remark 3.2b) to ask which of the admissibility, stability, and critical-exponent bounds derived here survive or sharpen in the transition from classical orbits to discrete energy levels.
 
 # References
 
 1. [BoscagginDambrosioFeltrin2020RelKepler] Alberto Boscaggin, Walter Dambrosio, and Guglielmo Feltrin, "Periodic solutions to a perturbed relativistic Kepler problem," arXiv:`2003.03110` (v1, 6 Mar 2020). (Contains the unperturbed SR relativistic Kepler equation and discusses circular solutions/constraints.)
 2. [Carroll1997LectureGR] Sean M. Carroll, "Lecture Notes on General Relativity," arXiv:`gr-qc/9712019` (v1, 3 Dec 1997). (Includes black holes/geodesic applications used as baseline GR anchors.)
+3. [Sommerfeld1916FineStructure] Arnold Sommerfeld, "Zur Quantentheorie der Spektrallinien," Ann. Phys. (Leipzig) 51 (1916) 1–94, 125–167. (Original derivation of the relativistic hydrogen fine structure from the precessing-ellipse orbit equation.)
+4. [Bertrand1873ClosedOrbits] Joseph Bertrand, "Théorème relatif au mouvement d'un point attiré vers un centre fixe," C. R. Acad. Sci. Paris 77 (1873) 849–853. (Proof that only inverse-square and Hooke forces yield closed Newtonian orbits.)
