@@ -29,7 +29,7 @@ relevant slot. Deletion criteria (in priority order):
 | 0 | Efimov effect / 3-body limit cycle | Promoted (C175) |
 | 1 | Decoherence / pointer states | Promoted (C176) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
-| 3 | Husimi function / action-angle visualization | Promoted (C169) |
+| 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
 | 5 | Rooted trees research direction | Active (future satellite D) |
 | 6 | Squeezed states / action-angle asymmetry | Promoted (C171) |

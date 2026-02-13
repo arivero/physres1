@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S136+C177: Padé/Borel Remark 2.5 in uncuttable)
+- Focus: extend counterterm tower to divergent series regime.
+- Work: S136 studied Padé approximants and Borel-Padé resummation. Numerical analyst reviewed — corrected matching order (L+M not L+M+1), clarified Borel notation, confirmed Montessus de Ballore description. Promoted as Remark 2.5: rational extrapolation, Borel transform, resummation as part of the definition.
+- Result: uncuttable 137→140 (+3 net). Now 7 pages. Q115 PASS (all 3 new remarks verified).
+
 ## 2026-02-13 (S135+C176: Decoherence Remark 5.2 in action-angle)
 - Focus: complete Section 5's foundations message with decoherence mechanism.
 - Work: S135 studied pointer states. Decoherence specialist reviewed — confirmed coherent states as pointer states (Zurek, Habib & Paz 1993), flagged timescale formula as imprecise, corrected attribution. Promoted as Remark 5.2 without quantitative timescale claims.
