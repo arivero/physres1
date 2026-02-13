@@ -212,6 +212,18 @@ defined by a renormalization condition and can generate RG-invariant
 scales and bound states {[}Jackiw1991DeltaPotentials{]}
 {[}ManuelTarrach1994PertRenQM{]}.
 
+\texttt{Remark\ 4.2\ (Connection\ to\ the\ effective\ range\ expansion).}
+In scattering theory the s-wave amplitude is parametrized by the
+effective range expansion (ERE)
+\(k\cot\delta_0(k) = -1/a + r_0 k^2/2 + O(k^4)\), where \(a\) is the
+scattering length and \(r_0\) the effective range. The contact expansion
+of Derivation 4.1 is the momentum-space counterpart: at Born level,
+\(C_0\) determines \(a\), \(C_2\) determines \(r_0\), and each higher
+\(C_{2n}\) maps to a shape parameter. Examples 5.1 and 5.2 below are the
+leading-order case \(C_2 = 0\) (zero effective range, \(r_0 = 0\)), for
+which the full amplitude \(f_0(k) = -a/(1+ika)\) depends on a single
+parameter --- the scattering length.
+
 \hypertarget{boundary-condition-reading-point-interactions}{%
 \section{5. Boundary-condition reading (point
 interactions)}\label{boundary-condition-reading-point-interactions}}
@@ -227,6 +239,49 @@ This viewpoint matches the controlled-refinement perspective: when a
 continuum description is defined as a refinement limit, UV data can
 survive in the limit precisely as boundary-condition parameters (contact
 terms), with RG flow expressing compatibility across resolutions.
+
+\texttt{Example\ 5.1\ (Contact\ coupling\ generates\ a\ scale:\ 2D\ delta\ potential).}
+In two spatial dimensions, a contact interaction
+\(V(r)=g_0\,\delta^{(2)}(r)\) with bare coupling \(g_0\) and UV cutoff
+\(\Lambda\) leads, after a standard loop integral, to a \(T\)-matrix
+with the structure \[
+T(k)^{-1}=\frac{1}{g_0}+\frac{m}{\pi\hbar^2}\ln\!\left(\frac{\Lambda}{k}\right),
+\] which diverges as \(\Lambda\to\infty\) unless \(g_0\) is tuned.
+Define a renormalized coupling at reference scale \(\mu\) by absorbing
+the \(\ln\Lambda\) divergence; cutoff independence then gives the beta
+function \(\beta(g_R)=\mu\,dg_R/d\mu=(m/\pi\hbar^2)\,g_R^2\). This is a
+quadratic beta function of the same form as the toy logarithmic model in
+the cornerstone (Section 8.3), with solution producing a dynamically
+generated scale \(\mu_\ast=\mu\,e^{\pi\hbar^2/(mg_R)}\). For attractive
+coupling (\(g_R<0\)) this scale is below the reference scale and sets
+the bound-state energy: \(E=-\hbar^2\mu_\ast^2/(2m)\).
+
+The structural lesson: the ``contact'' limit of the effective
+interaction is not a number (coupling constant) but a flow --- a
+scale-dependent parameter whose RG trajectory is part of the definition.
+This is ``uncuttable'' in the sense of the companion note: the continuum
+theory requires the refinement rule (cutoff removal + beta function) and
+not merely a single-cutoff value.
+
+\texttt{Example\ 5.2\ (3D\ contact\ interaction:\ scattering\ length).}
+In three spatial dimensions, the same contact interaction
+\(V(r)=g_0\,\delta^{(3)}(r)\) with UV cutoff \(\Lambda\) produces a
+linearly divergent loop integral (compared to the logarithmic divergence
+in \(d=2\)). After resummation, the s-wave scattering amplitude takes
+the standard effective-range form with zero effective range: \[
+f_0(k) = \frac{-a}{1+ika},
+\] where the scattering length \(a\) is defined by absorbing the
+\(\Lambda\)-dependent bare coupling into a single physical parameter via
+a renormalization condition of the form
+\(1/g_0 \propto \Lambda + \text{(finite part depending on } a\text{)}\).
+When \(a>0\), a pole at \(k=i/a\) gives a bound state with energy
+\(E=-\hbar^2/(2ma^2)\) {[}AlbeverioGesztesyHoeghKrohnHolden2005{]}. The
+comparison with Example 5.1 highlights how the divergence character
+changes with dimension --- logarithmic (\(d=2\)) versus linear (\(d=3\))
+--- while the structural lesson is identical: the ``coupling constant''
+of a contact interaction is not a bare number but a
+renormalization-group datum, defined only through a refinement rule
+(cutoff removal + physical matching condition).
 
 \hypertarget{outlook-kept-minimal}{%
 \section{6. Outlook (kept minimal)}\label{outlook-kept-minimal}}
@@ -264,6 +319,13 @@ bibliography-hardening pass and is outside this note's scope.
   field theory 1, lecture 21'' (updated 11 Jun 2024). (States the
   Dirac-fermion generating functional \(Z[\bar\eta,\eta]\) with
   Grassmann-valued sources.) OA: lecture webpage.
+\item
+  {[}AlbeverioGesztesyHoeghKrohnHolden2005{]} S. Albeverio, F. Gesztesy,
+  R. Høegh-Krohn, and H. Holden, \emph{Solvable Models in Quantum
+  Mechanics}, 2nd ed., AMS Chelsea Publishing, 2005. ISBN
+  \texttt{978-0-8218-3624-4}. (Canonical reference for point
+  interactions in quantum mechanics; self-adjoint extensions, delta
+  potentials.)
 \end{enumerate}
 
 \end{document}

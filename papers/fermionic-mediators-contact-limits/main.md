@@ -95,6 +95,9 @@ Thus locality at low energy naturally becomes **contact data**: delta kernels an
 
 In singular cases (notably \(\delta\) interactions in \(d\ge 2\) in various channels), this contact data is not simply a fixed number: it is defined by a renormalization condition and can generate RG-invariant scales and bound states [Jackiw1991DeltaPotentials] [ManuelTarrach1994PertRenQM].
 
+`Remark 4.2 (Connection to the effective range expansion).`
+In scattering theory the s-wave amplitude is parametrized by the effective range expansion (ERE) \(k\cot\delta_0(k) = -1/a + r_0 k^2/2 + O(k^4)\), where \(a\) is the scattering length and \(r_0\) the effective range. The contact expansion of Derivation 4.1 is the momentum-space counterpart: at Born level, \(C_0\) determines \(a\), \(C_2\) determines \(r_0\), and each higher \(C_{2n}\) maps to a shape parameter. Examples 5.1 and 5.2 below are the leading-order case \(C_2 = 0\) (zero effective range, \(r_0 = 0\)), for which the full amplitude \(f_0(k) = -a/(1+ika)\) depends on a single parameter — the scattering length.
+
 # 5. Boundary-condition reading (point interactions)
 Point-supported interactions can be encoded as self-adjoint extension / boundary-condition data rather than as ordinary functions \(V(r)\). This is the natural operator-theoretic counterpart of “diagonal-support kernels.” For standard references and pedagogical framing, see [BonneauFarautValent2001SAE] and the delta-potential discussion in [Jackiw1991DeltaPotentials].
 
