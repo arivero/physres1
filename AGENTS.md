@@ -11,20 +11,37 @@ This file applies to the entire repository.
 5. Before finalizing manuscript output, verify:
    `rg -n 'C[0-9]{2}' paper/main.md`
 
+## Satellite Paper Page Limit
+Satellite papers (`papers/*/`) target **Phys. Lett. B-style letters**: max **6 compiled
+LaTeX pages** in `elsarticle` 3p twocolumn format. Phys. Lett. B traditionally allowed
+4 pages; 6 is the generous cap. **Always measure with the compiler**, not by guessing
+from line counts — run `scripts/count-pages.sh` to get actual page counts.
+
+**Stop expanding** a satellite once it reaches 6pp compiled. If a paper exceeds 6pp,
+either compact references (switch to BibTeX numbered style), trim body, or reclassify
+as a longer article (Phys. Rev. D scale, ~8–15pp).
+
 ## Workspace Hygiene
 1. **Blackboards** (`blackboards/`): max **7 files** (see `blackboards/README.md`). Delete before creating when at cap.
 2. **Paper notes** (`paper/notes/`): max **10 files** (see `paper/notes/README.md`). Retire integrated notes.
 3. Promoted content must not linger as a duplicate in the scratch layer.
 
 ## Commit Policy
-1. **When to commit:** only when finishing a work cycle of C type (not mid-cycle).
-2. **Two-commit rule:** split each cycle's commit into two:
-   - **First commit:** manuscript source files that generate output — `.md` files in `paper/` and `papers/*/`, `.tex` files, `.bib` files, and `paper/bibliography.md`.
-   - **Second commit:** everything else — `cycles/`, `docs/`, `blackboards/`, `paper/notes/`, config files.
-3. This keeps the manuscript-generating history cleanly separable from planning/logging artifacts.
+1. **When to commit:** at most **once per hour**. Multiple cycles accumulate
+   as uncommitted work and are committed together. Do **not** commit after
+   every individual cycle.
+2. **Two-commit rule (per batch):**
+   - **First commit:** manuscript source files — `.md` in `paper/` and
+     `papers/*/`, `.tex`, `.bib`, `paper/bibliography.md`.
+   - **Second commit:** everything else — `cycles/`, `docs/`, `blackboards/`,
+     `paper/notes/`, config files.
+   - If no manuscripts changed, only the second commit is needed.
+3. This keeps the manuscript-generating history cleanly separable from
+   planning/logging artifacts, while limiting total commits to ≤2 per hour.
 4. **Commit metadata (required in every commit message):**
    - Include a tag identifying the orchestrating agent/model (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`).
-   - Include a token/usage estimate if the tooling exposes it (e.g., `tokens: ~12k in / ~8k out`). If not available, write `tokens: N/A`.
+   - List all cycle IDs in the batch (e.g., `S200+C241+S201+C242+Q128`).
+   - Include a token/usage estimate if the tooling exposes it. If not available, write `tokens: N/A`.
 
 ## Subagent Recipes (Optional)
 The recipes below describe how to delegate specific tasks to subagents for improved quality. They are **optional**: if the main agent does not support orchestration of subagents (e.g., Codex CLI, Copilot), skip these steps and perform the review in-context instead. The core cycle logic is the same either way.

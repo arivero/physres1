@@ -127,7 +127,17 @@ Each cycle uses four files:
 - `cycles/<ID>-debate.md`: one hard question + the current resolution.
 - `cycles/<ID>-redteam.md`: failure modes + mitigations.
 
-Templates live in `cycles/templates/` and should be copied/renamed when starting a new cycle.
+New cycle files go in `cycles/` (top level). Templates live in `cycles/templates/`.
+
+## Archiving
+Completed cycle files are periodically moved to `cycles/archive/`. The archive
+currently holds ~2400 files. **Context-saving rules:**
+- New cycle files are created in `cycles/` (not in archive).
+- When a session's cycles are all completed and committed, move their files
+  to `cycles/archive/`.
+- **Never bulk-read the archive.** Only read a specific archived cycle file
+  when you need it for a concrete reason (e.g., a Q cycle reviewing an older C).
+- `cycles/index.md` uses a summary table for completed cycles, not per-cycle lines.
 
 ## Content-Cycle Logging Requirement (Diffstat)
 Every `Cnn` cycle must:

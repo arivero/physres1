@@ -143,18 +143,22 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 - Intended role: connect “mediator-field talk” to the repo’s point-interaction + RG themes in a controlled, falsifiable way.
 
 ## Publication Readiness (2026-02-13, latest refresh)
-**All 9 satellite papers at Tier 1 (READY for P cycles):**
-1. Planck Area (730 lines, 23 pages, 9 refs)
-2. RG Fundamental (596 lines, 17 pages, 8 refs)
-3. Half-Density QFT (209 lines, 6 pages, 5 refs)
-4. Relativistic Central Orbits (218 lines, 6 pages, 2 refs) — expanded S104: bound-orbit L>K/c extension
-5. Dirac Probes / Corners / Impulses (194 lines, 6 pages, 3 refs)
-6. Delta Objects (164 lines, 5 pages, 5 refs)
-7. Fermionic Mediators (112 lines, 5 pages, 4 refs)
-8. Uncuttable Controlled Refinement (96 lines, 4 pages, 2 refs)
-9. Action-Angle Indeterminacy (96 lines, 4 pages, 2 refs) — expanded S108: circular uncertainty Prop 4.2
+Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PLB format).
 
-Tier 2 and Tier 3: empty. Cornerstone: paper/main.md (1475 lines, Q101 clean).
+**PLB-length satellites (≤6pp compiled):**
+1. Half-Density QFT (4pp, 226 lines, 7 refs) — C242: heat kernel remark added
+2. Delta Objects (4pp, 178 lines, 5 refs)
+3. Dirac Probes / Corners / Impulses (4pp, 196 lines, 3 refs)
+4. Relativistic Central Orbits (4pp, 218 lines, 2 refs)
+
+**PRD-length satellites (>6pp compiled):**
+5. RG Fundamental (9pp, 596 lines, 8 refs)
+6. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
+7. Fermionic Mediators (13pp, 244 lines, 40 refs) — C241: Born bridge + decoupling
+8. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
+9. Planck Area (14pp, 730 lines, 9 refs)
+
+**Cornerstone:** paper/main.md (23pp compiled, 1486 lines). Target: Physics Reports.
 **All 9 satellites cross-referenced from cornerstone** (C146 completed the network).
 
 Recent cornerstone additions: D1.2a (numerical area law), D4.1b (α-ordering witness, Q100-fixed), D5.1b (cubic Moyal correction), D6.2a-HO (HO step-halving witness).

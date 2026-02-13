@@ -36,8 +36,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Born approximation bridge (fermionic §2) | Active |
-| 1 | Heavy-mediator decoupling (fermionic §4) | Active |
+| 0 | Heat kernel as bi-half-density (HD-QFT §4) | Promoted (C242) |
+| 1 | Self-adjoint extensions / point interactions (delta §4) | Active |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
