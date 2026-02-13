@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S139+C180+S140+C181: Real harmonics + pseudopotential)
+- Focus: expand action-angle Section 3 (angle localization witness) and fermionic mediators Section 4 (regularized contact kernel).
+- Work: S139 studied real spherical harmonics as minimal m-superposition. Atomic physics pedagogue reviewed — caught phase convention error in explicit formulas; promoted using descriptive language to sidestep convention. S140 studied Huang-Yang pseudopotential. Cold atom theorist reviewed — corrected prefactor from 2π to 4π; promoted with corrected 4πℏ²a/m.
+- Result: action-angle 139→142 (+3), fermionic mediators 144→147 (+3). Both 7 pages.
+
 ## 2026-02-13 (S137+C178+S138+C179: Berry-Tabor + optimal truncation)
 - Focus: expand action-angle Section 7 (spectral statistics) and uncuttable Section 2 (exponential accuracy barrier).
 - Work: S137 studied Berry-Tabor/BGS conjectures. Quantum chaos specialist reviewed — all correct, references verified. Promoted as Remark 7.2. S138 studied asymptotic expansions and optimal truncation. Asymptotic analyst reviewed — all correct except minor Poincaré convention mismatch (fixed). Promoted as Remark 2.6.

@@ -26,8 +26,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Berry-Tabor / spectral statistics | Promoted (C178) |
-| 1 | Optimal truncation / superasymptotics | Promoted (C179) |
+| 0 | Real spherical harmonics / directional lobes | Promoted (C180) |
+| 1 | Huang-Yang pseudopotential / contact kernel | Promoted (C181) |
 | 2 | Wigner function / sub-Planck structure | Promoted (C174) |
 | 3 | Padé approximants / Borel resummation | Promoted (C177) |
 | 4 | Adiabatic limit / Berry phase | Promoted (C170) |
