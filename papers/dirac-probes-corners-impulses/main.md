@@ -137,6 +137,27 @@ L=m\,r\,\dot{\theta},
 \]
 a purely radial impulse leaves \(\dot{\theta}\) (and hence \(L\)) unchanged across the kick, recovering the equal-area property of Newton's polygon at the distributional level.
 
+## 4.5 From N impulses to the time-sliced path integral
+
+The single-impulse model extends naturally to a sequence of \(N\) impulses. This extension bridges the distributional mechanics of Sections 3–4 to the path-integral composition framework of the cornerstone manuscript (Section 6 there).
+
+Partition \([0,T]\) into \(N+1\) equal intervals of length \(\Delta t=T/(N+1)\), with junction times \(t_k=k\,\Delta t\) for \(k=1,\ldots,N\). Fix the endpoints \(q_0=q_i\), \(q_{N+1}=q_f\), and let \(q_1,\ldots,q_N\) be free intermediate positions. On each segment the particle is free, so the trajectory is piecewise linear with velocities
+\[
+v_k=\frac{q_{k+1}-q_k}{\Delta t},\qquad k=0,\ldots,N.
+\]
+The discrete action is
+\[
+S_N[\{q_k\}]=\sum_{k=0}^{N}\frac{m}{2}\frac{(q_{k+1}-q_k)^2}{\Delta t}.
+\]
+At each junction \(t_k\), the velocity jumps from \(v_{k-1}\) to \(v_k\). By Theorem 3.2, each jump requires an impulse \(J_k=m(v_k-v_{k-1})\). The \textit{classical} stationary condition \(\partial S_N/\partial q_k=0\) imposes \(v_k=v_{k-1}\) for all \(k\) — that is, Theorem 3.1's corner condition (momentum continuity) at every junction — and the path collapses to a single straight line.
+
+In the quantum theory, one instead sums over all intermediate configurations with amplitude weights:
+\[
+K(q_f,q_i;T)=\lim_{N\to\infty}\left(\frac{m}{2\pi i\hbar\,\Delta t}\right)^{N/2}\int\prod_{k=1}^{N}dq_k\;
+\exp\!\left(\frac{i}{\hbar}\,S_N[\{q_k\}]\right).
+\]
+The prefactor \((m/(2\pi i\hbar\,\Delta t))^{N/2}\) is precisely the half-density normalization required for the composition law to hold at each intermediate integration — a point treated systematically in the cornerstone's half-density framework. The distributional impulse-matching of Theorem 3.2 thus connects, through this \(N\to\infty\) limit, to the composition postulate for transition amplitudes.
+
 # 5. Safe vs Unsafe Uses of the Dirac Delta in Variational Mechanics
 
 The preceding sections involve two related but *logically distinct* mathematical objects. Conflating them is a common source of error.
@@ -161,7 +182,7 @@ A point interaction \(V(q)=g\,\delta(q)\) in the Hamiltonian is a different obje
 
 # 6. Outlook
 
-1. Extend the single-impulse model to a sequence of \(N\) impulses and take the continuum limit, recovering stochastic forcing or the path-integral time-slicing prescription.
+1. ~~Extend the single-impulse model to a sequence of \(N\) impulses and take the continuum limit.~~ Addressed in Section 4.5. The stochastic-forcing interpretation (random impulses with prescribed statistics) remains open.
 2. Treat the piecewise-smooth trajectory as a weak solution and examine whether the Hamilton–Jacobi equation acquires viscosity-solution structure at the kink.
 3. Connect the corner-condition analysis to broken geodesics in Riemannian geometry (Synge's world function approach).
 
