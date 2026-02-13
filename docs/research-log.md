@@ -269,3 +269,27 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Result: dirac 256 lines (5pp). 3 studies no-promote, 1 promoted.
 - Next: Q164 result; commit batch; continue expansion.
 
+## 2026-02-13 (S250–S253: dirac-probes further studies — all frozen)
+- Focus: four more expansion targets for dirac-probes.
+- Work:
+  - S250: retarded Green's function G(t,t')=θ(t-t')/m — correct but elementary for target audience.
+  - S251: Hamilton-Jacobi viscosity solution at kink — genuine connection (Crandall-Lions), but too specialized. Recommend expanding Outlook item 2 instead.
+  - S252: Sobolev regularity (q ∈ W^{1,∞} \ C¹, q ∉ H²) — strongest candidate, clean callback to Section 2 hypotheses.
+  - S253: broken geodesics / Synge world function — beautiful but wrong paper scope (geometric vs functional-analytic).
+- Critical finding: count-pages.sh shows dirac at **7pp** (256 lines), not 5pp as previously listed. Paper is over PLB 6pp limit.
+- Result: ALL four studies NOT promoted (page constraint binding). Index corrected.
+- Commits: 4340570 (manuscripts: dirac +3), 02e9ade (infrastructure: S246-S249+C280+Q164).
+- Next: shift expansion focus to relativistic (5pp, most room). Studies S254-S257 launched.
+
+## 2026-02-13 (Q165: Referee review of C281 — relativistic Remark 5.2c)
+- Focus: referee review of Remark 5.2c (stability–precession duality at q=2) in relativistic paper.
+- Work:
+  - Mathematical correctness: verified γ²ω²=1 identity from ω²=1-K²/(c²L²) and v=K/L giving ω²=1/γ². Stability factor at q=2 equals 1. Identity correct.
+  - Placement: Remark 5.2c at line 263, immediately after Example 5.2b (line 255), before Section 6 (line 266). Matches C281-plan.md.
+  - Cross-references: reference to "Remark 3.2's precession frequency" (line 264) correct, matches line 92 definition.
+  - Cycle labels: no C281, S256, Q165 strings found in manuscript. No conv_patched mentions.
+  - Duplication: no duplicate content. Line 203 mentions "1/6 precession ratio" but discusses different relationship.
+  - Red-team: minor ambiguity in "unconditional stability" (could be misread as L>K/c unnecessary), but acceptable in context.
+- Result: Q165 PASS. All five review criteria satisfied. C281 approved.
+- Next: continue relativistic expansion (5pp, most room).
+
