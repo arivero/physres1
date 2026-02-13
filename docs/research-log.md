@@ -130,6 +130,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Work: S190 studied Zeno's paradoxes as proto-refinement limits. Historian of ancient mathematics reviewer caught (1) Zeno's intent mischaracterized — defending Parmenides' monism, not "against motion" (HIGH), (2) convergent series is anachronistic — must qualify as modern reading (HIGH), (3) arrow paradox oversimplified (MEDIUM), (4) "perfectly frames" too strong (MEDIUM), (5) "by fiat" tendentious (MEDIUM). All corrections applied. Promoted as Remark 1.2: reductio ad absurdum for Parmenides' monism, series as anachronistic modern reading, arrow resolved by derivative, atomists posit physical lower bound, arc "suggestively parallels." S191 studied constructive QFT — do the refinement limits exist? Mathematical physicist reviewer caught (1) Gross-Neveu attribution wrong — should be Gawędzki-Kupiainen + FMRS (HIGH), (2) 2D Yang-Mills mischaracterized — Migdal-Witten are exact/topological, Driver-Sengupta did rigorous construction (HIGH), (3) φ⁴₃ attribution incomplete (HIGH), (4) φ⁴₂ method conflation (MEDIUM), (5) triviality needs Aizenman-Fröhlich (MEDIUM), (6) structural lesson overstated (MEDIUM), (7) missing Balaban (MEDIUM). All corrections applied. Promoted as Remark 4.11: corrected attributions, Borel summability connection to Remark 2.5, Balaban as closest approach to 4D YM. 3 new bib entries: GlimmJaffe1987, Aizenman1981, Frohlich1982. Also fixed Unicode issues in action-angle (Vũ Ngọc) and fermionic (μm) for pdflatex compatibility.
 - Result: uncuttable 218→227 (+9, 18pp). Fermionic 226 (17pp). Action-angle 221 (17pp). All three now 221+ lines.
 
+## 2026-02-13 (S219+C254+Q139: dirac-probes Section 5.2 delta potential hierarchy)
+- Focus: expand the thin Section 5.2 (3 lines → concrete content) with dimensional hierarchy of point interactions.
+- Work: Example 5.2a: d=1 finite/bound state E=-mg²/(2ℏ²), d=2 log/transmutation α, d=3 linear/scattering length a, d≥4 no extension (Morrey). Remark 5.2b: Laplace representation G₀(0,0;E) ∝ ∫t^{-d/2}e^{-κ²t}dt shows same d/2 as path-integral normalization (§4.5). Q139 found 2 MEDIUM: (1) forward reference needed for "heat kernel exponent d/2", (2) "critical dimension" ambiguous. Both fixed.
+- Result: dirac-probes 206→212 (+6, 4pp→5pp). HD-QFT 244/5pp. delta 204/5pp. relativistic 239/4pp.
+
+## 2026-02-13 (S218+C253+Q138: HD-QFT flat-space propagator + mass counterterm scaling)
+- Focus: expand half-density-qft Section 4 (concrete example) and Section 5 (UV connection).
+- Work: S218 studied two targets. Promoted as Example HD-D4.3: flat-space massless propagator G(x,y)=Γ(D/2-1)/((4π)^{D/2}|x-y|^{D-2}), connecting D/2 normalization to HD-D1.1a's approximate identity; in flat space G̃=G. Promoted as Remark HD-D5.3: mass counterterm δm²·K_Id, UV scaling via heat kernel at coincidence ∫t^{-D/2}dt~Λ^{D-2} for D>2, same D/2 exponent controls both normalization and UV divergence. Q138 found 2 HIGH + 1 MEDIUM: (1) (4π)^{D/2} parentheses error, (2) proper-time cutoff UV/IR direction ambiguous, (3) "identified with" too strong for ε~|x-y|². All fixed.
+- Result: half-density-qft 234→244 (+10, 5pp). delta 204/5pp, dirac 206/4pp, relativistic 239/4pp.
+
 ## 2026-02-13 (S188+C229+S189+C230: Crossing symmetry + Hubbard-Stratonovich in fermionic)
 - Focus: expand fermionic Section 2 (crossing symmetry) and Section 6 (Hubbard-Stratonovich). Q123 review of C227-C228.
 - Work: S188 studied crossing symmetry. S-matrix theorist reviewer caught (1) Mandelstam analyticity assumptions not stated (HIGH), (2) crossing for fermions has spinor signs (MEDIUM), (3) t-channel obstruction conflates two issues (MEDIUM), (4) Froissart-Martin bound imprecise (MEDIUM). All corrections applied. Promoted as Remark 2.2: Mandelstam analyticity as assumption, Grassmann obstruction orthogonal to channel kinematics, fermion crossing has spinor structure. S189 studied Hubbard-Stratonovich transformation. Many-body theorist reviewer caught (1) fermion determinant needs trace-log (HIGH), (2) missing channel decomposition/Fierz caveat (HIGH), (3) RG inheritance imprecise — should be matching (MEDIUM). All corrections applied. Promoted as Remark 6.5: Gaussian identity → trace-log effective action, BCS gap parameter, NJL chiral symmetry breaking, Fierz channel decomposition caveat, large-N_f control. 2 new bib entries: Hubbard1959, NambuJonaLasinio1961. Q123 reviewed C227-C228: 2/2 PASS.
@@ -139,4 +149,34 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: expand action-angle Section 3 (selection rules) and Section 5 (QND measurement). Fix finish_manuscripts.sh.
 - Work: S186 studied dipole selection rules as Fourier orthogonality. Atomic physicist reviewer caught (1) missing Δl=±1 rule entirely (HIGH), (2) angular momentum conservation sign (MEDIUM), (3) π-photon carries 0 not ℏ along z (MEDIUM). All corrections applied. Promoted as Remark 3.2: Δm from azimuthal Fourier, Δl from polar/Clebsch-Gordan, photon qℏ, Zeeman, Fourier tradeoff connection. S187 studied QND measurement. Quantum optics experimentalist caught (1) missing [A,H_int]=0 condition (HIGH), (2) "back-action-free" claim incorrect — redirected to conjugate (HIGH), (3) Zeno vs QND conflation (MEDIUM), (4) Nogues experiment details wrong — Rydberg atoms not qubits (MEDIUM). All corrections applied. Promoted as Remark 5.7: dual QND conditions, back-action on conjugate, dispersive cavity-QED with Ramsey interferometry, Zeno distinction. 2 new bib entries: BraginskyVorontsovThorne1980, Nogues1999. Also added ZurekHabibPaz1993 (pre-existing but missing from central bibliography) + new keys to paper/bibliography.md. Fixed finish_manuscripts.sh: update_references.py now runs only on main paper (satellites use parenthetical citations).
 - Result: action-angle 213→221 (+8, 17pp). Uncuttable 218 (17pp). Fermionic 218 (16pp). All three now 218+ lines.
+
+## 2026-02-13 (S218+C253+Q138: HD-QFT flat-space propagator + mass counterterm scaling)
+- Focus: expand half-density-qft Sections 4 and 5.
+- Work: S218 studied two targets: (1) flat-space massless propagator G(x,y) = Γ(D/2-1)/((4π)^{D/2}|x-y|^{D-2}), connecting D/2 normalization to HD-D1.1a; (2) mass counterterm UV scaling Λ^{D-2} from heat kernel at coincidence. Promoted as Example HD-D4.3 + Remark HD-D5.3. Q138 referee: CONDITIONAL PASS. Fixed (1) parentheses 4π^{D/2}→(4π)^{D/2} (HIGH), (2) proper-time cutoff direction clarified (HIGH), (3) "identified with"→"scales as" (MEDIUM).
+- Result: half-density-qft 234→244 (+10, 5pp, 6091 tok).
+
+## 2026-02-13 (S219+C254+Q139: dirac-probes delta potential hierarchy)
+- Focus: expand dirac-probes Section 5.2 (point interactions).
+- Work: S219 studied dimensional hierarchy of delta potentials (d=1 finite, d=2 log/transmutation, d=3 linear/scattering length, d≥4 no extension) and Laplace representation bridge G₀(0,0;E) ∝ ∫t^{-d/2}e^{-κ²t}dt. Promoted as Example 5.2a + Remark 5.2b. Q139 referee: CONDITIONAL PASS. Fixed (1) added forward ref to Remark 5.2b (MEDIUM), (2) "critical dimension"→"marginal dimension" (MEDIUM).
+- Result: dirac-probes 206→212 (+6, 5pp, 5178 tok).
+
+## 2026-02-13 (S220+C255+Q140: relativistic stability expansions)
+- Focus: expand relativistic-central-orbits Sections 4.3 and 5.2.
+- Work: S220 studied two targets: (1) ISCO angular-momentum floor L_ISCO = 2√3 M vs SR's L>K/c (no stability floor), (2) stability thresholds for q=1,2,5/2,3 power laws. Promoted as Remark 4.3b + Example 5.2b. Q140 referee: PASS (no fixes, 3 LOW optional).
+- Result: relativistic 239→250 (+11, 4pp, 4670 tok).
+
+## 2026-02-13 (S221+C256+Q141: delta-objects d=2 scalarization example)
+- Focus: expand delta-objects Section 5 (scalarization, 12 lines → 15 lines).
+- Work: S221 studied d=2 scalarization using transmutation scale α. Agent drafted Example 5.1a with σ_* = α^{-1}|dx|^{1/2}. Q141 referee: REJECT — dimensional analysis failure (σ_* has wrong dimensions [length²] vs required [length^1]). Rewrote Example to avoid faulty σ_* construction, focusing instead on κ/α=1 (dimensionless RG-invariant bound-state condition).
+- Result: delta 204→207 (+3, 5pp, 6155 tok).
+
+## 2026-02-13 (S222+C257+Q142: HD-QFT Section 4 deepening)
+- Focus: expand half-density-qft Sections 4–5 with geometric and analytic depth.
+- Work: S222 studied two candidates: (1) Van Vleck transport equation as geometric half-density Jacobian, (2) proper-time/Schwinger representation unifying D/2 exponent across four paper elements. Promoted as Remark HD-D4.4 + Remark HD-D4.5. Q142 referee: pending.
+- Result: HD-QFT 244→253 (+9, 5pp, 6592 tok).
+
+## 2026-02-13 (S223+C258+Q143: dirac-probes Weierstrass–Erdmann + action excess)
+- Focus: expand dirac-probes Sections 3.1 and 4.3.
+- Work: S223 drafted (1) Remark 3.1b: Weierstrass–Erdmann second condition (energy/Hamiltonian continuity at corners), completing the treatment alongside Theorem 3.1's momentum condition; (2) Remark 4.3a: midpoint kick maximizes action excess (t₀(T-t₀)/T maximized at T/2). Promoted as Remark 3.1b + Remark 4.3a. Q143 referee: pending.
+- Result: dirac 212→222 (+10, 5pp, 5486 tok).
 
