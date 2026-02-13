@@ -13,6 +13,11 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (S115+C156: EBK quantization Remark 6.3 in action-angle satellite)
+- Focus: concretize the general semiclassical statement in the Outlook with the actual EBK formula.
+- Work: added Remark 6.3 showing I_k = (n_k + α_k/4)ℏ. Integer quantum numbers select the torus; angle variables remain uniformly distributed. Shortened Outlook to reference the remark.
+- Result: satellite 100→106 lines (+6 net).
+
 ## 2026-02-13 (S114+C155: 3D contact interaction Example 5.2 in fermionic mediators satellite)
 - Focus: expand fermionic mediators satellite with 3D contact interaction scattering-length example.
 - Work: subagent (skeptical nuclear physicist) flagged T-matrix sign conventions — resolved by using universally defined scattering amplitude f₀(k) = -a/(1+ika) instead. Added Example 5.2 after Example 5.1 (2D), completing the dimensional comparison.
