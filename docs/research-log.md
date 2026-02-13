@@ -18,6 +18,16 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
+## 2026-02-13 (Q168: referee review of C284 — relativistic Remarks 3.1b, 3.2a, Example 5.2b fix)
+- Focus: referee-style quality review of C284 (3 changes in relativistic-central-orbits paper).
+- Work:
+  - Remark 3.1b (critical exponent shift q_crit=3→2): verified Newtonian barrier r⁻² vs SR barrier r⁻¹, exponent drop by 1 from quadratic→linear dispersion. **PASS.**
+  - Remark 3.2a (Bertrand's theorem): verified ω=√(1−K²/(c²L²)) generically irrational (countable rationals, smooth map → measure-zero preimage). **PASS.**
+  - Example 5.2b fix: confirmed q=1 is inverse-linear (F=K/r), not Hooke (F=kr, which is q=−1). **PASS.**
+  - Guardrails: no cycle-tag leaks, no transcript citations.
+- Result: Q168 **PASS** (all three items). No required fixes. One LOW optional: "open family to measure-zero subset" phrasing slightly informal (angular-momentum parametrization vs phase-space set), but clear in context.
+- Next: commit batch; continue relativistic expansion toward 6pp PLB limit.
+
 ## 2026-02-13 (S242–S245+C277–C279+Q161–Q163: dirac-probes + relativistic expanded)
 - Focus: targeted expansion of dirac-probes and relativistic papers.
 - Work:
@@ -315,3 +325,41 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
   - Guardrails: no cycle labels, no transcript citations.
 - Result: Q167 CONDITIONAL PASS. Wording fix recommended: clarify "kinematic corrections (γ→1, √(1-K²/(c²L²))→1) vanish" rather than "Lorentz factors... vanish." Remark adds thematic value beyond technical content.
 - Next: apply wording fix if C283 cycle is executed; continue expansion.
+
+## 2026-02-13 (S258: Bertrand's theorem and SR precession — relativistic paper)
+- Focus: study whether SR breaks the Bertrand orbit-closure property for the two Bertrand potentials (inverse-square q=2 and Hooke q=-1).
+- Work:
+  - **q=2 (inverse-square):** From Remark 3.2's orbit equation, ω = √(1 − K²/(c²L²)) depends continuously on L ∈ (K/c, ∞), mapping onto (0,1). The set of L giving rational ω has measure zero. Therefore SR orbits are generically open (not closed). SR breaks Bertrand closure for q=2.
+  - **q=-1 (Hooke/isotropic oscillator):** The SR orbit equation is intrinsically nonlinear (no Binet linearization). The apsidal angle becomes energy-dependent, hence generically irrational. Literature confirms (Kumar-Bhattacharya 2011, arXiv:1103.3338; Homorodean 2013): the harmonic oscillator does not produce closed orbits in SR.
+  - **Structural point:** SR eliminates BOTH Bertrand potentials. The class of all-conditions-closed orbits drops from "two infinite families" to "measure-zero subsets."
+  - **Side finding:** Example 5.2b (line 257) mislabels q=1 as "Hooke / isotropic oscillator." In the paper's convention F=K/r^q, Hooke (F=kr) is q=-1, not q=1. The q=1 entry is "inverse-linear."
+- Deliverables: draft Remark 3.2a (3 sentences), assessment for promotion.
+- Assessment: worth promoting (scoped to q=2; Hooke as literature pointer only). Mislabeling fix should accompany or precede promotion.
+- Next: C cycle to promote Remark 3.2a + fix Example 5.2b label.
+
+## 2026-02-13 (S260: SR circular-orbit energy = mc^2 omega)
+- Focus: derive E_circ explicitly for SR inverse-square circular orbits; compare with Schwarzschild.
+- Work:
+  - Derived E = gamma mc^2 - K/r = mc^2/gamma = mc^2*omega, where omega is the precession parameter from Remark 3.2. This matches W_min (line 78) but was never identified as mc^2*omega.
+  - Verified Newtonian limit: mc^2*sqrt(1-K^2/(c^2 L^2)) ~ mc^2 - mK^2/(2L^2). Correct.
+  - GR comparison: E_GR = (1-2M/r)/sqrt(1-3M/r) mixes redshift and velocity; no single parameter captures energy. The SR identity E=mc^2/gamma fails in GR.
+  - Noted logical relationship to Remark 5.2c (gamma*omega=1 implies E=mc^2*omega once E=mc^2/gamma known). The new remark is not independent of 5.2c but fills a gap between Sections 3 and 5.
+- Result: RECOMMEND PROMOTE as Remark 3.2a (3 sentences, placed after Remark 3.2). GR comparison optional. Elementary but connects three threads (energy, precession, stability) not currently linked in the text.
+- Deferred: S260's Remark 3.2a deferred (partially overlaps Remark 5.2c). S258's Remark 3.2a promoted instead.
+
+## 2026-02-13 (S259: Critical exponent shift q_crit=3→2 — relativistic paper)
+- Focus: formalize why the critical exponent for centrifugal barrier dominance drops from 3 (Newtonian) to 2 (SR).
+- Work:
+  - Newtonian: E = p²/(2m) → centrifugal barrier ~L²/(2mr²) ∝ r^{-2}. Overwhelms attraction ∝ r^{-(q-1)} iff q < 3.
+  - SR: ultrarelativistic E ≈ pc → barrier ~Lc/r ∝ r^{-1}. Overwhelms attraction iff q < 2.
+  - The drop is exactly 1 because the degree of the energy-momentum relation in the high-momentum limit drops from 2 to 1.
+- Result: RECOMMEND PROMOTE as Remark 3.1b. Makes implicit structural point explicit; directly serves refinement-witness framing.
+
+## 2026-02-13 (C284: Promote Remark 3.1b + Remark 3.2a + fix Example 5.2b)
+- Focus: promote two new remarks and fix a mislabeling in the relativistic paper.
+- Changes:
+  1. Remark 3.1b (critical exponent shift): inserted after Remark 3.1a. Source: S259.
+  2. Remark 3.2a (Bertrand's theorem): inserted after Remark 3.2. Source: S258.
+  3. Example 5.2b: "q=1 (Hooke / isotropic oscillator)" → "q=1 (inverse-linear)". Bug found in S258.
+- Diffstat: +7 -1 in relativistic paper. 274 → 280 lines, still 5pp.
+- Guardrails: no cycle-tag leaks, no transcript citations.

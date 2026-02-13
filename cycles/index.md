@@ -10,15 +10,15 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 284 | C00–C283 |
+| Content (`Cnn`) | 285 | C00–C284 |
 | Bibliography (`Bnn`) | 26 | B00–B26 |
-| Study (`Snn`) | 258 | S00–S257 |
-| Quality (`Qnn`) | 168 | Q00–Q167 (gaps: Q110–Q111) |
+| Study (`Snn`) | 261 | S00–S260 |
+| Quality (`Qnn`) | 169 | Q00–Q168 (gaps: Q110–Q111) |
 | Discovery triage (`Dnn`) | 16 | D00–D15 (dormant) |
 | Discovery explore (`DXnn`) | 10 | DX01–DX10 (dormant) |
 | Publication (`Pnn`) | 1 | P00 (Planck Area → clawXiv v2) |
 
-**Total archived: ~2780 cycle files.**
+**Total archived: ~2800 cycle files.**
 
 ## Active / In Progress
 
@@ -27,21 +27,21 @@
 ## Next Action
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
-- PLB-length (≤6pp): relativistic 5pp (274), HD-QFT 6pp (265), delta 6pp (218).
+- PLB-length (≤6pp): relativistic 5pp (280), HD-QFT 6pp (265), delta 6pp (218).
 - PRD-length (>6pp): dirac 7pp (256), rg-fund 9pp, action-angle 13pp, fermionic 13pp, uncuttable 13pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- Q168: referee review of C284 — PASS (all 3 items: Remark 3.1b, Remark 3.2a, Example 5.2b fix). No required fixes.
+- S258–S260+C284+Q168: relativistic expansion (+6, 274→280). 3 studies, 1 C promoted (2 remarks + 1 bugfix), 1 Q review (PASS). Remark 3.1b (critical exponent shift), Remark 3.2a (Bertrand), Example 5.2b label fix.
 - S254–S257+C281–C283+Q165–Q167: relativistic expansion batch (+9, 265→274). 4 studies, 3 promoted, 3 Q reviews (all PASS). Q167 wording fix applied.
-- S250–S253: dirac-probes further studies — all FROZEN (7pp, over PLB limit).
 
 **Immediate:**
-- Dirac-probes at 7pp — FROZEN for PLB. Would need line cuts to return to ≤6pp.
-- Room for PLB expansion: relativistic only (265/5pp). HD-QFT at 6pp boundary.
-- Delta-objects at PLB limit — frozen.
+- S260 deferred: E=mc²ω remark partially overlaps Remark 5.2c.
+- Room for PLB expansion: relativistic (~35 lines to 6pp). HD-QFT at 6pp boundary.
+- Delta-objects at PLB limit — frozen. Dirac-probes at 7pp — FROZEN.
 - Bibliography: Lanczos, Fraser-Nakane, Delaunay, Nauenberg2003 source ingestion.
-- AGENTS.md updated: docs/motivations.md is agent-editable.
 
 **Standing priorities:**
 - Open questions from `docs/motivations.md` all analyzed. Focus shifts to expansion.
