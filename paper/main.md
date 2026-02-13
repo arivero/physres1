@@ -992,6 +992,11 @@ H(\Phi_h^{(a)})=\Phi_h^{(\tau_2(a))}+O(h^3),\qquad \tau_2(a)=\frac{a}{2}+\frac14
 \]
 with fixed point \(a_\ast=1/2\) (the second-order Taylor coefficient of the exact flow). This is a clean micro-model for `Derivation D6.0`: \(\tau_b\) is the control map required so that "refine and compare" lands back in the chosen family; failure of closure forces enlarging the family (counterterms).
 
+`Derivation D6.2a-HO (Harmonic-oscillator witness for step-halving).`
+Apply the control-map construction to \(y'' + y = 0\) written as a system with \(f(y,v) = (v,-y)\). The Jacobian is constant: \(f'= \bigl(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\bigr)\), so \(f'(y,v)[f(y,v)] = (-y,-v)\) (the harmonic oscillator has \(f''=0\), making the \(O(h^3)\) analysis trivially clean).
+
+The explicit Euler discrepancy is \(E_{h/2}\circ E_{h/2} - E_h = (h^2/4)\,f'[f]\), confirming D6.2a. At the fixed point \(a_\ast = 1/2\), the parametric map becomes \((y + hv - h^2 y/2,\; v - hy - h^2 v/2)\), which matches the exact flow \((y\cos h + v\sin h,\; v\cos h - y\sin h)\) to order \(h^2\). The control map \(\tau_2(a) = a/2 + 1/4\) drives any initial discretization toward this second-order-accurate scheme under repeated halving — exponential relaxation to the universal attractor, with rate \(1/2\) per doubling.
+
 `Remark D6.2a-sg (Semigroup law and beta function for general refinement).`
 Replacing step-halving by a general \(b\)-fold refinement (composing \(b\) copies of \(\Phi_{h/b}^{(a)}\) and reading off the \(O(h^2)\) coefficient) gives
 \[
