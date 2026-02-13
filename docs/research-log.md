@@ -3310,3 +3310,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Grades: fermionic-mediators 4.4 PASS, 6.3 PASS; action-angle 5.4 CONDITIONAL PASS → PASS (after fix), 7.6 PASS; uncuttable 2.7 CONDITIONAL PASS → PASS (after fix), 4.7 CONDITIONAL PASS → PASS (after fix).
 - Result: all six remarks publication-ready after bibliography fixes.
 - Next: commit.
+
+## 2026-02-13 (S168+C209: dispersion relations in fermionic-mediators)
+- Focus: Kramers-Kronig dispersion relations and their role in contact-limit EFT (fermionic Section 3).
+- Work: wrote blackboard 0 on dispersion relations (Kramers-Kronig, once-subtracted form, optical theorem). Reviewed by QFT expert subagent — corrected to Π(q²)-Π(0) subtracted form. Promoted as Remark 3.5 in fermionic-mediators (+3 lines).
+- Result: connects analytic structure of amplitudes to contact-limit emergence.
+
+## 2026-02-13 (S169+C210: Hamiltonian monodromy in action-angle)
+- Focus: Hamiltonian monodromy as global obstruction to action-angle coordinates (action-angle Section 6).
+- Work: wrote blackboard 1 on monodromy (Duistermaat 1980, GL(d,Z) transport, quantum lattice defect). Reviewed by integrable systems expert — **caught critical reference error**: Duistermaat 1980 is Comm. Pure Appl. Math. 33, 687 (NOT CMP 77, 65). Promoted as Remark 6.10 in action-angle (+5 lines).
+- Result: extends local Fourier tradeoff to global topological obstruction. Connects to quantum monodromy.
+- Next: B24 (bibliography entries for C207-C210), then more S+C expansion.

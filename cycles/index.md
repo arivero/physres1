@@ -210,6 +210,8 @@
 206. `C206` Completed.
 207. `C207` Completed.
 208. `C208` Completed.
+209. `C209` Completed.
+210. `C210` Completed.
 
 ### Bibliography Cycles (`Bnn`)
 - `B00` Completed.
@@ -405,6 +407,8 @@
 - `S165` Completed.
 - `S166` Completed.
 - `S167` Completed.
+- `S168` Completed.
+- `S169` Completed.
 
 ### Quality Cycles (`Qnn`)
 - `Q00` Completed.
@@ -564,15 +568,15 @@
 Cornerstone at ~1486 lines.
 
 Recent completed:
-1. Q119: quality review of six satellite remarks (fermionic 4.4, 6.3; action-angle 5.4, 7.6; uncuttable 2.7, 4.7). All PASS after bibliography fixes.
-2. Bibliography fixes: Tonomura1986, AharonovBohm1959 → action-angle; RaySinger1971, Hawking1977 → uncuttable; Weinberg1979b clarified.
-3. S166+C207: Zeta-function regularization Remark 2.7 in uncuttable (+3 lines).
-4. S167+C208: Aharonov-Bohm Remark 5.4 in action-angle (+3 lines).
+1. S168+C209: Dispersion relations / Kramers-Kronig Remark 3.5 in fermionic (+3 lines).
+2. S169+C210: Hamiltonian monodromy Remark 6.10 in action-angle (+5 lines).
+3. Q119: quality review of C203-C208 remarks — all PASS.
 
 Next:
-- Satellites: uncuttable 187 (12pp), fermionic 186 (12pp), action-angle 185 (12pp).
-- All three within 2 lines — perfectly balanced at 12pp each.
-- Continue S+C expansion. All three near equal; pick any.
+- Satellites: action-angle ~190 (13pp), fermionic ~189 (12pp), uncuttable ~187 (12pp).
+- Uncuttable is shortest — prioritize next remark there.
+- B24 needed for missing bib entries from C207-C210 (Kramers, Kronig, Duistermaat, Vu Ngoc, etc.).
+- Continue S+C expansion. Target ~200 lines each.
 - P cycles for satellite submissions when ready.
 - Future satellites: item C (Ordering), D (Rooted Trees), A (RCP).
 
