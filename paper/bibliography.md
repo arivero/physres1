@@ -56,6 +56,9 @@ Use this file as a source ledger.
 42. `[Sakurai2020]` J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University Press, 2020. ISBN `978-1-108-47322-4`. (Standard treatment of angular momentum, spherical harmonics, and quantum measurement.)
 43. `[FeynmanHibbs1965]` Richard P. Feynman and Albert R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as refinement limit of time-sliced amplitudes; foundational treatment.)
 44. `[Oksendal2003]` Bernt Øksendal, *Stochastic Differential Equations: An Introduction with Applications*, 6th ed., Springer, 2003. ISBN `978-3-540-04758-2`. DOI `10.1007/978-3-642-14394-6`. (Standard textbook on Itô vs Stratonovich integrals and their relationship; used in uncuttable satellite for Remark 3.2.)
+45. `[ZurekHabibPaz1993]` W. H. Zurek, S. Habib, and J. P. Paz, "Coherent States via Decoherence," *Physical Review Letters* 70 (1993), 1187–1190. DOI `10.1103/PhysRevLett.70.1187`. (Shows coherent states minimize entropy production under environmental coupling, emerging as preferred pointer states; used in action-angle satellite Remark 5.2.)
+46. `[BraginskyVorontsovThorne1980]` V. B. Braginsky, Yu. I. Vorontsov, and K. S. Thorne, "Quantum nondemolition measurements," *Science* 209 (1980), 547–557. DOI `10.1126/science.209.4456.547`. (QND measurement theory; used in action-angle satellite Remark 5.7.)
+47. `[Nogues1999]` C. Nogues, A. Rauschenbeutel, S. Osnaghi, M. Brune, J. M. Raimond, and S. Haroche, "Seeing a single photon without destroying it," *Nature* 400 (1999), 239–242. DOI `10.1038/22275`. (Dispersive QND photon-number measurement; used in action-angle satellite Remark 5.7.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).

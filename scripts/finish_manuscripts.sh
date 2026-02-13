@@ -21,7 +21,7 @@ if rg -n 'C[0-9]{2}' paper/main.md >/dev/null; then
   exit 1
 fi
 
-python3.12 scripts/update_references.py paper/main.md papers/*/main.md
+python3.12 scripts/update_references.py paper/main.md
 
 build_one() {
   local md_path="$1"

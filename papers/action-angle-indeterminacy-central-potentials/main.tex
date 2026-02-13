@@ -190,6 +190,33 @@ indeterminacy \(\mathrm{Var}(L_z)=m^2\hbar^2\). The directional orbital
 shapes of atomic and molecular physics are thus the simplest instance of
 the Fourier tradeoff quantified in Section 4.
 
+\texttt{Remark\ 3.2\ (Dipole\ selection\ rules\ as\ Fourier\ orthogonality).}
+The azimuthal Fourier structure \(e^{im\phi}\) of Section 3 has its most
+experimentally consequential manifestation in electromagnetic selection
+rules. The electric dipole transition matrix element involves
+\(\langle n'l'm'|r\,Y_1^q|nlm\rangle\), where \(q=0\) for
+\(\pi\)-transitions (\(z\)-polarization) and \(q=\pm 1\) for
+\(\sigma\)-transitions (circular polarization). The azimuthal integral
+\(\int_0^{2\pi}e^{-im'\phi}\,e^{iq\phi}\,e^{im\phi}\,d\phi=2\pi\,\delta_{m',m+q}\)
+gives the selection rule \(\Delta m=q=0,\pm 1\) directly from Fourier
+orthogonality on the circle. A separate selection rule,
+\(\Delta l=\pm 1\), arises from the polar integral (parity and
+Clebsch--Gordan orthogonality of the associated Legendre functions);
+this constrains the radial-angular coupling but is not a consequence of
+the azimuthal Fourier structure. For each allowed transition, the
+emitted photon carries angular momentum component \(q\hbar\) along the
+quantization axis: \(+\hbar\) for \(\sigma^+\) (\(\Delta m=+1\)),
+\(-\hbar\) for \(\sigma^-\) (\(\Delta m=-1\)), and \(0\) for \(\pi\)
+(\(\Delta m=0\)). The selection rule \(m'=m+q\) is thus angular momentum
+conservation projected onto the \(z\)-axis. The Zeeman effect provides
+the canonical experimental demonstration: in a magnetic field the
+\(m\)-degeneracy is lifted, and spectral lines split into components
+with \(\Delta m=0,\pm 1\) --- directly encoding the azimuthal Fourier
+structure in the emitted light. This is the observational face of the
+Fourier tradeoff quantified in Section 4: the orthogonality of Fourier
+modes constrains which modes can couple, and this orthogonality is
+precisely the mathematical content of the uniform \(\phi\) distribution.
+
 \hypertarget{fourier-tradeoff-localizing-phi-forces-a-broad-m-superposition}{%
 \section{\texorpdfstring{4. Fourier tradeoff: localizing \(\phi\) forces
 a broad
@@ -418,6 +445,36 @@ enforce one extreme of the action--angle tradeoff. The Zeno effect was
 first demonstrated experimentally by Itano et al.~(1990) using repeated
 optical pulses on trapped ions to inhibit transitions between internal
 states.
+
+\texttt{Remark\ 5.7\ (QND\ measurement\ of\ action\ variables).} Quantum
+nondemolition (QND) measurement completes the measurement story of
+Remarks 5.2 (decoherence) and 5.6 (Zeno effect). A QND observable \(A\)
+satisfies two conditions: \([A,H_{\mathrm{sys}}]=0\) (the observable is
+a constant of the free motion) and \([A,H_{\mathrm{int}}]=0\) (the
+measurement interaction does not feed back into \(A\)). Together these
+ensure that repeated measurement of \(A\) yields the same result without
+disturbing \(A\)'s subsequent evolution --- though the conjugate
+variable is randomized by each measurement (Braginsky, Vorontsov, and
+Thorne, 1980). For action variables (\(\hat N\) or \(L_z\)), the first
+condition is automatic: they commute with their respective system
+Hamiltonians by construction. The second condition constrains the
+measurement apparatus: the interaction must couple to \(A\) without
+generating terms that fail to commute with it. The canonical
+experimental realization is dispersive photon-number readout in cavity
+QED (Nogues et al., 1999): Rydberg atoms traverse a microwave cavity and
+acquire a phase shift \(\Delta\varphi=\chi\,n\,t_{\mathrm{int}}\)
+proportional to the photon number \(n\) via the dispersive interaction
+\(H_{\mathrm{int}}=\hbar\chi\,\hat n\,\sigma_z\). Ramsey interferometry
+on the atomic superposition state then reveals \(n\) --- distinguishing
+\(n=0\) from \(n=1\) --- without absorbing or emitting photons. QND
+measurement is conceptually distinct from the Zeno effect (Remark 5.6):
+Zeno freezing relies on rapid projective measurements that prevent any
+evolution, while QND exploits the fact that the measured observable is
+already conserved --- the measurement reads the value without needing to
+freeze the dynamics. Decoherence (Remark 5.2) selects coherent states
+via position coupling; QND measurement selects Fock states via action
+coupling. The choice of coupling determines which extreme of the
+action--angle tradeoff is enforced.
 
 \hypertarget{a-second-witness-the-harmonic-oscillator}{%
 \section{6. A second witness: the harmonic
@@ -901,6 +958,18 @@ prequantization integrality condition in Remark 7.5.
   and David J. Wineland, ``Quantum Zeno effect,'' \emph{Physical Review
   A} 41 (1990), 2295--2300. DOI \texttt{10.1103/PhysRevA.41.2295}.
   (First experimental demonstration of Zeno effect; used in Remark 5.6.)
+\item
+  {[}BraginskyVorontsovThorne1980{]} V. B. Braginsky, Yu. I. Vorontsov,
+  and K. S. Thorne, ``Quantum nondemolition measurements,''
+  \emph{Science} 209 (1980), 547--557. DOI
+  \texttt{10.1126/science.209.4456.547}. (QND measurement theory; used
+  in Remark 5.7.)
+\item
+  {[}Nogues1999{]} C. Nogues, A. Rauschenbeutel, S. Osnaghi, M. Brune,
+  J. M. Raimond, and S. Haroche, ``Seeing a single photon without
+  destroying it,'' \emph{Nature} 400 (1999), 239--242. DOI
+  \texttt{10.1038/22275}. (Dispersive QND photon-number measurement;
+  used in Remark 5.7.)
 \end{enumerate}
 
 \end{document}
