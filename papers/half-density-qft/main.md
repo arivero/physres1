@@ -156,7 +156,22 @@ Half-density kernels also make the amplitude-vs-density doubling completely expl
 K_{\rho_t}(x,y)
 =\int_{M\times M} K_t(x,x')\,K_{\rho_0}(x',y')\,\overline{K_t(y,y')}.
 \]
-So densities naturally propagate by a kernel on the doubled space \(M\times M\), built from the forward kernel and its conjugate. This is the kernel-level origin of bra/ket (forward/backward) doubling in real expectation values; a fuller discussion is beyond this note’s scope.
+So densities naturally propagate by a kernel on the doubled space \(M\times M\), built from the forward kernel and its conjugate. This is the kernel-level origin of bra/ket (forward/backward) doubling in real expectation values; a fuller discussion is beyond this note's scope.
+
+`Remark HD-D4.2 (Heat kernel as bi-half-density; trace without \(\sqrt{|g|}\)).`
+The heat kernel \(K(t;x,y)\) of \(P\) on a Riemannian \((M,g)\) has the DeWitt-Schwinger short-time expansion [DeWitt1965] [Vassilevich2003]
+\[
+K(t;x,y)\sim(4\pi t)^{-D/2}\,\Delta^{1/2}(x,y)\,e^{-s(x,y)/(2t)}\sum_{n\ge0}a_n(x,y)\,t^n,
+\]
+where \(s(x,y)\) is Synge's world function (half the squared geodesic distance; not to be confused with the conformal factor \(\sigma\) of Derivation HD-D1.3), \(\Delta(x,y)\) the Van Vleck determinant (the Jacobian of the exponential map, normalized so \(\Delta(x,x)=1\)), and \(a_n\) the Seeley-DeWitt coefficients (\(a_0(x,x)=1\)). Since \(\Delta^{1/2}(x,y)\) is a bi-scalar and \(|g(x)|^{1/4}\) provides a half-density at \(x\), the combination \(|g(x)|^{1/4}\,\Delta^{1/2}(x,y)\,|g(y)|^{1/4}\) transforms as a bi-half-density. Define
+\[
+\widetilde K(t;x,y):=|g(x)|^{1/4}\,K(t;x,y)\,|g(y)|^{1/4}.
+\]
+At coincidence (\(s=0\), \(\Delta=1\)), the leading behavior \(\widetilde K(t;x,x)\sim(4\pi t)^{-D/2}\) matches exactly the normalization of Derivation HD-D1.1a: the heat kernel is the time-parameterized approximate identity, \(\widetilde K(t)\to K_{\mathrm{Id}}\) distributionally as \(t\to0^+\). The trace is then
+\[
+\mathrm{Tr}\,K(t)=\int_M\widetilde K(t;x,x)\,d^Dx,
+\]
+where the \(\sqrt{|g|}\) factor of the standard trace formula has been absorbed into the definition of \(\widetilde K\). For the massless operator \(P=-\nabla^2+\xi R\), the first Seeley-DeWitt coefficients at coincidence are \(a_1(x,x)=(1/6-\xi)R\) and \(a_2(x,x)\) is a linear combination of \(R^2\), \(R_{\mu\nu}R^{\mu\nu}\), \(\Box R\); these encode the curvature counterterms that appear in Section 5's contact-term analysis.
 
 # 5. Contact terms and counterterms as diagonal delta kernels (kernel-level remark)
 In QFT, divergences are removed by adding local counterterms to the action, e.g.
@@ -207,3 +222,5 @@ Gauge theories suggest a second, deeper appearance of half-densities: the BV for
 3. [Hormander2003] Lars Hörmander, *The Analysis of Linear Partial Differential Operators I: Distribution Theory and Fourier Analysis*, 2nd ed., Springer, 2003. DOI `10.1007/978-3-642-61497-2`. (Schwartz kernel theorem; distributional calculus for PDE Green functions.)
 4. [Wald1984] Robert M. Wald, *General Relativity*, University of Chicago Press, 1984. ISBN `978-0-226-87033-5`. (Conformal coupling, scalar fields on curved backgrounds, standard baseline for QFT on curved spacetimes.)
 5. [Costello2011] Kevin Costello, *Renormalization and Effective Field Theory*, Mathematical Surveys and Monographs, vol. 170, AMS, 2011. ISBN `978-0-8218-5288-0`. (BV formalism with half-density integration on field space.)
+6. [DeWitt1965] Bryce S. DeWitt, *Dynamical Theory of Groups and Fields*, Gordon and Breach, 1965. (DeWitt-Schwinger expansion, Van Vleck determinant transport equation.)
+7. [Vassilevich2003] Dmitri V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* 388 (2003), 279–360. arXiv:`hep-th/0306138`. DOI `10.1016/j.physrep.2003.09.002`. OA: arXiv. (Comprehensive review of heat kernel asymptotics and Seeley-DeWitt coefficients.)
