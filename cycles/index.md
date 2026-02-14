@@ -12,13 +12,13 @@
 |-------|-------|-------|
 | Content (`Cnn`) | 295 | C00–C302 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 282 | S00–S293 (gaps: S276–S278 active) |
+| Study (`Snn`) | 283 | S00–S294 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 178 | Q00–Q184 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 34 | D00–D38 (gaps: none) |
+| Discovery triage (`Dnn`) | 35 | D00–D38 (gaps: none) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
-**Total archived: ~3278 cycle files.**
+**Total archived: ~3280 cycle files.**
 
 ## Active / In Progress
 
@@ -39,6 +39,7 @@
 - `D34` (completed): Does P4.2 (ℏ-necessity) extend to Lorentzian (real-time) composition? S291 completed (blackboards/6.md). **Verdict**: **Partial closure** (D34 hypothesis confirmed). Explicit Fresnel integral calculation shows signature-independent parts (d/2 exponent, κ=ℏ necessity, semigroup law) and signature-dependent parts (iε prescription, convergence mode, identity limit). P4.2 conclusions (C)+(L)+(D) extend to Lorentzian; (I) requires distributional framework. Algebraic vs analytic split clarifies why Euclidean proof transfers. **Note:** D37 later upgraded this to full closure by deriving iε from composition.
 - `D37` (completed): Can iε prescription be derived from composition+identity, or is it external input? S292 completed (blackboards/6.md). **Verdict**: **iε is unique** — theorem of composition (C) alone, not external input! Among regulators exp(−ε f((x−y)²/t)), only f(x)=x (linear) preserves semigroup closure. Proof: non-linear f yields non-Gaussian integrands breaking composition. **Surprise**: Identity limit (I) not needed; composition alone forces uniqueness. **Impact**: D34 upgrades from partial to **full closure**; P4.2 effective hypothesis count reduced; iε joins exponential weight (S288) as theorem of semigroup, not assumption.
 - `D36` (completed): Do P4.2's d/2 and κ-necessity persist for interacting (V≠0) systems, or are they free-particle artifacts? S293 completed (blackboards/4.md). **Verdict**: **Full persistence** — Mehler kernel (harmonic oscillator) composition forces d/2 and κ identically to free case. **Mechanism**: d/2 forcing is purely algebraic (dimension-counting); works with "time function" sin(ωt) just like t; κ-necessity unaffected (trigonometric functions dimensionless). Short-time a_1 = −iV/ℏ correctly extracted, confirming Seeley-DeWitt coefficients are **compatibility conditions**, not escape routes. **Impact**: P4.2 extends to interacting systems without qualification; closes "free-particle artifact" objection via three witnesses (S287 curved, S292 iε, S293 interacting).
+- `D38` (completed): Does D35's layer-3 deformation freedom (O(ℏ²) scalar potential) have measurable consequences? S294 completed (blackboards/6.md). **Verdict 4+1**: First-order shift O(α) **vanishes identically** (equivalence stronger than expected); O(α²) shift unmeasurably small (|ΔE₀| ~ 0.006-0.06 meV ≪ 0.1 meV resolution). **Discovery**: S290 error corrected — half-density does NOT eliminate first-derivative term in 1D; both Weyl and HD share connection term f'∂/∂q, differing only in O(ℏ²) scalar (−ℏ²f'²/32mf). **Impact**: Deformation equivalence (Section 7, P5.2) is **physical**, not merely formal; D35 strengthened (prescriptions agree on Layers 1 AND 2, differ only on Layer 3).
 
 ## Next Action
 
@@ -111,6 +112,9 @@
 - `D21` closed: administrative/policy trace only (not discovery).
 - Drift postmortem: ambiguity came from missing explicit prohibition of policy/editorial tasks in `D`; fixed by adding `D` scope guard in `cycles/README.md` and strict track mapping in `AGENTS.md`/`docs/handoff.md`.
 - `S277` (iteration 4): generalized drift gate to arbitrary scale factor `Delta nu_b`, with peak-location formula and asymptotic window estimates.
+
+## Session Addenda (2026-02-14, 14:32 CET)
+- **D38+S294 (completed)**: Observable O(ℏ²) test — deformation equivalence is **physical**! Position-dependent mass f(q) = 1+αq² energy shift between Weyl and half-density: **Verdict 4+1** (first-order vanishes, O(α²) unmeasurably small). Key formula: ΔE₀ = −ℏωα₀²/16. For GaAs quantum wells: |ΔE₀| ~ 0.006-0.06 meV ≪ 0.1 meV resolution. **Discovery** (YES): S290 error corrected — half-density does NOT eliminate first-derivative term in 1D; both Weyl and HD share **same** connection term f'∂/∂q, differing only in O(ℏ²) scalar −ℏ²f'²/(32mf). This **strengthens** D35: prescriptions agree on Layers 1 AND 2 (not just Layer 1), differ only on Layer 3. Blackboard slot 6 (supersedes S292).
 
 ## Session Addenda (2026-02-14, 13:58 CET)
 - **D36+S293 (completed)**: **MAJOR DISCOVERY** — P4.2 extends to interacting systems! Mehler kernel (harmonic oscillator V=(1/2)mω²q²) composition forces d/2 and κ-necessity identically to free case. d/2 forcing is **purely algebraic** (dimension-counting works with "time function" sin(ωt) just like t). κ-necessity unaffected (ω-dependent trigonometric functions dimensionless). Short-time a_1 Seeley-DeWitt coefficient correctly extracted (a_1 = −iV/ℏ), confirming a_n are **compatibility conditions**, not escape routes. Impact: Closes "free-particle artifact" objection via three witnesses: S287 (curved space, metric-independent), S292 (iε uniqueness, signature-independent), S293 (interacting V≠0, Seeley-DeWitt is compatibility). Blackboard in slot 4 (supersedes S286).

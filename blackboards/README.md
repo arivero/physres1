@@ -61,7 +61,7 @@ relevant slot. Deletion criteria (in priority order):
 | 3 | Half-density vs Moyal ordering comparison (D35/S290) | Active (S290) |
 | 4 | Mehler kernel composition: interacting witness for P4.2 (D36/S293) | Active (S293) |
 | 5 | Curved-space composition test for P4.2 extension (D30/S287) | Active (S287) |
-| 6 | Parametrized Fresnel regularization composition test (D37/S292) | Active (S292) |
+| 6 | Weyl vs half-density energy shift for PDM (D38/S294) | Active (S294) |
 
 ## Before Choosing Next Task: Read All Blackboards
 **When deciding what to work on next**, read the **contents** of all blackboards (not just the index):
