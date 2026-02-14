@@ -217,7 +217,10 @@ $$
 \frac{d\mathbf L}{dt}=\mathbf r\times \mathbf F=\mathbf 0.
 $$
 
-So the areal law is independent of the inverse-power index \(n\) in \(\mathbf F=-(K/r^n)\hat{\mathbf r}\): \(n\) changes radial dynamics and orbit families, but not the areal-velocity conservation mechanism itself. (A companion note on relativistic central orbits examines what happens when the kinematics is Lorentz-compatible: the inverse-square case admits exact relativistic simplification, with bound orbits requiring \(L>K/c\).)
+So the areal law is independent of the inverse-power index \(n\) in \(\mathbf F=-(K/r^n)\hat{\mathbf r}\): \(n\) changes radial dynamics and orbit families, but not the areal-velocity conservation mechanism itself. A companion note on relativistic central orbits analyzes Lorentz-compatible kinematics in detail.
+
+`Remark P1.1a (Asymptotic threshold bridge: Newton \(3\) vs SR \(2\)).`
+For attractive power-law \(F(r)=K/r^q\), fixed angular momentum \(L\), and high-momentum kinetic asymptotic \(E_{\mathrm{kin}}(p)\sim a p^\nu\), one has \(p\sim L/r\) as \(r\to0\). Hence the centrifugal barrier scales as \(r^{-\nu}\) while the attraction scales as \(r^{-(q-1)}\), giving threshold \(q_{\mathrm{crit}}=\nu+1\). This recovers the Newtonian/SR shift (\(\nu=2\Rightarrow q_{\mathrm{crit}}=3\), \(\nu=1\Rightarrow q_{\mathrm{crit}}=2\)) in one line. The criterion is a fixed-\(L\), small-\(r\) asymptotic statement and is distinct from the separate inverse-square dimensional identity mechanism (where \(K/L\) has velocity units and yields \(v=K/L\) in SR circular analysis).
 
 `Heuristic H1.1 (Impulse-to-continuous interpretation).`
 The impulse model is a refinement scaffold for continuous forcing, not a literal claim that nature acts by discrete kicks. Its value is structural: invariants proven exactly at finite step survive controlled refinement.
