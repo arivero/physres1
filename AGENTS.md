@@ -3,6 +3,39 @@
 ## Scope
 This file applies to the entire repository.
 
+## Canonical Contract
+1. `AGENTS.md` is the canonical repository contract for all agents.
+2. If another local agent file exists (for example `CLAUDE.md`), treat it as supplemental only.
+3. When overlap exists, keep policy in `AGENTS.md` and avoid split-brain duplicates across agent-specific files.
+
+## Session Startup (Read Order)
+At session start, read these in order:
+1. `AGENTS.md`
+2. `docs/motivations.md`
+3. `docs/handoff.md`
+4. `docs/research-state.md`
+5. `cycles/index.md`
+6. `cycles/README.md`
+
+## Context Budget Rules
+1. Keep `cycles/index.md` compact; do not append per-cycle completed-line logs there.
+2. `cycles/archive/` is large; never bulk-read it. Open specific archived files only when needed.
+3. `docs/research-log.md` is append-only; at startup read only recent tail context.
+4. Read only blackboard slots relevant to the current cycle.
+
+## Context Poisoning Guardrails
+1. Default-deny for high-volume history files: do not read full contents of:
+   - `docs/research-log.md`
+   - `cycles/archive/**`
+   - session transcripts / continuation dumps (`*continued-from-a-previous*.txt`, `conv_patched.md`)
+2. Read archived or log files only with an explicit reason tied to the active cycle, and only the minimal slice needed.
+3. Never use broad scans that pull archive/log bodies into context (for example recursive `cat`, broad `rg` over `cycles/archive/`, or opening entire large files).
+4. Preferred startup pattern:
+   - Read policy/state files listed in Session Startup.
+   - For logs, read only a short tail (for example last 30-60 lines).
+   - For archive, open a single named file only when required.
+5. If accidental ingestion happens, state it in the cycle execution log and immediately re-anchor on canonical state files (`AGENTS.md`, `docs/research-state.md`, `cycles/index.md`) before proceeding.
+
 ## Manuscript Policy
 1. `C0x` cycle labels are planning-only metadata.
 2. Keep cycle labels in `cycles/` files, checklists, or comments.
@@ -53,6 +86,28 @@ as a longer article (Phys. Rev. D scale, ~8–15pp).
    - List all cycle IDs in the batch (e.g., `S200+C241+S201+C242+Q128`).
    - Include a token/usage estimate if the tooling exposes it. If not available, write `tokens: N/A`.
 
+## Cycle Execution Minimum
+1. In a normal working invocation, run at least one cycle (`S/B/C/Q`, or a small coherent chain) chosen from `cycles/index.md`.
+2. For each cycle worked, maintain the four artifacts:
+   - `cycles/<ID>-plan.md`
+   - `cycles/<ID>-execution.md`
+   - `cycles/<ID>-debate.md`
+   - `cycles/<ID>-redteam.md`
+3. Update both:
+   - `docs/research-log.md` (dated entry)
+   - `cycles/index.md` (status + next actions)
+
+## Content Cycle Diffstat Requirement
+For every `Cnn` cycle, after staging and before commit:
+1. Run: `scripts/paper-diffstat.sh --cached`
+2. Paste output under `## Diffstat` in `cycles/Cnn-execution.md`.
+3. If output is `TOTAL +0 -0`, explicitly explain why no promotion occurred (and prefer `S`/`B` instead of forcing prose).
+
+## Pre-Commit Hygiene Checks (When Relevant)
+If `paper/main.md` changed:
+1. Cycle-tag leak check: `rg -n 'C[0-9]{2}' paper/main.md`
+2. Transcript mention check: `rg -n 'conv_patched' paper/main.md`
+
 ## Subagent Recipes (Optional)
 The recipes below describe how to delegate specific tasks to subagents for improved quality. They are **optional**: if the main agent does not support orchestration of subagents (e.g., Codex CLI, Copilot), skip these steps and perform the review in-context instead. The core cycle logic is the same either way.
 
@@ -86,3 +141,9 @@ Pick one per subagent invocation. Vary across cycles for diverse feedback.
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING` for later local ingestion.
 3. Treat preprints (including A. Rivero notes/arXiv drafts) as **guides**, not sources of truth: for key claims, seek independent primary/peer-reviewed support and label preprint-derived content as heuristic until verified.
+4. Do not commit `sources/`; it is regenerable and gitignored.
+
+## Local Source Acquisition (When Applicable)
+If the running username matches the remote GitHub repo owner on a private machine with sufficient storage:
+1. Agents may acquire sources aggressively when lawful (including non-OA routes), without blocking on confirmation.
+2. OA-first remains the citation-ordering/default policy.
