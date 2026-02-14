@@ -1077,6 +1077,23 @@ Finite-dimensional beta-function systems are closed only after choosing a trunca
 
 This caveat is essential for interpreting section 8 correctly: the RG equations written here are exact at the level of the chosen variable set, but practical truncations can make them approximate. The main thesis is unaffected: renormalization remains the rule that restores cross-scale consistency under composed refinement.
 
+`Derivation D6.4 (Two-level truncation audit and a quantitative stability window).`
+Take a one-coupling flow with two truncation levels:
+\[
+\beta_{(2)}(g)=-b_0 g^2,\qquad
+\beta_{(3)}(g)=-b_0 g^2-b_1 g^3,\qquad b_0>0.
+\]
+At fixed \(g\), define the local truncation defect
+\[
+\delta_\beta(g):=\frac{|\beta_{(3)}(g)-\beta_{(2)}(g)|}{|\beta_{(2)}(g)|}
+=\left|\frac{b_1}{b_0}\right|\,|g|.
+\]
+For a tolerance \(\eta\in(0,1)\), requiring \(\delta_\beta(g)\le \eta\) yields an explicit stability window
+\[
+|g|\le g_{\max}(\eta):=\eta\,\frac{b_0}{|b_1|}.
+\]
+Thus the truncation is quantitatively controlled only in the weak-coupling region \( |g|\ll b_0/|b_1| \); when \( |g|\sim b_0/|b_1| \), the neglected term is order-one and truncation closure fails. This turns the qualitative caveat of `Proposition P6.3` into a concrete pass/fail criterion.
+
 Transition to Section 9:
 we now have the full chain Newtonian refinement \(\to\) action additivity \(\to\) path-integral composition \(\to\) deformation compatibility \(\to\) renormalized refinement control. The final synthesis section stress-tests the transitions, labels what remains heuristic, and consolidates the manuscript into a single coherent argument.
 
@@ -1089,6 +1106,13 @@ The manuscript has built one chain across seven technical steps:
 4. Section 6: composition under slicing plus additive action yields exponential weighting and stationary-phase classical recovery.
 5. Section 7: ordering ambiguity is recast as deformation-equivalence data with a shared Poisson classical limit.
 6. Section 8: divergent refinement is controlled by renormalization maps and RG semigroup consistency (`Remark D6.2a-sg` gives the explicit semigroup law and beta function in a toy model).
+
+`Remark P7.1a (Compact compatibility map for navigation).`
+The same chain can be read as three linked tracks, each with explicit witnesses:
+1. **Partition track**: D1.1-D1.2 \(\to\) D2.1 \(\to\) D3.1 \(\to\) D4.1/D4.1a.
+2. **Representation track**: D4.1b \(\to\) D5.1 \(\to\) D9.1/D9.1a/D9.1b/D9.1d/D9.1e.
+3. **Scale track**: D6.0-D6.2 \(\to\) D6.2a-sg/D6.4 \(\to\) D8.1-D8.2 \(\to\) D11.2-D11.3.
+Each arrow is a compatibility bridge, not a change of subject. This compact map is the textual counterpart of the diagram requested in Section 9.5.
 
 The unifying thesis is therefore not "classical then quantum then QFT" as disconnected layers, but "one refinement/composition problem under progressively stricter consistency requirements."
 
@@ -1159,17 +1183,39 @@ each layer adds new consistency constraints while preserving prior invariants in
 
 ## 9.4 Residual Vulnerabilities
 1. The path integral remains formal at full measure-theoretic level; constructive control is not provided here.
+   Minimal closure target: exhibit one explicit regulated kernel family \(K_\varepsilon\) with a proved composition law and a controlled \(\varepsilon\to0\) statement in a nontrivial model.
 2. Deformation equivalence is stated at the structural level; explicit model-by-model operator-domain analysis is deferred.
+   Minimal closure target: carry one curved-manifold kinetic symbol through two quantizations and the half-density conjugation map, with explicit domain assumptions and \(O(\hbar)\) mismatch terms.
 3. RG flow is derived structurally; a fully explicit quantum-mechanical computation (2D contact interaction) is provided in Appendix 10.5, but a field-theory-level loop computation is not included.
+   Minimal closure target: add one fixed-scheme one-loop QFT computation whose subtraction, beta function, and scheme-change behavior are written in the same normalization conventions as Section 10.1.
 4. Truncation closure in section 8 is identified but not benchmarked by an explicit truncation-error study.
+   Minimal closure target: compare at least two truncation levels on the same model and report an observable-level stability window.
 
-These are not hidden defects; they are explicit scope boundaries. The manuscript now separates proven derivations from heuristic bridges, which was a core objective of the staged design.
+These are explicit scope boundaries, not hidden defects. They also define falsifiable closure tests for the next revision wave: each unresolved point is now paired with a concrete witness that would close it.
 
-## 9.5 Future Work
-The present manuscript emphasizes explicit derivations at the level of mechanics and simple quantum models. Natural extensions include:
-1. a field-theory loop computation in a fixed scheme, extending the quantum-mechanical RG witness of Appendix 10.5 to a genuine QFT setting,
-2. upgrade the compact reader map into a consolidated diagram/figure for reader navigation,
-3. a final notation/normalization pass tailored to the submission venue.
+## 9.5 Future Work (Task-Driven Revision Queue; Editorial Package Labels)
+To keep the manuscript evolving by derivation rather than by incremental wording changes, future edits should be organized as concrete work packages:
+
+1. **Package A (Path-space control witness).**
+   Deliverable: one subsection with a regulated family \(K_\varepsilon\), its composition identity, and a limit statement.
+   Pass criterion: at least one numbered statement with assumptions and one explicit failure mode when assumptions are dropped.
+   Current status: Appendix 10.6 now contains free-kernel exact composition, first-order bounded-potential witness, quantitative `L^\infty` control, and an exact nontrivial solvable kernel benchmark (`D12.1`, `P12.1`, `D12.2`, `P12.2`, `D12.3`); full constructive path-space control remains open.
+2. **Package B (Ordering/domain benchmark).**
+   Deliverable: one appendix-level model comparing two orderings plus half-density conjugation.
+   Pass criterion: explicit operator difference through \(O(\hbar)\) and a clear statement of domain/equivalence boundaries.
+   Current status: Appendix 10.2 now includes periodic/curved symmetry benchmarks and one explicit self-adjoint extension witness (`D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`); full extension classification remains open.
+3. **Package C (QFT-level RG witness).**
+   Deliverable: one-loop running in a fixed subtraction scheme using manuscript conventions.
+   Pass criterion: explicit \(\beta(g)\), one scheme-change computation, and direct mapping to scale compatibility in Section 8.
+4. **Package D (Truncation error audit).**
+   Deliverable: side-by-side flows for two truncation levels with at least one observable comparison.
+   Pass criterion: a quantitative stability region and one explicit breakdown regime.
+5. **Package E (Reader-map consolidation).**
+   Deliverable: one compact compatibility diagram linking Sections 3--8 and Appendices 10.1--10.6.
+   Pass criterion: every arrow references at least one numbered proposition/derivation in the text.
+
+A practical rule follows: additions that do not advance at least one package should be deferred, so revision effort remains concentrated on technical closure rather than bookkeeping edits. These package labels are editorial planning tags only, not theorem/claim labels.
+Quick navigation pointer: Appendix 10.1 primarily advances Package C/D; Appendix 10.2 primarily advances Package B; Appendix 10.6 primarily advances Package A; Section 9.1 + Appendix 10.3 support Package E.
 
 ## 9.6 Conclusion
 The paper’s central thesis is that “continuum laws” are most cleanly understood as *stable targets of controlled refinement*: finite-step invariants (Newton’s polygonal dynamics) persist through the action formulation, and action additivity is the algebraic structure that forces a consistent composition law. In the quantum setting, multiplicative composition together with local additivity makes exponential weighting structurally natural, and classical dynamics are recovered by stationary-phase concentration. Two further control mechanisms enter when naive refinement is not uniquely defined: deformation quantization organizes ordering/discretization choices into equivalence classes compatible with a common classical limit, and renormalization supplies the compatibility condition required when refinement limits diverge.
@@ -1244,6 +1290,38 @@ $$
 
 So scheme changes shift higher-order terms while preserving the first nontrivial flow coefficient in this template.
 
+`Derivation D8.2a (One-loop QFT witness in fixed scheme: \(\lambda\phi^4\) near four dimensions).`
+To make Section 8's structural RG statements explicit at QFT level, consider scalar \(\lambda\phi^4\) theory in \(D=4-2\varepsilon\), with minimal-subtraction-style parametrization
+\[
+\lambda_B
+=
+\mu^{2\varepsilon}\!\left(
+\lambda_R
++\frac{3}{16\pi^2}\frac{\lambda_R^2}{\varepsilon}
++O(\lambda_R^3)
+\right).
+\]
+Here the interaction convention is \(\mathcal L_{\mathrm{int}}=\lambda_R\phi^4/4!\), which fixes the one-loop coefficient \(3/(16\pi^2)\).
+Holding \(\lambda_B\) fixed and differentiating with respect to \(\ln\mu\) gives
+\[
+\beta(\lambda_R)\equiv \mu\frac{d\lambda_R}{d\mu}
+=
+-2\varepsilon\,\lambda_R
++\frac{3}{16\pi^2}\lambda_R^2
++O(\lambda_R^3).
+\]
+At \(D=4\) (\(\varepsilon\to0\)):
+\[
+\beta(\lambda_R)=\frac{3}{16\pi^2}\lambda_R^2+O(\lambda_R^3),
+\qquad
+\frac{1}{\lambda_R(\mu)}
+=
+\frac{1}{\lambda_R(\mu_0)}
+-\frac{3}{16\pi^2}\ln\!\frac{\mu}{\mu_0}
++O(\lambda_R).
+\]
+This is the field-theory analogue of `Derivation D6.2`: logarithmic refinement dependence is traded for controlled scale running in a fixed subtraction convention. Under an analytic scheme change \(\lambda_R'=\lambda_R+a\lambda_R^2+O(\lambda_R^3)\), the coefficient \(3/(16\pi^2)\) is unchanged at this order, matching `Proposition P8.1`.
+
 ## 10.2 Ordering/Discretization Pair with Same Classical Limit
 This appendix gives an explicit example of the Section 6/Section 7 claim that discretization choice changes \(O(\hbar)\) terms while preserving classical dynamics.
 
@@ -1287,6 +1365,80 @@ Q_W(fp^2)-Q_L(fp^2)=-i\hbar f'(\hat q)\hat p-\tfrac{1}{4}\hbar^2 f''(\hat q).
 The correction now has two layers: an \(O(\hbar)\) first-order differential operator and an \(O(\hbar^2)\) potential. In particular, different orderings of \(p^2/m(q)\) disagree in the coefficient of the first-derivative term \(i\hbar(m'/m^2)\hat p\).
 The half-density conjugation \(|g|^{1/4}\Delta_g|g|^{-1/4}\) eliminates this first-derivative ambiguity entirely: it selects the unique second-order operator with no connection term in the scalar picture, providing a geometric resolution of the ordering ambiguity for kinetic operators (cf.\ Derivation HD-D1.3 in the half-density companion note).
 
+`Derivation D9.1b (Periodic-domain symmetry witness for \(Q_L\) vs \(Q_W\)).`
+Take configuration space \(S^1\) with coordinate \(q\in[0,2\pi)\), Hilbert space \(L^2(S^1,dq)\), and periodic Sobolev domain \(H^1_{\mathrm{per}}(S^1)\). Let \(f\in C^1(S^1,\mathbb R)\). Define
+\[
+Q_L=-i\hbar\,f(q)\partial_q,\qquad
+Q_W=-i\hbar\!\left(f(q)\partial_q+\frac12 f'(q)\right).
+\]
+For \(u,v\in H^1_{\mathrm{per}}(S^1)\), integration by parts with periodic boundary cancellation gives
+\[
+\langle u,Q_L v\rangle-\langle Q_L u,v\rangle
+=
+i\hbar\int_0^{2\pi}\overline{u(q)}\,f'(q)\,v(q)\,dq,
+\]
+while for the Weyl representative the extra \(\frac12 f'\) terms cancel:
+\[
+\langle u,Q_W v\rangle-\langle Q_W u,v\rangle=0.
+\]
+Hence \(Q_W\) is symmetric on \(H^1_{\mathrm{per}}(S^1)\) for real \(f\), whereas \(Q_L\) is symmetric only for \(f' = 0\). This is an explicit operator-domain boundary behind the \(O(\hbar)\) ordering difference of `Derivation D9.1`.
+
+`Remark D9.1c (Scope boundary for domain claims).`
+The witness above establishes symmetry on the stated periodic domain; it does not claim essential self-adjointness or classify self-adjoint extensions in singular/degenerate-coefficient cases.
+
+`Derivation D9.1d (Curved-manifold kinetic benchmark via half-density conjugation).`
+Let \((M,g)\) be a compact Riemannian manifold without boundary. Write \(d\mathrm{vol}_g=|g|^{1/2}dx\) in a local chart \(x\), and define
+\[
+U: L^2(M,d\mathrm{vol}_g)\to L^2(M,dx),\qquad (U\psi)(x)=|g(x)|^{1/4}\psi(x).
+\]
+The Laplace-Beltrami kinetic operator
+\[
+H_g:=-\frac{\hbar^2}{2}\Delta_g,\qquad \Delta_g=|g|^{-1/2}\partial_i\!\left(|g|^{1/2}g^{ij}\partial_j\right),
+\]
+is symmetric on \(H^2(M,d\mathrm{vol}_g)\). Conjugating by \(U\) gives
+\[
+\widetilde H_g:=U H_g U^{-1}
+=-\frac{\hbar^2}{2}\,|g|^{1/4}\Delta_g|g|^{-1/4}
+\]
+on domain \(U(H^2(M,d\mathrm{vol}_g))\subset L^2(M,dx)\), and symmetry is preserved by unitarity:
+\[
+\langle u,\widetilde H_g v\rangle_{dx}
+=\langle U^{-1}u,H_g U^{-1}v\rangle_{d\mathrm{vol}_g}
+=\langle \widetilde H_g u,v\rangle_{dx}.
+\]
+This gives a curved-manifold, operator-domain witness that the half-density prescription is not a cosmetic rewrite: it is the symmetry-preserving transport of the geometric kinetic operator.
+
+`Derivation D9.1e (Naive left kinetic operator fails symmetry in generic charts).`
+On the same chart domain (with boundary terms suppressed by compactness/periodicity), define the left-ordered principal-symbol operator
+\[
+H_L:=-\frac{\hbar^2}{2}\,g^{ij}(x)\partial_i\partial_j.
+\]
+For smooth \(u,v\), repeated integration by parts yields
+\[
+\langle u,H_L v\rangle_{dx}-\langle H_L u,v\rangle_{dx}
+=\frac{\hbar^2}{2}\int dx\;(\partial_i g^{ij})\big(\overline{u}\,\partial_j v-(\partial_j\overline{u})\,v\big).
+\]
+Hence \(H_L\) is symmetric only under extra coordinate/coefficient constraints (e.g. \(\partial_i g^{ij}=0\) in the chosen chart). In general curved coordinates, left ordering breaks symmetry while the half-density-conjugated Laplace-Beltrami form remains symmetric by construction (`Derivation D9.1d`).
+
+`Derivation D9.1f (Domain-parameter witness: same symbol, inequivalent self-adjoint realizations).`
+Consider the formal 1D kinetic operator
+\[
+\widehat H_{\mathrm{form}}=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}
+\]
+on \(C_c^\infty(\mathbb R\setminus\{0\})\). It is symmetric but not self-adjoint; self-adjoint realizations are fixed by boundary data at \(x=0\). A standard one-parameter family is the delta-contact extension
+\[
+\mathcal D(H_g)=\Bigl\{\psi\in H^2(\mathbb R\setminus\{0\})\cap H^1(\mathbb R):
+\psi'(0^+)-\psi'(0^-)=\frac{2mg}{\hbar^2}\psi(0)\Bigr\},
+\]
+with \(H_g\psi=\widehat H_{\mathrm{form}}\psi\) for \(x\neq0\). Different \(g\) define inequivalent quantum theories while sharing the same principal symbol \(p^2/(2m)\): for \(g<0\) there is one bound state
+\[
+E_B=-\frac{m g^2}{2\hbar^2},
+\]
+whereas for \(g\ge0\) no bound state appears. So representation compatibility in Package B requires explicit domain data in addition to ordering data.
+
+`Remark D9.1g (Scope boundary for extension witness).`
+This is a witness-level extension family, not a full classification of all self-adjoint extensions (e.g. full \(U(2)\)-parameter boundary conditions at a point).
+
 `Proposition P9.1 (Discretization-ordering equivalence class statement).`
 If two short-time kernel prescriptions map to \(Q_L\)-type and \(Q_W\)-type representatives of the same classical symbol algebra, then they define the same classical equations and differ only by controlled \(O(\hbar)\) corrections. This is the worked version of the Section 6 to Section 7 transition claim [Landsman1998].
 
@@ -1328,6 +1480,9 @@ An operational way to state RCP is to write predictions as a family \(\{\mathcal
 \]
 Written this way, compatibility is falsifiable: closure can fail when no admissible \(\theta'\) exists. The manuscript’s simplest explicit witness is the free short-time kernel ansatz: demanding semigroup closure under time-slice composition fixes the normalization exponent \(A(t)\propto t^{-d/2}\) (Derivation D4.1a); choosing any other power breaks closure.
 
+`Remark D10.1b (What belongs to \(\theta\): ordering data and domain data).`
+The parameter bundle \(\theta\) in `Derivation D10.1a` includes more than couplings: it also contains representation data such as ordering choices and admissible operator domains/boundary conditions. `Derivation D9.1f` gives a concrete witness: the same principal symbol \(p^2/(2m)\) admits inequivalent self-adjoint realizations indexed by contact parameter \(g\), with different spectra. So the \(\mathcal Q_\hbar\)-channel is not "ordering only"; closure may fail unless domain data is transported as part of \(\theta\).
+
 `Derivation D10.1 (Bridge to sections 3--8).`
 1. **Partition compatibility** (\(\mathcal C_t\)): Sections 3--4 (area-law refinement; action/Noether bridge).
 2. **Representation compatibility** (\(\mathcal Q_\hbar\)): Sections 6--7 (ordering/discretization choices with identical \(\hbar\to0\) limit).
@@ -1340,13 +1495,21 @@ RCP can be interpreted as a candidate foundational postulate: physical laws are 
 
 ## 10.4 Appendix Summary
 Appendix sections 10.1--10.3 close three technical gaps identified in Section 9:
-1. explicit renormalization subtraction and running (10.1),
+1. explicit renormalization subtraction/running, now including a fixed-scheme one-loop QFT witness (10.1),
 2. explicit ordering/discretization \(O(\hbar)\) shift with fixed classical limit (10.2),
 3. explicit foundational compatibility principle unifying the full chain (10.3).
 
 Appendix 10.5 supplies a fully worked quantum-mechanical RG computation (2D contact interaction) demonstrating divergence, subtraction, running coupling, dimensional transmutation, and scheme dependence in a concrete model.
+Appendix 10.6 adds an explicit regulated-kernel composition witness with controlled regulator removal and a concrete failure mode when admissibility assumptions are violated.
 
 These additions do not alter the thesis; they increase computational accountability of the existing chain.
+
+`Remark D10.4a (Package-to-appendix map for fast navigation).`
+For reader navigation:
+1. **Package C/D (RG witness + truncation control):** Appendix 10.1 with `D8.1`, `D8.2`, `D8.2a`, `P8.1`, and Section 8.6 `D6.4`.
+2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`.
+3. **Package A (path-space/kernel closure ladder):** Appendix 10.6 with `D12.1`, `P12.1`, `D12.2`, `P12.2`, `D12.3`.
+4. **Package E (global compatibility map):** Section 9.1 `P7.1a` plus Appendix 10.3 `P10.1`, `D10.1a`, `D10.1b`.
 
 ## 10.5 Singular Contact Interaction as an Explicit RG Computation (2D Delta)
 Section 8 argues that RG is the scale-compatibility condition required when refinement limits diverge. This appendix supplies a fully explicit example in a singular quantum-mechanical model where the continuum theory is defined only after a renormalization prescription is chosen. For a perturbative-QFT-style treatment of this mechanism in quantum mechanics (including the 2D delta interaction), see [ManuelTarrach1994PertRenQM].
@@ -1459,6 +1622,122 @@ $$
 $$
 
 Thus, in this one-scale model, “scheme dependence” is precisely the freedom to rescale the single physical scale. Fixing one physical datum (e.g. \(E_B\)) fixes \(\kappa_\ast\) and removes the ambiguity from predictions.
+
+## 10.6 Regulated-Kernel Composition Witness (Euclidean Free Model)
+Section 9.4 identifies the path-space formalism as an open vulnerability unless one can exhibit a regulated family with exact composition and controlled regulator removal. The following Gaussian witness supplies that structure in a model where all integrals are explicit.
+For explicit kernel formulas in this subsection we use units \(m=\hbar=1\); operator-norm bounds below are unchanged up to the corresponding conventional rescalings.
+
+`Derivation D12.1 (Exact composition with additive regulator update).`
+For \(t>0\), \(\varepsilon>0\), define
+\[
+K_\varepsilon(x,y;t)
+:=
+\frac{1}{\bigl(4\pi(t+\varepsilon)\bigr)^{d/2}}
+\exp\!\left[-\frac{|x-y|^2}{4(t+\varepsilon)}\right].
+\]
+Since \(K_\varepsilon(\cdot,\cdot;t)=K_0(\cdot,\cdot;t+\varepsilon)\), Gaussian convolution gives, for \(t_1,t_2>0\) and \(\varepsilon_1,\varepsilon_2>0\),
+\[
+\int_{\mathbb R^d} d^dz\;
+K_{\varepsilon_1}(x,z;t_1)\,
+K_{\varepsilon_2}(z,y;t_2)
+=
+K_{\varepsilon_1+\varepsilon_2}(x,y;t_1+t_2).
+\]
+Thus composition is exact inside the regulated family, with regulator flow law \(\varepsilon\mapsto\varepsilon_1+\varepsilon_2\).
+
+`Proposition P12.1 (Controlled regulator removal and explicit failure mode).`
+For fixed \(t>0\), \(K_\varepsilon(x,y;t)\to K_0(x,y;t)\) pointwise and in \(L^1_x\) as \(\varepsilon\to0^+\), so
+\[
+\lim_{\varepsilon_1,\varepsilon_2\to0^+}
+\int d^dz\;K_{\varepsilon_1}(x,z;t_1)K_{\varepsilon_2}(z,y;t_2)
+=
+K_0(x,y;t_1+t_2),
+\]
+recovering the standard heat-kernel semigroup. A concrete failure mode is immediate: if \(t+\varepsilon\le 0\), the Gaussian normalization is undefined/non-integrable, and composition no longer closes in the admissible family. This gives a model-level realization of the manuscript's compatibility logic: closure requires explicit admissibility conditions on the refinement-regulator pair.
+
+`Derivation D12.2 (First-order potential perturbation: composition closure to \(O(V)\)).`
+Let \(V:\mathbb R^d\to\mathbb R\) be bounded, and define the first-order (in \(V\)) regulated kernel by Duhamel expansion:
+\[
+K_{\varepsilon,V}^{(1)}(x,y;t)
+:=
+K_\varepsilon(x,y;t)
+-\int_0^t d\tau\int_{\mathbb R^d} d^dz\;
+K_\varepsilon(x,z;t-\tau)\,V(z)\,K_\varepsilon(z,y;\tau).
+\]
+Using `Derivation D12.1` for the free part and retaining terms through \(O(V)\),
+\[
+\int d^dz\;K_{\varepsilon,V}^{(1)}(x,z;t)\,K_{\varepsilon,V}^{(1)}(z,y;s)
+=K_{\varepsilon,V}^{(1)}(x,y;t+s)+O(V^2).
+\]
+The first-order term combines by splitting \([0,t+s]\) into \([0,t]\cup[t,t+s]\): in the second interval set \(\tau=t+\sigma\), use free-kernel composition to collapse intermediate integrations, and recover the same single-time-convolution structure at total time \(t+s\). Thus nontrivial potential data still fits the refinement-composition narrative at controlled order.
+
+`Remark D12.2a (Failure mode for singular attractive potentials).`
+The \(O(V)\) formula requires the space-time convolution integral to be finite. For distributional or too-singular attractive potentials (for example, bare contact interactions in dimensions where renormalization is required), the integral can diverge and \(K_{\varepsilon,V}^{(1)}\) is not well-defined without extra renormalization/boundary data. This is precisely the regime where the explicit RG treatment of Appendix 10.5 becomes necessary.
+
+`Proposition P12.2 (Quantitative remainder and composition-defect bounds for bounded \(V\)).`
+Let \(H_0=-\frac{\hbar^2}{2}\Delta\), \(T_0(t)=e^{-tH_0}\), and \(T_V(t)=e^{-t(H_0+V)}\) on \(L^2(\mathbb R^d)\), with \(V\) a bounded multiplication operator and \(M:=\|V\|_\infty\). Define the first-order Duhamel approximation
+\[
+T_V^{(1)}(t):=T_0(t)-\int_0^t T_0(t-\tau)\,V\,T_0(\tau)\,d\tau.
+\]
+Then:
+1. **Remainder bound**
+\[
+\|T_V(t)-T_V^{(1)}(t)\|
+\le e^{Mt}-1-Mt
+\le \frac12 M^2 t^2 e^{Mt}.
+\]
+2. **Composition-defect bound (first-order approximation)**
+\[
+\|T_V^{(1)}(t)T_V^{(1)}(s)-T_V^{(1)}(t+s)\|
+\le C\,M^2\,(t+s)^2 e^{M(t+s)}
+\]
+for a universal constant \(C\) (e.g. \(C=2\)).
+
+Sketch: expand \(T_V\) by Duhamel to second order, bound iterated integrals with semigroup norms \(\|T_0(r)\|\le1\), \(\|T_V(r)\|\le e^{Mr}\), and use
+\[
+T_V^{(1)}(t)T_V^{(1)}(s)-T_V^{(1)}(t+s)
+=\big(T_V^{(1)}(t)-T_V(t)\big)T_V^{(1)}(s)
++T_V(t)\big(T_V^{(1)}(s)-T_V(s)\big)
++\big(T_V(t+s)-T_V^{(1)}(t+s)\big).
+\]
+Thus `Derivation D12.2` has explicit quantitative control in the bounded-potential regime, not only formal \(O(V)\) bookkeeping.
+
+`Derivation D12.3 (Exact nontrivial semigroup witness: Euclidean harmonic oscillator).`
+For confining quadratic potential \(V(x)=\frac12\omega^2|x|^2\) with \(\omega>0\), the Euclidean kernel in \(\mathbb R^d\) is the Mehler form
+\[
+K_\omega(x,y;t)
+=
+\left(\frac{\omega}{2\pi\sinh(\omega t)}\right)^{d/2}
+\exp\!\left[
+-\frac{\omega}{2\sinh(\omega t)}
+\Big((|x|^2+|y|^2)\cosh(\omega t)-2x\!\cdot\! y\Big)
+\right].
+\]
+Gaussian integration in the intermediate variable gives, for \(t_1,t_2>0\),
+\[
+\int_{\mathbb R^d} d^dz\;K_\omega(x,z;t_1)K_\omega(z,y;t_2)
+=K_\omega(x,y;t_1+t_2),
+\]
+using standard hyperbolic identities (notably \(\sinh(a+b)=\sinh a\cosh b+\cosh a\sinh b\) and the induced identity for \(\coth(a+b)\)). Thus we obtain an all-order, nontrivial composition witness (beyond free and first-order perturbative regimes).
+Defining \(K_{\omega,\varepsilon}(x,y;t):=K_\omega(x,y;t+\varepsilon)\) with \(\varepsilon>0\), the same calculation yields additive regulator flow:
+\[
+\int d^dz\;K_{\omega,\varepsilon_1}(x,z;t_1)K_{\omega,\varepsilon_2}(z,y;t_2)
+=K_{\omega,\varepsilon_1+\varepsilon_2}(x,y;t_1+t_2).
+\]
+
+`Remark D12.3a (Scope boundary for the exact benchmark).`
+This exact closure witness is specific to confining quadratic potentials (\(\omega>0\)) in Euclidean time. Inverted/nonconfining cases require separate treatment and are outside the admissible class used here.
+
+`Remark D12.3b (Sanity limits: free limit and short-time localization).`
+Two immediate checks fix normalization and interpretation:
+1. **Free limit \(\omega\to0\)**: using \(\sinh(\omega t)=\omega t+O((\omega t)^3)\), \(\cosh(\omega t)=1+O((\omega t)^2)\),
+\[
+K_\omega(x,y;t)\xrightarrow[\omega\to0]{}
+\frac{1}{(4\pi t)^{d/2}}\exp\!\left(-\frac{|x-y|^2}{4t}\right)
+=K_0(x,y;t).
+\]
+2. **Short-time limit \(t\to0^+\)**: \(K_\omega(\cdot,\cdot;t)\) concentrates to \(\delta\) in distributions, matching the semigroup initial condition.
+These checks ensure `Derivation D12.3` is consistent with both the free witness (`D12.1`) and the standard heat-kernel normalization at short times.
 
 # References
 
