@@ -10,11 +10,11 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 323 | C00–C322 (gaps: none) |
+| Content (`Cnn`) | 325 | C00–C324 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 301 | S00–S300 (gaps: S276–S278 active) |
+| Study (`Snn`) | 302 | S00–S301 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 179 | Q00–Q185 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 46 | D00–D45 (gaps: D43 incomplete) |
+| Discovery triage (`Dnn`) | 47 | D00–D46 (gaps: D43 incomplete) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
@@ -46,11 +46,13 @@
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
 - PLB-length (≤6pp): relativistic 6pp (296), HD-QFT 6pp (265), delta 6pp (218).
-- PRD-length (>6pp): dirac 7pp (256), rcp-foundations 7pp (305), rooted-tree 8pp (431), rg-fundamental 12pp (721), action-angle 13pp, fermionic 13pp, uncuttable 13pp, planck-area 14pp.
+- PRD-length (>6pp): dirac 7pp (256), rcp-foundations 7pp (305), ordering-equivalence 8pp (391), rooted-tree 8pp (431), rg-fundamental 12pp (721), action-angle 13pp, fermionic 13pp, uncuttable 13pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- C324: Ordering equivalence COMPLETE — expanded sections 4-7 (curved space, star products, time-slicing, conclusion). Paper now at 391 lines (~7-8pp). 6 propositions, 2 worked examples (PDM + curved manifolds), star-product automorphism perspective, path-integral discretization bridge, RCP representation-channel connection. Net: +226/-0 lines (C323+C324 total: +391/-0).
+- C323: NEW satellite paper `ordering-equivalence` (165 lines, initial draft). Four-layer stratification (principal symbol, connection, scalar potential, domain), PDM worked example (Weyl vs half-density, GaAs numerical test), Proposition OE-P1.2 (deformation equivalence is physical). Sources: D35/S290, D38/S294, D46/S301. Net: +165/-0 lines.
 - C322: RG-fundamental conclusion expansion — Section 7 (conclusion) expanded with three new remarks: RG as multi-channel compatibility (RCP bridge), three crown witnesses (partition/representation/scale), foundational reading (RG as definitional). Added forward references to [RCPFoundations] and [RootedTreeBookkeeping]. Paper now at 721 lines (~12pp). Net: +29/-0 lines (C321+C322 total: +120/-0).
 - C321: RG-fundamental Section 4 expansion — added 3 new subsections: 4.2 (midpoint RK2 composition test), 4.3 (Hopf coproduct explicit formulas for trees τ₁-τ₃), 4.4 (higher-order tree proliferation). Section 4 expanded from 30 → 120 lines. Paper: 601 → 692 lines (~11.5pp). Net: +91/-0 lines.
 - S300: Drafted Section 4 expansion content for RG-fundamental (midpoint, Hopf coproduct, tree proliferation). ~95 lines drafted. Sources: rooted-tree paper Section 3+6, Connes-Kreimer formalism.
