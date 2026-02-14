@@ -57,7 +57,7 @@ relevant slot. Deletion criteria (in priority order):
 | 0 | Odd-d scale-supplier table + parity obstruction (D27/S284) | Active (S284) |
 | 1 | Composition-compatible weight function uniqueness (D29/S288) | Active (S288) |
 | 2 | Distributional obstruction for kappa -> 0 (D31/S289) | Active (S289) |
-| 3 | Central-force threshold bridge branchboard | Active (S270-S278) |
+| 3 | Half-density vs Moyal ordering comparison (D35/S290) | Active (S290) |
 | 4 | Two-particle κ-universality test (D32/S286) | Active (S286) |
 | 5 | Curved-space composition test for P4.2 extension (D30/S287) | Active (S287) |
 | 6 | Newton polygonal convergence: theorem + failure mode (D28/S285) | Active (S285) |
