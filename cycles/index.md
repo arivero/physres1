@@ -10,11 +10,11 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 314 | C00–C313 (gaps: none) |
+| Content (`Cnn`) | 319 | C00–C318 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 285 | S00–S296 (gaps: S276–S278 active) |
+| Study (`Snn`) | 299 | S00–S298 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 179 | Q00–Q185 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 37 | D00–D40 (gaps: none) |
+| Discovery triage (`Dnn`) | 43 | D00–D42 (gaps: none) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
@@ -51,6 +51,11 @@
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- C318: Final rooted-tree expansions — Section 7 Conclusion + Section 3.5 order-3 trees. Paper now at 8pp (PRD length, 431 lines). Net: +45/-0 lines.
+- C317: Expanded rooted-tree paper Section 6.2 with explicit Hopf coproduct formulas (order-1/2/3 trees, antipode S, forest formula, connection to composition). Paper now at 7pp (over PLB, approaching PRD), 372 lines. Net: +53/-0 lines.
+- C316: Expanded rooted-tree paper Section 4.4 with worked 2D delta RG example (one-loop, beta function, dimensional transmutation, explicit parallel to midpoint RK). Sources: D42/S298 (adapted from cornerstone Section 10.5). Paper now at 6pp (PLB boundary), 319 lines. Net: +50/-0 lines.
+- C315: New satellite paper `rooted-tree-bookkeeping` (5pp, 269 lines, 5 refs). Makes Butcher/RG dictionary explicit: rooted-tree Hopf algebra for RK methods vs renormalization. Worked midpoint RK2 example, one-loop RG template, 7-entry dictionary table. Key distinction: Butcher group (reversible) vs RG semigroup (one-way). Expandable to PRD length (9-13pp target). Sources: D41/S297. Net: +269/-0 lines.
+- C314: Remark P4.2g (continuum time forced by dimensional homogeneity) in cornerstone Section 10. Source: D40/S296 (discrete-time dimensional obstruction). Impact: P4.2 inevitability thesis extends — composition+(D) force BOTH ℏ AND continuous t. Net: +3/-0 lines.
 - C313+Q185: Remark P5.2a (deformation equivalence is physical) in cornerstone Section 7.4 + planck-area Open Problem #3 closed (odd-d witness via d=3 scattering length) + Remark RG-H1.9 (horizontal/vertical composition) in rg-fundamental + Package B/C status updates + Section 9.3/9.4 corrections for D38 consistency. Net: +36/-11 lines across 3 manuscripts. Q185 PASS.
 - C312: promoted P4.2 hypothesis reduction (Remarks P4.2c-f) + four-layer deformation-equivalence correction (D9.1a) into `paper/main.md`. Sources: D29/S288 (exponential uniqueness), D39/S295 (Levy obstruction), D30/S287 (curved), D36/S293 (interacting), D34+D37 (Lorentzian+iepsilon), D32/S286 (kappa universality), D35+D38/S290+S294 (deformation layers). Net: +16/-1 lines.
 - C304-C311: prior session promotion wave (D23-D39 discoveries to cornerstone + planck-area). Includes P4.2 base, delta dictionary, Ito/Stratonovich, parity lemma, heat-kernel, caustics/Maslov, Pade, RCP crown witnesses.

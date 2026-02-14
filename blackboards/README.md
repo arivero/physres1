@@ -57,8 +57,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Dimensional obstruction to discrete-time composition (D40/S296) | Active |
-| 1 | Composition-compatible weight function uniqueness (D29/S288) | Promoted (C312 -> P4.2c, notebook: p42-hypothesis-reduction) |
+| 0 | Rooted-tree bookkeeping scope map + midpoint RK2 example (D41/S297) | Promoted (C315 -> rooted-tree-bookkeeping initial draft) |
+| 1 | 2D delta RG example + rooted-tree adaptation (D42/S298) | Promoted (C316 -> rooted-tree Section 4.4) |
 | 2 | Levy-Khintchine dimensional obstruction + identity limit (D39/S295) | Promoted (C312 -> P4.2d, notebook: p42-hypothesis-reduction) |
 | 3 | Half-density vs Moyal ordering comparison (D35/S290) | Promoted (C312 -> D9.1a correction, notebook: deformation-equivalence-physical) |
 | 4 | Mehler kernel composition: interacting witness for P4.2 (D36/S293) | Promoted (C312 -> P4.2e, notebook: p42-extensions-interacting-curved) |

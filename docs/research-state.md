@@ -164,25 +164,31 @@ Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PL
 3. Relativistic Central Orbits (6pp, ~296 lines, 2 refs) — FROZEN at PLB boundary
 
 **Over PLB, reclassified:**
-4. Dirac Probes / Corners / Impulses (7pp, ~256 lines, 6 refs) — FROZEN
+5. Dirac Probes / Corners / Impulses (7pp, ~256 lines, 6 refs) — FROZEN
 
 **PRD-length satellites (>6pp compiled):**
-5. RG Fundamental (9pp, 596 lines, 8 refs)
-6. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
-7. Fermionic Mediators (13pp, 244 lines, 40 refs)
-8. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
-9. Planck Area (14pp, ~730+ lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
+6. Rooted-Tree Bookkeeping (8pp, 431 lines, 5 refs) — NEW (Butcher/RG dictionary, moved from PLB-length list)
+7. RG Fundamental (9pp, 596 lines, 8 refs)
+8. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
+9. Fermionic Mediators (13pp, 244 lines, 40 refs)
+10. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
+11. Planck Area (14pp, ~730+ lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
 
-**Cornerstone:** paper/main.md (~1813 lines). Target: Physics Reports.
-**All 9 satellites cross-referenced from cornerstone** (C146 completed the network).
+**Cornerstone:** paper/main.md (~1821 lines, 23pp). Target: Physics Reports.
+**Current satellite count: 10** (9 prior + 1 new rooted-tree). Cross-referencing from cornerstone: 9 completed (C146), rooted-tree TBD.
 
 Recent cornerstone additions (2026-02-14):
+- C314: P4.2g (continuum time forced by dimensional homogeneity) in Section 10
 - C313: P5.2a (deformation equivalence is physical — four-layer stratification + GaAs energy estimate) in Section 7.4; Package B status updated in Section 9.5
 - C312: P4.2c-f (hypothesis reduction 4->3, curved/interacting/Lorentzian extensions, kappa universality)
 - C312: D9.1a correction (four-layer deformation equivalence stratification)
 - C304-C311: delta dictionary, Ito/Stratonovich, caustics/Maslov, Pade unification, RCP crown witnesses
 
 Recent satellite additions (2026-02-14):
+- C318: rooted-tree-bookkeeping finalized at 8pp (431 lines, PRD length) — added Section 7 Conclusion + Section 3.5 order-3 trees (Butcher product, RG sunset/nested parallel)
+- C317: rooted-tree-bookkeeping expanded to 7pp (372 lines) — added Section 6.2 with explicit Hopf coproduct formulas (order-1/2/3 trees, antipode S, forest formula)
+- C316: rooted-tree-bookkeeping expanded to 6pp (319 lines) — added Section 4.4 with worked 2D delta RG example (beta function, dimensional transmutation, explicit Butcher parallel)
+- C315: NEW satellite `rooted-tree-bookkeeping` (initial 5pp, 269 lines) — Butcher/RG dictionary with worked midpoint RK2 + one-loop RG template
 - C313: planck-area Open Problem #3 closed (odd-d transmutation witness via d=3 scattering length)
 - C313: RG-fundamental Remark RG-H1.9 (horizontal/vertical composition connecting P4.2 to RG)
 
