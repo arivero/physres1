@@ -62,6 +62,23 @@ relevant slot. Deletion criteria (in priority order):
 | 5 | Curved-space composition test for P4.2 extension (D30/S287) | Active (S287) |
 | 6 | Newton polygonal convergence: theorem + failure mode (D28/S285) | Active (S285) |
 
+## Before Choosing Next Task: Read All Blackboards
+**When deciding what to work on next**, read the **contents** of all blackboards (not just the index):
+```bash
+for f in blackboards/[0-6].md; do cat "$f"; done
+```
+
+**Why:** Blackboards are the active working memory (max 7 slots, ~300 lines each, <50KB total).
+Reading them all before choosing a task:
+1. Avoids duplicating work already in progress
+2. Reveals connections between active threads
+3. Identifies ripe promotion candidates (stable results ready for C-cycles)
+4. Shows which slots are stale/superseded (candidates for overwriting)
+
+**For notebooks:** Consider random sampling (2-3 files) to check for related stable content.
+Strategy: `ls notebooks/*.md | sort -R | head -n 3` then read those files.
+Notebooks are memory (stable technical exposition), blackboards are scratch (active work).
+
 ## Collaboration Use (Two-Agent Discussion)
 Blackboards are also the discussion surface for multi-agent reasoning.
 - Use explicit speaker tags (e.g., `Agent A:` / `Agent B:`) when running adversarial or complementary passes.
