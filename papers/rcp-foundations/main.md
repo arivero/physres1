@@ -305,7 +305,7 @@ The three RCP channels do not operate in isolation—they **interact** in any re
 K(x_f, x_i; T) = \int dx\; K(x_f, x; t_1)\, K(x, x_i; t_2),
 \quad T = t_1 + t_2,
 \]
-is the operational form of partition compatibility (A1). The short-time kernel must have the form \(K(x,y;\varepsilon) \sim (m/2\pi\hbar\varepsilon)^{d/2} \exp(iS_{\mathrm{cl}}/\hbar)\) to preserve composition—this forces both the \(d/2\) normalization and the action-dimensional scale \(\hbar\) (Theorem P4.2).
+is the operational form of partition compatibility (A1). The short-time kernel must have the form \(K(x,y;\varepsilon) \sim (m/2\pi\hbar\varepsilon)^{d/2} \exp(iS_{\mathrm{cl}}/\hbar)\) to preserve composition—this forces both the \(d/2\) normalization and the action-dimensional scale \(\hbar\) (Theorem P4.2; for a comprehensive treatment showing this exponent is forced across four distinct settings, see [PathIntegralNormalization]).
 
 **Representation channel in the path integral:** Different time-slicing prescriptions (midpoint, prepoint, postpoint) correspond to different operator orderings (Stratonovich ↔ half-density, Itô ↔ Weyl-type). The Layer 2 connection term (e.g., \(\propto f'(q)\partial/\partial q\) in PDM systems) arises from the measure factor in the path integral:
 \[

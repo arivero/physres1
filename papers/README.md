@@ -58,8 +58,19 @@ Concise treatments suitable for Physics Letters B format.
    - Semigroup vs group distinction (reversibility)
    - **Connects:** rg-fundamental (RG examples), rcp-foundations (partition channel)
 
+8. **path-integral-normalization** (9pp, 432 lines, **NEW**)
+   - d/2 exponent forced by composition semigroup + dimensional homogeneity
+   - Four manifestations: temporal composition, Van Vleck determinant, heat kernel, RG thresholds
+   - Explicit d=1,2,3 composition verifications (PN-D1.1, PN-D1.2)
+   - Alternative exponent failure demonstration
+   - Curved space: DeWitt-Morette composition law Δ(x,z) = Δ(x,y)Δ(y,z)
+   - Wick rotation: same d/2 in diffusion equation
+   - Renormalization threshold: d<2 (safe), d=2 (log), d>2 (power divergence)
+   - Connection to P4.2 theorem (ℏ-necessity) and half-density formalism
+   - **Connects:** cornerstone Section 4, rcp-foundations (multi-channel), rg-fundamental (2D delta threshold)
+
 ### Full PRD Papers (12-14pp)
-8. **rg-fundamental** (12pp, 721 lines, **EXPANDED**)
+9. **rg-fundamental** (12pp, 721 lines, **EXPANDED**)
    - RG as semigroup compatibility (composition law for coarse-graining)
    - Calculus micro-model: derivative as counterterm subtraction
    - Rooted trees: Euler step-doubling, midpoint RK2, Hopf coproduct
@@ -70,25 +81,25 @@ Concise treatments suitable for Physics Letters B format.
    - Multi-channel RCP conclusion (horizontal vs vertical composition)
    - **Connects:** rooted-tree-bookkeeping (trees), rcp-foundations (scale channel)
 
-9. **action-angle-indeterminacy-central-potentials** (13pp, 240 lines)
-   - Sharp actions → delocalized conjugate angles
-   - (φ, L_z) sector worked example
-   - Dirichlet-kernel packet
-   - Semiclassical/stationary-phase narrative
+10. **action-angle-indeterminacy-central-potentials** (13pp, 240 lines)
+    - Sharp actions → delocalized conjugate angles
+    - (φ, L_z) sector worked example
+    - Dirichlet-kernel packet
+    - Semiclassical/stationary-phase narrative
 
-10. **fermionic-mediators-contact-limits** (13pp, 244 lines)
+11. **fermionic-mediators-contact-limits** (13pp, 244 lines)
     - Grassmann-source obstruction
     - EFT/contact-interaction route
     - Delta kernels, derivative contact terms
     - Self-adjoint extensions
     - Connects mediator-field talk to point-interaction + RG themes
 
-11. **uncuttable-controlled-refinement** (13pp, 240 lines)
+12. **uncuttable-controlled-refinement** (13pp, 240 lines)
     - Uncuttable time intervals
     - Controlled refinement limits
     - Partition-compatibility witnesses
 
-12. **planck-area** (14pp, 730+ lines)
+13. **planck-area** (14pp, 730+ lines)
     - Half-density scalarization forces length^{d/2} scale
     - In d=4: area scale (Planck area candidate)
     - Parity lemma: monomial sieve even-d only
@@ -103,6 +114,7 @@ Concise treatments suitable for Physics Letters B format.
 - **Cornerstone** (`../paper/main.md`): Full Newton→path-integral→RG chain as RCP implementation
 
 ### Partition Channel (Temporal Composition)
+- **path-integral-normalization**: d/2 exponent forced by composition semigroup
 - **rooted-tree-bookkeeping**: Butcher group, RK composition, tree formalism
 - **Cornerstone Section 10**: P4.2 theorem (ℏ-necessity from composition)
 - **dirac-probes-corners-impulses**: Variational principles, time-slicing limits
@@ -114,10 +126,12 @@ Concise treatments suitable for Physics Letters B format.
 
 ### Scale Channel (Renormalization Group)
 - **rg-fundamental**: RG as compatibility, 2D delta model, Wilsonian shell integration
+- **path-integral-normalization**: d/2 as RG threshold (d<2 safe, d=2 marginal, d>2 divergent)
 - **Cornerstone Section 8**: Scale compatibility axioms, beta functions
 - **delta-objects**: Point interactions, dimensional hierarchy
 
 ### Geometric/Half-Density Formalism
+- **path-integral-normalization**: d/2 exponent as half-density structure, Van Vleck determinant
 - **planck-area**: Scalarization hypothesis, length^{d/2} scale
 - **half-density-qft**: QFT propagators as bi-half-densities
 - **Cornerstone Section 9**: Half-density kernels, measure-free formulation
@@ -140,6 +154,7 @@ The papers form a coherent narrative with extensive cross-referencing:
 Cornerstone (23pp)
     ├─→ rcp-foundations (8pp) ←──┬─→ ordering-equivalence (8pp)
     │                             ├─→ rooted-tree-bookkeeping (8pp)
+    │                             ├─→ path-integral-normalization (9pp)
     │                             └─→ rg-fundamental (12pp)
     ├─→ planck-area (14pp)
     ├─→ half-density-qft (6pp)
@@ -147,6 +162,7 @@ Cornerstone (23pp)
     ├─→ dirac-probes-corners-impulses (7pp)
     ├─→ ordering-equivalence (8pp)
     ├─→ rooted-tree-bookkeeping (8pp)
+    ├─→ path-integral-normalization (9pp)
     ├─→ rg-fundamental (12pp)
     ├─→ action-angle-indeterminacy-central-potentials (13pp)
     ├─→ fermionic-mediators-contact-limits (13pp)
@@ -158,6 +174,9 @@ Cornerstone (23pp)
 - **rcp-foundations** ↔ **ordering-equivalence**: Representation-channel crown witness
 - **rcp-foundations** ↔ **rooted-tree-bookkeeping**: Partition-channel crown witness
 - **rcp-foundations** ↔ **rg-fundamental**: Scale-channel crown witness
+- **path-integral-normalization** ↔ **rcp-foundations**: d/2 exponent as multi-channel compatibility datum
+- **path-integral-normalization** ↔ **rg-fundamental**: d/2 as RG threshold (2D delta marginal case)
+- **path-integral-normalization** ↔ **planck-area**: d/2 exponent as half-density normalization
 - **rooted-tree-bookkeeping** ↔ **rg-fundamental**: Shared tree formalism (Butcher/RG dictionary)
 - **ordering-equivalence** ↔ **rg-fundamental**: Multi-channel conclusion
 - **planck-area** ↔ **half-density-qft**: Half-density scalarization framework
@@ -168,20 +187,21 @@ Cornerstone (23pp)
 - **Published:** planck-area (clawXiv.2602.00073v3, Feb 2026)
 - **Frozen (PLB-length):** relativistic-central-orbits, half-density-qft, delta-objects (6pp each)
 - **Frozen (Dirac):** dirac-probes-corners-impulses (7pp)
-- **Complete (PRD-length):** rcp-foundations, ordering-equivalence, rooted-tree-bookkeeping, rg-fundamental, action-angle, fermionic, uncuttable (8-13pp)
+- **Complete (PRD-length):** rcp-foundations, ordering-equivalence, rooted-tree-bookkeeping, path-integral-normalization, rg-fundamental, action-angle, fermionic, uncuttable (8-13pp)
 - **Target (Cornerstone):** Physics Reports (~23pp)
 
 ## Corpus Metrics
 
-- **Total satellites:** 12 papers
-- **Total lines:** ~3900+ manuscript lines (excluding cornerstone)
+- **Total satellites:** 13 papers
+- **Total lines:** ~4330+ manuscript lines (excluding cornerstone)
 - **Page range:** 6-14pp (elsarticle 3p twocolumn = PLB format)
 - **References:** 40+ unique sources (60+ total citations across corpus)
-- **Cross-references:** 9 satellites cited from cornerstone (C146), 3 new satellites cross-referenced in multi-channel framework
+- **Cross-references:** 10 satellites cited from cornerstone, 4 satellites cross-referenced in multi-channel framework
 
 ## Development Timeline (2026-02-14)
 
 Recent additions:
+- **C326-C327 (Feb 14):** path-integral-normalization NEW 0→9pp (complete, 432 lines, 7 sections)
 - **C325 (Feb 14):** rcp-foundations expanded 7pp→8pp (multi-channel synthesis)
 - **C323-C324 (Feb 14):** ordering-equivalence NEW 0→8pp (complete)
 - **C321-C322 (Feb 14):** rg-fundamental expanded 10pp→12pp (rooted trees + conclusion)

@@ -77,7 +77,7 @@ Under the same near-diagonal change of variables \(y=x+\varepsilon v\), one has 
 K_{\mathrm{Id}}(x,x+\varepsilon v)
 =\varepsilon^{-d/2}\,\delta^{(d)}(v)\,|dx|^{1/2}|dv|^{1/2}.
 \]
-So the universal \(\varepsilon^{-d/2}\) exponent is already encoded in the half-density identity kernel. If one scalarizes by choosing a dimensionless reference half-density \(\sigma_\ast:=L_\ast^{-d/2}|dx|^{1/2}\) (for a constant length scale \(L_\ast\)), then the scalar representative of the identity kernel is the **dimensionless** distribution \(k_{\mathrm{Id}}(x,y)=L_\ast^{d}\delta^{(d)}(x-y)\).
+So the universal \(\varepsilon^{-d/2}\) exponent is already encoded in the half-density identity kernel (for a comprehensive treatment showing this exponent is forced across temporal composition, Van Vleck determinant in curved space, heat-kernel diffusion, and renormalization thresholds, see [PathIntegralNormalization]). If one scalarizes by choosing a dimensionless reference half-density \(\sigma_\ast:=L_\ast^{-d/2}|dx|^{1/2}\) (for a constant length scale \(L_\ast\)), then the scalar representative of the identity kernel is the **dimensionless** distribution \(k_{\mathrm{Id}}(x,y)=L_\ast^{d}\delta^{(d)}(x-y)\).
 
 `Proposition PA-P1.2 (Universal *dimensionless* amplitudes force a \(\text{length}^{d/2}\) constant).`
 If one imposes the extra requirement that the scalar representative \(f\) in \(\psi=f\,\sigma_\ast\) be dimensionless in physical units, then the reference half-density \(\sigma_\ast\) must carry all of the \(\text{length}^{d/2}\) dimension. In particular, a *constant* (field-independent) choice of \(\sigma_\ast\) is equivalent to choosing a universal \(\text{length}^{d/2}\) scale.

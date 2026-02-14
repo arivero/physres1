@@ -42,7 +42,7 @@ Introduce near-diagonal coordinates \(y=x+\varepsilon v\). Then \(\delta^{(d)}(x
 Thus the universal \(\varepsilon^{-d/2}\) normalization exponent is already present in the identity delta kernel, once kernels are treated as half-densities.
 
 `Remark 2.1 (Why d/2 is universal).`
-The exponent \(d/2\) is not a computational accident. Composing two half-density kernels requires integrating over an intermediate point: \(\int \mathsf{K}_1(x,z)\,\mathsf{K}_2(z,y)\,dz\). Each kernel carries \(|dz|^{1/2}\); their product gives \(|dz|\), which pairs with the integration measure to produce a scalar. The \(\varepsilon^{-d/2}\) prefactor is precisely what makes near-diagonal kernel scaling compatible with composition — the kernel analog of the \((N+1)/2\) normalization exponent in the time-sliced path integral (companion note, Section 4.5).
+The exponent \(d/2\) is not a computational accident. Composing two half-density kernels requires integrating over an intermediate point: \(\int \mathsf{K}_1(x,z)\,\mathsf{K}_2(z,y)\,dz\). Each kernel carries \(|dz|^{1/2}\); their product gives \(|dz|\), which pairs with the integration measure to produce a scalar. The \(\varepsilon^{-d/2}\) prefactor is precisely what makes near-diagonal kernel scaling compatible with composition — the kernel analog of the \((N+1)/2\) normalization exponent in the time-sliced path integral (companion note, Section 4.5). For a comprehensive treatment showing this exponent is forced across temporal composition, Van Vleck determinant in curved space, heat-kernel diffusion, and renormalization thresholds, see [PathIntegralNormalization].
 
 # 3. Delta on the stationary set: $\delta(\nabla f)$ and determinant weights
 ## 3.1 One-dimensional identity ($\delta(f')$)

@@ -515,7 +515,7 @@ In one dimension, if \(f\) has finitely many nondegenerate critical points \(x_i
 \]
 makes explicit that \(\delta(f')\,dx\) is a density supported on stationary points with weights \(1/|f''|\). Stationary phase, by contrast, gives amplitude contributions weighted by \(1/\sqrt{|f''(x_i)|}\). This is the clean finite-dimensional reason the “half-density first” viewpoint is natural: amplitude weights are square roots of density weights.
 
-Section 6 recovers the same “square-root Jacobian” in the dynamical setting: semigroup composition of short-time kernels forces the characteristic \(t^{-d/2}\) normalization (Derivation D4.1a).
+Section 6 recovers the same "square-root Jacobian" in the dynamical setting: semigroup composition of short-time kernels forces the characteristic \(t^{-d/2}\) normalization (Derivation D4.1a). (A comprehensive treatment showing this exponent is forced across four distinct settings — temporal composition, Van Vleck determinant in curved space, heat-kernel diffusion, and renormalization thresholds — is given in the companion satellite [PathIntegralNormalization].)
 
 In infinite-dimensional settings (paths), one is tempted to write "formal measures" supported on stationary-action trajectories. In this manuscript we treat such expressions as roadmap heuristics until they are regularized and made compatible with composition (Section 6); see also `Heuristic H0.2a`.
 (A companion note on delta objects collects the finite-dimensional scaling computations — identity kernel, stationary-set concentration, point interactions as rank-one kernels — and traces the Van Vleck determinant as the propagator instance of the square-root Hessian.)
