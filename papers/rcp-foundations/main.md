@@ -138,47 +138,163 @@ Q_k = \frac{\partial L}{\partial \dot{q}}\Big|_{q_k} \cdot \xi(q_k, t_k).
 
 # 4. Worked Example: Ordering Ambiguity (Representation Channel)
 
-(To be expanded: Section 10.2 of [Main] gives the \(f(q)p\) example showing Weyl vs Born-Jordan orderings differ by \(O(\hbar)\).)
+## 4.1 Setup
 
-**Outline:**
-- Classical symbol \(f(q)p\)
-- Weyl ordering: \(\hat{Q}_W = (1/2)(\hat{f}(\hat{q})\hat{p} + \hat{p}\hat{f}(\hat{q}))\)
-- Born-Jordan ordering: integral average
-- Difference: \(O(\hbar^2 f'')\)
-- RCP: both representations have same \(\hbar \to 0\) limit, differ by controlled subleading. Closure holds after including domain data (self-adjoint extension parameters).
+The classical symbol \(A(q,p) = f(q)p\) (with smooth \(f\)) can be quantized in multiple ways. Two standard choices:
+
+1. **Left ordering:** \(Q_L(A) = \hat{f}(\hat{q}) \hat{p}\).
+2. **Weyl (symmetric) ordering:** \(Q_W(A) = \tfrac{1}{2}(\hat{f}(\hat{q})\hat{p} + \hat{p}\hat{f}(\hat{q}))\).
+
+Using the canonical commutation relation \([\hat{p}, \hat{f}(\hat{q})] = -i\hbar f'(\hat{q})\):
+\[
+Q_W(A) = \hat{f}(\hat{q})\hat{p} - \frac{i\hbar}{2} f'(\hat{q}) = Q_L(A) - \frac{i\hbar}{2} f'(\hat{q}).
+\]
+
+## 4.2 Classical Agreement, Quantum Shift
+
+The difference is \(O(\hbar)\):
+\[
+Q_W(A) - Q_L(A) = -\frac{i\hbar}{2} f'(\hat{q}).
+\]
+
+In the formal classical limit \(\hbar \to 0\), the difference vanishes:
+\[
+\lim_{\hbar \to 0} (Q_W(A) - Q_L(A)) = 0.
+\]
+
+Both orderings **agree classically** but **differ quantum-mechanically** at subleading order.
+
+## 4.3 RCP Interpretation
+
+**Representation change:** Switching from left ordering to Weyl ordering is a transformation \(\mathcal{Q}_{\alpha}\) within the same classical-limit class.
+
+**Compatibility:** The parameter bundle \(\theta\) must include not only the classical symbol \(f(q)p\) but also the ordering prescription. Changing representation requires updating \(\theta\) to account for the \(O(\hbar)\) shift.
+
+**RCP witness:** Both \(Q_L\) and \(Q_W\) are admissible (they close under composition and have the same classical limit), but they define **different quantum theories** at finite \(\hbar\). The difference is controlled (\(O(\hbar)\)), not catastrophic, so representation compatibility holds.
+
+**Domain data (subtle extension):** For operators like \(\hat{H} = -(\hbar^2/2m) d^2/dx^2\) with singularities (e.g., point interactions), different self-adjoint extensions (boundary conditions at the singularity) can share the same principal symbol but have different spectra. Thus \(\theta\) must include **domain/boundary data** in addition to ordering data. Example: delta-contact interaction with parameter \(g\); different \(g\) give different bound-state energies \(E_B = -mg^2/(2\hbar^2)\) while sharing symbol \(p^2/(2m)\).
+
+**Key point:** Representation compatibility (A3) requires transporting both ordering and domain data. Without including domain parameters in \(\theta\), closure can fail (inequivalent quantum theories with same classical symbol).
 
 # 5. Worked Example: 2D Delta Renormalization (Scale Channel)
 
-(To be expanded: Section 10.5 of [Main] gives the 2D contact interaction with beta function \(\mu \, dg_R/d\mu = (m/\pi\hbar^2) g_R^2\).)
+## 5.1 Setup
 
-**Outline:**
-- Hamiltonian \(H = -(h bar^2/2m)\Delta + g\delta^{(2)}(x)\)
-- Loop integral diverges logarithmically
-- Renormalized coupling \(g_R(\mu)\) defined by subtraction
-- Beta function ensures \(\mu\)-independence of observables
-- RG-invariant scale \(\kappa_*\) (dimensional transmutation)
-- RCP: scale change \(\mu_1 \to \mu_2\) preserved by coupling flow. Closure holds after running \(g_R\).
+Consider the two-dimensional contact interaction:
+\[
+H = -\frac{\hbar^2}{2m}\Delta + g\,\delta^{(2)}(x) \quad \text{on } \mathbb{R}^2.
+\]
+
+The Dirac-delta interaction is singular, and the naive continuum limit is ill-defined: loop integrals diverge logarithmically.
+
+## 5.2 Divergent Loop Integral
+
+The \(T\)-matrix (scattering amplitude) at energy \(E = \hbar^2 k^2 / (2m)\) involves the loop integral:
+\[
+I(E;\Lambda) = \int_{|q|<\Lambda} \frac{d^2q}{(2\pi)^2} \, \frac{1}{E - \frac{\hbar^2 q^2}{2m} + i0} = -\frac{m}{2\pi\hbar^2} \ln\!\left(\frac{\Lambda^2}{k^2}\right) + \text{(finite)}.
+\]
+
+The logarithmic divergence \(\sim \ln\Lambda\) as \(\Lambda \to \infty\) makes the bare theory ill-defined.
+
+## 5.3 Renormalized Coupling and Beta Function
+
+Define a renormalized coupling at subtraction scale \(\mu\) by:
+\[
+\frac{1}{g_R(\mu)} \equiv \frac{1}{g_B(\Lambda)} + \frac{m}{2\pi\hbar^2} \ln\!\left(\frac{\Lambda^2}{\mu^2}\right).
+\]
+
+This subtraction cancels the cutoff dependence, yielding a finite \(T\)-matrix:
+\[
+T(E) = \frac{1}{\frac{1}{g_R(\mu)} + \frac{m}{2\pi\hbar^2} \ln\!\left(\frac{\mu^2}{k^2}\right) + i\,\frac{m}{2\hbar^2}}.
+\]
+
+Since \(\mu\) is arbitrary, physical predictions must satisfy \(\mu \, d/d\mu\, T(E) = 0\). This yields the **beta function**:
+\[
+\mu \frac{d}{d\mu}\left(\frac{1}{g_R(\mu)}\right) = -\frac{m}{\pi\hbar^2}, \quad \text{hence} \quad \beta(g_R) \equiv \mu \frac{d g_R}{d\mu} = \frac{m}{\pi\hbar^2} \, g_R^2.
+\]
+
+## 5.4 Dimensional Transmutation
+
+For a bound state (energy \(E = -\hbar^2 \kappa^2 / (2m)\)), the \(T\)-matrix has a pole when:
+\[
+\frac{1}{g_R(\mu)} + \frac{m}{2\pi\hbar^2} \ln\!\left(\frac{\mu^2}{\kappa^2}\right) = 0.
+\]
+
+Define the **RG-invariant scale**:
+\[
+\kappa_*^2 \equiv \mu^2 \exp\!\left(\frac{2\pi\hbar^2}{m} \frac{1}{g_R(\mu)}\right).
+\]
+
+Then \(d\kappa_*/d\mu = 0\): the physical content is a single scale \(\kappa_*\) (equivalently, a bound-state energy \(E_B = \hbar^2 \kappa_*^2 / (2m)\)). The bare coupling \(g_B\) is traded for this scale via **dimensional transmutation**.
+
+## 5.5 RCP Interpretation
+
+**Scale change:** Changing the subtraction scale \(\mu_1 \to \mu_2\) is a transformation \(\mathcal{R}_{\mu}\).
+
+**Compatibility:** The parameter bundle \(\theta\) includes the coupling \(g_R(\mu)\). Changing scale requires updating \(g_R\) via the beta function to maintain closure:
+\[
+\theta(\mu_1) \xrightarrow{\text{flow}} \theta(\mu_2), \quad g_R(\mu_2) = g_R(\mu_1) + \int_{\mu_1}^{\mu_2} \frac{d\mu'}{\mu'} \, \beta(g_R(\mu')).
+\]
+
+**RCP witness:** Observable predictions (e.g., \(\kappa_*\)) are scale-invariant. Without the beta function, changing \(\mu\) would change physics. RCP forces the existence of \(\beta(g_R)\) as the scale-compatibility map \(\tau_R(\theta)\).
+
+**Key point:** Scale compatibility (A4) is not merely a consistency check—it is the **defining condition** for renormalization. The RG flow is the parameter update forced by RCP closure.
 
 # 6. Theorem: P4.2 as RCP Crown Witness
 
-(To be expanded: state Proposition P4.2 from [Main] as a theorem of partition-compatibility axioms A1, A2, A5.)
+## 6.1 Statement
 
-**Outline:**
-- Under A1 (composition), A2 (identity limit), A5 (dimensional homogeneity), partition-compatible action-based dynamics force a structural constant \(\kappa\) with \([\kappa] = [\text{action}]\).
-- Both \(\kappa \to 0\) (classical limit) and \(\kappa \to \infty\) (trivial limit) fail.
-- \(\kappa = \hbar\) is **necessary**, not merely convenient.
-- This is RCP's most constructive witness: partition closure forces Planck's constant.
+**Theorem (from [Main] Proposition P4.2).** Consider partition-compatible action-based dynamics satisfying:
+- **A1 (Composition):** Temporal composition \(\mathcal{O}_{T} = \mathcal{O}_{t_1} \circ \mathcal{O}_{t_2}\) with \(T = t_1 + t_2\).
+- **A2 (Identity limit):** As \(t \to 0\), the kernel approaches the identity distribution.
+- **A5 (Dimensional homogeneity):** All parameters built from fundamental constants \(\{m, \hbar\}\).
+
+Then the framework forces a structural constant \(\kappa\) with \([\kappa] = [\text{action}]\), and:
+1. The normalization exponent is forced: kernel \(\sim t^{-d/2}\) (semigroup closure).
+2. \(\kappa = \hbar\) is **necessary**, not merely convenient.
+3. Both limiting cases fail:
+   - \(\kappa \to 0\): Composition collapses to Hamilton-Jacobi (classical), identity limit fails distributionally.
+   - \(\kappa \to \infty\): Weights trivialize, partition refinement loses dynamical content.
+
+## 6.2 RCP Interpretation
+
+This theorem is the **crown witness for partition compatibility**. It shows:
+
+1. **Constructive forcing:** Axioms A1+A2+A5 do not merely constrain admissible theories—they **force** specific structural constants. Planck's constant \(\hbar\) emerges as the partition-compatibility parameter, not as external input.
+
+2. **Falsifiability in action:** Both \(\kappa \to 0\) and \(\kappa \to \infty\) are testable failures of RCP closure. The classical limit (\(\kappa \to 0\)) breaks composition (no distributional identity kernel); the trivial limit (\(\kappa \to \infty\)) erases dynamics. RCP compatibility picks out \(\kappa = \hbar\) as the unique admissible value.
+
+3. **Partition compatibility is fundamental:** The theorem shows that partition refinement is not a calculational convenience—it is a **definitional requirement**. The demand that refined and coarse predictions agree forces quantum mechanics.
 
 # 7. Outlook and Crown Witnesses
 
-(To be expanded: summarize crown witnesses from [Main] Remark D10.1c.)
+## 7.1 Three Crown Witnesses
 
-**Three crown witnesses:**
-1. **Partition (P4.2):** Composition forces \(\hbar\). Both limits fail (catastrophic).
-2. **Representation (domain data):** Self-adjoint extension parameters must be transported as part of \(\theta\). Inequivalent domains share classical symbols but have different spectra.
-3. **Scale (Padé reconstruction):** Local contact-expansion data, combined with analyticity, reconstructs non-perturbative structure (poles, cuts, instantons). RG flow accesses global physics from Taylor coefficients.
+Each RCP channel now has a **constructive witness** beyond the structural framework:
 
-**Foundational reading:** RCP can be interpreted as a candidate foundational postulate: the demand that laws survive refinement is the origin of structural constants, not an external input.
+**1. Partition channel (Theorem P4.2, Section 6):** Composition forces \(\hbar\)-necessity. This is RCP's most dramatic witness: the partition-compatibility requirement is not merely aesthetic—it forces the existence of Planck's constant and forbids both the classical (\(\kappa \to 0\)) and trivial (\(\kappa \to \infty\)) limits. The failure is **catastrophic** (composition breaks, identity limit fails), not merely inconvenient.
+
+**2. Representation channel (domain data transport, Section 4):** Self-adjoint extension parameters must be transported as part of the parameter bundle \(\theta\). Inequivalent operator domains can share the same principal symbol \(p^2/(2m)\) but have different spectra (example: delta-contact interaction with parameter \(g\), where \(g < 0\) gives a bound state \(E_B = -mg^2/(2\hbar^2)\) while \(g \ge 0\) does not). Without including domain data in \(\theta\), representation changes can map admissible theories to inadmissible ones (closure fails).
+
+**3. Scale channel (Padé reconstruction, non-perturbative access):** Local contact-expansion data (Wilson coefficients \(C_0, C_2, \ldots\)), combined with analyticity assumptions (Padé approximants, dispersion relations, Borel resummation), can reconstruct **non-perturbative** global structure—poles (bound states), cuts (thresholds), instanton sectors—from perturbative Taylor coefficients. Example: Padé [0/1] applied to contact expansion \(C_0 + C_2 q^2\) exactly recovers the Yukawa mediator pole \(-g^2/(4\pi m q^2)\) from two Wilson coefficients. RG flow is the control map \(\tau_R(\theta)\) that accesses this global physics via local data.
+
+## 7.2 Foundational Reading
+
+RCP can be interpreted as a **candidate foundational postulate**: physical laws are those statements that survive controlled changes of partition, representation, and scale. Under this reading:
+
+- **Structural constants (e.g., \(\hbar\)) are emergent, not external.** They arise as compatibility parameters forced by closure requirements, not as inputs to the theory.
+- **The classical limit is a failure mode, not a foundation.** \(\hbar \to 0\) breaks partition compatibility (Theorem P4.2), so classical mechanics is not the "base theory" from which quantum mechanics is a perturbation. Instead, quantum mechanics is the **minimal closure** of partition-compatible action-based dynamics.
+- **Renormalization is definitional, not corrective.** Scale compatibility (A4) is not a fix for divergences—it is the **requirement** that scale changes preserve admissibility. Divergences signal closure failure in the absence of parameter updates; the beta function is the compatibility map that restores closure.
+
+## 7.3 Open Questions
+
+1. **Are there additional compatibility channels beyond partition/representation/scale?** Candidate: **time-reversal compatibility** (CPT symmetry as closure condition) or **statistical compatibility** (quantum-to-thermal transitions).
+
+2. **Can RCP be formalized as a categorical structure?** The commuting diagrams (Section 2.2) suggest a **monoidal category** with transformations as morphisms and compatibility as functoriality.
+
+3. **Does RCP extend to gravity?** Diffeomorphism invariance is a compatibility condition (coordinate changes must not affect observables). Can background-independence be framed as "metric-refinement compatibility"?
+
+These are left to future work.
 
 # 8. References
 
