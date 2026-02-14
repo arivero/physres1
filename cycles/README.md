@@ -137,33 +137,49 @@ The mathematics **must** be written to persistent files:
 
 **Rationale:** C-cycles have overhead (planning, execution, logging, Q-review). Batching edits amortizes this overhead and produces more coherent manuscript changes. Micro-edits in isolation waste context and fragment the git history.
 
-### 10) Completed cycles must be archived via git rm
-**After a cycle completes successfully**, archive its files to git history via `git rm`:
+### 10) Completed cycles must be archived via git rm (one-window lag)
+Completed cycle files are archived to git history via `git rm`, but **only after
+they have been committed to git in a previous batch**. This ensures every cycle
+file exists in at least one commit's tree, making it recoverable via
+`git show <commit>:cycles/Cnn-execution.md`.
+
+**The one-window-lag rule:**
+- A cycle created and completed within a single 60-minute window stays in the
+  working tree until the next commit batch (Commit 2: scaffolding). It enters
+  git there.
+- In the **following** batch, it becomes eligible for archiving (Commit 3: archiving).
+- **Never `git rm` a file that was first added in Commit 2 of the same batch.**
+  That would bypass git history and make the file unrecoverable.
+
+**Three-commit batch structure** (see also AGENTS.md § Commit Policy):
+1. **Commit 1 (manuscripts):** `.md` in `paper/` and `papers/*/`, `.tex`, `.bib`.
+2. **Commit 2 (scaffolding):** `cycles/`, `docs/`, `blackboards/`, `notebooks/`,
+   `paper/notes/`, config. New cycle files enter git here.
+3. **Commit 3 (archiving):** `git rm` of completed cycles tracked from a
+   **previous** batch.
 
 ```bash
-git rm cycles/Cnn-plan.md cycles/Cnn-execution.md
-# (and any other cycle files like -debate.md, -redteam.md)
-git commit -m "Archive completed Cnn cycle"
+# Commit 3 example: archive cycles that were committed in a prior batch
+git rm cycles/C326-execution.md cycles/Q186-*.md cycles/D48-discovery.md
+git commit -m "[codex-cli] Archive C326+Q186+D48"
 ```
 
-**When to archive:**
-- `C/S/D/B` cycles: immediately after completion and commit of the cycle's work
-- `Q` cycles: immediately after the review is complete (whether PASS, REVISE, or HOLD)
-- `P` cycles: after successful publication submission
+**Recovery:**
+```bash
+# Find the commit where the cycle file existed in the tree:
+git log --all --diff-filter=D -- cycles/Q186-execution.md
+# Then recover the content:
+git show <that-commit>^:cycles/Q186-execution.md
+```
 
 **Why archive:**
-- Keeps `cycles/` directory clean (only active cycles visible)
-- Completed cycles live in git history, accessible via `git show <commit>:cycles/Cnn-execution.md`
+- Keeps `cycles/` directory clean (only active/recent cycles visible)
+- Completed cycles live in git history, recoverable via `git show`
 - Prevents context pollution when scanning `cycles/` for active work
-- Makes `cycles/index.md` counts reliable (index counts archived cycles, not working tree)
+- Makes `cycles/index.md` counts reliable
 
-**Workflow integration:**
-1. Complete cycle work (e.g., C328 manuscript promotion)
-2. Commit the manuscript changes: `git commit -m "[codex-cli] C328: add Remark X to paper Y"`
-3. Archive the cycle files: `git rm cycles/C328-*.md && git commit -m "Archive C328"`
-4. Update `cycles/index.md` counts if needed
-
-**Exception:** Active cycles in `cycles/` that are not yet complete stay in working tree.
+**Exception:** Active cycles that are not yet complete stay in working tree
+indefinitely until completed.
 
 ## Cycle Types
 We use five independent numbered tracks:

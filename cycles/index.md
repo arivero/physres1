@@ -10,11 +10,11 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 326 | C00–C325 (gaps: none) |
+| Content (`Cnn`) | 328 | C00–C328 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 302 | S00–S301 (gaps: S276–S278 active) |
+| Study (`Snn`) | 303 | S00–S303 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 179 | Q00–Q185 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 48 | D00–D47 (gaps: D43 incomplete) |
+| Discovery triage (`Dnn`) | 62 | D00–D62 (gaps: D43 incomplete, D33 unused) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
@@ -46,9 +46,9 @@
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
 - PLB-length (≤6pp): relativistic 6pp (296), HD-QFT 6pp (265), delta 6pp (218).
-- PRD-length (>6pp): dirac 7pp (256), rcp-foundations 8pp (347), ordering-equivalence 8pp (391), rooted-tree 8pp (431), rg-fundamental 12pp (721), action-angle 13pp, fermionic 13pp, uncuttable 13pp, planck-area 14pp.
-- Cornerstone: 23pp (Physics Reports target).
-- **Total corpus: ~125k tokens (Claude tokenizer).**
+- PRD-length (>6pp): dirac 7pp (256), rcp-foundations 7pp (350), ordering-equivalence 7pp (391), path-integral-normalization 7pp (432), rooted-tree 8pp (431), rg-fundamental 12pp (721), action-angle 13pp, fermionic 13pp, uncuttable 13pp, planck-area 14pp (736).
+- Cornerstone: 32pp / 1823 lines (Physics Reports target).
+- **Total corpus: ~185k tokens (Claude tokenizer).**
 
 **Recent completed:**
 - C325: RCP foundations expansion — Section 7.4+7.5 added (multi-channel synthesis in path integral, forward connections to three satellites). Shows how partition/representation/scale channels interact in sewing law + measure + RG. Paper now at 347 lines (~8pp). Net: +42/-0 lines.
@@ -164,3 +164,25 @@
 - **Cross-reference network**: Added 5 forward references: cornerstone (line 518), rg-fundamental (RG-H1.9), rcp-foundations (Section 7.4), planck-area (PA-D1.2b), half-density-qft (HD-D4.5).
 - **Documentation updates**: papers/README.md (added paper #8-9, corpus metrics 12→13 satellites), docs/research-state.md (satellite count + listing), docs/research-log.md (C326 entry).
 - **Impact**: Unifies d/2 exponent across temporal composition, Van Vleck determinant, heat kernel, and RG thresholds—showing it's a structural constant forced by compatibility, not convention.
+
+## Session Addenda (2026-02-14, 20:00-20:35 CET)
+- **C328 (completed)**: Cornerstone cross-reference wave. Added 4 forward references (half-density-qft, ordering-equivalence, rooted-tree-bookkeeping, rcp-foundations). All 13 satellites now referenced from cornerstone. Diffstat: +5/-3 (MARGINAL).
+- **Workflow improvements**: Rule 9 (C-cycle ≥10 line threshold), Rule 10 (archiving via git rm with one-window lag), three-commit batch structure in AGENTS.md.
+- **D49+D50+D51+S303 (completed)**: RCP axiom structure analysis chain.
+  - D49: Mapped P4.2 hypotheses onto RCP A1-A5. Per-axiom decomposition: A1 forces 5/9 conclusions, A5 3/9, A2 1/9. Channels logically independent.
+  - D50: **Discovery** — (D) is derivable from (C) + setup. [K]=L^{-d} forced by composition integral. Effective P4.2 hypothesis count: 2 axioms (C,I) + 1 setup, not 3.
+  - D51: Commuting diagrams are theorems of A1-A5, not independent axioms. No A6 needed.
+  - S303: Formalized P4.2' with minimal hypotheses and per-conclusion axiom attribution.
+  - Blackboard 0 → notebook: `rcp-axiom-structure-analysis.md`
+- **D52 (completed)**: d/2 extends analytically to non-integer d (dimensional regularization). Fractal case: d_s/2 (spectral dimension) replaces d/2.
+- **D53 (completed)**: Identity limit (I) derivable from composition (C) + physical setup. P4.2 reduces to **single axiom** (composition). Two paths: explicit kernel formula (free particle), Stone's theorem (general V). Notebook Part 5 added.
+- **D54 (completed)**: QFT extension via mode decomposition. Each field mode is a QM system; P4.2 applies per-mode. New QFT ingredient: infinite-mode assembly = A4 (RG). Two-layer picture: Layer 1 (quantization, A1), Layer 2 (renormalization, A4).
+- **D55 (completed)**: Irreducible physical setup for single-axiom P4.2: (S1) ℝ^d, (S2) action-based dynamics, (S3) minimal dimensional basis. Markovian kernel and self-adjointness are derivative.
+- **D56 (completed)**: Composition → half-density → ξ=1/6 → conformal coupling at D=4 chain. PARTIAL: consistency argument (conformal invariance of half-density potential at D=4), not a derivation. Q1 status unchanged.
+- **D57 (completed)**: Composition failure taxonomy: open systems (incomplete boundary), measurement (subsystem tracing), anomalies (symmetry-composition conflict), renormalization (assembly failure). Composition failure always has structural explanation.
+- **D58 (completed)**: Composition = functoriality (Atiyah-Segal). P4.2 = unique functor from time intervals to kernel operators. Identity limit is automatic in categorical language (functors preserve identities). QM = 0+1d functor (A1); QFT = d+1d functor (A1+A4).
+- **D59 (completed)**: Fermionic path integral vs composition. PARTIAL UNIVERSALITY: algebraic content (exp(iS/κ), identity limit, κ=ℏ) universal across boson+fermion. Geometric content (d/2, dimensional homogeneity, iε, Lévy) bosonic only (requires continuous ℝ^d).
+- **D60 (completed, synthesis)**: Forced-completion chain: calculus(0→1) → QM(1→2, A1) → QFT(2→3, A1+A4) → ???(3→?, unknown). Each stage = minimum enrichment for composition to work. Project thesis validated: stages 1→2 and 2→3 are theorems, not postulates.
+- **D61 (completed)**: Composition constrains structure (Gaussian, d/2, exp(iS/ℏ)), not content (which V). Interactions constrained only at A4 level (renormalizability). Clean separation: A1=structure, A4=content selection.
+- **D62 (completed)**: P4.2 vs operational uniqueness theorems (Hardy et al.). P4.2 uniquely offers: CM→QM bridge, inevitability narrative, QFT extension, single axiom. Complementary, not competing.
+- **Opus review**: D49 blackboard PASS WITH MINOR ISSUES (4 terminological corrections applied).

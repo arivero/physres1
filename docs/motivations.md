@@ -88,6 +88,18 @@ available semi-formal statement.
 (C), identity limit (I), dimensional homogeneity (D). The exponential weight
 and locality are derivable. This is a partial axiom-minimization result,
 though it addresses the quantization layer only (not the full RCP stack).
+**Further update (D49+D50)**: (D) is itself derivable from (C) + physical setup.
+[K]=L^{-d} follows from composition integral consistency; remaining content
+of (D) is trivially true for Lagrangian theories. Effective count: 2 mathematical
+axioms (C, I) + 1 physical setup (action-based dynamics on ℝ^d with mass m).
+Per-axiom decomposition: A1 forces d/2, exponential form, iε (5/9 conclusions);
+A2 forces κ→0 obstruction (1/9); A5/setup forces κ=ℏ, Lévy exclusion,
+continuum time (3/9). RCP axioms A3, A4 are logically independent (representation
+and scale channels, not needed for P4.2).
+**Final update (D53)**: (I) is also derivable from (C) + setup, via explicit
+kernel formula (free particle: nascent delta) or Stone's theorem (general V:
+self-adjoint H implies C₀ semigroup). **Final count: 1 axiom (composition) +
+physical setup.** Composition is the single master axiom for P4.2.
 
 ### 3. Does the contact-expansion universality produce new constraints?
 The fermionic paper shows that different UV completions give the same contact

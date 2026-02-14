@@ -57,7 +57,7 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Rooted-tree bookkeeping scope map + midpoint RK2 example (D41/S297) | Promoted (C315 -> rooted-tree-bookkeeping initial draft) |
+| 0 | P4.2 ↔ RCP axiom mapping (D49+D50+D51) | Promoted (notebook: rcp-axiom-structure-analysis) |
 | 1 | 2D delta RG example + rooted-tree adaptation (D42/S298) | Promoted (C316 -> rooted-tree Section 4.4) |
 | 2 | RCP foundations scope map + Noether example (D44/S299) | Promoted (C319 -> rcp-foundations initial draft) |
 | 3 | Half-density vs Moyal ordering comparison (D35/S290) | Promoted (C312 -> D9.1a correction, notebook: deformation-equivalence-physical) |

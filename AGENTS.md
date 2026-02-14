@@ -82,14 +82,24 @@ as a longer article (Phys. Rev. D scale, ~8–15pp).
 2. **Time until commit is working time:** Do NOT wait idle in a sleep loop for
    commit time to arrive. Use the waiting period to create and run new cycles
    (D/S/B/C/Q). Commits happen when ready AND when the 60-minute minimum has passed.
-3. **Two-commit rule (per batch):**
-   - **First commit:** manuscript source files — `.md` in `paper/` and
+3. **Three-commit rule (per batch):**
+   - **Commit 1 (manuscripts):** manuscript source files — `.md` in `paper/` and
      `papers/*/`, `.tex`, `.bib`, `paper/bibliography.md`.
-   - **Second commit:** everything else — `cycles/`, `docs/`, `blackboards/`,
-     `paper/notes/`, `notebooks/`, config files.
-   - If no manuscripts changed, only the second commit is needed.
-4. This keeps the manuscript-generating history cleanly separable from
-   planning/logging artifacts, while limiting total commits to ≤2 per hour.
+   - **Commit 2 (scaffolding):** everything else — `cycles/`, `docs/`, `blackboards/`,
+     `paper/notes/`, `notebooks/`, config files. **New cycle files enter git here.**
+   - **Commit 3 (archiving):** `git rm` of completed cycle files that were
+     **already tracked from a previous batch**. Never `git rm` files that were
+     first added in Commit 2 of the same batch.
+   - If no manuscripts changed, skip Commit 1.
+   - If no cycles are ready for archiving, skip Commit 3.
+4. **Why three commits (git-as-archive):** Cycle files are ephemeral planning
+   artifacts, but they must be recoverable from git history via
+   `git show <commit>:cycles/Cnn-execution.md`. This requires the file to
+   exist in at least one commit's tree before removal. The one-window lag
+   (created in batch N, archived in batch N+1) guarantees this. A cycle that
+   is created and completed within a single 60-minute window stays in the
+   working tree until the next batch, when it enters git (Commit 2) and
+   becomes eligible for archiving in the batch after that (Commit 3).
 5. **Commit metadata (required in every commit message):**
    - Include a tag identifying the orchestrating agent/model (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`).
    - List all cycle IDs in the batch (e.g., `S200+C241+S201+C242+Q128`).

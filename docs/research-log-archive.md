@@ -4234,3 +4234,48 @@
 - Added closed-form peak-drift location `x_peak^2=b^{-2/3}+b^{-4/3}` and asymptotic safe-window estimates.
 - Numeric validation shows strong high-`x` estimate accuracy and conservative low-`x` estimate behavior.
 - Updated `blackboards/3.md` and promoted stabilized result to notebook memory.
+
+## 2026-02-14 (Q186+C327: Dirac Probes quality review + reference clarification)
+- Focus: Quality review of dirac-probes paper for publication readiness
+- Question: Is the Dirac probes satellite paper ready for P-cycle (publication track)?
+- Work:
+  - Q186: Comprehensive quality review of papers/dirac-probes-corners-impulses/main.md (256 lines, ~7pp)
+    * Structural completeness: ✓ (6 sections, 3 theorems, worked model, outlook, references)
+    * Mathematical rigor: ✓ (complete proofs, explicit hypotheses, no logical gaps)
+    * Cross-reference network: ✓ (6 bibliography keys verified against paper/bibliography.md)
+    * Guard checks: ✓ (no cycle IDs, no conv_patched, no TODOs)
+    * Presentation quality: ✓ (clear abstract, logical flow, concise prose)
+    * Length/scope: ✓ (PRD-length ~7pp, complements cornerstone Section 5)
+  - C327: Fixed ambiguous forward reference in Remark 4.5c
+    * Changed "companion refinement note (Remark 3.3 there)" → "uncuttable-refinement companion satellite (Remark 3.3: Trotter product formula)"
+    * Located target: papers/uncuttable-controlled-refinement/main.md, Remark 3.3
+- Result: PASS WITH MINOR REVISION. Paper is publication-ready after C327 fix. Verdict: ready for P-cycle.
+- Sources touched: Dirac probes paper, uncuttable-refinement paper (cross-reference verification)
+- Next: Continue productive work until 22:00
+
+## 2026-02-14 (C326-C327: Path-Integral Normalization satellite paper)
+- Focus: Create comprehensive treatment of d/2 exponent in path-integral normalization
+- Question: Why is the (m/2πℏt)^{d/2} prefactor forced, not conventional? How does it connect across different physical contexts?
+- Work:
+  - D48: Scoped satellite paper structure (7 sections, 6-9pp target, 4 manifestations)
+  - S302: Drafted Sections 1-3 (introduction, free-particle composition, dimensional analysis)
+  - C326-C327: Created complete paper `papers/path-integral-normalization/main.md` (432 lines, 9pp)
+    * Section 1-7 complete treatment.
+  - Updated papers/README.md, docs/research-state.md
+  - Added cross-references in 5 papers: cornerstone, rg-fundamental, rcp-foundations, planck-area, half-density-qft
+- Result: Complete satellite paper proving d/2 exponent forced by composition semigroup.
+- Next: Continue work on other satellites or cornerstone
+
+## 2026-02-14 (Template refresh: blackboards/notebooks conventions)
+- Updated cycle templates for math/derivation locations and D/S physics-only rules.
+- Patched cycles/templates/Dxx-{plan,execution}.md, cycles/templates/README.md.
+- Ignored macOS .DS_Store files via .gitignore.
+
+## 2026-02-14 (C313+Q185: Multi-manuscript promotion wave)
+- C313: Remark P5.2a, Package B/C updates, Section 9.3/9.4 corrections, Planck-area OQ#3 closed, RG-H1.9.
+- Q185: PASS. Net: paper/main.md +29/-9, papers/planck-area +1/-1, papers/rg-fundamental +6/-1.
+
+## 2026-02-14 (C312: P4.2 hypothesis reduction + extensions promotion wave)
+- Promoted P4.2c-f + D9.1a correction into cornerstone.
+- Net: paper/main.md +20/-4. Guard checks CLEAN.
+- All 7 blackboard slots promoted.
