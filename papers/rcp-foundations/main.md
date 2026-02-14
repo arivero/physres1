@@ -296,6 +296,45 @@ RCP can be interpreted as a **candidate foundational postulate**: physical laws 
 
 These are left to future work.
 
+## 7.4 Multi-Channel Synthesis: The Path Integral as RCP Realization
+
+The three RCP channels do not operate in isolation—they **interact** in any realistic physical theory. The path integral provides a concrete arena where all three channels appear simultaneously and their interplay is explicit.
+
+**Partition channel in the path integral:** Time-slicing \(T = N\varepsilon\) with \(N \to \infty\) is the partition refinement. The sewing law (composition property)
+\[
+K(x_f, x_i; T) = \int dx\; K(x_f, x; t_1)\, K(x, x_i; t_2),
+\quad T = t_1 + t_2,
+\]
+is the operational form of partition compatibility (A1). The short-time kernel must have the form \(K(x,y;\varepsilon) \sim (m/2\pi\hbar\varepsilon)^{d/2} \exp(iS_{\mathrm{cl}}/\hbar)\) to preserve composition—this forces both the \(d/2\) normalization and the action-dimensional scale \(\hbar\) (Theorem P4.2).
+
+**Representation channel in the path integral:** Different time-slicing prescriptions (midpoint, prepoint, postpoint) correspond to different operator orderings (Stratonovich ↔ half-density, Itô ↔ Weyl-type). The Layer 2 connection term (e.g., \(\propto f'(q)\partial/\partial q\) in PDM systems) arises from the measure factor in the path integral:
+\[
+\mathcal{D}q \propto \prod_{k=1}^{N-1} \left[m(q_k)\right]^{1/2} dq_k.
+\]
+Changing the slicing prescription modifies this measure by O(ℏ) correction terms, which are the representation-channel transport data \(\tau_R(\theta)\).
+
+**Scale channel in the path integral:** For singular potentials (e.g., delta interaction \(V(x) = g\delta(x)\)), the naive path integral is ill-defined—the short-time action diverges. Regularization introduces a cutoff \(\Lambda\), and renormalization replaces \((g_B, \Lambda)\) with the running coupling \(g_R(\mu)\). The RG flow \(\mu\, dg_R/d\mu = \beta(g_R)\) is the scale-channel compatibility map \(\tau_\Lambda(\theta)\). Physical predictions (e.g., bound-state energy \(E_B\)) are \(\mu\)-independent (scale compatibility, A4).
+
+`Heuristic RCP-H1.1 (Three-channel synthesis).`
+The path integral synthesizes all three RCP channels:
+1. **Partition (composition):** Sewing law forces \(\hbar\)-necessity and Gaussian kernels.
+2. **Representation (measure):** Time-slicing prescription determines operator ordering via connection terms.
+3. **Scale (renormalization):** Singular interactions force parameter flow as the compatibility map.
+
+This synthesis is not accidental—it reflects the fact that the path integral is a **refinement-based formulation**: it defines the quantum propagator as the limit of composed discrete steps (partition), with a choice of slicing prescription (representation), and requires RG control for singular interactions (scale). RCP unifies these three aspects as instances of the same compatibility requirement.
+
+`Remark RCP-H1.2 (Why the path integral is RCP-natural).`
+The path integral is the unique formulation that makes all three RCP channels simultaneously explicit. Operator formalism hides partition compatibility (kernels are composed implicitly via \(\hat{U}(t_1)\hat{U}(t_2) = \hat{U}(t_1+t_2)\)), and Hamiltonian formalism hides scale compatibility (renormalization appears as a "correction" rather than a structural requirement). The path integral, by construction, exposes refinement as the defining operation—making RCP the natural organizing principle.
+
+## 7.5 Forward Connections
+
+Three companion satellite papers develop the RCP channels in detail:
+- **[OrderingEquivalence]:** Representation channel (four-layer stratification, PDM + curved-space worked examples, star-product automorphism perspective, Itô/Stratonovich bridge).
+- **[RootedTreeBookkeeping]:** Partition channel (Butcher group for RK composition, rooted-tree Hopf algebra for counterterm recursion, explicit midpoint RK2 + 2D delta RG dictionary).
+- **[RGFundamental]:** Scale channel (RG as semigroup compatibility, Wilsonian shell integration, dimensional transmutation in 2D delta model, multi-channel RCP conclusion).
+
+Together with the cornerstone manuscript [Main], these papers form a **coherent RCP narrative**: refinement compatibility is not a philosophical slogan but a falsifiable structural requirement, with constructive witnesses in all three channels and quantitative tests in worked examples.
+
 # 8. References
 
 1. [Main] Companion paper, "Refinement Compatibility and the Structural Necessity of Renormalization" (in preparation). (Full Newton-to-RG chain as RCP implementation; Proposition P4.2.)
@@ -303,3 +342,9 @@ These are left to future work.
 2. [Arnold1989] V. I. Arnold, *Mathematical Methods of Classical Mechanics*, 2nd ed., Springer, 1989. DOI `10.1007/978-1-4757-2063-1`. (Noether's theorem, symplectic geometry, variational principles.)
 
 3. [Landsman1998] N. P. Landsman, *Mathematical Topics Between Classical and Quantum Mechanics*, Springer, 1998. DOI `10.1007/978-1-4612-1680-3`. (Deformation quantization, ordering prescriptions, representation equivalence.)
+
+4. [OrderingEquivalence] A. Rivero, "Operator Ordering as Equivalence Class: Stratification and Measurability," companion satellite paper (2026).
+
+5. [RootedTreeBookkeeping] A. Rivero, "Rooted-Tree Bookkeeping for Composition Compatibility: A Butcher/RG Dictionary," companion satellite paper (2026).
+
+6. [RGFundamental] A. Rivero, "Renormalization Group as a Fundamental Compatibility Principle," companion satellite paper (2026).

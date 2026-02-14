@@ -167,7 +167,7 @@ Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PL
 5. Dirac Probes / Corners / Impulses (7pp, ~256 lines, 6 refs) — FROZEN
 
 **PRD-length satellites (>6pp compiled):**
-6. RCP Foundations (7pp, 305 lines, 3 refs) — NEW (axioms A1-A5, three crown witnesses, falsifiable operational form)
+6. RCP Foundations (8pp, 347 lines, 6 refs) — NEW (axioms A1-A5, three crown witnesses, multi-channel path-integral synthesis, forward connections)
 7. Ordering Equivalence (8pp, 391 lines, 2 refs) — NEW (four-layer stratification, PDM+curved examples, star products, Itô/Stratonovich, RCP representation channel)
 8. Rooted-Tree Bookkeeping (8pp, 431 lines, 5 refs) — NEW (Butcher/RG dictionary, Hopf coproduct explicit formulas)
 9. RG Fundamental (12pp, 721 lines, 10 refs) — EXPANDED (rooted trees, Hopf coproduct, multi-channel RCP conclusion)
@@ -187,6 +187,7 @@ Recent cornerstone additions (2026-02-14):
 - C304-C311: delta dictionary, Ito/Stratonovich, caustics/Maslov, Pade unification, RCP crown witnesses
 
 Recent satellite additions (2026-02-14):
+- C325: RCP foundations expansion — Section 7.4+7.5 added (multi-channel synthesis showing how partition/representation/scale interact in path integral: sewing law forces ℏ, measure encodes ordering, singular V forces RG). Cross-references to three channel-specific satellites. Paper now 8pp (347 lines).
 - C324: Ordering equivalence COMPLETE — expanded sections 4-7 (curved space Laplace-Beltrami + curvature potential, star-product automorphism perspective, Itô/Stratonovich + path-integral discretization, measurability analysis + RCP representation channel). Paper at 8pp (391 lines), 6 propositions, 2 worked examples.
 - C323: NEW satellite `ordering-equivalence` (initial 165 lines) — Four-layer stratification (principal symbol, connection, scalar potential, domain), PDM worked example (Weyl vs half-density explicit derivations, GaAs quantum well numerical test |ΔE₀| ~ 0.006-0.06 meV), Proposition OE-P1.2 (deformation equivalence is physical).
 - C322: RG-fundamental conclusion expansion — Section 7 expanded with multi-channel RCP bridge (three crown witnesses: partition/Noether, representation/ordering, scale/2D delta), foundational reading (RG as definitional), forward references to [RCPFoundations] and [RootedTreeBookkeeping]. Paper now 12pp (721 lines).
