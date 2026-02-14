@@ -170,9 +170,12 @@ In a conformal background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) in spacet
 +\frac{D(4-D)}{4}(\partial\sigma)^2\,\psi
 \Big).
 \]
-Thus the quadratic-gradient term \((\partial\sigma)^2\psi\) cancels at \(D=4\) (within the conformal ansatz). If one adopts the extra criterion that scalarization-gauge changes should not generate such quadratic-gradient “potentials” in the half-density kinetic operator, then \(D=4\) is singled out by *operator simplicity* rather than by coupling-dimension matching.
+Thus the quadratic-gradient term \((\partial\sigma)^2\psi\) cancels at \(D=4\) (within the conformal ansatz). If one adopts the extra criterion that scalarization-gauge changes should not generate such quadratic-gradient "potentials" in the half-density kinetic operator, then \(D=4\) is singled out by *operator simplicity* rather than by coupling-dimension matching.
 
-This filter is independent of PA-H2.5 and, by itself, does not supply a length scale; it is recorded only as an additional “special dimension” candidate knob to compare against the scale-sieve hypotheses.
+This filter is independent of PA-H2.5 and, by itself, does not supply a length scale; it is recorded only as an additional "special dimension" candidate knob to compare against the scale-sieve hypotheses.
+
+`Remark PA-H2.6c (Heat-kernel witness: conformal coupling and \(D=4\)).`
+The \(D=4\) conformal specialness has a parallel heat-kernel manifestation. For the scalar kinetic operator \(P=-\nabla^2+\xi R+m^2\) on a closed Riemannian \(D\)-manifold, the first Seeley-DeWitt coefficient at coincidence is \(a_1(x,x)=(\tfrac16-\xi)R\). Conformal coupling corresponds to \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), which gives \(a_1(x,x)\big|_{\xi=\xi_{\mathrm{conf}}}=\tfrac{4-D}{12(D-1)}R\). This vanishes if and only if \(D=4\). The physical interpretation: at \(D=4\), the half-density conjugation potential \(V=\tfrac16 R\) (universal for any metric in any dimension) exactly equals the conformal coupling \(\xi_{\mathrm{conf}}R=\tfrac16 R\), so the conformally coupled half-density field has no leading curvature correction to its heat kernel at coincidence. The heat-kernel trace \(\mathrm{Tr}\,e^{-tP}\sim(4\pi t)^{-D/2}\sum A_n t^n\) carries the same \(D/2\) exponent as the identity kernel normalization (Derivation PA-D1.2b), the propagator Schwinger parametrization, the UV divergence degree \(\Lambda^{D-2n}\), and the dimensional-regularization pole structure \(\Gamma(D/2-n)\) — five manifestations of the single fact that the half-density identity kernel on \(\mathbb R^D\) scales as \(\varepsilon^{-D/2}\).
 
 ## 3.2 What Changes When a Hypothesis Is Relaxed?
 This subsection records the main “branches” that need separate study.

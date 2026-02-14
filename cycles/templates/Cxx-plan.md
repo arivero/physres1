@@ -19,6 +19,8 @@ Out of scope:
 ## Minimum promotion bar (preferably verbose)
 This cycle should contain at least one paragraph-level addition/rewrite, a derivation/remark block, or a subsection-level change (avoid micro-edits as standalone `C` cycles).
 
+**Scope completion requirement:** The additions must cover all themes listed in "In scope", OR spawn `Sxx` study cycles to address uncovered themes. A `C` cycle cannot close with partially completed scope—either promote all in-scope items, or delegate remaining items to new cycles with explicit handoff.
+
 ## Allowed files
 - `paper/main.md`
 - `papers/*/main.md`

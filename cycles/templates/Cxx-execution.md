@@ -27,6 +27,13 @@ scripts/paper-diffstat.sh --cached
 - PDFs rebuilt (if applicable):
   - <list>
 
+## In-scope completion checklist
+(Copy items from Cxx-plan.md "In scope" section and mark each as ✓ or spawn Sxx)
+□ <item 1>
+  → Done: <evidence> OR Spawned: Sxx
+□ <item 2>
+  → Done: <evidence> OR Spawned: Sxx
+
 ## Spawned cycles
 - `Qxx`: referee pass on this `Cxx`
 - `Sxx` / `Bxx` / `Dxx`: <if needed>
