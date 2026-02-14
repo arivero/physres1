@@ -707,6 +707,9 @@ This foundational reading does not eliminate the practical value of perturbative
 
 Natural extensions include carrying the same Wilsonian analysis into a standard QFT example (with a nontrivial fixed-point structure), sharpening the rooted-tree bookkeeping discussion into a full "Butcher/RG dictionary" that separates literal identities from analogy (partially addressed in [RootedTreeBookkeeping]), and investigating whether the multi-channel compatibility framework extends to gravitational theories (where diffeomorphism invariance might play a role analogous to RG invariance in the scale channel).
 
+`Remark RG-H1.18 (Two-layer QFT structure under forced completion).`
+From the composition perspective, quantum field theory has a two-layer architecture. *Layer 1* (quantization per mode): each field mode — partial wave, Fourier component, or lattice degree of freedom — is a quantum-mechanical system satisfying the composition law independently, with its Gaussian kernel, \(d/2\) normalization, and \(\kappa=\hbar\). *Layer 2* (renormalization for assembly): the specifically QFT ingredient is the compatibility condition required to compose infinitely many quantized modes into a continuum whole. UV divergences signal the structural cost of this assembly — the point where single-mode composition alone is no longer sufficient and scale-channel compatibility (Section 5) becomes necessary. The two layers are logically independent: Layer 1 constrains *structure* (kernel form, normalization), while Layer 2 constrains *content* (which interaction types are admissible under assembly, given symmetry and spectrum). See the companion review [RCPFoundations], Section 6 for the formal axiom reduction.
+
 # References
 
 1. [ConnesKreimer2000] Alain Connes and Dirk Kreimer, "Renormalization in quantum field theory and the Riemann-Hilbert problem I," *Communications in Mathematical Physics* 210 (2000), 249–273. DOI `10.1007/s002200050779`.

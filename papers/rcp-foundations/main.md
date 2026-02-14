@@ -244,27 +244,36 @@ Then \(d\kappa_*/d\mu = 0\): the physical content is a single scale \(\kappa_*\)
 
 ## 6.1 Statement
 
-**Theorem (from [Main] Proposition P4.2).** Consider partition-compatible action-based dynamics satisfying:
-- **A1 (Composition):** Temporal composition \(\mathcal{O}_{T} = \mathcal{O}_{t_1} \circ \mathcal{O}_{t_2}\) with \(T = t_1 + t_2\).
-- **A2 (Identity limit):** As \(t \to 0\), the kernel approaches the identity distribution.
-- **A5 (Dimensional homogeneity):** All parameters built from fundamental constants \(\{m, \hbar\}\).
+**Theorem (from [Main] Proposition P4.2).** Consider action-based dynamics on \(\mathbb{R}^d\) with mass parameter \(m\) and self-adjoint generator, and let \(\{K(x,y;t)\}_{t>0}\) be a family of transition kernels satisfying:
+- **A1 (Composition):** \(\int K(x,z;t_1)\,K(z,y;t_2)\,d^dz = K(x,y;t_1+t_2)\).
 
-Then the framework forces a structural constant \(\kappa\) with \([\kappa] = [\text{action}]\), and:
-1. The normalization exponent is forced: kernel \(\sim t^{-d/2}\) (semigroup closure).
-2. \(\kappa = \hbar\) is **necessary**, not merely convenient.
-3. Both limiting cases fail:
-   - \(\kappa \to 0\): Composition collapses to Hamilton-Jacobi (classical), identity limit fails distributionally.
-   - \(\kappa \to \infty\): Weights trivialize, partition refinement loses dynamical content.
+Then, without further axioms, the composition law forces:
+1. \([K] = L^{-d}\) (dimensional consistency of the composition integral).
+2. Normalization exponent \(d/2\): kernel \(\sim t^{-d/2}\) (semigroup closure).
+3. Exponential weight: \(K \propto \exp(iS/\kappa)\) (functional equation uniqueness).
+4. \(i\varepsilon\) prescription uniqueness (degree-counting in the regulator).
+5. A structural constant \(\kappa\) with \([\kappa] = [\text{action}]\), necessarily \(\kappa = \hbar\).
+6. Both limiting cases fail:
+   - \(\kappa \to 0\): oscillatory divergence, no distributional identity limit.
+   - \(\kappa \to \infty\): weights trivialize, partition refinement loses dynamical content.
+7. Identity limit: \(K(x,y;t) \to \delta(x-y)\) as \(t \to 0\) (nascent delta for the forced Gaussian form, or Stone's theorem for general potentials).
+8. Lévy process exclusion: non-Gaussian stable processes (\(\alpha \neq 2\)) violate dimensional consistency.
+9. Continuum time: no discrete time scale \(\varepsilon\) constructible from \(\{m, \hbar\}\) alone.
+
+`Remark RCP-P6.1 (Axiom reduction).`
+The original P4.2 required three hypotheses: composition (C), identity limit (I), dimensional homogeneity (D). Subsequent analysis shows that (D) is a theorem of (C) on \(\mathbb{R}^d\) (the composition integral forces \([K] = L^{-d}\)), and (I) follows from the explicit kernel form forced by (C) (the Gaussian kernel is a nascent delta family). **Composition is the single master axiom** for the partition channel; the physical setup (action-based dynamics on \(\mathbb{R}^d\) with mass \(m\) and self-adjoint generator) provides the arena, not additional axioms.
 
 ## 6.2 RCP Interpretation
 
 This theorem is the **crown witness for partition compatibility**. It shows:
 
-1. **Constructive forcing:** Axioms A1+A2+A5 do not merely constrain admissible theories—they **force** specific structural constants. Planck's constant \(\hbar\) emerges as the partition-compatibility parameter, not as external input.
+1. **Constructive forcing from a single axiom:** Composition alone does not merely constrain admissible theories—it **forces** specific structural constants. Planck's constant \(\hbar\) emerges as the partition-compatibility parameter, not as external input. The d/2 normalization, exponential weight, \(i\varepsilon\) prescription, and identity limit are all theorems of the composition semigroup (not independent postulates).
 
-2. **Falsifiability in action:** Both \(\kappa \to 0\) and \(\kappa \to \infty\) are testable failures of RCP closure. The classical limit (\(\kappa \to 0\)) breaks composition (no distributional identity kernel); the trivial limit (\(\kappa \to \infty\)) erases dynamics. RCP compatibility picks out \(\kappa = \hbar\) as the unique admissible value.
+2. **Falsifiability in action:** Both \(\kappa \to 0\) and \(\kappa \to \infty\) are testable failures of RCP closure. The classical limit (\(\kappa \to 0\)) breaks composition (no distributional identity kernel); the trivial limit (\(\kappa \to \infty\)) erases dynamics. RCP compatibility picks out a finite, nonzero \(\kappa\) with dimensions of action—identified with \(\hbar\) by the dimensional basis of the physical setup.
 
 3. **Partition compatibility is fundamental:** The theorem shows that partition refinement is not a calculational convenience—it is a **definitional requirement**. The demand that refined and coarse predictions agree forces quantum mechanics.
+
+4. **Per-axiom decomposition.** Of nine P4.2 conclusions, composition (A1) alone forces five (d/2, exponential weight, \(i\varepsilon\), \(\kappa \to \infty\) failure, Lévy process exclusion). Combined with physical setup, composition forces three more (\([K]=L^{-d}\), \(\kappa = \hbar\), continuum time). The remaining conclusion (\(\kappa \to 0\) failure) follows from the explicit kernel form. The representation (A3) and scale (A4) axioms are **logically independent**—they address different channels and are not needed for P4.2.
 
 # 7. Outlook and Crown Witnesses
 
@@ -285,12 +294,13 @@ RCP can be interpreted as a **candidate foundational postulate**: physical laws 
 - **Structural constants (e.g., \(\hbar\)) are emergent, not external.** They arise as compatibility parameters forced by closure requirements, not as inputs to the theory.
 - **The classical limit is a failure mode, not a foundation.** \(\hbar \to 0\) breaks partition compatibility (Theorem P4.2), so classical mechanics is not the "base theory" from which quantum mechanics is a perturbation. Instead, quantum mechanics is the **minimal closure** of partition-compatible action-based dynamics.
 - **Renormalization is definitional, not corrective.** Scale compatibility (A4) is not a fix for divergences—it is the **requirement** that scale changes preserve admissibility. Divergences signal closure failure in the absence of parameter updates; the beta function is the compatibility map that restores closure.
+- **Physics is a chain of forced completions.** Each layer of physical theory is the minimum enrichment needed to make the previous layer's composition work: calculus completes discrete mechanics (\(\Delta t \to 0\) limits); quantum mechanics completes classical dynamics (kernel composition, A1); renormalization completes infinite-mode assembly (A1+A4). The chain calculus \(\to\) variational principles \(\to\) path integral \(\to\) renormalization is not a sequence of independent formalisms but a single logical progression, each stage forced by composition.
 
 ## 7.3 Open Questions
 
 1. **Are there additional compatibility channels beyond partition/representation/scale?** Candidate: **time-reversal compatibility** (CPT symmetry as closure condition) or **statistical compatibility** (quantum-to-thermal transitions).
 
-2. **Can RCP be formalized as a categorical structure?** The commuting diagrams (Section 2.2) suggest a **monoidal category** with transformations as morphisms and compatibility as functoriality.
+2. **Can RCP be formalized as a categorical structure?** The commuting diagrams (Section 2.2) suggest a **monoidal category** with transformations as morphisms and compatibility as functoriality. Partial answer: the composition axiom (A1) is precisely the Atiyah-Segal functoriality axiom applied to 0+1-dimensional quantum mechanics. The functor maps time intervals to kernel operators, and the identity limit (A2) is automatic (functors preserve identity morphisms). This makes P4.2 a uniqueness theorem for the Atiyah-Segal functor restricted to action-based kernels. This identification is complete for 0+1-dimensional quantum mechanics; the extension to \(d\)+1-dimensional QFT, where A4 enters as a condition on the infinite-dimensional target category, remains open.
 
 3. **Does RCP extend to gravity?** Diffeomorphism invariance is a compatibility condition (coordinate changes must not affect observables). Can background-independence be framed as "metric-refinement compatibility"?
 
@@ -348,3 +358,5 @@ Together with the cornerstone manuscript [Main], these papers form a **coherent 
 5. [RootedTreeBookkeeping] A. Rivero, "Rooted-Tree Bookkeeping for Composition Compatibility: A Butcher/RG Dictionary," companion satellite paper (2026).
 
 6. [RGFundamental] A. Rivero, "Renormalization Group as a Fundamental Compatibility Principle," companion satellite paper (2026).
+
+7. [PathIntegralNormalization] A. Rivero, "Path-Integral Normalization: The d/2 Exponent as Composition Datum," companion satellite paper (2026).

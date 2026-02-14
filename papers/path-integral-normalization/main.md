@@ -142,7 +142,7 @@ Thus the prefactor \((m/t)^{d/2}\) is forced by dimensional consistency.
 
 ## 3.2 Connection to P4.2 (ℏ-Necessity Theorem)
 
-The cornerstone manuscript proves (Theorem P4.2) that composition semigroup closure under dimensional homogeneity forces the existence of an action-dimensional scale \(\kappa = \hbar\) and forbids both the classical limit \(\kappa \to 0\) and the trivial limit \(\kappa \to \infty\).
+The cornerstone manuscript proves (Theorem P4.2) that the composition semigroup forces the existence of an action-dimensional scale \(\kappa = \hbar\) and forbids both the classical limit \(\kappa \to 0\) and the trivial limit \(\kappa \to \infty\). (Dimensional homogeneity (D) was originally listed as an independent hypothesis, but it is in fact a theorem of composition on \(\mathbb{R}^d\): the integral \(\int K \cdot K\, d^dz = K\) forces \([K]=L^{-d}\) by dimensional consistency. See [RCPFoundations] Remark RCP-P6.1.)
 
 The \(d/2\) exponent is the **normalization constant** that makes this composition law explicit. Specifically:
 - **Composition (C):** The semigroup law \(K(x,z;t_1+t_2) = \int dy\, K(x,y;t_1)K(y,z;t_2)\) is the operational content of temporal partition compatibility.
@@ -417,7 +417,7 @@ The recognition that \(d/2\) is a **structural constant** (rather than a convent
 ## 7.4 Open Questions
 
 While the \(d/2\) exponent is fully understood in the contexts explored here, several directions remain open:
-1. **Fractional dimensions:** Does the \(d/2\) normalization extend to non-integer \(d\) (e.g., fractal geometries, dimensional regularization)? The composition law formally applies, but the geometric interpretation (volume element, half-density) requires care.
+1. **Fractional dimensions (partially resolved):** For dimensional regularization (\(d = 4-2\varepsilon\)), the \(d/2\) normalization extends by analytic continuation: the Gaussian integral \(\int d^dz\, e^{-az^2} = (\pi/a)^{d/2}\) is an analytic function of \(d\), and the composition law holds for any \(d\) by analyticity. The kernel normalization \((m/2\pi\hbar t)^{2-\varepsilon}\) composes correctly; UV divergences arise as poles at \(\varepsilon \to 0\) in loop integrals, not from composition failure. For fractal geometries (non-integer Hausdorff dimension \(d_H\)), the situation is subtler: the heat kernel satisfies \(K_t(x,y) \sim t^{-d_s/2}\) where \(d_s\) is the spectral dimension (not \(d_H\)). The composition semigroup still holds, but the effective normalization exponent is \(d_s/2\).
 2. **Gauge theories:** In Yang-Mills theory, the gauge-field propagator has different tensor structure than the scalar kernel. Does an analogous "universal compatibility datum" govern the normalization of Wilson lines or lattice path integrals?
 3. **Quantum gravity:** If spacetime dimension is dynamical (varying \(d\)), how does the \(d/2\) exponent interact with the path integral over geometries?
 
