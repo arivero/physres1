@@ -58,7 +58,7 @@ relevant slot. Deletion criteria (in priority order):
 | 1 | Delta-object dictionary + safe/unsafe criterion (D24/S281) | Active (D24+S281) |
 | 2 | Stochastic discretization: Itô vs Stratonovich from N-impulse | Active (S282) |
 | 3 | Central-force threshold bridge branchboard | Active (S270-S278) |
-| 4 | RCP + contact universality constraints | Active (S207) |
+| 4 | Two-particle κ-universality test (D32/S286) | Active (S286) |
 | 5 | Heat-kernel witness in half-density language | Active (S283) |
 | 6 | Newton polygonal convergence: theorem + failure mode (D28/S285) | Active (S285) |
 

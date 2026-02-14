@@ -79,6 +79,23 @@ Not allowed in `D`/`DX`:
 
 If the task is prose change, use `C`. If the task is submission packaging, use `P`.
 
+### 7) Context-search before cycle startup (required for D and S)
+**Before starting any D or S cycle**, use Haiku agent to search for relevant context:
+
+- **D-cycle (Discovery):** Search `sources/` folder for related themes in bibliography/external sources
+  - Purpose: Check what the literature says before claiming novelty
+  - Tool: `Task` with `subagent_type="Explore"` and `model="haiku"`
+  - Query: "Search sources/ for [topic keywords from D-plan]"
+  - Prevents reinventing the wheel, finds connections to existing work
+
+- **S-cycle (Study):** Search `papers/` folder for related content in our manuscripts
+  - Purpose: Check what we've already written before duplicating derivations
+  - Tool: `Task` with `subagent_type="Explore"` and `model="haiku"`
+  - Query: "Search papers/ and paper/ for [technical terms from S-plan]"
+  - Prevents internal duplication, identifies integration opportunities
+
+**Rationale:** Context-gathering with cheap Haiku search before expensive Opus/Sonnet deep work. If the search shows the question is already answered (in sources or our papers), adjust or cancel the cycle.
+
 ## Cycle Types
 We use five independent numbered tracks:
 

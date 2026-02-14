@@ -12,9 +12,9 @@
 |-------|-------|-------|
 | Content (`Cnn`) | 295 | C00–C302 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 277 | S00–S285 (gaps: S276–S278 active) |
+| Study (`Snn`) | 278 | S00–S286 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 178 | Q00–Q184 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 29 | D00–D28 (dormant) |
+| Discovery triage (`Dnn`) | 30 | D00–D28, D32 (dormant) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
@@ -31,6 +31,7 @@
 - `D26` (completed): heat-kernel / half-density semantics as a QFT-grade witness. S283 completed (blackboards/5.md).
 - `D27` (completed): odd-\(d\) scalarization scale supplier vs transmutation. S284 completed (blackboards/0.md). Parity lemma: monomial sieve is even-\(d\) only; transmutation is parity-blind; d=3 delta witness supplies \(a^{3/2} = \text{length}^{d/2}\). B32 deferred.
 - `D28` (completed): Newton polygonal convergence statement + failure mode witness. S285 completed (blackboards/6.md). Promotable paragraph ready for future C-cycle targeting Section 3.
+- `D32` (completed): Does composition force universality of κ across sectors? S286 completed (blackboards/4.md). Verdict: universality forced for coupled systems (single-exponential-weight assumption prevents factorization); decoupled sectors can have independent κ. Transitivity of interaction makes κ=ℏ universal across all interacting physics.
 
 ## Next Action
 

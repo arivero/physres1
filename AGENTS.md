@@ -185,11 +185,14 @@ When asked to run multiple cycles or tasks, continue autonomously without pausin
 ## When No Tasks Are Available (Looping Protocol)
 If instructed to keep looping but no explicit tasks remain in `cycles/index.md`:
 
-1. **Scan manuscripts for D/S opportunities:**
+**PRIORITY RULE:** When scanning manuscripts (ours) or bibliography, **discovery (Dxx) and study (Sxx) tasks have priority over content (Cxx) promotion**. Generate questions, identify gaps, and spawn exploration cycles before reaching for promotion. We are researchers first, editors second.
+
+1. **Scan manuscripts for D/S opportunities (prioritize over C):**
    - Read `paper/main.md` and `papers/*/main.md` section by section
-   - Identify claims needing derivation witnesses (→ spawn S-cycle)
-   - Identify conceptual gaps or unclear scope boundaries (→ spawn D-cycle)
-   - Look for "TODO", "PENDING", or informal hedges that need hardening
+   - **First priority:** Identify deep questions raised by existing claims (→ spawn D-cycle: "Can this hypothesis be weakened?", "Does this extend to curved space?", "What's the obstruction?")
+   - **Second priority:** Identify claims needing derivation witnesses or technical verification (→ spawn S-cycle for blackboard/notebook work)
+   - **Third priority:** Look for stable blackboard/notebook content ready for promotion (→ spawn C-cycle)
+   - Avoid becoming a "promotion factory" — if no deep questions emerge, that's a signal to pause or switch tasks
 
 2. **Scan bibliography for source-driven work:**
    - Read `paper/bibliography.md` OA Acquisition Status section
