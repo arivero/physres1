@@ -6,6 +6,7 @@ It is meant to survive chat/context resets.
 ## Canonical Agent Instructions
 - Canonical rules live in `AGENTS.md`.
 - `AGENT.md` is a pointer only.
+- On reset/startup, the full AGENTS startup read order is mandatory, including `cycles/README.md`.
 For other assistants:
 - Claude reads `CLAUDE.md` (points back to `AGENTS.md` + invocation contract).
 - GitHub Copilot reads `.github/copilot-instructions.md` (points back to `AGENTS.md` + cycle workflow).
@@ -15,6 +16,7 @@ Key policies:
 2. Do not cite `conv_patched.md` (or any chat transcript) as a bibliography source.
 3. Prefer OA sources first; if not available, mark `PENDING` and ingest later from a lawful local PDF.
 4. Treat preprints (including A. Rivero drafts) as guides; do not treat them as “source of truth” for key claims without independent support.
+5. Track intent mapping is strict: `D` = discovery only, `C` = writing/promotion, `P` = publication packaging/submission.
 
 ## Repo Layout
 - Manuscript: `paper/main.md` (edit this)
@@ -28,6 +30,7 @@ Key policies:
 ## Research Continuation (Durable State)
 - Working memory + active threads: `docs/research-state.md` (non-citable)
 - Chronological lab notebook: `docs/research-log.md` (non-citable)
+- Pre-commit log rollover rule: keep only the latest 3 dated entries in `docs/research-log.md`; move older entries to `docs/research-log-archive.md` before commit work.
 
 ## Build Paper (Markdown -> TeX -> PDF)
 Do not rely on pandoc defaults for math in this repo; use the single-backslash math extension.

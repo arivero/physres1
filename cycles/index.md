@@ -22,7 +22,9 @@
 
 ## Active / In Progress
 
-(none)
+- `S276` (initial pass done): generalized marginal map beyond monomial \(A(L)\).
+- `S277` (initial + analytic-closure iteration done): scale-window validity for mixed kinetic exponents.
+- `S278` (initial + iteration-2 done): potential-channel drift diagnostics for non-power corrections.
 
 ## Next Action
 
@@ -33,6 +35,9 @@
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- S274+S275(iter4)+D20: threshold-bridge deepening continued without new C-cycle. Added \(L_{\mathrm{crit}}\) marginal map, ran same-ID caveat-coverage + compactness/readability iterations for compression candidates, and deferred C300 (no correctness defect).
+- D18+S272+S273+D19: slowed the central-force threshold thread into stress-test cadence (coefficient-aware marginal analysis + assumption-break tests + evidence-gated `S274/S275 -> optional C300` queue).
+- D17+S270+S271+C299+Q182: main-paper Section 3.3 bridge wave on `paper/main.md`. Added `Remark P1.1a` (asymptotic threshold \(q_{\mathrm{crit}}=\nu+1\), Newton \(3\) vs SR \(2\), explicit scope split from inverse-square dimensional identity); Q182 PASS.
 - C298+Q181: readability pointer hardening on `paper/main.md` (Section 9.5 quick map + `D10.4a`); Q181 PASS.
 - C297+Q180: RCP cross-link hardening on `paper/main.md` (`D10.1b` linking domain-data witness to operational closure map); Q180 PASS.
 - C296+Q179: Package B deeper extension witness on `paper/main.md` (`D9.1f`, `D9.1g`); Q179 PASS.
@@ -44,6 +49,10 @@
 - C288: converted Section 9 closing prose into task-driven Package A-E queue (`+27 -8`).
 
 **Immediate:**
+- Pick one open `S` branch (`S276`/`S277`/`S278`) to deepen next; keep others parked as ready alternatives.
+- If continuing this thread: keep iterating same active S-cycle ID when unresolved; open new ID only on scope reset/change.
+- Threshold-bridge queue (slow cadence): continue technical S-branches only (`S276`/`S277`/`S278`).
+- `S275`, `D21`, `D22`, and `C300` are closed and archived in this session.
 - Relativistic now at PLB boundary (6pp); treat as frozen unless compact replacement edit is required.
 - HD-QFT at 6pp boundary.
 - Delta-objects at PLB limit — frozen. Dirac-probes at 7pp — FROZEN.
@@ -58,3 +67,32 @@
 
 **Deprioritized:**
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
+
+## Session Addenda (2026-02-14)
+- Location semantics: files in `cycles/` are selectable active logs; archived files in `cycles/archive/` are archived.
+- Cycle artifacts are append-only in this session.
+- Workflow rule: `S`/`D` must use blackboards/notebooks (no `paper/notes/`); `C` may use `paper/notes/` only when adding content to the same paper target.
+
+## Session Addenda (2026-02-14, 03:05 CET)
+- `S275` (iteration 5): added stricter 8-caveat compression gate; new default candidate `D4plus` (31 words, 8/8 caveat coverage, ~72.5% compression).
+- `C300` remains deferred and optional (readability-only trigger, no correctness defect).
+
+## Session Addenda (2026-02-14, 03:10 CET)
+- Metric correction: `S275` selected candidate `D4plus` compresses by `~65.9%` (91 -> 31 words), not `~72.5%`.
+- `D21` (iteration 3): launch gate now includes deterministic tie-break (coverage first, compression second); current recommendation remains `D4plus`.
+- `S276` (iteration 3): added windowed uniqueness criterion (report global vs operating-window crossings + range bracket).
+- `D22` (iteration 3): added bounded navigation gate; `X2` candidate parked, insertion still deferred to readability pass.
+- `S277` (iteration 3): added decade-drift validity gate (`Delta nu_10`) for finite-window fixed-exponent claims.
+- `S278` (iteration 3): added finite-window potential-drift gate (`Delta m_max`) and cross-family tolerance comparison.
+- `D21` (iteration 4): integrated launch matrix added; C300 remains deferred by policy preference, not readiness gaps.
+- `S275` (iteration 6): default compression candidate switched to TeX-ready `D6_tex_compact` (8/8 caveats, ~56% compression).
+- `D21` (iteration 5): launch preference aligned to `D6_tex_compact` for lower promotion friction.
+- Boundary correction: notation-style promotion-readiness checks reassigned from `S275` to `D21`/future `C300`; `S275` remains technical-only.
+- Boundary correction (superseding prior split): notation-style harmonization is `C`-only (except explicit TeX-discovery tasks); `D21` kept to launch triage.
+- Postmortem correction: D21 policy-heavy iterations marked as discovery-inactive/admin trace; D22 narrowed to discovery-only conceptual triage.
+- `C300` (completed, uncommitted): compressed `Remark P1.1a` in `paper/main.md` to a caveat-preserving 2-sentence form (`+1 -1`).
+- `C300` (closed, no promotion): paragraph restored by user request; manuscript net diff returned to `+0 -0`.
+- `D22` closed: no new conceptual relation established in discovery pass.
+- `D21` closed: administrative/policy trace only (not discovery).
+- Drift postmortem: ambiguity came from missing explicit prohibition of policy/editorial tasks in `D`; fixed by adding `D` scope guard in `cycles/README.md` and strict track mapping in `AGENTS.md`/`docs/handoff.md`.
+- `S277` (iteration 4): generalized drift gate to arbitrary scale factor `Delta nu_b`, with peak-location formula and asymptotic window estimates.

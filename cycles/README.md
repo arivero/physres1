@@ -67,6 +67,18 @@ How to check:
 
 This is intentionally judgment-based and lightweight: the LLM/human operator decides, not an external program.
 
+### 6) `D` scope guard (hard)
+`D`/`DX` are discovery tracks only. They must carry a novelty target, hypothesis,
+counterexample search, or conceptual triage outcome.
+
+Not allowed in `D`/`DX`:
+- manuscript wording polish
+- readability compression policy
+- launch/commit workflow policy that is not tied to novelty claims
+- sentence-level insertion drafting for manuscript navigation
+
+If the task is prose change, use `C`. If the task is submission packaging, use `P`.
+
 ## Cycle Types
 We use five independent numbered tracks:
 
@@ -75,6 +87,7 @@ We use five independent numbered tracks:
    - **D-triage** (`Dnn`, default): pick a novelty target from the backlog, define it, spawn production cycles. Convergent.
    - **D-explore** (`DXnn`): divergent exploration — surprise inventory, cross-thread probes, framing stress-tests, candidate principles. Uses `docs/anomalies.md` as input/output. Does not commit to a production target; may spawn S or D-triage.
    - Typical outputs: updated backlog/priority in `docs/research-state.md` and/or `docs/next-articles.md`, plus spawned `S`/`B`/`C` cycles. D-explore also updates `docs/anomalies.md` and the principle evolution log in `docs/research-state.md`.
+   - Non-goal: editorial/manuscript wording work.
 
 2. **Study cycles** (`Snn`): exploratory technical work (blackboards, notes, notebooks; derivations/checks/toy computations).
    - Typical outputs: `blackboards/*.md`, `paper/notes/*.md`, and/or `notebooks/*.md`.
@@ -105,8 +118,8 @@ This table is the operational “permissions model” for agents.
 
 | Cycle | Allowed edits | Forbidden edits (examples) |
 |---|---|---|
-| `Dnn` (triage) | `docs/research-state.md`, `docs/next-articles.md`, `docs/research-log.md`, `cycles/Dnn-*.md` | Manuscripts (`paper/main.md`, `papers/*/main.md`), bibliography (`paper/bibliography.md`), `sources/` |
-| `DXnn` (explore) | `docs/research-state.md`, `docs/next-articles.md`, `docs/anomalies.md`, `docs/research-log.md`, `cycles/DXnn-*.md` | Manuscripts, bibliography, `sources/` |
+| `Dnn` (triage) | `docs/research-state.md`, `docs/next-articles.md`, `docs/research-log.md`, `cycles/Dnn-*.md` | Manuscripts (`paper/main.md`, `papers/*/main.md`), bibliography (`paper/bibliography.md`), `sources/`, editorial wording/launch-policy prep |
+| `DXnn` (explore) | `docs/research-state.md`, `docs/next-articles.md`, `docs/anomalies.md`, `docs/research-log.md`, `cycles/DXnn-*.md` | Manuscripts, bibliography, `sources/`, editorial wording/launch-policy prep |
 | `Snn` | `blackboards/*.md`, `paper/notes/*.md`, `notebooks/*.md`, `docs/research-log.md`, `cycles/Snn-*.md` | Manuscripts, bibliography ledger, `sources/` |
 | `Bnn` | `paper/bibliography.md`, `sources/*`, `sources/pending-*.md`, `cycles/Bnn-*.md` | Manuscripts, blackboards/notes/notebooks (unless spawning an `S`) |
 | `Cnn` | Manuscripts (`paper/main.md`, `papers/*/main.md`) + `cycles/Cnn-*.md` (and tracked build artifacts if used) | `blackboards/`, `paper/notes/`, `notebooks/`, bibliography ledger, `sources/` |
@@ -155,6 +168,20 @@ Use this rule of thumb:
 - If the task is "write or restructure manuscripts": spawn `C`.
 - If the task is "referee review of a manuscript change": spawn `Q` (and name the parent `C`).
 - If the task is "submit a finished paper to a preprint server": spawn `P` (requires a recent `Q` pass).
+
+## Iterating an Unsatisfied Cycle
+If a cycle is still unsatisfactory, it is valid to **keep looping in the same ID while it remains in progress**.
+
+Preferred pattern:
+1. Keep the same cycle files and append a new dated iteration block in `*-execution.md`.
+2. Update `*-plan.md` acceptance criteria if they were too weak/ambiguous.
+3. Track the hard objection in `*-debate.md` and update mitigations in `*-redteam.md`.
+4. Mark the cycle `Completed` only when acceptance criteria are actually met.
+
+When to open a new ID instead:
+1. Scope or question changes materially.
+2. You intentionally close the current cycle and start a fresh attempt.
+3. The cycle is already archived/finalized and you need a new traceable round.
 
 **Serendipity awareness:** stay alert for unexpected findings during any cycle.
 Flag them with `SERENDIPITY:` in the execution log. If a deliberate structural
@@ -218,3 +245,14 @@ After a successful TeX build, delete auxiliary files explicitly (never recursive
 rm -f paper/main.aux paper/main.log paper/main.toc
 rm -f papers/<paper>/main.aux papers/<paper>/main.log
 ```
+
+## Local Append-Only Rule (Session)
+User rule for current workflow: cycle files are append-only.
+- Do not edit or rewrite existing lines in `cycles/*` cycle artifacts.
+- Add updates only by appending new dated addendum blocks.
+
+## Local Rule: S/D vs paper/notes (Session)
+User rule for current workflow:
+- `S` and `D` cycles must not use `paper/notes/`.
+- Only `C` cycles may edit `paper/notes/`, and only when adding content for the same target paper being edited in that `C` cycle.
+- For `S`/`D` technical work, use `blackboards/` and promote stable material to `notebooks/`.

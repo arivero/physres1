@@ -142,6 +142,19 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 - Dependent note draft: `papers/fermionic-mediators-contact-limits/main.md`.
 - Intended role: connect “mediator-field talk” to the repo’s point-interaction + RG themes in a controlled, falsifiable way.
 
+### 12) Main-paper central-force threshold bridge hardening
+- Goal: stress-test and sharpen the compact Newton/SR threshold bridge around `Remark P1.1a` without over-expanding Section 3.
+- Working notes: `paper/notes/main-paper-threshold-bridge.md`, `paper/notes/main-paper-threshold-bridge-sanity-grid.md`.
+- Current status (D18+S272+S273+S274+S275(iter3)+D20): exponent rule retained; marginal coefficient sensitivity, assumption-drift boundaries, and a compact \(L_{\mathrm{crit}}\) map are explicit.
+- Compression artifact ready: default two-sentence candidate `D2` (34 words) preserved all required caveats in same-ID S275 iterations; readability delta vs current remark body is substantial (~85 -> ~34 words).
+- Open branch set:
+  - `S276` generalized marginal map (initial pass done; branch open),
+  - `S277` kinetic-exponent window validity (initial + analytic-closure pass done; branch open),
+  - `S278` potential-drift diagnostics (initial + correction-family portability pass done; branch open),
+  - `D21` integration policy (initial + quantitative-gate pass done; branch open),
+  - `D22` cross-thread linkage triage (candidate drafted, currently deferred; branch open).
+- Decision gate: `C300` deferred (no correctness defect). Reopen only for a targeted Section 3 readability-compression pass.
+
 ## Publication Readiness (2026-02-13, latest refresh)
 Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PLB format).
 
@@ -171,4 +184,5 @@ P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless expl
 1. Add a dated entry to `docs/research-log.md` at the start of each session (even if work is exploratory).
 2. When a derivation starts to stabilize, create a dedicated note in `paper/notes/` and link it from the log.
 3. Keep `docs/next-articles.md` as the "topic backlog"; keep `docs/research-log.md` as the "what happened" record.
-4. Future work: P cycles for satellite submissions, content expansion for shorter papers, cornerstone polish.
+4. Central-force bridge thread: keep same-ID S-cycle iteration if unresolved; reopen `C300` only for explicit readability pass.
+5. Future work: P cycles for satellite submissions, content expansion for shorter papers, cornerstone polish.

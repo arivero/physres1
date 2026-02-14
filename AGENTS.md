@@ -17,6 +17,9 @@ At session start, read these in order:
 5. `cycles/index.md`
 6. `cycles/README.md`
 
+Startup is not complete unless all six files above are read, including
+`cycles/README.md` (do not treat it as optional).
+
 ## Context Budget Rules
 1. Keep `cycles/index.md` compact; do not append per-cycle completed-line logs there.
 2. `cycles/archive/` is large; never bulk-read it. Open specific archived files only when needed.
@@ -86,6 +89,9 @@ as a longer article (Phys. Rev. D scale, ~8–15pp).
    - Include a tag identifying the orchestrating agent/model (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`).
    - List all cycle IDs in the batch (e.g., `S200+C241+S201+C242+Q128`).
    - Include a token/usage estimate if the tooling exposes it. If not available, write `tokens: N/A`.
+5. **Research-log rollover before commit:**
+   - Before starting commit work, move all but the latest three dated entries from `docs/research-log.md` into `docs/research-log-archive.md`.
+   - Keep chronological order and append moved content to the archive (do not rewrite archive history).
 
 ## Cycle Execution Minimum
 1. In a normal working invocation, run at least one cycle (`S/B/C/Q`, or a small coherent chain) chosen from `cycles/index.md`.
@@ -138,6 +144,11 @@ Pick one per subagent invocation. Vary across cycles for diverse feedback.
   Add material under the appropriate heading. Do not remove existing content
   without explicit user approval.
 
+## Docs Governance Map
+- `docs/conv-coverage-map.md` — continuation/coverage bookkeeping; non-citable and optional unless running coverage audits.
+- `docs/source-ingest-status.md` — source-ingest/network troubleshooting ledger used by bibliography workflows.
+- `docs/tex-env-report.md` — TeX environment inventory and smoke-test record for build diagnostics.
+
 ## Sources Policy
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING` for later local ingestion.
@@ -154,6 +165,11 @@ commit work is actually two commits: the papers tex modifications, and all of th
 
 ## Research Cycle Protocol
 This project uses structured research cycles (S-series studies, Q-series reviews, C-series commits/promotions). When asked to 'run cycles' or 'continue from cycle index', consult the cycle index file, pick up from the next pending cycle, execute it fully, Operate autonomously through multiple cycles unless interrupted.
+
+Cycle intent is strict:
+- `D`/`DX` = discovery/novelty triage only.
+- `C` = manuscript writing/promotion.
+- `P` = publication packaging/submission (no content edits).
 
 ## File Management
 When files grow large or bloated, proactively archive them rather than letting them accumulate. Use `find`-based commands instead of glob expansion when operating on large numbers of files. Deduplicate docs when content overlaps across files.

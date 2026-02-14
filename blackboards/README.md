@@ -39,7 +39,13 @@ relevant slot. Deletion criteria (in priority order):
 | 0 | Minimal RCP axiom set analysis (open Q#2) | Active (S211) |
 | 1 | Self-adjoint extensions / point interactions (delta §4) | Active |
 | 2 | Caustics / Maslov index / metaplectic resolution | Active (S213) |
-| 3 | Why D=10,11,26 don't bark (special dimensions) | Active (S214) |
+| 3 | Central-force threshold bridge branchboard | Active (S270-S278) |
 | 4 | RCP + contact universality constraints | Active (S207) |
 | 5 | Anomalies as half-density composition defects (open Q#5) | Active (S210) |
 | 6 | Non-perturbative contact expansion (Padé) | Active (S208) |
+
+## Collaboration Use (Two-Agent Discussion)
+Blackboards are also the discussion surface for multi-agent reasoning.
+- Use explicit speaker tags (e.g., `Agent A:` / `Agent B:`) when running adversarial or complementary passes.
+- Keep disagreements and reconciliations on the board before promoting any stabilized conclusion.
+- Promote only the reconciled result to notebooks/manuscripts.
