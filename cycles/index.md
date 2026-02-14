@@ -10,7 +10,7 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 320 | C00–C319 (gaps: none) |
+| Content (`Cnn`) | 321 | C00–C320 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
 | Study (`Snn`) | 300 | S00–S299 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 179 | Q00–Q185 (gaps: Q110–Q111) |
@@ -51,6 +51,7 @@
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- C320: RCP foundations COMPLETE — expanded sections 4-7 (305 lines total, ~6-7pp). All sections substantive: ordering ambiguity, 2D delta RG, P4.2 theorem, outlook + crown witnesses. Net: +116/-0 lines.
 - C319: NEW satellite paper `rcp-foundations` (189 lines, foundation draft). Sections 1-3 complete (Introduction + Axioms A1-A5 + Noether theorem). Sections 4-7 outlined (ordering/RG/P4.2/outlook to be expanded). Target: 6-9pp. Sources: D44/S299. Net: +189/-0 lines.
 - C318: Final rooted-tree expansions — Section 7 Conclusion + Section 3.5 order-3 trees. Paper now at 8pp (PRD length, 431 lines). Net: +45/-0 lines.
 - C317: Expanded rooted-tree paper Section 6.2 with explicit Hopf coproduct formulas (order-1/2/3 trees, antipode S, forest formula, connection to composition). Paper now at 7pp (over PLB, approaching PRD), 372 lines. Net: +53/-0 lines.
