@@ -10,11 +10,11 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 321 | C00–C320 (gaps: none) |
+| Content (`Cnn`) | 323 | C00–C322 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 300 | S00–S299 (gaps: S276–S278 active) |
+| Study (`Snn`) | 301 | S00–S300 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 179 | Q00–Q185 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 45 | D00–D44 (gaps: D43 incomplete) |
+| Discovery triage (`Dnn`) | 46 | D00–D45 (gaps: D43 incomplete) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
@@ -46,11 +46,15 @@
 
 **Page counts** (elsarticle 3p twocolumn = PLB format; run `scripts/count-pages.sh`):
 - PLB-length (≤6pp): relativistic 6pp (296), HD-QFT 6pp (265), delta 6pp (218).
-- PRD-length (>6pp): dirac 7pp (256), rg-fund 9pp, action-angle 13pp, fermionic 13pp, uncuttable 13pp, planck-area 14pp.
+- PRD-length (>6pp): dirac 7pp (256), rcp-foundations 7pp (305), rooted-tree 8pp (431), rg-fundamental 12pp (721), action-angle 13pp, fermionic 13pp, uncuttable 13pp, planck-area 14pp.
 - Cornerstone: 23pp (Physics Reports target).
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- C322: RG-fundamental conclusion expansion — Section 7 (conclusion) expanded with three new remarks: RG as multi-channel compatibility (RCP bridge), three crown witnesses (partition/representation/scale), foundational reading (RG as definitional). Added forward references to [RCPFoundations] and [RootedTreeBookkeeping]. Paper now at 721 lines (~12pp). Net: +29/-0 lines (C321+C322 total: +120/-0).
+- C321: RG-fundamental Section 4 expansion — added 3 new subsections: 4.2 (midpoint RK2 composition test), 4.3 (Hopf coproduct explicit formulas for trees τ₁-τ₃), 4.4 (higher-order tree proliferation). Section 4 expanded from 30 → 120 lines. Paper: 601 → 692 lines (~11.5pp). Net: +91/-0 lines.
+- S300: Drafted Section 4 expansion content for RG-fundamental (midpoint, Hopf coproduct, tree proliferation). ~95 lines drafted. Sources: rooted-tree paper Section 3+6, Connes-Kreimer formalism.
+- D45: RG-fundamental expansion scope map (10pp → 12-13pp). Identified Section 4 (rooted trees) as primary target, ~120 line expansion goal. Success: 601 → 721 lines achieved.
 - C320: RCP foundations COMPLETE — expanded sections 4-7 (305 lines total, ~6-7pp). All sections substantive: ordering ambiguity, 2D delta RG, P4.2 theorem, outlook + crown witnesses. Net: +116/-0 lines.
 - C319: NEW satellite paper `rcp-foundations` (189 lines, foundation draft). Sections 1-3 complete (Introduction + Axioms A1-A5 + Noether theorem). Sections 4-7 outlined (ordering/RG/P4.2/outlook to be expanded). Target: 6-9pp. Sources: D44/S299. Net: +189/-0 lines.
 - C318: Final rooted-tree expansions — Section 7 Conclusion + Section 3.5 order-3 trees. Paper now at 8pp (PRD length, 431 lines). Net: +45/-0 lines.

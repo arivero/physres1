@@ -99,7 +99,98 @@ If one seeks a step-size-dependent vector field \(f_h=f+h g+O(h^2)\) whose *exac
 =y+h f(y)+h^2\Big(g(y)+\frac12 f'(y)[f(y)]\Big)+O(h^3),
 \]
 so matching \(E_h(y)=y+h f(y)\) forces \(g(y)=-\tfrac12 f'(y)[f(y)]\).
-Thus even this toy refinement problem exhibits “running” of effective data with the refinement scale \(h\).
+Thus even this toy refinement problem exhibits "running" of effective data with the refinement scale \(h\).
+
+## 4.2 Midpoint RK2: Explicit Composition Test
+
+`Derivation RG-D1.0b (Midpoint method: two half-steps equal one step at leading order).`
+The implicit midpoint method is the one-step map
+\[
+M_h(y) := y + h\,f\!\left(y + \frac{h}{2}f\!\left(M_h(y)\right)\right),
+\]
+which is second-order accurate. For a checkable composition test, consider instead the *explicit* midpoint rule (order-2 Runge–Kutta):
+\[
+M_h^{\mathrm{expl}}(y) = y + h\,f\!\left(y + \frac{h}{2}f(y)\right).
+\]
+Expanding the inner evaluation to second order:
+\[
+f\!\left(y+\frac{h}{2}f(y)\right)
+= f(y) + \frac{h}{2}f'(y)[f(y)] + \frac{h^2}{8}f''(y)[f(y),f(y)] + O(h^3),
+\]
+so
+\[
+M_h^{\mathrm{expl}}(y)
+= y + h f(y) + \frac{h^2}{2}f'(y)[f(y)] + O(h^3).
+\]
+
+Now compose two half-steps:
+\[
+M_{h/2}^{\mathrm{expl}} \circ M_{h/2}^{\mathrm{expl}}(y)
+= y + h f(y) + \frac{h^2}{2}f'(y)[f(y)] + O(h^3).
+\]
+The leading correction is the same in both cases, confirming the order-2 structure.
+
+`Remark RG-D1.0c (Rooted-tree formula: \(\tau_1\otimes\tau_1 = 2\tau_2\)).`
+In B-series language, the elementary differential for the order-2 tree \(\tau_2 = [\bullet]\) is \(F(\tau_2) = f'(y)[f(y)]\), and its coefficient in \(M_h^{\mathrm{expl}}\) is \(\frac{1}{2}\). The composition formula for one-vertex trees is \(\tau_1 \otimes \tau_1 = 2\tau_2\), meaning that composing two "tree \(\tau_1\)" (order-1 Euler) steps produces twice the order-2 tree coefficient. This is the same algebraic identity verified in the rooted-tree paper (Section 3), and it holds universally for any autonomous ODE, independent of the specific \(f\).
+
+## 4.3 Hopf Coproduct: Explicit Formulas for Low-Order Trees
+
+The Connes–Kreimer Hopf algebra organizes renormalization counterterms via a coproduct \(\Delta\) that encodes admissible cuts of rooted trees. For a tree \(\tau\), an admissible cut removes a connected subtree containing the root, leaving a (possibly empty) forest of subtrees. The coproduct is
+\[
+\Delta(\tau) = \tau \otimes 1 + 1 \otimes \tau + \sum_{\text{cuts}} (\text{pruned forest}) \otimes (\text{cut tree}),
+\]
+where the sum runs over all proper admissible cuts.
+
+`Derivation RG-D1.8 (Coproduct for trees of order 1, 2, 3).`
+
+**Order-1 tree:** \(\tau_1 = \bullet\) (single vertex).
+\[
+\Delta(\bullet) = \bullet \otimes 1 + 1 \otimes \bullet.
+\]
+No proper cuts, so this is the primitive case.
+
+**Order-2 tree:** \(\tau_2 = [\bullet]\) (root with one child).
+\[
+\Delta([\bullet]) = [\bullet] \otimes 1 + 1 \otimes [\bullet] + \bullet \otimes \bullet.
+\]
+The admissible cut separates the root from the child, yielding \(\bullet \otimes \bullet\).
+
+**Order-3 chain tree:** \(\tau_3 = [[\bullet]]\) (root with one child, which has one child).
+\[
+\Delta([[\bullet]])
+= [[\bullet]] \otimes 1 + 1 \otimes [[\bullet]]
++ [\bullet] \otimes \bullet
++ \bullet \otimes [\bullet].
+\]
+Two admissible cuts: remove the bottom vertex (leaving \([\bullet]\)) or remove both grandchild and child as a connected subtree (leaving \(\bullet\)).
+
+**Order-3 branch tree:** \(\tau_3' = [\bullet,\bullet]\) (root with two children).
+\[
+\Delta([\bullet,\bullet])
+= [\bullet,\bullet] \otimes 1 + 1 \otimes [\bullet,\bullet]
++ \bullet \otimes [\bullet]
++ \bullet \otimes [\bullet]
++ \bullet^2 \otimes \bullet,
+\]
+where the two middle terms correspond to cutting one child at a time, and \(\bullet^2 \otimes \bullet\) corresponds to cutting both children simultaneously (forest of two \(\bullet\) trees on the left, root \(\bullet\) on the right).
+
+`Heuristic RG-H1.13 (Coproduct encodes counterterm recursion).`
+The coproduct structure is the combinatorial skeleton of the Bogoliubov forest formula: to compute the counterterm for a diagram \(\Gamma\), one subtracts the counterterms of all proper subdivergences and then renormalizes the remainder. The terms \((\text{forest}) \otimes (\text{cut tree})\) in \(\Delta(\Gamma)\) encode exactly this recursion: the left factor is the subdivergence structure already renormalized, the right factor is the remaining graph.
+
+## 4.4 Higher-Order Methods and Tree Proliferation
+
+The number of rooted trees grows rapidly with order. For autonomous ODEs:
+- Order 1: 1 tree (\(\tau_1\))
+- Order 2: 1 tree (\(\tau_2\))
+- Order 3: 2 trees (\(\tau_3\), \(\tau_3'\))
+- Order 4: 4 trees
+- Order 5: 9 trees
+- Order 6: 20 trees
+
+`Heuristic RG-H1.14 (Compositional complexity forces rooted-tree bookkeeping).`
+The classical fourth-order Runge–Kutta method (RK4) achieves fourth-order accuracy with four stages (four \(f\)-evaluations per step). The B-series representation of RK4 must account for all four order-4 trees, and the composition formula \(\Phi_h^{(M_1)} \circ \Phi_h^{(M_2)}\) for two RK methods involves summing over all trees with coefficients determined by the tensor product of the individual method coefficients. This combinatorial explosion is the price of composition: tracking "two steps vs one step" discrepancies requires tree-level bookkeeping once methods go beyond first order.
+
+For a complete worked example of the rooted-tree formalism applied to both Runge–Kutta composition and renormalization-group recursion (including the explicit midpoint RK2 test and the Hopf coproduct for trees up to order 3), see the companion satellite paper [RootedTreeBookkeeping].
 
 # 5. Worked Singular QM Model: The 2D Delta Potential
 The cleanest “RG appears before QFT” example is the contact (delta) interaction in two spatial dimensions. The point is not that this is the most physical model; it is that:
@@ -587,7 +678,34 @@ The Wilsonian shell-integration derivation (RG-D1.2a) complements the renormaliz
 `Remark RG-H1.9 (Composition forces both \(\hbar\)-necessity and scale compatibility).`
 The semigroup composition law that underlies this note's treatment of RG is the same algebraic structure that, applied to time-slicing of propagators, forces the existence of an action-dimensional scale \(\kappa=\hbar\) (see the companion review). There, composition semigroup closure under dimensional homogeneity uniquely selects Gaussian (Feynman--Kac) kernels and determines their normalization as \((m/2\pi\hbar t)^{d/2}\). Here, the same semigroup structure applied to scale changes forces parameter flow (beta functions) as the compatibility data. The two appearances are complementary: quantum composition controls the "horizontal" (temporal) sewing of propagators, while RG controls the "vertical" (scale) consistency of the same objects. Both are consequences of taking composition seriously in regimes where naive limits are obstructed.
 
-Natural extensions include carrying the same Wilsonian analysis into a standard QFT example (with a nontrivial fixed-point structure), and sharpening the rooted-tree bookkeeping discussion into a compact "dictionary section" that separates literal identities from analogy.
+`Remark RG-H1.15 (RG as one channel in multi-channel compatibility).`
+Scale compatibility is one of three closely related compatibility principles that appear when partition, representation, and scale changes are all allowed. The *Refinement Compatibility Principle* (RCP) states that physical laws survive controlled changes of partition, representation, and scale, with each channel requiring a transport of associated parameter data:
+1. **Partition channel:** Temporal composition (time-slicing) forces Gaussian kernels and the action-dimensional scale \(\kappa=\hbar\) (Section 7, Remark RG-H1.9 above; see the companion review for the full argument).
+2. **Representation channel:** Ordering equivalence (Weyl vs left vs right ordering) requires domain-data transport (delta extensions, self-adjoint extension parameters).
+3. **Scale channel:** RG flow (this note) requires coupling-flow as the compatibility data.
+
+The operational form of RCP is falsifiable: given two admissible refinements \(h\) and \(h'\), an observable \(\mathcal{O}\) is compatible if
+\[
+\mathcal{O}_{h,\theta} = \mathcal{O}_{h',\tau(\theta)} \circ \mathcal{T},
+\]
+where \(\theta\) is the parameter bundle (Lagrangian, ordering choice, renormalization scheme, etc.), \(\tau(\theta)\) is the transported data, and \(\mathcal{T}\) is the change-of-refinement map. For the scale channel, this reduces to the statement that physical predictions are RG-invariant under changes of the subtraction scale \(\mu\), provided the couplings flow according to the beta function.
+
+For a detailed presentation of RCP as a multi-channel axiom system with worked examples (Noether's theorem for partition, ordering ambiguity for representation, and 2D delta RG for scale), see [RCPFoundations]. For the rooted-tree formalism as a unified bookkeeping tool for both Runge–Kutta composition and renormalization recursion, see [RootedTreeBookkeeping].
+
+`Remark RG-H1.16 (Three crown witnesses for RCP).`
+The three channels of RCP each have a "crown witness"—a result that simultaneously demonstrates compatibility necessity and serves as a core structural theorem:
+1. **Partition:** Noether's theorem (conserved charge as compatibility datum for symmetry transport across temporal composition).
+2. **Representation:** Ordering ambiguity in PDM systems (O(ℏ) shift as the domain-data witness for equivalence of quantization schemes).
+3. **Scale:** Dimensional transmutation in the 2D delta interaction (RG-invariant scale \(\kappa_\ast\) as the physical parameter replacing the cutoff-dependent bare coupling).
+
+The 2D delta model presented in Section 5 is the scale-channel crown witness: it exhibits all three structural features (composition semigroup, parameter flow, dimensional transmutation) in the simplest possible setting, and it can be formulated either via momentum-cutoff renormalization (Section 5.2) or via self-adjoint extension boundary conditions (Section 5.7), making the connection between UV regulation and IR boundary data explicit.
+
+`Heuristic RG-H1.17 (Foundational reading: RG is definitional, not phenomenological).`
+The view taken in this note is that the renormalization group is not a *calculational technique* for extracting finite predictions from divergent integrals, but rather a *structural requirement* for any definition of a continuum theory via composition of local pieces. The calculus micro-model (Section 3) makes this reading vivid: just as "the derivative" is defined by the regulated difference quotient plus the subtraction of a local divergence plus a normalization condition, so too "a continuum quantum field theory" is defined by the regulated path integral plus counterterm subtraction plus RG invariance. In both cases, the limit procedure is obstructed, and compatibility across refinement steps is the criterion that makes the limit meaningful.
+
+This foundational reading does not eliminate the practical value of perturbative renormalization techniques (counterterm recursion, Feynman rules, etc.), but it reframes them as *computational implementations* of the underlying compatibility principle, rather than as ad hoc fixes for infinities. The rooted-tree Hopf algebra (Section 4.3) is the algebraic skeleton that organizes these computations, and the Wilsonian shell-integration perspective (Section 5.2, Derivation RG-D1.2a) is the physical realization of the semigroup structure.
+
+Natural extensions include carrying the same Wilsonian analysis into a standard QFT example (with a nontrivial fixed-point structure), sharpening the rooted-tree bookkeeping discussion into a full "Butcher/RG dictionary" that separates literal identities from analogy (partially addressed in [RootedTreeBookkeeping]), and investigating whether the multi-channel compatibility framework extends to gravitational theories (where diffeomorphism invariance might play a role analogous to RG invariance in the scale channel).
 
 # References
 
@@ -599,3 +717,5 @@ Natural extensions include carrying the same Wilsonian analysis into a standard 
 6. [BonneauFarautValent2001SAE] Guy Bonneau, Jacques Faraut, and Galliano Valent, "Self-adjoint extensions of operators and the teaching of quantum mechanics," *American Journal of Physics* 69 (2001), 322–331. arXiv:`quant-ph/0103153`. DOI `10.1119/1.1328351`.
 7. [TsutsuiFulopCheon2002Connection] Izumi Tsutsui, Tamás Fülöp, and Taksu Cheon, "Connection Conditions and the Spectral Family under Singular Potentials," arXiv:`quant-ph/0209110` (v1, 20 Sep 2002).
 8. [Jackiw1991DeltaPotentials] R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.
+9. [RootedTreeBookkeeping] A. Rivero, "Rooted-Tree Bookkeeping for Composition Compatibility: A Butcher/RG Dictionary," companion satellite paper (2026).
+10. [RCPFoundations] A. Rivero, "Refinement Compatibility Principle: Axioms and Crown Witnesses," companion satellite paper (2026).

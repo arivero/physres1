@@ -167,15 +167,16 @@ Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PL
 5. Dirac Probes / Corners / Impulses (7pp, ~256 lines, 6 refs) — FROZEN
 
 **PRD-length satellites (>6pp compiled):**
-6. Rooted-Tree Bookkeeping (8pp, 431 lines, 5 refs) — NEW (Butcher/RG dictionary, moved from PLB-length list)
-7. RG Fundamental (9pp, 596 lines, 8 refs)
-8. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
-9. Fermionic Mediators (13pp, 244 lines, 40 refs)
-10. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
-11. Planck Area (14pp, ~730+ lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
+6. RCP Foundations (7pp, 305 lines, 3 refs) — NEW (axioms A1-A5, three crown witnesses, falsifiable operational form)
+7. Rooted-Tree Bookkeeping (8pp, 431 lines, 5 refs) — NEW (Butcher/RG dictionary, Hopf coproduct explicit formulas)
+8. RG Fundamental (12pp, 721 lines, 10 refs) — EXPANDED (rooted trees, Hopf coproduct, multi-channel RCP conclusion)
+9. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
+10. Fermionic Mediators (13pp, 244 lines, 40 refs)
+11. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
+12. Planck Area (14pp, ~730+ lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
 
 **Cornerstone:** paper/main.md (~1821 lines, 23pp). Target: Physics Reports.
-**Current satellite count: 10** (9 prior + 1 new rooted-tree). Cross-referencing from cornerstone: 9 completed (C146), rooted-tree TBD.
+**Current satellite count: 12** (3 PLB-frozen + 1 Dirac + 8 PRD-length). Cross-referencing from cornerstone: 9 completed (C146), rooted-tree + RCP TBD.
 
 Recent cornerstone additions (2026-02-14):
 - C314: P4.2g (continuum time forced by dimensional homogeneity) in Section 10
@@ -185,6 +186,10 @@ Recent cornerstone additions (2026-02-14):
 - C304-C311: delta dictionary, Ito/Stratonovich, caustics/Maslov, Pade unification, RCP crown witnesses
 
 Recent satellite additions (2026-02-14):
+- C322: RG-fundamental conclusion expansion — Section 7 expanded with multi-channel RCP bridge (three crown witnesses: partition/Noether, representation/ordering, scale/2D delta), foundational reading (RG as definitional), forward references to [RCPFoundations] and [RootedTreeBookkeeping]. Paper now 12pp (721 lines).
+- C321: RG-fundamental Section 4 expansion — added 3 subsections (midpoint RK2 composition test, Hopf coproduct explicit formulas for trees τ₁-τ₃, tree proliferation preview). Section 4: 30 → 120 lines. Paper: 601 → 692 lines.
+- C320: RCP foundations COMPLETE — expanded sections 4-7 (ordering ambiguity, 2D delta RG, P4.2 theorem, outlook). All 7 sections substantive. Paper at 7pp (305 lines).
+- C319: NEW satellite `rcp-foundations` (initial 189 lines) — Refinement Compatibility Principle as falsifiable axiom system with three channels (partition/representation/scale), operational form O_{h,θ} = O_{h',τ(θ)} ∘ T, complete Noether derivation as partition witness.
 - C318: rooted-tree-bookkeeping finalized at 8pp (431 lines, PRD length) — added Section 7 Conclusion + Section 3.5 order-3 trees (Butcher product, RG sunset/nested parallel)
 - C317: rooted-tree-bookkeeping expanded to 7pp (372 lines) — added Section 6.2 with explicit Hopf coproduct formulas (order-1/2/3 trees, antipode S, forest formula)
 - C316: rooted-tree-bookkeeping expanded to 6pp (319 lines) — added Section 4.4 with worked 2D delta RG example (beta function, dimensional transmutation, explicit Butcher parallel)
