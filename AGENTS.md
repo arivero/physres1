@@ -109,11 +109,23 @@ as a longer article (Phys. Rev. D scale, ~8–15pp).
    - `docs/research-log.md` (dated entry)
    - `cycles/index.md` (status + next actions)
 
-## Content Cycle Diffstat Requirement
-For every `Cnn` cycle, after staging and before commit:
+## Content Cycle Diffstat Requirement and Productivity Threshold
+**C-cycles are for substantial manuscript promotion.** Minor edits should be batched.
+
+**Minimum productivity threshold (Rule 9 in cycles/README.md):**
+- Net **≥10 lines** of meaningful content (prose/math/derivations), OR
+- Completion of a planned promotion (blackboard → manuscript), OR
+- Critical correctness fix that cannot be batched
+
+**Micro-edits (<5 lines)** should be accumulated and applied in the next substantial C-cycle, not as standalone cycles.
+
+**Diffstat recording (required for every Cnn):**
 1. Run: `scripts/paper-diffstat.sh --cached`
-2. Paste output under `## Diffstat` in `cycles/Cnn-execution.md`.
-3. If output is `TOTAL +0 -0`, explicitly explain why no promotion occurred (and prefer `S`/`B` instead of forcing prose).
+2. Paste output under `## Diffstat` in `cycles/Cnn-execution.md`
+3. Record productivity gate status: PASS (≥10 net), MARGINAL (5-9), FAIL (<5)
+4. If output is `TOTAL +0 -0`, explicitly explain why no promotion occurred (and prefer `S`/`B` instead)
+
+**Rationale:** C-cycles have overhead (planning, review, commit). Batching amortizes overhead and produces more coherent changes.
 
 ## Pre-Commit Hygiene Checks (When Relevant)
 If `paper/main.md` changed:

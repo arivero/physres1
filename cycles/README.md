@@ -116,6 +116,55 @@ The mathematics **must** be written to persistent files:
 
 **Rationale:** Cycles are planning/logging artifacts that get archived. Mathematical content must live in durable, referenceable locations that can be promoted to manuscripts or serve as standalone computational records.
 
+### 9) C-cycle minimum productivity threshold
+**C-cycles are for substantial content promotion to manuscripts** (derivations, propositions, worked examples, new sections).
+
+**Minimum threshold:**
+- Net **≥10 lines** of meaningful content (prose/math/derivations), OR
+- Completion of a planned promotion (blackboard → manuscript, notebook → manuscript), OR
+- Critical correctness fix that cannot be batched
+
+**Minor fixes** (+1 to +5 lines single edit): batch multiple fixes together in a single C-cycle, or defer to next substantial C-cycle.
+
+**Micro-edits** (typos, single-word changes, reference clarifications): accumulate and apply during the next planned C-cycle, not as standalone cycles.
+
+**Exception:** Blocking bugs or critical correctness issues can justify small C-cycles if they prevent further work.
+
+**Productivity check (required in Cxx-execution.md):**
+- Record net diffstat: +NN/-MM = +KK net
+- Gate status: PASS (≥10 net), MARGINAL (5-9 net), FAIL (<5 net)
+- If FAIL: document reason for exception or acknowledge batching failure
+
+**Rationale:** C-cycles have overhead (planning, execution, logging, Q-review). Batching edits amortizes this overhead and produces more coherent manuscript changes. Micro-edits in isolation waste context and fragment the git history.
+
+### 10) Completed cycles must be archived via git rm
+**After a cycle completes successfully**, archive its files to git history via `git rm`:
+
+```bash
+git rm cycles/Cnn-plan.md cycles/Cnn-execution.md
+# (and any other cycle files like -debate.md, -redteam.md)
+git commit -m "Archive completed Cnn cycle"
+```
+
+**When to archive:**
+- `C/S/D/B` cycles: immediately after completion and commit of the cycle's work
+- `Q` cycles: immediately after the review is complete (whether PASS, REVISE, or HOLD)
+- `P` cycles: after successful publication submission
+
+**Why archive:**
+- Keeps `cycles/` directory clean (only active cycles visible)
+- Completed cycles live in git history, accessible via `git show <commit>:cycles/Cnn-execution.md`
+- Prevents context pollution when scanning `cycles/` for active work
+- Makes `cycles/index.md` counts reliable (index counts archived cycles, not working tree)
+
+**Workflow integration:**
+1. Complete cycle work (e.g., C328 manuscript promotion)
+2. Commit the manuscript changes: `git commit -m "[codex-cli] C328: add Remark X to paper Y"`
+3. Archive the cycle files: `git rm cycles/C328-*.md && git commit -m "Archive C328"`
+4. Update `cycles/index.md` counts if needed
+
+**Exception:** Active cycles in `cycles/` that are not yet complete stay in working tree.
+
 ## Cycle Types
 We use five independent numbered tracks:
 

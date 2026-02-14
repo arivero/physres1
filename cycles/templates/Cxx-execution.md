@@ -15,6 +15,14 @@ Paste output of:
 scripts/paper-diffstat.sh --cached
 ```
 
+## Productivity check (Rule 9)
+- Net lines added: +NN/-MM = **+KK net**
+- Productivity gate: **[PASS / MARGINAL / FAIL]**
+  - PASS: ≥10 net lines OR planned promotion complete
+  - MARGINAL: 5-9 net lines (acceptable if substantive)
+  - FAIL: <5 net lines (should have been batched)
+- **If FAIL:** [Explain exception reason OR acknowledge batching failure for future cycles]
+
 ## Guard checks (required before finalizing)
 - No cycle IDs leaked into manuscripts:
   - `rg -n 'C[0-9]{2}' paper/main.md`

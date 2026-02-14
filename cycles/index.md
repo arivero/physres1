@@ -157,3 +157,10 @@
 - `D28`+`S285` (completed): Newton kick-drift = symplectic Euler, O(h) convergence, central-force singularity failure mode; blackboard in slot 6.
 - Blackboard promotions to notebooks: S208 Padé content → `notebooks/nonperturbative-contact-pade.md`, S213 caustics → `notebooks/caustics-maslov-half-density.md`.
 - Active S-cycles parked: S276 (marginal map), S277 (scale-window drift), S278 (potential-channel drift).
+
+
+## Session Addenda (2026-02-14, 19:16-19:45 CET)
+- **D48+S302+C326-C327 (completed)**: NEW satellite paper `path-integral-normalization` (432 lines, 9pp) proving d/2 exponent forced by composition semigroup. Complete 7-section treatment: (1) Introduction—d/2 as compatibility datum across 4 manifestations; (2) Free-particle composition with explicit d=1,2,3 verifications (PN-D1.1, PN-D1.2 alternative exponent failure); (3) Dimensional analysis + P4.2 connection (PN-P1.1); (4) Van Vleck determinant + DeWitt-Morette law in curved space (PN-D4.1, PN-P4.1 metric-independence); (5) Heat kernel via Wick rotation + diffusion equation (PN-D5.1); (6) Renormalization thresholds d<2/d=2/d>2 hierarchy (PN-D6.1, PN-P6.1); (7) Conclusion—RCP multi-channel synthesis. Sources: D26/S283 (heat kernel), D30/S287 (curved), cornerstone Section 4, RG-fundamental Section 5.2.
+- **Cross-reference network**: Added 5 forward references: cornerstone (line 518), rg-fundamental (RG-H1.9), rcp-foundations (Section 7.4), planck-area (PA-D1.2b), half-density-qft (HD-D4.5).
+- **Documentation updates**: papers/README.md (added paper #8-9, corpus metrics 12→13 satellites), docs/research-state.md (satellite count + listing), docs/research-log.md (C326 entry).
+- **Impact**: Unifies d/2 exponent across temporal composition, Van Vleck determinant, heat kernel, and RG thresholds—showing it's a structural constant forced by compatibility, not convention.

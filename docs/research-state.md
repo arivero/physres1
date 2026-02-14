@@ -170,14 +170,15 @@ Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PL
 6. RCP Foundations (8pp, 347 lines, 6 refs) — NEW (axioms A1-A5, three crown witnesses, multi-channel path-integral synthesis, forward connections)
 7. Ordering Equivalence (8pp, 391 lines, 2 refs) — NEW (four-layer stratification, PDM+curved examples, star products, Itô/Stratonovich, RCP representation channel)
 8. Rooted-Tree Bookkeeping (8pp, 431 lines, 5 refs) — NEW (Butcher/RG dictionary, Hopf coproduct explicit formulas)
-9. RG Fundamental (12pp, 721 lines, 10 refs) — EXPANDED (rooted trees, Hopf coproduct, multi-channel RCP conclusion)
-10. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
-11. Fermionic Mediators (13pp, 244 lines, 40 refs)
-12. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
-13. Planck Area (14pp, ~730+ lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
+9. Path-Integral Normalization (9pp, 432 lines, 3 refs) — NEW (d/2 exponent forced by composition, four manifestations, Van Vleck determinant, heat kernel, RG thresholds)
+10. RG Fundamental (12pp, 721 lines, 10 refs) — EXPANDED (rooted trees, Hopf coproduct, multi-channel RCP conclusion)
+11. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
+12. Fermionic Mediators (13pp, 244 lines, 40 refs)
+13. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
+14. Planck Area (14pp, ~730+ lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
 
 **Cornerstone:** paper/main.md (~1821 lines, 23pp). Target: Physics Reports.
-**Current satellite count: 13** (3 PLB-frozen + 1 Dirac + 9 PRD-length). Cross-referencing from cornerstone: 9 completed (C146), rooted-tree + RCP + ordering TBD.
+**Current satellite count: 13** (3 PLB-frozen + 1 Dirac + 9 PRD-length). Cross-referencing from cornerstone: 9 completed (C146), rooted-tree + RCP + ordering + path-integral-normalization TBD.
 
 Recent cornerstone additions (2026-02-14):
 - C314: P4.2g (continuum time forced by dimensional homogeneity) in Section 10
@@ -187,6 +188,7 @@ Recent cornerstone additions (2026-02-14):
 - C304-C311: delta dictionary, Ito/Stratonovich, caustics/Maslov, Pade unification, RCP crown witnesses
 
 Recent satellite additions (2026-02-14):
+- C326-C327: NEW satellite `path-integral-normalization` (432 lines, 9pp) — d/2 exponent forced by composition semigroup + dimensional homogeneity. Four manifestations (temporal composition, Van Vleck determinant, heat kernel, RG thresholds). Explicit d=1,2,3 composition verifications (PN-D1.1, PN-D1.2), alternative exponent failure, DeWitt-Morette law Δ(x,z)=Δ(x,y)Δ(y,z), Wick rotation to diffusion equation, renormalization threshold d<2/d=2/d>2, connection to P4.2 + half-density formalism. Sources: D48/S302. Complete 7 sections.
 - C325: RCP foundations expansion — Section 7.4+7.5 added (multi-channel synthesis showing how partition/representation/scale interact in path integral: sewing law forces ℏ, measure encodes ordering, singular V forces RG). Cross-references to three channel-specific satellites. Paper now 8pp (347 lines).
 - C324: Ordering equivalence COMPLETE — expanded sections 4-7 (curved space Laplace-Beltrami + curvature potential, star-product automorphism perspective, Itô/Stratonovich + path-integral discretization, measurability analysis + RCP representation channel). Paper at 8pp (391 lines), 6 propositions, 2 worked examples.
 - C323: NEW satellite `ordering-equivalence` (initial 165 lines) — Four-layer stratification (principal symbol, connection, scalar potential, domain), PDM worked example (Weyl vs half-density explicit derivations, GaAs quantum well numerical test |ΔE₀| ~ 0.006-0.06 meV), Proposition OE-P1.2 (deformation equivalence is physical).

@@ -16,6 +16,22 @@ In scope:
 Out of scope:
 - <anything that would require S/B/D>
 
+## Productivity gate (REQUIRED CHECK - Rule 9)
+
+Before creating this C-cycle, verify at least ONE of:
+- [ ] Net content addition will be **≥10 lines** of meaningful prose/math/derivations, OR
+- [ ] This completes a planned promotion from blackboard/notebook to manuscript, OR
+- [ ] This is a critical correctness fix that cannot be batched
+
+**If none apply:** STOP. Accumulate this change with other pending edits and create a single batched C-cycle later.
+
+## Planned edits (list all)
+1. [Edit 1 description] — estimated +X/-Y lines
+2. [Edit 2 description] — estimated +A/-B lines
+...
+
+**Total estimated diffstat**: +NN/-MM lines (net +KK)
+
 ## Minimum promotion bar (preferably verbose)
 This cycle should contain at least one paragraph-level addition/rewrite, a derivation/remark block, or a subsection-level change (avoid micro-edits as standalone `C` cycles).
 
