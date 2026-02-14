@@ -33,18 +33,23 @@
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
-- D16+DX11+S269+B27+C287+Q171+P01: full all-mode chain run. Promoted new relativistic `Remark 3.1c` (`q_crit = nu + 1`) with explicit mechanism separation from the dimensional `q=2` identity; B27 added Sommerfeld/Bertrand ledger keys; Q171 PASS; P01 preflight complete (submission blocked by cadence/account status).
-- S266–S268+C286+Q170: epicyclic frequency remark (+3, 286→289). S267 promoted as Remark 5.2d. S266/S268 not promoted. Q170 PASS.
-- S267: SR epicyclic frequency for general q. Derived ω_r²/ω_φ² = 3−q−v²/c². Unifies stability (positivity), precession (q=2 → 1/γ²=ω²), and Remark 5.2c (special case). Verdict: **PROMOTE** as Remark 5.2d (~5 lines). Needs C cycle.
-- S268: E=mc²ω energy-precession identity revisit. Resolved S260 deferral: identity is one-step from existing text (W_min + ω definition, or 5.2c + E=mc²/γ). NOT PROMOTE. Deferral closed.
-- S266: Section 2 remark candidates. All three candidates (general-q velocity, general-q energy, algebraic vs transcendental) overlap existing remarks or lack physics content. Verdict: NOT PROMOTE.
-- S265: Triple-threshold analysis for q=2 (critical exponent + stability + dimensional identity). Finding: Roles 1-2 share a root (deg(E,p)+1), Role 3 independent (algebraic), coincide only in SR. Verdict: no standalone remark; defer 1-sentence Outlook addition.
+- C298+Q181: readability pointer hardening on `paper/main.md` (Section 9.5 quick map + `D10.4a`); Q181 PASS.
+- C297+Q180: RCP cross-link hardening on `paper/main.md` (`D10.1b` linking domain-data witness to operational closure map); Q180 PASS.
+- C296+Q179: Package B deeper extension witness on `paper/main.md` (`D9.1f`, `D9.1g`); Q179 PASS.
+- C295+Q178: Package A sanity-limit hardening on `paper/main.md` (`D12.3b`); Q178 PASS.
+- C294+Q177: Package A exact nontrivial kernel benchmark on `paper/main.md` (`D12.3`, `D12.3a`); Q177 PASS.
+- C293+Q176: main-paper Package A quantitative hardening on `paper/main.md`. Added `P12.2` bounded-potential remainder/composition-defect control; Q176 PASS.
+- C291+Q174+C292+Q175: YOLO main-paper continuation on `paper/main.md`. Extended Package B to curved-manifold operator-domain witness (`D9.1d`, `D9.1e`) and Package A to first-order bounded-potential composition witness (`D12.2`, `D12.2a`). Q174/Q175 PASS.
+- C289+Q172+C290+Q173: main-paper hardening wave on `paper/main.md`. Added Package C/D/A/E starter derivations (D6.4, D8.2a, D12.1/P12.1, compatibility map), then closed Package B starter with explicit `S^1` domain/symmetry witness (D9.1b, D9.1c). Q172/Q173 PASS.
+- C288: converted Section 9 closing prose into task-driven Package A-E queue (`+27 -8`).
 
 **Immediate:**
 - Relativistic now at PLB boundary (6pp); treat as frozen unless compact replacement edit is required.
 - HD-QFT at 6pp boundary.
 - Delta-objects at PLB limit — frozen. Dirac-probes at 7pp — FROZEN.
 - Bibliography: Lanczos, Fraser-Nakane, Delaunay, Nauenberg2003 source ingestion.
+- Cornerstone queue: optional freeze-pass cycle for submission-oriented consistency sweep (notation, transitions, duplicate-claim trim) after commit batch.
+- Scaffolding cadence: prefer batched C-waves (multiple paragraph-level promotions per cycle) to reduce cycle-directory overhead.
 
 **Standing priorities:**
 - Open questions from `docs/motivations.md` all analyzed. Focus shifts to expansion.

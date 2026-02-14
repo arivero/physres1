@@ -67,7 +67,8 @@ as a longer article (Phys. Rev. D scale, ~8–15pp).
 ## Workspace Hygiene
 1. **Blackboards** (`blackboards/`): max **7 files** (see `blackboards/README.md`). Delete before creating when at cap.
 2. **Paper notes** (`paper/notes/`): max **10 files** (see `paper/notes/README.md`). Retire integrated notes.
-3. Promoted content must not linger as a duplicate in the scratch layer.
+3. **Notebooks** (`notebooks/`): append-only technical memory (see `notebooks/README.md`). Copying stabilized blackboard content into notebooks is an intended promotion path.
+4. Promoted content must not linger as a duplicate in the scratch layer. A short-lived blackboard -> notebook overlap is acceptable until the next cleanup pass.
 
 ## Commit Policy
 1. **When to commit:** at most **once per hour**. Multiple cycles accumulate
@@ -77,7 +78,7 @@ as a longer article (Phys. Rev. D scale, ~8–15pp).
    - **First commit:** manuscript source files — `.md` in `paper/` and
      `papers/*/`, `.tex`, `.bib`, `paper/bibliography.md`.
    - **Second commit:** everything else — `cycles/`, `docs/`, `blackboards/`,
-     `paper/notes/`, config files.
+     `paper/notes/`, `notebooks/`, config files.
    - If no manuscripts changed, only the second commit is needed.
 3. This keeps the manuscript-generating history cleanly separable from
    planning/logging artifacts, while limiting total commits to ≤2 per hour.
@@ -147,3 +148,15 @@ Pick one per subagent invocation. Vary across cycles for diverse feedback.
 If the running username matches the remote GitHub repo owner on a private machine with sufficient storage:
 1. Agents may acquire sources aggressively when lawful (including non-OA routes), without blocking on confirmation.
 2. OA-first remains the citation-ordering/default policy.
+## Commit Conventions
+do not start commit work if not 60 minutes passed from last commit in log
+commit work is actually two commits: the papers tex modifications, and all of the rest
+
+## Research Cycle Protocol
+This project uses structured research cycles (S-series studies, Q-series reviews, C-series commits/promotions). When asked to 'run cycles' or 'continue from cycle index', consult the cycle index file, pick up from the next pending cycle, execute it fully, Operate autonomously through multiple cycles unless interrupted.
+
+## File Management
+When files grow large or bloated, proactively archive them rather than letting them accumulate. Use `find`-based commands instead of glob expansion when operating on large numbers of files. Deduplicate docs when content overlaps across files.
+
+## Continuous Operation
+When asked to run multiple cycles or tasks, continue autonomously without pausing for confirmation between each one. Push commits after each cycle. Only stop when the requested count is reached or an error occurs.

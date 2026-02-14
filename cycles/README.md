@@ -15,7 +15,7 @@ Manuscripts are:
 - `paper/main.md`
 - `papers/*/main.md`
 
-No other cycle type (`D/S/B/Q`) may edit those files. If you have text ready to promote, keep it in `blackboards/` or `paper/notes/` and open a `Cnn` to promote it.
+No other cycle type (`D/S/B/Q`) may edit those files. If you have text ready to promote, keep it in `blackboards/`, `paper/notes/`, or `notebooks/` and open a `Cnn` to promote it.
 
 ### 2) Every `Cnn` must change ≥1 manuscript (and should be substantive)
 A `Cnn` cycle is invalid if it does not modify at least one manuscript file.
@@ -36,6 +36,37 @@ If you want critique on a discovery/study/bibliography result, either:
 - red-team it inside the same cycle’s `*-redteam.md`, or
 - promote it in a `Cnn`, then run `Qnn` on the manuscript change.
 
+### 4) Paper-quality boundary (hard)
+Manuscripts must contain publishable paper content only.
+
+Allowed in manuscript (`paper/main.md`, `papers/*/main.md`):
+- reader-facing derivations, propositions, remarks, and narrative transitions
+- explicit scope boundaries and assumptions needed for correctness
+
+Forbidden in manuscript:
+- workflow/status text (`Package A/B`, "next cycle", "todo", "spawn", "queue")
+- scaffolding artifacts from `blackboards/`, `notebooks/`, `paper/notes/`
+- process bookkeeping that belongs in cycle files or docs
+
+Promotion path:
+- Use `D/S` cycles for exploration and technical scratch.
+- Promote only stabilized, reader-facing material in a `C` cycle.
+
+### 5) `C` launch gate (manual/LLM)
+Before opening any new `C` cycle, do a quick manual check of recent completed runs.
+
+Default gate policy:
+- at least `1` `D`-family round since the most recent `C` (`D` or `DX`)
+- at least `2` `S` rounds since the most recent `C`
+
+How to check:
+1. Read `cycles/index.md` ("Recent completed") and the recent tail of `docs/research-log.md`.
+2. Identify the most recent completed `C`.
+3. Count completed `D`/`DX` and `S` runs after that `C`.
+4. If below threshold, do not launch `C`; run `D/S` first.
+
+This is intentionally judgment-based and lightweight: the LLM/human operator decides, not an external program.
+
 ## Cycle Types
 We use five independent numbered tracks:
 
@@ -45,8 +76,9 @@ We use five independent numbered tracks:
    - **D-explore** (`DXnn`): divergent exploration — surprise inventory, cross-thread probes, framing stress-tests, candidate principles. Uses `docs/anomalies.md` as input/output. Does not commit to a production target; may spawn S or D-triage.
    - Typical outputs: updated backlog/priority in `docs/research-state.md` and/or `docs/next-articles.md`, plus spawned `S`/`B`/`C` cycles. D-explore also updates `docs/anomalies.md` and the principle evolution log in `docs/research-state.md`.
 
-2. **Study cycles** (`Snn`): exploratory “blackboard” work (scratch derivations, checks, toy computations).
-   - Typical outputs: `blackboards/*.md` and/or `paper/notes/*.md`.
+2. **Study cycles** (`Snn`): exploratory technical work (blackboards, notes, notebooks; derivations/checks/toy computations).
+   - Typical outputs: `blackboards/*.md`, `paper/notes/*.md`, and/or `notebooks/*.md`.
+   - Blackboard -> notebook transfer is an intended stabilization step when material is worth preserving but not manuscript-ready.
    - Promotion rule: results are promotion candidates only; promote only via a `Cnn`.
 
 3. **Bibliography cycles** (`Bnn`): search/ingest/verify cycles for references.
@@ -75,13 +107,16 @@ This table is the operational “permissions model” for agents.
 |---|---|---|
 | `Dnn` (triage) | `docs/research-state.md`, `docs/next-articles.md`, `docs/research-log.md`, `cycles/Dnn-*.md` | Manuscripts (`paper/main.md`, `papers/*/main.md`), bibliography (`paper/bibliography.md`), `sources/` |
 | `DXnn` (explore) | `docs/research-state.md`, `docs/next-articles.md`, `docs/anomalies.md`, `docs/research-log.md`, `cycles/DXnn-*.md` | Manuscripts, bibliography, `sources/` |
-| `Snn` | `blackboards/*.md`, `paper/notes/*.md`, `docs/research-log.md`, `cycles/Snn-*.md` | Manuscripts, bibliography ledger, `sources/` |
-| `Bnn` | `paper/bibliography.md`, `sources/*`, `sources/pending-*.md`, `cycles/Bnn-*.md` | Manuscripts, blackboards/notes (unless spawning an `S`) |
-| `Cnn` | Manuscripts (`paper/main.md`, `papers/*/main.md`) + `cycles/Cnn-*.md` (and tracked build artifacts if used) | `blackboards/`, `paper/notes/`, bibliography ledger, `sources/` |
-| `Qnn` | `cycles/Qnn-*.md` only | Manuscripts, blackboards/notes, bibliography ledger, `sources/` |
-| `Pnn` | `cycles/Pnn-*.md`, `.tex`/`.bib` in target paper dir (compile only), `docs/publications.md` | Manuscripts (`.md`), blackboards/notes, bibliography ledger, `sources/` |
+| `Snn` | `blackboards/*.md`, `paper/notes/*.md`, `notebooks/*.md`, `docs/research-log.md`, `cycles/Snn-*.md` | Manuscripts, bibliography ledger, `sources/` |
+| `Bnn` | `paper/bibliography.md`, `sources/*`, `sources/pending-*.md`, `cycles/Bnn-*.md` | Manuscripts, blackboards/notes/notebooks (unless spawning an `S`) |
+| `Cnn` | Manuscripts (`paper/main.md`, `papers/*/main.md`) + `cycles/Cnn-*.md` (and tracked build artifacts if used) | `blackboards/`, `paper/notes/`, `notebooks/`, bibliography ledger, `sources/` |
+| `Qnn` | `cycles/Qnn-*.md` only | Manuscripts, blackboards/notes/notebooks, bibliography ledger, `sources/` |
+| `Pnn` | `cycles/Pnn-*.md`, `.tex`/`.bib` in target paper dir (compile only), `docs/publications.md` | Manuscripts (`.md`), blackboards/notes/notebooks, bibliography ledger, `sources/` |
 
 If a task would require touching forbidden files, spawn the appropriate cycle type instead of "just doing it."
+
+Technical-output accounting note:
+- Edits in `blackboards/`, `paper/notes/`, and `notebooks/` count as technical work, not administrative scaffolding.
 
 ## Canonical Interleavings (Recipes)
 ### Recipe A (default discovery-to-prose loop)
@@ -152,6 +187,7 @@ Each cycle uses four files:
 - `cycles/<ID>-redteam.md`: failure modes + mitigations.
 
 New cycle files go in `cycles/` (top level). Templates live in `cycles/templates/`.
+Create cycle files by copying from templates and renaming to the target ID.
 
 ## Archiving
 Completed cycle files are periodically moved to `cycles/archive/`. The archive

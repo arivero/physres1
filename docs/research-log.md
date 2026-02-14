@@ -437,3 +437,150 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Q171: referee pass on C287 = PASS (no required fixes).
 - P01: ran publication-mode preflight for relativistic satellite (TeX/PDF/check workflow); no external submission due to 7-day cadence and aiXiv account pending.
 - Guardrail note: one exploratory grep briefly matched `cycles/archive/` metadata paths; no archive bodies were read. Re-anchored immediately on `AGENTS.md`, `docs/research-state.md`, `cycles/index.md` per policy.
+
+## 2026-02-14 (C288: Main-paper unfreezing wave, task-driven Section 9 rewrite)
+- Focus: explain why `paper/main.md` had become stable after first drafting and convert the closing section into an executable technical queue.
+- Main manuscript edits (`paper/main.md`):
+  1. Section 9.4 now pairs each residual vulnerability with a **minimal closure target** (concrete witness needed to close the gap).
+  2. Section 9.5 replaced generic future-work bullets with five explicit work packages (`WP-A`..`WP-E`) including deliverable + pass criterion.
+  3. Added a practical gating rule: defer prose additions that do not advance at least one technical work package.
+- Diffstat (cached): `TOTAL +27 -8` (`paper/main.md`).
+- Guardrails: cycle-tag leak check and transcript mention check both passed (no matches).
+- Scaffolding assessment: the cycle system itself is not the blocker; **micro-cycle cadence** is. The direct mitigation is to batch multiple technical promotions in one `C` wave, so cycle files become thin wrappers around substantial derivation edits rather than the center of effort.
+
+## 2026-02-14 (C289: Cross-package promotion wave for main paper)
+- Focus: turn the Section 9 package queue into concrete technical promotions, not planning prose.
+- Main manuscript promotions (`paper/main.md`):
+  1. Added `Derivation D6.4` (quantitative truncation-window witness) in Section 8.6.
+  2. Added `Remark P7.1a` (compact compatibility map) in Section 9.1.
+  3. Replaced `WP-*` labels with `Package *` labels and clarified they are editorial tags.
+  4. Added `Derivation D8.2a` (one-loop `\lambda\phi^4` fixed-scheme RG witness) in Appendix 10.1.
+  5. Added Appendix 10.6 with `Derivation D12.1` and `Proposition P12.1` (regulated-kernel composition witness + controlled regulator removal).
+- Diffstat (cached): `TOTAL +115 -9` (`paper/main.md`).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q172: Referee pass on C289)
+- Verdict: PASS on correctness/scope of C289 additions.
+- Required follow-up: Package B remained partially open (operator-domain benchmark not explicit enough), so `C290` was spawned.
+
+## 2026-02-14 (C290: Package B closure wave)
+- Focus: harden Appendix 10.2 with explicit operator-domain/symmetry analysis.
+- Main manuscript promotions (`paper/main.md`):
+  1. Added normalization-convention sentence in `Derivation D8.2a` (`\mathcal L_int=\lambda\phi^4/4!`).
+  2. Added `Derivation D9.1b` (`S^1` periodic-domain witness comparing `Q_L` and `Q_W`).
+  3. Added `Remark D9.1c` (scope boundary: symmetry shown, full extension theory deferred).
+  4. Updated Section 9.5 Package B status line to reflect starter closure and remaining curved-manifold extension.
+- Diffstat (cached): `TOTAL +138 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q173: Referee pass on C290)
+- Verdict: PASS.
+- Result: domain/symmetry witness is mathematically coherent at stated scope; no blocking fixes required.
+- Optional next: `C291` for curved-manifold extension of Package B when needed.
+
+## 2026-02-14 (C291: Package B curved-manifold closure extension)
+- Focus: extend Package B beyond periodic-domain witness to a curved-manifold operator-domain benchmark.
+- Main manuscript promotions (`paper/main.md`):
+  1. Added `Derivation D9.1d`: half-density conjugation as a unitary symmetry-preserving transport of the geometric kinetic operator on curved manifolds.
+  2. Added `Derivation D9.1e`: explicit adjoint-difference identity showing generic non-symmetry of naive left kinetic ordering in chart form.
+  3. Updated Section 9.1 representation-track map and Section 9.5 Package B status line.
+- Diffstat (cached): `TOTAL +172 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q174: Referee pass on C291)
+- Verdict: PASS.
+- Result: curved-manifold Package B closure is valid at witness level with explicit scope boundaries.
+- Follow-up recommendation: deepen Package A beyond free-kernel witness.
+
+## 2026-02-14 (C292: Package A deepening beyond free Gaussian witness)
+- Focus: push Package A to nontrivial potential data while staying explicit about scope.
+- Main manuscript promotions (`paper/main.md`):
+  1. Added Section 9.5 Package A status line reflecting achieved witness level.
+  2. Added `Derivation D12.2`: first-order Duhamel potential perturbation with composition closure to `O(V)`.
+  3. Added `Remark D12.2a`: concrete failure mode for singular/distributional attractive potentials requiring renormalization/boundary data.
+- Diffstat (cached): `TOTAL +192 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q175: Referee pass on C292)
+- Verdict: PASS.
+- Result: Package A now has a nontrivial checked witness beyond the free case; higher-order/nonperturbative strengthening remains optional future work (`C293`).
+
+## 2026-02-14 (C293: Package A quantitative error-control extension)
+- Focus: strengthen Package A from witness-level `O(V)` closure to explicit bounded-potential error control.
+- Main manuscript promotions (`paper/main.md`):
+  1. Added `Proposition P12.2` with explicit semigroup-norm remainder bound for `T_V-T_V^(1)` and composition-defect bound for `T_V^(1)`.
+  2. Updated Section 9.5 Package A status line to include quantitative-bound closure level.
+- Diffstat (cached): `TOTAL +220 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q176: Referee pass on C293)
+- Verdict: PASS.
+- Result: quantitative bounded-potential Package A layer is coherent and appropriately scoped as sufficient (not sharp) control.
+- Optional next: `C294` for sharper constants or explicit solvable nontrivial potential kernel witness.
+
+## 2026-02-14 (C294: Package A exact nontrivial kernel benchmark)
+- Focus: add an all-order solvable nontrivial kernel composition witness in Appendix 10.6.
+- Main manuscript promotions (`paper/main.md`):
+  1. Added `Derivation D12.3` (Euclidean harmonic-oscillator Mehler-kernel semigroup witness).
+  2. Added regulator-flow version `K_{omega,eps}` with additive epsilon under composition.
+  3. Added `Remark D12.3a` scope boundary (`omega>0`, Euclidean confining class).
+  4. Updated Section 9.5 Package A status line.
+- Diffstat (cached): `TOTAL +247 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q177: Referee pass on C294)
+- Verdict: PASS.
+- Result: exact nontrivial benchmark accepted as valid witness-level closure layer for Package A.
+- Optional next: `C295` for concise limit checks (`t->0+`, `omega->0`) to improve readability.
+
+## 2026-02-14 (C295: Package A sanity-limit hardening)
+- Focus: add concise referee-facing consistency checks for the Mehler benchmark in D12.3.
+- Main manuscript promotion (`paper/main.md`):
+  1. Added `Remark D12.3b` with explicit `omega->0` free-kernel limit and short-time localization statement.
+- Diffstat (cached): `TOTAL +258 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q178: Referee pass on C295)
+- Verdict: PASS.
+- Result: sanity-limit hardening is clear and non-overclaiming.
+- Optional next: `C296` for deeper Package B extension/self-adjointness witness.
+
+## 2026-02-14 (C296: Package B deeper extension witness)
+- Focus: strengthen Package B from symmetry-only witnesses to explicit domain-parameterized self-adjoint realization differences.
+- Main manuscript promotions (`paper/main.md`):
+  1. Added `Derivation D9.1f` (delta-contact extension family for formal kinetic operator; same symbol with inequivalent self-adjoint realizations).
+  2. Added explicit spectral consequence for attractive branch (`E_B=-m g^2/(2\hbar^2)`).
+  3. Added `Remark D9.1g` to keep scope at witness level (not full U(2) classification).
+  4. Updated Section 9.5 Package B status line.
+- Diffstat (cached): `TOTAL +277 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q179: Referee pass on C296)
+- Verdict: PASS.
+- Result: extension witness is coherent and improves Package B representation-compatibility coverage without overclaiming.
+- Optional next: `C297` to tighten explicit linkage from extension witness back to operational RCP closure map.
+
+## 2026-02-14 (C297: RCP cross-link hardening)
+- Focus: explicitly connect extension/domain witness (`D9.1f`) to operational RCP closure map (`D10.1a`).
+- Main manuscript promotion (`paper/main.md`):
+  1. Added `Remark D10.1b` clarifying that parameter bundle `theta` includes domain/boundary data alongside ordering/coupling data.
+  2. Added explicit cross-reference tying extension-level inequivalence to representation-compatibility closure conditions.
+- Diffstat (cached): `TOTAL +280 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q180: Referee pass on C297)
+- Verdict: PASS.
+- Result: cross-link improves conceptual coherence without overclaiming.
+- Optional next: `C298` for one final readability polish over Section 9.5/Appendix pointers.
+
+## 2026-02-14 (C298: Readability pointer hardening)
+- Focus: improve manuscript navigation after multi-cycle technical expansion.
+- Main manuscript promotions (`paper/main.md`):
+  1. Added quick package-to-appendix pointer line in Section 9.5.
+  2. Added `Remark D10.4a` in Appendix 10.4 mapping Package A-E to concrete derivation anchors.
+- Diffstat (cached): `TOTAL +288 -9` (`paper/main.md`, cumulative staged manuscript batch).
+- Guardrails: cycle-tag and transcript checks passed (no matches).
+
+## 2026-02-14 (Q181: Referee pass on C298)
+- Verdict: PASS.
+- Result: pointer map improves navigation without introducing technical or notation regressions.
