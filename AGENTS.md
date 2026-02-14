@@ -22,21 +22,23 @@ Startup is not complete unless all six files above are read, including
 
 ## Context Budget Rules
 1. Keep `cycles/index.md` compact; do not append per-cycle completed-line logs there.
-2. `cycles/archive/` is large; never bulk-read it. Open specific archived files only when needed.
+2. Completed cycle files live in **git history only** (removed from the working
+   tree via `git rm` after commit). To retrieve one, use `git show`; never
+   bulk-recover archived cycles into the working tree.
 3. `docs/research-log.md` is append-only; at startup read only recent tail context.
 4. Read only blackboard slots relevant to the current cycle.
 
 ## Context Poisoning Guardrails
 1. Default-deny for high-volume history files: do not read full contents of:
    - `docs/research-log.md`
-   - `cycles/archive/**`
+   - git-archived cycle files (recovered via `git show`)
    - session transcripts / continuation dumps (`*continued-from-a-previous*.txt`, `conv_patched.md`)
 2. Read archived or log files only with an explicit reason tied to the active cycle, and only the minimal slice needed.
-3. Never use broad scans that pull archive/log bodies into context (for example recursive `cat`, broad `rg` over `cycles/archive/`, or opening entire large files).
+3. Never use broad scans that pull archive/log bodies into context (for example recursive `cat`, bulk `git log -p` over cycle files, or opening entire large files).
 4. Preferred startup pattern:
    - Read policy/state files listed in Session Startup.
    - For logs, read only a short tail (for example last 30-60 lines).
-   - For archive, open a single named file only when required.
+   - For archived cycles, use `git show <commit>:<path>` for a single named file only when required.
 5. If accidental ingestion happens, state it in the cycle execution log and immediately re-anchor on canonical state files (`AGENTS.md`, `docs/research-state.md`, `cycles/index.md`) before proceeding.
 
 ## Manuscript Policy

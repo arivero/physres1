@@ -216,15 +216,32 @@ Each cycle uses four files:
 New cycle files go in `cycles/` (top level). Templates live in `cycles/templates/`.
 Create cycle files by copying from templates and renaming to the target ID.
 
-## Archiving
-Completed cycle files are periodically moved to `cycles/archive/`. The archive
-currently holds ~2400 files. **Context-saving rules:**
-- New cycle files are created in `cycles/` (not in archive).
-- When a session's cycles are all completed and committed, move their files
-  to `cycles/archive/`.
-- **Never bulk-read the archive.** Only read a specific archived cycle file
-  when you need it for a concrete reason (e.g., a Q cycle reviewing an older C).
-- `cycles/index.md` uses a summary table for completed cycles, not per-cycle lines.
+## Archiving (Git-Based)
+Completed cycle files are removed from the working tree with `git rm` and
+live exclusively in git history. There is no `cycles/archive/` directory.
+
+**Workflow:**
+1. New cycle files are created in `cycles/` (top level).
+2. When a cycle is completed, committed, and no longer needed in the working
+   tree, `git rm` its four files (`*-plan.md`, `*-execution.md`, `*-debate.md`,
+   `*-redteam.md`) during the next infrastructure commit.
+3. The files remain fully recoverable via `git log` / `git show`:
+   ```bash
+   git log --all --oneline -- cycles/S200-execution.md
+   git show <commit>:cycles/S200-execution.md
+   ```
+4. `cycles/index.md` uses a summary table for completed cycles, not per-cycle
+   lines. The table records track, count, and ID range so any cycle can be
+   located in git history without reading the working tree.
+
+**Rules:**
+- Do not keep completed cycle files in the working tree after they are committed.
+  The only `.md` files in `cycles/` (besides `README.md`, `index.md`, and
+  `templates/`) should be **active or in-progress** cycles.
+- To retrieve an archived cycle, use `git show` on the commit that last
+  touched it. Never bulk-recover archived cycles into the working tree.
+- Q cycles that need to reference a parent C should use `git show` to read
+  the relevant `Cnn-execution.md` from history, not restore files to disk.
 
 ## Content-Cycle Logging Requirement (Diffstat)
 Every `Cnn` cycle must:

@@ -1,2 +1,0 @@
-# S177 Execution
-Blackboard 1: color confinement as fermion→composite chain completion. Reviewed by lattice QCD specialist: caught (1) string tension units wrong (GeV²/c → GeV²), (2) baryons are fermionic not bosonic — reframe narrative, (3) Grassmann-obstruction connection is analogical not deductive, (4) string breaking not a sharp threshold at 2m_q c², (5) Millennium Prize is for pure Yang-Mills mass gap.

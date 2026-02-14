@@ -2,11 +2,11 @@
 
 > **Context-saving rule:** Do NOT read this file line-by-line at session start.
 > Skim the summary counts and jump to **Next Action**. Completed cycle files
-> live in `cycles/archive/` — read them only when you need a specific cycle's
-> plan/execution/debate/redteam for a concrete reason (e.g., a Q cycle
-> referencing a parent C). Never bulk-read the archive.
+> live in **git history** (removed from working tree via `git rm`). To read one,
+> use `git show <commit>:cycles/<ID>-execution.md`. Never bulk-recover archived
+> cycles into the working tree.
 
-## Completed (archived in `cycles/archive/`)
+## Completed (archived in git history)
 
 | Track | Count | Range |
 |-------|-------|-------|
@@ -76,7 +76,7 @@
 - `[Landsman1998]`: PENDING_LIBRARY — requires institutional Springer access or physical library visit.
 
 ## Session Addenda (2026-02-14)
-- Location semantics: files in `cycles/` are selectable active logs; archived files in `cycles/archive/` are archived.
+- Location semantics: files in `cycles/` are selectable active logs; completed files are `git rm`'d and live in git history only.
 - Cycle artifacts are append-only in this session.
 - Workflow rule: `S`/`D` must use blackboards/notebooks (no `paper/notes/`); `C` may use `paper/notes/` only when adding content to the same paper target.
 
