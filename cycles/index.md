@@ -10,11 +10,11 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 319 | C00–C318 (gaps: none) |
+| Content (`Cnn`) | 320 | C00–C319 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 299 | S00–S298 (gaps: S276–S278 active) |
+| Study (`Snn`) | 300 | S00–S299 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 179 | Q00–Q185 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 43 | D00–D42 (gaps: none) |
+| Discovery triage (`Dnn`) | 45 | D00–D44 (gaps: D43 incomplete) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
@@ -51,6 +51,7 @@
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- C319: NEW satellite paper `rcp-foundations` (189 lines, foundation draft). Sections 1-3 complete (Introduction + Axioms A1-A5 + Noether theorem). Sections 4-7 outlined (ordering/RG/P4.2/outlook to be expanded). Target: 6-9pp. Sources: D44/S299. Net: +189/-0 lines.
 - C318: Final rooted-tree expansions — Section 7 Conclusion + Section 3.5 order-3 trees. Paper now at 8pp (PRD length, 431 lines). Net: +45/-0 lines.
 - C317: Expanded rooted-tree paper Section 6.2 with explicit Hopf coproduct formulas (order-1/2/3 trees, antipode S, forest formula, connection to composition). Paper now at 7pp (over PLB, approaching PRD), 372 lines. Net: +53/-0 lines.
 - C316: Expanded rooted-tree paper Section 4.4 with worked 2D delta RG example (one-loop, beta function, dimensional transmutation, explicit parallel to midpoint RK). Sources: D42/S298 (adapted from cornerstone Section 10.5). Paper now at 6pp (PLB boundary), 319 lines. Net: +50/-0 lines.

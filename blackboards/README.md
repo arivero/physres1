@@ -59,7 +59,7 @@ relevant slot. Deletion criteria (in priority order):
 |------|-------|--------|
 | 0 | Rooted-tree bookkeeping scope map + midpoint RK2 example (D41/S297) | Promoted (C315 -> rooted-tree-bookkeeping initial draft) |
 | 1 | 2D delta RG example + rooted-tree adaptation (D42/S298) | Promoted (C316 -> rooted-tree Section 4.4) |
-| 2 | Levy-Khintchine dimensional obstruction + identity limit (D39/S295) | Promoted (C312 -> P4.2d, notebook: p42-hypothesis-reduction) |
+| 2 | RCP foundations scope map + Noether example (D44/S299) | Promoted (C319 -> rcp-foundations initial draft) |
 | 3 | Half-density vs Moyal ordering comparison (D35/S290) | Promoted (C312 -> D9.1a correction, notebook: deformation-equivalence-physical) |
 | 4 | Mehler kernel composition: interacting witness for P4.2 (D36/S293) | Promoted (C312 -> P4.2e, notebook: p42-extensions-interacting-curved) |
 | 5 | Curved-space composition test for P4.2 extension (D30/S287) | Promoted (C312 -> P4.2e, notebook: p42-extensions-interacting-curved) |
