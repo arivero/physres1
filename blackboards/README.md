@@ -3,6 +3,24 @@
 This folder is for "scratchpad" research: computations, conjectures, counterexamples,
 and idea sketches that are not yet stable enough to live in a manuscript draft.
 
+## Content Rules (STRICT)
+
+**A blackboard MUST contain ONLY:**
+- Keywords and labels
+- References to sources
+- Statements (theorems, propositions, lemmas, definitions)
+- Formulae and equations
+- Brief structure markers (section headers)
+
+**A blackboard MUST NOT contain:**
+- Textual explanations or prose
+- Motivation paragraphs
+- Pedagogical exposition
+- Narrative transitions
+
+**Rationale:** Blackboards are working scratch for raw technical content. All explanation
+belongs in notebooks (stable technical exposition) or manuscripts (publication prose).
+
 ## Hard Limit: 7 Blackboards (0–6)
 
 Blackboards are numbered **0.md through 6.md** — no content hints in filenames.
@@ -36,13 +54,13 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Minimal RCP axiom set analysis (open Q#2) | Active (S211) |
-| 1 | Self-adjoint extensions / point interactions (delta §4) | Active |
-| 2 | Caustics / Maslov index / metaplectic resolution | Active (S213) |
+| 0 | Odd-d scale-supplier table + parity obstruction (D27/S284) | Active (S284) |
+| 1 | Delta-object dictionary + safe/unsafe criterion (D24/S281) | Active (D24+S281) |
+| 2 | Stochastic discretization: Itô vs Stratonovich from N-impulse | Active (S282) |
 | 3 | Central-force threshold bridge branchboard | Active (S270-S278) |
 | 4 | RCP + contact universality constraints | Active (S207) |
-| 5 | Anomalies as half-density composition defects (open Q#5) | Active (S210) |
-| 6 | Non-perturbative contact expansion (Padé) | Active (S208) |
+| 5 | Heat-kernel witness in half-density language | Active (S283) |
+| 6 | Newton polygonal convergence: theorem + failure mode (D28/S285) | Active (S285) |
 
 ## Collaboration Use (Two-Agent Discussion)
 Blackboards are also the discussion surface for multi-agent reasoning.

@@ -10,27 +10,27 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 288 | C00–C287 |
-| Bibliography (`Bnn`) | 27 | B00–B27 |
-| Study (`Snn`) | 270 | S00–S269 |
-| Quality (`Qnn`) | 172 | Q00–Q171 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 17 | D00–D16 (dormant) |
+| Content (`Cnn`) | 290 | C00–C289 (gaps: none) |
+| Bibliography (`Bnn`) | 28 | B00–B27, B33 |
+| Study (`Snn`) | 276 | S00–S275 (gaps: none) |
+| Quality (`Qnn`) | 174 | Q00–Q173 (gaps: Q110–Q111) |
+| Discovery triage (`Dnn`) | 23 | D00–D22 (dormant) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
-**Total archived: ~2800 cycle files.**
+**Total archived: ~2860 cycle files.**
 
 ## Active / In Progress
 
 - `S276` (initial pass done): generalized marginal map beyond monomial \(A(L)\).
 - `S277` (initial + analytic-closure iteration done): scale-window validity for mixed kinetic exponents.
 - `S278` (initial + iteration-2 done): potential-channel drift diagnostics for non-power corrections.
-- `D23` (queued): ordering vs unitarity in the \(H=qp\) discretization witness (planned spawn: `S280`).
-- `D24` (queued): delta-object dictionary + “\(\delta(\delta S)\)” meaning audit (planned spawn: `S281`).
-- `D25` (queued): random impulses + Itô/Stratonovich link to time-slicing conventions (planned spawn: `S282`).
-- `D26` (queued): heat-kernel / half-density semantics as a QFT-grade witness (planned spawn: `S283`).
-- `D27` (queued): odd-\(d\) scalarization scale supplier vs transmutation (planned spawn: `S284`).
-- `D28` (queued): Newton polygonal convergence statement + failure mode witness (planned spawn: `S285`).
+- `D23` (completed): ordering vs unitarity in the \(H=qp\) discretization witness. S280 completed (`notebooks/ordering-unitarity-dilation-generator.md`). Safe claim: symmetry selects \(\alpha=1/2\); scope disclaimer on domain-dependent self-adjointness.
+- `D24` (completed): delta-object dictionary + "\(\delta(\delta S)\)" meaning audit. S281 completed (blackboards/1.md).
+- `D25` (completed): random impulses + Itô/Stratonovich link to time-slicing conventions. S282 completed (blackboards/2.md).
+- `D26` (completed): heat-kernel / half-density semantics as a QFT-grade witness. S283 completed (blackboards/5.md).
+- `D27` (completed): odd-\(d\) scalarization scale supplier vs transmutation. S284 completed (blackboards/0.md). Parity lemma: monomial sieve is even-\(d\) only; transmutation is parity-blind; d=3 delta witness supplies \(a^{3/2} = \text{length}^{d/2}\). B32 deferred.
+- `D28` (completed): Newton polygonal convergence statement + failure mode witness. S285 completed (blackboards/6.md). Promotable paragraph ready for future C-cycle targeting Section 3.
 
 ## Next Action
 
@@ -41,6 +41,7 @@
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- C301+Q183: promoted Remark H1.2a (Newton polygonal O(h) convergence + collision singularity failure mode) into Section 3.3 of `paper/main.md`; Q183 PASS WITH MINOR REVISIONS (missing HLW06 citation → B33; nabla V notation → optional C302).
 - S274+S275(iter4)+D20: threshold-bridge deepening continued without new C-cycle. Added \(L_{\mathrm{crit}}\) marginal map, ran same-ID caveat-coverage + compactness/readability iterations for compression candidates, and deferred C300 (no correctness defect).
 - D18+S272+S273+D19: slowed the central-force threshold thread into stress-test cadence (coefficient-aware marginal analysis + assumption-break tests + evidence-gated `S274/S275 -> optional C300` queue).
 - D17+S270+S271+C299+Q182: main-paper Section 3.3 bridge wave on `paper/main.md`. Added `Remark P1.1a` (asymptotic threshold \(q_{\mathrm{crit}}=\nu+1\), Newton \(3\) vs SR \(2\), explicit scope split from inverse-square dimensional identity); Q182 PASS.
@@ -102,3 +103,13 @@
 - `D21` closed: administrative/policy trace only (not discovery).
 - Drift postmortem: ambiguity came from missing explicit prohibition of policy/editorial tasks in `D`; fixed by adding `D` scope guard in `cycles/README.md` and strict track mapping in `AGENTS.md`/`docs/handoff.md`.
 - `S277` (iteration 4): generalized drift gate to arbitrary scale factor `Delta nu_b`, with peak-location formula and asymptotic window estimates.
+
+## Session Addenda (2026-02-14, 04:42 CET)
+- `D23`+`S280` (completed): symmetry (not unitarity) selects α=1/2 for H=qp ordering; derivation in `notebooks/ordering-unitarity-dilation-generator.md`.
+- `D24`+`S281` (completed): delta-object dictionary with mollifier-universality criterion; blackboard in slot 1.
+- `D25`+`S282` (completed): midpoint=Stratonovich, prepoint=Itô; Itô correction (1/2)σσ' dt computed; blackboard in slot 2.
+- `D26`+`S283` (completed): heat kernel as bi-half-density, D/2 normalization, V=(1/6)R curvature potential; blackboard in slot 5.
+- `D27`+`S284` (completed): parity lemma blocks monomial sieve for odd d; transmutation parity-blind; blackboard in slot 0.
+- `D28`+`S285` (completed): Newton kick-drift = symplectic Euler, O(h) convergence, central-force singularity failure mode; blackboard in slot 6.
+- Blackboard promotions to notebooks: S208 Padé content → `notebooks/nonperturbative-contact-pade.md`, S213 caustics → `notebooks/caustics-maslov-half-density.md`.
+- Active S-cycles parked: S276 (marginal map), S277 (scale-window drift), S278 (potential-channel drift).

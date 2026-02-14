@@ -62,6 +62,8 @@ Use this file as a source ledger.
 47. `[Nogues1999]` C. Nogues, A. Rauschenbeutel, S. Osnaghi, M. Brune, J. M. Raimond, and S. Haroche, "Seeing a single photon without destroying it," *Nature* 400 (1999), 239–242. DOI `10.1038/22275`. (Dispersive QND photon-number measurement; used in action-angle satellite Remark 5.7.)
 48. `[Sommerfeld1916FineStructure]` Arnold Sommerfeld, "Zur Quantentheorie der Spektrallinien," *Annalen der Physik* 51 (1916), 1–94, 125–167. (Classical relativistic Coulomb precession and fine-structure quantization.)
 49. `[Bertrand1873ClosedOrbits]` Joseph Bertrand, "Théorème relatif au mouvement d'un point attiré vers un centre fixe," *Comptes Rendus de l'Académie des Sciences* 77 (1873), 849–853. (Closed-orbit theorem for central forces.)
+50. `[HairerLubichWanner2006GNI]` E. Hairer, C. Lubich, G. Wanner, *Geometric Numerical Integration: Structure-Preserving Algorithms for Ordinary Differential Equations*, 2nd ed., Springer Series in Computational Mathematics vol. 31, Springer, 2006. ISBN `978-3-540-30666-5`. DOI `10.1007/3-540-30666-8`. (Theorem IX.3.1: global O(h) convergence of symplectic Euler; Chapter IX: backward error analysis and long-time energy conservation for symplectic integrators.)
+51. `[HairerNorsettWanner1993ODE1]` E. Hairer, S.P. Norsett, G. Wanner, *Solving Ordinary Differential Equations I: Nonstiff Problems*, 2nd ed., Springer Series in Computational Mathematics vol. 8, Springer, 1993. ISBN `978-3-540-56670-0`. DOI `10.1007/978-3-540-78862-1`. (Theorem II.3.6: convergence of one-step methods under Lipschitz conditions.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -102,6 +104,8 @@ Use this file as a source ledger.
 36. `[Nauenberg2018GraphicalMethod]`: DOI `10.1119/1.5046424`; arXiv primary anchor used (`1810.05264`).
 37. `[Sommerfeld1916FineStructure]`: classical journal source; DOI not pinned in this ledger yet.
 38. `[Bertrand1873ClosedOrbits]`: 19th-century primary source; no DOI used in this ledger.
+39. `[HairerLubichWanner2006GNI]`: DOI `10.1007/3-540-30666-8`; ISBN `978-3-540-30666-5`.
+40. `[HairerNorsettWanner1993ODE1]`: DOI `10.1007/978-3-540-78862-1`; ISBN `978-3-540-56670-0`.
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -141,6 +145,8 @@ Use this file as a source ledger.
 35. `[Nauenberg2018GraphicalMethod]`: OA via arXiv (`1810.05264`) and UCSC Emeriti author copy (<https://emeriti.ucsc.edu/files/newtongraphicmethodAJPSept22.pdf>). Not yet ingested into `sources/`.
 36. `[Sommerfeld1916FineStructure]`: `PENDING` — metadata added in B27; legal OA/institutional scan ingestion pending.
 37. `[Bertrand1873ClosedOrbits]`: `PENDING` — metadata added in B27; archival OA scan ingestion pending.
+38. `[HairerLubichWanner2006GNI]`: `PENDING_LIBRARY` — book (Springer, 2006). DOI `10.1007/3-540-30666-8`; ISBN `978-3-540-30666-5`. Author has made partial chapter PDFs available (e.g. intro, selected sections) but full text requires institutional access or physical library. (B33 note: Archive Ouverte UNIGE lists the book but requires institutional login.)
+39. `[HairerNorsettWanner1993ODE1]`: `PENDING_LIBRARY` — book (Springer, 1993). DOI `10.1007/978-3-540-78862-1`; ISBN `978-3-540-56670-0`. Archive Ouverte UNIGE lists a related version but requires institutional login. Institutional access or physical library needed.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).

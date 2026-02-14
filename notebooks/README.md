@@ -4,6 +4,23 @@ Research notebooks for material that has graduated from blackboards but is
 **not aimed for publication**. Notebooks are memory: they persist until
 no longer needed, then are discarded.
 
+## Content Rules (STRICT)
+
+**A notebook CAN contain:**
+- Textual explanation and exposition
+- Mathematics (formulae, derivations, proofs)
+- Pedagogical narrative
+- Context and motivation
+- Complete worked examples
+
+**A notebook is APPEND-ONLY:**
+- New content is always added at the end
+- Existing content is NEVER edited or rewritten
+- If content becomes obsolete, add a deprecation note but do not delete
+- Use dated section headers when appending new material
+
+**Contrast with blackboards:** Blackboards contain ONLY keywords, references, statements, and formulae (no prose explanation). Notebooks add the textual exposition that explains the mathematics.
+
 ## Rules
 
 1. **Append-only.** Content can be added to a notebook but never edited or

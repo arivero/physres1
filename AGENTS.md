@@ -77,19 +77,22 @@ as a longer article (Phys. Rev. D scale, ~8–15pp).
 1. **When to commit:** at most **once per hour**. Multiple cycles accumulate
    as uncommitted work and are committed together. Do **not** commit after
    every individual cycle.
-2. **Two-commit rule (per batch):**
+2. **Time until commit is working time:** Do NOT wait idle in a sleep loop for
+   commit time to arrive. Use the waiting period to create and run new cycles
+   (D/S/B/C/Q). Commits happen when ready AND when the 60-minute minimum has passed.
+3. **Two-commit rule (per batch):**
    - **First commit:** manuscript source files — `.md` in `paper/` and
      `papers/*/`, `.tex`, `.bib`, `paper/bibliography.md`.
    - **Second commit:** everything else — `cycles/`, `docs/`, `blackboards/`,
      `paper/notes/`, `notebooks/`, config files.
    - If no manuscripts changed, only the second commit is needed.
-3. This keeps the manuscript-generating history cleanly separable from
+4. This keeps the manuscript-generating history cleanly separable from
    planning/logging artifacts, while limiting total commits to ≤2 per hour.
-4. **Commit metadata (required in every commit message):**
+5. **Commit metadata (required in every commit message):**
    - Include a tag identifying the orchestrating agent/model (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`).
    - List all cycle IDs in the batch (e.g., `S200+C241+S201+C242+Q128`).
    - Include a token/usage estimate if the tooling exposes it. If not available, write `tokens: N/A`.
-5. **Research-log rollover before commit:**
+6. **Research-log rollover before commit:**
    - Before starting commit work, move all but the latest three dated entries from `docs/research-log.md` into `docs/research-log-archive.md`.
    - Keep chronological order and append moved content to the archive (do not rewrite archive history).
 
@@ -175,4 +178,25 @@ Cycle intent is strict:
 When files grow large or bloated, proactively archive them rather than letting them accumulate. Use `find`-based commands instead of glob expansion when operating on large numbers of files. Deduplicate docs when content overlaps across files.
 
 ## Continuous Operation
-When asked to run multiple cycles or tasks, continue autonomously without pausing for confirmation between each one. Push commits after each cycle. Only stop when the requested count is reached or an error occurs.
+When asked to run multiple cycles or tasks, continue autonomously without pausing for confirmation between each one. Only stop when the requested count is reached, the time limit is reached, or an error occurs.
+
+## When No Tasks Are Available (Looping Protocol)
+If instructed to keep looping but no explicit tasks remain in `cycles/index.md`:
+
+1. **Scan manuscripts for D/S opportunities:**
+   - Read `paper/main.md` and `papers/*/main.md` section by section
+   - Identify claims needing derivation witnesses (→ spawn S-cycle)
+   - Identify conceptual gaps or unclear scope boundaries (→ spawn D-cycle)
+   - Look for "TODO", "PENDING", or informal hedges that need hardening
+
+2. **Scan bibliography for source-driven work:**
+   - Read `paper/bibliography.md` OA Acquisition Status section
+   - Identify PENDING sources that can be acquired (→ spawn B-cycle)
+   - Identify acquired sources not yet integrated into manuscripts (→ spawn S-cycle to extract key results, then C-cycle to promote)
+   - Direct book-to-article promotion: if a key theorem/result from an acquired book can be cited and used, spawn a C-cycle to add it directly to the manuscript with proper citation
+
+3. **If all manuscripts are stable and bibliography is current:**
+   - Run a quality sweep: spawn Q-cycles on recent C-cycles
+   - Run red-team passes on recent S-cycles
+   - Check page counts and run compaction passes if satellites exceed limits
+   - Only then: idle or report completion
