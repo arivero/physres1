@@ -32,3 +32,4 @@ Produce a concrete derivation/computation/check as a promotion candidate (no man
 - A self-contained derivation/check with enough detail to be promoted by a later `C` cycle.
 - Any commands run are recorded (command + output summary).
 - The **discovery flag** in the execution log is filled in (yes/no + one sentence if yes).
+- **MANDATORY (Rule 8):** All mathematical success criteria (derivations, calculations, technical claims) must be written to `blackboards/*.md` or `notebooks/*.md`. Mathematics only in cycle logs or agent memory does NOT count as completion.

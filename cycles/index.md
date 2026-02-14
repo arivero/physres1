@@ -12,13 +12,13 @@
 |-------|-------|-------|
 | Content (`Cnn`) | 295 | C00–C302 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 278 | S00–S286 (gaps: S276–S278 active) |
+| Study (`Snn`) | 282 | S00–S293 (gaps: S276–S278 active) |
 | Quality (`Qnn`) | 178 | Q00–Q184 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 30 | D00–D28, D32 (dormant) |
+| Discovery triage (`Dnn`) | 34 | D00–D38 (gaps: none) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
-**Total archived: ~3270 cycle files.**
+**Total archived: ~3278 cycle files.**
 
 ## Active / In Progress
 
@@ -36,6 +36,9 @@
 - `D29` (completed): Can hypothesis (L) (local exponential weight) be weakened? S288 completed (blackboards/1.md). **Major discovery**: (L) = (L_loc) + (L_exp), where (L_exp) is a **THEOREM** (not assumption) derived from composition semigroup. Functional equation uniquely forces exponential form for action-dependent kernels. Only escape: Lévy-Khintchine (jump processes, non-action-dependent). P4.2 hypothesis count is effectively **3.5, not 4**.
 - `D31` (completed): What is the measure-theoretic κ→0 obstruction? S289 completed (blackboards/2.md). **Rigorous result**: κ→0 fails via **three redundant obstructions** (support shift to x₀(y,t)≠y, oscillatory divergence exp(iS_cl/κ), non-commutativity of limits). Primary: residual action S_cl(x₀,y;t) generically nonzero → distributional limit does not exist. Free particle (V=0) is unique exception (trivial). P4.2(iii) now mathematically rigorous.
 - `D35` (completed): Is there tension between Section 7 (all orderings equivalent) and Section 10.2 (half-density selects canonical)? S290 completed (blackboards/3.md). **Verdict**: Tension is **apparent, not real**. Four-layer stratification: (1) principal symbol—all agree, (2) connection term—half-density fixes uniquely, (3) scalar potential—deformation freedom persists, (4) domain—independent. Half-density is **canonical choice** within deformation equivalence class (like Lorenz gauge), not unique physics. Sections 7 and 10.2 are complementary.
+- `D34` (completed): Does P4.2 (ℏ-necessity) extend to Lorentzian (real-time) composition? S291 completed (blackboards/6.md). **Verdict**: **Partial closure** (D34 hypothesis confirmed). Explicit Fresnel integral calculation shows signature-independent parts (d/2 exponent, κ=ℏ necessity, semigroup law) and signature-dependent parts (iε prescription, convergence mode, identity limit). P4.2 conclusions (C)+(L)+(D) extend to Lorentzian; (I) requires distributional framework. Algebraic vs analytic split clarifies why Euclidean proof transfers. **Note:** D37 later upgraded this to full closure by deriving iε from composition.
+- `D37` (completed): Can iε prescription be derived from composition+identity, or is it external input? S292 completed (blackboards/6.md). **Verdict**: **iε is unique** — theorem of composition (C) alone, not external input! Among regulators exp(−ε f((x−y)²/t)), only f(x)=x (linear) preserves semigroup closure. Proof: non-linear f yields non-Gaussian integrands breaking composition. **Surprise**: Identity limit (I) not needed; composition alone forces uniqueness. **Impact**: D34 upgrades from partial to **full closure**; P4.2 effective hypothesis count reduced; iε joins exponential weight (S288) as theorem of semigroup, not assumption.
+- `D36` (completed): Do P4.2's d/2 and κ-necessity persist for interacting (V≠0) systems, or are they free-particle artifacts? S293 completed (blackboards/4.md). **Verdict**: **Full persistence** — Mehler kernel (harmonic oscillator) composition forces d/2 and κ identically to free case. **Mechanism**: d/2 forcing is purely algebraic (dimension-counting); works with "time function" sin(ωt) just like t; κ-necessity unaffected (trigonometric functions dimensionless). Short-time a_1 = −iV/ℏ correctly extracted, confirming Seeley-DeWitt coefficients are **compatibility conditions**, not escape routes. **Impact**: P4.2 extends to interacting systems without qualification; closes "free-particle artifact" objection via three witnesses (S287 curved, S292 iε, S293 interacting).
 
 ## Next Action
 
@@ -108,6 +111,19 @@
 - `D21` closed: administrative/policy trace only (not discovery).
 - Drift postmortem: ambiguity came from missing explicit prohibition of policy/editorial tasks in `D`; fixed by adding `D` scope guard in `cycles/README.md` and strict track mapping in `AGENTS.md`/`docs/handoff.md`.
 - `S277` (iteration 4): generalized drift gate to arbitrary scale factor `Delta nu_b`, with peak-location formula and asymptotic window estimates.
+
+## Session Addenda (2026-02-14, 13:58 CET)
+- **D36+S293 (completed)**: **MAJOR DISCOVERY** — P4.2 extends to interacting systems! Mehler kernel (harmonic oscillator V=(1/2)mω²q²) composition forces d/2 and κ-necessity identically to free case. d/2 forcing is **purely algebraic** (dimension-counting works with "time function" sin(ωt) just like t). κ-necessity unaffected (ω-dependent trigonometric functions dimensionless). Short-time a_1 Seeley-DeWitt coefficient correctly extracted (a_1 = −iV/ℏ), confirming a_n are **compatibility conditions**, not escape routes. Impact: Closes "free-particle artifact" objection via three witnesses: S287 (curved space, metric-independent), S292 (iε uniqueness, signature-independent), S293 (interacting V≠0, Seeley-DeWitt is compatibility). Blackboard in slot 4 (supersedes S286).
+
+## Session Addenda (2026-02-14, 13:42 CET)
+- **D37+S292 (completed)**: **MAJOR DISCOVERY** — iε prescription is a **theorem of composition (C)**, not external input! Among all regulators exp(−ε f((x−y)²/t)), only f(x)=x (linear) preserves semigroup closure K_t^ε ∘ K_s^ε = K_{t+s}^ε. Proof via degree-counting: non-linear f produces non-Gaussian integrands that break composition. Surprise: composition alone suffices; identity limit (I) not needed for uniqueness. Impact: (1) D34 upgrades from partial to full closure, (2) P4.2 effective hypothesis count reduced (after D29 reduced (L)), (3) iε joins exponential weight as theorem of semigroup structure. Blackboard in slot 6 (supersedes S291).
+
+## Session Addenda (2026-02-14, 13:22 CET)
+- **Rule 8 added to `cycles/README.md`**: Mathematics in success criteria must be written to blackboards/notebooks, not just cycle logs or agent memory.
+- Templates updated (`cycles/templates/Sxx-plan.md`, `cycles/templates/Dxx-plan.md`) to include mandatory mathematics requirement.
+- `blackboards/README.md` updated to clarify blackboards are primary location for mathematical cycle deliverables.
+- `D35`+`S290` (completed): Half-density vs Moyal ordering comparison. Verdict: Four-layer stratification shows Section 7 and 10.2 are complementary (not contradictory). Blackboard in slot 3.
+- `D34`+`S291` (completed): Lorentzian composition witness for P4.2. Verdict: Partial closure (D34 hypothesis confirmed). Explicit Fresnel integral in blackboard slot 6 shows algebraic parts (d/2, κ=ℏ, semigroup) are signature-independent; analytic parts (iε, convergence, identity limit) are signature-dependent. P4.2(C)+(L)+(D) extend to Lorentzian; P4.2(I) requires distributional framework.
 
 ## Session Addenda (2026-02-14, 04:42 CET)
 - `D23`+`S280` (completed): symmetry (not unitarity) selects α=1/2 for H=qp ordering; derivation in `notebooks/ordering-unitarity-dilation-generator.md`.

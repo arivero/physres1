@@ -36,7 +36,8 @@ relevant slot. Deletion criteria (in priority order):
 ## Rules
 1. The blackboards are **not citable sources**.
 2. They may reference idea logs, but nothing here should be cited as evidence.
-3. When an argument stabilizes, it exits the blackboard via one of two paths:
+3. **Blackboards are the primary location for mathematical cycle deliverables** (Rule 8 in `cycles/README.md`): All mathematical success criteria for S-cycles and D-cycles must be written here (or in `notebooks/` for stabilized material). Mathematics only in cycle logs or agent memory does NOT count as completion.
+4. When an argument stabilizes, it exits the blackboard via one of two paths:
    - **To a manuscript** (via a `Cnn` cycle): content is promoted directly into
      `paper/main.md` or `papers/*/main.md`. Use this when the material is
      ready for publication prose.
@@ -48,7 +49,7 @@ relevant slot. Deletion criteria (in priority order):
    - **To paper notes** (`paper/notes/`, `papers/*/notes/`): use sparingly,
      only when the material directly supports a specific manuscript section
      as a detailed derivation or expansion. Paper notes feed `P` cycles.
-4. Promotion is the exit path. Once fully promoted (to paper, notebook, or
+5. Promotion is the exit path. Once fully promoted (to paper, notebook, or
    notes), a slot is free for reuse.
 
 ## Slot Index (update when overwriting)
@@ -58,9 +59,9 @@ relevant slot. Deletion criteria (in priority order):
 | 1 | Composition-compatible weight function uniqueness (D29/S288) | Active (S288) |
 | 2 | Distributional obstruction for kappa -> 0 (D31/S289) | Active (S289) |
 | 3 | Half-density vs Moyal ordering comparison (D35/S290) | Active (S290) |
-| 4 | Two-particle κ-universality test (D32/S286) | Active (S286) |
+| 4 | Mehler kernel composition: interacting witness for P4.2 (D36/S293) | Active (S293) |
 | 5 | Curved-space composition test for P4.2 extension (D30/S287) | Active (S287) |
-| 6 | Newton polygonal convergence: theorem + failure mode (D28/S285) | Active (S285) |
+| 6 | Parametrized Fresnel regularization composition test (D37/S292) | Active (S292) |
 
 ## Before Choosing Next Task: Read All Blackboards
 **When deciding what to work on next**, read the **contents** of all blackboards (not just the index):

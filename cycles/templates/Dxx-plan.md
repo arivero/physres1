@@ -42,3 +42,4 @@ Choose and define a novelty target (without editing manuscripts), then spawn the
 ## Acceptance criteria
 - Exactly one chosen novelty target with a one-sentence claim + explicit scope disclaimer.
 - A concrete next `S` cycle is opened (or clearly specified) with a bounded deliverable and a blackboard slot.
+- **MANDATORY (Rule 8):** If the discovery claim involves mathematical results (calculations, derivations, technical claims), the mathematics must be written to `blackboards/*.md` or `notebooks/*.md` (typically via spawned S-cycle). Mathematics only in cycle logs or agent memory does NOT count as completion.

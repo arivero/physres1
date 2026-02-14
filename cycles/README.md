@@ -96,6 +96,26 @@ If the task is prose change, use `C`. If the task is submission packaging, use `
 
 **Rationale:** Context-gathering with cheap Haiku search before expensive Opus/Sonnet deep work. If the search shows the question is already answered (in sources or our papers), adjust or cancel the cycle.
 
+### 8) Mathematics must be written down (mandatory for success criteria)
+**For any cycle claiming to satisfy success criteria involving mathematical results** (derivations, calculations, technical claims):
+
+The mathematics **must** be written to persistent files:
+- `blackboards/*.md` (preferred for work in progress)
+- `notebooks/*.md` (for stabilized results)
+- `paper/notes/*.md` (only in C-cycles, for manuscript-adjacent drafts)
+
+**Not acceptable as evidence of completion:**
+- Mathematics only in agent memory/context (not written to disk)
+- Mathematics only in cycle logs (`cycles/*-execution.md`, `cycles/*-debate.md`, etc.)
+- Verbal descriptions without explicit formulas/equations
+
+**Examples:**
+- ✓ GOOD: "Completed Gaussian integral calculation, explicit line-by-line derivation in `blackboards/6.md`"
+- ✗ BAD: "Completed Gaussian integral calculation (see above in this execution log)"
+- ✗ BAD: "Verified that d/2 exponent holds" (without showing the algebra)
+
+**Rationale:** Cycles are planning/logging artifacts that get archived. Mathematical content must live in durable, referenceable locations that can be promoted to manuscripts or serve as standalone computational records.
+
 ## Cycle Types
 We use five independent numbered tracks:
 
@@ -110,6 +130,7 @@ We use five independent numbered tracks:
    - Typical outputs: `blackboards/*.md`, `paper/notes/*.md`, and/or `notebooks/*.md`.
    - Blackboard -> notebook transfer is an intended stabilization step when material is worth preserving but not manuscript-ready.
    - Promotion rule: results are promotion candidates only; promote only via a `Cnn`.
+   - **Mathematics requirement (Rule 8):** All mathematical success criteria must be written to blackboards/notebooks, not just in cycle logs.
 
 3. **Bibliography cycles** (`Bnn`): search/ingest/verify cycles for references.
    - Typical outputs: `paper/bibliography.md`, `sources/` captures, and `sources/pending-<Key>.md`.
