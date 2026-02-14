@@ -6,8 +6,8 @@ Date: YYYY-MM-DD
 - <what was derived / checked>
 
 ## Artifacts produced
-- `blackboards/...`: <path>
-- `paper/notes/...`: <path>
+- `blackboards/<0-6>.md`: <slot used>
+- `notebooks/...`: <path, if promoted>
 
 ## Commands run (if any)
 ```bash
@@ -17,8 +17,9 @@ Date: YYYY-MM-DD
 ## Result
 - <what is now stable enough to promote?>
 
-## Promotion candidate (copyable block)
-<a paragraph/remark/derivation block suitable for later `C` promotion>
+## Promotion candidate (pointer)
+- Location: <blackboard section header and/or notebook entry>
+- (Optional) Short copyable block: <keep brief; long derivations live in blackboards/notebooks>
 
 ## Discovery flag (fill at end of cycle)
 - Did this computation reveal something unexpected? **yes / no**
@@ -28,4 +29,3 @@ Date: YYYY-MM-DD
 ## Spawned cycles
 - `Cxx`: (when ready) promote the candidate into <target manuscript>
 - `Bxx` (optional): anchor <load-bearing claim>
-

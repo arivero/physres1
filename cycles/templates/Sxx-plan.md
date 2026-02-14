@@ -8,16 +8,23 @@ Produce a concrete derivation/computation/check as a promotion candidate (no man
 ## Deliverable (keep bounded)
 - Target: <1–2 pages of derivation OR one toy computation OR one symbolic check>
 - Output file(s):
-  - `blackboards/YYYY-MM-DD-<topic>.md` and/or `paper/notes/<topic>.md`
+  - `blackboards/<0-6>.md` (choose/overwrite a slot per `blackboards/README.md`)
+  - `notebooks/<topic>.md` (optional: append-only promotion of stabilized result)
+
+## Where The Math Goes
+- Put the detailed derivation/computation in the blackboard slot (and optionally promote to a notebook).
+- Keep `cycles/Sxx-*.md` lean: prompt, command log, and a short result summary only.
+- Editorial drafting/polish belongs in `C` (or `P` for submission packaging), not in `S`.
 
 ## Allowed files
 - `blackboards/`
-- `paper/notes/`
+- `notebooks/`
 - `docs/research-log.md`
 - `cycles/Sxx-*.md`
 
 ## Forbidden files
-- Manuscripts: `paper/main.md`, `papers/*/main.md`
+- Manuscripts (do not edit): `paper/main.md`, `papers/*/main.md`
+- `paper/notes/` and `papers/*/notes/` (notes are created/edited only in `C`)
 - Bibliography ledger: `paper/bibliography.md`
 - `sources/`
 
@@ -25,4 +32,3 @@ Produce a concrete derivation/computation/check as a promotion candidate (no man
 - A self-contained derivation/check with enough detail to be promoted by a later `C` cycle.
 - Any commands run are recorded (command + output summary).
 - The **discovery flag** in the execution log is filled in (yes/no + one sentence if yes).
-

@@ -20,3 +20,6 @@ __pycache__/
 *.run.xml
 *.lof
 *.lot
+
+# macOS
+.DS_Store

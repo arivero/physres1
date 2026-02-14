@@ -25,6 +25,12 @@
 - `S276` (initial pass done): generalized marginal map beyond monomial \(A(L)\).
 - `S277` (initial + analytic-closure iteration done): scale-window validity for mixed kinetic exponents.
 - `S278` (initial + iteration-2 done): potential-channel drift diagnostics for non-power corrections.
+- `D23` (queued): ordering vs unitarity in the \(H=qp\) discretization witness (planned spawn: `S280`).
+- `D24` (queued): delta-object dictionary + “\(\delta(\delta S)\)” meaning audit (planned spawn: `S281`).
+- `D25` (queued): random impulses + Itô/Stratonovich link to time-slicing conventions (planned spawn: `S282`).
+- `D26` (queued): heat-kernel / half-density semantics as a QFT-grade witness (planned spawn: `S283`).
+- `D27` (queued): odd-\(d\) scalarization scale supplier vs transmutation (planned spawn: `S284`).
+- `D28` (queued): Newton polygonal convergence statement + failure mode witness (planned spawn: `S285`).
 
 ## Next Action
 

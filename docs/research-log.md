@@ -18,23 +18,26 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Sources touched (keys + status changes):
 - Next:
 
-## 2026-02-14 (C300: Section 3 threshold-bridge compression)
-- Ran `C300` (no commit requested).
-- Rewrote `Remark P1.1a` in `paper/main.md` to a 2-sentence compact form preserving fixed-`L`, small-`r`, mechanism-separation, and marginal-coefficient caveats.
-- Manuscript diffstat: `+1 -1` (`paper/main.md`).
-- No cycle-tag leak and no `conv_patched` mention in manuscript.
-
-## 2026-02-14 (C300 rollback + D re-anchor closures)
-- Restored the original long `Remark P1.1a` paragraph in `paper/main.md`; closed `C300` as no-promotion (`TOTAL +0 -0`).
-- Closed `D22` with discovery verdict: no new conceptual relation beyond existing partition-track framing.
-- Closed `D21` as discovery-inactive administrative trace.
-
-## 2026-02-14 (Immediate archival on close)
-- Enforced close->archive rule immediately: moved `S275`, `D21`, `D22`, and `C300` cycle artifacts from `cycles/` to `cycles/archive/`.
-- Updated `cycles/index.md` active/next-action section to remove closed cycles from the live queue.
-
 ## 2026-02-14 (S277 Iteration 4: generalized `Delta nu_b` gate)
 - Extended kinetic mixed-regime drift from decade-only (`b=10`) to arbitrary scale factor `b`.
 - Added closed-form peak-drift location `x_peak^2=b^{-2/3}+b^{-4/3}` and asymptotic safe-window estimates.
 - Numeric validation shows strong high-`x` estimate accuracy and conservative low-`x` estimate behavior.
 - Updated `blackboards/3.md` and promoted stabilized result to notebook memory.
+
+## 2026-02-14 (D-task harvest: main paper + satellites)
+- Read `paper/main.md` chapter-by-chapter and skimmed `paper/notes/*.md` and `papers/*/main.md` to extract physics-facing discovery targets (no manuscript edits).
+- Opened new queued discovery cycles with concrete prompts + planned S-spawns:
+  - `D23` (ordering vs unitarity in \(H=qp\)),
+  - `D24` (delta-object dictionary; \(\delta(\delta S)\) audit),
+  - `D25` (random impulses; Itô vs Stratonovich vs time slicing),
+  - `D26` (heat kernel / half-density QFT witness),
+  - `D27` (odd-\(d\) scalarization scale supplier vs transmutation),
+  - `D28` (Newton polygonal convergence statement + failure mode).
+- Updated `cycles/index.md` to list `D23`–`D28` as queued.
+- Next: update cycle templates to reflect the numbered-blackboard + append-only-notebook conventions (templates currently mention dated blackboard filenames and `paper/notes/` for S-cycles).
+
+## 2026-02-14 (Template refresh: blackboards/notebooks conventions)
+- Updated cycle templates to make it explicit that math/derivations live in `blackboards/<0-6>.md` (optionally promoted to `notebooks/`), and that `D`/`S` are physics-only (no editorial drafting).
+- Patched `cycles/templates/Dxx-{plan,execution}.md` to require S-witnesses with a named blackboard slot.
+- Updated `cycles/templates/README.md` numbering note to allow 2+ digits (match `cycles/index.md` prefix style).
+- Ignored macOS `.DS_Store` files via `.gitignore`.

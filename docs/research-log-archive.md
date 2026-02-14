@@ -4135,3 +4135,18 @@
 - Re-anchored D-cycle meaning to discovery-only (novelty/hypothesis triage).
 - Marked policy/editorial items as administrative trace; future wording/notation work deferred to C-cycle promotion.
 
+## 2026-02-14 (C300: Section 3 threshold-bridge compression)
+- Ran `C300` (no commit requested).
+- Rewrote `Remark P1.1a` in `paper/main.md` to a 2-sentence compact form preserving fixed-`L`, small-`r`, mechanism-separation, and marginal-coefficient caveats.
+- Manuscript diffstat: `+1 -1` (`paper/main.md`).
+- No cycle-tag leak and no `conv_patched` mention in manuscript.
+
+## 2026-02-14 (C300 rollback + D re-anchor closures)
+- Restored the original long `Remark P1.1a` paragraph in `paper/main.md`; closed `C300` as no-promotion (`TOTAL +0 -0`).
+- Closed `D22` with discovery verdict: no new conceptual relation beyond existing partition-track framing.
+- Closed `D21` as discovery-inactive administrative trace.
+
+## 2026-02-14 (Immediate archival on close)
+- Enforced close->archive rule immediately: moved `S275`, `D21`, `D22`, and `C300` cycle artifacts from `cycles/` to `cycles/archive/`.
+- Updated `cycles/index.md` active/next-action section to remove closed cycles from the live queue.
+

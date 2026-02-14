@@ -3,7 +3,7 @@
 These files are copy/rename templates for starting a new cycle.
 
 Conventions:
-- Replace `xx` with the next available two-digit number for that track.
+- Replace `xx` with the next available number for that track (2+ digits is fine; match the prefix style used in `cycles/index.md`).
 - Keep cycle artifacts in `cycles/` (not in manuscripts).
 - Only `Cnn` cycles may edit manuscripts (`paper/main.md`, `papers/*/main.md`).
 - `Qnn` cycles must name a parent `Cnn`.
