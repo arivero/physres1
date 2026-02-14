@@ -87,6 +87,13 @@ The \(c\to\infty\) limit is structurally clean: all relativistic corrections van
 `Remark 3.1b (Why the critical exponent drops by one).`
 The shift from \(q_{\mathrm{crit}}=3\) (Newtonian) to \(q_{\mathrm{crit}}=2\) (SR) has a transparent kinematic origin. In Newtonian mechanics, \(E=p^2/(2m)\) makes the centrifugal barrier scale as \(L^2/(2mr^2)\propto r^{-2}\); this overwhelms the attractive potential \(\propto r^{-(q-1)}\) iff \(q<3\). In SR, the ultrarelativistic limit \(E\approx pc\) replaces the barrier by \(Lc/r\propto r^{-1}\) — one power weaker — so the barrier wins iff \(q<2\). The critical exponent drops by exactly one because the energy-momentum relation changes from quadratic to linear in the high-momentum limit relevant as \(r\to 0\).
 
+`Remark 3.1c (Unified threshold rule via kinetic asymptotics).`
+The Newtonian/SR shift is one instance of a compact scaling rule. If the high-momentum kinetic asymptotic is \(E_{\mathrm{kin}}(p)\sim p^\nu\), then at fixed \(L\) one has \(p\sim L/r\), so the centrifugal barrier scales as \(r^{-\nu}\), while \(F\propto r^{-q}\) implies \(U\propto -r^{-(q-1)}\). The short-distance threshold is therefore
+\[
+q_{\mathrm{crit}}=\nu+1.
+\]
+Newton gives \(\nu=2\Rightarrow q_{\mathrm{crit}}=3\); ultrarelativistic SR gives \(\nu=1\Rightarrow q_{\mathrm{crit}}=2\). This asymptotic-threshold mechanism is independent of the separate algebraic fact that \(q=2\) uniquely yields the dimensional identity \(v=K/L\).
+
 `Remark 3.2 (SR precession: the orbit is a precessing ellipse).`
 For general (non-circular) bound orbits under \(F=K/r^2\), the standard Binet substitution \(u=1/r\) applied to the SR equations of motion (cf.\ [BoscagginDambrosioFeltrin2020RelKepler] for the Hamiltonian treatment) yields the orbit equation
 \[

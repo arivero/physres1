@@ -60,6 +60,8 @@ Use this file as a source ledger.
 45. `[ZurekHabibPaz1993]` W. H. Zurek, S. Habib, and J. P. Paz, "Coherent States via Decoherence," *Physical Review Letters* 70 (1993), 1187–1190. DOI `10.1103/PhysRevLett.70.1187`. (Shows coherent states minimize entropy production under environmental coupling, emerging as preferred pointer states; used in action-angle satellite Remark 5.2.)
 46. `[BraginskyVorontsovThorne1980]` V. B. Braginsky, Yu. I. Vorontsov, and K. S. Thorne, "Quantum nondemolition measurements," *Science* 209 (1980), 547–557. DOI `10.1126/science.209.4456.547`. (QND measurement theory; used in action-angle satellite Remark 5.7.)
 47. `[Nogues1999]` C. Nogues, A. Rauschenbeutel, S. Osnaghi, M. Brune, J. M. Raimond, and S. Haroche, "Seeing a single photon without destroying it," *Nature* 400 (1999), 239–242. DOI `10.1038/22275`. (Dispersive QND photon-number measurement; used in action-angle satellite Remark 5.7.)
+48. `[Sommerfeld1916FineStructure]` Arnold Sommerfeld, "Zur Quantentheorie der Spektrallinien," *Annalen der Physik* 51 (1916), 1–94, 125–167. (Classical relativistic Coulomb precession and fine-structure quantization.)
+49. `[Bertrand1873ClosedOrbits]` Joseph Bertrand, "Théorème relatif au mouvement d'un point attiré vers un centre fixe," *Comptes Rendus de l'Académie des Sciences* 77 (1873), 849–853. (Closed-orbit theorem for central forces.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -98,6 +100,8 @@ Use this file as a source ledger.
 34. `[Berkeley1734Analyst]`: no DOI (18th-century primary source, 1734).
 35. `[Nauenberg1994SymplecticNewton]`: DOI `10.1007/BF01686278`.
 36. `[Nauenberg2018GraphicalMethod]`: DOI `10.1119/1.5046424`; arXiv primary anchor used (`1810.05264`).
+37. `[Sommerfeld1916FineStructure]`: classical journal source; DOI not pinned in this ledger yet.
+38. `[Bertrand1873ClosedOrbits]`: 19th-century primary source; no DOI used in this ledger.
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -135,6 +139,8 @@ Use this file as a source ledger.
 33. `[Berkeley1734Analyst]`: OA via Wikisource (<https://en.wikisource.org/wiki/The_Analyst:_a_Discourse_addressed_to_an_Infidel_Mathematician>) and Internet Archive (<https://archive.org/details/analystordiscour00berkrich>). Not yet ingested into `sources/`.
 34. `[Nauenberg1994SymplecticNewton]`: publisher (Springer), paywalled. `PENDING` — no OA route identified (DOI `10.1007/BF01686278`; Springer and JSTOR both require subscription). B17 note: the "symplectic Euler integrator" language used in H1.2 is more explicitly from Nauenberg 2018 (see #35); the 1994 paper uses "canonical/symplectic mapping" but not the modern numerical-analysis terminology. Consider citing both in a future C cycle.
 35. `[Nauenberg2018GraphicalMethod]`: OA via arXiv (`1810.05264`) and UCSC Emeriti author copy (<https://emeriti.ucsc.edu/files/newtongraphicmethodAJPSept22.pdf>). Not yet ingested into `sources/`.
+36. `[Sommerfeld1916FineStructure]`: `PENDING` — metadata added in B27; legal OA/institutional scan ingestion pending.
+37. `[Bertrand1873ClosedOrbits]`: `PENDING` — metadata added in B27; archival OA scan ingestion pending.
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).
