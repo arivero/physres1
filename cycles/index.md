@@ -10,11 +10,11 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 328 | C00–C328 (gaps: none) |
+| Content (`Cnn`) | 333 | C00–C333 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
 | Study (`Snn`) | 303 | S00–S303 (gaps: S276–S278 active) |
-| Quality (`Qnn`) | 179 | Q00–Q185 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 62 | D00–D62 (gaps: D43 incomplete, D33 unused) |
+| Quality (`Qnn`) | 180 | Q00–Q187 (gaps: Q110–Q111) |
+| Discovery triage (`Dnn`) | 69 | D00–D69 (gaps: D43 incomplete, D33 unused) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
@@ -186,3 +186,17 @@
 - **D61 (completed)**: Composition constrains structure (Gaussian, d/2, exp(iS/ℏ)), not content (which V). Interactions constrained only at A4 level (renormalizability). Clean separation: A1=structure, A4=content selection.
 - **D62 (completed)**: P4.2 vs operational uniqueness theorems (Hardy et al.). P4.2 uniquely offers: CM→QM bridge, inevitability narrative, QFT extension, single axiom. Complementary, not competing.
 - **Opus review**: D49 blackboard PASS WITH MINOR ISSUES (4 terminological corrections applied).
+
+## Session Addenda (2026-02-14, 21:00-21:30 CET)
+- **C329+Q186 (completed, uncommitted)**: Promoted D49-D53 axiom reduction to RCP foundations paper. Section 6.1 rewritten with single-axiom formulation (9 conclusions from composition). Q186 PASS WITH MINOR ISSUES (4 fixes applied: items 8-9 added, self-adjoint in header, softened κ claim, Atiyah-Segal scope).
+- **C330 (completed, uncommitted)**: Remark P4.2h (single master axiom) in cornerstone Section 10.
+- **C331 (completed, uncommitted)**: Remark RG-H1.18 (two-layer QFT structure) in RG-fundamental Section 7.
+- **C332 (completed, uncommitted)**: Remark P9.1 (forced-completion chain + failure taxonomy) in cornerstone Section 9.6.
+- **C333 (completed, uncommitted)**: Remark P9.1a (stage 4: dynamical geometry) in cornerstone Section 9.6.
+- **Q187 (opus, completed)**: Review of C331-C333. PASS WITH MINOR ISSUES (2 fixes applied).
+- **D63 (opus)**: Stage 4 forced-completion. Obstruction: dynamical gravity dissolves partition concept (domain failure, not integrand failure). Chain may branch. HIGH confidence for obstruction, LOW for completion.
+- **D64**: Thermal composition = boundary condition, not partition-channel parameter. Notebook-only.
+- **D65**: Composition forces Born rule via Stone → unitarity → Gleason. MINOR synthesis.
+- **D66**: Classicality as composition boundary. Classical-as-precursor vs classical-as-effective. Classical limit singular because it undoes a forced completion. MODERATE philosophical synthesis.
+- **D68 (opus)**: Gauge fields from composition. Given internal space V + group G, composition forces connection structure, path-ordering, gauge covariance. MODERATE conditional forcing.
+- **D69 (opus)**: Anomaly cancellation through composition. Composition requires cancellation but can't select representations. MINOR/KNOWN (S210 already covered).

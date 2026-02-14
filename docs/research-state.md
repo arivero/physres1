@@ -167,27 +167,32 @@ Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PL
 5. Dirac Probes / Corners / Impulses (7pp, ~256 lines, 6 refs) — FROZEN
 
 **PRD-length satellites (>6pp compiled):**
-6. RCP Foundations (8pp, 347 lines, 6 refs) — NEW (axioms A1-A5, three crown witnesses, multi-channel path-integral synthesis, forward connections)
+6. RCP Foundations (7pp, 362 lines, 6 refs) — EXPANDED (axioms A1-A5, single-axiom P4.2 reduction, multi-channel synthesis, forward connections)
 7. Ordering Equivalence (8pp, 391 lines, 2 refs) — NEW (four-layer stratification, PDM+curved examples, star products, Itô/Stratonovich, RCP representation channel)
 8. Rooted-Tree Bookkeeping (8pp, 431 lines, 5 refs) — NEW (Butcher/RG dictionary, Hopf coproduct explicit formulas)
 9. Path-Integral Normalization (9pp, 432 lines, 3 refs) — NEW (d/2 exponent forced by composition, four manifestations, Van Vleck determinant, heat kernel, RG thresholds)
-10. RG Fundamental (12pp, 721 lines, 10 refs) — EXPANDED (rooted trees, Hopf coproduct, multi-channel RCP conclusion)
+10. RG Fundamental (12pp, 724 lines, 10 refs) — EXPANDED (rooted trees, Hopf coproduct, two-layer QFT remark, multi-channel RCP conclusion)
 11. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
 12. Fermionic Mediators (13pp, 244 lines, 40 refs)
 13. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
-14. Planck Area (14pp, ~730+ lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
+14. Planck Area (14pp, 736 lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
 
-**Cornerstone:** paper/main.md (~1821 lines, 23pp). Target: Physics Reports.
-**Current satellite count: 13** (3 PLB-frozen + 1 Dirac + 9 PRD-length). Cross-referencing from cornerstone: 9 completed (C146), rooted-tree + RCP + ordering + path-integral-normalization TBD.
+**Cornerstone:** paper/main.md (1834 lines, 32pp). Target: Physics Reports.
+**Current satellite count: 13** (3 PLB-frozen + 1 Dirac + 9 PRD-length). Cross-referencing from cornerstone: all 13 completed (C328).
+**Total corpus: ~187k tokens (Claude tokenizer).**
 
 Recent cornerstone additions (2026-02-14):
+- C330: P4.2h (single master axiom — composition alone suffices) in Section 10
+- C332: P9.1 (forced-completion chain + structure vs content + failure taxonomy) in Section 9.6
+- C333: P9.1a (stage 4: dynamical geometry + classical limit singularity) in Section 9.6
 - C314: P4.2g (continuum time forced by dimensional homogeneity) in Section 10
-- C313: P5.2a (deformation equivalence is physical — four-layer stratification + GaAs energy estimate) in Section 7.4; Package B status updated in Section 9.5
-- C312: P4.2c-f (hypothesis reduction 4->3, curved/interacting/Lorentzian extensions, kappa universality)
-- C312: D9.1a correction (four-layer deformation equivalence stratification)
-- C304-C311: delta dictionary, Ito/Stratonovich, caustics/Maslov, Pade unification, RCP crown witnesses
+- C313: P5.2a (deformation equivalence is physical) in Section 7.4
+- C312: P4.2c-f (hypothesis reduction, extensions, kappa universality)
+- C304-C311: delta dictionary, Ito/Stratonovich, caustics/Maslov, Pade, RCP crown witnesses
 
 Recent satellite additions (2026-02-14):
+- C329: RCP foundations — Section 6.1 rewritten with single-axiom P4.2 reduction (9 conclusions from composition)
+- C331: RG-fundamental — Remark RG-H1.18 (two-layer QFT structure under forced completion)
 - C326-C327: NEW satellite `path-integral-normalization` (432 lines, 9pp) — d/2 exponent forced by composition semigroup + dimensional homogeneity. Four manifestations (temporal composition, Van Vleck determinant, heat kernel, RG thresholds). Explicit d=1,2,3 composition verifications (PN-D1.1, PN-D1.2), alternative exponent failure, DeWitt-Morette law Δ(x,z)=Δ(x,y)Δ(y,z), Wick rotation to diffusion equation, renormalization threshold d<2/d=2/d>2, connection to P4.2 + half-density formalism. Sources: D48/S302. Complete 7 sections.
 - C325: RCP foundations expansion — Section 7.4+7.5 added (multi-channel synthesis showing how partition/representation/scale interact in path integral: sewing law forces ℏ, measure encodes ordering, singular V forces RG). Cross-references to three channel-specific satellites. Paper now 8pp (347 lines).
 - C324: Ordering equivalence COMPLETE — expanded sections 4-7 (curved space Laplace-Beltrami + curvature potential, star-product automorphism perspective, Itô/Stratonovich + path-integral discretization, measurability analysis + RCP representation channel). Paper at 8pp (391 lines), 6 propositions, 2 worked examples.
