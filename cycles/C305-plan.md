@@ -1,20 +1,24 @@
-# Cxx Plan: <promotion wave title>
+# C305 Plan: Delta-Object Dictionary to Main Paper
 
-Date: YYYY-MM-DD
+Date: 2026-02-14
 
 ## Goal
-Promote specific, stable results into manuscripts (this cycle must edit at least one manuscript file).
+Promote delta-object dictionary and safe/unsafe criterion from blackboards/1.md (S281) to main paper.
 
 ## Target manuscripts (must edit ≥1)
-- `paper/main.md` (yes/no)
-- `papers/<name>/main.md` (yes/no)
+- `paper/main.md` (yes)
+- `papers/<name>/main.md` (no)
 
 ## Scope
 In scope:
-- <sections to add/rewrite>
+- Add remark in Section 5.5 with delta-object dictionary
+- Include five constructions table summary
+- Include safe/unsafe criterion (mollifier universality)
 
 Out of scope:
-- <anything that would require S/B/D>
+- Full witness computations (keep in blackboard)
+- Do/Don't table (keep in blackboard)
+- Extended discussion of delta(delta S) (already covered in H0.2a)
 
 ## Minimum promotion bar (preferably verbose)
 This cycle should contain at least one paragraph-level addition/rewrite, a derivation/remark block, or a subsection-level change (avoid micro-edits as standalone `C` cycles).

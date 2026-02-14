@@ -10,15 +10,15 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 290 | C00–C289 (gaps: none) |
+| Content (`Cnn`) | 295 | C00–C302 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 276 | S00–S275 (gaps: none) |
-| Quality (`Qnn`) | 174 | Q00–Q173 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 23 | D00–D22 (dormant) |
+| Study (`Snn`) | 277 | S00–S285 (gaps: S276–S278 active) |
+| Quality (`Qnn`) | 178 | Q00–Q184 (gaps: Q110–Q111) |
+| Discovery triage (`Dnn`) | 29 | D00–D28 (dormant) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
-**Total archived: ~2860 cycle files.**
+**Total archived: ~3270 cycle files.**
 
 ## Active / In Progress
 
