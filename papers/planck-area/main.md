@@ -721,7 +721,7 @@ This note adds a complementary ingredient: the kernel side is most naturally for
 # 7. Open Problems and Outlook
 1. *(Addressed: Derivation PA-D1.4a.)* The free-propagator semigroup computation provides a concrete witness; a full tangent-groupoid treatment remains desirable.
 2. *(Addressed: Remark PA-E5c.)* The Van Vleck / transmutation separation is explicit in the 2D delta model; a \(d=4\) gauge-theory witness is still open.
-3. General-dimension analysis: clarify what replaces "area" in odd dimensions and whether a universal normalization is still defensible. *(Partially addressed: Remark PA-D1.3a classifies the three obstruction mechanisms. An explicit odd-\(d\) transmutation witness is still open.)*
+3. *(Addressed: Remark PA-D1.3b.)* General-dimension analysis: what replaces "area" in odd dimensions. The monomial sieve is an even-\(d\) filter (parity lemma), while the transmutation route is parity-blind. An explicit odd-\(d\) witness exists: in \(d=3\), the delta-interaction scattering length \(a\) (generated via power-law renormalization) supplies \(a^{3/2}=\text{length}^{3/2}=\text{length}^{d/2}\) without fractional coupling powers, since \(a\) is a derived RG-invariant scale. A universal normalization remains defensible in odd \(d\) provided one admits transmutation-generated scales.
 4. *(Addressed: Remark PA-H2.6b.)* The minimal hypothesis set is PA-H2.1 + PA-H2.4 + PA-H2.5a + gravity-only; each is necessary.
 5. Track minimal-length/GUP scenarios as a comparison branch: do they implement the "needed scale" at the level of kinematics (modified commutators/dispersion) or can they be reframed as a refinement-compatibility condition? Use [Hossenfelder2013MinimalLength] as an OA entry point.
 

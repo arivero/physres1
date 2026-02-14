@@ -83,6 +83,11 @@ Closing the formalization gap requires axiomatizing "amplitude" and
 proving uniqueness theorems — a multi-year research program beyond
 the scope of these papers. Current §10.3 P10.1 + D10.1a is the best
 available semi-formal statement.
+**Update (2026-02-14)**: P4.2 hypothesis reduction (D29+D39) shows the
+κ-necessity theorem rests on only three independent hypotheses: composition
+(C), identity limit (I), dimensional homogeneity (D). The exponential weight
+and locality are derivable. This is a partial axiom-minimization result,
+though it addresses the quantization layer only (not the full RCP stack).
 
 ### 3. Does the contact-expansion universality produce new constraints?
 The fermionic paper shows that different UV completions give the same contact

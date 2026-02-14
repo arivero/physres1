@@ -33,6 +33,8 @@ relevant slot. Deletion criteria (in priority order):
 3. **Stale** — no sign of active use. Overwrite.
 4. **Lowest priority** — least aligned with the current top thread.
 
+**The Wastepaper Basket Principle:** "The Math Department needs only a blackboard and a wastepaper basket. Some authors don't even need the wastepaper basket." Be aggressive about discarding. If a result is wrong, superseded, or not going anywhere — **overwrite it**. Don't hoard scratch work. Blackboards are for active exploration, not archival memory (that's what notebooks and papers are for).
+
 ## Rules
 1. The blackboards are **not citable sources**.
 2. They may reference idea logs, but nothing here should be cited as evidence.
@@ -55,13 +57,13 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Odd-d scale-supplier table + parity obstruction (D27/S284) | Active (S284) |
-| 1 | Composition-compatible weight function uniqueness (D29/S288) | Active (S288) |
-| 2 | Distributional obstruction for kappa -> 0 (D31/S289) | Active (S289) |
-| 3 | Half-density vs Moyal ordering comparison (D35/S290) | Active (S290) |
-| 4 | Mehler kernel composition: interacting witness for P4.2 (D36/S293) | Active (S293) |
-| 5 | Curved-space composition test for P4.2 extension (D30/S287) | Active (S287) |
-| 6 | Weyl vs half-density energy shift for PDM (D38/S294) | Active (S294) |
+| 0 | Dimensional obstruction to discrete-time composition (D40/S296) | Active |
+| 1 | Composition-compatible weight function uniqueness (D29/S288) | Promoted (C312 -> P4.2c, notebook: p42-hypothesis-reduction) |
+| 2 | Levy-Khintchine dimensional obstruction + identity limit (D39/S295) | Promoted (C312 -> P4.2d, notebook: p42-hypothesis-reduction) |
+| 3 | Half-density vs Moyal ordering comparison (D35/S290) | Promoted (C312 -> D9.1a correction, notebook: deformation-equivalence-physical) |
+| 4 | Mehler kernel composition: interacting witness for P4.2 (D36/S293) | Promoted (C312 -> P4.2e, notebook: p42-extensions-interacting-curved) |
+| 5 | Curved-space composition test for P4.2 extension (D30/S287) | Promoted (C312 -> P4.2e, notebook: p42-extensions-interacting-curved) |
+| 6 | Weyl vs half-density energy shift for PDM (D38/S294) | Promoted (C312 -> D9.1a correction, notebook: deformation-equivalence-physical) |
 
 ## Before Choosing Next Task: Read All Blackboards
 **When deciding what to work on next**, read the **contents** of all blackboards (not just the index):

@@ -18,7 +18,7 @@ The long-standing foundational tension can be phrased as a Zeno-style refinement
 `Heuristic H0.2 (Concrete failure modes of naive refinement-to-zero).`
 Three recurring obstructions that make "refine \(\to 0\)" nontrivial in practice are:
 1. **Singular probes:** point-supported variations and corners/impulses force distributional weak forms (mollifiers and contact terms).
-2. **Non-uniqueness:** refinement/composition can admit multiple classically equivalent but quantum-distinct schemes (ordering/discretization choices), requiring an explicit equivalence or control map. (Minimal witness: time-slicing \(H=pq\) can yield \(-\hat p\hat q\) vs \(-\hat q\hat p\), differing by \(O(\hbar)\) as operators; requiring unitarity selects a symmetric (half-density) convention.)
+2. **Non-uniqueness:** refinement/composition can admit multiple classically equivalent but quantum-distinct schemes (ordering/discretization choices), requiring an explicit equivalence or control map. (Minimal witness: time-slicing \(H=pq\) can yield \(-\hat p\hat q\) vs \(-\hat q\hat p\), differing by \(O(\hbar)\) as operators; requiring symmetry of the generator — the minimal condition for self-adjointness, itself needed for unitarity — selects the midpoint (half-density) convention; see Remark D4.1c.)
 3. **Divergence:** some refinement limits do not converge without subtraction/parameter flow (renormalization). (Toy witness: the derivative exists only after subtracting a \(1/\varepsilon\) divergence in the difference quotient.)
 This manuscript treats these as limit-control problems rather than as postulates about "nature at the smallest scale."
 
@@ -39,9 +39,10 @@ the paper does not assume that continuum limits are ontological statements about
 **Contributions (what is new here).**
 1. A refinement/composition reading of the Newton \(\to\) action \(\to\) kernel chain in which each stage is retained as a compatibility condition, not replaced.
 2. An intrinsic half-density formulation of the composition law for propagators, separating coordinate-free kernel composition from scalarization conventions.
-3. A semigroup-closure derivation showing the short-time normalization exponent \(t^{-d/2}\) is forced by composition (the “square-root Jacobian”).
-4. A refinement-compatibility framing of renormalization in which RG invariance is the consistency condition demanded by divergent refinement limits.
-5. A fully explicit “RG appears before QFT” computation (2D delta/contact interaction) included as an appendix-level witness.
+3. A semigroup-closure derivation showing the short-time normalization exponent \(t^{-d/2}\) is forced by composition (the "square-root Jacobian").
+4. A necessity theorem (Proposition P4.2) showing that an action-dimensional scale \(\kappa=\hbar\) is forced by three independent requirements — composition, identity limit, and dimensional homogeneity — with the exponential weight form derived rather than assumed, and extensions to curved, interacting, and Lorentzian settings.
+5. A refinement-compatibility framing of renormalization in which RG invariance is the consistency condition demanded by divergent refinement limits.
+6. A fully explicit "RG appears before QFT" computation (2D delta/contact interaction) included as an appendix-level witness.
 
 # 2. Notation and Claim Taxonomy
 **Dimension bookkeeping.**
@@ -616,6 +617,21 @@ The proposition consolidates Derivation D4.1a (composition forces \(t^{-d/2}\)),
 `Remark P4.2b (Connection to RCP).`
 The proposition is the primary constructive witness of Proposition P10.1 (Refinement Compatibility Principle): partition compatibility demands a parameter update for composition to close. The fact that this parameter has dimension of action is forced by the dimensional content of the classical Lagrangian, making RCP not merely structural but constructive—it tells you what the control parameter must be.
 
+`Remark P4.2c (Hypothesis reduction: exponential weight is a theorem).`
+Hypothesis **(L)** (local exponential weight) decomposes into two parts: **(L\(_{\mathrm{loc}}\))** kernel dependence on classical action only, and **(L\(_{\mathrm{exp}}\))** exponential form \(W=\exp(c_0 S/\kappa)\). The exponential form is not an independent assumption: for a translation-invariant free kernel \(K_t(u)=N(t)W(mu^2/(2\kappa t))\), composition **(C)** in Fourier space reduces to the multiplicative equation \(\hat K_T(p)=\hat K_{t_1}(p)\hat K_{t_2}(p)\). Under continuity, the unique solution is \(\log\hat K_t(p)=t\,\phi(p)\), which forces \(\log\hat W_0(q)=\alpha q^2+\beta\) (quadratic), i.e., \(W=\exp(\text{quadratic})\). The functional equation admits no continuous non-Gaussian solution. Thus **(L\(_{\mathrm{exp}}\))** is a theorem of composition, not an axiom.
+
+`Remark P4.2d (Hypothesis reduction: L\'evy--Khintchine obstruction closes the loophole).`
+The remaining escape from Gaussian kernels is L\'evy-stable processes with characteristic exponent \(\Psi(p)=-c|p|^\alpha\), \(\alpha\in(0,2]\). For these, dimensional homogeneity **(D)** requires \([c]=[m]^a[\hbar]^b\). Matching length, mass, and time exponents yields the consistency condition \(-\alpha/2=1-\alpha\), which forces \(\alpha=2\) (Gaussian). For \(\alpha\neq 2\), no combination of \(m\) and \(\hbar\) can build the required coefficient \(c\). While all L\'evy processes satisfy the identity limit **(I)**, the discriminating hypothesis is **(D)**: any kernel satisfying **(C)**+**(I)**+**(D)** with dimensional constants \(\{m,\hbar\}\) must be Gaussian. The effective hypothesis count for Proposition P4.2 is therefore reduced from four to three: composition **(C)**, identity limit **(I)**, and dimensional homogeneity **(D)**.
+
+`Remark P4.2e (Extensions: curved, interacting, and Lorentzian settings).`
+The conclusions of Proposition P4.2 are not limited to free particles in flat Euclidean space. Three independent extensions confirm robustness:
+(1) **Curved configuration spaces.** On a Riemannian manifold \((M,g)\), the short-time kernel involves the Van Vleck--Morette determinant \(\Delta^{1/2}(x,y)\), which composes via the DeWitt--Morette semigroup law. The \(d/2\) normalization exponent is forced by the same functional equation; \(\Delta\) and \(\sqrt{|g|}\) are geometric (metric-dependent) but \(\kappa\)-independent. The metric provides no escape route from \(\kappa\)-necessity.
+(2) **Interacting systems.** The Mehler kernel for the harmonic oscillator \(V=\tfrac{1}{2}m\omega^2 q^2\) satisfies composition with \(\sin\omega t\) replacing \(t\) as "time function." The \(d/2\) forcing is purely algebraic (dimension-counting), and the Seeley--DeWitt coefficients \(a_n\) are composition-compatibility conditions, not escape routes. Short-time extraction of \(a_1=-iV/\hbar\) confirms this.
+(3) **Lorentzian signature.** Replacing Gaussian damping by oscillatory Fresnel phase, the algebraic parts of the argument (\(d/2\) exponent, \(\kappa=\hbar\) necessity, semigroup closure) are signature-independent. The \(i\varepsilon\) prescription is itself a theorem of composition: among regulators \(\exp(-\varepsilon f((x-y)^2/t))\), only \(f(x)=x\) (linear) preserves semigroup closure, and this uniqueness follows from degree-counting (non-linear \(f\) produces non-Gaussian integrands). Composition alone—without invoking the identity limit—forces the \(i\varepsilon\) form.
+
+`Remark P4.2f (Universality of \(\kappa\) across interacting sectors).`
+Proposition P4.2 forces a scale \(\kappa\) with \([\kappa]=[\text{action}]\) for each sector individually. If two sectors (say particles \(A\) and \(B\)) interact, their joint kernel must compose as a single semigroup. Under the single-exponential-weight assumption, the joint kernel inherits a single \(\kappa\): factorization into sector-specific \(\kappa_A\neq\kappa_B\) is incompatible with joint composition when \(A\) and \(B\) are coupled. Decoupled (non-interacting) sectors may in principle carry independent scales, but transitivity of interaction in any connected physics makes \(\kappa=\hbar\) universal across all interacting degrees of freedom. This universality is not postulated but forced by composition.
+
 ## 6.2 From Additive Action to Multiplicative Weights
 The Section 4/Section 5 structure gives an additive discrete action:
 
@@ -886,6 +902,9 @@ $$
 then they define the same Poisson bracket in the \(\hbar\to0\) limit, while generally differing in subleading quantum terms.
 
 This is the algebraic side of the same continuity narrative: quantization data are organized into equivalence classes compatible with one classical limit. Geometric deformation programs (including tangent-groupoid viewpoints) encode the same bridge from commutative classical data to noncommutative quantum products [Connes1994].
+
+`Remark P5.2a (Deformation equivalence is physical, not merely formal).`
+The formal-automorphism statement of Proposition P5.2 is not purely asymptotic: explicit calculations for a position-dependent mass \(f(q)=1+\alpha q^2\) in a harmonic trap show that different prescriptions (Weyl, half-density conjugation) agree exactly on the principal symbol (Layer 1) and the first-derivative connection term (Layer 2), differing only in an \(O(\hbar^2)\) scalar potential (Layer 3). The resulting ground-state energy shift between prescriptions is \(|\Delta E_0|=\hbar\omega\alpha_0^2/16\), where \(\alpha_0\) is dimensionless mass variation at the oscillator scale. For realistic semiconductor heterostructures (GaAs quantum wells, \(\hbar\omega\sim 10\) meV, \(\alpha_0\lesssim 0.3\)), this gives \(|\Delta E_0|\lesssim 0.06\) meV, well below current spectroscopic resolution (\(\sim 0.1\) meV). The four-layer stratification and the explicit energy estimate are detailed in Appendix \S\,10.2 (`Remark D9.1a`). The physical content of deformation equivalence is thus that ordering prescriptions are observationally indistinguishable at accessible scales, while the half-density prescription provides a geometrically distinguished representative within the equivalence class (analogous to Lorenz gauge).
 
 ## 7.5 Formal Deformation Boundary
 In this section we use formal/asymptotic deformation language for local bridge statements. We do not require the full \(C^\ast\)-algebraic deformation-quantization program for the manuscript's main argument; the needed ingredient is compatibility of the classical limit and quantum corrections under the stated assumptions [Landsman1998].
@@ -1203,7 +1222,7 @@ For navigation, Sections 3–8 contain the following mix of results and bridges:
 
 4. **Section 6:** composition plus additivity imply exponential weighting; stationary phase yields classical recovery. (mixed: `Proposition`, `Derivation`, `Heuristic`) Boundary: formal path-integral usage and local stationary-phase assumptions.
 
-5. **Section 7:** deformation products recover the Poisson bracket; ordering appears as deformation-equivalence choice. A complementary geometric resolution exists: half-density conjugation selects a canonical ordering for kinetic operators by eliminating the connection term (`Remark D9.1a`, Appendix \S\,10.2). (mixed: `Proposition`, `Derivation`, `Heuristic`) Boundary: formal/asymptotic deformation setting and scope of equivalence.
+5. **Section 7:** deformation products recover the Poisson bracket; ordering appears as deformation-equivalence choice. A complementary geometric resolution exists: half-density conjugation provides a canonical representative within the deformation-equivalence class, agreeing with Weyl ordering on the principal symbol and connection (first-derivative) terms, differing only in an \(O(\hbar^2)\) scalar potential (`Remark D9.1a`, `Remark P5.2a`, Appendix \S\,10.2). (mixed: `Proposition`, `Derivation`, `Heuristic`) Boundary: formal/asymptotic deformation setting and scope of equivalence.
 
 6. **Section 8:** RG appears as semigroup consistency under composed refinement; counterterms appear as refinement corrections. (mixed: `Proposition`, `Derivation`, `Heuristic`) Boundary: closure/truncation assumptions and regulator-scheme choice.
 
@@ -1214,8 +1233,8 @@ each layer adds new consistency constraints while preserving prior invariants in
 ## 9.4 Residual Vulnerabilities
 1. The path integral remains formal at full measure-theoretic level; constructive control is not provided here.
    Minimal closure target: exhibit one explicit regulated kernel family \(K_\varepsilon\) with a proved composition law and a controlled \(\varepsilon\to0\) statement in a nontrivial model.
-2. Deformation equivalence is stated at the structural level; explicit model-by-model operator-domain analysis is deferred.
-   Minimal closure target: carry one curved-manifold kinetic symbol through two quantizations and the half-density conjugation map, with explicit domain assumptions and \(O(\hbar)\) mismatch terms.
+2. Deformation equivalence is stated at the structural level; explicit model-by-model operator-domain analysis is partially addressed.
+   Current status: one position-dependent-mass model (\(f(q)=1+\alpha q^2\) in a harmonic trap) has been carried through Weyl and half-density quantizations with explicit \(O(\hbar^2)\) mismatch term and quantitative energy-shift estimate (`Remark D9.1a`, `Remark P5.2a`). Full extension to curved-manifold kinetic symbols with domain analysis remains open.
 3. RG flow is derived structurally; a fully explicit quantum-mechanical computation (2D contact interaction) is provided in Appendix 10.5, but a field-theory-level loop computation is not included.
    Minimal closure target: add one fixed-scheme one-loop QFT computation whose subtraction, beta function, and scheme-change behavior are written in the same normalization conventions as Section 10.1.
 4. Truncation closure in section 8 is identified but not benchmarked by an explicit truncation-error study.
@@ -1233,10 +1252,11 @@ To keep the manuscript evolving by derivation rather than by incremental wording
 2. **Package B (Ordering/domain benchmark).**
    Deliverable: one appendix-level model comparing two orderings plus half-density conjugation.
    Pass criterion: explicit operator difference through \(O(\hbar)\) and a clear statement of domain/equivalence boundaries.
-   Current status: Appendix 10.2 now includes periodic/curved symmetry benchmarks and one explicit self-adjoint extension witness (`D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`); full extension classification remains open.
+   Current status: Appendix 10.2 now includes periodic/curved symmetry benchmarks, one explicit self-adjoint extension witness (`D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`), and a four-layer stratification of ordering differences with quantitative observability estimates (`Remark D9.1a`); full extension classification remains open.
 3. **Package C (QFT-level RG witness).**
    Deliverable: one-loop running in a fixed subtraction scheme using manuscript conventions.
    Pass criterion: explicit \(\beta(g)\), one scheme-change computation, and direct mapping to scale compatibility in Section 8.
+   Current status: the RG-fundamental companion note contains an explicit one-loop Wilsonian shell integration for the 2D contact model (beta function, semigroup composition of RG maps, and scheme-change structure). Importing this into the present manuscript's Appendix 10.1 in matching conventions remains open.
 4. **Package D (Truncation error audit).**
    Deliverable: side-by-side flows for two truncation levels with at least one observable comparison.
    Pass criterion: a quantitative stability region and one explicit breakdown regime.
@@ -1393,7 +1413,7 @@ For the quadratic symbol \(A(q,p)=f(q)p^2\) (e.g.\ kinetic energy with position-
 Q_W(fp^2)-Q_L(fp^2)=-i\hbar f'(\hat q)\hat p-\tfrac{1}{4}\hbar^2 f''(\hat q).
 \]
 The correction now has two layers: an \(O(\hbar)\) first-order differential operator and an \(O(\hbar^2)\) potential. In particular, different orderings of \(p^2/m(q)\) disagree in the coefficient of the first-derivative term \(i\hbar(m'/m^2)\hat p\).
-The half-density conjugation \(|g|^{1/4}\Delta_g|g|^{-1/4}\) eliminates this first-derivative ambiguity entirely: it selects the unique second-order operator with no connection term in the scalar picture, providing a geometric resolution of the ordering ambiguity for kinetic operators (cf.\ Derivation HD-D1.3 in the half-density companion note).
+The half-density conjugation \(|g|^{1/4}\Delta_g|g|^{-1/4}\) does not eliminate the first-derivative (connection) term: both the Weyl prescription and the half-density prescription share the same connection term \(f'\partial_q\) (as required by formal self-adjointness on \(L^2(\mathbb R,dq)\)). They differ only at the next layer: the \(O(\hbar^2)\) scalar potential, with \(\hat H_W-\hat H_{\mathrm{HD}}=-\hbar^2 f'^2/(32mf)\) (a purely multiplicative operator, no derivatives). This supports a four-layer stratification of ordering differences: (1) principal symbol — all prescriptions agree; (2) connection (first-derivative) — fixed by self-adjointness, independent of ordering; (3) scalar \(O(\hbar^2)\) — genuine deformation freedom persists; (4) operator domain — independent. The half-density prescription is a canonical representative within the deformation equivalence class (like Lorenz gauge), not a different physics. Explicit energy-shift estimates for position-dependent mass \(f(q)=1+\alpha q^2\) in a harmonic trap show \(|\Delta E_0|\sim O(\alpha^2)\), with the first-order shift vanishing identically and the leading correction unmeasurably small (\(\sim 0.01\)--\(0.06\) meV for GaAs quantum wells, below current resolution thresholds). This confirms that deformation equivalence (Proposition P5.2) is physical, not merely formal (cf.\ Derivation HD-D1.3 in the half-density companion note).
 
 `Derivation D9.1b (Periodic-domain symmetry witness for \(Q_L\) vs \(Q_W\)).`
 Take configuration space \(S^1\) with coordinate \(q\in[0,2\pi)\), Hilbert space \(L^2(S^1,dq)\), and periodic Sobolev domain \(H^1_{\mathrm{per}}(S^1)\). Let \(f\in C^1(S^1,\mathbb R)\). Define

@@ -10,11 +10,11 @@
 
 | Track | Count | Range |
 |-------|-------|-------|
-| Content (`Cnn`) | 295 | C00–C302 (gaps: none) |
+| Content (`Cnn`) | 314 | C00–C313 (gaps: none) |
 | Bibliography (`Bnn`) | 28 | B00–B27, B33 |
-| Study (`Snn`) | 283 | S00–S294 (gaps: S276–S278 active) |
-| Quality (`Qnn`) | 178 | Q00–Q184 (gaps: Q110–Q111) |
-| Discovery triage (`Dnn`) | 35 | D00–D38 (gaps: none) |
+| Study (`Snn`) | 285 | S00–S296 (gaps: S276–S278 active) |
+| Quality (`Qnn`) | 179 | Q00–Q185 (gaps: Q110–Q111) |
+| Discovery triage (`Dnn`) | 37 | D00–D40 (gaps: none) |
 | Discovery explore (`DXnn`) | 11 | DX01–DX11 (dormant) |
 | Publication (`Pnn`) | 2 | P00–P01 |
 
@@ -40,6 +40,7 @@
 - `D37` (completed): Can iε prescription be derived from composition+identity, or is it external input? S292 completed (blackboards/6.md). **Verdict**: **iε is unique** — theorem of composition (C) alone, not external input! Among regulators exp(−ε f((x−y)²/t)), only f(x)=x (linear) preserves semigroup closure. Proof: non-linear f yields non-Gaussian integrands breaking composition. **Surprise**: Identity limit (I) not needed; composition alone forces uniqueness. **Impact**: D34 upgrades from partial to **full closure**; P4.2 effective hypothesis count reduced; iε joins exponential weight (S288) as theorem of semigroup, not assumption.
 - `D36` (completed): Do P4.2's d/2 and κ-necessity persist for interacting (V≠0) systems, or are they free-particle artifacts? S293 completed (blackboards/4.md). **Verdict**: **Full persistence** — Mehler kernel (harmonic oscillator) composition forces d/2 and κ identically to free case. **Mechanism**: d/2 forcing is purely algebraic (dimension-counting); works with "time function" sin(ωt) just like t; κ-necessity unaffected (trigonometric functions dimensionless). Short-time a_1 = −iV/ℏ correctly extracted, confirming Seeley-DeWitt coefficients are **compatibility conditions**, not escape routes. **Impact**: P4.2 extends to interacting systems without qualification; closes "free-particle artifact" objection via three witnesses (S287 curved, S292 iε, S293 interacting).
 - `D38` (completed): Does D35's layer-3 deformation freedom (O(ℏ²) scalar potential) have measurable consequences? S294 completed (blackboards/6.md). **Verdict 4+1**: First-order shift O(α) **vanishes identically** (equivalence stronger than expected); O(α²) shift unmeasurably small (|ΔE₀| ~ 0.006-0.06 meV ≪ 0.1 meV resolution). **Discovery**: S290 error corrected — half-density does NOT eliminate first-derivative term in 1D; both Weyl and HD share connection term f'∂/∂q, differing only in O(ℏ²) scalar (−ℏ²f'²/32mf). **Impact**: Deformation equivalence (Section 7, P5.2) is **physical**, not merely formal; D35 strengthened (prescriptions agree on Layers 1 AND 2, differ only on Layer 3).
+- `D39` (completed): Do Levy-type jump processes (Levy-Khintchine kernels) violate P4.2's identity limit (I) or dimensional homogeneity (D), closing the loophole identified in D29/S288? S295 completed (blackboards/2.md). **Verdict 2**: **Dimensional obstruction for α≠2**. Key result: [c] = [m]^a [ℏ]^b solvable only when α=2 (two-line algebraic proof). Identity limit (I): ALL Levy processes pass (Poisson, Cauchy, general α-stable). **Discriminating hypothesis: (D), not (I)**. (L_loc) is derivable from (D): any kernel satisfying (C)+(I)+(D) with constants {m,ℏ} must be Gaussian. **Impact**: Levy-Khintchine loophole CLOSED. P4.2 hypothesis count: 4 → 3.5 (D29) → **~3** (D39). Final effective hypotheses: composition (C), identity limit (I), dimensional homogeneity (D).
 
 ## Next Action
 
@@ -50,6 +51,9 @@
 - **Total corpus: ~125k tokens (Claude tokenizer).**
 
 **Recent completed:**
+- C313+Q185: Remark P5.2a (deformation equivalence is physical) in cornerstone Section 7.4 + planck-area Open Problem #3 closed (odd-d witness via d=3 scattering length) + Remark RG-H1.9 (horizontal/vertical composition) in rg-fundamental + Package B/C status updates + Section 9.3/9.4 corrections for D38 consistency. Net: +36/-11 lines across 3 manuscripts. Q185 PASS.
+- C312: promoted P4.2 hypothesis reduction (Remarks P4.2c-f) + four-layer deformation-equivalence correction (D9.1a) into `paper/main.md`. Sources: D29/S288 (exponential uniqueness), D39/S295 (Levy obstruction), D30/S287 (curved), D36/S293 (interacting), D34+D37 (Lorentzian+iepsilon), D32/S286 (kappa universality), D35+D38/S290+S294 (deformation layers). Net: +16/-1 lines.
+- C304-C311: prior session promotion wave (D23-D39 discoveries to cornerstone + planck-area). Includes P4.2 base, delta dictionary, Ito/Stratonovich, parity lemma, heat-kernel, caustics/Maslov, Pade, RCP crown witnesses.
 - C301+Q183: promoted Remark H1.2a (Newton polygonal O(h) convergence + collision singularity failure mode) into Section 3.3 of `paper/main.md`; Q183 PASS WITH MINOR REVISIONS (missing HLW06 citation → B33; nabla V notation → optional C302).
 - S274+S275(iter4)+D20: threshold-bridge deepening continued without new C-cycle. Added \(L_{\mathrm{crit}}\) marginal map, ran same-ID caveat-coverage + compactness/readability iterations for compression candidates, and deferred C300 (no correctness defect).
 - D18+S272+S273+D19: slowed the central-force threshold thread into stress-test cadence (coefficient-aware marginal analysis + assumption-break tests + evidence-gated `S274/S275 -> optional C300` queue).

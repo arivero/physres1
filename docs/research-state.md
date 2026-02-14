@@ -3,7 +3,7 @@
 This file is the durable "working memory" for continuing research in this repo across context resets.
 It is **not** a citable source and may reference `conv_patched.md` only as an idea log.
 
-Date: 2026-02-13
+Date: 2026-02-14
 
 ## North Star (Current Paper)
 - Manuscript: `paper/main.md` (publishable artifact).
@@ -155,26 +155,36 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
   - `D22` cross-thread linkage triage (candidate drafted, currently deferred; branch open).
 - Decision gate: `C300` deferred (no correctness defect). Reopen only for a targeted Section 3 readability-compression pass.
 
-## Publication Readiness (2026-02-13, latest refresh)
+## Publication Readiness (2026-02-14, latest refresh)
 Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PLB format).
 
 **PLB-length satellites (≤6pp compiled):**
-1. Half-Density QFT (4pp, 234 lines, 7 refs) — C244: V=(1/6)R remark
-2. Delta Objects (4pp, 194 lines, 6 refs) — C248: d/2 unifying thread
-3. Dirac Probes / Corners / Impulses (4pp, 199 lines, 6 refs) — C246: mollifier-polygon parallel
-4. Relativistic Central Orbits (4pp, 233 lines, 2 refs) — C245: SR precession
+1. Half-Density QFT (6pp, ~265 lines, 7 refs) — FROZEN at PLB boundary
+2. Delta Objects (6pp, ~218 lines, 6 refs) — FROZEN at PLB boundary
+3. Relativistic Central Orbits (6pp, ~296 lines, 2 refs) — FROZEN at PLB boundary
+
+**Over PLB, reclassified:**
+4. Dirac Probes / Corners / Impulses (7pp, ~256 lines, 6 refs) — FROZEN
 
 **PRD-length satellites (>6pp compiled):**
 5. RG Fundamental (9pp, 596 lines, 8 refs)
 6. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
-7. Fermionic Mediators (13pp, 244 lines, 40 refs) — C241: Born bridge + decoupling
+7. Fermionic Mediators (13pp, 244 lines, 40 refs)
 8. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
-9. Planck Area (14pp, 730 lines, 9 refs)
+9. Planck Area (14pp, ~730+ lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
 
-**Cornerstone:** paper/main.md (23pp compiled, 1486 lines). Target: Physics Reports.
+**Cornerstone:** paper/main.md (~1813 lines). Target: Physics Reports.
 **All 9 satellites cross-referenced from cornerstone** (C146 completed the network).
 
-Recent cornerstone additions: D1.2a (numerical area law), D4.1b (α-ordering witness, Q100-fixed), D5.1b (cubic Moyal correction), D6.2a-HO (HO step-halving witness).
+Recent cornerstone additions (2026-02-14):
+- C313: P5.2a (deformation equivalence is physical — four-layer stratification + GaAs energy estimate) in Section 7.4; Package B status updated in Section 9.5
+- C312: P4.2c-f (hypothesis reduction 4->3, curved/interacting/Lorentzian extensions, kappa universality)
+- C312: D9.1a correction (four-layer deformation equivalence stratification)
+- C304-C311: delta dictionary, Ito/Stratonovich, caustics/Maslov, Pade unification, RCP crown witnesses
+
+Recent satellite additions (2026-02-14):
+- C313: planck-area Open Problem #3 closed (odd-d transmutation witness via d=3 scattering length)
+- C313: RG-fundamental Remark RG-H1.9 (horizontal/vertical composition connecting P4.2 to RG)
 
 All papers verified: clean encoding, proper YAML metadata, no internal file paths, adequate bibliography.
 

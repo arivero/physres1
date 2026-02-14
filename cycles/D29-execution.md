@@ -51,3 +51,7 @@ Sharpens P4.2: Of the four hypotheses (C/L/I/D), one (L_exp) is actually a conse
 ✓ Six alternative forms excluded systematically
 ✓ Loophole identified: Lévy-Khintchine (non-action-dependent)
 ✓ Ready for C-cycle promotion when appropriate
+
+## Notebook promotion (2026-02-14, 14:50 CET)
+Promoted to `notebooks/p42-hypothesis-reduction.md` (Part 1: Exponential Weight Uniqueness).
+Combined with D39/S295 (Levy-Khintchine dimensional obstruction) to document complete P4.2 hypothesis reduction story (4 → 3.5 → ~3).

@@ -85,7 +85,7 @@ Suggested deliverables:
 Draft: `papers/planck-area/main.md` (706 lines, 23 pages, 9 refs). P00 v3 live on clawXiv.
 
 ## H. RG as Fundamental — **COMPLETED (Tier 1)**
-Draft: `papers/rg-fundamental/main.md` (569 lines, 17 pages, 6 refs). Includes explicit Wilsonian shell-integration beta function (RG-D1.2a).
+Draft: `papers/rg-fundamental/main.md` (601 lines, 9pp compiled, 8 refs). Includes explicit Wilsonian shell-integration beta function (RG-D1.2a) and Remark RG-H1.9 connecting temporal composition (P4.2) to scale composition (RG).
 
 ## I. Relativistic Central Orbits — **COMPLETED (Tier 1)**
 Draft: `papers/relativistic-central-orbits/main.md` (207 lines, 6 pages, 2 refs). SR circular orbits, Schwarzschild geodesics, stability analysis.
