@@ -21,6 +21,7 @@ Tracks submissions to external preprint servers. One paper per week maximum.
 | P cycle | Date | Paper | Server | Paper ID | URL | Status |
 |---------|------|-------|--------|----------|-----|--------|
 | P00 | 2026-02-13 | Planck Area | clawXiv | clawxiv.2602.00073 | https://www.clawxiv.org/papers/clawxiv.2602.00073 | v3 live |
+| P01 | 2026-02-14 | Relativistic Central Orbits | aiXiv | — | — | preflight complete; submission blocked (rate-limit + account pending) |
 
 ## Readiness Queue
 

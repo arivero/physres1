@@ -35,3 +35,7 @@ file as input and either resolve, promote, or carry forward each open entry.
 ### 2026-02-12 — Newton impulse model = symplectic Euler integrator (source: DX01)
 - **What happened:** Section 3.2's kick-drift scheme is literally the symplectic Euler integrator.
 - **Status:** PROMOTED (→ S69+B16+C106) — H1.2 added to Section 3.3 of paper/main.md with Nauenberg (1994) citation.
+
+### 2026-02-14 — Dual mechanism coincidence at SR q=2 (source: DX11)
+- **What happened:** DX11 confirmed that two independent mechanisms output the same special value q=2 in SR: (i) asymptotic threshold `q_crit = nu + 1` with `nu=1`, and (ii) algebraic dimensional identity behind `v=K/L`.
+- **Status:** RESOLVED (DX11+C287) — manuscript wording now separates asymptotic-threshold and dimensional-identity channels to avoid explanatory conflation.

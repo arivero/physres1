@@ -426,3 +426,14 @@ This file is **not** a citable source; it can mention `conv_patched.md` only as 
 - Focus: revisit S260 deferred finding (E_circ = mc^2 omega at q=2 circular orbits) to determine if it clears the promotion bar as a remark distinct from Remark 5.2c.
 - Work: analyzed overlap with existing content via two independent routes: (1) W_min = mc^2 sqrt(1-K^2/(c^2 L^2)) [Section 3.1] and omega^2 = 1-K^2/(c^2 L^2) [Remark 3.2] are 12 lines apart, making W_min = mc^2 omega visible by inspection; (2) gamma^2 omega^2 = 1 [Remark 5.2c] plus standard E = mc^2/gamma gives E = mc^2 omega in one step. Physical interpretation (omega as binding fraction) already conveyed by W_min formula. Forward-reference problem: E = mc^2/gamma requires virial relation from Section 5, so placement in Section 3 is awkward. No clean GR analogue exists (S260 confirmed).
 - Result: **NOT PROMOTE.** The identity is correct and elegant but fully derivable in one step from existing adjacent text. Remark 5.2c's structural content subsumes it. S260 deferral resolved and closed. Minor parenthetical "(so that W_min = mc^2 omega)" noted as a possible future C-cycle editorial annotation if Section 3.1 is revisited.
+
+## 2026-02-14 (D16+DX11+S269+B27+C287+Q171+P01: full multi-mode run)
+- Scope: executed one complete chain across discovery, exploration, study, bibliography, content, quality, and publication modes.
+- D16: selected bounded novelty target for relativistic central orbits: `q_crit = nu + 1` (high-momentum kinetic-degree rule), with explicit disclaimer separating it from the independent `q=2` dimensional identity channel.
+- DX11: cross-thread probe (relativistic thresholds vs RCP framing) found no new principle bump; updated anomaly register with resolved mechanism-separation entry.
+- S269: produced note `paper/notes/relativistic-critical-exponent-threshold-rule.md` deriving the threshold rule and sanity-checked Newton/SR mapping by command output (`nu=2 -> 3`, `nu=1 -> 2`).
+- B27: added missing bibliography-ledger keys `[Sommerfeld1916FineStructure]`, `[Bertrand1873ClosedOrbits]`; created pending stubs in `sources/` for later legal ingestion.
+- C287: promoted new `Remark 3.1c` in `papers/relativistic-central-orbits/main.md`, giving the compact threshold formula and explicit mechanism separation.
+- Q171: referee pass on C287 = PASS (no required fixes).
+- P01: ran publication-mode preflight for relativistic satellite (TeX/PDF/check workflow); no external submission due to 7-day cadence and aiXiv account pending.
+- Guardrail note: one exploratory grep briefly matched `cycles/archive/` metadata paths; no archive bodies were read. Re-anchored immediately on `AGENTS.md`, `docs/research-state.md`, `cycles/index.md` per policy.
