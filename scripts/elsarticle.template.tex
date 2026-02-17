@@ -1,0 +1,33 @@
+%% Pandoc template for elsarticle (Phys. Lett. B two-column style)
+\documentclass[final,3p,twocolumn]{elsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp}
+\fi
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\journal{Physics Letters B}
+
+\begin{document}
+\begin{frontmatter}
+\title{$title$}
+$if(author)$
+\author{$author$}
+$endif$
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+\end{frontmatter}
+
+$body$
+
+\end{document}
