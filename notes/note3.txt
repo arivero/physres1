@@ -1,0 +1,28 @@
+The article is written at paper/notes/lipschitz.md. Let me give you a summary of the key mathematical results:
+
+  What the article develops                                                                                                     
+   
+  The central observation is that the Lipschitz condition is the exact boundary between where classical refinement converges and
+   where it fails, and $\hbar$ functions as a universal regularization parameter that extends well-posedness beyond this      
+  boundary.                                                                                                                   
+
+  The main mathematical results are:
+
+  1. Spatial Lipschitz constant of the heat kernel scales as $(m/\hbar t)^{d/2+1}$. This is finite for $\hbar>0, t>0$, and
+  diverges in both the classical limit ($\hbar\to 0$) and the identity limit ($t\to 0$). This gives a quantitative Lipschitz
+  reading of your P4.2.
+  2. Composition automatically improves Lipschitz bounds: $\text{Lip}(K_{t+s}) < \text{Lip}(K_t)$ and $< \text{Lip}(K_s)$.
+  Individual time slices are more singular than the composed whole — composition is genuinely regularizing.
+  3. Brownian paths are not Lipschitz (proven via quadratic variation: Lipschitz $\Rightarrow$ $[f]_T = 0$, but $[B]_T = T >
+  0$). The Cameron-Martin theorem shows that classical (Lipschitz) paths have Wiener measure zero. The path integral lives
+  entirely on rough paths.
+  4. The Lipschitz-Kato hierarchy maps exactly onto your H0.2 failure modes:
+    - Level 0: $\nabla V$ Lipschitz → classical ODE works (Picard-Lindelof)
+    - Level 1: $V \in \mathcal{K}_d$ but $\nabla V$ not Lipschitz → $\hbar$-regularization suffices (Feynman-Kac). Example:
+  Coulomb $1/r$ is Kato in 3D but not Lipschitz at origin
+    - Level 2: $V \notin \mathcal{K}_d$ → renormalization required. Example: 2D delta from your Section 10.5
+  5. The classical limit $\hbar\to 0$ is a Lipschitz catastrophe: kernel Lipschitz constant $\to\infty$, measure degenerates,
+  and the theory collapses back to the domain where Lipschitz held in the first place — exactly where $\hbar$ wasn't needed.
+
+  The Ito correction $\frac{\hbar}{2m}\Delta\phi,dt$ is identified as the price of integrating along non-Lipschitz paths — it
+  vanishes for Lipschitz paths (zero quadratic variation) and is proportional to $\hbar$ for Brownian paths.
