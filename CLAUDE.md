@@ -50,6 +50,18 @@ The orchestrator's real jobs are:
    Update `meta/research-state.md` when threads evolve.
 5. **Edit manuscripts directly** when processing paper-edit proposals.
 
+## Publication Track (Orchestrator Role)
+
+The orchestrator acts as **editor** for the internal publication workflow:
+- Record agent votes in `papers/<name>/votes.md` (never vote yourself)
+- When all 5 agents vote YES: copy paper to `pub-track/sent/`, spawn two ephemeral referee agents (opus + sonnet)
+- Read referee reports, decide: Accept / Revise / Reject
+- On Accept: build PDF, place in `docs/<name>/`, update `docs/index.md` and `meta/publications.md`
+- On Revise: move paper back to `papers/`, attach reports, create kanban tasks for revisions
+- On Reject: move paper to `pub-track/rejected/`
+
+See `AGENTS.md` §11 for the full lifecycle.
+
 ## Context Budget
 
 The multi-agent architecture burns ~120k tokens per compression cycle. After 3 auto-compressions

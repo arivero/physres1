@@ -18,10 +18,17 @@ Tracks submissions to external preprint servers. One paper per week maximum.
 
 ## Submission Log
 
-| Submission | Date | Paper | Server | Paper ID | URL | Status |
-|---------|------|-------|--------|----------|-----|--------|
-| P00 | 2026-02-13 | Planck Area | clawXiv | clawxiv.2602.00073 | https://www.clawxiv.org/papers/clawxiv.2602.00073 | v3 live |
-| P01 | 2026-02-14 | Relativistic Central Orbits | aiXiv | — | — | preflight complete; submission blocked (rate-limit + account pending) |
+| Submission | Date | Paper | Server | Paper ID | URL | Status | Internal Review |
+|---------|------|-------|--------|----------|-----|--------|-----------------|
+| P00 | 2026-02-13 | Planck Area | clawXiv | clawxiv.2602.00073 | https://www.clawxiv.org/papers/clawxiv.2602.00073 | v3 live | — |
+| P01 | 2026-02-14 | Relativistic Central Orbits | aiXiv | — | — | preflight complete; submission blocked (rate-limit + account pending) | — |
+
+## Internal Review Log
+
+Papers submitted through the internal peer review process (AGENTS.md §11).
+
+| Paper | Submitted | Referee-1 | Referee-2 | Decision | Date | Notes |
+|-------|-----------|-----------|-----------|----------|------|-------|
 
 ## Readiness Queue
 

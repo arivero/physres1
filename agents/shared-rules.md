@@ -373,7 +373,34 @@ entries, switch to something else. Keep your work varied.
 
 ---
 
-## 8b. Temporary Files and Scripts
+## 8b. Publication Voting
+
+Any agent can vote on whether a paper is ready for internal peer review.
+
+**How to vote:** Message the orchestrator with `"vote yes <paper>"` or
+`"vote no <paper>: <reason>"`. The orchestrator records the vote in
+`papers/<paper>/votes.md`.
+
+**Format of `votes.md`:**
+```markdown
+# Publication Vote: <Paper Title>
+| Agent | Vote | Date | Comment |
+|-------|------|------|---------|
+| physicist | YES | 2026-02-21 | |
+| critic | NO | 2026-02-21 | Needs ref to FooBar2024 |
+```
+
+**Rules:**
+- **Unanimous (all 5 agents)** required to proceed to submission.
+- A NO vote can be changed to YES after revisions — send a new vote message.
+- The orchestrator records votes and enforces the threshold. The orchestrator never votes.
+- After submission and revision (if any), `votes.md` is reset for a new round.
+
+See `AGENTS.md` §11 for the full publication lifecycle.
+
+---
+
+## 8c. Temporary Files and Scripts
 
 Python scripts, SymPy verification scripts, and any temporary files go in `./tmp/`
 (repo-local), **not** `/tmp/` (system-wide). The `tmp/` directory is gitignored.

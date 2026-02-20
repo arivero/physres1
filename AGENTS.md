@@ -36,6 +36,7 @@ requests, and dispatches ephemeral agents.
 - `meta/research-state.md`, `meta/motivations.md`, `meta/handoff.md`
 - `paper/`, `papers/*/` (direct edits)
 - `paper/bibliography.md`
+- `pub-track/` (submission pipeline), `docs/` (published papers)
 
 **Does NOT write:** blackboards, notebooks directly. Those are the researchers' surfaces.
 
@@ -44,6 +45,7 @@ requests, and dispatches ephemeral agents.
 - Task creation, assignment, and monitoring via the shared kanban
 - **Polling `proposals/` for agent output** — read proposal files, process, then delete
 - Processing paper-edit requests directly (no subagent)
+- **Publication editor**: record votes, enforce unanimous threshold, spawn referee agents, decide accept/revise/reject (§11)
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
 - Commit policy enforcement
 - Quality gates (promotion rules, diffstat tracking)
@@ -145,7 +147,7 @@ Proposal files: `proposals/<agent>-<topic>.md` (gitignored, ephemeral).
 
 | Agent | Allowed Writes | Forbidden Writes |
 |-------|---------------|-----------------|
-| Orchestrator | `meta/*`, `paper/`, `papers/*/` (direct edits) | Direct blackboard/notebook writes |
+| Orchestrator | `meta/*`, `paper/`, `papers/*/` (direct edits), `pub-track/`, `docs/` | Direct blackboard/notebook writes |
 | Physicist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/physicist/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Mathematician | `blackboards/*.md`, `notebooks/*.md` (append), `agents/mathematician/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Critic | `blackboards/*.md`, `notebooks/*.md` (append), `agents/critic/memory/*` | `paper/`, `papers/`, `meta/*` |
@@ -242,7 +244,80 @@ must verify the content was committed before executing the deletion.
 
 ---
 
-## 11. Sources Policy
+## 11. Publication Track
+
+### Lifecycle
+
+```
+papers/<name>/  ──[unanimous vote]──▷  pub-track/sent/<name>/  ──[2 referee reports]──▷
+    ▲                                                                  │
+    │                                                    ┌─────────────┼────┐
+    │                                                    ▽             ▽    ▽
+    └──────────[revise: move back]──── REVISE        REJECT         ACCEPT
+                                              pub-track/rejected/     │
+                                                                      ▽
+                                                                 docs/<name>/
+```
+
+All intermediate states live under `pub-track/` (sent, rejected). Only accepted
+papers reach `docs/`. The `papers/` directory remains the working space.
+
+### Voting
+
+Each paper has a `papers/<name>/votes.md` file tracking agent votes.
+See `agents/shared-rules.md` §8b for the voting format and rules.
+**Unanimous (all 5 agents)** required to submit for review.
+The orchestrator records votes and enforces the threshold — never votes itself.
+
+### Submission (Send to Review)
+
+When all 5 agents vote YES, the orchestrator:
+1. Creates `pub-track/sent/<name>/`
+2. Copies `papers/<name>/main.md` and `papers/<name>/votes.md` there
+3. Updates `meta/publications.md` (status: "under review")
+4. Spawns two ephemeral referee agents
+
+### Referee Agents (Ephemeral)
+
+Two independent referees review each submission:
+- **referee-1**: opus model (deep mathematical scrutiny)
+- **referee-2**: sonnet model (different perspective)
+
+Definition: `.claude/agents/referee.md`. Protocol: `agents/shared/referee-protocol.md`.
+
+Each referee reads `pub-track/sent/<name>/main.md`, writes a report to
+`pub-track/sent/<name>/referee-{1,2}.md`, sends a one-phrase signal, and terminates.
+Referees cannot read each other's reports. They have no team membership.
+
+### Editor Decision
+
+The orchestrator reads both reports and decides:
+
+| Decision | Action |
+|----------|--------|
+| **Accept** | Move paper to `docs/<name>/` (PDF + source), update `docs/index.md` and `meta/publications.md` |
+| **Revise** | Move paper back to `papers/<name>/`, attach referee reports, create 2 kanban tasks |
+| **Reject** | Move paper to `pub-track/rejected/<name>/` (dead unless user revives) |
+
+**Revise flow:**
+- Paper returns from `pub-track/sent/<name>/` to `papers/<name>/`
+- Referee reports copied to `papers/<name>/referee-1.md`, `papers/<name>/referee-2.md`
+- Orchestrator creates 2 kanban tasks (one per referee's concerns), referencing the report files
+- Agents work revisions, then a new voting round begins (`votes.md` reset)
+- After new unanimous vote, paper goes back to `pub-track/sent/` for re-review
+
+### Publication (docs/)
+
+When accepted:
+1. Build PDF from markdown (pandoc → pdflatex)
+2. Create `docs/<name>/` with `main.pdf` + `main.md`
+3. Update `docs/index.md` (relative links only)
+4. Update `meta/publications.md` (status: "published")
+5. Commit
+
+---
+
+## 12. Sources Policy
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING`.
 3. Treat preprints as guides, not sources of truth.
@@ -250,14 +325,14 @@ must verify the content was committed before executing the deletion.
 
 ---
 
-## 12. Context Budget Rules
+## 13. Context Budget Rules
 1. Consider scanning blackboards before choosing a task (recommended, not required).
 2. Read only relevant blackboard slots during a task.
 4. Default-deny for high-volume history files.
 
 ---
 
-## 13. Session Lifecycle
+## 14. Session Lifecycle
 
 ### Startup Phase
 1. Orchestrator reads: `AGENTS.md`, `meta/motivations.md`, `meta/handoff.md`, `meta/research-state.md`.
@@ -286,12 +361,12 @@ must verify the content was committed before executing the deletion.
 
 ---
 
-## 14. Pre-Commit Hygiene Checks
+## 15. Pre-Commit Hygiene Checks
 If `paper/main.md` changed:
 1. Task-ID leak check: `rg -n 'T[0-9]+' paper/main.md`
 2. Transcript mention check: `rg -n 'conv_patched' paper/main.md`
 
-## 15. Continuous Operation
+## 16. Continuous Operation
 When given a time deadline, continue autonomously without pausing. Only stop when:
 (a) deadline reached, (b) context exhausted, (c) no productive work remains.
 
@@ -305,10 +380,10 @@ When given a time deadline, continue autonomously without pausing. Only stop whe
 
 ---
 
-## 16. File Management
+## 17. File Management
 When files grow large, proactively archive. Deduplicate docs when content overlaps.
 
-## 17. Build Hygiene
+## 18. Build Hygiene
 After a successful TeX build, delete auxiliary files:
 ```bash
 rm -f paper/main.aux paper/main.log paper/main.toc
