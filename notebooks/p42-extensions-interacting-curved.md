@@ -540,3 +540,15 @@ Consequence: In D=4, the HD contact kernel in curved space has no residual curva
 - HD-D1.3b (half-density-qft satellite): conformal coupling at D=4
 - Blackboard 6, Part B (computationalist ΔC₂ verification, 2026-02-20)
 - Paper P4.2 (paper/main.md lines 610-612): Original four hypotheses
+
+---
+
+## Note: Exact WKB and Resurgence
+
+**See:** notebooks/resurgence-composition-bridge.md (four-agent: student + critic + computationalist + mathematician, 2026-02-20)
+
+That notebook contains the definitive treatment, including:
+- Borel convolution semigroup theorem (provable from composition)
+- Alien calculus Leibniz rule Δ_{nA}(K_{t₁+t₂}) = Σ Δ_{jA}(K_{t₁})·Δ_{(n-j)A}(K_{t₂}) (provable)
+- Why composition forces κ=ℏ across all non-perturbative sectors
+- Paper-edit candidates: Remarks P4.2g and P9.1c

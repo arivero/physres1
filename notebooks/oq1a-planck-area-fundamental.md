@@ -434,3 +434,162 @@ H2.5 (dimensional economy) → d=4 unique (parity filter ∧ gravity sieve)
 - paper/main.md P4.2
 - notebooks/odd-d-scalarization-parity.md (parity filter)
 - blackboards/4.md (source; two-agent complete)
+
+## b-Calculus Half-Density in d Dimensions
+
+**Source:** blackboards/0.md, THREE-AGENT (physicist+critic+mathematician), 2026-02-20.
+
+### General formula (§2-3, VERIFIED)
+
+b-calculus on (ℝ^d\{0}, S^{d-1}):
+- b-measure: dm_b = d(log r)·dΩ_{d-1} = r^{-d}·d^d x
+- b-half-density: |dm_b|^{1/2} = r^{-d/2}·|d^d x|^{1/2}
+- This matches P4.2 σ_* = r^{-d/2}·|d^d x|^{1/2} in all d (both are half-densities)
+
+For d=4: σ_* = r^{-2}·|d⁴x|^{1/2}. Near r = L_P: σ_* ≈ L_P^{-2}·|d⁴x|^{1/2} = planck-area scale.
+
+| d | b-half-density | P4.2 σ_* |
+|---|---------------|----------|
+| 2 | r^{-1}\|d²x\|^{1/2} | r^{-1}\|d²x\|^{1/2} |
+| 4 | r^{-2}\|d⁴x\|^{1/2} | r^{-2}\|d⁴x\|^{1/2} |
+| d | r^{-d/2}\|d^dx\|^{1/2} | r^{-d/2}\|d^dx\|^{1/2} |
+
+**Assessment (Critic):** The match is structural (both are half-densities with same exponent), not a coincidence. The d=2 three-way unification (promoted from BB3 to tangent-groupoid-quantization-bridge.md) is the significant result; this d≥2 extension is a footnote.
+
+### d=4 bound state status (§4, CORRECTED)
+
+b-Laplacian indicial roots: α = ±(d-2)/2.
+L²_b integrability near r=0: ∫_0^1 r^{2α-1} dr converges iff α > 0.
+- d=4: only ψ_+ ~ r^{+1} is L²_b-normalizable; ψ_- ~ r^{-1} DIVERGES in L²_b.
+- d=2 is special: double root α=0, log solution ψ ~ ln r IS L²_b (∫_0^1 (ln r)²/r dr = 2 < ∞).
+
+**Conclusion:** For d≥3 contact interactions, L²_b bound states require deficiency-index analysis of the b-Laplacian self-adjoint extension. The d=4 analog of the 2D log bound state is NOT ψ ~ r^{-1}.
+
+### References
+- blackboards/0.md (source)
+- notebooks/tangent-groupoid-quantization-bridge.md: Bridge C b-half-density section (d=2 three-way unification)
+- Melrose arXiv:math/9505001: b-calculus
+
+## b-Calculus Contact Interactions: n_±=1 for ALL d
+
+**Source:** blackboards/4.md, THREE-AGENT (mathematician+physicist+critic), 2026-02-20.
+**Status:** Three-agent complete. Critic literature check: NOT in literature, sev-2 confirmed (new result).
+
+### Classical result (Albeverio et al. 1988)
+
+Standard L²(d^d x) deficiency indices for -Δ on ℝ^d\{0}:
+| d | n_±(L²) | Contact interaction? |
+|---|---------|---------------------|
+| 1 | 1 | Yes |
+| 2 | 1 | Yes (2D delta) |
+| 3 | 1 | Yes (Berezin-Faddeev) |
+| ≥4 | 0 | NO (essentially self-adjoint) |
+
+### New result: b-calculus restores contact interactions in all d
+
+**In L²_b (b-calculus Hilbert space):** b-measure dm_b = r^{-d}d^dx = dt dΩ (flat in t = log r).
+The b-Laplacian becomes constant-coefficient in t: [d²/dt² + (d-2)d/dt]f = 0.
+
+**Deficiency index in L²_b (s-wave):** For λ = [-(d-2) ± √((d-2)² ± 4i)]/2:
+- λ_+ has Re > 0 (L²_b on left half-line t→-∞)
+- λ_- has Re < 0 (L²_b on right half-line t→+∞)
+One solution from each end → **n_±(L²_b) = 1 for ALL d ≥ 1.**
+
+| d | n_±(L²) | n_±(L²_b) | New? |
+|---|---------|-----------|------|
+| ≤3 | 1 | 1 | Same |
+| **4** | **0** | **1** | **YES — NEW** |
+| **≥5** | **0** | **1** | **YES — NEW** |
+
+### Physical interpretation
+
+The b-measure transforms r→0 (origin) to t→-∞ (APS end of a cylindrical manifold).
+Contact interaction at r=0 = APS boundary condition at t→-∞ = one-parameter family (n_±=1).
+
+For d=4: the contact interaction exists in L²_b but NOT in L²(d⁴x).
+The b-half-density σ_* = r^{-2}|d⁴x|^{1/2} (forced by P4.2) is the measure that enables it.
+
+### Connection to P4.2 forcing chain
+
+P4.2 (composition) → b-half-density σ_* = r^{-d/2} → L²_b correct Hilbert space
+→ b-Laplacian has n_±=1 for ALL d → d=4 contact interaction EXISTS in L²_b.
+
+This provides the existence of a one-parameter family of d=4 point interactions
+when the compositionally-forced inner product L²_b is used.
+
+### Exact solvability and spectrum (RESOLVED: BB3 §11, mathematician)
+
+The d=4 b-calculus contact interaction IS exactly solvable (no RG needed).
+
+For the s-wave b-Laplacian in d=4, with E = -kappa^2 (bound state):
+[-d^2/dt^2 - 2 d/dt + kappa^2] psi = 0, roots lambda = -1 +/- sqrt(1+kappa^2).
+
+APS boundary condition at face (t->-infinity): (dpsi/dt + mu_APS * psi)|_{t->-infinity} = 0.
+For psi ~ e^{lambda_+ t} near t->-infinity: lambda_+ + mu_APS = 0, so:
+
+**Exact spectrum:** E_B^{(4)} = -(mu_APS^2 + 2 mu_APS) * hbar^2/(2m L_0^2)
+
+where mu_APS >= 0 is the APS boundary parameter and L_0 is the blow-up radius.
+The APS parameter is a FREE parameter — NOT forced by P4.2 alone.
+P4.2 forces the existence of the one-parameter family (n_+=1), not which member is chosen.
+
+If L_0 = L_P and mu_APS ~ L_P^{-1}, then E_B^{(4)} ~ -hbar^2/(m L_P^2), the Planck energy scale.
+But this requires additional physical input beyond composition.
+
+### References
+- blackboards/4.md (source — two-agent complete)
+- Albeverio et al. (1988): classical deficiency index results for d≤3
+- Melrose arXiv:math/9505001: b-calculus, b-Laplacian
+- APS (Atiyah-Patodi-Singer 1975): boundary conditions on manifolds with cylindrical ends
+- paper/main.md P4.2: composition forces b-half-density
+
+## d=4 Contact Interaction: Exact APS Spectrum
+
+**Source:** blackboards/3.md §11 (mathematician), THREE-AGENT complete, 2026-02-20.
+**Confirmed:** Critic (§10) + Mathematician (§11) — exactly solvable, no RG needed.
+
+### Exact result
+
+For the s-wave b-Laplacian in d=4 with bound state ansatz E = -κ²ℏ²/(2m):
+ODE in t = log r: [-d²/dt² - 2d/dt + κ²]ψ = 0, roots λ = -1 ± √(1+κ²).
+
+APS boundary condition at face (t→-∞): (dψ/dt + μ_APS·ψ)|_{t→-∞} = 0.
+Near t→-∞: ψ ~ e^{λ_+t} with λ_+ = -1 + √(1+κ²).
+Condition: λ_+ + μ_APS = 0 → √(1+κ²) = 1 - μ_APS → κ² = μ_APS² + 2μ_APS.
+
+**Exact d=4 b-calculus contact interaction spectrum:**
+E_B^{(4)} = -(μ_APS² + 2μ_APS) · ℏ²/(2m·L_0²)
+
+where:
+- μ_APS ≥ 0 is the APS boundary parameter (free parameter of the extension)
+- L_0 is the blow-up scale (reference length; physical input)
+
+**The APS parameter is NOT fixed by P4.2.** P4.2 forces the EXISTENCE of the one-parameter
+family (n_±=1 in L²_b for all d), but not which member is physical.
+
+**If L_0 = L_P and μ_APS ~ O(1):** E_B^{(4)} ~ -ℏ²/(mL_P²) = -c⁵/(mGc) (Planck energy / mass).
+This requires additional physical input (choice of APS parameter).
+
+### Comparison: d=2 vs d=4
+
+| | d=2 (2D delta, standard L²) | d=4 (b-calculus L²_b) |
+|-|---|---|
+| Exists in | L²(d²x) | L²_b only |
+| Spectrum | E_B = -κ_*² (RG transmutation) | E_B^{(4)} = -(μ²+2μ)ℏ²/(2mL_0²) (APS, exact) |
+| Free parameter | κ_* (= RG-invariant scale) | μ_APS (= boundary condition angle) |
+| P4.2 forcing | Fixes κ_* via t^{-d/2} kernel | Fixes EXISTENCE only (not μ_APS) |
+
+### Open question for planck-area satellite
+
+Is there a physical principle (beyond P4.2) that fixes μ_APS?
+Candidates:
+(a) Holographic: μ_APS set by the AdS boundary conditions in AdS_5 near r=L_P
+(b) Minimal energy: μ_APS = 0 gives E_B^{(4)} = 0 (no bound state); μ_APS → -1 gives minimum
+(c) Quantum gravity: μ_APS fixed by GUP (generalized uncertainty principle) near Planck scale
+
+This open question would be a research direction for the planck-area satellite.
+
+### References
+- blackboards/3.md §11 (mathematician's APS calculation)
+- blackboards/4.md (n_±=1 for all d — three-agent complete)
+- APS (Atiyah-Patodi-Singer 1975): boundary conditions, spectral projections

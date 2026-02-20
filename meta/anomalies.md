@@ -64,3 +64,14 @@ read this file periodically to resolve, promote, or carry forward open entries.
 - **Why it matters:** RG-P1.2 is the scale-channel analog of P4.2, but WEAKER (existence vs uniqueness). It partially bridges the critic's identified gap: shows RG flow is forced (composition-necessary), but cannot yet show it is "the unique composition-compatible scheme."
 - **Proposed action:** Once mathematician verifies RG-P1.2 (BB3 §8, pending), send paper-edit request for rg-fundamental satellite: add RG-P1.2 as a new proposition connecting to P4.2's structure-vs-content framework.
 - **Status:** OPEN (awaiting mathematician verification of BB3)
+
+### 2026-02-20 — CFT-P1.1 confirmed: c/24 = Stage 3 d/2 analog (source: Physicist + Mathematician)
+- **What happened:** Physicist conjecture (BB3) that Segal's sewing law gives a Stage 3 P4.2 analog was verified by mathematician. c/24 is forced by (C)+(D)+(I) + Virasoro anomaly, exactly paralleling how d/2 is forced by (C)+(D)+(I) + d-dim dimensional analysis.
+- **Why it matters:** First explicit Stage 3 extension of P4.2's forcing chain. Shows the normalization-exponent forcing is a general pattern: d/2 (Stages 1-2) → c/24 (Stage 3 CFT). Strengthens the project's central thesis that composition forces structure at every scale.
+- **Status:** PROMOTED (→ tangent-groupoid-quantization-bridge.md notebook; paper-edit #17 sent for cornerstone §9)
+
+### 2026-02-20 — CFT-Q1 (q-deformed P4.2) ill-posed: dimensional mismatch (source: Critic)
+- **What happened:** Physicist conjecture that q = e^{iℏ/L_P²} would unify ℏ and L_P² forcings was found ill-posed by critic (BB4 §10). Dimensional mismatch: [ℏ/L_P²] = MT⁻¹ (not dimensionless). Also, q-deformed convolution is NOT standard convolution — P4.2's (C) cannot be directly extended.
+- **Why it matters:** The underlying question (does P4.2-style forcing work for q-deformed semigroups?) remains open and interesting, but the specific conjecture CFT-Q1 cannot be stated without fixing the dimensional analysis. Planck units make it tautological; non-Planck units introduce a new parameter.
+- **Proposed reformulation:** Instead of q = e^{iℏ/L_P²}, ask: "Is there a q-deformed analog of (C) for which the forcing gives q = e^{2πi/(k+g∨)} (Chern-Simons level)?" This connects to the Chern-Simons → quantum group path (BB4 §5, which was correct).
+- **Status:** OPEN (reformulated); do not promote CFT-Q1 as stated. Record for future investigation.

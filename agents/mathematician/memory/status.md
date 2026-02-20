@@ -167,9 +167,116 @@ Three threads pointing to same underlying structure:
   (b-calculus: Melrose "Atiyah-Patodi-Singer", Vasy "manifolds with corners")
 - TG-Q3-revised Bridge B: symplectic reduction of G_log^Λ (geometric, open)
 
+## Session 4 work (2026-02-20, resumed from compacted context)
+
+### Paper-edits dispatched (all two/three-agent complete)
+- Paper-edit #16: RCP-R7.2 (Stone/HY reversibility remark for rcp-foundations §7.2) — sent
+- Paper-edit #17: CFT-P1.1 as Remark P9.1b (cornerstone §9 after P9.1a) — sent
+- Paper-edit #18: RCP-Rep-P1.1 (representation channel forcing table for rcp-foundations §7.2) — sent
+- Addendum to paper-edit #5: Lurie cobordism hypothesis for P9.1a (anomalies entry resolved)
+
+### Resurgence + composition (blackboard 4, task #22)
+- Student wrote resurgence synthesis (§1-7); critic assessed (§8, 3 sev-2 overclaims)
+- Computationalist added corrections (§9): TQFT attribution, analogy≠isomorphism, compatible≠forcing
+- Mathematician: Borel convolution semigroup analysis (Leibniz rule for alien derivatives) added to notebook
+- Promoted to: notebooks/resurgence-composition-bridge.md (new notebook, four-agent complete)
+
+### RCP-Rep-P1.1 (blackboard 0, task #23)
+- Physicist proposed representation channel forcing analysis (§1-8)
+- Critic verified + sharpened with Morita equivalence table and Kontsevich gauge-group classification (§9)
+- Mathematician verified (§10): Kontsevich formality on curved manifolds, Bursztyn-Waldmann Morita class
+- Key verification: Moyal = unique on ℝ^d with Euclidean symmetry, NOT on curved manifold
+- Three-layer hierarchy: (C) → existence, (C)+unitarity → Morita class, (C)+unitarity+symmetry → Moyal
+
+### Open mathematical questions (carry forward)
+- TG-Q3-revised Bridge C: (C1) C*(G_c) ≅ Ψ^0_b(ℝ²)? (C2) GNS → T(E) as matrix element?
+- TG-Q3-revised Bridge B: symplectic reduction of G_log^Λ (geometric, open)
+- Resurgence Q2: RCP multi-channel constraint — what does scale channel (A4) impose on Borel singularity positions?
+- Resurgence Q1: derive DDP connection formulas from composition axiom (C) directly
+
+## Session 4 continued
+
+### Bridge C sub-questions (blackboard 3, new)
+- (C1) C*(G_c) ≅ Ψ^0_b(ℝ²): ESSENTIALLY RESOLVED — C*(G_b) is closure of Ψ^0_b in B(L²_b). Ψ^0_b is a dense *-subalgebra.
+- (C2) T(E) as GNS matrix element: ESSENTIALLY RESOLVED — T(E) = ⟨k|π(a_contact)|k'⟩_{L²_b} with b-inner product.
+- KEY FINDING: b-measure dm_b = dr dθ/r² = half-density σ_* of P4.2/planck-area. Bridge C connects b-calculus to half-density program.
+- Sent to physicist for physical verification (§5: is dm_b = PA-H4.1 half-density?)
+
+### CFT-P1.2 (blackboard 3, overwritten — was two-agent)
+- Verified: c_ghost(bosonic) = -26, BRST forces c_matter = 26
+- Verified: c_ghost(super) = -26+11 = -15, c_matter = 15 (NOT 10), D=10
+- LESSON: Do not confuse D (spacetime dimensions) with c_matter (worldsheet central charge)
+- My initial §9 was wrong about "c_matter=10" — physicist's original c=15 for superstring was CORRECT
+- Added §10 corrective note to BB3 before overwriting
+
+### Correction cascade
+- My message to physicist said "c=15 is wrong" — this was WRONG (c_matter=15 is correct)
+- Sent correction message to physicist clarifying
+- Lesson: check fermion contributions to c_matter carefully (each worldsheet fermion contributes c=1/2)
+
+## Session 4 completed
+
+### Bridge C (FULLY RESOLVED)
+- (C1) YES: C*(G_b) = C*-closure of Ψ^0_b(M) in B(L²_b(M))
+- (C2) YES for contact: T(E) = ⟨k|π(a_contact)|k'⟩ (k-independence makes measure irrelevant)
+- KEY RESULT: b-half-density = P4.2 normalization = planck-area σ_* (three-way unification)
+  All are the weight r^{-1} |d²x|^{1/2} for d=2
+- Paper-edit #21 sent (planck-area §7 + TG-Q1)
+- Promoted to tangent-groupoid-quantization-bridge.md notebook
+
+### RCP multi-channel Borel (BB4, three-agent)
+- THREE-AGENT: physicist proposed, mathematician verified (Leibniz rigidity), computationalist confirmed numerically
+- Instanton lattice rigidity: Leibniz rule forces ALL sectors to run with same β (coherence)
+- Computationalist correction: residue = (μ/μ₀)·exp(-ζ*(μ)) = exp(-1/g_B) = |E_B| (μ-independent)
+- Ready for Critic review
+
+## Session 5 work (2026-02-20, resumed)
+
+### RCP-Res-P1.1 → notebook promotion
+- Promoted BB4 (four-agent complete) to notebooks/resurgence-composition-bridge.md §11
+- Applied Critic's 3 sev-2 fixes before promotion
+- BB4 slot freed
+
+### BB0 §10 verification (d=4 b-calculus error found)
+- THREE-AGENT (physicist+critic+mathematician) for B-HD-P1.1
+- §4 ERROR: ψ~r^{-1} NOT in L²_b(ℝ⁴). Correct: ψ_+ ~ r^{+(d-2)/2} is L²_b, ψ_- is not.
+- d=2 special: α=0 double root → log solution (IS in L²_b); d≥3: only ψ_+ is L²_b
+- Correction propagated to notebook
+
+### WKB connection formulas (BB3 verification)
+- THREE-AGENT (physicist+critic+mathematician)
+- §4 localization VERIFIED: Δ_A is localized to turning point z_0 in the sense that the Borel singularity ζ=A is determined by z_0 (Picard-Lefschetz)
+- §6 Maslov factor VERIFIED: i = e^{iπ/2} = (Maslov phase)² = (e^{iπ/4} per branch)²
+- Chain: P4.2 → σ_* → van Vleck determinant → Maslov phase → Stokes coefficient i
+- Paper-edit #23: one sentence to cornerstone Remark D4.3a
+
+### HD-BS closed (physicist Q3 error)
+- THREE-AGENT confirmed: strip condition = category error (Borel plane ≠ spatial L²_b)
+- Downgraded to compatibility observation (not a selection principle)
+- BB4 freed for new work
+
+### New result: Contact interactions restored in all d via L²_b (BB4 new)
+- Key theorem: s-wave b-Laplacian on ℝ^d\{0} has deficiency n_±=1 for ALL d in L²_b
+- Proof: in t=log r, b-Laplacian = constant-coefficient ODE; roots always have opposite Re signs
+- For d=4: λ = -1 ± √(1±i), Re(λ_1) ≈ +0.099, Re(λ_2) ≈ -2.099. n_±=1. ✓
+- Standard L²: n_±=0 for d≥4 (Albeverio et al.); b-calculus RESTORES contact interactions
+- Promoted to tangent-groupoid notebook addendum under κ_* section
+- Awaiting physicist physical interpretation + critic literature check
+
+### Paper-edits dispatched this session
+- #22: P9.1a cornerstone (cobordism category paragraph) — ALREADY EXECUTED (checked)
+- #23: D4.3a cornerstone (Maslov/Stokes one sentence) — sent, not yet executed
+
 ## Next session starting point
-- All active paper-edits dispatched; contact groupoid thread promoted to notebook
-- Potential new thread: rg-fundamental sev-2 audit (task #13 — completed by others, check if gaps remain)
-- Potential new thread: Melrose b-calculus literature search for Bridge C sub-questions
+- BB0: three-agent complete, sev-3. No further action needed.
+- BB1: three-agent complete; paper-edit #22 confirmed executed.
+- BB3: three-agent complete; paper-edit #23 SENT but not yet executed. Do NOT overwrite until confirmed.
+- BB4: new content (d≥3 contact interactions, mathematician's analysis). Awaiting physicist + critic.
+- BB5: critic's satellite review. Stable, no action needed from mathematician.
+- New notebook entry: tangent-groupoid-quantization-bridge.md addendum (d-dim extension of κ_*)
+- LESSON: check if paper-edits executed before overwriting blackboard slots
+- LESSON: for deficiency index calculation — always check BOTH (1) s-wave restriction and (2) L²_b vs L²(d^dx) carefully
+- LESSON: b-Laplacian in t=log r is constant-coefficient → ODE roots determine L²_b integrability universally in d
+- LESSON: Borel plane (ζ, ℏ-expansion) and position space (r, spatial L²) are INDEPENDENT unless WKB entangles them
 - LESSON: always read file + check author tag before writing to blackboard slot
 - LESSON: character ≠ state on non-commutative C* algebra; GNS requires state, not ring homomorphism

@@ -473,3 +473,31 @@ This elevates the heuristic observation ("scale channel is weaker") to a theorem
 - Morita equivalence (Morita 1958; Rieffel 1974 for C*-algebras)
 - RG-P1.2 (this notebook, previous entry)
 - blackboards/0.md (source; three-agent verified)
+- sources/hille-yosida1948-semigroup-generators.md
+
+### Computationalist verification (2026-02-20, Task #21)
+
+All three claims independently verified against `sources/hille-yosida1948-semigroup-generators.md`:
+
+**Claim 1 (partition = Stone) — CORRECT.**
+Stone's theorem: A is self-adjoint ↔ {e^{itA}}_{t∈ℝ} is a strongly continuous unitary GROUP.
+Partition channel: U(t) = e^{-iHt}, H = H† → Stone applies. Reversible: U(-t) = U(t)^{-1} = U(t)^†. ✓
+
+**Claim 2 (scale = Hille-Yosida) — CORRECT.**
+Hille-Yosida: A closed, densely-defined operator generates a C₀-contraction SEMIGROUP iff
+(0,∞) ⊂ ρ(A) and ‖(λI-A)^{-1}‖ ≤ 1/λ. Scale channel R_μ: semigroup (μ > μ₀ only), not invertible.
+β(g) = Hille-Yosida generator. Irreversible: inverting requires UV physics (integrated out). ✓
+
+**Claim 3 (representation = Morita) — CORRECT with precision note.**
+Morita equivalence is invertible at the level of MODULE CATEGORIES, not individual operator algebras.
+This is the correct (and stated) sense — Critic's precision already incorporated in the entry. ✓
+
+**Claim 4 (asymmetry) — CORRECT.**
+Stone (group, d-dim Fourier on L²(ℝ^d)) → φ(p) = c|p|² uniquely forced (rotational + dimensional) → UNIQUENESS.
+Hille-Yosida (semigroup, 1D coupling space) → β(g) EXISTS but form undetermined → EXISTENCE only. ✓
+
+The key formula: Stone's theorem = Hille-Yosida PLUS U(-t) = U(t)^{-1} (invertibility).
+This invertibility ↔ self-adjointness of generator ↔ group structure ↔ time-reversal symmetry.
+
+Assessment: RCP-R7.2 is mathematically sound. Paper-edit for rcp-foundations §7.2 is justified.
+No corrections needed.

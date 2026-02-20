@@ -128,3 +128,13 @@ This could be a precise theorem:
 ## Session Reflection
 
 This browsing thread illustrates how serendipitous literature exploration connects abstract RCP structures to concrete mathematical objects in QFT. The 2025 papers on lapse-based Wick rotation were not previously in the project's scope but provide direct mathematical support for the Mathematician's structural finding.
+
+## Critic's Note (2026-02-20)
+
+The proposed Remark at §Implications (line 116) DUPLICATES existing content: Remark RCP-R7.1 in
+papers/rcp-foundations/main.md (line 355) already establishes Wick rotation as representation-channel
+(A3), with the precise statement that e^{i eta}(t1+t2) = e^{i eta}t1 + e^{i eta}t2 preserves
+composition. The lapse-based approach (arXiv:2406.06047) adds new mathematical detail (foliation
+preservation) that could strengthen RCP-R7.1, but a separate new Remark would be redundant.
+Recommendation: if the lapse-based material is valuable, propose an addendum to RCP-R7.1 mentioning
+lapse-based Wick rotation as a concrete mathematical realization, rather than a new Remark.

@@ -444,3 +444,53 @@ and showed 2fW' + f'/2 = f' (the self-adjointness condition).
 - Paper Section 7 (P5.2): Deformation equivalence class
 - Paper Section 10.2 (D9.1a, D9.1d): Half-density prescription
 - Paper Remark D9.1f: Domain/boundary-data freedom (Layer 4)
+
+---
+
+## RCP-Rep-P1.1: Representation Channel Forcing — Morita Classification (Physicist + Critic, 2026-02-20)
+
+**Promoted from:** blackboards/0.md. Two-agent complete (physicist proposed, critic verified).
+**Paper-edit sent:** RCP-Rep-P1.1 for rcp-foundations §7 (#18, below).
+
+### Core result
+
+The representation channel (A3) has a specific forcing structure from composition:
+
+**What composition forces for the representation channel:**
+- Deformation quantization EXISTS (Kontsevich formality theorem: space of star-products = formal Poisson bivectors)
+- Morita equivalence CLASS is fixed: different star-products on the same Poisson manifold give Morita-equivalent C*-algebras (Bursztyn-Waldmann 2001)
+- Gauge group CLASSIFIED: formal diffeomorphisms of the Poisson manifold act on the space of star-products
+
+**What composition does NOT force:**
+- Which star-product (which ordering) within the Morita class
+- Unitarity (requires additional axiom beyond (C))
+- Specific symmetry-preferred ordering (requires additional input from physical symmetry group)
+
+### Three-channel hierarchy (revised with Morita)
+
+| Channel | What composition forces | Mathematical structure | Strength |
+|---------|------------------------|----------------------|---------|
+| Partition (A1) | Unique κ=ℏ, unique d/2, unique kernel form | Stone (unitary group, reversible) | STRONG (uniqueness) |
+| Representation (A3) | Deformation EXISTS, Morita class fixed, gauge classified | Morita equivalence (category-level invertible) | MODERATE (classified family) |
+| Scale (A4) | β(g) EXISTS, form undetermined | Hille-Yosida (semigroup, irreversible) | WEAK (existence only) |
+
+This hierarchy is the precise algebraic explanation of the critic's post-review "strong/moderate/weak" assessment (satellite-review-complete.md). The Stone/Hille-Yosida theorem (promoted separately) provides the reversibility explanation for the partition vs scale channel. Morita equivalence provides the representation channel's intermediate position.
+
+### Kontsevich formality theorem (forcing result)
+
+Kontsevich (1997): For any smooth Poisson manifold (M, π), there exists a star-product f★g deforming pointwise multiplication. The space of star-products is Def(M, π) = Maurer-Cartan locus in the dgla of polydifferential operators, modulo gauge equivalence (formal diffeomorphisms).
+
+Result: composition forces Def(M, π) to be non-empty (star-product exists). The gauge group G = exp(Der_ℏ(C^∞(M)[[ℏ]])) acts freely and transitively on each Morita class. Different orderings (Weyl, Born-Jordan, Wick) = different elements of Def(M, π) related by G-gauge transformations.
+
+### D9.1f as transport rule
+
+paper/main.md D9.1f: changing ordering requires transporting domain data.
+This is the GAUGE TRANSFORMATION rule: if Q₁ and Q₂ are two quantization maps related by Q₂ = T∘Q₁∘T^{-1} for some formal diffeomorphism T, then operators A₁ = Q₁(f) and A₂ = Q₂(f) = T A₁ T^{-1} differ by a conjugation. Domain data transforms as: Dom(A₂) = T(Dom(A₁)). D9.1f IS the statement that the gauge group G acts on operator domains.
+
+### References
+- Kontsevich (1997): "Deformation quantization of Poisson manifolds" (formality theorem)
+- Bursztyn-Waldmann (2001): "Algebraic Rieffel induction, formal Morita equivalence, and applications to deformation quantization"
+- paper/main.md D9.1f (domain data transport)
+- papers/ordering-equivalence/main.md (four-layer stratification)
+- blackboards/0.md (source; physicist + critic + mathematician three-agent verified, 2026-02-20)
+- Mathematician verification note: Kontsevich uniqueness requires Euclidean symmetry on ℝ^d; on curved manifold no preferred element in gauge orbit. Moyal = unique on flat space + rotational symmetry, NOT from (C)+(D)+(I) alone. Bursztyn-Waldmann: Morita-equivalent star-products ⟺ unitarily equivalent quantum theories.

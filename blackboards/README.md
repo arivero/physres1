@@ -60,13 +60,13 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Stone/Hille-Yosida reversibility signature: THREE-AGENT verified (mathematician proposed, physicist verified, critic endorsed). Remark RCP-R7.2 ready for promotion. Critic note: Morita equivalence is category-level (not algebra-level) invertibility. | Active — paper-edit #16 sent; promote to notebook before overwriting |
-| 1 | Stage 4 cobordism category + TQFT completion (physicist, 2026-02-20); mathematician verified (∞,1)-cat structure, corrected "groupoid"→"category" | Active — paper-edit sent to orchestrator for P9.1a |
+| 0 | d=4 b-calculus + Planck area: §2-3 CORRECT; §4 corrected (ψ~r^{-1} NOT in L²_b(ℝ⁴); d=2 special). §4 d≥3 question RESOLVED by BB4 (n_±=1 all d). THREE-AGENT complete. | Complete — sev-3; §2-3 safe for planck-area footnote; §4 resolved via BB4 |
+| 1 | Stage 4 cobordism category + TQFT completion: THREE-AGENT (physicist+mathematician+critic). Critic endorsed, no errors. | Complete — ready for P9.1a paper-edit promotion |
 | 2 | Contact groupoid conjecture: 3 bridges (A) ESTABLISHED, (B) OPEN, (C) OPEN well-posed. All two-agent complete. Promoted to notebook. | Active — paper-edits #13 sent; notebook promoted |
-| 3 | CFT-P1.1 Segal sewing as Stage 3 P4.2: c/24 = d/2 analog, forced by Weyl anomaly. Two-agent complete (physicist + mathematician). Promoted to notebook. Paper-edit #17 sent. | Promoted — ready to overwrite |
-| 4 | CFT-Q1 quantum group conjecture: ILL-POSED (dimensional mismatch ℏ/L_P², q-convolution ≠ standard). Critic: downgrade to open question, do not promote. | Assessed — record in anomalies, overwrite |
-| 5 | Critique: tangent-groupoid-bridge satellite + TG-Q3 cross-check of mathematician's van Est analysis (critic) | Active — satellite review + blackboard 2/4 cross-check appended |
-| 6 | PDM gap formula: delta(E_n-E_0) = -n*alpha^2/8 (factor-of-2 error in paper; computationalist 2026-02-20) | Active — paper-edit sent to orchestrator (mathematician verified) |
+| 3 | Upgrading H6.3: Proposition D6.4b (not Derivation). Scope = Borel/instanton type only. THREE-AGENT (physicist+critic+mathematician). Fixes: M-F1 (additive semigroup §5b), M-F2 (Proposition label), M-F3 (simple-pole scope). | Complete — THREE-AGENT sev-2; paper-edit #27 for D10.1c ready |
+| 4 | d=4 b-calculus contact spectrum: E_B = -(ℏ²/2mL₀²)·μ_APS(μ_APS-2). THREE-AGENT (mathematician+physicist+critic). Critic: spurious μ_APS>2 branch (squaring artifact); only μ_APS<0 gives bound states. μ_APS FREE. Analytic, no dimensional transmutation. | Complete — THREE-AGENT sev-2; spurious branch flagged |
+| 5 | Action-angle + P4.2: t^{-n/2} from det Ω (not angle integral). Bohr-Sommerfeld I=ℏm from (C)+periodicity. THREE-AGENT sev-3. | PROMOTED to papers/action-angle-indeterminacy-central-potentials/main.md Remark 7.5a; slot free |
+| 6 | Prior art Maiezza-Vasquez check. FOUR-AGENT. §13 NEW: double-well Borel-Padé rigidity computation. Location rigidity confirmed (pole×λ=const). Residue scaling 1/λ = coordinate artifact (s-plane Stokes constants ARE λ-independent). Multi-instanton Padé needs 30+ BW terms. Remark RG-R1.1 ready. | Complete — FOUR-AGENT + §13 computation; paper-edit #28 corrected text ready |
 
 ## Reading Blackboards
 Blackboards are the active working memory (max 7 slots, ~300 lines each, <50KB total).

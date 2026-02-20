@@ -221,15 +221,57 @@ Key results from the first full agent-team session:
 - **Cobordism groupoid (Physicist)**: P9.1a → ∞-groupoid reading. Stage 4 = passage from 1-groupoid (pair) to (∞,1)-groupoid (cobordism). TQFT = completion in topological case; 3+1 gravity branches. (blackboard 1, §1-6)
 - **Infrastructure**: Bibliographer agent deprecated → all agents now do library work directly. shared-rules.md updated with §7b (The Library) separate from §7 (Philosophenweg). AGENTS.md updated accordingly.
 
+### New research results (Season 2, hour 2)
+- **CFT-P1.1 (Stage 3 P4.2 analog)**: Physicist proposed, mathematician verified. c/24 normalization forced by composition + Weyl anomaly, analogous to d/2 forced by composition + dimensional homogeneity. Promoted to cornerstone as Remark P9.1b. Two-agent rule satisfied.
+- **Cobordism P9.1a (Stage 4)**: Physicist proposed, mathematician verified. Stages 1-3 = 1-groupoid (pair), Stage 4 = (∞,1)-category (cobordism). TQFT = forced completion for topological theories. Promoted to cornerstone P9.1a. Two-agent rule satisfied.
+- **Luiz-Oliveira 2026 (arXiv:2602.09984)**: CRITICAL PRIOR ART discovered by Critic during Philosophenweg. Independent information-theoretic reconstruction arrives at same Lévy-Khintchine→Gaussian→κ=ℏ chain. Cited as Remark P4.2i + Reference [LuizOliveira2026] in cornerstone.
+- **Stone/Hille-Yosida RCP reversibility (BB0 → notebook)**: Three-agent verified (mathematician+computationalist+notebook). Partition=Stone (group, unique), Scale=Hille-Yosida (semigroup, existence), Representation=Morita (classified). Promoted to rcp-foundations as RCP-R7.2.
+- **RCP-Rep-P1.1 (representation forcing)**: Three-agent verified (physicist+critic+mathematician). Composition forces: (1) star-product exists (Kontsevich), (2) +unitarity → Morita class fixed, (3) +Euclidean symmetry → Moyal unique. Promoted to rcp-foundations as Proposition RCP-Rep-P1.1.
+- **Resurgence-composition bridge**: Four-agent verified (student+critic+computationalist+mathematician). Composition forces Borel convolution semigroup → alien calculus Leibniz rule. Resurgence COMPATIBLE with P4.2, does not independently force κ=ℏ. Promoted to notebooks/resurgence-composition-bridge.md. Two paper-edit candidates pending (P4.2j non-perturbative, P9.1c resurgence completion).
+- **CFT-P1.2 (c=26 from BRST)**: Physicist proposed, mathematician verified with corrections. c_matter=26 forced by (C)+Weyl+BRST — more hypotheses than P4.2. NOT yet promotable (sev-3 precision needed).
+- **rg-fundamental sev-2 fixes**: All 3 applied (S2.1 "not merely"+scope, S2.2 "appear to be", S2.3 "reinterpreted as"). Also applied critic's edits to path-integral-normalization and rcp-foundations.
+- **Library expansion**: 30 sources total (was 28). New: Hairer-Lubich-Wanner 2006 (B-series), Luiz-Oliveira 2026, Blattner half-form literature, Hawkins 2008, Butterfield-Bouatta 2014, Wallace 2019.
+
+### Late Season 2 results (hour 2, final stretch)
+- **BB4 n_±=1 for all d in L²_b**: THREE-AGENT COMPLETE (mathematician+physicist+critic). Critic literature check: NOT in literature, sev-2 confirmed. The b-Laplacian restores contact interactions in ALL dimensions, including d≥4 where standard L²(d^dx) operator is essentially self-adjoint. Genuinely new result. Promoted to OQ1a notebook. Candidate for planck-area or TG-bridge satellite proposition.
+- **Goyal-Knuth-Skilling 2010 (arXiv:0907.0909)**: Second prior art citation added to cornerstone P4.2i alongside Luiz-Oliveira. GKS derive complex amplitudes + Born rule from composition of sequential measurements — kinematic complement to P4.2's dynamical forcing. Reference [GoyalKnuthSkilling2010] added as #24.
+- **BB6 (van Est Bridge B)**: Mathematician self-directed. Algebroid-level realization of BPHZ→groupoid bridge. Part (a) proven (van Est limit of log-symplectic class is finite). Part (b) conjectural (level = inverse coupling identification). Needs computationalist + physicist verification. Sev-2 candidate.
+- **BB3 (H6.3 upgrade)**: Physicist self-directed. Proposes D6.4b (instanton lattice rigidity theorem from RCP-Res-P1.1) as conditional upgrade of heuristic H6.3. Needs mathematician + critic verification. Sev-2 candidate.
+- **TG-bridge S2.1 fix**: Applied critic's overclaiming fix in conclusion (line 276): "not...a consequence" → "can be derived independently of" the Schrödinger equation.
+- **Library expansion**: ~35 sources total. New in this stretch: Schwinger 1951, Dunne-Schubert 2002, Gallone-Michelangeli 2023, Zinn-Justin-Jentschura 2004, Costin-Dunne 2021, Sulejmanpasic-Ünsal 2016.
+- **OQ1a notebook**: Significantly extended with APS exact spectrum (d=4 contact interaction), Voros bridge (exact WKB unification), UV/IR split precision note. 584 lines.
+
 ### Pending for next session
-- rg-fundamental sev-2 fixes still open (S2.1 "RG is definitional", S2.2 two-layer heuristic, S2.3 Noether)
 - Genre decision: uncuttable + fermionic-mediators (reclassify as perspective or add original content)
-- ~~Tangent-groupoid satellite needs cornerstone cross-reference~~ → DONE
-- ~~path-integral-normalization independence overclaim~~ → DONE (2 fixes applied)
-- ~~Instanton d/2 toy computation~~ → DONE (blackboard 4, §4-8, verified)
-- Instanton TG-P1.1 scope remark promotion (blackboard 4 → satellite, two-agent verified)
-- Cobordism groupoid P9.1a remark promotion (blackboard 1 → cornerstone, needs mathematician verification)
-- Exact WKB / resurgence thread (Student leads, library sources now ingested — needs formalization)
+- Resurgence paper-edit candidates (P4.2j, P9.1c) — held for user review
+- CFT-P1.2 (c=26 from BRST) — needs sev-3 refinements before promotion
+- ~~BB3 H6.3 upgrade (D6.4b) — needs mathematician + critic verification~~ → DONE (see Season 3)
+- ~~BB6 van Est Bridge B — needs Part (b) verification (computationalist + physicist)~~ → DONE (see Season 3)
+- BB4 n_±=1 result — promote to planck-area or TG-bridge satellite as proposition
+- Blattner half-form citation for half-density-qft satellite (critic recommendation)
+- ~~Hawkins 2008 citation for tangent-groupoid-bridge satellite~~ → DONE
+- BB5 (TG-R3.1 critic endorsement): needs one amendment added (RG semigroup ≠ groupoid), then paper-edit for TG satellite
+
+## Season 3 Findings (2026-02-20, session resume)
+
+### Completed this session
+
+- **BB3 THREE-AGENT COMPLETE (H6.3 upgrade):** D6.4b is a valid PROPOSITION (not Derivation) for the Borel/instanton sector only. Three fixes: M-F1 (semigroup framing §5b), M-F2 (Proposition label), M-F3 (simple-pole scope). Paper-edit #27 APPLIED to D10.1c. Promoted to resurgence notebook §13.
+
+- **BB6 THREE-AGENT COMPLETE (Van Est Bridge B):** Part (a) THEOREM (VE limit finite, standard Lie algebroid cohomology). Part (b) THEOREM for 2D delta (one-loop exact, exact identification [ω_log] = ζ* = 1/g_R). Part (b) CONJECTURE for general QFT (dimension mismatch). Promoted to TG-bridge notebook.
+
+- **Key unification found:** [ω_log] ∈ H²(A_log) = ℝ = ζ* = 1/g_R(μ) = Borel singularity. The log-symplectic structure, b-calculus blow-up (BB0/BB4), P4.2 composition, and Connes-Kreimer BPHZ are four descriptions of the same logarithmic UV structure at r=0.
+
+### Paper-edits applied this session
+
+- **#27 (cornerstone D10.1c):** Scale-channel witness upgraded from "structural heuristic" to "conditional proposition D6.4b (Borel/instanton type, simple-pole assumption, semigroup framing, Stokes-constant caveat, Écalle attribution)."
+
+### Pending from this session
+
+- BB5 (TG-R3.1 critic endorsement): add one amendment (RG semigroup ≠ groupoid note), then promote to TG satellite paper
+- BB4 n_±=1 result: still needs promotion to planck-area or TG satellite as formal proposition
+- Rank-2 instanton lattice question (from BB3 §13 open questions): test additive semigroup framing for two-scale models
+- Stokes constants from composition: additional structure in (C) that might constrain residues (from BB3 open questions)
 
 ## Publication Readiness (2026-02-20, latest refresh)
 Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PLB format).
@@ -256,7 +298,7 @@ Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PL
 15. Tangent-Groupoid Bridge (~312 lines) — NEW Season 2 (Proposition TG-P1.1, Connes tangent groupoid, Lackman bridge)
 
 **Cornerstone:** paper/main.md (~1836 lines, 32pp). Target: Physics Reports.
-**Current satellite count: 14** (3 PLB-frozen + 1 Dirac + 10 PRD-length). Cross-referencing: 13/14 from cornerstone (tangent-groupoid pending).
+**Current satellite count: 14** (3 PLB-frozen + 1 Dirac + 10 PRD-length). Cross-referencing: 14/14 from cornerstone (all satellites cross-referenced).
 **Total corpus: ~195k tokens (estimated with new satellite + edits).**
 **All papers authored: A. Rivero and A.I.Scaffold.**
 

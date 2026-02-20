@@ -422,3 +422,65 @@ partition channel (A1). This confirms: the choice Minkowski/Euclidean is represe
 (signature of the action), and Wick rotation is a representation compatibility map.
 
 References: blackboards/2.md (identity limit stationary phase analysis); D29/S288; D37/S292.
+
+---
+
+## Part 6: Composition, Action-Angle Coordinates, and Bohr-Sommerfeld (Mathematician+Physicist, 2026-02-20)
+
+**Source:** blackboards/5.md, TWO-AGENT complete (mathematician + physicist). Sev-3 (clarification).
+
+### The Question
+
+Does P4.2 (composition → t^{-d/2} normalization) work in action-angle coordinates (I,θ), or only in position-momentum (x,p)?
+
+### Main Result
+
+**The t^{-d/2} normalization does NOT arise from the angle-sector composition integral.**
+
+In action-angle variables (I, θ) with S_cl = -H(I)t + I·(θ-θ'), the composition integral:
+∫_{T^n} K_{t₁}(θ,θ') K_{t₂}(θ',θ'') dθ'
+
+is a TRIVIAL phase integral (the integrand does not depend on θ') — it gives a UNIT factor times the phase, not a Gaussian. The Van Vleck determinant in action-angle is:
+det(-∂²S_cl/∂I∂θ') = det(+I) = 1
+
+So σ_* = 1 in action-angle representation.
+
+**The t^{-n/2} arises from the energy-surface curvature det Ω(I):**
+Ω_jk = ∂²H/∂I_j∂I_k (frequency matrix)
+
+The kernel in the energy representation contains σ_* = |det(t·Ω)|^{-1/2} = t^{-n/2}·|det Ω|^{-1/2}.
+
+**Conclusion:** Action-angle is not the natural coordinate system for P4.2 forcing. The Gaussian composition structure (generating t^{-n/2}) is only visible in position-space or energy-time representations.
+
+### Exception: Bohr-Sommerfeld from Composition Periodicity
+
+**Physicist's addition (TWO-AGENT, P9.3 in BB5):** There IS one case where composition imposes quantization in action-angle: **the Bohr-Sommerfeld condition.**
+
+For the kernel K_t(θ,θ') to be well-defined on the torus T^n, it must be periodic: K_t(θ+2π,θ') = K_t(θ,θ'). For the pure phase kernel K_t = exp(i·m·(θ-θ')) to be single-valued, the action quantum number must satisfy:
+
+I = ℏ·m,   m ∈ ℤ^n   (Bohr-Sommerfeld)
+
+This IS a composition-derived constraint: the periodicity requirement K_t(θ+2πe_j, θ') = K_t(θ, θ') applied to the action-phase kernel exp(iI·(θ-θ')/ℏ) forces I_j/ℏ ∈ ℤ.
+
+**Significance:** Bohr-Sommerfeld quantization I = ℏ·m is derivable from composition + periodicity of the angle torus. This is a non-trivial consequence of the composition law (C) that does NOT appear in the position-space analysis.
+
+### Implications for P4.2 Hypothesis Reduction
+
+The Bohr-Sommerfeld derivation adds to the theorem chain (Part 3):
+
+| Derived result | From hypotheses |
+|----------------|-----------------|
+| (L_exp) exponential form | (C) + (L_loc) |
+| (L_loc) action-dependence | (D) dimensional |
+| κ = ℏ necessity | (C) + (I) + (D) |
+| **Bohr-Sommerfeld I = ℏm** | **(C) + periodicity of T^n** |
+
+The last entry is new: composition (C) applied to angle-variable kernels on the torus T^n forces I ∈ ℏ·ℤ. This is the quantum-mechanical action quantization, derived from the composition law.
+
+**Note:** The indeterminacy ΔI·Δθ ≥ ℏ/2 is a consequence of canonical quantization ([I_j, θ_k] = iℏδ_{jk}), not directly of composition. The composition law forces the QUANTIZATION of I (Bohr-Sommerfeld) but not the UNCERTAINTY bound (which requires the Hilbert space representation and Heisenberg's inequality).
+
+### References
+- blackboards/5.md (source — two-agent complete, 2026-02-20)
+- Arnold "Mathematical Methods of Classical Mechanics" §49: action-angle variables
+- paper/main.md P4.2: composition forces kernel structure
+- papers/action-angle-indeterminacy-central-potentials/main.md: context paper

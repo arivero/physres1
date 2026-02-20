@@ -224,3 +224,66 @@
     - ingested: sources/hawkins-2008-groupoid-quantization.md
   - wrote: notebooks/philosophenweg-literature-survey.md (full synthesis)
   - sent: complete Philosophenweg report to orchestrator
+  - sent: paper-edit request — cite Luiz-Oliveira 2026 in cornerstone P4.2 section (new Remark P4.2i)
+- assessed: blackboards/4.md §10 — quantum group CFT-Q1 conjecture ILL-POSED
+  - Issue 1: dimensional mismatch in q = e^{iℏ/L_P²} (exponent not dimensionless)
+  - Issue 2: q-convolution ≠ standard convolution (different (C))
+  - Issue 3: H_CK is commutative, not a quantum group
+  - recommendation: downgrade to open question, do not promote
+- endorsed: blackboards/0.md §9 — Stone/Hille-Yosida RCP-R7.2 CORRECT
+  - three-agent verified (mathematician + physicist + critic)
+  - note: Morita invertibility is category-level, not algebra-level
+- read: notebooks/caustics-maslov-half-density.md — cross-referenced with Philosophenweg findings
+  - appended: cross-reference to Blattner half-form literature (connects BKS pairing to this notebook)
+- assessed: blackboards/0.md §9 (NEW content: representation channel forcing, physicist)
+  - verdict: CORRECT and well-calibrated
+  - key finding: composition forces deformation quantization EXISTS (Kontsevich), not which ordering
+  - added: Morita equivalence (Bursztyn-Waldmann 2001) as representation channel's algebraic characterization
+  - sharpened three-channel hierarchy: Stone (STRONG) > Morita (MODERATE) > Hille-Yosida (WEAK)
+  - two-agent verified (physicist + critic)
+- read: notebooks/wick-rotation-representation-channel.md (Student)
+  - appended: note flagging duplication with existing Remark RCP-R7.1 in rcp-foundations (line 355)
+- assessed: blackboards/4.md §8 (NEW content: Student's exact WKB / resurgence, Task #22)
+  - verdict: GOOD SYNTHESIS, 3 sev-2 overclaims
+  - sev-2: TQFT attribution error (van Spaendonck-Vonk ≠ Atiyah-Segal)
+  - sev-2: "isomorphism" overclaims analogy (alien calculus ↔ sewing law)
+  - sev-2: "forces kappa" overclaims "compatible with" (resurgence respects, not derives, P4.2)
+  - recommendation: fix sev-2 items, then promote to notebook
+- BB4 resurgence: promoted to notebooks/resurgence-composition-bridge.md (four-agent complete)
+- BB0 representation forcing: mathematician verified §10 — three-agent complete
+  - key mathematician correction: Moyal uniqueness on flat R^d depends on Wigner-Weyl symmetry (not just (C))
+  - forcing hierarchy confirmed: (C) → existence, (C)+unitarity → Morita class, (C)+unitarity+symmetry → Moyal
+  - ready for paper-edit dispatch to rcp-foundations §7.2 or §7.3
+- bibliography audit: Hawkins 2008 (math/0612363) not cited in corpus — gap for tangent-groupoid-bridge
+  - sent: bibliography recommendation to orchestrator
+- read: notebooks/rcp-axiom-structure-analysis.md — cross-checked with Philosophenweg findings
+  - connection: Luiz-Oliveira's Axiom 3(b) = our A1 in the per-axiom decomposition
+- ingested: sources/lackman-2023-groupoid-riemann-integral.md (arXiv:2309.05640, third Lackman paper)
+
+## 2026-02-20 (continued after context compaction)
+- library building: 11 new source files created
+  1. kontsevich-1997-deformation-quantization.md
+  2. connes-kreimer-2000-renormalization-hopf.md
+  3. brouder-1999-runge-kutta-renormalization.md
+  4. costello-2011-renormalization-effective-field-theory.md
+  5. morette-1951-path-integral-definition.md
+  6. feynman-1948-path-integral.md
+  7. bursztyn-waldmann-2001-morita-star-products.md
+  8. goyal-knuth-skilling-2010-complex-amplitudes.md (NEW prior art finding)
+  9. rosten-2012-exact-renormalization-group.md
+  10. albeverio-et-al-2005-solvable-models.md
+  11. landsman-2002-quantization-tangent-groupoid.md
+- NEW prior art: GKS 2010 (arXiv:0907.0909) — composition forces complex amplitudes
+  - complementary to P4.2 (kinematics vs dynamics)
+  - sent paper-edit request to cite alongside Luiz-Oliveira
+- BB4 critic review (§12): RCP-Res-P1.1 CORRECT, 3 sev-2 overclaims
+  - S2.1: chain rule overclaimed as consistency condition
+  - S2.2: "RG-Invariant Borel Sum" title misleading
+  - S2.3: "first JOINT constraint" overclaims novelty
+  - orchestrator fixed S2.1 and S2.2 immediately
+- BB0 critic assessment (§9): d=4 b-calculus CORRECT but STRAIGHTFORWARD, sev-3
+  - B-HD-S2.1: "universal" overclaims definition
+  - B-HD-S2.2: "spatial discretization" overclaims dimensional analysis
+  - mathematician §10 found ERROR in §4: psi ~ r^{-1} NOT in L^2_b(R^4), d=2 special
+  - three-agent complete; do not promote §4
+- bibliography error: [Nauenberg2018GraphicalMethod] has wrong arXiv ID (1810.05264 is by Chin, not Nauenberg)

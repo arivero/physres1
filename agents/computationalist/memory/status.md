@@ -67,7 +67,7 @@
 - d/2 universality is UV structure; instanton T^{+1} is complementary IR
 - Blackboard: blackboards/4.md; Notebook: nonperturbative-contact-pade.md
 
-## Next steps (end of session, updated 2026-02-20 continuation)
+## Next steps (end of session, updated 2026-02-20 context continuation 2)
 - All tasks complete
 - Paper-edit requests sent:
   1. ordering-equivalence (PDM factor-of-2): delta(E_n-E_0) = -n·alpha²/8, not /16
@@ -77,3 +77,13 @@
 - Key lesson: testing B-series coefficients with f=y is DEGENERATE for [•,•] since F([•,•])=f''·(f,f)=0 for linear f; must use non-linear f (e.g., f=eʸ, f=y², f=y³)
 - Notebook: renormalization-semigroup-mechanics.md §10 has corrected Butcher product table
 - Scripts: tmp/butcher_product_correct.py, tmp/butcher_resolve.py
+
+## Self-directed work (latest context continuation)
+- Voros resurgence: double-well delta_E ~ exp(-S_0/hbar) confirmed; Borel singularity at s=S_0 encodes instanton
+  - scripts: tmp/voros_resurgence_verify.py, tmp/voros_slope2.py
+  - notebook: nonperturbative-contact-pade.md (Voros section appended)
+- RCP-Res-P1.1 (BB4 §9 verification requested by physicist):
+  - 2D delta model: zeta*(mu)=1/g_R(mu) runs with log(mu/mu_0); residue=|E_B|=const; lattice rigidity n*zeta*
+  - THREE-AGENT: Physicist+Mathematician+Computationalist; ready for Critic review
+  - scripts: tmp/rcp_res_p11_verify2.py
+  - BB4 §11 appended (at 200 lines limit)
