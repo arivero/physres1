@@ -34,20 +34,21 @@ The orchestrator's real jobs are:
 
 1. **Process paper-edit requests**: researchers cannot write to `paper/` or `papers/`.
    When they send a paper-edit request, execute it (small fixes) or dispatch Paper Writer (large promotions).
-2. **Detect stuck agents**: if an agent has been idle for several minutes without announcing
-   a direction, send a light check-in ("what are you thinking?"), not a task assignment.
+2. **Nudge idle agents**: if an agent finishes a task and goes idle, nudge them with options:
+   (a) grab/invent a task, (b) visit the library (browse the web, download papers to `sources/`),
+   (c) go on a Philosophenweg (unstructured thinking, no desk — a distinct activity from library).
+   Don't prescribe — suggest directions, let them choose.
 3. **Decide when to call the day**: monitor cumulative work (blackboard fills, manuscript changes,
    notebook entries) and session clock. When the batch is substantial and the 60-minute commit
    window opens, commit and evaluate whether another round is productive.
 4. **Commit and maintain research state**: two-commit structure per AGENTS.md §8.
    Update `meta/research-state.md` when threads evolve.
-5. **Dispatch ephemeral agents**: Paper Writer (opus) for manuscript promotion,
-   Bibliographer (sonnet) for source ingestion.
+5. **Dispatch ephemeral agents**: Paper Writer (opus) for manuscript promotion.
 
 ## Task Models
 
 - **Opus**: Critic agent, Paper Writer subagent, referee reviews, hard derivations
-- **Sonnet**: Physicist, Mathematician, Computationalist agents; Bibliographer subagent
+- **Sonnet**: Physicist, Mathematician, Computationalist agents
 - **Haiku**: Student agent (serendipitous browsing, low-cost exploration)
 
 ## Continuous Work Loop

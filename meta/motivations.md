@@ -128,6 +128,12 @@ dispersion (Stieltjes moment problem). **Structural distinction**: tree-level
 Yukawa = simple pole → [0/1] Padé exact; loop-level vacuum polarization =
 branch cut → Padé accumulation, not exact. Threshold IS detected but only
 in the N→∞ limit.
+**EH update (Season 2, 2026-02-20)**: Euler-Heisenberg weak-field expansion has
+super-factorial growth a_k ~ 0.2026·(2k-1)!/π^{2k} (SymPy verified). Non-perturbative
+content is essential singularity e^{-π/z} (Schwinger pair production), accessed via
+resurgent transseries, NOT Borel-Padé. Distinct mechanism from BW anharmonic oscillator
+(factorial growth, Borel-summable). Remark 2.8a in uncuttable satellite documents this
+as a QFT-level resurgence witness.
 
 ### 5. What is the "uncuttable" content of anomalies?
 Anomalies are topological constraints on the refinement limit (uncuttable

@@ -60,13 +60,13 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Overclaiming diagnostic: mathematician's theorem-vs-framework assessment (Task #29) | Active — 4 instances graded; priority fix list for editing pass |
-| 1 | OQ1a: Planck area vs ℏ — physicist analysis (Task #1) | Active (physicist, 2026-02-20) |
-| 2 | Identity limit from stationary phase, no Stone (mathematician, Task #23) | Active — strengthens single-axiom claim; paper-edit candidate RCP-R6.3 |
-| 3 | EH Lagrangian: factorial growth + Borel = concrete Remark 2.8 witness (physicist, self-directed) | Active (physicist, 2026-02-20) |
-| 4 | OQ3 Level 2: HD curvature corrections to contact operators d=4 (Task #14) | Active (physicist, 2026-02-20) |
-| 5 | Critique: relativistic-central-orbits satellite (critic, Task #33) | Active — no errors; standard material, thin refinement framing |
-| 6 | PDM energy shift: ordering-equivalence error check (computationalist, self-directed) | Active — paper-edit request pending |
+| 0 | Stone/Hille-Yosida reversibility signature: THREE-AGENT verified (mathematician proposed, physicist verified, critic endorsed). Remark RCP-R7.2 ready for promotion. Critic note: Morita equivalence is category-level (not algebra-level) invertibility. | Active — paper-edit #16 sent; promote to notebook before overwriting |
+| 1 | Stage 4 cobordism category + TQFT completion (physicist, 2026-02-20); mathematician verified (∞,1)-cat structure, corrected "groupoid"→"category" | Active — paper-edit sent to orchestrator for P9.1a |
+| 2 | Contact groupoid conjecture: 3 bridges (A) ESTABLISHED, (B) OPEN, (C) OPEN well-posed. All two-agent complete. Promoted to notebook. | Active — paper-edits #13 sent; notebook promoted |
+| 3 | CFT-P1.1 Segal sewing as Stage 3 P4.2: c/24 = d/2 analog, forced by Weyl anomaly. Two-agent complete (physicist + mathematician). Promoted to notebook. Paper-edit #17 sent. | Promoted — ready to overwrite |
+| 4 | CFT-Q1 quantum group conjecture: ILL-POSED (dimensional mismatch ℏ/L_P², q-convolution ≠ standard). Critic: downgrade to open question, do not promote. | Assessed — record in anomalies, overwrite |
+| 5 | Critique: tangent-groupoid-bridge satellite + TG-Q3 cross-check of mathematician's van Est analysis (critic) | Active — satellite review + blackboard 2/4 cross-check appended |
+| 6 | PDM gap formula: delta(E_n-E_0) = -n*alpha^2/8 (factor-of-2 error in paper; computationalist 2026-02-20) | Active — paper-edit sent to orchestrator (mathematician verified) |
 
 ## Reading Blackboards
 Blackboards are the active working memory (max 7 slots, ~300 lines each, <50KB total).

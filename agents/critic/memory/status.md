@@ -1,49 +1,59 @@
 # Critic -- Status
 
 ## Current state
-Completed Task #33 (self-directed): Review of relativistic-central-orbits satellite.
-Critique written to blackboards/5.md.
+ALL 14 satellite reviews COMPLETE (13 original + tangent-groupoid-bridge).
+Cornerstone audit COMPLETE (paper/main.md, 1834 lines).
+All paper-edit requests sent. Awaiting orchestrator execution.
 
-Previously completed:
-- Task #32: delta-objects satellite (no errors, clean dictionary paper)
-- Task #31: half-density-qft satellite (no errors, cleanest short paper)
-- Task #30: planck-area satellite (no errors, hypothesis ladder exemplary)
-- Task #27: rooted-tree-bookkeeping satellite (sev-2: 3 errors in order-3 tree formalism, cross-paper bug)
-- Task #24: rg-fundamental satellite (sev-2: "RG is definitional" overclaims, two-layer QFT, Noether crown witness)
-- Task #19: rcp-foundations satellite (sev-2: Noether overclaim, A2 redundancy)
-- Task #18: ordering-equivalence satellite (sev-2: wrong Weyl label, PDM numerics)
-- Task #13: path-integral-normalization satellite (sev-2: independence claim, semiclassical conflation)
-- Task #3: cornerstone Section 9.6 (sev-2: P9.1 collision, taxonomy mismatch; fixes applied)
-- Task #22: cross-paper overclaiming diagnostic (notebook)
+## Reviews completed: 14 satellites + cornerstone Section 9.6 + cornerstone audit
+1. cornerstone Section 9.6 (Task #3): sev-2 P9.1 collision, taxonomy mismatch; fixes applied
+2. path-integral-normalization (Task #13): sev-2 independence claim, semiclassical conflation
+3. ordering-equivalence (Task #18): sev-2 Weyl label error, PDM numerics off
+4. rcp-foundations (Task #19): sev-2 Noether overclaim, A2 redundancy
+5. cross-paper overclaiming diagnostic (Task #22): notebook written
+6. rg-fundamental (Task #24): sev-2 "RG is definitional" overclaims
+7. rooted-tree-bookkeeping (Task #27): sev-2 3 math errors in order-3 trees
+8. planck-area (Task #30): no errors, best paper
+9. half-density-qft (Task #31): no errors, cleanest short paper
+10. delta-objects (Task #32): no errors, clean dictionary
+11. relativistic-central-orbits (Task #33): no errors, standard material
+12. dirac-probes (Task #2): no errors, best structure, 3 sev-2 overclaiming items
+13. uncuttable (Task #2): no errors, survey/perspective piece
+14. fermionic-mediators (Task #2): no errors, survey twin of uncuttable
+15. action-angle (Task #2): no errors, modest original math (Prop 4.2)
+16. tangent-groupoid-bridge (Task #11): no errors, best new satellite, 3 minor sev-2
+17. cornerstone audit (Task #18): P4.2 sound, P9.1 well-calibrated, overclaiming CLEAN, 1 minor sev-2
 
-## Key findings (Task #33)
-- No mathematical errors — all 17 algebra checks pass
-- q_crit = nu + 1 scaling rule is the most original contribution
-- Stability-precession duality (gamma^2 omega^2 = 1) is a nice structural point
-- "Refinement witness" framing is thin — paper is standard SR/GR orbit mechanics
-- Overclaiming pattern absent — honest disclaimer in abstract
+## Key cross-cutting findings
+- Zero sev-1 errors across 93+9=102 algebra checks (14 papers + cornerstone)
+- Systematic overclaiming pattern in interpretive framing (4 papers)
+- Three papers are survey/reviews, not research (uncuttable, fermionic, action-angle)
+- Reference bimodality: research papers 2-9 refs, surveys 38-40 refs
+- Overclaiming is in satellites, NOT in cornerstone (cornerstone is well-calibrated)
 
-## Quality ranking across all reviewed papers
-1. planck-area: BEST — no errors, honest framing, hypothesis ladder exemplary
-2. half-density-qft: no errors, cleanest short paper, intentionally narrow
-3. delta-objects: no errors, clean dictionary, cautious framing
-4. relativistic-central-orbits: no errors, standard material, thin refinement framing
-5. rooted-tree-bookkeeping: GOOD framing but 3 math errors in order-3 material
-6. rg-fundamental: sound math but overclaims in framing
-7. path-integral-normalization: sound math but independence overclaim
-8. ordering-equivalence: Weyl label error + PDM numerics off
-9. rcp-foundations: weakest — redundant axiom + Noether overclaim
+## Pending paper-edit requests (sent, not yet executed by orchestrator)
+1. rg-fundamental: RG-H1.17 (line 703) — "not merely" + scope to singular interactions
+2. rg-fundamental: RG-H1.18 (line 711) — "appear to be logically independent"
+3. rg-fundamental: RG-H1.16 (line 697) — "reinterpreted as" before compatibility datum
+4. path-integral-normalization: line 390 — "composition-determined exponent"
+5. rcp-foundations: line 241 — "reinterprets the RG flow"
+6. ordering-equivalence: line 139 — n/16 -> n/8 (factor-of-2 fix)
+7. ordering-equivalence: line 145 — numeric range updated
+8. cornerstone: D10.1c (~line 1560) — scale witness H6.3 qualifier
 
-## Reviews completed: 10 of 13 satellites + cornerstone Section 9.6
-Reviewed: path-integral-normalization, ordering-equivalence, rcp-foundations, rg-fundamental, rooted-tree-bookkeeping, planck-area, half-density-qft, delta-objects, relativistic-central-orbits
-Plus: cornerstone Section 9.6, cross-paper diagnostic
+## Rooted-tree errors: ALL FIXED (Task #12, mathematician)
+- E1: forest product notation (line 379) — FIXED
+- E2: CK symmetry convention (line 379) — FIXED
+- E3: swapped Butcher coefficients (lines 180-181) — FIXED
 
-## Remaining 4 satellites (unreviewed)
-- dirac-probes-corners-impulses (7pp)
-- uncuttable-controlled-refinement (13pp)
-- fermionic-mediators-contact-limits (13pp)
-- action-angle-indeterminacy-central-potentials (13pp)
+## Philosophenweg literature survey: COMPLETE
+- 4 topics surveyed, 6 new source files created
+- CRITICAL FINDING: Luiz-Oliveira 2026 (arXiv:2602.09984) — parallel discovery to P4.2, MUST CITE
+- Full synthesis: notebooks/philosophenweg-literature-survey.md
+- Paper-edit request pending: cite Luiz-Oliveira in cornerstone P4.2 section
 
 ## Next steps
-- Self-directed: continue reviewing remaining satellites
-- Priority: dirac-probes-corners-impulses (7pp, short) or one of the 13pp papers
+- All review/audit work complete
+- All kanban tasks done
+- Philosophenweg complete
+- Available for: new tasks, cross-checking, paper-edit request drafting, or further library work

@@ -334,4 +334,142 @@ Once the QM example is stable, extend to:
 2. Physicist feedback (physical interpretation of the QM example)
 3. Computationalist implementation (code the RG flow numerically for verification)
 
+---
+
+## 10. Butcher Product §3.5 Correction (Computationalist, 2026-02-20)
+
+**Context:** Task #12 fixed B-series coefficients for midpoint RK method. A residual carry-over error in rooted-tree-bookkeeping §3.5 was found and a paper-edit request sent. This section records the fully corrected computation, verified by 3 independent tests.
+
+**Midpoint method coefficients (after Task #12 fix):**
+- `a(•) = 1, a([•]) = 1/2, a([•,•]) = 1/4, a([[•]]) = 0`
+
+**Correct Butcher self-product (a★a)(τ) for midpoint method:**
+
+Computed via two-test linear system using f=y², y₀=1 and f=eʸ, y₀=0:
+
+| τ | F(τ)(y₀=0, f=eʸ) | F(τ)(y₀=1, f=y²) | (a★a)(τ) |
+|---|---|---|---|
+| • | 1 | 1 | 2 |
+| [•] | 1 | 1 | 2 |
+| [•,•] | 1 | 2 | **1/4** |
+| [[•]] | 2 | 6 | **1** |
+
+Confirmed by third test (f=y³, y₀=1): predicted h³ coeff = (1/4)·6 + 1·15 = 33/2 = exact ✓
+
+**Key formula:** For Φ_h ∘ Φ_h (two midpoint steps), B-series coefficient at h³:
+```
+(a★a)([•,•]) * F([•,•])(y₀) + (a★a)([[•]]) * F([[•]])(y₀) = h³ coefficient of y₂
+```
+
+**WARNING — degenerate test failure:** Using f(y)=y gives F([•,•])(y)=f''·(f,f)=0 (since f''=0 for linear f). The test with f=y does NOT isolate (a★a)([•,•]); it conflates zero with absence. Any verification of (a★a)([•,•]) via f=y is invalid.
+
+**a_{2h} coefficients (from a_{2h}(τ) = a_h(τ)·2^|τ|):**
+- `a_{2h}([•,•]) = (1/4)·8 = 2`
+- `a_{2h}([[•]]) = 0·8 = 0`
+
+**Mismatches at order h³ (Φ_h∘Φ_h vs Φ_{2h}):**
+- `(a★a)([•,•]) - a_{2h}([•,•]) = 1/4 - 2 = -7/4`
+- `(a★a)([[•]]) - a_{2h}([[•]]) = 1 - 0 = 1`
+
+**Paper errors in §3.5 (pre-fix):**
+- Line 197: `(a★a)([•,•]) = 1/2` — WRONG (should be 1/4)
+- Line 202: `a_{2h}([•,•]) = 0·8 = 0` — WRONG carry-over (should be (1/4)·8 = 2)
+- Line 205: mismatch = 1/4 - 2 = -7/4, not 1/2 - 0 = 1/2
+
+**Conclusion:** The conclusion in §3.5 that "composition error is O(h³)" is CORRECT. The mismatch is O(1) at order h³, confirming the midpoint method is order-2 (not order-3).
+
+Scripts: `tmp/butcher_product_correct.py`, `tmp/butcher_resolve.py`
+
 **Next step:** After review, draft Item F satellite paper expanding this outline into a full 6-8 page document with explicit calculations, figures, and cross-references.
+
+---
+
+## RG-P1.2: Structure of β from Semigroup Composition (Physicist + Mathematician, 2026-02-20)
+
+**Promoted from:** blackboards/3.md. Two-agent complete.
+**Paper-edit sent:** RG-P1.2 + RG-R1.2a for rg-fundamental §5.2 (#14).
+
+### Proposition RG-P1.2
+
+Let W: ℝ_g × ℝ_{≥0} → ℝ_g satisfy:
+- (C): W(W(g;τ₁);τ₂) = W(g;τ₁+τ₂)
+- (I): W(g;0) = g
+- (S): W smooth in τ
+
+Then β(g) := ∂_τ W(g;τ)|_{τ=0} exists (C₀-semigroup fundamental theorem, smooth case = flow of smooth vector field). The form of β(g) is NOT determined by (C)+(I)+(S) alone.
+
+### Asymmetry with P4.2
+
+| Feature | P4.2 (propagator K) | RG-P1.2 (semigroup W) |
+|---------|--------------------|-----------------------|
+| Acts on | ℝ^d (d-dim config space) | ℝ_g (1D coupling space) |
+| Fourier forcing | YES — d-dim rotational symmetry forces φ(p) = c|p|² | NO — no rotational symmetry on ℝ_g |
+| Conclusions | κ=ℏ AND e^{iS/ℏ} form AND t^{-d/2} | β(g) exists only |
+| Theorem type | UNIQUENESS (three conclusions forced) | EXISTENCE (one conclusion forced) |
+| Content forced | κ=ℏ is content forced | Form of β is NOT forced |
+
+### Physical interpretation (P9.1)
+
+P4.2 forces STRUCTURE (weight e^{iS/ℏ}) AND forces the VALUE of one physical constant (κ=ℏ).
+RG-P1.2 forces STRUCTURE (β exists = RG flow exists) but NOT the value of any physical constant.
+The form β = mg²/πℏ² (2D delta) vs β = bg³ (λφ⁴) is CONTENT data, not forced by composition.
+
+### Mathematician's verification key points
+- C₀-semigroup theory: (C)+(I)+(S) → β exists as smooth vector field (fundamental theorem for smooth ODEs)
+- Dimensional analysis of W: [g] theory-dependent, no SO(d) action → β(g) ~ g^n for some n, but n NOT forced
+- n=2 (2D delta), n=3 (λφ⁴, QED) — all content choices, not structural predictions
+
+### Relevance to critic's scale-channel gap (satellite-review-complete.md §Post-Review)
+
+Critic identifies: "To elevate H6.3, need proof that RG flow is forced." RG-P1.2 partially answers: composition forces β EXISTS (RG flow is forced to exist). What is not forced: which theory flows and at what rate. This partially bridges the gap: scale channel has an existence theorem (RG-P1.2), not yet a uniqueness theorem (which would require additional input about singular UV behavior).
+
+---
+
+## RCP-R7.2: Stone/Hille-Yosida as Reversibility Signature of RCP Channels (Three-Agent, 2026-02-20)
+
+**Promoted from:** blackboards/0.md. Three-agent verified (mathematician proposed, physicist verified, critic endorsed).
+**Paper-edit sent:** RCP-R7.2 for rcp-foundations §7.2 (#16).
+
+### Core structural result
+
+Three RCP channels split by algebraic reversibility:
+
+| Channel | Structure | Theorem | Physical content |
+|---------|-----------|---------|-----------------|
+| Partition (A1) | Unitary GROUP {U(t)}_{t∈ℝ} | Stone's theorem | Reversible quantum dynamics, CPT |
+| Representation (A3) | Category-level invertible maps | Morita equivalence | Reversible change of description (category-level, NOT algebra-level) |
+| Scale (A4) | SEMIGROUP {R_μ}_{μ>μ₀} only | Hille-Yosida | Irreversible coarse-graining |
+
+**Critic's precision on representation channel:** Morita equivalence is invertible at the level of module CATEGORIES, not individual operator algebras. This is a subtlety: the representation channel is "invertible" in a weaker sense than the partition channel.
+
+### Why this explains the P4.2 vs RG-P1.2 asymmetry
+
+**Partition channel:** Stone theorem → unitary group on d-dim space → full Fourier analysis → φ(p) = c|p|² uniquely forced → P4.2 is a UNIQUENESS theorem.
+
+**Scale channel:** Hille-Yosida theorem → semigroup on 1D coupling space → no d-dim Fourier → β(g) form undetermined → RG-P1.2 is an EXISTENCE theorem only.
+
+The Stone/Hille-Yosida distinction is the DEEPEST algebraic reason for the asymmetry between the two channels.
+
+### Physical interpretation
+
+Stone (partition): U(-t) = U(t)† = time reversal → probability conservation → no-cloning theorem → quantum information preserved.
+
+Hille-Yosida (scale): R_{μ₀} ≠ R_μ^{-1} in general (Landau poles, IR fixed points, information loss in UV integration) → irreversible coarse-graining → Wilsonian RG is thermodynamically one-way.
+
+### Connection to critic's post-review assessment
+
+Critic (satellite-review-complete.md §Post-Review): partition channel STRONG (theorem P4.2), representation MODERATE, scale WEAK (H6.3 heuristic only).
+
+RCP-R7.2 provides the ALGEBRAIC REASON for this hierarchy:
+- Strong = Stone (group): strongest forcing
+- Moderate = Morita (category-level invertible): intermediate forcing
+- Weak = Hille-Yosida (semigroup only): weakest forcing, only existence
+
+This elevates the heuristic observation ("scale channel is weaker") to a theorem-level explanation.
+
+### References
+- Stone's theorem (strongly continuous unitary groups)
+- Hille-Yosida theorem (C₀-semigroup generators)
+- Morita equivalence (Morita 1958; Rieffel 1974 for C*-algebras)
+- RG-P1.2 (this notebook, previous entry)
+- blackboards/0.md (source; three-agent verified)

@@ -77,3 +77,150 @@
 - finding: stability-precession duality gamma^2 omega^2 = 1 at q=2 (Remark 5.2c) is a nice structural point
 - finding: "refinement witness" framing is thin — paper reads identically without the word "refinement"
 - finding: overclaiming pattern absent — honest "not to replace standard treatments" disclaimer
+- read: papers/dirac-probes-corners-impulses/main.md (full, 257 lines)
+- wrote: blackboards/5.md (critique of dirac-probes satellite, overwrote relativistic-central-orbits review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #2)
+- finding: no errors — all 17 algebra checks pass (mollifier convergence, action excess, energy jump, Noether charge)
+- finding: best-structured satellite — clean theorem-proof-example-remark flow
+- finding: safe/unsafe delta dichotomy (Section 5) is the strongest conceptual contribution
+- finding: 3 sev-2 items: Remark 2.3 overstretched parallel, Section 4.5 attributes too much to Thm 3.2, Remark 5.2b "half-density origin" overclaims
+- read: papers/uncuttable-controlled-refinement/main.md (full, 241 lines)
+- wrote: blackboards/5.md (critique of uncuttable satellite, overwrote dirac-probes review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #2)
+- finding: no errors — all 12 algebra checks pass (Euler-Maclaurin, Richardson, alpha-ordering, Trotter, etc.)
+- finding: GENRE MISMATCH — paper is a survey/perspective essay, not research. No original mathematical content.
+- finding: "uncuttable" definition applies too broadly (to any convergent sequence)
+- finding: 28 remarks in 200 lines of content (1 per 7 lines) — extreme remark density
+- finding: 38 references — more than all other satellites combined
+- read: papers/fermionic-mediators-contact-limits/main.md (full, 245 lines)
+- wrote: blackboards/5.md (critique of fermionic-mediators satellite, overwrote uncuttable review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #2)
+- finding: no errors — all 14 checks pass (vacuum polarization, Schwinger, Casimir, Efimov, etc.)
+- finding: same genre mismatch as uncuttable — survey, not research. Only original content is ~5 lines on Grassmann-source obstruction
+- finding: fermionic-mediators and uncuttable are twins (both surveys, 38-40 refs, high remark density)
+- read: papers/action-angle-indeterminacy-central-potentials/main.md (full, 241 lines)
+- wrote: blackboards/5.md (critique of action-angle satellite, overwrote fermionic review, final ranking)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #2)
+- finding: no errors — all 10 checks pass (circular uncertainty, Dirichlet kernel, von Mises saturation, etc.)
+- finding: better than uncuttable/fermionic — has a specific theorem (Prop 4.2) and verification (Ex 4.3)
+- finding: missing prior-art citation for circular uncertainty relation (Judge 1964, Carruthers-Nieto 1968)
+- wrote: notebooks/satellite-review-complete.md (complete review record with final ranking)
+- completed: Task #2 — all 13 satellite reviews done
+- read: papers/tangent-groupoid-bridge/main.md (full, 313 lines)
+- wrote: blackboards/5.md (critique of tangent-groupoid-bridge satellite, Task #11 self-directed)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #11)
+- finding: no errors — all 9 checks pass (groupoid composition, Cauchy equation, dimensional analysis alpha=2, Gaussian normalization)
+- finding: best new satellite of the session — Prop TG-P1.1 is genuine original result
+- finding: 3 minor sev-2: "not a consequence" overstated, "implementation of RCP" overclaims, "without heat equation" misleading
+- finding: would rank #4-5 overall (between delta-objects and relativistic-central-orbits)
+- completed: Task #11
+
+## 2026-02-20 (Session 2 continuation)
+- read: all 7 blackboards (0-6) for orientation
+- read: meta/research-state.md, notebooks/satellite-review-complete.md
+- read: papers/rg-fundamental/main.md (full, 724 lines) — auditing 3 outstanding sev-2 items
+- Task #13 (self-directed): Audited rg-fundamental sev-2 fixes
+  - RG-H1.17 (line 703): "not a calculational technique" → "not merely"; add "in theories with singular interactions"
+  - RG-H1.18 (line 711): "logically independent" → "appear to be logically independent at the level of this note's examples"
+  - RG-H1.16 (line 697): Noether "crown witness" → "reinterpreted as compatibility datum"
+  - sent: 3 paper-edit requests to orchestrator
+- completed: Task #13
+- read: papers/path-integral-normalization/main.md (lines 385-430) — checking independence overclaim
+  - finding: line 390 "derived consequence" overclaims (composition forces exponent, not full RG)
+  - sent: 1 paper-edit request to orchestrator
+- read: papers/rcp-foundations/main.md (lines 230-245) — checking residual overclaiming
+  - finding: line 241 "defining condition" overclaims (RCP reinterprets, not defines RG)
+  - sent: 1 paper-edit request to orchestrator
+- Task #16 (self-directed): Cross-checked mathematician's TG-Q3 van Est analysis (blackboard 2)
+  - finding: VE at identity = semigroup generator: CORRECT for pair groupoid
+  - finding: β(g) as VE: analogy not literal (RG semigroup is not a groupoid)
+  - finding: correspondence table row 3 imprecise (★ is not a one-parameter semigroup)
+  - finding: proposed Remark TG-R3.1 well-calibrated ("structural rather than literal")
+  - finding: blackboard 2/4 tension resolved (algebraic analogy holds, dynamical content differs)
+  - wrote: cross-check to blackboards/5.md (appended to tangent-groupoid review)
+  - updated: blackboards/README.md slot 5 index
+  - sent: cross-check results to orchestrator
+- completed: Task #16
+- read: blackboards/6.md — computationalist found PDM factor-of-2 error
+  - verified: independent algebra confirms n/8 (paper has n/16)
+  - verified: computationalist's SymPy + numerical results correct
+  - sent: confirmation + paper-edit request to orchestrator (ordering-equivalence lines 139, 145)
+- Task #18 (self-directed): Cornerstone paper audit (paper/main.md, 1834 lines)
+  - read: Sections 1-2 (intro, taxonomy), 6.1 (P4.2 + hypothesis reduction), 9.1-9.6 (self-assessment), 10.3 (RCP)
+  - finding: P4.2 SOUND — strongest result in project, clean proof, careful hypothesis reduction
+  - finding: P9.1 WELL-CALIBRATED — forced-completion chain backed by specific derivations
+  - finding: Section 9.3-9.4 EXEMPLARY — honest residual vulnerabilities with closure targets
+  - finding: Overclaiming diagnostic CLEAN — pattern is in satellites, not cornerstone
+  - finding: D10.1c (line 1560) scale crown witness (H6.3) labeled "Heuristic" but called "constructive" — minor sev-2
+  - wrote: blackboards/4.md (overwrote promoted TG-Q3 slot)
+  - updated: blackboards/README.md slot 4 index
+  - sent: audit results + 1 paper-edit request to orchestrator
+- completed: Task #18
+
+## 2026-02-20 (Session 2 context-continuation)
+- read: agents/critic/memory/status.md, blackboards/README.md — orientation after context compaction
+- verified: rooted-tree-bookkeeping fixes (Task #12) confirmed applied at lines 180, 379-381
+- verified: blackboard 0 lines 139-172 (mathematician's error analysis) consistent with current paper state
+- sent: comprehensive rooted-tree error report to orchestrator (all 3 errors already fixed by mathematician)
+- sent: tangent-groupoid-bridge review status (already done, Task #11, blackboard 5)
+- sent: full table of 8 pending paper-edit requests (all sev-2, none yet applied)
+- verified: rg-fundamental lines 695-711 — all 3 sev-2 fixes still pending
+- verified: path-integral-normalization line 390 — "derived consequence" fix still pending
+- verified: rcp-foundations line 241 — "defining condition" fix still pending
+- read: blackboards 0, 2, 3 (quality sweep of active blackboard content)
+- read: all blackboards verified — no new issues found
+- verified: tangent-groupoid-bridge cross-reference in cornerstone (line 910) — confirmed present
+- self-directed: cross-paper reference key consistency audit
+  - finding: tangent-groupoid-bridge uses [PathIntNorm] while all other papers use [PathIntegralNormalization] (sev-3 style)
+  - finding: all other cross-reference keys consistent across corpus
+  - sent: audit results to orchestrator
+- library: ingested Lackman 2024 (arXiv:2402.05866) → sources/lackman-2024-groupoid-functional-integrals.md
+  - Sequel to 2023 paper; extends formal equivalence to functional integrals
+  - Already cited in tangent-groupoid-bridge as [Lackman2024]; source file was missing
+- library: ingested Bruned-Katsetsiadis 2023 (arXiv:2208.00514) → sources/bruned-katsetsiadis-2023-post-lie-regularity.md
+  - Post-Lie algebra generates deformed Butcher-CK Hopf algebra
+  - Elevates Butcher/RG dictionary from analogy to algebraic theorem
+  - Not currently cited; potential strengthening for rooted-tree-bookkeeping
+- sent: library findings to orchestrator
+- annotated: blackboards/3.md §9 (instanton sector + P4.2 scope)
+  - overall: CORRECT and well-calibrated (physicist+mathematician two-agent complete)
+  - sev-3 caveat: sector-by-sector composition requires dilute gas; full K satisfies (C) by semigroup definition
+  - three-agent verification now complete on this board
+  - sent: annotation results to orchestrator
+- self-directed: bibliography audit of rooted-tree-bookkeeping satellite
+  - finding: Brouder 1999 (hep-th/9904014) not cited — the originator of the Butcher/RG connection
+  - Brouder IS in main bibliography and cited in rg-fundamental, but absent from rooted-tree satellite
+  - sev-2 attribution gap; proposed fix sent to orchestrator
+- appended: notebooks/satellite-review-complete.md — post-review structural assessment
+  - key finding: three RCP channels have asymmetric evidential support (partition STRONG, representation MODERATE, scale WEAK)
+  - cornerstone already acknowledges this (D10.1c); overclaiming arises when satellites don't
+  - identifies what would close scale-channel gap: general forcing proof for singular interactions
+  - sent: assessment summary to orchestrator
+- Philosophenweg: literature survey (4 topics, orchestrator-directed)
+  - Topic 1: Prior art check "composition forces hbar"
+    - FOUND: Luiz & de Oliveira 2026 (arXiv:2602.09984) — parallel discovery, substantial overlap with P4.2
+    - Assessment: MUST CITE. Independent confirmation, not scoop. They derive complex amplitudes more deeply.
+    - ingested: sources/luiz-oliveira-2026-information-theory-action.md
+    - Also checked: Goyal-Knuth-Skilling 2009 (ancestor, not direct prior art)
+  - Topic 2: Half-density literature (Blattner half-form)
+    - van Vleck determinant = half-density on pair groupoid (standard in geometric quantization)
+    - t^{-d/2} = half-density normalization (Woodhouse, Bates-Weinstein)
+    - P4.2 extends this from semiclassical to exact quantum level
+    - ingested: sources/blattner-half-form-literature.md
+  - Topic 3: Renormalization philosophy (Butterfield, Wallace)
+    - Butterfield: universality = multiple realizability (parallels P4.2 structure/content)
+    - Wallace: naturalness orthogonal to P4.2, interesting context
+    - ingested: sources/butterfield-bouatta-2014-renormalization-philosophers.md
+    - ingested: sources/wallace-2019-naturalness-emergence.md
+  - Topic 4: Hawkins 2008 groupoid quantization
+    - Groupoid convolution C*-algebra = strict deformation quantization
+    - Pair groupoid, tangent groupoid as examples
+    - Schreiber: "is path integral the Hom-functor?" = our TG-bridge question
+    - ingested: sources/hawkins-2008-groupoid-quantization.md
+  - wrote: notebooks/philosophenweg-literature-survey.md (full synthesis)
+  - sent: complete Philosophenweg report to orchestrator

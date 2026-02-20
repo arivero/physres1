@@ -475,4 +475,68 @@ The three hypotheses (C)+(I)+(D) are robust across:
 - S292 (archived, superseded in blackboard 6): iε uniqueness (composition theorem)
 - S288 (blackboard 1, notebook p42-hypothesis-reduction.md): Exponential weight uniqueness
 - S295 (blackboard 2, notebook p42-hypothesis-reduction.md): Levy-Khintchine dimensional obstruction
+
+---
+
+## Part 3: Half-Density Curvature Corrections to Contact Operators (OQ3 Level 2)
+
+**Date:** 2026-02-20
+**Source:** Blackboard 4 (physicist, Task #14) + Blackboard 6 (computationalist verification)
+**Status:** Verified (two-agent: physicist + computationalist)
+
+### Setup
+
+Contact expansion (d=3 spatial, fermionic-mediators satellite §4.1):
+```
+A(q) = C₀ + C₂q² + C₄q⁴ + ...
+```
+Half-density kinetic operator on curved background (ordering-equivalence OE-P1.3, Layer 3):
+```
+H_HD = p²/2m + V(q) + (ℏ²/6m)R(q) + O(ℏ⁴)
+```
+Curvature potential: V_curv = (ℏ²/6m)R(q) — unique coefficient for HD prescription.
+
+### Result (Computationalist-Verified)
+
+**Claim:** Curvature-induced shift in C₂ coefficient from smeared contact (Gaussian, range r₀):
+```
+ΔC₂ = C₂ · R · r₀² / 12
+```
+
+**Proof mechanism:**
+- Normal-coordinate Laplacian: ∇²_g - ∇²_flat = -(R/6)|r|² ∇² + O(R²) [to O(R)]
+- Volume element: √g(r) = 1 - (R/6)|r|² + O(R²)
+- Fourier transform of volume correction: FT[r² exp(-r²/r₀²)] contributes at q² order
+- Coefficient: (1/6) from √g expansion × (1/2) from Gaussian FT Laplacian = 1/12
+- Python (SymPy + numpy): verified, see blackboard 6 Part B for code
+
+**C₀:** Unaffected at leading curvature order (|g|⁻¹/² at coincidence = 1 in normal coords).
+
+**Pure-delta Laplacian correction (separate):**
+```
+ΔC₂^{pure} = C₂ · (-5R/6)
+```
+This enters renormalization of C₂ (running); the r₀² formula is the EFT range correction.
+
+### Special Coincidence at D=4
+
+In D=4 spacetime (d_s=3 spatial):
+- Half-density curvature potential: V_HD = (ℏ²/6m)R
+- Conformal coupling in D=4: V_conf = ξ_conf · R · ℏ²/m with ξ_conf = (D-2)/(4(D-1)) = 1/6
+
+**ξ_HD = ξ_conf = 1/6 in D=4 only.**
+
+Consequence: In D=4, the HD contact kernel in curved space has no residual curvature contribution relative to the conformally coupled EFT — the half-density prescription automatically selects the conformal value. In D≠4, there is a residual term (ξ_conf - 1/6)R·δ^(3)(r).
+
+### OQ3 Level 2 Verdict
+
+- **Level 2 question**: Does HD measure modify C₂ₙ? Yes: ΔC₂ = C₂·R·r₀²/12 (range correction).
+- **New constraints**: No qualitatively new EFT constraints beyond standard EFT with ξ=1/6.
+- **Positivity bound** (R<0, speculative Level 3): C₀ ≥ ℏ²|R|/(6mE₀) — needs OS analysis.
+- **D=4 structural insight**: ξ_HD = ξ_conf = 1/6 links the OQ1a (half-density area scale) and OQ3 (contact expansion) threads.
+
+### References
+- OE-P1.3 (ordering-equivalence satellite): Layer 3 curvature potential in curved space
+- HD-D1.3b (half-density-qft satellite): conformal coupling at D=4
+- Blackboard 6, Part B (computationalist ΔC₂ verification, 2026-02-20)
 - Paper P4.2 (paper/main.md lines 610-612): Original four hypotheses

@@ -18,8 +18,9 @@ Agents communicate via messages, claim tasks from a shared kanban, and write to 
 working surfaces (blackboards, notebooks). Each agent has a private memory folder that
 no other agent can read.
 
-Two **ephemeral agents** (Paper Writer, Bibliographer) are dispatched by the orchestrator
-on demand for manuscript editing and source ingestion.
+One **ephemeral agent** (Paper Writer) is dispatched by the orchestrator on demand for
+manuscript editing. Library work (searching, downloading, ingesting references) is now
+done by any researcher agent directly — see `agents/shared-rules.md` §11.
 
 ---
 
@@ -34,7 +35,7 @@ requests, and dispatches ephemeral agents.
 - `agents/orchestrator/memory/*` (private working notes, log, status)
 - `meta/research-state.md`, `meta/motivations.md`, `meta/handoff.md`
 - `paper/`, `papers/*/` (via Paper Writer dispatch)
-- `paper/bibliography.md` (via Bibliographer dispatch)
+- `paper/bibliography.md`
 
 **Does NOT write:** blackboards, notebooks directly. Those are the researchers' surfaces.
 
@@ -42,7 +43,7 @@ requests, and dispatches ephemeral agents.
 - Team creation and shutdown
 - Task creation, assignment, and monitoring via the shared kanban
 - Processing paper-edit requests from researcher agents
-- Dispatching ephemeral Paper Writer and Bibliographer subagents
+- Dispatching ephemeral Paper Writer subagent
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
 - Commit policy enforcement
 - Quality gates (promotion rules, diffstat tracking)
@@ -88,13 +89,10 @@ as their canonical rule set. See individual agent definition files for persona-s
 - **Dispatched by**: orchestrator only (in response to researcher edit requests)
 - **Rules**: paper-quality boundary (hard), net >= 10 lines per promotion, diffstat required
 
-### B. Bibliographer
-- **Purpose**: Search, ingest, verify references
-- **Writes**: `paper/bibliography.md`, `sources/*`
-- **Reads**: manuscripts, bibliography, sources
-- **Model**: sonnet
-- **Dispatched by**: orchestrator only
-- **Rules**: OA-first policy, never-cite-transcripts rule, preprint caution
+### B. Bibliographer (LEGACY — replaced by shared library access)
+- All researcher agents can now search, download, and ingest references directly.
+- See `agents/shared-rules.md` §11 (The Library) for the current protocol.
+- `paper/bibliography.md` updates still go through the orchestrator.
 
 ---
 
@@ -145,7 +143,7 @@ Task IDs are planning metadata only — never in manuscripts.
 | Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/computationalist/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Student | `blackboards/*.md`, `notebooks/*.md` (append), `agents/student/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Paper Writer (eph) | `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md` | blackboards, notebooks, meta |
-| Bibliographer (eph) | `paper/bibliography.md`, `sources/*` | manuscripts, blackboards, notebooks |
+| Any researcher | `sources/*` (library — download and ingest references) | — |
 
 **Rule**: if a task requires touching files outside an agent's permissions, the orchestrator dispatches the appropriate agent instead.
 
@@ -263,7 +261,7 @@ must verify the content was committed before executing the deletion.
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
 2. Agents claim and work tasks (kanban cycle).
-3. Orchestrator processes paper-edit requests, dispatches Paper Writer/Bibliographer.
+3. Orchestrator processes paper-edit requests, dispatches Paper Writer. Agents do library work directly.
 4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
 5. Orchestrator updates `meta/research-state.md` when threads evolve.
 
@@ -292,9 +290,10 @@ When given a time deadline, continue autonomously without pausing. Only stop whe
 ### When No Tasks Are Available
 **PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.
 
-1. Scan manuscripts for research opportunities (deep questions, derivation witnesses, promotion candidates).
-2. Scan bibliography for source-driven work (PENDING sources, unintegrated sources).
-3. If everything is stable: run quality sweeps via Critic, check page counts.
+1. Browse the library (Philosophenweg): search the web for papers, download references, build `sources/`.
+2. Scan manuscripts for research opportunities (deep questions, derivation witnesses, promotion candidates).
+3. Scan bibliography for source-driven work (PENDING sources, unintegrated sources).
+4. If everything is stable: run quality sweeps via Critic, check page counts.
 
 ---
 

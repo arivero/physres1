@@ -59,10 +59,19 @@ Deliverables achieved:
 4. ✓ Clear analogy vs literal distinction (Section 5.3): Butcher group is reversible (invertible methods), RG semigroup is one-way (information loss under coarse-graining).
 5. ✓ Order-3 tree structure (Section 3.5): Butcher product vs RG (sunset/nested parallel diagrams), explicit matching of combinatorics.
 
-## E. Tangent-Groupoid Bridge Paper (Use Carefully)
-`conv_patched.md` contains extensive tangent-groupoid + quantization discussion.
-If pursued, keep the framing compatible with the project's preference to avoid
-"strict deformation" as the headline concept.
+## E. Tangent-Groupoid Bridge Paper — **COMPLETED (Season 2)**
+Draft: `papers/tangent-groupoid-bridge/main.md` (~312 lines, ~10pp compiled, 8 refs).
+
+Deliverables achieved:
+1. ✓ Pair groupoid = sewing law identification (Section 2).
+2. ✓ Proposition TG-P1.1: d/2 from Fourier multiplicativity + dimensional homogeneity (no heat equation/Feynman-Kac).
+3. ✓ Connes tangent groupoid as ℏ-deformation (Section 4).
+4. ✓ Lackman 2023-2024 non-perturbative Kontsevich bridge (Section 5).
+5. ✓ Wick rotation as A3 groupoid-algebraically (Section 6).
+6. ✓ RCP channels in groupoid picture (Section 7, two of three channels).
+Critic-reviewed: zero errors, 3 sev-2 fixes applied.
+
+Original framing note (retained):
 
 Suggested deliverables:
 1. A clean explanation of "kernels/pair groupoid -> tangent/cotangent objects" as a

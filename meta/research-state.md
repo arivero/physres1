@@ -165,14 +165,71 @@ Key results from the first full agent-team session:
 - OQ1a Planck area vs ℏ notebook (Student)
 - EH Lagrangian factorial growth as Remark 2.8 witness (Physicist; blackboard 3)
 
+### Pending for next session (Season 1 items — all resolved in Season 2)
+- ~~Tangent-groupoid satellite paper creation~~ → DONE (papers/tangent-groupoid-bridge/main.md, 312 lines)
+- ~~Wick rotation as A3 representation-channel remark~~ → DONE (Remark RCP-R7.1 in rcp-foundations §7)
+- ~~Systematic overclaiming language pass~~ → DONE (4 fixes: rcp-foundations, cornerstone ×2, ordering-equivalence ×2)
+- ~~rcp-foundations sev-2 fixes (A2 redundancy, Noether witness)~~ → DONE (A2 marked derivable; Noether logical dependency corrected)
+- ~~EH Lagrangian Computationalist verification~~ → DONE (super-factorial (2k-1)!/π^{2k}, not factorial)
+- ~~Critic satellite reviews~~ → DONE (13/13 complete, zero sev-1 errors)
+
+## Season 2 Findings (2026-02-20, second session)
+
+### Resolved from Season 1 backlog
+- **All 13 satellite reviews completed**: zero sev-1 errors across 93 algebra checks (Critic)
+- **Overclaiming language pass**: 4 fixes applied (Noether/RCP dependency, contributions list single-axiom, H0.2 correspondence 3-of-4, Lorenz gauge scope)
+- **Wick rotation as A3**: Proved (Mathematician; Remark RCP-R7.1 in rcp-foundations). Wick η: t→e^{iη}t preserves composition exactly, transforms c₀→e^{-iηd/2}c₀ and ℏ→e^{iη}ℏ. Not A4 (commutes with RG flow). QFT scope: A3-compatible iff Osterwalder-Schrader holds.
+- **A2 axiom redundancy**: Fixed (Mathematician). A2 now marked "derivable" in rcp-foundations §2.1, consistent with single-axiom result (RCP-P6.1).
+- **EH Lagrangian growth**: Verified super-factorial a_k ~ 0.2026·(2k-1)!/π^{2k} (Computationalist). Resurgent transseries, not Borel-Padé. Remark 2.8a promoted to uncuttable satellite.
+- **BW anharmonic oscillator**: Verified factorial Γ(n+1/2)·(-3)^n growth, Borel singularity at t=-1/3 (Computationalist). Confirms Remark 2.8 as written.
+
+### New material
+- **NEW satellite: tangent-groupoid-bridge** (312 lines, ~10pp). Proposition TG-P1.1: d/2 from Fourier multiplicativity + dimensional homogeneity alone. Connes tangent groupoid, Lackman 2023-24 bridge, Wick rotation as A3 groupoid-algebraically. 3 sev-2 fixes applied (Critic reviewed, no errors).
+- **Remark RCP-R7.1** (rcp-foundations §7): Wick rotation as representation channel
+- **Remark 2.8a** (uncuttable): EH Lagrangian as resurgent-transseries witness
+- **Heuristic PA-H4.1** (planck-area §7): Half-density resolves Misner measure in minisuperspace; infinite-dim case reduced but not eliminated
+- **Rooted-tree coproduct fixes** (3 sev-1 errors corrected: swapped Butcher coefficients, forest product notation, CK symmetry)
+- **Tangent-groupoid cross-ref** added to rcp-foundations §7.5
+- **Author updated**: all 15 papers to "A. Rivero and A.I.Scaffold"
+
+### Corrections applied (Season 2)
+- Cornerstone: contributions list (single-axiom framing), P9.1 H0.2 correspondence (3-of-4 explicit), +[TangentGroupoidBridge] cross-ref (line 910), D10.1c crown-witness precision (scale witness = heuristic, not constructive)
+- RCP Foundations: Noether/RCP dependency, +RCP-R7.1 (Wick), A2 marked derivable, +tangent-groupoid cross-ref, 2 overclaiming fixes (lines 239, 241)
+- Ordering Equivalence: Lorenz gauge analogy scoped to Layers 1-2 (lines 23, 345), PDM gap formula factor-of-2 fix (n/16→n/8, numerically verified)
+- Dirac Probes: 3 sev-2 precision fixes (half-density claim, composition direction, heat-kernel root)
+- Uncuttable: Virasoro d=2 fix, +Remark 2.8a (EH resurgence witness)
+- Rooted-Tree Bookkeeping: 3 sev-1 math fixes (§3.5 coefficients, §6.2 coproduct)
+- Planck Area: +PA-H4.1 (Misner measure heuristic)
+- Path-Integral Normalization: independence overclaim fix (line 142), abstract precision (translation homogeneity added)
+- Tangent-Groupoid Bridge: 3 sev-2 fixes (Schrödinger derivation, RCP scope, heat equation derivation)
+- All 15 papers: author updated to "A. Rivero and A.I.Scaffold"
+
+### Negative / diagnostic results (Season 2)
+- **Genre mismatch**: uncuttable + fermionic-mediators are surveys/perspectives, not research notes. Action-angle is modest. Decision pending: reclassify or add original content.
+- **Misner measure infinite-dim obstruction**: Half-density does NOT resolve the full Misner problem (Λ^∞T*S ill-defined, regularization reintroduces supermetric ambiguity). Only minisuperspace resolved.
+
+### Student serendipity leads (recorded, not yet formalized)
+- OQ1a four-layer validation: WDW measure, LQG area spectrum, conformal anomaly d=4, resurgence bridge
+- Misner measure problem connection (speculative for infinite-dim, resolved for minisuperspace)
+- Voros 1983 / DDP 1993 exact WKB literature leads (blackboard 1, §9)
+- Zero-mode dimensional counting → d/2 (standard instanton physics, connects to composition)
+
+### New research results (Season 2, continued)
+- **Instanton TG-P1.1 scope**: Mathematician proved that hypothesis (T) (translation invariance) fails for instanton saddles, explaining T^{+1} scaling vs T^{-d/2}. Computationalist numerically verified (blackboard 4, §7-8). Two-agent rule satisfied. Promotion candidate for TG-bridge or PN satellite.
+- **Cornerstone audit (Critic)**: P4.2 sound, P9.1 well-calibrated, Section 9.3-9.4 exemplary. One sev-2 (D10.1c crown witness = heuristic). Overclaiming was introduced during satellite extraction, NOT in cornerstone.
+- **Library building**: 13 new sources ingested (Lackman 2023, Crainic 2000, Dorigoni 2014/2019, DDP 1993, Dunne-Ünsal 2012, Iwaki 2024, Ali-Englis 2005, Gualtieri-Li 2012, Carosso 2018, Moshayedi 2020, Mariño 2025, Dunne 2024).
+- **Cobordism groupoid (Physicist)**: P9.1a → ∞-groupoid reading. Stage 4 = passage from 1-groupoid (pair) to (∞,1)-groupoid (cobordism). TQFT = completion in topological case; 3+1 gravity branches. (blackboard 1, §1-6)
+- **Infrastructure**: Bibliographer agent deprecated → all agents now do library work directly. shared-rules.md updated with §7b (The Library) separate from §7 (Philosophenweg). AGENTS.md updated accordingly.
+
 ### Pending for next session
-- Tangent-groupoid satellite paper creation (Item E; notebook ready, Paper Writer not dispatched)
-- Wick rotation as A3 representation-channel remark (for RCP foundations or cornerstone)
-- Systematic overclaiming language pass (all satellites)
-- rg-fundamental sev-2 fixes (S2.1 "RG is definitional", S2.2 two-layer heuristic, S2.3 Noether)
-- rcp-foundations sev-2 fixes (A2 redundancy, Noether witness)
-- EH Lagrangian Computationalist verification (in progress)
-- Critic satellite reviews: 5 of 13 completed (cornerstone §9.6, rcp-foundations, pi-normalization, ordering-equivalence, rg-fundamental)
+- rg-fundamental sev-2 fixes still open (S2.1 "RG is definitional", S2.2 two-layer heuristic, S2.3 Noether)
+- Genre decision: uncuttable + fermionic-mediators (reclassify as perspective or add original content)
+- ~~Tangent-groupoid satellite needs cornerstone cross-reference~~ → DONE
+- ~~path-integral-normalization independence overclaim~~ → DONE (2 fixes applied)
+- ~~Instanton d/2 toy computation~~ → DONE (blackboard 4, §4-8, verified)
+- Instanton TG-P1.1 scope remark promotion (blackboard 4 → satellite, two-agent verified)
+- Cobordism groupoid P9.1a remark promotion (blackboard 1 → cornerstone, needs mathematician verification)
+- Exact WKB / resurgence thread (Student leads, library sources now ingested — needs formalization)
 
 ## Publication Readiness (2026-02-20, latest refresh)
 Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PLB format).
@@ -196,9 +253,12 @@ Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PL
 13. Uncuttable Controlled Refinement (13pp, 240 lines, 40 refs)
 14. Planck Area (14pp, 736 lines, 9 refs) — C304+C307: parity lemma + heat-kernel witness
 
-**Cornerstone:** paper/main.md (1834 lines, 32pp). Target: Physics Reports.
-**Current satellite count: 13** (3 PLB-frozen + 1 Dirac + 9 PRD-length). Cross-referencing from cornerstone: all 13 completed (C328).
-**Total corpus: ~187k tokens (Claude tokenizer).**
+15. Tangent-Groupoid Bridge (~312 lines) — NEW Season 2 (Proposition TG-P1.1, Connes tangent groupoid, Lackman bridge)
+
+**Cornerstone:** paper/main.md (~1836 lines, 32pp). Target: Physics Reports.
+**Current satellite count: 14** (3 PLB-frozen + 1 Dirac + 10 PRD-length). Cross-referencing: 13/14 from cornerstone (tangent-groupoid pending).
+**Total corpus: ~195k tokens (estimated with new satellite + edits).**
+**All papers authored: A. Rivero and A.I.Scaffold.**
 
 Recent cornerstone additions (2026-02-14):
 - C330: P4.2h (single master axiom — composition alone suffices) in Section 10

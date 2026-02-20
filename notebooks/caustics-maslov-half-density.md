@@ -59,3 +59,15 @@ the H^1(L_Grassmannian, Z) class of the metalinear bundle.
   Example 3.5b ("sqrt(D) -> infinity means breakdown") and shows it's a feature
   of the half-density formalism, not a bug.
 - No new claims, just connecting existing dots.
+
+## Cross-Reference: Philosophenweg Literature Survey (2026-02-20, Critic)
+
+The Blattner half-form correction in geometric quantization (Blattner 1975, Woodhouse 1992)
+provides independent mathematical justification for this notebook's central observation.
+Key connection: the BKS (Blattner-Kostant-Sternberg) pairing between different polarizations
+uses half-forms to define an integral kernel — structurally analogous to the propagator.
+The metaplectic correction (half-form bundle delta_P) is exactly the metalinear structure
+described above in the Maslov context. P4.2's t^{-d/2} extends the half-density interpretation
+from the semiclassical limit (where it is the van Vleck determinant) to the exact quantum level
+(where it is forced by composition alone). See sources/blattner-half-form-literature.md and
+notebooks/philosophenweg-literature-survey.md §2 for the full analysis.
