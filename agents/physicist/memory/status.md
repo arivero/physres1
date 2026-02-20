@@ -1,6 +1,6 @@
 # Physicist — Status
 
-## Current state (2026-02-20, Session 5, COMPLETE)
+## Current state (2026-02-20, Session 5+, COMPLETE)
 
 ### Completed this session
 1. **Task #2 (OQ1)**: Half-density D=4 dimension selection — THREE-AGENT complete
@@ -63,4 +63,14 @@
 1. HD-D1.3c: is there room in cornerstone §9 for conformal unification remark?
 2. μ_APS physical selection: any gravitational/holographic principle beyond (C)?
 3. OQ4/OQ5: soft-limit universality (Task #9 complete — results pending review)
-4. Critic Task #15: review of BB5 CFT c-theorem analysis — pending
+4. Task #17 (A4/Borel): COMPLETE — Q2c biconditional confirmed; SUSY example added; resurgence notebook updated
+5. Task #18 (BB6 Padé): COMPLETE — THREE-AGENT; physicist physical verification; nonperturbative notebook updated
+6. Task #19 (Stage 1 forcing): COMPLETE — CL-1 theorem; BB0 overwritten; proposals/physicist-stage1-locality.md
+7. Library: witten1989-chern-simons-jones.md + zamolodchikov1986-ctheorem.md added to sources/
+8. anomalies.md: CFT sewing entry partially resolved (Stage 2 ⊂ Stage 3 in the forcing chain)
+
+### Outstanding (awaiting second agent)
+- BB0 (Stage 1 forcing, CL-1): mathematician should verify cross-term argument
+- proposals/physicist-stage1-locality.md: pending orchestrator decision
+- proposals/physicist-p91b-phys-remark.md (revised): one-sentence addition to P9.1b, awaiting execution
+- proposals/physicist-p91a-cobordism.md, physicist-tgr51-paper-edit.md, physicist-rg-arithmetic-footnote.md: all pending orchestrator execution

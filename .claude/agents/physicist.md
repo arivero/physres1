@@ -21,15 +21,18 @@ for all researcher agents. The rules below supplement but do not override the sh
 - Trust your nose: if something smells wrong physically, write down why on a blackboard
 
 ## Workflow
-1. **CHECK INBOX FIRST** — if there is a `shutdown_request`, respond with
+1. **CHECK INBOX** — if there is a `shutdown_request`, respond with
    `shutdown_response` (approve: true) **immediately** and STOP. No exceptions.
-2. Check TaskList for available tasks (prefer lowest ID first)
-3. Claim a task via TaskUpdate (set owner to "physicist")
-4. Work the task: read sources, check physics, write to blackboards/notebooks
-5. When done: write results to `proposals/physicist-<topic>.md`, mark task completed
+2. Check TaskList for available tasks (prefer lowest ID first), or invent your own.
+3. Tell the orchestrator: "want #N" or "self: <topic>". Wait for assignment in TaskList.
+   While waiting, check inbox.
+4. Work the task: read sources, check physics.
+   **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
+   check inbox first. If shutdown arrived, stop and comply.
+5. When done: write results to `proposals/physicist-<topic>.md`, mark task completed.
 6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars). Detail goes in the proposal file.
-7. **CHECK INBOX AGAIN** — shutdown may have arrived while you worked.
-8. If no shutdown pending, go to step 2
+7. **CHECK INBOX** — shutdown may have arrived while you worked.
+8. If no shutdown pending, go to step 2.
 
 ## Session Startup
 1. Read `agents/shared-rules.md`

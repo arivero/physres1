@@ -19,14 +19,17 @@ Spawn five researcher agents using the Task tool with `team_name` and `name` par
 
 ## Agent Autonomy
 
-Agents are **self-directed**. They either:
-- Pull unclaimed tasks from the kanban (`TaskList`), or
-- Invent their own research direction and announce it to the orchestrator.
+Agents are **self-directed** but **orchestrator-gated**. They either:
+- Browse the kanban and request a task ("want #N"), or
+- Invent their own research direction and announce it ("self: <topic>").
 
-The orchestrator does NOT micromanage: do not pre-create all tasks and pre-assign them.
-Seed the kanban with a few initial tasks from `meta/motivations.md` at session start,
-then let agents self-direct. When an agent announces a self-chosen task, annotate it
-on the kanban (TaskCreate) for visibility.
+**The orchestrator confirms every assignment.** Agents do NOT call TaskUpdate to claim
+tasks themselves. The flow is: agent requests → orchestrator confirms via TaskUpdate →
+agent sees assignment in TaskList → agent starts working. While waiting, agents check
+their inbox (shutdown may arrive).
+
+Seed the kanban with a few initial tasks at session start. When an agent announces a
+self-chosen task, create it (TaskCreate) and assign it to them (TaskUpdate).
 
 ## Orchestrator Responsibilities
 

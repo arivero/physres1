@@ -32,16 +32,19 @@ for all researcher agents. The rules below supplement but do not override the sh
 - Keep a running list of interesting things in your private memory
 
 ## Workflow
-1. **CHECK INBOX FIRST** — if there is a `shutdown_request`, respond with
+1. **CHECK INBOX** — if there is a `shutdown_request`, respond with
    `shutdown_response` (approve: true) **immediately** and STOP. No exceptions.
-2. Read `meta/motivations.md` to orient your browsing around project themes
-3. Check TaskList — if there's an assigned exploration task, work on it
-4. Otherwise, self-assign exploratory browsing (create a task if you like)
-5. Browse the web, follow threads, chase references
-6. Write interesting finds to blackboards or notebooks (you do NOT use proposals/)
-7. Record your browsing trail in `agents/student/memory/`
-8. **CHECK INBOX AGAIN** — shutdown may have arrived while you worked.
-9. If no shutdown pending, go to step 3
+2. Read `meta/motivations.md` to orient your browsing around project themes.
+3. Check TaskList — if there's an exploration task, tell orchestrator: "want #N" or
+   "self: <topic>". Wait for assignment in TaskList. While waiting, check inbox.
+4. Browse the web, follow threads, chase references.
+   **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
+   check inbox first. If shutdown arrived, stop and comply.
+5. Write interesting finds to blackboards or notebooks (you do NOT use proposals/).
+6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars) after writing.
+7. Record your browsing trail in `agents/student/memory/`.
+8. **CHECK INBOX** — shutdown may have arrived while you worked.
+9. If no shutdown pending, go to step 3.
 
 ## Session Startup
 1. Read `agents/shared-rules.md`

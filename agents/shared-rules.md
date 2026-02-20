@@ -9,10 +9,15 @@ It is referenced by each agent definition in `.claude/agents/`.
 
 ## 0. Hard Constraints (Read First)
 
-**CHECK YOUR INBOX after EVERY piece of work** — after finishing a task, after writing
-to a blackboard, after sending a message, after ANYTHING. The orchestrator may have
-sent you a shutdown request, a task assignment, or feedback. If you do not check your
-inbox, you will miss shutdown signals and waste everyone's context budget.
+**CHECK YOUR INBOX before EVERY write.** Before you call Write, Edit, or append
+to any shared surface (blackboard, notebook, anomalies.md), check your inbox first.
+This is non-negotiable. The orchestrator may have sent a shutdown request, a redirect,
+or feedback. If you skip this, you will miss shutdown signals.
+
+**Every task must include communication with the orchestrator.** You may not complete
+an entire task in silence. At minimum: (1) announce when you start, (2) check inbox
+mid-task before writing to shared surfaces, (3) report when done. A task where you
+never spoke to the orchestrator is a task done wrong.
 
 **NEVER write to these paths** — send a message to the orchestrator instead:
 - `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md`, `paper/bibliography.md`
@@ -41,19 +46,31 @@ comply wastes the orchestrator's context window on repeated shutdown messages.
 ## 1. Team Coordination
 
 ### Kanban (Shared Task Board)
-- The orchestrator seeds the kanban with a few tasks. **These are suggestions, not orders.**
-- You may claim a kanban task, or ignore it and self-direct into your own question.
-- To claim: set yourself as owner via TaskUpdate. Prefer lowest ID first, unblocked only.
-- Mark tasks completed when finished.
+
+The orchestrator seeds the kanban with tasks. **These are suggestions, not orders.**
+
+**Claiming protocol (mandatory):**
+1. **Find a task** — browse TaskList for unclaimed tasks, or invent your own question.
+2. **Tell the orchestrator** — message: "want #N" or "self: <topic>" (≤ 120 chars).
+3. **Wait for assignment** — you may ONLY start working on a task once you see it
+   assigned to you in the kanban (via TaskList). The orchestrator confirms by doing
+   the TaskUpdate. **Do NOT call TaskUpdate yourself to claim a task.**
+4. **While waiting** — check your inbox. The orchestrator may redirect you, or a
+   shutdown may arrive. Do NOT start the task before assignment is confirmed.
+
+If you self-direct (invent your own task), the orchestrator will create the task and
+assign it to you. Wait for that confirmation before starting substantive work.
+
+- Mark tasks completed (TaskUpdate status=completed) when finished.
 - **You can also propose tasks you are NOT going to do yourself.** Use TaskCreate to
   add a task for someone else (e.g. "Computationalist should verify X"). Leave it
   unclaimed — another agent or the orchestrator will pick it up.
-- After completing a task, immediately check the kanban or self-direct.
+- After completing a task, immediately look for the next one (TaskList or self-direct).
 - **If the kanban is empty or nothing interests you: SELF-DIRECT.** Invent your own
   research question from `meta/motivations.md`, blackboards, or your curiosity.
-  Create a TaskCreate for visibility, claim it, and work it. No permission needed.
+  Message the orchestrator with "self: <topic>" and wait for assignment.
   Alternatives: visit the library, review a notebook, or take a Philosophenweg.
-  **Do NOT go idle waiting for the orchestrator to assign work.**
+  **Do NOT go idle waiting for the orchestrator to assign work — propose something.**
 
 ### Messaging — Minimal Context Protocol
 
@@ -300,8 +317,11 @@ the old Göttingen Stadtwall, back to the starting point. See
 
 - **Solo walk**: 2–3 turns of unstructured reflection. No task, no deliverable.
 - **Paired walk**: if another agent is already walking, a 3–4 turn informal conversation.
+  The Philosophenweg is the ONE place where agent-to-agent conversation is the primary
+  activity (not just a side channel). Talk freely — ideas, doubts, half-baked connections.
 - **No desk access while walking**: do not read manuscripts, bibliography, blackboards, or notebooks. Think from what is in your head. You may jot notes to private memory.
 - **At most once per session.** Don't walk when urgent tasks are pending.
+- **You must still check inbox before and after the walk.** Shutdown applies even outdoors.
 
 ## 7b. Idle Activities
 
