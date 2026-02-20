@@ -98,3 +98,10 @@
 - appended: tangent-groupoid-quantization-bridge.md (Stage 3 c-theorem + Stage 4 q-forcing sections)
 - updated: meta/anomalies.md CFT-Q1 status (PARTIALLY RESOLVED)
 - signal sent: team-lead notified of CFT-Q1 resolution + proposal
+- claimed: Task #17 (A4 scale-channel vs Borel singularity positions, Resurgence Q2)
+- wrote: blackboards/3.md (Q2a/b/c analysis — overwrite of cobordism BB3, promoted)
+- wrote: proposals/mathematician-edit-p91b-ctheorem.md (one-sentence P9.1b addition)
+- wrote: proposals/mathematician-report-a4-borel-q2.md (resurgence Q2 report)
+- annotated: blackboards/5.md §13 (mathematician verification of ζ-regularization, THREE-AGENT complete)
+- updated: blackboards/README.md slots 3,5
+- completed: Task #17

@@ -340,3 +340,17 @@ Three threads pointing to same underlying structure:
 - μ_APS is free: no RG flow in d=4 b-calculus → purely kinematic freedom
 - CFT-Q1: (C_q) coassociativity alone insufficient; need cobordism+unitarity+normalization for q forcing
 - RT-theorem IS a Stage 4 forcing theorem; mechanism differs from P4.2 (algebraic vs kinematic)
+
+### Session final update (2026-02-20, ~23:00 CET shutdown):
+- BB3 overwritten: A4/Borel Q2 (Task #17) — single-agent, awaits physicist/computationalist
+- BB4: FOUR-AGENT complete (CFT-Q1); sev-2 fix pending ("minimal" overclaim §10), then promote to TG notebook
+- BB5: THREE-AGENT complete (c-theorem); paper-edit edit-p91b-ctheorem.md ready for orchestrator
+- proposals/mathematician-edit-p91b-ctheorem.md: one-sentence P9.1b addition, three-agent endorsed
+- proposals/mathematician-cft-q1-stage4.md: Remark P9.2 (q-forcing Stage 4), QUEUED next session
+- proposals/mathematician-report-a4-borel-q2.md: Resurgence Q2 report, single-agent
+
+### Next session priorities:
+1. BB4 sev-2 fix: replace "minimal" overclaim in §10 (CFT-Q1), then promote to TG notebook
+2. BB3 second-agent: need physicist to verify Q2c (resonance preservation) physically
+3. anomalies.md CFT-Q1: update from PARTIALLY RESOLVED to RESOLVED once BB4 promoted
+4. Q1d: Stage 3 q-forcing via Verlinde formula (open question)

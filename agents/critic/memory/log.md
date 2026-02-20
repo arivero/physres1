@@ -348,3 +348,10 @@
   - wrote: BB4 §11 (critic review), proposals/critic-bb4-cft-q1-review.md
   - THREE-AGENT complete (mathematician+physicist+critic)
 - completed: Task #16
+- updated: meta/anomalies.md — resolved CFT-Q1 (→ RESOLVED at Q1c), cobordism (→ RESOLVED), quantum groups (→ PARTIALLY RESOLVED)
+- library: ingested Vassilevich 2003 (hep-th/0306138) → sources/vassilevich-2003-heat-kernel-users-manual.md
+  - heat kernel expansion, Seeley-DeWitt coefficients, t^{-d/2} normalization
+  - CRITICAL reference for path-integral-normalization satellite (bibliography audit sev-1)
+- library: ingested DeWitt 1957 (Rev.Mod.Phys. 29:377) → sources/dewitt-1957-dynamical-theory-curved-spaces.md
+  - curved-space propagator, ordering ambiguity, Laplace-Beltrami measure
+  - CRITICAL reference for both path-integral-normalization and ordering-equivalence

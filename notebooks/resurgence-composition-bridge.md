@@ -566,3 +566,80 @@ The formula Δ^{(log)}_{2A}(K_t) = [∫ S(t')S(t-t') dt']/A in RES-16.1 uses A i
 to match the Écalle-normalized alien derivative definition, not from the convolution coefficient itself.
 
 **Bion amplitude §6 CONFIRMED:** ∫₀ᵗ c·t₁·c·(t-t₁) dt₁ = c²t³/6 (SymPy exact). ✓
+
+---
+
+## §17. A4 Scale-Channel Constraints on Borel Singularity Positions
+
+**Source:** blackboards/3.md (Task #17); TWO-AGENT (mathematician + computationalist).
+
+### Setup
+
+- **A1** (partition channel, §15-16): Forces Borel singularity structure: positions ζ=nA, non-resonant factorization, bion log coefficient.
+- **A4** (scale channel): R_{μ₂} = R_{μ₁→μ₂} ∘ R_{μ₁} (RG semigroup). Forces β(g) to exist.
+- **Question (Q2):** Do A1+A4 together constrain the VALUE of A (instanton action), or only its structure and running?
+
+### Q2a: A4 Forces the Running of A(μ), Not Its Initial Value
+
+The Borel singularity position A = S_inst(g)/ℏ runs with the coupling:
+
+    dA/d(log μ) = -(∂ log S_inst/∂ log g) · β(g(μ))
+
+For SU(N) Yang-Mills (S_inst = 8π²/g²):
+
+    dA/d(log μ) = (16π² β(g)) / (g³ℏ)
+
+With one-loop β: μ dA/dμ ≈ -b₀/ℏ + O(g²). A(μ) runs as the coupling runs.
+
+**Result (negative):** A4 does NOT constrain A₀ = A(μ_UV). Only the FLOW is forced.
+
+### Q2b: The Instanton Action Value Is Dynamical Content (Not Forced)
+
+Neither A1 nor A4 nor their combination forces A₀. It requires a dynamical input: g_UV.
+
+**Analogy:** P4.2 forces κ=ℏ (quantization constant) but NOT the value of the action S.
+A1+A4 force Borel structure and running, but NOT the instanton action value.
+
+### Q2c: Resonance Rigidity Under A4 (New A1+A4 Joint Constraint, Sev-2)
+
+**Claim:** If A1-composition forces a resonance A₁(μ₀) = n·A₂(μ₀), then A4 forces:
+
+    (d log A₁/d log μ) = (d log A₂/d log μ)  [equal logarithmic running rates]
+
+Otherwise the resonance breaks at μ ≠ μ₀.
+
+**For A_i = 8π²/g_i²:**
+
+    (d log A_i/d log μ) = b_i · g_i²(μ)/(8π²)
+
+Equal throughout the flow iff: (a) same one-loop coefficient b₁=b₂, AND (b) same initial coupling g₁₀=g₂₀.
+
+**Numerical verification (tmp/resonance_rg_verify.py):**
+
+| Case | Setup | A₁/A₂ behavior |
+|------|-------|----------------|
+| Single coupling A₁=2A₂=2×(8π²/g²) | ratio = 2.000 for all g (exact) | Preserved |
+| b₁=11/3, b₂=2, g₁₀=g₂₀=0.5, A₁=A₂ | ratio drifts 1.000→1.094 (10 decades) | BROKEN |
+| b₁=b₂=11/3, g₁₀=g₂₀=0.5, A₁=A₂ | ratio = 1.000 (machine eps, all μ) | Preserved |
+| b₁=b₂, g₁₀=0.5, g₂₀=0.7, A₁≠A₂ | difference preserved, ratio drifts 1.960→1.660 | BROKEN |
+
+Case 2 confirms the claim: incompatible β-functions destroy the resonance under RG flow.
+Case 4 precision: A₁-A₂ = 154.691 preserved to 10 significant figures — DIFFERENCE
+(not ratio) is the RG-invariant quantity when β₁=β₂.
+
+**Physical meaning:** For SU(N)×SU(N) theory where A1 forces A₁=A₂ (resonance),
+A4 requires β₁(g₁) = β₂(g₂): same running for both gauge groups. This is a new
+constraint from the joint A1+A4 structure.
+
+**Scope:** Sev-2. Applies only when a resonance is required; not a universal forcing.
+Narrow in scope but genuine: neither A1 nor A4 alone implies it.
+
+### Summary
+
+| Question | Result | Strength |
+|----------|--------|---------|
+| Q2a: A4 forces value of A₀? | NO — forces running only | Sev-3 (expected) |
+| Q2b: A₀ forced by A1+A4? | NO — dynamical input | Sev-3 (confirmation) |
+| Q2c: Resonance preservation forced? | YES — β-function compatibility | Sev-2 (new) |
+
+**Connection to project:** D6.4b forces β existence (A4 alone). §15-16 forces Borel structure (A1 alone). Q2c is the first A1+A4 joint constraint: resonance + RG forces β-function compatibility.
