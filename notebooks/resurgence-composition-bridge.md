@@ -643,3 +643,21 @@ Narrow in scope but genuine: neither A1 nor A4 alone implies it.
 | Q2c: Resonance preservation forced? | YES — β-function compatibility | Sev-2 (new) |
 
 **Connection to project:** D6.4b forces β existence (A4 alone). §15-16 forces Borel structure (A1 alone). Q2c is the first A1+A4 joint constraint: resonance + RG forces β-function compatibility.
+
+### Physicist Refinement of Q2c (THREE-AGENT)
+
+**Biconditional precision (sev-3):** Q2c is a biconditional:
+Resonance A₁(μ)=nA₂(μ) preserved for all μ **if and only if** the equal log-running rate condition holds.
+The one-way formulation ("A1+A4 forces β-compatibility given resonance") is correct but should be stated as iff.
+
+**SUSY example:** In N=1 SQCD, holomorphic non-renormalization forces all instanton actions to run
+with the same holomorphic coupling τ = 4πi/g² + θ/(2π). Any resonance in the Borel structure
+(A₁=nA₂) is preserved to all orders because τ is the unique running parameter.
+Q2c is automatically satisfied — not a new constraint in the SUSY case.
+
+**Case 4 interpretation:** Equal β-function is necessary but not sufficient for ratio preservation.
+The equal log-rate condition (1/A₁)(dA₁/dlogμ) = (1/A₂)(dA₂/dlogμ) depends on the VALUES g₁, g₂,
+not just the functional form of β. For A_i=8π²/g_i², equal log-rates require β(g₁)/g₁³ = β(g₂)/g₂³,
+which holds at all μ only if g₁(μ)=g₂(μ) for all μ — forcing equal coupling values, not just equal β-function forms.
+
+**THREE-AGENT endorsement:** Mathematician + Computationalist + Physicist.

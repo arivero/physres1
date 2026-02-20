@@ -915,8 +915,34 @@ Criterion |z_pole - 1| < 0.01 (1% accuracy):
 Exact recovery from finite Taylor coefficients is impossible (requires N→∞ / full Stieltjes moment problem).
 This quantifies the structural distinction stated in motivations.md OQ4 and earlier notebook sections.
 
+### Corrections (Critic review, 2026-02-20)
+
+**C8.2 (sev-3):** §1 stated I_n ~ n^{-2}. Correct: B(n+1,3/2) ~ √π/2 · n^{-3/2} by Stirling → I_n ~ n^{-3/2}.
+This corresponds to the known spectral density ρ(s) ~ (s-1)^{1/2} near the threshold (square-root endpoint). No downstream conclusions affected (Stahl applies to both n^{-2} and n^{-3/2}).
+
+### Physical Interpretation (Physicist assessment, 2026-02-20)
+
+**Spectral density confirmation:**
+QED vacuum polarization: Im Π(q²) ~ (q²-4m²)^{1/2} near threshold → ρ(s) ~ (s-4m²)^{1/2}.
+This IS a square-root endpoint in the Stieltjes sense. Stahl's theorem applies. Exponent -4/3 is correct asymptotically.
+
+**Practical implication:**
+Current multi-loop perturbative QED reaches N ≤ 4 (for anomalous magnetic moment computations).
+Padé [4/4] from perturbation theory gives distance |z_pole - 1| ≈ 0.0925 (reading from the table at N=4).
+This means the nearest Padé pole is ~9% above threshold — insufficient for precision threshold physics.
+N ~ 16-20 required. This is far beyond current perturbative reach.
+
+**Connection to project thesis:**
+The N → ∞ requirement confirms: non-perturbative information (the branch cut, threshold) is NOT
+contained in any finite perturbative order. The path integral resurgent structure (trans-series, BB4 §12,
+RES §15-16) is fundamentally different from Padé — resurgence extracts non-perturbative data from
+the Borel singularity structure, not from pole accumulation. This supports the project's claim that
+the sewing axiom (A1) and resurgence together provide a framework for non-perturbative physics that
+finite-order perturbation theory cannot.
+
 ### References
 - Stahl H. "The convergence of Padé approximants with a finite number of defects." J. Approx. Theory 91 (1997).
 - Montessus de Ballore theorem: poles of [N/N] accumulate on the support of the spectral measure.
 - tmp/pade_vacuum_pol.py: computation script (Padé pole tracking, power-law fit)
 - blackboards/6.md: computation source (this session)
+- Källén-Lehmann spectral representation: QED vacuum polarization threshold behavior

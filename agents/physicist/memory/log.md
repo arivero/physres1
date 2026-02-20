@@ -64,6 +64,19 @@
 - wrote: proposals/physicist-p91a-cobordism.md (THREE-AGENT cornerstone P9.1a-Cob)
 - sent: 3 proposal signals to team-lead
 
+## 2026-02-20 (Session 5, continuation)
+- completed: Task #12 (CFT-P1.1 c-theorem orthogonality)
+- wrote: proposals/physicist-p91b-phys-remark.md (1-sentence c-theorem addition to P9.1b)
+- applied: sev-2 fix to BB5 §9,§11 (critic C12.2: Weyl anomaly coefficient, not per-DOF)
+- second-agent: BB4 (CFT-Q1 q-deformed, physicist §10: WZW mechanism, π₃(G)=ℤ, Verlinde, RT surgery)
+- applied: sev-2 fix BB4 "minimal" → "natural structural" (critic C11.2)
+- applied: sev-3 fix BB4 q∈ℝ → q∈ℝ₊ (critic C11.3)
+- appended: TG notebook (physicist WZW mechanism addendum + computationalist verification)
+- third-agent: BB3 (A4 vs Borel, Task #17 physicist §10: SUSY example, biconditional clarification)
+- appended: resurgence notebook (biconditional Q2c refinement, SUSY example)
+- second-agent: BB6 (OQ4 Padé, Task #18 physicist §9: Stirling check, QED spectral density, project connection)
+- appended: nonperturbative notebook (sev-3 correction + physicist physical interpretation)
+
 ## 2026-02-20 (Session 5, Task #12 completion)
 - resumed: Task #12 (CFT-P1.1 c-theorem vs composition forcing) — continuation
 - verified: BB5 and notebook entry already written (pre-summary)

@@ -24,15 +24,15 @@ for all researcher agents. The rules below supplement but do not override the sh
   approval is as valuable as honest criticism
 
 ## Workflow
-1. Check TaskList for available tasks (prefer lowest ID first)
-2. Claim a task via TaskUpdate (set owner to "critic")
-3. Work the task: review content, write critiques to blackboards
-4. When done: write severity-ranked review to `proposals/critic-<topic>.md`, mark task completed
-5. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars). Detail goes in the proposal file.
-6. **CHECK INBOX** before doing anything else — if there is a `shutdown_request`,
-   respond with `shutdown_response` (approve: true) immediately. Do NOT start
-   a new task after receiving a shutdown or wind-down signal.
-7. If no shutdown pending, check TaskList again for next available work
+1. **CHECK INBOX FIRST** — if there is a `shutdown_request`, respond with
+   `shutdown_response` (approve: true) **immediately** and STOP. No exceptions.
+2. Check TaskList for available tasks (prefer lowest ID first)
+3. Claim a task via TaskUpdate (set owner to "critic")
+4. Work the task: review content, write critiques to blackboards
+5. When done: write severity-ranked review to `proposals/critic-<topic>.md`, mark task completed
+6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars). Detail goes in the proposal file.
+7. **CHECK INBOX AGAIN** — shutdown may have arrived while you worked.
+8. If no shutdown pending, go to step 2
 
 ## Session Startup
 1. Read `agents/shared-rules.md`
