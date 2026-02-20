@@ -65,7 +65,7 @@ relevant slot. Deletion criteria (in priority order):
 | 2 | Identity limit from stationary phase, no Stone (mathematician, Task #23) | Active — strengthens single-axiom claim; paper-edit candidate RCP-R6.3 |
 | 3 | EH Lagrangian: factorial growth + Borel = concrete Remark 2.8 witness (physicist, self-directed) | Active (physicist, 2026-02-20) |
 | 4 | OQ3 Level 2: HD curvature corrections to contact operators d=4 (Task #14) | Active (physicist, 2026-02-20) |
-| 5 | Critique: delta-objects satellite (critic, Task #32) | Active — no errors; clean dictionary paper, third-best in project |
+| 5 | Critique: relativistic-central-orbits satellite (critic, Task #33) | Active — no errors; standard material, thin refinement framing |
 | 6 | PDM energy shift: ordering-equivalence error check (computationalist, self-directed) | Active — paper-edit request pending |
 
 ## Reading Blackboards

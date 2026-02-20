@@ -68,3 +68,12 @@
 - finding: no errors — clean dictionary paper, third-best in project
 - finding: Remark 5.1 unification of d/2 across three domains is a defensible structural observation
 - finding: self-adjoint extension hierarchy (Remark 4.2) correctly presented with dimension threshold
+- read: papers/relativistic-central-orbits/main.md (full, 296 lines)
+- wrote: blackboards/5.md (critique of relativistic-central-orbits satellite, overwrote delta-objects review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #33, self-directed)
+- finding: no errors — all 17 algebra checks pass (SR Kepler, Schwarzschild geodesics, ISCO, stability criterion)
+- finding: q_crit = nu + 1 scaling rule (Remark 3.1c) is the most original observation
+- finding: stability-precession duality gamma^2 omega^2 = 1 at q=2 (Remark 5.2c) is a nice structural point
+- finding: "refinement witness" framing is thin — paper reads identically without the word "refinement"
+- finding: overclaiming pattern absent — honest "not to replace standard treatments" disclaimer
