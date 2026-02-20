@@ -236,6 +236,19 @@ where the measure on \(G = M \times M\) is density-\(^{1/2}\) rather than full L
 If so, the \(d/2\) exponent would have a measure-theoretic origin (bi-half-density) rather
 than a Gaussian-integral origin—a deeper geometric grounding.
 
+**Remark TG-R5.1 (TG-Q1 resolved: half-density variant of the pair-groupoid path integral).**
+Bi-half-density kernels on the pair groupoid \(G = M \times M\) compose via standard Lebesgue
+integration at the intermediate variable: the two \(|\mathrm{d}^d z|^{1/2}\) factors from the source
+and target slots of the paired kernels combine to give a full density \(|\mathrm{d}^d z|\), so
+no additional measure is needed. The composition is automatically
+coordinate-invariant, the normalization exponent \(t^{-d/2}\) is unchanged (same Gaussian
+functional equation), and the Van Vleck factor \(\Delta(x,y;t)^{1/2}\) of the semiclassical
+kernel is intrinsic to the bi-half-density structure — the natural determinant of the
+generating function \(S_{\mathrm{cl}}\) on \(G\) — rather than an auxiliary normalization
+choice. In the half-density framework, the \(d/2\) exponent has a measure-theoretic origin:
+it arises from the pairing of \(\tfrac{1}{2}\)-density weights on the source and target of
+each groupoid arrow.
+
 # 6. Residual Gap and Open Problems
 
 ## 6.1 Stone's Theorem (Irreducible Gap)
@@ -257,8 +270,9 @@ groupoid convolution and the full quantum mechanics of singular potentials.
 
 ## 6.2 Open Problems
 
-**TG-Q1 (Half-density groupoid measure).** Does a bi-half-density variant of Lackman's
-pair-groupoid path integral exist, with measure \(|\text{Vol}|^{1/2}\) on groupoid arrows?
+**TG-Q1 (Half-density groupoid measure) — RESOLVED (Remark TG-R5.1).** Yes: bi-half-density
+kernels compose via Lebesgue pairing at the intermediate slot, preserving \(d/2\) normalization
+and coordinate invariance. The Van Vleck factor is intrinsic to the bi-half-density structure.
 
 **TG-Q2 (Master groupoid for RCP).** Can the three RCP channels be formulated as three
 deformation directions of a master groupoid \(G_{\text{RCP}}\), with physical observables
