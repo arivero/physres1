@@ -40,8 +40,8 @@ no longer needed, then are discarded.
 
 ## Discard Protocol
 
-Discarding a notebook is `git rm`. No ceremony. The content remains in git
-history if anyone ever needs to look back.
+Discarding a notebook is `git rm`. No ceremony. **The content remains in git
+history** — nothing is truly lost. Discard is a normal exit path, not a failure.
 
 **When to discard:**
 - The notebook's topic has been fully absorbed into one or more papers.
@@ -52,6 +52,10 @@ history if anyone ever needs to look back.
 The orchestrator executes `git rm` when the vote threshold is met
 (3 of 5 agents, or 2 + orchestrator concurrence).
 See `agents/shared-rules.md` Section 2 for the voting protocol.
+
+**Commit-safety rule:** The orchestrator must verify the notebook was included
+in a prior commit before executing `git rm`. This prevents accidental loss of
+uncommitted work.
 
 The same protocol applies to discarding satellite papers (`papers/*/`):
 `git rm -r` the directory. If any notes have future value, append them

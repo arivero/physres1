@@ -13,10 +13,10 @@ This file applies to the entire repository. It is the canonical contract for all
 ## Architecture Overview
 
 This repository uses a **persistent team** of researcher agents, coordinated by a single
-**orchestrator** (the conversation-level agent). The team is created via `TeamCreate` at
-session start. Agents communicate via `SendMessage`, claim tasks from a shared kanban
-(`TaskList`), and write to shared working surfaces (blackboards, notebooks). Each agent
-has a private memory folder that no other agent can read.
+**orchestrator** (the conversation-level agent). The team is created at session start.
+Agents communicate via messages, claim tasks from a shared kanban, and write to shared
+working surfaces (blackboards, notebooks). Each agent has a private memory folder that
+no other agent can read.
 
 Two **ephemeral agents** (Paper Writer, Bibliographer) are dispatched by the orchestrator
 on demand for manuscript editing and source ingestion.
@@ -40,10 +40,10 @@ requests, and dispatches ephemeral agents.
 
 **Responsibilities:**
 - Team creation and shutdown
-- Task creation, assignment, and monitoring via TaskList
-- Processing paper-edit requests from researcher agents (via SendMessage)
+- Task creation, assignment, and monitoring via the shared kanban
+- Processing paper-edit requests from researcher agents
 - Dispatching ephemeral Paper Writer and Bibliographer subagents
-- Notebook deletion vote tallying
+- Notebook deletion vote tallying (commit-safety check before executing `git rm`)
 - Commit policy enforcement
 - Quality gates (ensure Critic review before submission-quality claims)
 - Research state maintenance
@@ -52,9 +52,8 @@ requests, and dispatches ephemeral agents.
 
 ## 2. Researcher Agents (Persistent Teammates)
 
-Five persistent agents, spawned at session start via the Task tool with `team_name` parameter.
-All share `agents/shared-rules.md` as their canonical rule set. See individual
-`.claude/agents/*.md` files for persona-specific guidance.
+Five persistent agents, spawned at session start. All share `agents/shared-rules.md`
+as their canonical rule set. See individual agent definition files for persona-specific guidance.
 
 | Agent | Model | Definition | Persona |
 |-------|-------|------------|---------|
@@ -73,20 +72,20 @@ All share `agents/shared-rules.md` as their canonical rule set. See individual
 - Download/read articles from the internet
 
 **Restrictions** (all researchers):
-- Cannot edit `paper/`, `papers/*/`, `paper/notes/` — request via SendMessage
+- Cannot edit `paper/`, `papers/*/`, `paper/notes/` — request via orchestrator
 - Cannot read other agents' `agents/*/memory/` folders
 - Cannot edit `AGENTS.md`, `CLAUDE.md`, `meta/handoff.md`
 
 ---
 
-## 3. Ephemeral Agents (Subagents via Task Tool)
+## 3. Ephemeral Agents (Subagents)
 
 ### A. Paper Writer
 - **Purpose**: Promote content into manuscripts
 - **Writes**: `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md`
 - **Reads**: everything
 - **Model**: opus
-- **Dispatched by**: orchestrator only (in response to researcher SendMessage requests)
+- **Dispatched by**: orchestrator only (in response to researcher edit requests)
 - **Rules**: paper-quality boundary (hard), net >= 10 lines per promotion, diffstat required
 
 ### B. Bibliographer
@@ -109,15 +108,15 @@ To create a new agent variant (e.g., a nuclear physicist or algebraic geometer):
 
 ---
 
-## 5. Task Management (Kanban via TaskList)
+## 5. Task Management (Shared Kanban)
 
-The shared kanban replaces the old `cycles/index.md` task board.
+The shared kanban is the project's task board.
 
-- **Orchestrator** creates tasks via `TaskCreate` with subject, description, and activeForm.
-- **Agents** check `TaskList` for available tasks (prefer lowest ID first, unblocked only).
-- **Agents** claim tasks via `TaskUpdate` (set owner to their name).
-- **Agents** mark tasks completed via `TaskUpdate` when done.
-- **Dependencies**: use `addBlocks`/`addBlockedBy` in `TaskUpdate` when tasks depend on each other.
+- **Orchestrator** creates tasks with subject, description, and priority.
+- **Agents** check the kanban for available tasks (prefer lowest ID first, unblocked only).
+- **Agents** claim tasks by setting themselves as owner.
+- **Agents** mark tasks completed when done.
+- **Dependencies**: tasks can block or be blocked by other tasks.
 
 Task IDs are planning metadata only — never in manuscripts.
 
@@ -127,8 +126,8 @@ Task IDs are planning metadata only — never in manuscripts.
 
 | Channel | Purpose | Who uses it |
 |---------|---------|-------------|
-| TaskList | Kanban — task creation, claiming, completion | All |
-| SendMessage | Paper edit requests, reports, questions, collaboration | All |
+| Kanban | Task creation, claiming, completion | All |
+| Messages | Paper edit requests, reports, questions, collaboration | All |
 | Blackboards | Shared working surface for math and exploration | Researchers |
 | Notebooks | Shared stable memory (append-only) | Researchers |
 | `agents/<name>/memory/` | Private working notes | Each agent (own folder only) |
@@ -145,7 +144,7 @@ Task IDs are planning metadata only — never in manuscripts.
 | Critic | `blackboards/*.md`, `notebooks/*.md` (append), `agents/critic/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/computationalist/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Student | `blackboards/*.md`, `notebooks/*.md` (append), `agents/student/memory/*` | `paper/`, `papers/`, `meta/*` |
-| Paper Writer (eph) | `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md` | blackboards, notebooks, docs |
+| Paper Writer (eph) | `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md` | blackboards, notebooks, meta |
 | Bibliographer (eph) | `paper/bibliography.md`, `sources/*` | manuscripts, blackboards, notebooks |
 
 **Rule**: if a task requires touching files outside an agent's permissions, the orchestrator dispatches the appropriate agent instead.
@@ -206,6 +205,36 @@ Content can be added but never edited or deleted. Deletion requires voting (see 
 ### Satellite Paper Page Limit
 Target max **6 compiled LaTeX pages** in `elsarticle` 3p twocolumn format. Measure with `scripts/count-pages.sh`. Stop at 6pp; if exceeded, compact or reclassify as PRD-length (8–15pp).
 
+### Satellite Paper Lifecycle
+
+```
+CONCEPTION → DRAFT → EXPANDING → FROZEN → SUBMITTED → PUBLISHED
+                                    ↓           ↓
+                                 DISCARDED    ERRATUM
+```
+
+**Conception**: Any researcher can propose a new satellite by messaging the
+orchestrator. The orchestrator can also conceive papers from the
+`meta/next-articles.md` backlog. Criterion: a self-contained result deserving
+its own paper. Action: create `papers/<name>/main.md` via Paper Writer.
+
+**Draft → Expanding**: Researchers contribute content via blackboards →
+paper-edit requests. Paper Writer executes (two-agent promotion rule). Page
+count tracked via `scripts/count-pages.sh`.
+
+**Freezing**: Triggered when the paper reaches its target page limit.
+Orchestrator confirms. Marked FROZEN in `meta/research-state.md`. No further
+expansion unless explicit reclassification.
+
+**Publication**: Prerequisite: at least one Critic review pass. "The review
+never is" — publication is a state of the paper, not a claim of perfection.
+The Critic's assessment is perpetual. Issues found post-publication go to
+`meta/anomalies.md` or generate erratum tasks.
+
+**Discard**: Same vote threshold as notebooks (3/5 agents or 2 + orchestrator).
+Salvage valuable notes to notebooks first, then `git rm -r`. The orchestrator
+must verify the content was committed before executing the deletion.
+
 ---
 
 ## 11. Sources Policy
@@ -223,21 +252,32 @@ Target max **6 compiled LaTeX pages** in `elsarticle` 3p twocolumn format. Measu
 
 ---
 
-## 13. Session Startup (Read Order)
+## 13. Session Lifecycle
 
-### Orchestrator
-1. `AGENTS.md`
-2. `meta/motivations.md`
-3. `meta/handoff.md`
-4. `meta/research-state.md`
-5. TaskList (check current state)
+### Startup Phase
+1. Orchestrator reads: `AGENTS.md`, `meta/motivations.md`, `meta/handoff.md`, `meta/research-state.md`.
+2. Orchestrator creates the team and spawns 5 researcher agents.
+3. Each agent reads: `agents/shared-rules.md`, `meta/motivations.md`, `meta/research-state.md`,
+   own `status.md` (cold-start resumption), all blackboards.
+4. Orchestrator scans research-state for open threads, creates initial tasks.
 
-### Researcher Agents
-1. `agents/shared-rules.md`
-2. `meta/motivations.md`
-3. `meta/research-state.md`
-4. TaskList (check for assignments)
-5. All blackboards (`blackboards/[0-6].md`)
+### Work Phase
+1. Orchestrator creates tasks from open threads / motivations.
+2. Agents claim and work tasks (kanban cycle).
+3. Orchestrator processes paper-edit requests, dispatches Paper Writer/Bibliographer.
+4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
+5. Orchestrator updates `meta/research-state.md` when threads evolve.
+
+### Shutdown Phase
+1. Each agent updates `agents/<name>/memory/status.md` (what, where, next).
+2. Orchestrator updates `meta/research-state.md` and `meta/handoff.md`.
+3. Final commit if needed.
+4. Orchestrator signals shutdown; agents confirm and terminate.
+
+### Between Sessions (Cold Storage)
+- State persists in: `status.md` files, `meta/research-state.md`, `meta/handoff.md`.
+- Blackboards, notebooks, and private memory persist in git.
+- The kanban does NOT persist between sessions (recreated from research-state).
 
 ---
 
@@ -247,7 +287,8 @@ If `paper/main.md` changed:
 2. Transcript mention check: `rg -n 'conv_patched' paper/main.md`
 
 ## 15. Continuous Operation
-When asked to run multiple tasks or given a time deadline, continue autonomously without pausing. Only stop when the requested count/deadline is reached or an error occurs.
+When given a time deadline, continue autonomously without pausing. Only stop when:
+(a) deadline reached, (b) context exhausted, (c) no productive work remains.
 
 ### When No Tasks Are Available
 **PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.

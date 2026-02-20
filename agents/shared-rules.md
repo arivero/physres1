@@ -7,18 +7,18 @@ It is referenced by each agent definition in `.claude/agents/`.
 
 ## 1. Team Coordination
 
-### Kanban via TaskList
-- The orchestrator creates tasks via TaskCreate.
-- Agents claim tasks from TaskList (prefer lowest ID first, unblocked tasks only).
-- Claim a task by calling TaskUpdate with owner set to your name.
-- Mark tasks completed via TaskUpdate when finished.
-- After completing a task, immediately check TaskList for the next available task.
+### Kanban (Shared Task Board)
+- The orchestrator creates tasks on the shared kanban.
+- Agents claim tasks (prefer lowest ID first, unblocked tasks only).
+- Claim a task by setting yourself as owner.
+- Mark tasks completed when finished.
+- After completing a task, immediately check the kanban for the next available task.
 
-### Communication via SendMessage
+### Messaging
 - Send paper edit requests to the orchestrator: include target file, section, proposed text, rationale.
 - Send status reports to the orchestrator when a task reveals unexpected findings.
 - Direct messages to other agents are permitted for collaboration.
-- Do NOT send structured JSON status messages; use plain text.
+- Use plain text for messages; do NOT send structured JSON.
 
 ---
 
@@ -47,6 +47,55 @@ VOTE-DELETE: <filename> | <your-agent-name> | <date> | <one-line reason>
 ```
 Threshold: 3 of 5 agents, or 2 agents + orchestrator concurrence.
 The orchestrator executes `git rm` when threshold is met.
+
+### Content Lifecycle
+
+Four surfaces, each with a different role:
+
+| Surface | Nature | Who writes | Persistence |
+|---------|--------|------------|-------------|
+| Blackboard | Scratch | Any researcher | Editable, 7 slots, 300 lines |
+| Notebook | Memory | Any researcher | Append-only |
+| Paper Note | Derivation | Paper Writer | Editable, 10-file cap per paper |
+| Manuscript | Publication | Paper Writer | Orchestrator-gated |
+
+**Flow between surfaces:**
+
+```
+Idea
+ ↓
+Blackboard (raw: formulae, refs, keywords)
+ ├─ stabilizes, aimed at paper section → Paper Note (via promotion)
+ ├─ stabilizes, general research value → Notebook (append)
+ └─ wrong/stale/superseded → Overwrite (wastepaper basket)
+
+Notebook (stable exposition)
+ ├─ matures toward publication → Manuscript (two-agent promotion rule)
+ └─ no longer needed → Discard (voting protocol)
+
+Paper Note (supports specific manuscript claim)
+ ├─ absorbed into manuscript → Retire (git rm)
+ └─ paper discarded → Notebook (if valuable) or delete
+```
+
+**Decision triggers:**
+- **Blackboard → Notebook**: correct result, worth remembering, no specific paper section yet.
+- **Blackboard → Paper Note**: directly supports a manuscript claim; too long for the manuscript.
+- **Blackboard → Overwrite**: wrong, superseded, or going nowhere.
+- **Notebook → Manuscript**: publication-ready; requires the two-agent promotion rule.
+
+### Discard Safety
+
+Discard is a normal exit path, not a failure. Blackboard overwriting, notebook
+deletion, and paper note retirement are all routine operations.
+
+**Git preserves everything**: content deleted via `git rm` survives in git history.
+Nothing is truly lost.
+
+**Commit-safety rule**: the orchestrator must verify that the content being deleted
+was included in a prior commit before executing `git rm`. Marks for deletion
+(votes, retirement proposals) are recorded but only executed after the orchestrator
+confirms commit coverage. This prevents accidental loss of uncommitted work.
 
 ---
 
@@ -91,7 +140,7 @@ Update it before going idle or at session end. When starting a new session, read
 ## 4. Promotion Protocol (Two-Agent Rule)
 
 To promote content from blackboards/notebooks into a paper:
-1. **Proposer**: one agent sends a paper edit request to the orchestrator via SendMessage
+1. **Proposer**: one agent sends a paper edit request to the orchestrator
    (include: target file, section, proposed text, rationale).
 2. **Executor**: a *different* agent must take the resulting promotion task.
    The proposer cannot also be the executor — a second pair of eyes is required.
@@ -102,7 +151,27 @@ This ensures every promotion has at least two agents involved.
 
 ---
 
-## 5. Disagreement and Edit Proposals
+## 5. Multi-Agent Discussion
+
+### Blackboard-Mediated Discussion
+
+When a research question requires multiple perspectives:
+1. **Initiator** writes analysis on a blackboard, tagged with name.
+2. **Respondent(s)** read the blackboard and either:
+   - Append a response (with speaker tag, e.g. `<!-- Physicist: -->`) on the *same* board, OR
+   - Write a counter-analysis on a *different* blackboard slot.
+3. **Resolution**: when agents agree, the reconciled result is promoted
+   (to notebook or manuscript). When they disagree, the orchestrator creates a
+   resolution task or arbitrates.
+
+### Structured Review
+
+When the orchestrator wants a specific review:
+1. Orchestrator creates a review task (e.g., "review blackboard 3").
+2. Reviewer writes assessment, grades issues: **blocking** / **important** / **minor**.
+3. Orchestrator creates fix tasks from blocking/important items.
+
+### Disagreement and Edit Proposals
 
 When an agent finds a gap, error, or improvement opportunity in shared content
 (blackboards, notebooks, or manuscripts):
@@ -111,7 +180,7 @@ When an agent finds a gap, error, or improvement opportunity in shared content
 2. Another agent must review and either accept (incorporate the fix) or counter-propose.
 3. If no agent picks it up, the orchestrator can assign the review as a task.
 
-There is no formal referee cycle. Disagreements are resolved by the normal workflow:
+There is no formal referee process. Disagreements are resolved by the normal workflow:
 propose → someone else acts on it. If it stays unresolved, the orchestrator arbitrates.
 
 ---
@@ -152,16 +221,16 @@ This is the mechanic for unfocused creative time and serendipitous encounters.
 | `meta/anomalies.md` | Append entries (shared discovery surface) |
 | `agents/shared/philosophenweg.md` | Append walk entries, update WALKING status |
 
-### Forbidden Writes — Send to Orchestrator Instead
+### Forbidden Writes — Request via Orchestrator
 | Surface | How to Request |
 |---------|---------------|
-| `paper/main.md` | SendMessage paper edit request to orchestrator |
-| `papers/*/main.md` | SendMessage paper edit request to orchestrator |
-| `paper/notes/*.md` | SendMessage paper edit request to orchestrator |
-| `paper/bibliography.md` | SendMessage bibliography update request to orchestrator |
+| `paper/main.md` | Message orchestrator: paper edit request |
+| `papers/*/main.md` | Message orchestrator: paper edit request |
+| `paper/notes/*.md` | Message orchestrator: paper edit request |
+| `paper/bibliography.md` | Message orchestrator: bibliography update |
 | `AGENTS.md`, `CLAUDE.md` | Never (orchestrator-only) |
 | `meta/handoff.md` | Never (orchestrator-only) |
-| `meta/research-state.md` | SendMessage state update request to orchestrator |
+| `meta/research-state.md` | Message orchestrator: state update request |
 
 ### Forbidden Reads
 | Surface | Reason |
@@ -185,7 +254,7 @@ Mathematics only in agent memory/context does NOT count as task completion.
 ## 10. Paper-Quality Boundary
 
 Researcher agents do not write manuscripts directly, but content proposed for
-promotion via SendMessage must already meet paper quality:
+promotion must already meet paper quality:
 - Publishable derivations, propositions, remarks, narrative
 - No workflow text, task IDs, scaffolding artifacts
 - No "next task", "todo", "spawn", "queue" language

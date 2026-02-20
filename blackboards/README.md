@@ -43,17 +43,19 @@ relevant slot. Deletion criteria (in priority order):
 1. The blackboards are **not citable sources**.
 2. They may reference idea logs, but nothing here should be cited as evidence.
 3. **Blackboards are the primary location for mathematical deliverables**: All mathematical results from research tasks must be written here (or in `notebooks/` for stabilized material). Mathematics only in agent memory does NOT count as completion.
-4. When an argument stabilizes, it exits the blackboard via one of two paths:
-   - **To a manuscript** (via Paper Writer Agent): content is promoted directly into
+4. When an argument stabilizes, it exits the blackboard via one of three paths:
+   - **To a manuscript** (via Paper Writer): content is promoted directly into
      `paper/main.md` or `papers/*/main.md`. Use this when the material is
-     ready for publication prose.
-   - **To a notebook** (via Notebook Agent): the primary exit for stable material
-     that is **not yet aimed at a specific paper section**. Append the
-     blackboard content to the appropriate notebook. This is the default
-     exit when no manuscript promotion is imminent — notebooks are memory, blackboards
-     are scratch.
-5. Promotion is the exit path. Once fully promoted (to paper or notebook),
-   a slot is free for reuse.
+     ready for publication prose. Requires the two-agent promotion rule.
+   - **To a notebook**: the primary exit for stable material that is **not yet
+     aimed at a specific paper section**. Append the blackboard content to the
+     appropriate notebook. This is the default exit when no manuscript promotion
+     is imminent — notebooks are memory, blackboards are scratch.
+   - **To the wastepaper basket**: if a result is wrong, superseded, or not
+     going anywhere, simply overwrite the slot. This is the normal workflow,
+     not a failure. Blackboards are scratch, not archives.
+5. Promotion or discard is the exit path. Once promoted (to paper or notebook)
+   or discarded (overwritten), a slot is free for reuse.
 
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
