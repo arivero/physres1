@@ -272,6 +272,21 @@ parallel Lackman's symplectic reduction on \(\mathcal{G}_2\), which removes the 
 regulator from the path integral? If so, the RG scale channel and the groupoid reduction
 are the same operation in different variables.
 
+*Refinement TG-Q3' (three-agent analysis, BB2, sev-3).* The question splits into three
+independent sub-problems: (A) Algebraic bridge: the Connes--Moscovici isomorphism
+\(H_{\mathrm{CK}} \cong H_{\mathrm{CM}}(\mathrm{Diff}(\mathbb R^n))\) (published) shows that
+the Hopf algebra of contact Feynman graphs \(H_c\) is realized as the convolution algebra
+\(C^*(G_c)\) of a contact groupoid \(G_c\). This bridge is \emph{established}. (B) Geometric
+bridge: the log-symplectic groupoid \(G_{\log}\) (Gualtieri--Li 2012, exists by the
+blow-up construction) admits a UV-regulated prequantum line bundle \(L^\Lambda\) for each
+cutoff \(\Lambda\); the Lagrangian \(\to T(E)\) limit as \(\Lambda\to\infty\) is \emph{open}.
+(C) Representation bridge: the GNS representation of \(C^*(G_c)\) on the physical Hilbert
+space \(L^2(\mathbb R^2, dk)\) should yield \(T(E)\) as a matrix element
+\(\langle k \vert \pi(a_{\text{contact}}) \vert k' \rangle\), subject to (C1)
+\(C^*(G_c) \cong \Psi^0_b(\mathbb R^2)\) (b-pseudodifferential algebra) and (C2)
+the irreducible representation being the correct physical one. Both are \emph{open but
+well-posed} (b-calculus literature: Melrose, Vasy; noncommutative geometry: Monthubert--Skandalis--Nistor). Bridges (B) and (C) are independent: solving (C) does not require (B).
+
 # 7. Conclusion
 
 The pair-groupoid framework makes three structural facts explicit:

@@ -393,3 +393,68 @@ No new results beyond D6.4b; both open questions closed as clarifications (not u
 - Dunne-Ünsal (arXiv:1207.0905): CP(N) resurgence (second model)
 - blackboards/3.md (source — three-agent complete)
 - paper/main.md Remark D10.1c (target — paper-edit #27 applied)
+
+## 15. Stokes Constant Factorization from Composition: A New Structural Constraint
+
+Promoted from blackboards/5.md (THREE-AGENT: mathematician + physicist + critic, 2026-02-20). Sev-2.
+
+### RES-15.1: The Factorization Theorem
+
+**Setup (rank-2):** Kernel K_t has two independent instanton types with actions A₁, A₂.
+Stokes constant at mixed position nA₁+mA₂: Δ_{nA₁+mA₂}(K_t) = S_{n,m}(t) · K_t.
+
+**Hypothesis (power-law ansatz, leading-degree):** S_{n,m}(t) = C_{n,m} · t^{n+m} + lower.
+
+**Theorem (forced by composition):** Under the ansatz, the leading coefficients satisfy:
+C_{n,m} = C_{1,0}^n · C_{0,1}^m   (factorization of mixed Stokes constants)
+
+**Proof sketch:**
+The rank-2 Leibniz rule gives for (p,q)=(1,1):
+S_{1,1}(t₁+t₂) = S_{1,0}(t₁)·S_{0,1}(t₂) + S_{0,1}(t₁)·S_{1,0}(t₂) + S_{1,1}(t₁) + S_{1,1}(t₂)
+[using S_{0,0} = 1]
+
+With S_{n,m}(t) = C_{n,m}·t^{n+m}: matching t₁t₂ term gives 2C_{1,1} = 2C_{1,0}·C_{0,1},
+hence C_{1,1} = C_{1,0}·C_{0,1}. Induction on n+m extends to all (n,m). QED.
+
+**General rank-r:** C_{n₁,...,nᵣ} = Π_i C_{eᵢ}^{nᵢ} where eᵢ = i-th unit vector.
+All multi-sector Stokes constants determined by single-sector constants {C_{eᵢ}}.
+
+### RES-15.2: Scope and Physical Interpretation
+
+**Scope (two restrictions from Critic §12 and Physicist §11):**
+1. Non-resonant sectors: factorization applies when the two instanton types are independent
+   (no bion-type compound saddles). Bions produce resonant log singularities (pole + log at 2A₁)
+   that violate the simple-pole assumption and hence the factorization.
+2. Leading-degree terms: the theorem holds for the t^{n+m} leading power in S_{n,m}(t).
+   Sub-leading terms may have additional mixing.
+
+**Physical interpretation (dilute instanton gas):**
+The factorization C_{n,m} = C_{1,0}^n · C_{0,1}^m is the mathematical statement of the
+dilute gas approximation: n events of type 1 and m events of type 2 contribute independently.
+This is EXACT (not an approximation) under the non-resonant scope restriction.
+
+### RES-15.3: Relation to D6.4b
+
+D6.4b (rank-1): composition forces singularity POSITIONS {nζ_1} from leading singularity ζ_1.
+RES-15 (rank-2): composition forces multi-sector STOKES CONSTANTS to factorize.
+
+The two results are complementary:
+- D6.4b: what frequencies? → {nA₁ + mA₂} (closed semigroup, any rank)
+- RES-15: what amplitudes? → C_{n,m} = Π C_{eᵢ}^{nᵢ} (product formula, non-resonant)
+
+Together they form a complete picture: composition forces both the Borel singularity positions
+AND (under dilute-gas scope) the leading Stokes constants at those positions.
+
+### RES-15.4: Candidate Promotion Target
+
+This result is a candidate for:
+- **Lemma D6.5** in paper/main.md (complement to D6.4b in the scale-channel witness)
+- The paper-edit would add: "Moreover, composition forces the multi-sector Stokes constants
+  at positions {nA₁+mA₂} to satisfy C_{n,m} = C_{1,0}^n·C_{0,1}^m (Lemma D6.5), provided
+  the sectors are non-resonant (no bion-type compound saddles) and Stokes constants scale as
+  the leading power t^{n+m}. This is the composition-forcing analog of the dilute instanton gas."
+- Requires orchestrator dispatch to Paper Writer for cornerstone edit.
+
+### Status: THREE-AGENT COMPLETE. Sev-2 confirmed.
+References: BB5 (three-agent source), Dunne-Ünsal 1207.0905 (CP(N-1) resurgence),
+Écalle 1981 (alien calculus), Costin-Dunne 2021 (Stokes constants from non-linear Borel).

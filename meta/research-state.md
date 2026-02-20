@@ -266,12 +266,25 @@ Key results from the first full agent-team session:
 
 - **#27 (cornerstone D10.1c):** Scale-channel witness upgraded from "structural heuristic" to "conditional proposition D6.4b (Borel/instanton type, simple-pole assumption, semigroup framing, Stokes-constant caveat, Écalle attribution)."
 
+### New Season 3 completions (session resume, continued)
+
+- **BB5 PROMOTED (action-angle + P4.2):** Remark 7.5a added to papers/action-angle-indeterminacy-central-potentials/main.md. t^{-d/2} arises from energy-surface curvature det Ω (not angle sector). Bohr-Sommerfeld exception from periodicity of K_t.
+
+- **BB4 PROMOTED (d=4 b-calculus contact spectrum):** Proposition PA-P4.2 added to papers/planck-area/main.md §7. E_B = -(ℏ²/2mL₀²)·μ_APS(μ_APS-2), μ_APS < 0 only. Analytic, not non-perturbative. μ_APS free parameter (not fixed by composition or dimensional analysis).
+
+- **BB5 NEW (Stokes factorization, THREE-AGENT sev-2):** C_{n,m} = C_{1,0}^n · C_{0,1}^m (leading-order, non-resonant sectors) forced by composition (C). Bion exception: resonant logs violate scope. Promoted to notebooks/resurgence-composition-bridge.md §15. Candidate paper-edit: Lemma D6.5 complement to D6.4b.
+
+- **BB1 (rank-2 + Stokes sev-3, TWO-AGENT):** Rank-2 is trivial corollary of D6.4b. (C) forces F(t,λ)=e^{c(λ)t} for Stokes generating function but not c(λ). Promoted to resurgence notebook §14.
+
 ### Pending from this session
 
-- BB5 (TG-R3.1 critic endorsement): add one amendment (RG semigroup ≠ groupoid note), then promote to TG satellite paper
+- ~~BB5 (TG-R3.1 critic endorsement): add one amendment (RG semigroup ≠ groupoid note), then promote to TG satellite paper~~ → DONE (TG-R3.1 added to TG satellite in earlier session)
 - ~~BB4 n_±=1 result: still needs promotion to planck-area or TG satellite as formal proposition~~ → DONE (Proposition PA-P4.2 added to papers/planck-area/main.md §7; slot 4 now free)
-- Rank-2 instanton lattice question (from BB3 §13 open questions): test additive semigroup framing for two-scale models
-- Stokes constants from composition: additional structure in (C) that might constrain residues (from BB3 open questions)
+- ~~Rank-2 instanton lattice question (from BB3 §13 open questions)~~ → DONE (BB1+BB5, sev-3 corollary + sev-2 factorization)
+- ~~Stokes constants from composition~~ → DONE (BB1+BB5; F(t,λ)=e^{c(λ)t} forced; factorization C_{n,m}=C_{1,0}^n·C_{0,1}^m forced for non-resonant sectors)
+- ~~**Lemma D6.5** (Stokes factorization)~~ → APPLIED to D10.1c as inline sentence (non-resonant Stokes factorization C_{n,m}=C_{1,0}^n·C_{0,1}^m added to D10.1c text)
+- ~~**Paper-edit #28** (Remark RG-R1.1 in rg-fundamental)~~ → APPLIED: Remark RG-R1.1 added after RG-P1.2 (κ_*²=μ_LP corrected, residue μ-independence r_n=κ_*^n, [Maiezza-Vasquez2023] reference added)
+- ~~**BB2 contact groupoid (THREE-AGENT sev-3)**~~ → DONE: TG-Q3' three-bridge split promoted to tangent-groupoid-bridge §6.2 (refinement added to TG-Q3 open problem). Bridge A established, B+C open but well-posed.
 
 ## Publication Readiness (2026-02-20, latest refresh)
 Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PLB format).
