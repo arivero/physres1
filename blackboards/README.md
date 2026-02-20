@@ -60,12 +60,12 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Cauchy measurability gap in d/2 uniqueness argument (mathematician, Task #20) | Active — not blocking; verdict + promotion note |
+| 0 | Overclaiming diagnostic: mathematician's theorem-vs-framework assessment (Task #29) | Active — 4 instances graded; priority fix list for editing pass |
 | 1 | OQ1a: Planck area vs ℏ — physicist analysis (Task #1) | Active (physicist, 2026-02-20) |
 | 2 | Identity limit from stationary phase, no Stone (mathematician, Task #23) | Active — strengthens single-axiom claim; paper-edit candidate RCP-R6.3 |
 | 3 | EH Lagrangian: factorial growth + Borel = concrete Remark 2.8 witness (physicist, self-directed) | Active (physicist, 2026-02-20) |
 | 4 | OQ3 Level 2: HD curvature corrections to contact operators d=4 (Task #14) | Active (physicist, 2026-02-20) |
-| 5 | Critique: rg-fundamental satellite (critic, Task #24) | Active — severity-ranked review; overclaiming pattern continues |
+| 5 | Critique: delta-objects satellite (critic, Task #32) | Active — no errors; clean dictionary paper, third-best in project |
 | 6 | PDM energy shift: ordering-equivalence error check (computationalist, self-directed) | Active — paper-edit request pending |
 
 ## Reading Blackboards

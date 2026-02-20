@@ -30,5 +30,16 @@ Key findings:
 - Speculative positivity bound for R<0: C₀ ≥ ℏ²|R|/(6mE₀)
 - PA-P1.3 promotion deferred (planck-area paper frozen at 14pp)
 
-## Next steps
-- Await next task from TaskList
+## CORRECTION (end of Session 1)
+Blackboard 3 (EH Lagrangian / self-directed) is FLAWED:
+- Claimed growth a_n ~ n! · ρ^{-n} — WRONG
+- Actual growth is super-factorial: ~(2m)!/π^{2m}
+- Super-factorial → Borel transform has zero radius of convergence → Borel-Padé inapplicable
+- Borel-Padé poles are on negative real axis (magnetic field), not at pair-production threshold
+- Anharmonic oscillator (BW69/73) remains the cleaner Remark 2.8 example
+- Blackboard 3 should be overwritten next session after reading BB6 corrections
+
+## Next steps (Session 2 start)
+1. Read blackboard 6 (computationalist's EH correction) before working further on EH
+2. Overwrite/correct blackboard 3
+3. Check TaskList for new assignments

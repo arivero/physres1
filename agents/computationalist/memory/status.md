@@ -27,6 +27,10 @@ branch cut. Borel-Pade applies to the perturbative alpha series (renormalons).
 - Blackboard 6 (/blackboards/6.md): full computation record
 - Notebook: results to be appended to notebooks/nonperturbative-contact-pade.md
 
-## Next steps
-- Check TaskList for new available tasks
-- Results ready for promotion to notebook if confirmed by Critic
+## Next steps (updated 2026-02-20 self-directed session)
+- PDM energy shift paper-edit request sent; awaiting orchestrator action
+- EH resurgence feedback sent to physicist via orchestrator
+- Blackboard 6 now holds EH results; PDM results captured in paper-edit message
+- Check TaskList for new unclaimed tasks
+- Could verify Weyl vs LR labeling in ordering-equivalence (Critic Sev-2 item 2)
+- Could verify Remark 2.8 claims in uncuttable paper

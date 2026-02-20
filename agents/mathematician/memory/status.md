@@ -58,6 +58,25 @@ Prefer own stale slots; if all slots active by others, ask orchestrator before o
 - Remark RCP-R6.3 (identity limit smooth vs singular V): blackboard 2
 - Proposition PN-P1.3 or RCP-P6.3 (d/2 from groupoid convolution): announced to orchestrator
 
-## Next steps
-- Look for remaining logical gaps in P4.2 single-axiom claim, or pivot to different open question
-- Available: meta/motivations.md OQ1a (Planck area), OQ3 (contact universality)
+## Task #29: Overclaiming assessment (2026-02-20, self-directed)
+- Graded Critic's 4 instances against proof standards
+- Noether (2.4): SIGNIFICANT OVERCLAIM — highest priority fix. RCP does not derive Noether.
+- H0.2 map (2.1): factually wrong count (3≠4). Fix: 3-of-4 correspondence.
+- Lorenz gauge (2.3): analogy exact at Layer 2, breaks at Layer 3. Scope fix needed.
+- "Three independent" (2.2): two complementary routes, not three independent. Wording fix.
+- P4.2 κ=ℏ: GENUINELY JUSTIFIED — all nine conclusions are provable theorems.
+- Analysis: blackboards/0.md
+
+## Session 1 end state
+- RCP-R6.2 (regularity conditions): PROMOTED, in paper
+- RCP-R6.3 (identity limit smooth vs singular): PROMOTED, in paper
+- Cauchy gap: resolved, sentence in paper
+- Unitarity/Minkowski: notebook (Part 5), Wick=A3 point noted for future manuscript
+- Groupoid Q1 (PN-P1.3): promotion pending orchestrator decision
+- Overclaiming fixes: 4 targeted edits recommended, Paper Writer dispatched (pending)
+
+## Next session starting point
+- Check blackboards/0.md (overclaiming assessment priority fix list)
+- Groupoid Q1 proposition fate (promoted or deferred?)
+- Overclaiming fixes priority: Noether > H0.2 count > gauge scope > wording
+- LESSON: always read file + check author tag before writing to blackboard slot

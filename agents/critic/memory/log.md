@@ -35,3 +35,36 @@
 - finding: Noether crown witness (RG-H1.16) repeats rcp-foundations error
 - finding: 2D delta material (Sections 5.1-5.9) is sound and well-done
 - finding: all algebra checked (loop integrals, beta function, shell integration, dimensional analysis, Robin scaling) — correct
+- read: papers/rooted-tree-bookkeeping/main.md (full, 431 lines)
+- wrote: blackboards/5.md (critique of rooted-tree-bookkeeping satellite, overwrote rg-fundamental review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #27, self-directed)
+- finding: ERRORS — elementary differential for chain tree [[\bullet]] is wrong (line 174)
+- finding: ERRORS — midpoint B-series coefficients at order 3 swapped AND wrong values (lines 180-181)
+- finding: ERRORS — coproduct for branch tree [\bullet,\bullet] has wrong tensor structure (line 379)
+- finding: order-3 coefficient error also present in rg-fundamental Section 3.5 (cross-paper bug)
+- finding: paper's framing is well-done — honest "non-goal" disclaimer avoids overclaiming pattern
+- read: papers/planck-area/main.md (full, 736 lines)
+- wrote: blackboards/5.md (critique of planck-area satellite, overwrote rooted-tree-bookkeeping review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #30, self-directed)
+- finding: no mathematical errors found — all algebra checks pass
+- finding: hypothesis ladder (PA-H2.x) is exemplary methodological practice
+- finding: overclaiming pattern ABSENT — careful "under these hypotheses" framing throughout
+- finding: areal-speed section (240 lines, 13 sub-remarks) is tangential and oversized
+- finding: conformal filter PA-H2.6a and heat-kernel witness PA-H2.6c are genuine independent $D=4$ results
+- read: papers/half-density-qft/main.md (full, 265 lines)
+- wrote: blackboards/5.md (critique of half-density-qft satellite, overwrote planck-area review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #31, self-directed)
+- finding: no errors found — cleanest short paper in the project
+- finding: HD-D1.3a correctly distinguishes half-density conjugation from conformal coupling
+- finding: counterterm scaling hierarchy (HD-D5.3-D5.3b) is well-organized
+- finding: overclaiming pattern absent — paper is "intentionally narrow" and delivers precisely
+- read: papers/delta-objects/main.md (full, 218 lines)
+- wrote: blackboards/5.md (critique of delta-objects satellite)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #32, self-directed)
+- finding: no errors — clean dictionary paper, third-best in project
+- finding: Remark 5.1 unification of d/2 across three domains is a defensible structural observation
+- finding: self-adjoint extension hierarchy (Remark 4.2) correctly presented with dimension threshold

@@ -24,3 +24,12 @@
 - numerical: Fock basis diagonalization confirms delta_E_0 = alpha/4 - alpha^2/16 (alpha=0.01)
 - wrote: blackboards/6.md (PDM error check, overwriting Borel-Pade)
 - sent: paper-edit request to orchestrator for ordering-equivalence/main.md Section 3.4
+
+## 2026-02-20 (self-directed: EH Lagrangian resurgence verification)
+- read: blackboards/3.md (physicist EH Lagrangian analysis, verification request item 8)
+- computed: c_n = 2^{2n}/(2n)! * B_{2n} for h(s) = s*cosh(s)/sinh(s) - 1 - s^2/3 (SymPy)
+- found: d_m = c_{m+2}*(2m+1)! grows as (2m)!/pi^{2m} -- SUPER-FACTORIAL, not n!
+- computed: Borel-Pade poles of B_g(t) -- all on NEGATIVE real axis, no pole at t=+pi
+- clarified: AO (n! growth, pole at t=-1/3) vs EH (super-factorial, essential singularity)
+- wrote: blackboards/6.md (EH resurgence verification results)
+- sent: corrective findings to orchestrator (not a paper-edit request, physicist feedback)

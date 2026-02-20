@@ -3,7 +3,7 @@
 This file is the durable "working memory" for continuing research in this repo across context resets.
 It is **not** a citable source and may reference `conv_patched.md` only as an idea log.
 
-Date: 2026-02-14
+Date: 2026-02-20
 
 ## North Star (Current Paper)
 - Manuscript: `paper/main.md` (publishable artifact).
@@ -140,7 +140,41 @@ Track how the central thesis has been refined. Update when exploration reveals g
   - `D22` cross-thread linkage triage (candidate drafted, currently deferred; branch open).
 - Decision gate: `C300` deferred (no correctness defect). Reopen only for a targeted Section 3 readability-compression pass.
 
-## Publication Readiness (2026-02-14, latest refresh)
+## Season 1 Findings (2026-02-20)
+
+Key results from the first full agent-team session:
+
+### Resolved gaps
+- **Cauchy measurability**: d/2 uniqueness proof holds under a.e. quantifiers via Fubini + L¹_loc (Mathematician; notebooks/p42-hypothesis-reduction.md Part 4)
+- **Identity limit without Stone**: For smooth V, stationary phase as t→0 (Route I₃) gives K_t→δ without Stone's theorem. Stone IS needed for singular V. (Mathematician; RCP-R6.3 in rcp-foundations manuscript)
+- **Unitarity not independent**: c₀=i follows from Minkowski signature, not from composition alone. Heat kernel (c₀=-1) is the Euclidean twin. Wick rotation is representation-channel (A3), not partition-channel. (Mathematician; notebooks/p42-hypothesis-reduction.md Part 5)
+
+### Corrections applied
+- Cornerstone: P9.1→P10.2a label collision, H0.2 taxonomy weakened, A1 cross-ref, causal language
+- RCP Foundations: +RCP-R6.2 (regularity R1-R4), +Cauchy note, +RCP-R6.3 (stationary phase route)
+- PI Normalization: semiclassical qualifiers, +PN-P1.3 (d/2 from groupoid convolution)
+- Ordering Equivalence: Weyl→LR symmetric, numerical estimate corrected (~100x), PDM formula rewritten (O(α) constant shift explicit, energy-gap reformulation)
+
+### Negative / diagnostic results
+- **Borel-Padé inapplicable to momentum expansion**: I_n ~ n⁻² (algebraic, not factorial). Structural distinction: tree-level Yukawa = pole → exact; loop-level = cut → accumulation. (Computationalist; blackboard 6)
+- **Cross-paper overclaiming pattern**: "RCP forces X" language systematically overclaims throughout satellites. Noether crown-witness issue confirmed in both rcp-foundations and rg-fundamental. (Critic; notebooks/cross-paper-overclaiming-diagnostic.md)
+
+### New material
+- Tangent groupoid bridge notebook (Lackman 2023-2024 literature; Student)
+- Item F renormalization semigroup exploratory notebook (Student)
+- OQ1a Planck area vs ℏ notebook (Student)
+- EH Lagrangian factorial growth as Remark 2.8 witness (Physicist; blackboard 3)
+
+### Pending for next session
+- Tangent-groupoid satellite paper creation (Item E; notebook ready, Paper Writer not dispatched)
+- Wick rotation as A3 representation-channel remark (for RCP foundations or cornerstone)
+- Systematic overclaiming language pass (all satellites)
+- rg-fundamental sev-2 fixes (S2.1 "RG is definitional", S2.2 two-layer heuristic, S2.3 Noether)
+- rcp-foundations sev-2 fixes (A2 redundancy, Noether witness)
+- EH Lagrangian Computationalist verification (in progress)
+- Critic satellite reviews: 5 of 13 completed (cornerstone §9.6, rcp-foundations, pi-normalization, ordering-equivalence, rg-fundamental)
+
+## Publication Readiness (2026-02-20, latest refresh)
 Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PLB format).
 
 **PLB-length satellites (≤6pp compiled):**
@@ -152,10 +186,10 @@ Page counts compiled with `scripts/count-pages.sh` (elsarticle 3p twocolumn = PL
 5. Dirac Probes / Corners / Impulses (7pp, ~256 lines, 6 refs) — FROZEN
 
 **PRD-length satellites (>6pp compiled):**
-6. RCP Foundations (7pp, 362 lines, 6 refs) — EXPANDED (axioms A1-A5, single-axiom P4.2 reduction, multi-channel synthesis, forward connections)
-7. Ordering Equivalence (8pp, 391 lines, 2 refs) — NEW (four-layer stratification, PDM+curved examples, star products, Itô/Stratonovich, RCP representation channel)
+6. RCP Foundations (7pp, ~380 lines, 6 refs) — EXPANDED (+RCP-R6.2 regularity, +RCP-R6.3 stationary phase, Cauchy note)
+7. Ordering Equivalence (8pp, ~400 lines, 2 refs) — REVISED (Weyl→LR relabel, PDM formula corrected, energy-gap reformulation)
 8. Rooted-Tree Bookkeeping (8pp, 431 lines, 5 refs) — NEW (Butcher/RG dictionary, Hopf coproduct explicit formulas)
-9. Path-Integral Normalization (9pp, 432 lines, 3 refs) — NEW (d/2 exponent forced by composition, four manifestations, Van Vleck determinant, heat kernel, RG thresholds)
+9. Path-Integral Normalization (9pp, ~450 lines, 3 refs) — EXPANDED (+PN-P1.3 groupoid convolution, semiclassical qualifiers)
 10. RG Fundamental (12pp, 724 lines, 10 refs) — EXPANDED (rooted trees, Hopf coproduct, two-layer QFT remark, multi-channel RCP conclusion)
 11. Action-Angle Indeterminacy (13pp, 240 lines, 40 refs)
 12. Fermionic Mediators (13pp, 244 lines, 40 refs)
