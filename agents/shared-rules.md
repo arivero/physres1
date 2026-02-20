@@ -62,11 +62,21 @@ Keep it natural but SHORT — one phrase, ≤ 120 characters.
 
 | Type | Format | Example |
 |------|--------|---------|
-| Paper edit | `proposals/<agent>-edit-<topic>.md` | `proposals/physicist-edit-remark-p42.md` |
+| Paper edit | `proposals/<agent>-edit-<topic>.md` | `proposals/physicist-edit-remark-p42.md` (must include a diff) |
 | Task suggestion | `proposals/<agent>-task-<topic>.md` | `proposals/critic-task-verify-vanvleck.md` |
 
 The prefix (`edit-`, `task-`) tells the orchestrator what action is needed.
 Files without a prefix are treated as general findings (reviews, audit results, etc.).
+
+**Paper edit proposals MUST include a diff.** Use unified diff format:
+```
+--- a/paper/main.md
++++ b/paper/main.md
+@@ -1291,0 +1292,5 @@
++New text to insert here.
++More new text.
+```
+This lets the orchestrator apply the edit mechanically, without guessing intent.
 
 The orchestrator reads proposal files when processing signals.
 Agents do NOT need to wait for acknowledgement — write the file, send the word, move on.

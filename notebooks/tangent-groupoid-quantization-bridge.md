@@ -1362,3 +1362,70 @@ the full Verlinde formula derivation from sewing axioms.
 - Witten 1989 (Commun.Math.Phys. 121): Chern-Simons and Jones polynomial
 - blackboards/4.md: mathematician source (this session)
 - proposals/mathematician-cft-q1-stage4.md: paper-edit request for Remark P9.2
+
+---
+
+## CFT-Q1 Numerical Verification (Computationalist, 2026-02-20)
+
+**Source:** `tmp/qdeformed_verify.py`; BB4 §12.
+
+### Q1a: Coassociativity Holds for All q (Confirmed Numerically)
+
+Tested U_q(sl2) in the 2-dimensional (spin-1/2) representation for 7 values of q spanning
+real, unit-circle, root-of-unity, and generic complex cases:
+
+| q | (Δ⊗1)Δ = (1⊗Δ)Δ error |
+|---|------------------------|
+| 2.0 (real) | 0 (exact) |
+| 0.5 (real, 0<q<1) | 0 (exact) |
+| e^{i·0.3} (S¹, generic) | 0 (exact) |
+| e^{2πi/5} (root of unity) | 0 (exact) |
+| 1+0.5i (generic complex) | 0 (exact) |
+| 0.7+0.7i (off ℝ and S¹) | 0 (exact) |
+| 3.0 (large real) | 0 (exact) |
+
+**Conclusion:** LHS = RHS is algebraically exact (not just numerically small). Coassociativity is
+a structural identity, not a constraint. This confirms Q1a: **no forcing from (C_q) alone**.
+
+The reason is transparent from the computation: the "coassociativity error" expressions for E and F
+both reduce to the same linear combination `E⊗K⊗K + I⊗E⊗K + I⊗I⊗E` regardless of q,
+because Δ(E) = E⊗K + I⊗E is an algebra morphism identity.
+
+### Q1b: Casimir Eigenvalue Reality Characterizes q ∈ ℝ₊ ∪ S¹
+
+The q-deformed Casimir `C_q = EF + (q·K + q^{-1}·K^{-1})/(q-q^{-1})²` in the spin-1/2 rep:
+
+| q | type | max|Im(eigenvalue)| | Real? |
+|---|------|------------------|-------|
+| 2.0 | ℝ₊ | 0 | YES |
+| 0.5 | ℝ₊ | 0 | YES |
+| e^{iπ/4} | S¹ | 0 | YES |
+| e^{2πi/5} | S¹ (root of unity) | 3×10⁻¹⁷ | YES |
+| 1.5·e^{iπ/4} | off ℝ and S¹ | 0.497 | NO |
+| 0.3+0.9i | off ℝ and S¹ | 0.019 | NO |
+
+Spin-1 (3-dim) rep: same pattern confirmed.
+
+**Critic correction C11.3 verified:** q = -1.5 (real but negative) gives real Casimir eigenvalues,
+but the q-numbers [n]_q = (q^n - q^{-n})/(q - q^{-1}) alternate in sign at odd n.
+For the representation to be unitary, all [n]_q must be positive, which requires q ∈ ℝ₊.
+Physical constraint is q ∈ **ℝ₊ ∪ S¹**, not all of ℝ.
+
+### Summary: Four-Stage Forcing Table (Confirmed)
+
+| Stage | Composition axiom | Extra constraint | Forced constant |
+|-------|------------------|-----------------|-----------------|
+| 2 (QM, P4.2) | Semigroup K_{t1+t2} = K_{t1} K_{t2} | Dimensional homogeneity | ℏ (action scale) |
+| 3 (CFT, P9.1b) | Segal sewing | Virasoro algebra + unitarity | c/24 (vacuum exponent) |
+| 4a (WZW) | Sewing with 3-ball filling | WZ periodicity (π₃(G)=ℤ) | k ∈ ℤ (level) |
+| 4b (CS/RT) | Cobordism functor | Unitarity + normalization | q = e^{2πi/(k+g∨)} |
+
+The "extra" at each stage is a natural structural condition (not an arbitrary add-on):
+dimensional economy, modular closure, homotopy rigidity, or topological surgery invariance.
+
+**Four-agent endorsement:** Mathematician (analysis) + Physicist (WZW mechanism) +
+Critic (sev-2 correction, endorsement) + Computationalist (numerical verification).
+
+**CFT-Q1 resolution:** RESOLVED. Forcing exists at Q1c (cobordism+unitarity), not Q1a (composition alone).
+Parallel to OQ3: (C) does not force Adams positivity; (C) does not force root-of-unity q.
+Both require unitarity as the additional ingredient.

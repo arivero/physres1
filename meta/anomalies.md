@@ -20,7 +20,7 @@ read this file periodically to resolve, promote, or carry forward open entries.
 ### 2026-02-20 — Quantum groups and composition structure (source: Student, serendipity)
 - **What happened:** Serendipity browsing discovered that quantum groups (Drinfeld-Jimbo, quasitriangular Hopf algebras) have explicit composition via R-matrix (Yang-Baxter equation). Path integral literature (q-alg/9501025) derives quantum groups from Chern-Simons composition. Connection: quasitriangular structure R ∈ A ⊗ A is a universal composition law.
 - **Why it matters:** Our P4.2-P9 chain forces ℏ via composition. Does this force a quantum group structure at the algebra level? Is deformation parameter ℏ the quantum group quantization parameter? Butcher Hopf algebra (rooted trees) has Hopf structure — does it connect to Drinfeld-Jimbo?
-- **Status:** OPEN (exploratory, low priority for cornerstone but potentially valuable for unified framework)
+- **Status:** PARTIALLY RESOLVED (BB4 Q1a, 2026-02-21). Composition (coassociativity) holds for ALL q — does NOT force quantum group structure. ℏ is NOT the quantum group parameter (different algebraic roles: ℏ scales the exponential phase, q deforms the algebra). Butcher/CK Hopf algebra is COMMUTATIVE, not a quantum group (quantum groups are non-cocommutative). The genuine connection is at Level Q1c: cobordism + unitarity forces q, parallel to (C)+(D)+(I) forcing ℏ.
 
 ### 2026-02-20 — CFT sewing as field-theoretic composition (source: Student, serendipity)
 - **What happened:** Conformal field theory exhibits explicit sewing operation on conformal blocks (gluing Riemann surfaces → gluing conformal blocks). Recent papers (arXiv:2411.07707, 2024) prove convergence of Segal's sewing. Sewing is functorial: composition on blocks → composition on surfaces.
@@ -30,7 +30,7 @@ read this file periodically to resolve, promote, or carry forward open entries.
 ### 2026-02-20 — Cobordism hypothesis as completion theorem (source: Student, serendipity)
 - **What happened:** Cobordism hypothesis (Baez-Dolan, Lurie 2010, Grady-Pavlov 2021): extended TQFT uniquely determined by value on point. Mathematically: TQFT ⟺ monoidal functor from cobordism category. This IS the "completion structure" P9.1a discusses.
 - **Why it matters:** P9.1a asks when Stage 4 completes to TQFT. Answer: cobordism hypothesis says completion is automatic IF composition forces monoidal functoriality. Our question becomes: do composition + dimensional homogeneity force TQFT point-evaluation data? Direct connection to cornerstone.
-- **Status:** OPEN (medium priority; could strengthen P9 section with explicit cobordism hypothesis reference and Lurie's proof strategy)
+- **Status:** RESOLVED (BB3 THREE-AGENT + critic FOUR-AGENT review, 2026-02-20). Remark P9.1a-Cob promoted to cornerstone §9.6 (line 1294). L1-L4 limitations explicitly stated. Cobordism hypothesis adds UNIQUENESS to P9.1a's EXISTENCE.
 
 ## Resolved / promoted entries
 
@@ -74,10 +74,10 @@ read this file periodically to resolve, promote, or carry forward open entries.
 - **What happened:** Physicist conjecture that q = e^{iℏ/L_P²} would unify ℏ and L_P² forcings was found ill-posed by critic (BB4 §10). Dimensional mismatch: [ℏ/L_P²] = MT⁻¹ (not dimensionless). Also, q-deformed convolution is NOT standard convolution — P4.2's (C) cannot be directly extended.
 - **Why it matters:** The underlying question (does P4.2-style forcing work for q-deformed semigroups?) remains open and interesting, but the specific conjecture CFT-Q1 cannot be stated without fixing the dimensional analysis. Planck units make it tautological; non-Planck units introduce a new parameter.
 - **Proposed reformulation:** Instead of q = e^{iℏ/L_P²}, ask: "Is there a q-deformed analog of (C) for which the forcing gives q = e^{2πi/(k+g∨)} (Chern-Simons level)?" This connects to the Chern-Simons → quantum group path (BB4 §5, which was correct).
-- **Status:** PARTIALLY RESOLVED (BB4, mathematician 2026-02-20). Three-level analysis:
-  - Q1a: (C_q) [coassociativity] holds for ALL q — no forcing.
-  - Q1b: (C_q) + unitarity forces q ∈ ℝ ∪ S¹ only (partial constraint).
+- **Status:** RESOLVED (BB4, THREE-AGENT: mathematician+physicist+critic, 2026-02-21). Three-level analysis:
+  - Q1a: (C_q) [coassociativity] holds for ALL q — no forcing from composition alone.
+  - Q1b: (C_q) + unitarity forces q ∈ ℝ₊ ∪ S¹ only (partial constraint).
   - Q1c: Cobordism sewing + unitarity + normalization forces q = e^{2πi/(k+g∨)} — Reshetikhin-Turaev theorem (1991).
-  RT-theorem is the Stage 4 analog of P4.2: composition (cobordism) + unitarity + normalization forces q.
-  Proposal: mention RT-forcing in cornerstone §9 as "Stage 4 q-analog of P4.2."
-  See proposals/mathematician-cft-q1-stage4.md for paper-edit request.
+  Three physical mechanisms converge: WZW/π₃(G)=ℤ, Verlinde modular, RT surgery (physicist §10).
+  RT-theorem is the Stage 4 analog of P4.2. No cornerstone edit needed (covered by P9.1a-Cob).
+  See proposals/critic-bb4-cft-q1-review.md for final assessment.
