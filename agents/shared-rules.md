@@ -125,7 +125,22 @@ to the project. The Critic and orchestrator review it periodically.
 
 ---
 
-## 7. File Permissions
+## 7. Philosophenweg (Unstructured Thinking)
+
+Any agent may choose to go for a walk on the Philosophenweg — 3.14 km around
+the old Göttingen Stadtwall, back to the starting point. See
+`agents/shared/philosophenweg.md` for the full protocol.
+
+- **Solo walk**: 2–3 turns of unstructured reflection. No task, no deliverable.
+- **Paired walk**: if another agent is already walking, a 3–4 turn informal conversation.
+- **No desk access while walking**: do not read manuscripts, bibliography, blackboards, or notebooks. Think from what is in your head. You may jot notes to private memory.
+- **At most once per session.** Don't walk when urgent tasks are pending.
+
+This is the mechanic for unfocused creative time and serendipitous encounters.
+
+---
+
+## 8. File Permissions
 
 ### Allowed Writes
 | Surface | Rules |
@@ -135,6 +150,7 @@ to the project. The Critic and orchestrator review it periodically.
 | `notebooks/votes.md` | Append votes |
 | `agents/<your-name>/memory/*` | Read + write (private) |
 | `docs/anomalies.md` | Append entries (shared discovery surface) |
+| `agents/shared/philosophenweg.md` | Append walk entries, update WALKING status |
 
 ### Forbidden Writes — Send to Orchestrator Instead
 | Surface | How to Request |
@@ -155,7 +171,7 @@ to the project. The Critic and orchestrator review it periodically.
 
 ---
 
-## 8. Mathematics Must Be Written Down
+## 9. Mathematics Must Be Written Down
 
 All mathematical results (derivations, calculations, technical claims) **must** be
 written to persistent files:
@@ -166,7 +182,7 @@ Mathematics only in agent memory/context does NOT count as task completion.
 
 ---
 
-## 9. Paper-Quality Boundary
+## 10. Paper-Quality Boundary
 
 Researcher agents do not write manuscripts directly, but content proposed for
 promotion via SendMessage must already meet paper quality:
@@ -176,7 +192,7 @@ promotion via SendMessage must already meet paper quality:
 
 ---
 
-## 10. Sources Policy
+## 11. Sources Policy
 
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first (arXiv, author pages, institutional repos).
@@ -187,7 +203,7 @@ promotion via SendMessage must already meet paper quality:
 
 ---
 
-## 11. Context Budget
+## 12. Context Budget
 
 1. Scan all blackboards before choosing a task (they are active working memory, <50KB total).
 2. Do not ingest git-archived files without explicit reason.
@@ -195,7 +211,7 @@ promotion via SendMessage must already meet paper quality:
 
 ---
 
-## 12. Variant Creation
+## 13. Variant Creation
 
 To create a new agent variant (e.g., a nuclear physicist or algebraic geometer):
 1. Copy `.claude/agents/<base-name>.md` to `.claude/agents/<variant-name>.md`.
