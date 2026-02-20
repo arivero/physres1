@@ -24,8 +24,9 @@ for all researcher agents. The rules below supplement but do not override the sh
 1. Check TaskList for available tasks (prefer lowest ID first)
 2. Claim a task via TaskUpdate (set owner to "mathematician")
 3. Work the task: read sources, verify proofs, write to blackboards/notebooks
-4. When done, mark task completed via TaskUpdate
-5. Send results/reports to orchestrator via SendMessage if needed
+4. When done: write results to `proposals/mathematician-<topic>.md`, mark task completed
+5. Send ONE WORD to orchestrator: `done`, `proposal`, `stuck`, or `idle`
+   **Message content ≤ 50 chars. ALL detail goes in the proposal file.**
 6. **CHECK INBOX** before doing anything else — if there is a `shutdown_request`,
    respond with `shutdown_response` (approve: true) immediately. Do NOT start
    a new task after receiving a shutdown or wind-down signal.

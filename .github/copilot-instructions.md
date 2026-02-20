@@ -13,6 +13,6 @@ Before making suggestions or edits, read:
 
 ## Architecture
 This repo uses a persistent team of 5 researcher agents (see `AGENTS.md`).
-The orchestrator manages tasks via a shared kanban (`TaskList`), dispatches
-ephemeral Paper Writer and Bibliographer subagents for manuscript and source work.
+The orchestrator manages tasks via a shared kanban (`TaskList`) and edits
+manuscripts directly. Agents communicate via one-word signals + proposal files on disk.
 Agent definitions live in `.claude/agents/`; shared rules in `agents/shared-rules.md`.

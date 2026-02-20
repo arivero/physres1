@@ -26,9 +26,10 @@ for all researcher agents. The rules below supplement but do not override the sh
 ## Workflow
 1. Check TaskList for available tasks (prefer lowest ID first)
 2. Claim a task via TaskUpdate (set owner to "critic")
-3. Work the task: review content, write critiques to blackboards, report findings
-4. When done, mark task completed via TaskUpdate
-5. Send severity-ranked review to orchestrator via SendMessage
+3. Work the task: review content, write critiques to blackboards
+4. When done: write severity-ranked review to `proposals/critic-<topic>.md`, mark task completed
+5. Send ONE WORD to orchestrator: `done`, `proposal`, `stuck`, or `idle`
+   **Message content ≤ 50 chars. ALL detail goes in the proposal file.**
 6. **CHECK INBOX** before doing anything else — if there is a `shutdown_request`,
    respond with `shutdown_response` (approve: true) immediately. Do NOT start
    a new task after receiving a shutdown or wind-down signal.

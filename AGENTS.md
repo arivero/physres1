@@ -18,13 +18,13 @@ Agents communicate via messages, claim tasks from a shared kanban, and write to 
 working surfaces (blackboards, notebooks). Each agent has a private memory folder that
 no other agent can read.
 
-One **ephemeral agent** (Paper Writer) is dispatched by the orchestrator on demand for
-manuscript editing. Library work (searching, downloading, ingesting references) is now
-done by any researcher agent directly — see `agents/shared-rules.md` §11.
+Library work (searching, downloading, ingesting references) is done by any researcher
+agent directly — see `agents/shared-rules.md` §11. The orchestrator handles paper
+edits directly (no ephemeral subagents).
 
 ---
 
-## 1. Orchestrator (Main Agent — Opus)
+## 1. Orchestrator (Main Agent — Sonnet)
 
 The conversation-level agent. Creates the team, manages the kanban, processes paper-edit
 requests, and dispatches ephemeral agents.
@@ -34,7 +34,7 @@ requests, and dispatches ephemeral agents.
 **Writes:**
 - `agents/orchestrator/memory/*` (private working notes, log, status)
 - `meta/research-state.md`, `meta/motivations.md`, `meta/handoff.md`
-- `paper/`, `papers/*/` (via Paper Writer dispatch)
+- `paper/`, `papers/*/` (direct edits)
 - `paper/bibliography.md`
 
 **Does NOT write:** blackboards, notebooks directly. Those are the researchers' surfaces.
@@ -42,8 +42,8 @@ requests, and dispatches ephemeral agents.
 **Responsibilities:**
 - Team creation and shutdown
 - Task creation, assignment, and monitoring via the shared kanban
-- Processing paper-edit requests from researcher agents
-- Dispatching ephemeral Paper Writer subagent
+- **Polling `proposals/` for agent output** — read proposal files, process, then delete
+- Processing paper-edit requests directly (no subagent)
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
 - Commit policy enforcement
 - Quality gates (promotion rules, diffstat tracking)
@@ -79,20 +79,11 @@ as their canonical rule set. See individual agent definition files for persona-s
 
 ---
 
-## 3. Ephemeral Agents (Subagents)
+## 3. Paper Editing
 
-### A. Paper Writer
-- **Purpose**: Promote content into manuscripts
-- **Writes**: `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md`
-- **Reads**: everything
-- **Model**: opus
-- **Dispatched by**: orchestrator only (in response to researcher edit requests)
-- **Rules**: paper-quality boundary (hard), net >= 10 lines per promotion, diffstat required
-
-### B. Bibliographer (LEGACY — replaced by shared library access)
-- All researcher agents can now search, download, and ingest references directly.
-- See `agents/shared-rules.md` §11 (The Library) for the current protocol.
-- `paper/bibliography.md` updates still go through the orchestrator.
+The orchestrator edits `paper/` and `papers/*/` directly when processing proposals.
+No ephemeral subagents. Library work is done by researcher agents directly
+(see `agents/shared-rules.md` §11).
 
 ---
 
@@ -120,15 +111,33 @@ Task IDs are planning metadata only — never in manuscripts.
 
 ---
 
-## 6. Communication Patterns
+## 6. Communication Patterns — Minimal Context Protocol
+
+**Messages are signal-only.** All substantive content goes to files on disk.
 
 | Channel | Purpose | Who uses it |
 |---------|---------|-------------|
 | Kanban | Task creation, claiming, completion | All |
-| Messages | Paper edit requests, reports, questions, collaboration | All |
+| Messages | **One-word signals only** (`done`, `proposal`, `stuck`, `idle`) | All |
+| `proposals/` | Paper edit requests, findings, questions — **all content** | Researchers → Orchestrator |
 | Blackboards | Shared working surface for math and exploration | Researchers |
 | Notebooks | Shared stable memory (append-only) | Researchers |
 | `agents/<name>/memory/` | Private working notes | Each agent (own folder only) |
+
+**Asymmetric limits:**
+
+| Direction | Limit | Reason |
+|-----------|-------|--------|
+| Agent → Orchestrator | **≤ 50 chars** (one word) | Burns orchestrator context |
+| Orchestrator → Agent | 1–2 sentences OK | Agent's own context |
+| Agent ↔ Agent | 1–2 sentences OK | Their own contexts |
+
+**Why:** Agent→orchestrator messages are delivered as conversation turns in the
+orchestrator's 200k context window. At ~120k tokens/cycle with 5 agents, context
+exhausts after ~3 auto-compressions. Moving content to `proposals/` on disk keeps
+the orchestrator's window for actual work.
+
+Proposal files: `proposals/<agent>-<topic>.md` (gitignored, ephemeral).
 
 ---
 
@@ -136,16 +145,15 @@ Task IDs are planning metadata only — never in manuscripts.
 
 | Agent | Allowed Writes | Forbidden Writes |
 |-------|---------------|-----------------|
-| Orchestrator | `meta/*`, dispatch Paper Writer for `paper/` | Direct blackboard/notebook writes |
+| Orchestrator | `meta/*`, `paper/`, `papers/*/` (direct edits) | Direct blackboard/notebook writes |
 | Physicist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/physicist/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Mathematician | `blackboards/*.md`, `notebooks/*.md` (append), `agents/mathematician/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Critic | `blackboards/*.md`, `notebooks/*.md` (append), `agents/critic/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/computationalist/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Student | `blackboards/*.md`, `notebooks/*.md` (append), `agents/student/memory/*` | `paper/`, `papers/`, `meta/*` |
-| Paper Writer (eph) | `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md` | blackboards, notebooks, meta |
 | Any researcher | `sources/*` (library — download and ingest references) | — |
 
-**Rule**: if a task requires touching files outside an agent's permissions, the orchestrator dispatches the appropriate agent instead.
+**Rule**: if a task requires touching files outside an agent's permissions, request it via the orchestrator.
 
 ---
 
@@ -189,7 +197,7 @@ Content can be added but never edited or deleted. Deletion requires voting (see 
 - **Notebooks** (`notebooks/`): append-only. Promotion from blackboards is intended.
 
 ### Quality Gates
-- Paper Writer produces >= 10 net lines per promotion (or justified exception)
+- Promotions should produce >= 10 net lines (or justified exception)
 - Diffstat recorded for every manuscript change
 
 ---
@@ -213,10 +221,10 @@ CONCEPTION → DRAFT → EXPANDING → FROZEN → SUBMITTED → PUBLISHED
 **Conception**: Any researcher can propose a new satellite by messaging the
 orchestrator. The orchestrator can also conceive papers from the
 `meta/next-articles.md` backlog. Criterion: a self-contained result deserving
-its own paper. Action: create `papers/<name>/main.md` via Paper Writer.
+its own paper. Action: orchestrator creates `papers/<name>/main.md`.
 
 **Draft → Expanding**: Researchers contribute content via blackboards →
-paper-edit requests. Paper Writer executes (two-agent promotion rule). Page
+paper-edit proposals. Orchestrator executes (two-agent promotion rule). Page
 count tracked via `scripts/count-pages.sh`.
 
 **Freezing**: Triggered when the paper reaches its target page limit.
@@ -261,7 +269,7 @@ must verify the content was committed before executing the deletion.
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
 2. Agents claim and work tasks (kanban cycle).
-3. Orchestrator processes paper-edit requests, dispatches Paper Writer. Agents do library work directly.
+3. Orchestrator polls `proposals/`, processes paper-edit requests directly. Agents do library work directly.
 4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
 5. Orchestrator updates `meta/research-state.md` when threads evolve.
 

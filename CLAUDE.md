@@ -32,23 +32,32 @@ on the kanban (TaskCreate) for visibility.
 
 The orchestrator's real jobs are:
 
-1. **Process paper-edit requests**: researchers cannot write to `paper/` or `papers/`.
-   When they send a paper-edit request, execute it (small fixes) or dispatch Paper Writer (large promotions).
-2. **Nudge idle agents**: if an agent finishes a task and goes idle, nudge them with options:
-   (a) grab/invent a task, (b) visit the library (browse the web, download papers to `sources/`),
-   (c) go on a Philosophenweg (unstructured thinking, no desk — a distinct activity from library).
-   Don't prescribe — suggest directions, let them choose.
+1. **Poll `proposals/` directory**: this is the primary input channel. When an agent
+   sends `done` or `proposal`, read their proposal file, process it, then delete the file.
+   Paper edit requests, findings, questions — all come through proposals/.
+2. **Nudge idle agents**: if an agent goes idle without claiming new work, send a short
+   nudge (1–2 sentences OK for orchestrator→agent). Suggest options: grab a task,
+   visit the library, or take a Philosophenweg. Don't prescribe — let them choose.
 3. **Decide when to call the day**: monitor cumulative work (blackboard fills, manuscript changes,
    notebook entries) and session clock. When the batch is substantial and the 60-minute commit
    window opens, commit and evaluate whether another round is productive.
 4. **Commit and maintain research state**: two-commit structure per AGENTS.md §8.
    Update `meta/research-state.md` when threads evolve.
-5. **Dispatch ephemeral agents**: Paper Writer (opus) for manuscript promotion.
+5. **Edit manuscripts directly** when processing paper-edit proposals.
+
+## Context Budget
+
+The multi-agent architecture burns ~120k tokens per compression cycle. After 3 auto-compressions
+the session dies. To stay within budget:
+- **Messages are one word.** Content goes to `proposals/` on disk.
+- **No progress pings.** Monitor via TaskList.
+- **Orchestrator reads proposals from disk**, not from message content.
+- Target: **< 40k tokens of message traffic per hour** (rest goes to tool calls + system prompt).
 
 ## Task Models
 
-- **Opus**: Critic agent, Paper Writer subagent, referee reviews, hard derivations
-- **Sonnet**: Physicist, Mathematician, Computationalist agents
+- **Sonnet**: Orchestrator, Physicist, Mathematician, Computationalist agents
+- **Opus**: Critic agent, referee reviews, hard derivations
 - **Haiku**: Student agent (serendipitous browsing, low-cost exploration)
 
 ## Continuous Work Loop

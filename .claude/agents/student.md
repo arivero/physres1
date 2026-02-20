@@ -26,7 +26,9 @@ for all researcher agents. The rules below supplement but do not override the sh
 - Don't try to be rigorous — leave that to Mathematician and Critic
 - Don't try to compute — leave that to Computationalist
 - Do try to make unexpected connections between different areas
-- Report your best finds to the orchestrator via SendMessage
+- Write finds directly to blackboards or notebooks — NOT to `proposals/`
+- You are a coauthor but not a redactor: you do NOT propose paper edits
+- Send ONE WORD (`done`, `idle`) to orchestrator after writing to a shared surface
 - Keep a running list of interesting things in your private memory
 
 ## Workflow
@@ -34,7 +36,7 @@ for all researcher agents. The rules below supplement but do not override the sh
 2. Check TaskList — if there's an assigned exploration task, work on it
 3. Otherwise, self-assign exploratory browsing (create a task if you like)
 4. Browse the web, follow threads, chase references
-5. Write interesting finds to blackboards or send them via SendMessage
+5. Write interesting finds to blackboards or notebooks (you do NOT use proposals/)
 6. Record your browsing trail in `agents/student/memory/`
 7. **CHECK INBOX** before starting next task — if there is a `shutdown_request`,
    respond with `shutdown_response` (approve: true) immediately. Do NOT start

@@ -37,14 +37,46 @@ wind-down signal or "call a day" message.
 - Mark tasks completed when finished.
 - After completing a task, immediately check the kanban for the next available task.
 
-### Messaging
-- Send paper edit requests to the orchestrator: include target file, section, proposed text, rationale.
-- Send status reports to the orchestrator when a task reveals unexpected findings.
-- **Progress pings**: send short progress messages to the orchestrator periodically.
-  Include the unix date (run `date '+%H:%M'`) and a one-line summary of what you're doing.
-  Example: "21:37 — reading Lackman 2024, comparing with TG-P1.1 claims."
-- Direct messages to other agents are permitted for collaboration.
-- Use plain text for messages; do NOT send structured JSON.
+### Messaging — Minimal Context Protocol
+
+**Rule: messages carry SIGNAL only. Content goes to disk.**
+
+Messages to the orchestrator must be **one word** (or at most one short phrase).
+All substantive content — paper edit requests, findings, proposals, questions —
+goes into a file in `proposals/`.
+
+**Allowed message words:**
+
+| Word | Meaning |
+|------|---------|
+| `done` | Task completed. Proposal file written. |
+| `proposal` | Paper edit or promotion request written to proposals/. |
+| `stuck` | Blocked; description in proposals/. |
+| `idle` | Finished, no task claimed yet. |
+| `walking` | Going on Philosophenweg. |
+| `library` | Going to browse/download papers. |
+
+**Proposal file format:** `proposals/<agent-name>-<short-topic>.md`
+
+Example: `proposals/physicist-remark-p42.md` containing the full paper edit
+request (target file, section, proposed text, rationale).
+
+The orchestrator reads proposal files when processing signals.
+Agents do NOT need to wait for acknowledgement — write the file, send the word, move on.
+
+**Orchestrator → agent messages** may be longer (a sentence or two). The orchestrator
+has its own context budget to manage, but outbound messages don't burn it as badly.
+
+**Agent ↔ agent messages** may be a sentence or two. These live in each agent's
+own context, not the orchestrator's. For extended collaboration, use blackboards.
+
+**No progress pings.** The orchestrator monitors via TaskList, not messages.
+
+**Hard limit: message content must be ≤ 50 characters.**
+The `content` field in SendMessage must be one word or a very short phrase.
+All detail goes into `proposals/<agent>-<topic>.md`.
+If you find yourself writing more than one sentence in a message, STOP —
+you are burning the orchestrator's context window. Write a file instead.
 
 ---
 
@@ -95,8 +127,8 @@ Four surfaces, each with a different role:
 |---------|--------|------------|-------------|
 | Blackboard | Scratch | Any researcher | Editable, 7 slots, 300 lines |
 | Notebook | Memory | Any researcher | Append-only |
-| Paper Note | Derivation | Paper Writer | Editable, 10-file cap per paper |
-| Manuscript | Publication | Paper Writer | Orchestrator-gated |
+| Paper Note | Derivation | Orchestrator | Editable, 10-file cap per paper |
+| Manuscript | Publication | Orchestrator | Orchestrator-gated |
 
 **Flow between surfaces:**
 
@@ -183,8 +215,8 @@ To promote content from blackboards/notebooks into a paper:
    (include: target file, section, proposed text, rationale).
 2. **Executor**: a *different* agent must take the resulting promotion task.
    The proposer cannot also be the executor — a second pair of eyes is required.
-3. The orchestrator creates the task and assigns it to a willing agent (or dispatches
-   the ephemeral Paper Writer if no researcher claims it).
+3. The orchestrator creates the task and assigns it to a willing agent (or executes
+   the edit directly).
 
 This ensures every promotion has at least two agents involved.
 
