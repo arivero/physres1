@@ -458,3 +458,84 @@ This result is a candidate for:
 ### Status: THREE-AGENT COMPLETE. Sev-2 confirmed.
 References: BB5 (three-agent source), Dunne-Ünsal 1207.0905 (CP(N-1) resurgence),
 Écalle 1981 (alien calculus), Costin-Dunne 2021 (Stokes constants from non-linear Borel).
+
+---
+
+## 16. Bion Forcing Theorem: Resonant Borel Singularities from Composition
+
+Promoted from blackboards/5.md (THREE-AGENT complete: Mathematician §1-7, Physicist §8, Critic §9).
+Date: 2026-02-20.
+
+### RES-16.1: Main Result
+
+**Theorem BB5-Bion (Resonant Stokes Forcing, sev-2):**
+
+Let K_t satisfy the composition axiom (C): K_{t₁+t₂} = K_{t₁} *_B K_{t₂} (Borel convolution).
+Let K_t have a simple pole at ζ = A with Stokes constant S(t), i.e., Δ_A(K_t) = S(t) · K_t.
+Then the Borel convolution K_{t₁+t₂} has at ζ = 2A a LOG singularity with coefficient:
+
+    Δ^{(log)}_{2A}(K_{t₁+t₂}) = [∫_0^{t₁+t₂} S(t')·S(t₁+t₂-t') dt'] · (1/A) · K_{t₁+t₂}
+
+**Corollary (bion amplitude forced):**
+
+The log coefficient at ζ = 2A in the Borel transform of K_t is NOT a free parameter.
+Composition forces it to equal [∫_0^t S(t')S(t-t') dt'] / A.
+
+For S(t) = c·t (single-instanton leading term from §13):
+    log-coefficient at 2A = c²t³/(6A)
+
+**Scope:** Applies when K_t has simple poles at A (instanton sector). The Stokes SIGN (±iπ from
+the resummation prescription above/below the cut) is NOT forced by (C) — it requires specifying the
+Borel summation prescription. Composition forces the MAGNITUDE; the sign is a physical input.
+
+### RES-16.2: Connection to BZJ (Bogomolny-Zinn-Justin) Relation
+
+**BZJ relation (1980-1981):** The imaginary ambiguity in the Borel resummation of the perturbative
+series at order e^{-2S_0} is cancelled by the imaginary part of the bion contribution
+(instanton-anti-instanton). In the Borel plane: log coefficient at 2A = (residue at A)²/A.
+
+**New framing:** The BZJ relation is a CONSEQUENCE of the composition axiom (C), not a separate
+consistency condition derived from Borel summability. Specifically:
+- BZJ (standard): derived by comparing Z_bion (saddle-point) with Im(Z_pert resummation)
+- BZJ from (C): derived by evaluating the Borel convolution of two single-instanton kernels
+
+Composition forces the bion amplitude in terms of the single-instanton Stokes constant — no reference
+to a Lagrangian, path integral, or saddle-point calculation is needed.
+
+**Novel framing vs. Dunne-Ünsal 1207.0905:** Dunne-Ünsal compute Z_bion from a Lagrangian and
+verify the BZJ self-consistency. They do NOT derive the bion amplitude from a composition axiom.
+The (C)-forcing perspective is orthogonal and provides an axiom-based derivation.
+
+### RES-16.3: Convolution Integral Details
+
+Near ζ = 2A + ε (ε small, above the positive real axis):
+
+    (B₁ *_B B₂)(ζ) = ∫_0^ζ r₁/(ζ'-A) · r₂/(ζ-ζ'-A) dζ'
+
+Regularization: let ζ' = A+u, the integrand is r₁r₂/(u(ε-u)).
+Partial fractions: 1/(u(ε-u)) = (1/ε)(1/u + 1/(ε-u)).
+
+Integration with analytic continuation (above the cut, principal log):
+    (B₁ *_B B₂)(ζ) ~ (r₁r₂/A) · log(ζ-2A) + [double pole term] + [regular]
+
+**Écalle convention:** Alien derivative normalization includes a factor (2πi), so:
+    Δ^{(log)}_{2A}(K_{t₁+t₂}) = (2πi) · (r₁r₂/A) · K_{t₁+t₂}   [Écalle normalized]
+
+The factor (2πi) is a convention choice, not a derived quantity.
+
+### RES-16.4: Trans-Series Structure
+
+For the full partition function Z(T) = K_t integrated:
+    Z(T) = 1 + e^{-A/ℏ}·Z₁(T) + e^{-2A/ℏ}·[Z₂(T) + Z_bion(T)·log(ζ-2A)] + ...
+
+Composition forcing:
+- Z₁: single-instanton → S₁(t) = c·t (from §13)
+- Z₂: two-instanton (independent) → additive from non-resonant factorization (§15)
+- Z_bion: bion amplitude = [S₁]²/A (from this theorem)
+
+The bion log coefficient is NOT a free parameter in the trans-series.
+
+### Status: THREE-AGENT COMPLETE. Sev-2 confirmed.
+References: BB5 (three-agent source), Dunne-Ünsal arXiv:1207.0905 (double-well bion resurgence),
+Bogomolny (1980), Zinn-Justin (1981) (BZJ relation), Écalle 1981 (alien calculus and (2πi) convention),
+van Spaendonck-Vonk 2024 (minimal trans-series for double-well), RES-15 (non-resonant factorization).
