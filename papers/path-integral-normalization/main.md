@@ -120,7 +120,22 @@ The Gaussian integral yields a prefactor scaling as \((t_1+t_2)^{-d/2}\) (from t
 \]
 This can only hold for all \(t_1, t_2 > 0\) if \(\alpha = d/2\).
 
-Therefore, **the d/2 exponent is uniquely forced by the requirement that the prefactor compose correctly** under the Gaussian integral.
+Therefore, **the d/2 exponent is uniquely forced by the requirement that the prefactor compose correctly** under the Gaussian integral. This derivation assumes a translation-invariant Gaussian kernel family. The full uniqueness result — excluding non-Gaussian stable processes (\(\alpha \neq 2\) Lévy-Khintchine families) — follows from the dimensional obstruction in Proposition P4.2 of the companion RCP paper [RCPFoundations]: the dimensional basis \(\{m, \hbar\}\) cannot construct the characteristic exponent \([c_\alpha]\) for \(\alpha \neq 2\).
+
+## 2.3 Groupoid-Convolution Derivation
+
+The composition argument admits a formulation in pair-groupoid language that makes the d/2 forcing transparent without invoking heat kernels or path measures.
+
+`Proposition PN-P1.3 (d/2 from groupoid convolution).`
+Let \(G = \mathbb{R}^d \times \mathbb{R}^d\) be the pair groupoid with Lebesgue measure \(d^d z\). Let \(f: G \times (0,\infty) \to \mathbb{C}\) satisfy:
+- (C) Convolution: \(\int_{\mathbb{R}^d} f(x,z;t_1)\,f(z,y;t_2)\,d^d z = f(x,y;t_1+t_2)\),
+- (T) Translation invariance: \(f(x,y;t) = h(x-y;t)\),
+- (D) Dimensional consistency: \([f] = L^{-d}\),
+- (M) Measurability: \(h(\cdot;t) \in L^1(\mathbb{R}^d)\) and \(\hat{h}(p;t) \neq 0\) for a.e.\ \(p, t\).
+
+Then \(\hat{h}(p;t) = \exp(t\,\varphi(p))\) for some \(\varphi: \mathbb{R}^d \to \mathbb{C}\) (Cauchy's theorem for measurable additive functions applied to \(\log \hat{h}\)). For a quadratic Lagrangian (\(\varphi(p) = c\,p^2\)), the inverse Fourier transform forces the normalization \(N(t) \propto t^{-d/2}\). Lévy-stable alternatives (\(\varphi(p) = -c|p|^\alpha\), \(\alpha \neq 2\)) are excluded by the dimensional basis \(\{m, \hbar\}\), which cannot construct \([c_\alpha]\) for \(\alpha \neq 2\).
+
+In groupoid language: (C) is groupoid convolution (composition of morphisms), (T) is homogeneity of \(G\) under diagonal \(\mathbb{R}^d\) action, and \(\varphi(p) = c\,p^2\) corresponds to the Lie-algebroid exponential at the groupoid identity. No path measure, heat equation, or Feynman-Kac formula is invoked.
 
 # 3. Dimensional Analysis and P4.2 Connection
 
@@ -220,8 +235,8 @@ K(x,z;t_1+t_2)
 \exp\!\left(\frac{iS_{\mathrm{cl}}(x,z;t_1+t_2)}{\hbar}\right).
 \]
 
-`Proposition PN-P4.1 (d/2 exponent is metric-independent).`
-The d/2 exponent in \((m/2\pi i\hbar t)^{d/2}\) is unchanged by the introduction of curvature. The Van Vleck determinant \(\Delta^{1/2}\) is a **geometric factor** (metric-dependent) that encodes the Jacobian of geodesic flow, but it does not alter the dimensional exponent \(d/2\), which is fixed by the Gaussian integral structure of the composition law.
+`Proposition PN-P4.1 (d/2 exponent is metric-independent, at leading semiclassical order).`
+At leading semiclassical order (stationary-phase approximation), the d/2 exponent in \((m/2\pi i\hbar t)^{d/2}\) is unchanged by the introduction of curvature. The Van Vleck determinant \(\Delta^{1/2}\) is a **geometric factor** (metric-dependent) that encodes the Jacobian of geodesic flow, but it does not alter the dimensional exponent \(d/2\), which is fixed by the Gaussian integral structure of the composition law. Higher-order Seeley–DeWitt corrections \(a_n(x,y)\) are polynomial in \(t\) and do not modify the leading \(t^{-d/2}\) singularity, so the exponent is exact even though the Van Vleck derivation is semiclassical.
 
 This is the curved-space manifestation of Proposition PN-P1.1: the \(d/2\) exponent is a **universal compatibility datum**, independent of the background geometry.
 
@@ -397,7 +412,7 @@ The \(d/2\) exponent is a **compatibility datum** in the sense of the Refinement
 
 ## 7.2 Why d/2 Is Not a Free Parameter
 
-Three independent arguments converge on the necessity of \(d/2\):
+Three perspectives converge on the necessity of \(d/2\):
 
 1. **Composition closure (Proposition PN-P1.1):** The Gaussian integral \(\int d^d y\, \exp(-(y-y_*)^2/\sigma^2)\) scales as \(\sigma^d\). For the composition integral to produce a prefactor \((t_1+t_2)^{-\alpha}\) from factors \((t_1 t_2)^{-\alpha}\), we require \(\alpha = d/2\).
 

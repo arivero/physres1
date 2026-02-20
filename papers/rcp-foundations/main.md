@@ -263,6 +263,22 @@ Then, without further axioms, the composition law forces:
 `Remark RCP-P6.1 (Axiom reduction).`
 The original P4.2 required three hypotheses: composition (C), identity limit (I), dimensional homogeneity (D). Subsequent analysis shows that (D) is a theorem of (C) on \(\mathbb{R}^d\) (the composition integral forces \([K] = L^{-d}\)), and (I) follows from the explicit kernel form forced by (C) (the Gaussian kernel is a nascent delta family). **Composition is the single master axiom** for the partition channel; the physical setup (action-based dynamics on \(\mathbb{R}^d\) with mass \(m\) and self-adjoint generator) provides the arena, not additional axioms.
 
+`Remark RCP-R6.2 (Regularity conditions).`
+The derivation in Remark RCP-P6.1 rests on four regularity conditions that are implicit in the setup but should be stated explicitly.
+
+**(R1) Non-vanishing Fourier transform.** The functional equation \(\log \hat{K}_{t_1+t_2}(p) = \log \hat{K}_{t_1}(p) + \log \hat{K}_{t_2}(p)\) requires \(\hat{K}_t(p) \neq 0\) for all \(p \in \mathbb{R}^d\), \(t > 0\). For the free Gaussian kernel this holds by inspection; for general \(V\) it follows from unitarity of \(U(t) = e^{-iHt}\) (see (R3)).
+
+**(R2) Hermitian symmetry for semigroup-to-group extension.** Stone's theorem yields a unitary one-parameter *group* \(\{U(t)\}_{t \in \mathbb{R}}\), whereas the composition law is stated for \(t > 0\) (semigroup). The extension requires \(K(x,y;t) = \overline{K(y,x;t)}\). For action-based dynamics with real Lagrangian and \(i\varepsilon\) prescription, this holds automatically.
+
+**(R3) Self-adjointness.** Stone's theorem requires \(H = H^*\) with \(\mathrm{Dom}(H) = \mathrm{Dom}(H^*)\). For \(V \in L^p(\mathbb{R}^d)\) with \(p \geq d/2\), the Kato–Rellich theorem guarantees self-adjointness of \(-\hbar^2\Delta/(2m) + V\) on \(\mathrm{Dom}(-\Delta)\). For singular \(V\) (point interactions), the appropriate self-adjoint extension must be selected; the composition law alone does not pick it.
+
+**(R4) Uniform \(L^2\) boundedness.** Strong continuity \(\|U(t)\phi - \phi\|_{L^2} \to 0\) requires \(\sup_{t \in (0,1]}\|U(t)\|_{B(L^2)} < \infty\). For unitary \(U(t)\), \(\|U(t)\| = 1\) identically, so this is automatic once (R3) holds.
+
+The substantive condition is (R3): self-adjointness of \(H\). Conditions (R1), (R2), (R4) all reduce to consequences of unitarity for action-based dynamics with real Lagrangian. The physical setup specifies the arena — it is not an additional mathematical axiom but the selection of a definite Hamiltonian system. (A technical note: the Cauchy functional equation step — from the semigroup equation to linearity of \(\log \hat{K}_t(p)\) in \(t\) — holds under a.e.\ quantifiers via a Fubini argument, provided \(\hat{K}(p;\cdot) \in L^1_{\mathrm{loc}}((0,\infty))\) for a.e.\ \(p\); this is automatic for physical kernels.)
+
+`Remark RCP-R6.3 (Identity limit: smooth vs.\ singular potentials).`
+Condition (R3) (self-adjointness of \(H\)) is needed for the identity limit only when \(V\) is singular. For \(V\) bounded below and measurable (Kato class), the identity limit follows without Stone's theorem via stationary phase: the composition law forces \(K(x,y;t) = N(t)\exp(iS_{\mathrm{cl}}(x,y;t)/\hbar)\) (Remark RCP-P6.1), and the short-time classical action \(S_{\mathrm{cl}}(x,y;t) = m|x-y|^2/(2t) + O(t)\) (standard Lagrangian mechanics) concentrates the kernel near the diagonal as \(t \to 0^+\). For singular \(V\) (point interactions, inverse-square potentials), classical paths may not exist and self-adjoint extension selection is genuine physics requiring Stone's theorem.
+
 ## 6.2 RCP Interpretation
 
 This theorem is the **crown witness for partition compatibility**. It shows:
@@ -273,7 +289,7 @@ This theorem is the **crown witness for partition compatibility**. It shows:
 
 3. **Partition compatibility is fundamental:** The theorem shows that partition refinement is not a calculational convenience—it is a **definitional requirement**. The demand that refined and coarse predictions agree forces quantum mechanics.
 
-4. **Per-axiom decomposition.** Of nine P4.2 conclusions, composition (A1) alone forces five (d/2, exponential weight, \(i\varepsilon\), \(\kappa \to \infty\) failure, Lévy process exclusion). Combined with physical setup, composition forces three more (\([K]=L^{-d}\), \(\kappa = \hbar\), continuum time). The remaining conclusion (\(\kappa \to 0\) failure) follows from the explicit kernel form. The representation (A3) and scale (A4) axioms are **logically independent**—they address different channels and are not needed for P4.2.
+4. **Per-axiom decomposition.** Of nine P4.2 conclusions, composition (A1) alone forces five (d/2, exponential weight, \(i\varepsilon\), \(\kappa \to \infty\) failure, Lévy process exclusion). Combined with physical setup, composition forces three more (\([K]=L^{-d}\), \(\kappa = \hbar\), continuum time). The remaining conclusion (\(\kappa \to 0\) failure) follows from the explicit kernel form. The representation (A3) and scale (A4) axioms are **logically independent**—they address different channels and are not needed for P4.2. See Remark RCP-R6.2 for the regularity conditions under which the composition functional equation uniquely determines the Feynman kernel; in brief, the minimal condition set is composition + action-based physical setup + \(L^2\) unitarity of the propagator.
 
 # 7. Outlook and Crown Witnesses
 

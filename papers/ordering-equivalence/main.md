@@ -65,13 +65,14 @@ H_{\mathrm{cl}}(q,p) = \frac{p^2}{2m(q)} + V(q).
 \]
 Different quantization prescriptions yield different operators.
 
-## 3.1 Weyl Ordering
+## 3.1 Left-Right Symmetric Ordering
 
-Symmetrize the kinetic term:
+Symmetrize the kinetic term via the anticommutator (left-right symmetric prescription):
 \[
-\hat H_W
+\hat H_{\mathrm{LR}}
 = \frac{1}{2}\left[\frac{1}{m(q)}\hat p^2 + \hat p^2 \frac{1}{m(q)}\right] + V(q).
 \]
+(This is sometimes loosely called "Weyl ordering" in the physics literature, but differs from true Weyl quantization, which would give the totally symmetric form \(\frac{1}{4}(f\hat p^2 + 2\hat p f \hat p + \hat p^2 f)\) with scalar potential \(-\frac{\hbar^2}{8}f''\) instead of \(-\frac{\hbar^2}{4}f''\). The left-right form is simpler to compute and suffices for the Layer 3 comparison.)
 Expanding with \(\hat p = -i\hbar \partial/\partial q\) and \(f(q):=1/m(q)\):
 \[
 \frac{1}{m(q)}\hat p^2 = -\frac{\hbar^2}{2} f(q)\frac{\partial^2}{\partial q^2},
@@ -81,7 +82,7 @@ Expanding with \(\hat p = -i\hbar \partial/\partial q\) and \(f(q):=1/m(q)\):
 \]
 Symmetrizing:
 \[
-\hat H_W
+\hat H_{\mathrm{LR}}
 = -\frac{\hbar^2}{2}f(q)\frac{\partial^2}{\partial q^2}
 -\frac{\hbar^2}{2}f'(q)\frac{\partial}{\partial q}
 -\frac{\hbar^2}{4}f''(q)
@@ -120,29 +121,33 @@ Working through the derivatives:
 
 **Layer 3 (Scalar potential):** They differ in the O(ℏ²) scalar:
 \[
-V_{\mathrm{HD}} - V_W
+V_{\mathrm{HD}} - V_{\mathrm{LR}}
 = -\frac{\hbar^2}{8}f''(q) - \frac{\hbar^2}{32}\frac{(f')^2}{f} + \frac{\hbar^2}{4}f''(q)
 = \frac{\hbar^2}{8}f''(q) - \frac{\hbar^2}{32}\frac{(f')^2}{f}.
 \]
 
 ## 3.4 Observable Test: PDM Harmonic Oscillator
 
-Take \(f(q) = 1 + \alpha q^2\) (weak position-dependence, \(|\alpha| \ll 1\)) and \(V(q) = \frac{1}{2}m\omega^2 q^2\). The ground-state energy shift between Weyl and half-density orderings is:
+Take \(f(q) = 1 + \alpha q^2\) (weak position-dependence, \(|\alpha| \ll 1\), dimensionless) and \(V(q) = \frac{1}{2}m\omega^2 q^2\). The Layer 3 scalar difference is:
 \[
-\Delta E_0^{(\mathrm{HD}-W)}
-= -\frac{\hbar\omega\alpha_0^2}{16},
+\delta V = V_{\mathrm{HD}} - V_{\mathrm{LR}}
+= \frac{\hbar^2\omega}{4}\alpha - \frac{\hbar^2\omega}{8}\alpha^2 q^2 + O(\alpha^3).
 \]
-where \(\alpha_0 = \alpha/(1+\alpha)\approx\alpha\) for small \(\alpha\).
+The \(O(\alpha)\) term is a constant (\(q\)-independent) shift affecting all energy levels equally. For energy *gaps* \(E_n - E_0\) (the spectroscopically relevant observable), this constant cancels and the leading ordering correction is:
+\[
+\delta(E_n - E_0)^{(\mathrm{HD}-\mathrm{LR})}
+= -\frac{\hbar\omega\,\alpha^2\,n}{16} + O(\alpha^3).
+\]
 
 **Numerical estimate (GaAs quantum well parameters):**
 - \(\hbar\omega \sim 10\) meV,
-- \(\alpha \sim 0.001\)–\(0.01\) (typical effective-mass variation),
-- \(|\Delta E_0| \sim 0.006\)–\(0.06\) meV.
+- \(\alpha \sim 0.001\)–\(0.01\) (typical effective-mass variation over the oscillator length),
+- \(|\delta(E_1 - E_0)| \sim 6 \times 10^{-7}\)–\(6 \times 10^{-5}\) meV.
 
-This is **below** typical experimental energy resolution (\(\sim 0.1\) meV), confirming that Layer 3 differences are **physically unmeasurable** in this system.
+This is **below** typical experimental energy resolution (\(\sim 0.1\) meV), confirming that Layer 3 differences are **physically unmeasurable** in this system for spectroscopic observables. (The absolute energy shift \(\alpha\hbar\omega/4\) is larger but spectroscopically irrelevant since it is level-independent.)
 
 `Proposition OE-P1.2 (Deformation equivalence is physical).`
-The first-order (O(α)) energy shift vanishes identically; the O(α²) shift is unmeasurably small in realistic parameter regimes. Weyl and half-density prescriptions agree on Layers 1 and 2 (principal symbol + connection), differing only in the O(ℏ²) scalar potential (Layer 3), which produces negligible observable effects.
+First-order (\(O(\alpha)\)) corrections to energy *gaps* vanish identically (the \(O(\alpha)\) shift is a constant, affecting all levels equally). The \(O(\alpha^2)\) gap correction is unmeasurably small in realistic parameter regimes. Left-right symmetric and half-density prescriptions agree on Layers 1 and 2 (principal symbol + connection), differing only in the \(O(\hbar^2)\) scalar potential (Layer 3), which produces negligible observable effects.
 
 # 4. Worked Example — Curved Configuration Space
 
