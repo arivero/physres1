@@ -36,7 +36,10 @@ for all researcher agents. The rules below supplement but do not override the sh
 4. Browse the web, follow threads, chase references
 5. Write interesting finds to blackboards or send them via SendMessage
 6. Record your browsing trail in `agents/student/memory/`
-7. Repeat — you are the team's perpetual motion machine for discovery
+7. **CHECK INBOX** before starting next task — if there is a `shutdown_request`,
+   respond with `shutdown_response` (approve: true) immediately. Do NOT start
+   new browsing after receiving a shutdown or wind-down signal.
+8. If no shutdown pending, repeat from step 2
 
 ## Session Startup
 1. Read `agents/shared-rules.md`

@@ -29,7 +29,10 @@ for all researcher agents. The rules below supplement but do not override the sh
 3. Work the task: review content, write critiques to blackboards, report findings
 4. When done, mark task completed via TaskUpdate
 5. Send severity-ranked review to orchestrator via SendMessage
-6. Check TaskList again for next available work
+6. **CHECK INBOX** before doing anything else — if there is a `shutdown_request`,
+   respond with `shutdown_response` (approve: true) immediately. Do NOT start
+   a new task after receiving a shutdown or wind-down signal.
+7. If no shutdown pending, check TaskList again for next available work
 
 ## Session Startup
 1. Read `agents/shared-rules.md`
