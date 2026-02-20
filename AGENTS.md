@@ -45,7 +45,7 @@ requests, and dispatches ephemeral agents.
 - Dispatching ephemeral Paper Writer and Bibliographer subagents
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
 - Commit policy enforcement
-- Quality gates (ensure Critic review before submission-quality claims)
+- Quality gates (promotion rules, diffstat tracking)
 - Research state maintenance
 
 ---
@@ -59,7 +59,7 @@ as their canonical rule set. See individual agent definition files for persona-s
 |-------|-------|------------|---------|
 | Physicist | sonnet | `.claude/agents/physicist.md` | Intuitive, limiting cases, dimensional analysis, physical plausibility |
 | Mathematician | sonnet | `.claude/agents/mathematician.md` | Rigorous, demands proofs, explicit hypotheses, statement precision |
-| Critic | opus | `.claude/agents/critic.md` | Hostile referee, stress-tests claims, grades issues by severity |
+| Critic | opus | `.claude/agents/critic.md` | Skeptical colleague, stress-tests claims, grades issues by severity |
 | Computationalist | sonnet | `.claude/agents/computationalist.md` | SymPy, numerical checks, explicit calculations |
 | Student | haiku | `.claude/agents/student.md` | Curious web browser, serendipitous discovery, finds unexpected connections |
 
@@ -191,7 +191,6 @@ Content can be added but never edited or deleted. Deletion requires voting (see 
 - **Notebooks** (`notebooks/`): append-only. Promotion from blackboards is intended.
 
 ### Quality Gates
-- Critic review before any submission-quality claim
 - Paper Writer produces >= 10 net lines per promotion (or justified exception)
 - Diffstat recorded for every manuscript change
 
@@ -226,10 +225,10 @@ count tracked via `scripts/count-pages.sh`.
 Orchestrator confirms. Marked FROZEN in `meta/research-state.md`. No further
 expansion unless explicit reclassification.
 
-**Publication**: Prerequisite: at least one Critic review pass. "The review
-never is" — publication is a state of the paper, not a claim of perfection.
-The Critic's assessment is perpetual. Issues found post-publication go to
-`meta/anomalies.md` or generate erratum tasks.
+**Publication**: "The review never is" — publication is a state of the paper,
+not a claim of perfection. Any agent may raise issues at any time, before or
+after publication. Issues found post-publication go to `meta/anomalies.md` or
+generate erratum tasks.
 
 **Discard**: Same vote threshold as notebooks (3/5 agents or 2 + orchestrator).
 Salvage valuable notes to notebooks first, then `git rm -r`. The orchestrator
@@ -246,7 +245,7 @@ must verify the content was committed before executing the deletion.
 ---
 
 ## 12. Context Budget Rules
-1. Scan all blackboards before choosing a task.
+1. Consider scanning blackboards before choosing a task (recommended, not required).
 2. Read only relevant blackboard slots during a task.
 4. Default-deny for high-volume history files.
 
@@ -258,7 +257,7 @@ must verify the content was committed before executing the deletion.
 1. Orchestrator reads: `AGENTS.md`, `meta/motivations.md`, `meta/handoff.md`, `meta/research-state.md`.
 2. Orchestrator creates the team and spawns 5 researcher agents.
 3. Each agent reads: `agents/shared-rules.md`, `meta/motivations.md`, `meta/research-state.md`,
-   own `status.md` (cold-start resumption), all blackboards.
+   own `status.md` (cold-start resumption). Blackboards are available but agents choose when to read them.
 4. Orchestrator scans research-state for open threads, creates initial tasks.
 
 ### Work Phase

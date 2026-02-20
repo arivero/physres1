@@ -68,18 +68,14 @@ relevant slot. Deletion criteria (in priority order):
 | 5 | Curved-space composition test for P4.2 extension (D30/S287) | Promoted (C312 -> P4.2e, notebook: p42-extensions-interacting-curved) |
 | 6 | Weyl vs half-density energy shift for PDM (D38/S294) | Promoted (C312 -> D9.1a correction, notebook: deformation-equivalence-physical) |
 
-## Before Choosing Next Task: Read All Blackboards
-**When deciding what to work on next**, read the **contents** of all blackboards (not just the index):
-```bash
-for f in blackboards/[0-6].md; do cat "$f"; done
-```
+## Reading Blackboards
+Blackboards are the active working memory (max 7 slots, ~300 lines each, <50KB total).
+Agents may read blackboards whenever they find it useful — for example:
+- Before choosing a task (to avoid duplicating work)
+- When looking for connections between active threads
+- To identify promotion candidates or stale slots
 
-**Why:** Blackboards are the active working memory (max 7 slots, ~300 lines each, <50KB total).
-Reading them all before choosing a task:
-1. Avoids duplicating work already in progress
-2. Reveals connections between active threads
-3. Identifies ripe promotion candidates (stable results ready for Paper Writer)
-4. Shows which slots are stale/superseded (candidates for overwriting)
+Reading blackboards is the agent's choice, not a mandatory step.
 
 **For notebooks:** Consider random sampling (2-3 files) to check for related stable content.
 Strategy: `ls notebooks/*.md | sort -R | head -n 3` then read those files.

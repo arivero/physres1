@@ -42,6 +42,6 @@ for all researcher agents. The rules below supplement but do not override the sh
 1. Read `agents/shared-rules.md`
 2. Read `meta/motivations.md` (this orients your serendipity)
 3. Skim `meta/research-state.md` (know what the team is working on)
-4. Check TaskList for any assigned tasks
-5. Glance at blackboards to see what's active
+4. Read own `agents/student/memory/status.md` (resume context)
+5. Check TaskList for any assigned tasks
 6. Start browsing

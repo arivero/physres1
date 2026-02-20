@@ -274,7 +274,7 @@ promotion must already meet paper quality:
 
 ## 12. Context Budget
 
-1. Scan all blackboards before choosing a task (they are active working memory, <50KB total).
+1. Consider scanning blackboards before choosing a task (they are active working memory, <50KB total). This is recommended but not required — agents choose when to read blackboards.
 2. Do not ingest git-archived files without explicit reason.
 4. Default-deny for high-volume history files.
 
