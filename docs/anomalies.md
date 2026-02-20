@@ -1,17 +1,17 @@
 # Anomaly Register
 
 This file collects unexpected results, unresolved tensions, and structural puzzles
-encountered during cycle work. It is **not** a citable source.
+encountered during research. It is **not** a citable source.
 
-Any cycle (S, B, C, Q, D) may add entries here. D-explore (DX) cycles must read this
-file as input and either resolve, promote, or carry forward each open entry.
+Any researcher agent may add entries here. The orchestrator and Critic should
+read this file periodically to resolve, promote, or carry forward open entries.
 
 ## Entry format
 
-### <date> — <one-line summary> (source: <cycle ID>)
+### <date> — <one-line summary> (source: <agent or task>)
 - **What happened:** <describe the surprise or tension>
 - **Why it matters:** <what principle or thread does it stress?>
-- **Status:** OPEN | PROMOTED (→ <cycle>) | RESOLVED (<one-line reason>)
+- **Status:** OPEN | PROMOTED (→ <task/paper>) | RESOLVED (<one-line reason>)
 
 ---
 

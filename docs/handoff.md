@@ -35,8 +35,6 @@ Critic, Computationalist, Student) coordinated by an orchestrator via a shared k
 
 ## Research Continuation (Durable State)
 - Working memory + active threads: `docs/research-state.md` (non-citable)
-- Chronological lab notebook: `docs/research-log.md` (non-citable)
-- Pre-commit log rollover rule: keep only the latest 3 dated entries in `docs/research-log.md`; move older entries to `docs/research-log-archive.md` before commit work.
 
 ## Build Paper (Markdown -> TeX -> PDF)
 Do not rely on pandoc defaults for math in this repo; use the single-backslash math extension.

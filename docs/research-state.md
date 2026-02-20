@@ -28,7 +28,7 @@ The goal is not to repackage standard narratives. Default to:
 ## Operational Loop (One Session)
 1. Pick one thread + one concrete question (keep scope ≤ 1–2 pages of derivation).
 2. If the work is exploratory, write a dated note in `blackboards/` first; promote later.
-3. Record decisions/results in `docs/research-log.md`; put longer math in `paper/notes/`.
+3. Put longer math in `paper/notes/`; record decisions on blackboards or notebooks.
 4. If an external claim matters, ingest/track its primary source:
    - update `paper/bibliography.md` (key + status),
    - add/refresh `sources/<...>.md` or `sources/pending-<key>.md`.
@@ -198,8 +198,7 @@ All papers verified: clean encoding, proper YAML metadata, no internal file path
 P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless explicitly requested.
 
 ## Immediate Next Actions (Low Friction)
-1. Add a dated entry to `docs/research-log.md` at the start of each session (even if work is exploratory).
-2. When a derivation starts to stabilize, create a dedicated note in `paper/notes/` and link it from the log.
-3. Keep `docs/next-articles.md` as the "topic backlog"; keep `docs/research-log.md` as the "what happened" record.
-4. Central-force bridge thread: continue iteration if unresolved; reopen readability pass only when targeted.
-5. Future work: satellite submissions, content expansion for shorter papers, cornerstone polish.
+1. When a derivation starts to stabilize, create a dedicated note in `paper/notes/`.
+2. Keep `docs/next-articles.md` as the "topic backlog".
+3. Central-force bridge thread: continue iteration if unresolved; reopen readability pass only when targeted.
+4. Future work: satellite submissions, content expansion for shorter papers, cornerstone polish.

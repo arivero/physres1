@@ -31,7 +31,7 @@ requests, and dispatches ephemeral agents.
 **Reads:** everything (full repo access)
 
 **Writes:**
-- `docs/research-log.md`, `docs/research-state.md`, `docs/motivations.md`, `docs/handoff.md`
+- `docs/research-state.md`, `docs/motivations.md`, `docs/handoff.md`
 - `paper/`, `papers/*/` (via Paper Writer dispatch)
 - `paper/bibliography.md` (via Bibliographer dispatch)
 
@@ -45,7 +45,7 @@ requests, and dispatches ephemeral agents.
 - Notebook deletion vote tallying
 - Commit policy enforcement
 - Quality gates (ensure Critic review before submission-quality claims)
-- Research log maintenance
+- Research state maintenance
 
 ---
 
@@ -161,8 +161,6 @@ Task IDs are planning metadata only — never in manuscripts.
 3. **Commit metadata (required):**
    - Agent/model tag (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`)
    - Brief summary of work done
-4. **Research-log rollover before commit:**
-   - Move all but the latest three dated entries from `docs/research-log.md` into `docs/research-log-archive.md`.
 
 ---
 
@@ -219,8 +217,7 @@ Target max **6 compiled LaTeX pages** in `elsarticle` 3p twocolumn format. Measu
 
 ## 12. Context Budget Rules
 1. Scan all blackboards before choosing a task.
-2. `docs/research-log.md` is append-only; at startup read only recent tail.
-3. Read only relevant blackboard slots during a task.
+2. Read only relevant blackboard slots during a task.
 4. Default-deny for high-volume history files.
 
 ---

@@ -78,7 +78,6 @@ The orchestrator executes `git rm` when threshold is met.
 | `paper/bibliography.md` | SendMessage bibliography update request to orchestrator |
 | `AGENTS.md`, `CLAUDE.md` | Never (orchestrator-only) |
 | `docs/handoff.md` | Never (orchestrator-only) |
-| `docs/research-log.md` | SendMessage log entry request to orchestrator |
 | `docs/research-state.md` | SendMessage state update request to orchestrator |
 
 ### Forbidden Reads
@@ -124,8 +123,7 @@ promotion via SendMessage must already meet paper quality:
 ## 8. Context Budget
 
 1. Scan all blackboards before choosing a task (they are active working memory, <50KB total).
-2. Read only the recent tail of `docs/research-log.md` — never the full history.
-3. Do not ingest archived log files or git-archived cycle files without explicit reason.
+2. Do not ingest git-archived files without explicit reason.
 4. Default-deny for high-volume history files.
 
 ---
