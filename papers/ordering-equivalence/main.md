@@ -1,6 +1,6 @@
 ---
 title: "Operator Ordering as Equivalence Class: Stratification and Measurability"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   Quantum operator ordering is traditionally framed as an "ambiguity" requiring physical input to resolve. This note develops the complementary view that ordering is an **equivalence relation**: different prescriptions (Weyl, half-density, left/right) share the same principal symbol and differ only in ℏ-dependent corrections stratified across four layers. We present the four-layer decomposition (principal symbol, connection, scalar potential, domain), work through two explicit examples (position-dependent mass, curved configuration space), and analyze when ordering differences are physically measurable. The conclusion is that ordering choice is a gauge freedom, with half-density quantization serving as a canonical representative within the equivalence class—analogous to Lorenz gauge in electromagnetism. This work complements the **representation channel** of the Refinement Compatibility Principle (RCP), which demands that physical predictions survive controlled changes of quantization prescription.
@@ -20,7 +20,7 @@ This stratification clarifies when ordering differences are **physically measura
 
 **Relation to refinement compatibility.** Ordering equivalence is the **representation channel** of the Refinement Compatibility Principle (RCP): physical predictions must survive controlled changes of quantization prescription, with the equivalence class serving as the invariant structure. See [RCPFoundations] for the multi-channel framework.
 
-**Scope of this note.** We present two worked examples (position-dependent mass, curved configuration space), connect ordering to star-product automorphisms and path-integral discretization, and analyze when ordering differences matter for observable quantities. The conclusion is that ordering is a gauge freedom, with half-density quantization playing the role of a "canonical gauge" (analogous to Lorenz gauge in electromagnetism).
+**Scope of this note.** We present two worked examples (position-dependent mass, curved configuration space), connect ordering to star-product automorphisms and path-integral discretization, and analyze when ordering differences matter for observable quantities. The conclusion is that ordering is a gauge freedom at Layers 1 and 2 (principal symbol and connection term), with half-density quantization playing the role of a "canonical gauge" analogous to Lorenz gauge at this level. Layer 3 differences (scalar potential corrections) are physical, not gauge, and lie outside this analogy.
 
 # 2. The Four-Layer Stratification
 
@@ -136,13 +136,13 @@ Take \(f(q) = 1 + \alpha q^2\) (weak position-dependence, \(|\alpha| \ll 1\), di
 The \(O(\alpha)\) term is a constant (\(q\)-independent) shift affecting all energy levels equally. For energy *gaps* \(E_n - E_0\) (the spectroscopically relevant observable), this constant cancels and the leading ordering correction is:
 \[
 \delta(E_n - E_0)^{(\mathrm{HD}-\mathrm{LR})}
-= -\frac{\hbar\omega\,\alpha^2\,n}{16} + O(\alpha^3).
+= -\frac{\hbar\omega\,\alpha^2\,n}{8} + O(\alpha^3).
 \]
 
 **Numerical estimate (GaAs quantum well parameters):**
 - \(\hbar\omega \sim 10\) meV,
 - \(\alpha \sim 0.001\)–\(0.01\) (typical effective-mass variation over the oscillator length),
-- \(|\delta(E_1 - E_0)| \sim 6 \times 10^{-7}\)–\(6 \times 10^{-5}\) meV.
+- \(|\delta(E_1 - E_0)| \sim 1.2 \times 10^{-6}\)–\(1.2 \times 10^{-4}\) meV.
 
 This is **below** typical experimental energy resolution (\(\sim 0.1\) meV), confirming that Layer 3 differences are **physically unmeasurable** in this system for spectroscopic observables. (The absolute energy shift \(\alpha\hbar\omega/4\) is larger but spectroscopically irrelevant since it is level-independent.)
 
@@ -342,7 +342,7 @@ Within the class of geometric quantization prescriptions (Weyl, half-density, mi
 
 ## 7.2 Half-Density as Canonical Gauge
 
-Just as the Lorenz gauge condition \(\partial^\mu A_\mu = 0\) in electromagnetism does not break gauge invariance but rather selects a convenient representative within the equivalence class, the **half-density prescription** selects a canonical representative within the ordering-equivalence class.
+Just as the Lorenz gauge condition \(\partial^\mu A_\mu = 0\) in electromagnetism selects a convenient representative within the gauge-equivalence class, the **half-density prescription** selects a canonical representative within the ordering-equivalence class at Layers 1–2 (principal symbol and connection term). This analogy is exact at Layer 2 (the connection term is uniquely eliminated by half-density, as Lorenz gauge uniquely eliminates \(\partial^\mu A_\mu\)) but does not extend to Layer 3, where different orderings give physically inequivalent \(O(\hbar^2)\) scalar-potential corrections.
 
 **Advantages of half-density quantization:**
 1. **Geometric naturality:** The half-density Laplace-Beltrami operator \(\nabla^\dagger\nabla\) is coordinate-independent and manifestly respects the Riemannian structure.

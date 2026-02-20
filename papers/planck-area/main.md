@@ -1,6 +1,6 @@
 ---
 title: "Planck Area from Half-Density Normalization"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   Half-densities are the natural “coordinate-free integrands” for composing kernels without choosing a background measure. But choosing a *universal* convention for turning half-density objects into dimensionless numerical amplitudes introduces a \(\text{length}^{d/2}\) scale. In \(d=4\), this is an *area*. This note sharpens the hypothesis ladder needed for the claim “half-density normalization selects a universal area scale”, and isolates a simple dimension-matching condition under which the Planck area appears without fractional powers of couplings. A gravitational anchor based on a minimal-areal-speed principle is recorded as a separate heuristic thread [RiveroAreal] [RiveroSimple].
@@ -724,6 +724,9 @@ This note adds a complementary ingredient: the kernel side is most naturally for
 3. *(Addressed: Remark PA-D1.3b.)* General-dimension analysis: what replaces "area" in odd dimensions. The monomial sieve is an even-\(d\) filter (parity lemma), while the transmutation route is parity-blind. An explicit odd-\(d\) witness exists: in \(d=3\), the delta-interaction scattering length \(a\) (generated via power-law renormalization) supplies \(a^{3/2}=\text{length}^{3/2}=\text{length}^{d/2}\) without fractional coupling powers, since \(a\) is a derived RG-invariant scale. A universal normalization remains defensible in odd \(d\) provided one admits transmutation-generated scales.
 4. *(Addressed: Remark PA-H2.6b.)* The minimal hypothesis set is PA-H2.1 + PA-H2.4 + PA-H2.5a + gravity-only; each is necessary.
 5. Track minimal-length/GUP scenarios as a comparison branch: do they implement the "needed scale" at the level of kinematics (modified commutators/dispersion) or can they be reframed as a refinement-compatibility condition? Use [Hossenfelder2013MinimalLength] as an OA entry point.
+
+`Heuristic PA-H4.1 (Half-density and the Misner measure problem).`
+For finite-dimensional configuration spaces (minisuperspace), half-density wavefunctions uniquely resolve the Hilbert space structure ambiguity identified by Misner (1962) and DeWitt (1967): the factor \(\sqrt{\gamma}\) in Wheeler–DeWitt wavefunctions is the finite-dimensional half-density weight (Derivation PA-D1.2a, restricted to minisuperspace coordinates). For the infinite-dimensional case, the half-density approach reduces — but does not eliminate — the Misner ambiguity: the residual freedom is in the choice of Riemannian structure on superspace. The discrete area spectrum of loop quantum gravity, \(A_n = 8\pi L_p^2\sqrt{j(j+1)}\), provides a candidate regularization compatible with \(L_p^2\) as the half-density area scale, but the connection between the Ashtekar–Lewandowski measure and half-density composition is not yet established.
 
 # References
 

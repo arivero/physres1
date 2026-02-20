@@ -1,6 +1,6 @@
 ---
 title: "Renormalization Group as a Fundamental Compatibility Principle"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   This note develops the viewpoint that the renormalization group (RG) is a *compatibility condition* forced by any definition of a continuum theory as a regulator-independent limit of composed refinements. The core claim is structural: once a theory is defined by composing local pieces across refinement steps, regulator dependence is unavoidable in intermediate objects, and RG invariance is the demand that the composed predictions remain stable. A simple calculus analogy makes the point vivid: even defining the derivative can be written in the pattern “regulate \(\to\) subtract a local divergence \(\to\) fix a scheme by a normalization condition \(\to\) take a limit”. We connect this perspective to rooted-tree bookkeeping (Butcher group) and the Hopf-algebra formulation of perturbative renormalization [Brouder1999] [ConnesKreimer2000] [McLachlan2017].

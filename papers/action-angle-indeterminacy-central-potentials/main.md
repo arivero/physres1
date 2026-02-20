@@ -1,6 +1,6 @@
 ---
 title: "Action–Angle Indeterminacy in Central Potentials: A Referee-Safe Witness"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   “Action–angle indeterminacy” should not be read as a force-range heuristic (in the style of energy–time slogans), but as a clean conjugacy statement: sharpening an action variable broadens the conjugate angle variable. For central potentials the safest, most explicit instance is the azimuthal pair \((\phi,L_z)\): an \(L_z\) eigenstate has \(\phi\)-dependence \(e^{im\phi}\), hence a uniform azimuthal probability distribution; conversely, any state localized in \(\phi\) must involve a broad superposition of angular-momentum modes (Fourier on the circle). This note records that witness and explains its foundations-level message: classical orbit-phase/orientation pictures correspond to semiclassical packets/superpositions rather than single stationary eigenstates.

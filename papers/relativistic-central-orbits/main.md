@@ -1,6 +1,6 @@
 ---
 title: "Relativistic Central Orbits as Refinement-Witnesses"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   Central-force motion is a clean domain where “refinement” arguments can be made explicit: Newton’s polygonal limit gives exact finite-step invariants, while relativistic kinematics introduces new admissibility constraints even before general relativity is invoked. This dependent note records one such constraint in special relativity for inverse-square forces: circular orbits obey \(v=K/L\) and therefore require \(L>K/c\). The goal is not to replace standard treatments, but to keep a minimal derivation-first record of what changes when the same geometric refinement story is pushed into relativistic regimes.

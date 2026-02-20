@@ -1,9 +1,9 @@
 ---
 title: "Path-Integral Normalization: The d/2 Exponent as Composition Compatibility Datum"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
-  The prefactor \((m/2\pi\hbar t)^{d/2}\) in the free-particle path-integral kernel is often derived from heuristic Gaussian-integral arguments without structural justification. This note proves that the \(d/2\) exponent is **forced by composition compatibility**: the requirement that the path integral obey the semigroup law under dimensional homogeneity uniquely selects this normalization. The same exponent governs path-integral temporal composition, heat-kernel diffusion, Van Vleck determinants in curved space, and renormalization thresholds for point interactions—these are not independent coincidences but manifestations of a single principle. The \(d/2\) exponent is the scalar representative of half-density quantization, making the composition integral coordinate-independent. This work connects to the Refinement Compatibility Principle (RCP) via the partition channel: temporal composition forces structural constants, and \(d/2\) is one such compatibility datum.
+  The prefactor \((m/2\pi\hbar t)^{d/2}\) in the free-particle path-integral kernel is often derived from heuristic Gaussian-integral arguments without structural justification. This note proves that the \(d/2\) exponent is **forced by composition compatibility**: the requirement that the path integral obey the semigroup law, combined with translation homogeneity and dimensional homogeneity, uniquely selects this normalization. The same exponent governs path-integral temporal composition, heat-kernel diffusion, Van Vleck determinants in curved space, and renormalization thresholds for point interactions—these are not independent coincidences but manifestations of a single principle. The \(d/2\) exponent is the scalar representative of half-density quantization, making the composition integral coordinate-independent. This work connects to the Refinement Compatibility Principle (RCP) via the partition channel: temporal composition forces structural constants, and \(d/2\) is one such compatibility datum.
 ---
 
 # 1. Introduction
@@ -139,7 +139,7 @@ In groupoid language: (C) is groupoid convolution (composition of morphisms), (T
 
 # 3. Dimensional Analysis and P4.2 Connection
 
-The dimensional structure of the kernel provides an independent route to the \(d/2\) exponent.
+The dimensional structure of the kernel provides a complementary perspective on the \(d/2\) exponent, making the same composition constraint explicit in dimensional-analysis language.
 
 ## 3.1 Dimensional Homogeneity
 

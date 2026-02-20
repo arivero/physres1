@@ -1,6 +1,6 @@
 ---
 title: "Refinement Compatibility as a Foundational Principle"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   We formalize the **Refinement Compatibility Principle (RCP)** as a falsifiable axiomatic framework: physical laws are those that survive controlled changes of partition, representation, and scale. The principle has three operational channels—(1) partition compatibility (temporal composition across subdivisions), (2) representation compatibility (equivalence of quantum prescriptions with the same classical limit), and (3) scale compatibility (renormalization group flow)—each tested by asking whether composed/changed predictions remain within an admissible family after parameter updates. We show that compatibility is constructive, not merely philosophical: closure demands specific structural constants (e.g., Planck's constant emerges as the partition-compatibility parameter forced by composition), and both \(\hbar \to 0\) and \(\hbar \to \infty\) limits fail. Three worked examples anchor each channel: Noether's theorem (partition), ordering ambiguity (representation), and 2D delta renormalization (scale). The framework unifies classical mechanics, quantum mechanics, and renormalization as instances of the same compatibility requirement.
@@ -60,7 +60,7 @@ We propose five axioms (A1-A5) that capture the operational content of RCP.
 \mathcal{O}_{T,\theta} = \mathcal{O}_{t_1,\theta_1} \circ \mathcal{O}_{t_2,\theta_2}, \quad T = t_1 + t_2.
 \]
 
-**A2 (Identity limit).** As the refinement becomes trivial (\(h \to 0\) in partition, or \(\mu \to \mu\) in scale), the parameter update becomes the identity: \(\tau(\theta) \to \theta\).
+**A2 (Identity limit — derivable).** In the partition channel: the identity limit \(K_t \to \delta\) as \(t \to 0\) is a theorem of (A1) + physical setup (Section 6, Remark RCP-P6.1). In the representation and scale channels, the identity limit is immediate from definitions (\(\tau_{R\to R} = \mathrm{id}\), \(\tau_{\mu\to\mu} = \mathrm{id}\)). A2 is therefore not an independent axiom; it is recorded here for operational completeness and to calibrate A1.
 
 **A3 (Representation equivalence).** For any two representations \(R_1, R_2\) with the same classical limit, there exists a map \(\tau_{R_1 \to R_2}\) such that predictions agree (modulo controlled subleading corrections).
 
@@ -134,7 +134,7 @@ Q_k = \frac{\partial L}{\partial \dot{q}}\Big|_{q_k} \cdot \xi(q_k, t_k).
 
 **RCP witness:** The Noether charge \(Q\) is the **compatibility datum** \(\tau_C(\theta)\) that makes symmetry survive partition refinement. The parameter bundle \(\theta\) includes both the Lagrangian and the conserved charge. Changing from coarse to fine partition requires updating the discrete charge formula to maintain closure.
 
-**Key point:** Without the Noether charge, partition refinement would break symmetry. RCP forces its existence as the compatibility parameter.
+**Key point:** Without the Noether charge, partition refinement would break symmetry. Noether's theorem — a consequence of the action principle and the symmetry condition alone — guarantees the existence of this compatibility parameter. RCP identifies the Noether charge as the specific datum that must be tracked under partition refinement for symmetry to survive; the existence proof is Noether's, not RCP's.
 
 # 4. Worked Example: Ordering Ambiguity (Representation Channel)
 
@@ -236,9 +236,9 @@ Then \(d\kappa_*/d\mu = 0\): the physical content is a single scale \(\kappa_*\)
 \theta(\mu_1) \xrightarrow{\text{flow}} \theta(\mu_2), \quad g_R(\mu_2) = g_R(\mu_1) + \int_{\mu_1}^{\mu_2} \frac{d\mu'}{\mu'} \, \beta(g_R(\mu')).
 \]
 
-**RCP witness:** Observable predictions (e.g., \(\kappa_*\)) are scale-invariant. Without the beta function, changing \(\mu\) would change physics. RCP forces the existence of \(\beta(g_R)\) as the scale-compatibility map \(\tau_R(\theta)\).
+**RCP witness:** Observable predictions (e.g., \(\kappa_*\)) are scale-invariant. Without the beta function, changing \(\mu\) would change physics. RCP interprets \(\beta(g_R)\) as the scale-compatibility map \(\tau_R(\theta)\).
 
-**Key point:** Scale compatibility (A4) is not merely a consistency check—it is the **defining condition** for renormalization. The RG flow is the parameter update forced by RCP closure.
+**Key point:** Scale compatibility (A4) is not merely a consistency check—it is the **defining condition** for renormalization. The RG flow is the parameter update required for scale-compatibility (A4 closure).
 
 # 6. Theorem: P4.2 as RCP Crown Witness
 
@@ -352,12 +352,16 @@ This synthesis is not accidental—it reflects the fact that the path integral i
 `Remark RCP-H1.2 (Why the path integral is RCP-natural).`
 The path integral is the unique formulation that makes all three RCP channels simultaneously explicit. Operator formalism hides partition compatibility (kernels are composed implicitly via \(\hat{U}(t_1)\hat{U}(t_2) = \hat{U}(t_1+t_2)\)), and Hamiltonian formalism hides scale compatibility (renormalization appears as a "correction" rather than a structural requirement). The path integral, by construction, exposes refinement as the defining operation—making RCP the natural organizing principle.
 
+`Remark RCP-R7.1 (Wick rotation as representation channel).`
+The Wick rotation \(\eta: t \to e^{i\eta}t\) is a one-parameter family of representation-channel transformations (axiom A3): it preserves the composition law (A1) exactly — since \(e^{i\eta}(t_1+t_2) = e^{i\eta}t_1 + e^{i\eta}t_2\) — and the dimensional structure, while transforming the kernel's phase parameters (\(c_0 \to e^{-i\eta d/2}c_0\)) and effective action scale (\(\hbar \to e^{i\eta}\hbar\)). The Minkowski (\(\eta=0\)) and Euclidean (\(\eta=\pi/2\)) kernels are the two endpoints of this A3 family. Wick rotation does not change any energy scale \(\mu\) and commutes with the RG flow, confirming it is A3 (representation) rather than A4 (scale). In quantum field theory, Wick rotation is A3-compatible if and only if the Osterwalder–Schrader reflection-positivity conditions hold.
+
 ## 7.5 Forward Connections
 
 Three companion satellite papers develop the RCP channels in detail:
 - **[OrderingEquivalence]:** Representation channel (four-layer stratification, PDM + curved-space worked examples, star-product automorphism perspective, Itô/Stratonovich bridge).
 - **[RootedTreeBookkeeping]:** Partition channel (Butcher group for RK composition, rooted-tree Hopf algebra for counterterm recursion, explicit midpoint RK2 + 2D delta RG dictionary).
 - **[RGFundamental]:** Scale channel (RG as semigroup compatibility, Wilsonian shell integration, dimensional transmutation in 2D delta model, multi-channel RCP conclusion).
+- **[TangentGroupoidBridge]:** Groupoid bridge (pair groupoid = sewing law; Proposition TG-P1.1: \(d/2\) forced by Fourier multiplicativity + dimensional homogeneity; Wick rotation as A3 via groupoid algebra; tangent groupoid as \(\hbar\)-deformation from classical to quantum; Lackman non-perturbative Kontsevich).
 
 Together with the cornerstone manuscript [Main], these papers form a **coherent RCP narrative**: refinement compatibility is not a philosophical slogan but a falsifiable structural requirement, with constructive witnesses in all three channels and quantitative tests in worked examples.
 
@@ -376,3 +380,5 @@ Together with the cornerstone manuscript [Main], these papers form a **coherent 
 6. [RGFundamental] A. Rivero, "Renormalization Group as a Fundamental Compatibility Principle," companion satellite paper (2026).
 
 7. [PathIntegralNormalization] A. Rivero, "Path-Integral Normalization: The d/2 Exponent as Composition Datum," companion satellite paper (2026).
+
+8. [TangentGroupoidBridge] A. Rivero, "Groupoid Composition and Quantization: The Pair-Groupoid Bridge," companion satellite paper (2026).

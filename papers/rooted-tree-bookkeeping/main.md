@@ -1,6 +1,6 @@
 ---
 title: "Rooted Trees as Bookkeeping: The Butcher–RG Dictionary"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   Rooted trees appear in two seemingly distinct contexts: as combinatorial indexing for Runge–Kutta methods (Butcher theory) and as bookkeeping for perturbative renormalization (RG recursion). This note makes the dictionary explicit: both use rooted-tree Hopf algebras to organize recursive cancellations, both impose algebraic constraints (order conditions vs renormalization conditions) to ensure consistency, and both admit compositional structure (method concatenation vs scale composition). We identify where the correspondence is literal algebraic equivalence (tree combinatorics, coproduct structure) and where it is structural analogy (semigroup vs group, physics interpretation). One worked example on each side anchors the dictionary: midpoint Runge–Kutta (order-2) for the Butcher side, and a one-loop mass counterterm for the RG side. The goal is not to claim that "RK methods are renormalization" but to show that the shared tree formalism reflects a common algebraic pattern: controlling composition in the presence of divergences (step-size errors vs UV singularities).
@@ -177,7 +177,7 @@ Wait—these are **not** the same: \(\tau_3^{(1)}\) contributes only the \(f''(f
 
 **Midpoint method at order 3:** Expanding the midpoint B-series to \(O(h^3)\), the coefficients are:
 \[
-a(\tau_3^{(1)}) = 0, \quad a(\tau_3^{(2)}) = \tfrac{1}{4}.
+a(\tau_3^{(1)}) = \tfrac{1}{4}, \quad a(\tau_3^{(2)}) = 0.
 \]
 
 For a **third-order accurate method**, the order conditions require:
@@ -185,9 +185,9 @@ For a **third-order accurate method**, the order conditions require:
 a(\tau_3^{(1)}) = \tfrac{1}{6}, \quad a(\tau_3^{(2)}) = \tfrac{1}{6}.
 \]
 
-The midpoint method satisfies only the second condition (for \(\tau_3^{(2)}\)), so its order is **2, not 3**. The error at order 3 is controlled by the mismatch \(\Delta a(\tau_3^{(1)}) = 0 - 1/6 = -1/6\).
+Neither condition is satisfied: \(\Delta a(\tau_3^{(1)}) = 1/4 - 1/6 = 1/12\) and \(\Delta a(\tau_3^{(2)}) = 0 - 1/6 = -1/6\), so the midpoint method has order **2, not 3**.
 
-**Butcher product at order 3:** When composing \(\Phi_h \circ \Phi_h\), the tree \(\tau_3^{(1)} = [\bullet, \bullet]\) arises from **grafting two order-1 trees simultaneously** onto a common root. The coproduct term \(\bullet \otimes \bullet \otimes \bullet\) (from Section 6.2) encodes this: cutting both children of \(\tau_3^{(1)}\) leaves three separate pieces. The Butcher product formula gives:
+**Butcher product at order 3:** When composing \(\Phi_h \circ \Phi_h\), the tree \(\tau_3^{(1)} = [\bullet, \bullet]\) arises from **grafting two order-1 trees simultaneously** onto a common root. The coproduct term \(\bullet{\cdot}\bullet \otimes \bullet\) (from Section 6.2) encodes this: cutting both children of \(\tau_3^{(1)}\) yields the forest product \(\bullet{\cdot}\bullet\) (disjoint union of the two pruned subtrees) on the left and the root stump \(\bullet\) on the right. The Butcher product formula gives:
 \[
 (a \star a)(\tau_3^{(1)}) = \text{(sum over ways to graft two } \tau_1 \text{ trees)}.
 \]
@@ -376,9 +376,9 @@ This encodes: "either keep the full tree (no cut) or remove it entirely (trivial
 
 1. \(\tau_3^{(1)} = [\bullet, \bullet]\) (root with two children):
 \[
-\Delta([\bullet,\bullet]) = [\bullet,\bullet] \otimes 1 + 1 \otimes [\bullet,\bullet] + \bullet \otimes [\bullet] + [\bullet] \otimes \bullet + \bullet \otimes \bullet \otimes \bullet.
+\Delta([\bullet,\bullet]) = [\bullet,\bullet] \otimes 1 + 1 \otimes [\bullet,\bullet] + 2(\bullet \otimes [\bullet]) + \bullet{\cdot}\bullet \otimes \bullet.
 \]
-The last term \(\bullet \otimes \bullet \otimes \bullet\) (triple tensor) comes from cutting both children simultaneously. This is a "forest" decomposition: the root stump and the two child subtrees are all separated.
+The term \(2(\bullet \otimes [\bullet])\) arises from cutting either child individually (both give the same contribution by symmetry of \([\bullet,\bullet]\): the pruned subtree \(\bullet\) on the left, the root with remaining child \([\bullet]\) on the right). The last term \(\bullet{\cdot}\bullet \otimes \bullet\) comes from cutting both children simultaneously: the forest product \(\bullet{\cdot}\bullet = \bullet^2 \in \mathcal{H}\) (disjoint union of two single-node trees) appears on the left, with the root stump \(\bullet\) on the right. Note that \(\bullet{\cdot}\bullet\) is an element of \(\mathcal{H}\), not \(\mathcal{H} \otimes \mathcal{H}\); writing it as \(\bullet \otimes \bullet\) would incorrectly produce a 3-tensor.
 
 2. \(\tau_3^{(2)} = [[\bullet]]\) (root with nested child):
 \[

@@ -1,6 +1,6 @@
 ---
 title: "Delta Objects as Half-Density Kernels: Identity, Stationary-Set Concentration, and Point Interactions"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   Three seemingly different uses of the Dirac delta share one geometric meaning when amplitudes are treated as **half-densities**:

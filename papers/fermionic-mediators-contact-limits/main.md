@@ -1,6 +1,6 @@
 ---
 title: "Fermionic Mediators, Static Potentials, and Contact/Boundary-Condition Limits"
-author: "Alejandro Rivero"
+author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
   The textbook derivation of a static potential from “field exchange” uses a bosonic mediator linearly sourced by a commuting classical density, yielding an effective action quadratic in the source and (in a static limit) a central Yukawa/Coulomb potential. This derivation does not transplant verbatim to fermionic fields: the linear source terms for fermions require Grassmann-valued sources, so there is no ordinary commuting classical source whose elimination produces a classical potential in the same way. This note isolates the precise obstruction and records the robust infrared replacement: when a microscopic description reduces to local operators at low resolution, the effective interaction is encoded by contact terms (delta kernels and their derivatives) or, equivalently, boundary-condition/self-adjoint-extension data, with renormalization-group running when the contact limit is singular.
