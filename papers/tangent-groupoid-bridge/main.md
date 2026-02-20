@@ -166,7 +166,7 @@ and tangents (cornerstone manuscript, Section 2.2).
 \(C_0(T^*M)\) (classical, commutative), while at \(\hbar \neq 0\) it is the algebra of compact
 operators on \(L^2(M)\) (quantum, noncommutative). The family \(G_\hbar\) is therefore a
 **strict deformation quantization** of the Poisson algebra \(C_0(T^*M)\), with the
-deformation parameter \(\hbar\) being the groupoid fiber index.
+deformation parameter \(\hbar\) being the groupoid fiber index. Hawkins [Hawkins2008] develops the groupoid-quantization program further, introducing groupoid polarizations and constructing strict C*-algebraic deformation quantization from symplectic groupoid data; the pair-groupoid convolution of Section 2 appears as a special case.
 
 ## 4.2 Three RCP Channels in the Groupoid Picture
 
@@ -221,6 +221,9 @@ and leaves a physical observable. This parallels RCP's scale channel: the coarse
 van Est map's refinement of triangulations parallels RCP's partition channel. This suggests a
 third reading of Lackman's construction: it is a **groupoid-algebraic implementation of two of three RCP channels** (partition and representation); the scale channel requires additional structure (renormalization group, not encoded in the tangent groupoid alone).
 
+`Remark TG-R3.1 (Van Est map as unifying vocabulary for all three RCP generators).`
+Each RCP channel has an infinitesimal generator extractable by differentiation at the identity of its respective composition structure. For the partition channel, the pair groupoid \(G = M \times M\) is a genuine Lie groupoid, and the van Est map \(\mathrm{VE}: H^*_{\mathrm{diff}}(G) \to H^*(A(G))\) (Crainic 2000) extracts the generator from the groupoid cocycle: applied to the propagator family \(\{K_t\}_{t>0}\), it yields the Hamiltonian \(\hat{H} = \mathrm{VE}(K_t)|_{t=0}\) (up to the irreducible Stone gap of §6.1). For the representation channel, differentiation of the star-product family \(\{\star_\hbar\}_{\hbar > 0}\) at \(\hbar = 0\) yields the Poisson bracket; this is structurally analogous to van Est differentiation, but acts in the deformation parameter \(\hbar\) rather than at a groupoid identity. For the scale channel, the beta function \(\beta(g)\) is the infinitesimal generator of the RG semigroup \(\{R_\mu\}_{\mu > 0}\) on coupling space. The RG semigroup is **not** a groupoid—it is not invertible, since information is lost under coarse-graining—so the van Est map does not apply literally; the identification \(\beta(g) \leftrightarrow \mathrm{VE}(R_\mu)|_{\mu=1}\) is a structural analogy (both are generators of one-parameter composition semigroups) rather than a theorem. Summary: the partition channel admits a literal van Est instance; the representation and scale channels admit structural analogues of the same differentiation pattern.
+
 ## 5.3 Half-Density Question
 
 The project's half-density formalism (see [HalfDensityQFT]) posits that propagator kernels are
@@ -273,7 +276,7 @@ are the same operation in different variables.
 
 The pair-groupoid framework makes three structural facts explicit:
 
-1. **The sewing law is a groupoid identity,** not a kinematic accident or a consequence of
+1. **The sewing law is a groupoid identity** that can be derived independently of
    the Schrödinger equation. The propagator is a convolution-semigroup element of \(C(G)\).
 
 2. **The \(d/2\) exponent is forced** by groupoid-level dimensional analysis: Fourier
@@ -306,6 +309,7 @@ the path integral is groupoid convolution on the \(\hbar \neq 0\) fiber.
   and Some TQFTs." *arXiv:2402.05866*.
 - [Cattaneo2000] Cattaneo, A. & Felder, G. "A path integral approach to the Kontsevich
   quantization formula." *Commun. Math. Phys.* **212** (2000): 591–611. *arXiv:math/9902090*.
+- [Hawkins2008] Hawkins, E. "A groupoid approach to quantization." *J. Symplectic Geom.* **6**(1) (2008): 61–125. *arXiv:math/0612363*.
 - [HalfDensityQFT] See companion paper on half-density QFT.
 - [PathIntNorm] See companion paper on path-integral normalization.
 - [RCPFoundations] See companion paper on RCP as a foundational principle.

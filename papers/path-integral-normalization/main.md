@@ -387,7 +387,7 @@ This is not a coincidence—it is a manifestation of the **structural role of d/
 The cornerstone manuscript proves (Theorem P4.2) that composition semigroup closure under dimensional homogeneity forces the existence of an action-dimensional scale \(\hbar\) and forbids both the classical limit \(\hbar \to 0\) and the trivial limit \(\hbar \to \infty\). The renormalization threshold structure reinforces this:
 - The divergence at \(d \ge 2\) arises from the **short-time (high-energy) behavior** of the propagator, which is controlled by the \(t^{-d/2}\) singularity.
 - This singularity is **universal**: it appears in flat space, curved space (Section 4), and Euclidean continuation (Section 5).
-- The \(d/2\) exponent is forced by composition (Section 2), making the renormalization threshold a **derived consequence** of the composition semigroup, not an independent axiom.
+- The \(d/2\) exponent is forced by composition (Section 2), making the renormalization threshold a **composition-determined exponent** whose value is fixed by semigroup closure and dimensional homogeneity.
 
 In the language of Refinement Compatibility (satellite [RCPFoundations]), the RG flow in \(d \ge 2\) is the **scale-channel witness** that composition compatibility forces non-trivial scale dependence when the temporal partition is refined indefinitely. The \(d/2\) exponent is the **universal compatibility datum** that makes this scale channel explicit.
 

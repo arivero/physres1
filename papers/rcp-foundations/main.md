@@ -238,7 +238,7 @@ Then \(d\kappa_*/d\mu = 0\): the physical content is a single scale \(\kappa_*\)
 
 **RCP witness:** Observable predictions (e.g., \(\kappa_*\)) are scale-invariant. Without the beta function, changing \(\mu\) would change physics. RCP interprets \(\beta(g_R)\) as the scale-compatibility map \(\tau_R(\theta)\).
 
-**Key point:** Scale compatibility (A4) is not merely a consistency check—it is the **defining condition** for renormalization. The RG flow is the parameter update required for scale-compatibility (A4 closure).
+**Key point:** Scale compatibility (A4) is not merely a consistency check—it reinterprets the RG flow as the parameter update required for scale-compatibility (A4 closure).
 
 # 6. Theorem: P4.2 as RCP Crown Witness
 
@@ -354,6 +354,17 @@ The path integral is the unique formulation that makes all three RCP channels si
 
 `Remark RCP-R7.1 (Wick rotation as representation channel).`
 The Wick rotation \(\eta: t \to e^{i\eta}t\) is a one-parameter family of representation-channel transformations (axiom A3): it preserves the composition law (A1) exactly — since \(e^{i\eta}(t_1+t_2) = e^{i\eta}t_1 + e^{i\eta}t_2\) — and the dimensional structure, while transforming the kernel's phase parameters (\(c_0 \to e^{-i\eta d/2}c_0\)) and effective action scale (\(\hbar \to e^{i\eta}\hbar\)). The Minkowski (\(\eta=0\)) and Euclidean (\(\eta=\pi/2\)) kernels are the two endpoints of this A3 family. Wick rotation does not change any energy scale \(\mu\) and commutes with the RG flow, confirming it is A3 (representation) rather than A4 (scale). In quantum field theory, Wick rotation is A3-compatible if and only if the Osterwalder–Schrader reflection-positivity conditions hold.
+
+`Remark RCP-R7.2 (Reversibility signature of RCP channels).`
+The three RCP channels exhibit a hierarchy of algebraic structure under time/scale reversal that explains the gradient in forcing strength. The partition channel generates a strongly continuous unitary *group* \(\{U(t)\}_{t \in \mathbb{R}}\) (Stone's theorem), reflecting time-reversibility; this group structure, together with \(d\)-dimensional rotational symmetry, forces the dispersion \(\varphi(p) = c|p|^2\) *uniquely* — the source of Proposition P4.2's strong result \(\kappa = \hbar\). The scale channel generates only a contraction *semigroup* \(\{R_\mu\}_{\mu > \mu_0}\) (Hille--Yosida theorem), reflecting the irreversibility of coarse-graining; the generator \(\beta(g)\) is guaranteed to *exist* but its functional form is underdetermined by semigroup axioms alone — the source of the scale channel's weaker forcing. The representation channel occupies an intermediate position: different star-product quantizations on the same Poisson manifold yield Morita-equivalent operator algebras (invertible at the module-category level), so composition fixes the Morita equivalence class of the quantization but not the specific ordering within that class. In summary: \(\text{Stone (group, unique)} \supset \text{Morita (category-invertible, classified gauge family)} \supset \text{Hille--Yosida (semigroup, existence only)}\).
+
+`Proposition RCP-Rep-P1.1 (Representation channel forcing hierarchy).`
+Composition (C) applied to the representation channel yields a three-layer hierarchy of constraints on the quantization map:
+1. **(C) alone** forces the *existence* of an associative \(\hbar\)-deformation of pointwise multiplication (a star-product). This is the Kontsevich formality theorem: the space of deformation quantizations of any Poisson manifold \((M,\pi)\) is non-empty.
+2. **(C) + unitarity** forces the *Morita equivalence class*: star-products giving the same classical limit are Morita-equivalent as associative algebras, producing unitarily equivalent quantum theories on the same Hilbert space. Domain-data transport under ordering changes (D9.1f) is a consequence of requiring self-adjoint Hamiltonians in both quantization schemes.
+3. **(C) + unitarity + Euclidean symmetry** (on \(\mathbb{R}^d\) with constant Poisson structure) selects the Moyal product *uniquely* within the Morita class. On curved manifolds, this third layer does not apply: multiple inequivalent star-products survive.
+
+The ordering choice (Weyl, Born--Jordan, half-density) is a gauge freedom within the Morita class fixed by Layer 2 — classified by formal diffeomorphisms of the Poisson manifold, not arbitrary. This makes the representation channel's status *moderate* (classified gauge family), intermediate between the partition channel's *strong* uniqueness (Stone) and the scale channel's *weak* existence (Hille--Yosida) described in Remark RCP-R7.2.
 
 ## 7.5 Forward Connections
 
