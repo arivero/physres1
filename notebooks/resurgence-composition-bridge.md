@@ -539,3 +539,30 @@ The bion log coefficient is NOT a free parameter in the trans-series.
 References: BB5 (three-agent source), Dunne-Ünsal arXiv:1207.0905 (double-well bion resurgence),
 Bogomolny (1980), Zinn-Justin (1981) (BZJ relation), Écalle 1981 (alien calculus and (2πi) convention),
 van Spaendonck-Vonk 2024 (minimal trans-series for double-well), RES-15 (non-resonant factorization).
+
+### RES-16.5: Computationalist Precision Fix (sev-2)
+<!-- Computationalist: 2026-02-20 | script: tmp/resonant_borel_v2.py -->
+
+**SymPy exact Laurent expansion** of the Borel convolution near s = ζ-2A = 0:
+
+    (B₁ *_B B₂)(ζ) / (r₁r₂) = log(A)/s - log(s)/s + 2/A - s/A² + O(s²)
+
+where s = ζ - 2A. Numerically verified: ratio [SymPy]:[exact] = 1.0000 for s = 10⁻⁴.
+
+**Correction to RES-16.3 line "~ (r₁r₂/A) · log(ζ-2A) + [double pole]":**
+
+The correct singular structure is:
+    (B₁ *_B B₂)(ζ) = r₁r₂ · [log(A) - log(ζ-2A)] / (ζ-2A) + 2r₁r₂/A + regular
+
+i.e., a LOG TIMES SIMPLE POLE at ζ=2A (Écalle: "simple resonant singularity"), NOT a pure log.
+The coefficient of log(ζ-2A)/(ζ-2A) is -r₁r₂ (no 1/A).
+
+**The 1/A factor in RES-16.1 Δ^{(log)}_{2A} formula comes from the ADDITIONAL s=ζ-2A denominator
+used in the RES-16.1 definition** (dividing out the overall 1/s pole to define the "log coefficient"
+as the coefficient of log(ζ-2A) in s·(B₁*B₂)):
+    s · (B₁*B₂) = r₁r₂[log(A) - log(s)] + O(s) → log coefficient = -r₁r₂
+
+The formula Δ^{(log)}_{2A}(K_t) = [∫ S(t')S(t-t') dt']/A in RES-16.1 uses A in the denominator
+to match the Écalle-normalized alien derivative definition, not from the convolution coefficient itself.
+
+**Bion amplitude §6 CONFIRMED:** ∫₀ᵗ c·t₁·c·(t-t₁) dt₁ = c²t³/6 (SymPy exact). ✓

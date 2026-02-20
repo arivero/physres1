@@ -63,7 +63,7 @@ read this file periodically to resolve, promote, or carry forward open entries.
 - **What happened:** Critic (satellite-review-complete.md §Post-Review §What would strengthen scale channel) identified that to elevate H6.3 from heuristic, one needs "a proof that for interactions with singular short-distance behavior, the only composition-compatible regularization scheme is one that introduces scale-dependent parameters." BB3 (physicist, 2026-02-20) establishes RG-P1.2: the composition law (C)+(I)+(S) for the RG semigroup forces β(g) EXISTS but NOT its form. This directly addresses the existence direction of the gap: RG flow is FORCED to exist by composition; what is NOT forced is which theory (which form of β).
 - **Why it matters:** RG-P1.2 is the scale-channel analog of P4.2, but WEAKER (existence vs uniqueness). It partially bridges the critic's identified gap: shows RG flow is forced (composition-necessary), but cannot yet show it is "the unique composition-compatible scheme."
 - **Proposed action:** Once mathematician verifies RG-P1.2 (BB3 §8, pending), send paper-edit request for rg-fundamental satellite: add RG-P1.2 as a new proposition connecting to P4.2's structure-vs-content framework.
-- **Status:** OPEN (awaiting mathematician verification of BB3)
+- **Status:** RESOLVED (BB3 THREE-AGENT complete: physicist §1-7, critic §8, mathematician §9; paper-edit #27 APPLIED to D10.1c; Proposition D6.4b replaces H6.3 as conditional scale-channel theorem)
 
 ### 2026-02-20 — CFT-P1.1 confirmed: c/24 = Stage 3 d/2 analog (source: Physicist + Mathematician)
 - **What happened:** Physicist conjecture (BB3) that Segal's sewing law gives a Stage 3 P4.2 analog was verified by mathematician. c/24 is forced by (C)+(D)+(I) + Virasoro anomaly, exactly paralleling how d/2 is forced by (C)+(D)+(I) + d-dim dimensional analysis.
@@ -74,4 +74,10 @@ read this file periodically to resolve, promote, or carry forward open entries.
 - **What happened:** Physicist conjecture that q = e^{iℏ/L_P²} would unify ℏ and L_P² forcings was found ill-posed by critic (BB4 §10). Dimensional mismatch: [ℏ/L_P²] = MT⁻¹ (not dimensionless). Also, q-deformed convolution is NOT standard convolution — P4.2's (C) cannot be directly extended.
 - **Why it matters:** The underlying question (does P4.2-style forcing work for q-deformed semigroups?) remains open and interesting, but the specific conjecture CFT-Q1 cannot be stated without fixing the dimensional analysis. Planck units make it tautological; non-Planck units introduce a new parameter.
 - **Proposed reformulation:** Instead of q = e^{iℏ/L_P²}, ask: "Is there a q-deformed analog of (C) for which the forcing gives q = e^{2πi/(k+g∨)} (Chern-Simons level)?" This connects to the Chern-Simons → quantum group path (BB4 §5, which was correct).
-- **Status:** OPEN (reformulated); do not promote CFT-Q1 as stated. Record for future investigation.
+- **Status:** PARTIALLY RESOLVED (BB4, mathematician 2026-02-20). Three-level analysis:
+  - Q1a: (C_q) [coassociativity] holds for ALL q — no forcing.
+  - Q1b: (C_q) + unitarity forces q ∈ ℝ ∪ S¹ only (partial constraint).
+  - Q1c: Cobordism sewing + unitarity + normalization forces q = e^{2πi/(k+g∨)} — Reshetikhin-Turaev theorem (1991).
+  RT-theorem is the Stage 4 analog of P4.2: composition (cobordism) + unitarity + normalization forces q.
+  Proposal: mention RT-forcing in cornerstone §9 as "Stage 4 q-analog of P4.2."
+  See proposals/mathematician-cft-q1-stage4.md for paper-edit request.

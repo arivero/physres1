@@ -593,3 +593,115 @@ This open question would be a research direction for the planck-area satellite.
 - blackboards/3.md §11 (mathematician's APS calculation)
 - blackboards/4.md (n_±=1 for all d — three-agent complete)
 - APS (Atiyah-Patodi-Singer 1975): boundary conditions, spectral projections
+
+## D=4 Physical Selection Mechanism: Seeley-DeWitt and the a_1=0 Observation
+
+**Source:** blackboards/1.md, Physicist first pass (2026-02-20).
+**Status:** Sev-2 candidate. Needs mathematician algebraic confirmation of ξ_eff = ξ_conf(D=4) uniqueness.
+
+### Three D=4 Coincidences (Independent Levels)
+
+Half-density conjugation ψ = |g|^{1/4}φ singles out D=4 via three physically distinct coincidences:
+
+**(1) (∂σ)² coupling vanishes (conformal-class specific):**
+In conformally flat metric g_{μν} = e^{2σ}δ_{μν}, the conjugated Laplacian ~Δ has a term
+D(4-D)/4 · (∂σ)² · ψ. This vanishes iff D=4.
+Physical meaning: at D=4, the half-density scalar ψ does NOT couple to the kinetic energy of
+conformal fluctuations at quadratic order. The conformal mode σ decouples.
+Scope: CONFORMAL-CLASS SPECIFIC (conformally flat metrics only).
+
+**(2) ξ_eff = ξ_conf (universal — all metrics, normal coordinates):**
+From HD-D1.3b: the conjugation potential V(p) = R/6 in normal coordinates, for ANY metric.
+The conformal coupling is ξ_conf = (D-2)/(4(D-1)); it equals 1/6 iff D=4.
+Physical meaning: at D=4 only, the half-density weight is the conformal weight for scalars.
+In D≠4: half-density weight ≠ conformal weight — an extra coupling must be added.
+Scope: UNIVERSAL (all Riemannian metrics, not just conformally flat).
+
+**(3) a_1(x,x) = 0 (Seeley-DeWitt):**
+The first Seeley-DeWitt coefficient for operator P = -~Δ + ξ_eff R is a_1(x,x) = (1/6 - ξ_eff)R.
+At D=4 with ξ_eff = 1/6: a_1(x,x) = (1/6 - 1/6)R = 0.
+Physical meaning: no linear curvature counterterm appears at one-loop for the half-density scalar.
+The half-density measure automatically absorbs the first-order curvature correction.
+Scope: UNIVERSAL (consequence of (2), independent of (1)).
+
+**Logical structure:** (3) follows from (2). But (1) and (2) are INDEPENDENT: (1) is a conformal-frame
+artifact; (2) is metric-independent. The physically robust D=4 selection comes from (2)+(3).
+
+### Physical Interpretation of (2): Why ξ_eff = ξ_conf Selects D=4
+
+In D dimensions, scalar field theory has two natural half-density weights:
+- The kinetic half-density: ψ = |g|^{1/4}φ (curvature coupling ξ_eff = 1/6, dimension-independent)
+- The conformal half-density: ψ_c = |g|^{(D-2)/4(D-1)}φ (coupling ξ_conf = (D-2)/(4(D-1)))
+
+For D≠4: ξ_eff ≠ ξ_conf, so the half-density structure and Weyl symmetry require SEPARATE inputs.
+For D=4: ξ_eff = ξ_conf = 1/6. Half-density weight IS the conformal weight. No extra input.
+
+**Physical summary (D=4 dimension selection via conformal unification):**
+"At D=4, the coordinate-free half-density normalization chosen by composition (ξ_eff=1/6) coincides with the conformal coupling. This identity means: (a) the first Seeley-DeWitt curvature correction vanishes, so no linear-in-R counterterm appears at one-loop; and (b) the trace anomaly of the half-density scalar has no a_1 contribution — only a_2 (Gauss-Bonnet type) contributes in D=4. The D=4 theory is thus distinguished by being first-order UV clean in the curvature expansion."
+
+### Connection to ℏ = L_P²c³/G: Area × Stiffness Decomposition
+
+The combination ℏ = L_P²c³/G admits a physical decomposition:
+- L_P² = ℏG/c³ (Planck area, length scale²)
+- c³/G: Planck mass flow rate (mass per unit time); [c³/G] = kg/s (in SI)
+
+So: **ℏ = (Planck area) × (gravitational mass flow rate)**
+    = (smallest geometric area) × (stiffness of spacetime)
+
+Where "stiffness" c³/G is the power needed to change spacetime curvature at Planck scale (the
+classical gravitational wave luminosity at Planck power = c⁵/G; c³/G = c⁵/(Gc²)).
+
+**Alternative reading:** ℏ = L_P² × (c³/G) says the action quantum is the product of:
+1. The area quantum (forced by composition + D=4 + dimensional economy)
+2. The spacetime stiffness (from Einstein-Hilbert gravitational coupling)
+
+This is NOT merely a unit change. It frames ℏ as a geometric × mechanical product where
+both factors have independent physical content:
+- L_P² comes from the composition + half-density normalization chain
+- c³/G comes from the gravitational coupling (independent physical input)
+
+If L_P² is "more fundamental" (forced by RCP + D=4), then ℏ = L_P² × (gravitational stiffness)
+is derived from composition + gravity, not postulated independently.
+
+### Limiting Case Checks
+
+**ℏ→0 (classical limit):** K_t ~ (2πiℏt)^{-D/2} exp(iS_cl/ℏ). At D=4, K_t ~ (2πiℏt)^{-2}.
+The D/2=2 is still forced by composition even as ℏ→0. The stationary-phase approximation selects
+the classical path; composition still forces the D/2 exponent on the prefactor. ✓
+
+**G→0 (turn off gravity):** L_P²→0. The Planck area scale disappears. Now ℏ must be supplied
+as an independent input — composition (P4.2) forces its existence, but not its value without
+gravitational anchor. This is consistent: ℏ is derived from L_P² only when gravity is present. ✓
+
+**D→4 (dimensional regularization):** The mass counterterm has Γ(2-D/2)/m^{2(2-D/2)}, with
+a logarithmic divergence (log Λ) at D=4. For D=4, the a_1=0 observation means: no ADDITIONAL
+linear-in-R divergence appears beyond the scalar-mass counterterm. The half-density structure
+is UV compatible with minimal renormalization at D=4. ✓
+
+**m→∞ (non-relativistic limit):** Propagator ~ exp(-m|x|)/|x|^{D-2} in D-dim flat space.
+At D=4: power law |x|^{-2}. At D=2: log|x| — logarithmic, different qualitative behavior.
+D=4 is the transition where static propagator decays as an inverse-square law (Coulomb/Newton). ✓
+
+### Proposed Remark HD-D1.3c (for HD paper if ever unfrozen, or for cornerstone)
+
+**Remark HD-D1.3c (Three independent D=4 coincidences from half-density structure):**
+The half-density conjugation ψ = |g|^{1/4}φ produces three distinct D=4 selections:
+(i) The (∂σ)² coupling vanishes in the conformal class [conformal-class specific];
+(ii) The conjugation curvature coupling ξ_eff=1/6 equals the conformal coupling ξ_conf(D=4)=1/6
+     for all metrics (HD-D1.3b; dimension-independent normal-coordinate derivation);
+(iii) Consequently, the first Seeley-DeWitt coefficient a_1(x,x) = (1/6-ξ_eff)R = 0 at D=4.
+The physically robust selection is (ii)+(iii): in D=4 alone, the half-density weight is the
+conformal weight, and the half-density scalar requires no linear-curvature counterterm at one-loop.
+Coincidences (i) and (ii) are independent: (i) fails in non-conformally-flat backgrounds,
+while (ii) holds universally.
+
+**Destination:** HD paper is FROZEN at 6pp (PLB limit). This remark should:
+- Enter cornerstone paper §10 or §9 (as a complement to the D/2 forcing by composition)
+- Or remain as notebook entry until a dedicated session on half-density dimension selection
+
+### References
+- blackboards/1.md (physicist source, this session)
+- papers/half-density-qft/main.md §3 (HD-D1.3, HD-D1.3a, HD-D1.3b)
+- papers/half-density-qft/main.md §5 (HD-D4.2a: trace anomaly and a_{D/2})
+- Vassilevich2003 (hep-th/0306138): Seeley-DeWitt coefficients
+- meta/motivations.md OQ1 (half-density dimension selection) and OQ1a (Lp vs ℏ)

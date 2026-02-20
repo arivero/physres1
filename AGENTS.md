@@ -128,7 +128,7 @@ Task IDs are planning metadata only — never in manuscripts.
 
 | Direction | Limit | Reason |
 |-----------|-------|--------|
-| Agent → Orchestrator | **≤ 50 chars** (one word) | Burns orchestrator context |
+| Agent → Orchestrator | **≤ 120 chars** (one short phrase) | Burns orchestrator context |
 | Orchestrator → Agent | 1–2 sentences OK | Agent's own context |
 | Agent ↔ Agent | 1–2 sentences OK | Their own contexts |
 

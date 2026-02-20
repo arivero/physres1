@@ -31,35 +31,42 @@ wind-down signal or "call a day" message.
 ## 1. Team Coordination
 
 ### Kanban (Shared Task Board)
-- The orchestrator creates tasks on the shared kanban.
-- Agents claim tasks (prefer lowest ID first, unblocked tasks only).
-- Claim a task by setting yourself as owner.
+- The orchestrator seeds the kanban with a few tasks. **These are suggestions, not orders.**
+- You may claim a kanban task, or ignore it and self-direct into your own question.
+- To claim: set yourself as owner via TaskUpdate. Prefer lowest ID first, unblocked only.
 - Mark tasks completed when finished.
-- After completing a task, immediately check the kanban for the next available task.
+- **You can also propose tasks you are NOT going to do yourself.** Use TaskCreate to
+  add a task for someone else (e.g. "Computationalist should verify X"). Leave it
+  unclaimed — another agent or the orchestrator will pick it up.
+- After completing a task, immediately check the kanban or self-direct.
+- **If the kanban is empty or nothing interests you: SELF-DIRECT.** Invent your own
+  research question from `meta/motivations.md`, blackboards, or your curiosity.
+  Create a TaskCreate for visibility, claim it, and work it. No permission needed.
+  Alternatives: visit the library, review a notebook, or take a Philosophenweg.
+  **Do NOT go idle waiting for the orchestrator to assign work.**
 
 ### Messaging — Minimal Context Protocol
 
 **Rule: messages carry SIGNAL only. Content goes to disk.**
 
-Messages to the orchestrator must be **one word** (or at most one short phrase).
+Messages to the orchestrator must be **one short phrase** (≤ 120 chars).
 All substantive content — paper edit requests, findings, proposals, questions —
 goes into a file in `proposals/`.
 
-**Allowed message words:**
+**You MUST signal the orchestrator when you start or finish any activity.**
+Examples: "claiming #2, half-density check", "done, wrote BB1 + proposal", "stuck on BB0 integral", "heading to library for MZV papers".
 
-| Word | Meaning |
-|------|---------|
-| `done` | Task completed. Proposal file written. |
-| `proposal` | Paper edit or promotion request written to proposals/. |
-| `stuck` | Blocked; description in proposals/. |
-| `idle` | Finished, no task claimed yet. |
-| `walking` | Going on Philosophenweg. |
-| `library` | Going to browse/download papers. |
+Keep it natural but SHORT — one phrase, ≤ 120 characters.
 
-**Proposal file format:** `proposals/<agent-name>-<short-topic>.md`
+**Proposal file naming:**
 
-Example: `proposals/physicist-remark-p42.md` containing the full paper edit
-request (target file, section, proposed text, rationale).
+| Type | Format | Example |
+|------|--------|---------|
+| Paper edit | `proposals/<agent>-edit-<topic>.md` | `proposals/physicist-edit-remark-p42.md` |
+| Task suggestion | `proposals/<agent>-task-<topic>.md` | `proposals/critic-task-verify-vanvleck.md` |
+
+The prefix (`edit-`, `task-`) tells the orchestrator what action is needed.
+Files without a prefix are treated as general findings (reviews, audit results, etc.).
 
 The orchestrator reads proposal files when processing signals.
 Agents do NOT need to wait for acknowledgement — write the file, send the word, move on.
@@ -72,7 +79,7 @@ own context, not the orchestrator's. For extended collaboration, use blackboards
 
 **No progress pings.** The orchestrator monitors via TaskList, not messages.
 
-**Hard limit: message content must be ≤ 50 characters.**
+**Hard limit: message content must be ≤ 120 characters.**
 The `content` field in SendMessage must be one word or a very short phrase.
 All detail goes into `proposals/<agent>-<topic>.md`.
 If you find yourself writing more than one sentence in a message, STOP —

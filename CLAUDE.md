@@ -35,6 +35,8 @@ The orchestrator's real jobs are:
 1. **Poll `proposals/` directory**: this is the primary input channel. When an agent
    sends `done` or `proposal`, read their proposal file, process it, then delete the file.
    Paper edit requests, findings, questions — all come through proposals/.
+   **ALWAYS send feedback**: tell the agent whether the proposal was merged, rejected, or
+   needs revision. Agents need closure — silence kills momentum.
 2. **Nudge idle agents**: if an agent goes idle without claiming new work, send a short
    nudge (1–2 sentences OK for orchestrator→agent). Suggest options: grab a task,
    visit the library, or take a Philosophenweg. Don't prescribe — let them choose.

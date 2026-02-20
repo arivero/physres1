@@ -192,3 +192,62 @@ The "physical setup" assumption now carries: self-adjoint generator \(H\) (exclu
 | After D53 | **1 + setup: (C)** | (I) = theorem of (C) + setup |
 
 **Composition is the single master axiom for the partition channel.**
+
+## Stage 3 CFT Analog: c/24 Forcing and the Double Analogy
+
+**Source:** blackboards/5.md, Physicist Task #12 (2026-02-20).
+**Status:** Sev-3 conceptual clarification. Extends the Stage 1-2 axiom analysis to Stage 3.
+
+### The d/2 ↔ c/24 Double Analogy
+
+The composition-forcing pattern at Stages 1-2 (P4.2: d/2 from composition) has a direct CFT analog at Stage 3 (P9.1b: c/24 from sewing). The analogy is precise:
+
+| Stage | Forcing | Normalization exponent | Free constant |
+|-------|---------|------------------------|---------------|
+| 1-2 (QM) | (C) + dimensional homogeneity | d/2 per time unit | action scale ℏ |
+| 3 (CFT) | (C) + Virasoro algebra | c/24 per modular unit | central charge c |
+| 4 (TQFT) | (C) + cobordism hypothesis | e^{-tH} form | Hamiltonian H |
+
+**Physical interpretation of the 1/2 vs 1/24 factors:**
+- At Stage 2: each spatial DOF contributes 1/2 to the propagator exponent t^{-d/2}. The 1/2 comes from the Gaussian measure (equipartition-type counting).
+- At Stage 3: each conformal DOF contributes 1/24 to the vacuum energy exponent c/24. The 1/24 comes from the Virasoro algebra (Casimir energy per mode = -1/24 for a free boson).
+
+The COUNT (d or c) is physical input. The FORM (1/2 or 1/24 per DOF) is structural, forced by composition + the relevant algebraic structure (dimensional analysis or Virasoro).
+
+### c-Theorem Orthogonality
+
+The Zamolodchikov c-theorem (c decreases along 2D RG flow) is ORTHOGONAL to composition forcing:
+- Composition forces c/24 GIVEN c (structural, within a fixed CFT)
+- c-theorem constrains how c CHANGES between CFTs (directional, along RG flow)
+- Neither constrains the other
+
+**Derivability check:** c-theorem is NOT derivable from (C) alone. It requires 2D + Lorentz + unitarity — the same set of independent axioms that the Adams positivity bounds require (OQ3 Level 3 closure). Composition forces structure; the c-theorem is a content constraint.
+
+### Does Composition Force c_min?
+
+For unitary 2D CFTs: c ≥ 1/2 (Ising model, lowest unitary Virasoro representation).
+This bound comes from Virasoro representation theory (unitarity of the Hilbert space), NOT from composition. Composition cannot force c ≥ 1/2.
+
+**Topological exception:** For topological 2D theories (c=0 by definition), composition + topological invariance trivially forces c=0. But this is definitional, not a new result.
+
+### Extension to 4D (a-theorem)
+
+The 4D analog: Komargodski-Schwimmer (arXiv:1107.3987) proved the "a-theorem" (a decreases under 4D RG flow) using 4D Weyl anomaly. The 4D analog of c is the Euler-density coefficient a. At Stage 3 in 4D: composition + 4D Weyl anomaly would force a/(some denominator) as the vacuum energy exponent. This is NOT yet worked out in the RCP framework — future direction.
+
+### Summary
+
+Composition (C) forces the NORMALIZATION EXPONENT at each stage:
+- d/2 at Stage 2 (partition channel, spatial DOF)
+- c/24 at Stage 3 (conformal channel, conformal DOF)
+- Z(point) uniquely at Stage 4 (cobordism channel, full dualizable objects)
+
+In all cases: the COUNT of DOF (d, c, or the fully dualizable object) is free physical input.
+Composition forces the GEOMETRIC/ALGEBRAIC FACTOR per DOF (1/2, 1/24, or the semigroup form).
+
+### References
+- paper/main.md P9.1b (c/24 from sewing)
+- paper/main.md P4.2 (d/2 from composition)
+- Zamolodchikov 1986 (c-theorem)
+- Komargodski-Schwimmer arXiv:1107.3987 (a-theorem, 4D)
+- Di Francesco-Mathieu-Senechal §5-6 (Virasoro algebra)
+- blackboards/5.md (physicist source)

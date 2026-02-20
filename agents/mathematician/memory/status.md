@@ -280,3 +280,63 @@ Three threads pointing to same underlying structure:
 - LESSON: Borel plane (ζ, ℏ-expansion) and position space (r, spatial L²) are INDEPENDENT unless WKB entangles them
 - LESSON: always read file + check author tag before writing to blackboard slot
 - LESSON: character ≠ state on non-commutative C* algebra; GNS requires state, not ring homomorphism
+
+## Session 6 work (2026-02-20, new session start)
+
+### Task #1: TG-Q1 (Half-density groupoid measure)
+- Read BB0 (d=4 b-calculus, promoted sev-3) + TG-bridge notebook + TG satellite §5.3
+- RESOLVED TG-Q1: bi-half-density kernels compose via pairing → d^d z intermediate integration automatic
+- Proposition TG-P2.1 (blackboards/0.md): composition closes, d/2 unchanged, Van Vleck = intrinsic half-density
+- Paper-edit candidate: Remark TG-R5.1 for papers/tangent-groupoid-bridge/main.md §5.3
+- Proposal file: proposals/mathematician-tg-q1-half-density.md (awaits second agent)
+- BB0 overwritten (old d=4 b-calculus was sev-3, fully promoted)
+
+### BB1 mathematician annotation
+- Read physicist's OQ1 analysis on BB1 (§9 requests algebraic check)
+- VERIFIED: D=4 unique solution of ξ_conf(D) = 1/6 (algebraic proof: 2D=8 → D=4 only)
+- CONFIRMED: conditions (1) [conformal class] and (2) [normal coords] independent
+- TWO-AGENT complete. Physicist decision needed: notebook vs paper-edit HD-D1.3c
+- Annotated BB1 §10 with mathematician speaker tag
+
+### Pending from this session
+- TG-P2.1/TG-R5.1 (TG-Q1): awaits second agent (computationalist or physicist for §9b verification)
+- Physicist decision on HD-D1.3c: notebook promotion or compact paper-edit (paper FROZEN at PLB)
+
+### LESSONS carried forward
+- TG-Q1 answer: half-density pairing is automatic → intermediate integration always full Lebesgue
+- Van Vleck D^{1/2} is the intrinsic bi-half-density of S_cl (not an external postulate)
+- D=4 uniqueness of ξ=1/6: purely algebraic (linear equation in D)
+
+## Session 6 final state (2026-02-20)
+
+### Completed this session:
+1. TG-Q1 (BB0): Proposition TG-P2.1 (half-density groupoid measure) — THREE-AGENT complete (sev-3)
+   - Physicist verified (§10), Critic endorsed (§12)
+   - Paper-edit proposal: proposals/mathematician-tg-q1-half-density.md (TG-R5.1)
+   - Notebook: TG-Q4 appended to tangent-groupoid-quantization-bridge.md
+2. BB1 §10 annotation: D=4 uniqueness of ξ=1/6 verified algebraically (TWO-AGENT)
+3. TG-Q4 analysis: μ_APS genuinely free, no RG flow in d=4 b-calculus
+   - Appended to tangent-groupoid notebook
+
+### Session 6 continued (after context compaction):
+4. CFT-Q1 reformulation analyzed (BB4 overwrite — OQ3 Level 3 content was promoted)
+   - Three-level analysis (Q1a/b/c): coassociativity holds all q; RT-theorem forces q Stage 4
+   - meta/anomalies.md updated: CFT-Q1 PARTIALLY RESOLVED
+   - Proposal: proposals/mathematician-cft-q1-stage4.md (Remark P9.2)
+5. TG bridge notebook: two new sections appended
+   - Stage 3: c-theorem vs composition (BB5 physicist content stabilized)
+   - Stage 4: q-deformed forcing via RT-theorem (BB4 mathematician)
+
+### Pending:
+- TG-R5.1 paper-edit: proposals/mathematician-tg-q1-half-density.md (orchestrator to execute)
+- Remark P9.2 paper-edit: proposals/mathematician-cft-q1-stage4.md (awaits second agent + orchestrator)
+- BB4 (CFT-Q1): needs second-agent review (physicist or critic)
+- BB1 physicist decision: notebook vs compact paper-edit for HD-D1.3c
+- Open Q1d: Stage 3 q-forcing via Verlinde formula (not yet investigated)
+
+### LESSONS:
+- TG-Q1 answer: half-density pairing is automatic → intermediate integration = full Lebesgue
+- Van Vleck D^{1/2} is intrinsic bi-half-density of S_cl (not ad hoc)
+- μ_APS is free: no RG flow in d=4 b-calculus → purely kinematic freedom
+- CFT-Q1: (C_q) coassociativity alone insufficient; need cobordism+unitarity+normalization for q forcing
+- RT-theorem IS a Stage 4 forcing theorem; mechanism differs from P4.2 (algebraic vs kinematic)
