@@ -240,6 +240,13 @@ This is the mechanic for unfocused creative time and serendipitous encounters.
 
 ---
 
+## 8b. Temporary Files and Scripts
+
+Python scripts, SymPy verification scripts, and any temporary files go in `./tmp/`
+(repo-local), **not** `/tmp/` (system-wide). The `tmp/` directory is gitignored.
+
+---
+
 ## 9. Mathematics Must Be Written Down
 
 All mathematical results (derivations, calculations, technical claims) **must** be

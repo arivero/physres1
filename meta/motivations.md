@@ -118,9 +118,16 @@ The contact expansion C₀ + C₂q² + ... is perturbative in q/M. Resurgence
 coefficients. Is there a concrete worked example connecting the two?
 **Status**: S208 analysis — Padé [0/1] of the contact expansion exactly
 recovers the Yukawa mediator pole from two Wilson coefficients (C₀, C₂),
-a concrete "non-perturbative from perturbative" worked example. Loop-level
-extension (Borel–Padé recovery of vacuum-polarization pair-production
-threshold from Taylor coefficients) is structural but unworked.
+a concrete "non-perturbative from perturbative" worked example.
+**Loop-level update (2026-02-20)**: Vacuum-polarization Taylor coefficients
+I_n = B(n+1,3/2) + ½B(n+2,3/2) decay as n⁻² (algebraic, not factorial),
+so Borel-Padé is inapplicable to the momentum expansion. Direct Padé [p/q]
+poles accumulate on the branch cut at q²=4m² (Montessus de Ballore): [5/5]
+pole at z=1.064. Exact recovery requires the full moment sequence via
+dispersion (Stieltjes moment problem). **Structural distinction**: tree-level
+Yukawa = simple pole → [0/1] Padé exact; loop-level vacuum polarization =
+branch cut → Padé accumulation, not exact. Threshold IS detected but only
+in the N→∞ limit.
 
 ### 5. What is the "uncuttable" content of anomalies?
 Anomalies are topological constraints on the refinement limit (uncuttable

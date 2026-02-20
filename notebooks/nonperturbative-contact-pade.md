@@ -102,3 +102,80 @@ ups remain:
     coefficients, recovering Im Pi above threshold.
 (b) Connection to the Efimov effect (Remark 5.5): does Pade of the
     2-body contact expansion predict the 3-body limit cycle?
+
+---
+
+## Explicit loop-level computation (2026-02-20, Computationalist)
+Source: blackboards/6.md, Task #4.
+
+### Setup: Dispersive representation
+- Im Pi(s) = (alpha/3)(1 + 2m^2/s) sqrt(1 - 4m^2/s)  for s > 4m^2
+- Dispersive integral: Pi(q^2) = (alpha/3pi) q^2 z g(z),  z = q^2/(4m^2)
+- Closed form: g(z) = integral_0^1 dw (1 + w/2) sqrt(1-w) / (1-wz)  for |z|<1
+
+### Taylor coefficients (SymPy verified)
+g(z) = sum_{n>=0} I_n z^n where:
+
+I_n = B(n+1, 3/2) + (1/2) B(n+2, 3/2)  [B = Beta function; exact rationals for all n]
+
+Exact values:
+- I_0 = 4/5
+- I_1 = 12/35
+- I_2 = 64/315
+- I_3 = 32/231
+- I_4 = 512/5005
+
+Decay rate: I_n ~ n^{-2} (algebraic, NOT factorial).
+
+### Branch cut structure (Sokhotski-Plemelj)
+Branch cut at z=1 (q^2 = 4m^2). Square-root onset:
+  Im g(z+i0) = (pi/z)(1 + 1/2z) sqrt((z-1)/z)  for z > 1
+  Im g -> O(sqrt(z-1)) at threshold.
+
+### Pade pole convergence (numpy verified)
+[p/q] Pade of g(z); smallest real positive pole:
+
+| Pade   | smallest pole | distance from z=1 |
+|--------|---------------|-------------------|
+| [1/1]  | 1.6875        | 0.6875            |
+| [2/2]  | 1.2659        | 0.2659            |
+| [3/3]  | 1.1454        | 0.1454            |
+| [4/4]  | 1.0925        | 0.0925            |
+| [5/5]  | 1.0643        | 0.0643            |
+
+Convergence is logarithmically slow (Montessus de Ballore: poles accumulate on cut).
+
+### Key structural results
+
+**R1** (Borel-Pade inapplicability).
+The momentum-expansion Taylor series g(z) = sum I_n z^n has algebraic
+coefficients I_n ~ n^{-2}. Borel-Pade applies to factorial-growth series
+(perturbative alpha expansion, renormalons). It is NOT the correct tool
+for the momentum expansion.
+
+**R2** (Correct loop-level analogue).
+The correct loop-level counterpart of "tree-level Pade recovers the Yukawa
+pole" is: the sequence {I_n}_{n>=0} uniquely determines the spectral measure
+rho(w) = (1+w/2) sqrt(1-w) dw on [0,1], which in turn determines g(z) 
+completely (including Im g above threshold). This is a moment problem.
+
+**R3** (Structural contrast: pole vs cut).
+- Yukawa: simple pole -> [0/1] Pade recovers EXACTLY from (C_0, C_2).
+- Vac. pol: branch cut (sqrt) -> Pade ACCUMULATION (not exact recovery).
+- The distinction is topological: simple pole vs. branch cut.
+- Pade correctly DETECTS the threshold (nearest pole -> z=1) but cannot
+  reproduce Im g with finite-N Pade.
+
+**R4** (Two-level structure of Borel-Pade in QED).
+The perturbative series in alpha for any fixed q^2 (renormalon series)
+IS factorial and Borel-Pade IS the right resummation method there.
+That is a DIFFERENT expansion from the momentum Taylor series.
+
+### Status update: Question 4(a)
+The explicit loop-level Pade computation is now done. The pair-production
+threshold at q^2=4m^2 (z=1) IS detected by Pade accumulation. The method
+is Pade (not Borel-Pade) for the momentum series. Borel-Pade applies at
+the perturbative-in-alpha level (not computed here; requires renormalon analysis).
+
+Question 4(a): RESOLVED (Pade accumulation, not Borel-Pade).
+Question 4(b) (Efimov): still open.

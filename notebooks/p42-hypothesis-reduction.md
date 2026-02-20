@@ -298,3 +298,127 @@ The ℏ-necessity theorem rests on three independent structural principles, not 
 - Sato, K. (1999). *Levy Processes and Infinitely Divisible Distributions*
 - de Gosson, M. (2018). *Short-time propagators*
 - Rivero, A. (arXiv:9803035, arXiv:0302285): Discretization and convergence
+
+---
+
+## Part 4: Circularity Check — iε vs. Identity Limit (Mathematician, 2026-02-20)
+
+### The Question
+
+Route (I₃) for the identity limit (blackboards/2.md) uses the iε prescription to give Gaussian
+domination in the stationary phase argument. Does this create a circularity, since iε is itself
+derived from composition (D37/S292)?
+
+### Resolution: No Circularity
+
+**D37/S292 iε derivation:** The constant c₀ in K ∝ exp(c₀·S_cl/κ) is forced to be imaginary
+(c₀ = i) by degree-counting: real c₀ gives exponentially growing/decaying kernel incompatible
+with composition semigroup for all t > 0 (the growing kernel has no finite composition norm;
+the decaying kernel has κ→0 classical limit failing). This argument uses:
+- The sign of Re(S_cl) for x≠y (S_cl > 0 for standard kinetic Lagrangians)
+- Composition properties (semigroup behavior for all t₁,t₂ > 0)
+It does NOT use the identity limit (the t→0 behavior). Independent of (I).
+
+**Route (I₃) identity limit:** Uses iε only as a convergence factor for the Fresnel integral
+∫exp(im|u|²/(2ℏ))d^du = 1. This integral can be evaluated rigorously WITHOUT iε via:
+- Analytic continuation in ℏ (Wick rotation: ℏ → ℏ·e^{-iπ/2} = -iℏ gives Gaussian)
+- Fresnel integral methods: ∫exp(iαx²)dx = √(π/|α|)·exp(iπ·sgn(α)/4) for α ≠ 0
+
+So Route (I₃) does NOT actually require the iε prescription as an input — it requires only
+that the oscillatory Gaussian integral is evaluated by Fresnel (analytic continuation),
+which is a separate mathematical fact.
+
+**Verdict:** The two derivations are logically independent:
+- iε from composition: uses sign of S_cl and composition growth conditions
+- Identity limit via stationary phase: uses Fresnel/analytic continuation of Gaussian, not iε
+
+No circularity. The logical dependency graph is:
+```
+(C) composition → exponential form (D29) → c₀ = i (D37, iε prescription)
+                                         → N(t) ∝ t^{-d/2} (d/2 exponent)
+(C) + (D29) + physical setup [S_cl asymptotics] → identity limit (Route I₃, stationary phase)
+```
+These are parallel branches from (C). iε and identity limit are siblings, not parent-child.
+
+---
+
+## Part 5: Is Unitarity an Independent Axiom? (Mathematician, 2026-02-20)
+
+### The Question
+
+Does c₀ = i (Feynman/unitary kernel) follow from composition alone, or is it an additional axiom?
+
+### Analysis
+
+Composition (C) is satisfied by two distinct families of kernels:
+
+**(Family A, Feynman/Minkowski):** K_t(x,y) = (m/2πiℏt)^{d/2} exp(im|x-y|²/(2ℏt))
+  - c₀ = i, oscillatory
+  - ∫|K_t|d^dy = ∞ (not L¹-normalized in absolute value)
+  - U(t) unitary on L²(ℝ^d)
+
+**(Family B, Heat/Euclidean):** K_t(x,y) = (m/2πℏt)^{d/2} exp(-m|x-y|²/(2ℏt))
+  - c₀ = -1, positive, decaying
+  - ∫K_t d^dy = 1 (L¹-normalized, Markov property)
+  - {T(t)} positive contraction semigroup on L¹(ℝ^d)
+
+**Both satisfy composition (C).** Both satisfy the d/2 normalization exponent. Both satisfy the
+identity limit K_t → δ as t→0. Both have the Gaussian form forced by D29/S288. Both exclude
+Lévy processes with α≠2 via the same dimensional argument.
+
+**What distinguishes them is NOT composition, but the physical setup:**
+- Family A: arises from Minkowski Lagrangian L = +½m|ẋ|² - V(x), real action, oscillatory weight
+- Family B: arises from Euclidean Lagrangian L_E = +½m|ẋ|² + V(x), positive action, damped weight
+
+The sign of the action (Minkowski vs. Euclidean) is a physical choice, not a mathematical theorem.
+
+### Ruling out real c₀ by composition: the L¹ argument
+
+For real positive c₀ (c₀ > 0): K_t(x,y) ∝ exp(+c₀·m|x-y|²/(2ℏt)) grows as |x-y|→∞.
+The composition integral ∫K·K d^dy diverges. **Real positive c₀ is ruled out by composition.**
+
+For real negative c₀ (c₀ < 0, i.e., c₀ = -|c₀|): K_t = heat kernel. Composition closes.
+Not ruled out by (C) alone.
+
+For imaginary c₀ (c₀ = i): K_t = Feynman kernel. Composition closes (via Fresnel).
+Not ruled out by (C) alone.
+
+**Conclusion:** Composition rules out c₀ > 0 but leaves c₀ ∈ {i, -|c₀|} (Minkowski/Euclidean).
+The choice c₀ = i is the physical content of "Minkowski spacetime dynamics."
+
+### What "physical setup" means for P4.2
+
+The physical setup clause in the single-axiom formulation must include:
+1. Mass m (dimensional basis)
+2. Lagrangian structure (action has dimension [action])
+3. **Minkowski signature**: action is S = ∫½m|ẋ|²dt − V dt (real, oscillatory weight c₀ = i)
+   — as opposed to Euclidean: S_E = ∫(½m|ẋ|²+V)dt (positive, decaying weight c₀ = -1)
+
+Items 1-2 were already recognized. Item 3 is the new addition.
+
+### Verdict
+
+Unitarity (c₀ = i) is NOT an independent axiom. It is a consequence of:
+- (C) composition (rules out c₀ > 0)
+- Minkowski physical setup (selects c₀ = i over c₀ = -1)
+
+The Euclidean family (c₀ = -1) is the "other branch" excluded by the Minkowski signature of
+the physical setup. This is not an additional axiom but a specification of the spacetime arena.
+
+**Impact on single-axiom claim:** The refined statement should read:
+
+"Composition (C) + Minkowski action-based physical setup → Feynman kernel uniquely."
+
+The "Minkowski" qualifier is the key addition. It is not an extra axiom — it is part of
+specifying what "action-based dynamics" means in the physical context.
+
+### Symmetry between the two families
+
+Notably: Euclidean QM (heat kernel) is also uniquely determined by (C) + Euclidean setup.
+The two families are related by Wick rotation t → -iτ. The composition theorem (D29/S288)
+applies to both. The Wick rotation is what mediates between them — it is a representation
+change (imaginary time), which falls under the RCP representation channel (A3), not the
+partition channel (A1). This confirms: the choice Minkowski/Euclidean is representation-level
+(signature of the action), and Wick rotation is a representation compatibility map.
+
+References: blackboards/2.md (identity limit stationary phase analysis); D29/S288; D37/S292.

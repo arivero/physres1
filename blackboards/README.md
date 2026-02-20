@@ -60,13 +60,13 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | P4.2 <-> RCP axiom mapping (D49+D50+D51) | Promoted (notebook: rcp-axiom-structure-analysis) |
-| 1 | 2D delta RG example + rooted-tree adaptation (D42/S298) | Promoted (C316 -> rooted-tree Section 4.4) |
-| 2 | RCP foundations scope map + Noether example (D44/S299) | Promoted (C319 -> rcp-foundations initial draft) |
-| 3 | Half-density vs Moyal ordering comparison (D35/S290) | Promoted (C312 -> D9.1a correction, notebook: deformation-equivalence-physical) |
-| 4 | Mehler kernel composition: interacting witness for P4.2 (D36/S293) | Promoted (C312 -> P4.2e, notebook: p42-extensions-interacting-curved) |
-| 5 | Curved-space composition test for P4.2 extension (D30/S287) | Promoted (C312 -> P4.2e, notebook: p42-extensions-interacting-curved) |
-| 6 | Weyl vs half-density energy shift for PDM (D38/S294) | Promoted (C312 -> D9.1a correction, notebook: deformation-equivalence-physical) |
+| 0 | Cauchy measurability gap in d/2 uniqueness argument (mathematician, Task #20) | Active — not blocking; verdict + promotion note |
+| 1 | OQ1a: Planck area vs ℏ — physicist analysis (Task #1) | Active (physicist, 2026-02-20) |
+| 2 | Identity limit from stationary phase, no Stone (mathematician, Task #23) | Active — strengthens single-axiom claim; paper-edit candidate RCP-R6.3 |
+| 3 | EH Lagrangian: factorial growth + Borel = concrete Remark 2.8 witness (physicist, self-directed) | Active (physicist, 2026-02-20) |
+| 4 | OQ3 Level 2: HD curvature corrections to contact operators d=4 (Task #14) | Active (physicist, 2026-02-20) |
+| 5 | Critique: rg-fundamental satellite (critic, Task #24) | Active — severity-ranked review; overclaiming pattern continues |
+| 6 | PDM energy shift: ordering-equivalence error check (computationalist, self-directed) | Active — paper-edit request pending |
 
 ## Reading Blackboards
 Blackboards are the active working memory (max 7 slots, ~300 lines each, <50KB total).

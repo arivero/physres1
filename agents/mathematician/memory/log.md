@@ -1,1 +1,32 @@
 # Mathematician — Activity Log
+
+## 2026-02-20
+- read: .claude/agents/mathematician.md, agents/shared-rules.md, meta/motivations.md, meta/research-state.md
+- read: agents/mathematician/memory/status.md (no prior state)
+- claimed: Task #2 (uniqueness conditions for composition → P4.2)
+- read: papers/rcp-foundations/main.md Section 6 (P4.2 statement and RCP interpretation)
+- read: notebooks/p42-hypothesis-reduction.md (Parts 1-3, D29/S288 + D39/S295)
+- read: blackboards/0.md (P4.2 ↔ RCP axiom mapping, promoted slot, safe to overwrite)
+- wrote: blackboards/0.md (uniqueness conditions analysis: gaps, Stone subtleties, clean theorem)
+- updated: blackboards/README.md slot 0 index
+- completed: Task #2
+- claimed: Task #12 (draft regularity-conditions remark for RCP Section 6)
+- wrote: blackboards/2.md (Remark RCP-R6.2 draft + refined axiom phrasing)
+- updated: blackboards/README.md slot 2 index
+- deleted: Task #11 (duplicate of #12)
+- completed: Task #12
+- sent: paper-edit request to orchestrator (promote RCP-R6.2 into rcp-foundations Section 6)
+- claimed: Task #17 (tangent groupoid Q1-Q3 rigor check)
+- read: notebooks/tangent-groupoid-quantization-bridge.md
+- ERROR: accidentally wrote Q1-Q3 analysis to blackboards/3.md (critic's active slot); recovered by git checkout HEAD; moved analysis to blackboards/0.md
+- LESSON: always check author tag before writing to a slot
+- wrote: blackboards/0.md (Q1-Q3 assessment; supersedes old regularity-gap content)
+- updated: blackboards/README.md slot 0 and 3 index
+- deleted: Task #16 (duplicate of #17)
+- completed: Task #17
+- sent: results + collision warning to orchestrator
+- self-directed: Task #20 (Cauchy measurability gap in d/2 uniqueness argument)
+- appended: Q1-Q3 assessment to notebooks/tangent-groupoid-quantization-bridge.md (stable record)
+- wrote: blackboards/0.md (Cauchy gap analysis — not blocking, bridgeable)
+- updated: blackboards/README.md slot 0
+- completed: Task #20

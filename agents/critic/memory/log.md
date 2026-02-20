@@ -1,1 +1,37 @@
 # Critic — Activity Log
+
+## 2026-02-20
+- read: agents/critic.md, agents/shared-rules.md, meta/motivations.md, meta/research-state.md
+- read: paper/main.md lines 1-200 (intro, H0.2), 540-700 (P4.2, P4.2h), 1050-1200 (Section 8-9), 1270-1390 (Section 9.5-9.6+10.1), 1498-1557 (P9.1 label collision in 10.2)
+- wrote: blackboards/3.md (critique of Section 9.6: P9.1, P9.1a, P4.2h)
+- updated: blackboards/README.md slot 3 index
+- sent: severity-ranked review to orchestrator (Task #3)
+- read: papers/path-integral-normalization/main.md (full, 432 lines)
+- read: blackboards/5.md (old promoted content, curved-space P4.2 test)
+- wrote: blackboards/5.md (critique of path-integral-normalization satellite)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #13)
+- read: papers/ordering-equivalence/main.md (full, 391 lines)
+- wrote: blackboards/5.md (critique of ordering-equivalence satellite, overwrote d/2 review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #18)
+- finding: "Weyl ordering" in PDM example is actually left-right symmetric, not true Weyl
+- finding: numerical estimate |Delta E_0| ~ 0.006-0.06 meV inconsistent with stated formula+parameters
+- read: papers/rcp-foundations/main.md (full, 376 lines)
+- wrote: blackboards/5.md (critique of rcp-foundations satellite, overwrote ordering-equiv review)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #19, self-directed)
+- finding: Noether witness (Section 3) adds no new content beyond standard result
+- finding: axiom A2 redundant (derivable from A1 per P4.2h), kept in axiom list without justification
+- wrote: notebooks/cross-paper-overclaiming-diagnostic.md (Task #22, self-directed)
+- finding: systematic overclaiming pattern across all 4 reviewed items — math sound, framing overclaims
+- sent: cross-paper diagnostic to orchestrator (Task #22)
+- read: papers/rg-fundamental/main.md (full, 724 lines)
+- wrote: blackboards/5.md (critique of rg-fundamental satellite, overwrote student Lackman derivation)
+- updated: blackboards/README.md slot 5 index
+- sent: severity-ranked review to orchestrator (Task #24, self-directed)
+- finding: "RG is definitional" (RG-H1.17) overclaims — analogy not derivation
+- finding: two-layer QFT (RG-H1.18) logical independence stated without proof
+- finding: Noether crown witness (RG-H1.16) repeats rcp-foundations error
+- finding: 2D delta material (Sections 5.1-5.9) is sound and well-done
+- finding: all algebra checked (loop integrals, beta function, shell integration, dimensional analysis, Robin scaling) — correct

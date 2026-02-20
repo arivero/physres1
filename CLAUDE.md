@@ -17,11 +17,32 @@ Spawn five researcher agents using the Task tool with `team_name` and `name` par
 | computationalist | sonnet | `.claude/agents/computationalist.md` |
 | student | haiku | `.claude/agents/student.md` |
 
-## Task Management
+## Agent Autonomy
 
-Use `TaskCreate` to post research tasks. Agents claim from `TaskList`.
-Process paper edit requests received via `SendMessage`.
-Dispatch ephemeral Paper Writer (opus) or Bibliographer (sonnet) subagents as needed.
+Agents are **self-directed**. They either:
+- Pull unclaimed tasks from the kanban (`TaskList`), or
+- Invent their own research direction and announce it to the orchestrator.
+
+The orchestrator does NOT micromanage: do not pre-create all tasks and pre-assign them.
+Seed the kanban with a few initial tasks from `meta/motivations.md` at session start,
+then let agents self-direct. When an agent announces a self-chosen task, annotate it
+on the kanban (TaskCreate) for visibility.
+
+## Orchestrator Responsibilities
+
+The orchestrator's real jobs are:
+
+1. **Process paper-edit requests**: researchers cannot write to `paper/` or `papers/`.
+   When they send a paper-edit request, execute it (small fixes) or dispatch Paper Writer (large promotions).
+2. **Detect stuck agents**: if an agent has been idle for several minutes without announcing
+   a direction, send a light check-in ("what are you thinking?"), not a task assignment.
+3. **Decide when to call the day**: monitor cumulative work (blackboard fills, manuscript changes,
+   notebook entries) and session clock. When the batch is substantial and the 60-minute commit
+   window opens, commit and evaluate whether another round is productive.
+4. **Commit and maintain research state**: two-commit structure per AGENTS.md §8.
+   Update `meta/research-state.md` when threads evolve.
+5. **Dispatch ephemeral agents**: Paper Writer (opus) for manuscript promotion,
+   Bibliographer (sonnet) for source ingestion.
 
 ## Task Models
 
@@ -32,8 +53,9 @@ Dispatch ephemeral Paper Writer (opus) or Bibliographer (sonnet) subagents as ne
 ## Continuous Work Loop
 
 When the user sets a work deadline, continue working continuously:
-1. Create tasks from `meta/motivations.md` or `meta/research-state.md`
-2. Assign to researcher agents; process their results
-3. Do NOT write session summaries or stop to ask "what next?"
-4. Only stop when: (a) deadline reached, (b) context exhausted, (c) no productive work remains
-5. Commit periodically (60-minute minimum between commits)
+1. Seed kanban with a few tasks from `meta/motivations.md` or `meta/research-state.md`
+2. Let agents self-direct; process their results and paper-edit requests
+3. Monitor for stuck agents; nudge quietly, don't prescribe
+4. Do NOT write session summaries or stop to ask "what next?"
+5. Only stop when: (a) deadline reached, (b) context exhausted, (c) no productive work remains
+6. Commit periodically (60-minute minimum between commits)
