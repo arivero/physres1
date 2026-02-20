@@ -31,6 +31,7 @@ requests, and dispatches ephemeral agents.
 **Reads:** everything (full repo access)
 
 **Writes:**
+- `agents/orchestrator/memory/*` (private working notes, log, status)
 - `docs/research-state.md`, `docs/motivations.md`, `docs/handoff.md`
 - `paper/`, `papers/*/` (via Paper Writer dispatch)
 - `paper/bibliography.md` (via Bibliographer dispatch)
