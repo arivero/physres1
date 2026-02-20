@@ -333,10 +333,60 @@ Proposition D6.4b (Instanton Lattice Rigidity) upgrades H6.3's scale-channel heu
 **Replaced:** "The third witness (scale channel) is at present a structural heuristic (H6.3)..."
 **With:** Proposition D6.4b language with honest scope (additive semigroup, conditional, Borel/instanton type, Stokes caveat, Écalle attribution).
 
-### Open Questions (from this thread)
+### Open Questions (from this thread) — ANSWERED in §14
 
-- **Rank-2 lattice:** Can a theory with two distinct instanton actions S_1, S_2 satisfy (C)? If so, what does the Leibniz rule force for {nS_1 + mS_2}? This would test the additive-semigroup framing beyond rank-1.
-- **Stokes constants from composition?** Is there additional structure in (C) that constrains residues at nζ_1, not just positions? The Leibniz rule gives convolution relations between residues but does not fix them independently.
+- **Rank-2 lattice:** ANSWERED (BB1, two-agent, sev-3). Rank-2 is a corollary of D6.4b. See §14.
+- **Stokes constants from composition?** ANSWERED (BB1, two-agent, sev-3). (C) forces exponential-t family but NOT values. See §14.
+
+## 14. Rank-2 Lattice and Stokes Constants from Composition: Two Open Questions Answered
+
+Promoted from blackboards/1.md (two-agent: mathematician + physicist, 2026-02-20). Sev-3 (clarification).
+
+### RES-14.1: Rank-2 Lattice (trivial corollary)
+
+**Claim (corollary of D6.4b):** If K_t has Borel singularities at positions in {nS_1 + mS_2 : n,m ≥ 0}
+(rank-2 free abelian semigroup), then (C) forces the singularity set to be CLOSED under addition.
+
+**Proof:** Borel convolution:
+B[K_{t₁+t₂}](ζ) = ∫_0^ζ B[K_{t₁}](ζ') B[K_{t₂}](ζ-ζ') dζ'
+
+A singularity at ω arises from ω_1 + ω_2 = ω; since ω_1, ω_2 ∈ {nS_1 + mS_2}, so is ω. ✓
+
+**Assessment:** This is a DIRECT COROLLARY of D6.4b — the rank-2 (and rank-k) argument is
+structurally identical to rank-1. No new forcing mechanism. (C) forces closure given any set of
+generators; it does NOT determine how many generators exist (rank is physical, not forced by (C)).
+
+### RES-14.2: Stokes Constants — Functional Equation Forced by (C)
+
+**Alien Leibniz rule:** Δ_{nA}(K_{t₁+t₂}) = Σ_{j=0}^{n} Δ_{jA}(K_{t₁}) · Δ_{(n-j)A}(K_{t₂})
+
+Writing Δ_{nA}(K_t) = S_n(t) · K_t (scalar Stokes constant), the Leibniz rule becomes:
+S_n(t₁+t₂) = Σ_{j=0}^{n} S_j(t₁) · S_{n-j}(t₂)
+
+**Generating function:** F(t, λ) = Σ_{n≥0} S_n(t) λ^n satisfies:
+F(t₁+t₂, λ) = F(t₁, λ) · F(t₂, λ)
+
+**Solution:** F(t, λ) = e^{c(λ)t} for some c(λ) ∈ ℂ with c(0) = 0.
+
+**What (C) forces:**
+- Time-dependence: S_n(t) = [coefficient of λ^n in e^{c(λ)t}] — polynomial in t of degree ≤ n
+- Convolution structure: S_n(t) = Σ_{j=0}^{n} c_j^{...} t^{n-j}/... (cumulant expansion)
+- Zero-limit: S_n(0) = δ_{n,0} (from K_0 = δ → no alien part)
+
+**What (C) does NOT force:** The function c(λ) itself — this is non-perturbative input.
+In 2D delta (one-loop exact): c(λ) = κ_* λ, confirmed by S_n(t) = (κ_*)^n t^n / n! (Poisson).
+In double-well / CP(1): c(λ) = Σ_k c_k λ^k (multi-instanton series, requires coupling).
+
+**Physicist's verification:** The exponential-t family is physically correct. The qualification:
+c(λ) in known models is constrained by OPE/S-matrix analyticity (Dunne-Ünsal, Costin-Dunne),
+but this is physical input, not structural forcing from (C).
+
+**Net conclusion:** D6.4b cannot be upgraded to "forces Stokes constants" — confirmed explicitly.
+The additive semigroup structure of POSITIONS is what (C) forces. Stokes constants are organized
+by (C) into an exponential-t family, but their values require non-perturbative coupling data.
+
+### Status: TWO-AGENT COMPLETE (mathematician + physicist). Sev-3.
+No new results beyond D6.4b; both open questions closed as clarifications (not upgrades).
 
 ### References
 - Écalle (1981): alien calculus, resurgent functions (prior art for Leibniz rule)

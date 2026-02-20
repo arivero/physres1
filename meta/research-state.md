@@ -269,7 +269,7 @@ Key results from the first full agent-team session:
 ### Pending from this session
 
 - BB5 (TG-R3.1 critic endorsement): add one amendment (RG semigroup ≠ groupoid note), then promote to TG satellite paper
-- BB4 n_±=1 result: still needs promotion to planck-area or TG satellite as formal proposition
+- ~~BB4 n_±=1 result: still needs promotion to planck-area or TG satellite as formal proposition~~ → DONE (Proposition PA-P4.2 added to papers/planck-area/main.md §7; slot 4 now free)
 - Rank-2 instanton lattice question (from BB3 §13 open questions): test additive semigroup framing for two-scale models
 - Stokes constants from composition: additional structure in (C) that might constrain residues (from BB3 open questions)
 

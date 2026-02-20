@@ -728,6 +728,17 @@ This note adds a complementary ingredient: the kernel side is most naturally for
 `Heuristic PA-H4.1 (Half-density and the Misner measure problem).`
 For finite-dimensional configuration spaces (minisuperspace), half-density wavefunctions uniquely resolve the Hilbert space structure ambiguity identified by Misner (1962) and DeWitt (1967): the factor \(\sqrt{\gamma}\) in Wheeler–DeWitt wavefunctions is the finite-dimensional half-density weight (Derivation PA-D1.2a, restricted to minisuperspace coordinates). For the infinite-dimensional case, the half-density approach reduces — but does not eliminate — the Misner ambiguity: the residual freedom is in the choice of Riemannian structure on superspace. The discrete area spectrum of loop quantum gravity, \(A_n = 8\pi L_p^2\sqrt{j(j+1)}\), provides a candidate regularization compatible with \(L_p^2\) as the half-density area scale, but the connection between the Ashtekar–Lewandowski measure and half-density composition is not yet established.
 
+`Proposition PA-P4.2 (d=4 b-calculus contact spectrum: analytic, not non-perturbative).`
+The b-Laplacian \(-\Delta_b\) on \(\mathbb{R}^4\setminus\{0\}\) in \(L^2_b = L^2(\mathbb{R}^4\setminus\{0\}, r^{-4}d^4x)\), s-wave sector, has deficiency indices \(n_\pm=1\) (one-parameter Robin self-adjoint extension family — the b-calculus analog of B-DEF-P1.1). The bound-state spectrum under the Robin APS boundary condition at the blown-up face \(r = L_0\) is:
+\[
+E_B = -\frac{\hbar^2}{2mL_0^2}\,\mu_{\mathrm{APS}}(\mu_{\mathrm{APS}}-2), \qquad \mu_{\mathrm{APS}} < 0,
+\]
+where \(\mu_{\mathrm{APS}}\in\mathbb{R}\) is the Robin extension parameter. The pre-squaring constraint \(\sqrt{1+\kappa^2}=1-\mu_{\mathrm{APS}}>0\) restricts to \(\mu_{\mathrm{APS}}<0\) only; the \(\mu_{\mathrm{APS}}>2\) branch is spurious (a squaring artifact).
+
+**Contrast with d=2:** In the 2D delta interaction, the bound state energy \(E_B = -e^{-1/g_R(\mu)}\) is genuinely non-perturbative (exponentially small in the coupling) and requires dimensional transmutation. In the d=4 b-calculus, the spectrum is \emph{algebraic} in \(\mu_{\mathrm{APS}}\): no RG running, no beta function, no dimensional transmutation. The UV scale \(L_0\) (at which the APS condition is imposed, e.g. \(L_0=L_P\)) enters directly as a scale parameter, not through a running coupling.
+
+**Implication for the area-scale program:** B-DEF-P1.1 establishes that d=4 b-calculus contact interactions exist (\(n_\pm=1\) for all \(d\)). PA-P4.2 now provides their explicit spectrum. However, the extension parameter \(\mu_{\mathrm{APS}}\) is NOT fixed by the b-calculus structure, composition, or dimensional analysis: it is a free dimensionless parameter requiring additional physical input (scattering length, or Planck-scale boundary condition). The b-calculus selects the \emph{type} of contact interaction (Robin at \(r=L_0\)) but not its \emph{strength} \(\mu_{\mathrm{APS}}\). This is distinct from the transmutation route (PA-H2.13) where the coupling itself fixes the scale. (THREE-AGENT result: mathematician + physicist + critic, BB4; sev-2.)
+
 # References
 
 1. [ManuelTarrach1994PertRenQM] Cristina Manuel and Rolf Tarrach, "Perturbative Renormalization in Quantum Mechanics," *Physics Letters B* 328 (1994), 113--118. arXiv:`hep-th/9309013` (v1, 2 Sep 1993). DOI `10.1016/0370-2693(94)90437-5`.

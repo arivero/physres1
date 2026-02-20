@@ -334,6 +334,9 @@ $$
 
 Thus the renormalized delta interaction trades the bare coupling for a physical scale \(\kappa_\ast\) (equivalently a bound-state energy \(E_B=\hbar^2\kappa_\ast^2/(2m)\)).
 
+`Remark RG-R1.1 (Self-completion: UV coupling divergence and the Borel singularity).`
+The RG-invariant scale \(\kappa_\ast\) plays a double role. (i) As a UV coupling divergence (Landau pole): the renormalized coupling \(g_R(\mu)\) diverges at \(\mu_{\mathrm{LP}} = \mu_0 e^{\pi\hbar^2/(m g_B)}\), which is the scale at which \(1/g_R(\mu)\to 0\). In units \(m=\hbar=\mu_0=1\) one finds \(\kappa_\ast^2 = \mu_{\mathrm{LP}}\), so the bound-state energy scale satisfies \(|E_B| = \hbar^2\mu_{\mathrm{LP}}/(2m\mu_0)\) — the Landau pole scale directly sets the IR physics. (ii) As a Borel singularity: the perturbative series in \(g_R(\mu)\) has a leading Borel singularity at \(s_* = 1/g_R(\mu)\), which runs logarithmically with \(\mu\) while the residue \(\kappa_\ast^2 = \mu^2 e^{-2\pi\hbar^2/(mg_R(\mu))}\) remains \(\mu\)-independent. The identification of the UV coupling divergence (Landau pole) with the leading Borel singularity in renormalized gauge theories has been established in [Maiezza-Vasquez2023]; the 2D delta model provides the exactly solvable instance of this principle, where \(E_B\) is explicitly \(\mu\)-independent and self-completion (dimensional transmutation as resolution of the Landau pole) is demonstrably exact. The Borel residue at the multi-instanton position \(n s_*\) evaluates to \(\kappa_\ast^{2n}\), which is \(\mu\)-independent; this rigidity of residues is analytically exact in the 2D delta model (single-instanton sector) and conjectured to extend to genuine multi-instanton models such as CP(\(N\)--1). (FOUR-AGENT result: computationalist + mathematician + physicist + critic, BB6; sev-3.)
+
 ## 5.4 Scheme Dependence: What Changes vs What Is Invariant
 The subtraction condition defining \(g_R(\mu)\) is not unique: one may add a finite constant to the definition. For example, define an alternative coupling \(g_R^{(C)}\) by
 
@@ -722,3 +725,4 @@ From the composition perspective, quantum field theory has a two-layer architect
 8. [Jackiw1991DeltaPotentials] R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.
 9. [RootedTreeBookkeeping] A. Rivero, "Rooted-Tree Bookkeeping for Composition Compatibility: A Butcher/RG Dictionary," companion satellite paper (2026).
 10. [RCPFoundations] A. Rivero, "Refinement Compatibility Principle: Axioms and Crown Witnesses," companion satellite paper (2026).
+11. [Maiezza-Vasquez2023] A. Maiezza and J. C. Vasquez, "Non-Wilsonian ultraviolet completions of a gauge theory," arXiv:`2311.10393` (v1, 17 Nov 2023).
