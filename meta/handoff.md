@@ -34,7 +34,7 @@ Critic, Computationalist, Student) coordinated by an orchestrator via a shared k
 (`TaskList`). See `AGENTS.md` for the full architecture.
 
 ## Research Continuation (Durable State)
-- Working memory + active threads: `docs/research-state.md` (non-citable)
+- Working memory + active threads: `meta/research-state.md` (non-citable)
 
 ## Build Paper (Markdown -> TeX -> PDF)
 Do not rely on pandoc defaults for math in this repo; use the single-backslash math extension.
@@ -51,7 +51,7 @@ Why: without `tex_math_single_backslash`, pandoc may emit literal parentheses li
 `Let (q:[t_i,t_f]->R^d)` which breaks TeX (`Missing $ inserted.`).
 
 Environment notes:
-- TeX inventory + smoke tests are recorded in `docs/tex-env-report.md` (BasicTeX/minimal).
+- TeX inventory + smoke tests are recorded in `meta/tex-env-report.md` (BasicTeX/minimal).
 
 ## Consistency Checks (Before Release)
 1. Ensure no task IDs leak into manuscript:
@@ -85,7 +85,7 @@ OA triage order:
 5. Otherwise create `sources/pending-<key>.md` with attempted URLs and next action
 
 Observed network limitations and ingest improvements are tracked in:
-- `docs/source-ingest-status.md`
+- `meta/source-ingest-status.md`
 
 ## Current PENDING Items
 As of 2026-02-12 (see `paper/bibliography.md` for details):
@@ -95,4 +95,4 @@ Resolved in B12 (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal19
 
 ## Follow-Up Papers Roadmap
 Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` as brainstorming input):
-- `docs/next-articles.md`
+- `meta/next-articles.md`

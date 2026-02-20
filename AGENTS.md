@@ -32,7 +32,7 @@ requests, and dispatches ephemeral agents.
 
 **Writes:**
 - `agents/orchestrator/memory/*` (private working notes, log, status)
-- `docs/research-state.md`, `docs/motivations.md`, `docs/handoff.md`
+- `meta/research-state.md`, `meta/motivations.md`, `meta/handoff.md`
 - `paper/`, `papers/*/` (via Paper Writer dispatch)
 - `paper/bibliography.md` (via Bibliographer dispatch)
 
@@ -75,7 +75,7 @@ All share `agents/shared-rules.md` as their canonical rule set. See individual
 **Restrictions** (all researchers):
 - Cannot edit `paper/`, `papers/*/`, `paper/notes/` — request via SendMessage
 - Cannot read other agents' `agents/*/memory/` folders
-- Cannot edit `AGENTS.md`, `CLAUDE.md`, `docs/handoff.md`
+- Cannot edit `AGENTS.md`, `CLAUDE.md`, `meta/handoff.md`
 
 ---
 
@@ -139,12 +139,12 @@ Task IDs are planning metadata only — never in manuscripts.
 
 | Agent | Allowed Writes | Forbidden Writes |
 |-------|---------------|-----------------|
-| Orchestrator | `docs/*`, dispatch Paper Writer for `paper/` | Direct blackboard/notebook writes |
-| Physicist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/physicist/memory/*` | `paper/`, `papers/`, `docs/*` |
-| Mathematician | `blackboards/*.md`, `notebooks/*.md` (append), `agents/mathematician/memory/*` | `paper/`, `papers/`, `docs/*` |
-| Critic | `blackboards/*.md`, `notebooks/*.md` (append), `agents/critic/memory/*` | `paper/`, `papers/`, `docs/*` |
-| Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/computationalist/memory/*` | `paper/`, `papers/`, `docs/*` |
-| Student | `blackboards/*.md`, `notebooks/*.md` (append), `agents/student/memory/*` | `paper/`, `papers/`, `docs/*` |
+| Orchestrator | `meta/*`, dispatch Paper Writer for `paper/` | Direct blackboard/notebook writes |
+| Physicist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/physicist/memory/*` | `paper/`, `papers/`, `meta/*` |
+| Mathematician | `blackboards/*.md`, `notebooks/*.md` (append), `agents/mathematician/memory/*` | `paper/`, `papers/`, `meta/*` |
+| Critic | `blackboards/*.md`, `notebooks/*.md` (append), `agents/critic/memory/*` | `paper/`, `papers/`, `meta/*` |
+| Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/computationalist/memory/*` | `paper/`, `papers/`, `meta/*` |
+| Student | `blackboards/*.md`, `notebooks/*.md` (append), `agents/student/memory/*` | `paper/`, `papers/`, `meta/*` |
 | Paper Writer (eph) | `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md` | blackboards, notebooks, docs |
 | Bibliographer (eph) | `paper/bibliography.md`, `sources/*` | manuscripts, blackboards, notebooks |
 
@@ -157,7 +157,7 @@ Task IDs are planning metadata only — never in manuscripts.
 1. **When to commit:** at most **once per hour**. Do not commit after every task. Keep working between commits.
 2. **Two-commit structure (per batch):**
    - **Commit 1 (manuscripts):** `.md` in `paper/` and `papers/*/`, `.tex`, `.bib`, `paper/bibliography.md`.
-   - **Commit 2 (scaffolding):** everything else — `docs/`, `blackboards/`, `agents/`, `notebooks/`, config.
+   - **Commit 2 (scaffolding):** everything else — `meta/`, `blackboards/`, `agents/`, `notebooks/`, config.
    - If no manuscripts changed, skip Commit 1.
 3. **Commit metadata (required):**
    - Agent/model tag (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`)
@@ -227,15 +227,15 @@ Target max **6 compiled LaTeX pages** in `elsarticle` 3p twocolumn format. Measu
 
 ### Orchestrator
 1. `AGENTS.md`
-2. `docs/motivations.md`
-3. `docs/handoff.md`
-4. `docs/research-state.md`
+2. `meta/motivations.md`
+3. `meta/handoff.md`
+4. `meta/research-state.md`
 5. TaskList (check current state)
 
 ### Researcher Agents
 1. `agents/shared-rules.md`
-2. `docs/motivations.md`
-3. `docs/research-state.md`
+2. `meta/motivations.md`
+3. `meta/research-state.md`
 4. TaskList (check for assignments)
 5. All blackboards (`blackboards/[0-6].md`)
 

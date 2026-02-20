@@ -30,7 +30,7 @@ for all researcher agents. The rules below supplement but do not override the sh
 
 ## Session Startup
 1. Read `agents/shared-rules.md`
-2. Read `docs/motivations.md`
-3. Read `docs/research-state.md`
+2. Read `meta/motivations.md`
+3. Read `meta/research-state.md`
 4. Check TaskList for assignments
 5. Scan all blackboards: read `blackboards/[0-6].md`

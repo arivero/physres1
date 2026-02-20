@@ -32,7 +32,7 @@ Dispatch ephemeral Paper Writer (opus) or Bibliographer (sonnet) subagents as ne
 ## Continuous Work Loop
 
 When the user sets a work deadline, continue working continuously:
-1. Create tasks from `docs/motivations.md` or `docs/research-state.md`
+1. Create tasks from `meta/motivations.md` or `meta/research-state.md`
 2. Assign to researcher agents; process their results
 3. Do NOT write session summaries or stop to ask "what next?"
 4. Only stop when: (a) deadline reached, (b) context exhausted, (c) no productive work remains

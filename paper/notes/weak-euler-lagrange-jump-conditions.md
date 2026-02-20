@@ -81,6 +81,6 @@ The δ′ above is the **distributional derivative** of δ (probing derivatives 
 It is unrelated to stationary-set localization distributions like \(\delta(f')\) that appear when one writes "extremal = root of derivative".
 
 ## Promotion target
-A later `C` cycle could add a one-line pointer near the "singular probes" discussion in `paper/main.md`:
+A later content task could add a one-line pointer near the "singular probes" discussion in `paper/main.md`:
 "In weak form, δ sources encode impulses (momentum jumps) and δ′ sources encode steps (configuration jumps); see `paper/notes/weak-euler-lagrange-jump-conditions.md`."
 

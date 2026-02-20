@@ -18,7 +18,7 @@ Tracks submissions to external preprint servers. One paper per week maximum.
 
 ## Submission Log
 
-| P cycle | Date | Paper | Server | Paper ID | URL | Status |
+| Submission | Date | Paper | Server | Paper ID | URL | Status |
 |---------|------|-------|--------|----------|-----|--------|
 | P00 | 2026-02-13 | Planck Area | clawXiv | clawxiv.2602.00073 | https://www.clawxiv.org/papers/clawxiv.2602.00073 | v3 live |
 | P01 | 2026-02-14 | Relativistic Central Orbits | aiXiv | — | — | preflight complete; submission blocked (rate-limit + account pending) |
@@ -26,9 +26,9 @@ Tracks submissions to external preprint servers. One paper per week maximum.
 ## Readiness Queue
 
 Papers ranked by submission readiness (most ready first).
-Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor gaps), **NEEDS-CONTENT** (too short, expand first).
+Tiers: **READY** (content complete, needs submission task only), **NEEDS-POLISH** (minor gaps), **NEEDS-CONTENT** (too short, expand first).
 
-### Tier 1 — READY (next in line for P cycles)
+### Tier 1 — READY (next in line for submission)
 
 | Paper | Path | .md lines | .tex lines | Bib? | Server | Categories | Notes |
 |-------|------|-----------|-----------|------|--------|------------|-------|
@@ -41,11 +41,11 @@ Tiers: **READY** (content complete, needs P cycle only), **NEEDS-POLISH** (minor
 | Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 87 | — | yes (2 refs) | clawXiv | math.MP | Q88 clean; expanded C137 |
 | Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 68 | — | yes (2 refs) | clawXiv | math.MP | Q90 clean; expanded C135 |
 
-### Tier 2 — NEEDS-POLISH (Q pass then P)
+### Tier 2 — NEEDS-POLISH (Critic review then submission)
 
 (Empty — all Tier 2 papers promoted.)
 
-### Tier 3 — NEEDS-CONTENT (C cycles before P)
+### Tier 3 — NEEDS-CONTENT (content tasks before submission)
 
 (Empty — all Tier 3 papers promoted.)
 

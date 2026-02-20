@@ -6,9 +6,9 @@ cross-referenced from manuscripts as "see supporting note".
 
 ## Relationship to Publication
 
-Paper notes feed the **publication track** (P cycles). When preparing a
-publishable version, the P cycle uses both the manuscript and its notes
-to produce the final `.tex`/`.bib`. Notes contain the expansions, details,
+Paper notes feed the **publication track**. When preparing a publishable
+version, the submission task uses both the manuscript and its notes to
+produce the final `.tex`/`.bib`. Notes contain the expansions, details,
 and intermediate steps that the manuscript summarizes.
 
 ## Satellite Papers
@@ -26,7 +26,7 @@ paper-specific supporting material. The same lifecycle rules apply.
 
 Cap: **10 files** per notes directory (excluding README/.keep).
 
-1. **Created** — extracted from a blackboard or produced during a C cycle.
+1. **Created** — extracted from a blackboard or produced during a research task.
    Supports a specific manuscript section or claim.
 2. **Active** — referenced by at least one manuscript, may still be refined.
 3. **Integrated** — content fully absorbed into a manuscript. Redundant.
@@ -35,7 +35,7 @@ Cap: **10 files** per notes directory (excluding README/.keep).
 ### When to delete
 
 - A note whose key result appears in the manuscript is **integrated**: delete.
-- A note untouched for 5+ cycles is likely stale: check, then delete.
+- A note untouched for multiple sessions is likely stale: check, then delete.
 - When creating a new note at the cap, retire the most integrated note first.
 
 ## Current Notes

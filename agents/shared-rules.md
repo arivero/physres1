@@ -118,7 +118,7 @@ propose → someone else acts on it. If it stays unresolved, the orchestrator ar
 
 ## 6. Shared Discovery Surface
 
-`docs/anomalies.md` is the shared register for unexpected findings, surprises, and
+`meta/anomalies.md` is the shared register for unexpected findings, surprises, and
 structural puzzles. Any agent may append entries there (it is NOT private memory).
 The Student agent should post serendipitous discoveries here when they seem relevant
 to the project. The Critic and orchestrator review it periodically.
@@ -149,7 +149,7 @@ This is the mechanic for unfocused creative time and serendipitous encounters.
 | `notebooks/*.md` | Read + append only (no edits, no deletes) |
 | `notebooks/votes.md` | Append votes |
 | `agents/<your-name>/memory/*` | Read + write (private) |
-| `docs/anomalies.md` | Append entries (shared discovery surface) |
+| `meta/anomalies.md` | Append entries (shared discovery surface) |
 | `agents/shared/philosophenweg.md` | Append walk entries, update WALKING status |
 
 ### Forbidden Writes — Send to Orchestrator Instead
@@ -160,8 +160,8 @@ This is the mechanic for unfocused creative time and serendipitous encounters.
 | `paper/notes/*.md` | SendMessage paper edit request to orchestrator |
 | `paper/bibliography.md` | SendMessage bibliography update request to orchestrator |
 | `AGENTS.md`, `CLAUDE.md` | Never (orchestrator-only) |
-| `docs/handoff.md` | Never (orchestrator-only) |
-| `docs/research-state.md` | SendMessage state update request to orchestrator |
+| `meta/handoff.md` | Never (orchestrator-only) |
+| `meta/research-state.md` | SendMessage state update request to orchestrator |
 
 ### Forbidden Reads
 | Surface | Reason |

@@ -2,8 +2,8 @@
 
 Before making suggestions or edits, read:
 1. `AGENTS.md` (canonical policies)
-2. `docs/handoff.md` (durable commands + workflow)
-3. `docs/research-state.md` (threads + priorities)
+2. `meta/handoff.md` (durable commands + workflow)
+3. `meta/research-state.md` (threads + priorities)
 
 ## Guardrails
 - Do **not** put task IDs in `paper/main.md` (or any PDF-visible content).

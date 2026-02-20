@@ -91,24 +91,24 @@ Track how the central thesis has been refined. Update when exploration reveals g
 
 ### 4) RCP as a standalone foundations note
 - Goal: state RCP as commuting diagrams / equivalence relations with a minimal axiom list and a short library of worked examples.
-- Seed roadmap: `docs/next-articles.md` (A).
+- Seed roadmap: `meta/next-articles.md` (A).
 
 ### 5) Dirac-supported probes / corners / impulses
 - Goal: a clean weak Euler–Lagrange + mollifier theorem + corner/jump conditions with one anchored model.
-- Seed roadmap: `docs/next-articles.md` (B).
+- Seed roadmap: `meta/next-articles.md` (B).
 - **Status**: Tier 1 (S97 draft, Q94 clean, 172 lines).
 
 ### 6) Ordering/discretization as equivalence class
 - Goal: extend the simple \(f(q)p\) example to a richer symbol family and present ordering as a conjugation/gauge equivalence.
-- Seed roadmap: `docs/next-articles.md` (C).
+- Seed roadmap: `meta/next-articles.md` (C).
 
 ### 7) Rooted trees as bookkeeping (Butcher ↔ RG)
 - Goal: make the rooted-tree dictionary the primary content; do one explicit computation on each side.
-- Seed roadmap: `docs/next-articles.md` (D).
+- Seed roadmap: `meta/next-articles.md` (D).
 
 ### 8) Renormalization: template → real computation
 - Goal: pick one toy/QFT example and show the semigroup property + scheme dependence explicitly.
-- Seed roadmap: `docs/next-articles.md` (F).
+- Seed roadmap: `meta/next-articles.md` (F).
 
 ### 9) Paper closure / hygiene (deprioritized unless blocking)
 - Remaining `PENDING_LIBRARY` gaps: `Landsman1998` only (require institutional Springer access or physical library). All other PENDING items resolved in B12: `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `Velhinho2017`, `Groenewold1946` (Univ. Groningen OA), `Connes1994` (author OA from alainconnes.org; tangent groupoid in Ch. II §5).
@@ -199,6 +199,6 @@ P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless expl
 
 ## Immediate Next Actions (Low Friction)
 1. When a derivation starts to stabilize, create a dedicated note in `paper/notes/`.
-2. Keep `docs/next-articles.md` as the "topic backlog".
+2. Keep `meta/next-articles.md` as the "topic backlog".
 3. Central-force bridge thread: continue iteration if unresolved; reopen readability pass only when targeted.
 4. Future work: satellite submissions, content expansion for shorter papers, cornerstone polish.

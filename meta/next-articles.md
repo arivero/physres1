@@ -22,7 +22,7 @@ Deliverables achieved:
 6. ✓ Forward connections (Section 7.5) to three channel-specific satellites.
 
 ## B. Dirac-Supported Probes, Corners, and Impulses — **DRAFT (S97)**
-Draft: `papers/dirac-probes-corners-impulses/main.md` (172 lines, 5 pages, 3 refs). Needs Q pass.
+Draft: `papers/dirac-probes-corners-impulses/main.md` (172 lines, 5 pages, 3 refs). Needs Critic review.
 Spin out Section 5 into a short, sharp note that focuses on what is actually
 mathematically legal when "Dirac deltas probe extrema."
 
@@ -118,4 +118,4 @@ Draft: `papers/fermionic-mediators-contact-limits/main.md` (96 lines, 4 pages, 4
    - `pandoc -f markdown+tex_math_single_backslash -s paper/main.md -o paper/main.tex`
 2. If future papers want a real reference list, switch citation syntax to pandoc's
    `[@Key]` form and store sources in a `.bib` file (keep `sources/` out of git).
-3. Keep cycle IDs planning-only per `AGENTS.md` (no `C0x` tags in manuscript output).
+3. Keep task IDs planning-only per `AGENTS.md` (no task IDs in manuscript output).

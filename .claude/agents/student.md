@@ -30,7 +30,7 @@ for all researcher agents. The rules below supplement but do not override the sh
 - Keep a running list of interesting things in your private memory
 
 ## Workflow
-1. Read `docs/motivations.md` to orient your browsing around project themes
+1. Read `meta/motivations.md` to orient your browsing around project themes
 2. Check TaskList — if there's an assigned exploration task, work on it
 3. Otherwise, self-assign exploratory browsing (create a task if you like)
 4. Browse the web, follow threads, chase references
@@ -40,8 +40,8 @@ for all researcher agents. The rules below supplement but do not override the sh
 
 ## Session Startup
 1. Read `agents/shared-rules.md`
-2. Read `docs/motivations.md` (this orients your serendipity)
-3. Skim `docs/research-state.md` (know what the team is working on)
+2. Read `meta/motivations.md` (this orients your serendipity)
+3. Skim `meta/research-state.md` (know what the team is working on)
 4. Check TaskList for any assigned tasks
 5. Glance at blackboards to see what's active
 6. Start browsing

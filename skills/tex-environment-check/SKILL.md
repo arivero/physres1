@@ -12,7 +12,7 @@ Run a deterministic audit and generate a report.
 1. Run the checker script:
 
 ```bash
-python3.12 skills/tex-environment-check/scripts/check_tex_env.py docs/tex-env-report.md
+python3.12 skills/tex-environment-check/scripts/check_tex_env.py meta/tex-env-report.md
 ```
 
 2. Review key sections in the report:

@@ -31,10 +31,10 @@ These conversation threads are already represented in the current drafts (though
 - Incorporation targets:
   - `paper/notes/`: add a dedicated derivation note formalizing the static case, then time-sliced QM case, then “field theory schematic” case.
   - `papers/rg-fundamental/main.md`: optionally add a short bridge paragraph “\(\tau\) as renormalization condition”.
-- Next cycles:
-  - `S`: write the formal note (and optional Lean lemma targets).
-  - `C`: promote a minimal, non-preprint-dependent formulation into `paper/main.md`.
-  - `B`: only if we want independent anchors beyond `[Rivero9803035]`.
+- Next tasks:
+  - **Research**: write the formal note (and optional Lean lemma targets).
+  - **Promotion**: promote a minimal, non-preprint-dependent formulation into `paper/main.md`.
+  - **Bibliography**: only if we want independent anchors beyond `[Rivero9803035]`.
 
 ### 2.2 Planck areal-speed “haiku” branch: missing general-\(q\) / dimension link + minimal-length/GUP link
 - Conversation anchors: `conv_patched.md` headings “4.4 Dimensionality: why q” and “4.5 Relation to minimal length/GUP literature” (inside the large Planck-length block).
@@ -49,10 +49,10 @@ These conversation threads are already represented in the current drafts (though
     - derive the areal-speed radius formula for a generic \(F\propto 1/r^q\) and show only \(q=2\) yields the Planck-to-Compton cancellation pattern;
     - add an “Open problem” bullet: minimal-length/GUP corrections.
   - Optional: `papers/half-density-qft/main.md`: add a short pointer that long-range behavior depends on dimension via Green kernels (would require bibliography).
-- Next cycles:
-  - `S`: do the generic-\(q\) derivation in a blackboard note (no citations needed).
-  - `C`: promote into `papers/planck-area/main.md`.
-  - `B`: minimal-length/GUP anchors; dimension-via-Green-functions anchors.
+- Next tasks:
+  - **Research**: do the generic-\(q\) derivation in a blackboard note (no citations needed).
+  - **Promotion**: promote into `papers/planck-area/main.md`.
+  - **Bibliography**: minimal-length/GUP anchors; dimension-via-Green-functions anchors.
 
 ### 2.3 Conformal operator-simplicity filter: now in `paper/main.md`, but still “conformal-only”
 - Conversation anchor: operator-simplicity “\(D(4-D)/4\)” cancellation theme (implicit in the later discussion).
@@ -65,8 +65,8 @@ These conversation threads are already represented in the current drafts (though
   - No test “beyond conformal rescalings” exists yet; the filter is still explicitly conformal-class.
 - Incorporation targets:
   - Keep as-is for now; if we pursue, create a dedicated follow-up note testing non-conformal metric variations.
-- Next cycles:
-  - `S`: study non-conformal perturbations (if desired).
+- Next tasks:
+  - **Research**: study non-conformal perturbations (if desired).
 
 ## 3) Outside Core Manuscript (Dependent Drafts or Still Missing)
 
@@ -83,9 +83,9 @@ These conversation threads are already represented in the current drafts (though
     3) special-case \(n=2\) simplification \(v=K/L\) and the \(L>K/c\) bound,
     4) link back to the “areal” language and to the Planck areal-speed thread as a heuristic bridge.
   - Optional: one short “outlook” sentence in `paper/main.md` Section 3 saying the polygonal areal invariant persists, while relativistic dynamics introduces new admissibility bounds.
-- Next cycles:
-  - `S`: re-derive SR results without relying on transcript citations; check sign/convention.
-  - `B`: ingest a primary SR central-force reference if we want to publish this note.
+- Next tasks:
+  - **Research**: re-derive SR results without relying on transcript citations; check sign/convention.
+  - **Bibliography**: ingest a primary SR central-force reference if we want to publish this note.
 
 ### 3.2 General relativity: effective potential, circular-orbit criteria, photon sphere / impact parameter story
 - Conversation anchors: `conv_patched.md` blocks around `## 9–14` (GR extension questions, photon sphere).
@@ -96,9 +96,9 @@ These conversation threads are already represented in the current drafts (though
     - geodesic action \(\to\) conserved \(E,L\) from Killing fields,
     - effective potential and circular-orbit stability,
     - photon-sphere as the null analogue (impact parameter \(b=L/E\)).
-- Next cycles:
-  - `S`: derive cleanly in our own notation.
-  - `B`: anchor with standard GR sources (OA if possible).
+- Next tasks:
+  - **Research**: derive cleanly in our own notation.
+  - **Bibliography**: anchor with standard GR sources (OA if possible).
 
 ### 3.3 Gauge theories: “long-range potential” via Wilson loops; confinement / string tension; Cornell potential
 - Conversation anchors: `conv_patched.md` blocks `## 11–16` (Wilson loop definition of \(V(r)\), dimension-dependent Coulomb kernels, confining \(\sigma r\), Cornell model).
@@ -110,10 +110,10 @@ These conversation threads are already represented in the current drafts (though
     - area law \(\\Rightarrow\) string tension \(\sigma\) (dimension \(\text{length}^{-2}\)),
     - relate \(\sigma^{-1}\) as a universal area parameter candidate \(\alpha_\ast\),
     - connect to `papers/planck-area/main.md` (scale supplier) and `papers/rg-fundamental/main.md` (RG running/transmutation).
-  - Small insertion candidate (requires a `B` cycle first): in `papers/planck-area/main.md` near Example E4, add one paragraph: “confinement supplies an area scale via string tension.”
-- Next cycles:
-  - `B`: authoritative Wilson-loop / confinement anchors.
-  - `S`: a derivation-first kernel-level explanation of “area law = diagonal-support effective string action” (if we choose).
+  - Small insertion candidate (requires bibliography work first): in `papers/planck-area/main.md` near Example E4, add one paragraph: “confinement supplies an area scale via string tension.”
+- Next tasks:
+  - **Bibliography**: authoritative Wilson-loop / confinement anchors.
+  - **Research**: a derivation-first kernel-level explanation of “area law = diagonal-support effective string action” (if we choose).
 
 ### 3.4 “Uncuttable” / Democritus / pyramid volume paradox and the “two-face slice” idea
 - Conversation anchors: `conv_patched.md` blocks `## 23–24`.
@@ -122,20 +122,20 @@ These conversation threads are already represented in the current drafts (though
 - Best incorporation path:
   - Keep out of the PhysRev-facing core drafts unless we do a dedicated, well-sourced historical note.
   - If kept, create a separate historical/interpretive draft:
-    - `papers/uncuttable-controlled-refinement/main.md` (or keep as `docs/`-only).
+    - `papers/uncuttable-controlled-refinement/main.md` (or keep as `meta/`-only).
   - Correct interpretation note (project steering): in this conversation thread, “uncuttable” is meant in the Democritean/calculus sense **“the volume cannot be computed with a finite number of cuts”** (it requires an infinite refinement / limit), not “a smallest chunk exists” and not “cannot be subdivided”.
     - The “atoms/vacuum” duality is then: the vacuum can always be subdivided (by inserting points/atoms), but the *computation* demands a controlled limit and a rule for comparing refinements (“bring the cut back to a measurable scale”).
   - Extract the non-historical mathematical content (aligned with the main paper): “finite-cut approximations require a refinement/composition rule; limits without a comparison structure can lose the very data one is trying to compute.”
-- Next cycles:
-  - `B`: primary sources if we truly want this in publishable prose.
+- Next tasks:
+  - **Bibliography**: primary sources if we truly want this in publishable prose.
 
 ### 3.5 Newton-project bibliographic archaeology: Barrow/Collins/Oldenburg “friends persuading” and Commercium Epistolicum
 - Conversation anchors: `conv_patched.md` blocks `## 25–32`.
 - Current coverage:
   - `paper/main.md` cites the *Principia* for Proposition I ([Newton1687]) but does not chase editorial/publication-history details.
 - Best incorporation path:
-  - Treat as a separate bibliography/history task (`B`), not part of the physics argument.
-  - If pursued, add a small historical footnote appendix; otherwise keep it in `docs/`.
+  - Treat as a separate bibliography/history task, not part of the physics argument.
+  - If pursued, add a small historical footnote appendix; otherwise keep it in `meta/`.
 
 ## 4) Immediate Next Incorporations (Low-Risk, Derivation-First)
 
