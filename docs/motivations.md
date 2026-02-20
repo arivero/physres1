@@ -57,7 +57,7 @@ D(4-D)(∂σ)² that cancels at D=4. Is this a genuine dimension-selection
 mechanism, or a conformal-class artifact? What happens for general metrics?
 **Status**: S204 derived V(p) = (1/6)R from normal-coordinate expansion
 (dimension-independent). This matches conformal coupling ξ_conf = (D−2)/(4(D−1))
-only at D=4. Extends HD-D1.3 beyond the conformal class. Ready for C-cycle
+only at D=4. Extends HD-D1.3 beyond the conformal class. Ready for
 promotion as Remark HD-D1.3b.
 
 **Sub-question 1a (Lp vs ℏ).** If gravity is forced to exist (as part of the
@@ -170,13 +170,13 @@ Run `scripts/count-pages.sh` to recompute. Last run: 2026-02-13.
 
 ## Lifecycle Rule
 Every satellite paper must end in one of two states:
-1. **Publication track** (P cycle) — compiled, submitted, done.
+1. **Publication track** — compiled, submitted, done.
 2. **Discarded** (`git rm -r`) — content salvaged to notebooks if valuable,
    then deleted. No ceremony. The discard protocol in `notebooks/README.md`
    applies.
 
 No paper should linger indefinitely in draft. If a paper has been at the page
-limit for multiple sessions without moving to P-cycle, evaluate whether to
+limit for multiple sessions without moving to publication, evaluate whether to
 publish or discard.
 
 ## Session Priority Rule

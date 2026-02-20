@@ -3,8 +3,9 @@
 This folder is for "scratchpad" research: computations, conjectures, counterexamples,
 and idea sketches that are not yet stable enough to live in a manuscript draft.
 
-**Only the Blackboard Agent may write to this folder** (see `AGENTS.md` Section 2A).
-Researcher agents write here via the Blackboard Agent.
+**Any researcher agent may write to this folder** (see `AGENTS.md` Section 2).
+All five persistent researcher agents (Physicist, Mathematician, Critic,
+Computationalist, Student) have direct write access.
 
 ## Content Rules (STRICT)
 
@@ -82,8 +83,8 @@ Reading them all before choosing a task:
 Strategy: `ls notebooks/*.md | sort -R | head -n 3` then read those files.
 Notebooks are memory (stable technical exposition), blackboards are scratch (active work).
 
-## Collaboration Use (Two-Agent Discussion)
-Blackboards are also the discussion surface for multi-agent reasoning.
-- Use explicit speaker tags (e.g., `Agent A:` / `Agent B:`) when running adversarial or complementary passes.
+## Collaboration Use (Multi-Agent Discussion)
+Blackboards are the discussion surface for multi-agent reasoning.
+- Use explicit speaker tags (e.g., `Physicist:` / `Mathematician:` / `Critic:`) when running adversarial or complementary passes.
 - Keep disagreements and reconciliations on the board before promoting any stabilized conclusion.
 - Promote only the reconciled result to notebooks/manuscripts.

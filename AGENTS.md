@@ -12,288 +12,259 @@ This file applies to the entire repository. It is the canonical contract for all
 
 ## Architecture Overview
 
-This repository uses **dedicated subagents** (Claude Code Task tool invocations), each with their own responsibilities, file permissions, and system prompt. A single **orchestrator** (the conversation-level agent) reads state, decides what to do, and dispatches subagents. There are no per-task artifact files — agent outputs are either written to their designated files (blackboards, notebooks, manuscripts) or returned ephemerally to the orchestrator.
+This repository uses a **persistent team** of researcher agents, coordinated by a single
+**orchestrator** (the conversation-level agent). The team is created via `TeamCreate` at
+session start. Agents communicate via `SendMessage`, claim tasks from a shared kanban
+(`TaskList`), and write to shared working surfaces (blackboards, notebooks). Each agent
+has a private memory folder that no other agent can read.
 
-Work is tracked on a **task board** (`cycles/index.md`), not per-cycle artifact files.
+Two **ephemeral agents** (Paper Writer, Bibliographer) are dispatched by the orchestrator
+on demand for manuscript editing and source ingestion.
 
 ---
 
 ## 1. Orchestrator (Main Agent — Opus)
 
-The conversation-level agent. Reads state, decides what to do, dispatches subagents.
+The conversation-level agent. Creates the team, manages the kanban, processes paper-edit
+requests, and dispatches ephemeral agents.
 
 **Reads:** everything (full repo access)
 
 **Writes:**
-- `cycles/index.md` (task board)
-- `docs/research-log.md`
-- `docs/research-state.md`
-- `docs/motivations.md` (append new motivations/connections/questions)
-- `docs/handoff.md`
+- `docs/research-log.md`, `docs/research-state.md`, `docs/motivations.md`, `docs/handoff.md`
+- `paper/`, `papers/*/` (via Paper Writer dispatch)
+- `paper/bibliography.md` (via Bibliographer dispatch)
 
-**Does NOT write:** manuscripts, blackboards, notebooks directly. Delegates to the appropriate agent.
+**Does NOT write:** blackboards, notebooks directly. Those are the researchers' surfaces.
 
 **Responsibilities:**
-- Task prioritization and dispatch
+- Team creation and shutdown
+- Task creation, assignment, and monitoring via TaskList
+- Processing paper-edit requests from researcher agents (via SendMessage)
+- Dispatching ephemeral Paper Writer and Bibliographer subagents
+- Notebook deletion vote tallying
 - Commit policy enforcement
-- Quality gates (ensure referee review before submission)
+- Quality gates (ensure Critic review before submission-quality claims)
 - Research log maintenance
-- Task board updates
 
 ---
 
-## 2. Specialized Agents (Subagents via Task tool)
+## 2. Researcher Agents (Persistent Teammates)
 
-### A. Blackboard Agent
-- **Purpose**: Exploratory math — conjectures, derivations, computations
-- **Writes**: `blackboards/*.md` only
-- **Reads**: blackboards, notebooks, manuscripts (for context)
-- **Model**: sonnet (default) or opus (for hard derivations)
-- **Prompt includes**:
-  - Blackboard content rules: no prose, only formulas/statements/refs/keywords (see `blackboards/README.md`)
-  - Slot management: 7 max (0–6), overwrite least relevant when full
-  - Wastepaper-basket principle: discard aggressively
-  - Max 300 lines per blackboard
-  - Update slot index in `blackboards/README.md` when overwriting
+Five persistent agents, spawned at session start via the Task tool with `team_name` parameter.
+All share `agents/shared-rules.md` as their canonical rule set. See individual
+`.claude/agents/*.md` files for persona-specific guidance.
 
-### B. Notebook Agent
-- **Purpose**: Stabilize blackboard content into expository technical memory
-- **Writes**: `notebooks/*.md` only (append-only)
-- **Reads**: blackboards, notebooks, manuscripts
-- **Model**: sonnet
-- **Prompt includes**:
-  - Append-only rule: never edit existing content, only add at end
-  - Content rules: math + exposition allowed (unlike blackboards)
-  - Promotion path: from blackboards (primary) or discarded paper notes
-  - Discard protocol: `git rm` when fully absorbed or irrelevant
+| Agent | Model | Definition | Persona |
+|-------|-------|------------|---------|
+| Physicist | sonnet | `.claude/agents/physicist.md` | Intuitive, limiting cases, dimensional analysis, physical plausibility |
+| Mathematician | sonnet | `.claude/agents/mathematician.md` | Rigorous, demands proofs, explicit hypotheses, statement precision |
+| Critic | opus | `.claude/agents/critic.md` | Hostile referee, stress-tests claims, grades issues by severity |
+| Computationalist | sonnet | `.claude/agents/computationalist.md` | SymPy, numerical checks, explicit calculations |
+| Student | haiku | `.claude/agents/student.md` | Curious web browser, serendipitous discovery, finds unexpected connections |
 
-### C. Paper Writer Agent
-- **Purpose**: Promote stable content into manuscripts
+**Capabilities** (all researchers):
+- Read any file in the repo
+- Write/patch `blackboards/*.md` (7-slot limit, 300 lines max)
+- Append to `notebooks/*.md` (append-only)
+- Write to own `agents/<name>/memory/*` (private)
+- Vote to delete notebooks via `notebooks/votes.md`
+- Download/read articles from the internet
+
+**Restrictions** (all researchers):
+- Cannot edit `paper/`, `papers/*/`, `paper/notes/` — request via SendMessage
+- Cannot read other agents' `agents/*/memory/` folders
+- Cannot edit `AGENTS.md`, `CLAUDE.md`, `docs/handoff.md`
+
+---
+
+## 3. Ephemeral Agents (Subagents via Task Tool)
+
+### A. Paper Writer
+- **Purpose**: Promote content into manuscripts
 - **Writes**: `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md`
 - **Reads**: everything
-- **Model**: opus (manuscripts require highest quality)
-- **Prompt includes**:
-  - Paper-quality boundary (hard): no workflow text, no task IDs, no scaffolding artifacts
-  - Minimum productivity: net >=10 lines of meaningful content, OR completion of a planned promotion, OR critical correctness fix
-  - Diffstat requirement: run `scripts/paper-diffstat.sh --cached` and record output
-  - Manuscript policy: only reader-facing derivations, propositions, remarks, narrative
-
-### D. Referee Agent
-- **Purpose**: Cold-read quality review of manuscript changes
-- **Writes**: review reports (returned to orchestrator, not written to files)
-- **Reads**: manuscripts, blackboards, notebooks
 - **Model**: opus
-- **Prompt includes**:
-  - Persona assignment (from persona library — see below)
-  - Severity ranking of issues found
-  - Check categories: mathematical correctness, notation consistency, overstated claims, missing references
-  - Cold-read requirement: fresh context, no authoring history
+- **Dispatched by**: orchestrator only (in response to researcher SendMessage requests)
+- **Rules**: paper-quality boundary (hard), net >= 10 lines per promotion, diffstat required
 
-### E. Bibliographer Agent
+### B. Bibliographer
 - **Purpose**: Search, ingest, verify references
 - **Writes**: `paper/bibliography.md`, `sources/*`
 - **Reads**: manuscripts, bibliography, sources
-- **Model**: sonnet (or haiku for simple lookups)
-- **Prompt includes**:
-  - OA-first policy: prefer open-access sources; mark unavailable as `PENDING`
-  - Never-cite-transcripts rule
-  - Preprint caution: treat as guides, not sources of truth; seek peer-reviewed support for key claims
-  - Do not commit `sources/` (gitignored, regenerable)
+- **Model**: sonnet
+- **Dispatched by**: orchestrator only
+- **Rules**: OA-first policy, never-cite-transcripts rule, preprint caution
 
 ---
 
-## 3. Generic Researchers (Subagents with Persona+Skill)
+## 4. Variant Creation
 
-For discovery and study work, the orchestrator spawns **researcher agents** with a persona and skill focus. These write to blackboards (via Blackboard Agent dispatch) and return findings to the orchestrator.
-
-### Persona Library
-Pick one per subagent invocation. Vary across tasks for diverse feedback.
-- **Skeptical applied mathematician**: precise about computation, insists on reproducibility
-- **Intuitive theoretical physicist**: checks limiting cases, dimensional analysis, physical plausibility
-- **Rigorous pure mathematician**: demands explicit hypotheses, proof structure, statement precision
-- **Pedagogical expositor**: focuses on clarity, accessibility, whether a graduate student could follow
-- **Hostile referee**: actively looks for reasons to reject; stress-tests every claim
-
-### Skill Focus
-- **Computation**: SymPy, explicit calculations, numerical checks
-- **Literature**: cross-referencing, finding connections, bibliography
-- **Derivation**: formal proofs, lemma construction, gap-filling
-- **Conceptual**: framing, analogies, gap identification, scope mapping
+To create a new agent variant (e.g., a nuclear physicist or algebraic geometer):
+1. Copy `.claude/agents/<base-name>.md` to `.claude/agents/<variant-name>.md`
+2. Modify the Identity and Persona-Specific Guidance sections
+3. Create `agents/<variant-name>/memory/` folder
+4. Shared rules inherited automatically via the include reference
 
 ---
 
-## 4. Task Board (replaces per-cycle artifacts)
+## 5. Task Management (Kanban via TaskList)
 
-The task board lives in `cycles/index.md`. See `cycles/README.md` for format spec.
+The shared kanban replaces the old `cycles/index.md` task board.
 
-**Key differences from old cycle system:**
-- No per-task artifact files (plan/execution/debate/redteam)
-- Agent outputs are ephemeral (returned to orchestrator) or written to designated files
-- Simple table format with ID, type, agent, description, status
-- Backlog section for future work
+- **Orchestrator** creates tasks via `TaskCreate` with subject, description, and activeForm.
+- **Agents** check `TaskList` for available tasks (prefer lowest ID first, unblocked only).
+- **Agents** claim tasks via `TaskUpdate` (set owner to their name).
+- **Agents** mark tasks completed via `TaskUpdate` when done.
+- **Dependencies**: use `addBlocks`/`addBlockedBy` in `TaskUpdate` when tasks depend on each other.
+
+Task IDs are planning metadata only — never in manuscripts.
 
 ---
 
-## 5. File Permission Model
+## 6. Communication Patterns
 
-| Agent | Allowed writes | Forbidden writes |
+| Channel | Purpose | Who uses it |
+|---------|---------|-------------|
+| TaskList | Kanban — task creation, claiming, completion | All |
+| SendMessage | Paper edit requests, reports, questions, collaboration | All |
+| Blackboards | Shared working surface for math and exploration | Researchers |
+| Notebooks | Shared stable memory (append-only) | Researchers |
+| `agents/<name>/memory/` | Private working notes | Each agent (own folder only) |
+
+---
+
+## 7. File Permission Model
+
+| Agent | Allowed Writes | Forbidden Writes |
 |-------|---------------|-----------------|
-| Orchestrator | `cycles/index.md`, `docs/research-log.md`, `docs/research-state.md`, `docs/motivations.md`, `docs/handoff.md` | Manuscripts, blackboards, notebooks, bibliography |
-| Blackboard Agent | `blackboards/*.md` | Manuscripts, notebooks, bibliography, docs |
-| Notebook Agent | `notebooks/*.md` | Manuscripts, blackboards, bibliography, docs |
-| Paper Writer | `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md` | Blackboards, notebooks, bibliography, docs |
-| Referee | None (returns report to orchestrator) | Everything |
-| Bibliographer | `paper/bibliography.md`, `sources/*` | Manuscripts, blackboards, notebooks |
-| Researcher | Via Blackboard Agent only | Direct manuscript/notebook/bibliography writes |
+| Orchestrator | `docs/*`, dispatch Paper Writer for `paper/` | Direct blackboard/notebook writes |
+| Physicist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/physicist/memory/*` | `paper/`, `papers/`, `docs/*` |
+| Mathematician | `blackboards/*.md`, `notebooks/*.md` (append), `agents/mathematician/memory/*` | `paper/`, `papers/`, `docs/*` |
+| Critic | `blackboards/*.md`, `notebooks/*.md` (append), `agents/critic/memory/*` | `paper/`, `papers/`, `docs/*` |
+| Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/computationalist/memory/*` | `paper/`, `papers/`, `docs/*` |
+| Student | `blackboards/*.md`, `notebooks/*.md` (append), `agents/student/memory/*` | `paper/`, `papers/`, `docs/*` |
+| Paper Writer (eph) | `paper/main.md`, `papers/*/main.md`, `paper/notes/*.md` | blackboards, notebooks, docs |
+| Bibliographer (eph) | `paper/bibliography.md`, `sources/*` | manuscripts, blackboards, notebooks |
 
-**Rule**: If a task requires touching files outside an agent's permissions, the orchestrator dispatches the appropriate agent instead.
+**Rule**: if a task requires touching files outside an agent's permissions, the orchestrator dispatches the appropriate agent instead.
 
 ---
 
-## 6. Commit Policy
+## 8. Commit Policy
 
-1. **When to commit:** at most **once per hour**. Do not commit after every individual task. Do not wait idle — keep working between commits.
+1. **When to commit:** at most **once per hour**. Do not commit after every task. Keep working between commits.
 2. **Two-commit structure (per batch):**
-   - **Commit 1 (manuscripts):** manuscript source files — `.md` in `paper/` and `papers/*/`, `.tex`, `.bib`, `paper/bibliography.md`.
-   - **Commit 2 (scaffolding):** everything else — `cycles/`, `docs/`, `blackboards/`, `paper/notes/`, `notebooks/`, config files.
+   - **Commit 1 (manuscripts):** `.md` in `paper/` and `papers/*/`, `.tex`, `.bib`, `paper/bibliography.md`.
+   - **Commit 2 (scaffolding):** everything else — `docs/`, `blackboards/`, `agents/`, `notebooks/`, config.
    - If no manuscripts changed, skip Commit 1.
-3. **Commit metadata (required in every commit message):**
+3. **Commit metadata (required):**
    - Agent/model tag (e.g., `[opus-4.6]`, `[codex-cli]`, `[copilot]`)
    - Brief summary of work done
-   - Token/usage estimate if available; otherwise `tokens: N/A`
 4. **Research-log rollover before commit:**
-   - Before starting commit work, move all but the latest three dated entries from `docs/research-log.md` into `docs/research-log-archive.md`.
-   - Keep chronological order; append to archive.
+   - Move all but the latest three dated entries from `docs/research-log.md` into `docs/research-log-archive.md`.
 
 ---
 
-## 7. Workflow Rules
+## 9. Workflow Rules
 
 ### Mathematics Must Be Written Down
-All mathematical results (derivations, calculations, technical claims) **must** be written to persistent files:
+All mathematical results must be written to persistent files:
 - `blackboards/*.md` (preferred for work in progress)
 - `notebooks/*.md` (for stabilized results)
-- `paper/notes/*.md` (only via Paper Writer, for manuscript-adjacent drafts)
 
-**Not acceptable:** mathematics only in agent memory/context, only in task board entries, or verbal descriptions without explicit formulas.
+Mathematics only in agent memory/context does NOT count as completion.
 
 ### Paper-Quality Boundary (Hard)
 Manuscripts must contain publishable paper content only.
 
-**Allowed** in manuscripts:
-- Reader-facing derivations, propositions, remarks, narrative transitions
-- Explicit scope boundaries and assumptions needed for correctness
-
-**Forbidden** in manuscripts:
-- Workflow/status text ("next task", "todo", "spawn", "queue")
-- Scaffolding artifacts from blackboards/notebooks/paper-notes
-- Process bookkeeping that belongs in task board or docs
-- Task IDs (T1, T2, etc.) — these are planning metadata only
+**Allowed**: reader-facing derivations, propositions, remarks, narrative.
+**Forbidden**: workflow text, task IDs, scaffolding artifacts, process bookkeeping.
 
 ### Blackboard 7-Slot Limit
 Max 7 blackboards (0.md–6.md), max 300 lines each. Overwrite least relevant when full. See `blackboards/README.md`.
 
-### Notebook Append-Only
-Content can be added but never edited or deleted. Append corrections; don't rewrite. See `notebooks/README.md`.
+### Notebook Append-Only + Voting
+Content can be added but never edited or deleted. Deletion requires voting (see `agents/shared-rules.md` Section 2).
 
 ### Workspace Hygiene
 - **Blackboards** (`blackboards/`): max 7 files. Delete before creating when at cap.
 - **Paper notes** (`paper/notes/`): max 10 files. Retire integrated notes.
-- **Notebooks** (`notebooks/`): append-only technical memory. Promotion from blackboards is intended.
+- **Notebooks** (`notebooks/`): append-only. Promotion from blackboards is intended.
 
 ### Quality Gates
-- Referee review (via Referee Agent) before any submission-quality claim
+- Critic review before any submission-quality claim
 - Paper Writer produces >= 10 net lines per promotion (or justified exception)
 - Diffstat recorded for every manuscript change
 
 ---
 
-## 8. Paper Relationship Model
-- **Satellite papers** (`papers/*/`) are **independent result papers** — publishable on their own (Phys. Lett. B style). They have their own internal logic.
-- **Main paper** (`paper/`) is a **review/survey** — Physics Reports scale. It provides the overarching framework.
-- Cross-references between satellites and main should be light ("see companion note" style), not load-bearing dependencies.
+## 10. Paper Relationship Model
+- **Satellite papers** (`papers/*/`) are **independent result papers** — publishable on their own (Phys. Lett. B style).
+- **Main paper** (`paper/`) is a **review/survey** — Physics Reports scale.
+- Cross-references between satellites and main should be light ("see companion note" style).
 
-## Satellite Paper Page Limit
-Satellite papers target max **6 compiled LaTeX pages** in `elsarticle` 3p twocolumn format. Always measure with `scripts/count-pages.sh`. Stop expanding at 6pp; if exceeded, compact or reclassify as PRD-length (8–15pp).
+### Satellite Paper Page Limit
+Target max **6 compiled LaTeX pages** in `elsarticle` 3p twocolumn format. Measure with `scripts/count-pages.sh`. Stop at 6pp; if exceeded, compact or reclassify as PRD-length (8–15pp).
 
 ---
 
-## 9. Sources Policy
+## 11. Sources Policy
 1. Never cite conversation transcripts as bibliography sources.
 2. Prefer OA sources first; if unavailable, mark as `PENDING`.
-3. Treat preprints as **guides**, not sources of truth: seek independent peer-reviewed support for key claims.
+3. Treat preprints as guides, not sources of truth.
 4. Do not commit `sources/`; it is regenerable and gitignored.
 
 ---
 
-## 10. Context Budget Rules
-1. Keep `cycles/index.md` compact.
-2. `docs/research-log.md` is append-only; at startup read only recent tail context.
-3. Read only blackboard slots relevant to the current task.
-
-## Context Poisoning Guardrails
-1. Default-deny for high-volume history files: do not read full contents of `docs/research-log.md`, git-archived files, or session transcripts.
-2. Read archived or log files only with an explicit reason, and only the minimal slice needed.
-3. Never use broad scans that pull archive/log bodies into context.
-4. If accidental ingestion happens, re-anchor on canonical state files (`AGENTS.md`, `docs/research-state.md`, `cycles/index.md`).
+## 12. Context Budget Rules
+1. Scan all blackboards before choosing a task.
+2. `docs/research-log.md` is append-only; at startup read only recent tail.
+3. Read only relevant blackboard slots during a task.
+4. Default-deny for high-volume history files.
 
 ---
 
-## 11. Session Startup (Read Order)
-At session start, read these in order:
+## 13. Session Startup (Read Order)
+
+### Orchestrator
 1. `AGENTS.md`
 2. `docs/motivations.md`
 3. `docs/handoff.md`
 4. `docs/research-state.md`
-5. `cycles/index.md`
+5. TaskList (check current state)
+
+### Researcher Agents
+1. `agents/shared-rules.md`
+2. `docs/motivations.md`
+3. `docs/research-state.md`
+4. TaskList (check for assignments)
+5. All blackboards (`blackboards/[0-6].md`)
 
 ---
 
-## 12. Editable Documentation
-- `docs/motivations.md` — agents may edit this file if they discover new motivations, research connections, or open questions.
-
-## Docs Governance Map
-- `docs/conv-coverage-map.md` — continuation/coverage bookkeeping; non-citable and optional.
-- `docs/source-ingest-status.md` — source-ingest/network troubleshooting ledger.
-- `docs/tex-env-report.md` — TeX environment inventory and smoke-test record.
-
----
-
-## 13. Pre-Commit Hygiene Checks
+## 14. Pre-Commit Hygiene Checks
 If `paper/main.md` changed:
-1. Task-ID leak check: `rg -n 'T[0-9]+' paper/main.md` (ensure no task board IDs in manuscript)
+1. Task-ID leak check: `rg -n 'T[0-9]+' paper/main.md`
 2. Transcript mention check: `rg -n 'conv_patched' paper/main.md`
 
-## 14. Continuous Operation
-When asked to run multiple tasks or given a time deadline, continue autonomously without pausing for confirmation. Only stop when the requested count/deadline is reached or an error occurs.
+## 15. Continuous Operation
+When asked to run multiple tasks or given a time deadline, continue autonomously without pausing. Only stop when the requested count/deadline is reached or an error occurs.
 
-## When No Tasks Are Available (Looping Protocol)
-If instructed to keep looping but no explicit tasks remain on the task board:
+### When No Tasks Are Available
+**PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.
 
-**PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion. Generate questions, identify gaps, and spawn exploration before reaching for promotion. We are researchers first, editors second.
-
-1. **Scan manuscripts for research opportunities:**
-   - Read manuscripts section by section
-   - **First:** Identify deep questions raised by existing claims (spawn researcher task)
-   - **Second:** Identify claims needing derivation witnesses (spawn blackboard task)
-   - **Third:** Look for stable blackboard/notebook content ready for promotion (spawn paper writer task)
-
-2. **Scan bibliography for source-driven work:**
-   - Identify PENDING sources that can be acquired (spawn bibliographer task)
-   - Identify acquired sources not yet integrated (spawn researcher → paper writer chain)
-
-3. **If all manuscripts are stable and bibliography is current:**
-   - Run quality sweep: spawn referee tasks on recent manuscript changes
-   - Check page counts and run compaction if satellites exceed limits
-   - Only then: idle or report completion
+1. Scan manuscripts for research opportunities (deep questions, derivation witnesses, promotion candidates).
+2. Scan bibliography for source-driven work (PENDING sources, unintegrated sources).
+3. If everything is stable: run quality sweeps via Critic, check page counts.
 
 ---
 
-## 15. File Management
-When files grow large or bloated, proactively archive. Deduplicate docs when content overlaps.
+## 16. File Management
+When files grow large, proactively archive. Deduplicate docs when content overlaps.
 
-## 16. Build Hygiene
-After a successful TeX build, delete auxiliary files explicitly:
+## 17. Build Hygiene
+After a successful TeX build, delete auxiliary files:
 ```bash
 rm -f paper/main.aux paper/main.log paper/main.toc
 rm -f papers/<paper>/main.aux papers/<paper>/main.log

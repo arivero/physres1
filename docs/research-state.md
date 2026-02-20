@@ -12,7 +12,7 @@ Date: 2026-02-14
 - Long thinking goal: identify the precise **mathematical obstruction/ambiguity** in the naive Newtonian "refinement \(\to 0\)" limit that motivates retaining a finite deformation parameter (the role played by \(\hbar\)) as the minimal fix, analogously to how Newton’s limit methods resolve Zeno-style refinement paradoxes.
 
 ## Hard Guardrails
-1. Do not put cycle IDs like `C00` in rendered manuscript content (`paper/main.md`, generated `.tex`, PDF-visible text).
+1. Do not put task IDs in rendered manuscript content (`paper/main.md`, generated `.tex`, PDF-visible text).
 2. Do not cite `conv_patched.md` (or any chat transcript) as a bibliography source.
 3. Prefer OA sources first; otherwise mark `PENDING` and rely on lawful local PDFs for ingestion.
 4. Treat preprints (especially A. Rivero drafts) as idea guides; treat any preprint-only claims as heuristic until verified against independent sources.
@@ -23,58 +23,43 @@ The goal is not to repackage standard narratives. Default to:
 2. **One computation per concept:** if a section is conceptual, attach at least one toy model (delta interaction, Gaussian coarse-grain, free kernel) that actually computes something.
 3. **Separate filters:** keep “half-density/normalization” distinct from other dimension-selection filters (SUSY/division algebras/hopf bundles); track them as separate hypotheses and compare outcomes rather than mixing them.
 4. **Literature as anchor, not driver:** use standard sources to sanity-check and attribute, but let the argument be forced by refinement/half-density compatibility constraints.
-5. **Avoid known-land detours:** keep BV/BRST material as at most an outlook paragraph; do not allocate dedicated cycles (especially bibliography cycles) to BV unless explicitly requested later. The current priority is quantization as “stationary extremes + refinement-compatible composition” and the structural emergence of an action-scale regulator (\(\hbar\)).
+5. **Avoid known-land detours:** keep BV/BRST material as at most an outlook paragraph; do not allocate dedicated tasks to BV unless explicitly requested later. The current priority is quantization as “stationary extremes + refinement-compatible composition” and the structural emergence of an action-scale regulator (\(\hbar\)).
 
 ## Operational Loop (One Session)
 1. Pick one thread + one concrete question (keep scope ≤ 1–2 pages of derivation).
-2. If the work is exploratory, prefer a Study cycle (`Snn`) and write a dated note in `blackboards/` first; promote later.
+2. If the work is exploratory, write a dated note in `blackboards/` first; promote later.
 3. Record decisions/results in `docs/research-log.md`; put longer math in `paper/notes/`.
 4. If an external claim matters, ingest/track its primary source:
    - update `paper/bibliography.md` (key + status),
    - add/refresh `sources/<...>.md` or `sources/pending-<key>.md`.
-   If this becomes a dedicated effort, open a Bibliography cycle (`Bnn`) to keep it separate from prose iteration.
 5. Promote only “stable” results into `paper/main.md` (or a new follow-up manuscript directory when needed).
-6. **Content-cycle accountability:** for every `Cnn` cycle, record the manuscript diffstat in `cycles/Cnn-execution.md` by running:
-   - `scripts/paper-diffstat.sh --cached`
-   If the diffstat reports `TOTAL +0 -0`, the execution log must explicitly explain why no promotion happened (and usually spawn an `S` and/or `B` cycle instead).
+6. For every manuscript edit, record the diffstat by running `scripts/paper-diffstat.sh --cached`.
 7. Run consistency checks + rebuild the PDF when manuscript text changes (delete `.aux`/`.log` after successful generation).
 
-## S-Cycle Tool Use (Verification)
-During `S` cycles we may use heavier verification tooling to keep manuscripts lean:
-1. **Python/symbolic checks** (e.g. SymPy) for dimensional analysis, algebra, and toy-model computations. Record the exact command + output in the blackboard note.
-2. **Lean (optional, heavy)** for formalizing small lemmas when they become load-bearing and ambiguity persists. Use sparingly; prefer “one lemma” targets rather than attempting to formalize whole sections.
+## Verification Tooling
+Heavier verification tooling keeps manuscripts lean:
+1. **Python/symbolic checks** (e.g. SymPy) for dimensional analysis, algebra, and toy-model computations. Record the exact command + output in the blackboard note. (Computationalist agent primary responsibility.)
+2. **Lean (optional, heavy)** for formalizing small lemmas when they become load-bearing and ambiguity persists. Use sparingly; prefer “one lemma” targets.
 
-## Default Scheduling Policy (Automatic)
-We prioritize *topics*, but we alternate *cycle types*.
-
-**Cycle type meaning (terminology).**
-- `C`: content/prose/derivations promoted into drafts.
-- `S`: study (blackboards, checks, SymPy/Lean, toy computations).
-- `B`: bibliography (search/ingest/verify independent anchors; OA-first).
-- `Q`: quality (referee-style pass + actionable `C`/`S`/`B` queue).
+## Scheduling Policy
+Tasks are managed via the shared kanban (TaskList). The orchestrator creates tasks;
+researcher agents claim and complete them.
 
 ### Topic priority (what we push first)
 1. Half-densities (and the Planck-area / universal scale hypothesis ladder).
 2. Cornerstone paper coherence (`paper/main.md`) as the integration target.
 3. RG follow-up work when it either (i) anchors a load-bearing claim in the half-density ladder (e.g. transmutation scales), or (ii) removes a blocking “independent anchor” gap.
 
-### Cycle cadence (how we avoid unanchored prose)
-Rule: never run long stretches of `C` cycles without verification support.
+### Balance rule
+Never run long stretches of manuscript promotion without verification. Alternate:
+- Research/exploration tasks (Physicist, Mathematician, Student)
+- Verification/computation tasks (Computationalist, Critic)
+- Promotion tasks (orchestrator dispatches Paper Writer)
 
-Default cadence:
-1. `C` (promote stable prose/derivations),
-2. then **exactly one** of:
-   - `S` if a claim is unclear/fragile or branches are mixing,
-   - `B` if a claim is load-bearing and needs an independent anchor,
-   - `Q` if we made cross-cutting edits or are approaching “submission quality”,
-3. then return to `C` on the half-density priority thread.
-
-Insertion rule: run a `Q` pass at least once every 3 substantial cycles, and immediately after any cycle that threads new citations or changes dimension/notation conventions.
-
-Exploration rule: run a `DX` (D-explore) cycle at least once every ~10 cycles, or after completing any full Recipe A chain (D → S → B → C → Q). DX cycles read `docs/anomalies.md`, probe cross-thread connections, and stress-test the central framing.
+Run a Critic review after any substantial cross-cutting edits or when approaching submission quality.
 
 ## Principle Evolution Log
-Track how the central thesis has been refined. Update during D-explore (DX) cycles.
+Track how the central thesis has been refined. Update when exploration reveals genuine extensions.
 
 - **v0** (initial): "Physically meaningful laws are those that survive controlled refinement in partition/representation/scale."
 - **v1** (composition): Added that the *mechanism* is a composition law — refinement compatibility requires that composed predictions agree with single-step predictions.
@@ -82,7 +67,7 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 - **v3** (deformation parameter): The naive "refinement → 0" limit is obstructed/ambiguous; retaining a finite deformation parameter (the role of hbar) is the minimal fix. Deformation quantization + renormalization as limit-control mechanisms.
 - **v4** (RCP as principle): Named the overarching idea "Refinement Compatibility Principle" (RCP): partition/representation/scale changes must commute with physical predictions.
 
-(Next version should emerge from a DX cycle that identifies a genuine extension or correction.)
+(Next version should emerge from exploration that identifies a genuine extension or correction.)
 
 ## Active Threads (Pick One)
 ### 1) Main paper: RG as foundational compatibility
@@ -98,7 +83,7 @@ Track how the central thesis has been refined. Update during D-explore (DX) cycl
 ### 2b) Half-densities in QFT (follow-up draft candidate)
 - Seed note: `blackboards/2026-02-10-half-densities-in-qft.md`.
 - Draft: `papers/half-density-qft/main.md`.
-- Goal: make the “kernel as bi-half-density” calculus explicit for spacetime propagators/Green functions, with at least one worked computation (densitized scalar field \(\psi=|g|^{1/4}\phi\)); keep BV half-densities as outlook unless anchored by a bibliography cycle.
+- Goal: make the “kernel as bi-half-density” calculus explicit for spacetime propagators/Green functions, with at least one worked computation (densitized scalar field \(\psi=|g|^{1/4}\phi\)); keep BV half-densities as outlook unless anchored by bibliography work.
 
 ### 3) RG as fundamental (follow-up draft)
 - Draft: `papers/rg-fundamental/main.md`.
@@ -216,5 +201,5 @@ P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless expl
 1. Add a dated entry to `docs/research-log.md` at the start of each session (even if work is exploratory).
 2. When a derivation starts to stabilize, create a dedicated note in `paper/notes/` and link it from the log.
 3. Keep `docs/next-articles.md` as the "topic backlog"; keep `docs/research-log.md` as the "what happened" record.
-4. Central-force bridge thread: keep same-ID S-cycle iteration if unresolved; reopen `C300` only for explicit readability pass.
-5. Future work: P cycles for satellite submissions, content expansion for shorter papers, cornerstone polish.
+4. Central-force bridge thread: continue iteration if unresolved; reopen readability pass only when targeted.
+5. Future work: satellite submissions, content expansion for shorter papers, cornerstone polish.
