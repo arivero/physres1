@@ -312,3 +312,19 @@
   - P11.5: V_HD ≠ ξ_c R confirms half-density ≠ conformal coupling (agree only at D=4)
   - P11.6: APPROVE
 - updated: blackboards/README.md slot 6 (FOUR-AGENT unanimous)
+- self-directed: task #24 (BB3 physicist 3rd-agent review: composition-law literature landscape)
+  - P1.1: LdO overlap correctly assessed as HIGH, physical thesis confirmed
+  - P1.2: Mechanism difference — dim homogeneity (us) vs Cramer-Rao (them)
+  - P1.3: exp(iS/hbar) routes differ — Cauchy functional eq (us) vs bounded character (them)
+  - P1.4: Family B kinematic/dynamical distinction is correct
+  - P1.5: sev-4 gap: Nelson stochastic mechanics omitted (not a competitor, historically relevant)
+  - P1.7: sev-4 note: composition implies Sorkin grade-2 (bilinear structure)
+  - APPROVE, THREE-AGENT unanimous
+- updated: blackboards/README.md slot 3 (THREE-AGENT)
+- self-directed: BB1 physicist 4th-agent review (Painleve II tau = det(1-K_Ai))
+  - P11.3: Airy eigenvalue super-exponential decay = edge thinness of GUE spectrum
+  - P11.4: Composition = framework (Fredholm theory), integrability = content (Airy kernel from Lax pair)
+  - P11.5: Stage 2.5 reading — PII inherits semigroup structure, needs integrability data beyond composition
+  - P11.6: det(1-K) = free-fermion partition function on [s,inf)
+  - APPROVE, FOUR-AGENT unanimous
+- updated: blackboards/README.md slot 1 (FOUR-AGENT)
