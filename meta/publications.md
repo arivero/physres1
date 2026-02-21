@@ -45,6 +45,10 @@ Papers submitted through the internal peer review process (AGENTS.md §11).
 | Path Integral Normalization | 2026-02-21 | MINOR REV (3M-scope+6m) | MAJOR REV (3M+6m) | **MAJOR REVISION** | 2026-02-21 | Van Vleck semiclassical overclaim; uniqueness gap; d≥3 terminology |
 | RG Fundamental (R2) | 2026-02-21 | ACCEPT (R2) | ACCEPT (R2, 2 editorial) | **ACCEPT → published** | 2026-02-21 | All 3+3 MAJORs resolved; published to docs/rg-fundamental/ |
 | Path Integral Normalization (R2) | 2026-02-21 | ACCEPT (R2, 1m residual) | ACCEPT (R2, 1m residual) | **ACCEPT → published** | 2026-02-21 | All 3+3 MAJORs resolved; published to docs/path-integral-normalization/ |
+| Planck Area | 2026-02-21 | MAJOR REV (2M+7m) | MAJOR REV (3M+5m) | **MAJOR REVISION** | 2026-02-21 | PA-P4.2 unverified; integrality sieve unmotivated; conformal-Laplacian unverified; broken citation |
+| Action-Angle Indeterminacy | 2026-02-21 | MAJOR REV (2M+8m) | MAJOR REV (2M+7m) | **MAJOR REVISION** | 2026-02-21 | Remark 7.5a collision; uncuttable dangling refs; remark proliferation; von Mises unproved |
+| Planck Area (R2) | 2026-02-21 | ACCEPT (R2, 2m residual) | ACCEPT (R2, 2m residual) | **ACCEPT → published** | 2026-02-21 | All 2+3 MAJORs resolved; d/D notation + PA-H1.4 placement non-blocking; published to docs/planck-area/ |
+| Action-Angle Indeterminacy (R2) | 2026-02-21 | MINOR REV (R2, M1 conditional) | ACCEPT (R2, 2m residual) | **ACCEPT → published** | 2026-02-21 | All 2+2 MAJORs resolved; M1 conditional on [PathIntNorm] (published); published to docs/action-angle-indeterminacy/ |
 
 ## Readiness Queue
 
@@ -65,24 +69,8 @@ Tiers: **READY** (content complete, needs submission task only), **NEEDS-POLISH*
 | Rooted Tree Bookkeeping | `docs/rooted-tree-bookkeeping/` | 2026-02-21 | Round 2 ACCEPT (all 3 MAJORs resolved; σ/coproduct minors) |
 | RG Fundamental | `docs/rg-fundamental/` | 2026-02-21 | Round 2 ACCEPT (all 6 MAJORs resolved; composition test, dictionary, 3D integral fixed) |
 | Path Integral Normalization | `docs/path-integral-normalization/` | 2026-02-21 | Round 2 ACCEPT (all 6 MAJORs resolved; Van Vleck qualified, Lévy exclusion proved) |
-
-### Under Review (batch 5, R1)
-
-| Paper | Path | Status | Notes |
-|-------|------|--------|-------|
-| Planck Area | `papers/planck-area/` | R1 in progress | Referee agents spawned |
-| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | R1 in progress | Referee agents spawned |
-
-### Tier 1 — READY (critic pre-vote: READY; next for referee review)
-
-| Paper | Path | .md lines | Refs | Critic verdict | Notes |
-|-------|------|-----------|------|----------------|-------|
-| ~~Ordering Equivalence~~ | — | — | — | Published | R2 ACCEPT |
-| ~~Rooted Tree Bookkeeping~~ | — | — | — | Published | R2 ACCEPT |
-| ~~RG Fundamental~~ | — | — | — | Published | R2 ACCEPT |
-| ~~Path Integral Normalization~~ | — | — | — | Published | R2 ACCEPT |
-| ~~Planck Area~~ | `papers/planck-area/` | 512 | 7 | Under R1 review | Referee agents spawned |
-| ~~Action-Angle Indeterminacy~~ | `papers/action-angle-indeterminacy-central-potentials/` | 255 | 40 | Under R1 review | Referee agents spawned |
+| Planck Area | `docs/planck-area/` | 2026-02-21 | Round 2 ACCEPT (all 5 MAJORs resolved; d/D notation + PA-H1.4 non-blocking) |
+| Action-Angle Indeterminacy | `docs/action-angle-indeterminacy/` | 2026-02-21 | Round 2 ACCEPT (all 4 MAJORs resolved; [PathIntNorm] companion exists) |
 
 ### Genre Mismatch (survey/perspective — not research papers)
 

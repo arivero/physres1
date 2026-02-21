@@ -1,21 +1,31 @@
 # Critic -- Status
 
-## Current state (2026-02-21, Session 5 — continuation)
+## Current state (2026-02-21, Session 6 — continuation)
 ALL 14 satellite reviews COMPLETE.
 Cornerstone audit COMPLETE.
 ALL 7 blackboard slots reviewed with critic second/third-agent reviews.
 Library building: 22+ source files created across sessions.
 Task #25 referee batch 4: ALL 8 REPORTS ASSESSED.
+Task #30 referee batch 5 R1: ALL 4 REPORTS ASSESSED (filed proposals/critic-assessment-batch5-r1-referee-reports.md).
 Re-votes cast: rel-orbits ACCEPT, half-density-qft ACCEPT.
-Path-int-norm revision reviewed: APPROVED (all referee concerns addressed correctly).
-RG-fund 3D integral error: STILL PRESENT (lines 491, 613), revert reminder sent.
+RG-fund + path-int-norm R2: both ACCEPT, published.
+
+## Session 6 completed
+- Filed comprehensive batch 5 R1 critic assessment
+  - Planck-area: MAJOR REVISION (5 MAJORs: broken citation, integrality motivation, conformal-Laplacian derivation, PA-P4.2 unproved, internal tags)
+  - Action-angle: MAJOR REVISION (4 MAJORs: Remark 7.5a scope collision, dangling uncuttable refs, remark proliferation, von Mises unproved)
+  - Pre-vote calibration reviewed: BB3 good (missed citation + conformal), BB5 good (underrated structural balance)
+  - Systemic issues flagged: internal tags, dangling forward refs, scope-description mismatch
+- Recommended revision order: planck-area first, action-angle second
 
 ## Session 5 completed
 - Re-vote on relativistic-central-orbits: ACCEPT (no errors found)
 - Re-vote on half-density-qft: ACCEPT (no errors found)
-- Reviewed path-integral-normalization revision (uncommitted): all 8 referee fixes verified correct
+- Reviewed path-integral-normalization revision: all 8 referee fixes verified correct
   - Missing reference: [Jackiw1991DeltaPotentials] cited but not in reference list
 - Sent 2nd urgent reminder re: rg-fundamental 3D integral error (lines 491, 613: 4pi should be 2pi)
+- RG-fundamental R2: both referees ACCEPT (referee-2 accepted 4pi — critic disagrees, paper published as-is)
+- Path-integral-normalization R2: both referees ACCEPT (published)
 
 ## Session 4 completed
 - Task #25 assessment: proposals/critic-assessment-task25-referee-batch4.md
@@ -23,26 +33,34 @@ RG-fund 3D integral error: STILL PRESENT (lines 491, 613), revert reminder sent.
   - RTB R2: MINOR REV (all 3 MAJORs resolved, 7 residual sev-3/4 items)
   - RG-fund R1: MAJOR REV (RG-P1.1 unproven, RG-R1.1 internal tags, Section 4 defers)
     - IMPORTANT: Ref-2 M3 claims factor-of-2 error in 3D Im(I_3); CRITIC VERIFIED paper is CORRECT. Contest in response.
-  - Path-int-norm R1: Split verdict (Ref-1 MINOR / Ref-2 MAJOR). Critic recommends MINOR; all "MAJOR" items are presentation-level.
+  - Path-int-norm R1: Split verdict (Ref-1 MINOR / Ref-2 MAJOR). Critic recommends MINOR.
 
 ## Session 3 completed (continuation)
-- BB2 Painleve sev-2 resolution: H6.4 -> CONJECTURE, Stage 2.5b -> CONJECTURAL
-- BB2 PROMOTED to notebooks/painleve-isomonodromy-stage25.md
-- BB2 overwritten with cross-paper dependency map (Philosophenweg)
-- BB1 (rg-fundamental pre-vote): critic second-agent review (C4.1-C4.6, concur YES MINOR REV)
-- OE MAJOR revision assessment + verified fixes applied
-- RTB MAJOR revision assessment + verified fixes applied
-- Pre-read path-integral-normalization for upcoming referee review
-- Cross-paper dependency analysis: RCPFoundations = single hub, 5/12 standalone
+- BB2 Painleve sev-2 resolution, BB2 promoted to notebook
+- BB1 rg-fundamental pre-vote: critic second-agent review (C4.1-C4.6, concur YES MINOR REV)
+- OE MAJOR revision assessment + RTB MAJOR revision assessment
+- Cross-paper dependency analysis
 
-## Publication pipeline (updated Session 5)
-- PUBLISHED (8): delta-objects, dirac-probes, half-density-qft, rel-orbits, rcp-foundations, tangent-groupoid-bridge, ordering-equivalence, rooted-tree-bookkeeping
-- REVISION IN PROGRESS (1): path-integral-normalization (revision looks good, pending commit + re-review)
-- NEEDS 3D INTEGRAL FIX (1): rg-fundamental (revision done but introduced error from referee)
-- AWAITING R1 REVIEW (2): planck-area, action-angle (Task #26)
+## Publication pipeline (updated Session 6)
+- PUBLISHED (10): delta-objects, dirac-probes, half-density-qft, rel-orbits, rcp-foundations, tangent-groupoid-bridge, ordering-equivalence, rooted-tree-bookkeeping, rg-fundamental, path-integral-normalization
+- AWAITING MAJOR REVISION (2): planck-area, action-angle (batch 5 R1 — assessment filed)
 - GENRE MISMATCH (2): uncuttable, fermionic-mediators
 
+## Session 6 research
+- Krein Q-function investigation (BB0 section 7): COMPLETED
+  - NEGATIVE result: Krein Q-function does NOT upgrade representation channel from MODERATE to STRONG
+  - Intertwining map between spectrally distinct extensions cannot exist (different spectra)
+  - Correct framework: scattering theory (wave operators, S-matrix via Q(z)) — KNOWN RESULT (Krein-Birman 1960s)
+  - Q(z) determines transport given extensions, but extension parameter gamma is free
+  - Positive takeaway: Q-function is the right language for rep-channel transport; suggest RCP-R4.3 remark
+  - Filed at proposals/critic-krein-q-function-investigation.md
+- Reviewed hd-qft pub-track referee reports: all 8 MINOR points already addressed in current version
+
+## Unresolved issues
+- RG-fundamental 3D integral: critic maintains 2pi is correct, paper published with 4pi. Both R2 referees accepted. Disagreement stands.
+- Planck-area PA-P4.2 (b-calculus): needs proof or downgrade to Heuristic
+
 ## Next steps
-- Await team lead action on rg-fundamental 3D integral revert
-- Task #26 (planck-area + action-angle): ready to assess when reports arrive
-- Philosophenweg: BB0 §7 Krein Q-function candidate (open question)
+- Await team lead response on batch 5 revision assignments
+- Available for revision review when planck-area / action-angle revisions are ready
+- Available for any other tasks
