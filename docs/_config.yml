@@ -1,7 +1,6 @@
 title: "Physics Research Notes"
 description: "Companion papers — A. Rivero and A.I.Scaffold"
 theme: minima
-header_pages: []
 markdown: kramdown
 kramdown:
   input: Kramdown
