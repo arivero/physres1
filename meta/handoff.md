@@ -98,7 +98,7 @@ Observed network limitations and ingest improvements are tracked in:
 As of 2026-02-12 (see `paper/bibliography.md` for details):
 - `Landsman1998` — `PENDING_LIBRARY` (book; check institutional Springer access, otherwise physical library)
 
-Resolved in B12 (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `Velhinho2017`, `Groenewold1946` (Univ. Groningen OA), `Connes1994` (author OA from alainconnes.org).
+Resolved (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `Velhinho2017`, `Groenewold1946` (Univ. Groningen OA), `Connes1994` (author OA from alainconnes.org).
 
 ## Follow-Up Papers Roadmap
 Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` as brainstorming input):
@@ -118,7 +118,7 @@ Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` a
 - Research state updated: `meta/research-state.md` (section: "Session 2026-02-21 (21:40-23:00 CET, Run R17)").
 
 ## Session Update (2026-02-21, Run R16 ending 21:30 CET)
-- Kanban run `R16` executed with request-first gate (`want #...` before assignment); tasks `R16-001..R16-016` completed.
+- Kanban run executed with request-first gate (agents request before assignment); all 16 run tasks completed.
 - Applied manuscript edits in `paper/main.md`:
   - `P7.1a` track labels now mark remark nodes explicitly.
   - `P9.1a` and `P9.3` scope wording tightened; Stage-4 and arithmetic-ladder claims now explicitly non-theorem/channel-scoped.

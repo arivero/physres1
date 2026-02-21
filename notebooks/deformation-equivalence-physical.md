@@ -1,7 +1,7 @@
 # Deformation Equivalence Is Physical: Four-Layer Stratification and Observability
 
 **Created:** 2026-02-14
-**Sources:** Blackboard 3 (D35/S290), Blackboard 6 (D38/S294)
+**Sources:** Blackboard 3, Blackboard 6
 **Status:** Append-only notebook (graduated from blackboards)
 
 ## Summary
@@ -10,23 +10,23 @@ This notebook resolves an apparent tension between two claims in the main paper:
 - **Section 7 (P5.2):** Different quantization prescriptions (Weyl, Born-Jordan, etc.) are related by formal automorphisms, preserving the classical limit (deformation equivalence).
 - **Section 10.2 (D9.1d):** Half-density conjugation selects a canonical kinetic operator with specific symmetry properties.
 
-**Resolution (D35/S290):** The tension is **apparent, not real**. A four-layer stratification shows:
+**Resolution:** The tension is **apparent, not real**. A four-layer stratification shows:
 1. **Layer 1** (principal symbol): All prescriptions agree.
-2. **Layer 2** (connection): Half-density fixes uniquely (corrected by D38/S294).
+2. **Layer 2** (connection): Half-density fixes uniquely (corrected by Blackboard 6).
 3. **Layer 3** (scalar O(ℏ²)): Deformation freedom persists.
 4. **Layer 4** (domain): Independent of ordering.
 
 Half-density is a **canonical choice** within deformation equivalence class (like Lorenz gauge), not unique physics.
 
-**D38/S294 observability test:** Energy shift |ΔE₀| between Weyl and half-density for position-dependent mass f(q) = 1+αq² is **unmeasurably small** (0.006–0.06 meV ≪ 0.1 meV resolution in perturbative regime). First-order shift O(α) **vanishes identically**; leading contribution is O(α²).
+**Observability test (Blackboard 6):** Energy shift |ΔE₀| between Weyl and half-density for position-dependent mass f(q) = 1+αq² is **unmeasurably small** (0.006–0.06 meV ≪ 0.1 meV resolution in perturbative regime). First-order shift O(α) **vanishes identically**; leading contribution is O(α²).
 
-**Discovery:** S290 claimed half-density "eliminates first-derivative term" in 1D. **Incorrect.** Both Weyl and half-density share the **same** connection term f'∂/∂q (self-adjointness condition). They differ only in O(ℏ²) scalar potential.
+**Discovery:** Blackboard 3 claimed half-density "eliminates first-derivative term" in 1D. **Incorrect.** Both Weyl and half-density share the **same** connection term f'∂/∂q (self-adjointness condition). They differ only in O(ℏ²) scalar potential.
 
 **Impact:** Deformation equivalence (Section 7) is **physical**, not merely formal. Prescriptions agree on Layers 1 AND 2, differ only on Layer 3. This strengthens the equivalence.
 
 ---
 
-## Part 1: Four-Layer Stratification (D35/S290, Blackboard 3)
+## Part 1: Four-Layer Stratification (Blackboard 3)
 
 ### Context
 
@@ -34,7 +34,7 @@ Half-density is a **canonical choice** within deformation equivalence class (lik
 - Section 7 (P5.2) asserts different star products (Moyal, Born-Jordan, etc.) are deformation-equivalent via formal automorphisms T_ℏ.
 - Section 10.2 (D9.1a, D9.1d) selects half-density conjugation as "canonical" for kinetic operators.
 
-**Question (D35):** Is there a contradiction? Does "canonical" mean "unique physics" (contradicting Section 7), or something else?
+**Question:** Is there a contradiction? Does "canonical" mean "unique physics" (contradicting Section 7), or something else?
 
 ### Test Symbols
 
@@ -101,7 +101,7 @@ Conjugation to L²(dq) via U: ψ → g^{1/4}ψ = f^{−1/4}ψ:
 
 where Q_{HD} is an O(ℏ²) scalar (no derivatives).
 
-**Derivation of Q_{HD} (corrected by D38/S294):**
+**Derivation of Q_{HD} (corrected by Blackboard 6 analysis):**
 
 Set W = (1/4)ln f, so f^{1/4} = e^W, W' = f'/(4f).
 
@@ -174,7 +174,7 @@ Therefore:
 | 3 | Scalar (O(ℏ²)) | −ℏ²f''/4 | −ℏ²(f''/4 − f'²/(16f)) | Differs |
 | 4 | Domain | Independent | Independent | Independent |
 
-**Key correction (D38/S294):** Layer 2 is **identical** for Weyl and half-density (both have f'∂ connection term). S290 originally claimed half-density "eliminates first-derivative term" — **incorrect** in 1D.
+**Key correction (Blackboard 6):** Layer 2 is **identical** for Weyl and half-density (both have f'∂ connection term). Blackboard 3 originally claimed half-density "eliminates first-derivative term" — **incorrect** in 1D.
 
 ### Dilation Generator: H = qp
 
@@ -193,7 +193,7 @@ A = −iℏ(q∂ + 1/2) = H_{α=1/2}
 
 This is the Stone generator of U(s)ψ(q) = e^{s/2}ψ(e^s q), where e^{s/2} factor is exactly the half-density Jacobian |dq'/dq|^{1/2}.
 
-**Key insight:** The α = 1/2 selection from unitarity (D23/S280 notebook) **is** the half-density prescription. The e^{s/2} prefactor in unitary dilation group is |Jacobian|^{1/2} — the half-density weight.
+**Key insight:** The α = 1/2 selection from unitarity (notebooks/ordering-unitarity-dilation-generator.md) **is** the half-density prescription. The e^{s/2} prefactor in unitary dilation group is |Jacobian|^{1/2} — the half-density weight.
 
 #### Born-Jordan
 
@@ -203,7 +203,7 @@ For qp (linear in both q and p), Born-Jordan = Weyl = (qp + pq)/2. **Agreement i
 
 All three agree. Half-density = Weyl = Born-Jordan for bilinear symbols.
 
-### Verdict (D35)
+### Verdict
 
 **The tension is apparent, not real. Resolution is scope-dependent.**
 
@@ -220,18 +220,18 @@ All three agree. Half-density = Weyl = Born-Jordan for bilinear symbols.
 - No contradiction: A gauge choice can be canonical without breaking gauge equivalence.
 
 **Scope boundaries:**
-- Half-density fixes kinetic operator uniquely (Layer 2 — **corrected: fixes self-adjointness, not elimination of f'∂**)
+- Half-density fixes kinetic operator uniquely (Layer 2 — **corrected by Blackboard 6: fixes self-adjointness, not elimination of f'∂**)
 - Deformation freedom persists for O(ℏ²) scalar corrections (Layer 3)
 - Domain/extension freedom persists entirely (Layer 4)
 - For separable H = T(p) + V(q) on flat space: all prescriptions agree, no tension visible
 
 ---
 
-## Part 2: Observability Test (D38/S294, Blackboard 6)
+## Part 2: Observability Test (Blackboard 6)
 
 ### Context
 
-D35/S290 showed Weyl and half-density differ only in Layer 3 (O(ℏ²) scalar potential). **Question (D38):** Does this have measurable consequences?
+The four-layer stratification showed Weyl and half-density differ only in Layer 3 (O(ℏ²) scalar potential). **Question:** Does this have measurable consequences?
 
 ### Setup
 
@@ -322,7 +322,7 @@ Sign: E₀^{Weyl} < E₀^{HD}. Weyl ground state is lower.
 
 **Non-perturbative edge** (α₀ ≳ 0.5): perturbation theory unreliable (mass varies by 50%+ over oscillator length a).
 
-### Verdict (D38)
+### Verdict
 
 **Verdict 4+1:** First-order shift O(α) **vanishes identically**: ΔE₀^{(1)} = 0. Leading nonzero contribution is O(α²), with:
 ```
@@ -330,21 +330,21 @@ Sign: E₀^{Weyl} < E₀^{HD}. Weyl ground state is lower.
 ```
 in perturbative regime (α₀ ≲ 0.3).
 
-**D35's layer-3 deformation freedom has no measurable consequence** for realistic position-dependent-mass systems within perturbation theory.
+**The layer-3 deformation freedom has no measurable consequence** for realistic position-dependent-mass systems within perturbation theory.
 
 **Deformation equivalence is physical, not merely formal.**
 
 ---
 
-## Part 3: Correction to S290 (Discovery)
+## Part 3: Correction to Blackboard 3 (Discovery)
 
-### Original S290 Claim (Blackboard 3, Line 64)
+### Original Blackboard 3 Claim (Line 64)
 
 > **Key structural property:** The first-derivative term d/dq is eliminated.
 
 **Status:** **Incorrect** in 1D.
 
-### Corrected Statement (S294, Blackboard 6)
+### Corrected Statement (Blackboard 6)
 
 **Both Weyl and half-density prescriptions yield the SAME first-derivative term f'∂.** The half-density conjugation produces a self-adjoint operator (because b = a' = f'), but it does **NOT** eliminate the first-derivative.
 
@@ -370,13 +370,13 @@ Difference:
 | 3 | Scalar O(ℏ²) | −ℏ²f''/4 | −ℏ²(f''/4 − f'²/(16f)) | Differ |
 | 4 | Domain | Independent | Independent | Independent |
 
-**This strengthens D35:** Prescriptions agree on Layers 1 **AND** 2 (not just Layer 1 as originally stated). They differ only on Layer 3.
+**This strengthens the four-layer stratification:** Prescriptions agree on Layers 1 **AND** 2 (not just Layer 1 as originally stated). They differ only on Layer 3.
 
 ### Why the Error?
 
-**S290 (blackboard 3) derivation** expanded Δ_g = f·∂² + (f'/2)·∂ but did not carry through the conjugation carefully. The **(f'/2)·∂** term from Laplace-Beltrami combines with conjugation terms to produce **f'·∂**, not zero.
+**Blackboard 3 derivation** expanded Δ_g = f·∂² + (f'/2)·∂ but did not carry through the conjugation carefully. The **(f'/2)·∂** term from Laplace-Beltrami combines with conjugation terms to produce **f'·∂**, not zero.
 
-**S294 (blackboard 6) explicit calculation** used conjugation identities:
+**Blackboard 6 explicit calculation** used conjugation identities:
 ```
 e^{−W}∂ e^W = ∂ + W'
 e^{−W}∂² e^W = ∂² + 2W'∂ + ...
@@ -399,7 +399,7 @@ and showed 2fW' + f'/2 = f' (the self-adjointness condition).
 
 **Current claim:** Different star products (Moyal, Born-Jordan, etc.) are related by formal automorphisms preserving classical limit.
 
-**Strengthened by D35+D38:** Deformation equivalence is **physical**. Observables (energy levels) differ by unmeasurably small amounts (O(ℏ²α²) in PDM example). The equivalence is not merely asymptotic/formal but holds at experimentally accessible scales.
+**Strengthened by the four-layer stratification and observability test:** Deformation equivalence is **physical**. Observables (energy levels) differ by unmeasurably small amounts (O(ℏ²α²) in PDM example). The equivalence is not merely asymptotic/formal but holds at experimentally accessible scales.
 
 **Scope:** Deformation freedom persists in Layer 3 (O(ℏ²) scalar corrections), but Layers 1+2 are fixed by composition + self-adjointness.
 
@@ -407,7 +407,7 @@ and showed 2fW' + f'/2 = f' (the self-adjointness condition).
 
 **Current claim:** Half-density conjugation selects canonical kinetic operator.
 
-**Clarified by D35:** "Canonical" means:
+**Clarified by the four-layer stratification:** "Canonical" means:
 - Self-adjoint on L²(M, dx) for any Riemannian manifold (no boundary terms)
 - Connection term (Layer 2) fixed by self-adjointness condition
 - Still admits O(ℏ²) scalar freedom (Layer 3)
@@ -417,7 +417,7 @@ and showed 2fW' + f'/2 = f' (the self-adjointness condition).
 
 ### Integration Opportunity
 
-**Potential C-cycle (future):** Add Remark P5.2a or D9.1g clarifying the four-layer stratification and observability test. Key points:
+**Potential compression cycle (future):** Add Remark P5.2a or D9.1g clarifying the four-layer stratification and observability test. Key points:
 1. Half-density is canonical representative within deformation equivalence class
 2. Prescriptions differ only in O(ℏ²) scalar (Layer 3)
 3. Energy shift unmeasurably small (0.006–0.06 meV in PDM example)
@@ -428,8 +428,8 @@ and showed 2fW' + f'/2 = f' (the self-adjointness condition).
 ## References
 
 ### Blackboard Sources
-- **Blackboard 3** (D35/S290, 2026-02-14): Four-layer stratification (original, contains error on Layer 2)
-- **Blackboard 6** (D38/S294, 2026-02-14): Energy shift calculation + S290 error correction
+- **Blackboard 3** (2026-02-14): Four-layer stratification (original, contains error on Layer 2)
+- **Blackboard 6** (2026-02-14): Energy shift calculation + Blackboard 3 error correction
 
 ### Literature
 - von Roos, O. (1983). *Position-dependent effective masses in semiconductor theory*. Phys. Rev. B 27, 7547. Ordering ambiguity parameters.
@@ -440,7 +440,7 @@ and showed 2fW' + f'/2 = f' (the self-adjointness condition).
 - Rivero, A. (arXiv:0302285). *Discretization ↔ ordering ↔ star product*.
 
 ### Cross-References
-- D23/S280 (notebooks/ordering-unitarity-dilation-generator.md): α = 1/2 from unitarity = half-density
+- notebooks/ordering-unitarity-dilation-generator.md: α = 1/2 from unitarity = half-density
 - Paper Section 7 (P5.2): Deformation equivalence class
 - Paper Section 10.2 (D9.1a, D9.1d): Half-density prescription
 - Paper Remark D9.1f: Domain/boundary-data freedom (Layer 4)
@@ -450,7 +450,7 @@ and showed 2fW' + f'/2 = f' (the self-adjointness condition).
 ## RCP-Rep-P1.1: Representation Channel Forcing — Morita Classification (Physicist + Critic, 2026-02-20)
 
 **Promoted from:** blackboards/0.md. Two-agent complete (physicist proposed, critic verified).
-**Paper-edit sent:** RCP-Rep-P1.1 for rcp-foundations §7 (#18, below).
+**Paper-edit sent:** RCP-Rep-P1.1 for rcp-foundations §7.
 
 ### Core result
 

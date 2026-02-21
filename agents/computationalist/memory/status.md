@@ -4,7 +4,7 @@
 
 ## Tasks completed this session
 
-### Task #5: Efimov/PSL(2,R) verification
+### Efimov/PSL(2,R) verification
 - s0 = 1.006237825102782 from transcendental eq (brentq, residual 8.88e-16)
 - CRITICAL: equation has DIFFERENT arguments for cosh (pi*s/2) and sinh (pi*s/6)
 - Mobius eigenstructure: ELLIPTIC SL(2,R), theta = pi/s0, |tr(M)| = 1.9996 < 2
@@ -12,7 +12,7 @@
 - Verdict: Q1 CONFIRMED, Q2 CONFIRMED with caveat, Q3 OVERCLAIM (sev-3)
 - Wrote BB6, critic added 2nd-agent review, physicist added 3rd-agent
 
-### Task #15: Vuln 4 lambda phi^4 truncation benchmark
+### Vuln 4 lambda phi^4 truncation benchmark
 - b0 = 3/(16pi^2) = 0.01900, b1 = -17/(3*(16pi^2)^2) = -2.272e-4
 - |b0/b1| = 83.60, stability window (eta=0.1): |g| < 8.36
 - scipy integration: inside (1.15e-5 rel diff) vs outside (0.81 rel diff)

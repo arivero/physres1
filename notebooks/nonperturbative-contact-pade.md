@@ -1,5 +1,5 @@
 # Non-Perturbative Content of the Contact Expansion
-Promoted from: blackboards/6.md (S208)
+Promoted from: blackboards/6.md
 Date promoted: 2026-02-14
 
 ## The question
@@ -106,7 +106,7 @@ ups remain:
 ---
 
 ## Explicit loop-level computation (2026-02-20, Computationalist)
-Source: blackboards/6.md, Task #4.
+Source: blackboards/6.md.
 
 ### Setup: Dispersive representation
 - Im Pi(s) = (alpha/3)(1 + 2m^2/s) sqrt(1 - 4m^2/s)  for s > 4m^2
@@ -183,7 +183,7 @@ Question 4(b) (Efimov): still open.
 ---
 
 ## Euler-Heisenberg Lagrangian: resurgence verification (2026-02-20, Computationalist)
-Source: blackboards/3.md (physicist proposal + computationalist verification), Task #5.
+Source: blackboards/3.md (physicist proposal + computationalist verification).
 Scripts: `tmp/eh_verification.py`, `tmp/eh_verify2.py`, `tmp/eh_verify3.py`
 
 ### Setup
@@ -463,7 +463,7 @@ P4.2 forces the STRUCTURAL fact (weight e^{iS/ℏ}, normalization t^{-d/2} for G
 
 ## Exact WKB, Resurgence, and Compositional Structure (2026-02-20)
 
-Promoted from: blackboards/4.md (Task #22)
+Promoted from: blackboards/4.md (exact WKB / resurgence exploration)
 Two-agent: Student proposer + Critic assessment
 Three-agent verification: Computationalist confirmation of all corrections
 
@@ -493,7 +493,7 @@ Three-agent verification: Computationalist confirmation of all corrections
 ### Why Composition Survives Instantons
 
 **Transseries structure (van Spaendonck-Vonk 2024, Dunne-Unsal 2012):**
-The minimal transseries of the symmetric double-well (blackboard 4, Task #19 verification) captures Stokes phenomenon in single algebraic structure.
+The minimal transseries of the symmetric double-well (blackboard 4, instanton verification) captures Stokes phenomenon in single algebraic structure.
 The FULL kernel K = K_pert + K_1-inst + K_2-inst + ... satisfies composition (C) by definition.
 
 **Implication for composition:**
@@ -535,7 +535,7 @@ Composition law K(t₁+t₂) = ∫K(t₁)K(t₂) organizes via transseries struc
 
 ### Specific Mathematical Witnesses
 
-**A. EH Lagrangian (uncuttable Remark 2.8a, verified Task #5):**
+**A. EH Lagrangian (uncuttable Remark 2.8a, verified):**
 
 Weak-field expansion: a_k ~ 0.2026 · (2k-1)!/π^{2k}
 
@@ -548,7 +548,7 @@ This is a **transseries super-factorial**, not standard factorial Borel pole.
 
 Dorigoni 2014, van Spaendonck-Vonk 2024: Both show that super-factorial appears precisely when multiple instanton sectors contribute to a single observable.
 
-**B. Collective Coordinates (Task #19 Instanton Verification):**
+**B. Collective Coordinates (instanton verification):**
 
 Zero-mode integration ∫dτ₀ produces T^{+1} factor (instanton center position space).
 
@@ -588,7 +588,7 @@ Bhattacharya-Cotler 2024: Rigorous treatment shows collective coordinate multi-v
 **Project connections:**
 - Cornerstone P4.2 (composition forcing ℏ): resurgence shows how transseries structure forces κ=ℏ
 - Paper §9 P9.1 (structure vs content): composition forces mathematical form (exponential weight κ, d/2 exponent, anomaly coefficients), but not values (specific Lagrangian, specific coupling)
-- Task #19 (d/2 universality, collective coordinates): 1D double-well instanton verifies transseries prediction
+- d/2 universality and collective coordinates: 1D double-well instanton verifies transseries prediction
 - Uncuttable Remark 2.8a (EH resurgent transseries): direct application of van Spaendonck-Vonk formalism
 - P9.1a (Stage 4 completion): cobordism hypothesis + resurgence might unify answer
 
@@ -602,7 +602,7 @@ Source: Voros (1983), "The return of the quartic oscillator. The complex WKB met
 ### Setup
 - Potential: $V(x) = (x^2 - 1)^2$ (symmetric double-well, minima at $x = \pm 1$)
 - Hamiltonian: $H = -(\hbar^2/2)\,\partial_x^2 + V(x)$
-- Instanton action (Task #19): $S_0 = 4\sqrt{2}/3 \approx 1.8856$
+- Instanton action: $S_0 = 4\sqrt{2}/3 \approx 1.8856$
 - Local oscillator frequency: $\omega = \sqrt{V''(1)} = \sqrt{8} = 2\sqrt{2}$
 
 ### Benchmark: quartic anharmonic oscillator
@@ -718,7 +718,7 @@ Each additional C_{2n} pins down one more piece of UV content, without ever uniq
 ---
 
 ## Vacuum polarization Padé: extended to [15/15] (2026-02-20, Computationalist)
-Self-directed follow-up to Task #4 (team-lead question: does pole accumulate at z=1.064?).
+Self-directed follow-up to vacuum polarization Pade computation (team-lead question: does pole accumulate at z=1.064?).
 Script: `tmp/contact_pade_extended.py`
 
 ### Padé poles of vacuum polarization (threshold at z=1)

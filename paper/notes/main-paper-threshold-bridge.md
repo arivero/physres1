@@ -58,7 +58,7 @@ Then:
 2. \(L<L_{\mathrm{crit}}\): attraction-leading sign at leading order.
 3. \(L=L_{\mathrm{crit}}\): leading cancellation, so subleading structure controls the outcome.
 
-## S276 extension: when does a unique threshold exist?
+## Extension: when does a unique threshold exist?
 For marginal exponent, define \(G(L):=A(L)-B\).
 
 - If \(A(L)\) is continuous and strictly increasing on the relevant \(L\)-range with \(A(L_{\min})<B<A(L_{\max})\), then \(G\) has a unique zero \(L_\ast\): single-threshold picture survives.
@@ -88,7 +88,7 @@ This is a fixed-\(L\), small-\(r\) asymptotic criterion. It is distinct from the
 ## Promotion-ready sentence
 A compact bridge sentence can be inserted in Section 3.3 after the areal-law universality paragraph to explain, in one line, the Newton-to-SR shift \(3\to2\) without overloading the main narrative.
 
-## S276 Iteration 2: range-coverage condition
+## Range-coverage condition
 Monotonicity alone is not enough for a crossing: one also needs range coverage.
 For continuous monotone increasing \(A(L)\) on \([L_{\min},L_{\max}]\), a unique crossing exists iff
 \[

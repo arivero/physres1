@@ -87,7 +87,7 @@ Explicit sector scaling: T^{-d/2} (Gaussian, from P4.2) and T^{+1} (instanton ce
 
 ## 8. Open Questions
 
-**Q1 (concrete, PARTIALLY RESOLVED — see §12 below):** Can exact WKB connection formulas (DDP 1993, Iwaki 2024) for generic potentials be derived directly from the composition axiom (C) applied to the Borel-summed kernel? The Stokes line crossing = alien calculus action. The connection formula = Leibniz rule for Δ_ω applied to K_t. Status: the DDP formula is a translation of the Leibniz rule (not a new derivation), but the Stokes coefficient i follows from P4.2 half-density via the Maslov phase chain (new framing). Paper-edit #23 sent.
+**Q1 (concrete, PARTIALLY RESOLVED — see §12 below):** Can exact WKB connection formulas (DDP 1993, Iwaki 2024) for generic potentials be derived directly from the composition axiom (C) applied to the Borel-summed kernel? The Stokes line crossing = alien calculus action. The connection formula = Leibniz rule for Δ_ω applied to K_t. Status: the DDP formula is a translation of the Leibniz rule (not a new derivation), but the Stokes coefficient i follows from P4.2 half-density via the Maslov phase chain (new framing). Paper edit sent.
 
 **Q2 (concrete, RESOLVED — see §11 below):** RCP multi-channel constraint on resurgence. The partition channel (C) forces the alien calculus Leibniz rule (above). What does the scale channel (A4, RG semigroup) impose on the Borel singularity positions? Renormalization moves coupling g → g(μ); the Borel singularity at t = 1/g(μ) moves with μ. Is there a consistency condition between the partition-channel and scale-channel constraints on resurgent structure?
 
@@ -100,7 +100,7 @@ Explicit sector scaling: T^{-d/2} (Gaussian, from P4.2) and T^{+1} (instanton ce
 - main.md Remark P4.2f: universality of κ across interacting sectors — resurgence makes this visible
 - blackboards/3.md CFT-P1.1: c/24 as Stage 3 analog of d/2 — similarly, CFT resurgence would be organized by c/24
 - notebooks/renormalization-semigroup-mechanics.md: scale channel (RG) as semigroup; Borel singularity motion under RG = Q2 above
-- Task #19 (computationalist): double-well instanton numerical verification — Borel singularity at t = S₀/ℏ confirmed
+- Computationalist double-well instanton numerical verification — Borel singularity at t = S₀/ℏ confirmed
 
 ## 10. Paper-Edit Candidates
 
@@ -239,7 +239,7 @@ One sentence added to Remark D4.3a (cornerstone §4, Caustics and the Maslov ind
 "The Stokes coefficient in exact WKB connection formulas (DDP 1993) is consistent with the
 composition-forced half-density: the Maslov phase π/4 per branch at a fold caustic is the
 argument of the half-density normalization t^{-d/2} evaluated at a caustic, giving DDP coefficient i = e^{iπ/2}."
-Paper-edit #23 sent to orchestrator.
+Paper edit sent to orchestrator.
 
 ### References
 - Delabaere-Dillinger-Pham (1993): exact WKB connection formulas, Stokes phenomenon
@@ -300,12 +300,12 @@ Two-agent rule for CP(1) verification: Mathematician (model check) + Physicist (
 Paper-edit target (sev-2): Cornerstone §8, new Remark P4.2g' or P8.x:
 "The composition law (C) forces the instanton lattice {n·ζ_*}, while the scale channel (RG) forces ζ_* to run with the coupling; combined, the lattice runs rigidly — a universal consequence of multi-channel RCP verified in the 2D delta model (quantum mechanics) and the CP(1) sigma model (quantum field theory)."
 
-Physicist sends paper-edit #25 to orchestrator.
+Physicist sends paper edit to orchestrator.
 
 ## 13. H6.3 Upgrade: Scale-Channel Witness to Conditional Proposition
 
 **Source:** blackboards/3.md, THREE-AGENT (physicist+critic+mathematician), 2026-02-20.
-**Paper-edit #27 applied** to paper/main.md Remark D10.1c (line 1566).
+**Paper edit applied** to paper/main.md Remark D10.1c (line 1566).
 
 ### Main Result (sev-2)
 
@@ -327,7 +327,7 @@ Proposition D6.4b (Instanton Lattice Rigidity) upgrades H6.3's scale-channel heu
 - **Critic:** Upgrade is real but restricted to Borel/instanton type; label must be Proposition (not Derivation); Stokes constants not addressed. Sev-2 confirmed.
 - **Mathematician:** D6.4b items are valid theorems; content is standard resurgence (Écalle 1981) translated to RCP language. §5(b) requires semigroup framing (not "no other structures"). Net: genuine upgrade from demonstration to conditional proposition.
 
-### Paper-Edit Applied (#27)
+### Paper Edit Applied
 
 **Target:** paper/main.md Remark D10.1c, line 1566.
 **Replaced:** "The third witness (scale channel) is at present a structural heuristic (H6.3)..."
@@ -392,7 +392,7 @@ No new results beyond D6.4b; both open questions closed as clarifications (not u
 - Écalle (1981): alien calculus, resurgent functions (prior art for Leibniz rule)
 - Dunne-Ünsal (arXiv:1207.0905): CP(N) resurgence (second model)
 - blackboards/3.md (source — three-agent complete)
-- paper/main.md Remark D10.1c (target — paper-edit #27 applied)
+- paper/main.md Remark D10.1c (target — paper edit applied)
 
 ## 15. Stokes Constant Factorization from Composition: A New Structural Constraint
 
@@ -571,7 +571,7 @@ to match the Écalle-normalized alien derivative definition, not from the convol
 
 ## §17. A4 Scale-Channel Constraints on Borel Singularity Positions
 
-**Source:** blackboards/3.md (Task #17); TWO-AGENT (mathematician + computationalist).
+**Source:** blackboards/3.md; TWO-AGENT (mathematician + computationalist).
 
 ### Setup
 
@@ -666,7 +666,7 @@ which holds at all μ only if g₁(μ)=g₂(μ) for all μ — forcing equal cou
 
 ## §17. Paper-Internal Status of D6.4b and Lemma D6.5 (2026-02-21, Mathematician)
 
-**Finding from claim-graph audit (Task #1):** D6.4b and Lemma D6.5 are referenced in `paper/main.md` Remark D10.1c but have no formal definition headers in `paper/main.md`. The mathematics is fully verified here (§13 and §15 of this notebook), and paper-edit #27 applied their conclusions as inline text to D10.1c. However, no `Proposition D6.4b (...)` or `Lemma D6.5 (...)` definition block exists in the paper.
+**Finding from claim-graph audit:** D6.4b and Lemma D6.5 are referenced in `paper/main.md` Remark D10.1c but have no formal definition headers in `paper/main.md`. The mathematics is fully verified here (§13 and §15 of this notebook), and a paper edit applied their conclusions as inline text to D10.1c. However, no `Proposition D6.4b (...)` or `Lemma D6.5 (...)` definition block exists in the paper.
 
 **Required fix:** A paper-edit should add definition blocks for both results, likely in Appendix 10.3 or a new Appendix 10.7 (Resurgence/Scale-Channel Witnesses). The content already exists:
 - **Proposition D6.4b** = RCP-Res-P1.1 (§13): composition (C) forces Borel singularity positions to form an additive semigroup {nζ₁}; all instanton sectors run rigidly under RG (conditional on: simple-pole Borel singularity type, Écalle alien calculus).

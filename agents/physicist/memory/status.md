@@ -22,10 +22,10 @@
 ## Cumulative session totals (all context windows)
 
 ### Tasks (5 completed)
-- Task #1: Areal-speed paper pub-readiness → DISCARD (THREE-AGENT)
-- Task #12: d/2 uniqueness chain review (BB2) → AIRTIGHT (THREE-AGENT)
-- Task #17: phi^4 truncation benchmark proposal → FOUR-AGENT APPROVED
-- Task #18: Efimov/PSL(2,R) review (BB6) → THREE-AGENT, Q3 overclaim
+- Areal-speed paper pub-readiness → DISCARD (THREE-AGENT)
+- d/2 uniqueness chain review (BB2) → AIRTIGHT (THREE-AGENT)
+- phi^4 truncation benchmark proposal → FOUR-AGENT APPROVED
+- Efimov/PSL(2,R) review (BB6) → THREE-AGENT, Q3 overclaim
 
 ### All blackboard reviews (7 boards reviewed, all 7 slots touched)
 - BB0: Philosophenweg §9 + table closure §11 (THREE-AGENT)

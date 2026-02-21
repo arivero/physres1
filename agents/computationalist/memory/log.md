@@ -4,7 +4,7 @@
 - read: .claude/agents/computationalist.md (agent definition)
 - read: agents/shared-rules.md, meta/motivations.md, meta/research-state.md, memory/status.md
 - read: notebooks/nonperturbative-contact-pade.md (tree-level Yukawa Pade result)
-- claimed: Task #4 (Borel-Pade vacuum polarization threshold)
+- claimed: Borel-Pade vacuum polarization threshold
 - computed: Taylor coefficients I_n = B(n+1,3/2)+(1/2)B(n+2,3/2); I_0=4/5, I_1=12/35
 - bug found: sympy w/Rational(1,2) = 2w != w/2 (corrected; verified via scipy)
 - computed: closed form g(z) = integral_0^1 dw (1+w/2)sqrt(1-w)/(1-wz)
@@ -13,7 +13,7 @@
 - diagnosed: Borel-Pade inapplicable to momentum series (coefficients algebraic not factorial)
 - wrote: blackboards/6.md (computation record)
 - appended: notebooks/nonperturbative-contact-pade.md (R1-R4, status update)
-- marked: Task #4 completed
+- marked: Borel-Pade threshold task completed
 
 ## 2026-02-20 (self-directed: PDM energy shift check)
 - read: blackboards/5.md (critic review of ordering-equivalence Sev-2 issues)
@@ -34,8 +34,8 @@
 - wrote: blackboards/6.md (EH resurgence verification results)
 - sent: corrective findings to orchestrator (not a paper-edit request, physicist feedback)
 
-## 2026-02-20 (Task #5: EH Lagrangian factorial growth verification, second full pass)
-- claimed: Task #5 (EH Lagrangian factorial growth, blackboard 3 verification request)
+## 2026-02-20 (EH Lagrangian factorial growth verification, second full pass)
+- claimed: EH Lagrangian factorial growth (blackboard 3 verification request)
 - read: agents/shared-rules.md, meta/motivations.md, meta/research-state.md, memory/status.md
 - read: blackboards/3.md (physicist request), blackboards/6.md (previous session)
 - ran: tmp/eh_verification.py (SymPy Taylor series for c_n, Gamma integrals, initial Pade)
@@ -61,7 +61,7 @@
 - confirmed: BW is standard factorial Borel-Pade; EH is transseries (different mechanism)
 - appended: notebooks/nonperturbative-contact-pade.md (BW section)
 
-## 2026-02-20 (self-directed: d/2 universality instanton verification, Task #19)
+## 2026-02-20 (self-directed: d/2 universality instanton verification)
 - read: agents/student/memory/status.md (Tier 1A specification: 1D double-well instanton)
 - wrote: tmp/instanton_d2.py (SymPy + numpy: 8 verification sections)
 - verified: instanton solution x=a*tanh(sqrt(2)*a*(tau-tau_0)), action S_0=4*sqrt(2)*a^3/3
@@ -74,7 +74,7 @@
 - wrote: blackboards/4.md (overwriting critic's cornerstone audit record)
 - updated: blackboards/README.md slot 4
 - appended: notebooks/nonperturbative-contact-pade.md (d/2 universality section)
-- marked: Task #19 completed
+- marked: d/2 instanton verification completed
 - read: mathematician annotation on blackboard 4 §7 (hypothesis (T) of TG-P1.1 fails for instantons)
 - wrote: tmp/instanton_translation.py — confirmed S_cl depends on center not just separation
   (same x_f-x_i=1.0: S_cl ranges 1.070 to 1.296 across centers; free particle: all 0.500)
@@ -98,16 +98,16 @@
   ratio = 2.000 confirmed for alpha=0.01, 0.05 numerically
 - wrote: blackboards/6.md (PDM gap correction, full derivation)
 - sent: paper-edit request (ordering-equivalence Section 3.4, three locations)
-- claimed+completed: Task #17 (path-integral-normalization independence review)
+- claimed+completed: path-integral-normalization independence review
   found: S2.1 "independent route" Section 3.1 line 142 (misleading; [K]=L^{-d} follows from composition)
   found: S2.2 abstract undercounts conditions (says "composition" but needs T+dimensional basis too)
   verified: [K]=L^{-d} derivable from composition by dimensional analysis ✓
   no math errors; only summary language overclaiming
-- sent: Task #17 findings to orchestrator (2 sev-2 items, language fixes only)
+- sent: path-integral-normalization findings to orchestrator (2 sev-2 items, language fixes only)
 
 ## 2026-02-20 (context continuation: Butcher product deep correction)
 - resumed: after context reset; all tasks still completed
-- self-directed: audit adjacent sections of rooted-tree-bookkeeping for carry-over issues from Task #12
+- self-directed: audit adjacent sections of rooted-tree-bookkeeping for carry-over issues from regularity-conditions task
 - confirmed: §6.2 coproduct/antipode formulas are combinatorial, unaffected by coefficient fix ✓
 - discovered: initial residual error report was WRONG due to degenerate test
   previous test used f=y (linear): F([•,•])(y) = f''·(f,f) = 0 — cannot detect a★a([•,•])!
@@ -127,14 +127,14 @@
 ## 2026-02-20 (continued: library access + verification tasks)
 - library access: confirmed use of WebSearch/WebFetch for source ingestion (PI/team-lead)
 - wrote: sources/hairer-lubich-wanner2006-bseries-composition.md (Butcher product ref; numerical results from 3 tests)
-- claimed/completed: Task #21 (Stone/Hille-Yosida verification for RCP-R7.2)
+- claimed/completed: Stone/Hille-Yosida verification for RCP-R7.2
   verified: Partition=Stone (GROUP, reversible), Scale=Hille-Yosida (SEMIGROUP, irreversible), Representation=Morita (category-level)
   key formula: Stone = Hille-Yosida + U(-t)=U(t)^{-1} ↔ self-adjointness ↔ time-reversal
   appended: notebooks/renormalization-semigroup-mechanics.md (computationalist verification after RCP-R7.2)
-- annotated: blackboards/4.md §9 (resurgence task #22, three-agent complete)
+- annotated: blackboards/4.md §9 (resurgence, three-agent complete)
   confirmed critic's sev-2 corrections: VS-V≠cobordism functor; sewing↔alien = analogy; resurgence compatible not forces kappa=hbar
   numerical: Borel singularity at t=S₀/ℏ consistent with P4.2 (S₀=4√2/3, double-well)
-- closed: stale tasks #9, #10, #8
+- closed: stale tasks (superseded by completed work)
 
 ## 2026-02-20 (context continuation: Voros + RCP-Res-P1.1 verification)
 - resumed: after context reset; all tasks from previous session completed
@@ -167,7 +167,7 @@
   - written: notebooks/nonperturbative-contact-pade.md (contact universality section)
 - self-directed: extended Pade [N/N] for vacuum polarization
   - script: tmp/contact_pade_extended.py
-  - extended to [15/15] (was [5/5] in Task #4)
+  - extended to [15/15] (was [5/5] in initial Borel-Pade task)
   - nearest pole to z=1: 1.2659 ([2/2]) -> 1.0643 ([5/5]) -> 1.0119 ([15/15]) -> 1.0 (limit)
   - answer to team-lead question: z=1.064 is [5/5] approximation, NOT fixed accumulation point
   - Pade[10/10] matches g_exact to 4 s.f. at z=0.98 (vs Taylor's 7% error)
@@ -239,8 +239,8 @@
 ## 2026-02-20 (new session, continued)
 - startup: read computationalist.md, shared-rules.md, motivations.md, research-state.md, status.md
 - read: blackboards/0.md, 5.md, 6.md; blackboards/README.md; notebooks/resurgence-composition-bridge.md §16; tangent-groupoid-bridge paper §5-6
-- claimed: Task #1 (van Est/Kontsevich chain verification)
-- assessed: Task #1 was stale re BB0 (b-calculus content, THREE-AGENT complete); redirected to BB5 resonant Borel verification
+- claimed: van Est/Kontsevich chain verification
+- assessed: van Est task was stale re BB0 (b-calculus content, THREE-AGENT complete); redirected to BB5 resonant Borel verification
 - computed: Borel convolution (B1*B2)(zeta) exact Laurent near zeta=2A via SymPy
   - RESULT: (1/s)*[log(A) - log(s)] + 2/A + O(s), NOT pure log
   - correction to RES-16.3: "r1r2/A * log(zeta-2A)" should be "r1r2*[log(A)-log(zeta-2A)]/(zeta-2A)"
@@ -249,15 +249,15 @@
 - wrote: blackboards/5.md §10 (computationalist annotation, FOUR-AGENT complete)
 - appended: notebooks/resurgence-composition-bridge.md §16.5 (precision fix)
 - wrote: proposals/computationalist-bion-log-precision.md
-- marked: Task #1 completed
+- marked: van Est/Borel verification completed
 - scripts: tmp/resonant_borel_verify.py, tmp/resonant_borel_v2.py
 
 ## 2026-02-20 (library visit)
 - downloaded: arXiv:1512.06409 → sources/brown2017-feynman-amplitudes-cosmic-galois.md
 - downloaded: arXiv:hep-th/0411114 → sources/connesmarcolli2004-renorm-galois.md
-- library visit triggered by: critic-arithmetic-feynman.md recommendation (Task #3 follow-up)
+- library visit triggered by: critic-arithmetic-feynman.md recommendation (arithmetic Feynman follow-up)
 - sent: proposal signal to orchestrator (bion log precision fix)
-- task #1 marked completed
+- van Est/Borel task marked completed
 
 ## 2026-02-20 (physicist verification)
 - read: proposals/physicist-halfdensity-d4-selection.md
@@ -267,7 +267,7 @@
 - verified: hbar = L_P^2*c^3/G dimensionally
 - confirmed independence: (i) quadratic [D=0,4]; (ii) linear [D=4 unique]
 - appended: proposals/physicist-halfdensity-d4-selection.md (computationalist section)
-- status: physicist Task #2 result is THREE-AGENT complete
+- status: physicist half-density result is THREE-AGENT complete
 - activity: 2 library downloads, 1 computational verification = variety maintained
 
 ## 2026-02-20 (self-directed: 1D TQFT verification)
@@ -282,14 +282,14 @@
 - computed: semigroup check H=q^2-Aq^4 (Euclidean), C2=-2<0 confirmed
 - found: §4 curvature comparison direction imprecise (ΔC2/c2 ~ H^2/M^2 > HV H^2/Lambda^2 for M<Lambda)
 - wrote: blackboards/4.md §9 (computationalist annotation, THREE-AGENT complete)
-- created/completed Task #10: notebooks/arithmetic-feynman-rcp-assessment.md
+- created/completed: arithmetic-feynman-rcp-assessment (notebooks/arithmetic-feynman-rcp-assessment.md)
   - Three-level hierarchy: composition→RG (Level A), RG↪G (Level B), G→amplitude arithmetic (Level C)
   - CK identity: our rooted-tree coproduct IS H_CK (not analogy)
   - Recommended paper-edit RG-R7.1 documented
 - scripts: (inline, no tmp/ files for OQ3 check)
 
 ## 2026-02-20 (self-directed: OQ4 Padé convergence)
-- created/completed Task #14: OQ4 Padé convergence rate to branch cut
+- created/completed: OQ4 Padé convergence rate to branch cut
 - computed: Padé [N/N] poles for N=1..10; nearest pole distance ~0.758*N^{-1.56}
 - fit: N^{-3/2} best forced fit (RMS 0.068); Stahl theorem predicts N^{-4/3} asymptotically
 - result: min N~16-20 for 1% threshold detection
@@ -312,7 +312,7 @@
 
 ## 2026-02-21 (evening session, ~21:41 CET)
 - read: definition, shared-rules, motivations, research-state, status
-- claimed: Task #5 (Efimov/PSL(2,R) verification)
+- claimed: Efimov/PSL(2,R) verification
 - read: proposals/archive/2026-02-21-run2130/task-efimov-psl2r.md (student proposal, 351 lines)
 - read: sources/2509-04746-three-body-limit-cycle.md, sources/efimov-effect-discrete-scaling-rg.md
 - computed: s0 from STM transcendental eq: s0*cosh(pi*s0/2) = (8/sqrt(3))*sinh(pi*s0/6)
@@ -333,8 +333,8 @@
 - prepared: Vuln 4 truncation benchmark (D6.4 numerical witness)
   - b0=1, b1=5: inside window g0=0.01 -> 0.23% diff; outside g0=0.20 -> 22.6% diff
   - D6.4 stability bound numerically confirmed
-  - recorded in BB4 §11 C11.5
-- completed: Task #15 (Vuln 4 λφ⁴ truncation numeric benchmark)
+  - recorded in BB4 §11
+- completed: Vuln 4 λφ⁴ truncation numeric benchmark
   - b0 = 3/(16π²) = 0.01900, b1 = -17/(3·(16π²)²) = -2.272e-4, |b0/b1| = 83.60
   - scipy integration: g0=0.1 → rel diff 1.15e-5 (inside), g0=10 → rel diff 0.81 (outside)
   - wrote: blackboards/3.md (Vuln 4 benchmark section appended)
@@ -345,7 +345,7 @@
   - Delta p = J and exponential phase both CORRECT regardless of y* sign
   - wrote: proposals/computationalist-review-impulse-kernel.md
   - FOUR-AGENT UNANIMOUS APPROVE (with 3 fixes: 2 format + 1 sign)
-- self-directed: spectral dimension d_s=d/2 from modified dispersion (supports task #19)
+- self-directed: spectral dimension d_s=d/2 from modified dispersion (supports spectral dimension investigation)
   - MDR (p^{2z}, z=2): d_s = d/z = d/2. Analytic proof + numeric verification.
   - S^2 ordering comparison: LB gives d_s→2 at small t (correct); left-ordered gives d_s>2
   - general formula: P(t) ~ t^{-d/(2z)} => d_s = d/z
@@ -356,7 +356,7 @@
 - library: ingested sources/carlip-2019-dimensional-reduction-review.md (arXiv:1705.05417)
   - review of d_s=2 universality: CDT, asymptotic safety, HL, LQG, causal sets, etc.
   - key insight: d/2 = 2 iff d=4 — potential new d=4 selection argument
-- self-directed: constrained-path Lagrange multiplier from D6.5 (supports task #20)
+- self-directed: constrained-path Lagrange multiplier from D6.5 (supports constrained-path composition)
   - delta(y) constraint = impulse J at saddle: J = m*xi/t0 + m*xf/(T-t0) = Lagrange multiplier
   - phase residual vs direct constrained-path: 0 (SymPy)
   - wrote: proposals/computationalist-task-constrained-path-lagrange.md

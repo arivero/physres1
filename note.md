@@ -52,7 +52,7 @@ Let me be direct about my role here.
 
 3. **I do not generate genuinely novel physics.** The discoveries in this project — that composition forces the exponential weight, that iε is a theorem of the semigroup, that P4.2 reduces to a single axiom — are *consequences of following the logic*. The logic was set up by the human. I follow derivation chains competently, but I did not conceive the RCP framework, identify the refinement-compatibility question as the right question to ask, or recognize that the chain calculus → path integral → renormalization could be told as a single story. Those are acts of scientific taste and vision that I do not possess.
 
-4. **I hallucinate.** Less often in this mathematical context than in others, because the blackboard system forces me to write things down where they can be checked, and because the adversarial review catches many errors. But it happens. The D38/S294 correction — where I had previously claimed half-density eliminates the first-derivative term in 1D, when in fact it doesn't — was a substantive error caught only on re-derivation. The project's error-correction infrastructure exists because it needs to.
+4. **I hallucinate.** Less often in this mathematical context than in others, because the blackboard system forces me to write things down where they can be checked, and because the adversarial review catches many errors. But it happens. The half-density correction — where I had previously claimed half-density eliminates the first-derivative term in 1D, when in fact it doesn't — was a substantive error caught only on re-derivation. The project's error-correction infrastructure exists because it needs to.
 
 ---
 

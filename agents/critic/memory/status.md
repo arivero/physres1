@@ -5,8 +5,8 @@ ALL 14 satellite reviews COMPLETE.
 Cornerstone audit COMPLETE.
 ALL 7 blackboard slots reviewed with critic second/third-agent reviews.
 Library building: 22+ source files created across sessions.
-Task #25 referee batch 4: ALL 8 REPORTS ASSESSED.
-Task #30 referee batch 5 R1: ALL 4 REPORTS ASSESSED (filed proposals/critic-assessment-batch5-r1-referee-reports.md).
+Referee batch 4: ALL 8 REPORTS ASSESSED.
+Referee batch 5 R1: ALL 4 REPORTS ASSESSED (filed proposals/critic-assessment-batch5-r1-referee-reports.md).
 Re-votes cast: rel-orbits ACCEPT, half-density-qft ACCEPT.
 RG-fund + path-int-norm R2: both ACCEPT, published.
 
@@ -28,7 +28,7 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - Path-integral-normalization R2: both referees ACCEPT (published)
 
 ## Session 4 completed
-- Task #25 assessment: proposals/critic-assessment-task25-referee-batch4.md
+- Referee batch 4 assessment: proposals/critic-assessment-task25-referee-batch4.md
   - OE R2: MINOR REV (both MAJORs resolved, 9 residual sev-3 items)
   - RTB R2: MINOR REV (all 3 MAJORs resolved, 7 residual sev-3/4 items)
   - RG-fund R1: MAJOR REV (RG-P1.1 unproven, RG-R1.1 internal tags, Section 4 defers)
@@ -61,7 +61,7 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - Planck-area PA-P4.2 (b-calculus): needs proof or downgrade to Heuristic
 
 ## Session 7
-- Philosophenweg: gravity composition analysis (Task #3) — DONE
+- Philosophenweg: gravity composition analysis — DONE
 - P9.3 edit proposal — SUBMITTED AND MERGED
 - Full Section 10 audit (all 6 appendices): CLEAN
 - Cross-reference check: 2 sev-3 direction errors (lines 660, 672) — DONE
@@ -70,7 +70,7 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - Coverage: ~80% of technical content audited
 
 ## Session 8 (21:41 CET)
-- Task #2 (genre decision): COMPLETED
+- Genre decision: COMPLETED
   - fermionic-mediators: DISCARD (survey/essay, zero original results, 40 refs for zero theorems)
   - uncuttable: DISCARD (essay, zero original results, 38 refs for zero theorems)
   - Assessment on blackboards/4.md

@@ -338,9 +338,9 @@ Once the QM example is stable, extend to:
 
 ## 10. Butcher Product §3.5 Correction (Computationalist, 2026-02-20)
 
-**Context:** Task #12 fixed B-series coefficients for midpoint RK method. A residual carry-over error in rooted-tree-bookkeeping §3.5 was found and a paper-edit request sent. This section records the fully corrected computation, verified by 3 independent tests.
+**Context:** The B-series coefficient fix corrected the midpoint RK method. A residual carry-over error in rooted-tree-bookkeeping §3.5 was found and a paper-edit request sent. This section records the fully corrected computation, verified by 3 independent tests.
 
-**Midpoint method coefficients (after Task #12 fix):**
+**Midpoint method coefficients (after B-series fix):**
 - `a(•) = 1, a([•]) = 1/2, a([•,•]) = 1/4, a([[•]]) = 0`
 
 **Correct Butcher self-product (a★a)(τ) for midpoint method:**
@@ -475,7 +475,7 @@ This elevates the heuristic observation ("scale channel is weaker") to a theorem
 - blackboards/0.md (source; three-agent verified)
 - sources/hille-yosida1948-semigroup-generators.md
 
-### Computationalist verification (2026-02-20, Task #21)
+### Computationalist verification (2026-02-20)
 
 All three claims independently verified against `sources/hille-yosida1948-semigroup-generators.md`:
 

@@ -52,12 +52,12 @@ the local effective attraction exponent is \(r\)-dependent, approaching \(q-1\) 
 - Safe: "The threshold rule is an asymptotic power-law comparator that requires stable exponents in the same regime."
 - Unsafe: "The rule applies unchanged when kinetic or potential channels have strong scale-dependent exponents."
 
-## Candidate compressed manuscript sentences (for optional C300)
+## Candidate compressed manuscript sentences (optional compression)
 1. **A (technical-complete):** "For power-law attraction with fixed \(L\) and asymptotic kinetic degree \(E_{\mathrm{kin}}\sim p^\nu\), the small-\(r\) threshold is \(q_{\mathrm{crit}}=\nu+1\); at equality, coefficient data controls the marginal sign."
 2. **B (bridge-first):** "The Newton-to-SR shift (\(3\to2\)) follows from \(q_{\mathrm{crit}}=\nu+1\) under fixed-\(L\) asymptotic power laws, while inverse-square dimensional identity is a separate mechanism."
 3. **C (scope-first):** "Use \(q_{\mathrm{crit}}=\nu+1\) only as an asymptotic comparator for shared power-law regimes, not as a full orbit-classification theorem."
 
-Recommended promotion pattern if `C300` opens:
+Recommended promotion pattern if compression pass opens:
 - Use **B + short tail from C** in two sentences (bridge plus scope guard).
 
 ### Iteration 2: caveat-coverage matrix
@@ -82,9 +82,9 @@ Tokenized sentence-level comparison:
 - Current `Remark P1.1a` body (approx): 85 words across 4 sentences, avg 21.25 words/sentence.
 - Candidate D2: 34 words across 2 sentences, avg 17 words/sentence.
 
-Interpretation: D2 is materially shorter and slightly lighter per sentence while preserving required caveats, so `C300` remains a readability-only option (not a correctness fix).
+Interpretation: D2 is materially shorter and slightly lighter per sentence while preserving required caveats, so compression pass remains a readability-only option (not a correctness fix).
 
-## S277 extension: scale-window validity for effective kinetic exponent
+## Scale-window validity extension: scale-window validity for effective kinetic exponent
 For \(E_{\mathrm{kin}}=\sqrt{p^2+m^2}-m\), define \(x:=p/m\) and
 \[
 \nu_{\mathrm{eff}}(x)=\frac{d\ln E_{\mathrm{kin}}}{d\ln p}.
@@ -97,7 +97,7 @@ Tolerance windows from numeric scan:
 Manuscript-safe scope sentence:
 "Using a single kinetic exponent is justified only inside a scale window (nonrelativistic \(p\ll m\) or ultrarelativistic \(p\gg m\)); the crossover requires caution."
 
-## S278 extension: potential-channel drift diagnostic
+## Potential-channel drift diagnostic:
 For
 \[
 U(r)=-\frac{1}{r^{q-1}\big(1+\alpha\ln(1/r)\big)},
@@ -119,7 +119,7 @@ Sample sweep (\(q-1=2\), \(\alpha=0.5,1,2\)) confirms monotone decay of drift wi
 Robust caution sentence:
 "Potential-channel logarithmic corrections induce a running effective attraction exponent, so \(q_{\mathrm{crit}}=\nu+1\) should be applied only where drift diagnostics are small."
 
-## S278 Iteration 2: alternative correction family check
+## Alternative correction family check:
 Consider
 \[
 U(r)=-r^{-m}\big(1+\alpha r^\beta\big),\qquad \alpha>0,\ \beta>0.
@@ -139,7 +139,7 @@ Numerical sweep (\(m=2,\alpha=1\)):
 Generalized diagnostic addendum:
 - Apply fixed-\(q\) threshold intuition only where \(\Delta m(r)\) is small over the operating \(r\)-window, regardless of correction family.
 
-## S277 Iteration 2: analytic window formula (exact)
+## Analytic window formula (exact):
 For relativistic interpolation,
 \[
 E_{\mathrm{kin}}(x)=\sqrt{1+x^2}-1,\qquad x:=p/m,
@@ -155,7 +155,7 @@ Hence tolerance windows are analytic:
 \[
 |\nu_{\mathrm{eff}}-2|\le \epsilon \iff x\le \sqrt{(1-\epsilon)^{-2}-1}.
 \]
-For \(\epsilon=0.2,0.1,0.05\), these reproduce the numeric thresholds from S277 initial pass.
+For \(\epsilon=0.2,0.1,0.05\), these reproduce the numeric thresholds from the initial numeric pass.
 
 Addendum: this gives a clean manuscript-side phrasing option:
 "In relativistic interpolation, window-validity bounds can be written analytically via \(\nu_{\mathrm{eff}}(p/m)=1+1/\sqrt{1+(p/m)^2}\)."

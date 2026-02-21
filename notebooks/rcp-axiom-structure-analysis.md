@@ -1,18 +1,18 @@
-# RCP Axiom Structure Analysis (D49+D50+D51+D53)
+# RCP Axiom Structure Analysis
 
 **Created:** 2026-02-14
-**Sources:** Blackboard 0 (D49/D50/D51), cornerstone P4.2, rcp-foundations Section 6
+**Sources:** Blackboard 0 (P4.2 ↔ RCP mapping, (D) derivability, commuting diagrams), cornerstone P4.2, rcp-foundations Section 6
 **Status:** Append-only notebook (graduated from blackboard)
 
 ## Summary
 
 Three interconnected discoveries about the RCP axiom system A1-A5:
 
-1. **D49 (P4.2 ↔ RCP mapping):** P4.2 uses exactly A1+A2+A5 (partition channel). Per-axiom decomposition shows A1 forces 5/9 conclusions, A5 forces 3/9, A2 forces 1/9. A3, A4 are logically independent (representation and scale channels).
+1. **P4.2 ↔ RCP mapping:** P4.2 uses exactly A1+A2+A5 (partition channel). Per-axiom decomposition shows A1 forces 5/9 conclusions, A5 forces 3/9, A2 forces 1/9. A3, A4 are logically independent (representation and scale channels).
 
-2. **D50 ((D) derivability):** Hypothesis (D) is derivable from (C) + physical setup. [K]=L^{-d} follows from composition integral consistency. P4.2 effective hypothesis count: 2 axioms (C, I) + 1 physical setup, not 3 axioms.
+2. **(D) derivability:** Hypothesis (D) is derivable from (C) + physical setup. [K]=L^{-d} follows from composition integral consistency. P4.2 effective hypothesis count: 2 axioms (C, I) + 1 physical setup, not 3 axioms.
 
-3. **D51 (Commuting diagrams):** Cross-channel commutativity follows from A1-A5; no A6 needed. P×R: theorem of A1+A3 (short-time universality). P×S: trivial (independent parameters). R×S: theorem of A3+A4 (deformation equivalence).
+3. **Commuting diagrams:** Cross-channel commutativity follows from A1-A5; no A6 needed. P×R: theorem of A1+A3 (short-time universality). P×S: trivial (independent parameters). R×S: theorem of A3+A4 (deformation equivalence).
 
 ## Opus review verdict
 PASS WITH MINOR ISSUES. Four terminological corrections applied:
@@ -23,7 +23,7 @@ PASS WITH MINOR ISSUES. Four terminological corrections applied:
 
 ---
 
-## Part 1: P4.2 ↔ RCP Axiom Mapping (D49)
+## Part 1: P4.2 ↔ RCP Axiom Mapping
 
 ### 1.1 Mapping Table
 
@@ -39,9 +39,9 @@ PASS WITH MINOR ISSUES. Four terminological corrections applied:
 
 | Originally in P4.2 | Status | Derivation |
 |---|---|---|
-| **(L\_exp)** exponential weight | **Theorem of A1** | Fourier multiplicativity → quadratic log → Gaussian (D29/S288) |
-| **(L\_loc)** local action dependence | **Theorem of A1+A5** | Lévy obstruction: \(\alpha = 2\) forced by dimensional solvability (D39/S295) |
-| **iε prescription** | **Theorem of A1** | Degree-counting: only linear \(f(x)=x\) preserves composition (D37/S292) |
+| **(L\_exp)** exponential weight | **Theorem of A1** | Fourier multiplicativity → quadratic log → Gaussian (Exponential Weight Uniqueness, BB1) |
+| **(L\_loc)** local action dependence | **Theorem of A1+A5** | Lévy obstruction: \(\alpha = 2\) forced by dimensional solvability (Levy-Khintchine Obstruction, BB2) |
+| **iε prescription** | **Theorem of A1** | Degree-counting: only linear \(f(x)=x\) preserves composition (iε uniqueness theorem) |
 | **Continuum time** | **Theorem of A5** | \(\{m,\hbar\}\) cannot build \([\varepsilon]=T\) (P4.2g) |
 
 ### 1.3 Per-axiom decomposition of P4.2 conclusions
@@ -62,8 +62,8 @@ PASS WITH MINOR ISSUES. Four terminological corrections applied:
 
 - **Ordering equivalence**: different quantizations \(Q_L, Q_W, Q_{BD}\) of same classical symbol compatible modulo \(O(\hbar)\)
 - **Domain data transport**: self-adjoint extension parameters \(\theta_{\text{dom}}\) must be carried in parameter bundle
-- **Four-layer stratification** (D35/S290): principal symbol → connection → scalar → domain
-- **Measurability** (D38/S294): Layer-3 shift unmeasurably small (\(|\Delta E_0| \sim 0.006\text{-}0.06\) meV)
+- **Four-layer stratification**: principal symbol → connection → scalar → domain
+- **Measurability**: Layer-3 shift unmeasurably small (\(|\Delta E_0| \sim 0.006\text{-}0.06\) meV)
 
 ### 1.5 What A4 adds (scale channel, orthogonal to P4.2)
 
@@ -81,7 +81,7 @@ PASS WITH MINOR ISSUES. Four terminological corrections applied:
 
 ---
 
-## Part 2: (D) Derivability (D50)
+## Part 2: (D) Derivability
 
 ### 2.1 Decomposition of (D)
 
@@ -107,7 +107,7 @@ Effective: 2 mathematical axioms + 1 physical setup.
 
 ---
 
-## Part 3: Commuting Diagrams (D51)
+## Part 3: Commuting Diagrams
 
 ### 3.1 Channel pairs
 
@@ -115,7 +115,7 @@ Effective: 2 mathematical axioms + 1 physical setup.
 |---|---|---|
 | Partition × Representation | Short-time universality + \(O(\hbar)\) control | Theorem of A1+A3 |
 | Partition × Scale | Independent parameters (\(\Delta t\) vs \(\mu\)) | Trivially true |
-| Representation × Scale | Deformation equivalence (D35/D38) | Theorem of A3+A4 |
+| Representation × Scale | Deformation equivalence (four-layer stratification + measurability) | Theorem of A3+A4 |
 
 ### 3.2 Key subtlety
 
@@ -129,7 +129,7 @@ Commutativity holds at the level of **physical observables**, not individual par
 
 ---
 
-## Part 4: Formalized Minimal P4.2 Statement (S303)
+## Part 4: Formalized Minimal P4.2 Statement
 
 ### 4.1 Theorem P4.2' (Minimal formulation)
 
@@ -154,13 +154,13 @@ Commutativity holds at the level of **physical observables**, not individual par
 
 ### 4.2 Comparison with original
 
-Original P4.2: 4 hypotheses (C, L, I, D), later reduced to 3 (D29+D39).
+Original P4.2: 4 hypotheses (C, L, I, D), later reduced to 3 (Exponential Uniqueness + Levy-Khintchine Obstruction).
 Revised P4.2': 2 hypotheses (C, I) + physical setup.
 Key insight: (L) and (D) are derivable from (C) + setup.
 
 ---
 
-## Part 5: Identity Limit Derivability (D53)
+## Part 5: Identity Limit Derivability
 
 ### 5.1 Claim
 
@@ -176,7 +176,7 @@ by stationary phase concentration. No additional assumption required.
 
 ### 5.3 What (I) contributed in the old decomposition
 
-In the D49 per-axiom table, A2 (identity limit) forced exactly one conclusion: the \(\kappa \to 0\) obstruction. But this also follows from the explicit kernel: as \(\kappa \to 0\), \((m/2\pi i\kappa t)^{d/2}\exp(imS/\kappa)\) oscillates without distributional limit.
+In the per-axiom table (Part 1), A2 (identity limit) forced exactly one conclusion: the \(\kappa \to 0\) obstruction. But this also follows from the explicit kernel: as \(\kappa \to 0\), \((m/2\pi i\kappa t)^{d/2}\exp(imS/\kappa)\) oscillates without distributional limit.
 
 ### 5.4 Caveat (red team)
 
@@ -187,15 +187,15 @@ The "physical setup" assumption now carries: self-adjoint generator \(H\) (exclu
 | Version | Hypotheses | Source |
 |---|---|---|
 | Original P4.2 | 4: (C), (L), (I), (D) | Cornerstone Section 10 |
-| After D29+D39 | 3: (C), (I), (D) | (L) = theorem of (C) |
-| After D50 | 2 + setup: (C), (I) | (D) = theorem of (C) + setup |
-| After D53 | **1 + setup: (C)** | (I) = theorem of (C) + setup |
+| After Exp. Uniq. + Levy Obstr. | 3: (C), (I), (D) | (L) = theorem of (C) |
+| After (D) derivability | 2 + setup: (C), (I) | (D) = theorem of (C) + setup |
+| After identity limit derivability | **1 + setup: (C)** | (I) = theorem of (C) + setup |
 
 **Composition is the single master axiom for the partition channel.**
 
 ## Stage 3 CFT Analog: c/24 Forcing and the Double Analogy
 
-**Source:** blackboards/5.md, Physicist Task #12 (2026-02-20).
+**Source:** blackboards/5.md, Physicist (2026-02-20).
 **Status:** Sev-3 conceptual clarification. Extends the Stage 1-2 axiom analysis to Stage 3.
 
 ### The d/2 ↔ c/24 Double Analogy

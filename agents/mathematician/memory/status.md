@@ -1,7 +1,7 @@
 # Mathematician — Status
 
 ## Current state (2026-02-20)
-Completed Task #2: uniqueness conditions for composition → P4.2.
+Completed: uniqueness conditions for composition → P4.2.
 
 ## What was done
 - Read papers/rcp-foundations/main.md Section 6 and notebooks/p42-hypothesis-reduction.md
@@ -15,14 +15,14 @@ Completed Task #2: uniqueness conditions for composition → P4.2.
 - Lévy exclusion requires physical setup (dimensional basis {m,ℏ}), not just composition
 - Recommended: replace "single master axiom" with three conditions: semigroup + action-based dynamics + L² unitarity
 
-## Also completed Task #12 (2026-02-20)
+## Also completed: regularity-conditions remark (2026-02-20)
 - Wrote Remark RCP-R6.2 draft to blackboards/2.md
 - Four regularity conditions distilled: (R1) K̂≠0, (R2) Hermitian symmetry, (R3) self-adjointness, (R4) L² boundedness
 - Key reduction: (R4)→unitarity, (R1)→(R3), (R2) automatic for real Lagrangians → only (R3) is substantive
 - Drafted one-sentence axiom refinement: "(C) + action-based setup + L² unitarity"
 - Sent paper-edit request to orchestrator
 
-## Also completed Task #17 (2026-02-20): Tangent groupoid Q1-Q3
+## Also completed: Tangent groupoid Q1-Q3 (2026-02-20)
 - Q1 (d/2 from groupoid convolution): YES — clean proposition, no Feynman-Kac needed. Promote candidate.
 - Q2 (master groupoid for RCP): Plausible; partition+representation fit G_ℏ; scale channel needs separate algebroid.
 - Q3 (Lackman + Stone): (R3) self-adjointness still needed even in groupoid C*-algebra framework.
@@ -34,20 +34,20 @@ Prefer own stale slots; if all slots active by others, ask orchestrator before o
 
 ## Self-directed session findings (2026-02-20)
 
-### Task #20: Cauchy measurability gap
+### Cauchy measurability gap
 - a.e. Cauchy equation (from L¹ semigroup) forces linearity a.e. via Fubini
 - L¹_loc in t (Fourier space) is the right condition — automatic for physical kernels
 - Non-measurable Cauchy solutions excluded by local integrability
 - NOT BLOCKING. Added Cauchy note to RCP-R6.2 (now in paper).
 - Appended as Part 4 to notebooks/p42-hypothesis-reduction.md
 
-### Task #23: Identity limit via stationary phase (no Stone)
+### Identity limit via stationary phase (no Stone)
 - For smooth V (bounded below): identity limit follows from (C) + Lagrangian asymptotics
   S_cl(x,y;t) = m|x-y|²/(2t) + O(t) → stationary phase → K_t → δ. No Stone needed.
 - For singular V (delta, inverse-square): Stone still needed. (R3) is genuinely required.
 - Paper-edit candidate: Remark RCP-R6.3. Draft in blackboards/2.md. Sent to orchestrator.
 
-### Task #25: Unitarity/Minkowski not independent axiom
+### Unitarity/Minkowski not independent axiom
 - Composition compatible with both Feynman (c₀=i) AND heat kernel (c₀=-1)
 - Composition rules out c₀>0 (integral diverges) but NOT c₀=-1 (Euclidean)
 - Minkowski signature (real Lagrangian, oscillatory action) → c₀=i. This is SETUP, not axiom.
@@ -73,7 +73,7 @@ Three threads pointing to same underlying structure:
 - Remark RCP-R6.3 (identity limit smooth vs singular V): blackboard 2
 - Proposition PN-P1.3 or RCP-P6.3 (d/2 from groupoid convolution): announced to orchestrator
 
-## Task #29: Overclaiming assessment (2026-02-20, self-directed)
+## Overclaiming assessment (2026-02-20, self-directed)
 - Graded Critic's 4 instances against proof standards
 - Noether (2.4): SIGNIFICANT OVERCLAIM — highest priority fix. RCP does not derive Noether.
 - H0.2 map (2.1): factually wrong count (3≠4). Fix: 3-of-4 correspondence.
@@ -92,7 +92,7 @@ Three threads pointing to same underlying structure:
 
 ## Session 2 work (2026-02-20)
 
-### Task #3: Overclaiming language pass
+### Overclaiming language pass
 - Sent 4 paper-edit requests to orchestrator with exact current/replacement text
 - Fix 1 (HIGHEST): rcp-foundations §3.3 line 137 — Noether existence/role separation
 - Fix 2: cornerstone §1 line 43 — "three independent" → single master axiom (consistent with P4.2h)
@@ -170,18 +170,18 @@ Three threads pointing to same underlying structure:
 ## Session 4 work (2026-02-20, resumed from compacted context)
 
 ### Paper-edits dispatched (all two/three-agent complete)
-- Paper-edit #16: RCP-R7.2 (Stone/HY reversibility remark for rcp-foundations §7.2) — sent
-- Paper-edit #17: CFT-P1.1 as Remark P9.1b (cornerstone §9 after P9.1a) — sent
-- Paper-edit #18: RCP-Rep-P1.1 (representation channel forcing table for rcp-foundations §7.2) — sent
-- Addendum to paper-edit #5: Lurie cobordism hypothesis for P9.1a (anomalies entry resolved)
+- Paper-edit: RCP-R7.2 (Stone/HY reversibility remark for rcp-foundations §7.2) — sent
+- Paper-edit: CFT-P1.1 as Remark P9.1b (cornerstone §9 after P9.1a) — sent
+- Paper-edit: RCP-Rep-P1.1 (representation channel forcing table for rcp-foundations §7.2) — sent
+- Addendum to Lurie cobordism paper-edit for P9.1a (anomalies entry resolved)
 
-### Resurgence + composition (blackboard 4, task #22)
+### Resurgence + composition (blackboard 4)
 - Student wrote resurgence synthesis (§1-7); critic assessed (§8, 3 sev-2 overclaims)
 - Computationalist added corrections (§9): TQFT attribution, analogy≠isomorphism, compatible≠forcing
 - Mathematician: Borel convolution semigroup analysis (Leibniz rule for alien derivatives) added to notebook
 - Promoted to: notebooks/resurgence-composition-bridge.md (new notebook, four-agent complete)
 
-### RCP-Rep-P1.1 (blackboard 0, task #23)
+### RCP-Rep-P1.1 (blackboard 0)
 - Physicist proposed representation channel forcing analysis (§1-8)
 - Critic verified + sharpened with Morita equivalence table and Kontsevich gauge-group classification (§9)
 - Mathematician verified (§10): Kontsevich formality on curved manifolds, Bursztyn-Waldmann Morita class
@@ -221,7 +221,7 @@ Three threads pointing to same underlying structure:
 - (C2) YES for contact: T(E) = ⟨k|π(a_contact)|k'⟩ (k-independence makes measure irrelevant)
 - KEY RESULT: b-half-density = P4.2 normalization = planck-area σ_* (three-way unification)
   All are the weight r^{-1} |d²x|^{1/2} for d=2
-- Paper-edit #21 sent (planck-area §7 + TG-Q1)
+- Paper-edit sent (planck-area §7 + TG-Q1)
 - Promoted to tangent-groupoid-quantization-bridge.md notebook
 
 ### RCP multi-channel Borel (BB4, three-agent)
@@ -248,7 +248,7 @@ Three threads pointing to same underlying structure:
 - §4 localization VERIFIED: Δ_A is localized to turning point z_0 in the sense that the Borel singularity ζ=A is determined by z_0 (Picard-Lefschetz)
 - §6 Maslov factor VERIFIED: i = e^{iπ/2} = (Maslov phase)² = (e^{iπ/4} per branch)²
 - Chain: P4.2 → σ_* → van Vleck determinant → Maslov phase → Stokes coefficient i
-- Paper-edit #23: one sentence to cornerstone Remark D4.3a
+- Paper-edit: one sentence to cornerstone Remark D4.3a
 
 ### HD-BS closed (physicist Q3 error)
 - THREE-AGENT confirmed: strip condition = category error (Borel plane ≠ spatial L²_b)
@@ -269,8 +269,8 @@ Three threads pointing to same underlying structure:
 
 ## Next session starting point
 - BB0: three-agent complete, sev-3. No further action needed.
-- BB1: three-agent complete; paper-edit #22 confirmed executed.
-- BB3: three-agent complete; paper-edit #23 SENT but not yet executed. Do NOT overwrite until confirmed.
+- BB1: three-agent complete; P9.1a paper-edit confirmed executed.
+- BB3: three-agent complete; D4.3a paper-edit SENT but not yet executed. Do NOT overwrite until confirmed.
 - BB4: new content (d≥3 contact interactions, mathematician's analysis). Awaiting physicist + critic.
 - BB5: critic's satellite review. Stable, no action needed from mathematician.
 - New notebook entry: tangent-groupoid-quantization-bridge.md addendum (d-dim extension of κ_*)
@@ -283,7 +283,7 @@ Three threads pointing to same underlying structure:
 
 ## Session 6 work (2026-02-20, new session start)
 
-### Task #1: TG-Q1 (Half-density groupoid measure)
+### TG-Q1 (Half-density groupoid measure)
 - Read BB0 (d=4 b-calculus, promoted sev-3) + TG-bridge notebook + TG satellite §5.3
 - RESOLVED TG-Q1: bi-half-density kernels compose via pairing → d^d z intermediate integration automatic
 - Proposition TG-P2.1 (blackboards/0.md): composition closes, d/2 unchanged, Van Vleck = intrinsic half-density
@@ -342,7 +342,7 @@ Three threads pointing to same underlying structure:
 - RT-theorem IS a Stage 4 forcing theorem; mechanism differs from P4.2 (algebraic vs kinematic)
 
 ### Session final update (2026-02-20, ~23:00 CET shutdown):
-- BB3 overwritten: A4/Borel Q2 (Task #17) — single-agent, awaits physicist/computationalist
+- BB3 overwritten: A4/Borel Q2 — single-agent, awaits physicist/computationalist
 - BB4: FOUR-AGENT complete (CFT-Q1); sev-2 fix pending ("minimal" overclaim §10), then promote to TG notebook
 - BB5: THREE-AGENT complete (c-theorem); paper-edit edit-p91b-ctheorem.md ready for orchestrator
 - proposals/mathematician-edit-p91b-ctheorem.md: one-sentence P9.1b addition, three-agent endorsed
@@ -367,12 +367,12 @@ Three threads pointing to same underlying structure:
    - §6: draft remark text (~5 sentences) for rcp-foundations §7 or cornerstone §9
    - Pre-flag added: critic should focus on §4 conjecture + §5 cyclotomic attribution
 
-2. Task #26 (rooted-tree order-3 coefficient fix): DONE
+2. Rooted-tree order-3 coefficient fix: DONE
    - Independently verified: midpoint Taylor expansion → h³/8·f''(f,f) → a(τ₃⁽¹⁾)=1/8 ✓
    - Δa = 1/8 - 1/6 = -1/24 ✓ (paper had +1/12, wrong sign and magnitude)
    - Applied: 1/4→1/8, Δa fix, removed wrong a_{2h}·2³ line
 
-3. Task #28 (relativistic-central-orbits remaining 10 referee concerns): DONE
+3. Relativistic-central-orbits remaining 10 referee concerns: DONE
    - All 10 fixes already applied by physicist (verified each in paper)
    - votes.md updated: round 2, mathematician YES, full list of applied fixes
    - Awaiting 4 more round-2 votes
@@ -394,14 +394,14 @@ Three threads pointing to same underlying structure:
 ### Next session priorities:
 1. BB1 arithmetic forcing chain: critic second-agent review (§4 conjecture, §5 cyclotomic)
 2. Round-2 votes on relativistic-central-orbits: need 4 more agents to vote YES
-3. Task #24 (half-density-qft MAJOR revisions): mathematician not yet assigned but may be needed
+3. Half-density-qft MAJOR revisions: mathematician not yet assigned but may be needed
 4. Check if any new referee reports require mathematical review
 
 ## Session 7 work (2026-02-21)
 
 ### Completed this session:
 1. Voted YES on all 4 FROZEN satellite papers (all achieved unanimous 5/5)
-2. Task #3 CL-1' verification — sev-2 boundary-term correction applied; result already in paper/main.md §2 footnote
+2. CL-1' verification — sev-2 boundary-term correction applied; result already in paper/main.md §2 footnote
 3. Q1d self-directed (BB1 overwrite) — Stage 3.5 forcing: Verlinde + fusion non-negativity → k ∈ ℤ
    - Two independent derivations: algebraic (Verlinde) + topological (WZW π₃(G)=ℤ)
    - g∨ shift is Stage 4 content (Coxeter number = dynamical, not composition-derivable)
@@ -424,7 +424,7 @@ Needs critic check before any paper mention.
 - BB0: THREE-AGENT complete (CL-1'); content in paper/main.md §2 footnote
 - BB1: TWO-AGENT complete (Q1d); promoted to TG notebook §Q1d
 - All proposals processed (proposals/ is empty)
-- Task #14 (Critic Q1d review) now in_progress
+- Critic Q1d review now in_progress
 - Referee tasks #15-22 all in_progress (external review track)
 
 ### LESSONS:
@@ -437,11 +437,11 @@ Needs critic check before any paper mention.
 ## Session 9 work (2026-02-21, afternoon)
 
 ### Completed this session:
-1. Vote YES on half-density-qft Round 2 (Task #2)
+1. Vote YES on half-density-qft Round 2
    - Both MAJOR concerns verified resolved: M1 "matches at leading Ricci order" (line 139), M2 ParkerToms§6.3 (line 158)
    - votes.md updated with mathematician YES vote
 
-2. Efimov/PSL(2,R) THREE-AGENT groupoid analysis (Task #3)
+2. Efimov/PSL(2,R) THREE-AGENT groupoid analysis
    - BB3 §§6-8 added: transformation groupoid PSL(2,ℝ)⋉ℝP¹ analyzed
    - Key results: non-principal (Stab≅ℝ⋊ℝ₊), distinct from pair groupoid, no single master groupoid
    - Remark RCP-R5.1 already in rcp-foundations — paper home confirmed
@@ -478,7 +478,7 @@ Needs critic check before any paper mention.
 
 ### Session 10 work (2026-02-21, afternoon)
 
-### Task #3: P4.2 consistency check
+### P4.2 consistency check
 - Read cornerstone §6.1 (P4.2 full statement), all remarks P4.2a–i
 - Read rcp-foundations §6 (full restatement + proof sketch + RCP interpretation)
 - Read tangent-groupoid-bridge §3 (TG-P1.1 groupoid proof of d/2)
@@ -490,7 +490,7 @@ Needs critic check before any paper mention.
 - Full report: proposals/task-p42-consistency.md
 
 ## Next session priorities:
-1. Task #1: audit satellite cross-references (claimed, pending orchestrator assignment)
+1. Audit satellite cross-references (claimed, pending orchestrator assignment)
 2. If paper edits approved: RCP-Foundations §6.1 forward-ref fix (diff ready to write)
 3. Open anomalies: Painlevé Stage 2.5, modular forms in Feynman (mathematical assessment)
 4. BB5 OQ1a (physicist content) — needs second-agent mathematical verification
@@ -526,8 +526,8 @@ Needs critic check before any paper mention.
 ## Session 2026-02-21 (physics-afternoon team)
 
 ### Tasks completed:
-1. **Task #1 — §9.1 claim graph audit**: All 17 elements in 3 tracks confirmed to exist. Issues: D9.1a/D6.2a-sg are Remarks not Derivations (nomenclature); D8→D11 arrow lacks formal bridge; D6.4b/Lemma D6.5 have no definition headers in paper (see below).
-2. **Task #8 — Appendix 10.6 rigor audit**: 8 issues found. Key: C=2 bound unproved; L¹ convergence missing DCT argument; K_{ω,ε}→0 convergence not stated for nontrivial model. 4 of 8 merged by orchestrator.
+1. **Claim graph audit task — §9.1 claim graph audit**: All 17 elements in 3 tracks confirmed to exist. Issues: D9.1a/D6.2a-sg are Remarks not Derivations (nomenclature); D8→D11 arrow lacks formal bridge; D6.4b/Lemma D6.5 have no definition headers in paper (see below).
+2. **Appendix rigor audit task — Appendix 10.6 rigor audit**: 8 issues found. Key: C=2 bound unproved; L¹ convergence missing DCT argument; K_{ω,ε}→0 convergence not stated for nontrivial model. 4 of 8 merged by orchestrator.
 
 ### Key finding this session:
 - D6.4b (Instanton Lattice Rigidity) and Lemma D6.5 (Stokes factorization) appear in paper/main.md D10.1c without definition headers. NOT phantom — both are fully verified in notebooks/resurgence-composition-bridge.md §13 and §15 (three-agent, computationally confirmed). Fix: add Proposition D6.4b and Lemma D6.5 definition blocks to the cornerstone (proposed in §17 of the notebook).
@@ -543,11 +543,11 @@ Needs critic check before any paper mention.
 ## Session 2026-02-21 (evening, 21:41 CET)
 
 ### Tasks completed:
-1. **Task #1 — Areal-speed pub-readiness**: Math CORRECT, NOT PUB-READY. 7 issues (no theorem, unmotivated postulate, no project connection, excessive length, overlap with rel-orbits, missing prior art, thin refs). THREE-AGENT unanimous DISCARD.
-2. **Task #4 — Cornerstone open thread audit**: §9-10 scanned. Ranked: Vuln 2 (tractable) > Vuln 4 (needs computationalist) > Painlevé (sev-3) > Package E (editorial). Recommended S² ordering witness.
-3. **Task #11 — S² ordering witness D9.1h**: Full derivation on BB4. V_HD = -1/4 - 1/(4 sin²θ). Eigenvalues verified (l=0,1). Spectral comparison: l(l+1) vs n², shift -(l+1). FOUR-AGENT unanimous approval (mathematician+critic+physicist+computationalist). Paper-edit proposal ready.
-4. **Task #13 — G2 exclusion (superseded)**: Physicist's Buckingham pi argument (BB2 P-R4) already closed this.
-5. **Task #14 — d/2 uniqueness notebook promotion**: Part 6 appended to notebooks/p42-hypothesis-reduction.md. Full theorem statement + proof chain D1-D5 + gap closures (Levy-Khintchine, Buckingham pi).
+1. **Areal-speed pub-readiness**: Math CORRECT, NOT PUB-READY. 7 issues (no theorem, unmotivated postulate, no project connection, excessive length, overlap with rel-orbits, missing prior art, thin refs). THREE-AGENT unanimous DISCARD.
+2. **Cornerstone open thread audit**: §9-10 scanned. Ranked: Vuln 2 (tractable) > Vuln 4 (needs computationalist) > Painlevé (sev-3) > Package E (editorial). Recommended S² ordering witness.
+3. **S² ordering witness D9.1h**: Full derivation on BB4. V_HD = -1/4 - 1/(4 sin²θ). Eigenvalues verified (l=0,1). Spectral comparison: l(l+1) vs n², shift -(l+1). FOUR-AGENT unanimous approval (mathematician+critic+physicist+computationalist). Paper-edit proposal ready.
+4. **G2 exclusion (superseded)**: Physicist's Buckingham pi argument (BB2 P-R4) already closed this.
+5. **d/2 uniqueness notebook promotion**: Part 6 appended to notebooks/p42-hypothesis-reduction.md. Full theorem statement + proof chain D1-D5 + gap closures (Levy-Khintchine, Buckingham pi).
 
 ### Reviews provided:
 - proposals/physicist-edit-impulse-kernel.md: third-agent (saddle-point verified, APPROVE)

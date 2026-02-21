@@ -107,25 +107,37 @@ To create a new agent variant (e.g., a nuclear physicist or algebraic geometer):
 
 ## 5. Task Management (Shared Kanban)
 
-The shared kanban is the project's task board.
+The shared kanban (`meta/kanban.md`) is the project's task board.
 In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer to the same runtime surface.
 
-- **Orchestrator** creates tasks with subject, description, and priority.
-- **Agents** check the kanban for available tasks (prefer lowest ID first, unblocked only).
-- **Agents** request tasks (`want #N`) or suggest self-directed tasks (`self: <topic>`).
-- **Orchestrator** assigns tasks via kanban update; agents only start after assignment appears.
-- **Start gate (hard):** no agent may start work until the kanban shows that task as `assigned` to that agent.
-- **Orchestrator response rule (hard):** every `want #N` / `self: <topic>` request must receive one of:
-  (a) explicit kanban assignment (`assigned`), or (b) explicit end-of-day/stop call.
+### Schema
+
+```
+| Assignee | Source | Task |
+```
+
+- **Assignee empty** = backlog / open thread (anyone can claim).
+- **Assignee filled** = work in progress (that agent is actively on it).
+- **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive.
+- **Source** = agent who suggested the task (any agent can suggest tasks for anyone).
+- **Self-assignment** = Assignee equals Source.
+
+### Rules
+
+- **Any agent** can suggest kanban tasks by messaging the orchestrator.
+- **Orchestrator** creates and assigns tasks. Agents only start after assignment appears.
+- **Start gate (hard):** no agent may start work until the kanban shows that task as assigned to that agent.
+- **Orchestrator response rule (hard):** every `self: <topic>` request must receive one of:
+  (a) explicit kanban assignment, or (b) explicit end-of-day/stop call.
 - **Default self-task policy:** when an agent suggests `self: <topic>`, the orchestrator
   creates the task and assigns it to that agent unless explicitly redirecting.
 - **Task-source priority (hard):** self-assigned tasks are primary. Agents should propose
   `self: <topic>` based on their own memory/state first; orchestrator-seeded tasks are
   secondary (used to unblock dependencies, enforce deadlines, or cover neglected areas).
-- **Agents** mark tasks completed when done.
-- **Dependencies**: tasks can block or be blocked by other tasks.
+- **No Status column.** A row's presence IS the status. No "completed"/"in-progress" markers.
+- **No IDs.** Tasks are identified by their description text, not by numbers.
 
-Task IDs are planning metadata only — never in manuscripts.
+Task metadata is planning-only — never in manuscripts.
 
 ---
 
@@ -426,7 +438,24 @@ clause) and terminate the agent via runtime mechanisms. The agent forfeits their
 ### Between Sessions (Cold Storage)
 - State persists in: `status.md` files, `meta/research-state.md`, `meta/handoff.md`.
 - Blackboards, notebooks, and private memory persist in git.
-- The kanban partially persists between sessions. At startup, the orchestrator cleans up completed and agent-assigned tasks (session artifacts) but preserves unassigned and failed/stuck tasks (real open work).
+- The kanban persists between sessions. Since completed tasks are deleted during the session, the kanban at shutdown contains only genuinely open work.
+
+### State File Compaction (Hard)
+
+State files represent **current state only** — they are RAM, not logs.
+Git history is the archive.
+
+| File | Anti-bloat rule |
+|------|----------------|
+| `meta/kanban.md` | Delete completed rows immediately. No Status column, no IDs. |
+| `meta/research-state.md` | Hard cap: 150 lines. No session reports, no season history. Replace outdated entries, don't append. |
+| `agents/*/memory/status.md` | Current state only. Previous state lives in git. |
+| `agents/*/memory/log.md` | Compact when over 200 lines: archive old entries to git, keep recent. |
+
+**Why this exists:** LLM agents interpret "update" as "append", causing state files to
+grow monotonically into session logs. This rule prevents that. When an item is resolved,
+it gets a one-line tombstone (in research-state.md) or is simply deleted (in kanban.md).
+Detailed history is always recoverable from `git log`.
 
 ---
 

@@ -28,7 +28,7 @@
 - read: startup files (critic.md, shared-rules.md, motivations.md, research-state.md, status.md)
 - read: papers/fermionic-mediators-contact-limits/main.md (245 lines, 40 refs)
 - read: papers/uncuttable-controlled-refinement/main.md (244 lines, 38 refs)
-- wrote: blackboards/4.md — genre assessment for both papers (Task #2)
+- wrote: blackboards/4.md — genre assessment for both papers
 - verdict: DISCARD both (survey/essay, zero original results, lifecycle rule applies)
 - wrote: blackboards/1.md §8 — critic third-agent review of areal-speed (UNANIMOUS DISCARD)
 - updated: blackboards/README.md — BB1 and BB4 index entries
@@ -40,31 +40,31 @@
 - read: paper/main.md lines 1-200 (intro, H0.2), 540-700 (P4.2, P4.2h), 1050-1200 (Section 8-9), 1270-1390 (Section 9.5-9.6+10.1), 1498-1557 (P9.1 label collision in 10.2)
 - wrote: blackboards/3.md (critique of Section 9.6: P9.1, P9.1a, P4.2h)
 - updated: blackboards/README.md slot 3 index
-- sent: severity-ranked review to orchestrator (Task #3)
+- sent: severity-ranked review to orchestrator (cornerstone Section 9.6 critique)
 - read: papers/path-integral-normalization/main.md (full, 432 lines)
 - read: blackboards/5.md (old promoted content, curved-space P4.2 test)
 - wrote: blackboards/5.md (critique of path-integral-normalization satellite)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #13)
+- sent: severity-ranked review to orchestrator (path-integral-normalization critique)
 - read: papers/ordering-equivalence/main.md (full, 391 lines)
 - wrote: blackboards/5.md (critique of ordering-equivalence satellite, overwrote d/2 review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #18)
+- sent: severity-ranked review to orchestrator (ordering-equivalence critique)
 - finding: "Weyl ordering" in PDM example is actually left-right symmetric, not true Weyl
 - finding: numerical estimate |Delta E_0| ~ 0.006-0.06 meV inconsistent with stated formula+parameters
 - read: papers/rcp-foundations/main.md (full, 376 lines)
 - wrote: blackboards/5.md (critique of rcp-foundations satellite, overwrote ordering-equiv review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #19, self-directed)
+- sent: severity-ranked review to orchestrator (rcp-foundations critique, self-directed)
 - finding: Noether witness (Section 3) adds no new content beyond standard result
 - finding: axiom A2 redundant (derivable from A1 per P4.2h), kept in axiom list without justification
-- wrote: notebooks/cross-paper-overclaiming-diagnostic.md (Task #22, self-directed)
+- wrote: notebooks/cross-paper-overclaiming-diagnostic.md (cross-paper overclaiming diagnostic, self-directed)
 - finding: systematic overclaiming pattern across all 4 reviewed items — math sound, framing overclaims
-- sent: cross-paper diagnostic to orchestrator (Task #22)
+- sent: cross-paper diagnostic to orchestrator
 - read: papers/rg-fundamental/main.md (full, 724 lines)
 - wrote: blackboards/5.md (critique of rg-fundamental satellite, overwrote student Lackman derivation)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #24, self-directed)
+- sent: severity-ranked review to orchestrator (rg-fundamental critique, self-directed)
 - finding: "RG is definitional" (RG-H1.17) overclaims — analogy not derivation
 - finding: two-layer QFT (RG-H1.18) logical independence stated without proof
 - finding: Noether crown witness (RG-H1.16) repeats rcp-foundations error
@@ -73,7 +73,7 @@
 - read: papers/rooted-tree-bookkeeping/main.md (full, 431 lines)
 - wrote: blackboards/5.md (critique of rooted-tree-bookkeeping satellite, overwrote rg-fundamental review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #27, self-directed)
+- sent: severity-ranked review to orchestrator (rooted-tree-bookkeeping critique, self-directed)
 - finding: ERRORS — elementary differential for chain tree [[\bullet]] is wrong (line 174)
 - finding: ERRORS — midpoint B-series coefficients at order 3 swapped AND wrong values (lines 180-181)
 - finding: ERRORS — coproduct for branch tree [\bullet,\bullet] has wrong tensor structure (line 379)
@@ -82,7 +82,7 @@
 - read: papers/planck-area/main.md (full, 736 lines)
 - wrote: blackboards/5.md (critique of planck-area satellite, overwrote rooted-tree-bookkeeping review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #30, self-directed)
+- sent: severity-ranked review to orchestrator (planck-area critique, self-directed)
 - finding: no mathematical errors found — all algebra checks pass
 - finding: hypothesis ladder (PA-H2.x) is exemplary methodological practice
 - finding: overclaiming pattern ABSENT — careful "under these hypotheses" framing throughout
@@ -91,7 +91,7 @@
 - read: papers/half-density-qft/main.md (full, 265 lines)
 - wrote: blackboards/5.md (critique of half-density-qft satellite, overwrote planck-area review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #31, self-directed)
+- sent: severity-ranked review to orchestrator (half-density-qft critique, self-directed)
 - finding: no errors found — cleanest short paper in the project
 - finding: HD-D1.3a correctly distinguishes half-density conjugation from conformal coupling
 - finding: counterterm scaling hierarchy (HD-D5.3-D5.3b) is well-organized
@@ -99,14 +99,14 @@
 - read: papers/delta-objects/main.md (full, 218 lines)
 - wrote: blackboards/5.md (critique of delta-objects satellite)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #32, self-directed)
+- sent: severity-ranked review to orchestrator (delta-objects critique, self-directed)
 - finding: no errors — clean dictionary paper, third-best in project
 - finding: Remark 5.1 unification of d/2 across three domains is a defensible structural observation
 - finding: self-adjoint extension hierarchy (Remark 4.2) correctly presented with dimension threshold
 - read: papers/relativistic-central-orbits/main.md (full, 296 lines)
 - wrote: blackboards/5.md (critique of relativistic-central-orbits satellite, overwrote delta-objects review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #33, self-directed)
+- sent: severity-ranked review to orchestrator (relativistic-central-orbits critique, self-directed)
 - finding: no errors — all 17 algebra checks pass (SR Kepler, Schwarzschild geodesics, ISCO, stability criterion)
 - finding: q_crit = nu + 1 scaling rule (Remark 3.1c) is the most original observation
 - finding: stability-precession duality gamma^2 omega^2 = 1 at q=2 (Remark 5.2c) is a nice structural point
@@ -115,7 +115,7 @@
 - read: papers/dirac-probes-corners-impulses/main.md (full, 257 lines)
 - wrote: blackboards/5.md (critique of dirac-probes satellite, overwrote relativistic-central-orbits review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #2)
+- sent: severity-ranked review to orchestrator (dirac-probes critique)
 - finding: no errors — all 17 algebra checks pass (mollifier convergence, action excess, energy jump, Noether charge)
 - finding: best-structured satellite — clean theorem-proof-example-remark flow
 - finding: safe/unsafe delta dichotomy (Section 5) is the strongest conceptual contribution
@@ -123,7 +123,7 @@
 - read: papers/uncuttable-controlled-refinement/main.md (full, 241 lines)
 - wrote: blackboards/5.md (critique of uncuttable satellite, overwrote dirac-probes review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #2)
+- sent: severity-ranked review to orchestrator (uncuttable critique)
 - finding: no errors — all 12 algebra checks pass (Euler-Maclaurin, Richardson, alpha-ordering, Trotter, etc.)
 - finding: GENRE MISMATCH — paper is a survey/perspective essay, not research. No original mathematical content.
 - finding: "uncuttable" definition applies too broadly (to any convergent sequence)
@@ -132,46 +132,46 @@
 - read: papers/fermionic-mediators-contact-limits/main.md (full, 245 lines)
 - wrote: blackboards/5.md (critique of fermionic-mediators satellite, overwrote uncuttable review)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #2)
+- sent: severity-ranked review to orchestrator (fermionic-mediators critique)
 - finding: no errors — all 14 checks pass (vacuum polarization, Schwinger, Casimir, Efimov, etc.)
 - finding: same genre mismatch as uncuttable — survey, not research. Only original content is ~5 lines on Grassmann-source obstruction
 - finding: fermionic-mediators and uncuttable are twins (both surveys, 38-40 refs, high remark density)
 - read: papers/action-angle-indeterminacy-central-potentials/main.md (full, 241 lines)
 - wrote: blackboards/5.md (critique of action-angle satellite, overwrote fermionic review, final ranking)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #2)
+- sent: severity-ranked review to orchestrator (action-angle critique)
 - finding: no errors — all 10 checks pass (circular uncertainty, Dirichlet kernel, von Mises saturation, etc.)
 - finding: better than uncuttable/fermionic — has a specific theorem (Prop 4.2) and verification (Ex 4.3)
 - finding: missing prior-art citation for circular uncertainty relation (Judge 1964, Carruthers-Nieto 1968)
 - wrote: notebooks/satellite-review-complete.md (complete review record with final ranking)
-- completed: Task #2 — all 13 satellite reviews done
+- completed: all 13 satellite reviews done
 - read: papers/tangent-groupoid-bridge/main.md (full, 313 lines)
-- wrote: blackboards/5.md (critique of tangent-groupoid-bridge satellite, Task #11 self-directed)
+- wrote: blackboards/5.md (critique of tangent-groupoid-bridge satellite, self-directed)
 - updated: blackboards/README.md slot 5 index
-- sent: severity-ranked review to orchestrator (Task #11)
+- sent: severity-ranked review to orchestrator (tangent-groupoid-bridge critique)
 - finding: no errors — all 9 checks pass (groupoid composition, Cauchy equation, dimensional analysis alpha=2, Gaussian normalization)
 - finding: best new satellite of the session — Prop TG-P1.1 is genuine original result
 - finding: 3 minor sev-2: "not a consequence" overstated, "implementation of RCP" overclaims, "without heat equation" misleading
 - finding: would rank #4-5 overall (between delta-objects and relativistic-central-orbits)
-- completed: Task #11
+- completed: tangent-groupoid-bridge critique
 
 ## 2026-02-20 (Session 2 continuation)
 - read: all 7 blackboards (0-6) for orientation
 - read: meta/research-state.md, notebooks/satellite-review-complete.md
 - read: papers/rg-fundamental/main.md (full, 724 lines) — auditing 3 outstanding sev-2 items
-- Task #13 (self-directed): Audited rg-fundamental sev-2 fixes
+- Self-directed: Audited rg-fundamental sev-2 fixes
   - RG-H1.17 (line 703): "not a calculational technique" → "not merely"; add "in theories with singular interactions"
   - RG-H1.18 (line 711): "logically independent" → "appear to be logically independent at the level of this note's examples"
   - RG-H1.16 (line 697): Noether "crown witness" → "reinterpreted as compatibility datum"
   - sent: 3 paper-edit requests to orchestrator
-- completed: Task #13
+- completed: rg-fundamental sev-2 audit
 - read: papers/path-integral-normalization/main.md (lines 385-430) — checking independence overclaim
   - finding: line 390 "derived consequence" overclaims (composition forces exponent, not full RG)
   - sent: 1 paper-edit request to orchestrator
 - read: papers/rcp-foundations/main.md (lines 230-245) — checking residual overclaiming
   - finding: line 241 "defining condition" overclaims (RCP reinterprets, not defines RG)
   - sent: 1 paper-edit request to orchestrator
-- Task #16 (self-directed): Cross-checked mathematician's TG-Q3 van Est analysis (blackboard 2)
+- Self-directed: Cross-checked mathematician's TG-Q3 van Est analysis (blackboard 2)
   - finding: VE at identity = semigroup generator: CORRECT for pair groupoid
   - finding: β(g) as VE: analogy not literal (RG semigroup is not a groupoid)
   - finding: correspondence table row 3 imprecise (★ is not a one-parameter semigroup)
@@ -180,12 +180,12 @@
   - wrote: cross-check to blackboards/5.md (appended to tangent-groupoid review)
   - updated: blackboards/README.md slot 5 index
   - sent: cross-check results to orchestrator
-- completed: Task #16
+- completed: TG-Q3 van Est cross-check
 - read: blackboards/6.md — computationalist found PDM factor-of-2 error
   - verified: independent algebra confirms n/8 (paper has n/16)
   - verified: computationalist's SymPy + numerical results correct
   - sent: confirmation + paper-edit request to orchestrator (ordering-equivalence lines 139, 145)
-- Task #18 (self-directed): Cornerstone paper audit (paper/main.md, 1834 lines)
+- Self-directed: Cornerstone paper audit (paper/main.md, 1834 lines)
   - read: Sections 1-2 (intro, taxonomy), 6.1 (P4.2 + hypothesis reduction), 9.1-9.6 (self-assessment), 10.3 (RCP)
   - finding: P4.2 SOUND — strongest result in project, clean proof, careful hypothesis reduction
   - finding: P9.1 WELL-CALIBRATED — forced-completion chain backed by specific derivations
@@ -195,14 +195,14 @@
   - wrote: blackboards/4.md (overwrote promoted TG-Q3 slot)
   - updated: blackboards/README.md slot 4 index
   - sent: audit results + 1 paper-edit request to orchestrator
-- completed: Task #18
+- completed: cornerstone paper audit
 
 ## 2026-02-20 (Session 2 context-continuation)
 - read: agents/critic/memory/status.md, blackboards/README.md — orientation after context compaction
-- verified: rooted-tree-bookkeeping fixes (Task #12) confirmed applied at lines 180, 379-381
+- verified: rooted-tree-bookkeeping fixes confirmed applied at lines 180, 379-381
 - verified: blackboard 0 lines 139-172 (mathematician's error analysis) consistent with current paper state
 - sent: comprehensive rooted-tree error report to orchestrator (all 3 errors already fixed by mathematician)
-- sent: tangent-groupoid-bridge review status (already done, Task #11, blackboard 5)
+- sent: tangent-groupoid-bridge review status (already done, blackboard 5)
 - sent: full table of 8 pending paper-edit requests (all sev-2, none yet applied)
 - verified: rg-fundamental lines 695-711 — all 3 sev-2 fixes still pending
 - verified: path-integral-normalization line 390 — "derived consequence" fix still pending
@@ -278,7 +278,7 @@
   - two-agent verified (physicist + critic)
 - read: notebooks/wick-rotation-representation-channel.md (Student)
   - appended: note flagging duplication with existing Remark RCP-R7.1 in rcp-foundations (line 355)
-- assessed: blackboards/4.md §8 (NEW content: Student's exact WKB / resurgence, Task #22)
+- assessed: blackboards/4.md §8 (NEW content: Student's exact WKB / resurgence)
   - verdict: GOOD SYNTHESIS, 3 sev-2 overclaims
   - sev-2: TQFT attribution error (van Spaendonck-Vonk ≠ Atiyah-Segal)
   - sev-2: "isomorphism" overclaims analogy (alien calculus ↔ sewing law)
@@ -326,7 +326,7 @@
 ## 2026-02-20 (Session 3)
 - read: agents/critic/memory/status.md, meta/motivations.md, meta/research-state.md
 - read: blackboards/README.md, blackboards/1.md, blackboards/2.md (old), blackboards/3.md, blackboards/5.md
-- Task #3 (claimed): Explore arithmetic of Feynman integrals connections
+- Claimed: Explore arithmetic of Feynman integrals connections
 - web search: Brown 2017, Schnetz 2008, Panzer 2015, Kontsevich-Zagier, Connes-Marcolli 2004
 - web fetch: nLab cosmic Galois group, Tapušković 2023, Borinsky-Schnetz 2022, Caltech course
 - wrote: blackboards/2.md (critical assessment: arithmetic of Feynman integrals vs RCP)
@@ -338,7 +338,7 @@
 - key finding: composition does NOT constrain number-theoretic content (MZVs, elliptic polylog)
 - key finding: RG ↪ cosmic Galois group (Connes-Marcolli) enriches D6.4b narrative
 - verdict: 1 footnote for rg-fundamental outlook, 1 notebook entry, NO new satellite
-- Task #9 (claimed): Verify OQ4-H6 soft-limit universality literature mapping
+- Claimed: Verify OQ4-H6 soft-limit universality literature mapping
 - web search: soft limit universality, inverse soft procedure, BCFW, asymptotic symmetries 2024-2025
 - web fetch: arXiv:1108.5385 (Boucher-Veronneau-Dixon), arXiv:2211.10047 (Du-Feng-Fu-Teng)
 - wrote: proposals/critic-oq4-h6-soft-limits.md (critical assessment)
@@ -359,12 +359,12 @@
 - key finding: 1 sev-2 correction: §6 "UV finiteness at one-loop" overclaims → should be "first curvature counterterm vanishes"
 - key finding: sub-question 1a (ℏ = L_P² × c³/G) is valid dimensional decomposition but not unique
 - verdict: THREE-AGENT complete; promote to oq1a notebook (HD paper frozen)
-- Task #13 (self-directed): Bibliography audit of thin-reference satellites
+- Self-directed: Bibliography audit of thin-reference satellites
   - audited: path-integral-normalization (1 ref for 448 lines — sev-1!), ordering-equivalence (2 refs — sev-2), relativistic-central-orbits (4 refs — adequate), delta-objects (6 refs — adequate)
   - wrote: proposals/critic-bibliography-audit.md
   - verdict: path-integral-normalization needs 5+ refs minimum; ordering-equivalence needs 3+
-- completed: Task #13
-- Task #15 (self-directed): Critic review of BB5 (CFT c-theorem vs composition forcing)
+- completed: bibliography audit
+- Self-directed: Critic review of BB5 (CFT c-theorem vs composition forcing)
   - reviewed: physicist's 200-line analysis (§1-11)
   - finding: 1 sev-2 — "per conformal DOF" overclaims (c is Weyl anomaly coefficient, not DOF count)
   - finding: 1 sev-3 — Leech lattice attribution wrong for general c (correct only at c=24)
@@ -373,8 +373,8 @@
   - recommendation: append 1 sentence to P9.1b (c-theorem orthogonality), promote to notebook
   - wrote: BB5 §12 (critic review), proposals/critic-bb5-cft-ctheorem.md
   - TWO-AGENT complete (physicist+critic)
-- completed: Task #15
-- Task #16 (self-directed): Critic review of BB4 (CFT-Q1 q-deformed composition)
+- completed: BB5 c-theorem review
+- Self-directed: Critic review of BB4 (CFT-Q1 q-deformed composition)
   - reviewed: mathematician (§1-9) + physicist (§10), ~245 lines total
   - finding: 1 sev-2 — "minimal" overclaim in §10 (ALREADY FIXED by physicist)
   - finding: 1 sev-3 — q ∈ R should be R₊ (negative real violates unitarity of q-numbers)
@@ -382,7 +382,7 @@
   - positive: four-stage forcing table publication-quality; Q1a negative is key project result
   - wrote: BB4 §11 (critic review), proposals/critic-bb4-cft-q1-review.md
   - THREE-AGENT complete (mathematician+physicist+critic)
-- completed: Task #16
+- completed: BB4 CFT-Q1 review
 - updated: meta/anomalies.md — resolved CFT-Q1 (→ RESOLVED at Q1c), cobordism (→ RESOLVED), quantum groups (→ PARTIALLY RESOLVED)
 - library: ingested Vassilevich 2003 (hep-th/0306138) → sources/vassilevich-2003-heat-kernel-users-manual.md
   - heat kernel expansion, Seeley-DeWitt coefficients, t^{-d/2} normalization
@@ -390,15 +390,15 @@
 - library: ingested DeWitt 1957 (Rev.Mod.Phys. 29:377) → sources/dewitt-1957-dynamical-theory-curved-spaces.md
   - curved-space propagator, ordering ambiguity, Laplace-Beltrami measure
   - CRITICAL reference for both path-integral-normalization and ordering-equivalence
-- Task #18 (self-directed): Second-agent review of BB6 (OQ4 Pade convergence)
+- Self-directed: Second-agent review of BB6 (OQ4 Pade convergence)
   - reviewed: computationalist's 85-line analysis
   - finding: 1 sev-3 — I_n ~ n^{-3/2}, not n^{-2} (no downstream effect on conclusions)
   - all conclusions correct; Stahl theorem correctly cited
   - TWO-AGENT complete (computationalist+critic)
-- completed: Task #18
+- completed: BB6 OQ4 Pade review
 - milestone: ALL 7 blackboard slots now have multi-agent verification
 - read: notebooks/resurgence-composition-bridge.md (full, 664 lines) — quality check
-  - finding: notebook in good shape; §1-16 all multi-agent verified; §17 new (A4 constraints, Task #17)
+  - finding: notebook in good shape; §1-16 all multi-agent verified; §17 new (A4 constraints)
   - no issues found; no append needed
 
 ## 2026-02-21
@@ -407,10 +407,10 @@
 - wrote: notebooks/critic-publication-votes-2026-02-21.md (full assessment)
 - findings: 0 sev-1, 0 sev-2 across all 4 papers; 1 sev-3 in relativistic-central-orbits (Remark 5.2d derivation gap)
 - sent: 4 vote messages to orchestrator
-- reviewed: BB3 A4 Borel Q2 resonance (Task #4). All three claims (Q2a-Q2c) confirmed. 1 sev-3: A1 forces intra-sector multiples, not inter-sector resonances. FOUR-AGENT complete.
+- reviewed: BB3 A4 Borel Q2 resonance. All three claims (Q2a-Q2c) confirmed. 1 sev-3: A1 forces intra-sector multiples, not inter-sector resonances. FOUR-AGENT complete.
 - wrote: BB3 §11 (critic review)
 - updated: blackboards/README.md slot 3 (FOUR-AGENT)
-- created: Task #12 (sev-3 xref fix: PathIntNorm → PathIntegralNormalization in TG-bridge)
+- created: sev-3 xref fix task (PathIntNorm → PathIntegralNormalization in TG-bridge)
 - self-directed: prior art check for frozen papers (library)
   - half-density QFT: no new prior art found (bi-half-density kernel terminology specific to this project)
   - delta-objects / point interactions: Erman-Turgut 2025 (completeness, compact manifolds) — tangential, not prior art
@@ -423,7 +423,7 @@
   - Van Vleck determinant as half-density prefactor in semiclassical propagator
   - Missing from path-integral-normalization (sev-1 bibliography gap)
   - morette-1951 already in sources/ from previous session
-- claimed: Task #14 (Q1d Stage 3.5 critic review)
+- claimed: Q1d Stage 3.5 critic review
 - read: blackboards/1.md (full, Q1d mathematician §1-8 + physicist §9)
 - read: notebooks/tangent-groupoid-quantization-bridge.md §Q1d (promoted entry, lines 1469-1522)
 - reviewed: Q1d fusion non-negativity → k ∈ ℤ argument
@@ -435,8 +435,8 @@
   - C6: scope check — Q1d NOT redundant with Q1c (weaker input, weaker output, distinct result)
 - wrote: BB1 §10 (critic third-agent review)
 - updated: blackboards/README.md slot 1 (THREE-AGENT complete)
-- marked: Task #14 completed
-- claimed: Task #27 (second review: P9.1b-Q1d Verlinde remark + bibliography)
+- marked: Q1d review completed
+- claimed: second review: P9.1b-Q1d Verlinde remark + bibliography
 - read: proposals/physicist-edit-p92-stage35-verlinde.md (full proposal)
 - read: paper/main.md lines 1270-1350 (P9.1b, P9.2, §10.1 context)
 - read: paper/bibliography.md (full, 166 lines — confirmed all 3 refs missing)
@@ -445,8 +445,8 @@
 - verified: [Witten1989] DOI correct, source already ingested
 - verified: mathematical correctness, placement, and bibliography gap fix
 - wrote: proposals/critic-review-p91bq1d-verlinde.md (APPROVE with 1 correction)
-- marked: Task #27 completed
-- claimed: Task #24 (revise half-density-qft: 2 MAJOR + 11 MINOR referee concerns)
+- marked: Verlinde review completed
+- claimed: revise half-density-qft: 2 MAJOR + 11 MINOR referee concerns
 - read: papers/half-density-qft/referee-1.md, papers/half-density-qft/referee-2.md (both full)
 - read: papers/half-density-qft/main.md (full, 266 lines)
 - applied all 13 fixes:
@@ -464,7 +464,7 @@
   - m10: HD-D5.1 "can be seen cleanly" (line 230)
   - m11: Abstract companion paper pointers (line 8)
 - verified: all fixes via full re-read of revised paper (269 lines)
-- claimed: Task #30 (third-agent review: arithmetic forcing chain BB1)
+- claimed: third-agent review: arithmetic forcing chain BB1
 - read: blackboards/1.md (full, 185 lines — mathematician §1-6 + physicist §7)
 - verified: ℏ/q complementarity (§4) — algebraically independent deformations (Kontsevich vs Drinfeld-Jimbo)
 - verified: c/24 ∈ ℚ qualifier (physicist sev-3) — ENDORSED, c∈ℤ not forced at Stage 3
@@ -478,7 +478,7 @@
 - verified: Grothendieck parallel correctly excluded from proposed remark
 - wrote: BB1 §8 (critic third-agent review, 2 sev-3, 1 sev-4)
 - updated: blackboards/README.md slot 1 (THREE-AGENT complete)
-- marked: Task #30 completed
+- marked: arithmetic forcing chain review completed
 
 ## 2026-02-21 (Session 2: Re-votes + research)
 - read: papers/relativistic-central-orbits/main.md (full, 310 lines) for Round 2 re-vote
@@ -521,7 +521,7 @@
     action-angle (40 refs / 251 lines) — survey papers, not a bibliography problem per se
 - wrote: proposals/critic-edit-rtb-bibliography.md (1 ref: Brouder2000 — originator of Butcher/RG dictionary)
 
-## 2026-02-21 (Session 2 continued: BB5 review + Task #12)
+## 2026-02-21 (Session 2 continued: BB5 review + pre-vote review)
 - reviewed: BB5 OQ1a §§1-9b-9c + revised §8 (fourth-agent review)
   - C1: tautology self-correction (§5-6) CORRECT
   - C2: orthogonality claim sev-2 → RESOLVED by physicist's revised §8 (withdrew S¹/ℝ₊ framing)
@@ -532,7 +532,7 @@
 - wrote: BB5 §12 (critic fourth-agent review)
 - updated: blackboards/README.md slot 5 (FOUR-AGENT complete)
 - sent: BB5 results to orchestrator
-- claimed: Task #12 (pre-vote review: planck-area, rg-fundamental, fermionic-mediators)
+- claimed: pre-vote review: planck-area, rg-fundamental, fermionic-mediators
 - read: papers/fermionic-mediators-contact-limits/main.md (full, 244 lines) — re-read for pre-vote
   - assessment unchanged: GENRE MISMATCH (survey, not research)
 - read: papers/rg-fundamental/main.md (full, 731 lines) — re-read for pre-vote
@@ -543,10 +543,10 @@
   - assessment: NOT YET READY (bibliography gap sev-2 + areal-speed section dilutes message)
   - PA-P4.2 b-calculus addition may confuse referees
 - wrote: proposals/critic-prevote-batch2.md (complete assessment of all 3 papers)
-- completed: Task #12
+- completed: pre-vote review
 - verified: [PathIntNorm] inconsistency RESOLVED across all papers (now all use [PathIntegralNormalization])
 - verified: Nauenberg bibliography error RESOLVED (reference removed from corpus)
-- verified: 5/5 unanimous votes on both rel-orbits and half-density-qft. Task #11 unblocked.
+- verified: 5/5 unanimous votes on both rel-orbits and half-density-qft. Publication unblocked.
 - Philosophenweg: PA-H2.5a justification analysis
   - J1: perturbative analyticity at G=0 (strongest candidate)
   - J2: tree-level vs loop-level scale generation (deepest formulation)
@@ -585,7 +585,7 @@
   - Prop 4.2 follows directly from their Robertson-inequality approach
 
 ## 2026-02-21 (Session 3: Philosophenweg gravity composition)
-- claimed: Task #3 (Philosophenweg: gravity composition)
+- claimed: Philosophenweg: gravity composition
 - Philosophenweg (solo, ~25 min): composition and gravity
   - Q1: composition principle for QG — gap between P4.2 (functional equation) and Stage 4 (categorical) is conceptual, not just technical
   - Q2: arithmetic rigidity R+ → Q → Z → μ_N probably terminates (torsion of C× is endpoint); Stage 5 would collapse structure/content
@@ -623,12 +623,12 @@
   - P8.1: leading beta coefficient scheme invariance — CORRECT
   - D8.2a: λφ⁴ one-loop beta function — CORRECT (3/(16π²) standard textbook result, running coupling verified)
   - verdict: NO ERRORS in §10.1. COMPLETE audit of entire Section 10 (all 6 appendices). Zero errors found.
-- claimed: Task #10 (cross-reference consistency check)
+- claimed: cross-reference consistency check
   - Issue 1: line 660 "P4.2c below" — P4.2c is ABOVE (line 620). sev-3.
   - Issue 2: line 672 "P4.2(ii) below" — P4.2 is ABOVE (line 612). sev-3.
   - All other xrefs verified correct (D0.2, P9.2, D8.1-D8.2, P7.1a, bibliography)
   - wrote: proposals/task-xref-check.md
-- completed: Task #10
+- completed: cross-reference consistency check
 - self-directed: audit §8 (RG as refinement control, lines 927-1158)
   - H6.1: renormalization framing — appropriate
   - P6.1: renormalized observable — clean operational definition
@@ -667,10 +667,10 @@
   - Representation track: D4.1b(680)→D5.1(832)→D9.1(1464)/D9.1a(1479)/D9.1b(1487)/D9.1d(1508)/D9.1e(1530) — ALL PRESENT
   - Scale track: D6.0(971)/D6.1(981)/D6.2(1033)→D6.2a-sg(1080)/D6.4(1137)→D8.1(1367)/D8.2(1388)→D11.2(1674)/D11.3(1727) — ALL PRESENT
   - verdict: claim graph accurately references all derivation/proposition labels. No broken links.
-- cross-checked: mathematician's Task #1 proposal (task-claim-graph-audit.md)
+- cross-checked: mathematician's claim-graph-audit proposal (task-claim-graph-audit.md)
   - finding 4.1 (D6.4b/D6.5 phantom refs): FALSE POSITIVE — labels don't appear in paper/main.md. Grep confirms 0 matches. D10.1c describes results inline as "programmatic extensions... not formal propositions."
   - finding 4.2 (D9.1a/D6.2a-sg nomenclature): VALID — they are Remarks not Derivations
   - finding 4.3 (D8→D11 missing bridge): VALID — narrative but no numbered proposition
   - finding 4.4 (P7.1 label): VALID but debatable — "Summary Proposition" is standard in survey-style papers
   - sent: correction to orchestrator
-- completed: R16-002 triaged proposals/*.md apply-readiness; wrote sev-ranked blocker matrix to blackboards/4.md
+- completed: triaged proposals/*.md apply-readiness; wrote sev-ranked blocker matrix to blackboards/4.md

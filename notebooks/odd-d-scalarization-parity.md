@@ -1,7 +1,7 @@
 # Odd-d Scalarization: Parity Obstruction and Transmutation Witnesses
 
 **Created:** 2026-02-14
-**Source:** Blackboard 0 (D27/S284)
+**Source:** Blackboard 0 (2026-02-14)
 **Status:** Append-only notebook (graduated from blackboards)
 
 ## Summary
@@ -287,7 +287,7 @@ This demonstrates that odd-d scalarization is possible via transmutation, comple
 
 ## References
 
-- **Blackboard 0** (D27/S284, 2026-02-14): Parity lemma and transmutation table
+- **Blackboard 0** (2026-02-14): Parity lemma and transmutation table
 - **PA-H2.2, PA-H2.3** (papers/planck-area/main.md): Half-density scalarization
 - **PA-H2.5a** (papers/planck-area/main.md): Monomial sieve (integrality + analyticity)
 - **PA-H2.13** (papers/planck-area/main.md): Transmutation route

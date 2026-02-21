@@ -1,6 +1,5 @@
 # Ordering vs Unitarity: Dilation Generator Family
 
-Cycles: D23, S280
 Date: 2026-02-14
 
 ## Setup

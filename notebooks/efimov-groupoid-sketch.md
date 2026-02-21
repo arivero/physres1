@@ -3,7 +3,7 @@
 **Status:** Exploratory thinking note (Philosophenweg)
 **Date:** 2026-02-21, 17:15 CET
 **Agent:** Student
-**Context:** Task #2 self-directed extension
+**Context:** Self-directed extension of Efimov/PSL(2,R) exploration
 
 ## Overview
 
@@ -95,7 +95,7 @@ If formalized, this could:
 
 ## Relation to Current Tasks
 
-- Task #2 (Efimov/PSL(2,R)): This sketch is a natural continuation
+- Efimov/PSL(2,R) investigation: This sketch is a natural continuation
 - Provides direction for groupoid lifting (mentioned as speculative in original proposal)
 - Concrete enough to potentially formalize into a mathematician task
 - Fits spirit of RCP universality principle: compositional closure forces structure

@@ -1,16 +1,16 @@
 # P4.2 Hypothesis Reduction via Composition Theorems
 
 **Created:** 2026-02-14
-**Sources:** Blackboard 1 (D29/S288), Blackboard 2 (D39/S295)
+**Sources:** Blackboard 1 (Exponential Weight Uniqueness), Blackboard 2 (Levy-Khintchine Obstruction)
 **Status:** Append-only notebook (graduated from blackboards)
 
 ## Summary
 
 This notebook documents the reduction of P4.2's hypothesis count from 4 independent assumptions to ~3 effective hypotheses via two composition theorems:
 
-1. **D29/S288 (2026-02-14):** Exponential weight (L_exp) is a **theorem** of composition + locality, not an independent assumption. Reduces 4 → 3.5 effective hypotheses.
+1. **Exponential Weight Uniqueness (2026-02-14):** Exponential weight (L_exp) is a **theorem** of composition + locality, not an independent assumption. Reduces 4 → 3.5 effective hypotheses.
 
-2. **D39/S295 (2026-02-14):** Locality hypothesis (L_loc) is **derivable** from dimensional homogeneity (D) via Levy-Khintchine obstruction. Reduces 3.5 → ~3 effective hypotheses.
+2. **Levy-Khintchine Obstruction (2026-02-14):** Locality hypothesis (L_loc) is **derivable** from dimensional homogeneity (D) via Levy-Khintchine obstruction. Reduces 3.5 → ~3 effective hypotheses.
 
 **Final result:** P4.2's κ-necessity rests on three independent hypotheses:
 - **(C)** Composition: semigroup law K_T = K_t₁ ∘ K_t₂
@@ -21,7 +21,7 @@ The original hypotheses (L_loc) and (L_exp) are consequences, not assumptions.
 
 ---
 
-## Part 1: Exponential Weight Uniqueness (D29/S288, Blackboard 1)
+## Part 1: Exponential Weight Uniqueness (Blackboard 1)
 
 ### Context
 
@@ -31,7 +31,7 @@ P4.2 (paper/main.md lines 610-612) originally listed four hypotheses:
 - (I) Identity limit
 - (D) Dimensional homogeneity
 
-**Question (D29):** Is the exponential form W = exp(c₀ S/κ) uniquely forced, or could other weight functions satisfy (C)+(I)+(D)?
+**Question:** Is the exponential form W = exp(c₀ S/κ) uniquely forced, or could other weight functions satisfy (C)+(I)+(D)?
 
 ### Hypothesis Decomposition
 
@@ -39,7 +39,7 @@ Hypothesis (L) decomposes into two parts:
 - **(L_loc):** Kernel depends on (x,y,Δt) only through S_cl(x,y;Δt)
 - **(L_exp):** W = exp(c₀·S/κ) (exponential form)
 
-### Theorem (S288): Exponential Uniqueness
+### Theorem (Exponential Uniqueness)
 
 **Claim.** For kernels K_t(x,y) = N(t) W(S_cl(x,y;t)/κ) satisfying composition (C), the weight function W must be exponential: W(σ) = C exp(c₀ σ) for constants C, c₀.
 
@@ -111,17 +111,17 @@ where ν is the Levy measure (jump processes: Poisson, Cauchy, stable laws).
 
 **These violate (L_loc), not (L_exp).** They are jump processes (physically distinct from standard quantum mechanics).
 
-**Question for D39:** Do Levy kernels violate some other P4.2 hypothesis, making (L_loc) derivable?
+**Question:** Do Levy kernels violate some other P4.2 hypothesis, making (L_loc) derivable?
 
 ---
 
-## Part 2: Levy-Khintchine Dimensional Obstruction (D39/S295, Blackboard 2)
+## Part 2: Levy-Khintchine Dimensional Obstruction (Blackboard 2)
 
 ### Context
 
-D29/S288 identified the Levy-Khintchine loophole: kernels not depending on classical action S_cl can satisfy composition (C) while avoiding the exponential-weight uniqueness theorem.
+The Exponential Weight Uniqueness theorem identified the Levy-Khintchine loophole: kernels not depending on classical action S_cl can satisfy composition (C) while avoiding the exponential-weight uniqueness theorem.
 
-**Question (D39):** Do Levy-type jump processes (Levy-Khintchine kernels) violate P4.2's identity limit (I) or dimensional homogeneity (D), thereby making (L_loc) derivable from other hypotheses?
+**Question:** Do Levy-type jump processes (Levy-Khintchine kernels) violate P4.2's identity limit (I) or dimensional homogeneity (D), thereby making (L_loc) derivable from other hypotheses?
 
 ### Levy Stable Semigroups
 
@@ -244,9 +244,9 @@ By continuity theorem for characteristic functions: K_t → δ in weak-* sense.
 
 The quantum mechanical length scale ℓ(t) = √(ℏt/m) (Gaussian spreading) is the unique length built from {m, ℏ, t} with ℓ ∝ t^{1/2}. Levy processes with α ≠ 2 require spreading ℓ ∝ t^{1/α}, which demands a qualitatively different dimensional constant unavailable among {m, ℏ}.
 
-### Connection to S288 Loophole
+### Connection to Exponential Uniqueness Loophole
 
-Blackboard 1 (S288, Section 10) identified: dropping (L_loc) admits Levy-Khintchine class. This blackboard **closes the loophole:** hypothesis (D) forces α = 2, eliminating the Levy measure ν and recovering the Gaussian/Feynman-Kac propagator.
+Blackboard 1 (Exponential Uniqueness, Section 10) identified: dropping (L_loc) admits Levy-Khintchine class. This blackboard **closes the loophole:** hypothesis (D) forces α = 2, eliminating the Levy measure ν and recovering the Gaussian/Feynman-Kac propagator.
 
 Therefore **(L_loc) is derivable from (D):** any kernel satisfying (C)+(I)+(D) must have α = 2 (Gaussian characteristic exponent), which is precisely the class of action-dependent kernels.
 
@@ -261,12 +261,12 @@ Therefore **(L_loc) is derivable from (D):** any kernel satisfying (C)+(I)+(D) m
 3. (I) Identity limit
 4. (D) Dimensional homogeneity
 
-### After D29/S288 (3.5 effective hypotheses)
+### After Exponential Weight Uniqueness (3.5 effective hypotheses)
 
 - (L_exp) is a **theorem** of (C) + (L_loc) → reduces to 3.5
 - Remaining independent: (C), (L_loc), (I), (D)
 
-### After D39/S295 (~3 effective hypotheses)
+### After Levy-Khintchine Obstruction (~3 effective hypotheses)
 
 - (L_loc) is **derivable** from (D) via Levy obstruction → reduces to ~3
 - **Final independent hypotheses:**
@@ -276,10 +276,10 @@ Therefore **(L_loc) is derivable from (D):** any kernel satisfying (C)+(I)+(D) m
 
 ### Theorem Chain Summary
 
-| Derived result | From hypotheses | Cycle |
-|----------------|-----------------|-------|
-| (L_exp) exponential form | (C) + (L_loc) | D29/S288 |
-| (L_loc) action-dependence | (D) dimensional | D39/S295 |
+| Derived result | From hypotheses | Source |
+|----------------|-----------------|--------|
+| (L_exp) exponential form | (C) + (L_loc) | Exponential Weight Uniqueness (BB1) |
+| (L_loc) action-dependence | (D) dimensional | Levy-Khintchine Obstruction (BB2) |
 | κ = ℏ necessity | (C) + (I) + (D) | P4.2 main |
 
 **Effective hypothesis count: ~3** (composition, identity, dimensions).
@@ -290,8 +290,8 @@ The ℏ-necessity theorem rests on three independent structural principles, not 
 
 ## References
 
-- **Blackboard 1** (D29/S288, 2026-02-14): Functional equation for weight uniqueness
-- **Blackboard 2** (D39/S295, 2026-02-14): Levy-Khintchine dimensional obstruction
+- **Blackboard 1** (Exponential Weight Uniqueness, 2026-02-14): Functional equation for weight uniqueness
+- **Blackboard 2** (Levy-Khintchine Obstruction, 2026-02-14): Levy-Khintchine dimensional obstruction
 - **P4.2** (paper/main.md lines 610-612): Original four hypotheses
 - **D4.1a** (paper/main.md line 584): Composition law statement
 - Levy, P. (1937). *Theorie de l'addition des variables aleatoires*
@@ -307,11 +307,11 @@ The ℏ-necessity theorem rests on three independent structural principles, not 
 
 Route (I₃) for the identity limit (blackboards/2.md) uses the iε prescription to give Gaussian
 domination in the stationary phase argument. Does this create a circularity, since iε is itself
-derived from composition (D37/S292)?
+derived from composition (the iε uniqueness theorem)?
 
 ### Resolution: No Circularity
 
-**D37/S292 iε derivation:** The constant c₀ in K ∝ exp(c₀·S_cl/κ) is forced to be imaginary
+**iε uniqueness derivation:** The constant c₀ in K ∝ exp(c₀·S_cl/κ) is forced to be imaginary
 (c₀ = i) by degree-counting: real c₀ gives exponentially growing/decaying kernel incompatible
 with composition semigroup for all t > 0 (the growing kernel has no finite composition norm;
 the decaying kernel has κ→0 classical limit failing). This argument uses:
@@ -334,9 +334,9 @@ which is a separate mathematical fact.
 
 No circularity. The logical dependency graph is:
 ```
-(C) composition → exponential form (D29) → c₀ = i (D37, iε prescription)
+(C) composition → exponential form (Exp. Uniq.) → c₀ = i (iε uniqueness)
                                          → N(t) ∝ t^{-d/2} (d/2 exponent)
-(C) + (D29) + physical setup [S_cl asymptotics] → identity limit (Route I₃, stationary phase)
+(C) + (Exp. Uniq.) + physical setup [S_cl asymptotics] → identity limit (Route I₃, stationary phase)
 ```
 These are parallel branches from (C). iε and identity limit are siblings, not parent-child.
 
@@ -363,7 +363,7 @@ Composition (C) is satisfied by two distinct families of kernels:
   - {T(t)} positive contraction semigroup on L¹(ℝ^d)
 
 **Both satisfy composition (C).** Both satisfy the d/2 normalization exponent. Both satisfy the
-identity limit K_t → δ as t→0. Both have the Gaussian form forced by D29/S288. Both exclude
+identity limit K_t → δ as t→0. Both have the Gaussian form forced by the Exponential Uniqueness theorem. Both exclude
 Lévy processes with α≠2 via the same dimensional argument.
 
 **What distinguishes them is NOT composition, but the physical setup:**
@@ -415,13 +415,13 @@ specifying what "action-based dynamics" means in the physical context.
 ### Symmetry between the two families
 
 Notably: Euclidean QM (heat kernel) is also uniquely determined by (C) + Euclidean setup.
-The two families are related by Wick rotation t → -iτ. The composition theorem (D29/S288)
+The two families are related by Wick rotation t → -iτ. The Exponential Uniqueness theorem
 applies to both. The Wick rotation is what mediates between them — it is a representation
 change (imaginary time), which falls under the RCP representation channel (A3), not the
 partition channel (A1). This confirms: the choice Minkowski/Euclidean is representation-level
 (signature of the action), and Wick rotation is a representation compatibility map.
 
-References: blackboards/2.md (identity limit stationary phase analysis); D29/S288; D37/S292.
+References: blackboards/2.md (identity limit stationary phase analysis); Exponential Weight Uniqueness (BB1); iε uniqueness theorem.
 
 ---
 
@@ -468,12 +468,12 @@ This IS a composition-derived constraint: the periodicity requirement K_t(θ+2π
 
 The Bohr-Sommerfeld derivation adds to the theorem chain (Part 3):
 
-| Derived result | From hypotheses |
-|----------------|-----------------|
-| (L_exp) exponential form | (C) + (L_loc) |
-| (L_loc) action-dependence | (D) dimensional |
-| κ = ℏ necessity | (C) + (I) + (D) |
-| **Bohr-Sommerfeld I = ℏm** | **(C) + periodicity of T^n** |
+| Derived result | From hypotheses | Source |
+|----------------|-----------------|--------|
+| (L_exp) exponential form | (C) + (L_loc) | Exponential Weight Uniqueness (BB1) |
+| (L_loc) action-dependence | (D) dimensional | Levy-Khintchine Obstruction (BB2) |
+| κ = ℏ necessity | (C) + (I) + (D) | P4.2 main |
+| **Bohr-Sommerfeld I = ℏm** | **(C) + periodicity of T^n** | **BB5 action-angle** |
 
 The last entry is new: composition (C) applied to angle-variable kernels on the torus T^n forces I ∈ ℏ·ℤ. This is the quantum-mechanical action quantization, derived from the composition law.
 
@@ -489,7 +489,7 @@ The last entry is new: composition (C) applied to angle-variable kernels on the 
 
 ## Part 6: d/2 Normalization Uniqueness from Composition
 
-**Source:** blackboards/2.md (sections R15B-003 through R15B-036, plus physicist second-agent review P-R1 through P-R5)
+**Source:** blackboards/2.md (d/2 uniqueness theorem and proof chain, plus physicist second-agent review)
 **Status:** TWO-AGENT verified (mathematician + physicist), 2026-02-21
 **Connects to:** P4.2d (paper/main.md line ~623), Remark P4.2e
 
@@ -555,7 +555,7 @@ P4.2d (paper/main.md line ~623) states the dimensional matching \(\alpha = 2\) a
 
 ### References
 
-- blackboards/2.md: R15B-003 (theorem statement), R15B-017 (measurable branch lemma), R15B-022 (dependency chain), R15B-023 (G1 closure), R15B-032 (gap summary), physicist review P-R1--P-R5
+- blackboards/2.md: theorem statement, measurable branch lemma, dependency chain, G1 closure, gap summary, physicist review
 - paper/main.md: P4.2, P4.2d, P4.2e
 - Levy-Khintchine representation theorem (Sato, "Levy Processes and Infinitely Divisible Distributions")
 - Buckingham pi theorem (dimensional analysis)

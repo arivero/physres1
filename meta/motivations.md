@@ -55,7 +55,7 @@ at each stage; the cornerstone paper tells the story as a whole.
 The conformal-class computation in the half-density QFT paper shows a term
 D(4-D)(∂σ)² that cancels at D=4. Is this a genuine dimension-selection
 mechanism, or a conformal-class artifact? What happens for general metrics?
-**Status**: S204 derived V(p) = (1/6)R from normal-coordinate expansion
+**Status**: Derived V(p) = (1/6)R from normal-coordinate expansion
 (dimension-independent). This matches conformal coupling ξ_conf = (D−2)/(4(D−1))
 only at D=4. Extends HD-D1.3 beyond the conformal class. Ready for
 promotion as Remark HD-D1.3b.
@@ -73,7 +73,7 @@ Can the Refinement Compatibility Principle be stated as a small set of
 commuting-diagram axioms that *derive* quantum mechanics (path integral,
 deformation quantization) as consequences? The main paper has the narrative
 but not the formal axioms.
-**Status**: S211 analysis — P10.1's three conditions (partition,
+**Status**: P10.1's three conditions (partition,
 representation, scale) form a clean hierarchy: C alone → classical
 mechanics, C+Q → quantum mechanics, C+Q+R → QFT. Each condition is
 logically independent (counterexamples sketched). However, P10.1 is a
@@ -105,7 +105,7 @@ physical setup.** Composition is the single master axiom for P4.2.
 The fermionic paper shows that different UV completions give the same contact
 data C₀. Does this universality, combined with RCP, constrain the space of
 consistent low-energy theories beyond what standard EFT already says?
-**Status**: S207 analysis — RCP reframes contact universality as
+**Status**: RCP reframes contact universality as
 composition-law consistency (conceptual gain, Level 1). Two potential
 sources of new constraints remain open: (a) half-density curvature
 corrections to contact operators in d=4 (Level 2); (b) positivity bounds
@@ -116,7 +116,7 @@ The contact expansion C₀ + C₂q² + ... is perturbative in q/M. Resurgence
 (uncuttable paper Remark 2.8) suggests that the non-perturbative content
 (bound states, instantons) should be recoverable from the perturbative
 coefficients. Is there a concrete worked example connecting the two?
-**Status**: S208 analysis — Padé [0/1] of the contact expansion exactly
+**Status**: Padé [0/1] of the contact expansion exactly
 recovers the Yukawa mediator pole from two Wilson coefficients (C₀, C₂),
 a concrete "non-perturbative from perturbative" worked example.
 **Loop-level update (2026-02-20)**: Vacuum-polarization Taylor coefficients
@@ -140,7 +140,7 @@ Anomalies are topological constraints on the refinement limit (uncuttable
 Remark 4.5). How does the RCP framing add to the standard anomaly-matching
 story? Is there a refinement-compatibility characterization that's cleaner
 than the standard one?
-**Status**: S210 analysis — RCP reframes anomalies as composition-law
+**Status**: RCP reframes anomalies as composition-law
 defects (failure of a symmetry to commute with the sewing operation on
 propagators). The half-density measure's Jacobian under chiral rotations
 IS the anomaly (Fujikawa in geometric dress). Three-level verdict:

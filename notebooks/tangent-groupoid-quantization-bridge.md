@@ -2,7 +2,7 @@
 
 **Date:** 2026-02-20
 **Agent:** Student
-**Source:** Serendipitous literature browsing (Task #5)
+**Source:** Serendipitous literature browsing
 
 ---
 
@@ -204,9 +204,9 @@ At one loop (2D delta example), the RG semigroup property (scale composition) mi
 
 ---
 
-# APPENDIX: Lackman's Pair-Groupoid Path Integral (Task #15 Deep-Dive)
+# APPENDIX: Lackman's Pair-Groupoid Path Integral (Deep-Dive)
 
-**Date:** 2026-02-20 (Task #15)
+**Date:** 2026-02-20
 **Papers:** arXiv:2402.05866 (Feb 2024), arXiv:2309.05640 (Sep 2023), arXiv:2601.05228 (Jan 2026)
 
 ## A1. Core Construction: Cochains → Riemann Sums
@@ -312,7 +312,7 @@ The notebook entry on project half-density normalization notes that the measure 
 
 $$\rho^{d/2} \sim (t)^{-d/2}$$
 
-**Observation (Task #15):**
+**Observation (pair-groupoid analysis):**
 
 Lackman's pair-groupoid construction uses standard Lebesgue measure on M × M (hence dimension d), and the d/2 appears via the Gaussian Jacobian.
 
@@ -347,7 +347,7 @@ Lackman's approach (arXiv:2303.05494, 2402.05866):
 
 ---
 
-## A5. References (Task #15 Additions)
+## A5. References (Lackman Deep-Dive Additions)
 
 **Primary sources:**
 - Lackman, J. "A Groupoid Construction of Functional Integrals: Brownian Motion and Some TQFTs." *arXiv:2402.05866*. Feb 2024.
@@ -360,7 +360,7 @@ Lackman's approach (arXiv:2303.05494, 2402.05866):
 
 ---
 
-## A6. Open Work from Task #15
+## A6. Open Work from Lackman Deep-Dive
 
 **For Computationalist/Mathematician:**
 
@@ -374,7 +374,7 @@ Lackman's approach (arXiv:2303.05494, 2402.05866):
 
 ---
 
-## Mathematician's Assessment (2026-02-20, Task #17)
+## Mathematician's Assessment (2026-02-20)
 
 ### Q1 Answer: d/2 from groupoid convolution — clean proposition
 
@@ -623,7 +623,7 @@ b-half-density |dm_b|^{1/2} = r^{-1}|d²x|^{1/2} = P4.2 d/2 normalization = plan
 | P4.2 normalization | K_t ~ t^{-d/2} | Composition axiom (C)+(D) |
 | Planck-area σ_* | σ_* = |g|^{1/4}|dx|^{1/2} | H2.3 (no external length scale) |
 
-Paper-edit #21 sent (planck-area §7 connection + TG-Q1 note).
+Paper-edit sent (planck-area §7 connection + TG-Q1 note).
 
 Status: Bridge C RESOLVED for contact interaction. Bridge B still open.
 
@@ -1232,13 +1232,13 @@ holographic AdS boundary conditions, or an external Planck-scale physics input).
 
 ## Stage 3 CFT: C-Theorem and Composition Forcing (2026-02-20)
 
-**Source:** blackboards/5.md (Physicist, Task #12); appended by Mathematician.
+**Source:** blackboards/5.md (Physicist); appended by Mathematician.
 **Status:** Sev-3 conceptual clarification. Single physicist source; notebook entry for stable record.
 
 ### The Zamolodchikov C-Theorem vs Composition Forcing
 
 **Context:** P9.1b establishes that the Segal sewing law forces the vacuum energy exponent to c/24 (given c).
-Task #12 asks: is the Zamolodchikov c-theorem (c monotone under RG flow) consistent with or derivable from (C)?
+The question: is the Zamolodchikov c-theorem (c monotone under RG flow) consistent with or derivable from (C)?
 
 **Answer:** The c-theorem and composition forcing are orthogonal:
 
@@ -1283,7 +1283,7 @@ where 1/24 = c/24 for c=1 (free boson). The 24 comes from SL(2,ℤ) modular stru
 - Cardy 1986 (Nucl.Phys.B 270:186): operator content, central charge
 - Di Francesco-Mathieu-Senechal Ch.5-6: Virasoro algebra, c and h
 - Komargodski-Schwimmer 2011 (arXiv:1107.3987): 4D a-theorem analog
-- blackboards/5.md: physicist source (physicist, Task #12)
+- blackboards/5.md: physicist source (c-theorem / composition forcing analysis)
 
 ---
 

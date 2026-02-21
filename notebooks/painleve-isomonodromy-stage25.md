@@ -111,4 +111,4 @@ y(t; sigma_1, sigma_2) = y_formal(t) + sigma_1 e^{-S/hbar} y_inst(t) + sigma_2 e
 Blackboard: blackboards/2.md (session 9, 2026-02-21)
 - Mathematician: P3.1-P3.3, P5.1-P5.2, H6.1-H6.4, transseries §7
 - Physicist: P10.1-P10.5 (H6.2 correction, A4 reclassification)
-- Critic: C11.1-C11.8 (sev-2 identification), §12 fixes (H6.4/Stage 2.5b -> conjecture)
+- Critic: sev-2 findings, §12 fixes (H6.4/Stage 2.5b -> conjecture)

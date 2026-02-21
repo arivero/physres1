@@ -3,48 +3,48 @@
 ## 2026-02-20
 - read: .claude/agents/mathematician.md, agents/shared-rules.md, meta/motivations.md, meta/research-state.md
 - read: agents/mathematician/memory/status.md (no prior state)
-- claimed: Task #2 (uniqueness conditions for composition → P4.2)
+- claimed: uniqueness conditions for composition → P4.2
 - read: papers/rcp-foundations/main.md Section 6 (P4.2 statement and RCP interpretation)
-- read: notebooks/p42-hypothesis-reduction.md (Parts 1-3, D29/S288 + D39/S295)
+- read: notebooks/p42-hypothesis-reduction.md (Parts 1-3)
 - read: blackboards/0.md (P4.2 ↔ RCP axiom mapping, promoted slot, safe to overwrite)
 - wrote: blackboards/0.md (uniqueness conditions analysis: gaps, Stone subtleties, clean theorem)
 - updated: blackboards/README.md slot 0 index
-- completed: Task #2
-- claimed: Task #12 (draft regularity-conditions remark for RCP Section 6)
+- completed: uniqueness conditions task
+- claimed: draft regularity-conditions remark for RCP Section 6
 - wrote: blackboards/2.md (Remark RCP-R6.2 draft + refined axiom phrasing)
 - updated: blackboards/README.md slot 2 index
-- deleted: Task #11 (duplicate of #12)
-- completed: Task #12
+- deleted: duplicate regularity-conditions task
+- completed: regularity-conditions remark task
 - sent: paper-edit request to orchestrator (promote RCP-R6.2 into rcp-foundations Section 6)
-- claimed: Task #17 (tangent groupoid Q1-Q3 rigor check)
+- claimed: tangent groupoid Q1-Q3 rigor check
 - read: notebooks/tangent-groupoid-quantization-bridge.md
 - ERROR: accidentally wrote Q1-Q3 analysis to blackboards/3.md (critic's active slot); recovered by git checkout HEAD; moved analysis to blackboards/0.md
 - LESSON: always check author tag before writing to a slot
 - wrote: blackboards/0.md (Q1-Q3 assessment; supersedes old regularity-gap content)
 - updated: blackboards/README.md slot 0 and 3 index
-- deleted: Task #16 (duplicate of #17)
-- completed: Task #17
+- deleted: duplicate TG rigor check task
+- completed: tangent groupoid Q1-Q3 rigor check
 - sent: results + collision warning to orchestrator
-- self-directed: Task #20 (Cauchy measurability gap in d/2 uniqueness argument)
+- self-directed: Cauchy measurability gap in d/2 uniqueness argument
 - appended: Q1-Q3 assessment to notebooks/tangent-groupoid-quantization-bridge.md (stable record)
 - wrote: blackboards/0.md (Cauchy gap analysis — not blocking, bridgeable)
 - updated: blackboards/README.md slot 0
-- completed: Task #20
-- self-directed: Task #23 (identity limit from stationary phase, no Stone)
+- completed: Cauchy measurability gap task
+- self-directed: identity limit from stationary phase, no Stone
 - wrote: blackboards/2.md (Route I₃); appended circularity check to p42-hypothesis-reduction.md
-- completed: Task #23; paper-edit request sent (RCP-R6.3)
-- self-directed: Task #25 (unitarity as Minkowski setup consequence)
+- completed: identity limit task; paper-edit request sent (RCP-R6.3)
+- self-directed: unitarity as Minkowski setup consequence
 - appended: Part 5 to notebooks/p42-hypothesis-reduction.md (Wick=A3 point)
-- completed: Task #25
-- self-directed: Task #29 (overclaiming diagnostic — theorem vs framework)
+- completed: unitarity/Minkowski task
+- self-directed: overclaiming diagnostic — theorem vs framework
 - wrote: blackboards/0.md (4 instances graded, priority fix list)
-- completed: Task #29; assessment sent to orchestrator
+- completed: overclaiming diagnostic; assessment sent to orchestrator
 - SESSION END: shutdown
 
 ## 2026-02-20 (Session 2)
 - read: shared-rules.md, meta/motivations.md, meta/research-state.md, status.md, TaskList
 - read: blackboards 0, 2; notebooks/cross-paper-overclaiming-diagnostic.md, notebooks/p42-hypothesis-reduction.md
-- claimed: Task #3 (systematic overclaiming language pass)
+- claimed: systematic overclaiming language pass
 - read: papers/rcp-foundations/main.md (full), papers/ordering-equivalence/main.md (relevant sections)
 - read: paper/main.md lines 40-46 and 1283-1289
 - identified: 4 precise fix locations with exact current/replacement text
@@ -56,21 +56,21 @@
 - sent: Wick=A3 result + RCP-R7.1 promotion request to orchestrator
 - sent: tangent-groupoid satellite paper creation request to orchestrator
 - discovered: physicist already created papers/tangent-groupoid-bridge/main.md (312 lines)
-- completed: Task #1 (tangent-groupoid satellite paper)
+- completed: tangent-groupoid satellite paper task
 - self-directed: Misner measure problem (physicist §7.5 request)
 - read: blackboards/1.md (physicist OQ1a analysis), papers/planck-area/main.md (PA-D1.2a)
 - wrote: blackboards/0.md (half-density vs Misner: finite-dim resolved, infinite-dim obstructions)
 - updated: blackboards/README.md slot 0
 - sent: Misner assessment + PA-H4.1 paper-edit request to orchestrator
 - session-start: read agent definition, shared-rules, motivations, research-state, status.md
-- claimed: Task #1 (Verify van Est/Kontsevich chain — redirected to TG-Q1 analysis)
+- claimed: Verify van Est/Kontsevich chain — redirected to TG-Q1 analysis
 - read: blackboards/0.md (BB0 d=4 b-calculus — complete/promoted sev-3, safe to overwrite)
 - read: notebooks/tangent-groupoid-quantization-bridge.md (van Est chain full state)
 - read: papers/tangent-groupoid-bridge/main.md (TG-Q1 open in §5.3)
 - wrote: blackboards/0.md (TG-Q1 analysis: Prop TG-P2.1 + Remark TG-R5.1 candidate)
 - updated: blackboards/README.md slot 0
 - wrote: proposals/mathematician-tg-q1-half-density.md
-- completed: Task #1
+- completed: van Est/Kontsevich chain task
 - read: blackboards/1.md (physicist OQ1 half-density dimension selection; §9 requests algebraic check)
 - wrote: blackboards/1.md §10 (mathematician verification: D=4 uniqueness of ξ_conf=1/6, TWO-AGENT)
 - updated: blackboards/README.md slot 1 (TWO-AGENT sev-2)
@@ -80,13 +80,13 @@
 - result: TG-Q4 conclusion: μ_APS is genuinely free, no RG flow in d=4 b-calculus
 - library: attempted DeWitt-Morette 1979 reference verification — access blocked; marked PENDING
 - note: DeWitt-Morette 1979 = "Feynman's path integral: Definition without limiting procedure" CMP; bi-density Van Vleck reference needs verification from institutional access
-- resolved: anomaly "RG-P1.2 awaiting mathematician verification of BB3" (already done — paper-edit #27 applied)
+- resolved: anomaly "RG-P1.2 awaiting mathematician verification of BB3" (already done — paper-edit applied)
 - updated: meta/anomalies.md RG-P1.2 entry to RESOLVED
 - self-directed: cobordism hypothesis as Stage 4 forcing (BB3 overwrite)
 - wrote: blackboards/3.md (Prop TG-P3.1 + paper-edit candidate Remark P9.1a-Cob)
 - wrote: proposals/mathematician-cobordism-p91a.md
 - updated: blackboards/README.md slot 3
-- noted: stale task-assignment message from self (task #1 already complete — ignored)
+- noted: stale task-assignment message from self (van Est task already complete — ignored)
 - read: blackboards/2.md (arithmetic of Feynman integrals, TWO-AGENT critic+physicist)
 - wrote: blackboards/2.md §8 (mathematician: CK Hopf identity verified; coaction≠semigroup categorically; Level 3 overclaims confirmed; Cartier attribution)
 - updated: blackboards/README.md slot 2 (THREE-AGENT sev-3)
@@ -98,47 +98,47 @@
 - appended: tangent-groupoid-quantization-bridge.md (Stage 3 c-theorem + Stage 4 q-forcing sections)
 - updated: meta/anomalies.md CFT-Q1 status (PARTIALLY RESOLVED)
 - signal sent: team-lead notified of CFT-Q1 resolution + proposal
-- claimed: Task #17 (A4 scale-channel vs Borel singularity positions, Resurgence Q2)
+- claimed: A4 scale-channel vs Borel singularity positions, Resurgence Q2
 - wrote: blackboards/3.md (Q2a/b/c analysis — overwrite of cobordism BB3, promoted)
 - wrote: proposals/mathematician-edit-p91b-ctheorem.md (one-sentence P9.1b addition)
 - wrote: proposals/mathematician-report-a4-borel-q2.md (resurgence Q2 report)
 - annotated: blackboards/5.md §13 (mathematician verification of ζ-regularization, THREE-AGENT complete)
 - updated: blackboards/README.md slots 3,5
-- completed: Task #17
+- completed: Resurgence Q2 task
 
 ## 2026-02-21 (evening session, 21:41 CET)
 - read: startup docs (.claude/agents/mathematician.md, shared-rules, motivations, research-state, status)
 - read: papers/areal-speed/main.md (259 lines, pub-readiness assessment)
 - read: blackboards/0,2,3,5 (current state scan)
 - read: papers/planck-area/main.md §§1-3 (provenance of areal-speed extraction)
-- claimed: Task #1 (areal-speed pub-readiness)
+- claimed: areal-speed pub-readiness
 - wrote: blackboards/1.md (full assessment: math CORRECT, NOT PUB-READY, 7 issues identified)
 - updated: blackboards/README.md slot 1
-- claimed: Task #11 (S² ordering witness D9.1h, Vuln 2)
+- claimed: S² ordering witness D9.1h, Vuln 2
 - ran: SymPy verification of half-density conjugation on S² (V_HD, eigenvalues l=0,1)
 - wrote: blackboards/4.md (overwriting stale RG-fundamental slot; full derivation + spectral comparison)
-- fixed: typo in §6 formal statement (sin^{-2} → sin^2, per critic C9.3)
+- fixed: typo in §6 formal statement (sin^{-2} → sin^2, per critic review)
 - wrote: proposals/mathematician-edit-vuln2-s2-witness.md (paper-edit diff for §10.2)
 - updated: blackboards/README.md slot 4
-- completed: Task #11
-- self-directed: Task #13 (G2 exclusion) — SUPERSEDED by physicist Buckingham pi argument (BB2 P-R4)
-- completed: Task #13 (superseded)
-- self-directed: Task #14 (promote d/2 chain from BB2 to notebook)
+- completed: S² ordering witness task
+- self-directed: G2 exclusion — SUPERSEDED by physicist Buckingham pi argument (BB2 P-R4)
+- completed: G2 exclusion (superseded)
+- self-directed: promote d/2 chain from BB2 to notebook
 - wrote: notebooks/p42-hypothesis-reduction.md Part 6 (d/2 normalization uniqueness)
-- completed: Task #14
+- completed: d/2 chain promotion
 - reviewed: proposals/physicist-edit-impulse-kernel.md (third-agent: saddle-point verified, APPROVE)
 - wrote: proposals/mathematician-review-impulse-kernel.md
 - reviewed: proposals/physicist-edit-vuln4-phi4-benchmark.md (second-agent: all algebra verified, APPROVE)
 - wrote: proposals/mathematician-review-vuln4-phi4.md
 - wrote: proposals/mathematician-edit-p71a-d91h-xref.md (P7.1a representation track xref)
-- self-directed: Task #19 (spectral dimension anomaly investigation)
+- self-directed: spectral dimension anomaly investigation
 - wrote: blackboards/1.md (overwriting settled areal-speed DISCARD; spectral dimension analysis)
 - result: d_s=d/2 in UV requires L_P (quartic z=2 Lifshitz); NOT forced by composition alone
 - updated: blackboards/README.md slot 1
-- completed: Task #19
-- self-directed: Task #20 (constrained-path composition, responds to physicist BB0 §9)
+- completed: spectral dimension investigation
+- self-directed: constrained-path composition (responds to physicist BB0 §9)
 - appended: BB0 §10 (FP determinant = half-density, general holonomic case)
-- completed: Task #20
+- completed: constrained-path composition task
 - updated: meta/anomalies.md (spectral dimension entry: SUBSTANTIALLY RESOLVED)
 - promoted: BB1 spectral dimension to notebooks/p42-hypothesis-reduction.md Part 7 (TWO-AGENT)
 - wrote: proposals/mathematician-edit-d64b-d65-headers.md (D6.4b + Lemma D6.5 definition blocks for §10.3)

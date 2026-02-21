@@ -1,16 +1,16 @@
 # P4.2 Extensions: Interacting Systems and Curved Configuration Spaces
 
 **Created:** 2026-02-14
-**Sources:** Blackboard 4 (D36/S293), Blackboard 5 (D30/S287)
+**Sources:** Blackboard 4 (Interacting Systems / Mehler Kernel), Blackboard 5 (Curved Configuration Spaces)
 **Status:** Append-only notebook (graduated from blackboards)
 
 ## Summary
 
 This notebook documents two major extensions of P4.2's κ-necessity theorem beyond the free-particle, flat-space setting:
 
-1. **D36/S293 (Interacting Systems):** Mehler kernel (harmonic oscillator V = (1/2)mω²q²) composition forces d/2 normalization and κ-necessity identically to the free case. The d/2 forcing mechanism is **purely algebraic** (works with "time function" sin(ωt) just like t). Seeley-DeWitt coefficients a_n are **compatibility conditions** derivable from composition, not independent degrees of freedom.
+1. **Interacting Systems (Mehler Kernel, BB4):** Mehler kernel (harmonic oscillator V = (1/2)mω²q²) composition forces d/2 normalization and κ-necessity identically to the free case. The d/2 forcing mechanism is **purely algebraic** (works with "time function" sin(ωt) just like t). Seeley-DeWitt coefficients a_n are **compatibility conditions** derivable from composition, not independent degrees of freedom.
 
-2. **D30/S287 (Curved Configuration Spaces):** Van Vleck determinant Δ^{1/2} composes correctly via DeWitt-Morette law. d/2 normalization forced by same semigroup functional equation. Δ and √|g| are **geometric** (metric-dependent but κ-independent). Metric provides **no escape route** from κ-necessity.
+2. **Curved Configuration Spaces (BB5):** Van Vleck determinant Δ^{1/2} composes correctly via DeWitt-Morette law. d/2 normalization forced by same semigroup functional equation. Δ and √|g| are **geometric** (metric-dependent but κ-independent). Metric provides **no escape route** from κ-necessity.
 
 **Impact:** P4.2 is **metric-independent** and **potential-independent**. The ℏ-necessity argument extends without modification to:
 - Interacting quantum systems (V ≠ 0)
@@ -21,13 +21,13 @@ These close three major "free-particle artifact" objections identified in the re
 
 ---
 
-## Part 1: Interacting Systems — Mehler Kernel (D36/S293, Blackboard 4)
+## Part 1: Interacting Systems — Mehler Kernel (Blackboard 4)
 
 ### Context
 
 P4.2 (paper/main.md) proves κ-necessity for the free-particle propagator. An obvious objection: "Does this extend to interacting systems (V ≠ 0), or is d/2 forcing a free-particle artifact?"
 
-**Question (D36):** Do P4.2's d/2 normalization and κ-necessity persist for V ≠ 0, or are they specific to free evolution?
+**Question:** Do P4.2's d/2 normalization and κ-necessity persist for V ≠ 0, or are they specific to free evolution?
 
 **Test case:** Harmonic oscillator V(q) = (1/2)mω²q² (exactly solvable, explicit propagator known).
 
@@ -196,7 +196,7 @@ a_1(x) = −iV(x)/ℏ,    V(x) = (1/2)mω²x²
 
 **This matches the standard result.** The a_n are not independent parameters — they are **compatibility conditions** derivable from composition.
 
-### Verdict (D36)
+### Verdict (Interacting Systems)
 
 **Success Criterion 1: Full persistence.**
 
@@ -210,13 +210,13 @@ a_1(x) = −iV(x)/ℏ,    V(x) = (1/2)mω²x²
 
 ---
 
-## Part 2: Curved Configuration Spaces (D30/S287, Blackboard 5)
+## Part 2: Curved Configuration Spaces (Blackboard 5)
 
 ### Context
 
 P4.2 proves κ-necessity on flat ℝ^d. Another obvious objection: "Does the metric tensor introduce new dimensional freedom, providing an escape from ℏ-necessity?"
 
-**Question (D30):** Does P4.2 extend to curved configuration spaces (M, g), or does the metric provide an escape route?
+**Question:** Does P4.2 extend to curved configuration spaces (M, g), or does the metric provide an escape route?
 
 ### Short-Time Kernel on Riemannian Manifold
 
@@ -381,7 +381,7 @@ Van Vleck factor Δ^{1/2}(x,y) → 1 as y → x, so identity limit controlled by
 
 Unchanged from flat space.
 
-### Verdict (D30)
+### Verdict (Curved Spaces)
 
 **P4.2 extends cleanly to curved configuration spaces.**
 
@@ -433,11 +433,11 @@ This is a **natural enrichment**, not a modification, of flat-space hypothesis.
 
 The research plan identified three potential "free-particle artifact" objections to P4.2's generality:
 
-1. **Lorentzian signature** (real-time evolution): D34+D37 (S291+S292) showed algebraic parts (d/2, κ=ℏ, semigroup) are signature-independent; iε prescription is a theorem of composition. **Objection closed.**
+1. **Lorentzian signature** (real-time evolution): The Lorentzian composition and iε uniqueness derivations showed algebraic parts (d/2, κ=ℏ, semigroup) are signature-independent; iε prescription is a theorem of composition. **Objection closed.**
 
-2. **Curved configuration spaces** (general relativity, gauge theory): D30/S287 (blackboard 5, this notebook Part 2) showed Van Vleck determinant is κ-independent; metric provides no escape. **Objection closed.**
+2. **Curved configuration spaces** (general relativity, gauge theory): The curved-space analysis (blackboard 5, this notebook Part 2) showed Van Vleck determinant is κ-independent; metric provides no escape. **Objection closed.**
 
-3. **Interacting systems** (V ≠ 0): D36/S293 (blackboard 4, this notebook Part 1) showed Mehler kernel forces d/2 and κ identically to free case; Seeley-DeWitt a_n are compatibility conditions. **Objection closed.**
+3. **Interacting systems** (V ≠ 0): The Mehler kernel analysis (blackboard 4, this notebook Part 1) showed Mehler kernel forces d/2 and κ identically to free case; Seeley-DeWitt a_n are compatibility conditions. **Objection closed.**
 
 ### Generality of P4.2
 
@@ -458,8 +458,8 @@ The three hypotheses (C)+(I)+(D) are robust across:
 ## References
 
 ### Blackboard Sources
-- **Blackboard 4** (D36/S293, 2026-02-14): Mehler kernel composition, interacting witness
-- **Blackboard 5** (D30/S287, 2026-02-14): Curved-space Van Vleck composition
+- **Blackboard 4** (Interacting Systems / Mehler Kernel, 2026-02-14): Mehler kernel composition, interacting witness
+- **Blackboard 5** (Curved Configuration Spaces, 2026-02-14): Curved-space Van Vleck composition
 
 ### Literature
 - DeWitt, B.S. (1965). *Dynamical Theory of Groups and Fields*. Van Vleck transport equation, short-time expansion on curved manifolds.
@@ -471,17 +471,17 @@ The three hypotheses (C)+(I)+(D) are robust across:
 - Feynman, R.P., Hibbs, A.R. (1965). *Quantum Mechanics and Path Integrals*, Ch. 3. Harmonic oscillator propagator.
 
 ### Cross-References
-- S291 (archived): Free Lorentzian composition (signature test)
-- S292 (archived, superseded in blackboard 6): iε uniqueness (composition theorem)
-- S288 (blackboard 1, notebook p42-hypothesis-reduction.md): Exponential weight uniqueness
-- S295 (blackboard 2, notebook p42-hypothesis-reduction.md): Levy-Khintchine dimensional obstruction
+- Free Lorentzian composition (archived): signature test
+- iε uniqueness theorem (archived, superseded in blackboard 6): composition theorem
+- Exponential Weight Uniqueness (blackboard 1, notebook p42-hypothesis-reduction.md)
+- Levy-Khintchine Obstruction (blackboard 2, notebook p42-hypothesis-reduction.md)
 
 ---
 
 ## Part 3: Half-Density Curvature Corrections to Contact Operators (OQ3 Level 2)
 
 **Date:** 2026-02-20
-**Source:** Blackboard 4 (physicist, Task #14) + Blackboard 6 (computationalist verification)
+**Source:** Blackboard 4 (physicist) + Blackboard 6 (computationalist verification)
 **Status:** Verified (two-agent: physicist + computationalist)
 
 ### Setup
@@ -558,7 +558,7 @@ That notebook contains the definitive treatment, including:
 ## Part 4: Piecewise-Smooth Paths and Impulse Kicks in Kernel Composition (2026-02-21)
 
 **Physicist, appended 2026-02-21**
-**Motivation:** Task #2 (§9.2 stress test review) identified a gap at the §5→§6
+**Motivation:** The section 9.2 stress test review identified a gap at the §5→§6
 bridge: jump laws (momentum conservation across corners) are proved variationally, but
 the §9.2 closure claim ("singular dynamics close into composition") was not demonstrated
 at the kernel-composition level. This entry provides the explicit witness.

@@ -2,7 +2,7 @@
 
 **Date:** 2026-02-20
 **Agent:** Student
-**Source:** Task #26 (self-directed investigation of OQ1a from motivations.md)
+**Source:** Self-directed investigation of OQ1a from motivations.md
 **Related:** papers/planck-area/main.md, RCP Principle, composition axioms
 
 ---
@@ -181,7 +181,7 @@ In the path integral $\exp(iS/\hbar)$:
 
 **Question:** Is the oscillatory form forced by composition + measure choice? Or is it an independent postulate?
 
-**Note:** This relates to Task #25 (unitarity as independent axiom) — the measure choice and the form of the exponent are not independent.
+**Note:** This relates to the unitarity-as-independent-axiom question — the measure choice and the form of the exponent are not independent.
 
 ### 6.2 Signature: real vs imaginary time
 

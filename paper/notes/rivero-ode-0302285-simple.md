@@ -18,8 +18,8 @@ Candidate new ideas to fold into the paper:
 - A concrete bridge to noncommutative differential calculus via bimodule action on “slices,” e.g. rules of the form \(f(x)\,dx = dx\,f(x+a)\) as a scale/discretization artifact.
 
 Relevance to the current manuscript:
-- This is a direct high-quality narrative bridge for `C06` (renormalization as controlled refinement) that does not require QFT diagrams at first pass.
-- It also strengthens `C05`: deformation quantization is not “added,” it is the compatibility condition forced by a single object interpolating between discrete/continuous products.
+- This is a direct high-quality narrative bridge for the renormalization section (controlled refinement) that does not require QFT diagrams at first pass.
+- It also strengthens the deformation quantization section: deformation quantization is not “added,” it is the compatibility condition forced by a single object interpolating between discrete/continuous products.
 
 ## [Rivero0302285] Flashes of Noncommutativity (arXiv:math.QA/0302285, 2003)
 
@@ -27,7 +27,7 @@ Candidate new ideas to fold into the paper:
 - Newton Proposition I and Feynman’s path integral are explicitly presented as the same kind of limit: equal-time discretization and refinement of a trajectory.
 - The area-law invariant can be written in an “update-rule” style: equality of certain areas becomes a statement like \(\Delta x_i\times\Delta p = \Delta x_f\times\Delta p\) under central impulses, highlighting hidden noncommutativity between “position updates” and “momentum updates.”
 - Groupoid-algebra viewpoint: the convolution algebra of an “elementary” configuration groupoid, Fourier transformed in the time variable, maps into the \(\varepsilon>0\) (secant) part of the tangent groupoid; the \(\varepsilon\to 0\) boundary becomes commutative (cotangent-space functions). Choosing the limiting procedure corresponds to choosing a star product; the star-exponential relates back to the path integral.
-- Operator ordering = discretization choice = star-product choice: a clean tri-equivalence usable for `C04`/`C05`.
+- Operator ordering = discretization choice = star-product choice: a clean tri-equivalence usable for the composition/path-integral and deformation-quantization sections.
 - A geometric reading of “force as covector”: variation of momentum defines a plane, and the “projected inertia law” viewpoint gives a route to generalize equal-area reasoning beyond strict equal-time slicing.
 - A didactic pointer worth handling carefully: typical paths in path-integral measures are continuous but nowhere differentiable, so the classical path is not “approached” naively by refinement; it is recovered as a limit mechanism (stationary phase / concentration).
 
@@ -46,8 +46,8 @@ Relevance to the current manuscript:
 
 ## Integration Map (Suggested)
 
-- `C03` (Dirac/extremal action): cross-link to `[Rivero9803035]` plus `[Rivero0302285]` for the “distributional/ordering” motivation, while keeping products of distributions explicitly regularized.
-- `C04` (composition/path integral): use `[Rivero0302285]` for the Newton Proposition I ↔ equal-time discretization ↔ path integral connection, and for the “ordering/discretization” tri-equivalence.
-- `C05` (deformation quantization): use `[Rivero0302285]` for the tangent-groupoid-to-star-product pipeline; use `[RiveroOde2002]` to motivate why a scale-compatibility object is needed.
-- `C06` (renormalization): use `[RiveroOde2002]` to present RG as “refer back to a fixed scale” in refinement limits, via rooted trees/Butcher group as a concrete model before moving to QFT.
+- Section 3 (Dirac/extremal action): cross-link to `[Rivero9803035]` plus `[Rivero0302285]` for the “distributional/ordering” motivation, while keeping products of distributions explicitly regularized.
+- Section 4 (composition/path integral): use `[Rivero0302285]` for the Newton Proposition I ↔ equal-time discretization ↔ path integral connection, and for the “ordering/discretization” tri-equivalence.
+- Section 5 (deformation quantization): use `[Rivero0302285]` for the tangent-groupoid-to-star-product pipeline; use `[RiveroOde2002]` to motivate why a scale-compatibility object is needed.
+- Section 6 (renormalization): use `[RiveroOde2002]` to present RG as “refer back to a fixed scale” in refinement limits, via rooted trees/Butcher group as a concrete model before moving to QFT.
 - Dimensional aside: use `[RiveroSimple]` as a compact Newtonian motivation for \(D=4\) and the “critical \(D=5\)” behavior.

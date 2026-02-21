@@ -1,5 +1,5 @@
 # Caustics and the Maslov Index in the Half-Density Framework
-Promoted from: blackboards/2.md (S213)
+Promoted from: blackboards/2.md
 Date promoted: 2026-02-14
 
 ## Context
