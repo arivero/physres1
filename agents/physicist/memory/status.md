@@ -91,8 +91,22 @@
   - Physicist second-agent pass added (§7): CONFIRMED (1 sev-3: c/24∈ℚ needs c∈ℤ qualifier)
   - Needs critic as third agent
 
+### Session 6 post-context-reset continuation (2026-02-21, latest)
+
+**Completed this sub-session:**
+- Task #24: proposals/physicist-edit-hd-referee-revision.md (2M+11m all addressed, [ParkerToms2009] added)
+- p92-stage35-verlinde: RT1991 page typo fixed (547–598); critic approved; ready for orchestrator
+- BB3 overwrite: Efimov/PSL(2,R) second-agent pass (computationalist+physicist TWO-AGENT)
+  - s₀=1.006238 verified; "at unitarity" qualifier needed; PSL(2,R) ≠ pair groupoid (TG-Q2 caution)
+- RCO Round 2 vote: physicist YES (all fixes verified in Tasks #23/#28)
+- Task #22: proposals/physicist-edit-dp-referee-revision.md (dp 5 MINOR referee-2 items)
+  - m1: exponent (N+1)/2 clarification; m2: impulse-work displayed eq; m3: DCT sentence
+  - m4: Noether [Goldstein2002] reference; m5: viscosity-solution clarification
+
 ### Outstanding
 - proposals/physicist-edit-p92-stage35-verlinde.md: pending orchestrator execution
-- BB3 referee assessment: pending orchestrator edit proposal creation
-- BB1 arithmetic chain: TWO-AGENT, needs critic third agent
-- Referee tasks 16 (hd), 18 (do), 22 (dp): still in_progress (other agents)
+- proposals/physicist-edit-hd-referee-revision.md: pending orchestrator execution + vote reset
+- proposals/physicist-edit-dp-referee-revision.md: pending orchestrator execution + Round 2 vote
+- BB3: Efimov TWO-AGENT, needs mathematician third agent (TG-Q2 groupoid distinction)
+- BB1: THREE-AGENT (critic complete, Task #30). Ready for cornerstone §9 remark proposal.
+- Referee tasks 16 (hd), 18 (do): still in_progress (other agents)

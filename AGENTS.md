@@ -28,7 +28,7 @@ edits directly (no ephemeral subagents).
 
 An AI that acts as **department head**: creates the research team, manages the kanban,
 processes paper-edit requests, serves as publication editor, and dispatches ephemeral
-agents. The scaffold is domain-agnostic — the orchestrator coordinates any research
+referee agents for peer review (§11). The scaffold is domain-agnostic — the orchestrator coordinates any research
 program, not only physics.
 
 **Reads:** full repo access, except researcher private memory by default (`agents/*/memory/*` where `*` ≠ `orchestrator`).
@@ -323,15 +323,24 @@ re-review after revision; MINOR goes straight to publish.
 Mixed referee verdict combinations (for example `ACCEPT` + `MAJOR REVISION`) follow
 the same escalation: the worst severity wins.
 
+**Clarification:** MINOR REVISION with no MAJOR weaknesses is an effective ACCEPT.
+The paper proceeds to `docs/` and any MINOR referee comments become optional
+improvement tasks (not blocking).
+
+**Post-accept polish:** When a paper is ACCEPTED but referees noted MINOR expository
+improvements, the editor creates optional kanban tasks for those improvements. These
+are non-blocking — the paper has already moved to `docs/`. Agents may address them
+as time permits.
+
 **Minor revise flow:**
 1. Paper returns from `pub-track/sent/<name>/` to `papers/<name>/`
 2. Referee reports copied to `papers/<name>/referee-1.md`, `papers/<name>/referee-2.md`
 3. Editor creates **one kanban task per referee comment** (MAJOR + MINOR), each with specific fix instructions
 4. Agents **edit the paper** to resolve each concern (actual changes to `main.md`, not just acknowledgment)
 5. Editor verifies ALL tasks resolved (checks each fix against the referee's specific concern)
-6. Editor resets `votes.md` (clears all previous votes, notes "Round N — post revision")
+6. **Only the editor (orchestrator) resets `votes.md`.** Clear all previous votes; write the header `**Round N** — after [MAJOR/MINOR] REVISION: <summary>` followed by the standard vote table. Old votes are preserved in git history.
 7. Orchestrator broadcasts "re-vote on `<name>`" — each agent re-reads the revised paper and votes YES/NO
-8. Unanimous vote required. If any NO, return to step 4 with new concerns
+8. Unanimous vote required. If any NO, the editor creates new tasks for the NO-voter's specific concerns, the round counter increments, and the process returns to step 4. Previous referee reports remain for reference.
 9. After unanimous vote: editor decides acceptance directly (no mandatory re-review)
 
 **Major revise flow:**
@@ -340,10 +349,14 @@ the same escalation: the worst severity wins.
 3. Editor creates **one kanban task per referee comment** (MAJOR + MINOR), each with specific fix instructions
 4. Agents **edit the paper** to resolve each concern (actual changes to `main.md`, not just acknowledgment)
 5. Editor verifies ALL tasks resolved (checks each fix against the referee's specific concern)
-6. Editor resets `votes.md` (clears all previous votes, notes "Round N — post revision")
+6. **Only the editor (orchestrator) resets `votes.md`.** Clear all previous votes; write the header `**Round N** — after [MAJOR/MINOR] REVISION: <summary>` followed by the standard vote table. Old votes are preserved in git history.
 7. Orchestrator broadcasts "re-vote on `<name>`" — each agent re-reads the revised paper and votes YES/NO
-8. Unanimous vote required. If any NO, return to step 4 with new concerns
+8. Unanimous vote required. If any NO, the editor creates new tasks for the NO-voter's specific concerns, the round counter increments, and the process returns to step 4. Previous referee reports remain for reference.
 9. After unanimous vote: paper goes back to `pub-track/sent/` for **re-review** by **new referee agents** (spawned independently, not as team members)
+
+**Re-submission versioning:** When a MAJOR-revised paper is re-submitted for re-review,
+fresh referee reports overwrite the previous ones in `pub-track/sent/<name>/`. The previous
+reports survive in `papers/<name>/referee-{1,2}.md` (copied during revision step 2).
 
 ### Publication (docs/)
 
@@ -352,15 +365,16 @@ When accepted:
 2. Create `docs/<name>/` with `main.pdf` + `main.md`
 3. Update `docs/index.md` (relative links only)
 4. Update `meta/publications.md` (status: "published")
-5. Commit
+5. Consolidate `papers/<name>/notes/` into a notebook titled "Old notes of paper <name>" in `notebooks/`
+6. Remove the working directory: `git rm -r papers/<name>/`
+7. Git history preserves everything — no data loss
+8. Commit
 
 ---
 
 ## 12. Sources Policy
-1. Never cite conversation transcripts as bibliography sources.
-2. Prefer OA sources first; if unavailable, mark as `PENDING`.
-3. Treat preprints as guides, not sources of truth.
-4. Do not commit `sources/`; it is regenerable and gitignored.
+See `agents/shared-rules.md` §11 for the full library protocol.
+Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/` is gitignored.
 
 ---
 
@@ -393,13 +407,19 @@ When accepted:
 ### Shutdown Phase
 1. Each agent updates `agents/<name>/memory/status.md` (what, where, next).
 2. Orchestrator updates `meta/research-state.md` and `meta/handoff.md`.
-3. Final commit if needed.
-4. Orchestrator signals shutdown; agents confirm and terminate.
+3. Orchestrator updates `agents/orchestrator/memory/status.md` (what, where, next).
+4. Final commit if needed.
+5. Orchestrator signals shutdown; agents confirm and terminate.
+
+**Shutdown enforcement escalation:** If an agent does not respond to `shutdown_request`
+within one turn, the orchestrator may read their private `status.md` (emergency read
+clause) and terminate the agent via runtime mechanisms. The agent forfeits their
+`status.md` update.
 
 ### Between Sessions (Cold Storage)
 - State persists in: `status.md` files, `meta/research-state.md`, `meta/handoff.md`.
 - Blackboards, notebooks, and private memory persist in git.
-- The kanban does NOT persist between sessions (recreated from research-state).
+- The kanban partially persists between sessions. At startup, the orchestrator cleans up completed and agent-assigned tasks (session artifacts) but preserves unassigned and failed/stuck tasks (real open work).
 
 ---
 
@@ -409,7 +429,7 @@ If `paper/main.md` changed:
 2. Transcript mention check: `rg -n 'conv_patched' paper/main.md`
 
 ## 16. Continuous Operation
-When given a time deadline, continue autonomously without pausing. Only stop when:
+When given a time deadline, continue autonomously without pausing. Commit policy (§8) still applies — check timing before each commit. Only stop when:
 (a) deadline reached, (b) context exhausted, (c) no productive work remains.
 
 ### When No Tasks Are Available

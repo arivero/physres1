@@ -177,7 +177,7 @@ Four surfaces, each with a different role:
 |---------|--------|------------|-------------|
 | Blackboard | Scratch | Any researcher | Editable, 7 slots, 300 lines |
 | Notebook | Memory | Any researcher | Append-only |
-| Paper Note | Derivation | Orchestrator | Editable, 10-file cap per paper |
+| Paper Note | Derivation | Any researcher | Editable, 10-file cap per paper |
 | Manuscript | Publication | Orchestrator | Orchestrator-gated |
 
 **Flow between surfaces:**
@@ -406,6 +406,7 @@ Any agent can vote on whether a paper is ready for internal peer review.
 - A NO vote can be changed to YES after revisions — send a new vote message.
 - The orchestrator records votes and enforces the threshold. The orchestrator never votes.
 - After submission and revision (if any), `votes.md` is reset for a new round.
+- **Round format** (set by editor only): `**Round N** — after [MAJOR/MINOR] REVISION: <summary>` as a header line before the vote table. Previous round content is cleared; old votes are preserved in git history.
 
 See `AGENTS.md` §11 for the full publication lifecycle.
 
