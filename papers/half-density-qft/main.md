@@ -5,7 +5,7 @@ date: "2026"
 abstract: |
   In QFT, the basic free object is the inverse of a kinetic operator, i.e. a propagator/Green kernel. On a manifold, writing “\(P_x G(x,y)=\delta(x,y)\)” hides conventions: which volume form defines the adjoint, and which delta normalization realizes the identity. This note adopts a single organizing choice: treat fields (or kernels) as **half-densities**, so the identity kernel is canonical and kernel composition is coordinate-invariant without choosing a background measure. A worked computation shows how a scalar field on \((M,g)\) becomes a half-density \(\psi=|g|^{1/4}\phi\), with kinetic operator \(\widetilde P=|g|^{1/4}P|g|^{-1/4}\) symmetric in the coordinate pairing. We also record a kernel-level remark: local counterterms/contact terms appear as distributions supported on the diagonal \((x=y)\) (delta kernels and their derivatives), which are most naturally expressed using the canonical bi-half-density delta.
   
-  This note is written to be readable on its own; it also connects to broader themes (scalarization scales and RG as compatibility) developed elsewhere.
+  This note is written to be readable on its own; it also connects to broader themes (scalarization scales and RG as compatibility) developed in the companion notes "Path Integral Normalization and the d/2 Exponent" and "RG as Fundamental: Composition Forces Renormalization" (both in preparation).
 ---
 
 # 1. Purpose and Scope
@@ -35,7 +35,7 @@ The identity operator on half-densities has kernel
 \[
 K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2},
 \]
-which is canonical: it does not require choosing a background density/volume form.
+which is canonical: it does not require choosing a background density/volume form. Coordinate-free statement: \(K_{\mathrm{Id}}\) is the distributional section of the external tensor product \(|\Lambda^D T^*M|^{1/2} \boxtimes |\Lambda^D T^*M|^{1/2}\) over \(M \times M\), characterized by the pairing property \(\int_M K_{\mathrm{Id}}(x,y)\,f(y) = f(x)\) for all half-densities \(f\).
 
 `Derivation HD-D1.1a (Normalization witness: why \(\varepsilon^{-D/2}\) appears).`
 In local coordinates on \(\mathbb{R}^D\), a standard approximate identity is the Gaussian family
@@ -52,7 +52,7 @@ The exponent \(D/2\) is forced by normalization: by the change of variables \(x=
 Thus \(\rho_\varepsilon\rightharpoonup\delta^{(D)}\) as \(\varepsilon\to0^+\), and the diagonal delta kernel is the distributional limit of families whose normalization scales as \(\varepsilon^{-D/2}\).
 
 # 3. Worked computation: densitized scalar field \(\psi=|g|^{1/4}\phi\)
-Consider a real scalar field on a fixed Lorentzian/Euclidean background \((M,g)\) [Wald1984] with quadratic action
+Consider a real scalar field on a fixed Lorentzian/Euclidean background \((M,g)\) [Wald1984] with quadratic action. (The half-density conjugation \(\psi = |g|^{1/4}\phi\) is a purely density-bundle operation and is signature-independent; the specific operator \(P\) and its Green function properties depend on the metric signature.)
 \[
 S[\phi]=\frac12\int_M d^Dx\,\sqrt{|g|}\;\phi\,P\,\phi,
 \qquad
@@ -106,7 +106,7 @@ As a worked expansion, take a conformally flat background \(g_{\mu\nu}=e^{2\sigm
 =|g|^{-1/2}\partial_\mu\!\bigl(\sqrt{|g|}\,g^{\mu\nu}\partial_\nu f\bigr)
 =e^{-2\sigma}\bigl(\partial^2 f+(D-2)\,\partial\sigma\cdot\partial f\bigr).
 \]
-Setting \(\phi=|g|^{-1/4}\psi=e^{-D\sigma/2}\psi\) and expanding derivatives gives the conjugated operator
+Setting \(\phi=|g|^{-1/4}\psi=e^{-D\sigma/2}\psi\) and expanding derivatives (the product rule produces a cross term \(-2(\partial\sigma)(\partial\psi)\) from differentiating the exponential prefactor) gives the conjugated operator
 \[
 \widetilde\Delta\psi:=|g|^{1/4}\Delta_g|g|^{-1/4}\psi
 =e^{-2\sigma}\Big(
@@ -125,7 +125,7 @@ Interpretation:
 - writing the field as \(\psi\) makes the "half-density prioritary" viewpoint explicit: both the field and the kernels live naturally as half-density objects.
 
 `Remark HD-D1.3a (Half-density conjugation is distinct from conformal coupling).`
-The conjugated Laplacian \(\widetilde\Delta=|g|^{1/4}\Delta_g|g|^{-1/4}\) acts on sections of the half-density bundle, which carry conformal weight \(D/2\). The Yamabe operator \(Y=-\Delta_g+\frac{D-2}{4(D-1)}R\) acts on conformal weight \((D-2)/2\). These are different operators: their first-order, Laplacian, and potential terms all differ.
+The conjugated Laplacian \(\widetilde\Delta=|g|^{1/4}\Delta_g|g|^{-1/4}\) acts on sections of the half-density bundle \(|\Lambda^D T^*M|^{1/2}\), which carry conformal weight \(D/2\). The Yamabe operator \(Y=-\Delta_g+\frac{D-2}{4(D-1)}R\) acts on sections of the conformal density bundle of weight \((D-2)/2\). These are sections of *different* line bundles, which is the primary conceptual reason the operators differ; the coefficient comparison below makes the mismatch explicit. Their first-order, Laplacian, and potential terms all differ.
 
 In particular, the zeroth-order ("potential") terms generated by the half-density conjugation in the conformal class cannot be written as \(\xi R\) for any single value of \(\xi\). Matching the \(\partial^2\sigma\) coefficient gives \(\xi=D/(4(D-1))\), but the \((\partial\sigma)^2\) coefficient then has a residual mismatch of \(D/2\). Thus the \(D=4\) cancellation of the \((\partial\sigma)^2\) term in \(\widetilde\Delta\) is a property of the half-density weight, not of conformal invariance or conformal coupling (which corresponds to \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\)).
 
@@ -136,7 +136,7 @@ For a general Riemannian \((M,g)\), the conjugation potential is \(V=|\nabla\ome
 \[
 V(p)=\tfrac{1}{6}R.
 \]
-This coefficient \(1/6\) is **dimension-independent**: it holds for all \(D\) and for all Riemannian metrics, at leading curvature order. Conformal coupling contributes \(\xi_{\mathrm{conf}}R\) with \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), and \(\xi_{\mathrm{conf}}=1/6\) if and only if \(D=4\). Thus, in \(D=4\) and only \(D=4\), the total curvature potential \((\xi_{\mathrm{conf}}-1/6)R\) of the conformally coupled half-density field vanishes at leading order — the half-density weight exactly absorbs the conformal coupling. (This is the same \(1/6\) that appears in the first Seeley-DeWitt coefficient \(a_1(x,x)=(\tfrac{1}{6}-\xi)R\) [Vassilevich2003].)
+This coefficient \(1/6\) is **dimension-independent**: it holds for all \(D\) and for all Riemannian metrics, at leading curvature order. Conformal coupling contributes \(\xi_{\mathrm{conf}}R\) with \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), and \(\xi_{\mathrm{conf}}=1/6\) if and only if \(D=4\). Thus, in \(D=4\) and only \(D=4\), the total curvature potential \((\xi_{\mathrm{conf}}-1/6)R\) of the conformally coupled half-density field vanishes at leading order — the half-density conjugation potential \(R/6\) matches the conformal coupling \(\xi_{\mathrm{conf}}R = R/6\) at leading (Ricci scalar) order; subleading curvature terms (\(R^2\), \(R_{\mu\nu}R^{\mu\nu}\), ...) are not affected by this cancellation. (This is the same \(1/6\) that appears in the first Seeley-DeWitt coefficient \(a_1(x,x)=(\tfrac{1}{6}-\xi)R\) [Vassilevich2003].)
 
 # 4. Propagators/Green functions as bi-half-density kernels
 Let \(\widetilde G\) be the inverse kernel of \(\widetilde P\) with respect to the coordinate pairing:
@@ -155,7 +155,7 @@ Equivalently, if \(G_g(x,y)\) denotes the usual **scalar** Green function for \(
 \widetilde G(x,y)=|g(x)|^{1/4}\,G_g(x,y)\,|g(y)|^{1/4}.
 \]
 
-This is exactly the same "kernel as bi-half-density" structure used for QM propagators [BatesWeinstein1997] [deGosson2018ShortTimePropagators], now applied to spacetime Green functions in QFT.
+This is exactly the same "kernel as bi-half-density" structure used for QM propagators [BatesWeinstein1997] [deGosson2018ShortTimePropagators], now applied to spacetime Green functions in QFT. In the QFT-on-curved-spacetime context, this half-density form of the propagator kernel is discussed in [ParkerToms2009, §6.3].
 
 `Example HD-D4.3 (Flat-space massless propagator).`
 On flat \(D\)-dimensional Euclidean space, the massless scalar propagator is
@@ -170,7 +170,7 @@ Half-density kernels also make the amplitude-vs-density doubling completely expl
 K_{\rho_t}(x,y)
 =\int_{M\times M} K_t(x,x')\,K_{\rho_0}(x',y')\,\overline{K_t(y,y')}.
 \]
-So densities naturally propagate by a kernel on the doubled space \(M\times M\), built from the forward kernel and its conjugate. This is the kernel-level origin of bra/ket (forward/backward) doubling in real expectation values; a fuller discussion is beyond this note's scope.
+So densities naturally propagate by a kernel on the doubled space \(M\times M\), built from the forward kernel and its conjugate. The composition in both slots is intrinsic (no background measure needed) precisely because \(K_t\) is a bi-half-density — this is the kernel-level origin of bra/ket (forward/backward) doubling in real expectation values.
 
 `Remark HD-D4.2 (Heat kernel as bi-half-density; trace without \(\sqrt{|g|}\)).`
 The heat kernel \(K(t;x,y)\) of \(P\) on a Riemannian \((M,g)\) has the DeWitt-Schwinger short-time expansion [DeWitt1965] [Vassilevich2003]
@@ -188,7 +188,7 @@ At coincidence (\(s=0\), \(\Delta=1\)), the leading behavior \(\widetilde K(t;x,
 where the \(\sqrt{|g|}\) factor of the standard trace formula has been absorbed into the definition of \(\widetilde K\). For the massless operator \(P=-\nabla^2+\xi R\), the first Seeley-DeWitt coefficients at coincidence are \(a_1(x,x)=(1/6-\xi)R\) and \(a_2(x,x)\) is a linear combination of \(R^2\), \(R_{\mu\nu}R^{\mu\nu}\), \(\Box R\); these encode the curvature counterterms that appear in Section 5's contact-term analysis.
 
 `Remark HD-D4.2a (Trace anomaly and the index theorem from \(a_{D/2}\)).`
-In even dimension \(D=2n\), the coefficient \(a_n(x,x)\) is a local curvature polynomial of mass dimension \(D\), and its integral \(\int_M a_n\,d^Dx\) is scheme-independent. Two fundamental results follow: the conformal trace anomaly \(\langle T^\mu{}_\mu\rangle\propto a_{D/2}(x,x)\) for quantum fields on curved backgrounds [Vassilevich2003], and the Atiyah-Singer index theorem, where the index of a Dirac-type operator equals \(\int_M a_{D/2}\,d^Dx\) (up to normalization) via the McKean-Singer supertrace formula. In the half-density framework, both calculations are manifestly coordinate-free: the intrinsic trace of Remark HD-D4.2 absorbs the metric factor, and the topological content resides entirely in the Seeley-DeWitt coefficients — geometric invariants of \(P\), not of the coordinate choice.
+In even dimension \(D=2n\), the coefficient \(a_n(x,x)\) is a local curvature polynomial of mass dimension \(D\), and its integral \(\int_M a_n\,d^Dx\) is scheme-independent. Two fundamental results follow: the conformal trace anomaly \(\langle T^\mu{}_\mu\rangle\propto a_{D/2}(x,x)\) for quantum fields on curved backgrounds [Vassilevich2003], and the Atiyah-Singer index theorem, where the index of a Dirac-type operator equals \(\int_M a_{D/2}\,d^Dx\) (up to normalization) via the McKean-Singer supertrace formula (in the Dirac case, \(a_{D/2}\) is the \(\hat{A}\)-genus integrand; the general characteristic-class connection is beyond this note's scope). In the half-density framework, both calculations are manifestly coordinate-free: the intrinsic trace of Remark HD-D4.2 absorbs the metric factor, and the topological content resides entirely in the Seeley-DeWitt coefficients — geometric invariants of \(P\), not of the coordinate choice.
 
 `Remark HD-D4.4 (Van Vleck determinant as the geometric half-density factor).`
 The Van Vleck determinant \(\Delta(x,y)\) appearing in Remark HD-D4.2 satisfies the transport equation [DeWitt1965]
@@ -198,9 +198,11 @@ The Van Vleck determinant \(\Delta(x,y)\) appearing in Remark HD-D4.2 satisfies 
 where the derivative acts in the \(x\) variable. This means \(\Delta^{1/2}\) is the Jacobian converting coordinate volume to geodesic normal-coordinate volume: it is the half-density factor intrinsic to the geometry. Its appearance in the heat kernel expansion is therefore not accidental — it ensures the leading kernel \((4\pi t)^{-D/2}\Delta^{1/2}(x,y)\,e^{-s/(2t)}\) transforms as a proper bi-half-density under coordinate changes in both slots.
 
 `Remark HD-D4.5 (Proper-time representation unifies the D/2 exponent).`
-The propagator is the proper-time (Schwinger) integral of the heat kernel: \(G(x,y)=\int_0^\infty K(t;x,y)\,dt\). The exponent \(D/2\) recurs throughout: identity-kernel normalization \((2\pi\varepsilon)^{-D/2}\) (Derivation HD-D1.1a), heat-kernel short-time behavior \((4\pi t)^{-D/2}\) (Remark HD-D4.2), flat propagator prefactor \(\Gamma(D/2-1)/(4\pi)^{D/2}\) (Example HD-D4.3), and mass-counterterm UV degree \(\Lambda^{D-2}=\Lambda^{2(D/2-1)}\) (Remark HD-D5.3). The proper-time integral converts the heat kernel's \(t^{-D/2}\) into the propagator's \(\Gamma(D/2-1)\) via Schwinger parametrization, making explicit that all four manifestations trace back to the same half-density volume-scaling origin. (For a comprehensive treatment showing the d/2 exponent is forced by composition semigroup closure across temporal composition, Van Vleck determinant, heat kernel, and renormalization thresholds, see [PathIntegralNormalization].)
+The propagator is the proper-time (Schwinger) integral of the heat kernel: \(G(x,y)=\int_0^\infty K(t;x,y)\,dt\). The exponent \(D/2\) recurs throughout: identity-kernel normalization \((2\pi\varepsilon)^{-D/2}\) (Derivation HD-D1.1a), heat-kernel short-time behavior \((4\pi t)^{-D/2}\) (Remark HD-D4.2), flat propagator prefactor \(\Gamma(D/2-1)/(4\pi)^{D/2}\) (Example HD-D4.3), and mass-counterterm UV degree \(\Lambda^{D-2}=\Lambda^{2(D/2-1)}\) (Remark HD-D5.3). The proper-time integral converts the heat kernel's \(t^{-D/2}\) into the propagator's \(\Gamma(D/2-1)\) via Schwinger parametrization, making explicit that all four manifestations trace back to the same half-density volume-scaling origin. (For a comprehensive treatment showing the \(d/2\) exponent is uniquely forced by semigroup composition under dimensional homogeneity — across temporal composition, Van Vleck determinant, heat kernel, and renormalization thresholds — see the companion note "Path Integral Normalization and the d/2 Exponent" [PathIntegralNormalization, in preparation].)
 
 # 5. Contact terms and counterterms as diagonal delta kernels (kernel-level remark)
+(Label convention: remarks in this section are numbered by conceptual group — HD-D5.1–5.2 for distributional identities, HD-D5.3–5.3b for counterterm scaling — rather than in textual order.)
+
 In QFT, divergences are removed by adding local counterterms to the action, e.g.
 \(\delta m^2\,\phi^2\), \(\delta Z\,(\partial\phi)^2\), curvature couplings, etc.
 At the operator/kernel level this means:
@@ -225,7 +227,7 @@ In dimensional regularization, the proper-time integral for the \(a_n\) contribu
 The spectral \(\zeta\)-function \(\zeta_P(s)=\mathrm{Tr}\,P^{-s}=\Gamma(s)^{-1}\int_0^\infty t^{s-1}\,\mathrm{Tr}\,K(t)\,dt\) inherits its pole structure from the small-\(t\) asymptotics of the heat-kernel trace: the Seeley-DeWitt expansion gives simple poles at \(s=D/2-n\) (\(n=0,1,2,\ldots\)), again controlled by the \(D/2\) exponent. The functional determinant \(\det P:=\exp(-\zeta_P'(0))\) is finite, coordinate-independent, and — in the half-density framework — requires no extraneous volume-form choice: the trace \(\mathrm{Tr}\,K(t)=\int_M\widetilde K(t;x,x)\,d^Dx\) is intrinsic since \(\widetilde K\) absorbs the \(\sqrt{|g|}\) factor (Remark HD-D4.2) [Vassilevich2003].
 
 `Remark HD-D5.1 (Derivative of the diagonal delta kernel; coordinate-free identity).`
-The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” has a clean, connection-free formulation in the half-density kernel calculus. The identity kernel \(K_{\mathrm{Id}}\) is invariant under diagonal diffeomorphisms \((\Phi\times\Phi)\), so for any vector field \(V\) on \(M\) one has
+The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” can be seen cleanly, without a connection, in the half-density kernel calculus. The identity kernel \(K_{\mathrm{Id}}\) is invariant under diagonal diffeomorphisms \((\Phi\times\Phi)\), so for any vector field \(V\) on \(M\) one has
 \[
 (\mathcal L_{V_x}+\mathcal L_{V_y})\,K_{\mathrm{Id}}=0,
 \qquad\text{hence}\qquad
@@ -263,3 +265,4 @@ Gauge theories suggest a second, deeper appearance of half-densities: the BV for
 5. [Costello2011] Kevin Costello, *Renormalization and Effective Field Theory*, Mathematical Surveys and Monographs, vol. 170, AMS, 2011. ISBN `978-0-8218-5288-0`. (BV formalism with half-density integration on field space.)
 6. [DeWitt1965] Bryce S. DeWitt, *Dynamical Theory of Groups and Fields*, Gordon and Breach, 1965. (DeWitt-Schwinger expansion, Van Vleck determinant transport equation.)
 7. [Vassilevich2003] Dmitri V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* 388 (2003), 279–360. arXiv:`hep-th/0306138`. DOI `10.1016/j.physrep.2003.09.002`. OA: arXiv. (Comprehensive review of heat kernel asymptotics and Seeley-DeWitt coefficients.)
+8. [ParkerToms2009] Leonard Parker and David Toms, *Quantum Field Theory in Curved Spacetime: Quantized Fields and Gravity*, Cambridge Monographs on Mathematical Physics, Cambridge University Press, 2009. ISBN `978-0-521-87787-9`. (Propagators and heat kernels on curved backgrounds; §6.3 discusses the half-density form of the curved-space propagator kernel.)

@@ -65,6 +65,10 @@ Use this file as a source ledger.
 50. `[HairerLubichWanner2006GNI]` E. Hairer, C. Lubich, G. Wanner, *Geometric Numerical Integration: Structure-Preserving Algorithms for Ordinary Differential Equations*, 2nd ed., Springer Series in Computational Mathematics vol. 31, Springer, 2006. ISBN `978-3-540-30666-5`. DOI `10.1007/3-540-30666-8`. (Theorem IX.3.1: global O(h) convergence of symplectic Euler; Chapter IX: backward error analysis and long-time energy conservation for symplectic integrators.)
 51. `[HairerNorsettWanner1993ODE1]` E. Hairer, S.P. Norsett, G. Wanner, *Solving Ordinary Differential Equations I: Nonstiff Problems*, 2nd ed., Springer Series in Computational Mathematics vol. 8, Springer, 1993. ISBN `978-3-540-56670-0`. DOI `10.1007/978-3-540-78862-1`. (Theorem II.3.6: convergence of one-step methods under Lipschitz conditions.)
 
+52. `[ReshetikhinTuraev1991]` N. Yu. Reshetikhin and V. G. Turaev, "Invariants of 3-manifolds via link polynomials and quantum groups," *Inventiones Mathematicae* **103**, 547–598 (1991). DOI `10.1007/BF01239527`. (RT construction: ribbon categories + quantum groups → 3-manifold invariants; forces q_QG = e^{2πi/(k+g∨)} from unitarity of the modular tensor category.)
+53. `[Verlinde1988]` Erik Verlinde, "Fusion rules and modular transformations in 2D conformal field theory," *Nuclear Physics B* **300**, 360–376 (1988). DOI `10.1016/0550-3213(88)90603-7`. (Derives fusion multiplicities N^ij_k from the modular S-matrix; non-negativity forces level quantization.)
+54. `[Witten1989]` Edward Witten, "Quantum field theory and the Jones polynomial," *Communications in Mathematical Physics* **121**, 351–399 (1989). DOI `10.1007/BF01217730`. (Chern-Simons theory as 3D TQFT; k∈ℤ from π₃(G)=ℤ gauge invariance; q=e^{2πi/(k+g∨)}.) Source: sources/witten1989-chern-simons-jones.md.
+
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
 2. `[Noether1918]`: no canonical DOI for the 1918 original publication record used here.

@@ -24,10 +24,12 @@ edits directly (no ephemeral subagents).
 
 ---
 
-## 1. Orchestrator (Main Agent — Sonnet)
+## 1. Orchestrator (Main Agent — Department Head)
 
-The conversation-level agent. Creates the team, manages the kanban, processes paper-edit
-requests, and dispatches ephemeral agents.
+An AI that acts as **department head**: creates the research team, manages the kanban,
+processes paper-edit requests, serves as publication editor, and dispatches ephemeral
+agents. The scaffold is domain-agnostic — the orchestrator coordinates any research
+program, not only physics.
 
 **Reads:** full repo access, except researcher private memory by default (`agents/*/memory/*` where `*` ≠ `orchestrator`).
 Emergency read is allowed only for shutdown safety when an agent is non-responsive.
@@ -298,6 +300,11 @@ Each referee reads `pub-track/sent/<name>/main.md`, writes a report to
 `pub-track/sent/<name>/referee-{1,2}.md`, sends a one-phrase signal, and terminates.
 Referees cannot read each other's reports. They have no team membership.
 
+**Implementation**: Referees must be spawned as **independent agents** (no `team_name`
+parameter), NOT as members of the research team. They are ephemeral, fire-and-forget
+subprocesses that terminate after writing their report. They must not have access to
+team task lists, agent memories, or inter-agent messaging.
+
 ### Editor Decision
 
 The orchestrator reads both reports and decides:
@@ -305,25 +312,38 @@ The orchestrator reads both reports and decides:
 | Decision | Action |
 |----------|--------|
 | **Accept** | Move paper to `docs/<name>/` (PDF + source), update `docs/index.md` and `meta/publications.md` |
-| **Minor Revise** | Move paper back to `papers/<name>/`, attach referee reports, create 2 kanban tasks; no mandatory re-review |
-| **Major Revise** | Move paper back to `papers/<name>/`, attach referee reports, create 2 kanban tasks; re-review required after revision |
+| **Minor Revise** | Move paper back to `papers/<name>/`, attach referee reports, create one kanban task per referee comment; no mandatory re-review |
+| **Major Revise** | Move paper back to `papers/<name>/`, attach referee reports, create one kanban task per referee comment; re-review required after revision |
 | **Reject** | Move paper to `pub-track/rejected/<name>/` (dead unless user revives) |
 
-Mixed referee verdict combinations (for example `ACCEPT` + `MAJOR REVISION`) are resolved by editor discretion.
+**Hard rule**: if *any* referee identifies a MAJOR weakness (regardless of the referee's
+bottom-line recommendation), the editor decision is **Major Revise**. MAJOR means
+re-review after revision; MINOR goes straight to publish.
+
+Mixed referee verdict combinations (for example `ACCEPT` + `MAJOR REVISION`) follow
+the same escalation: the worst severity wins.
 
 **Minor revise flow:**
-- Paper returns from `pub-track/sent/<name>/` to `papers/<name>/`
-- Referee reports copied to `papers/<name>/referee-1.md`, `papers/<name>/referee-2.md`
-- Orchestrator creates 2 kanban tasks (one per referee's concerns), referencing the report files
-- Agents work revisions, then a new voting round begins (`votes.md` reset)
-- After new unanimous vote, no mandatory re-review; editor decides whether concerns are sufficiently resolved for acceptance
+1. Paper returns from `pub-track/sent/<name>/` to `papers/<name>/`
+2. Referee reports copied to `papers/<name>/referee-1.md`, `papers/<name>/referee-2.md`
+3. Editor creates **one kanban task per referee comment** (MAJOR + MINOR), each with specific fix instructions
+4. Agents **edit the paper** to resolve each concern (actual changes to `main.md`, not just acknowledgment)
+5. Editor verifies ALL tasks resolved (checks each fix against the referee's specific concern)
+6. Editor resets `votes.md` (clears all previous votes, notes "Round N — post revision")
+7. Orchestrator broadcasts "re-vote on `<name>`" — each agent re-reads the revised paper and votes YES/NO
+8. Unanimous vote required. If any NO, return to step 4 with new concerns
+9. After unanimous vote: editor decides acceptance directly (no mandatory re-review)
 
 **Major revise flow:**
-- Paper returns from `pub-track/sent/<name>/` to `papers/<name>/`
-- Referee reports copied to `papers/<name>/referee-1.md`, `papers/<name>/referee-2.md`
-- Orchestrator creates 2 kanban tasks (one per referee's concerns), referencing the report files
-- Agents work revisions, then a new voting round begins (`votes.md` reset)
-- After new unanimous vote, paper goes back to `pub-track/sent/` for re-review
+1. Paper returns from `pub-track/sent/<name>/` to `papers/<name>/`
+2. Referee reports copied to `papers/<name>/referee-1.md`, `papers/<name>/referee-2.md`
+3. Editor creates **one kanban task per referee comment** (MAJOR + MINOR), each with specific fix instructions
+4. Agents **edit the paper** to resolve each concern (actual changes to `main.md`, not just acknowledgment)
+5. Editor verifies ALL tasks resolved (checks each fix against the referee's specific concern)
+6. Editor resets `votes.md` (clears all previous votes, notes "Round N — post revision")
+7. Orchestrator broadcasts "re-vote on `<name>`" — each agent re-reads the revised paper and votes YES/NO
+8. Unanimous vote required. If any NO, return to step 4 with new concerns
+9. After unanimous vote: paper goes back to `pub-track/sent/` for **re-review** by **new referee agents** (spawned independently, not as team members)
 
 ### Publication (docs/)
 

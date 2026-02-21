@@ -77,7 +77,7 @@ W_L(r) = \sqrt{m^2c^4 + \frac{L^2c^2}{r^2}} - \frac{K}{r}.
 As \(r \to 0^+\), the leading behavior is \(W_L \approx (Lc - K)/r\). Three regimes appear:
 - If \(L > K/c\): the potential rises to \(+\infty\) at the origin, creating a centrifugal barrier. Combined with \(W_L \to mc^2\) as \(r \to \infty\), this produces a well admitting bound orbits. At the unique minimum \(r_0\), the well depth is \(W_{\min} = mc^2\sqrt{1 - K^2/(c^2L^2)}\), recovering the Newtonian binding energy \(mK^2/(2L^2)\) as \(c \to \infty\).
 - If \(L < K/c\): the potential plunges to \(-\infty\) — the particle falls to center. No stable bound orbit exists.
-- If \(L = K/c\): marginal — no barrier and no potential well; \(W_L\) increases monotonically from \(0\) to \(mc^2\).
+- If \(L = K/c\): marginal — no barrier and no potential well; \(W_L\) increases monotonically from \(0\) to \(mc^2\) (with \(W_L(r)\sim m^2c^4 r/(2K)\) as \(r\to 0^+\)).
 
 Therefore **\(L > K/c\) is necessary and sufficient for the existence of bound orbits** (not just circular ones) in the SR inverse-square problem. In the Newtonian limit \(c \to \infty\), this reduces to \(L > 0\), the trivially satisfied condition for elliptical Kepler orbits. Structurally, SR lowers the Newtonian critical exponent from \(q_{\mathrm{crit}} = 3\) to \(q_{\mathrm{crit}} = 2\): the inverse-square force is the unique power law where the bound is non-trivial.
 
@@ -94,8 +94,11 @@ q_{\mathrm{crit}}=\nu+1.
 \]
 Newton gives \(\nu=2\Rightarrow q_{\mathrm{crit}}=3\); ultrarelativistic SR gives \(\nu=1\Rightarrow q_{\mathrm{crit}}=2\). This asymptotic-threshold mechanism is independent of the separate algebraic fact that \(q=2\) uniquely yields the dimensional identity \(v=K/L\).
 
+`Remark 3.1d (Refinement-compatibility derivation of the angular-momentum bound).`
+Newton's polygonal orbit construction approximates continuous SR motion by \(N\) central impulses, each directed toward the force center. At each polygon vertex, the SR bound \(v < c\) applies; across each impulse, the angular momentum \(L = \gamma m r v\) is preserved (since the central impulse \(\Delta\mathbf{p} \parallel \hat{r}\) has zero moment about the center, so \(\mathbf{r}\times\mathbf{p}\) is unchanged). The refinement limit \(N \to \infty\), \(\Delta t \to 0\) produces a genuine bound orbit if and only if \(v < c\) at every vertex. For \(q=2\), the circular orbit gives \(v=K/L\); requiring \(v<c\) in the limit recovers \(L>K/c\). The admissibility bound is thus the *refinement-compatibility condition* for SR inverse-square dynamics: the polygonal construction converges to a physical orbit if and only if \(L>K/c\). This makes precise the paper's title: the SR orbit is a structural witness that relativistic refinement adds admissibility constraints absent from the Newtonian framework.
+
 `Remark 3.2 (SR precession: the orbit is a precessing ellipse).`
-For general (non-circular) bound orbits under \(F=K/r^2\), the standard Binet substitution \(u=1/r\) applied to the SR equations of motion (cf.\ [BoscagginDambrosioFeltrin2020RelKepler] for the Hamiltonian treatment) yields the orbit equation
+For general (non-circular) bound orbits under \(F=K/r^2\), the standard Binet substitution \(u=1/r\) applied to the SR equations of motion yields the orbit equation. (From \(H=\sqrt{m^2c^4+p_r^2c^2+L^2c^2u^2}-K u\) and the substitution \(p_r=Lu'(\phi)\), elimination of time gives the orbit ODE; see [LandauLifshitz1975] §14 or [BoscagginDambrosioFeltrin2020RelKepler] for the Hamiltonian treatment.) The result is
 \[
 \frac{d^2u}{d\phi^2}+\omega^2 u = \frac{mK}{L^2}\,\omega^2,
 \qquad
@@ -107,13 +110,13 @@ The condition \(\omega^2>0\) is precisely the bound \(L>K/c\) of Section 3. Sinc
 \approx \frac{\pi K^2}{c^2L^2}
 \quad(v\ll c).
 \]
-For gravity (\(K=GMm\)), writing \(L^2=GMm^2 a(1-e^2)\) from the semi-latus rectum of the precessing conic gives \(\Delta\phi_{\mathrm{SR}}=\pi GM/(c^2 a(1-e^2))\). Comparing with the Schwarzschild result \(\Delta\phi_{\mathrm{GR}}=6\pi GM/(c^2 a(1-e^2))\) (Section 4.3), the SR precession is exactly \(1/6\) of the GR precession. In the post-Newtonian expansion this \(1/6\) is the 1PN kinematic contribution (from velocity-dependent inertia); the remaining \(5/6\) arises from the \(-2ML^2/r^3\) term in the Schwarzschild effective potential, which encodes spacetime curvature absent from the flat-spacetime SR model.
+For gravity (\(K=GMm\)), writing \(L^2=GMm^2 a(1-e^2)\) from the semi-latus rectum of the precessing conic gives \(\Delta\phi_{\mathrm{SR}}=\pi GM/(c^2 a(1-e^2))\). Comparing with the Schwarzschild result \(\Delta\phi_{\mathrm{GR}}=6\pi GM/(c^2 a(1-e^2))\) (Section 4.3), the SR precession is exactly \(1/6\) of the GR precession. In the post-Newtonian expansion this \(1/6\) is the 1PN kinematic contribution (from velocity-dependent inertia); the remaining \(5/6\) arises from the \(-2ML^2/r^3\) term in the Schwarzschild effective potential, which encodes spacetime curvature absent from the flat-spacetime SR model (see [Will1993], §9 for the post-Newtonian decomposition).
 
 `Remark 3.2a (SR and Bertrand's theorem).`
 Bertrand's theorem [Bertrand1873ClosedOrbits] states that in Newtonian mechanics, only the inverse-square (\(q=2\)) and Hooke (\(F\propto r\)) forces produce closed orbits for all bound initial conditions. SR eliminates the closure property for \(q=2\): since \(\omega=\sqrt{1-K^2/(c^2L^2)}\) depends continuously on \(L\), it is generically irrational, and the orbit is a precessing ellipse that never closes. The passage from Newtonian to relativistic mechanics thus reduces the class of all-conditions-closed inverse-square orbits from an open family to a measure-zero subset.
 
 `Remark 3.2b (Connection to Sommerfeld fine structure).`
-For the Coulomb force \(K=Ze^2/(4\pi\epsilon_0)\), the precession parameter \(\omega^2=1-K^2/(c^2L^2)\) is precisely the quantity Sommerfeld [Sommerfeld1916FineStructure] used to derive the relativistic hydrogen fine structure. Applying Bohr–Sommerfeld quantization \(L=k\hbar\) yields \(\omega=\sqrt{1-Z^2\alpha^2/k^2}\), where \(\alpha\) is the fine structure constant, and the resulting energy levels \(E_{n_r,k}=mc^2\bigl(1+\alpha^2Z^2/(n_r+k\omega)^2\bigr)^{-1/2}\) reproduce the exact Dirac spectrum (with \(k\to j+\tfrac{1}{2}\)). The classical orbit equation of this section is thus the backbone of one of the earliest quantum-relativistic results.
+For the Coulomb force \(K=Ze^2/(4\pi\epsilon_0)\), the precession parameter \(\omega^2=1-K^2/(c^2L^2)\) is precisely the quantity Sommerfeld [Sommerfeld1916FineStructure] used to derive the relativistic hydrogen fine structure. Applying Bohr–Sommerfeld quantization \(L=k\hbar\) yields \(\omega=\sqrt{1-Z^2\alpha^2/k^2}\), where \(\alpha\) is the fine structure constant, and the resulting energy levels \(E_{n_r,k}=mc^2\bigl(1+\alpha^2Z^2/(n_r+k\omega)^2\bigr)^{-1/2}\) reproduce the exact Dirac spectrum (with \(k\to j+\tfrac{1}{2}\)). The classical orbit equation of this section is thus the backbone of one of the earliest quantum-relativistic results. (This agreement is an accidental degeneracy of the Coulomb potential: the Sommerfeld formula reproduces the Dirac spectrum exactly for the \(1/r\) potential only, due to the simultaneous classical Runge–Lenz symmetry and quantum \(2j+1\) degeneracy. For other power laws, the old quantum theory fails to capture relativistic fine structure, and the full Dirac equation is required.)
 
 # 4. GR Baseline: Schwarzschild Geodesics, Effective Potential, Photon Sphere
 This section records the standard Schwarzschild baseline in a form parallel to the SR “effective 1D radial motion” viewpoint.
@@ -213,7 +216,7 @@ A particle spiraling quasi-statically from \(r\to\infty\) to the ISCO radiates a
 For stable circular orbits at radius \(r_0>6M\), the ratio of orbital to radial oscillation frequency is \(\omega_\phi/\omega_r=\sqrt{r_0/(r_0-6M)}\), giving an exact apsidal advance \(\Delta\phi=2\pi\bigl(\sqrt{r_0/(r_0-6M)}-1\bigr)\). For \(r_0\gg 6M\) this reduces to \(\Delta\phi\approx 6\pi M/r_0\), the standard weak-field result that yields Mercury's \(43''\) per century; as \(r_0\to 6M^+\), it diverges because the radial oscillation frequency \(\omega_r\propto\sqrt{V_{\mathrm{eff}}''}\to 0\) at the ISCO. The ISCO is thus simultaneously a stability threshold (Remarks 4.3a–b), an efficiency ceiling (Remark 4.3d), and a precession barrier.
 
 `Remark 4.3f (Kepler's third law survives in coordinate time).`
-The coordinate orbital frequency for Schwarzschild circular orbits is \(\omega_\phi=d\phi/dt=(L/r_0^2)\cdot(1-2M/r_0)/E\). Substituting \(L^2=Mr_0^2/(r_0-3M)\) and \(E^2=(r_0-2M)^2/(r_0(r_0-3M))\) gives \(\omega_\phi^2=M/r_0^3\) — identically the Newtonian Kepler law, exact at all radii \(r_0>3M\). However, the proper orbital period \(T_\tau=T_t\sqrt{1-3M/r_0}\) includes a gravitational time-dilation factor; at the ISCO \(T_\tau/T_t=1/\sqrt{2}\approx 0.707\). The coordinate Kepler law is thus a "gauge accident" of Schwarzschild coordinates, while the proper-time period encodes the curvature effects that also produce the ISCO and the precession of Remarks 4.3a–e.
+The coordinate orbital frequency for Schwarzschild circular orbits is \(\omega_\phi=d\phi/dt=(L/r_0^2)\cdot(1-2M/r_0)/E\). Substituting \(L^2=Mr_0^2/(r_0-3M)\) and \(E^2=(r_0-2M)^2/(r_0(r_0-3M))\) gives \(\omega_\phi^2=M/r_0^3\) — identically the Newtonian Kepler law, exact at all radii \(r_0>3M\). However, the proper orbital period \(T_\tau=T_t\sqrt{1-3M/r_0}\) includes a gravitational time-dilation factor; at the ISCO \(T_\tau/T_t=1/\sqrt{2}\approx 0.707\). The coordinate Kepler law is thus a coordinate identity specific to Schwarzschild time coordinates, while the proper-time period encodes the curvature effects that also produce the ISCO and the precession of Remarks 4.3a–e.
 
 `Remark 4.3g (Quantifying the SR→GR angular-momentum floor).`
 The SR existence threshold for bound inverse-square orbits is \(\ell>GM/c\) (Section 3.1, with \(K=GMm\) and specific angular momentum \(\ell=L/m\)), while the GR stability floor is \(\ell_{\mathrm{ISCO}}=2\sqrt{3}\,GM/c\) (Remark 4.3b). The ratio \(\ell_{\mathrm{ISCO}}/\ell_{\mathrm{SR}}=2\sqrt{3}\approx 3.46\) is a pure number quantifying the curvature-induced tightening of the angular-momentum constraint, paralleling the \(1/6\) precession ratio of Remark 3.2.
@@ -225,7 +228,7 @@ Fix the (conserved) angular momentum magnitude \(L\). For purely tangential moti
 \[
 W_L(r)=\sqrt{m^2c^4+\frac{L^2c^2}{r^2}}+U(r).
 \]
-Assume the attractive power-law force \(F(r)=K/r^q\) so that \(U'(r)=K/r^q\).
+Assume the attractive power-law force with magnitude \(F(r)=K/r^q\) (\(K>0\)), directed inward. The radial component is \(F_r=-K/r^q\), so \(F=-dU/dr\) gives \(U'(r)=K/r^q>0\) (i.e.\ \(U(r)=-K/((q-1)r^{q-1})\to 0^-\) as \(r\to\infty\) for \(q>1\)).
 
 ## 5.1 Circularity and the effective-potential viewpoint
 Circular orbits satisfy \(W_L'(r_0)=0\), i.e.
@@ -280,7 +283,15 @@ As \(q\to 3^-\), the SR speed ceiling \(v_{\max}=c\sqrt{3-q}\to 0\), so the Newt
 For \(q=2\), the stability factor \(1+(2-q)\gamma^2\) reduces to \(1\), while Remark 3.2's precession frequency satisfies \(\omega^2=1/\gamma^2\). These are related: the stability factor equals \(\gamma^2\omega^2\). Thus unconditional stability at \(q=2\) is equivalent to the precession frequency being real and nonzero for all speeds — orbital shape (precession) and radial response (stability) are unified by the dimensionless invariant \(\gamma^2\omega^2=1\).
 
 `Remark 5.2d (SR epicyclic frequency ratio).`
-The Hamiltonian expansion of Section 5.1 gives the radial oscillation frequency \(\omega_r^2/\omega_\phi^2 = 3-q-v^2/c^2\), where \(\omega_\phi=L/(\gamma m r_0^2)\) is the orbital frequency. The Newtonian epicyclic ratio \(3-q\) is reduced by exactly \(\beta^2\), independently of \(q\). Positivity recovers the stability criterion of Section 5.2; for \(q=2\), the ratio reduces to \(1/\gamma^2=\omega^2\) (Remark 3.2), so the orbit-equation precession parameter \(\omega\) is the radial-to-orbital frequency ratio — making the duality of Remark 5.2c a special case.
+The radial oscillation frequency around \(r_0\) is \(\omega_r^2 = W_L''(r_0)/(m\gamma)\), where the factor \(\gamma\) in the denominator reflects the SR effective radial mass \(M_{\mathrm{eff}}=E_0/c^2=\gamma m\) (from \(\partial^2 H/\partial p_r^2\big|_{p_r=0}=c^2/E_0=1/(\gamma m)\); the longitudinal mass \(\gamma^3 m\) appears in Newtonian-force equations but not in the Hamiltonian formulation). The orbital frequency is \(\omega_\phi = L/(\gamma m r_0^2)\). Substituting \(W_L''(r_0)\) from Section 5.1 and using \(1/\gamma^2 = 1-v^2/c^2\):
+\[
+\frac{\omega_r^2}{\omega_\phi^2}
+= \frac{W_L''(r_0)}{m\gamma}\cdot\frac{\gamma^2 m^2 r_0^4}{L^2}
+= \frac{1+(2-q)\gamma^2}{\gamma^2}
+= \frac{1}{\gamma^2}+(2-q)
+= 3-q-\frac{v^2}{c^2}.
+\]
+The Newtonian epicyclic ratio \(3-q\) is reduced by exactly \(\beta^2\), independently of \(q\). Positivity recovers the stability criterion of Section 5.2; for \(q=2\), the ratio reduces to \(1/\gamma^2=\omega^2\) (Remark 3.2), so the orbit-equation precession parameter \(\omega\) is the radial-to-orbital frequency ratio — making the duality of Remark 5.2c a special case.
 
 # 6. Outlook
 Three natural extensions are:
@@ -294,3 +305,5 @@ Three natural extensions are:
 2. [Carroll1997LectureGR] Sean M. Carroll, "Lecture Notes on General Relativity," arXiv:`gr-qc/9712019` (v1, 3 Dec 1997). (Includes black holes/geodesic applications used as baseline GR anchors.)
 3. [Sommerfeld1916FineStructure] Arnold Sommerfeld, "Zur Quantentheorie der Spektrallinien," Ann. Phys. (Leipzig) 51 (1916) 1–94, 125–167. (Original derivation of the relativistic hydrogen fine structure from the precessing-ellipse orbit equation.)
 4. [Bertrand1873ClosedOrbits] Joseph Bertrand, "Théorème relatif au mouvement d'un point attiré vers un centre fixe," C. R. Acad. Sci. Paris 77 (1873) 849–853. (Proof that only inverse-square and Hooke forces yield closed Newtonian orbits.)
+5. [LandauLifshitz1975] L. D. Landau and E. M. Lifshitz, *The Classical Theory of Fields*, 4th ed., Pergamon, 1975. (§14: relativistic motion in a Coulomb field; orbit equation and Binet form.)
+6. [Will1993] C. M. Will, *Theory and Experiment in Gravitational Physics*, rev. ed., Cambridge UP, 1993. (§9: post-Newtonian decomposition of Schwarzschild precession into kinematic (1/6) and curvature (5/6) contributions.)

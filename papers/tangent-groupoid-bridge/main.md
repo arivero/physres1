@@ -131,7 +131,7 @@ inverse Fourier transform gives \(h(x;t) \propto N(t)\exp(c'|x|^2/t)\) with
 **Remark TG-R1.1.** The same argument rules out Lévy-stable alternatives \(\varphi(p)= c|p|^\alpha\)
 for \(\alpha \neq 2\): these are excluded by dimensional homogeneity, since the only dimensionless
 ratio constructible from \(\{m, \hbar, p, t\}\) with the correct engineering dimension
-\([K] = L^{-d}\) forces \(\alpha = 2\). See also Proposition PN-P1.3 in [PathIntNorm].
+\([K] = L^{-d}\) forces \(\alpha = 2\). See also Proposition PN-P1.3 in [PathIntegralNormalization].
 
 **Remark TG-R1.2 (Wick rotation as representation channel).** Both choices \(c = i\) (Minkowski)
 and \(c = -1\) (Euclidean) satisfy the groupoid-algebraic hypotheses (C), (T), (D), (M).
@@ -340,5 +340,5 @@ the path integral is groupoid convolution on the \(\hbar \neq 0\) fiber.
   quantization formula." *Commun. Math. Phys.* **212** (2000): 591–611. *arXiv:math/9902090*.
 - [Hawkins2008] Hawkins, E. "A groupoid approach to quantization." *J. Symplectic Geom.* **6**(1) (2008): 61–125. *arXiv:math/0612363*.
 - [HalfDensityQFT] See companion paper on half-density QFT.
-- [PathIntNorm] See companion paper on path-integral normalization.
+- [PathIntegralNormalization] A. Rivero and A.I.Scaffold, "Path-Integral Normalization: The d/2 Exponent as Composition Datum," companion satellite paper (2026).
 - [RCPFoundations] See companion paper on RCP as a foundational principle.

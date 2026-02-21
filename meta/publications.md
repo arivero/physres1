@@ -29,6 +29,10 @@ Papers submitted through the internal peer review process (AGENTS.md §11).
 
 | Paper | Submitted | Referee-1 | Referee-2 | Decision | Date | Notes |
 |-------|-----------|-----------|-----------|----------|------|-------|
+| Half-Density QFT | 2026-02-21 | MINOR REV | MINOR REV (2 MAJOR weaknesses) | **MAJOR REVISION** | 2026-02-21 | Referee-2 flagged ξ_conf clarity + missing Parker-Toms ref |
+| Delta Objects | 2026-02-21 | MINOR REV | MINOR REV (no MAJOR) | **ACCEPT** | 2026-02-21 | Both referees: no MAJOR weaknesses |
+| Relativistic Central Orbits | 2026-02-21 | MINOR REV (no MAJOR) | MINOR REV (1 MAJOR weakness) | **MAJOR REVISION** | 2026-02-21 | Referee-2 flagged Remark 5.2d epicyclic derivation gap |
+| Dirac Probes / Corners / Impulses | 2026-02-21 | MINOR REV (no MAJOR) | MINOR REV (no MAJOR) | **ACCEPT** | 2026-02-21 | Both referees: no MAJOR weaknesses |
 
 ## Readiness Queue
 

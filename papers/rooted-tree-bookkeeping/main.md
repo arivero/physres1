@@ -177,7 +177,7 @@ Wait—these are **not** the same: \(\tau_3^{(1)}\) contributes only the \(f''(f
 
 **Midpoint method at order 3:** Expanding the midpoint B-series to \(O(h^3)\), the coefficients are:
 \[
-a(\tau_3^{(1)}) = \tfrac{1}{4}, \quad a(\tau_3^{(2)}) = 0.
+a(\tau_3^{(1)}) = \tfrac{1}{8}, \quad a(\tau_3^{(2)}) = 0.
 \]
 
 For a **third-order accurate method**, the order conditions require:
@@ -185,7 +185,7 @@ For a **third-order accurate method**, the order conditions require:
 a(\tau_3^{(1)}) = \tfrac{1}{6}, \quad a(\tau_3^{(2)}) = \tfrac{1}{6}.
 \]
 
-Neither condition is satisfied: \(\Delta a(\tau_3^{(1)}) = 1/4 - 1/6 = 1/12\) and \(\Delta a(\tau_3^{(2)}) = 0 - 1/6 = -1/6\), so the midpoint method has order **2, not 3**.
+Neither condition is satisfied: \(\Delta a(\tau_3^{(1)}) = 1/8 - 1/6 = -1/24\) and \(\Delta a(\tau_3^{(2)}) = 0 - 1/6 = -1/6\), so the midpoint method has order **2, not 3**.
 
 **Butcher product at order 3:** When composing \(\Phi_h \circ \Phi_h\), the tree \(\tau_3^{(1)} = [\bullet, \bullet]\) arises from **grafting two order-1 trees simultaneously** onto a common root. The coproduct term \(\bullet{\cdot}\bullet \otimes \bullet\) (from Section 6.2) encodes this: cutting both children of \(\tau_3^{(1)}\) yields the forest product \(\bullet{\cdot}\bullet\) (disjoint union of the two pruned subtrees) on the left and the root stump \(\bullet\) on the right. The Butcher product formula gives:
 \[
@@ -197,12 +197,7 @@ Explicitly, for the midpoint method:
 (a_{\text{mid}} \star a_{\text{mid}})(\tau_3^{(1)}) = a(\tau_1)^2 \cdot \gamma(\tau_3^{(1)}) / \sigma(\tau_3^{(1)}) = 1^2 \cdot 1 / 2 = \tfrac{1}{2}.
 \]
 
-For the "double step" \(\Phi_{2h}\), the coefficient is:
-\[
-a_{2h}(\tau_3^{(1)}) = a_h(\tau_3^{(1)}) \cdot 2^3 = 0 \cdot 8 = 0.
-\]
-
-The mismatch is \(1/2 - 0 = 1/2\), which is \(O(1)\) (not suppressed by \(h\)). But this is at order \(h^3\), and the midpoint method is only order-2 accurate, so the composition error \(\Phi_h \circ \Phi_h - \Phi_{2h} = O(h^3)\) as expected.
+The composition error \(\Phi_h \circ \Phi_h - \Phi_{2h}\) is \(O(h^3)\) as expected, consistent with the midpoint method being order-2 accurate.
 
 **Parallel to RG:** At two loops in RG, there are two topologically distinct diagrams:
 1. **"Sunset" diagram** (two loops attached to a single vertex): analogous to \(\tau_3^{(1)} = [\bullet, \bullet]\).

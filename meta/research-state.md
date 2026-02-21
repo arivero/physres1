@@ -3,7 +3,7 @@
 This file is the durable "working memory" for continuing research in this repo across context resets.
 It is **not** a citable source and may reference `conv_patched.md` only as an idea log.
 
-Date: 2026-02-20
+Date: 2026-02-21
 
 ## North Star (Current Paper)
 - Manuscript: `paper/main.md` (publishable artifact).
@@ -139,6 +139,37 @@ Track how the central thesis has been refined. Update when exploration reveals g
   - `D21` integration policy (initial + quantitative-gate pass done; branch open),
   - `D22` cross-thread linkage triage (candidate drafted, currently deferred; branch open).
 - Decision gate: `C300` deferred (no correctness defect). Reopen only for a targeted Section 3 readability-compression pass.
+
+## Session 2026-02-21 (Publication Track + Referee Review, 13:37–14:30 CET)
+
+### Publication track lifecycle (first end-to-end run)
+- 4 FROZEN papers voted unanimously 5/5 → submitted to pub-track → 8 referee reports → editor decisions
+- **ACCEPT**: delta-objects, dirac-probes-corners-impulses (→ docs/)
+- **MAJOR REVISION**: half-density-qft (referee-2: 2 MAJOR weaknesses), relativistic-central-orbits (referee-2: 1 MAJOR weakness)
+- New hard rule: any MAJOR weakness from any referee → MAJOR REVISION (AGENTS.md §11)
+- Referees must be spawned as independent agents (not team members)
+- Revision flow: one task per referee comment → agents edit → editor verifies → votes.md reset → re-vote → (MAJOR: re-review)
+
+### Revisions completed (pending re-vote next session)
+- **Relativistic Central Orbits** (11/11 concerns): Remark 5.2d derivation (mathematician), 10 MINOR (orchestrator from physicist BB3 rebuttal). Two referee errors identified (effective mass is γm not γ³m; sign convention was correct).
+- **Half-Density QFT** (11/13 concerns): M1 "exactly absorbs" → "matches at leading Ricci order"; M2 Parker-Toms ref added; 9 MINOR addressed. 2 deferred (HD-D4.1 orphan, §5 renumbering).
+
+### Cornerstone edits
+- Remark P9.1b-Q1d: Stage 3.5 Verlinde fusion forces k∈ℤ (THREE-AGENT + critic review)
+- References #26 [Verlinde1988], #25 corrected (547-598), #27 [Witten1989]
+- ReshetikhinTuraev page correction: 547-597 → 547-598
+
+### Other
+- Rooted-tree-bookkeeping: order-3 coefficient a(τ₃⁽¹⁾)=1/8 (was 1/4), Δa=-1/24 (was 1/12). Computationalist found, mathematician verified, applied.
+- Computationalist Efimov/PSL(2,R) proposal queued (proposals/computationalist-efimov-scale-channel.md)
+- Computationalist pre-voted YES on 5 additional satellites (for future voting rounds)
+- AGENTS.md: orchestrator = "department head" (domain-agnostic scaffold)
+
+### Next session priorities
+1. Re-vote rounds for both MAJOR papers (reset votes.md, broadcast, unanimous needed)
+2. After unanimous: re-submit to fresh referees (independent, not team members)
+3. Apply Efimov proposal if reviewed
+4. Continue cornerstone work (BB1 arithmetic chain needs critic third-agent)
 
 ## Season 1 Findings (2026-02-20)
 
