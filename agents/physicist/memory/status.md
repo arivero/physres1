@@ -115,6 +115,16 @@
   - m1: exponent (N+1)/2 clarification; m2: impulse-work displayed eq; m3: DCT sentence
   - m4: Noether [Goldstein2002] reference; m5: viscosity-solution clarification
 
+### Session 9 (2026-02-21, xref audit session)
+
+**Completed this sub-session:**
+- Task #1 (cornerstone xref audit): COMPLETE
+  - proposals/task-cornerstone-xref-audit.md written
+  - All 12 satellites verified: no broken xrefs
+  - Key finding: 3 formal citation keys ([PathIntegralNormalization], [TangentGroupoidBridge], [RCPFoundations]) missing from bibliography
+  - All specific derivation xrefs verified: PA-D1.2a/b, HD-D1.3, RG-D1.2a, RG-D1.7, RCPFound §6, Theorem 2.1 Dirac Probes
+  - 1 content check pending: rooted-tree-bookkeeping line 1098 claim
+
 ### Session 8 (2026-02-21, continuation after context-reset)
 
 **Completed this sub-session:**

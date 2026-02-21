@@ -108,6 +108,49 @@ Session summary: 18 targeted searches; 179 new blackboard lines; 450 total lines
 
 **Status (Final extended, 2026-02-20, 23:31–23:40 CET):** OQ4 + OQ5 exploration + synthesis complete.
 
+## Session 4 (2026-02-21, Task #2, Efimov/PSL(2,R) Research)
+
+**Research Focus:** Three-body Efimov effect and its connection to PSL(2,ℝ) representation theory
+
+**Key Findings:**
+1. **Möbius transformation structure (arXiv:2509.04746):** Three-body RG limit cycle is universally described by a real Möbius transformation with three parameters
+2. **PSL(2,ℝ) as natural framework:** Möbius transformations ARE the action of PSL(2,ℝ) on configuration space; the limit cycle periodicity exp(π/s₀) maps naturally to PSL(2,ℝ) UIR character periodicity
+3. **Log-periodic spectrum connection:** Efimov tower En ~ exp(2πn/s₀) corresponds to periodic orbits of Möbius transformation group
+4. **RCP scale channel hypothesis:** Discrete scale invariance = limit cycle in RCP scale channel; may lift to groupoid structure combining RG flow + partition refinement
+
+**Deliverables:**
+- proposals/task-efimov-psl2r.md: 400+ lines, comprehensive survey
+- 8 key papers analyzed and cited (arXiv:2509.04746, 2601.09266, 2501.18844, 1208.3674, 2111.12716, 1302.0884, physics/0507031, 2404.00275)
+- Three-tier next steps formulated: (1A) mathematician PSL(2,ℝ) verification, (1B) physicist numerical extraction, (2) groupoid construction
+
+**Confidence Assessment:**
+- Möbius structure: HIGH (physics confirmed)
+- PSL(2,ℝ) connection: MEDIUM (structurally compelling, unverified)
+- Groupoid interpretation: LOW (speculative but promising)
+
+**Status (14:50 CET):** Task #2 complete. Research ready for team execution (mathematician priority for Q1–Q2 algebraic verification)
+
+## Task #4 Session (2026-02-21, Library Audit, 15:00–15:45 CET)
+
+**Focus:** Bibliography audit for cornerstone bibliography.md — identify and locate missing PENDING/OA references
+
+**Findings:**
+- 7 PENDING items identified; 3-4 are critical for P4.2 proof
+- **3 top-priority ACCESSIBLE sources located:**
+  1. arXiv:1810.05264 (Nauenberg/Chin symplectic Newton) — validates discrete structure as fundamental
+  2. Berkeley1734 (Wikisource/IA) — philosophical foundation for discrete refinement philosophy
+  3. arXiv:math/0112048 (Nauenberg Kepler area law) — rigorous defense of Newton's limit transition
+- **Secondary priorities:** Nolan (stable distributions, alpha=2), Pourciau (impulse assumption critique)
+- **Library-only (needs institutional access):** Landsman1998, Hairer volumes (Springer monographs)
+- **Bonus finding:** Stable distributions literature (Brown U OA, Nolan chapters) supports P4.2 "alpha=2 exclusion" argument
+
+**Deliverable:**
+- proposals/task-library-audit.md: 400+ lines, tiered acquisition plan, 11+ references with OA status, ready for implementation
+
+**Next Phase:** Download/ingest OA sources (3-4 PDFs), attempt Pourciau acquisition via ResearchGate, coordinate with Landsman/Hairer institutional access
+
+**Status (15:45 CET):** Library audit complete. Ready for next task.
+
 ## Session 3 Resume (2026-02-20, Hour 2, 23:30–23:37 CET)
 
 **OQ4 Exploration: Arithmetic of Feynman Integrals (COMPLETE)**

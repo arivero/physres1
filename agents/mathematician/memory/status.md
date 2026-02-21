@@ -476,10 +476,23 @@ Needs critic check before any paper mention.
 - BB5: physicist OQ1a content (single-agent; needs second agent)
 - BB6: PROMOTED → nonperturbative notebook; slot FREE
 
-### Next session priorities:
-1. BB5 OQ1a: read physicist's content; second-agent mathematical verification
-2. BB2 arithmetic Feynman: paper-edit for rg-fundamental outlook + notebook entry (pending)
-3. New anomalies (Painlevé Stage 2.5, modular forms in Feynman): mathematical assessment
+### Session 10 work (2026-02-21, afternoon)
+
+### Task #3: P4.2 consistency check
+- Read cornerstone §6.1 (P4.2 full statement), all remarks P4.2a–i
+- Read rcp-foundations §6 (full restatement + proof sketch + RCP interpretation)
+- Read tangent-groupoid-bridge §3 (TG-P1.1 groupoid proof of d/2)
+- Read path-integral-normalization §3 (PN-P1.1 + §6.4)
+- VERDICT: Consistent across all satellites. Three items flagged (none are logical errors):
+  1. IMPORTANT: rcp-foundations §6.1 should forward-ref RCP-R6.2 for unitarity/self-adjointness
+  2. MINOR: "Proposition" (cornerstone) vs "Theorem" (satellites) — terminology inconsistency
+  3. MINOR: TG-P1.1 proof — normalisation ∫h=1 should be made explicit
+- Full report: proposals/task-p42-consistency.md
+
+## Next session priorities:
+1. If paper edits approved: RCP-Foundations §6.1 forward-ref fix (diff ready to write)
+2. Open anomalies: Painlevé Stage 2.5, modular forms in Feynman (mathematical assessment)
+3. BB5 OQ1a (physicist content) — needs second-agent mathematical verification
 
 ## Session 9 continued (after context compaction, 2026-02-21)
 
