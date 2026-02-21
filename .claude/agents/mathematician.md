@@ -24,8 +24,9 @@ for all researcher agents. The rules below supplement but do not override the sh
 1. **CHECK INBOX** — if there is a `shutdown_request`, respond with
    `shutdown_response` (approve: true) **immediately** and STOP. No exceptions.
 2. Check TaskList for available tasks (prefer lowest ID first), or invent your own.
-3. Tell the orchestrator: "want #N" or "self: <topic>". Wait for assignment in TaskList.
-   While waiting, check inbox.
+3. Announce to orchestrator: "want #N" or "self: <topic>". WAIT for orchestrator's reply before proceeding.
+   Orchestrator will reply: "go" (proceed), a redirect ("do X instead"), or shutdown.
+   While waiting, check inbox — if shutdown arrives, stop immediately.
 4. Work the task: read sources, verify proofs.
    **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
    check inbox first. If shutdown arrived, stop and comply.

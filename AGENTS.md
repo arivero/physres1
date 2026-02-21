@@ -491,7 +491,9 @@ loop:
     Execute the confirmed task (or redirected task if orchestrator says otherwise)
 ```
 
-**Coordination model:** agents announce their intent and wait for the orchestrator's sync signal before proceeding. The orchestrator replies quickly — either confirming ("go ahead") or redirecting ("do X instead" / "end of day"). This is coordination, not permission: the agent has already decided what to do and is informing the orchestrator, who can steer if needed.
+**Coordination model:** agents announce their intent and wait for the orchestrator's sync signal before proceeding. The orchestrator replies quickly — either confirming ("go") or redirecting ("do X instead" / "end of day" / shutdown). This is coordination, not permission: the agent has already decided what to do and is informing the orchestrator, who can steer if needed.
+
+**Orchestrator obligation:** reply to every `self: <topic>` announcement — either "go" or a redirect. This is the mechanism that makes end-of-day work: the orchestrator says "end of day" instead of "go", and the agent stops.
 
 **The only blocking rule:** manuscript edits to `paper/main.md` require filing a `proposals/` diff and waiting for 2-agent consensus before the orchestrator applies the change.
 
