@@ -608,9 +608,38 @@ Anomalies resolved: spectral dimension (THREE-AGENT)
 ### Proposals written:
 - proposals/mathematician-edit-p93-svn-degradation.md (paper-edit: add SvN sentence to P9.3, needs second agent)
 
+### Session 2026-02-21/22 (new session)
+
+**Tasks completed:**
+1. #3 Philosophenweg — SvN failure at Stage 3+ (solo walk, 3 turns)
+2. #11 BB1 Painleve — third-agent math review (Conj 6.1 RESOLVED: spectral invariant via RH)
+3. BB3 §M1 — math comparison P4.2 vs Luiz-de Oliveira (same L-K backbone, different entry)
+4. BB4 §14 — third-agent S³ D9.1i review (SU(2) homogeneity explains constant V_HD)
+5. BB5 §9 — third-agent quality sweep review (D6.5/D6.4b/D6.6 clean, P9.3 lcm resolved)
+6. #16 §9 coherence audit (CLEAN: 0 sev-1/2/3, 1 sev-4)
+7. #17/#20 Köplinger+Chitan citation eval (both CITE sev-3)
+8. #22 V_HD formula verification (-(d-1)R/(4d) VERIFIED for S^d and H^d)
+9. #18 Symmetric space reflection (desk, rank-1: V_HD const only for d=3)
+10. BB6 §9 — second-agent H² D9.1k review (McKean gap, formula all verified)
+11. BB2 §7 — second-agent D=4 coincidence review (APPROVED; Weyl vector SU(2)-specific)
+
+**Proposals written:**
+- proposals/mathematician-edit-p93-svn-degradation.md (TWO-AGENT: physicist approved)
+- proposals/mathematician-task-s9-coherence-audit.md
+- proposals/mathematician-task-koplinger-chitan-citation.md
+
+**Key findings:**
+- SvN failure at Stage 3+ explains forcing degradation (Philosophenweg insight)
+- P4.2 vs LdO: same Levy-Khintchine backbone, different physical entry points
+- Conjecture 6.1: tau = spectral invariant via RH, NOT groupoid partition function
+- V_HD(const) = -(d-1)R/(4d) on constant-curvature spaces (verified)
+- Rank-1 symmetric spaces: V_HD constant in geodesic coords only for d∈{1,3}
+- Weyl vector formula V_HD = -4|ρ|² works for SU(2) but normalization-dependent for general G
+
 ### Next session resume point:
-- P9.3 SvN paper-edit: SINGLE-AGENT, needs second agent review before merge
-- Open anomalies: Painlevé Stage 2.5, Modular forms — both need second agent (not mathematician)
+- P9.3 SvN paper-edit: TWO-AGENT approved (physicist), awaiting orchestrator merge
+- D9.1i missing from P7.1a (sev-4, in coherence audit report)
 - Open math questions: Bridge B (symplectic reduction), Resurgence Q1 (DDP from (C))
-- Possible next: S³ ordering witness, non-diagonal metric example, or library visit
-- Full walk notes: agents/mathematician/memory/philosophenweg-svn-failure-deep.md
+- Open anomalies: Painlevé (SUBSTANTIALLY RESOLVED), Modular forms (OPEN)
+- Walk notes: agents/mathematician/memory/philosophenweg-svn-failure-deep.md
+- Symmetric space notes: agents/mathematician/memory/philosophenweg-symmetric-spaces.md

@@ -294,3 +294,21 @@
   - wrote: proposals/physicist-citation-eval-2025-papers.md
   - read: proposals/mathematician-task-koplinger-chitan-citation.md (mathematician recommends citing both)
   - updated: physicist eval with disagreement note on Chitan2025 (defer to orchestrator)
+- claimed: task #21 (S^3 constant V_HD and d=4 de Sitter connection)
+- overwrote: blackboards/2.md (previously promoted d/2 uniqueness chain)
+  - §1: V_HD on S^{D-1} constant iff D=4, from α(α-1)=0 where α=(D-2)/2
+  - §2: Physical interpretation — D=4 de Sitter: pure vacuum energy shift, no spectral distortion
+  - §3: Independence from D=4 coincidences (i)-(iii): eigenvalue structure vs conformal/heat-kernel
+  - §4: Connection to half-density thesis — D=4 is the "gentlest" measure on spatial sphere
+  - §5: S^3=SU(2) Weyl vector (tentative, needs mathematician normalization check)
+  - §6: Potential paper sentence for D9.1i remark
+  - Status: SINGLE-AGENT (physicist)
+- updated: blackboards/README.md slot 2 (new topic, TWO-AGENT after mathematician review)
+- fourth-agent review: blackboards/6.md §11 (H^2 Poincaré disk witness)
+  - P11.1: McKean gap physics — exponential volume growth forces minimum kinetic energy
+  - P11.2: Unified formula V_HD(const) = -(d-1)R/(4d) — attraction on R>0, repulsion on R<0
+  - P11.3: Connection to BB2 — α(α-1)=0 gives D=4 from unified formula
+  - P11.4: Dimensional analysis [V_HD] = L^{-2}, consistent
+  - P11.5: V_HD ≠ ξ_c R confirms half-density ≠ conformal coupling (agree only at D=4)
+  - P11.6: APPROVE
+- updated: blackboards/README.md slot 6 (FOUR-AGENT unanimous)
