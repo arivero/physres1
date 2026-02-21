@@ -327,3 +327,81 @@ Categorical QM ⊂ Hardy ⊂ AQFT ≈ RCP
 - papers/rcp-foundations/main.md §5 (RCP three channels)
 - paper/main.md §10 (P4.2 composition forcing)
 - blackboards/2.md (source; student §§1-8, mathematician §9)
+
+---
+
+## Part 7: Composition-Law Derivations of QM — Literature Landscape (THREE-AGENT: critic + mathematician + physicist)
+
+**Source:** blackboards/3.md (2026-02-21, Session 11). Promoted 2026-02-22.
+**Status:** THREE-AGENT unanimous. Prior art coverage complete (arXiv:2602.09984 already cited as ref 23).
+
+### 7.1 Three Families of QM Derivations
+
+**Family A: Dynamical Composition** (propagators/amplitudes over time)
+
+| Program | Key axioms | Mathematical backbone | Scope |
+|---------|------------|----------------------|-------|
+| **P4.2** (ours) | (C) + setup | Levy-Khintchine on (R^d, +) | exp(iS/hbar), d/2, deformation quant, RG, RCP |
+| **Luiz-de Oliveira ITA** (arXiv:2602.09984, Feb 2026) | Action additivity + Cramer-Rao + normalization | Levy-Khintchine on (R^d x R, +) | exp(iA eta), d/2, Schrodinger eq, [x,p]=ihbar |
+| **Caticha** (entropic dynamics, 2009-2025) | MaxEnt + information geometry | Hamilton-Killing flow on statistical manifold | Schrodinger eq |
+
+**Family B: Kinematic Composition** (systems/states)
+
+| Program | Key axioms | Derives | Does NOT derive |
+|---------|------------|---------|-----------------|
+| Goyal-Knuth-Skilling 2010 (ref 24) | Sequential measurement composition | Complex amplitudes + Born rule | hbar, path integral, Schrodinger |
+| Chiribella-D'Ariano-Perinotti 2011 | 6 axioms (causality, purification, etc.) | Finite-dim QM | hbar, path integral |
+| Masanes-Mueller 2011 | Tomographic locality + continuous reversibility | Complex QM (rules out real/quaternionic) | Dynamics |
+| Hardy 2001 | 5 axioms + simplicity | Hilbert space QM | Dynamics, hbar |
+
+**Family C: Measure-Theoretic / Interference**
+
+| Program | Key axioms | Derives |
+|---------|------------|---------|
+| Sorkin 1994 | Grade-2 sum rule (no 3rd-order interference) | Born rule = grade-2 additivity |
+| Barnum-Mueller-Ududec 2014 | No higher-order interference | R/C/H QM + octonionic d=3 |
+
+### 7.2 P4.2 vs Luiz-de Oliveira: Mathematical Comparison
+
+Both use the SAME mathematical backbone (Levy-Khintchine classification of infinitely divisible distributions on locally compact abelian groups) but specialize differently:
+
+| | P4.2 | LdO |
+|---|---|---|
+| Group | (R^d, +) | (R^d x R, +) |
+| Fourier variable | momentum p | action parameter eta |
+| Key step | K_hat_t(p) = exp(t psi(p)) | |chi| = 1 forces oscillatory |
+| Exclusion mechanism | Dimensional homogeneity kills Levy flights | Cramer-Rao kills non-Gaussian |
+
+The two derivations are NOT mathematically equivalent — they are distinct specializations of the same abstract theorem. LdO carries action A as an explicit extra dimension.
+
+### 7.3 What P4.2 Does Uniquely
+
+1. **Single axiom:** composition alone (others need 3-6 axioms)
+2. **Deformation quantization bridge:** star product from composition
+3. **RG as Stage 3:** composition -> QM -> QFT chain
+4. **RCP taxonomy:** partition/representation/scale
+5. **d/2 from dimensional analysis:** cleanest known derivation
+6. **"Refinement compatibility"** as a framework name: ZERO external hits
+
+### 7.4 Family Structure
+
+- **Dynamical (A) vs Kinematic (B):** A-family derives dynamics (path integral, Schrodinger); B-family derives state-space structure (Hilbert space, complex numbers, Born rule). Complementary, not competing.
+- **Measure-theoretic (C):** Sorkin grade-2 = Born rule. Composition implies grade-2 (bilinear in K, one intermediate integration). Grade-3 would need two intermediate integrations, incompatible with standard composition.
+- **Nelson stochastic mechanics (1966):** historical predecessor. Derives Schrodinger from diffusion. NOT compositional, but the diffusion kernel D = hbar/(2m) matches the composition-forced normalization. Euclidean shadow of the composition program.
+
+### 7.5 Citation Status
+
+- arXiv:2602.09984 ALREADY CITED as ref 23 (Remark P4.2i, line 641-642)
+- Comparison verified accurate (THREE-AGENT)
+- **NO FURTHER ACTION NEEDED**
+
+### References
+- Luiz-de Oliveira arXiv:2602.09984 (ITA, Feb 2026)
+- Goyal-Knuth-Skilling arXiv:1008.4831 (2010)
+- Chiribella-D'Ariano-Perinotti arXiv:1011.6451 (2011)
+- Masanes-Mueller arXiv:1004.1483 (2011)
+- Hardy arXiv:quant-ph/0101012 (2001)
+- Sorkin arXiv:gr-qc/9401003 (1994)
+- Caticha arXiv:0907.4335 (2009)
+- Nelson, "Derivation of the Schrodinger Equation from Newtonian Mechanics" (1966)
+- blackboards/3.md (source)
