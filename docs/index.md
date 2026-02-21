@@ -9,5 +9,5 @@ Papers accepted through internal peer review.
 
 | Paper | Source |
 |-------|--------|
-| [Delta Objects as Half-Density Kernels](delta-objects/main) | [md](delta-objects/main.md) |
-| [Dirac-Supported Probes, Corners, and Impulses](dirac-probes-corners-impulses/main) | [md](dirac-probes-corners-impulses/main.md) |
+{% assign papers = site.pages | where: "layout", "page" | sort: "title" %}{% for paper in papers %}| [{{ paper.title }}]({{ paper.url | relative_url }}) | [md]({{ paper.path }}) |
+{% endfor %}

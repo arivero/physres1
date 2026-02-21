@@ -363,12 +363,13 @@ reports survive in `papers/<name>/referee-{1,2}.md` (copied during revision step
 When accepted:
 1. Build PDF from markdown (pandoc → pdflatex)
 2. Create `docs/<name>/` with `main.pdf` + `main.md`
-3. Update `docs/index.md` (relative links only)
-4. Update `meta/publications.md` (status: "published")
-5. Consolidate `papers/<name>/notes/` into a notebook titled "Old notes of paper <name>" in `notebooks/`
-6. Remove the working directory: `git rm -r papers/<name>/`
-7. Git history preserves everything — no data loss
-8. Commit
+3. Ensure `main.md` frontmatter has `layout: page` and `title:` — the site index auto-discovers papers with these fields (no manual `index.md` edit needed)
+4. Convert math delimiters to `$$...$$` (kramdown passes `$$` content verbatim; `\(...\)` and `\[...\]` get broken by kramdown escaping)
+5. Update `meta/publications.md` (status: "published")
+6. Consolidate `papers/<name>/notes/` into a notebook titled "Old notes of paper <name>" in `notebooks/`
+7. Remove the working directory: `git rm -r papers/<name>/`
+8. Git history preserves everything — no data loss
+9. Commit
 
 ---
 
