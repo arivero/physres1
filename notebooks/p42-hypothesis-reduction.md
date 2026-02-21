@@ -487,7 +487,7 @@ The last entry is new: composition (C) applied to angle-variable kernels on the 
 
 ---
 
-## Part 6: d/2 Normalization Uniqueness from Composition
+## Part 7: d/2 Normalization Uniqueness from Composition
 
 **Source:** blackboards/2.md (d/2 uniqueness theorem and proof chain, plus physicist second-agent review)
 **Status:** TWO-AGENT verified (mathematician + physicist), 2026-02-21
@@ -562,11 +562,11 @@ P4.2d (paper/main.md line ~623) states the dimensional matching \(\alpha = 2\) a
 
 ---
 
-## Part 7: Scope of d/2 Uniqueness — Spectral Dimension and Planck-Scale Dispersion
+## Part 8: Scope of d/2 Uniqueness — Spectral Dimension and Planck-Scale Dispersion
 
 **Source:** blackboards/1.md (2026-02-21, mathematician + physicist second-agent review)
 **Status:** TWO-AGENT verified (mathematician + physicist), 2026-02-21
-**Extends:** Part 6 (scope boundaries table)
+**Extends:** Part 7 (scope boundaries table)
 
 ### Question
 
@@ -585,7 +585,7 @@ Standard QM (\(z=1\)): \(d_s = d\). Quartic UV (\(z=2\)): \(d_s = d/2\).
 
 ### Dimensional mechanism
 
-Part 6 proved: \(\{m,\hbar\}\)-only forces \(\alpha = 2\) (quadratic).
+Part 7 proved: \(\{m,\hbar\}\)-only forces \(\alpha = 2\) (quadratic).
 
 With \(\{m,\hbar,L_P\}\): \(c_\alpha \sim m^{-1}\hbar L_P^{\alpha-2}\) is dimensionally consistent for any \(\alpha = 2+2k\), \(k \geq 0\). In particular:
 - \(\alpha = 2\): standard (\(c_2 = \hbar/m\), no \(L_P\))
@@ -606,7 +606,7 @@ Horava-Lifshitz: \(z=2\) is a UV fixed point of the RG flow, not a postulate. Lo
 
 ### Project implication
 
-The d/2 uniqueness theorem (Part 6) is STRENGTHENED by this analysis:
+The d/2 uniqueness theorem (Part 7) is STRENGTHENED by this analysis:
 - Composition + \(\{m,\hbar\}\) forces standard QM (the paper's P4.2).
 - UV spectral dimension reduction requires gravity (\(L_P\)), which composition alone does not provide.
 - The paper's thesis is correct: composition forces \(\hbar\) WITHOUT needing gravity.
@@ -624,7 +624,7 @@ The initial framing ("d/2 IS the UV spectral dimension") was too strong. The cor
 
 ---
 
-## Part 8: d/2 Occurrence Landscape (Disambiguation)
+## Part 9: d/2 Occurrence Landscape (Disambiguation)
 
 **Source:** Student Philosophenweg (2026-02-21, context window 2)
 **Status:** SINGLE-AGENT (student). Cataloguing note, no new claims.
@@ -633,16 +633,16 @@ The initial framing ("d/2 IS the UV spectral dimension") was too strong. The cor
 
 | # | Appearance | Mechanism | Independent? |
 |---|-----------|-----------|-------------|
-| 1 | Composition normalization: \(K_t \sim t^{-d/2}\) | Levy-Khintchine + \(\{m,\hbar\}\) (Part 6, P4.2) | PRIMARY |
+| 1 | Composition normalization: \(K_t \sim t^{-d/2}\) | Levy-Khintchine + \(\{m,\hbar\}\) (Part 7, P4.2) | PRIMARY |
 | 2 | Half-density weight: \(\|g\|^{1/2}\) gives length\(^{d/2}\) | Geometric (density bundle on \(d\)-manifold) | = #1 |
-| 3 | UV spectral dimension: \(d_s = d/2\) for \(z=2\) Lifshitz | Quartic dispersion + \(L_P\) (Part 7) | INDEPENDENT of #1 |
+| 3 | UV spectral dimension: \(d_s = d/2\) for \(z=2\) Lifshitz | Quartic dispersion + \(L_P\) (Part 8) | INDEPENDENT of #1 |
 | 4 | Planck-area sieve: \(d=4\) singled out because \(d/2 = 2 \in \mathbb{Z}\) | Number-theoretic (Diophantine on PA-D1.3) | CONSEQUENCE of #1 |
 
 ### Identifications and separations
 
 **(1) = (2):** The Van Vleck determinant \(\|g\|^{1/2}\) in the short-time kernel IS the mechanism producing \(t^{-d/2}\) under composition. The half-density formalism gives geometric meaning to the composition normalization. These are the same fact viewed algebraically (#1) and geometrically (#2). Documented in: path-integral-normalization satellite, oq1a-planck-area-fundamental notebook.
 
-**(3) is INDEPENDENT of (1)/(2):** The UV spectral dimension \(d_s = d/z = d/2\) at \(z=2\) requires the Planck length \(L_P\) as a third dimensional constant (Part 7). The composition normalization \(t^{-d/2}\) is an IR property forced by \(\{m,\hbar\}\) alone. The UV modification requires gravity. The numerical coincidence \(d/2 = d/2\) is trivial (both are half of \(d\)), not a shared mechanism.
+**(3) is INDEPENDENT of (1)/(2):** The UV spectral dimension \(d_s = d/z = d/2\) at \(z=2\) requires the Planck length \(L_P\) as a third dimensional constant (Part 8). The composition normalization \(t^{-d/2}\) is an IR property forced by \(\{m,\hbar\}\) alone. The UV modification requires gravity. The numerical coincidence \(d/2 = d/2\) is trivial (both are half of \(d\)), not a shared mechanism.
 
 **(4) is a CONSEQUENCE of (1)/(2):** The Diophantine sieve in PA-D1.3 uses the VALUE of the composition normalization exponent (\(d/2\)) in a number-theoretic constraint. If composition forced a different exponent (say \(d/3\)), the sieve would select a different dimension. So #4 parasitizes #1.
 
@@ -652,25 +652,25 @@ The statement "d/2 appears four times in the project" could mislead a reader int
 
 ### References
 
-- Part 6: d/2 uniqueness theorem
-- Part 7: spectral dimension scope
+- Part 7: d/2 uniqueness theorem
+- Part 8: spectral dimension scope
 - notebooks/oq1a-planck-area-fundamental.md: Planck-area sieve
 - docs/planck-area/main.md: PA-D1.3 (gravity-only sieve)
 
 ---
 
-## Part 9: Spectral Dimension d=4 Selection — Compatibility, Not Forcing (FOUR-AGENT)
+## Part 10: Spectral Dimension d=4 Selection — Compatibility, Not Forcing (FOUR-AGENT)
 
 **Source:** blackboards/1.md §§1-12 (mathematician + physicist + critic + computationalist)
 **Proposal:** proposals/computationalist-task-spectral-dimension-d4-selection.md
 **Status:** FOUR-AGENT UNANIMOUS (2026-02-21). Corrected framing of original computationalist proposal.
-**Extends:** Part 7 (scope of d/2 uniqueness, TWO-AGENT) → upgraded to FOUR-AGENT with sharpened verdict.
+**Extends:** Part 8 (scope of d/2 uniqueness, TWO-AGENT) → upgraded to FOUR-AGENT with sharpened verdict.
 
 ### The observation
 
 Two independent arguments produce the exponent d/2:
 
-**(A) Composition (this project, P4.2).** The d/2 uniqueness theorem (Part 6) forces normalization \(K_t \sim t^{-d/2}\) from \(\{m, \hbar\}\)-only. With modified dispersion \(\phi(p) = -c_z|p|^{2z}\) at UV, the spectral dimension is \(d_s = d/z\). For quartic dispersion (\(z=2\)): \(d_s = d/2\).
+**(A) Composition (this project, P4.2).** The d/2 uniqueness theorem (Part 7) forces normalization \(K_t \sim t^{-d/2}\) from \(\{m, \hbar\}\)-only. With modified dispersion \(\phi(p) = -c_z|p|^{2z}\) at UV, the spectral dimension is \(d_s = d/z\). For quartic dispersion (\(z=2\)): \(d_s = d/2\).
 
 **(B) Quantum gravity universality (Carlip 2017, arXiv:1705.05417).** CDT, asymptotic safety, Horava-Lifshitz, and LQG all find \(d_s \to 2\) in the UV.
 
@@ -696,7 +696,7 @@ S\(^2\) ordering comparison: Laplace-Beltrami gives \(d_s \to 2\), left-ordered 
 The original computationalist proposal overclaimed. The BB1 three-agent analysis (mathematician + physicist + critic), confirmed by the computationalist fourth-agent review, established:
 
 **1. \(d_s = d/2\) requires \(L_P\), not just composition.**
-Part 6 proves: \(\{m, \hbar\}\)-only forces \(\alpha = 2\) (quadratic dispersion), giving \(d_s = d\) always. Quartic dispersion (\(\alpha = 4\)) requires \(c_4 = \hbar L_P^2/m\), i.e., the Planck length as a third dimensional constant. Composition is COMPATIBLE with quartic dispersion when \(L_P\) is available, but does not FORCE it.
+Part 7 proves: \(\{m, \hbar\}\)-only forces \(\alpha = 2\) (quadratic dispersion), giving \(d_s = d\) always. Quartic dispersion (\(\alpha = 4\)) requires \(c_4 = \hbar L_P^2/m\), i.e., the Planck length as a third dimensional constant. Composition is COMPATIBLE with quartic dispersion when \(L_P\) is available, but does not FORCE it.
 
 **2. The coincidence \(d/2 = 2\) at \(d = 4\) is dimensional, not \(d\)-specific.**
 The formula \(d_s = d/z = d/2\) at \(z = 2\) holds for ALL \(d\). The equation \(d/2 = 2\) selects \(d = 4\) trivially (algebra, not physics). There is no mechanism specific to \(d = 4\) that makes the spectral dimension equal 2.
@@ -729,9 +729,9 @@ All four agents concur: this result is a scope clarification for the d/2 uniquen
 ### References
 
 - blackboards/1.md: full FOUR-AGENT analysis (§§1-12)
-- Part 6 (this notebook): d/2 uniqueness theorem
-- Part 7 (this notebook): spectral dimension scope (TWO-AGENT, now subsumed)
-- Part 8 (this notebook): d/2 occurrence landscape (student)
+- Part 7 (this notebook): d/2 uniqueness theorem
+- Part 8 (this notebook): spectral dimension scope (TWO-AGENT, now subsumed)
+- Part 9 (this notebook): d/2 occurrence landscape (student)
 - proposals/computationalist-task-spectral-dimension-d4-selection.md: original proposal + self-correction
 - Carlip, arXiv:1705.05417 (2017): spectral dimension universality review
 - Horava, Phys. Rev. D 79, 084008 (2009): Lifshitz gravity
@@ -740,7 +740,7 @@ All four agents concur: this result is a scope clarification for the d/2 uniquen
 
 ---
 
-## Part 9: V_HD Coordinate Dependence and Intrinsic Content (THREE-AGENT)
+## Part 11: V_HD Coordinate Dependence and Intrinsic Content (THREE-AGENT)
 
 ### Context
 
@@ -815,6 +815,6 @@ THREE-AGENT (mathematician + physicist + critic, BB0). Unanimous approval.
 ### References
 
 - blackboards/0.md: full THREE-AGENT analysis (§§1-11)
-- Part 6 (this notebook): d/2 uniqueness theorem
+- Part 7 (this notebook): d/2 uniqueness theorem
 - agents/mathematician/memory/philosophenweg-symmetric-spaces.md: desk reflection on rank-1 spaces
 - proposals/mathematician-edit-d91j-lie-groups.md: paper-edit proposal

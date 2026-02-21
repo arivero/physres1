@@ -1,47 +1,37 @@
 # Computationalist — Status
 
-## Last session: 2026-02-22
+## Last session: 2026-02-22 (continued)
 
-## Tasks completed this session
+## Tasks completed this session (continuation)
 
-### 1. S^3 spectral comparison — full D9.1i formalization (kanban task #1)
-- Re-verified all S^3 results with comprehensive SymPy script
-- Updated BB4 §12 with formal D9.1i, corrected S^d table, SU(2) interpretation
-- Paper-edit proposal: proposals/computationalist-edit-d91i-s3-witness.md
-- THREE-AGENT after mathematician §14 review
+### 6. SU(3) V_HD computation — BB0 §6 verification (task #32)
+- Numerical finite-difference computation in exponential coordinates
+- Metric g(X,Y) = -2 Tr(XY) on anti-Hermitian generators (ON frame)
+- **V_HD(SU(3)) = -1.00000000** at 12 Cartan points (constant to 8 digits)
+- Cross-check: V_HD(SU(2)) = -0.25000000 at 7 Cartan points
+- Root analysis: all SU(3) roots have |alpha|^2 = 1 in ON metric
+- **V_HD = -|rho|^2_g** (Weyl vector squared norm in the metric)
+  - SU(2): |rho|^2 = 1/4, V_HD = -1/4. MATCH.
+  - SU(3): |rho|^2 = 1, V_HD = -1. MATCH.
+- Equivalently: V_HD = -dim(G)*h^vee/24 (Freudenthal-de Vries)
+- Constant-curvature formula -(d-1)R/(4d) matches only SU(2) (not SU(3))
+- Wrote BB0 §12 (FOUR-AGENT: mathematician+physicist+critic+computationalist)
+- Scripts: tmp/su3_vhd_v3.py, tmp/su3_vhd_v5.py
 
-### 2. H^2 (Poincare disk) spectral witness — D9.1k (task #14)
-- V_HD = 1/4 - 1/(4 sinh^2 rho) on H^2 (SymPy verified)
-- Non-compact, negative curvature, continuous spectrum [1/4, inf)
-- Left ordering erases spectral gap 1/4 = -R/8
-- Paper-edit proposal: proposals/computationalist-edit-d91k-h2-witness.md
-- FOUR-AGENT unanimous (computationalist+mathematician+critic+physicist)
+## Previous tasks (this session)
+1-5: see git history (S^3 D9.1i, H^2 D9.1k, curvature comparison, D=4, notebook promotion)
 
-### 3. V_HD curvature coupling comparison (task #23)
-- V_HD(const) = -(d-1)R/(4d) on constant-curvature spaces
-- Distinct from conformal coupling, DeWitt ordering, and Seeley-DeWitt a_1
-- V_HD is non-perturbative (exact); R/6 is perturbative (heat kernel)
-- Flat R^d: V_HD = (d-1)(d-3)/(4r^2), vanishes at d=3
-- BB6 §12 (SINGLE-AGENT)
+## State at end of current work
+- BB0: Lie group V_HD = FOUR-AGENT (mathematician wrote, physicist+critic reviewed, computationalist verified SU(3))
+- BB2: D=4 coincidence = THREE-AGENT
+- BB4: S^2+S^3 = FOUR-AGENT + THREE-AGENT
+- BB6: H^2 = FOUR-AGENT
+- Paper-edit proposals: D9.1i and D9.1k (both applied to paper)
+- Critic proposal `critic-edit-p71a-rep-track-d91k.md`: already applied (stale)
 
-### 4. D=4 coincidence verification
-- alpha(alpha-1)=0 on S^{D-1}: D=4 unique nontrivial
-- Weyl vector: V_HD = -4|rho|^2_Killing, Freudenthal-de Vries: |rho|^2 = dim(G)/12
-- SU(2): |rho|^2 = 1/4, V_HD = -1. VERIFIED.
-
-### 5. Notebook promotion
-- Appended Part 7 to notebooks/p42-extensions-interacting-curved.md
-- Covers: S^2, S^3, H^2, general formula, D=4 coincidence, flat space, agent status
-
-## State at end of session
-- BB4: S^2 (FOUR-AGENT) + S^3 (THREE-AGENT)
-- BB6: H^2 + curvature comparison (FOUR-AGENT for H^2, SINGLE for §12)
-- BB2: D=4 coincidence (TWO-AGENT, critic reviewing)
-- Two paper-edit proposals: D9.1i and D9.1k
-- All promoted to notebook Part 7
-
-## Next session priorities
-1. D9.1k paper-edit needs orchestrator application
-2. Non-diagonal metric witness (beyond constant curvature)
-3. SU(3) V_HD computation (first non-spherical Lie group)
-4. Check if Luiz-de Oliveira Cramer-Rao mechanism differs from our composition route
+## Next priorities
+1. SU(4) V_HD numerical verification (extend Weyl vector formula beyond rank 2)
+2. Promote BB0 Lie group results to notebook (Part 8 of p42-extensions?)
+3. Non-diagonal metric V_HD witness (beyond Lie groups)
+4. Task #30 (V_HD curvature expansion in RNC) — overlaps with BB0 §9
+5. Task #37 (convention mismatch D12.1 vs D12.3 sev-2) — could assist

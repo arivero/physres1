@@ -443,3 +443,40 @@
 - verified: D=4 coincidence on BB2 (alpha(alpha-1)=0 on S^{D-1}, SU(2) Weyl vector |rho|^2=1/4)
 - verified: Freudenthal-de Vries formula: V_HD = -4|rho|^2_Killing = -dim(G)/3 for simply-laced
 - promoted: BB4 §12 + BB6 ordering witnesses → notebooks/p42-extensions-interacting-curved.md Part 7
+
+## 2026-02-22 (context continuation: SU(3) V_HD computation)
+- startup: read definition, shared-rules, motivations, research-state, status, kanban
+- created: task #32 "SU(3) V_HD computation — verify BB0 §6 Lie group formula"
+- read: BB0 (mathematician Lie group V_HD analysis, THREE-AGENT)
+- WRONG APPROACH (v1-v2): used Weyl Jacobian instead of exponential-map Jacobian
+  - Weyl J(H) = prod sin^2(alpha(H)/2) is the INTEGRATION measure, not |g|
+  - exponential-map Jacobian |g|^{1/2} = prod (sin(alpha(H)/2)/(alpha(H)/2))^2
+  - v1-v2 gave non-constant values (8.96, 0.37, etc.) — WRONG
+- CORRECT APPROACH (v3): direct numerical computation in exponential coordinates
+  - Metric at exp(X): g_ij(X) = <F(ad_X)e_i, F(ad_X)e_j> where F(z)=(1-e^{-z})/z
+  - Five-point finite differences for Laplace-Beltrami on |g|^{-1/4}
+  - V_HD = -|g|^{1/4} * Delta_g(|g|^{-1/4})
+- RESULT: V_HD(SU(3)) = -1.00000000 +/- 1e-7 at 12 Cartan points (CONSTANT)
+- Cross-check: V_HD(SU(2)) = -0.25000000 +/- 1e-7 at 7 Cartan points (same code)
+- Root analysis (v5): |alpha|^2 = 1 for all SU(3) roots in ON metric g=-2Tr
+  - Weyl vector: rho = (i, 0), |rho|^2 = 1.00 for SU(3)
+  - Weyl vector: |rho|^2 = 0.25 for SU(2)
+  - FORMULA: V_HD = -|rho|^2_g (metric-norm of Weyl vector)
+  - EQUIVALENTLY: V_HD = -|rho|^2_CK = -dim(G)*h^vee/24 (Freudenthal-de Vries)
+  - SU(2): -3*2/24 = -1/4. MATCH. SU(3): -8*3/24 = -1. MATCH.
+- Curvature correction: Ric = (c/4)g (NOT (1/(4c))g as I initially had)
+  - SU(2): R = 3/2, SU(3): R = 6
+  - -(d-1)R/(4d) matches V_HD only for SU(2) (constant curvature)
+  - SU(3): -(7*6)/(4*8) = -21/16 != -1
+- PREDICTIONS: SU(4): V_HD = -5/2, SU(5): V_HD = -5
+- wrote: BB0 §12 (computationalist verification, FOUR-AGENT)
+- scripts: tmp/su3_vhd_v3.py (numerical), tmp/su3_vhd_v5.py (root analysis + FdV)
+- self-directed: SU(4) V_HD verification (task #38)
+  - V_HD(SU(4)) = -2.50000002 +/- 2e-7 at 12 Cartan points
+  - Prediction: -15*4/24 = -5/2 = -2.5. CONFIRMED.
+  - 6 positive roots, all |alpha|^2 = 1, |rho|^2 = 2.5
+  - Three-point verification: SU(2), SU(3), SU(4) all match V_HD = -|rho|^2 = -dim*h^v/24
+  - Updated BB0 §12 table (SU(4) row: pred -> verified)
+  - script: tmp/su4_vhd_verify.py
+- promoted: BB0 Lie group results → notebooks/p42-extensions-interacting-curved.md Part 8
+  - Covers: constancy theorem, Weyl vector formula, verification table, key findings, predictions

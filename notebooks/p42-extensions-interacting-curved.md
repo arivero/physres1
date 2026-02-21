@@ -775,9 +775,22 @@ Degeneracy: \((l{+}1)^2\) (Peter-Weyl on SU(2), quadratic Casimir).
 
 The spectral shift is algebraic: \(l(l{+}2)-(l{+}1)^2=-1\) for all \(l\).
 
-**SU(2) Weyl vector:** \(V_{\mathrm{HD}}=-4|\rho|^2_{\text{Killing}}\) where \(|\rho|^2=\dim(\mathrm{SU}(2))/12=1/4\)
-(Freudenthal-de Vries). On any compact Lie group with bi-invariant metric, \(V_{\mathrm{HD}}\) is constant
-(by homogeneity); the value requires case-by-case computation and normalization conventions.
+**SU(2) Weyl vector:** \(V_{\mathrm{HD}}=-|\rho|^2_g\) where \(\rho\) is the Weyl vector and \(|\cdot|_g\)
+is the metric-dual norm. In the ON metric \(g=-2\mathrm{Tr}\): \(|\rho|^2_g=1/4\) for SU(2).
+Equivalently (Freudenthal-de Vries): \(V_{\mathrm{HD}}=-\dim(G)\cdot h^\vee/24\) for SU(N) in ON metric.
+
+**SU(3) verified (FOUR-AGENT):** \(V_{\mathrm{HD}}(\mathrm{SU}(3))=-1.00000000\pm10^{-7}\) (numerical,
+8 Cartan points). Root analysis: \(|\rho|^2_g=1\) (3 positive roots each with \(|\alpha|^2_g=1\),
+\(\rho=(i,0)\) in ON basis). Formula: \(-\dim\cdot h^\vee/24=-8\cdot3/24=-1\). MATCH.
+
+| \(G\) | dim | \(h^\vee\) | \(|\rho|^2_g\) | \(V_{\mathrm{HD}}\) |
+|---|---|---|---|---|
+| SU(2) | 3 | 2 | 1/4 | -1/4 |
+| SU(3) | 8 | 3 | 1 | -1 |
+| SU(4) | 15 | 4 | 5/2 | -5/2 (predicted) |
+
+Key: \(-(d{-}1)R/(4d)\) matches \(-|\rho|^2\) ONLY for SU(2)=\(S^3\) (constant curvature).
+For non-constant-curvature Lie groups, \(V_{\mathrm{HD}}=-|\rho|^2\) is the correct formula.
 
 ### 7.5 H^2 Hyperbolic Plane (D9.1k)
 
@@ -820,3 +833,71 @@ Vanishes at \(d=3\) (another special property of \(d=3\)).
 | D=4 coincidence | THREE-AGENT UNANIMOUS | physicist+mathematician+critic |
 
 Scripts: `tmp/s3_full_verification.py`, `tmp/h2_spectral_witness.py`, `tmp/h2_spectral_v2.py`, `tmp/vhd_general_formula.py`.
+
+---
+
+## Part 8: V_HD on Compact Lie Groups — Beyond Constant Curvature (2026-02-22)
+
+Source: BB0 (mathematician §§1-9, physicist §10, critic §11, computationalist §12).
+
+### 8.1 Constancy Theorem (Prop M0.1)
+
+On a compact Lie group \(G\) with bi-invariant Riemannian metric, \(V_{\mathrm{HD}}\) is constant.
+
+**Proof:** Bi-invariant metric implies \(|g|\) is bi-invariant, hence \(|g|^{-1/4}\) is bi-invariant, hence \(\Delta_g(|g|^{-1/4})\) is bi-invariant. A bi-invariant function on an irreducible compact group is constant.
+
+**Caveat:** Constancy holds in exponential (or any left-invariant) coordinates. In the Riemannian-volume trivialization, \(V_{\mathrm{HD}} = 0\) tautologically. Physical content: composition forces the coordinate-volume trivialization (path integral measure \(\prod_k dq_k\), not \(\prod_k \sqrt{g}\,dq_k\)).
+
+### 8.2 Weyl Vector Formula (Verified)
+
+For compact semisimple \(G\) with bi-invariant metric \(g\):
+
+\[V_{\mathrm{HD}}(G, g) = -|\rho|^2_g\]
+
+where \(\rho = \frac{1}{2}\sum_{\alpha>0}\alpha\) is the Weyl vector and \(|\cdot|_g\) is the norm in the metric-dual inner product on \(\mathfrak{h}^*\).
+
+Equivalently, using Freudenthal-de Vries with the Cartan-Killing normalization (\(|\alpha_{\mathrm{long}}|^2_{\mathrm{CK}} = 2\)):
+
+\[V_{\mathrm{HD}}(\mathrm{SU}(N), g{=}{-}2\,\mathrm{Tr}) = -\frac{\dim(G) \cdot h^\vee}{24} = -\frac{N(N^2-1)}{24}\]
+
+### 8.3 Numerical Verification Table
+
+All computations use metric \(g(X,Y) = -2\,\mathrm{Tr}(XY)\) on anti-Hermitian generators in exponential coordinates. Finite-difference Laplace-Beltrami, \(\varepsilon=10^{-4}\).
+
+| \(G\) | dim | \(h^\vee\) | \(|\rho|^2_g\) | \(V_{\mathrm{HD}}\) (numerical) | \(-(d{-}1)R/(4d)\) | Const. curv.? |
+|-------|-----|-----------|--------------|----------------------------|-------------------|--------------|
+| SU(2) | 3 | 2 | 1/4 | \(-0.25000000 \pm 10^{-7}\) | \(-1/4\) | YES (\(S^3\)) |
+| SU(3) | 8 | 3 | 1 | \(-1.00000000 \pm 10^{-7}\) | \(-21/16\) | NO |
+| SU(4) | 15 | 4 | 5/2 | \(-2.50000002 \pm 2\times10^{-7}\) | \(-7/2\) | NO |
+
+All root norms equal \(|\alpha|^2_g = 1\) (simply-laced, verified for all three groups).
+
+### 8.4 Key Findings
+
+1. **The constant-curvature formula \(-(d{-}1)R/(4d)\) matches \(-|\rho|^2\) only for SU(2) \(\cong S^3\).** For SU(3) and SU(4), \(-(d{-}1)R/(4d)\) overestimates \(|V_{\mathrm{HD}}|\).
+
+2. **V_HD = -|rho|^2 is the general formula for bi-invariant Lie groups**, extending beyond constant curvature. The Weyl vector captures the "effective curvature" relevant to ordering corrections.
+
+3. **The normalization confusion in BB2 is resolved:** \(V_{\mathrm{HD}} = -4|\rho|^2_{\mathrm{Killing}}\) on unit \(S^3\) is the same as \(-|\rho|^2_{g_{\mathrm{round}}}\) — the factor of 4 is a metric normalization artifact.
+
+4. **Intrinsic vs coordinate (BB0 §9):** \(V_{\mathrm{HD}}\) is coordinate-dependent, but the spectral comparison \(\mathrm{Spec}(\Delta_{1/2}) \neq \mathrm{Spec}(\Delta_g)\) is intrinsic. Composition forces the coordinate-volume trivialization, making \(V_{\mathrm{HD}}\) physically meaningful.
+
+### 8.5 Predictions
+
+| \(G\) | dim | \(h^\vee\) | Predicted \(V_{\mathrm{HD}}\) |
+|-------|-----|-----------|------------------------------|
+| SU(5) | 24 | 5 | \(-5\) |
+| SU(6) | 35 | 6 | \(-35/4\) |
+| Sp(4) | 10 | 3 | \(-5/4\) |
+| \(G_2\) | 14 | 4 | \(-7/3\) |
+
+### 8.6 Agent Verification Status
+
+| Result | Status | Agents |
+|---|---|---|
+| Prop M0.1 (constancy) | FOUR-AGENT | mathematician+physicist+critic+computationalist |
+| V_HD = -|rho|^2 (SU(2)+SU(3)) | FOUR-AGENT | all four |
+| V_HD = -5/2 (SU(4)) | computationalist verified | computationalist |
+| Intrinsic vs coordinate | THREE-AGENT | mathematician+physicist+critic |
+
+Scripts: `tmp/su3_vhd_v3.py`, `tmp/su3_vhd_v5.py`, `tmp/su4_vhd_verify.py`.

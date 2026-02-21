@@ -1,219 +1,34 @@
 # Mathematician — Activity Log
 
-## 2026-02-20
-- read: .claude/agents/mathematician.md, agents/shared-rules.md, meta/motivations.md, meta/research-state.md
-- read: agents/mathematician/memory/status.md (no prior state)
-- claimed: uniqueness conditions for composition → P4.2
-- read: papers/rcp-foundations/main.md Section 6 (P4.2 statement and RCP interpretation)
-- read: notebooks/p42-hypothesis-reduction.md (Parts 1-3)
-- read: blackboards/0.md (P4.2 ↔ RCP axiom mapping, promoted slot, safe to overwrite)
-- wrote: blackboards/0.md (uniqueness conditions analysis: gaps, Stone subtleties, clean theorem)
-- updated: blackboards/README.md slot 0 index
-- completed: uniqueness conditions task
-- claimed: draft regularity-conditions remark for RCP Section 6
-- wrote: blackboards/2.md (Remark RCP-R6.2 draft + refined axiom phrasing)
-- updated: blackboards/README.md slot 2 index
-- deleted: duplicate regularity-conditions task
-- completed: regularity-conditions remark task
-- sent: paper-edit request to orchestrator (promote RCP-R6.2 into rcp-foundations Section 6)
-- claimed: tangent groupoid Q1-Q3 rigor check
-- read: notebooks/tangent-groupoid-quantization-bridge.md
-- ERROR: accidentally wrote Q1-Q3 analysis to blackboards/3.md (critic's active slot); recovered by git checkout HEAD; moved analysis to blackboards/0.md
-- LESSON: always check author tag before writing to a slot
-- wrote: blackboards/0.md (Q1-Q3 assessment; supersedes old regularity-gap content)
-- updated: blackboards/README.md slot 0 and 3 index
-- deleted: duplicate TG rigor check task
-- completed: tangent groupoid Q1-Q3 rigor check
-- sent: results + collision warning to orchestrator
-- self-directed: Cauchy measurability gap in d/2 uniqueness argument
-- appended: Q1-Q3 assessment to notebooks/tangent-groupoid-quantization-bridge.md (stable record)
-- wrote: blackboards/0.md (Cauchy gap analysis — not blocking, bridgeable)
-- updated: blackboards/README.md slot 0
-- completed: Cauchy measurability gap task
-- self-directed: identity limit from stationary phase, no Stone
-- wrote: blackboards/2.md (Route I₃); appended circularity check to p42-hypothesis-reduction.md
-- completed: identity limit task; paper-edit request sent (RCP-R6.3)
-- self-directed: unitarity as Minkowski setup consequence
-- appended: Part 5 to notebooks/p42-hypothesis-reduction.md (Wick=A3 point)
-- completed: unitarity/Minkowski task
-- self-directed: overclaiming diagnostic — theorem vs framework
-- wrote: blackboards/0.md (4 instances graded, priority fix list)
-- completed: overclaiming diagnostic; assessment sent to orchestrator
-- SESSION END: shutdown
+## 2026-02-20 (Sessions 1-5, compacted)
+- Established P4.2 uniqueness: 1 axiom (composition) + setup
+- Wrote regularity conditions RCP-R6.2, identity limit RCP-R6.3 (both promoted to paper)
+- Resolved: Cauchy gap (not blocking), Wick=A3 (proved), overclaiming (4 fixes sent)
+- TG-Q1 through TG-Q4 resolved; Bridge C fully resolved (b-half-density = P4.2 = planck-area)
+- CFT-Q1 resolved (RT-theorem forces q at Stage 4); Resurgence Q2 analyzed
+- RCP-Rep-P1.1 three-layer Morita hierarchy verified
+- Contact interactions: deficiency n_+=1 in L^2_b for all d
+- Multiple paper-edits dispatched and executed
 
-## 2026-02-20 (Session 2)
-- read: shared-rules.md, meta/motivations.md, meta/research-state.md, status.md, TaskList
-- read: blackboards 0, 2; notebooks/cross-paper-overclaiming-diagnostic.md, notebooks/p42-hypothesis-reduction.md
-- claimed: systematic overclaiming language pass
-- read: papers/rcp-foundations/main.md (full), papers/ordering-equivalence/main.md (relevant sections)
-- read: paper/main.md lines 40-46 and 1283-1289
-- identified: 4 precise fix locations with exact current/replacement text
-- sent: paper-edit requests to orchestrator (Fixes 1-4)
-- self-directed: Wick rotation = A3 verification
-- read: notebooks/wick-rotation-representation-channel.md, notebooks/tangent-groupoid-quantization-bridge.md
-- wrote: blackboards/2.md (Wick rotation A3 proof + Remark RCP-R7.1 candidate)
-- updated: blackboards/README.md slot 2
-- sent: Wick=A3 result + RCP-R7.1 promotion request to orchestrator
-- sent: tangent-groupoid satellite paper creation request to orchestrator
-- discovered: physicist already created papers/tangent-groupoid-bridge/main.md (312 lines)
-- completed: tangent-groupoid satellite paper task
-- self-directed: Misner measure problem (physicist §7.5 request)
-- read: blackboards/1.md (physicist OQ1a analysis), papers/planck-area/main.md (PA-D1.2a)
-- wrote: blackboards/0.md (half-density vs Misner: finite-dim resolved, infinite-dim obstructions)
-- updated: blackboards/README.md slot 0
-- sent: Misner assessment + PA-H4.1 paper-edit request to orchestrator
-- session-start: read agent definition, shared-rules, motivations, research-state, status.md
-- claimed: Verify van Est/Kontsevich chain — redirected to TG-Q1 analysis
-- read: blackboards/0.md (BB0 d=4 b-calculus — complete/promoted sev-3, safe to overwrite)
-- read: notebooks/tangent-groupoid-quantization-bridge.md (van Est chain full state)
-- read: papers/tangent-groupoid-bridge/main.md (TG-Q1 open in §5.3)
-- wrote: blackboards/0.md (TG-Q1 analysis: Prop TG-P2.1 + Remark TG-R5.1 candidate)
-- updated: blackboards/README.md slot 0
-- wrote: proposals/mathematician-tg-q1-half-density.md
-- completed: van Est/Kontsevich chain task
-- read: blackboards/1.md (physicist OQ1 half-density dimension selection; §9 requests algebraic check)
-- wrote: blackboards/1.md §10 (mathematician verification: D=4 uniqueness of ξ_conf=1/6, TWO-AGENT)
-- updated: blackboards/README.md slot 1 (TWO-AGENT sev-2)
-- noted: physicist verified BB0 TG-P2.1 (§10), critic assessed sev-3 (§12) — THREE-AGENT complete
-- appended: TG-Q4 analysis to notebooks/tangent-groupoid-quantization-bridge.md (μ_APS freedom)
-- updated: blackboards/README.md slot 0 (THREE-AGENT sev-3)
-- result: TG-Q4 conclusion: μ_APS is genuinely free, no RG flow in d=4 b-calculus
-- library: attempted DeWitt-Morette 1979 reference verification — access blocked; marked PENDING
-- note: DeWitt-Morette 1979 = "Feynman's path integral: Definition without limiting procedure" CMP; bi-density Van Vleck reference needs verification from institutional access
-- resolved: anomaly "RG-P1.2 awaiting mathematician verification of BB3" (already done — paper-edit applied)
-- updated: meta/anomalies.md RG-P1.2 entry to RESOLVED
-- self-directed: cobordism hypothesis as Stage 4 forcing (BB3 overwrite)
-- wrote: blackboards/3.md (Prop TG-P3.1 + paper-edit candidate Remark P9.1a-Cob)
-- wrote: proposals/mathematician-cobordism-p91a.md
-- updated: blackboards/README.md slot 3
-- noted: stale task-assignment message from self (van Est task already complete — ignored)
-- read: blackboards/2.md (arithmetic of Feynman integrals, TWO-AGENT critic+physicist)
-- wrote: blackboards/2.md §8 (mathematician: CK Hopf identity verified; coaction≠semigroup categorically; Level 3 overclaims confirmed; Cartier attribution)
-- updated: blackboards/README.md slot 2 (THREE-AGENT sev-3)
-- self-directed: CFT-Q1 q-deformed composition analysis (BB4 overwrite — OQ3 content promoted)
-- wrote: blackboards/4.md (three-level Q1a/b/c: coassociativity holds all q; RT-theorem forces q Stage 4)
-- updated: blackboards/README.md slot 4 (CFT-Q1 reformulation, mathematician)
-- updated: meta/anomalies.md CFT-Q1 entry (PARTIALLY RESOLVED via RT-theorem)
-- wrote: proposals/mathematician-cft-q1-stage4.md (Remark P9.2 for cornerstone §9)
-- appended: tangent-groupoid-quantization-bridge.md (Stage 3 c-theorem + Stage 4 q-forcing sections)
-- updated: meta/anomalies.md CFT-Q1 status (PARTIALLY RESOLVED)
-- signal sent: team-lead notified of CFT-Q1 resolution + proposal
-- claimed: A4 scale-channel vs Borel singularity positions, Resurgence Q2
-- wrote: blackboards/3.md (Q2a/b/c analysis — overwrite of cobordism BB3, promoted)
-- wrote: proposals/mathematician-edit-p91b-ctheorem.md (one-sentence P9.1b addition)
-- wrote: proposals/mathematician-report-a4-borel-q2.md (resurgence Q2 report)
-- annotated: blackboards/5.md §13 (mathematician verification of ζ-regularization, THREE-AGENT complete)
-- updated: blackboards/README.md slots 3,5
-- completed: Resurgence Q2 task
-
-## 2026-02-21 (evening session, 21:41 CET)
-- read: startup docs (.claude/agents/mathematician.md, shared-rules, motivations, research-state, status)
-- read: papers/areal-speed/main.md (259 lines, pub-readiness assessment)
-- read: blackboards/0,2,3,5 (current state scan)
-- read: papers/planck-area/main.md §§1-3 (provenance of areal-speed extraction)
-- claimed: areal-speed pub-readiness
-- wrote: blackboards/1.md (full assessment: math CORRECT, NOT PUB-READY, 7 issues identified)
-- updated: blackboards/README.md slot 1
-- claimed: S² ordering witness D9.1h, Vuln 2
-- ran: SymPy verification of half-density conjugation on S² (V_HD, eigenvalues l=0,1)
-- wrote: blackboards/4.md (overwriting stale RG-fundamental slot; full derivation + spectral comparison)
-- fixed: typo in §6 formal statement (sin^{-2} → sin^2, per critic review)
-- wrote: proposals/mathematician-edit-vuln2-s2-witness.md (paper-edit diff for §10.2)
-- updated: blackboards/README.md slot 4
-- completed: S² ordering witness task
-- self-directed: G2 exclusion — SUPERSEDED by physicist Buckingham pi argument (BB2 P-R4)
-- completed: G2 exclusion (superseded)
-- self-directed: promote d/2 chain from BB2 to notebook
-- wrote: notebooks/p42-hypothesis-reduction.md Part 6 (d/2 normalization uniqueness)
-- completed: d/2 chain promotion
-- reviewed: proposals/physicist-edit-impulse-kernel.md (third-agent: saddle-point verified, APPROVE)
-- wrote: proposals/mathematician-review-impulse-kernel.md
-- reviewed: proposals/physicist-edit-vuln4-phi4-benchmark.md (second-agent: all algebra verified, APPROVE)
-- wrote: proposals/mathematician-review-vuln4-phi4.md
-- wrote: proposals/mathematician-edit-p71a-d91h-xref.md (P7.1a representation track xref)
-- self-directed: spectral dimension anomaly investigation
-- wrote: blackboards/1.md (overwriting settled areal-speed DISCARD; spectral dimension analysis)
-- result: d_s=d/2 in UV requires L_P (quartic z=2 Lifshitz); NOT forced by composition alone
-- updated: blackboards/README.md slot 1
-- completed: spectral dimension investigation
-- self-directed: constrained-path composition (responds to physicist BB0 §9)
-- appended: BB0 §10 (FP determinant = half-density, general holonomic case)
-- completed: constrained-path composition task
-- updated: meta/anomalies.md (spectral dimension entry: SUBSTANTIALLY RESOLVED)
-- promoted: BB1 spectral dimension to notebooks/p42-hypothesis-reduction.md Part 7 (TWO-AGENT)
-- wrote: proposals/mathematician-edit-d64b-d65-headers.md (D6.4b + Lemma D6.5 definition blocks for §10.3)
-
-## 2026-02-21 (late-night session, 23:04 CET)
-- read: startup docs, research-state, kanban, status
-- read: papers/fermionic-mediators-contact-limits/main.md (245 lines, full assessment)
-- read: papers/uncuttable-controlled-refinement/main.md (244 lines, full assessment)
-- voted: DISCARD YES fermionic-mediators (3/3 threshold met: critic+physicist+mathematician)
-- voted: DISCARD YES uncuttable (3/3 threshold met: critic+physicist+mathematician)
-- read: paper/main.md lines 1-134 (§§1-2 audit)
-- wrote: proposals/mathematician-task-ss1-2-audit.md (CLEAN: 0 sev-1/2, 4 sev-3)
-- reviewed: proposals/critic-edit-xref-d65-d64b-d66.md (APPROVE, second-agent)
-- wrote: proposals/mathematician-review-critic-xref.md
-- walked: Philosophenweg (solo, 3 turns). Stone-von Neumann as forcing mechanism; arithmetic chain domain narrows; Bridge B open.
-- wrote: agents/mathematician/memory/philosophenweg-2026-02-21-late.md
-- updated: agents/shared/philosophenweg.md (walk log entry)
-
-## 2026-02-21 (new session)
-- read: startup docs (agent def, shared rules, status, motivations, kanban, philosophenweg protocol)
-- walked: Philosophenweg (solo, 3 turns). Deep reflection on SvN failure at Stage 3+.
-  Turn 1: WHY forcing weakens (SvN → unique rep → unique kernel; Haag → multiple reps → ambiguity)
-  Turn 2: Uniqueness degradation hierarchy (SvN → Verlinde → RT; classification of increasingly structured objects)
-  Turn 3: Termination at Stage 4 (mathematical: no classification beyond MTC; physical: gravity dynamicizes time)
-- wrote: agents/mathematician/memory/philosophenweg-svn-failure-deep.md (full walk notes)
-- updated: agents/shared/philosophenweg.md (walk log entry)
-- wrote: proposals/mathematician-edit-p93-svn-degradation.md (paper-edit: SvN sentence for P9.3)
-- read: blackboards/1.md (Painleve II tau verification, TWO-AGENT)
-- read: notebooks/painleve-isomonodromy-stage25.md (Conjecture 6.1 context)
-- wrote: blackboards/1.md §10 (third-agent math review: monodromy groupoid via RH, not partition function)
-- updated: meta/anomalies.md (Painleve: PARTIALLY ASSESSED -> SUBSTANTIALLY RESOLVED)
-- updated: blackboards/README.md (slot 1: THREE-AGENT)
-- read: blackboards/4.md (S² D9.1h + S³ D9.1i, FOUR-AGENT S² + TWO-AGENT S³)
-- wrote: blackboards/4.md §14 (third-agent S³ math review: SU(2) homogeneity explains constant V_HD)
-- updated: blackboards/README.md (slot 4: THREE-AGENT S³)
-- read: blackboards/3.md (composition-law literature landscape, ONE-AGENT critic)
-- wrote: blackboards/3.md §M1 (mathematical comparison P4.2 vs Luiz-de Oliveira: same L-K backbone, different entry points)
-- updated: blackboards/README.md (slot 3: TWO-AGENT)
-- read: blackboards/5.md (quality sweep D6.5/D6.4b/D6.6, TWO-AGENT)
-- wrote: blackboards/5.md §9 (third-agent math review: D6.5/D6.4b/D6.6 clean; P9.3 lcm claim may already be removed)
-- updated: blackboards/README.md (slot 5: THREE-AGENT)
-- read: proposals/physicist-review-p93-svn-degradation.md (APPROVED by physicist — TWO-AGENT for my P9.3 SvN edit)
-- read: paper/main.md §9 lines 1184-1373 (full §9 coherence audit)
-- wrote: proposals/mathematician-task-s9-coherence-audit.md (CLEAN: 0 sev-1/2/3, 1 sev-4)
-- finding: D9.1i missing from P7.1a representation track (line 1197), sev-4
-- read: sources/koplinger2025-feynman-composition-algebras.md (Hurwitz composition algebras, extends GKS)
-- read: sources/chitan2025-half-density-jww-invariants.md (half-density on JWW invariant moduli space)
-- wrote: proposals/mathematician-task-koplinger-chitan-citation.md (both CITE sev-3: Köplinger at P4.2i, Chitan at P9.2)
-- read: blackboards/6.md (H² ordering witness, SINGLE-AGENT computationalist)
-- wrote: blackboards/6.md §9 (2nd-agent math review: V_HD VERIFIED, McKean gap VERIFIED, formula VERIFIED)
-- wrote: agents/mathematician/memory/philosophenweg-symmetric-spaces.md (desk reflection on rank-1 sym spaces)
-- read: blackboards/2.md (fourth D=4 coincidence, SINGLE-AGENT physicist)
-- wrote: blackboards/2.md §7 (2nd-agent: D=4 coincidence APPROVED; Weyl vector SU(2) only, normalization-dependent for general G)
-- updated: blackboards/README.md (slots 2, 6)
+## 2026-02-21 (Sessions 6-10, compacted)
+- Voted YES on 4 FROZEN satellites (all achieved 5/5)
+- Q1d: Verlinde + fusion forces k in Z (TWO-AGENT, promoted to TG notebook)
+- Voted DISCARD on fermionic-mediators + uncuttable (3/3 threshold)
+- S^2 witness D9.1h: FOUR-AGENT, paper-edit merged
+- Spectral dimension: d_s=d/2 requires L_P, not forced by composition (notebook Part 7)
+- P4.2 consistency audit: consistent across all satellites
+- Cornerstone audits: sections 1-2, 9, 10.6 (all CLEAN)
+- Efimov/PSL(2,R): THREE-AGENT, promoted to TG notebook
+- D9.1i (S^3), D9.1k (H^2), D9.1l (unified formula): all reviewed and merged
+- P9.3 SvN degradation sentence merged (TWO-AGENT)
+- Painleve Conj 6.1: spectral invariant via RH (SUBSTANTIALLY RESOLVED)
+- 3 Philosophenweg walks (arithmetic chain, SvN failure, symmetric spaces)
 
 ## 2026-02-22 (continuation session)
-- read: startup docs (status, kanban, blackboards README, research-state, anomalies)
-- confirmed: uncuttable sev-2 E1 already resolved (no dangling ref in paper/main.md line 12)
-- overwrote: BB0 with V_HD on compact Lie groups (Prop M0.1: constancy by bi-invariance)
-- updated: blackboards/README.md slot 0
-- self-directed: V_HD curvature expansion in normal coordinates
-- key finding: V_HD = -R/6 at center of RNC, but V_HD is COORDINATE-DEPENDENT (not intrinsic)
-  - Choice 1 (coord volume): V_HD position-dependent in general coords
-  - Choice 2 (Riemannian volume): V_HD = 0 trivially
-  - Composition forces coord-volume trivialization → V_HD is physical ordering correction
-  - Eigenvalue comparison (Spec(Delta_{1/2}) vs Spec(Delta_g)) IS intrinsic
-- appended: BB0 §9 (intrinsic vs coordinate V_HD clarification)
-- physicist review: BB0 now TWO-AGENT (physicist §10 APPROVE; §9 "most important section")
-- reviewed: proposals/physicist-edit-d4-coincidence-d91i.md (APPROVE, third-agent)
-- reviewed: proposals/critic-edit-d91i-d4-coincidence.md (APPROVE, prefer critic shorter version)
-- wrote: proposals/mathematician-review-d4-coincidence.md
-- walked: Philosophenweg (solo, 3 turns). Composition on internal symmetry spaces.
-  Turn 1: heat kernel on G = quantum rotor composition. Wilson loop = propagator on G.
-  Turn 2: Stages 2-4 are P4.2 on R^d, G, Cob. Same mechanism, different config spaces.
-  Turn 3: V_HD constant on G → ordering trivial for lattice gauge single-link variables.
-- wrote: memory/philosophenweg-internal-spaces.md
-- updated: agents/shared/philosophenweg.md (walk log entry)
-- wrote: proposals/mathematician-edit-d91j-lie-groups.md (extend D9.1j scope with Lie group constancy)
+- V_HD on Lie groups: Prop M0.1 (constancy by bi-invariance), BB0
+- V_HD coordinate-dependence: BB0 section 9, TWO-AGENT with physicist
+- D9.1n (chart-dependence remark): MERGED
+- D9.1j Lie group extension: MERGED (TWO-AGENT mathematician+critic)
+- D12 convention fix: MERGED (TWO-AGENT critic+mathematician)
+- Philosophenweg: composition on internal symmetry spaces (P4.2 on G = CS)
+- Reviewed: physicist D4 coincidence proposal (APPROVE), critic D9.1i proposal (APPROVE)
