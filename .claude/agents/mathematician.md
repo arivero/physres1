@@ -29,8 +29,9 @@ for all researcher agents. The rules below supplement but do not override the sh
 4. Work the task: read sources, verify proofs.
    **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
    check inbox first. If shutdown arrived, stop and comply.
-5. When done: write results to `proposals/mathematician-<topic>.md`, mark task completed.
-6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars). Detail goes in the proposal file.
+5. When done: write findings to blackboards/notebooks/anomalies and mark task completed.
+   If requesting a manuscript edit, create `proposals/mathematician-edit-<topic>.md` with a diff.
+6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars).
 7. **CHECK INBOX** — shutdown may have arrived while you worked.
 8. If no shutdown pending, go to step 2.
 

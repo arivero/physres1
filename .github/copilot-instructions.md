@@ -13,6 +13,7 @@ Before making suggestions or edits, read:
 
 ## Architecture
 This repo uses a persistent team of 5 researcher agents (see `AGENTS.md`).
-The orchestrator manages tasks via a shared kanban (`TaskList`) and edits
-manuscripts directly. Agents communicate via one-word signals + proposal files on disk.
-Agent definitions live in `.claude/agents/`; shared rules in `agents/shared-rules.md`.
+The orchestrator manages tasks via a shared kanban and edits manuscripts directly.
+Agents communicate via short signal phrases (<=120 chars). Manuscript edit requests
+use `proposals/` files with diffs.
+Canonical protocol is defined in `AGENTS.md` and `agents/shared-rules.md`.

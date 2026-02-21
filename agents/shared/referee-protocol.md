@@ -81,7 +81,10 @@ Each referee writes a structured report using this template:
 
 ## 5. Revision Instructions (for authors)
 
-When a paper receives MINOR REVISION or MAJOR REVISION:
+Final publication-track flow is governed by `AGENTS.md` §11 (editor decision model).
+Mixed verdict combinations are resolved by editor discretion.
+
+When a paper receives MINOR REVISION:
 
 1. Referee reports are copied to `papers/<name>/referee-1.md` and `papers/<name>/referee-2.md`.
 2. The orchestrator creates kanban tasks referencing each report.
@@ -89,7 +92,20 @@ When a paper receives MINOR REVISION or MAJOR REVISION:
    - Reading the referee report file
    - Working on fixes via blackboards
    - Proposing paper edits via `proposals/`
-4. After all MAJOR items are addressed and MINOR items are resolved or justified:
+4. After MINOR items are resolved or justified:
+   - The `votes.md` file is reset
+   - A new voting round begins
+   - If unanimous YES, no mandatory re-review is required
+
+When a paper receives MAJOR REVISION:
+
+1. Referee reports are copied to `papers/<name>/referee-1.md` and `papers/<name>/referee-2.md`.
+2. The orchestrator creates kanban tasks referencing each report.
+3. Agents address concerns by:
+   - Reading the referee report file
+   - Working on fixes via blackboards
+   - Proposing paper edits via `proposals/`
+4. After MAJOR items are addressed and MINOR items are resolved or justified:
    - The `votes.md` file is reset
    - A new voting round begins
    - If unanimous YES, the paper goes back to `pub-track/sent/` for re-review

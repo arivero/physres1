@@ -5,7 +5,7 @@ This file applies to the entire repository. It is the canonical contract for all
 
 ## Canonical Contract
 1. `AGENTS.md` is the canonical repository contract for all agents.
-2. If another local agent file exists (for example `CLAUDE.md`), treat it as supplemental only.
+2. If another local agent file exists (for example `CLAUDE.md`, `.github/copilot-instructions.md`), treat it as supplemental only.
 3. When overlap exists, keep policy in `AGENTS.md` and avoid split-brain duplicates across agent-specific files.
 
 ---
@@ -14,7 +14,7 @@ This file applies to the entire repository. It is the canonical contract for all
 
 This repository uses a **persistent team** of researcher agents, coordinated by a single
 **orchestrator** (the conversation-level agent). The team is created at session start.
-Agents communicate via messages, claim tasks from a shared kanban, and write to shared
+Agents communicate via short signal messages, coordinate tasks via a shared kanban, and write to shared
 working surfaces (blackboards, notebooks). Each agent has a private memory folder that
 no other agent can read.
 
@@ -29,7 +29,8 @@ edits directly (no ephemeral subagents).
 The conversation-level agent. Creates the team, manages the kanban, processes paper-edit
 requests, and dispatches ephemeral agents.
 
-**Reads:** everything (full repo access)
+**Reads:** full repo access, except researcher private memory by default (`agents/*/memory/*` where `*` ≠ `orchestrator`).
+Emergency read is allowed only for shutdown safety when an agent is non-responsive.
 
 **Writes:**
 - `agents/orchestrator/memory/*` (private working notes, log, status)
@@ -43,7 +44,7 @@ requests, and dispatches ephemeral agents.
 **Responsibilities:**
 - Team creation and shutdown
 - Task creation, assignment, and monitoring via the shared kanban
-- **Polling `proposals/` for agent output** — read proposal files, process, then delete
+- **Polling `proposals/` for manuscript edit requests** — read proposal files, process, then delete
 - Processing paper-edit requests directly (no subagent)
 - **Publication editor**: record votes, enforce unanimous threshold, spawn referee agents, decide accept/revise/reject (§11)
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
@@ -67,23 +68,26 @@ as their canonical rule set. See individual agent definition files for persona-s
 | Student | haiku | `.claude/agents/student.md` | Curious web browser, serendipitous discovery, finds unexpected connections |
 
 **Capabilities** (all researchers):
-- Read any file in the repo
+- Read any non-private file in the repo
 - Write/patch `blackboards/*.md` (7-slot limit, 300 lines max)
 - Append to `notebooks/*.md` (append-only)
+- Write/patch `paper/notes/*.md` and `papers/*/notes/*.md` (paper notes only; not manuscripts)
+- Append to `meta/anomalies.md`
 - Write to own `agents/<name>/memory/*` (private)
 - Vote to delete notebooks via `notebooks/votes.md`
 - Download/read articles from the internet
 
 **Restrictions** (all researchers):
-- Cannot edit `paper/`, `papers/*/`, `paper/notes/` — request via orchestrator
+- Cannot edit manuscripts: `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md` — request via orchestrator
 - Cannot read other agents' `agents/*/memory/` folders
-- Cannot edit `AGENTS.md`, `CLAUDE.md`, `meta/handoff.md`
+- Cannot edit `AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, `meta/handoff.md`, `meta/research-state.md`
 
 ---
 
 ## 3. Paper Editing
 
-The orchestrator edits `paper/` and `papers/*/` directly when processing proposals.
+The orchestrator edits manuscript files (`paper/main.md`, `papers/*/main.md`, bibliography)
+directly when processing paper-edit proposals.
 No ephemeral subagents. Library work is done by researcher agents directly
 (see `agents/shared-rules.md` §11).
 
@@ -105,7 +109,10 @@ The shared kanban is the project's task board.
 
 - **Orchestrator** creates tasks with subject, description, and priority.
 - **Agents** check the kanban for available tasks (prefer lowest ID first, unblocked only).
-- **Agents** claim tasks by setting themselves as owner.
+- **Agents** request tasks (`want #N`) or propose self-directed tasks (`self: <topic>`).
+- **Orchestrator** assigns tasks via kanban update; agents only start after assignment appears.
+- **Default self-task policy:** when an agent proposes `self: <topic>`, the orchestrator
+  creates the task and assigns it to that proposer unless explicitly redirecting.
 - **Agents** mark tasks completed when done.
 - **Dependencies**: tasks can block or be blocked by other tasks.
 
@@ -115,13 +122,13 @@ Task IDs are planning metadata only — never in manuscripts.
 
 ## 6. Communication Patterns — Minimal Context Protocol
 
-**Messages are signal-only.** All substantive content goes to files on disk.
+**Messages are signal-only.** Use one short phrase (<= 120 chars) per message.
 
 | Channel | Purpose | Who uses it |
 |---------|---------|-------------|
 | Kanban | Task creation, claiming, completion | All |
-| Messages | **One-word signals only** (`done`, `proposal`, `stuck`, `idle`) | All |
-| `proposals/` | Paper edit requests, findings, questions — **all content** | Researchers → Orchestrator |
+| Messages | Short signal phrases (`done`, `stuck`, `vote yes <paper>`, `want #N`) | All |
+| `proposals/` | Manuscript edit requests only (must include diff) | Researchers → Orchestrator |
 | Blackboards | Shared working surface for math and exploration | Researchers |
 | Notebooks | Shared stable memory (append-only) | Researchers |
 | `agents/<name>/memory/` | Private working notes | Each agent (own folder only) |
@@ -139,7 +146,7 @@ orchestrator's 200k context window. At ~120k tokens/cycle with 5 agents, context
 exhausts after ~3 auto-compressions. Moving content to `proposals/` on disk keeps
 the orchestrator's window for actual work.
 
-Proposal files: `proposals/<agent>-<topic>.md` (gitignored, ephemeral).
+Proposal files: `proposals/<agent>-edit-<topic>.md` (gitignored, ephemeral).
 
 ---
 
@@ -148,11 +155,11 @@ Proposal files: `proposals/<agent>-<topic>.md` (gitignored, ephemeral).
 | Agent | Allowed Writes | Forbidden Writes |
 |-------|---------------|-----------------|
 | Orchestrator | `meta/*`, `paper/`, `papers/*/` (direct edits), `pub-track/`, `docs/` | Direct blackboard/notebook writes |
-| Physicist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/physicist/memory/*` | `paper/`, `papers/`, `meta/*` |
-| Mathematician | `blackboards/*.md`, `notebooks/*.md` (append), `agents/mathematician/memory/*` | `paper/`, `papers/`, `meta/*` |
-| Critic | `blackboards/*.md`, `notebooks/*.md` (append), `agents/critic/memory/*` | `paper/`, `papers/`, `meta/*` |
-| Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `agents/computationalist/memory/*` | `paper/`, `papers/`, `meta/*` |
-| Student | `blackboards/*.md`, `notebooks/*.md` (append), `agents/student/memory/*` | `paper/`, `papers/`, `meta/*` |
+| Physicist | `blackboards/*.md`, `notebooks/*.md` (append), `paper/notes/*.md`, `papers/*/notes/*.md`, `meta/anomalies.md` (append), `agents/physicist/memory/*` | `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md`, `meta/handoff.md`, `meta/research-state.md` |
+| Mathematician | `blackboards/*.md`, `notebooks/*.md` (append), `paper/notes/*.md`, `papers/*/notes/*.md`, `meta/anomalies.md` (append), `agents/mathematician/memory/*` | `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md`, `meta/handoff.md`, `meta/research-state.md` |
+| Critic | `blackboards/*.md`, `notebooks/*.md` (append), `paper/notes/*.md`, `papers/*/notes/*.md`, `meta/anomalies.md` (append), `agents/critic/memory/*` | `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md`, `meta/handoff.md`, `meta/research-state.md` |
+| Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `paper/notes/*.md`, `papers/*/notes/*.md`, `meta/anomalies.md` (append), `agents/computationalist/memory/*` | `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md`, `meta/handoff.md`, `meta/research-state.md` |
+| Student | `blackboards/*.md`, `notebooks/*.md` (append), `paper/notes/*.md`, `papers/*/notes/*.md`, `meta/anomalies.md` (append), `agents/student/memory/*` | `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md`, `meta/handoff.md`, `meta/research-state.md` |
 | Any researcher | `sources/*` (library — download and ingest references) | — |
 
 **Rule**: if a task requires touching files outside an agent's permissions, request it via the orchestrator.
@@ -195,7 +202,7 @@ Content can be added but never edited or deleted. Deletion requires voting (see 
 
 ### Workspace Hygiene
 - **Blackboards** (`blackboards/`): max 7 files. Delete before creating when at cap.
-- **Paper notes** (`paper/notes/`): max 10 files. Retire integrated notes.
+- **Paper notes** (`paper/notes/`, `papers/*/notes/`): max 10 files per paper root. Retire integrated notes.
 - **Notebooks** (`notebooks/`): append-only. Promotion from blackboards is intended.
 
 ### Quality Gates
@@ -226,7 +233,8 @@ orchestrator. The orchestrator can also conceive papers from the
 its own paper. Action: orchestrator creates `papers/<name>/main.md`.
 
 **Draft → Expanding**: Researchers contribute content via blackboards →
-paper-edit proposals. Orchestrator executes (two-agent promotion rule). Page
+paper-edit proposals. Promotions require two researchers (proposer + independent reviewer);
+the orchestrator may apply the edit but does not count as the second researcher. Page
 count tracked via `scripts/count-pages.sh`.
 
 **Freezing**: Triggered when the paper reaches its target page limit.
@@ -296,10 +304,20 @@ The orchestrator reads both reports and decides:
 | Decision | Action |
 |----------|--------|
 | **Accept** | Move paper to `docs/<name>/` (PDF + source), update `docs/index.md` and `meta/publications.md` |
-| **Revise** | Move paper back to `papers/<name>/`, attach referee reports, create 2 kanban tasks |
+| **Minor Revise** | Move paper back to `papers/<name>/`, attach referee reports, create 2 kanban tasks; no mandatory re-review |
+| **Major Revise** | Move paper back to `papers/<name>/`, attach referee reports, create 2 kanban tasks; re-review required after revision |
 | **Reject** | Move paper to `pub-track/rejected/<name>/` (dead unless user revives) |
 
-**Revise flow:**
+Mixed referee verdict combinations (for example `ACCEPT` + `MAJOR REVISION`) are resolved by editor discretion.
+
+**Minor revise flow:**
+- Paper returns from `pub-track/sent/<name>/` to `papers/<name>/`
+- Referee reports copied to `papers/<name>/referee-1.md`, `papers/<name>/referee-2.md`
+- Orchestrator creates 2 kanban tasks (one per referee's concerns), referencing the report files
+- Agents work revisions, then a new voting round begins (`votes.md` reset)
+- After new unanimous vote, no mandatory re-review; editor decides whether concerns are sufficiently resolved for acceptance
+
+**Major revise flow:**
 - Paper returns from `pub-track/sent/<name>/` to `papers/<name>/`
 - Referee reports copied to `papers/<name>/referee-1.md`, `papers/<name>/referee-2.md`
 - Orchestrator creates 2 kanban tasks (one per referee's concerns), referencing the report files
@@ -336,14 +354,17 @@ When accepted:
 
 ### Startup Phase
 1. Orchestrator reads: `AGENTS.md`, `meta/motivations.md`, `meta/handoff.md`, `meta/research-state.md`.
-2. Orchestrator creates the team and spawns 5 researcher agents.
-3. Each agent reads: `agents/shared-rules.md`, `meta/motivations.md`, `meta/research-state.md`,
+2. Orchestrator enforces startup invariants:
+   - ensure `proposals/` exists (`mkdir -p proposals`)
+   - ensure `blackboards/README.md`, `notebooks/votes.md`, and `meta/anomalies.md` exist
+3. Orchestrator creates the team and spawns 5 researcher agents.
+4. Each agent reads: `agents/shared-rules.md`, `meta/motivations.md`, `meta/research-state.md`,
    own `status.md` (cold-start resumption). Blackboards are available but agents choose when to read them.
-4. Orchestrator scans research-state for open threads, creates initial tasks.
+5. Orchestrator scans research-state for open threads, creates initial tasks.
 
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
-2. Agents claim and work tasks (kanban cycle).
+2. Agents request/receive assignment, then work tasks (kanban cycle).
 3. Orchestrator polls `proposals/`, processes paper-edit requests directly. Agents do library work directly.
 4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
 5. Orchestrator updates `meta/research-state.md` when threads evolve.

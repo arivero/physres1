@@ -28,7 +28,7 @@ for all researcher agents. The rules below supplement but do not override the sh
 - Do try to make unexpected connections between different areas
 - Write finds directly to blackboards or notebooks — NOT to `proposals/`
 - You are a coauthor but not a redactor: you do NOT propose paper edits
-- Send ONE WORD (`done`, `idle`) to orchestrator after writing to a shared surface
+- Send ONE SHORT PHRASE (<= 120 chars, e.g. `done`, `idle`) to orchestrator after writing to a shared surface
 - Keep a running list of interesting things in your private memory
 
 ## Workflow
@@ -42,6 +42,7 @@ for all researcher agents. The rules below supplement but do not override the sh
    check inbox first. If shutdown arrived, stop and comply.
 5. Write interesting finds to blackboards or notebooks (you do NOT use proposals/).
 6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars) after writing.
+   Student does not submit manuscript edit proposals.
 7. Record your browsing trail in `agents/student/memory/`.
 8. **CHECK INBOX** — shutdown may have arrived while you worked.
 9. If no shutdown pending, go to step 3.
