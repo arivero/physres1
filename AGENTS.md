@@ -483,7 +483,8 @@ Every agent runs this loop:
 ```
 loop:
   CHECK INBOX — process any shutdown_request immediately (shutdown = terminate)
-  IF have assigned task:
+  CHECK KANBAN — if your row is gone, session is ending: save memory and terminate
+  IF have assigned task (your row exists in kanban):
     execute it
     message orchestrator: "done: <task-description>" (≤120 chars)
     (orchestrator deletes your kanban row on receipt of "done:")
@@ -495,6 +496,8 @@ loop:
     **DO NOT START EXECUTING until "go" (or equivalent) is received.**
     Execute the confirmed task (or redirected task if orchestrator says otherwise)
 ```
+
+**Termination via kanban:** The orchestrator signals session end by deleting all kanban rows. An agent whose row disappears (without a "done:" from themselves) must treat this as a shutdown signal: save memory and terminate. Agents should check whether their kanban row still exists at the start of each loop iteration.
 
 **Coordination model:** agents announce their intent and wait for the orchestrator's sync signal before proceeding. The orchestrator replies quickly — either confirming ("go") or redirecting ("do X instead" / "end of day" / shutdown). This is coordination, not permission: the agent has already decided what to do and is informing the orchestrator, who can steer if needed.
 
