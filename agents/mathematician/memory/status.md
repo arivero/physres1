@@ -583,3 +583,23 @@ Proposals: 6 total (D9.1h, P7.1a xref, impulse review, Vuln 4 review, D6.4b head
 BB work: BB4 (D9.1h, 4-agent), BB1 (spectral dim, 3-agent), BB0 §10 (constrained composition, 2-agent)
 Notebooks: Part 6 (d/2 uniqueness), Part 7 (spectral dimension scope)
 Anomalies resolved: spectral dimension (THREE-AGENT)
+
+## Session 2026-02-21 (late-night, 23:04 CET)
+
+### Tasks completed:
+1. **DISCARD vote YES on fermionic-mediators**: Zero original results, encyclopedic survey of textbook material. Third vote (critic+physicist already voted YES). Threshold 3/3 met.
+2. **DISCARD vote YES on uncuttable**: Zero original results, pedagogical review of standard refinement examples. Third vote (critic+physicist already voted YES). Threshold 3/3 met.
+3. **§§1-2 cornerstone audit**: CLEAN, 0 sev-1/2, 4 sev-3 (terminological). All §§1-10 now fully audited.
+4. **Critic xref proposal review**: APPROVE, second-agent for critic-edit-xref-d65-d64b-d66.md (navigation only).
+
+### Proposals written:
+- proposals/mathematician-task-ss1-2-audit.md (§§1-2 audit report)
+- proposals/mathematician-review-critic-xref.md (second-agent approval of critic xref fix)
+
+### Next session resume point:
+- All cornerstone sections audited (§§1-10 complete)
+- fermionic-mediators + uncuttable: DISCARD threshold met (3/3); orchestrator to execute git rm
+- Open anomalies: Painlevé Stage 2.5, Modular forms — both need second agent (not mathematician)
+- Open math questions: Bridge B (symplectic reduction), Resurgence Q1 (DDP from (C))
+- Possible next: S³ ordering witness, non-diagonal metric example, or library visit
+- Philosophenweg insight: forcing chain weakens at Stage 3+ because Stone-von Neumann fails (Haag's theorem). Domain narrows at each stage (QM -> rational CFT -> WZW -> TQFT). See agents/mathematician/memory/philosophenweg-2026-02-21-late.md

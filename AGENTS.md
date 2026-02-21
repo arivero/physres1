@@ -116,17 +116,20 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 | Assignee | Source | Task |
 ```
 
-- **Assignee empty** = backlog / open thread (anyone can claim).
+- **Assignee** = the agent currently executing this task. Empty = unassigned backlog.
+- **Source** = the agent who *suggested* this task. This is provenance only — it is NOT an assignment. An agent whose name appears only in Source must NOT start the task; they must still request it and wait for their name to appear in Assignee.
+- **Assignee empty** = backlog / open thread (anyone can claim by requesting it).
 - **Assignee filled** = work in progress (that agent is actively on it).
 - **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive.
-- **Source** = agent who suggested the task (any agent can suggest tasks for anyone).
-- **Self-assignment** = Assignee equals Source.
+- **Self-assignment** = Assignee equals Source (agent suggested it and was assigned it).
+
+**Common mistake to avoid:** Do not treat `Source: my-name` as permission to start. Only `Assignee: my-name` is permission to start.
 
 ### Rules
 
 - **Any agent** can suggest kanban tasks by messaging the orchestrator.
 - **Orchestrator** creates and assigns tasks. Agents only start after assignment appears.
-- **Start gate (hard):** no agent may start work until the kanban shows that task as assigned to that agent.
+- **Start gate (hard):** no agent may start work until the kanban shows that task as assigned to that agent. Source column is irrelevant to the start gate.
 - **Orchestrator response rule (hard):** every `self: <topic>` request must receive one of:
   (a) explicit kanban assignment, or (b) explicit end-of-day/stop call.
 - **Default self-task policy:** when an agent suggests `self: <topic>`, the orchestrator
@@ -149,7 +152,7 @@ Task metadata is planning-only — never in manuscripts.
 |---------|---------|-------------|
 | Kanban | Task creation, claiming, completion | All |
 | Messages | Short signal phrases (`done`, `stuck`, `vote yes <paper>`, `want #N`) | All |
-| `proposals/` | Manuscript edit requests only (must include diff) | Researchers → Orchestrator |
+| `proposals/` | Manuscript edit requests only (must include diff); **deleted immediately after processing** | Researchers → Orchestrator |
 | Blackboards | Shared working surface for math and exploration | Researchers |
 | Notebooks | Shared stable memory (append-only) | Researchers |
 | `agents/<name>/memory/` | Private working notes | Each agent (own folder only) |
@@ -168,6 +171,8 @@ exhausts after ~3 auto-compressions. Moving content to `proposals/` on disk keep
 the orchestrator's window for actual work.
 
 Proposal files: `proposals/<agent>-edit-<topic>.md` (gitignored, ephemeral).
+
+**Proposal lifecycle (hard):** The orchestrator deletes every proposal file **immediately** after processing (accepted, rejected, or deferred). No archiving, no accumulation. The file's existence means it is unread. A processed proposal that still exists is a bug.
 
 ---
 
@@ -419,7 +424,7 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
 2. Agents request tasks (`want #N`) or suggest `self:` topics; orchestrator assigns in kanban; only then agents execute.
-3. Orchestrator polls `proposals/`, processes paper-edit requests directly. Agents do library work directly.
+3. Orchestrator polls `proposals/`, processes paper-edit requests directly, **deletes each file immediately after processing**. Agents do library work directly.
 4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
 5. Orchestrator updates `meta/research-state.md` when threads evolve.
 
@@ -479,10 +484,31 @@ When given a time deadline, continue autonomously without pausing. Commit policy
 2. If the user provides an hour without a timezone, interpret it as **CET** by default.
 3. If the user specifies a different timezone explicitly, use that timezone instead of CET.
 
-### Stop Method (Operational)
-1. Agent sends `want #N` or `self: <topic>`.
-2. Orchestrator either assigns in kanban (`status=assigned`) or explicitly calls end-of-day.
-3. If no assignment is posted, the agent must wait and must not start the task.
+### Agent Request-and-Wait Loop (Hard)
+
+Every agent runs this loop continuously:
+
+```
+loop:
+  CHECK INBOX — process any shutdown_request immediately (shutdown = terminate)
+  READ meta/kanban.md
+  IF kanban shows Assignee = my-name for any task:
+    execute that task
+    DELETE the row from kanban when done
+    message orchestrator: "done: <task-description>"
+  ELSE:
+    EITHER message orchestrator: "want <unassigned-task-description>" (for backlog tasks)
+    OR message orchestrator: "self: <topic>" (for self-proposed new task)
+    THEN sleep 30s and loop back (poll again — do NOT start until Assignee column shows your name)
+```
+
+The orchestrator's responsibility:
+- On receiving `want <task>` or `self: <topic>`: update `meta/kanban.md` so that `Assignee = agent-name` for that task, then the agent will pick it up on next poll.
+- On end-of-day: reply "end of day" and the agent stops looping.
+
+**Key invariant:** An agent that sent a request but sees no assignment in the kanban yet is WAITING, not stuck. It polls every 30s and waits patiently. No task may start without the kanban showing assignment.
+
+**Source column is never a start signal.** Source = who suggested the task. Assignee = who may start.
 
 ### When No Tasks Are Available
 **PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.

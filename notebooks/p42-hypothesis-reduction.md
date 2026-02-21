@@ -656,3 +656,84 @@ The statement "d/2 appears four times in the project" could mislead a reader int
 - Part 7: spectral dimension scope
 - notebooks/oq1a-planck-area-fundamental.md: Planck-area sieve
 - docs/planck-area/main.md: PA-D1.3 (gravity-only sieve)
+
+---
+
+## Part 9: Spectral Dimension d=4 Selection — Compatibility, Not Forcing (FOUR-AGENT)
+
+**Source:** blackboards/1.md §§1-12 (mathematician + physicist + critic + computationalist)
+**Proposal:** proposals/computationalist-task-spectral-dimension-d4-selection.md
+**Status:** FOUR-AGENT UNANIMOUS (2026-02-21). Corrected framing of original computationalist proposal.
+**Extends:** Part 7 (scope of d/2 uniqueness, TWO-AGENT) → upgraded to FOUR-AGENT with sharpened verdict.
+
+### The observation
+
+Two independent arguments produce the exponent d/2:
+
+**(A) Composition (this project, P4.2).** The d/2 uniqueness theorem (Part 6) forces normalization \(K_t \sim t^{-d/2}\) from \(\{m, \hbar\}\)-only. With modified dispersion \(\phi(p) = -c_z|p|^{2z}\) at UV, the spectral dimension is \(d_s = d/z\). For quartic dispersion (\(z=2\)): \(d_s = d/2\).
+
+**(B) Quantum gravity universality (Carlip 2017, arXiv:1705.05417).** CDT, asymptotic safety, Horava-Lifshitz, and LQG all find \(d_s \to 2\) in the UV.
+
+Setting \(d/2 = 2\) gives \(d = 4\).
+
+### Numeric verification (scipy, all dimensions)
+
+| \(d\) | \(d_s = d/2\) (quartic, \(z=2\)) | \(d_s = 2\) (QG universal) | Match? |
+|---|---|---|---|
+| 2 | 1.0 | 2.0 | NO |
+| 3 | 1.5 | 2.0 | NO |
+| **4** | **2.0** | **2.0** | **YES** |
+| 5 | 2.5 | 2.0 | NO |
+| 6 | 3.0 | 2.0 | NO |
+
+Heat-kernel integration (MDR \(\omega = p^2 + p^4/\Lambda^2\), \(t = 0.001\)):
+\(d_s\) converges to \(d/2\) in all dimensions tested (\(d = 2,3,4,5,6\)).
+Typical relative error at \(t = 0.001\): \(\lesssim 2\%\).
+S\(^2\) ordering comparison: Laplace-Beltrami gives \(d_s \to 2\), left-ordered gives \(d_s > 2\).
+
+### Corrected framing (FOUR-AGENT verdict)
+
+The original computationalist proposal overclaimed. The BB1 three-agent analysis (mathematician + physicist + critic), confirmed by the computationalist fourth-agent review, established:
+
+**1. \(d_s = d/2\) requires \(L_P\), not just composition.**
+Part 6 proves: \(\{m, \hbar\}\)-only forces \(\alpha = 2\) (quadratic dispersion), giving \(d_s = d\) always. Quartic dispersion (\(\alpha = 4\)) requires \(c_4 = \hbar L_P^2/m\), i.e., the Planck length as a third dimensional constant. Composition is COMPATIBLE with quartic dispersion when \(L_P\) is available, but does not FORCE it.
+
+**2. The coincidence \(d/2 = 2\) at \(d = 4\) is dimensional, not \(d\)-specific.**
+The formula \(d_s = d/z = d/2\) at \(z = 2\) holds for ALL \(d\). The equation \(d/2 = 2\) selects \(d = 4\) trivially (algebra, not physics). There is no mechanism specific to \(d = 4\) that makes the spectral dimension equal 2.
+
+**3. QG approaches use different effective \(z\) values.**
+Horava-Lifshitz uses \(z = D\) (spatial dimension, e.g. \(z = 3\) for \(D = 3\)), giving \(d_s = D/z = 1\) spatially. The \(d_s \to 2\) result for spacetime involves \(z = D\) in the spatial sector and a separate temporal scaling. The half-density program's \(d_s = d/2\) comes from \(z = 2\) globally. These are DIFFERENT mechanisms that happen to produce \(d_s = 2\) at \(d = 4\).
+
+**4. Correct statement (non-overclaiming).**
+"If composition at the Planck scale produces effective \(z = 2\) quartic dispersion (requiring \(L_P\)), then \(d_s = d/2\), which matches the QG universal value 2 only at \(d = 4\)."
+
+This is a **compatibility condition**, not a forcing result. The chain:
+\[
+\text{Composition} + L_P \xrightarrow{\text{allows}} z = 2 \xrightarrow{\text{gives}} d_s = d/2 \xrightarrow{d_s \stackrel{!}{=} 2} d = 4
+\]
+has a conditional first step (composition allows but does not force \(z = 2\)) and a trivially algebraic last step (\(d/2 = 2 \Leftrightarrow d = 4\)).
+
+### Relationship to other d=4 arguments
+
+| Argument | Source | Mechanism | Status |
+|----------|--------|-----------|--------|
+| Diophantine sieve (PA-D1.3) | Planck-area satellite | Gravity + half-density integrality constraint | Paper result |
+| Spectral dimension matching | This entry | Composition + \(L_P\) + QG universality | Compatibility (not forcing) |
+
+These are logically independent: the Diophantine sieve uses the VALUE \(d/2 \in \mathbb{Z}\), while spectral dimension matching uses the VALUE \(d/2 = d_s^{\text{UV}}\). Both produce \(d = 4\), but neither forces the other.
+
+### Not promotable to paper
+
+All four agents concur: this result is a scope clarification for the d/2 uniqueness theorem, not a new paper-level claim. It belongs in the notebook as permanent context for future work on Planck-scale dispersion.
+
+### References
+
+- blackboards/1.md: full FOUR-AGENT analysis (§§1-12)
+- Part 6 (this notebook): d/2 uniqueness theorem
+- Part 7 (this notebook): spectral dimension scope (TWO-AGENT, now subsumed)
+- Part 8 (this notebook): d/2 occurrence landscape (student)
+- proposals/computationalist-task-spectral-dimension-d4-selection.md: original proposal + self-correction
+- Carlip, arXiv:1705.05417 (2017): spectral dimension universality review
+- Horava, Phys. Rev. D 79, 084008 (2009): Lifshitz gravity
+- sources/horava-spectral-dimension-lifshitz.md: ingested reference
+- sources/carlip-2019-dimensional-reduction-review.md: ingested reference

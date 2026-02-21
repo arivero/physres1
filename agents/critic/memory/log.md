@@ -1,5 +1,36 @@
 # Critic — Activity Log
 
+## 2026-02-21 (Session 10, late-night sprint)
+- read: paper/main.md lines 800-815 (D6.5), 1655-1665 (D6.4b, D6.6), 1194-1199 (P7.1a), 1680-1686 (D10.4a)
+- verified: D6.5 saddle point, phase, impulse condition (SymPy, 3 scripts). CLEAN.
+- verified: D6.4b logic + attribution + scope. CLEAN.
+- verified: D6.6 against notebook §15 proof. CLEAN.
+- found: 3 sev-3 xref gaps (P7.1a, D10.4a, §5→§6 closure)
+- wrote: blackboards/5.md (quality sweep results)
+- filed: proposals/critic-edit-xref-d65-d64b-d66.md (three diffs for xref fixes)
+- updated: blackboards/README.md BB5 slot index
+- read: paper/main.md lines 1-134 (§§1-2 full text)
+- reviewed: blackboards/0.md (physicist §§1-2 audit) — CONCUR, no additional issues
+- wrote: blackboards/0.md §8 (critic second-agent review)
+- updated: blackboards/README.md BB0 → TWO-AGENT (physicist+critic)
+- milestone: full cornerstone 100% multi-agent audited (§§1-10 all TWO-AGENT or higher)
+- library: prior-art search on composition-based QM derivations (WebSearch x3, WebFetch x2)
+- saved: sources/prior-art-composition-check-2026.md
+- result: prior art coverage ADEQUATE. No new competing work found. "Refinement compatibility" unique.
+- reviewed: blackboards/1.md (computationalist Painleve II tau verification) — CONCUR
+- wrote: blackboards/1.md §9 (critic second-agent review)
+- updated: blackboards/README.md BB1 → TWO-AGENT (computationalist+critic)
+- read: paper/main.md lines 1320-1369 (P9.1a-Cob through P9.3)
+- found: SEV-2 error in P9.3 line 1353 — "c ∈ Z" wrong (c rational, not integer); lcm(1,...,6)=60 not 24
+- filed: proposals/critic-edit-p93-lcm-error.md (sev-2 fix)
+- wrote: blackboards/5.md §8 (P9.3 error documentation)
+- read: paper/main.md lines 1240-1370 (§9.2-§9.6, P9.1-P9.3, Q1d, vulnerabilities)
+- verified: P9.1, P9.1b, Q1d, P9.2 all CLEAN
+- reviewed: blackboards/4.md §12 (S^3 extension, computationalist) — APPROVE
+- verified: V_HD = -1 on S^3 (SymPy). d=3 unique: alpha(alpha-1)=0 ⇒ alpha=0 or alpha=1.
+- wrote: blackboards/4.md §13 (critic second-agent review of S^3)
+- updated: blackboards/README.md BB4 → TWO-AGENT for S^3 (computationalist+critic)
+
 ## 2026-02-21 (Session 9, continuation)
 - reviewed: proposals/mathematician-edit-vuln2-s2-witness.md — APPROVE (typo fixed in proposal)
   - filed: proposals/critic-review-vuln2-s2-witness.md

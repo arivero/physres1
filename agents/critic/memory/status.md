@@ -112,6 +112,42 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - Vuln 3 (RG): CLOSED (D8.2a)
 - Vuln 4 (truncation): CLOSED (D6.4a merged)
 
+## Session 10 (23:04 CET, 2026-02-21)
+- Quality sweep: D6.5, D6.4b, Lemma D6.6
+  - D6.5: SymPy verified (saddle, phase, impulse condition). CLEAN.
+  - D6.4b: logic, assumptions, attribution all correct. CLEAN.
+  - D6.6: notebook proof verified, scope qualifiers present. CLEAN.
+  - Three sev-3 xref gaps found:
+    1. P7.1a scale track missing D6.4b/D6.6; D6.5 absent from all tracks
+    2. D10.4a package map missing D6.4b/D6.6
+    3. §5→§6 closure (line 1239) missing explicit D6.5 label ref
+  - Filed: proposals/critic-edit-xref-d65-d64b-d66.md (three diffs)
+  - Wrote: blackboards/5.md (overwriting stale action-angle pre-vote)
+- Second-agent review of BB0 (physicist §§1-2 audit): CONCUR
+  - Independent spot-checks: D0.1, D0.2, footnote 14 (locality from additivity), reader map
+  - No additional issues beyond physicist's list
+  - BB0 now TWO-AGENT (physicist+critic)
+  - MILESTONE: entire cornerstone (§§1-10) now 100% multi-agent audited
+- Extended §9 sweep (P9.1-P9.3, Q1d, vulnerability summary):
+  - P9.1: CLEAN (structure vs content distinction correct)
+  - P9.1b: CLEAN (Segal sewing + Cauchy → c/24)
+  - P9.1b-Q1d: CLEAN (SU(2) formula illustrative; general claim correct)
+  - P9.2: CLEAN (RT theorem correctly stated; q-forcing caveat present)
+  - P9.3: SEV-2 (c∈Z wrong, lcm wrong) — fix filed
+  - §9.4 vulnerability summary: CONSISTENT with current status
+  - §9.5 packages: CONSISTENT
+  - §9.6 conclusion: CLEAN
+- BB4 S^3 extension review: APPROVE (V_HD=-1, d=3 unique, alpha(alpha-1)=0)
+- BB1 Painleve II review: CONCUR (Conj 6.1 trivially true, non-specific)
+- Library visit: prior-art check for composition-based QM derivations
+  - "Refinement compatibility" has ZERO external hits — novel framing confirmed
+  - Goyal-Knuth-Skilling (ref 24) + Luiz-de Oliveira already cited — adequate coverage
+  - Saved: sources/prior-art-composition-check-2026.md
+- Anomalies register updated: Q1d→RESOLVED, Painleve→SUBSTANTIALLY RESOLVED, P9.3→FIX PENDING
+- Proposals filed this session:
+  1. critic-edit-xref-d65-d64b-d66.md (3 sev-3 xref fixes) — TWO-AGENT (critic+physicist)
+  2. critic-edit-p93-lcm-error.md (1 sev-2 error fix) — TWO-AGENT (critic+physicist)
+
 ## Session 9 proposal outcomes
 - D9.1h paper edit: MERGED (mathematician, critic reviewed)
 - D6.5 impulse-kernel: MERGED (physicist, FOUR-AGENT approved)

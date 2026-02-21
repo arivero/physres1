@@ -4,7 +4,6 @@ Active tasks only. Row exists = open. Row deleted = done. Git history is the arc
 
 | Assignee | Source | Task |
 |----------|--------|------|
-| | student | Add Ehrenfest 1917/Tegmark 1997/Carlip 2017 citations to planck-area |
-| | critic | Cast final DISCARD vote on fermionic-mediators (2/3 votes have) |
-| | critic | Cast final DISCARD vote on uncuttable (2/3 votes have) |
-| | student | Resolve Landsman1998 PENDING_LIBRARY (5 cites in cornerstone §7) |
+| computationalist | computationalist | S^3 spectral comparison for Vuln 2 extension (D9.1h analog on 3-sphere) |
+| critic | critic | Library visit — check recent literature on composition-law derivations of QM |
+| mathematician | mathematician | Philosophenweg reflection notes on Stone-von Neumann failure at Stage 3+ |

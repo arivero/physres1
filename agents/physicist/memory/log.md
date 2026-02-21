@@ -221,3 +221,41 @@
 - wrote: proposals/physicist-audit-sections3-5.md (SINGLE-AGENT audit, §§3-5 CLEAN)
 - combined: §§3-8 now fully audited by two agents (physicist §§3-6, critic §§7-8)
 - shutdown: all proposals merged, session complete (~23:30 CET)
+
+## 2026-02-21 (Session 8, late night ~23:04 CET)
+- read: .claude/agents/physicist.md, agents/shared-rules.md
+- read: meta/motivations.md, meta/research-state.md, agents/physicist/memory/status.md
+- read: meta/kanban.md (found §§1-2 audit task)
+- claimed: §§1-2 audit (want signal sent to orchestrator)
+- read: paper/main.md lines 1-134 (§§1-2 full), paper/bibliography.md (full)
+- read: paper/main.md lines 1609-1688 (Appendix 10.3, forward-ref check)
+- verified: D4.1c (line 685), P4.2 (line 611) forward refs exist
+- overwrote: blackboards/0.md (§§1-2 physicist audit, replaced resolved Philosophenweg content)
+  - Dim analysis: 6 checks, all CLEAN
+  - Limiting cases: 4 checks, all CLEAN
+  - Signs: 2 checks, all CLEAN
+  - Physics plausibility: 8 checks, 1 sev-3 (D3 derivative metaphor)
+  - Cross-refs: 6 checks, 1 sev-2 (E1 uncuttable dangling ref conditional on DISCARD)
+  - Logical flow: 3 checks, 1 sev-3 (F3 numbering convention implicit)
+- updated: blackboards/README.md slot 0 index
+- updated: agents/physicist/memory/status.md
+- result: §§1-2 CLEAN. Full paper §§1-8 now audited.
+- reviewed: proposals/student-edit-planck-area-citations.md — APPROVE (TWO-AGENT)
+- wrote: proposals/physicist-review-planck-area-citations.md
+- annotated: blackboards/5.md §7 (physicist 2nd-agent on critic quality sweep D6.5/D6.4b/D6.6)
+- updated: blackboards/README.md slot 5 (TWO-AGENT)
+- read: paper/main.md §9 (lines 1184-1370) — quick physics scan
+- result: §9 physics CLEAN (P7.1 chain, P9.1-P9.3 forcing stages, vulnerabilities all correctly stated)
+- wrote: proposals/physicist-review-critic-xref.md (THREE-AGENT endorsement of critic xref fix)
+- wrote: proposals/physicist-edit-lagrangian-density-fix.md (TWO-AGENT, sev-3: "Lagrangian density" -> "Lagrangian")
+- read: blackboards/2.md (checked d/2 uniqueness promotion status — already in notebook Part 6)
+- wrote: proposals/physicist-edit-uncuttable-ref-contingency.md (sev-2 contingency: apply after DISCARD)
+- library: WebSearch for Landsman1998 OA — FOUND on author homepage (math.ru.nl/~landsman/1998book.pdf)
+- wrote: sources/landsman1998-author-oa.md (ingested metadata + OA URL)
+- result: Landsman1998 PENDING_LIBRARY -> RESOLVED (author-provided OA)
+- reviewed: proposals/critic-edit-p93-lcm-error.md — APPROVE (sev-2 URGENT, TWO-AGENT)
+  - P9.3 line 1353: "c in Z" is WRONG (Ising c=1/2, etc.), correct: c in Q
+  - lcm(1,...,6) = 60, not 24 (arithmetic error)
+  - denominator bound on c/24 does not follow
+  - my own earlier proposal introduced this error; critic caught it
+- wrote: proposals/physicist-review-p93-lcm-error.md

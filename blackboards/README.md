@@ -61,12 +61,12 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Steelman criticism of RCP project (critic) + §8 areal-speed pub-readiness (physicist): DISCARD. §9 Philosophenweg (constrained composition forces Lagrange multipliers, FP det = half-density on M). SymPy verified. | THREE-AGENT (physicist+mathematician+computationalist) |
-| 1 | Spectral dimension from modified heat kernels. d_s=d/2 in UV requires L_P (quartic Lifshitz z=2). NOT forced by composition alone. Numeric verification (d=2..6). Notebook-ready scope clarification, not paper-promotable. | FOUR-AGENT (mathematician+physicist+critic+computationalist); UNANIMOUS |
+| 0 | Audit of §§1-2 (intro/notation). Dim analysis, limiting cases, signs, cross-refs, physics plausibility. 0 sev-1, 1 sev-2 (uncuttable dangling ref conditional on DISCARD), 2 sev-3. CLEAN. Full cornerstone now 100% multi-agent audited. | TWO-AGENT (physicist+critic) |
+| 1 | Painleve II tau = Det(1-K_Ai) verification. Tracy-Widom F2 from PII ODE vs Fredholm det: 1e-6 agreement. Moments match known TW values. Groupoid interpretation: trivially true (pair groupoid) but non-specific (doesn't use monodromy groupoid). Conjecture 6.1 resolved (trivially true, non-specifically). | TWO-AGENT (computationalist+critic) |
 | 2 | Cross-paper dependency map (critic) + d/2 uniqueness chain (mathematician) + cornerstone open threads. Critic 3rd-agent: E1-E3 VERIFIED, G1 CLOSED (L-K+dim analysis), G2 CLOSED (Buckingham pi), no sev-1/2 issues. READY for notebook promotion. | THREE-AGENT (mathematician+physicist+critic) |
 | 3 | planck-area pre-vote. Core §§1–4: SOUND (YES). §5: REMOVED (resolved). PA-H2.5c added. Critic: upgraded CLOSE→READY. All remaining issues sev-3. | THREE-AGENT (mathematician+physicist+critic); pre-vote: YES |
-| 4 | S² ordering witness D9.1h (Vuln 2). V_HD verified (SymPy), spectra l(l+1) vs n^2, shift -(l+1). + Vuln 4 truncation benchmark. Paper-edit ready. | FOUR-AGENT (mathematician+critic+physicist+computationalist); UNANIMOUS APPROVE |
-| 5 | action-angle-indeterminacy pre-vote. All math VERIFIED. Prior-art (Judge/Carruthers-Nieto) now cited. Critic: scope confirmed (standalone dependent note acceptable). Upgraded CLOSE→READY. Pre-vote YES (no revision). | THREE-AGENT (mathematician+critic+physicist); pre-vote YES |
+| 4 | S² ordering witness D9.1h (Vuln 2) + S³ extension. S²: shift -(l+1). S³: shift -1 (constant! V_HD=-1). General S^d: only d=3 has constant V_HD (alpha(alpha-1)=0). Two curved-manifold witnesses. | FOUR-AGENT S² + TWO-AGENT S³ (computationalist+critic) |
+| 5 | Quality sweep: D6.5, D6.4b, Lemma D6.6. Math VERIFIED (SymPy). Physics VERIFIED (dim analysis, limits, signs). Three sev-3 xref gaps. No sev-1/sev-2. | TWO-AGENT (critic+physicist) |
 | 6 | Efimov/PSL(2,R) verification. s0=1.00624 verified. Q1+Q2 CONFIRMED. Q3 overclaim confirmed: RCP accommodates, not forces. SL(2,R) is de Alfaro-Fubini-Furlan 1976 (not new). Notebook-ready (Q1+Q2 only). | THREE-AGENT (computationalist+critic+physicist) |
 
 ## Reading Blackboards

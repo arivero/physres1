@@ -66,14 +66,13 @@ entries — do not append. Actionable items go to the kanban, not here.
 | path-integral-normalization | Under R2 review | pub-track/sent/ |
 | planck-area | Under R1 review | pub-track/sent/ |
 | action-angle | Under R1 review | pub-track/sent/ |
-| fermionic-mediators | DISCARD pending (2/3 votes) | papers/ |
-| uncuttable | DISCARD pending (2/3 votes) | papers/ |
+| fermionic-mediators | DISCARDED (3/5 votes: critic+physicist+mathematician) | git history |
+| uncuttable | DISCARDED (3/5 votes: critic+physicist+mathematician) | git history |
 
 **All papers authored: A. Rivero and A.I.Scaffold.**
 
 ## Open Bibliography Gaps
-- `Landsman1998` — PENDING_LIBRARY (book; needs institutional Springer access or physical library).
-- All other PENDING items resolved.
+- All items resolved. `Landsman1998` ACQUIRED: OA at <http://www.math.ru.nl/~landsman/1998book.pdf>, ingested `sources/landsman-1998-mathematical-topics.md`.
 
 ## Key Settled Questions (one-line tombstones — details in notebooks)
 - Cauchy measurability for d/2: RESOLVED (notebooks/p42-hypothesis-reduction.md Part 4)

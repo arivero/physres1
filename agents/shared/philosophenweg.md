@@ -86,3 +86,13 @@ to a blackboard or private memory after returning.
 5. Severity of P9.3: the arithmetic progression may be cherry-picked. What about Stage 3 forcings that yield irrational constants?
 
 **Outcome:** Five critical observations, one severity-2 concern (P9.3 cherry-picking risk). Full writeup to proposals/philosophenweg-gravity-composition.md.
+
+
+### 2026-02-21 — Mathematician (solo, ~15 min, late-night)
+
+**Themes explored:**
+1. Arithmetic forcing chain selectivity: each stage adds a new axiom AND restricts the class of theories. Stage 2 is universal (all QM), Stage 3 restricts to rational CFTs, Stage 3.5 to WZW, Stage 4 to TQFTs. The chain is logically correct but its domain narrows — partially addresses critic's cherry-picking concern.
+2. Stone-von Neumann as the mathematical reason P4.2 works: uniqueness theorem for finite-dim representations enables clean forcing. At Stage 3+ (QFT), Haag's theorem breaks uniqueness — each subsequent stage needs a new axiom because the uniqueness mechanism fails.
+3. Bridge B (symplectic reduction G_log^Lambda -> Pair(M)): need a coisotropic submanifold for Marsden-Weinstein. Unknown if this exists. If not, the three RCP channels have genuinely independent groupoid structures.
+
+**Outcome:** Key insight: the forcing chain may terminate for mathematical reasons (loss of uniqueness theorems) rather than physical reasons (gravity dynamicizing time). Notes to private memory.
