@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Refinement Compatibility as a Foundational Principle"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

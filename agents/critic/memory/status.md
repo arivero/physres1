@@ -1,54 +1,48 @@
 # Critic -- Status
 
-## Current state (2026-02-21, Session 3 continuation)
+## Current state (2026-02-21, Session 5 — continuation)
 ALL 14 satellite reviews COMPLETE.
 Cornerstone audit COMPLETE.
 ALL 7 blackboard slots reviewed with critic second/third-agent reviews.
 Library building: 22+ source files created across sessions.
-Re-votes: YES on relativistic-central-orbits + half-density-qft (both Round 2).
-Publication pipeline: 12 READY, 0 CLOSE, 2 GENRE MISMATCH.
-RCP-foundations MAJOR REVISION assessment complete (proposals/critic-assessment-rcp-major-rev.md).
-Ordering-equivalence MAJOR REVISION assessment complete (proposals/critic-assessment-oe-major-rev.md).
-Rooted-tree-bookkeeping MAJOR REVISION assessment complete (proposals/critic-assessment-rtb-major-rev.md).
+Task #25 referee batch 4: ALL 8 REPORTS ASSESSED.
+Re-votes cast: rel-orbits ACCEPT, half-density-qft ACCEPT.
+Path-int-norm revision reviewed: APPROVED (all referee concerns addressed correctly).
+RG-fund 3D integral error: STILL PRESENT (lines 491, 613), revert reminder sent.
+
+## Session 5 completed
+- Re-vote on relativistic-central-orbits: ACCEPT (no errors found)
+- Re-vote on half-density-qft: ACCEPT (no errors found)
+- Reviewed path-integral-normalization revision (uncommitted): all 8 referee fixes verified correct
+  - Missing reference: [Jackiw1991DeltaPotentials] cited but not in reference list
+- Sent 2nd urgent reminder re: rg-fundamental 3D integral error (lines 491, 613: 4pi should be 2pi)
+
+## Session 4 completed
+- Task #25 assessment: proposals/critic-assessment-task25-referee-batch4.md
+  - OE R2: MINOR REV (both MAJORs resolved, 9 residual sev-3 items)
+  - RTB R2: MINOR REV (all 3 MAJORs resolved, 7 residual sev-3/4 items)
+  - RG-fund R1: MAJOR REV (RG-P1.1 unproven, RG-R1.1 internal tags, Section 4 defers)
+    - IMPORTANT: Ref-2 M3 claims factor-of-2 error in 3D Im(I_3); CRITIC VERIFIED paper is CORRECT. Contest in response.
+  - Path-int-norm R1: Split verdict (Ref-1 MINOR / Ref-2 MAJOR). Critic recommends MINOR; all "MAJOR" items are presentation-level.
 
 ## Session 3 completed (continuation)
-- BB2 Painleve sev-2 resolution: H6.4 downgraded to CONJECTURE, Stage 2.5b labeled CONJECTURAL
-- BB2 PROMOTED to notebooks/painleve-isomonodromy-stage25.md (slot FREE)
+- BB2 Painleve sev-2 resolution: H6.4 -> CONJECTURE, Stage 2.5b -> CONJECTURAL
+- BB2 PROMOTED to notebooks/painleve-isomonodromy-stage25.md
+- BB2 overwritten with cross-paper dependency map (Philosophenweg)
 - BB1 (rg-fundamental pre-vote): critic second-agent review (C4.1-C4.6, concur YES MINOR REV)
-- BB README updated: slot 1 TWO-AGENT, slot 2 PROMOTED
-- Ordering-equivalence MAJOR REVISION assessment (proposals/critic-assessment-oe-major-rev.md)
-- Rooted-tree-bookkeeping MAJOR REVISION assessment (proposals/critic-assessment-rtb-major-rev.md)
+- OE MAJOR revision assessment + verified fixes applied
+- RTB MAJOR revision assessment + verified fixes applied
+- Pre-read path-integral-normalization for upcoming referee review
+- Cross-paper dependency analysis: RCPFoundations = single hub, 5/12 standalone
 
-## Prior sessions completed
-- Re-vote YES on rel-orbits (R2) + half-density-qft (R2)
-- Bibliography audit: 3 proposals processed
-- BB5 OQ1a §12: FOUR-AGENT review
-- Task #12: Pre-vote batch 2 (rg-fundamental, planck-area, fermionic-mediators)
-- Pre-vote Tier 1: rcp-foundations + tangent-groupoid-bridge (READY)
-- Pre-vote Tier 2: ordering-equivalence + rooted-tree-bookkeeping (READY)
-- Pre-vote Remaining: rg-fundamental + path-integral-normalization (READY), planck-area + action-angle (CLOSE)
-- Action-angle prior-art fix proposal (Judge 1964 + Carruthers-Nieto 1968)
-- Library: sources/judge-1964-angle-uncertainty.md, sources/carruthers-nieto-1968-phase-angle.md
-- BB0: Philosophenweg steelman criticism (C1-C5 + forcing chain circularity analysis)
-- BB1 (A_geom): Second-agent review; promoted to notebook
-- BB2: Third-agent review (H6.4 overclaim sev-2, Stage 2.5b sev-2)
-- BB3-BB6: Second/third-agent reviews complete
-- RCP-foundations MAJOR REVISION assessment (proposals/critic-assessment-rcp-major-rev.md)
-
-## Publication pipeline (critic assessment, final updated)
-- READY (12): delta-objects, dirac-probes, half-density-qft, rel-orbits, rcp-foundations, tangent-groupoid-bridge, ordering-equivalence, rooted-tree-bookkeeping, rg-fundamental, path-integral-normalization, planck-area, action-angle
-- CLOSE (0): none
+## Publication pipeline (updated Session 5)
+- PUBLISHED (8): delta-objects, dirac-probes, half-density-qft, rel-orbits, rcp-foundations, tangent-groupoid-bridge, ordering-equivalence, rooted-tree-bookkeeping
+- REVISION IN PROGRESS (1): path-integral-normalization (revision looks good, pending commit + re-review)
+- NEEDS 3D INTEGRAL FIX (1): rg-fundamental (revision done but introduced error from referee)
+- AWAITING R1 REVIEW (2): planck-area, action-angle (Task #26)
 - GENRE MISMATCH (2): uncuttable, fermionic-mediators
 
-## Carry-forward items
-- Genre decision needed: fermionic-mediators + uncuttable
-- Action-angle prior-art fix APPLIED (Judge/Carruthers-Nieto now cited)
-- BB5 action-angle second-agent review complete (upgraded CLOSE→READY)
-
 ## Next steps
-- Await orchestrator feedback on proposals (10 proposals pending)
-- Review revised ordering-equivalence when Task #23 completes
-- Review revised rooted-tree-bookkeeping when Task #24 completes (may be done)
-- Available for re-votes on any revised papers
-- Philosophenweg: Kontsevich formality connection to A3, or cross-paper argument dependencies
-- Stale BB slots: BB3-BB6 are completed pre-votes (process artifacts). BB0 is critic's own Philosophenweg. BB1 now rg-fundamental pre-vote (TWO-AGENT). BB2 slot FREE.
+- Await team lead action on rg-fundamental 3D integral revert
+- Task #26 (planck-area + action-angle): ready to assess when reports arrive
+- Philosophenweg: BB0 §7 Krein Q-function candidate (open question)

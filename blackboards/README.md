@@ -63,9 +63,9 @@ relevant slot. Deletion criteria (in priority order):
 |------|-------|--------|
 | 0 | Steelman criticism of RCP project (Philosophenweg, critic). C1: tautology (rebutted by Levy exclusion). C3: textbook repackaging (partially valid). C4: d=4 gap (needs PA-H2.5c). | ONE-AGENT (critic) |
 | 1 | rg-fundamental pre-vote. All computations VERIFIED. Sev-2: RG-D1.4 resummed vs perturbative confusion (one-line fix). Critic concurs: YES, MINOR REV. | TWO-AGENT (mathematician+critic); pre-vote YES |
-| 2 | Painlevé isomonodromy Stage 2.5. THREE-AGENT complete. Sev-2 items RESOLVED (H6.4+Stage 2.5b downgraded to conjectures). | PROMOTED to notebooks/painleve-isomonodromy-stage25.md; slot FREE for reuse |
+| 2 | Cross-paper dependency map (Philosophenweg, critic). Citation graph, critical path analysis, "what if" scenarios. RCPFound = single hub. 5/12 READY papers standalone. Dominant referee weakness: "companion unavailable." | ONE-AGENT (critic) |
 | 3 | planck-area pre-vote. Core §§1–4: SOUND (YES). §5: REMOVED (resolved). PA-H2.5c added. Critic: upgraded CLOSE→READY. All remaining issues sev-3. | THREE-AGENT (mathematician+physicist+critic); pre-vote: YES |
-| 4 | ordering-equivalence pre-vote verification. LR/HD computations VERIFIED. Sev-3 only. Critic concurs: READY, MINOR REV. Rydberg "exception" downgraded to clarification (hbar^2 scaling preserved). | TWO-AGENT (mathematician+critic); pre-vote YES |
+| 4 | RG-fundamental revision support (critic). 3D Im(I_3) verified: paper CORRECT, Ref-2 wrong (used d=2 measure factor). Pre-vote postmortem: 4 calibration lessons. MAJOR revision checklist (7 MUST, 6 SHOULD, 3 COULD). | ONE-AGENT (critic) |
 | 5 | action-angle-indeterminacy pre-vote. All math VERIFIED. Prior-art (Judge/Carruthers-Nieto) now cited. Critic: scope confirmed (standalone dependent note acceptable). Upgraded CLOSE→READY. Pre-vote YES (no revision). | TWO-AGENT (mathematician+critic); pre-vote YES |
 | 6 | path-integral-normalization pre-vote. d/2 forcing VERIFIED. Sev-2: §6.1 missing iε (trivial fix). Critic concurs: READY, MINOR REV. All sev-3 items editorial. | TWO-AGENT (mathematician+critic); pre-vote YES |
 

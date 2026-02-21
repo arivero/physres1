@@ -39,6 +39,10 @@ Papers submitted through the internal peer review process (AGENTS.md §11).
 | Tangent Groupoid Bridge (R2) | 2026-02-21 | MAJOR REV (R2)† | MINOR REV (R2) | **ACCEPT → published** | 2026-02-21 | †Ref-1 flawed diff; all residuals fixed; published to docs/tangent-groupoid-bridge/ |
 | Ordering Equivalence | 2026-02-21 | MAJOR REV (2M+6m) | MAJOR REV (2M+6m) | **MAJOR REVISION** | 2026-02-21 | LR/Weyl confusion; dimensional inconsistency in estimate |
 | Rooted Tree Bookkeeping | 2026-02-21 | MAJOR REV (3M+6m) | MAJOR REV (3M+7m) | **MAJOR REVISION** | 2026-02-21 | Elementary differential error; duplicate §4.4; sunset mislabel |
+| Ordering Equivalence (R2) | 2026-02-21 | MINOR REV (R2, 0M+6m) | MINOR REV (R2, 0M+4m) | **ACCEPT → published** | 2026-02-21 | All MAJORs resolved; residual minors presentational only |
+| Rooted Tree Bookkeeping (R2) | 2026-02-21 | MINOR REV (R2, 0M+3m) | MINOR REV (R2, 0M+3m) | **ACCEPT → published** | 2026-02-21 | All MAJORs resolved; residual minors (σ def, coproduct convention) |
+| RG Fundamental | 2026-02-21 | MAJOR REV (3M+6m) | MAJOR REV (3M+8m) | **MAJOR REVISION** | 2026-02-21 | RG-P1.1 unproved; calculus analogy misleading; RG-R1.1 internal tags; 3D integral factor-of-2 |
+| Path Integral Normalization | 2026-02-21 | MINOR REV (3M-scope+6m) | MAJOR REV (3M+6m) | **MAJOR REVISION** | 2026-02-21 | Van Vleck semiclassical overclaim; uniqueness gap; d≥3 terminology |
 
 ## Readiness Queue
 
@@ -55,6 +59,8 @@ Tiers: **READY** (content complete, needs submission task only), **NEEDS-POLISH*
 | Half-Density QFT | `docs/half-density-qft/` | 2026-02-21 | Round 2 ACCEPT (8 MINOR addressed) |
 | RCP Foundations | `docs/rcp-foundations/` | 2026-02-21 | Round 2 ACCEPT (all 3 MAJORs resolved + MINOR fixes) |
 | Tangent Groupoid Bridge | `docs/tangent-groupoid-bridge/` | 2026-02-21 | Round 2 ACCEPT (both MAJORs resolved + 3 new minors fixed) |
+| Ordering Equivalence | `docs/ordering-equivalence/` | 2026-02-21 | Round 2 ACCEPT (both MAJORs resolved; 6+4 residual minors presentational) |
+| Rooted Tree Bookkeeping | `docs/rooted-tree-bookkeeping/` | 2026-02-21 | Round 2 ACCEPT (all 3 MAJORs resolved; σ/coproduct minors) |
 
 ### Under Revision (MAJOR REVISION from referee review)
 
@@ -62,8 +68,10 @@ Tiers: **READY** (content complete, needs submission task only), **NEEDS-POLISH*
 |-------|------|-----------|-----------|------------|
 | RCP Foundations | `docs/rcp-foundations/` | ACCEPT (R2) | ACCEPT (R2) | Published 2026-02-21 |
 | Tangent Groupoid Bridge | `docs/tangent-groupoid-bridge/` | ACCEPT (R2) | ACCEPT (R2) | Published 2026-02-21 |
-| Ordering Equivalence | `papers/ordering-equivalence/` | MAJOR (2M+6m) | MAJOR (2M+6m) | LR/Weyl labeling; Layer 2 universality scope; dimensional estimate |
-| Rooted Tree Bookkeeping | `papers/rooted-tree-bookkeeping/` | MAJOR (3M+6m) | MAJOR (3M+7m) | Elementary differential F([[•]]); duplicate §4.4; sunset mislabel; γ undefined |
+| Ordering Equivalence | `docs/ordering-equivalence/` | MINOR (R2) | MINOR (R2) | Published 2026-02-21 |
+| Rooted Tree Bookkeeping | `docs/rooted-tree-bookkeeping/` | MINOR (R2) | MINOR (R2) | Published 2026-02-21 |
+| RG Fundamental | `papers/rg-fundamental/` | MAJOR (3M+6m) | MAJOR (3M+8m) | RG-P1.1 unproved; calculus analogy; RG-R1.1 tags; 3D integral |
+| Path Integral Normalization | `papers/path-integral-normalization/` | MINOR (3M-scope) | MAJOR (3M+6m) | Van Vleck overclaim; uniqueness gap; d≥3 terminology |
 
 ### Tier 1 — READY (critic pre-vote: READY; next for referee review)
 
@@ -71,8 +79,8 @@ Tiers: **READY** (content complete, needs submission task only), **NEEDS-POLISH*
 |-------|------|-----------|------|----------------|-------|
 | ~~Ordering Equivalence~~ | `papers/ordering-equivalence/` | — | — | Under revision | MAJOR REV from referee review |
 | ~~Rooted Tree Bookkeeping~~ | `papers/rooted-tree-bookkeeping/` | — | — | Under revision | MAJOR REV from referee review |
-| RG Fundamental | `papers/rg-fundamental/` | 731 | 12 | READY | Ref numbering fixed |
-| Path Integral Normalization | `papers/path-integral-normalization/` | 448 | 6 | READY | Bibliography gap fixed |
+| ~~RG Fundamental~~ | `papers/rg-fundamental/` | — | — | Under revision | MAJOR REV from referee review |
+| ~~Path Integral Normalization~~ | `papers/path-integral-normalization/` | — | — | Under revision | MAJOR REV from referee review |
 | Planck Area | `papers/planck-area/` | 512 | 7 | READY | §5 removed, PA-H2.5c added, bibliography expanded |
 | Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 255 | 40 | READY | Judge/Carruthers-Nieto prior-art added |
 

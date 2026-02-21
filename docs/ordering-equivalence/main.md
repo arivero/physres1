@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Operator Ordering as Equivalence Class: Stratification and Measurability"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

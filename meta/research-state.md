@@ -377,6 +377,24 @@ All papers verified: clean encoding, proper YAML metadata, no internal file path
 
 P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless explicitly requested.
 
+## Session 4 (2026-02-21, 16:00–ongoing, Publication Track continued)
+
+### Batch 3 referee results processed
+- **R2 rcp-foundations**: MINOR REV (both referees) → ACCEPT. 6 minor fixes applied → published to docs/rcp-foundations/
+- **R2 tangent-groupoid-bridge**: MINOR REV (referee-1 flawed, overridden; referee-2 clean) → ACCEPT. 4 fixes applied → published to docs/tangent-groupoid-bridge/
+- **R1 ordering-equivalence**: MAJOR REV (2M+6m from both referees). Full revision: M1 geometric-only scope for OE-P1.1, M2 dimensional consistency rewrite (α₀=αa², corrected 0.006–0.06 meV), +vonRoos1983, +BenDanielDuke1966, +DeWitt1957
+- **R1 rooted-tree-bookkeeping**: MAJOR REV (3M+6m / 3M+7m). Full revision: M1 F([[•]]) corrected, M2 §4.4→§4.5 dedup, M3 sunset→self-energy, +Jackiw1991
+
+### Publication totals
+- **6 published** (docs/): delta-objects, dirac-probes, rel-orbits, half-density-qft, rcp-foundations, tangent-groupoid-bridge
+- **2 under R2 review**: ordering-equivalence, rooted-tree-bookkeeping
+- **2 under R1 review**: rg-fundamental, path-integral-normalization
+- **2 queued for batch 5**: planck-area, action-angle (copied to pub-track/sent/)
+
+### Infrastructure
+- All 6 published papers now have `layout: page` front matter for Jekyll auto-discovery
+- Batch 5 papers copied to pub-track/sent/
+
 ## Immediate Next Actions (Low Friction)
 1. When a derivation starts to stabilize, create a dedicated note in `paper/notes/`.
 2. Keep `meta/next-articles.md` as the "topic backlog".
