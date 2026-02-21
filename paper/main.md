@@ -1212,7 +1212,7 @@ Euler-Lagrange equations in classical smooth form imply weak distributional form
 
 3. `Section 5 -> Section 6` closure:
 the admissible classical set in semiclassics includes smooth and piecewise-smooth trajectories satisfying matching laws
-\([\partial_{\dot q}\mathcal L]^+_- =0\) (corner) or \(=J\) (impulse). This closes singular dynamics into composition.
+\([\partial_{\dot q}\mathcal L]^+_- =0\) (corner) or \(=J\) (impulse). The composition integral \(\int dq\,K(q_f,t_f;q,t_{\mathrm{mid}})K(q,t_{\mathrm{mid}};q_i,t_i)\) sums over *all* intermediate configurations \(q\), and for short-time kernels with saddle-point evaluation, the stationary-phase condition at the junction recovers exactly the Weierstrass–Erdmann corner law \([\partial_{\dot q}\mathcal L]^+_-=0\). A concrete witness: a free particle receiving an instantaneous kick \(J\) at \(t_{\mathrm{mid}}\) satisfies the impulse law and contributes correctly to \(K(q_f,t_f;q_i,t_i)\) via the intermediate integral (the saddle point shifts by the momentum transfer). The bridge is thus closed at the variational level; kernel-level closure for general piecewise-smooth paths in the full (non-saddle-point) measure remains a formal identification.
 
 4. `Section 6 -> Section 7` closure:
 discretization/ordering freedom in short-time kernels maps to star-product representatives that share the same Poisson boundary at \(\hbar\to0\). This closes path-integral ambiguity into deformation language.
