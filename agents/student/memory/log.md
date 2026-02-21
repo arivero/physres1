@@ -244,3 +244,7 @@ This session was primarily self-directed after all 23 formal tasks completed. Fo
 - searched: de Sitter thermal partition function / Hawking-Page / V_HD — no direct connection found
 - read: notebooks/caustics-maslov-half-density.md (Maslov index + metaplectic), ordering-unitarity-dilation-generator.md (alpha=1/2 selection), planck-area-geometric-channel.md (A_geom integrality sieve)
 - cross-connection: six d=4 coincidences from half-density framework (BB2's four + A_geom integrality + BB5 product constancy uniqueness). Anomalies entry added
+- read: notebooks/p42-hypothesis-reduction.md Part 11 (V_HD coordinate dependence, THREE-AGENT -> now FIVE-AGENT with student summary)
+- appended: p42-hypothesis-reduction.md Part 11 student summary (literature novelty, cross-connections, FIVE-AGENT status)
+- searched: Freudenthal-de Vries "strange formula", Fegan-Steer geometric proof, Weyl vector norm squared
+- SERENDIPITY: V_HD = -|rho|^2 = -R/6 on compact Lie groups IS the Freudenthal-de Vries "strange formula" in geometric dress. Our Thm M0.3 gives a GEOMETRIC PROOF of the strange formula via RNC + bi-invariance. Noted in notebook

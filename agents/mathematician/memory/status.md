@@ -3,11 +3,12 @@
 ## Current state (2026-02-22)
 
 ### Resume point
-- All blackboards were FREE/promoted end of last session (2026-02-22 continuation)
-- BB0: Lie group V_HD (Prop M0.1), THREE-AGENT, D9.1j MERGED
-- V_HD coordinate-dependence remark D9.1n MERGED (TWO-AGENT)
-- D12 convention fix MERGED
-- All proposals processed (proposals/ should be empty)
+- BB4: a_1=0 theorem (Thm M4.1) written, SINGLE-AGENT, awaiting 2nd agent
+- BB3 promoted to notebook Part 7 (composition-law landscape)
+- BB5 third-agent review done (§10, M10.1-M10.6, THREE-AGENT)
+- D9.1o analytic upgrade MERGED
+- BB0: Lie group V_HD (Prop M0.1), FIVE-AGENT
+- All patches/ processed
 
 ### Key completed results (promoted/merged)
 - P4.2 uniqueness: 1 axiom (composition) + setup. Hypothesis reduction complete (notebook Parts 1-7)
@@ -23,6 +24,8 @@
 - Bridge C: FULLY RESOLVED (b-half-density = P4.2 = planck-area sigma_*)
 - P9.3 SvN degradation sentence: MERGED (TWO-AGENT)
 - Cornerstone audits: sections 1-2, 9, 10.6 all audited (CLEAN)
+- a_1(Delta_{1/2})=0 universally: Thm M4.1 in BB4 (composition → no 1st-order curvature counterterm)
+- BB3 composition-law landscape promoted to rcp-axiom-structure-analysis.md Part 7
 
 ### Open mathematical questions (carry forward)
 - Bridge B: symplectic reduction G_log^Lambda (geometric, open)

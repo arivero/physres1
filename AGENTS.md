@@ -119,7 +119,7 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 - **Assignee** = who is currently executing this task. An agent self-assigns by writing their own name.
 - **Source** = who suggested it (provenance only).
 - **Assignee empty** = open / anyone can claim it by self-assigning.
-- **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive. **Only the orchestrator deletes rows** — agents report completion via message, orchestrator removes the row. This prevents concurrent-write conflicts.
+- **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive. **Only the orchestrator deletes rows** — agents report completion via `done:` message, orchestrator removes the row immediately. This prevents concurrent-write conflicts. **Orchestrator obligation:** delete the kanban row as the FIRST action on receiving any `done:` message.
 
 ### Rules
 
@@ -485,8 +485,8 @@ loop:
   CHECK INBOX — process any shutdown_request immediately (shutdown = terminate)
   IF have assigned task:
     execute it
-    remove from kanban when done
     message orchestrator: "done: <task-description>" (≤120 chars)
+    (orchestrator deletes your kanban row on receipt of "done:")
   ELSE:
     EITHER claim an open kanban task (self-assign by writing own name)
     OR invent a task (add it to kanban with self as Assignee)

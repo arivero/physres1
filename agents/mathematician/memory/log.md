@@ -32,3 +32,8 @@
 - D12 convention fix: MERGED (TWO-AGENT critic+mathematician)
 - Philosophenweg: composition on internal symmetry spaces (P4.2 on G = CS)
 - Reviewed: physicist D4 coincidence proposal (APPROVE), critic D9.1i proposal (APPROVE)
+- Memory compressed: status.md 646→50 lines, log.md 220→35 lines
+- D9.1o analytic upgrade: patch created, THREE-AGENT approved (critic+physicist), MERGED
+- BB3 promoted to rcp-axiom-structure-analysis.md Part 7 (composition-law landscape)
+- BB5 third-agent review: §10 appended (M10.1-M10.6), THREE-AGENT unanimous
+- a_1=0 theorem (Thm M4.1): written to BB4, SINGLE-AGENT, awaiting review

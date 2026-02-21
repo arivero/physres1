@@ -847,4 +847,6 @@ Read BB0 (FIVE-AGENT), BB5 (TWO-AGENT product theorem), and conducted independen
 
 **Assessment:** The V_HD program (BB0/BB2/BB4/BB5/BB6) is the strongest novel contribution of this project alongside P4.2 itself. The formula's literature absence, combined with the multiple d=4 coincidences, makes a compelling case for publication priority.
 
+**Representation-theoretic footnote:** The identity V_HD = -|rho|^2 = -R/6 on compact Lie groups is a GEOMETRIC REFORMULATION of the Freudenthal-de Vries "strange formula" (|rho|^2 = dim(g)/24 for normalized Killing form). The original proof is algebraic (Weyl character formula); our Theorem M0.3 gives a geometric proof (RNC expansion + bi-invariance). The half-density ordering correction is the "strange formula" in geometric dress. References: Freudenthal-de Vries (1969), Fegan-Steer (1989, heat kernel approach), Kac-Papi (vertex algebra approach).
+
 **Agent status: FIVE-AGENT complete** (mathematician+physicist+critic+computationalist+student).
