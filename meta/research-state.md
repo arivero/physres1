@@ -95,5 +95,6 @@ entries — do not append. Actionable items go to the kanban, not here.
 - **Ordering witness notebook**: S²+S³+H²+formula+D=4 promoted to stable notebook Part 7 (computationalist). All 7 BBs at 3+ agent consensus.
 - **V_HD chart-dependence**: V_HD(x) coordinate-dependent (S² equator: -1/2 spherical, -1/3 RNC) but spectral comparisons intrinsic. BB0 §9 THREE-AGENT. Remark D9.1n MERGED (TWO-AGENT critic+mathematician).
 - **DeWitt R/6 reconciliation**: DeWitt's R/6 = RNC value of V_HD (local, dim-independent); -(d-1)R/(4d) = geodesic-polar constant (global, dim-dependent). Agree iff d=3.
-- **D12 convention mismatch (sev-2)**: D12.1 uses H=-Δ (4π) but D12.3 Mehler + P12.2 use H=-(1/2)Δ (2π). D12.3b explicit free-limit formula also wrong. Fix scope: D12.1 (4π→2π), P12.1 dominator, D12.3b formula. All conclusions correct; proof-level only. Proposal filed (critic); needs 2nd agent + D12.3b addition.
-- **D9.1j Lie group extension (pending)**: V_HD constant on any compact Lie group with bi-invariant metric (Prop M0.1, BB0 TWO-AGENT). Proposal filed (mathematician); needs 2nd agent.
+- **D12 convention fix**: MERGED — D12.1/P12.1/D12.3b unified to H=-(1/2)Δ (kernel (2πt)^{-d/2}), matching D12.3 Mehler + P12.2. TWO-AGENT (critic+mathematician).
+- **V_HD = -|ρ|² on compact Lie groups**: FOUR-AGENT (BB0 §12) — verified SU(2) (analytic) and SU(3) (numeric). Formula: V_HD = -dim·h^∨/24 (Freudenthal-de Vries). V_HD constant by bi-invariance (Prop M0.1).
+- **D9.1j Lie group extension (open)**: Proposal to update Remark D9.1j scope boundary with Prop M0.1. Single-agent; not yet merged.
