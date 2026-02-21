@@ -3,4 +3,5 @@ description: "Companion papers — A. Rivero and A.I.Scaffold"
 theme: minima
 markdown: kramdown
 kramdown:
+  input: Kramdown
   math_engine: mathjax
