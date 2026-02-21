@@ -369,7 +369,7 @@ When accepted:
 6. Consolidate `papers/<name>/notes/` into a notebook titled "Old notes of paper <name>" in `notebooks/`
 7. Remove the working directory: `git rm -r papers/<name>/`
 8. Git history preserves everything — no data loss
-9. Commit
+9. Commit and **push** — `docs/` is served by GitHub Pages; changes are not live until pushed
 
 ---
 
