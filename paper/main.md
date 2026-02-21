@@ -1624,6 +1624,9 @@ On \(S^d\) (respectively \(H^d\)) of unit radius, the half-density potential tak
 `Remark D9.1m (Scope boundary for non-compact spectral witnesses).`
 The \(H^2\) witness exploits maximal symmetry and radial decomposition. Extension to non-homogeneous negative-curvature manifolds, variable-curvature spaces, or Lorentzian signature remains open.
 
+`Remark D9.1n (Chart dependence vs intrinsic content).`
+The pointwise value of \(V_{\mathrm{HD}}(x)=-|g(x)|^{1/4}\Delta_g(|g(x)|^{-1/4})\) depends on the coordinate chart (e.g., on \(S^2\) at the equator: \(-1/2\) in spherical coordinates, \(-R/6=-1/3\) in Riemann normal coordinates). However, the spectral comparison \(\mathrm{Spec}(\widetilde{H})\neq\mathrm{Spec}(H_L)\) is intrinsic: both operators are chart-independently defined, and their spectra are coordinate-invariant. All witnesses in this appendix are stated as spectral identities, hence chart-independent.
+
 `Derivation D9.1f (Domain-parameter witness: same symbol, inequivalent self-adjoint realizations).`
 Consider the formal 1D kinetic operator
 \[
@@ -1720,7 +1723,7 @@ These additions do not alter the thesis; they increase computational accountabil
 `Remark D10.4a (Package-to-appendix map for fast navigation).`
 For reader navigation:
 1. **Package C/D (RG witness + truncation control):** Appendix 10.1 with `D8.1`, `D8.2`, `D8.2a`, `P8.1`, Section 8.6 `D6.4`, `Remark D6.4a`, and Appendix 10.3 `Proposition D6.4b`, `Lemma D6.6`.
-2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`, `Proposition D9.1k`, `Remark D9.1l`, `Remark D9.1m`.
+2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`, `Proposition D9.1k`, `Remark D9.1l`, `Remark D9.1m`, `Remark D9.1n`.
 3. **Package A (path-space/kernel closure ladder):** Appendix 10.6 with `D12.1`, `P12.1`, `D12.2`, `P12.2`, `D12.3`.
 4. **Package E (global compatibility map):** Section 9.1 `P7.1a` plus Appendix 10.3 `P10.1`, `D10.1a`, `D10.1b`, `Remark D10.1c`.
 

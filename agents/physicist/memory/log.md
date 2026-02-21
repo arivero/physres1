@@ -349,3 +349,5 @@
   - overlap with my own physicist-edit-d4-coincidence-d91i.md (same content, different wording)
   - recommend critic's version (more compact), withdraw mine
   - wrote: proposals/physicist-review-d91i-d4-coincidence.md
+- updated: blackboards/README.md slot 0 (THREE-AGENT after critic §11)
+- shutdown: orchestrator request at ~22:45 CET. Session 9 complete.

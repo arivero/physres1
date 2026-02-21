@@ -741,9 +741,18 @@ V_{\mathrm{HD}}(\text{constant part}) = -\frac{(d{-}1)R}{4d}.
 \]
 
 This is NOT conformal coupling \(\xi_c R = (d{-}2)R/(4(d{-}1))\), NOT the Seeley-DeWitt
-\(a_1 = R/6\), and NOT the DeWitt ordering \(\xi_D = (d{-}2)/(8(d{-}1))\).
-The half-density potential is a distinct, non-perturbative curvature coupling.
+\(a_1 = R/6\), and NOT the DeWitt ordering potential \(R/6\) (which is dimension-independent).
+The half-density potential is a distinct, dimension-dependent curvature coupling.
 SymPy verified for \(d=1,...,7\), both \(S^d\) and \(H^d\).
+
+**DeWitt reconciliation (critic Philosophenweg):**
+In Riemann normal coordinates at any point \(p\), \(V_{\mathrm{HD}}(p) = -R(p)/6\).
+This matches DeWitt's path-integral result and is dimension-independent.
+On \(S^d\) in geodesic polar coords, \(V_{\mathrm{HD}}(\text{const}) = -(d{-}1)R/(4d)\).
+These agree iff \(d(d{-}1)/6 = (d{-}1)^2/4\), i.e., \(d=3\) only.
+Equivalently: \(S^3\) is the unique constant-curvature space where \(V_{\mathrm{HD}}\) is constant,
+so the local RNC value matches the global geodesic-polar value. On other \(S^d\), the
+geodesic-polar \(V_{\mathrm{HD}}\) is non-constant, and its average differs from the RNC point value.
 
 ### 7.3 Three Witnesses
 

@@ -3,46 +3,44 @@
 **Session:** 2026-02-22 (Session 9 continued, context window 2)
 **Last updated:** 2026-02-22
 
-## Completed this context window
-1. Task #21: BB2 fourth D=4 coincidence — COMPLETED, marked done
-2. Task #24: BB3 physicist third-agent review — COMPLETED, THREE-AGENT unanimous
-3. BB1 physicist fourth-agent review — FOUR-AGENT unanimous (Airy eigenvalue decay physics)
-4. BB4+BB6 notebook promotion — already done by another agent (Part 7)
-5. Philosophenweg: V_HD-gravity connection — NEGATIVE RESULT
-   - Composition forces curvature coupling but NOT gravity
-   - Selection principle, not existence principle
-   - Appended to notebooks/oq1a-planck-area-fundamental.md
-6. Proposal: physicist-edit-d4-coincidence-d91i.md (1-sentence D=4 addition to D9.1i)
-   - THREE-AGENT basis from BB2
+## Full session deliverables (this context window)
 
-## Session 9 cumulative (both context windows)
-1. Task #10: P4.2e(3) iε — CLOSED
-2. P9.3 SVN degradation review — APPROVE
-3. Library visit (#13): Koplinger+2025, Chitan2025
-4. Citation eval (#17): Koplinger LOW PRIORITY, Chitan DEFER
-5. Task #21: BB2 D=4 coincidence — COMPLETED
-6. Task #24: BB3 literature landscape review — THREE-AGENT
-7. BB1 Painleve fourth-agent review — FOUR-AGENT
-8. Philosophenweg: V_HD-gravity — NEGATIVE RESULT
-9. Proposal: D=4 coincidence sentence for paper
+### Tasks completed
+1. Task #21: BB2 fourth D=4 coincidence — COMPLETED
+2. Task #24: BB3 physicist 3rd-agent review — THREE-AGENT unanimous
 
-## All blackboards now reviewed by physicist
-| BB | Topic | Physicist status |
-|----|-------|-----------------|
-| 0 | Lie groups V_HD (new content) | Not yet reviewed (mathematician's new work) |
-| 1 | Painleve II | FOUR-AGENT (physicist §11) |
-| 2 | D=4 coincidence | Author (physicist), THREE-AGENT |
-| 3 | Literature landscape | THREE-AGENT (physicist §P1) |
-| 4 | S^2/S^3 witnesses | S^2 FOUR-AGENT, S^3 THREE-AGENT |
-| 5 | Quality sweep | THREE-AGENT (physicist contributed) |
-| 6 | H^2 witness | FOUR-AGENT (physicist §11) |
+### Blackboard reviews (all 7 reviewed)
+| BB | Action | New status |
+|----|--------|------------|
+| 0 | 2nd-agent review (Lie groups, §9 intrinsic endorsed) | THREE-AGENT |
+| 1 | 4th-agent review (Airy eigenvalue physics) | FOUR-AGENT |
+| 2 | Author (D=4 coincidence), THREE-AGENT after critic | THREE-AGENT |
+| 3 | 3rd-agent review (composition literature, Sorkin grade-2) | THREE-AGENT |
+| 4 | Previously reviewed (S^2 FOUR, S^3 THREE) | Unchanged |
+| 5 | Previously reviewed | Unchanged |
+| 6 | 4th-agent review (previous context window) | FOUR-AGENT |
+
+### Notebook promotions
+- BB2 D=4 coincidence → notebooks/oq1a-planck-area-fundamental.md
+- Philosophenweg (V_HD-gravity) → notebooks/oq1a-planck-area-fundamental.md
+
+### Proposals
+- physicist-edit-d4-coincidence-d91i.md (WITHDRAWN in favor of critic's version)
+- physicist-review-d91i-d4-coincidence.md (APPROVE critic's D9.1i edit, TWO-AGENT)
+- physicist-citation-eval-2025-papers.md (Koplinger/Chitan, from earlier)
+- physicist-review-p93-svn-degradation.md (APPROVE, from earlier)
+
+### Philosophenweg
+- V_HD ~ R connection: composition forces curvature coupling but NOT gravity
+  - Selection principle, not existence principle
+  - D=4 coupling is gentlest (constant, preserves eigenstates)
+  - Negative result for Stage 4
 
 ## Proposals pending orchestrator action
-- proposals/physicist-edit-d4-coincidence-d91i.md (THREE-AGENT, 1-sentence paper edit)
+- proposals/critic-edit-d91i-d4-coincidence.md (physicist endorsed, TWO-AGENT)
 - proposals/physicist-citation-eval-2025-papers.md (Koplinger/Chitan)
-- proposals/physicist-review-p93-svn-degradation.md (APPROVE)
 
 ## Next priorities
-1. Review BB0 (mathematician's Lie group V_HD work) when TWO-AGENT needed
-2. Check task #32 (SU(3) V_HD computation) results when available
-3. Self-direct new work or respond to assignments
+1. Review SU(3) V_HD computation (#32) when computationalist finishes
+2. Potentially: paper-edit proposal for BB0 §9 (intrinsic vs coordinate clarification) — if promoted
+3. Self-direct or await assignment

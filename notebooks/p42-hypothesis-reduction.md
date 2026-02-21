@@ -737,3 +737,84 @@ All four agents concur: this result is a scope clarification for the d/2 uniquen
 - Horava, Phys. Rev. D 79, 084008 (2009): Lifshitz gravity
 - sources/horava-spectral-dimension-lifshitz.md: ingested reference
 - sources/carlip-2019-dimensional-reduction-review.md: ingested reference
+
+---
+
+## Part 9: V_HD Coordinate Dependence and Intrinsic Content (THREE-AGENT)
+
+### Context
+
+The half-density ordering potential V_HD appears throughout the paper's curved-manifold witnesses (D9.1h on S^2, D9.1i on S^3, D9.1k on H^2). A fundamental question arises: is V_HD an intrinsic geometric quantity, or does it depend on coordinates?
+
+### Key Result 1: V_HD is coordinate-dependent
+
+The half-density Laplacian Delta_{1/2} = |g|^{1/4}(-Delta_g)|g|^{-1/4} is intrinsic (well-defined on half-density sections). However, V_HD = Delta_{1/2} - Delta_g requires identifying half-densities with functions via a trivialization of the density bundle.
+
+**Two natural trivializations:**
+
+1. **Coordinate volume** (psi <-> psi |dx|^{1/2}):
+   V_HD = -|g|^{1/4} Delta_g(|g|^{-1/4}). This is COORDINATE-DEPENDENT.
+   In Riemann normal coordinates (RNC) at point p:
+   V_HD(p) = -R(p)/6.
+   In geodesic polar coordinates on S^2:
+   V_HD = -1/4 - 1/(4 sin^2 theta).
+   Same manifold, same point — different values in different charts.
+
+2. **Riemannian volume** (psi <-> psi |vol_g|^{1/2}):
+   V_HD = 0 (tautologically, since the Riemannian half-density IS the natural trivialization).
+
+### Key Result 2: Composition forces coordinate-volume trivialization
+
+The time-sliced path integral measure is prod_k dq_k (coordinate volume), NOT prod_k sqrt(g(q_k)) dq_k (Riemannian volume). The half-density factor |g|^{1/4} is exactly the Jacobian converting between the two. Therefore:
+
+- Composition forces the coordinate-volume trivialization.
+- V_HD is the ordering correction relative to "naive" (coordinate-volume) quantization.
+- V_HD = 0 in the Riemannian trivialization is trivially true but physically wrong (it assumes a measure the path integral does NOT use).
+
+### Key Result 3: Eigenvalue comparisons are intrinsic
+
+Despite V_HD being coordinate-dependent, the spectral comparison Spec(Delta_{1/2}) vs Spec(Delta_g) IS intrinsic — it compares two well-defined operators. All paper witnesses (S^2, S^3, H^2) are phrased in terms of spectra, hence are coordinate-independent.
+
+The "spectral shift" = eigenvalue difference between H_tilde and H_L at each level is an intrinsic observable. It does NOT depend on coordinates.
+
+### Key Result 4: V_HD on compact Lie groups (Prop M0.1)
+
+**Proposition M0.1.** On a compact Lie group G with bi-invariant Riemannian metric, V_HD is constant in any left-invariant coordinate chart (i.e., a chart obtained by composing the exponential map exp: g -> G with left translation L_h: G -> G for some h in G).
+
+**Proof:** Bi-invariance of the metric means |g| is invariant under both left and right translations. In a left-invariant chart, |g(x)| = |g(L_h(x))| for all h, so |g|^{-1/4} and Delta_g(|g|^{-1/4}) are both left-invariant scalars, hence constant on G.
+
+**SU(2) = S^3:** V_HD = -1 = -4|rho|^2 where rho = Weyl vector, |rho|^2 = 1/4 (Freudenthal-de Vries: dim(G)/12 = 3/12 = 1/4).
+
+**General G:** V_HD constant by M0.1, value depends on G. SU(3) computation pending (Task #32).
+
+**SU(2) uniqueness:** SU(2) is the only compact simple Lie group that is also a round sphere (constant sectional curvature). For other G (rank > 1), V_HD is constant despite non-constant curvature.
+
+### Key Result 5: Rank-1 symmetric spaces classification
+
+For rank-1 symmetric spaces M = G/H in geodesic polar coords, the constancy condition is alpha(alpha-1) = 0 where alpha is the half-sum of root multiplicities.
+
+| Space | (a,b) | alpha | Constant? |
+|-------|-------|-------|-----------|
+| S^d | (d-1, 0) | (d-1)/2 | Only d=3 |
+| CP^n | (2(n-1), 1) | n | Only n=1 (= S^2 in FS coords) |
+| HP^n | (4(n-1), 3) | 2n+1 | Never (n >= 1) |
+| CaP^2 | (8, 7) | 11 | No |
+
+CP^1 in Fubini-Study coordinates gives constant V_HD, while S^2 in standard spherical coordinates does NOT — same manifold, different charts. This is the cleanest illustration of coordinate dependence.
+
+### Status
+
+THREE-AGENT (mathematician + physicist + critic, BB0). Unanimous approval.
+
+### Paper implications
+
+1. D9.1j scope boundary can be extended: "On any compact Lie group with bi-invariant metric, V_HD is constant" (proposal filed).
+2. The coordinate-dependence clarification is important for preventing misinterpretation but may be too technical for the paper's current scope. The spectral witnesses (D9.1h/i/k) are correctly stated in intrinsic terms.
+3. The "composition forces coordinate-volume trivialization" insight connects to the paper's foundational argument (Section 6: path integral measure).
+
+### References
+
+- blackboards/0.md: full THREE-AGENT analysis (§§1-11)
+- Part 6 (this notebook): d/2 uniqueness theorem
+- agents/mathematician/memory/philosophenweg-symmetric-spaces.md: desk reflection on rank-1 spaces
+- proposals/mathematician-edit-d91j-lie-groups.md: paper-edit proposal

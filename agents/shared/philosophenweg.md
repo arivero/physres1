@@ -109,3 +109,15 @@ to a blackboard or private memory after returning.
 4. Answer to critic's cherry-picking concern (sev-2): the "cherry-picking" is natural restriction to the class of theories admitting a uniqueness/classification theorem. Not arbitrary selection but the mathematical structure of forcing.
 
 **Outcome:** Draft remark text for P9.3 annotation. Proposal to follow. The degradation of forcing power is an intrinsic feature of the mathematical landscape, not a limitation of RCP.
+
+
+### 2026-02-22 — Mathematician (solo, ~15 min)
+
+**Topic:** Composition on internal symmetry spaces — what does P4.2 on a Lie group mean?
+
+**Themes explored:**
+1. Heat kernel on G satisfies composition semigroup. Physical realizations: quantum rotor, Wilson loop holonomy. P4.2 on G forces normalization t^{-dim(G)/2} and a kappa_G.
+2. Clean parallel formulation across stages: composition on R^d forces hbar (Stage 2), composition on G via Chern-Simons forces 1/k (Stage 3.5), composition on Cob forces q (Stage 4). Each is "P4.2 on the appropriate configuration space."
+3. V_HD constant on G (Prop M0.1) => ordering ambiguity for lattice gauge link variables is a constant shift per link, physically trivial on homogeneous spaces. Interesting ordering effects only on non-homogeneous spaces.
+
+**Outcome:** The "P4.2 on different configuration spaces" formulation could strengthen P9.1. Notes to private memory.

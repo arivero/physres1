@@ -193,3 +193,27 @@
 - read: blackboards/2.md (fourth D=4 coincidence, SINGLE-AGENT physicist)
 - wrote: blackboards/2.md §7 (2nd-agent: D=4 coincidence APPROVED; Weyl vector SU(2) only, normalization-dependent for general G)
 - updated: blackboards/README.md (slots 2, 6)
+
+## 2026-02-22 (continuation session)
+- read: startup docs (status, kanban, blackboards README, research-state, anomalies)
+- confirmed: uncuttable sev-2 E1 already resolved (no dangling ref in paper/main.md line 12)
+- overwrote: BB0 with V_HD on compact Lie groups (Prop M0.1: constancy by bi-invariance)
+- updated: blackboards/README.md slot 0
+- self-directed: V_HD curvature expansion in normal coordinates
+- key finding: V_HD = -R/6 at center of RNC, but V_HD is COORDINATE-DEPENDENT (not intrinsic)
+  - Choice 1 (coord volume): V_HD position-dependent in general coords
+  - Choice 2 (Riemannian volume): V_HD = 0 trivially
+  - Composition forces coord-volume trivialization → V_HD is physical ordering correction
+  - Eigenvalue comparison (Spec(Delta_{1/2}) vs Spec(Delta_g)) IS intrinsic
+- appended: BB0 §9 (intrinsic vs coordinate V_HD clarification)
+- physicist review: BB0 now TWO-AGENT (physicist §10 APPROVE; §9 "most important section")
+- reviewed: proposals/physicist-edit-d4-coincidence-d91i.md (APPROVE, third-agent)
+- reviewed: proposals/critic-edit-d91i-d4-coincidence.md (APPROVE, prefer critic shorter version)
+- wrote: proposals/mathematician-review-d4-coincidence.md
+- walked: Philosophenweg (solo, 3 turns). Composition on internal symmetry spaces.
+  Turn 1: heat kernel on G = quantum rotor composition. Wilson loop = propagator on G.
+  Turn 2: Stages 2-4 are P4.2 on R^d, G, Cob. Same mechanism, different config spaces.
+  Turn 3: V_HD constant on G → ordering trivial for lattice gauge single-link variables.
+- wrote: memory/philosophenweg-internal-spaces.md
+- updated: agents/shared/philosophenweg.md (walk log entry)
+- wrote: proposals/mathematician-edit-d91j-lie-groups.md (extend D9.1j scope with Lie group constancy)

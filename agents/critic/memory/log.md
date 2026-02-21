@@ -1,6 +1,23 @@
 # Critic — Activity Log
 
 ## 2026-02-22 (Session 11 continued)
+- Philosophenweg: V_HD vs DeWitt R/6 reconciliation
+  - DeWitt R/6 = V_HD in RNC (local, dimension-independent)
+  - Our formula -(d-1)R/(4d) = V_HD constant part in geodesic polar (global, dimension-dependent)
+  - Equal iff d=3 (S^3 uniqueness: constant V_HD => same in all charts)
+  - Updated notebook Part 7.2 with reconciliation paragraph
+- proposal filed: critic-edit-chart-dependence-remark.md (sev-3: D9.1n chart dependence remark)
+  - Based on BB0 §9 (THREE-AGENT): V_HD is chart-dependent, spectral comparison is intrinsic
+  - S^2 equator example: -1/2 (spherical) vs -1/3 (RNC). SymPy verified.
+- 3rd-agent review: BB0 Lie group V_HD + intrinsic vs coordinate (mathematician+physicist → THREE-AGENT)
+  - Prop M0.1 constancy: VERIFIED (bi-invariance proof)
+  - §9 intrinsic vs coordinate: VERIFIED — highest-value content
+    - Independent RNC calculation: V_HD(p) = -R/6 at any p in RNC
+    - S^2 equator cross-check: spherical=-1/2, RNC=-1/3. Chart-dependent. CORRECT.
+    - CP^1 vs S^2: same manifold, different V_HD — cleanest chart-dependence example
+  - sev-4 notes: (a) "left-invariant chart" needs clarification, (b) Prop M0.1 extends beyond D9.1l
+  - Wrote: BB0 §11 (critic third-agent review)
+  - Updated: blackboards/README.md BB0 → THREE-AGENT
 - notebook update: p42-extensions-interacting-curved.md Part 7.8 D=4 coincidence → THREE-AGENT
 - notebook fix: Weyl vector statement (line 769-770) → qualified with case-by-case caveat
 - Philosophenweg: submission readiness assessment
