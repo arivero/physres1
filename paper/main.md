@@ -1277,7 +1277,7 @@ each layer adds new consistency constraints while preserving prior invariants in
    Minimal closure target: compare at least two truncation levels on the same model and report an observable-level stability window.
    Status: **CLOSED.** Derivation D6.4 provides a two-level truncation audit (\(\beta_{(2)}\) vs \(\beta_{(3)}\)) with a quantitative stability window \(|g|\le\eta\,b_0/|b_1|\). Remark D6.4a instantiates this on \(\lambda\phi^4\) at one and two loops, giving \(|\lambda|\lesssim 8.4\) at 10\% tolerance — a concrete model-specific benchmark meeting the stated closure target.
 
-Vulnerability 1 is now substantially closed by Appendix 10.6; Vulnerability 3 is closed by Appendix 10.1. Vulnerability 2 is substantially addressed by the \(S^2\) and \(S^3\) spectral witnesses (P D9.1h, P D9.1i); Vulnerability 4 is closed by D6.4 + Remark D6.4a (quantitative truncation defect criterion with model-specific \(\lambda\phi^4\) benchmark). All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
+Vulnerability 1 is now substantially closed by Appendix 10.6; Vulnerability 3 is closed by Appendix 10.1. Vulnerability 2 is substantially addressed by the \(S^2\), \(S^3\), and \(H^2\) spectral witnesses (P D9.1h, P D9.1i, P D9.1k); Vulnerability 4 is closed by D6.4 + Remark D6.4a (quantitative truncation defect criterion with model-specific \(\lambda\phi^4\) benchmark). All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
 
 ## 9.5 Future Work (Task-Driven Revision Queue; Editorial Package Labels)
 To keep the manuscript evolving by derivation rather than by incremental wording changes, future edits should be organized as concrete work packages:
@@ -1289,7 +1289,7 @@ To keep the manuscript evolving by derivation rather than by incremental wording
 2. **Package B (Ordering/domain benchmark).**
    Deliverable: one appendix-level model comparing two orderings plus half-density conjugation.
    Pass criterion: explicit operator difference through \(O(\hbar)\) and a clear statement of domain/equivalence boundaries.
-   Current status: Appendix 10.2 now includes periodic/curved symmetry benchmarks, one explicit self-adjoint extension witness (`D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`), explicit curved-manifold spectral comparisons (`Proposition D9.1h`, `Proposition D9.1i`), and a four-layer stratification of ordering differences with quantitative observability estimates (`Remark D9.1a`); full extension classification remains open.
+   Current status: Appendix 10.2 now includes periodic/curved symmetry benchmarks, one explicit self-adjoint extension witness (`D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`), explicit curved-manifold spectral comparisons (`Proposition D9.1h`, `Proposition D9.1i`, `Proposition D9.1k`), and a four-layer stratification of ordering differences with quantitative observability estimates (`Remark D9.1a`); full extension classification remains open.
 3. **Package C (QFT-level RG witness).**
    Deliverable: one-loop running in a fixed subtraction scheme using manuscript conventions.
    Pass criterion: explicit \(\beta(g)\), one scheme-change computation, and direct mapping to scale compatibility in Section 8.
@@ -1603,6 +1603,26 @@ Unlike the \(S^2\) witness (Proposition D9.1h), where the shift \(-(l{+}1)\) gro
 `Remark D9.1j (Scope boundary for curved spectral witnesses).`
 Propositions D9.1h and D9.1i cover the maximally symmetric compact spaces \(S^2\) and \(S^3\). Extension to non-diagonal metrics, non-homogeneous spaces, or higher-dimensional spheres with position-dependent \(V_{\mathrm{HD}}\) remains open.
 
+`Proposition D9.1k (Non-compact ordering witness: unit \(H^2\)).`
+On the hyperbolic plane \(H^2\) (constant curvature \(K=-1\)) with geodesic radial coordinate \(\rho\in[0,\infty)\) and metric \(ds^2=d\rho^2+\sinh^2\!\rho\,d\phi^2\), define on \(L^2(d\rho\,d\phi)\):
+\[
+H_L=-\partial_\rho^2-\frac{1}{\sinh^2\!\rho}\,\partial_\phi^2,
+\qquad
+\widetilde{H}=|g|^{1/4}(-\Delta_g)|g|^{-1/4}=H_L+V_{\mathrm{HD}},
+\]
+where \(V_{\mathrm{HD}}(\rho)=\tfrac{1}{4}-\tfrac{1}{4\sinh^2\!\rho}\). Then:
+1. \(\widetilde{H}\) has purely continuous spectrum \([1/4,\infty)\), matching the Laplace--Beltrami operator (McKean's theorem). The left-ordered \(H_L\) has spectrum \([0,\infty)\).
+2. The spectral gap \(1/4\) equals \(-R/8\) where \(R=-2\) is the scalar curvature. The half-density ordering recovers this gap; the left ordering erases it.
+3. The ordering difference is a pure Layer-3 scalar potential, with \(V_{\mathrm{HD}}\to1/4\) as \(\rho\to\infty\).
+
+Combined with the compact witnesses (Propositions D9.1h--D9.1i), this covers positive and negative curvature, compact and non-compact topology, and discrete and continuous spectra.
+
+`Remark D9.1l (Unified constant-curvature formula).`
+On \(S^d\) (respectively \(H^d\)) of unit radius, the half-density potential takes the form \(V_{\mathrm{HD}}=-\alpha^2+\alpha(\alpha{-}1)/\sin^2 r\) (resp.\ \(+\alpha^2+\alpha(\alpha{-}1)/\sinh^2 r\)) with \(\alpha=(d{-}1)/2\). The constant part satisfies \(V_{\mathrm{HD}}(\mathrm{const})=-(d{-}1)R/(4d)\) where \(R\) is the scalar curvature. This coupling is distinct from conformal coupling \(\xi_c=(d{-}2)/(4(d{-}1))\) for all integer \(d\ge2\).
+
+`Remark D9.1m (Scope boundary for non-compact spectral witnesses).`
+The \(H^2\) witness exploits maximal symmetry and radial decomposition. Extension to non-homogeneous negative-curvature manifolds, variable-curvature spaces, or Lorentzian signature remains open.
+
 `Derivation D9.1f (Domain-parameter witness: same symbol, inequivalent self-adjoint realizations).`
 Consider the formal 1D kinetic operator
 \[
@@ -1699,7 +1719,7 @@ These additions do not alter the thesis; they increase computational accountabil
 `Remark D10.4a (Package-to-appendix map for fast navigation).`
 For reader navigation:
 1. **Package C/D (RG witness + truncation control):** Appendix 10.1 with `D8.1`, `D8.2`, `D8.2a`, `P8.1`, Section 8.6 `D6.4`, `Remark D6.4a`, and Appendix 10.3 `Proposition D6.4b`, `Lemma D6.6`.
-2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`.
+2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`, `Proposition D9.1k`, `Remark D9.1l`, `Remark D9.1m`.
 3. **Package A (path-space/kernel closure ladder):** Appendix 10.6 with `D12.1`, `P12.1`, `D12.2`, `P12.2`, `D12.3`.
 4. **Package E (global compatibility map):** Section 9.1 `P7.1a` plus Appendix 10.3 `P10.1`, `D10.1a`, `D10.1b`, `Remark D10.1c`.
 
