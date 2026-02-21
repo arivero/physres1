@@ -1768,7 +1768,7 @@ K_{\varepsilon_1+\varepsilon_2}(x,y;t_1+t_2).
 Thus composition is exact inside the regulated family, with regulator flow law \(\varepsilon\mapsto\varepsilon_1+\varepsilon_2\).
 
 `Proposition P12.1 (Controlled regulator removal and explicit failure mode).`
-For fixed \(t>0\), \(K_\varepsilon(x,y;t)\to K_0(x,y;t)\) pointwise and in \(L^1_x\) as \(\varepsilon\to0^+\), so
+For fixed \(t>0\), \(K_\varepsilon(x,y;t)\to K_0(x,y;t)\) pointwise and in \(L^1_x\) as \(\varepsilon\to0^+\) (for \(\varepsilon\le t/2\), \(|K_\varepsilon(x,y;t)|\le K_0(x,y;t/2)\in L^1_x\); dominated convergence gives \(L^1\) convergence), so
 \[
 \lim_{\varepsilon_1,\varepsilon_2\to0^+}
 \int d^dz\;K_{\varepsilon_1}(x,z;t_1)K_{\varepsilon_2}(z,y;t_2)
@@ -1797,7 +1797,7 @@ The first-order term combines by splitting \([0,t+s]\) into \([0,t]\cup[t,t+s]\)
 The \(O(V)\) formula requires the space-time convolution integral to be finite. For distributional or too-singular attractive potentials (for example, bare contact interactions in dimensions where renormalization is required), the integral can diverge and \(K_{\varepsilon,V}^{(1)}\) is not well-defined without extra renormalization/boundary data. This is precisely the regime where the explicit RG treatment of Appendix 10.5 becomes necessary.
 
 `Proposition P12.2 (Quantitative remainder and composition-defect bounds for bounded \(V\)).`
-Let \(H_0=-\frac{\hbar^2}{2}\Delta\), \(T_0(t)=e^{-tH_0}\), and \(T_V(t)=e^{-t(H_0+V)}\) on \(L^2(\mathbb R^d)\), with \(V\) a bounded multiplication operator and \(M:=\|V\|_\infty\). Define the first-order Duhamel approximation
+Let \(H_0=-\frac{\hbar^2}{2}\Delta\), \(T_0(t)=e^{-tH_0}\), and \(T_V(t)=e^{-t(H_0+V)}\) on \(L^2(\mathbb R^d)\), with \(V\) a bounded multiplication operator (\(H_0+V\) is self-adjoint on \(H^2(\mathbb R^d)\) by Kato-Rellich) and \(M:=\|V\|_\infty\). Define the first-order Duhamel approximation
 \[
 T_V^{(1)}(t):=T_0(t)-\int_0^t T_0(t-\tau)\,V\,T_0(\tau)\,d\tau.
 \]
@@ -1815,7 +1815,7 @@ Then:
 \]
 for a universal constant \(C\) (e.g. \(C=2\)).
 
-Sketch: expand \(T_V\) by Duhamel to second order, bound iterated integrals with semigroup norms \(\|T_0(r)\|\le1\), \(\|T_V(r)\|\le e^{Mr}\), and use
+Proof sketch: expand \(T_V\) by Duhamel to second order, bound iterated integrals with semigroup norms \(\|T_0(r)\|\le1\), \(\|T_V(r)\|\le e^{Mr}\), and use
 \[
 T_V^{(1)}(t)T_V^{(1)}(s)-T_V^{(1)}(t+s)
 =\big(T_V^{(1)}(t)-T_V(t)\big)T_V^{(1)}(s)
@@ -1846,6 +1846,7 @@ Defining \(K_{\omega,\varepsilon}(x,y;t):=K_\omega(x,y;t+\varepsilon)\) with \(\
 \int d^dz\;K_{\omega,\varepsilon_1}(x,z;t_1)K_{\omega,\varepsilon_2}(z,y;t_2)
 =K_{\omega,\varepsilon_1+\varepsilon_2}(x,y;t_1+t_2).
 \]
+Since \(K_{\omega,\varepsilon}(x,y;t)=K_\omega(x,y;t+\varepsilon)\) and \(K_\omega(\cdot,y;t)\in L^1_x\) for all \(t>0\), the same dominated convergence argument as in `Proposition P12.1` gives \(K_{\omega,\varepsilon}\to K_\omega\) pointwise and in \(L^1_x\) as \(\varepsilon\to0^+\), completing the regulated-removal chain for the nontrivial witness.
 
 `Remark D12.3a (Scope boundary for the exact benchmark).`
 This exact closure witness is specific to confining quadratic potentials (\(\omega>0\)) in Euclidean time. Inverted/nonconfining cases require separate treatment and are outside the admissible class used here.
