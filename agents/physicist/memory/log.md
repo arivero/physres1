@@ -33,7 +33,9 @@
 - reviewed: BB5 (product additivity, computationalist) — 2nd-agent APPROVE, sev-3 H^3xS^3 fixed
 - wrote: BB3 (OQ1a answer: composition→curvature coupling, selection not existence)
 - noted: a_1=0 is UNIVERSAL (not D=4-specific) — correction to OQ1a notebook (iii)
-- updated: README slots 0,3,5
+- updated: README slots 0,3,4,5
+- reviewed: BB4 (Thm M4.1: universal a_1=0, mathematician) — 2nd-agent APPROVE, paper-edit-worthy
+  - Three-level forcing: (a) P4.2→hbar, (b) HD→xi=1/6, (c) a_1=0→xi stable at 1-loop
 
 ## Key verdicts still relevant
 - V_HD formula -(d-1)R/(4d) is NOVEL (no direct literature hit)
