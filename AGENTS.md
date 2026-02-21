@@ -112,10 +112,13 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 
 - **Orchestrator** creates tasks with subject, description, and priority.
 - **Agents** check the kanban for available tasks (prefer lowest ID first, unblocked only).
-- **Agents** request tasks (`want #N`) or propose self-directed tasks (`self: <topic>`).
+- **Agents** request tasks (`want #N`) or suggest self-directed tasks (`self: <topic>`).
 - **Orchestrator** assigns tasks via kanban update; agents only start after assignment appears.
-- **Default self-task policy:** when an agent proposes `self: <topic>`, the orchestrator
-  creates the task and assigns it to that proposer unless explicitly redirecting.
+- **Start gate (hard):** no agent may start work until the kanban shows that task as `assigned` to that agent.
+- **Orchestrator response rule (hard):** every `want #N` / `self: <topic>` request must receive one of:
+  (a) explicit kanban assignment (`assigned`), or (b) explicit end-of-day/stop call.
+- **Default self-task policy:** when an agent suggests `self: <topic>`, the orchestrator
+  creates the task and assigns it to that agent unless explicitly redirecting.
 - **Agents** mark tasks completed when done.
 - **Dependencies**: tasks can block or be blocked by other tasks.
 
@@ -400,7 +403,7 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
-2. Agents request/receive assignment, then work tasks (kanban cycle).
+2. Agents request tasks (`want #N`) or suggest `self:` topics; orchestrator assigns in kanban; only then agents execute.
 3. Orchestrator polls `proposals/`, processes paper-edit requests directly. Agents do library work directly.
 4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
 5. Orchestrator updates `meta/research-state.md` when threads evolve.
@@ -430,8 +433,14 @@ If `paper/main.md` changed:
 2. Transcript mention check: `rg -n 'conv_patched' paper/main.md`
 
 ## 16. Continuous Operation
+**Default mode is continuous operation.** Agents should keep cycling through request -> assignment -> execution -> completion without going idle.
 When given a time deadline, continue autonomously without pausing. Commit policy (§8) still applies — check timing before each commit. Only stop when:
 (a) deadline reached, (b) context exhausted, (c) no productive work remains.
+
+### Stop Method (Operational)
+1. Agent sends `want #N` or `self: <topic>`.
+2. Orchestrator either assigns in kanban (`status=assigned`) or explicitly calls end-of-day.
+3. If no assignment is posted, the agent must wait and must not start the task.
 
 ### When No Tasks Are Available
 **PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.

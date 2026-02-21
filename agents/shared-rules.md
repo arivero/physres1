@@ -65,8 +65,13 @@ If you self-direct (invent your own task), the orchestrator will create the task
 assign it to you by default (unless explicitly redirected). Wait for that confirmation
 before starting substantive work.
 
+**Continuous-mode default:**
+- Keep cycling: request (`want`/`self`) -> assignment -> execute -> terminal signal.
+- If your request is not assigned yet, wait and do not start.
+- If the orchestrator explicitly calls end-of-day/stop, halt and await next session.
+
 - Mark tasks completed by updating task status when finished.
-- **You can also propose tasks you are NOT going to do yourself.** Use the task-create
+- **You can also suggest tasks you are NOT going to do yourself.** Use the task-create
   operation in your runtime to
   add a task for someone else (e.g. "Computationalist should verify X"). Leave it
   unclaimed — another agent or the orchestrator will pick it up.
@@ -75,7 +80,7 @@ before starting substantive work.
   research question from `meta/motivations.md`, blackboards, or your curiosity.
   Message the orchestrator with "self: <topic>" and wait for assignment.
   Alternatives: visit the library, review a notebook, or take a Philosophenweg.
-  **Do NOT go idle waiting for the orchestrator to assign work — propose something.**
+  **Do NOT go idle waiting for the orchestrator to assign work — suggest something.**
 
 ### Messaging — Minimal Context Protocol
 

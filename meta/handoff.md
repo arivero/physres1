@@ -6,6 +6,13 @@ It is meant to survive chat/context resets.
 ## Canonical Agent Instructions
 - Canonical rules live in `AGENTS.md`.
 - On reset/startup, the full AGENTS startup read order is mandatory.
+- Startup guardrail for runtimes without native `TaskList`: initialize `meta/kanban.md`
+  with empty/unassigned tasks only. Do **not** pre-assign at startup.
+- Assignment rule: agents must first signal `want #N` or `self: <topic>`; the orchestrator
+  then records `ID + assignee + status=assigned` in `meta/kanban.md` before execution.
+  Message-only approval is not enough.
+- Continuous mode default: keep the kanban cycle running. For each agent request, the
+  orchestrator must either assign it in-kanban or explicitly call end-of-day/stop.
 For other assistants:
 - Claude reads `CLAUDE.md` (points back to `AGENTS.md` + team startup).
 - GitHub Copilot reads `.github/copilot-instructions.md` (points back to `AGENTS.md`).
