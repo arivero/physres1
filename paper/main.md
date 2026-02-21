@@ -1246,13 +1246,14 @@ each layer adds new consistency constraints while preserving prior invariants in
    Minimal closure target: exhibit one explicit regulated kernel family \(K_\varepsilon\) with a proved composition law and a controlled \(\varepsilon\to0\) statement in a nontrivial model.
    Status: **SUBSTANTIALLY CLOSED.** Appendix 10.6 provides the regulated Gaussian family (D12.1: exact composition with additive regulator; P12.1: controlled \(\varepsilon\to0\) limit recovering the heat-kernel semigroup), a first-order bounded-potential extension (D12.2: \(O(V)\) composition closure), quantitative operator-norm bounds (P12.2), and an explicit failure mode for singular potentials (D12.2a). Full constructive path-space control (e.g., Wiener-measure-level estimates) remains open.
 2. Deformation equivalence is stated at the structural level; explicit model-by-model operator-domain analysis is partially addressed.
-   Current status: one position-dependent-mass model (\(f(q)=1+\alpha q^2\) in a harmonic trap) has been carried through Weyl and half-density quantizations with explicit \(O(\hbar^2)\) mismatch term and quantitative energy-shift estimate (`Remark D9.1a`, `Remark P5.2a`). Full extension to curved-manifold kinetic symbols with domain analysis remains open.
+   Current status: one position-dependent-mass model (\(f(q)=1+\alpha q^2\) in a harmonic trap) has been carried through Weyl and half-density quantizations with explicit \(O(\hbar^2)\) mismatch term and quantitative energy-shift estimate (`Remark D9.1a`, `Remark P5.2a`). Curved-manifold case: `Proposition D9.1h` now provides an explicit spectral comparison on \(S^2\), showing \(\mathrm{Spec}(\widetilde{H})=\{l(l{+}1)\}\) vs \(\mathrm{Spec}(H_L)\supset\{n^2\}\) with ordering difference a pure Layer-3 scalar potential. **Status: substantially addressed.** Full extension to non-diagonal metrics and domain analysis remains open.
 3. RG flow is derived structurally; explicit computations are now provided at both the quantum-mechanical level (2D contact interaction, Appendix 10.5: D11.1–D11.3) and the field-theory level (\(\lambda\phi^4\) one-loop beta function in \(D=4-2\varepsilon\), Appendix 10.1: D8.2a).
    Status: **CLOSED.** The minimal closure target (one fixed-scheme one-loop QFT computation with subtraction, beta function, and scheme change in manuscript conventions) is met by D8.2a.
 4. Truncation closure in section 8 is identified but not benchmarked by an explicit truncation-error study.
    Minimal closure target: compare at least two truncation levels on the same model and report an observable-level stability window.
+   Status: **PARTIALLY CLOSED.** Derivation D6.4 provides a two-level truncation audit (\(\beta_{(2)}\) vs \(\beta_{(3)}\)) with a quantitative stability window \(|g|\le\eta\,b_0/|b_1|\). The criterion is structural (any one-coupling flow); a model-specific benchmark (e.g., \(\lambda\phi^4\) at one and two loops) would fully close this item.
 
-Vulnerability 1 is now substantially closed by Appendix 10.6; Vulnerability 3 is closed by Appendix 10.1. Vulnerabilities 2 and 4 remain open scope boundaries with explicit closure targets. All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
+Vulnerability 1 is now substantially closed by Appendix 10.6; Vulnerability 3 is closed by Appendix 10.1. Vulnerability 2 remains an open scope boundary; Vulnerability 4 is partially closed by D6.4 (quantitative truncation defect criterion). All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
 
 ## 9.5 Future Work (Task-Driven Revision Queue; Editorial Package Labels)
 To keep the manuscript evolving by derivation rather than by incremental wording changes, future edits should be organized as concrete work packages:
@@ -1539,6 +1540,24 @@ For smooth \(u,v\), repeated integration by parts yields
 =\frac{\hbar^2}{2}\int dx\;(\partial_i g^{ij})\big(\overline{u}\,\partial_j v-(\partial_j\overline{u})\,v\big).
 \]
 Hence \(H_L\) is symmetric only under extra coordinate/coefficient constraints (e.g. \(\partial_i g^{ij}=0\) in the chosen chart). In general curved coordinates, left ordering breaks symmetry while the half-density-conjugated Laplace-Beltrami form remains symmetric by construction (`Derivation D9.1d`).
+
+`Proposition D9.1h (Curved-manifold ordering witness: spectral comparison on \(S^2\)).`
+On the unit sphere \(S^2\) with coordinates \((\theta,\phi)\) and metric \(g=d\theta^2+\sin^2\!\theta\,d\phi^2\), define on \(L^2(d\theta\,d\phi)\):
+\[
+H_L=-\partial_\theta^2-\frac{1}{\sin^2\!\theta}\,\partial_\phi^2,
+\qquad
+\widetilde{H}=|g|^{1/4}(-\Delta_g)|g|^{-1/4}=H_L+V_{\mathrm{HD}},
+\]
+where \(V_{\mathrm{HD}}(\theta)=-\tfrac{1}{4}-\tfrac{1}{4\sin^2\!\theta}\). Then:
+1. Both operators are essentially self-adjoint on \(C^\infty(S^2)\) (compact, no boundary).
+2. \(\widetilde{H}\) has eigenfunctions \((\sin\theta)^{1/2}Y_l^m\) with eigenvalues \(l(l{+}1)\), reproducing the Laplace-Beltrami spectrum.
+3. The spectra differ: \(\mathrm{Spec}(\widetilde{H})=\{l(l{+}1):l\ge0\}\) while \(\mathrm{Spec}(H_L)\supset\{n^2:n\ge1\}\), with shift \(-(l{+}1)\) growing linearly in \(l\).
+4. The ordering difference is a pure Layer-3 scalar potential \(V_{\mathrm{HD}}\); no Layer-4 domain freedom appears.
+
+This is the first Appendix 10.2 witness with an explicit spectral comparison on a curved manifold. The connection term \(\cot\theta\,\partial_\theta\) of \(\Delta_g\) is traded for the scalar \(V_{\mathrm{HD}}\), demonstrating concretely the mechanism described abstractly in `Derivation D9.1d`.
+
+`Remark D9.1i (Scope boundary for curved spectral witness).`
+The \(S^2\) witness exploits diagonal metric and maximal symmetry. Extension to non-diagonal metrics, higher-dimensional spheres (\(S^3\)), or non-homogeneous spaces remains open.
 
 `Derivation D9.1f (Domain-parameter witness: same symbol, inequivalent self-adjoint realizations).`
 Consider the formal 1D kinetic operator
