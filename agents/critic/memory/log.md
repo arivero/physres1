@@ -582,3 +582,15 @@
   - D10.1a: operational closure form — clean parametric formulation
   - D10.1c: crown witnesses — appropriately calibrated (partition STRONG, representation MODERATE, scale HEURISTIC)
   - verdict: NO ERRORS in §10.2-10.4. Full appendix block (§10.1-10.6) now audited.
+- continued: audit §10.1 (worked renormalization template)
+  - D8.1: finite renormalized prediction — CORRECT (logarithmic cancellation verified)
+  - D8.2: beta function from cutoff-independence — CORRECT
+  - P8.1: leading beta coefficient scheme invariance — CORRECT
+  - D8.2a: λφ⁴ one-loop beta function — CORRECT (3/(16π²) standard textbook result, running coupling verified)
+  - verdict: NO ERRORS in §10.1. COMPLETE audit of entire Section 10 (all 6 appendices). Zero errors found.
+- claimed: Task #10 (cross-reference consistency check)
+  - Issue 1: line 660 "P4.2c below" — P4.2c is ABOVE (line 620). sev-3.
+  - Issue 2: line 672 "P4.2(ii) below" — P4.2 is ABOVE (line 612). sev-3.
+  - All other xrefs verified correct (D0.2, P9.2, D8.1-D8.2, P7.1a, bibliography)
+  - wrote: proposals/task-xref-check.md
+- completed: Task #10

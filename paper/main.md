@@ -657,7 +657,7 @@ $$
 `Proposition P4.1 (Exponential form under locality + composition).`
 If
 1. total path weight is multiplicative across concatenated slices, and
-2. \(\log W_k\) is additive in \(\Delta t_k\) to first order (equivalently, \(W_k = \exp(c_0 \mathcal{L}_k \Delta t_k + O(\Delta t^2))\); the derivation that composition *forces* this form via the Cauchy functional equation is in Remark P4.2c below),
+2. \(\log W_k\) is additive in \(\Delta t_k\) to first order (equivalently, \(W_k = \exp(c_0 \mathcal{L}_k \Delta t_k + O(\Delta t^2))\); the derivation that composition *forces* this form via the Cauchy functional equation is in Remark P4.2c),
 
 then, up to normalization and higher-order slicing corrections,
 
@@ -669,7 +669,7 @@ $$
 
 for a constant \(c_0\) with dimensions \([\text{action}]^{-1}\).
 
-Choosing oscillatory quantum time evolution gives \(c_0=i/\hbar\) (the necessity of this scale — dimensional homogeneity forces \([c_0]=[\text{action}]^{-1}\) and the identity limit pins the coefficient — is derived in Proposition P4.2(ii) below), hence the standard phase factor \(\exp(iS_N/\hbar)\) [Dirac1933] [Feynman1948].
+Choosing oscillatory quantum time evolution gives \(c_0=i/\hbar\) (the necessity of this scale — dimensional homogeneity forces \([c_0]=[\text{action}]^{-1}\) and the identity limit pins the coefficient — is derived in Proposition P4.2(ii)), hence the standard phase factor \(\exp(iS_N/\hbar)\) [Dirac1933] [Feynman1948].
 
 ## 6.3 Ordering, Discretization, and Quantum Ambiguity
 Different short-time discretizations (left/right/midpoint or more general \(\alpha\)-schemes) typically correspond to different operator orderings. In deformation language, this is the same ambiguity as choosing a star-product representative; these constructions agree in the classical limit but can differ at subleading quantum order [Landsman1998] [deGosson2018ShortTimePropagators].
@@ -1252,7 +1252,7 @@ each layer adds new consistency constraints while preserving prior invariants in
 4. Truncation closure in section 8 is identified but not benchmarked by an explicit truncation-error study.
    Minimal closure target: compare at least two truncation levels on the same model and report an observable-level stability window.
 
-Vulnerabilities 1 and 3 are now substantially closed by Appendices 10.6 and 10.1 respectively. Vulnerabilities 2 and 4 remain open scope boundaries with explicit closure targets. All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
+Vulnerability 1 is now substantially closed by Appendix 10.6; Vulnerability 3 is closed by Appendix 10.1. Vulnerabilities 2 and 4 remain open scope boundaries with explicit closure targets. All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
 
 ## 9.5 Future Work (Task-Driven Revision Queue; Editorial Package Labels)
 To keep the manuscript evolving by derivation rather than by incremental wording changes, future edits should be organized as concrete work packages:
@@ -1895,3 +1895,4 @@ These checks ensure `Derivation D12.3` is consistent with both the free witness 
 30. [TangentGroupoidBridge] A. Rivero and A.I.Scaffold, "Groupoid Composition and Quantization: The Pair-Groupoid Bridge," companion satellite paper in this series (2026). (Pair groupoid as sewing law; d/2 forced by Fourier multiplicativity + dimensional homogeneity; tangent groupoid as hbar-deformation; Wick rotation as A3.)
 31. [Murakami1995] Hitoshi Murakami, "Quantum SO(3)-invariants dominate the SU(2)-invariant of Casson and Walker," *Math. Proc. Cambridge Philos. Soc.* **117** (1995), no. 2, 237–249. DOI `10.1017/S0305004100073084`. (Algebraic integrality of WRT-type SU(2)/SO(3) invariants at prime order roots of unity.)
 32. [Habiro2008] Kazuo Habiro, "A unified Witten-Reshetikhin-Turaev invariant for integral homology spheres," *Invent. Math.* **171** (2008), no. 1, 1–81. DOI `10.1007/s00222-007-0071-0`. (Cyclotomic integrality: \(Z(M^3) \in \mathbb{Z}[\zeta_N, N^{-1}]\) for integral homology spheres.)
+33. [BatesWeinstein1997] Sean Bates and Alan Weinstein, *Lectures on the Geometry of Quantization*, Berkeley Mathematics Lecture Notes **8** (American Mathematical Society, 1997). ISBN `978-0-8218-0792-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Half-density framework for semiclassical analysis; Lagrangian submanifolds, Maslov index, and caustic resolution via metaplectic structure.)
