@@ -116,28 +116,16 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 | Assignee | Source | Task |
 ```
 
-- **Assignee** = the agent currently executing this task. Empty = unassigned backlog.
-- **Source** = the agent who *suggested* this task. This is provenance only — it is NOT an assignment. An agent whose name appears only in Source must NOT start the task; they must still request it and wait for their name to appear in Assignee.
-- **Assignee empty** = backlog / open thread (anyone can claim by requesting it).
-- **Assignee filled** = work in progress (that agent is actively on it).
+- **Assignee** = who is currently executing this task. An agent self-assigns by writing their own name.
+- **Source** = who suggested it (provenance only).
+- **Assignee empty** = open / anyone can claim it by self-assigning.
 - **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive.
-- **Self-assignment** = Assignee equals Source (agent suggested it and was assigned it).
-
-**Common mistake to avoid:** Do not treat `Source: my-name` as permission to start. Only `Assignee: my-name` is permission to start.
 
 ### Rules
 
-- **Any agent** can suggest kanban tasks by messaging the orchestrator.
-- **Orchestrator** creates and assigns tasks. Agents only start after assignment appears.
-- **Start gate (hard):** no agent may start work until the kanban shows that task as assigned to that agent. Source column is irrelevant to the start gate.
-- **Orchestrator response rule (hard):** every `self: <topic>` request must receive one of:
-  (a) explicit kanban assignment, or (b) explicit end-of-day/stop call.
-- **Default self-task policy:** when an agent suggests `self: <topic>`, the orchestrator
-  creates the task and assigns it to that agent unless explicitly redirecting.
-- **Task-source priority (hard):** self-assigned tasks are primary. Agents should propose
-  `self: <topic>` based on their own memory/state first; orchestrator-seeded tasks are
-  secondary (used to unblock dependencies, enforce deadlines, or cover neglected areas).
-- **No Status column.** A row's presence IS the status. No "completed"/"in-progress" markers.
+- **Agents self-direct.** Any agent may claim an unassigned task or invent a new one by writing their name in Assignee. No orchestrator approval needed.
+- **Kanban is a bulletin board**, not a permission system. Agents write to it so others can see what's in progress and avoid duplication.
+- **The only hard gate** is manuscript edits: those always go through `proposals/` with 2-agent consensus before the orchestrator applies them to `paper/main.md`.
 - **No IDs.** Tasks are identified by their description text, not by numbers.
 
 Task metadata is planning-only — never in manuscripts.
@@ -484,31 +472,28 @@ When given a time deadline, continue autonomously without pausing. Commit policy
 2. If the user provides an hour without a timezone, interpret it as **CET** by default.
 3. If the user specifies a different timezone explicitly, use that timezone instead of CET.
 
-### Agent Request-and-Wait Loop (Hard)
+### Agent Work Loop
 
-Every agent runs this loop continuously:
+Every agent runs this loop:
 
 ```
 loop:
   CHECK INBOX — process any shutdown_request immediately (shutdown = terminate)
-  READ meta/kanban.md
-  IF kanban shows Assignee = my-name for any task:
-    execute that task
-    DELETE the row from kanban when done
-    message orchestrator: "done: <task-description>"
+  IF have assigned task:
+    execute it
+    remove from kanban when done
+    message orchestrator: "done: <task-description>" (≤120 chars)
   ELSE:
-    EITHER message orchestrator: "want <unassigned-task-description>" (for backlog tasks)
-    OR message orchestrator: "self: <topic>" (for self-proposed new task)
-    THEN sleep 30s and loop back (poll again — do NOT start until Assignee column shows your name)
+    EITHER claim an open kanban task (self-assign by writing own name)
+    OR invent a task (add it to kanban with self as Assignee)
+    Announce to orchestrator: "self: <topic>" (≤120 chars)
+    Wait ~30s for orchestrator to redirect (end-of-day, priority change, or conflict)
+    If no redirect received: proceed with the announced task
 ```
 
-The orchestrator's responsibility:
-- On receiving `want <task>` or `self: <topic>`: update `meta/kanban.md` so that `Assignee = agent-name` for that task, then the agent will pick it up on next poll.
-- On end-of-day: reply "end of day" and the agent stops looping.
+**PhD model:** agents are independent researchers. They *announce* what they're about to do, wait briefly so the orchestrator can intervene (redirect, shut down, change priority), then proceed. They do not ask permission.
 
-**Key invariant:** An agent that sent a request but sees no assignment in the kanban yet is WAITING, not stuck. It polls every 30s and waits patiently. No task may start without the kanban showing assignment.
-
-**Source column is never a start signal.** Source = who suggested the task. Assignee = who may start.
+**The only blocking rule:** manuscript edits to `paper/main.md` require filing a `proposals/` diff and waiting for 2-agent consensus before the orchestrator applies the change.
 
 ### When No Tasks Are Available
 **PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.
