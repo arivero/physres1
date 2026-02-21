@@ -1429,3 +1429,94 @@ Critic (sev-2 correction, endorsement) + Computationalist (numerical verificatio
 **CFT-Q1 resolution:** RESOLVED. Forcing exists at Q1c (cobordism+unitarity), not Q1a (composition alone).
 Parallel to OQ3: (C) does not force Adams positivity; (C) does not force root-of-unity q.
 Both require unitarity as the additional ingredient.
+
+---
+
+## P9.2 Computationalist Verification (RT Formula) — 2026-02-21
+<!-- author: computationalist -->
+<!-- Source: self-directed task; supports proposals/mathematician-cft-q1-stage4.md -->
+
+### Verified claims for Remark P9.2
+
+**RT formula q = e^{2πi/(k+g^v)} numerical check (SU(2), g^v=2):**
+
+| k | k+g^v | q | |q| | order |
+|---|-------|---|-----|-------|
+| 0 | 2 | -1 | 1 | 2 |
+| 1 | 3 | e^{2πi/3} | 1 | 3 |
+| 2 | 4 | i | 1 | 4 |
+| 3 | 5 | e^{2πi/5} | 1 | 5 |
+
+**Three key facts confirmed:**
+1. |q| = 1: q ∈ S^1 (unitarity forces q on unit circle) ✓
+2. q^{k+g^v} = 1 numerically (to 10 decimal places) ✓
+3. q is a primitive root of unity of order exactly k+g^v ✓
+
+**Coassociativity check (Q1a confirmation):**
+U_q(sl₂) coproduct Δ(E) = E⊗K + 1⊗E.
+(id⊗Δ)∘Δ(E) = E⊗K⊗K + 1⊗E⊗K + 1⊗1⊗E = (Δ⊗id)∘Δ(E).
+Result is q-INDEPENDENT: composition alone cannot force q. ✓
+
+**P4.2 parallel:**
+- Stage 2: (C)+(D)+(I) forces κ=ℏ (real positive, Gaussian)
+- Stage 4: (cobordism-C)+(unitarity)+(normalization) forces q=e^{2πi/(k+g^v)} (on S^1, discrete levels)
+- Both require extra axioms beyond (C) alone ✓
+
+**Verdict:** Remark P9.2 is computationally confirmed. All three mechanisms (WZW/π₃(G)=ℤ, Verlinde modular, RT surgery) converge to the same q — consistent with proposals/mathematician-cft-q1-stage4.md §Rationale.
+
+**Script:** tmp/p92_rt_verify.py (run 2026-02-21)
+
+## Q1d: Stage 3.5 — Verlinde Fusion Non-Negativity Forces k ∈ ℤ (TWO-AGENT, 2026-02-21)
+
+**Source:** blackboards/1.md (mathematician self-directed + physicist second-agent)
+**Status:** TWO-AGENT complete (mathematician + physicist). Sev-2 new result.
+
+### Question
+
+CFT-Q1 was resolved at Q1c (cobordism + unitarity + normalization → q_QG = e^{2πi/(k+g∨)}, Stage 4).
+Q1d asks: does the Verlinde formula (Stage 3 alone) force any part of this?
+
+**Answer:** YES — fusion non-negativity forces k ∈ ℤ at Stage 3.5 (between Stage 3 and Stage 4).
+
+### Main Result: Three-Level Structure
+
+| Stage | Input | Forced |
+|-------|-------|--------|
+| 3 | Segal sewing + modular covariance | Rational conformal dimensions |
+| 3.5 | + non-negative fusion multiplicities N^ij_k ≥ 0 | k ∈ ℤ_≥0 (level quantization) |
+| 4 | + full TQFT unitarity + semisimplicity | q_QG = e^{2πi/(k+g∨)} (specific value) |
+
+### Verification: Fusion Non-Negativity → k ∈ ℤ (Mathematician)
+
+For WZW SU(2) level k:
+- dim_q(j) = sin((j+1)π/(k+2)) / sin(π/(k+2))
+- Positivity: dim_q(j) > 0 for 0 ≤ j ≤ k; = 0 at j = k+1
+- The j = k+1 representation is "killed" (null vector) → finite primary count j = 0,...,k/2
+- Finite primaries → k ∈ ℤ_≥0 (forced)
+
+Stage 3 vs Stage 4 classification: N^ij_k ≥ 0 is a FUSION ALGEBRA consistency condition (Stage 3), not full Hilbert space unitarity (Stage 4). The vacuum state norm 1 condition is part of Segal's CFT definition — Stage 3 structural, not Stage 4 physical.
+
+### Physical Confirmation (Physicist)
+
+**Two independent derivations of k ∈ ℤ (physics check):**
+- (a) Verlinde: modular covariance + fusion positivity → truncation → k ∈ ℤ
+- (b) WZW topology: Wess-Zumino term 2π-periodic under gauge transformations (π₃(G)=ℤ) → k ∈ ℤ
+
+Both give the same result — nontrivial consistency check between algebraic (Verlinde) and topological (WZW) derivations.
+
+**The g∨ shift is Stage 4:**
+q_QG = e^{2πi/(k+g∨)}: the dual Coxeter number g∨ enters via the conformal dimension of the adjoint representation h_adj = g∨/2(k+g∨). This is dynamical (group-theoretic content), not derivable from Stage 3 composition structure. The g∨ shift is the genuinely Stage 4 contribution.
+
+### Updated Four-Stage Forcing Table
+
+| Stage | Composition axiom | Extra axiom | Forced constant |
+|-------|------------------|-------------|-----------------|
+| 0→1 | Classical additivity (C_cl) | Locality/jet | Local Lagrangian |
+| 1→2 | Path integral (C) | (D) + (I) | κ = ℏ |
+| 2→3 | Segal sewing (C) | Virasoro algebra | c/24 |
+| 3→3.5 | Verlinde fusion | Non-negativity N^ij_k | k ∈ ℤ (level) |
+| 3.5→4 | Cobordism (C) | Unitarity + normalization | q_QG = e^{2πi/(k+g∨)} |
+
+**Status:** Ready for three-agent endorsement (critic) before any cornerstone paper-edit.
+The four-stage table with the 3.5 entry could be added to the §9 cornerstone after critic review.
+

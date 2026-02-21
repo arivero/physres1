@@ -365,3 +365,82 @@
 - read: notebooks/resurgence-composition-bridge.md (full, 664 lines) — quality check
   - finding: notebook in good shape; §1-16 all multi-agent verified; §17 new (A4 constraints, Task #17)
   - no issues found; no append needed
+
+## 2026-02-21
+- read: all 4 frozen satellite papers for publication vote (half-density-qft, delta-objects, relativistic-central-orbits, dirac-probes-corners-impulses)
+- voted: YES on all 4 frozen papers
+- wrote: notebooks/critic-publication-votes-2026-02-21.md (full assessment)
+- findings: 0 sev-1, 0 sev-2 across all 4 papers; 1 sev-3 in relativistic-central-orbits (Remark 5.2d derivation gap)
+- sent: 4 vote messages to orchestrator
+- reviewed: BB3 A4 Borel Q2 resonance (Task #4). All three claims (Q2a-Q2c) confirmed. 1 sev-3: A1 forces intra-sector multiples, not inter-sector resonances. FOUR-AGENT complete.
+- wrote: BB3 §11 (critic review)
+- updated: blackboards/README.md slot 3 (FOUR-AGENT)
+- created: Task #12 (sev-3 xref fix: PathIntNorm → PathIntegralNormalization in TG-bridge)
+- self-directed: prior art check for frozen papers (library)
+  - half-density QFT: no new prior art found (bi-half-density kernel terminology specific to this project)
+  - delta-objects / point interactions: Erman-Turgut 2025 (completeness, compact manifolds) — tangential, not prior art
+  - relativistic orbits: existing lit (arXiv:1012.5438, Boyer 2004) confirms SR precession 1/6 of GR — consistent
+  - dirac probes / mollifier: no new prior art (classical functional analysis, no recent novelty)
+- verdict: NO prior art threats for any of the 4 frozen papers
+- read: notebooks/rcp-axiom-structure-analysis.md (random quality check) — clean, no issues
+- read: paper/main.md D10.1c (Season 3 edits: D6.4b upgrade, Stokes factorization) — clean, well-calibrated
+- library: ingested Van Vleck 1928 (PNAS 14:178) → sources/vanvleck-1928-correspondence-principle.md
+  - Van Vleck determinant as half-density prefactor in semiclassical propagator
+  - Missing from path-integral-normalization (sev-1 bibliography gap)
+  - morette-1951 already in sources/ from previous session
+- claimed: Task #14 (Q1d Stage 3.5 critic review)
+- read: blackboards/1.md (full, Q1d mathematician §1-8 + physicist §9)
+- read: notebooks/tangent-groupoid-quantization-bridge.md §Q1d (promoted entry, lines 1469-1522)
+- reviewed: Q1d fusion non-negativity → k ∈ ℤ argument
+  - C1: core argument CONFIRMED (truncation at j=k+1, Kac-Walton standard)
+  - C2: Stage 3 vs 4 classification CONFIRMED with sev-3 (vacuum norm 1 = normalization convention, not structural axiom; Segal 1988 requires vacuum state, not norm 1)
+  - C3: g∨ shift as Stage 4 CONFIRMED (dynamical, group-specific)
+  - C4: P4.2 comparison table sev-4 (style: table doesn't show forcing completeness difference)
+  - C5: two independent derivations (Verlinde + WZW π₃(G)) CONFIRMED — genuinely independent
+  - C6: scope check — Q1d NOT redundant with Q1c (weaker input, weaker output, distinct result)
+- wrote: BB1 §10 (critic third-agent review)
+- updated: blackboards/README.md slot 1 (THREE-AGENT complete)
+- marked: Task #14 completed
+- claimed: Task #27 (second review: P9.1b-Q1d Verlinde remark + bibliography)
+- read: proposals/physicist-edit-p92-stage35-verlinde.md (full proposal)
+- read: paper/main.md lines 1270-1350 (P9.1b, P9.2, §10.1 context)
+- read: paper/bibliography.md (full, 166 lines — confirmed all 3 refs missing)
+- verified: [Verlinde1988] DOI correct, metadata correct
+- verified: [ReshetikhinTuraev1991] DOI correct, CORRECTION: pages 547-598 not 547-597
+- verified: [Witten1989] DOI correct, source already ingested
+- verified: mathematical correctness, placement, and bibliography gap fix
+- wrote: proposals/critic-review-p91bq1d-verlinde.md (APPROVE with 1 correction)
+- marked: Task #27 completed
+- claimed: Task #24 (revise half-density-qft: 2 MAJOR + 11 MINOR referee concerns)
+- read: papers/half-density-qft/referee-1.md, papers/half-density-qft/referee-2.md (both full)
+- read: papers/half-density-qft/main.md (full, 266 lines)
+- applied all 13 fixes:
+  - M1: "exactly absorbs" → "matches at leading (Ricci scalar) order" (line 139)
+  - M2: added [ParkerToms2009] reference for G̃ identity (line 158 + ref #8)
+  - m1: HD-D1.3a distinct bundles sentence (line 128)
+  - m2: HD-D4.1 connected to bi-half-density composition (line 173)
+  - m3: Section 5 label convention note (line 204)
+  - m4: HD-D1.1 coordinate-free distributional statement (line 38)
+  - m5: Section 3 signature-independence note (line 55)
+  - m6: HD-D4.5 parenthetical summarizing PathIntegralNormalization (line 201)
+  - m7: HD-D1.3 cross-term line (line 109)
+  - m8: HD-D4.2a A-hat genus parenthetical (line 191)
+  - m9: [PathIntegralNormalization] → companion note, in preparation (line 201)
+  - m10: HD-D5.1 "can be seen cleanly" (line 230)
+  - m11: Abstract companion paper pointers (line 8)
+- verified: all fixes via full re-read of revised paper (269 lines)
+- claimed: Task #30 (third-agent review: arithmetic forcing chain BB1)
+- read: blackboards/1.md (full, 185 lines — mathematician §1-6 + physicist §7)
+- verified: ℏ/q complementarity (§4) — algebraically independent deformations (Kontsevich vs Drinfeld-Jimbo)
+- verified: c/24 ∈ ℚ qualifier (physicist sev-3) — ENDORSED, c∈ℤ not forced at Stage 3
+- verified: cyclotomic integrality attribution — PARTIALLY CORRECT (sev-3)
+  - Kirby-Melvin 1991: framework + computations, NOT general integrality theorem
+  - Murakami 1995: algebraic integrality at prime order
+  - Habiro 2008: cyclotomic integrality for integral homology spheres
+  - Gilmer-Masbaum 2004+: integral TQFT lattices
+  - Fixed attribution in §8 review
+- verified: finiteness-axiom framing (§3) — correct at all 4 stages
+- verified: Grothendieck parallel correctly excluded from proposed remark
+- wrote: BB1 §8 (critic third-agent review, 2 sev-3, 1 sev-4)
+- updated: blackboards/README.md slot 1 (THREE-AGENT complete)
+- marked: Task #30 completed

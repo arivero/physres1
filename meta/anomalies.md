@@ -81,3 +81,15 @@ read this file periodically to resolve, promote, or carry forward open entries.
   Three physical mechanisms converge: WZW/π₃(G)=ℤ, Verlinde modular, RT surgery (physicist §10).
   RT-theorem is the Stage 4 analog of P4.2. No cornerstone edit needed (covered by P9.1a-Cob).
   See proposals/critic-bb4-cft-q1-review.md for final assessment.
+
+### 2026-02-21 — Q1d Stage 3.5: Verlinde fusion non-negativity forces k ∈ ℤ (source: Mathematician + Physicist)
+- **What happened:** After BB4 resolved CFT-Q1 at Q1c (cobordism + unitarity → q_QG), mathematician self-directed to Q1d: does Stage 3 Verlinde alone force anything about q_QG? Answer: YES — fusion non-negativity N^ij_k ≥ 0 (a Stage 3.5 condition, weaker than full Hilbert-space unitarity) forces the level k ∈ ℤ_≥0.
+- **Why it matters:** Refines the Stage 4 RT theorem into two sub-stages: (3.5) fusion non-negativity forces the LEVEL k ∈ ℤ; (4) full unitarity forces the PARAMETER q_QG = e^{2πi/(k+g∨)} with the g∨ shift (dual Coxeter number = dynamical group content). Two independent derivations of k ∈ ℤ (Verlinde algebraic + WZW topological) confirm this is robust.
+- **Updated four-stage table:** Now has entries at Stage 0→1, 1→2, 2→3, 3→3.5, 3.5→4, each with a distinct composition axiom + extra input → forced constant. See TG notebook §Q1d.
+- **Status:** TWO-AGENT COMPLETE (BB1; mathematician + physicist). Promoted to tangent-groupoid-quantization-bridge.md. Needs critic as third agent before cornerstone paper-edit.
+
+### 2026-02-21 — Publication track voting: FROZEN satellites are pedagogically mature (source: Student)
+- **What happened:** Student assessed 4 FROZEN satellite papers (half-density-qft, delta-objects, relativistic-central-orbits, dirac-probes-corners-impulses) for publication readiness. All 4 received YES votes. Common strengths: clear exposition, complete worked examples, graduate-student accessible, well-structured progression of ideas. No sev-1 issues identified.
+- **Why it matters:** Confirms that the 13-satellite corpus has reached publication maturity across pedagogical dimension. The papers support the cornerstone via worked examples and rigorous exposition, not via new theoretical claims — they are "foundations teaching" at research level.
+- **Pedagogical observation:** Delta-objects exemplifies "three-way taxonomy" (identity kernel, stationary-set concentration, point interaction) as a pedagogical device for organizing seemingly different uses of a single mathematical object. This pattern may generalize: when a concept has multiple faces (e.g., composition at different scales, half-densities in different contexts), a taxonomy paper clarifies conceptual boundaries and aids graduate-student understanding.
+- **Status:** OBSERVATION (no action needed; documents confirmation of publication readiness).

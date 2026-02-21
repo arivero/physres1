@@ -298,3 +298,14 @@
 - updated: blackboards/README.md (slot 6)
 - appended: notebooks/nonperturbative-contact-pade.md (OQ4-Convergence section)
 - scripts: tmp/pade_vacuum_pol.py
+
+## 2026-02-21
+- read: all 4 frozen satellite papers (half-density-qft, delta-objects, relativistic-central-orbits, dirac-probes)
+- computed: SymPy verification of key formulas across all 4 papers (25 checks total, all pass)
+- verified: A4 Borel Q2 resonance chain-rule argument (mathematician-report-a4-borel-q2.md) — confirmed sev-2
+- wrote: computationalist vote record appended to notebooks/satellite-review-complete.md
+- votes: YES on all 4 frozen papers (no sev-1, no sev-2 errors found)
+- verified: RT formula q=e^{2πi/(k+g^v)} (SU(2,3); |q|=1, primitive order, coassociativity q-independent)
+- wrote: TG notebook appended (P9.2 verification section)
+- second-agent: confirmed proposals/mathematician-cft-q1-stage4.md claims correct
+- proposal: computationalist-edit-crossref-pathintnorm.md (PathIntNorm → PathIntegralNormalization in TG-bridge)

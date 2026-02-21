@@ -129,3 +129,76 @@ The new tangent-groupoid satellite partially bridges this gap: TG-P1.1 shows d/2
 | Partition | P4.2 (theorem) | STRONG | Nothing at the QM level; QFT extension (P9.1a) is open |
 | Representation | D9.1f + OE satellite | MODERATE | No uniqueness theorem; gauge equivalence, not forcing |
 | Scale | H6.3 (heuristic) | WEAK | General forcing proof; only specific models demonstrated |
+
+## Computationalist Publication Vote Record — 2026-02-21
+<!-- author: computationalist -->
+
+### Verification methodology
+SymPy symbolic verification + numerical spot checks on all key formulas.
+Script: tmp/vote_verification.py (run 2026-02-21).
+
+### Paper 1: Half-Density QFT
+
+**VOTE: YES**
+
+Verified:
+- HD-D1.1a: Gaussian normalization (2*pi*eps)^{-D/2} * eps^{D/2} = 1 [exact]
+- HD-D1.3: D(4-D)/4 coefficient: D=2→1, D=3→3/4, D=4→0 ✓
+- HD-D1.3b: xi_conf = (D-2)/(4(D-1)) equals 1/6 only at D=4 ✓
+- HD-D4.5: Proper-time integral t^{-D/2} → Gamma(D/2-1) via Schwinger ✓
+- HD-D5.3: Mass counterterm Λ^{D-2} = Λ^{2(D/2-1)} from cutoff integral ✓
+- HD-D5.3b: Gamma-function pole at D=2(n+1) for a_n counterterm ✓
+- No dimensional inconsistencies found.
+
+### Paper 2: Delta Objects
+
+**VOTE: YES**
+
+Verified:
+- Section 2: eps^{-d}*eps^{d/2} = eps^{-d/2} [exact scaling]
+- Example 4.1: kappa = |g|m/hbar^2, E = -mg^2/(2hbar^2) ✓
+- Example 4.1b: kappa = alpha from denominator cancellation ✓
+- Remark 4.3: Laplace integral = Gamma(1-d/2)*kappa^{d-2}, diverges at d=2 ✓
+- Remark 5.1: Sobolev/Morrey embedding d<4 for H^2 ↪ C^0 ✓
+- [K] = kg*m^3/s^2, [L] = kg*m^2/s, [K/L] = m/s ✓
+
+### Paper 3: Relativistic Central Orbits
+
+**VOTE: YES**
+
+Verified:
+- Section 3: K = gamma*m*v^2*r, L = gamma*m*r*v => K/L = v [exact]
+- W_L(r)*r → Lc-K as r→0 ✓ [SymPy series]
+- Stability criterion 1+(2-q)*gamma^2: reduces to 1 at q=2 ✓, to 1-gamma^2 at q=3 ✓
+- V_eff'' at circular orbit: SymPy confirms 2M(r-6M)/(r^3(r-3M)) [exact, diff=0]
+- L^2(ISCO) = 12M^2 ✓, E^2(ISCO) = 8/9 ✓
+- Accretion efficiency: 1-2sqrt(2)/3 ≈ 5.72% ✓
+- Photon sphere: SymPy solve gives r_ph = 3M [exact]
+- Precession: Delta_phi ≈ pi*K^2/(c^2*L^2) for v<<c ✓
+- Epicyclic ratio at q=2: omega_r^2/omega_phi^2 = 1-beta^2 = omega^2 ✓
+
+One sev-3 (critic concurs): Remark 5.2d derivation gap — result correct, derivation implicit.
+
+### Paper 4: Dirac Probes, Corners, Impulses
+
+**VOTE: YES**
+
+Verified:
+- Action excess: S - S_0 = m*t_0*(T-t_0)*Delta_v^2/(2T) [exact SymPy, match=True]
+- Maximum at t_0 = T/2: factor = T/4 ✓
+- Weierstrass excess: m*(q_dot - q_dot')^2/2 >= 0 [exact factorization]
+- Energy jump: Delta H = J*v_bar, diff=0 [exact SymPy]
+- Van Vleck det in d dims: (m/T)^d, sqrt = (m/T)^{d/2} ✓
+- Remark 5.2b: G_0(0,0;E) ~ integral t^{-d/2} e^{-kappa^2*t} dt, marginal at d=2 ✓
+
+### Summary
+
+| Paper | Computationalist Vote | Key checks |
+|-------|----------------------|------------|
+| Half-Density QFT | YES | 6 formulas verified |
+| Delta Objects | YES | 5 formulas verified |
+| Relativistic Central Orbits | YES | 9 formulas verified (all exact) |
+| Dirac Probes/Corners/Impulses | YES | 5 formulas verified |
+
+All computations consistent. No sev-1 or sev-2 errors found.
+Agreement with Critic votes (critic-publication-votes-2026-02-21.md).

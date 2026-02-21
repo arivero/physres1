@@ -69,8 +69,30 @@
 7. Library: witten1989-chern-simons-jones.md + zamolodchikov1986-ctheorem.md added to sources/
 8. anomalies.md: CFT sewing entry partially resolved (Stage 2 ⊂ Stage 3 in the forcing chain)
 
-### Outstanding (awaiting second agent)
-- BB0 (Stage 1 forcing, CL-1): mathematician should verify cross-term argument
-- proposals/physicist-stage1-locality.md: pending orchestrator decision
-- proposals/physicist-p91b-phys-remark.md (revised): one-sentence addition to P9.1b, awaiting execution
-- proposals/physicist-p91a-cobordism.md, physicist-tgr51-paper-edit.md, physicist-rg-arithmetic-footnote.md: all pending orchestrator execution
+### Session 6 status (2026-02-21, context-reset continuation, updated)
+- Votes: YES half-density-qft, delta-objects, dirac-probes; NO relativistic-central-orbits (pending Remark 3.1d merge → YES)
+- Task #1: DONE (votes)
+- Task #2: DONE (P9.2 APPROVED — RT-theorem distinct from P9.1a-Cob; needs RT-1991+Witten-1989 in bibliography)
+- Task #4: DONE (stale — already THREE-AGENT in Session 5)
+- Task #12: DONE (PathIntNorm→PathIntegralNormalization proposal written)
+- Task #13: DONE (Q1d promoted to TG notebook)
+- Task #14: CREATED (critic review of Q1d Stage 3.5)
+- Self-directed: BB0 CL-1' third-agent; BB1 Q1d second-agent; orbits Remark 3.1d proposal
+
+### Post-context-reset work (2026-02-21)
+- proposals/ was EMPTY at session resume (all prior proposals processed by orchestrator)
+- Task #14 (critic Q1d review): COMPLETE — THREE-AGENT with sev-3 incorporated
+- Wrote: proposals/physicist-edit-p92-stage35-verlinde.md (Remark P9.1b-Q1d + Verlinde/RT/Witten bib entries)
+- BB3 overwritten: relativistic-central-orbits referee assessment (2 referee errors found)
+  - Referee-2 wrong on ω_r²/ω_φ²: effective mass = γm (relativistic mass), not γ³m (longitudinal)
+  - Referee-2 wrong on sign: U'(r) = K/r^q IS correct for attractive force convention
+  - Fixes recommended: "gauge accident" → "coordinate identity", Sommerfeld caveat, [Will1993]
+- BB1 mathematician arithmetic chain: ℝ₊→ℚ→ℤ→μ_N (self-directed, Stage 2→3→3.5→4)
+  - Physicist second-agent pass added (§7): CONFIRMED (1 sev-3: c/24∈ℚ needs c∈ℤ qualifier)
+  - Needs critic as third agent
+
+### Outstanding
+- proposals/physicist-edit-p92-stage35-verlinde.md: pending orchestrator execution
+- BB3 referee assessment: pending orchestrator edit proposal creation
+- BB1 arithmetic chain: TWO-AGENT, needs critic third agent
+- Referee tasks 16 (hd), 18 (do), 22 (dp): still in_progress (other agents)
