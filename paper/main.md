@@ -1244,14 +1244,15 @@ each layer adds new consistency constraints while preserving prior invariants in
 ## 9.4 Residual Vulnerabilities
 1. The path integral remains formal at full measure-theoretic level; constructive control is not provided here.
    Minimal closure target: exhibit one explicit regulated kernel family \(K_\varepsilon\) with a proved composition law and a controlled \(\varepsilon\to0\) statement in a nontrivial model.
+   Status: **SUBSTANTIALLY CLOSED.** Appendix 10.6 provides the regulated Gaussian family (D12.1: exact composition with additive regulator; P12.1: controlled \(\varepsilon\to0\) limit recovering the heat-kernel semigroup), a first-order bounded-potential extension (D12.2: \(O(V)\) composition closure), quantitative operator-norm bounds (P12.2), and an explicit failure mode for singular potentials (D12.2a). Full constructive path-space control (e.g., Wiener-measure-level estimates) remains open.
 2. Deformation equivalence is stated at the structural level; explicit model-by-model operator-domain analysis is partially addressed.
    Current status: one position-dependent-mass model (\(f(q)=1+\alpha q^2\) in a harmonic trap) has been carried through Weyl and half-density quantizations with explicit \(O(\hbar^2)\) mismatch term and quantitative energy-shift estimate (`Remark D9.1a`, `Remark P5.2a`). Full extension to curved-manifold kinetic symbols with domain analysis remains open.
-3. RG flow is derived structurally; a fully explicit quantum-mechanical computation (2D contact interaction) is provided in Appendix 10.5, but a field-theory-level loop computation is not included.
-   Minimal closure target: add one fixed-scheme one-loop QFT computation whose subtraction, beta function, and scheme-change behavior are written in the same normalization conventions as Section 10.1.
+3. RG flow is derived structurally; explicit computations are now provided at both the quantum-mechanical level (2D contact interaction, Appendix 10.5: D11.1–D11.3) and the field-theory level (\(\lambda\phi^4\) one-loop beta function in \(D=4-2\varepsilon\), Appendix 10.1: D8.2a).
+   Status: **CLOSED.** The minimal closure target (one fixed-scheme one-loop QFT computation with subtraction, beta function, and scheme change in manuscript conventions) is met by D8.2a.
 4. Truncation closure in section 8 is identified but not benchmarked by an explicit truncation-error study.
    Minimal closure target: compare at least two truncation levels on the same model and report an observable-level stability window.
 
-These are explicit scope boundaries, not hidden defects. They also define falsifiable closure tests for the next revision wave: each unresolved point is now paired with a concrete witness that would close it.
+Vulnerabilities 1 and 3 are now substantially closed by Appendices 10.6 and 10.1 respectively. Vulnerabilities 2 and 4 remain open scope boundaries with explicit closure targets. All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
 
 ## 9.5 Future Work (Task-Driven Revision Queue; Editorial Package Labels)
 To keep the manuscript evolving by derivation rather than by incremental wording changes, future edits should be organized as concrete work packages:
@@ -1267,7 +1268,7 @@ To keep the manuscript evolving by derivation rather than by incremental wording
 3. **Package C (QFT-level RG witness).**
    Deliverable: one-loop running in a fixed subtraction scheme using manuscript conventions.
    Pass criterion: explicit \(\beta(g)\), one scheme-change computation, and direct mapping to scale compatibility in Section 8.
-   Current status: the RG-fundamental companion note contains an explicit one-loop Wilsonian shell integration for the 2D contact model (beta function, semigroup composition of RG maps, and scheme-change structure). Importing this into the present manuscript's Appendix 10.1 in matching conventions remains open.
+   Current status: **SUBSTANTIALLY COMPLETE.** Appendix 10.1 contains the generic single-coupling template (D8.1, D8.2, P8.1) plus an explicit QFT-level witness (D8.2a: \(\lambda\phi^4\) one-loop beta function in \(D=4-2\varepsilon\)). Appendix 10.5 provides the full 2D contact-interaction computation (D11.1–D11.3: cutoff loop, renormalized coupling, beta function, dimensional transmutation, scheme dependence). The Wilsonian shell-integration route making semigroup composition directly visible is available in the RG-fundamental companion note (Derivation RG-D1.2a); a forward reference appears in Appendix 10.5 (line after D11.2).
 4. **Package D (Truncation error audit).**
    Deliverable: side-by-side flows for two truncation levels with at least one observable comparison.
    Pass criterion: a quantitative stability region and one explicit breakdown regime.
