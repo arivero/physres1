@@ -1856,8 +1856,8 @@ For \(t>0\), \(\varepsilon>0\), define
 \[
 K_\varepsilon(x,y;t)
 :=
-\frac{1}{\bigl(4\pi(t+\varepsilon)\bigr)^{d/2}}
-\exp\!\left[-\frac{|x-y|^2}{4(t+\varepsilon)}\right].
+\frac{1}{\bigl(2\pi(t+\varepsilon)\bigr)^{d/2}}
+\exp\!\left[-\frac{|x-y|^2}{2(t+\varepsilon)}\right].
 \]
 Since \(K_\varepsilon(\cdot,\cdot;t)=K_0(\cdot,\cdot;t+\varepsilon)\), Gaussian convolution gives, for \(t_1,t_2>0\) and \(\varepsilon_1,\varepsilon_2>0\),
 \[
@@ -1870,7 +1870,7 @@ K_{\varepsilon_1+\varepsilon_2}(x,y;t_1+t_2).
 Thus composition is exact inside the regulated family, with regulator flow law \(\varepsilon\mapsto\varepsilon_1+\varepsilon_2\).
 
 `Proposition P12.1 (Controlled regulator removal and explicit failure mode).`
-For fixed \(t>0\), \(K_\varepsilon(x,y;t)\to K_0(x,y;t)\) pointwise and in \(L^1_x\) as \(\varepsilon\to0^+\) (for \(\varepsilon\le t/2\), \(|K_\varepsilon(x,y;t)|\le K_0(x,y;t/2)\in L^1_x\); dominated convergence gives \(L^1\) convergence), so
+For fixed \(t>0\), \(K_\varepsilon(x,y;t)\to K_0(x,y;t)\) pointwise and in \(L^1_x\) as \(\varepsilon\to0^+\) (for \(\varepsilon\le t/2\), \(|K_\varepsilon(x,y;t)|\le (2\pi t)^{-d/2}\exp(-|x{-}y|^2/(3t))\in L^1_x\); dominated convergence gives \(L^1\) convergence), so
 \[
 \lim_{\varepsilon_1,\varepsilon_2\to0^+}
 \int d^dz\;K_{\varepsilon_1}(x,z;t_1)K_{\varepsilon_2}(z,y;t_2)
@@ -1958,7 +1958,7 @@ Two immediate checks fix normalization and interpretation:
 1. **Free limit \(\omega\to0\)**: using \(\sinh(\omega t)=\omega t+O((\omega t)^3)\), \(\cosh(\omega t)=1+O((\omega t)^2)\),
 \[
 K_\omega(x,y;t)\xrightarrow[\omega\to0]{}
-\frac{1}{(4\pi t)^{d/2}}\exp\!\left(-\frac{|x-y|^2}{4t}\right)
+\frac{1}{(2\pi t)^{d/2}}\exp\!\left(-\frac{|x-y|^2}{2t}\right)
 =K_0(x,y;t).
 \]
 2. **Short-time limit \(t\to0^+\)**: \(K_\omega(\cdot,\cdot;t)\) concentrates to \(\delta\) in distributions, matching the semigroup initial condition.
