@@ -10,7 +10,6 @@
   {%- endif -%}
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    skipStartupTypeset: true,
     tex2jax: {
       inlineMath: [['$','$'], ['\\(','\\)']],
       displayMath: [['$$','$$'], ['\\[','\\]']],
@@ -20,84 +19,5 @@
   </script>
   <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-  <script>
-  (function () {
-    function isLikelyInlineMath(content) {
-      var s = content.trim();
-      if (!s) return false;
-      if (/[\\_^{}]/.test(s)) return true;
-      if (/^[A-Za-z]$/.test(s)) return true;
-      return /^(alpha|beta|gamma|delta|epsilon|zeta|eta|theta|iota|kappa|lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega)$/i.test(s);
-    }
-
-    function restoreInlineMath(text) {
-      var out = "";
-      var i = 0;
-      while (i < text.length) {
-        if (text[i] === "(") {
-          var depth = 1;
-          var j = i + 1;
-          var hasNewline = false;
-          while (j < text.length && depth > 0) {
-            if (text[j] === "(") depth += 1;
-            else if (text[j] === ")") depth -= 1;
-            if (text[j] === "\n") hasNewline = true;
-            j += 1;
-          }
-          if (depth === 0) {
-            var inner = text.slice(i + 1, j - 1);
-            if (!hasNewline && isLikelyInlineMath(inner)) {
-              out += "\\(" + inner + "\\)";
-              i = j;
-              continue;
-            }
-          }
-        }
-        out += text[i];
-        i += 1;
-      }
-      return out;
-    }
-
-    function restoreDisplayMath(text) {
-      return text.replace(/(^|\n)\[\s*\n([\s\S]*?)\n\](?=\n|$)/g, function (_, lead, body) {
-        return lead + "\\[\n" + body + "\n\\]";
-      });
-    }
-
-    function restoreDelimiters(root) {
-      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
-      var node;
-      while ((node = walker.nextNode())) {
-        var p = node.parentElement;
-        if (!p) continue;
-        var tag = p.tagName;
-        if (tag === "CODE" || tag === "PRE" || tag === "SCRIPT" || tag === "STYLE" || tag === "TEXTAREA") continue;
-        var original = node.nodeValue;
-        var updated = restoreInlineMath(restoreDisplayMath(original));
-        if (updated !== original) node.nodeValue = updated;
-      }
-    }
-
-    function queueTypeset() {
-      if (window.MathJax && MathJax.Hub && MathJax.Hub.Queue) {
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-      } else {
-        setTimeout(queueTypeset, 50);
-      }
-    }
-
-    function run() {
-      restoreDelimiters(document.body);
-      queueTypeset();
-    }
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", run);
-    } else {
-      run();
-    }
-  })();
   </script>
 </head>
