@@ -811,7 +811,7 @@ where the phase \(e^{iJy/\hbar}\) encodes the impulse action \(J\cdot q(t_0)\). 
 K_J=K_{\mathrm{free}}(x_f,T;x_i,0)\;\exp\!\Bigl[\frac{iJ\,\bar x(t_0)}{\hbar}-\frac{iJ^2\,t_0(T-t_0)}{2m\hbar T}\Bigr],
 \]
 
-with \(\bar x(t_0)=x_i+(x_f-x_i)t_0/T\) the unforced classical midpoint. The saddle point \(y^\ast=\bar x(t_0)+Jt_0(T-t_0)/(mT)\) satisfies \(\Delta p=m(x_f-y^\ast)/(T-t_0)-m(y^\ast-x_i)/t_0=J\), recovering the Weierstrass--Erdmann impulse condition of Section 5 as a *derived consequence* of stationarity, not an additional input. The limits \(J\to 0\) (free particle) and \(J\to\infty\) (decoupling) are both physically correct.
+with \(\bar x(t_0)=x_i+(x_f-x_i)t_0/T\) the unforced classical midpoint. The saddle point \(y^\ast=\bar x(t_0)-Jt_0(T-t_0)/(mT)\) satisfies \(\Delta p=m(x_f-y^\ast)/(T-t_0)-m(y^\ast-x_i)/t_0=J\), recovering the Weierstrass--Erdmann impulse condition of Section 5 as a *derived consequence* of stationarity, not an additional input. The limits \(J\to 0\) (free particle) and \(J\to\infty\) (decoupling) are both physically correct.
 
 Transition to Section 7:
 with composition, weighting, and classical-recovery logic in place, we can now present quantization as deformation of algebraic products, linking path-integral discretization choices to tangent/cotangent groupoid deformation structure.
@@ -1673,8 +1673,8 @@ These additions do not alter the thesis; they increase computational accountabil
 
 `Remark D10.4a (Package-to-appendix map for fast navigation).`
 For reader navigation:
-1. **Package C/D (RG witness + truncation control):** Appendix 10.1 with `D8.1`, `D8.2`, `D8.2a`, `P8.1`, and Section 8.6 `D6.4`.
-2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`.
+1. **Package C/D (RG witness + truncation control):** Appendix 10.1 with `D8.1`, `D8.2`, `D8.2a`, `P8.1`, Section 8.6 `D6.4`, and `Remark D6.4a`.
+2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Remark D9.1i`.
 3. **Package A (path-space/kernel closure ladder):** Appendix 10.6 with `D12.1`, `P12.1`, `D12.2`, `P12.2`, `D12.3`.
 4. **Package E (global compatibility map):** Section 9.1 `P7.1a` plus Appendix 10.3 `P10.1`, `D10.1a`, `D10.1b`.
 
