@@ -1277,7 +1277,7 @@ each layer adds new consistency constraints while preserving prior invariants in
    Minimal closure target: compare at least two truncation levels on the same model and report an observable-level stability window.
    Status: **CLOSED.** Derivation D6.4 provides a two-level truncation audit (\(\beta_{(2)}\) vs \(\beta_{(3)}\)) with a quantitative stability window \(|g|\le\eta\,b_0/|b_1|\). Remark D6.4a instantiates this on \(\lambda\phi^4\) at one and two loops, giving \(|\lambda|\lesssim 8.4\) at 10\% tolerance — a concrete model-specific benchmark meeting the stated closure target.
 
-Vulnerability 1 is now substantially closed by Appendix 10.6; Vulnerability 3 is closed by Appendix 10.1. Vulnerability 2 is substantially addressed by the \(S^2\) spectral witness (P D9.1h); Vulnerability 4 is closed by D6.4 + Remark D6.4a (quantitative truncation defect criterion with model-specific \(\lambda\phi^4\) benchmark). All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
+Vulnerability 1 is now substantially closed by Appendix 10.6; Vulnerability 3 is closed by Appendix 10.1. Vulnerability 2 is substantially addressed by the \(S^2\) and \(S^3\) spectral witnesses (P D9.1h, P D9.1i); Vulnerability 4 is closed by D6.4 + Remark D6.4a (quantitative truncation defect criterion with model-specific \(\lambda\phi^4\) benchmark). All four are honest scope boundaries, not hidden defects: each is paired with a concrete witness (existing or prospective) that would close it.
 
 ## 9.5 Future Work (Task-Driven Revision Queue; Editorial Package Labels)
 To keep the manuscript evolving by derivation rather than by incremental wording changes, future edits should be organized as concrete work packages:
@@ -1289,7 +1289,7 @@ To keep the manuscript evolving by derivation rather than by incremental wording
 2. **Package B (Ordering/domain benchmark).**
    Deliverable: one appendix-level model comparing two orderings plus half-density conjugation.
    Pass criterion: explicit operator difference through \(O(\hbar)\) and a clear statement of domain/equivalence boundaries.
-   Current status: Appendix 10.2 now includes periodic/curved symmetry benchmarks, one explicit self-adjoint extension witness (`D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`), an explicit curved-manifold spectral comparison (`Proposition D9.1h`, `Remark D9.1i`), and a four-layer stratification of ordering differences with quantitative observability estimates (`Remark D9.1a`); full extension classification remains open.
+   Current status: Appendix 10.2 now includes periodic/curved symmetry benchmarks, one explicit self-adjoint extension witness (`D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`), explicit curved-manifold spectral comparisons (`Proposition D9.1h`, `Proposition D9.1i`), and a four-layer stratification of ordering differences with quantitative observability estimates (`Remark D9.1a`); full extension classification remains open.
 3. **Package C (QFT-level RG witness).**
    Deliverable: one-loop running in a fixed subtraction scheme using manuscript conventions.
    Pass criterion: explicit \(\beta(g)\), one scheme-change computation, and direct mapping to scale compatibility in Section 8.
@@ -1367,6 +1367,10 @@ P4.2 fixes the norm \(\lvert\kappa\rvert = \hbar \in \mathbb{R}_+\); the RT theo
 \(\arg(q) = 2\pi/(k+g^\vee)\) to a torsion element.
 The partition functions of the associated TQFTs satisfy \(Z(M^3) \in \mathbb{Z}[\zeta_N, N^{-1}]\),
 \(N = k + g^\vee\), reflecting the cyclotomic integrality of Stage 4 [Murakami1995; Habiro2008].
+The forcing mechanism at Stage 2 rests on the Stone--von Neumann uniqueness theorem for
+irreducible representations of the Heisenberg algebra; at higher stages, where unitarily
+inequivalent representations proliferate (Haag's theorem), each additional finiteness axiom
+serves as a partial substitute for uniqueness, applicable only within a narrower class of theories.
 
 # 10. Technical Appendices
 This section provides the appendices announced at the end of Section 9. Each subsection is a compact worked extension tied to one residual vulnerability.
@@ -1581,8 +1585,23 @@ where \(V_{\mathrm{HD}}(\theta)=-\tfrac{1}{4}-\tfrac{1}{4\sin^2\!\theta}\). Then
 
 This is the first Appendix 10.2 witness with an explicit spectral comparison on a curved manifold. The connection term \(\cot\theta\,\partial_\theta\) of \(\Delta_g\) is traded for the scalar \(V_{\mathrm{HD}}\), demonstrating concretely the mechanism described abstractly in `Derivation D9.1d`.
 
-`Remark D9.1i (Scope boundary for curved spectral witness).`
-The \(S^2\) witness exploits diagonal metric and maximal symmetry. Extension to non-diagonal metrics, higher-dimensional spheres (\(S^3\)), or non-homogeneous spaces remains open.
+`Proposition D9.1i (Curved-manifold ordering witness: spectral comparison on \(S^3\)).`
+On the unit 3-sphere \(S^3\cong\mathrm{SU}(2)\) with hyperspherical coordinates \((\chi,\theta,\phi)\) and metric \(ds^2=d\chi^2+\sin^2\!\chi\,(d\theta^2+\sin^2\!\theta\,d\phi^2)\), define on \(L^2(d\chi\,d\theta\,d\phi)\):
+\[
+H_L=-\partial_\chi^2-\frac{1}{\sin^2\!\chi}\bigl(\partial_\theta^2+\frac{1}{\sin^2\!\theta}\,\partial_\phi^2\bigr),
+\qquad
+\widetilde{H}=|g|^{1/4}(-\Delta_g)|g|^{-1/4}=H_L+V_{\mathrm{HD}},
+\]
+where \(V_{\mathrm{HD}}=-1\) (constant). Then:
+1. Both operators are essentially self-adjoint on \(C^\infty(S^3)\).
+2. \(\widetilde{H}\) has eigenvalues \(l(l{+}2)\) with degeneracy \((l{+}1)^2\), reproducing the Laplace--Beltrami spectrum. The Peter--Weyl decomposition of \(L^2(\mathrm{SU}(2))\) identifies these as quadratic Casimir values.
+3. \(\mathrm{Spec}(\widetilde{H})=\{l(l{+}2):l\ge0\}\) while \(\mathrm{Spec}(H_L)\supset\{n^2:n\ge1\}\), with constant shift \(l(l{+}2)-(l{+}1)^2=-1\).
+4. The ordering difference is a pure Layer-3 constant potential. No Layer-4 domain freedom appears.
+
+Unlike the \(S^2\) witness (Proposition D9.1h), where the shift \(-(l{+}1)\) grows linearly and \(V_{\mathrm{HD}}\) depends on position, the \(S^3\) shift is uniform. In the general \(S^d\) family, the half-density potential takes the form \(V_{\mathrm{HD}}=-(d{-}1)^2/4+(d{-}1)(d{-}3)/(4\sin^2 r)\), which is constant if and only if \(d=3\). Thus \(S^3\) is the unique higher-dimensional sphere for which the ordering correction reduces to a spectral offset without position-dependent distortion.
+
+`Remark D9.1j (Scope boundary for curved spectral witnesses).`
+Propositions D9.1h and D9.1i cover the maximally symmetric compact spaces \(S^2\) and \(S^3\). Extension to non-diagonal metrics, non-homogeneous spaces, or higher-dimensional spheres with position-dependent \(V_{\mathrm{HD}}\) remains open.
 
 `Derivation D9.1f (Domain-parameter witness: same symbol, inequivalent self-adjoint realizations).`
 Consider the formal 1D kinetic operator
@@ -1680,7 +1699,7 @@ These additions do not alter the thesis; they increase computational accountabil
 `Remark D10.4a (Package-to-appendix map for fast navigation).`
 For reader navigation:
 1. **Package C/D (RG witness + truncation control):** Appendix 10.1 with `D8.1`, `D8.2`, `D8.2a`, `P8.1`, Section 8.6 `D6.4`, `Remark D6.4a`, and Appendix 10.3 `Proposition D6.4b`, `Lemma D6.6`.
-2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Remark D9.1i`.
+2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`.
 3. **Package A (path-space/kernel closure ladder):** Appendix 10.6 with `D12.1`, `P12.1`, `D12.2`, `P12.2`, `D12.3`.
 4. **Package E (global compatibility map):** Section 9.1 `P7.1a` plus Appendix 10.3 `P10.1`, `D10.1a`, `D10.1b`, `Remark D10.1c`.
 
