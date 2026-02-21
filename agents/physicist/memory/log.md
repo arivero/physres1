@@ -218,3 +218,6 @@
 - created+completed: Task #24 (physicist audit of §6 Composition and Path Integral)
 - wrote: proposals/physicist-audit-section6.md (SINGLE-AGENT audit, 18 items, all CLEAN, no sev-1/2)
 - key: P4.2 necessity argument verified, hypothesis reduction P4.2c-h checked, Van Vleck D4.3 correct
+- wrote: proposals/physicist-audit-sections3-5.md (SINGLE-AGENT audit, §§3-5 CLEAN)
+- combined: §§3-8 now fully audited by two agents (physicist §§3-6, critic §§7-8)
+- shutdown: all proposals merged, session complete (~23:30 CET)
