@@ -946,3 +946,70 @@ finite-order perturbation theory cannot.
 - tmp/pade_vacuum_pol.py: computation script (Padé pole tracking, power-law fit)
 - blackboards/6.md: computation source (this session)
 - Källén-Lehmann spectral representation: QED vacuum polarization threshold behavior
+
+## 2026-02-21 Amendment: I_n ~ n^{-3/2} (sev-3 correction, THREE-AGENT)
+
+### Correction to coefficient decay rate
+
+**Corrected (THREE-AGENT: computationalist + critic + physicist):**
+
+The vacuum polarization Taylor coefficients satisfy:
+```
+I_n = B(n+1, 3/2) + (1/2) B(n+2, 3/2)
+```
+
+By Stirling's formula: Γ(n+5/2)/Γ(n+1) ~ n^{3/2}, so B(n+1, 3/2) ~ √π/2 · n^{-3/2}.
+Similarly B(n+2, 3/2) ~ √π/2 · n^{-3/2}.
+
+Therefore: **I_n ~ (3/2)(√π/2) · n^{-3/2} ≈ 1.329 · n^{-3/2}**
+
+**This corrects the earlier claim I_n ~ n^{-2} (wrong exponent).**
+
+Numerical verification (scipy betaln):
+
+| n    | I_n           | I_n · n^{3/2} | I_n · n^2   |
+|------|---------------|---------------|-------------|
+| 5    | 7.956e-02     | 0.890         | 1.989       |
+| 10   | 3.384e-02     | 1.070         | 3.384       |
+| 50   | 3.589e-03     | 1.269         | 8.972       |
+| 100  | 1.298e-03     | 1.298         | 12.984      |
+| 1000 | 4.194e-05     | 1.326         | 41.938      |
+
+`I_n · n^{3/2}` converges to 1.329 = (3/2)√π/2. ✓  
+`I_n · n^2` diverges. ✗
+
+### Downstream impact: NONE
+
+The sev-3 correction does not affect:
+- The Padé convergence rate (determined by branch-point type ρ(s)~(s-1)^{1/2}, not by I_n decay)
+- The N ~ 16-20 threshold estimate (table entries unchanged)
+- The structural distinction table (§5)
+- The project thesis implications (§6)
+
+The Stahl theorem applies to Stieltjes functions with square-root endpoint regardless of whether
+the Taylor coefficients decay as n^{-3/2} or n^{-2}; the convergence rate N^{-4/3} is determined
+by the branch-point singularity type only.
+
+Physical reason for n^{-3/2}: The QED spectral function near threshold goes as
+Im Π(s) ~ (s - 4m²)^{1/2} (two-particle phase space). The Taylor coefficients of a Stieltjes
+function with square-root endpoint density always decay as n^{-3/2} (by the Abelian theorem for
+Stieltjes transforms). This is internally consistent: the spectral weight controls both the
+coefficient decay AND the Padé convergence rate (both governed by the threshold exponent 1/2).
+
+### Padé fit re-confirmed
+
+Power-law fit to |z_pole - 1| data (unchanged table from §§2-4):
+- N=1..10: exponent = -1.560, prefactor = 0.757
+- N=5..10: exponent = -1.722, prefactor = 1.034
+- Stahl asymptotic: -4/3 (consistent with finite-N deviations above)
+
+N for 1% threshold:
+- Full fit (N^{-1.56}): N ≈ 16
+- Stahl (N^{-4/3}): N ≈ 26
+- N^{-3/2} fit: N ≈ 20
+
+Range N ~ 16-26 (depending on which fit; 20 is the central estimate). Previous N ~ 16-20 is
+confirmed as the lower end; conservative upper bound is N ~ 26 using the Stahl rate.
+
+**Status: THREE-AGENT complete (computationalist §1-7, critic C8.1-C8.3, physicist §9).
+This amendment closes the sev-3 correction from BB6.**

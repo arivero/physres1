@@ -89,6 +89,8 @@ For any state on the circle, define the circular concentration \(R=|\langle e^{i
 \]
 When \(R=0\) (uniform distribution, as in an \(L_z\) eigenstate) the bound is trivial. As \(R\to1\) (sharply localized angle) the bound forces \(\mathrm{Var}(L_z)\to\infty\): angular localization requires spreading across many \(m\)-modes. This quantifies the Fourier tradeoff above without invoking a self-adjoint angle operator.
 
+This inequality was first derived (in equivalent form) by Judge (1964) [Judge1964] and developed systematically by Carruthers and Nieto (1968) [CarruthersNieto1968]; the present derivation follows their approach. The contribution of this section is the explicit verification (Example 4.3) and the near-saturation analysis (Remark 4.4) in the context of central-potential quantum mechanics.
+
 `Example 4.3 (Verifying the bound for the Dirichlet-kernel packet).`
 For the state \(\psi_M\) of Example 4.1, the circular concentration is \(R=\langle e^{i\phi}\rangle = 2M/(2M+1)\) (by orthogonality, only the \(2M\) consecutive pairs \((m,m+1)\) with both in \(\{-M,\dots,M\}\) contribute). The angular-momentum variance is \(\mathrm{Var}(L_z)=\hbar^2 M(M+1)/3\) (using \(\sum_{m=1}^M m^2 = M(M+1)(2M+1)/6\) and \(\langle L_z\rangle=0\) by symmetry). The ratio of the left-hand side to the right-hand side of the bound in Proposition 4.2 is
 \[
@@ -249,3 +251,5 @@ The coherent states of Example 6.1 provide not only a phase-space portrait (Rema
 36. [PeggBarnett1989] D. T. Pegg and S. M. Barnett, "Phase properties of the quantized single-mode electromagnetic field," *Physical Review A* 39 (1989), 1665–1681. DOI `10.1103/PhysRevA.39.1665`. (Hermitian phase operator via truncation and limit; used in Remark 2.3.)
 37. [Feynman1955] Richard P. Feynman, "Application of quantum mechanics to liquid helium," in *Progress in Low Temperature Physics*, Vol. 1, ed. C. J. Gorter, North-Holland, 1955, pp. 17–53. (Quantized circulation in superfluid helium; used in Remark 3.4.)
 38. [Matthews1999] M. R. Matthews, B. P. Anderson, P. C. Haljan, D. S. Hall, C. E. Wieman, and E. A. Cornell, "Vortices in a Bose-Einstein condensate," *Physical Review Letters* 83 (1999), 2498–2501. DOI `10.1103/PhysRevLett.83.2498`. (First direct imaging of BEC vortex; used in Remark 3.4.)
+39. [Judge1964] D. Judge, "On the uncertainty relation for angle variables," *Il Nuovo Cimento* 31 (1964), 332–340. DOI `10.1007/BF02733639`. (First circular uncertainty relation for angle-angular momentum; used in Proposition 4.2.)
+40. [CarruthersNieto1968] P. Carruthers and M. M. Nieto, "Phase and angle variables in quantum mechanics," *Reviews of Modern Physics* 40 (1968), 411–440. DOI `10.1103/RevModPhys.40.411`. (Systematic treatment of angle uncertainty via circular statistics; framework for Proposition 4.2.)

@@ -444,3 +444,107 @@
 - wrote: BB1 §8 (critic third-agent review, 2 sev-3, 1 sev-4)
 - updated: blackboards/README.md slot 1 (THREE-AGENT complete)
 - marked: Task #30 completed
+
+## 2026-02-21 (Session 2: Re-votes + research)
+- read: papers/relativistic-central-orbits/main.md (full, 310 lines) for Round 2 re-vote
+- read: papers/relativistic-central-orbits/referee-1.md, referee-2.md (both full)
+- read: papers/relativistic-central-orbits/votes.md (2/5: mathematician YES, physicist YES)
+- verified all 11 referee concerns addressed:
+  - MAJOR (Remark 5.2d epicyclic ratio): 3-line derivation now explicit, M_eff=γm (Hamiltonian) correct
+  - m1: Remark 3.1d inline central-impulse justification present
+  - m2: L=K/c marginal W_L ~ m²c⁴r/(2K) asymptotic present
+  - m3: Will1993 §9 cited for 1/6 precession decomposition
+  - m4: Sommerfeld accidental degeneracy caveat in Remark 3.2b
+  - m5/m10: LandauLifshitz §14 and Will1993 in references
+  - m6: Binet substitution intermediate step (Hamiltonian → orbit ODE)
+  - m7: "coordinate identity specific to Schwarzschild time"
+  - m8: Sign convention clarified (F_r=-K/r^q, U'=K/r^q>0 consistent)
+  - effective-mass γm vs γ³m rebuttal explicitly justified
+- voted: YES on relativistic-central-orbits (Round 2)
+- read: papers/half-density-qft/main.md (full, 269 lines) for Round 2 re-vote
+- read: papers/half-density-qft/referee-1.md, referee-2.md (both full)
+- read: papers/half-density-qft/votes.md (2/5: physicist YES, mathematician YES)
+- verified all 13 referee concerns (11 addressed, 2 deferred as stylistic):
+  - M1: "exactly absorbs" → "matches at leading (Ricci scalar) order" with subleading caveat
+  - M2: [ParkerToms2009, §6.3] added at line 158 + ref #8
+  - m1-m11: all checked and confirmed resolved or acceptably deferred
+  - 2 deferred (HD-D4.1 orphan, §5 renumbering) are genuinely non-blocking
+- voted: YES on half-density-qft (Round 2)
+- verified: BB1 arithmetic forcing chain already promoted as Remark P9.3 (lines 1323-1341) with both sev-3 fixes applied
+- verified: path-integral-normalization STILL has sev-1 bibliography gap (1 ref for 448 lines)
+- wrote: proposals/critic-edit-pin-bibliography.md (5 external refs: VanVleck1928, Morette1951, DeWitt1957, Vassilevich2003, FeynmanHibbs1965)
+- verified: ordering-equivalence STILL has sev-2 bibliography gap (2 internal refs only for 400 lines)
+- wrote: proposals/critic-edit-oe-bibliography.md (3 external refs: DeWitt1957, AliEnglis2005, deGosson2006)
+- audited: all 12 satellite bibliographies by line count
+  - sev-1: path-integral-normalization (1 ref / 447 lines) — proposal submitted
+  - sev-2: ordering-equivalence (2 refs / 396 lines) — proposal submitted
+  - sev-2: rooted-tree-bookkeeping (5 refs / 426 lines, missing Brouder 1999 originator) — proposal submitted
+  - adequate: tangent-groupoid-bridge (9 refs / 344 lines), half-density-qft (8 refs / 268 lines),
+    relativistic-central-orbits (6 refs / 309 lines), planck-area (9 refs / 750 lines),
+    rg-fundamental (10 refs / 731 lines), rcp-foundations (6 refs / 441 lines)
+  - oversized refs: uncuttable (38 refs / 243 lines), fermionic-mediators (40 refs / 244 lines),
+    action-angle (40 refs / 251 lines) — survey papers, not a bibliography problem per se
+- wrote: proposals/critic-edit-rtb-bibliography.md (1 ref: Brouder2000 — originator of Butcher/RG dictionary)
+
+## 2026-02-21 (Session 2 continued: BB5 review + Task #12)
+- reviewed: BB5 OQ1a §§1-9b-9c + revised §8 (fourth-agent review)
+  - C1: tautology self-correction (§5-6) CORRECT
+  - C2: orthogonality claim sev-2 → RESOLVED by physicist's revised §8 (withdrew S¹/ℝ₊ framing)
+  - C3: H1-H2-H3 hypothesis structure GOOD
+  - C4: Channel 4 speculation sev-3 (may be downstream of Channel 1, not independent)
+  - C5: no new math beyond PA-D1.3; honest exploration, not promotable to paper
+  - §9b "orthogonal" language now superseded by revised §8 (noted)
+- wrote: BB5 §12 (critic fourth-agent review)
+- updated: blackboards/README.md slot 5 (FOUR-AGENT complete)
+- sent: BB5 results to orchestrator
+- claimed: Task #12 (pre-vote review: planck-area, rg-fundamental, fermionic-mediators)
+- read: papers/fermionic-mediators-contact-limits/main.md (full, 244 lines) — re-read for pre-vote
+  - assessment unchanged: GENRE MISMATCH (survey, not research)
+- read: papers/rg-fundamental/main.md (full, 731 lines) — re-read for pre-vote
+  - finding: all 3 sev-2 fixes applied (RG-H1.16, H1.17, H1.18)
+  - finding: reference numbering bug — ref [7] appears twice (ConnesMarcolli2004 + TsutsuiFulopCheon2002Connection)
+  - assessment: CLOSE TO READY (sev-3 ref# fix needed)
+- read: papers/planck-area/main.md (key sections) — re-read for pre-vote
+  - assessment: NOT YET READY (bibliography gap sev-2 + areal-speed section dilutes message)
+  - PA-P4.2 b-calculus addition may confuse referees
+- wrote: proposals/critic-prevote-batch2.md (complete assessment of all 3 papers)
+- completed: Task #12
+- verified: [PathIntNorm] inconsistency RESOLVED across all papers (now all use [PathIntegralNormalization])
+- verified: Nauenberg bibliography error RESOLVED (reference removed from corpus)
+- verified: 5/5 unanimous votes on both rel-orbits and half-density-qft. Task #11 unblocked.
+- Philosophenweg: PA-H2.5a justification analysis
+  - J1: perturbative analyticity at G=0 (strongest candidate)
+  - J2: tree-level vs loop-level scale generation (deepest formulation)
+  - J3: EFT coupling classification (weakest, circular)
+  - synthesis: d=4 = unique dim where CLASSICAL gravity supplies HD normalization scale
+  - appended: notebooks/oq1a-planck-area-fundamental.md (PA-H2.5a appendix)
+  - wrote: proposals/critic-edit-pa-h25c-justification.md (new remark for planck-area paper)
+
+## 2026-02-21 (Session 2 continued: full satellite pipeline assessment)
+- Tier 1 pre-vote: rcp-foundations (442 lines, 11 refs) READY; tangent-groupoid-bridge (345 lines, 9 refs) READY
+  - wrote: proposals/critic-prevote-tier1.md
+- Tier 2 pre-vote: ordering-equivalence (400 lines, 5 refs) READY; rooted-tree-bookkeeping (429 lines, 6 refs) READY
+  - verified: PDM factor-of-2 error fixed (alpha^2 n/8 at line 139)
+  - verified: all 3 rooted-tree errors fixed (elementary differential, B-series coefficients, coproduct)
+  - verified: Brouder 2000 added to bibliography
+  - wrote: proposals/critic-prevote-tier2.md
+- Remaining pre-votes:
+  - rg-fundamental (731 lines, 12 refs): upgraded CLOSE → READY. Ref numbering fix applied.
+  - path-integral-normalization (448 lines, 6 refs): upgraded NOT READY → READY. Bibliography fix applied (5 external refs added).
+  - planck-area (503 lines, 7 refs): upgraded NOT READY → CLOSE. Areal-speed section removed, bibliography added. Needs PA-H2.5c.
+  - action-angle (251 lines, 40 refs): CLOSE. Judge/Carruthers-Nieto citation still missing.
+  - wrote: proposals/critic-prevote-remaining.md
+- Pipeline final: 10 READY, 2 CLOSE (planck-area, action-angle), 2 GENRE MISMATCH (uncuttable, fermionic-mediators)
+- wrote: proposals/critic-edit-aa-prior-art.md (Judge 1964 + Carruthers-Nieto 1968 for action-angle Prop 4.2)
+- cross-reference audit: all satellite internal reference keys consistent, no [PathIntNorm] remnants, no duplicates
+- Philosophenweg: steelman criticism analysis (BB0)
+  - C1: "composition forces hbar" tautology concern — rebutted by Levy exclusion (alpha=2 derived, not assumed)
+  - C3: "textbook repackaging" — partially valid for framework satellites; core results (P4.2, TG-P1.1, PA-D1.3, HD-D1.3b) are genuine
+  - C4: d=4 justification gap — needs PA-H2.5c (classical vs quantum scale generation)
+  - verdict: strongest criticism = C3+C1; defense = explicit forcing chain + distinguish framework from research + cite Luiz-Oliveira
+- library: ingested Judge 1964 (Nuovo Cimento 31:332) → sources/judge-1964-angle-uncertainty.md
+  - foundational paper for circular statistics approach to angular uncertainty
+  - direct prior art for action-angle Prop 4.2
+- library: ingested Carruthers-Nieto 1968 (Rev.Mod.Phys. 40:411) → sources/carruthers-nieto-1968-phase-angle.md
+  - definitive review establishing R = |<e^{i phi}>| framework
+  - Prop 4.2 follows directly from their Robertson-inequality approach

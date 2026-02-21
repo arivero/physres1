@@ -1,6 +1,6 @@
 # Publication Vote: Relativistic Central Orbits
 
-**Round 2** — after MINOR REVISION: All referee concerns addressed.
+**Round 2** — after MAJOR REVISION: All 11 referee concerns addressed (Remark 5.2d MAJOR derivation + 10 MINOR).
 - Remark 5.2d (MAJOR): explicit 3-line derivation added (Tasks #23, #28)
 - m1: Remark 3.1d inline central-impulse justification added
 - m2: L=K/c marginal case W_L ~ m²c⁴r/(2K) asymptotic added
@@ -18,4 +18,9 @@
 
 | physicist | YES | 2026-02-21 | All referee concerns verified: M_eff=γm correct (Hamiltonian formulation), sign convention explicit, coordinate identity phrasing applied. Paper ready for publication. |
 
-**Result: 2/5 votes so far. Awaiting: critic, computationalist, student.**
+| computationalist | YES | 2026-02-21 | Epicyclic ratio 3-q-β² verified (SymPy). γm Hamiltonian mass correct. All 11 concerns verified. |
+
+| student | YES | 2026-02-21 | All referee concerns verified via independent reading. Derivations clear. Pedagogical quality excellent (Newton→SR→GR progression). No sev-1 or sev-2 issues. Ready for publication. |
+| critic | YES | 2026-02-21 | All 11 referee concerns verified. No remaining sev-1 or sev-2 issues. Paper ready for re-review. |
+
+**Result: 5/5 UNANIMOUS. Paper approved for re-submission to fresh referees.**

@@ -705,3 +705,178 @@ while (ii) holds universally.
 - papers/half-density-qft/main.md §5 (HD-D4.2a: trace anomaly and a_{D/2})
 - Vassilevich2003 (hep-th/0306138): Seeley-DeWitt coefficients
 - meta/motivations.md OQ1 (half-density dimension selection) and OQ1a (Lp vs ℏ)
+
+## 2026-02-21: OQ1a Uniqueness — TWO-AGENT (physicist + computationalist)
+
+### Claim (from blackboards/5.md §§8-9b)
+
+In D=4, if we require the path-integral kernel normalization to use a
+**background-free** (m-independent, τ-independent) area scale, then L_P² = Gℏ/c³
+is the unique such scale available from {G, c, ℏ}.
+
+### Verification (computationalist, SymPy)
+
+**Dimensional check:** [G·ℏ/c³] = m^5·s^{-3} / m^3·s^{-3} = m² ✓
+
+**Uniqueness argument:**
+| Area scale | Constructed from | State-independent? | Universal? |
+|------------|-----------------|-------------------|------------|
+| ℏτ/m       | {ℏ, m, τ}       | No (τ-dependent)  | No         |
+| ℏ/(mc)     | {ℏ, m, c}       | No (m-dependent)  | No         |
+| L_P² = Gℏ/c³ | {G, ℏ, c}    | Yes               | Yes ✓      |
+
+If gravity is present (G available as fundamental constant), L_P² is the UNIQUE
+m-independent, τ-independent area scale. No other combination of {G, c, ℏ} gives an area
+without introducing a mass parameter.
+
+**ℂ× orthogonality (not tautological):**
+- ℏ controls the *phase* of the Feynman weight: exp(iS/ℏ) — lives in S¹ ⊂ ℂ×
+- L_P² controls the *amplitude normalization* of the kernel: K ~ (L_P²/t)^{D/2} — lives in ℝ₊ ⊂ ℂ×
+- ℂ× = ℝ₊ × S¹ (orthogonal decomposition)
+- Therefore ℏ and L_P² are *orthogonal* inputs, not redundant by substitution
+
+This is the content of physicist §8: "ℏ fixes action phase (S¹ factor), L_P² fixes geometric
+area normalization (ℝ₊ factor)." The computationalist second-agent pass confirms this is a
+genuine structural distinction, not a trivial rewriting.
+
+### Scope and limitations
+
+- The uniqueness argument assumes gravity is present (G is a fundamental constant).
+  In QM without gravity, L_P² is not available as an independent input; ℏ alone suffices.
+- "Background-free" means: the area scale must not depend on the particle state (m, τ).
+  This is the key additional assumption beyond standard QM.
+- The argument does not prove that L_P² *is* the area scale of the physical path integral;
+  it shows that *if* a background-free universal area is demanded, *then* L_P² is the unique candidate.
+  This is a conditional, not a derivation.
+
+### Status
+
+TWO-AGENT (physicist blackboards/5.md §§1-9 + computationalist §9b). Sev-3 (speculative but
+well-posed). No paper-edit needed at this stage; relevant to planck-area satellite §2 (open
+questions HD-H2.3–H2.5). Promote to planck-area paper only after third-agent (mathematician).
+
+---
+
+## Section OQ1a-Uniqueness: Uniqueness of L_P² as Background-Free Area Scale
+
+**Date:** 2026-02-21
+**Agents:** physicist (claim), computationalist (dimensional verification), mathematician (Buckingham + precision)
+**Source:** blackboards/5.md §§8-9c
+
+### Claim
+
+Among all area scales constructible from {G, c, ℏ, m_particle, τ_evolution}, only L_P² = Gℏ/c³ is:
+(a) independent of particle mass m, AND
+(b) independent of evolution time τ.
+
+### Verification (THREE-AGENT)
+
+**Buckingham π-theorem (mathematician):**
+From {G, c, ℏ} alone: 3 quantities, 3 fundamental dimensions (L, M, T), rank-3 dimension matrix.
+→ Unique area scale: Gℏ/c³. Proof: [G·ℏ/c³] = m² ✓ (unique dimensional combination with area = L²).
+
+State-dependent alternatives ruled out:
+- ℏτ/m: depends on τ (evolution time) — not universal
+- ℏ/(mc): Compton area — depends on m (particle mass) — not universal
+- c²τ²: depends on τ — not universal
+
+**Dimensional verification (computationalist, SymPy):**
+[Gℏ/c³] = (m³·kg⁻¹·s⁻²)(kg·m²·s⁻¹)(m·s⁻¹)⁻³ = m² ✓
+
+**ℂ× orthogonality (physicist + computationalist):**
+- ℏ determines action quantum: appears in exp(iS/ℏ) — oscillation phase
+- L_P² determines normalization: appears in (L_P²/t)^{D/2} — geometric amplitude
+These roles are dimensionally independent and cannot substitute for each other.
+
+### Conditional Structure (mathematician precision)
+
+The uniqueness holds CONDITIONALLY on G being present. Without gravity:
+- From {c, ℏ} alone: no universal area (ℏ/c has dimensions kg·m, not area)
+- The uniqueness argument requires the full set {G, c, ℏ}
+
+OQ1a proper statement: "IF gravity is forced to exist by the RCP chain (Stage 4 or independently), THEN L_P² = Gℏ/c³ is the UNIQUE background-free, state-independent area scale in D=4."
+
+### Physical Interpretation
+
+In standard QM (fixed background η_{μν}): ℏ is fundamental, L_P² is derived.
+In background-free QG (dynamical metric): both ℏ and L_P² appear as INDEPENDENT roles:
+- ℏ: action quantum (how much action per quantum cycle)
+- L_P²: geometric unit (how much area per quantum of gravity)
+Their ratio G/c³ = L_P²/ℏ is the "gravitational conversion factor" between action and area.
+
+Neither is "more fundamental" — they parameterize orthogonal sectors of the physical content.
+
+### Note on ℂ× Language
+
+The BB1 §4 framing "ℏ fixes S¹ phase, L_P² fixes ℝ₊ norm" is an analogy, not an identification.
+Mathematically precise: ℏ and L_P² appear in different structural roles in the path integral kernel (phase vs. normalization), and are dimensionally independent. The ℂ× decomposition ℂ× = ℝ₊ × S¹ captures this independence at the level of analogy.
+
+**Status:** THREE-AGENT complete. Stable result for planck-area satellite §7 or §8 if needed.
+
+### Critic Precision (sev-2 fix, FOUR-AGENT complete)
+
+**Sev-2:** "Orthogonal" and "independent" overclaim the relationship between ℏ and L_P².
+Since L_P² = Gℏ/c³ explicitly contains ℏ, L_P² is NOT independent of ℏ.
+
+**Correct statement:** The roles of ℏ and L_P² in the path integral kernel are DISTINCT:
+- ℏ sets the action quantum: appears in exp(iS/ℏ) as the oscillation denominator
+- L_P² sets the normalization scale: appears in (L_P²/t)^{D/2} as the amplitude prefactor
+Distinct roles, not independent quantities. The ratio G/c³ = L_P²/ℏ absorbs the dimensional relationship.
+
+**What OQ1a actually shows (re-derivation + sharpening of PA-D1.3):**
+- Under the background-free hypothesis (PA-H2.4), the unique state-independent area from {G,c,ℏ} is L_P² = Gℏ/c³
+- This re-derives PA-D1.3 (integrality sieve selects d=4) in different language
+- NOT a new result, but a useful self-consistency check
+
+**Real open question (critic C3):** Does PA-H2.5a (integrality sieve, fractional-power exclusion) have independent physical justification beyond "aesthetics"? PA-H2.7 flags this as the key vulnerability in the planck-area satellite. OQ1a does not address this.
+
+**Status:** FOUR-AGENT complete (physicist + computationalist + mathematician + critic). Not promotable to paper in current form; stable as notebook context for planck-area §7-8 cross-reference.
+
+---
+
+## Appendix: PA-H2.5a Justification Analysis (Critic Philosophenweg, 2026-02-21)
+
+**Question:** Does the integrality sieve (PA-H2.5a) — requiring the scalarization constant to be a monomial in couplings with integer exponents — have independent physical justification?
+
+### Three Candidate Justifications
+
+**J1. Perturbative analyticity at G=0 (PA-H2.5b)**
+
+If the scalarization constant C must be analytic in G at G=0 (i.e., the flat-space limit is smooth), then only non-negative integer powers of G are allowed. G^{1/2} or G^{d/(2(d-2))} for non-integer exponents violate analyticity.
+
+Physical content: the flat-space limit (gravity decoupled) should be a smooth deformation. This is not a vacuous requirement — in the semiclassical expansion, the path integral is organized as a power series in G (graviton loops), and each order is an integer power.
+
+Assessment: STRONGEST candidate. But note: analyticity at G=0 is a perturbative statement. Non-perturbative gravity may violate it.
+
+**J2. Tree-level vs loop-level scale generation**
+
+PA-H2.5a selects d=4 using tree-level (monomial) coupling dependence.
+PA-H2.13 (transmutation) works in ANY d using loop-level (non-analytic) dependence.
+
+The physical distinction: d=4 is the unique dimension where the CLASSICAL gravitational coupling alone provides the half-density normalization scale. In all other dimensions, quantum effects (running couplings, transmutation) are needed.
+
+This means: **d=4 is the unique dimension where half-density normalization is compatible with purely classical gravity.**
+
+Assessment: INTERESTING and potentially the deepest formulation. Connects to the question "does the classical limit determine the quantum normalization?"
+
+**J3. EFT coupling classification**
+
+In effective field theory, couplings are classified by engineering dimension:
+- Relevant ([g] = length^a, a > 0): grow in IR
+- Marginal ([g] = dimensionless): logarithmic running
+- Irrelevant ([g] = length^a, a < 0): suppressed in IR
+
+The integrality sieve is equivalent to: the scalarization constant is built from the same couplings that appear in the action at integer powers. This is the standard EFT assumption — no "square root of a coupling" appears in the Lagrangian.
+
+Assessment: WEAKEST candidate. It's a circular restatement (the sieve is equivalent to the standard EFT power-counting assumption, which is itself a convention).
+
+### Synthesis
+
+J1 and J2 together give the strongest justification:
+- PA-H2.5b (analyticity at G=0) is the perturbative justification
+- J2 (classical vs quantum scale) is the conceptual justification
+- Both point to the same conclusion: d=4 is singled out as the unique dimension where TREE-LEVEL gravity supplies the half-density scale
+
+The PA-H2.7 vulnerability remains: if one allows non-analytic G-dependence (e.g., from quantum gravity effects), the sieve breaks and d=4 is no longer unique. The sieve is a PERTURBATIVE statement about the classical limit.
+
+**Recommendation for planck-area paper:** Add a brief remark (PA-H2.5c or similar) stating: "The physical content of PA-H2.5a is that d=4 is the unique dimension where the half-density normalization can be supplied by the classical (tree-level) gravitational coupling. In other dimensions, the scale requires quantum (loop-level, non-analytic) generation." This converts the sieve from an aesthetic assumption to a physical distinction between classical and quantum scale generation.

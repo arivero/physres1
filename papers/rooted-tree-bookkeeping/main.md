@@ -171,9 +171,9 @@ To see the tree grafting structure explicitly, we examine the order-3 trees and 
 
 **The two order-3 trees:**
 1. \(\tau_3^{(1)} = [\bullet, \bullet]\): root with two children (elementary differential \(F(\tau_3^{(1)})(y) = f''(y)(f(y), f(y))\)).
-2. \(\tau_3^{(2)} = [[\bullet]]\): root with nested child (elementary differential \(F(\tau_3^{(2)})(y) = (f' \circ f)'(y) f(y) = f''(y)(f(y), f(y)) + f'(y) f'(y) f(y)\)).
+2. \(\tau_3^{(2)} = [[\bullet]]\): root with nested child (elementary differential \(F(\tau_3^{(2)})(y) = f'(y)(f'(y)\,f(y))\), i.e., the Jacobian \(f'\) applied to the order-2 elementary differential \(f'f\)).
 
-Wait—these are **not** the same: \(\tau_3^{(1)}\) contributes only the \(f''(f,f)\) term, while \(\tau_3^{(2)}\) contributes \(f''(f,f) + f' f' f\). The two trees are **distinct** combinatorial objects, even though they both have order 3.
+**Remark.** These two trees are **distinct** combinatorial objects, even though they both have order 3. \(\tau_3^{(1)}\) involves the second Fréchet derivative \(f''(f,f)\) (two subtrees grafted simultaneously onto the root), while \(\tau_3^{(2)}\) involves only iterated application of the first derivative \(f'(f'f)\) (subtrees grafted in series). The elementary differential for \(\tau_3^{(2)}\) contains **no** \(f''\) term — it is purely \(f'(y)\,f'(y)\,f(y)\), not the chain-rule expansion of \((f' \circ f)'\). This distinction, tracked automatically by the Butcher recursion \(F([t_1, \ldots, t_m])(y) = f^{(m)}(y)(F(t_1)(y), \ldots, F(t_m)(y))\), is precisely what the tree bookkeeping organizes.
 
 **Midpoint method at order 3:** Expanding the midpoint B-series to \(O(h^3)\), the coefficients are:
 \[
@@ -192,18 +192,11 @@ Neither condition is satisfied: \(\Delta a(\tau_3^{(1)}) = 1/8 - 1/6 = -1/24\) a
 (a \star a)(\tau_3^{(1)}) = \text{(sum over ways to graft two } \tau_1 \text{ trees)}.
 \]
 
-Explicitly, for the midpoint method:
-\[
-(a_{\text{mid}} \star a_{\text{mid}})(\tau_3^{(1)}) = a(\tau_1)^2 \cdot \gamma(\tau_3^{(1)}) / \sigma(\tau_3^{(1)}) = 1^2 \cdot 1 / 2 = \tfrac{1}{2}.
-\]
+Explicitly, the order-3 composition coefficients \((a \star a)(\tau_3^{(i)})\) differ from the exact-flow coefficients \(1/(\sigma(\tau) \, |\tau|!)\), confirming that \(\Phi_h \circ \Phi_h - \Phi_{2h}\) is \(O(h^3)\) as expected, consistent with the midpoint method being order-2 accurate. (The Butcher product formula involves the density \(\gamma(\tau) = |\tau|! / \sigma(\tau)\) and the symmetry factor \(\sigma(\tau)\); see [Butcher2016, §3.1] for the full convolution rule.)
 
-The composition error \(\Phi_h \circ \Phi_h - \Phi_{2h}\) is \(O(h^3)\) as expected, consistent with the midpoint method being order-2 accurate.
-
-**Parallel to RG:** At two loops in RG, there are two topologically distinct diagrams:
-1. **"Sunset" diagram** (two loops attached to a single vertex): analogous to \(\tau_3^{(1)} = [\bullet, \bullet]\).
-2. **"Nested loop" diagram** (one loop inside another): analogous to \(\tau_3^{(2)} = [[\bullet]]\).
-
-The BPHZ subtraction recursion treats these differently: the sunset has **no nested subdivergence** (both loops must be subtracted simultaneously), while the nested-loop diagram has **one nested subdivergence** (subtract the inner loop first, then the outer). The Hopf coproduct \(\Delta(\tau)\) (Section 6.2) encodes exactly this distinction. The tree formalism unifies the RK and RG treatments because the combinatorial structure of "nested vs simultaneous" is the same in both settings.
+**Parallel to RG:** At two loops in RG, there are two topologically distinct diagram classes:
+1. **"Branching" diagram** (two independent sub-loops meeting at a single vertex): analogous to \(\tau_3^{(1)} = [\bullet, \bullet]\). Its subdivergences are non-nested (both must be subtracted simultaneously).
+2. **"Nested" diagram** (one loop inside another): analogous to \(\tau_3^{(2)} = [[\bullet]]\). It has **one nested subdivergence** (subtract the inner loop first, then the outer). The Hopf coproduct \(\Delta(\tau)\) (Section 6.2) encodes exactly this distinction. The tree formalism unifies the RK and RG treatments because the combinatorial structure of "nested vs simultaneous" is the same in both settings.
 
 # 4. RG Counterterm Recursion (Template)
 
@@ -236,7 +229,7 @@ In the **Connes–Kreimer formalism**, Feynman graphs are decomposed into **root
 \]
 where the sum runs over admissible cuts (ways to split the tree into a "subtree to subtract" and a "remainder").
 
-**Example (one-loop sunset):**
+**Example (one-loop self-energy):**
 Tree \(\tau = [\bullet]\) (one node with one child). Coproduct:
 \[
 \Delta([\bullet]) = [\bullet] \otimes 1 + 1 \otimes [\bullet] + \bullet \otimes \bullet.
@@ -252,9 +245,9 @@ Changing the subtraction scale \(\mu \to \mu'\) induces a transformation \(R_{\m
 \]
 where \(\beta_0\) is determined by the one-loop divergence. The tree structure of higher-loop beta functions follows from the Hopf coproduct: nested divergences yield nested commutators in the RG generator.
 
-**Placeholder:** A fully worked two-loop example (with explicit tree grafting) is deferred to a later draft or a separate technical appendix. For now, the one-loop structure suffices to anchor the dictionary.
+A two-loop worked example showing explicit tree grafting on the RG side is deferred to future work; the one-loop structure suffices to anchor the dictionary at leading order.
 
-## 4.4 Worked Example: 2D Delta Interaction (One-Loop)
+## 4.5 Worked Example: 2D Delta Interaction (One-Loop)
 
 To make the tree structure concrete, we present a one-loop quantum-mechanical renormalization: the two-dimensional contact interaction. This is the RG analogue of the midpoint RK example in Section 3: both involve a **single-node rooted tree** \(\tau_1 = \bullet\), and both satisfy a composition law.
 
@@ -262,7 +255,7 @@ To make the tree structure concrete, we present a one-loop quantum-mechanical re
 \[
 H = -\frac{\hbar^2}{2m}\Delta + g\,\delta^{(2)}(x) \quad \text{on } \mathbb{R}^2.
 \]
-The Dirac-delta interaction is singular, and loop integrals diverge logarithmically. The continuum theory is ill-defined without renormalization.
+The Dirac-delta interaction is singular, and loop integrals diverge logarithmically [Jackiw1991]. The continuum theory is ill-defined without renormalization.
 
 **Tree diagram.** At first order in the coupling \(g\), the \(T\)-matrix (scattering amplitude) involves the Lippmann–Schwinger integral \(\int G_0 \, g \, G_0\), where \(G_0\) is the free resolvent. This corresponds to a rooted tree with **one node** (the vertex \(g\)) and **one loop** (the closed propagator). At this order, there are **no nested subdivergences**—the tree has no subtrees. This is the direct analogue of the order-1 Butcher tree \(\tau_1 = \bullet\).
 
@@ -365,7 +358,7 @@ This encodes: "either keep the full tree (no cut) or remove it entirely (trivial
 
 **Connection to composition:** The term \(\bullet \otimes \bullet\) says: "to compose two trees of order 1, you get a tree of order 2 by grafting one into the other." This is the algebraic shadow of:
 - **Butcher:** \(\Phi_h \circ \Phi_h = \Phi_{2h}\) (step doubling, Section 3.3).
-- **RG:** Nested one-loop subdiagram subtracted from outer one-loop diagram (Section 4.4).
+- **RG:** Nested one-loop subdiagram subtracted from outer one-loop diagram (Section 4.5).
 
 **Order-3 trees (two examples):**
 
@@ -393,7 +386,7 @@ S([\bullet]) = -[\bullet] - S(\bullet) \cdot \bullet = -[\bullet] - (-\bullet) \
 \]
 This is the **forest formula**: to renormalize a one-loop diagram (tree \([\bullet]\)), subtract the full diagram (\(-[\bullet]\)) and add back the "double subtraction" (\(+\bullet^2\), corresponding to subtracting the subdivergence twice and correcting the overcount). At higher loops, the forest formula generalizes to a sum over all forests (ways to cut nested subdivergences).
 
-**Why this matters:** The coproduct \(\Delta\) is not an abstract formalism—it is the **explicit recipe** for how to compose or subtract trees order-by-order. The midpoint RK composition (Section 3.3) and the 2D delta RG subtraction (Section 4.4) are both **instances** of the coproduct in action. The Hopf algebra unifies them because the combinatorics of "cutting trees" is the same whether the trees index derivatives (Butcher) or subdivergences (RG).
+**Why this matters:** The coproduct \(\Delta\) is not an abstract formalism—it is the **explicit recipe** for how to compose or subtract trees order-by-order. The midpoint RK composition (Section 3.3) and the 2D delta RG subtraction (Section 4.5) are both **instances** of the coproduct in action. The Hopf algebra unifies them because the combinatorics of "cutting trees" is the same whether the trees index derivatives (Butcher) or subdivergences (RG).
 
 ## 6.3 Relation to Composition Compatibility
 
@@ -424,3 +417,7 @@ This note has made explicit a dictionary between Butcher theory (rooted trees fo
 4. [Kreimer1999] Dirk Kreimer, "On the Hopf algebra structure of perturbative quantum field theories," *Adv. Theor. Math. Phys.* 2 (1998), 303–334. arXiv:`q-alg/9707029`. OA: arXiv. (Tree formalism for renormalization, coproduct and forest formula.)
 
 5. [Main] Companion paper, "Refinement Compatibility and the Structural Necessity of Renormalization" (in preparation). (RG as scale-compatibility condition, composition forcing finite deformation parameter.)
+
+6. [Brouder2000] Christian Brouder, "Runge-Kutta methods and renormalization," *European Physical Journal C* 12 (2000), 521–534. arXiv:`hep-th/9904014` (1999). DOI `10.1007/s100529900235`. (First explicit identification of Butcher group with Connes-Kreimer renormalization group; originator of the dictionary this paper develops.)
+
+7. [Jackiw1991] R. Jackiw, "Delta function potentials in two- and three-dimensional quantum mechanics," in *M.A.B. Beg Memorial Volume*, eds. A. Ali and P. Hoodbhoy (World Scientific, 1991), 25–42. (Standard treatment of 2D contact-interaction renormalization.)

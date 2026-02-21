@@ -2,63 +2,220 @@
 
 **Referee:** referee-2
 **Date:** 2026-02-21
+**Round:** 2 (re-review after MAJOR REVISION)
 **Paper:** pub-track/sent/half-density-qft/main.md
+
+---
 
 ## Summary
 
-The paper argues that spacetime propagators in QFT should be understood as bi-half-density kernels, making the identity kernel canonical and kernel composition coordinate-invariant without a background measure. The argument is organized around three threads: (1) a worked computation densitizing a curved-background scalar field via ψ = |g|^{1/4} φ; (2) a remark chain showing that the D/2 exponent unifies the normalization of the identity kernel, the heat kernel short-time behavior, the flat propagator prefactor, and UV divergence degrees; and (3) a kernel-level account of contact terms and counterterms as distributions supported on the diagonal. The paper is explicitly scoped as expository and connective rather than as a source of new theorems.
+The paper argues that spacetime propagators in QFT are naturally bi-half-density
+kernels, making the identity kernel canonical and kernel composition
+coordinate-invariant without a background measure. The case is built from three
+interlocking threads: (1) a worked scalar-field computation showing that the
+densitized field psi = |g|^{1/4} phi conjugates the kinetic operator to a form
+symmetric under the flat coordinate pairing; (2) a remark chain in Sections 4-5
+establishing that the D/2 exponent unifies identity-kernel normalization, the
+heat-kernel short-time behavior, the flat propagator prefactor, and UV divergence
+degrees; and (3) a kernel-level account of counterterms as distributions
+supported on the diagonal. The paper is explicitly scoped as expository and
+connective, deferring BV, interacting theories, and the Planck-area program to
+companion notes.
+
+---
 
 ## Strengths
 
-- The organizing idea is sound and cleanly stated: the bi-half-density language makes the identity kernel canonical, removes hidden measure conventions from propagator definitions, and makes kernel composition intrinsic.
-- The remark chain in Sections 4–5 is the paper's strongest contribution. Remarks HD-D4.2, HD-D4.4, HD-D4.5, HD-D5.3, and HD-D5.3b form a coherent thread showing that the D/2 exponent is not a numerical coincidence but has a single origin in half-density volume-scaling. The proper-time integral as the bridge from heat-kernel t^{-D/2} to propagator Γ(D/2-1) is correctly stated and illuminating.
-- Remark HD-D1.3b (universal 1/6 coefficient from normal-coordinate expansion) is technically precise: the computation of ω = (1/4)ln|g|, its Laplacian at p, and the identification with the a_1 Seeley-DeWitt coefficient are all correct and the match with conformal coupling only at D=4 is accurately stated.
-- Remark HD-D1.3a carefully distinguishes half-density conjugation from conformal coupling (the Yamabe operator). This is a genuinely useful clarification that is often elided in the literature.
-- References are appropriate: Bates-Weinstein (canonical source for half-density formalism), Hörmander (Schwartz kernel theorem), Vassilevich (heat kernel asymptotics), DeWitt, Wald. No obvious gaps for the stated scope.
-- Scope management is good: BV, full curved-background interacting QFT, and the Planck-area program are all explicitly deferred rather than overpromised.
+- The central identification of bi-half-density kernels as the natural language
+  for QFT propagators is mathematically sound and well-supported by standard
+  references (Bates-Weinstein, Hormander, Parker-Toms).
+
+- The D/2 unification thread (Remark HD-D4.5) is the paper's strongest
+  conceptual contribution. Collecting the four appearances of D/2 --- identity
+  kernel normalization, heat kernel short-time behavior (4pi t)^{-D/2}, flat
+  propagator prefactor Gamma(D/2-1)/(4pi)^{D/2}, and UV degree Lambda^{D-2} ---
+  under a single half-density volume-scaling explanation is correct and
+  illuminating.
+
+- Remark HD-D1.3b (universal 1/6 coefficient) is the paper's most technically
+  precise result. The normal-coordinate derivation of V(p) = R/6 is correct;
+  the identification with the first Seeley-DeWitt coefficient a_1 = (1/6-xi)R
+  is accurate; and the D=4 coincidence xi_conf = 1/6 is cleanly separated from
+  any claim of conformal invariance.
+
+- Remark HD-D1.3a carefully distinguishes the half-density bundle (weight D/2)
+  from the conformal density bundle (weight (D-2)/2) and shows quantitatively
+  why the conjugated Laplacian cannot equal the Yamabe operator for any single
+  xi. This is a useful clarification that is often elided in the literature.
+
+- Scope management is consistently good throughout. BV, full interacting
+  theories, and the Planck-area program are all flagged as out of scope with
+  explicit pointers to companion notes; the scope disclaimer after HD-D1.3 is
+  appropriately placed.
+
+- The reference list is comprehensive and correctly formatted. Parker-Toms
+  §6.3 is now cited for the G-tilde = |g|^{1/4} G_g |g|^{1/4} identity in
+  the QFT-on-curved-spacetime context, addressing the gap noted in Round 1.
+
+- The D=4 simplification in HD-D1.3 is clearly labelled as a checked
+  simplification for this metric class and not a dimension-selection claim,
+  with the SymPy verification noted. The distinction between D=4 cancellation
+  in the conformal ansatz and the universal 1/6 result of HD-D1.3b is now
+  cleanly articulated across the two consecutive remarks.
+
+---
 
 ## Weaknesses
 
 ### MAJOR
 
-- **Remark HD-D1.3b: claim about ξ_conf = 1/6 at D=4 needs a cleaner statement.** The paper writes "the half-density weight exactly absorbs the conformal coupling" in D=4. This phrasing conflates two distinct things: (a) that ξ_conf = (D-2)/(4(D-1)) equals 1/6 only at D=4, and (b) that the leading-order curvature potential generated by half-density conjugation is +R/6. The implication that D=4 is singled out by the coincidence ξ_conf = 1/6 is correct as stated, but the phrase "exactly absorbs" suggests the total curvature coupling of the half-density-conjugated, conformally-coupled scalar is zero at D=4. This is only true at leading curvature order (the R term), not beyond (R^2, R_μν R^{μν}, ... enter at next order). The paper partially addresses this with "at leading order" but the phrase "exactly absorbs" in the body contradicts the qualifier. This is not a computation error but a clarity failure with potential to mislead; it should be sharpened.
-
-- **Missing reference: Avramidi or Parker-Toms for curved-background propagators.** The paper cites Vassilevich comprehensively for heat kernel asymptotics but does not cite any reference for the relation G̃(x,y) = |g(x)|^{1/4} G_g(x,y) |g(y)|^{1/4} beyond the statement that it "is exactly the same structure used for QM propagators." In the QFT context, this half-density form of the curved-space propagator kernel is discussed explicitly in, e.g., Parker-Toms *Quantum Field Theory in Curved Spacetime* (Cambridge, 2009) and in Avramidi's work on the covariant perturbation theory of heat kernels. The absence of a QFT-on-curved-spacetime reference for this specific identity is a gap at the level of the paper's own stated scope.
+None identified in this round. The two MAJOR concerns from Round 1 have been
+addressed: (1) the "exactly absorbs" phrasing that conflated leading-order and
+subleading curvature terms has been replaced by a careful statement in
+Remark HD-D1.3b ("the half-density conjugation potential R/6 matches the
+conformal coupling ... at leading (Ricci scalar) order; subleading curvature
+terms ... are not affected"), and (2) the Parker-Toms §6.3 citation has been
+added for the bi-half-density form of the curved-space propagator kernel. No
+computational errors are present.
 
 ### MINOR
 
-- **Section 3, Derivation HD-D1.3:** The expansion of Δ_g in conformal coordinates is correct. However, the resulting expression for W̃Δ (equation after "Setting φ = |g|^{-1/4}ψ") omits the cross term −2 ∂σ · ∂ψ from being clearly labeled. In the current layout, a reader expanding derivatives manually will produce this term but must verify it matches the paper's expression; a single-line "expanding product rule gives cross term..." would help.
+- **M1. Remark HD-D4.2a (index theorem) is still imprecise.** The sentence
+  "the index of a Dirac-type operator equals integral of a_{D/2} (up to
+  normalization) via the McKean-Singer supertrace formula" remains in Round 2.
+  The McKean-Singer formula says index(D) = Tr_s[e^{-tD*D}] is t-independent;
+  the Seeley-DeWitt expansion then localizes it on the integral of a_{D/2}.
+  But "up to normalization" conceals that in the Dirac case a_{D/2} is the
+  A-hat-genus integrand, not a generic multiple of it --- this is the content
+  of Atiyah-Singer, not a triviality. Since the paper flags this as beyond
+  scope, the simplest fix is to add a parenthetical: "(in the Dirac case,
+  a_{D/2} is the A-hat-genus integrand; the general characteristic-class
+  connection is beyond this note's scope)." The current phrasing risks
+  misleading a reader unfamiliar with McKean-Singer.
 
-- **Remark HD-D4.2a:** The claim that the Atiyah-Singer index theorem follows from a_{D/2} "up to normalization" is accurate but the qualifier is doing heavy work. The McKean-Singer formula gives index(D) = Tr_s(e^{-tD*D}) = Tr_s(e^{-tDD*}) (independent of t), and the Seeley-DeWitt expansion then identifies the index with ∫ a_{D/2}, but the full statement requires the operator to be Dirac-type and the coefficient to be the appropriate characteristic class integrand (Â-genus, etc.). As written, a reader might think the Seeley-DeWitt coefficient a_{D/2} is directly the index integrand for any elliptic operator, which is not true. "Dirac-type operator" is stated, but the connection to characteristic classes is absent. This is an acceptable omission for the paper's scope but should be flagged as such, e.g., "in the Dirac case, a_{D/2} is (up to normalization) the Â-genus integrand; we do not spell this out here."
+- **M2. Remark HD-D4.4 (Van Vleck transport equation) is stated but not
+  connected to the main thesis.** The transport equation for Delta^{1/2} is
+  correctly quoted from DeWitt, but its role in the paper is left implicit.
+  A single sentence --- e.g., "Without the Delta^{1/2} factor, the leading
+  heat-kernel term would not transform as a bi-half-density under coordinate
+  changes in both slots" --- would anchor the remark to the paper's central
+  claim.
 
-- **Remark HD-D4.5 / [PathIntegralNormalization] citation:** The internal citation [PathIntegralNormalization] refers to another paper in this program. The reference list does not contain an entry for it. If this is a companion paper not yet published externally, the reference should be flagged as "companion note" or "in preparation" rather than appearing in bracket notation that implies a published source.
+- **M3. The label-convention parenthetical opening Section 5 belongs in a
+  footnote.** The sentence "(Label convention: remarks in this section are
+  numbered by conceptual group ... rather than in textual order)" is a
+  meta-comment on editorial numbering, not physics. It interrupts the flow
+  of Section 5. Move it to a footnote or drop it; readers can follow the
+  numbering without explanation.
 
-- **Section 5, Remark HD-D5.1:** The claim that ∂_{x^μ} δ^{(D)}(x−y) = −∂_{y^μ} δ^{(D)}(x−y) "has a clean, connection-free formulation via Lie derivative on the identity kernel" is presented as a result of this paper. However, the coordinate identity is a textbook distribution fact and the Lie-derivative formulation is standard in the half-density/geometric quantization literature (e.g., Guillemin-Sternberg). The phrase "has a clean, connection-free formulation" implies this observation is new here, which overstates its novelty. Rephrase to "can be seen cleanly as..."
+- **M4. Remark HD-D5.2 (point splitting / delta-prime) is thin and only
+  partially connected to the half-density framework.** The one-dimensional
+  example is correct but the second stated reason for its usefulness ---
+  "separates canonical distributional objects from scheme-dependent
+  scalarizations" --- is not demonstrated within the remark itself. Either
+  show explicitly how the half-density structure effects this separation,
+  or trim the remark to a single observation without the "two reasons" framing.
 
-- **Abstract:** The abstract mentions "scalarization scales and RG as compatibility" as developed "elsewhere" without a pointer. At minimum, give the companion paper title or tag.
+- **M5. Abstract pointer to companion notes is still missing.** The abstract
+  mentions "scalarization scales and RG as compatibility" developed "in the
+  companion notes" and names them in scare quotes but gives no arXiv number,
+  tag, or even a footnote reference. The named papers appear in the Reference
+  list only as "[PathIntegralNormalization, in preparation]" --- but that
+  citation does not appear in the reference list section at the end. If they
+  are companion notes in preparation, either add a numbered entry in the
+  reference list (marked "in preparation") or add a footnote in the abstract
+  pointing to the companion note title.
+
+---
 
 ## Verdict
 
 **Recommendation:** MINOR REVISION
 
-**Justification:** The paper is technically correct, well-scoped, and the D/2 remark chain is a genuine organizational contribution. Two targeted fixes are needed: sharpening the "absorbs conformal coupling" phrasing in Remark HD-D1.3b to avoid the misleading implication of an exact cancellation beyond leading order, and adding a QFT-on-curved-spacetime reference (Parker-Toms or Avramidi) for the G̃ = |g|^{1/4} G_g |g|^{1/4} identity. The minor items (cross-term clarity, index-theorem qualifier, internal citation format, novelty phrasing in HD-D5.1, abstract pointer) can be addressed together without re-review.
+**Justification:** The paper is mathematically correct and the MAJOR concerns
+from Round 1 have been satisfactorily resolved; the central claim is clearly
+stated and properly qualified. Five minor issues remain, all addressable by
+local edits: tightening the index-theorem sentence (M1), adding a connection
+sentence to HD-D4.4 (M2), moving the label-convention note to a footnote (M3),
+either expanding or trimming HD-D5.2 (M4), and adding a reference-list entry
+or footnote for the companion notes cited in the abstract (M5). None affects
+the correctness of the results. No re-review should be required after these
+edits.
+
+---
 
 ## Detailed Comments
 
-**On the MAJOR items:**
+**Section 1.** The three-item scope list is precise and well-observed throughout.
 
-1. Remark HD-D1.3b, sentence "the half-density weight exactly absorbs the conformal coupling": replace with something like "in D=4, the half-density conjugation potential R/6 matches the conformal coupling ξ_conf R = R/6 exactly at leading (Ricci scalar) order; subleading curvature terms are not affected." This is factually the same as what the remark proves but does not invite the misreading that the total curvature dependence cancels.
+**Section 2 / Derivations HD-D1.1 and HD-D1.1a.** Both are correct. The
+Gaussian normalization argument cleanly motivates the D/2 exponent before the
+machinery of heat kernels is introduced.
 
-2. Section 4, around equation K̃(P^{-1})(x,y) = |g(x)|^{1/4} G_g(x,y) |g(y)|^{1/4}: add a citation such as "[Parker-Toms2009, §6.3]" or "[Avramidi2000]" for this identity in the QFT context, alongside the existing [BatesWeinstein1997] [deGosson2018ShortTimePropagators] which cover the QM case.
+**Section 3 / Derivation HD-D1.2.** The integration-by-parts symmetry
+verification is correct and sufficient. The explicit coordinate form of nabla^2
+is standard (Wald).
 
-**On the MINOR items:**
+**Derivation HD-D1.3 and scope disclaimer.** The conformal-flat expansion is
+correct. The scope disclaimer ("not, by itself, a dimension-selection claim")
+is placed well and is unambiguous. The SymPy note adds confidence.
 
-3. HD-D1.3: add one line "the product rule produces a cross term −2(∂σ)(∂ψ)" before writing down the full expression for W̃Δψ.
+**Remark HD-D1.3a.** The conceptual distinction between the half-density bundle
+and the conformal density bundle is important and now clearly stated. The
+coefficient-mismatch argument for xi_conf vs xi_{half-density} is persuasive and
+accurate.
 
-4. HD-D4.2a: add "(in the Dirac case, a_{D/2} is the Â-genus integrand; the general characteristic class connection is beyond this note's scope)."
+**Remark HD-D1.3b.** The normal-coordinate derivation of V(p) = R/6 is the
+paper's most careful piece of mathematics. The conclusions --- dimension-
+independence of 1/6, coincidence with xi_conf only at D=4, connection to
+a_1 = (1/6-xi)R --- are all correct. Phrase "at leading curvature order;
+subleading curvature terms (R^2, R_{muv}R^{muv}, ...) are not affected" is now
+properly qualified.
 
-5. [PathIntegralNormalization]: change to "(companion note, in preparation)" or give the actual title if it exists in the repo.
+**Section 4 / Remark HD-D4.1.** The density-matrix doubling formula is correct.
+The interpretation (bra/ket doubling from bi-half-density structure) is a nice
+observation, correctly attributed to the kernel structure rather than to any
+additional input.
 
-6. HD-D5.1: change "has a clean, connection-free formulation" to "can be seen cleanly."
+**Remark HD-D4.2.** The DeWitt-Schwinger expansion is correctly stated. The
+identification of K-tilde(t;x,x) ~ (4pi t)^{-D/2} at coincidence as the
+"time-parameterized approximate identity" is a useful bridge back to HD-D1.1a.
+The intrinsic trace formula --- absorbing sqrt|g| into K-tilde --- is correct
+and cleanly presented.
 
-7. Abstract: add "(see [companion paper title or tag])" after "developed elsewhere."
+**Remark HD-D4.2a.** See M1 above. The trace anomaly part is correctly stated.
+The index theorem sentence needs a parenthetical qualifier as noted.
+
+**Remark HD-D4.4.** See M2 above. Transport equation is correctly quoted.
+
+**Remark HD-D4.5.** The proper-time integral as the bridge from heat-kernel
+t^{-D/2} to propagator Gamma(D/2-1) is correctly stated. This is the paper's
+clearest summary statement and would make a good lead sentence for the abstract
+(optional suggestion only).
+
+**Section 5 / Remarks HD-D5.3, HD-D5.3a, HD-D5.3b.** The counterterm scaling
+hierarchy --- mass counterterm Lambda^{D-2}, wave function counterterm Lambda^{D-4},
+and the dim-reg pole structure --- is correctly organized via the Seeley-DeWitt
+coefficients. The identification of each counterterm as a specific Seeley-DeWitt
+coefficient contribution is accurate and useful.
+
+**Remark HD-D5.1.** The Lie-derivative argument for partial_{x^mu} delta =
+-partial_{y^mu} delta is correct and is a genuine conceptual clarification
+(connection-free derivation of a fact usually stated as a distribution identity).
+The phrasing "can be seen cleanly" (if the Round 1 suggestion was adopted) is
+appropriate.
+
+**Remark HD-D5.2.** See M4 above.
+
+**Section 6.** The separation between fixed-background half-density semantics
+(this paper) and the Planck-area background-free program (companion note) is
+clearly and correctly drawn.
+
+**Section 7.** The BV outlook is appropriately brief; Costello is the right
+reference.
+
+**References.** All eight numbered references are properly formatted with DOIs,
+ISBNs, and OA links. The [PathIntegralNormalization] citation appearing in the
+body (Remark HD-D4.5) does not have a corresponding numbered entry in the
+reference list --- this should be added or converted to a descriptive footnote
+(see M5).

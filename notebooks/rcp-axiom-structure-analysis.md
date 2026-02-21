@@ -251,3 +251,79 @@ Composition forces the GEOMETRIC/ALGEBRAIC FACTOR per DOF (1/2, 1/24, or the sem
 - Komargodski-Schwimmer arXiv:1107.3987 (a-theorem, 4D)
 - Di Francesco-Mathieu-Senechal §5-6 (Virasoro algebra)
 - blackboards/5.md (physicist source)
+
+---
+
+## Part 6: OQ2-H1 Axiomatization Convergence (TWO-AGENT: student + mathematician)
+
+**Source:** blackboards/2.md §§1-9 (student survey + mathematician assessment), 2026-02-21.
+**Status:** Sev-3 conceptual (not load-bearing for cornerstone). Good context for rcp-foundations §1 introduction.
+
+### 6.1 The Four Frameworks
+
+| Framework | Axioms | Composition | Refinement | Outcome |
+|-----------|--------|-------------|------------|---------|
+| Hardy (2001) | 5 operational | Tensor product (spatial) | State-space continuity (A5) | Hilbert space QM |
+| AQFT (Haag-Kastler) | 3 locality | Local nets + subnets | Spacelike partition + limits | Operator algebras |
+| Categorical QM (Abramsky-Coecke) | Dagger monoidal | Morphism composition | String diagram reduction | Abstract protocols |
+| P4.2 / RCP | 1 composition + setup | Exponential amplitude weights (temporal convolution) | Partition/repr/scale limits | Path integral quantization |
+
+### 6.2 Hardy → RCP Mapping Assessment
+
+| Hardy Axiom | RCP Channel | Assessment |
+|-------------|-------------|------------|
+| A1 (Simplicity) | None | Eliminated by Chiribella; no RCP counterpart |
+| A2 (Continuous Reversibility) | Partition + Scale | Reversibility → unitarity (partition); continuous → limit compatibility (scale). Two channels, not one. |
+| A3 (Composability) | Partition | MISMATCH: Hardy = spatial tensor product; RCP = temporal convolution. Different composition structures. |
+| A4 (Local Discriminability) | Representation | Best match: states distinguishable by local ops ≈ representation-channel equivalence. |
+| A5 (Continuity) | ALL THREE | Continuity of state space spans all RCP channels. Not a clean one-to-one mapping. |
+
+**Verdict:** NOT isomorphic. Spatial tensor product (Hardy A3) ≠ temporal convolution (RCP partition channel). Hardy's axioms cannot be reorganized as (partition/repr/scale) triples without loss of structural specificity.
+
+### 6.3 AQFT → RCP Mapping (Strongest Correspondence)
+
+| Haag-Kastler Axiom | RCP Channel | Match Quality |
+|--------------------|-------------|---------------|
+| Locality (spacelike commutativity) | Partition Channel | Strong: both subdivide spacetime, require limit stability |
+| Isotony (larger ⊃ smaller regions) | Representation Channel | Strong: region inclusion = representation inclusion |
+| Additivity (nets compose across scales) | Scale Channel | Strong: local nets refine stably = RCP scale compatibility |
+
+**Tentative claim (sev-3, two-agent):** AQFT = RCP for observable algebras, just as P4.2 = RCP for path-integral amplitudes. Two implementations of the same compatibility principle in different mathematical frameworks. Whether formal equivalence (theorem) or structural parallel requires checking if Haag-Kastler axioms imply RCP A1-A4.
+
+### 6.4 Categorical QM → RCP Mapping
+
+| Categorical Structure | RCP Channel | Match Quality |
+|-----------------------|-------------|---------------|
+| Monoidal tensor | Partition Channel | Good: parallel composition of processes |
+| Dagger (adjoint) | Representation Channel | Good: time-reversal = representation-channel symmetry |
+| Scale Channel analog | MISSING | Categorical QM inherently finite-dimensional; no renormalization group |
+
+**Gap:** The scale channel requires infinite-dimensional structure (RG flow, UV divergences). Standard string-diagram formalism does not encode this. Categorical QM is structurally incomplete relative to RCP.
+
+### 6.5 OQ2-H1 Verdict
+
+**PARTIALLY CONFIRMED. No formal isomorphism; conceptual overlap real but uneven.**
+
+Framework hierarchy by structural specificity:
+
+Categorical QM ⊂ Hardy ⊂ AQFT ≈ RCP
+
+- **Most likely formal equivalence:** AQFT ↔ RCP (three axioms ↔ three channels, one-to-one)
+- **Hardy:** Less equivalent (A3 mismatch spatial/temporal, A5 spans all channels)
+- **Categorical QM:** Misses scale channel entirely
+
+### 6.6 Implications
+
+1. **RCP is not idiosyncratic:** Deepest common substrate of modern QM axiomatizations converges on the same tri-channel structure.
+2. **AQFT as RCP implementation:** Haag-Kastler = observable-algebra realization of RCP; P4.2 = path-integral realization. Two faces of one principle.
+3. **Formalization target:** Cross-validate RCP via AQFT: prove/disprove that Haag-Kastler implies RCP A1-A4. Positive result = independent proof that RCP-like principles force QM.
+4. **Pedagogical:** RCP spine can be explained operationally (Hardy), algebraically (AQFT), or categorically (Abramsky-Coecke) — all approximations of the full three-channel structure.
+
+### References
+- Hardy arXiv:quant-ph/0101012 (five axioms reconstruction)
+- Chiribella/Dakic/Masanes 2011+ (refined reconstructions)
+- Haag-Kastler (AQFT axioms); nLab article
+- Abramsky-Coecke arXiv:0808.1023 (categorical QM)
+- papers/rcp-foundations/main.md §5 (RCP three channels)
+- paper/main.md §10 (P4.2 composition forcing)
+- blackboards/2.md (source; student §§1-8, mathematician §9)

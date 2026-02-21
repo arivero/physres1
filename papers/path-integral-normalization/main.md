@@ -445,3 +445,8 @@ These questions are speculative but illustrate that the \(d/2\) exponent, now un
 # References
 
 1. [Main] Companion cornerstone manuscript, "Refinement Compatibility and the Structural Necessity of Renormalization" (Theorem P4.2).
+2. [VanVleck1928] J. H. Van Vleck, "The correspondence principle in the statistical interpretation of quantum mechanics," *Proc. Natl. Acad. Sci. USA* 14 (1928), 178–188. DOI `10.1073/pnas.14.2.178`. (Van Vleck determinant as semiclassical prefactor.)
+3. [Morette1951] Cécile Morette, "On the definition and approximation of Feynman's path integrals," *Physical Review* 81 (1951), 848–852. DOI `10.1103/PhysRev.81.848`. (Rigorous definition of path-integral normalization via short-time kernel composition.)
+4. [DeWitt1957] Bryce S. DeWitt, "Dynamical theory in curved spaces. I. A review of the classical and quantum action principles," *Reviews of Modern Physics* 29 (1957), 377–397. DOI `10.1103/RevModPhys.29.377`. (Curved-space propagator, ordering ambiguity, Van Vleck determinant composition law.)
+5. [Vassilevich2003] Dmitri V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* 388 (2003), 279–360. arXiv:`hep-th/0306138`. DOI `10.1016/j.physrep.2003.09.002`. (Heat kernel asymptotics, Seeley-DeWitt coefficients, t^{-d/2} normalization.)
+6. [FeynmanHibbs1965] Richard P. Feynman and Albert R. Hibbs, *Quantum Mechanics and Path Integrals*, McGraw-Hill, 1965. (Path integral as refinement limit of time-sliced amplitudes; foundational reference for composition semigroup.)

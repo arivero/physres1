@@ -69,6 +69,9 @@ Use this file as a source ledger.
 53. `[Verlinde1988]` Erik Verlinde, "Fusion rules and modular transformations in 2D conformal field theory," *Nuclear Physics B* **300**, 360–376 (1988). DOI `10.1016/0550-3213(88)90603-7`. (Derives fusion multiplicities N^ij_k from the modular S-matrix; non-negativity forces level quantization.)
 54. `[Witten1989]` Edward Witten, "Quantum field theory and the Jones polynomial," *Communications in Mathematical Physics* **121**, 351–399 (1989). DOI `10.1007/BF01217730`. (Chern-Simons theory as 3D TQFT; k∈ℤ from π₃(G)=ℤ gauge invariance; q=e^{2πi/(k+g∨)}.) Source: sources/witten1989-chern-simons-jones.md.
 
+55. `[Murakami1995]` Hitoshi Murakami, "Quantum SO(3)-invariants dominate the SU(2)-invariant of Casson and Walker," *Math. Proc. Cambridge Philos. Soc.* **117** (1995), no. 2, 237–249. DOI `10.1017/S0305004100073084`. (Algebraic integrality of WRT-type SU(2)/SO(3) invariants at prime order roots of unity.)
+56. `[Habiro2008]` Kazuo Habiro, "A unified Witten-Reshetikhin-Turaev invariant for integral homology spheres," *Invent. Math.* **171** (2008), no. 1, 1–81. DOI `10.1007/s00222-007-0071-0`. (Cyclotomic integrality: Z(M³) ∈ ℤ[ζ_N, N^{-1}] for integral homology spheres.)
+
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
 2. `[Noether1918]`: no canonical DOI for the 1918 original publication record used here.

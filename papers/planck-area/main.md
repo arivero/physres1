@@ -3,7 +3,7 @@ title: "Planck Area from Half-Density Normalization"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
-  Half-densities are the natural “coordinate-free integrands” for composing kernels without choosing a background measure. But choosing a *universal* convention for turning half-density objects into dimensionless numerical amplitudes introduces a \(\text{length}^{d/2}\) scale. In \(d=4\), this is an *area*. This note sharpens the hypothesis ladder needed for the claim “half-density normalization selects a universal area scale”, and isolates a simple dimension-matching condition under which the Planck area appears without fractional powers of couplings. A gravitational anchor based on a minimal-areal-speed principle is recorded as a separate heuristic thread [RiveroAreal] [RiveroSimple].
+  Half-densities are the natural “coordinate-free integrands” for composing kernels without choosing a background measure. But choosing a *universal* convention for turning half-density objects into dimensionless numerical amplitudes introduces a \(\text{length}^{d/2}\) scale. In \(d=4\), this is an *area*. This note sharpens the hypothesis ladder needed for the claim “half-density normalization selects a universal area scale”, and isolates a simple dimension-matching condition under which the Planck area appears without fractional powers of couplings.
   
   Minimal claim (proved under stated hypotheses): half-density composition is intrinsic, but any scalar “amplitude function” representation requires extra scalarization structure, and if that scalar representative is demanded dimensionless then a \(\text{length}^{d/2}\) constant is unavoidable. Conjectural claim (additional universality hypotheses): the scalarization constant is fixed by universal couplings and becomes a universal area scale in \(D=4\).
 ---
@@ -28,7 +28,7 @@ If \(K_1(x,y)\) and \(K_2(y,z)\) are chosen so that their product in the interme
 \(\int_M K_1(x,y)K_2(y,z)\) is coordinate-invariant without fixing a preferred \(dy\).
 This is the structural reason why kernel composition in the path-integral formalism is coordinate-invariant.
 
-`Derivation PA-D1.1 (Coordinate invariance of half-density pairing and composition).`
+`Derivation PA-D1.1 (Coordinate invariance of half-density pairing and composition [Woodhouse1992; BatesWeinstein1997]).`
 In a local chart \(y=(y^1,\ldots,y^d)\), write a half-density as \(\psi(y)=\varphi(y)\,|dy|^{1/2}\).
 Under a change of variables \(y=y(y')\), one has \(|dy|^{1/2}=|\det(\partial y/\partial y')|^{1/2}|dy'|^{1/2}\), so the coefficient transforms as
 \(\varphi'(y')=\varphi(y(y'))\,|\det(\partial y/\partial y')|^{1/2}\).
@@ -44,7 +44,7 @@ Kernel composition is the same mechanism: if \(K_1(x,y)\) and \(K_2(y,z)\) are h
 A density on \(M\) carries the units of \(\text{length}^d\) once physical units are assigned to coordinates. A half-density therefore carries units \(\text{length}^{d/2}\).
 
 `Proposition PA-P1.1 (No canonical “half-density = function” identification).`
-There is no canonical identification of a half-density \(\psi\in|\Lambda^d T^\ast M|^{1/2}\) with an ordinary scalar function \(f\) on \(M\). Choosing such an identification is equivalent to choosing a nowhere-vanishing reference half-density \(\sigma_\ast\) (equivalently a positive density \(\rho_\ast=\sigma_\ast^2\)) and writing
+There is no canonical identification of a half-density \(\psi\in|\Lambda^d T^\ast M|^{1/2}\) with an ordinary scalar function \(f\) on \(M\) [Woodhouse1992, §5.7; BatesWeinstein1997, Ch. 7]. Choosing such an identification is equivalent to choosing a nowhere-vanishing reference half-density \(\sigma_\ast\) (equivalently a positive density \(\rho_\ast=\sigma_\ast^2\)) and writing
 \(\psi=f\,\sigma_\ast\).
 
 `Derivation PA-D1.2 (Dilation makes the \(\text{length}^{d/2}\) weight explicit).`
@@ -175,7 +175,7 @@ Thus the quadratic-gradient term \((\partial\sigma)^2\psi\) cancels at \(D=4\) (
 This filter is independent of PA-H2.5 and, by itself, does not supply a length scale; it is recorded only as an additional "special dimension" candidate knob to compare against the scale-sieve hypotheses.
 
 `Remark PA-H2.6c (Heat-kernel witness: conformal coupling and \(D=4\)).`
-The \(D=4\) conformal specialness has a parallel heat-kernel manifestation. For the scalar kinetic operator \(P=-\nabla^2+\xi R+m^2\) on a closed Riemannian \(D\)-manifold, the first Seeley-DeWitt coefficient at coincidence is \(a_1(x,x)=(\tfrac16-\xi)R\). Conformal coupling corresponds to \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), which gives \(a_1(x,x)\big|_{\xi=\xi_{\mathrm{conf}}}=\tfrac{4-D}{12(D-1)}R\). This vanishes if and only if \(D=4\). The physical interpretation: at \(D=4\), the half-density conjugation potential \(V=\tfrac16 R\) (universal for any metric in any dimension) exactly equals the conformal coupling \(\xi_{\mathrm{conf}}R=\tfrac16 R\), so the conformally coupled half-density field has no leading curvature correction to its heat kernel at coincidence. The heat-kernel trace \(\mathrm{Tr}\,e^{-tP}\sim(4\pi t)^{-D/2}\sum A_n t^n\) carries the same \(D/2\) exponent as the identity kernel normalization (Derivation PA-D1.2b), the propagator Schwinger parametrization, the UV divergence degree \(\Lambda^{D-2n}\), and the dimensional-regularization pole structure \(\Gamma(D/2-n)\) — five manifestations of the single fact that the half-density identity kernel on \(\mathbb R^D\) scales as \(\varepsilon^{-D/2}\).
+The \(D=4\) conformal specialness has a parallel heat-kernel manifestation. For the scalar kinetic operator \(P=-\nabla^2+\xi R+m^2\) on a closed Riemannian \(D\)-manifold, the first Seeley-DeWitt coefficient at coincidence is \(a_1(x,x)=(\tfrac16-\xi)R\). Conformal coupling corresponds to \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), which gives \(a_1(x,x)\big|_{\xi=\xi_{\mathrm{conf}}}=\tfrac{4-D}{12(D-1)}R\). This vanishes if and only if \(D=4\). The physical interpretation: at \(D=4\), the half-density conjugation potential \(V=\tfrac16 R\) (universal for any metric in any dimension) exactly equals the conformal coupling \(\xi_{\mathrm{conf}}R=\tfrac16 R\), so the conformally coupled half-density field has no leading curvature correction to its heat kernel at coincidence. The heat-kernel trace \(\mathrm{Tr}\,e^{-tP}\sim(4\pi t)^{-D/2}\sum A_n t^n\) carries the same \(D/2\) exponent as the identity kernel normalization (Derivation PA-D1.2b), the propagator Schwinger parametrization, the UV divergence degree \(\Lambda^{D-2n}\), and the dimensional-regularization pole structure \(\Gamma(D/2-n)\) — five manifestations of the single fact that the half-density identity kernel on \(\mathbb R^D\) scales as \(\varepsilon^{-D/2}\) [Vassilevich2003HeatKernel].
 
 ## 3.2 What Changes When a Hypothesis Is Relaxed?
 This subsection records the main “branches” that need separate study.
@@ -228,6 +228,13 @@ To keep PA-H2.5 from collapsing into a coordinate artifact, we implicitly adopt 
 
 Under this convention, PA-H2.5a is best viewed as a computational proxy once coupling coordinates are fixed, while PA-H2.5b (analyticity at the base point) is the more invariant “no roots” statement.
 The phrase “canonical normalization of fields” in (1) is itself a convention choice; the point is that fixing such a convention makes the admissibility rule a controlled knob rather than an implicit loophole.
+
+`Heuristic PA-H2.5c (Physical content of the integrality sieve: classical vs quantum scale generation).`
+The integrality sieve (PA-H2.5a) has a physical interpretation beyond the aesthetic “no fractional powers” reading. In any dimension $d > 2$, the half-density normalization scale $\text{length}^{d/2}$ can be supplied by $G_d^{d/(2(d-2))}$ — but this is an analytic function of $G_d$ only when $d/(2(d-2))$ is a non-negative integer, i.e., only at $d=4$ (where the exponent is 1). In all other dimensions, the scalarization constant requires either:
+(a) fractional powers of $G_d$ (non-analytic at $G_d=0$, i.e., ill-defined in the decoupled-gravity limit), or
+(b) non-analytic RG-invariant transmutation scales (dimensional transmutation, Heuristic PA-H2.13).
+
+The physical distinction is therefore: **$d=4$ is the unique dimension where the half-density normalization can be supplied by the classical (tree-level) gravitational coupling alone.** In other dimensions, the normalization requires quantum (loop-level) scale generation. The integrality sieve is equivalent to asking: “in which dimension does the half-density normalization survive in the classical ($G_d \to 0$) limit?” — and the answer is $d=4$.
 
 `Example PA-E1 (Gravity-only).`
 With only \(G_d\) available, \(a_1=d-2\) and the condition becomes \(n(d-2)=d/2\). For integer \(d\ge 3\), this has a solution only at \(d=4\) with \(n=1\), reproducing Derivation PA-D1.3.
@@ -418,7 +425,7 @@ $$
 
 Taking square roots shows that the prefactor transforms with
 \(|\det(\partial x/\partial x')|^{1/2}|\det(\partial z/\partial z')|^{1/2}\), i.e. exactly as a half-density factor at each endpoint. Thus the stationary-phase prefactor is naturally interpreted as making \(K\) a half-density in each variable, so that kernel composition does not depend on a background measure choice.
-This is the standard "Van Vleck type" semiclassical prefactor in the correspondence/semiclassical tradition [VanVleck1928Correspondence].
+This is the standard "Van Vleck type" semiclassical prefactor in the correspondence/semiclassical tradition [VanVleck1928Correspondence] [Morette1951] [DeWitt1957CurvedSpaces].
 
 `Derivation PA-D1.4a (Free-propagator semigroup: the \(d/2\) exponent is forced by composition).`
 The free quantum propagator on \(\mathbb{R}^d\),
@@ -466,259 +473,14 @@ The exponent \(N/2\) in the prefactor is exactly the half-density scaling: it ca
 Derivation PA-D1.3 isolates one minimal route by which a Planck-scale quantity can enter:
 if the theory supplies a single universal coupling with dimension of length (Newton’s constant) and one demands that the half-density normalization constant be built from that coupling *without fractional powers*, then \(d=4\) is singled out and the resulting constant has the dimension of an area, naturally identified with the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
-# 5. A Gravitational Anchor: Minimal Areal Speed and the \(D=4\) Cancellation
-Rivero’s “Planck areal speed” observation gives a concrete route by which Planck-scale discreteness reappears at Compton scales in inverse-square gravity [RiveroAreal] [RiveroSimple].
-
-`Heuristic PA-H1.3 (Areal-speed selection).`
-In \(3+1\) Newtonian gravity (inverse-square), imposing a discrete areal-speed/area-time condition at a Planck scale can yield characteristic radii proportional to a reduced Compton length, with Newton’s constant canceling when expressed in Planck units. This is a nontrivial indication that “a universal area scale” can be operationally meaningful at low energies in \(D=4\).
-
-`Derivation PA-D1.5 (Inverse-square circular orbit + Planck areal speed \(\Rightarrow\) Compton radius).`
-For a circular orbit under an inverse-square central force \(F(r)=K/r^2\) (with coupling \(K>0\)), the centripetal balance is
-\(m v^2/r = K/r^2\).
-The areal speed is
-\(\dot A = \tfrac12 r v\),
-so \(v = 2\dot A/r\). Substituting into the force balance gives
-
-$$
-m\left(\frac{2\dot A}{r}\right)^2=\frac{K}{r}
-\quad\Longrightarrow\quad
-r=\frac{4m\,\dot A^2}{K}.
-$$
-
-For Newtonian gravity between a source mass \(M\) and test mass \(m\), \(K=GMm\), hence
-
-$$
-r=\frac{4\dot A^2}{GM},
-$$
-
-independent of the test mass \(m\). If one now imposes \(\dot A = k\,\dot A_P\), where Rivero’s Planck areal speed is \(\dot A_P = cL_P\) [RiveroAreal], then using \(L_P^2 = G\hbar/c^3\) yields
-
-$$
-r
-=\frac{4k^2(cL_P)^2}{GM}
-=\frac{4k^2(G\hbar/c)}{GM}
-=4k^2\,\frac{\hbar}{cM}.
-$$
-
-Thus \(r\) becomes a multiple of the reduced Compton length \(L_M=\hbar/(cM)\), with Newton’s constant canceled out. In particular, \(k=\tfrac12\) gives \(r=L_M\). This is the “Planck area per Planck time \(\Rightarrow\) Compton scale” cancellation highlighted in [RiveroAreal] and summarized in [RiveroSimple].
-
-`Remark PA-D1.5a (Generic \(F=K/r^q\): only \(q=2\) yields linear Compton scaling; \(q\) links to dimension).`
-For a power-law central force \(F(r)=K/r^q\) with \(K>0\), circular balance gives \(m v^2/r=K/r^q\), i.e. \(m v^2=K r^{1-q}\). Using the circular areal speed \(\dot A=\tfrac12 r v\) (so \(v=2\dot A/r\)) yields
-\[
-4m\dot A^2 = K\,r^{3-q}.
-\]
-Hence, for \(q\neq 3\),
-\[
-r=\left(\frac{4m\dot A^2}{K}\right)^{\frac{1}{3-q}},
-\]
-while for \(q=3\) the radius drops out and \(4m\dot A^2=K\).
-
-In the gravitational specialization \(K=GMm\), the test mass cancels as before and
-\[
-r=\left(\frac{4\dot A^2}{GM}\right)^{\frac{1}{3-q}}.
-\]
-If one imposes \(\dot A=cL_P\) and uses the \(D=4\) identity \(L_P^2=G\hbar/c^3\), then
-\[
-r=\left(\frac{4\hbar}{cM}\right)^{\frac{1}{3-q}}.
-\]
-Thus the Planck-areal-speed substitution produces *linear* reduced-Compton scaling \(r\propto \hbar/(cM)\) only for \(q=2\) (inverse-square). For Newtonian long-range fields in \(n\) spatial dimensions, the Laplacian Green function gives \(\Phi(r)\propto r^{2-n}\) (for \(n>2\)), so \(F\sim|\nabla\Phi|\propto r^{1-n}\), i.e. \(q=n-1\) (with the \(n=2\) logarithmic exception) [Tanaka2021KernelQuadrature]. In this sense the \(q=2\) special case corresponds to \(n=3\) spatial dimensions (spacetime \(D=4\)).
-Equivalently, substituting \(q=n-1\) into the mass scaling gives \(r\propto M^{-1/(4-n)}\) (for \(n\neq 4\)), so the linear Compton scaling (and the \(G\)-cancellation in the \(D=4\) identity \(L_P^2=G\hbar/c^3\)) is uniquely \(n=3\); the \(n=4\) case is the degenerate \(q=3\) condition where the radius drops out.
-
-`Remark PA-D1.5b (SR continuation of the inverse-square witness: Compton branch \(\to\) Planck floor).`
-Inside a mechanical special-relativistic model with an external inverse-square force (no GR field dynamics), one can keep the fixed coordinate-time areal speed \(\dot A_0=dA/dt\) and continue PA-D1.5 exactly.
-
-For inverse-square forces, SR circular motion gives \(v=K/L\), while
-\[
-L=\gamma mrv=2\gamma m\dot A_0,
-\qquad
-\gamma=\frac{1}{\sqrt{1-v^2/c^2}}.
-\]
-Hence
-\[
-\gamma v=\frac{K}{2m\dot A_0},
-\]
-so
-\[
-v=\frac{\tfrac{K}{2m\dot A_0}}{\sqrt{1+\left(\tfrac{K}{2m\dot A_0c}\right)^2}},
-\qquad
-r=\frac{2\dot A_0}{v}
-=\frac{4m\dot A_0^2}{K}\sqrt{1+\left(\frac{K}{2m\dot A_0c}\right)^2}.
-\]
-
-For gravity \(K=GMm\), \(m\) cancels:
-\[
-r(M,\dot A_0)
-=\frac{4\dot A_0^2}{GM}\sqrt{1+\left(\frac{GM}{2\dot A_0c}\right)^2}.
-\]
-With \(\dot A_0=cL_P\), using \(L_P^2=\hbar G/c^3\) and \(M_P^2=\hbar c/G\),
-\[
-r(M)
-=\frac{4\hbar}{Mc}\sqrt{1+\frac{M^2}{4M_P^2}}.
-\]
-Therefore \(M\ll M_P\) reproduces the PA-D1.5 Compton-like branch \(r\approx 4\hbar/(Mc)\), while \(M\gg M_P\) saturates at
-\[
-r\to 2L_P.
-\]
-So in this SR continuation, the inverse-square Planck-areal-speed witness is not destroyed; it is regularized into a bounded interpolation.
-
-`Remark PA-D1.5c (Clock-choice sensitivity: fixed \(dA/dt\) vs fixed \(dA/d\tau\)).`
-The \(2L_P\) high-mass saturation in PA-D1.5b is tied to fixing the coordinate-time areal speed \(\dot A_t=dA/dt\). If one instead fixes proper-time areal speed \(\dot A_\tau=dA/d\tau\) in the same inverse-square SR model, then
-\[
-r(M,\dot A_\tau)
-=\frac{4\dot A_\tau^2}{GM}\sqrt{1-\left(\frac{GM}{2\dot A_\tau c}\right)^2},
-\]
-which is defined only for \(GM<2\dot A_\tau c\).
-With \(\dot A_\tau=cL_P\),
-\[
-r(M)=\frac{4\hbar}{Mc}\sqrt{1-\frac{M^2}{4M_P^2}},
-\]
-so \(M\to2M_P^{-}\Rightarrow r\to0\), not \(2L_P\).
-Therefore the low-mass Compton-like branch is robust, while the high-mass asymptotic is clock-convention dependent in this mechanical SR setting.
-
-`Remark PA-D1.5d (Invariant-candidate reformulation via specific angular momentum).`
-A clock-independent candidate in the same central-source setup is the specific angular momentum scalar
-\[
-\ell:=\frac1m\sqrt{\frac12\,L_{\mu\nu}L^{\mu\nu}},
-\]
-where \(L^{\mu\nu}\) is the source-rest-space projection of orbital \(J^{\mu\nu}\) (using source 4-velocity \(U^\mu\)). In the source rest frame this reduces to
-\[
-\ell=\gamma rv,\qquad
-\dot A_t=\frac{\ell}{2\gamma},\qquad
-\dot A_\tau=\frac{\ell}{2}.
-\]
-So fixing \(\ell\) selects the proper-time branch rather than the coordinate-time branch. For inverse-square gravity,
-\[
-r(M,\ell)=\frac{\ell^2}{GM}\sqrt{1-\left(\frac{GM}{\ell c}\right)^2},
-\qquad
-\ell>\frac{GM}{c},
-\]
-and \(\ell=2cL_P\) reproduces PA-D1.5c. This does not yet prove universality, but it provides a structurally covariant way to encode the postulate without choosing a clock variable directly.
-
-`Remark PA-D1.5e (Why simple frame-free bivector invariants are insufficient here).`
-One might try to avoid the source-velocity projection entirely and use only Lorentz invariants of
-\[
-M^{\mu\nu}=R^\mu p^\nu-R^\nu p^\mu,
-\]
-namely
-\[
-I_1=\frac12 M_{\mu\nu}M^{\mu\nu}=R^2p^2-(R\cdot p)^2,
-\qquad
-I_2=\frac12 M_{\mu\nu}{}^\star M^{\mu\nu}.
-\]
-But for the circular central branch (\(R\cdot p=0\), \(R^2=r^2\), \(p^2=-m^2c^2\)), this gives
-\[
-I_1=-m^2c^2r^2,
-\]
-independent of orbital speed, while \(I_2\) vanishes in the planar case. So these simple frame-free invariants do not encode the areal-rate branch parameter. In this setup, a timelike direction (e.g. source \(U^\mu\)) appears to be minimal extra structure for a useful covariant postulate.
-
-`Remark PA-D1.5f (Minimal timelike-structure rule for this branch).`
-For the present central-source inverse-square model, a practical “minimal structure” rule is:
-1. use the source worldline 4-velocity \(U^\mu\) as the distinguished timelike direction (already part of the model input), and
-2. formulate the postulate on
-\[
-\ell_{(U)}:=\frac1m\sqrt{\frac12\,M^{(U)}_{\mu\nu}M_{(U)}^{\mu\nu}},
-\qquad
-M^{(U)\mu\nu}=h(U)^\mu{}_\alpha h(U)^\nu{}_\beta M^{\alpha\beta},
-\]
-rather than directly on coordinate-time areal rate.
-In the source rest frame this is equivalent to fixing \(\dot A_{\tau,U}=\ell_{(U)}/2\), while coordinate-time rates are derived via the corresponding lapse factor. This keeps the branch covariant-with-source and avoids introducing an additional arbitrary observer field \(u^\mu(x)\).
-
-`Remark PA-D1.5g (Non-circular planar extension is kinematic).`
-The \(\ell\)-based rule is not restricted to circular trajectories. For general planar motion with tangential component \(v_\perp=r\dot\phi\),
-\[
-\ell=\gamma r v_\perp=\gamma r^2\dot\phi,\qquad
-\frac{dA}{dt}=\frac12 r^2\dot\phi=\frac{\ell}{2\gamma},\qquad
-\frac{dA}{d\tau}=\frac{\ell}{2}.
-\]
-Thus “fix \(\ell\)” remains equivalent to fixing proper-time areal rate in the source frame even away from circular orbits; this part is kinematic and does not depend on the specific force law.
-
-`Remark PA-D1.5h (Non-planar caution: vector area rate is fundamental).`
-For general 3D motion the natural identity is vector-valued:
-\[
-\boldsymbol\ell=\frac1m(\mathbf r\times\mathbf p)=\gamma(\mathbf r\times\mathbf v),
-\qquad
-\frac{d\mathbf A}{d\tau}=\frac{\boldsymbol\ell}{2}.
-\]
-So the \(\ell\)-rule still survives kinematically, but scalar areal rates require a chosen normal \(\mathbf n\):
-\[
-\frac{dA_{\mathbf n}}{d\tau}=\frac{\boldsymbol\ell\cdot\mathbf n}{2}.
-\]
-In non-planar perturbations, interpreting a scalar “areal speed postulate” without specifying this projection is ambiguous; the projection choice is part of the model specification.
-
-`Remark PA-D1.5i (Observability criterion for projected areal-rate postulates).`
-In perturbed-orbit settings, a projected areal-rate claim is empirically meaningful only after specifying:
-1. projection normal \(\mathbf n\),
-2. clock convention (\(t\)-based or \(\tau\)-based),
-3. reconstruction map for \((\mathbf r,\mathbf v)\) in the source frame.
-With those choices fixed, the observable is
-\[
-\dot A_{\mathbf n}(t)=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v),
-\qquad
-\frac{dA_{\mathbf n}}{d\tau}=\frac12\,\mathbf n\cdot\boldsymbol\ell,
-\]
-and departures from constant projected areal rate are governed by projected torque
-\[
-\frac{d}{dt}\big(\mathbf n\cdot\boldsymbol\ell\big)
-=\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F).
-\]
-So the postulate becomes falsifiable precisely when projection, clock, and reconstruction are part of the model declaration.
-
-`Remark PA-D1.5j (Minimal implementation pipeline).`
-A compact data-to-test pipeline is:
-1. reconstruct object state in observer frame from direction \(\hat{\mathbf n}(t)\), range \(\rho(t)\), and line-of-sight velocity \(\dot\rho(t)\):
-\[
-\mathbf r_{\rm obj}=\rho\hat{\mathbf n},\qquad
-\mathbf v_{\rm obj}=\dot\rho\,\hat{\mathbf n}+\rho\,\dot{\hat{\mathbf n}},
-\]
-2. subtract source ephemeris to obtain source-frame relative state \((\mathbf r,\mathbf v)\),
-3. evaluate
-\[
-\dot A_{\mathbf n}=\frac12\,\mathbf n\cdot(\mathbf r\times\mathbf v),\quad
-\frac{dA_{\mathbf n}}{d\tau}=\frac12\,\mathbf n\cdot\boldsymbol\ell,
-\]
-and, if a force model is supplied, the projected-torque residual
-\[
-\mathcal T_{\mathbf n}:=
-\frac{d}{dt}\big(\mathbf n\cdot\boldsymbol\ell\big)-\frac1m\,\mathbf n\cdot(\mathbf r\times\mathbf F).
-\]
-This keeps the postulate test tied to explicit reconstruction and uncertainty handling rather than to abstract kinematic statements alone.
-
-`Remark PA-D1.5k (Minimal uncertainty scaffold).`
-At first order, uncertainty in projected observables can be propagated by Jacobians:
-\[
-q:=\dot A_{\mathbf n}
-\quad\Rightarrow\quad
-\sigma_q^2\approx J_q\,\Sigma_x\,J_q^\top,
-\]
-for reconstructed state vector \(x\) and covariance \(\Sigma_x\), and
-\[
-\sigma_{\mathcal T}^2\approx J_{\mathcal T}\,\Sigma_z\,J_{\mathcal T}^\top
-\]
-for residual \(\mathcal T_{\mathbf n}\) with augmented state \(z\). This linear scaffold is a baseline; in strongly nonlinear regimes the same quantities should be cross-checked with nonlinear propagation (e.g. Monte Carlo) before interpretation.
-
-`Remark PA-D1.5l (Practical nonlinear-validation trigger).`
-A lightweight policy is to run a pilot nonlinear propagation check and compare against the linear \(\sigma\) estimate; if the discrepancy is at the few-percent level (or larger), treat linearized errors as insufficient and switch to nonlinear uncertainty propagation for reporting.
-
-`Remark PA-D1.5m (Regime-dependent trigger calibration).`
-The trigger in PA-D1.5l should be calibrated by uncertainty regime, not treated as universal. A practical diagnostic pair is
-\[
-\epsilon_{\rm nl}:=\frac{|\sigma_{\rm MC}-\sigma_{\rm lin}|}{\sigma_{\rm lin}},
-\qquad
-\chi:=\max\!\left(
-\frac{\sqrt{\mathrm{tr}\,\Sigma_r}}{\|\mathbf r\|},
-\frac{\sqrt{\mathrm{tr}\,\Sigma_v}}{\|\mathbf v\|}
-\right),
-\]
-with \(\Sigma_r,\Sigma_v\) the position/velocity covariance blocks in the chosen reconstruction model. Pilot scans in correlated-noise families can then map \(\epsilon_{\rm nl}(\chi)\) for the instrument/model pair; the "few-percent" policy corresponds to selecting an operational \(\epsilon_{\rm nl}\) band after this calibration, rather than imposing a context-free constant.
-
-# 6. Connection to the Refinement-Composition Framework
+# 5. Connection to the Refinement-Composition Framework
 The broader program in which this note sits argues that:
 1. classical dynamics are recovered from quantum composition by stationary-phase concentration, and
 2. refinement across scales forces RG-style consistency conditions when naive limits diverge.
 
 This note adds a complementary ingredient: the kernel side is most naturally formulated in half-density language, and stationary phase produces the bi-half-density prefactor directly. A universal convention for turning those half-densities into scalar amplitudes then requires a \(\text{length}^{d/2}\) scale; in \(d=4\) this is an area scale.
 
-# 7. Open Problems and Outlook
+# 6. Open Problems and Outlook
 1. *(Addressed: Derivation PA-D1.4a.)* The free-propagator semigroup computation provides a concrete witness; a full tangent-groupoid treatment remains desirable.
 2. *(Addressed: Remark PA-E5c.)* The Van Vleck / transmutation separation is explicit in the 2D delta model; a \(d=4\) gauge-theory witness is still open.
 3. *(Addressed: Remark PA-D1.3b.)* General-dimension analysis: what replaces "area" in odd dimensions. The monomial sieve is an even-\(d\) filter (parity lemma), while the transmutation route is parity-blind. An explicit odd-\(d\) witness exists: in \(d=3\), the delta-interaction scattering length \(a\) (generated via power-law renormalization) supplies \(a^{3/2}=\text{length}^{3/2}=\text{length}^{d/2}\) without fractional coupling powers, since \(a\) is a derived RG-invariant scale. A universal normalization remains defensible in odd \(d\) provided one admits transmutation-generated scales.
@@ -743,8 +505,10 @@ where \(\mu_{\mathrm{APS}}\in\mathbb{R}\) is the Robin extension parameter. The 
 
 1. [ManuelTarrach1994PertRenQM] Cristina Manuel and Rolf Tarrach, "Perturbative Renormalization in Quantum Mechanics," *Physics Letters B* 328 (1994), 113--118. arXiv:`hep-th/9309013` (v1, 2 Sep 1993). DOI `10.1016/0370-2693(94)90437-5`.
 2. [VanVleck1928Correspondence] J. H. Van Vleck, "The Correspondence Principle in the Statistical Interpretation of Quantum Mechanics," *Proceedings of the National Academy of Sciences of the United States of America* 14(2) (1928), 178–188. DOI `10.1073/pnas.14.2.178`.
-3. [Tanaka2021KernelQuadrature] Ken’ichiro Tanaka, "Kernel quadrature by applying a point-wise gradient descent method to discrete energies," arXiv:`2102.10887` (v2, 23 Feb 2021). (Contains an explicit formula for the \(d\)-dimensional fundamental solution of the Laplacian on \(\mathbb R^d\), including the \(d=2\) logarithmic case.)
-4. [Hossenfelder2013MinimalLength] Sabine Hossenfelder, "Minimal Length Scale Scenarios for Quantum Gravity," *Living Reviews in Relativity* 16 (2013), 2. arXiv:`1203.6191` (v2, 30 Apr 2013). DOI `10.12942/lrr-2013-2`.
-5. [Greensite2003Confinement] Jeff Greensite, "The Confinement Problem in Lattice Gauge Theory," arXiv:`hep-lat/0301023` (v2, 5 Mar 2003), *Progress in Particle and Nuclear Physics* 51 (2003) 1. DOI `10.1016/S0146-6410(03)90012-3`. (Review; includes Wilson-loop definition of static potential and area-law/string-tension criterion.)
-6. [RiveroSimple] Alejandro Rivero, "Constraints on space-time dimensionality in the classical approximation" (unpublished note, undated).
-7. [RiveroAreal] Alejandro Rivero, "On Planck Areal Speed" (letter; DOI `10.32388/Q7SKTZ`).
+3. [Hossenfelder2013MinimalLength] Sabine Hossenfelder, "Minimal Length Scale Scenarios for Quantum Gravity," *Living Reviews in Relativity* 16 (2013), 2. arXiv:`1203.6191` (v2, 30 Apr 2013). DOI `10.12942/lrr-2013-2`.
+4. [Greensite2003Confinement] Jeff Greensite, "The Confinement Problem in Lattice Gauge Theory," arXiv:`hep-lat/0301023` (v2, 5 Mar 2003), *Progress in Particle and Nuclear Physics* 51 (2003) 1. DOI `10.1016/S0146-6410(03)90012-3`. (Review; includes Wilson-loop definition of static potential and area-law/string-tension criterion.)
+5. [Morette1951] Cécile Morette, "On the Definition and Approximation of Feynman's Path Integrals," *Physical Review* 81 (1951), 848–852. DOI `10.1103/PhysRev.81.848`.
+6. [DeWitt1957CurvedSpaces] Bryce S. DeWitt, "Dynamical Theory in Curved Spaces. I. A Review of the Classical and Quantum Action Principles," *Reviews of Modern Physics* 29(3) (1957), 377–397. DOI `10.1103/RevModPhys.29.377`.
+7. [Vassilevich2003HeatKernel] D. V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* 388 (2003), 279–360. arXiv:`hep-th/0306138`. DOI `10.1016/j.physrep.2003.09.002`.
+8. [Woodhouse1992] N. M. J. Woodhouse, *Geometric Quantization*, 2nd ed., Oxford Mathematical Monographs, Oxford University Press, 1992. ISBN `0-19-853673-9`. (Standard reference for half-density line bundles and BKS pairing in geometric quantization.)
+9. [BatesWeinstein1997] Sean Bates and Alan Weinstein, *Lectures on the Geometry of Quantization*, Berkeley Mathematics Lecture Notes vol. 8, AMS, 1997. ISBN `0-8218-0798-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Half-densities as sections of a line bundle, metalinear structures, composition.)

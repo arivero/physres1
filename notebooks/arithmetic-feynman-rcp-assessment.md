@@ -132,3 +132,83 @@ Based on Critic assessment (proposals/critic-arithmetic-feynman.md):
 - Brown, F. and Schnetz, O. "A K3 in φ⁴." arXiv:1006.4064 (2010).
 - papers/rooted-tree-bookkeeping/main.md §6.2: CK coproduct (our computation, identity not analogy)
 - proposals/critic-arithmetic-feynman.md: full Critic assessment
+
+---
+
+## 8. Why Modular Forms? Mathematician's Assessment (Single-Agent, 2026-02-21)
+
+**Source:** anomalies.md (Modular forms as forced structure in Feynman integrals — OPEN entry).
+**Status:** Sev-3, single-agent. Addresses the mechanism question; not addressed by critic/computationalist assessment above.
+
+### 8.1 The Question
+
+Brown-Schnetz (arXiv:1304.5342): Feynman amplitudes in massless ϕ⁴ theory match Fourier coefficients of modular forms (weights ≤ 8, levels ≤ 17). Why modular forms specifically, rather than some other special functions?
+
+### 8.2 The Mechanism: Genus-1 Integration Cycles
+
+**Key geometric fact:** The modular group SL(2,ℤ) / {±1} = PSL(2,ℤ) is the mapping class group of the torus (genus-1 surface). Modular forms are sections of line bundles on the moduli space M_{1,1} = H / PSL(2,ℤ).
+
+**Why Feynman integrals land there:**
+
+- At loop order L, the integration domain is a simplex Δ^{4L-1} in parametric space (Schwinger/Feynman parameters).
+- The algebraic variety defined by the Symanzik polynomials (U, F) has genus ≥ 1 starting at L=2 (sunrise diagram = elliptic curve).
+- The period integral ∫_{Δ} ω / (U^{d/2} F^{d/2 - L}) integrates an algebraic form over this variety.
+- When the variety is an ELLIPTIC CURVE (genus 1): periods are elliptic integrals; the monodromy group of the period matrix IS a subgroup of SL(2,ℤ); hence the periods are modular forms.
+
+**Conclusion on mechanism:** Modular forms appear because (a) the Symanzik variety has genus 1 for certain diagrams (elliptic/banana-type), and (b) the period integral on a genus-1 curve is inherently modular. This is algebraic geometry, not composition per se.
+
+### 8.3 Does Composition Force Modular Structure?
+
+**Direct answer: NO, for the same reason as MZVs.**
+
+The chain is:
+
+(C) → RG exists [Level A]
+     ↓ (Connes-Marcolli, requires dim-reg + Lagrangian)
+RG ⊂ G_cosmic [Level B]
+     ↓ (Brown, requires specific diagram topology)
+A(G) ∈ periods of Symanzik variety [Level C]
+     ↓ (algebraic geometry, requires genus-1 variety)
+A(G) ∈ modular forms if genus(Symanzik) = 1
+
+Each arrow requires substantial additional structure beyond (C). Composition forces Level A only.
+
+**What determines genus(Symanzik)?** The loop number L and the specific graph topology:
+- L=1: genus 0 (rational → MPLs/MZVs)
+- L=2, specific diagrams (sunrise): genus 1 (→ elliptic polylogarithms → modular forms)
+- L≥3, specific diagrams (banana): K3 surfaces (genus 2 in appropriate sense)
+
+The genus is a TOPOLOGICAL property of the graph, not forced by composition.
+
+### 8.4 What RCP Does Contribute (Structural Role)
+
+**Partition channel (A1):** The Symanzik coproduct Δ(G) = Σ_{γ} A(G/γ) ⊗ A(γ) IS a partition-channel operation (subdivide graph = subdivide amplitude). This is Level C of the arithmetic program. So RCP's partition channel is REALISED by the coaction — but realised, not forced. The coaction exists because of the Hopf algebra structure; that Hopf algebra is an independent mathematical object.
+
+**Scale channel (A4):** The cosmic Galois group G acts on amplitudes as the "arithmetic RG." The scale channel A4 is realized by the G_m factor (grading by loop order). Again: realized, not forced from A4 alone.
+
+**Representation channel (A3):** Different regularization schemes (DR vs cutoff vs Pauli-Villars) give different representatives of the same motivic period. Scheme independence = representation-channel equivalence. This IS A3 in action at the arithmetic level — the most direct RCP-arithmetic connection.
+
+### 8.5 Summary for Anomaly Entry
+
+| Question | Answer |
+|----------|--------|
+| Does (C) force modular forms? | NO — requires L≥2 + genus-1 Symanzik variety (algebraic geometry, independent) |
+| Why modular forms and not other functions? | Because elliptic curves (genus 1) have PSL(2,ℤ) monodromy → their periods are modular |
+| Is there an RCP connection? | Yes at Level C: A3 ↔ scheme independence; A1 ↔ coaction/Hopf subdivision. But these are realizations, not derivations. |
+| Is composition + integrability enough? | (C) + algebraic integrability (isomonodromy, see BB2) → genus-1 → modular, but this is a chain with independent inputs. |
+| Level of claim for paper? | Sev-3: "RCP channels are realized in the arithmetic program" (factual). NOT: "composition forces modular structure" (wrong). |
+
+### 8.6 Connection to BB2 (Painlevé)
+
+The Painlevé isomonodromy equations (BB2) connect directly: the τ-function of Painlevé VI is a theta function of an elliptic curve, hence a modular form of weight 0. So the chain:
+
+(C) + (I_int) [isomonodromy] → Painlevé τ-function → theta function → modular form
+
+This is the closest thing to "composition (partially) forces modular forms" — but it requires (I_int) as an independent integrability axiom, not derivable from (C). Sev-3 connection, single-agent.
+
+**Refs for this section:**
+- Brown-Schnetz arXiv:1304.5342 (modular forms in ϕ⁴)
+- Bloch-Kerr-Vanhove arXiv:1412.0459 (elliptic curves in Feynman integrals)
+- Broedel et al. arXiv:1902.09971 (elliptic polylogarithms)
+- anomalies.md modular forms entry (OPEN → PARTIALLY ASSESSED, see update below)
+- blackboards/2.md (Painlevé isomonodromy, single-agent mathematician)

@@ -1,28 +1,54 @@
 # Critic -- Status
 
-## Current state (2026-02-21, end of session)
+## Current state (2026-02-21, Session 3 continuation)
 ALL 14 satellite reviews COMPLETE.
 Cornerstone audit COMPLETE.
-ALL 7 blackboard slots reviewed — ALL multi-agent verified (three-agent or higher).
-Library building: 20+ source files created across sessions.
+ALL 7 blackboard slots reviewed with critic second/third-agent reviews.
+Library building: 22+ source files created across sessions.
+Re-votes: YES on relativistic-central-orbits + half-density-qft (both Round 2).
+Publication pipeline: 12 READY, 0 CLOSE, 2 GENRE MISMATCH.
+RCP-foundations MAJOR REVISION assessment complete (proposals/critic-assessment-rcp-major-rev.md).
+Ordering-equivalence MAJOR REVISION assessment complete (proposals/critic-assessment-oe-major-rev.md).
+Rooted-tree-bookkeeping MAJOR REVISION assessment complete (proposals/critic-assessment-rtb-major-rev.md).
 
-## This session completed
-- Task #1 (assigned): Voted YES on all 4 frozen papers. 0 sev-1, 0 sev-2, 1 sev-3.
-- Task #4 (claimed): BB3 A4 Borel Q2 resonance FOUR-AGENT complete.
-- Task #12 (created): Sev-3 xref fix. Completed by physicist.
-- Task #14 (claimed): Q1d Stage 3.5 critic review. THREE-AGENT complete.
-- Task #27 (assigned): P9.1b-Q1d Verlinde remark + bibliography. APPROVED with 1 correction (RT pages 547-598 not 547-597). Review at proposals/critic-review-p91bq1d-verlinde.md.
-- Task #24 (claimed): Revised half-density-qft: ALL 13 referee concerns (2 MAJOR + 11 MINOR). Added [ParkerToms2009] ref. Sharpened "exactly absorbs" → "matches at leading order." All fixes applied to papers/half-density-qft/main.md.
-- Task #30 (claimed): Arithmetic forcing chain (BB1) third-agent review. 2 sev-3 (c∈ℤ qualifier + cyclotomic attribution Murakami/Habiro not just Kirby-Melvin), 1 sev-4. THREE-AGENT complete.
-- Self-directed: Prior art check for all 4 frozen papers. No threats found.
-- Library: ingested Van Vleck 1928.
+## Session 3 completed (continuation)
+- BB2 Painleve sev-2 resolution: H6.4 downgraded to CONJECTURE, Stage 2.5b labeled CONJECTURAL
+- BB2 PROMOTED to notebooks/painleve-isomonodromy-stage25.md (slot FREE)
+- BB1 (rg-fundamental pre-vote): critic second-agent review (C4.1-C4.6, concur YES MINOR REV)
+- BB README updated: slot 1 TWO-AGENT, slot 2 PROMOTED
+- Ordering-equivalence MAJOR REVISION assessment (proposals/critic-assessment-oe-major-rev.md)
+- Rooted-tree-bookkeeping MAJOR REVISION assessment (proposals/critic-assessment-rtb-major-rev.md)
+
+## Prior sessions completed
+- Re-vote YES on rel-orbits (R2) + half-density-qft (R2)
+- Bibliography audit: 3 proposals processed
+- BB5 OQ1a §12: FOUR-AGENT review
+- Task #12: Pre-vote batch 2 (rg-fundamental, planck-area, fermionic-mediators)
+- Pre-vote Tier 1: rcp-foundations + tangent-groupoid-bridge (READY)
+- Pre-vote Tier 2: ordering-equivalence + rooted-tree-bookkeeping (READY)
+- Pre-vote Remaining: rg-fundamental + path-integral-normalization (READY), planck-area + action-angle (CLOSE)
+- Action-angle prior-art fix proposal (Judge 1964 + Carruthers-Nieto 1968)
+- Library: sources/judge-1964-angle-uncertainty.md, sources/carruthers-nieto-1968-phase-angle.md
+- BB0: Philosophenweg steelman criticism (C1-C5 + forcing chain circularity analysis)
+- BB1 (A_geom): Second-agent review; promoted to notebook
+- BB2: Third-agent review (H6.4 overclaim sev-2, Stage 2.5b sev-2)
+- BB3-BB6: Second/third-agent reviews complete
+- RCP-foundations MAJOR REVISION assessment (proposals/critic-assessment-rcp-major-rev.md)
+
+## Publication pipeline (critic assessment, final updated)
+- READY (12): delta-objects, dirac-probes, half-density-qft, rel-orbits, rcp-foundations, tangent-groupoid-bridge, ordering-equivalence, rooted-tree-bookkeeping, rg-fundamental, path-integral-normalization, planck-area, action-angle
+- CLOSE (0): none
+- GENRE MISMATCH (2): uncuttable, fermionic-mediators
 
 ## Carry-forward items
-- path-integral-normalization bibliography gap still needs orchestrator action (sev-1)
-- Van Vleck 1928 + Morette 1951 now in sources/ — ready for bibliography addition
-- BB1 arithmetic forcing chain: 2 sev-3 fixes needed before cornerstone remark proposal
+- Genre decision needed: fermionic-mediators + uncuttable
+- Action-angle prior-art fix APPLIED (Judge/Carruthers-Nieto now cited)
+- BB5 action-angle second-agent review complete (upgraded CLOSE→READY)
 
-## Next session resume points
-- Quality sweep of non-frozen PRD-length satellites (genre mismatch: uncuttable + fermionic-mediators)
-- Cross-paper reference consistency audit
-- Philosophenweg (not taken this session)
+## Next steps
+- Await orchestrator feedback on proposals (10 proposals pending)
+- Review revised ordering-equivalence when Task #23 completes
+- Review revised rooted-tree-bookkeeping when Task #24 completes (may be done)
+- Available for re-votes on any revised papers
+- Philosophenweg: Kontsevich formality connection to A3, or cross-paper argument dependencies
+- Stale BB slots: BB3-BB6 are completed pre-votes (process artifacts). BB0 is critic's own Philosophenweg. BB1 now rg-fundamental pre-vote (TWO-AGENT). BB2 slot FREE.

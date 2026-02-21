@@ -1520,3 +1520,183 @@ q_QG = e^{2πi/(k+g∨)}: the dual Coxeter number g∨ enters via the conformal 
 **Status:** Ready for three-agent endorsement (critic) before any cornerstone paper-edit.
 The four-stage table with the 3.5 entry could be added to the §9 cornerstone after critic review.
 
+
+---
+
+## Section Q-EF: Efimov Limit Cycle and PSL(2,ℝ) Scale Channel Groupoid
+
+**Date:** 2026-02-21
+**Agents:** computationalist (proposal), physicist (physics verification), mathematician (groupoid analysis), student (literature confirmation)
+**Source:** proposals/computationalist-efimov-scale-channel.md + blackboards/3.md
+
+### Physical Content (THREE-AGENT verified)
+
+The Efimov effect (Efimov 1970) provides a second, qualitatively distinct scale-channel witness:
+
+**Setup:** 3-body Lippmann-Schwinger equation at unitarity (|a|→∞):
+- T₂ = −1/(ik) (maximal unitarity)
+- T₃ = V₃ + T₂ ∗ G₀ ∗ T₃ (3-body composition of 2-body T)
+- Kernel K(k,k') has discrete scale invariance: K(e^{π/s₀}k, e^{π/s₀}k') = K(k,k')
+
+**Forcing chain:** 3-body LS composition + unitarity + UV renormalizability → log-periodic coupling:
+λ₃(Λ·e^{π/s₀}) = λ₃(Λ) (limit cycle, NOT a fixed point)
+
+**Efimov parameter:** s₀ = 1.006238 from s·cosh(πs/2) = (8/√3)·sinh(πs/6) (computationalist verified via SymPy).
+
+**Bound-state tower:** E_n ∝ e^{−2πn/s₀}·E₀, ratio e^{2π/s₀} ≈ 515 (literature ✓).
+
+**Precision note (physicist):** forcing requires "3-body composition AT UNITARITY" + UV renorm, not composition alone. Unitarity (a→∞) is an essential additional input not present in the 2D delta case.
+
+### PSL(2,ℝ) Möbius Structure (confirmed from arXiv:2509.04746)
+
+The RG step (Λ → Λ·e^{π/s₀}) acts on coupling space ℝP¹ as a Möbius transformation:
+f: λ₃ → (aλ₃ + b)/(cλ₃ + d), ad−bc = 1, a,b,c,d ∈ ℝ
+
+The limit cycle corresponds to a HYPERBOLIC Möbius map (|tr| > 2, two real fixed points in ℝP¹).
+Composition of RG steps = composition of Möbius maps = group law in PSL(2,ℝ). ✓
+
+### Groupoid Analysis (Mathematician)
+
+**Transformation groupoid structure:**
+Given PSL(2,ℝ) acting on ℝP¹, the transformation groupoid G = PSL(2,ℝ) ⋉ ℝP¹ has:
+- Objects: points x ∈ ℝP¹
+- Morphisms: pairs (g, x) ∈ PSL(2,ℝ) × ℝP¹
+- Source: s(g,x) = x; Target: t(g,x) = g·x
+- Composition: (h, g·x) ∘ (g, x) = (hg, x)
+
+**Transitivity:** PSL(2,ℝ) acts transitively on ℝP¹ ≅ S¹ (the projective line).
+Stabilizer of [1:0]: B ∩ PSL(2,ℝ) = {[[a,b],[0,a⁻¹]] : a > 0} ≅ ℝ ⋊ ℝ₊ (ax+b group).
+
+**Key distinction from pair groupoid:**
+- Pair groupoid M×M: Aut(x) = trivial (PRINCIPAL groupoid). Each pair (x,y) connected by unique morphism.
+- PSL(2,ℝ) ⋉ ℝP¹: Aut(x) = Stab_{PSL}(x) ≅ ℝ ⋊ ℝ₊ (NON-PRINCIPAL). Morphisms from x to y form a torsor over the stabilizer — uncountably many.
+
+**RG semigroup vs groupoid:** The full PSL(2,ℝ) requires invertible RG steps (UV→IR AND IR→UV).
+For the Efimov limit cycle, the map IS invertible (hyperbolic element), so the GROUP structure is exact.
+Away from unitarity, only the semigroup structure (UV→IR only) persists.
+
+### Implication for TG-Q2
+
+**TG-Q2:** Is there a master groupoid unifying all three RCP channels?
+
+Mathematical conclusion: THREE DISTINCT GROUPOID STRUCTURES.
+
+| Channel | Groupoid | Isotropy at a point | Composition |
+|---------|----------|---------------------|-------------|
+| Partition | Pair groupoid M×M | Trivial (principal) | Conditional (source = target) |
+| Scale (2D delta) | Semigroup ℝ₊ | N/A (not a groupoid) | Forward only |
+| Scale (Efimov/unitarity) | PSL(2,ℝ) ⋉ ℝP¹ | ℝ ⋊ ℝ₊ (non-principal) | Unconditional (group action) |
+| Representation | Morita equivalence | Brauer group Br(ℂ) | Tensor product |
+
+These are incompatible isotropy structures; no single Lie groupoid (in the naive sense) contains all three as full sub-groupoids. The RCP pattern "composition forces a groupoid structure" is the principle — multiple categorical realizations are expected.
+
+**Sev-3 observation (THREE-AGENT verified, 2026-02-21):** PSL(2,ℝ) ≅ Sp(2,ℝ) ≅ SU(1,1) as real Lie groups. The connection between the Efimov scale-channel groupoid and Stage 2 is precise: PSL(2,ℝ) acts on H = {z ∈ ℂ : Im(z) > 0} by Möbius maps (Stage 2 symplectic action); the boundary ∂H = ℝP¹ carries the Efimov coupling-space action. The transformation groupoid PSL(2,ℝ)⋉ℝP¹ is the boundary restriction of Sp(2,ℝ)⋉H — functorial, not merely an abstract group isomorphism. Physical reading: real couplings (Efimov, Stage 4) are the classical boundary (ℏ→0) of the complex amplitude moduli space (Stage 2 QM); the Wick rotation A3 maps interior ↔ boundary. No cornerstone edit needed; rcp-foundations Efimov remark may note this in one sentence.
+
+### Paper Home
+
+Recommended: rcp-foundations §5 after §5.5, as Remark 5.5-EF or new §5.6.
+NOT fermionic-mediators (connection is tangential).
+Remark minimum content: see draft in proposals/mathematician-edit-efimov-rcpfoundations.md.
+
+### Literature (student ingested)
+
+- Efimov 1970: Phys. Lett. B 33, 563–564 (original)
+- Bedaque-Hammer-Van Kolck 1999: Phys. Rev. Lett. 82, 463 (RG limit cycle)
+- arXiv:2509.04746 (2025): Möbius structure of 3-body RG
+- arXiv:1102.3789 (2011): Efimov physics from RG perspective (student confirmed)
+- arXiv:2405.09807 (2024): Three-body forces and Efimov physics (student confirmed)
+
+**Status:** FOUR-AGENT (computationalist + physicist + mathematician + student). Stable, promote to paper.
+
+---
+
+## Section CFT-Q1: q-Deformed Composition and Chern-Simons Level Forcing
+
+**Date:** 2026-02-21
+**Agents:** mathematician (§1-9), physicist (§10), critic (§11), computationalist (§12 numerical)
+**Source:** blackboards/4.md
+
+### Three-Level Analysis (FOUR-AGENT verified)
+
+**Q1a (NO forcing):** Coassociativity (C_q) holds for ALL q ∈ ℂ*.
+U_q(g) coproduct satisfies (Δ_q⊗1)∘Δ_q = (1⊗Δ_q)∘Δ_q for any q. Computationalist confirmed numerically (7 test values, errors = 0 algebraically exact). Composition alone does NOT force root-of-unity q.
+
+**Q1b (PARTIAL constraint):** (C_q) + Hermiticity → q ∈ ℝ₊ ∪ S¹.
+Casimir eigenvalues real ↔ q ∈ ℝ ∪ S¹ (Q1b), with physical refinement to ℝ₊ (q<0 gives alternating-sign q-numbers, non-unitary; critic C11.3 confirmed by computationalist). Partial forcing only.
+
+**Q1c (YES forcing):** Cobordism sewing (C) + unitarity + normalization → q = e^{2πi/(k+g∨)}.
+This is the Reshetikhin-Turaev theorem. Forcing mechanism: the RT modular tensor category C_q(G) is semisimple iff q is a root of unity (Dehn surgery consistency of Z(M³)).
+
+### Physical Mechanisms (THREE independent paths to same answer)
+
+**P1 (WZW/homotopy):** WZW sewing + π₃(G) = ℤ → k ∈ ℤ. The Wess-Zumino 3-ball integrand has ambiguity 2πk; sewing consistency forces k ∈ ℤ. Pure homotopy argument (Witten 1983).
+
+**P2 (Verlinde/modular):** Torus sewing + modular invariance under SL(2,ℤ) → h_λ - c/24 ∈ ℚ → k ∈ ℤ. Modular invariance = torus sewing consistency.
+
+**P3 (RT/surgery):** Cobordism sewing + unitarity + normalization → q root of unity (Dehn surgery, colored Jones, Kirby calculus consistency). = Q1c result.
+
+### Four-Stage Forcing Table (complete progression)
+
+| Stage | Composition (C) | Extra input | Forced constant | Mechanism |
+|-------|----------------|-------------|-----------------|-----------|
+| 2 (QM) | Semigroup K_{t₁+t₂} | Dimensional homogeneity (D) | ℏ ∈ ℝ₊ | Kinematic scaling |
+| 3 (CFT) | Segal sewing K_λ | Virasoro algebra | c/24 ∈ ℚ (given c∈ℤ) | Weyl anomaly |
+| 4a (WZW) | Path integral sewing | WZ periodicity (π₃(G)=ℤ) | k ∈ ℤ | Homotopy |
+| 4b (CS/RT) | Cobordism | Unitarity + normalization | q = e^{2πi/(k+g∨)} | Semisimplicity |
+
+**Key pattern:** (C) alone forces nothing at any stage. Each "extra" is a natural structural condition for sewing consistency (not minimal, but natural and sufficient).
+
+**Analogy to P4.2:** P4.2 uses (C) + (D) + (I) [kinematic]; RT uses (C_cob) + unitarity + normalization [algebraic]. Both: composition + additional structural requirement → quantization constant.
+
+**Connection to P9.3 (arithmetic rigidity progression):**
+- Stage 2: ℏ ∈ ℝ₊ (positive real, no torsion)
+- Stage 3: c/24 ∈ ℚ (rational, modular closure)
+- Stage 4a: k ∈ ℤ (integer, homotopy integrality)
+- Stage 4b: q ∈ μ_{k+g∨} (root of unity, finite torsion in ℂ×)
+
+This table IS in the cornerstone as Remark P9.3 (2026-02-21).
+
+### Conclusion for CFT-Q1 (anomalies.md)
+
+RESOLVED: q-forcing exists at Q1c (cobordism + unitarity), not at Q1a (composition alone). The RT-theorem is the Stage 4 analog of P4.2. Three physical mechanisms (WZW, Verlinde, RT) give the same k ∈ ℤ and q quantization from sewing consistency.
+
+**Status:** FOUR-AGENT complete. Promoted to this notebook 2026-02-21.
+
+---
+
+## Section Q-EF-PSL: PSL(2,ℝ) as Boundary Restriction of Stage 2 Symplectic Group
+
+**Date:** 2026-02-21
+**Agents:** mathematician (claim), physicist (check), mathematician (precision sharpening)
+**Source:** blackboards/5.md §§10-11
+
+### The Isomorphism and Actions
+
+**Abstract Lie group level:**
+PSL(2,ℝ) ≅ Sp(2,ℝ) ≅ SU(1,1) (all have Lie algebra sl(2,ℝ) = sp(2,ℝ)). This is standard.
+
+**The two groupoid actions:**
+- Stage 2: Sp(2,ℝ) acts on the Siegel upper half-plane H = {z ∈ ℂ : Im z > 0} by z ↦ (az+b)/(cz+d).
+  This encodes Bogoliubov transformations on quantum oscillators; the imaginary axis is Euclidean time τ.
+- Stage 4 (Efimov): PSL(2,ℝ) acts on ℝP¹ = ∂H (boundary of H) by the same Möbius formula restricted to ℝ ∪ {∞}.
+
+**Precise functorial statement:**
+The Efimov coupling-space action PSL(2,ℝ)⋉ℝP¹ is the BOUNDARY RESTRICTION of the Stage 2 action Sp(2,ℝ)⋉H. The inclusions ℝP¹ = ∂H ↪ H̄ and PSL(2,ℝ) = Sp(2,ℝ)/Z make this exact.
+
+### Physical Interpretation
+
+**Interior H (Stage 2):** complex modular parameter τ = t + iτ_E (Minkowski+Euclidean). Sp(2,ℝ) acts as squeezing/mixing of quantum amplitudes. Weil representation of the metaplectic cover Mp(2,ℝ) → L²(ℝ).
+
+**Boundary ℝP¹ (Stage 4/Efimov):** real coupling space (ℏ→0 classical limit, coupling becomes real). PSL(2,ℝ) hyperbolic Möbius = log-periodic Efimov dynamics. The Efimov limit cycle is the real/classical version of Stage 2 oscillations.
+
+**Slogan:** Efimov RG = boundary dynamics of Stage 2 quantum mechanics. The same group Sp(2,ℝ) controls both quantum oscillations (interior, imaginary time) and classical RG cycles (boundary, real coupling).
+
+### Groupoid Structures
+
+The two groupoids are NOT the same (different target spaces = different objects):
+- Sp(2,ℝ)⋉H: objects = points of H (complex modular parameters), morphisms = Möbius maps on ℂ. Automorphism group at τ: elliptic stabilizer.
+- PSL(2,ℝ)⋉ℝP¹: objects = points of ℝP¹ (real coupling values), morphisms = real Möbius maps. Automorphism group at λ: hyperbolic/parabolic stabilizer ≅ ℝ ⋊ ℝ₊.
+
+The boundary restriction functor maps the former to the latter. The isotropy changes from elliptic (compact) to hyperbolic/parabolic (non-compact) at the boundary.
+
+**Status:** THREE-AGENT (mathematician + physicist + mathematician annotation). Sev-3, no paper-edit needed. Stable result in this notebook.

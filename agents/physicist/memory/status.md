@@ -91,6 +91,18 @@
   - Physicist second-agent pass added (§7): CONFIRMED (1 sev-3: c/24∈ℚ needs c∈ℤ qualifier)
   - Needs critic as third agent
 
+### Session 7 (2026-02-21, new session)
+
+- Task #1: re-vote RCO — already YES (recorded in prior session, votes.md has physicist YES)
+- Task #2: re-vote half-density-qft — voted YES (both MAJORs confirmed resolved)
+- Task #3: Efimov/PSL(2,R) DONE
+  - proposals/physicist-edit-efimov-scale-channel.md written (diff included)
+  - Paper home: rcp-foundations §5 after 5.5 (before §6)
+  - PSL(2,R) Möbius language used (not full groupoid claim)
+  - "at unitarity" qualifier explicit in remark
+  - 3 new refs: Efimov1970, BedaqueHammerVanKolck1999, KraemerEtAl2006
+  - Mathematician third-agent on BB3 groupoid language still pending (non-blocking)
+
 ### Session 6 post-context-reset continuation (2026-02-21, latest)
 
 **Completed this sub-session:**
@@ -103,10 +115,25 @@
   - m1: exponent (N+1)/2 clarification; m2: impulse-work displayed eq; m3: DCT sentence
   - m4: Noether [Goldstein2002] reference; m5: viscosity-solution clarification
 
-### Outstanding
-- proposals/physicist-edit-p92-stage35-verlinde.md: pending orchestrator execution
-- proposals/physicist-edit-hd-referee-revision.md: pending orchestrator execution + vote reset
-- proposals/physicist-edit-dp-referee-revision.md: pending orchestrator execution + Round 2 vote
-- BB3: Efimov TWO-AGENT, needs mathematician third agent (TG-Q2 groupoid distinction)
-- BB1: THREE-AGENT (critic complete, Task #30). Ready for cornerstone §9 remark proposal.
-- Referee tasks 16 (hd), 18 (do): still in_progress (other agents)
+### Session 8 (2026-02-21, continuation after context-reset)
+
+**Completed this sub-session:**
+- Task #6 (physicist): planck-area triage
+  - proposals/physicist-edit-planck-area-s5-triage.md: remove §5 (245 lines), APPLIED by orchestrator
+  - proposals/physicist-edit-planck-area-bibliography.md: add Morette/DeWitt/Vassilevich, APPLIED
+  - §5 material saved to papers/areal-speed/main.md by orchestrator
+- BB2 §10: H6.2 physicist second-agent — isomonodromy ≠ β=0. BB2 now TWO-AGENT.
+- BB3 §6: planck-area structural review physicist second-agent
+  - PA-H1.3 NOT weight-bearing (heuristic, zero logical deps in §§1-4)
+  - §5 duplication vs rel-orbits CONFIRMED
+  - Conditional YES → YES (unconditional on §§1-4). BB3 now TWO-AGENT.
+- critic-edit-pa-h25c-justification.md: physicist endorsed (exponent k=1 unique integer, G^k analytic at G=0)
+- critic-prevote-tier1.md: rcp-foundations + TG-bridge READY per critic; forwarded to orchestrator
+- tasks #15, #16: docs/ publishing done by orchestrator (rel-orbits, half-density-qft)
+- areal-speed editorial assessment forwarded to orchestrator
+
+**Current outstanding:**
+- BB2: needs computationalist third-agent (τ-function groupoid H6.4)
+- BB3: planck-area pre-vote TWO-AGENT; critic + others needed for full vote
+- papers/areal-speed/main.md: needs editorial shaping (abstract, renumbering, intro)
+- Woodhouse/Bates-Weinstein: library visit needed (student commission)

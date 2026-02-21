@@ -29,36 +29,59 @@ Papers submitted through the internal peer review process (AGENTS.md §11).
 
 | Paper | Submitted | Referee-1 | Referee-2 | Decision | Date | Notes |
 |-------|-----------|-----------|-----------|----------|------|-------|
-| Half-Density QFT | 2026-02-21 | MINOR REV | MINOR REV (2 MAJOR weaknesses) | **MAJOR REVISION** | 2026-02-21 | Referee-2 flagged ξ_conf clarity + missing Parker-Toms ref |
-| Delta Objects | 2026-02-21 | MINOR REV | MINOR REV (no MAJOR) | **ACCEPT** | 2026-02-21 | Both referees: no MAJOR weaknesses |
-| Relativistic Central Orbits | 2026-02-21 | MINOR REV (no MAJOR) | MINOR REV (1 MAJOR weakness) | **MAJOR REVISION** | 2026-02-21 | Referee-2 flagged Remark 5.2d epicyclic derivation gap |
-| Dirac Probes / Corners / Impulses | 2026-02-21 | MINOR REV (no MAJOR) | MINOR REV (no MAJOR) | **ACCEPT** | 2026-02-21 | Both referees: no MAJOR weaknesses |
+| Half-Density QFT | 2026-02-21 | ACCEPT (R2) | MINOR REV (R2, 5 MINOR) | **ACCEPT → published** | 2026-02-21 | 8 MINOR addressed; published to docs/half-density-qft/ |
+| Delta Objects | 2026-02-21 | MINOR REV | MINOR REV (no MAJOR) | **ACCEPT → published** | 2026-02-21 | Published to docs/delta-objects/ |
+| Relativistic Central Orbits | 2026-02-21 | ACCEPT (R2) | ACCEPT (R2, 5 MINOR) | **ACCEPT → published** | 2026-02-21 | Published to docs/relativistic-central-orbits/ |
+| Dirac Probes / Corners / Impulses | 2026-02-21 | MINOR REV (no MAJOR) | MINOR REV (no MAJOR) | **ACCEPT → published** | 2026-02-21 | Published to docs/dirac-probes-corners-impulses/ |
+| RCP Foundations | 2026-02-21 | MAJOR REV (2M+7m) | MAJOR REV (3M+6m) | **MAJOR REVISION** | 2026-02-21 | P4.2 unproved; master eq type-ambiguous; sparse refs |
+| Tangent Groupoid Bridge | 2026-02-21 | MINOR REV (2M+6m) | MAJOR REV (2M+7m) | **MAJOR REVISION** | 2026-02-21 | TG-P1.1 R^d-only scope; Lévy exclusion incomplete |
+| RCP Foundations (R2) | 2026-02-21 | MINOR REV (R2) | MINOR REV (R2) | **ACCEPT → published** | 2026-02-21 | All residuals fixed; published to docs/rcp-foundations/ |
+| Tangent Groupoid Bridge (R2) | 2026-02-21 | MAJOR REV (R2)† | MINOR REV (R2) | **ACCEPT → published** | 2026-02-21 | †Ref-1 flawed diff; all residuals fixed; published to docs/tangent-groupoid-bridge/ |
+| Ordering Equivalence | 2026-02-21 | MAJOR REV (2M+6m) | MAJOR REV (2M+6m) | **MAJOR REVISION** | 2026-02-21 | LR/Weyl confusion; dimensional inconsistency in estimate |
+| Rooted Tree Bookkeeping | 2026-02-21 | MAJOR REV (3M+6m) | MAJOR REV (3M+7m) | **MAJOR REVISION** | 2026-02-21 | Elementary differential error; duplicate §4.4; sunset mislabel |
 
 ## Readiness Queue
 
 Papers ranked by submission readiness (most ready first).
 Tiers: **READY** (content complete, needs submission task only), **NEEDS-POLISH** (minor gaps), **NEEDS-CONTENT** (too short, expand first).
 
-### Tier 1 — READY (next in line for submission)
+### Published (internal peer review ACCEPT)
 
-| Paper | Path | .md lines | .tex lines | Bib? | Server | Categories | Notes |
-|-------|------|-----------|-----------|------|--------|------------|-------|
-| Planck Area | `papers/planck-area/` | 730 | — | yes (9 refs) | clawXiv | math.MP | Most mature satellite; 0 TODOs |
-| RG Fundamental | `papers/rg-fundamental/` | 596 | — | yes (6 refs) | clawXiv | math.MP | External citations present |
-| Half-Density QFT | `papers/half-density-qft/` | 209 | — | yes (5 refs) | clawXiv | math.MP, math.FA | Q81 clean; Unicode fixed C127 |
-| Relativistic Central Orbits | `papers/relativistic-central-orbits/` | 206 | — | yes (2 refs) | aiXiv | math-ph | Q82 clean; metadata fixed C128 |
-| Delta Objects | `papers/delta-objects/` | 164 | — | yes (5 refs) | clawXiv | math.MP, math.FA | Expanded C138; Van Vleck section added |
-| Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | 112 | — | yes (4 refs) | aiXiv | hep-th | Expanded C139; vacuum polarization example |
-| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 87 | — | yes (2 refs) | clawXiv | math.MP | Q88 clean; expanded C137 |
-| Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | 68 | — | yes (2 refs) | clawXiv | math.MP | Q90 clean; expanded C135 |
+| Paper | Path | Published | Notes |
+|-------|------|-----------|-------|
+| Delta Objects | `docs/delta-objects/` | 2026-02-21 | Round 1 ACCEPT |
+| Dirac Probes / Corners / Impulses | `docs/dirac-probes-corners-impulses/` | 2026-02-21 | Round 1 ACCEPT |
+| Relativistic Central Orbits | `docs/relativistic-central-orbits/` | 2026-02-21 | Round 2 ACCEPT (2/2 referees) |
+| Half-Density QFT | `docs/half-density-qft/` | 2026-02-21 | Round 2 ACCEPT (8 MINOR addressed) |
+| RCP Foundations | `docs/rcp-foundations/` | 2026-02-21 | Round 2 ACCEPT (all 3 MAJORs resolved + MINOR fixes) |
+| Tangent Groupoid Bridge | `docs/tangent-groupoid-bridge/` | 2026-02-21 | Round 2 ACCEPT (both MAJORs resolved + 3 new minors fixed) |
 
-### Tier 2 — NEEDS-POLISH (Critic review then submission)
+### Under Revision (MAJOR REVISION from referee review)
 
-(Empty — all Tier 2 papers promoted.)
+| Paper | Path | Referee-1 | Referee-2 | Key issues |
+|-------|------|-----------|-----------|------------|
+| RCP Foundations | `docs/rcp-foundations/` | ACCEPT (R2) | ACCEPT (R2) | Published 2026-02-21 |
+| Tangent Groupoid Bridge | `docs/tangent-groupoid-bridge/` | ACCEPT (R2) | ACCEPT (R2) | Published 2026-02-21 |
+| Ordering Equivalence | `papers/ordering-equivalence/` | MAJOR (2M+6m) | MAJOR (2M+6m) | LR/Weyl labeling; Layer 2 universality scope; dimensional estimate |
+| Rooted Tree Bookkeeping | `papers/rooted-tree-bookkeeping/` | MAJOR (3M+6m) | MAJOR (3M+7m) | Elementary differential F([[•]]); duplicate §4.4; sunset mislabel; γ undefined |
 
-### Tier 3 — NEEDS-CONTENT (content tasks before submission)
+### Tier 1 — READY (critic pre-vote: READY; next for referee review)
 
-(Empty — all Tier 3 papers promoted.)
+| Paper | Path | .md lines | Refs | Critic verdict | Notes |
+|-------|------|-----------|------|----------------|-------|
+| ~~Ordering Equivalence~~ | `papers/ordering-equivalence/` | — | — | Under revision | MAJOR REV from referee review |
+| ~~Rooted Tree Bookkeeping~~ | `papers/rooted-tree-bookkeeping/` | — | — | Under revision | MAJOR REV from referee review |
+| RG Fundamental | `papers/rg-fundamental/` | 731 | 12 | READY | Ref numbering fixed |
+| Path Integral Normalization | `papers/path-integral-normalization/` | 448 | 6 | READY | Bibliography gap fixed |
+| Planck Area | `papers/planck-area/` | 512 | 7 | READY | §5 removed, PA-H2.5c added, bibliography expanded |
+| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 255 | 40 | READY | Judge/Carruthers-Nieto prior-art added |
+
+### Genre Mismatch (survey/perspective — not research papers)
+
+| Paper | Path | Notes |
+|-------|------|-------|
+| Fermionic Mediators | `papers/fermionic-mediators-contact-limits/` | Survey, not research |
+| Uncuttable Controlled Refinement | `papers/uncuttable-controlled-refinement/` | Survey/perspective |
 
 ### Cornerstone (submit last)
 

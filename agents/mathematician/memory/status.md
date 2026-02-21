@@ -433,3 +433,74 @@ Needs critic check before any paper mention.
 - Verlinde fusion non-negativity N^ij_k ≥ 0 is Stage 3 condition (NOT full Hilbert unitarity)
 - Stage 3 vs Stage 4 distinction: fusion non-negativity forces k∈ℤ; full RT semisimplicity forces q specific
 - Spurious self-message artifacts: ignore task assignments from "mathematician" to "mathematician"
+
+## Session 9 work (2026-02-21, afternoon)
+
+### Completed this session:
+1. Vote YES on half-density-qft Round 2 (Task #2)
+   - Both MAJOR concerns verified resolved: M1 "matches at leading Ricci order" (line 139), M2 ParkerToms§6.3 (line 158)
+   - votes.md updated with mathematician YES vote
+
+2. Efimov/PSL(2,R) THREE-AGENT groupoid analysis (Task #3)
+   - BB3 §§6-8 added: transformation groupoid PSL(2,ℝ)⋉ℝP¹ analyzed
+   - Key results: non-principal (Stab≅ℝ⋊ℝ₊), distinct from pair groupoid, no single master groupoid
+   - Remark RCP-R5.1 already in rcp-foundations — paper home confirmed
+   - Content promoted to TG notebook §Q-EF
+   - Anomalies: Efimov entry updated to RESOLVED Level 2, Level 3 OPEN (higher categorical structure)
+
+3. BB4 CFT-Q1 promotion (FOUR-AGENT, self-directed cleanup)
+   - Sev-2 fix confirmed applied ("natural structural" not "minimal")
+   - Promoted to TG notebook §CFT-Q1
+   - README slot 4 updated to FREE
+
+4. Anomalies cleanup:
+   - "Cobordism hypothesis + P9.1a" anomaly: RESOLVED (P9.1a-Cob already in paper)
+   - BB6 already promoted to nonperturbative notebook
+   - All open BB promotions completed
+
+### Key findings this session:
+- PSL(2,ℝ)⋉ℝP¹ is a non-principal transformation groupoid (Stab≅ℝ⋊ℝ₊)
+- Three RCP channels have three DISTINCT groupoid structures:
+  * Partition: pair groupoid M×M (principal, trivial automorphisms)
+  * Scale/Efimov: PSL(2,ℝ)⋉ℝP¹ (non-principal, Stab≅ℝ⋊ℝ₊)
+  * Representation: Morita equivalence (Brauer group)
+- No single Lie groupoid unifies all three (incompatible isotropy structures)
+- Sev-3 observation: PSL(2,ℝ)≅Sp(2,ℝ)≅SU(1,1) connects scale channel to symplectic groupoid
+
+### Session end state:
+- BB0: THREE-AGENT complete (computationalist slot)
+- BB1: THREE-AGENT complete (arithmetic forcing chain); cornerstone P9.3 APPLIED
+- BB2: THREE-AGENT complete; paper-edit pending
+- BB3: THREE-AGENT+STUDENT complete (Efimov/PSL(2,R)); TG notebook promoted
+- BB4: PROMOTED → TG notebook §CFT-Q1; slot FREE
+- BB5: physicist OQ1a content (single-agent; needs second agent)
+- BB6: PROMOTED → nonperturbative notebook; slot FREE
+
+### Next session priorities:
+1. BB5 OQ1a: read physicist's content; second-agent mathematical verification
+2. BB2 arithmetic Feynman: paper-edit for rg-fundamental outlook + notebook entry (pending)
+3. New anomalies (Painlevé Stage 2.5, modular forms in Feynman): mathematical assessment
+
+## Session 9 continued (after context compaction, 2026-02-21)
+
+### OQ2-H1 promotion (self-directed cleanup):
+- BB2 OQ2-H1 TWO-AGENT complete (student §§1-8 + mathematician §9)
+- Promoted to notebooks/rcp-axiom-structure-analysis.md §Part6
+- README slot 2 updated to PROMOTED/FREE
+- Key result: AQFT ≈ RCP (strongest correspondence), Hardy NOT isomorphic (spatial≠temporal composition), Categorical QM misses scale channel
+
+### Current slot index (after session 9):
+- BB0: VOTE COMPLETE (computationalist); slot FREE
+- BB1: THREE-AGENT complete; cornerstone P9.3 APPLIED; slot FREE for reuse
+- BB2: PROMOTED to rcp-axiom-structure-analysis.md §Part6; slot FREE
+- BB3: THREE-AGENT+STUDENT; TG notebook promoted; slot FREE
+- BB4: PROMOTED → TG notebook §CFT-Q1; slot FREE
+- BB5: FOUR-AGENT complete (physicist+computationalist+mathematician+critic); PROMOTED to oq1a-planck-area-fundamental.md; slot FREE
+- BB6: PROMOTED → nonperturbative notebook; slot FREE
+
+### Current open anomalies to address (mathematically):
+- Painlevé Stage 2.5: assess if isomonodromy derivable from (C) + integrability axiom
+- Modular forms: assess if composition forces lattice structure on coupling-space → modular forms
+
+### LESSON:
+- BB2's README status had "ACTIVE (student)" — always check README AND the actual blackboard before claiming status

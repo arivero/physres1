@@ -136,7 +136,7 @@ For a general Riemannian \((M,g)\), the conjugation potential is \(V=|\nabla\ome
 \[
 V(p)=\tfrac{1}{6}R.
 \]
-This coefficient \(1/6\) is **dimension-independent**: it holds for all \(D\) and for all Riemannian metrics, at leading curvature order. Conformal coupling contributes \(\xi_{\mathrm{conf}}R\) with \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), and \(\xi_{\mathrm{conf}}=1/6\) if and only if \(D=4\). Thus, in \(D=4\) and only \(D=4\), the total curvature potential \((\xi_{\mathrm{conf}}-1/6)R\) of the conformally coupled half-density field vanishes at leading order — the half-density conjugation potential \(R/6\) matches the conformal coupling \(\xi_{\mathrm{conf}}R = R/6\) at leading (Ricci scalar) order; subleading curvature terms (\(R^2\), \(R_{\mu\nu}R^{\mu\nu}\), ...) are not affected by this cancellation. (This is the same \(1/6\) that appears in the first Seeley-DeWitt coefficient \(a_1(x,x)=(\tfrac{1}{6}-\xi)R\) [Vassilevich2003].)
+This coefficient \(1/6\) is **dimension-independent**: it holds for all \(D\) and for all Riemannian metrics, at leading curvature order. Conformal coupling contributes \(\xi_{\mathrm{conf}}R\) with \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), and \(\xi_{\mathrm{conf}}=1/6\) if and only if \(D=4\). Thus, in \(D=4\) and only \(D=4\), the total curvature potential \((\xi_{\mathrm{conf}}-1/6)R\) of the conformally coupled half-density field vanishes at leading order — the half-density conjugation potential \(R/6\) matches the conformal coupling \(\xi_{\mathrm{conf}}R = R/6\) at leading (Ricci scalar) order; subleading curvature terms (\(R^2\), \(R_{\mu\nu}R^{\mu\nu}\), ...) are not affected by this cancellation and retain \(D\)-dependent coefficients in general. (This is the same \(1/6\) that appears in the first Seeley-DeWitt coefficient \(a_1(x,x)=(\tfrac{1}{6}-\xi)R\) [Vassilevich2003].)
 
 # 4. Propagators/Green functions as bi-half-density kernels
 Let \(\widetilde G\) be the inverse kernel of \(\widetilde P\) with respect to the coordinate pairing:
@@ -170,7 +170,7 @@ Half-density kernels also make the amplitude-vs-density doubling completely expl
 K_{\rho_t}(x,y)
 =\int_{M\times M} K_t(x,x')\,K_{\rho_0}(x',y')\,\overline{K_t(y,y')}.
 \]
-So densities naturally propagate by a kernel on the doubled space \(M\times M\), built from the forward kernel and its conjugate. The composition in both slots is intrinsic (no background measure needed) precisely because \(K_t\) is a bi-half-density — this is the kernel-level origin of bra/ket (forward/backward) doubling in real expectation values.
+Here \(K_{\rho_0}(x',y')\) is the kernel of the density operator \(\rho_0\), which is itself a bi-density — equivalently, a product of two bi-half-density kernels — defined by \(K_{\rho}(x,y)=\rho_{\mathrm{scalar}}(x,y)\,|dx|^{1/2}|dy|^{1/2}\). So densities naturally propagate by a kernel on the doubled space \(M\times M\), built from the forward kernel and its conjugate. The composition in both slots is intrinsic (no background measure needed) precisely because \(K_t\) is a bi-half-density — this is the kernel-level origin of bra/ket (forward/backward) doubling in real expectation values.
 
 `Remark HD-D4.2 (Heat kernel as bi-half-density; trace without \(\sqrt{|g|}\)).`
 The heat kernel \(K(t;x,y)\) of \(P\) on a Riemannian \((M,g)\) has the DeWitt-Schwinger short-time expansion [DeWitt1965] [Vassilevich2003]
@@ -195,13 +195,12 @@ The Van Vleck determinant \(\Delta(x,y)\) appearing in Remark HD-D4.2 satisfies 
 \[
 \nabla_\mu\!\bigl(\Delta^{1/2}(x,y)\,\nabla^{\mu}s(x,y)\bigr)=D\,\Delta^{1/2}(x,y),
 \]
-where the derivative acts in the \(x\) variable. This means \(\Delta^{1/2}\) is the Jacobian converting coordinate volume to geodesic normal-coordinate volume: it is the half-density factor intrinsic to the geometry. Its appearance in the heat kernel expansion is therefore not accidental — it ensures the leading kernel \((4\pi t)^{-D/2}\Delta^{1/2}(x,y)\,e^{-s/(2t)}\) transforms as a proper bi-half-density under coordinate changes in both slots.
+where the derivative acts in the \(x\) variable. This means \(\Delta^{1/2}\) is the Jacobian converting coordinate volume to geodesic normal-coordinate volume: it is the half-density factor intrinsic to the geometry. Its appearance in the heat kernel expansion is therefore not accidental — it ensures the leading kernel \((4\pi t)^{-D/2}\Delta^{1/2}(x,y)\,e^{-s/(2t)}\) transforms as a proper bi-half-density under coordinate changes in both slots — without \(\Delta^{1/2}\), the coordinate-free composition of Section 2 would fail for the heat kernel.
 
 `Remark HD-D4.5 (Proper-time representation unifies the D/2 exponent).`
 The propagator is the proper-time (Schwinger) integral of the heat kernel: \(G(x,y)=\int_0^\infty K(t;x,y)\,dt\). The exponent \(D/2\) recurs throughout: identity-kernel normalization \((2\pi\varepsilon)^{-D/2}\) (Derivation HD-D1.1a), heat-kernel short-time behavior \((4\pi t)^{-D/2}\) (Remark HD-D4.2), flat propagator prefactor \(\Gamma(D/2-1)/(4\pi)^{D/2}\) (Example HD-D4.3), and mass-counterterm UV degree \(\Lambda^{D-2}=\Lambda^{2(D/2-1)}\) (Remark HD-D5.3). The proper-time integral converts the heat kernel's \(t^{-D/2}\) into the propagator's \(\Gamma(D/2-1)\) via Schwinger parametrization, making explicit that all four manifestations trace back to the same half-density volume-scaling origin. (For a comprehensive treatment showing the \(d/2\) exponent is uniquely forced by semigroup composition under dimensional homogeneity — across temporal composition, Van Vleck determinant, heat kernel, and renormalization thresholds — see the companion note "Path Integral Normalization and the d/2 Exponent" [PathIntegralNormalization, in preparation].)
 
 # 5. Contact terms and counterterms as diagonal delta kernels (kernel-level remark)
-(Label convention: remarks in this section are numbered by conceptual group — HD-D5.1–5.2 for distributional identities, HD-D5.3–5.3b for counterterm scaling — rather than in textual order.)
 
 In QFT, divergences are removed by adding local counterterms to the action, e.g.
 \(\delta m^2\,\phi^2\), \(\delta Z\,(\partial\phi)^2\), curvature couplings, etc.
@@ -214,6 +213,24 @@ K_{\mathrm{Id}}(x,y)=\delta^{(D)}(x-y)\,|dx|^{1/2}|dy|^{1/2}.
 \]
 Multiplication counterterms correspond to \(c(x)\,K_{\mathrm{Id}}(x,y)\), and derivative counterterms correspond to derivatives acting on the delta kernel (e.g. \(\partial_x\delta^{(D)}(x-y)\) and higher).
 
+`Remark HD-D5.1 (Derivative of the diagonal delta kernel; coordinate-free identity).`
+The slogan "\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)" can be seen cleanly, without a connection, in the half-density kernel calculus. The identity kernel \(K_{\mathrm{Id}}\) is invariant under diagonal diffeomorphisms \((\Phi\times\Phi)\), so for any vector field \(V\) on \(M\) one has
+\[
+(\mathcal L_{V_x}+\mathcal L_{V_y})\,K_{\mathrm{Id}}=0,
+\qquad\text{hence}\qquad
+\mathcal L_{V_x}K_{\mathrm{Id}}=-\mathcal L_{V_y}K_{\mathrm{Id}},
+\]
+where \(\mathcal L\) is the Lie derivative acting on half-densities. In local coordinates, taking \(V=\partial/\partial x^\mu\) recovers \(\partial_{x^\mu}\delta^{(D)}(x-y)=-\partial_{y^\mu}\delta^{(D)}(x-y)\). This is the kernel-level mechanism behind "moving derivatives between slots" in integration by parts and in contact-term identities.
+
+`Remark HD-D5.2 (Point splitting produces δ' contact terms).`
+Point splitting makes the simplest derivative contact term explicit:
+in one dimension,
+\[
+\frac{\delta(x+\varepsilon)-\delta(x)}{\varepsilon}\xrightarrow[\varepsilon\to 0]{}\delta'(x),
+\qquad \langle\delta',\varphi\rangle=-\varphi'(0).
+\]
+This limit illustrates "locality = diagonal support" at the kernel level: derivative counterterms are distributional derivatives of \(K_{\mathrm{Id}}\), and their form is fixed by the half-density structure independently of scheme-dependent finite-subtraction conventions.
+
 `Remark HD-D5.3 (Mass counterterm scaling from the D/2 exponent).`
 The mass counterterm \(\delta m^2\) is a scalar multiple of \(K_{\mathrm{Id}}\). Its UV degree of divergence follows from the heat kernel at coincidence: the propagator at \(x=y\) is formally \(\int_0^\infty K(t;x,x)\,dt\), and Remark HD-D4.2 gives \(K(t;x,x)\sim(4\pi t)^{-D/2}\) as \(t\to 0^+\). The UV divergence arises from small proper times (large momenta \(k^2\sim 1/t\)); introducing a proper-time cutoff at \(t_{\min}=\Lambda^{-2}\) removes the divergent piece \(\int_0^{\Lambda^{-2}} t^{-D/2}\,dt\sim\Lambda^{D-2}\) for \(D>2\). Thus the same \(D/2\) exponent that normalizes the identity kernel (Derivation HD-D1.1a) controls the UV degree of divergence of the mass correction: \(\Lambda^{D-2}=\Lambda^{2(D/2-1)}\).
 
@@ -225,28 +242,6 @@ In dimensional regularization, the proper-time integral for the \(a_n\) contribu
 
 `Remark HD-D5.4 (Functional determinant from the heat-kernel trace).`
 The spectral \(\zeta\)-function \(\zeta_P(s)=\mathrm{Tr}\,P^{-s}=\Gamma(s)^{-1}\int_0^\infty t^{s-1}\,\mathrm{Tr}\,K(t)\,dt\) inherits its pole structure from the small-\(t\) asymptotics of the heat-kernel trace: the Seeley-DeWitt expansion gives simple poles at \(s=D/2-n\) (\(n=0,1,2,\ldots\)), again controlled by the \(D/2\) exponent. The functional determinant \(\det P:=\exp(-\zeta_P'(0))\) is finite, coordinate-independent, and — in the half-density framework — requires no extraneous volume-form choice: the trace \(\mathrm{Tr}\,K(t)=\int_M\widetilde K(t;x,x)\,d^Dx\) is intrinsic since \(\widetilde K\) absorbs the \(\sqrt{|g|}\) factor (Remark HD-D4.2) [Vassilevich2003].
-
-`Remark HD-D5.1 (Derivative of the diagonal delta kernel; coordinate-free identity).`
-The slogan “\(\partial_x\delta(x-y)=-\partial_y\delta(x-y)\)” can be seen cleanly, without a connection, in the half-density kernel calculus. The identity kernel \(K_{\mathrm{Id}}\) is invariant under diagonal diffeomorphisms \((\Phi\times\Phi)\), so for any vector field \(V\) on \(M\) one has
-\[
-(\mathcal L_{V_x}+\mathcal L_{V_y})\,K_{\mathrm{Id}}=0,
-\qquad\text{hence}\qquad
-\mathcal L_{V_x}K_{\mathrm{Id}}=-\mathcal L_{V_y}K_{\mathrm{Id}},
-\]
-where \(\mathcal L\) is the Lie derivative acting on half-densities. In local coordinates, taking \(V=\partial/\partial x^\mu\) recovers \(\partial_{x^\mu}\delta^{(D)}(x-y)=-\partial_{y^\mu}\delta^{(D)}(x-y)\). This is the kernel-level mechanism behind “moving derivatives between slots” in integration by parts and in contact-term identities.
-
-`Remark HD-D5.2 (Point splitting produces δ' contact terms).`
-Point splitting makes the simplest derivative contact term explicit:
-in one dimension,
-\[
-\frac{\delta(x+\varepsilon)-\delta(x)}{\varepsilon}\xrightarrow[\varepsilon\to 0]{}\delta'(x),
-\qquad \langle\delta',\varphi\rangle=-\varphi'(0).
-\]
-This limit is the distributional companion of the “difference quotient as divergence + subtraction” toy model.
-
-This framing is useful for two reasons:
-1. it makes “locality = diagonal support” literal at the kernel level,
-2. it separates the canonical distributional objects from scheme-dependent scalarizations and finite-subtraction conventions.
 
 # 6. Link to the half-density scale program (where Planck-area enters conditionally)
 On a fixed background \((M,g)\), the metric provides a natural reference half-density \(|g|^{1/4}|dx|^{1/2}\). The Planck-area program begins only when we ask for a **background-free** scalarization convention that turns half-density amplitudes into universal dimensionless numbers. A separate note develops that stronger hypothesis ladder; it is not needed for the present kernel/propagator semantics.
@@ -266,3 +261,4 @@ Gauge theories suggest a second, deeper appearance of half-densities: the BV for
 6. [DeWitt1965] Bryce S. DeWitt, *Dynamical Theory of Groups and Fields*, Gordon and Breach, 1965. (DeWitt-Schwinger expansion, Van Vleck determinant transport equation.)
 7. [Vassilevich2003] Dmitri V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* 388 (2003), 279–360. arXiv:`hep-th/0306138`. DOI `10.1016/j.physrep.2003.09.002`. OA: arXiv. (Comprehensive review of heat kernel asymptotics and Seeley-DeWitt coefficients.)
 8. [ParkerToms2009] Leonard Parker and David Toms, *Quantum Field Theory in Curved Spacetime: Quantized Fields and Gravity*, Cambridge Monographs on Mathematical Physics, Cambridge University Press, 2009. ISBN `978-0-521-87787-9`. (Propagators and heat kernels on curved backgrounds; §6.3 discusses the half-density form of the curved-space propagator kernel.)
+9. [PathIntegralNormalization] A. Rivero and A.I.Scaffold, "Path Integral Normalization and the d/2 Exponent" (companion note, in preparation). (Shows the d/2 exponent is uniquely forced by semigroup composition under dimensional homogeneity.)

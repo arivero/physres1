@@ -724,8 +724,8 @@ From the composition perspective, quantum field theory has a two-layer architect
 5. [ManuelTarrach1994PertRenQM] Cristina Manuel and Rolf Tarrach, "Perturbative Renormalization in Quantum Mechanics," *Physics Letters B* 328 (1994), 113--118. arXiv:`hep-th/9309013` (v1, 2 Sep 1993). DOI `10.1016/0370-2693(94)90437-5`.
 6. [BonneauFarautValent2001SAE] Guy Bonneau, Jacques Faraut, and Galliano Valent, "Self-adjoint extensions of operators and the teaching of quantum mechanics," *American Journal of Physics* 69 (2001), 322–331. arXiv:`quant-ph/0103153`. DOI `10.1119/1.1328351`.
 7. [ConnesMarcolli2004] Alain Connes and Matilde Marcolli, "From physics to number theory via noncommutative geometry," arXiv:`hep-th/0411114` (2004).
-7. [TsutsuiFulopCheon2002Connection] Izumi Tsutsui, Tamás Fülöp, and Taksu Cheon, "Connection Conditions and the Spectral Family under Singular Potentials," arXiv:`quant-ph/0209110` (v1, 20 Sep 2002).
-8. [Jackiw1991DeltaPotentials] R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.
-9. [RootedTreeBookkeeping] A. Rivero, "Rooted-Tree Bookkeeping for Composition Compatibility: A Butcher/RG Dictionary," companion satellite paper (2026).
-10. [RCPFoundations] A. Rivero, "Refinement Compatibility Principle: Axioms and Crown Witnesses," companion satellite paper (2026).
-11. [Maiezza-Vasquez2023] A. Maiezza and J. C. Vasquez, "Non-Wilsonian ultraviolet completions of a gauge theory," arXiv:`2311.10393` (v1, 17 Nov 2023).
+8. [TsutsuiFulopCheon2002Connection] Izumi Tsutsui, Tamás Fülöp, and Taksu Cheon, "Connection Conditions and the Spectral Family under Singular Potentials," arXiv:`quant-ph/0209110` (v1, 20 Sep 2002).
+9. [Jackiw1991DeltaPotentials] R. Jackiw, "Delta-function potentials in two- and three-dimensional quantum mechanics," MIT-CTP-1937 (Jan 1991). Reprinted in *M.A.B. Bég Memorial Volume* (World Scientific, 1991), pp. 25–42. OA mirror: <https://www.physics.smu.edu/scalise/P6335fa21/notes/Jackiw.pdf>.
+10. [RootedTreeBookkeeping] A. Rivero, "Rooted-Tree Bookkeeping for Composition Compatibility: A Butcher/RG Dictionary," companion satellite paper (2026).
+11. [RCPFoundations] A. Rivero, "Refinement Compatibility Principle: Axioms and Crown Witnesses," companion satellite paper (2026).
+12. [Maiezza-Vasquez2023] A. Maiezza and J. C. Vasquez, "Non-Wilsonian ultraviolet completions of a gauge theory," arXiv:`2311.10393` (v1, 17 Nov 2023).

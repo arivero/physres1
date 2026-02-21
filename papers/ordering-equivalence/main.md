@@ -3,7 +3,7 @@ title: "Operator Ordering as Equivalence Class: Stratification and Measurability
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"
 abstract: |
-  Quantum operator ordering is traditionally framed as an "ambiguity" requiring physical input to resolve. This note develops the complementary view that ordering is an **equivalence relation**: different prescriptions (Weyl, half-density, left/right) share the same principal symbol and differ only in ℏ-dependent corrections stratified across four layers. We present the four-layer decomposition (principal symbol, connection, scalar potential, domain), work through two explicit examples (position-dependent mass, curved configuration space), and analyze when ordering differences are physically measurable. The conclusion is that ordering choice is a gauge freedom, with half-density quantization serving as a canonical representative within the equivalence class—analogous to Lorenz gauge in electromagnetism. This work complements the **representation channel** of the Refinement Compatibility Principle (RCP), which demands that physical predictions survive controlled changes of quantization prescription.
+  Quantum operator ordering is traditionally framed as an "ambiguity" requiring physical input to resolve. This note develops the complementary view that ordering is an **equivalence relation**: different prescriptions (Weyl, half-density, left/right) share the same principal symbol and differ only in ℏ-dependent corrections stratified across four layers. We present the four-layer decomposition (principal symbol, connection, scalar potential, domain), work through two explicit examples (position-dependent mass, curved configuration space), and analyze when ordering differences are physically measurable. The conclusion is that ordering choice is a gauge freedom, with half-density quantization serving as a canonical representative within the equivalence class at the level of principal symbol and connection geometry—analogous to Lorenz gauge in electromagnetism, though the analogy does not extend to the \(O(\hbar^2)\) scalar potential layer. This work complements the **representation channel** of the Refinement Compatibility Principle (RCP), which demands that physical predictions survive controlled changes of quantization prescription.
 ---
 
 # 1. Introduction
@@ -26,8 +26,8 @@ This stratification clarifies when ordering differences are **physically measura
 
 Let \(H_{\mathrm{cl}}(q,p)\) be a classical Hamiltonian. Quantization assigns an operator \(\hat H\) on \(L^2(\mathbb R^d)\) (or a densitized version). Different ordering prescriptions yield different operators, but the differences are stratified:
 
-`Proposition OE-P1.1 (Four-layer structure of ordering ambiguity).`
-Let \(\alpha\) and \(\beta\) label two admissible ordering prescriptions (e.g., Weyl, left, right, half-density). Then the operators \(\hat H_\alpha\) and \(\hat H_\beta\) satisfy:
+**Proposition OE-P1.1 (Four-layer structure of ordering ambiguity).**
+Let \(\alpha\) and \(\beta\) label two *geometric* (self-adjoint) ordering prescriptions (e.g., Weyl, half-density). Then the operators \(\hat H_\alpha\) and \(\hat H_\beta\) satisfy:
 
 **Layer 1 (Principal symbol):** Both operators have the same classical limit:
 \[
@@ -54,12 +54,14 @@ This is the **deformation freedom** within the equivalence class.
 
 **Layer 4 (Domain):** Self-adjoint extension parameters (boundary conditions, delta-extension data) are independent of ordering and must be specified separately.
 
-`Remark OE-H1.1 (Layer 2 is the key distinction).`
+**Remark (non-geometric prescriptions).** Left and right orderings (e.g., \(\hat{f}(\hat{q})\hat{p}^2\) for left ordering) do **not** share Layer 2 with half-density: left ordering of \(f(q)p^2\) yields \(-\hbar^2 f(q)\partial^2/\partial q^2\), which has no first-derivative term at all. Right ordering gives Layer 2 = \(2f'(q)\partial/\partial q\), differing from the geometric \(f'(q)\partial/\partial q\). Proposition OE-P1.1 applies only to geometric (self-adjoint) prescriptions; left/right orderings fall outside this class.
+
+**Remark OE-H1.1 (Layer 2 is the key distinction).**
 The fact that Layers 1 *and* 2 are universal (not scheme-dependent) is the content of "deformation equivalence is physical": prescriptions agree on both the classical symbol and the connection geometry, differing only in the O(ℏ²) scalar potential (Layer 3). This was verified quantitatively in the position-dependent mass harmonic oscillator (see Section 3).
 
 # 3. Worked Example — Position-Dependent Mass (PDM)
 
-Consider the 1D Hamiltonian with position-dependent mass \(m(q)\):
+Consider the 1D Hamiltonian with position-dependent mass \(m(q)\), a well-studied problem in semiconductor heterostructure physics [vonRoos1983, BenDanielDuke1966]:
 \[
 H_{\mathrm{cl}}(q,p) = \frac{p^2}{2m(q)} + V(q).
 \]
@@ -128,26 +130,30 @@ V_{\mathrm{HD}} - V_{\mathrm{LR}}
 
 ## 3.4 Observable Test: PDM Harmonic Oscillator
 
-Take \(f(q) = 1 + \alpha q^2\) (weak position-dependence, \(|\alpha| \ll 1\), dimensionless) and \(V(q) = \frac{1}{2}m\omega^2 q^2\). The Layer 3 scalar difference is:
+Take \(f(q) = 1 + \alpha q^2\), where \(\alpha\) has dimensions \([\alpha] = L^{-2}\), and \(V(q) = \frac{1}{2}m\omega^2 q^2\). Introduce the **dimensionless** parameter \(\alpha_0 = \alpha\,a^2\), where \(a = \sqrt{\hbar/(m\omega)}\) is the oscillator length. From the Layer 3 difference in §3.3 with \(f'' = 2\alpha\) and \((f')^2/f \approx 4\alpha^2 q^2\) (to leading order in \(\alpha\)):
 \[
 \delta V = V_{\mathrm{HD}} - V_{\mathrm{LR}}
-= \frac{\hbar^2\omega}{4}\alpha - \frac{\hbar^2\omega}{8}\alpha^2 q^2 + O(\alpha^3).
+= \frac{\hbar^2\alpha}{4} - \frac{\hbar^2\alpha^2 q^2}{8} + O(\alpha^3).
 \]
-The \(O(\alpha)\) term is a constant (\(q\)-independent) shift affecting all energy levels equally. For energy *gaps* \(E_n - E_0\) (the spectroscopically relevant observable), this constant cancels and the leading ordering correction is:
+Rewriting in oscillator units (\(q = a\,\tilde{q}\), \(\hbar^2\alpha = \hbar\omega\,\alpha_0\)):
+\[
+\delta V = \frac{\hbar\omega\,\alpha_0}{4} - \frac{\hbar\omega\,\alpha_0^2\,\tilde{q}^2}{8} + O(\alpha_0^3).
+\]
+The \(O(\alpha_0)\) term is a constant (\(q\)-independent) shift affecting all energy levels equally. For energy *gaps* \(E_n - E_0\) (the spectroscopically relevant observable), this constant cancels and the leading ordering correction is:
 \[
 \delta(E_n - E_0)^{(\mathrm{HD}-\mathrm{LR})}
-= -\frac{\hbar\omega\,\alpha^2\,n}{8} + O(\alpha^3).
+= -\frac{\hbar\omega\,\alpha_0^2\,n}{16} + O(\alpha_0^3).
 \]
 
 **Numerical estimate (GaAs quantum well parameters):**
-- \(\hbar\omega \sim 10\) meV,
-- \(\alpha \sim 0.001\)–\(0.01\) (typical effective-mass variation over the oscillator length),
-- \(|\delta(E_1 - E_0)| \sim 1.2 \times 10^{-6}\)–\(1.2 \times 10^{-4}\) meV.
+- \(\hbar\omega \sim 10\) meV, \(m^* \approx 0.067\,m_e\), oscillator length \(a \approx 10\) nm,
+- \(\alpha_0 \sim 0.1\)–\(0.3\) (dimensionless; corresponding to \(\alpha \sim 0.001\)–\(0.003\) nm\(^{-2}\)),
+- \(|\delta(E_1 - E_0)| \sim \hbar\omega\,\alpha_0^2/16 \sim 0.006\)–\(0.06\) meV.
 
-This is **below** typical experimental energy resolution (\(\sim 0.1\) meV), confirming that Layer 3 differences are **physically unmeasurable** in this system for spectroscopic observables. (The absolute energy shift \(\alpha\hbar\omega/4\) is larger but spectroscopically irrelevant since it is level-independent.)
+This is **below** typical experimental energy resolution (\(\sim 0.1\) meV), confirming that Layer 3 differences are **physically unmeasurable** in this system for spectroscopic observables. (The absolute energy shift \(\alpha_0\hbar\omega/4 \sim 0.25\)–\(0.75\) meV is larger but spectroscopically irrelevant since it is level-independent.)
 
-`Proposition OE-P1.2 (Deformation equivalence is physical).`
-First-order (\(O(\alpha)\)) corrections to energy *gaps* vanish identically (the \(O(\alpha)\) shift is a constant, affecting all levels equally). The \(O(\alpha^2)\) gap correction is unmeasurably small in realistic parameter regimes. Left-right symmetric and half-density prescriptions agree on Layers 1 and 2 (principal symbol + connection), differing only in the \(O(\hbar^2)\) scalar potential (Layer 3), which produces negligible observable effects.
+**Proposition OE-P1.2 (Deformation equivalence is physical).**
+First-order (\(O(\alpha_0)\)) corrections to energy *gaps* vanish identically (the \(O(\alpha_0)\) shift is a constant, affecting all levels equally). The \(O(\alpha_0^2)\) gap correction is unmeasurably small in realistic parameter regimes (\(\sim 0.006\)–\(0.06\) meV for GaAs, vs. \(\sim 0.1\) meV resolution). Left-right symmetric and half-density prescriptions agree on Layers 1 and 2 (principal symbol + connection), differing only in the \(O(\hbar^2)\) scalar potential (Layer 3), which produces negligible observable effects.
 
 # 4. Worked Example — Curved Configuration Space
 
@@ -177,7 +183,7 @@ The first-derivative term is the **connection** (Layer 2): it depends on the met
 
 ## 4.2 Weyl-Ordering Generalization
 
-An alternative prescription symmetrizes the metric and momentum operators. In flat space this reduces to the standard Weyl ordering; on a curved manifold it yields:
+An alternative prescription symmetrizes the metric and momentum operators. In flat space this reduces to the standard Weyl ordering; on a curved manifold, a **naive symmetrization** (not the full Weyl quantization, which requires normal coordinates or the Kontsevich star-product formulation) yields:
 \[
 \hat H_W
 = -\frac{\hbar^2}{2m}\,\frac{1}{2}\left[g^{ij}(q)\partial_i\partial_j + \partial_i\partial_j g^{ij}(q)\right]
@@ -187,14 +193,14 @@ This also incorporates a first-derivative connection term (Layer 2), though the 
 
 ## 4.3 Curvature Potential (Layer 3 Difference)
 
-The scalar-term difference between prescriptions (Layer 3) can be expressed in terms of the Ricci scalar \(R\). For the heat-kernel (half-density) prescription, the effective potential includes a geometric contribution:
+The scalar-term difference between prescriptions (Layer 3) can be expressed in terms of the Ricci scalar \(R\). For the heat-kernel (half-density) prescription [DeWitt1957], the effective potential includes a geometric contribution:
 \[
 V_{\mathrm{curv}}
 = \frac{\hbar^2}{6m}R(q).
 \]
 This is the leading short-time correction to the free heat kernel on a curved manifold. It arises from the Van Vleck determinant expansion (see Section 4.4 below). Other prescriptions yield different coefficients for \(R(q)\), but all agree on the **form** of the curvature contribution (Layer 3 deformation).
 
-`Proposition OE-P1.3 (Geometric prescriptions agree on Layers 1 and 2).`
+**Proposition OE-P1.3 (Geometric prescriptions agree on Layers 1 and 2).**
 On a Riemannian configuration space, geometric quantization prescriptions (half-density, Weyl-type, etc.) all produce:
 1. **Layer 1:** The same classical Hamiltonian \(g^{ij}p_ip_j/(2m) + V(q)\).
 2. **Layer 2:** Connection terms proportional to \(\partial_i g^{ij}\) and \(\partial_i\ln|g|\), differing only by scheme-dependent numerical coefficients.
@@ -214,7 +220,7 @@ where \(\Delta(x,y)\) is the Van Vleck determinant (the Jacobian of the exponent
 \]
 Differentiating with respect to \(t\) at \(t=0^+\) yields the \((ℏ²/6m)R(q)\) term in the Hamiltonian.
 
-`Remark OE-H1.2 (Curvature potential is universal in Layer 3).`
+**Remark OE-H1.2 (Curvature potential is universal in Layer 3).**
 All geometric prescriptions produce a curvature-dependent scalar potential, but the coefficient (e.g., \(1/6\) vs \(1/8\) vs \(1/12\)) is scheme-dependent. This is the Layer 3 deformation freedom. The **form** of the correction (\(\propto R\)) is universal (determined by the metric), but the **magnitude** depends on the quantization prescription.
 
 # 5. Star-Product Perspective: Ordering as Gauge Freedom
@@ -250,7 +256,7 @@ f \star_{\mathrm{std}} g - f \star_{\mathrm{Moyal}} g
 = -\frac{\hbar^2}{8}\{\{f,g\}\} + O(\hbar^3).
 \]
 
-`Proposition OE-P1.4 (Star products related by automorphism).`
+**Proposition OE-P1.4 (Star products related by automorphism).**
 Two star products \(\star\) and \(\star'\) on the same classical phase space are **equivalent** if there exists an invertible linear map \(T: C^\infty(\mathbb R^{2d}) \to C^\infty(\mathbb R^{2d})\) such that:
 \[
 T(f \star g) = T(f) \star' T(g).
@@ -266,7 +272,7 @@ Concretely, if \(\hat H_W\) is the Weyl-ordered Hamiltonian and \(\hat H_{\mathr
 \]
 where \(\hat U = 1 + O(\hbar)\). The eigenvalues of \(\hat H_W\) and \(\hat H_{\mathrm{std}}\) differ by \(O(\hbar^2)\), which is the Layer 3 deformation freedom.
 
-`Heuristic OE-H1.3 (Half-density as "Lorenz gauge" for ordering).`
+**Heuristic OE-H1.3 (Half-density as "Lorenz gauge" for ordering).**
 Just as the Lorenz gauge condition \(\partial^\mu A_\mu = 0\) in electromagnetism selects a convenient representative within the gauge-equivalence class (without breaking gauge invariance), the half-density prescription selects a **canonical representative** within the ordering-equivalence class. The physical content (eigenvalues, scattering amplitudes) is gauge-invariant, but the half-density choice simplifies calculations by making the connection term (Layer 2) manifest and minimizing scheme-dependent corrections (Layer 3).
 
 # 6. Time-Slicing Prescriptions and Path Integrals
@@ -302,7 +308,7 @@ These choices yield different discretized actions and, in the continuum limit \(
 
 In the stochastic calculus literature, the distinction between **Itô** and **Stratonovich** integrals is well-known. The connection to quantum operator ordering is:
 
-`Proposition OE-P1.5 (Midpoint ↔ Stratonovich ↔ Half-Density).`
+**Proposition OE-P1.5 (Midpoint ↔ Stratonovich ↔ Half-Density) [DeWitt1957, §V].**
 The midpoint discretization in the path integral corresponds to the **Stratonovich** interpretation of stochastic integrals and, upon quantization, yields the **half-density** (or minimal-coupling) operator ordering. The Itô (prepoint) discretization corresponds to a different ordering prescription, related to the half-density operator by an \(O(\hbar)\) connection-term shift.
 
 The Itô correction term for a stochastic differential equation \(dX_t = \mu(X_t)dt + \sigma(X_t)dW_t\) is:
@@ -320,7 +326,7 @@ K(q_2,q_0;2\varepsilon)
 \]
 Different time-slicing prescriptions yield different normalization factors and measure terms in the integral, but the sewing law must hold for the prescription to be consistent. This is the **composition compatibility** condition (RCP partition channel): the discretization choice must respect the semigroup structure of time evolution.
 
-`Remark OE-H1.4 (Discretization as partition-channel RCP witness).`
+**Remark OE-H1.4 (Discretization as partition-channel RCP witness).**
 The fact that different time-slicing prescriptions (midpoint, prepoint) produce the same continuum limit (up to Layer 3 corrections) is a manifestation of **partition compatibility** in the RCP framework: the physics is independent of how the time interval is partitioned, provided the discretization prescription is applied consistently. The Layer 2 connection terms encode the "transport data" needed to make the sewing law hold across refinement steps.
 
 # 7. Physical Measurability and Conclusion
@@ -333,11 +339,11 @@ The four-layer stratification provides a clear answer to the question: "When are
 
 **Layer 2 (Connection):** Not scheme-dependent for geometric prescriptions—half-density, Weyl, and other "natural" orderings all incorporate the same connection term (e.g., \(\propto f'(q)\) in PDM systems, \(\propto \partial_i\ln|g|\) on curved manifolds). This layer is **universal** within the class of geometric quantizations.
 
-**Layer 3 (Scalar potential):** Measurable in principle, but typically **unmeasurably small** in realistic systems. The PDM harmonic oscillator example (Section 3.4) showed that the energy shift between Weyl and half-density orderings is \(|\Delta E_0| \sim 0.006\)–\(0.06\) meV for GaAs quantum well parameters, well below experimental resolution (\(\sim 0.1\) meV). Similarly, the curvature-potential coefficient difference (Section 4.3) produces effects that are negligible unless the curvature radius is comparable to the de Broglie wavelength.
+**Layer 3 (Scalar potential):** Measurable in principle, but typically **unmeasurably small** in realistic systems. The PDM harmonic oscillator example (Section 3.4) showed that the energy-gap shift between LR symmetric and half-density orderings is \(|\delta(E_1 - E_0)| \sim 0.006\)–\(0.06\) meV for GaAs quantum well parameters (dimensionless parameter \(\alpha_0 \sim 0.1\)–\(0.3\)), well below experimental resolution (\(\sim 0.1\) meV). Similarly, the curvature-potential coefficient difference (Section 4.3) produces effects that are negligible unless the curvature radius is comparable to the de Broglie wavelength.
 
 **Layer 4 (Domain):** **Always measurable** when present—self-adjoint extension parameters (e.g., boundary conditions for contact interactions, delta-extension data) are independent of ordering and can have O(1) effects on spectra and scattering. However, Layer 4 is not an "ordering ambiguity" but rather a separate physical input.
 
-`Proposition OE-P1.6 (Ordering equivalence is physical equivalence).`
+**Proposition OE-P1.6 (Ordering equivalence is physical equivalence).**
 Within the class of geometric quantization prescriptions (Weyl, half-density, minimal coupling), ordering differences affect only Layer 3 (O(ℏ²) scalar potentials). In typical quantum systems (bound states, scattering at moderate energies), these differences produce energy shifts and phase shifts that are **parametrically small** (\(\propto \hbar^2\)) and **numerically unmeasurable** with current experimental precision. Therefore, ordering equivalence is not merely a formal algebraic statement—it is a **physical equivalence** of predictions.
 
 ## 7.2 Half-Density as Canonical Gauge
@@ -347,7 +353,7 @@ Just as the Lorenz gauge condition \(\partial^\mu A_\mu = 0\) in electromagnetis
 **Advantages of half-density quantization:**
 1. **Geometric naturality:** The half-density Laplace-Beltrami operator \(\nabla^\dagger\nabla\) is coordinate-independent and manifestly respects the Riemannian structure.
 2. **Connection manifest:** The connection term (Layer 2) arises automatically from the densitization, making the coupling to geometry transparent.
-3. **Minimal Layer 3 corrections:** For many systems, the half-density prescription minimizes the O(ℏ²) scalar potential, simplifying perturbative calculations.
+3. **Geometric Layer 3 corrections:** The half-density prescription yields a scalar potential with a natural geometric interpretation (e.g., the \(\hbar^2 R/(6m)\) curvature term on Riemannian manifolds), though it does not always minimize the absolute magnitude of the \(O(\hbar^2)\) correction compared to other prescriptions.
 4. **Path-integral correspondence:** Half-density ordering corresponds to the midpoint (Stratonovich) time-slicing prescription, which preserves the sewing law without extra correction terms.
 
 However, other orderings (Weyl, standard) are equally valid and may be more convenient for specific calculations. The key insight is that the **choice of ordering is a gauge freedom**, not a physical ambiguity.
@@ -394,3 +400,10 @@ This ordering-equivalence structure is one instance of the broader **Refinement 
 
 1. [RCPFoundations] A. Rivero, "Refinement Compatibility Principle: Axioms and Crown Witnesses," companion satellite paper (2026).
 2. [RGFundamental] A. Rivero, "Renormalization Group as a Fundamental Compatibility Principle," companion satellite paper (2026).
+3. [DeWitt1957] Bryce S. DeWitt, "Dynamical theory in curved spaces. I. A review of the classical and quantum action principles," *Reviews of Modern Physics* 29 (1957), 377–397. DOI `10.1103/RevModPhys.29.377`. (Curved-space operator ordering ambiguity; DeWitt's curvature potential.)
+4. [AliEnglis2005] S. Twareque Ali and Miroslav Engliš, "Quantization methods: a guide for physicists and analysts," *Reviews in Mathematical Physics* 17 (2005), 391–490. arXiv:`math-ph/0405065`. DOI `10.1142/S0129055X05002376`. (Comprehensive survey of quantization schemes and ordering equivalences.)
+5. [deGosson2006] Maurice A. de Gosson, *Symplectic Geometry and Quantum Mechanics*, Birkhäuser, 2006. ISBN `978-3-7643-7575-1`. DOI `10.1007/3-7643-7575-2`. (Half-density quantization, metaplectic group, ordering as gauge freedom.)
+
+6. [vonRoos1983] O. von Roos, "Position-dependent effective masses in semiconductor theory," *Phys. Rev. B* **27** (1983), 7547–7552. DOI `10.1103/PhysRevB.27.7547`. (Standard reference for ordering ambiguity in PDM semiconductor theory; three-parameter family of orderings.)
+
+7. [BenDanielDuke1966] D. J. BenDaniel and C. B. Duke, "Space-charge effects on electron tunneling," *Phys. Rev.* **152** (1966), 683–692. DOI `10.1103/PhysRev.152.683`. (BenDaniel-Duke ordering prescription for heterostructure band-structure calculations.)
