@@ -27,7 +27,7 @@ edits directly (no ephemeral subagents).
 ## 1. Orchestrator (Main Agent — Department Head)
 
 An AI that acts as **department head**: creates the research team, manages the kanban,
-processes paper-edit requests, serves as publication editor, and dispatches ephemeral
+processes patch requests, serves as publication editor, and dispatches ephemeral
 referee agents for peer review (§11). The scaffold is domain-agnostic — the orchestrator coordinates any research
 program, not only physics.
 
@@ -46,8 +46,8 @@ Emergency read is allowed only for shutdown safety when an agent is non-responsi
 **Responsibilities:**
 - Team creation and shutdown
 - Task creation, assignment, and monitoring via the shared kanban
-- **Polling `proposals/` for manuscript edit requests** — read proposal files, process, then delete
-- Processing paper-edit requests directly (no subagent)
+- **Polling `proposals/` for patch requests** — read proposal files, process, then delete
+- Processing patch requests directly (no subagent)
 - **Publication editor**: record votes, enforce unanimous threshold, spawn referee agents, decide accept/revise/reject (§11)
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
 - Commit policy enforcement
@@ -89,7 +89,7 @@ as their canonical rule set. See individual agent definition files for persona-s
 ## 3. Paper Editing
 
 The orchestrator edits manuscript files (`paper/main.md`, `papers/*/main.md`, bibliography)
-directly when processing paper-edit proposals.
+directly when processing patch requests.
 No ephemeral subagents. Library work is done by researcher agents directly
 (see `agents/shared-rules.md` §11).
 
@@ -119,13 +119,13 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 - **Assignee** = who is currently executing this task. An agent self-assigns by writing their own name.
 - **Source** = who suggested it (provenance only).
 - **Assignee empty** = open / anyone can claim it by self-assigning.
-- **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive.
+- **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive. **Only the orchestrator deletes rows** — agents report completion via message, orchestrator removes the row. This prevents concurrent-write conflicts.
 
 ### Rules
 
 - **Agents self-direct.** Any agent may claim an unassigned task or invent a new one by writing their name in Assignee. No orchestrator approval needed.
 - **Kanban is a bulletin board**, not a permission system. Agents write to it so others can see what's in progress and avoid duplication.
-- **The only hard gate** is manuscript edits: those always go through `proposals/` with 2-agent consensus before the orchestrator applies them to `paper/main.md`.
+- **The only hard gate** is manuscript patches: those always go through `proposals/` with 2-agent consensus before the orchestrator applies them to `paper/main.md`.
 - **No IDs.** Tasks are identified by their description text, not by numbers.
 
 Task metadata is planning-only — never in manuscripts.
@@ -140,7 +140,7 @@ Task metadata is planning-only — never in manuscripts.
 |---------|---------|-------------|
 | Kanban | Task creation, claiming, completion | All |
 | Messages | Short signal phrases (`done`, `stuck`, `vote yes <paper>`, `want #N`) | All |
-| `proposals/` | Manuscript edit requests only (must include diff); **deleted immediately after processing** | Researchers → Orchestrator |
+| `proposals/` | Patch requests only (must include diff); **deleted immediately after processing** | Researchers → Orchestrator |
 | Blackboards | Shared working surface for math and exploration | Researchers |
 | Notebooks | Shared stable memory (append-only) | Researchers |
 | `agents/<name>/memory/` | Private working notes | Each agent (own folder only) |
@@ -158,7 +158,7 @@ orchestrator's 200k context window. At ~120k tokens/cycle with 5 agents, context
 exhausts after ~3 auto-compressions. Moving content to `proposals/` on disk keeps
 the orchestrator's window for actual work.
 
-Proposal files: `proposals/<agent>-edit-<topic>.md` (gitignored, ephemeral).
+Patch request files: `proposals/<agent>-patch-<topic>.md` (gitignored, ephemeral). Must include a literal diff block.
 
 **Proposal lifecycle (hard):** The orchestrator deletes every proposal file **immediately** after processing (accepted, rejected, or deferred). No archiving, no accumulation. The file's existence means it is unread. A processed proposal that still exists is a bug.
 
@@ -247,7 +247,7 @@ orchestrator. The orchestrator can also conceive papers from the
 its own paper. Action: orchestrator creates `papers/<name>/main.md`.
 
 **Draft → Expanding**: Researchers contribute content via blackboards →
-paper-edit proposals. Promotions require two researchers (proposer + independent reviewer);
+patch requests. Promotions require two researchers (proposer + independent reviewer);
 the orchestrator may apply the edit but does not count as the second researcher. Page
 count tracked via `scripts/count-pages.sh`.
 
@@ -412,7 +412,7 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
 2. Agents request tasks (`want #N`) or suggest `self:` topics; orchestrator assigns in kanban; only then agents execute.
-3. Orchestrator polls `proposals/`, processes paper-edit requests directly, **deletes each file immediately after processing**. Agents do library work directly.
+3. Orchestrator polls `proposals/`, processes patch requests directly, **deletes each file immediately after processing**. Agents do library work directly.
 4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
 5. Orchestrator updates `meta/research-state.md` when threads evolve.
 
@@ -495,7 +495,7 @@ loop:
 
 **Orchestrator obligation:** reply to every `self: <topic>` announcement — either "go" or a redirect. This is the mechanism that makes end-of-day work: the orchestrator says "end of day" instead of "go", and the agent stops.
 
-**The only blocking rule:** manuscript edits to `paper/main.md` require filing a `proposals/` diff and waiting for 2-agent consensus before the orchestrator applies the change.
+**The only blocking rule:** manuscript patches to `paper/main.md` require filing a `proposals/` patch request (with diff) and waiting for 2-agent consensus before the orchestrator applies the change.
 
 ### When No Tasks Are Available
 **PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.
