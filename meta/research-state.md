@@ -44,9 +44,9 @@ entries — do not append. Actionable items go to the kanban, not here.
 (Next version from genuine extension or correction.)
 
 ## Cornerstone Status
-- **paper/main.md**: ~1953 lines, 33 references. Target: Physics Reports.
+- **paper/main.md**: ~2000 lines, 35 references. Target: Physics Reports.
 - **Vulnerability 1** (Appendix 10.6 rigor): substantially closed.
-- **Vulnerability 2** (representation witness): substantially addressed (D9.1h S² + D9.1i S³ spectral comparisons; S³ uniqueness: V_HD constant iff d=3; THREE-AGENT on D9.1i: computationalist+critic+mathematician).
+- **Vulnerability 2** (representation witness): substantially addressed (D9.1h S² + D9.1i S³ + D9.1k H² spectral comparisons; S³ uniqueness V_HD=const iff d=3; FOUR-AGENT on D9.1k; D9.1l unified formula; DeWitt ≠ half-density).
 - **Vulnerability 3** (Appendix 10.1): CLOSED (D8.2a).
 - **Vulnerability 4** (scale witness): CLOSED (D6.4 + D6.4a λφ⁴ benchmark).
 
