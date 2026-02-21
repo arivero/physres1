@@ -29,6 +29,37 @@ If a runtime lacks built-in multi-agent features:
 3. Use a file-based inbox/signals for coordination.
 4. Preserve the same permission model and publication workflow.
 
+## Codex: Enable Subagents
+
+In this environment, Codex exposes subagents behind feature flags.
+
+### One-off (current session only)
+
+```bash
+codex --enable multi_agent --enable child_agents_md
+```
+
+You can combine with your startup prompt:
+
+```bash
+codex --enable multi_agent --enable child_agents_md "Read AGENTS.md and start the team..."
+```
+
+### Persistent (future sessions)
+
+```bash
+codex features enable multi_agent
+codex features enable child_agents_md
+```
+
+### Verify
+
+```bash
+codex features list | rg 'multi_agent|child_agents_md'
+```
+
+Expected: both flags show `true`.
+
 ## Standard Instruction Files
 
 - `AGENTS.md` is broadly supported as an instruction file and is canonical here.
