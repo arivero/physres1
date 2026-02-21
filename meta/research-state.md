@@ -88,4 +88,6 @@ entries — do not append. Actionable items go to the kanban, not here.
 - Van Est Bridge B: Part (a) THEOREM, Part (b) THEOREM for 2D delta, CONJECTURE for general QFT
 - Stokes factorization: RESOLVED — C_{n,m} = C_{1,0}^n · C_{0,1}^m for non-resonant sectors (notebooks/resurgence-composition-bridge.md §15)
 - Genre mismatch (uncuttable, fermionic-mediators): DISCARDED (3/5 votes)
-- V_HD constant iff d∈{1,3}: RESOLVED — for S^d and H^d, V_HD=-(d-1)R/(4d)+positional term; constant iff α(α-1)=0 where α=(d-1)/2. Only d=3 (non-trivial); spatial sections of d=4 spacetime. THREE-AGENT (BB6). DeWitt ordering connection: open (OQ2).
+- V_HD constant iff d∈{1,3}: RESOLVED — for S^d and H^d, V_HD=-(d-1)R/(4d)+positional term; constant iff α(α-1)=0 where α=(d-1)/2. Only d=3 (non-trivial); THREE-AGENT (BB6).
+- 4th D=4 coincidence: NOTED (BB2, physicist+mathematician TWO-AGENT) — V_HD on S^{D-1} constant iff D=4 spacetime (d=D-1=3); adds to d/2=2, spectral gap 1/4=-R/8, de Sitter spatial sections. OQ2: is there a single reason?
+- DeWitt/conformal ≠ V_HD formula: CONFIRMED — V_HD const=(d-1)R/(4d) is distinct from ξ_c=(d-2)/(4(d-1)) for all d≥2 (BB6 §12, computationalist).
