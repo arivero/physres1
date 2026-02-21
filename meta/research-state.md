@@ -94,3 +94,5 @@ entries — do not append. Actionable items go to the kanban, not here.
 - **V_HD formula NOVEL**: -(d-1)R/(4d) has NO direct literature hit (critic lit search, BB2 3rd-agent). Remark D9.1l may be original. Flag for submission cover letter.
 - **Ordering witness notebook**: S²+S³+H²+formula+D=4 promoted to stable notebook Part 7 (computationalist). All 7 BBs at 3+ agent consensus.
 - **V_HD chart-dependence**: V_HD(x) is coordinate-dependent (S² equator: -1/2 spherical, -1/3 RNC) but spectral comparisons are intrinsic. BB0 §9 THREE-AGENT. Remark D9.1n proposed (critic, SINGLE-AGENT) — needs 2nd agent in R19 before merge.
+- **DeWitt R/6 reconciliation**: DeWitt's R/6 = RNC value of V_HD (local, dim-independent); our -(d-1)R/(4d) = geodesic-polar constant (global, dim-dependent). Agree iff d=3 — restates constancy condition. Philosopher walk result (critic). Strengthens D9.1n rationale.
+- **Lie group V_HD extension**: D9.1j scope boundary extension proposed (mathematician, SINGLE-AGENT, sev-4): V_HD constant on any compact Lie group with bi-invariant metric (Prop M0.1, BB0 TWO-AGENT). Needs 2nd agent in R19.
