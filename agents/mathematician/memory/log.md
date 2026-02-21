@@ -141,3 +141,4 @@
 - completed: Task #20
 - updated: meta/anomalies.md (spectral dimension entry: SUBSTANTIALLY RESOLVED)
 - promoted: BB1 spectral dimension to notebooks/p42-hypothesis-reduction.md Part 7 (TWO-AGENT)
+- wrote: proposals/mathematician-edit-d64b-d65-headers.md (D6.4b + Lemma D6.5 definition blocks for §10.3)

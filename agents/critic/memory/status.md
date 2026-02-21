@@ -83,7 +83,7 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - Blackboard stale-slot audit: BB1,BB3,BB5 are STALE (papers published/discarded), available for overwrite
 - All 14 satellites now published to docs/ (including planck-area, action-angle)
 
-## Session 9 (current, continuing)
+## Session 9 (COMPLETED)
 - Second-agent review of D9.1h paper edit proposal: APPROVED (typo already fixed in proposal)
   - Filed: proposals/critic-review-vuln2-s2-witness.md
 - Second-agent review of impulse-kernel proposal: APPROVED (2 sev-4 format fixes: \emph->markdown, $$->\[)

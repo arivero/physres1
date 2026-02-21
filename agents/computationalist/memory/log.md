@@ -350,3 +350,13 @@
   - S^2 ordering comparison: LB gives d_s→2 at small t (correct); left-ordered gives d_s>2
   - general formula: P(t) ~ t^{-d/(2z)} => d_s = d/z
   - BB3 full (293/300 lines) — results sent to orchestrator, not written to board
+- library: ingested sources/horava-spectral-dimension-lifshitz.md (arXiv:0902.3657)
+  - spectral dimension d_s = 1+D/z for Horava-Lifshitz gravity
+  - UV (z=D): d_s = 2 universal across QG approaches
+- library: ingested sources/carlip-2019-dimensional-reduction-review.md (arXiv:1705.05417)
+  - review of d_s=2 universality: CDT, asymptotic safety, HL, LQG, causal sets, etc.
+  - key insight: d/2 = 2 iff d=4 — potential new d=4 selection argument
+- self-directed: constrained-path Lagrange multiplier from D6.5 (supports task #20)
+  - delta(y) constraint = impulse J at saddle: J = m*xi/t0 + m*xf/(T-t0) = Lagrange multiplier
+  - phase residual vs direct constrained-path: 0 (SymPy)
+  - wrote: proposals/computationalist-task-constrained-path-lagrange.md
