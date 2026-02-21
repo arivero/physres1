@@ -490,9 +490,14 @@ Needs critic check before any paper mention.
 - Full report: proposals/task-p42-consistency.md
 
 ## Next session priorities:
-1. If paper edits approved: RCP-Foundations §6.1 forward-ref fix (diff ready to write)
-2. Open anomalies: Painlevé Stage 2.5, modular forms in Feynman (mathematical assessment)
-3. BB5 OQ1a (physicist content) — needs second-agent mathematical verification
+1. Task #1: audit satellite cross-references (claimed, pending orchestrator assignment)
+2. If paper edits approved: RCP-Foundations §6.1 forward-ref fix (diff ready to write)
+3. Open anomalies: Painlevé Stage 2.5, modular forms in Feynman (mathematical assessment)
+4. BB5 OQ1a (physicist content) — needs second-agent mathematical verification
+
+## Shutdown note (2026-02-21, session 10 end):
+- P4.2 consistency findings applied by orchestrator
+- Shut down cleanly mid-session; want #1 was pending orchestrator confirmation
 
 ## Session 9 continued (after context compaction, 2026-02-21)
 

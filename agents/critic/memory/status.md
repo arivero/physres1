@@ -60,7 +60,13 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - RG-fundamental 3D integral: critic maintains 2pi is correct, paper published with 4pi. Both R2 referees accepted. Disagreement stands.
 - Planck-area PA-P4.2 (b-calculus): needs proof or downgrade to Heuristic
 
+## Session 7 (current)
+- Philosophenweg: gravity composition analysis (Task #3)
+  - Key finding: P9.3 arithmetic progression has sev-2 cherry-picking risk
+  - Key finding: chain may genuinely terminate (composition presupposes background time)
+  - Full writeup: proposals/philosophenweg-gravity-composition.md
+
 ## Next steps
-- Await team lead response on batch 5 revision assignments
+- Await team lead response on Philosophenweg findings
 - Available for revision review when planck-area / action-angle revisions are ready
 - Available for any other tasks

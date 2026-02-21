@@ -145,11 +145,11 @@ Use this file as a source ledger.
 28. `[Moyal1949StatisticalQM]`: acquired via sci-hub PDF in `sources/moyal1949-be61c6b3.md` (DOI `10.1017/S0305004100000487`).
 29. `[Floerchinger2024QFT1Lecture21]`: acquired via OA lecture-page capture in `sources/lecture21-2cc5b4d3.md`.
 30. `[TongQMLectures]`: acquired via OA PDF capture in `sources/qm-6a8ebd24.md`.
-31. `[Nauenberg2003KeplerArea]`: arXiv OA (`math/0112048`). Not yet ingested into `sources/`.
+31. `[Nauenberg2003KeplerArea]`: arXiv OA (`math/0112048`). **INGESTED** into `sources/0112048-nauenberg-kepler-area.md` (2026-02-21).
 32. `[Pourciau2003]`: publisher (Springer), paywalled. `PENDING` — no OA route identified (DOI `10.1007/s00407-002-0062-x` confirmed; ResearchGate listing exists but no confirmed free full text). B17 searched web, Semantic Scholar, PhilPapers, arXiv, author homepage — all negative.
-33. `[Berkeley1734Analyst]`: OA via Wikisource (<https://en.wikisource.org/wiki/The_Analyst:_a_Discourse_addressed_to_an_Infidel_Mathematician>) and Internet Archive (<https://archive.org/details/analystordiscour00berkrich>). Not yet ingested into `sources/`.
+33. `[Berkeley1734Analyst]`: OA via Wikisource and Internet Archive. **INGESTED** into `sources/berkeley-1734-analyst.md` (2026-02-21).
 34. `[Nauenberg1994SymplecticNewton]`: publisher (Springer), paywalled. `PENDING` — no OA route identified (DOI `10.1007/BF01686278`; Springer and JSTOR both require subscription). B17 note: the "symplectic Euler integrator" language used in H1.2 is more explicitly from Nauenberg 2018 (see #35); the 1994 paper uses "canonical/symplectic mapping" but not the modern numerical-analysis terminology. Consider citing both in a future C cycle.
-35. `[Nauenberg2018GraphicalMethod]`: OA via arXiv (`1810.05264`) and UCSC Emeriti author copy (<https://emeriti.ucsc.edu/files/newtongraphicmethodAJPSept22.pdf>). Not yet ingested into `sources/`.
+35. `[Nauenberg2018GraphicalMethod]`: OA via arXiv (`1810.05264`) and UCSC Emeriti author copy. **INGESTED** into `sources/1810-05264-newton-symplectic.md` (2026-02-21).
 36. `[Sommerfeld1916FineStructure]`: `PENDING` — metadata added in B27; legal OA/institutional scan ingestion pending.
 37. `[Bertrand1873ClosedOrbits]`: `PENDING` — metadata added in B27; archival OA scan ingestion pending.
 38. `[HairerLubichWanner2006GNI]`: `PENDING_LIBRARY` — book (Springer, 2006). DOI `10.1007/3-540-30666-8`; ISBN `978-3-540-30666-5`. Author has made partial chapter PDFs available (e.g. intro, selected sections) but full text requires institutional access or physical library. (B33 note: Archive Ouverte UNIGE lists the book but requires institutional login.)

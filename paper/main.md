@@ -657,7 +657,7 @@ $$
 `Proposition P4.1 (Exponential form under locality + composition).`
 If
 1. total path weight is multiplicative across concatenated slices, and
-2. \(\log W_k\) is additive in \(\Delta t_k\) to first order,
+2. \(\log W_k\) is additive in \(\Delta t_k\) to first order (equivalently, \(W_k = \exp(c_0 \mathcal{L}_k \Delta t_k + O(\Delta t^2))\); the derivation that composition *forces* this form via the Cauchy functional equation is in Remark P4.2c below),
 
 then, up to normalization and higher-order slicing corrections,
 
@@ -669,7 +669,7 @@ $$
 
 for a constant \(c_0\) with dimensions \([\text{action}]^{-1}\).
 
-Choosing oscillatory quantum time evolution gives \(c_0=i/\hbar\), hence the standard phase factor \(\exp(iS_N/\hbar)\) [Dirac1933] [Feynman1948].
+Choosing oscillatory quantum time evolution gives \(c_0=i/\hbar\) (the necessity of this scale — dimensional homogeneity forces \([c_0]=[\text{action}]^{-1}\) and the identity limit pins the coefficient — is derived in Proposition P4.2(ii) below), hence the standard phase factor \(\exp(iS_N/\hbar)\) [Dirac1933] [Feynman1948].
 
 ## 6.3 Ordering, Discretization, and Quantum Ambiguity
 Different short-time discretizations (left/right/midpoint or more general \(\alpha\)-schemes) typically correspond to different operator orderings. In deformation language, this is the same ambiguity as choosing a star-product representative; these constructions agree in the classical limit but can differ at subleading quantum order [Landsman1998] [deGosson2018ShortTimePropagators].
@@ -1322,7 +1322,7 @@ from cobordism unitarity and semisimplicity (Remark P9.2 below, [ReshetikhinTura
 The forcing pattern of P4.2 has a Stage 4 analog in Chern-Simons theory. For a 3D topological field theory with gauge group \(G\), the requirement that the sewing law (Atiyah composition on 3-manifolds) extend to a unitary, normalized symmetric monoidal functor \(Z\colon \mathrm{Bord}_3 \to \mathrm{Vect}\) forces the deformation parameter to \(q = e^{2\pi i/(k+g^\vee)}\), where \(k \in \mathbb{Z}_{\geq 0}\) is the level and \(g^\vee\) is the dual Coxeter number of \(G\) [ReshetikhinTuraev1991]. The parallel with P4.2 is structural: at Stage 2, (C)+(D)+(I) forces \(\hbar\) in the partition channel; at Stage 4, cobordism composition + unitarity + normalization forces \(q\) in the representation channel. In both cases, composition alone is insufficient — the additional constraint (dimensional homogeneity at Stage 2; unitarity and semisimplicity at Stage 4) is required. The deformation parameter \(q\) is *not* forced at the path-integral level (Stage 2) by any \(q\)-deformed analog of (C): the coassociativity of \(U_q(\mathfrak{g})\) holds for all \(q \in \mathbb{C}^*\), with no selection mechanism.
 
 `Remark P9.3 (Arithmetic rigidity progression of the forcing chain).`
-The four forcing stages exhibit a progression toward greater arithmetic rigidity in their forced constants.
+The four forcing stages, traced along the Segal-sewing/cobordism channel, exhibit a progression toward greater arithmetic rigidity in their forced constants.
 Stage 2 (P4.2) forces \(\kappa = \hbar \in \mathbb{R}_+\) (positive real, via dimensional homogeneity (D)):
 the forced constant has no torsion. Stage 3 (P9.1b) forces \(c/24 \in \mathbb{Q}\) (rational, given \(c \in \mathbb{Z}\),
 via modular closure of \(\mathrm{SL}(2,\mathbb{Z})\)): the forced constant has denominators bounded by \(24 = \mathrm{lcm}(1,\ldots,6)\).
@@ -1334,6 +1334,7 @@ the forced constant is torsion in \(\mathbb{C}^\times\).
 Each stage adds a finiteness axiom driving the forced constant toward the torsion subgroup
 of \(\mathbb{C}^\times\): the chain \(\mathbb{R}_+ \to \mathbb{Q} \to \mathbb{Z} \to \mu_N\) mirrors the
 filtration of \(\mathbb{C}^\times = \mathbb{R}_+ \times S^1\) by arithmetic complexity.
+The progression is specific to composition in the sewing channel; other composition-forcing mechanisms at Stage 3, such as conformal-bootstrap associativity, produce generically irrational forced constants (anomalous dimensions), so the arithmetic rigidity pattern is not universal across all forcing channels.
 Stages 2 and 4 together determine both components of the quantum group deformation parameter:
 P4.2 fixes the norm \(\lvert\kappa\rvert = \hbar \in \mathbb{R}_+\); the RT theorem fixes the phase
 \(\arg(q) = 2\pi/(k+g^\vee)\) to a torsion element.

@@ -548,3 +548,37 @@
 - library: ingested Carruthers-Nieto 1968 (Rev.Mod.Phys. 40:411) → sources/carruthers-nieto-1968-phase-angle.md
   - definitive review establishing R = |<e^{i phi}>| framework
   - Prop 4.2 follows directly from their Robertson-inequality approach
+
+## 2026-02-21 (Session 3: Philosophenweg gravity composition)
+- claimed: Task #3 (Philosophenweg: gravity composition)
+- Philosophenweg (solo, ~25 min): composition and gravity
+  - Q1: composition principle for QG — gap between P4.2 (functional equation) and Stage 4 (categorical) is conceptual, not just technical
+  - Q2: arithmetic rigidity R+ → Q → Z → μ_N probably terminates (torsion of C× is endpoint); Stage 5 would collapse structure/content
+  - Q3: unified theorem NOT achievable (each stage uses different math; would need rigorous QFT + QG)
+  - Q4: deepest obstruction = composition presupposes background time; gravity dynamicizes time (problem of time, compositional language)
+  - severity assessment: P9.3 has sev-2 cherry-picking risk (anomalous dimensions are irrational Stage 3 forcings)
+- wrote: proposals/philosophenweg-gravity-composition.md (full writeup, 6 sections)
+- self-directed: audit §10.5 + §10.6 (composition witnesses, backbone of P4.2)
+  - §10.6 D12.1: regulated kernel composition — CORRECT (trivial from heat semigroup)
+  - §10.6 P12.1: controlled regulator removal — CORRECT (pointwise + L^1 convergence)
+  - §10.6 D12.2: first-order Duhamel — CORRECT (standard perturbative expansion)
+  - §10.6 P12.2: quantitative remainder bound — CORRECT (e^{Mt}-1-Mt and composition defect)
+  - §10.6 D12.3: Mehler kernel composition — CORRECT (exact semigroup property)
+  - §10.6 D12.3a-b: scope and sanity limits — CORRECT
+  - §10.5 D11.1: 2D contact loop integral — CORRECT (verified full algebra)
+  - §10.5 D11.2: renormalized coupling + beta function — CORRECT (cutoff cancellation verified)
+  - §10.5 P11.1: dimensional transmutation — CORRECT (RG invariance verified: d ln κ*/d ln μ = 0)
+  - §10.5 D11.3: scheme dependence — CORRECT (κ*^(C)² = e^C κ*²)
+  - verdict: NO ERRORS in either appendix. All algebra checks pass.
+- continued: audit §10.2 (ordering/discretization)
+  - D9.1: ordering difference fp — CORRECT (direct commutator)
+  - D9.1a: quadratic symbol fp² — CORRECT (Weyl symmetrization verified: Q_W-Q_L = -iℏf'p̂ - ℏ²f''/4)
+  - D9.1b: periodic domain symmetry — CORRECT (integration by parts, periodic BC)
+  - D9.1d-e: curved manifold half-density — CORRECT (standard geometric quantization)
+  - D9.1f: self-adjoint extension witness — CORRECT (standard 1D delta result)
+  - P10.2a: discretization equivalence class — CORRECT (follows from above)
+- continued: audit §10.3 (RCP formulation) + §10.4 (summary)
+  - P10.1: RCP meta-principle — well-formulated, appropriate scope
+  - D10.1a: operational closure form — clean parametric formulation
+  - D10.1c: crown witnesses — appropriately calibrated (partition STRONG, representation MODERATE, scale HEURISTIC)
+  - verdict: NO ERRORS in §10.2-10.4. Full appendix block (§10.1-10.6) now audited.
