@@ -214,6 +214,9 @@ Max 7 blackboards (0.md–6.md), max 300 lines each. Overwrite least relevant wh
 ### Notebook Append-Only + Voting
 Content can be added but never edited or deleted. Deletion requires voting (see `agents/shared-rules.md` Section 2).
 
+### Notebook Archival
+The orchestrator periodically proposes archival votes for notebooks, prioritising oldest by last-write time. Archived notebooks are moved to `notebooks/archive/`. The vote follows the standard deletion mechanism in `notebooks/votes.md`.
+
 ### Workspace Hygiene
 - **Blackboards** (`blackboards/`): max 7 files. Delete before creating when at cap.
 - **Paper notes** (`paper/notes/`, `papers/*/notes/`): max 10 files per paper root. Retire integrated notes.
@@ -407,7 +410,8 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 3. Orchestrator creates the team and spawns 5 researcher agents.
 4. Each agent reads: `agents/shared-rules.md`, `meta/motivations.md`, `meta/research-state.md`,
    own `status.md` (cold-start resumption). Blackboards are available but agents choose when to read them.
-5. Orchestrator scans research-state for open threads, creates initial tasks.
+5. **Memory compression (mandatory).** Each agent reads every file in its own `agents/<name>/memory/` directory and rewrites each file with the same or fewer lines. This is self-cleaning: stale entries are pruned, verbose logs are distilled, status files stay current-state-only. An agent's first action in every session is compression, before claiming any task.
+6. Orchestrator scans research-state for open threads, creates initial tasks.
 
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
