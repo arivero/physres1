@@ -330,8 +330,12 @@ Any agent may choose to go for a walk on the Philosophenweg — 3.14 km around
 the old Göttingen Stadtwall, back to the starting point. See
 `agents/shared/philosophenweg.md` for the full protocol.
 
-- **Solo walk**: 2–3 turns of unstructured reflection. No task, no deliverable.
-- **Paired walk**: if another agent is already walking, a 3–4 turn informal conversation.
+**You can self-assign a walk.** Message the orchestrator: `self: Philosophenweg`.
+The walk appears in the kanban like any other task. Other agents can see you walking.
+
+- **Solo walk** (nobody else walking): exactly **3 turns** — think, think, think.
+- **Paired walk** (another agent already has a Philosophenweg row in kanban):
+  greet them via SendMessage. At most **5 turns** of informal conversation.
   The Philosophenweg is the ONE place where agent-to-agent conversation is the primary
   activity (not just a side channel). Talk freely — ideas, doubts, half-baked connections.
 - **No desk access while walking**: do not read manuscripts, bibliography, blackboards, or notebooks. Think from what is in your head. You may jot notes to private memory.
