@@ -44,9 +44,10 @@ relevant slot. Deletion criteria (in priority order):
 2. They may reference idea logs, but nothing here should be cited as evidence.
 3. **Blackboards are the primary location for mathematical deliverables**: All mathematical results from research tasks must be written here (or in `notebooks/` for stabilized material). Mathematics only in agent memory does NOT count as completion.
 4. When an argument stabilizes, it exits the blackboard via one of three paths:
-   - **To a manuscript** (via Paper Writer): content is promoted directly into
-     `paper/main.md` or `papers/*/main.md`. Use this when the material is
-     ready for publication prose. Requires the two-agent promotion rule.
+   - **To a manuscript** (via orchestrator proposal processing): create a
+     proposal file with a unified diff; the orchestrator applies edits to
+     `paper/main.md` or `papers/*/main.md` when approved by workflow rules.
+     Use this when the material is ready for publication prose.
    - **To a notebook**: the primary exit for stable material that is **not yet
      aimed at a specific paper section**. Append the blackboard content to the
      appropriate notebook. This is the default exit when no manuscript promotion

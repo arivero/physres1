@@ -42,7 +42,7 @@ Heavier verification tooling keeps manuscripts lean:
 2. **Lean (optional, heavy)** for formalizing small lemmas when they become load-bearing and ambiguity persists. Use sparingly; prefer “one lemma” targets.
 
 ## Scheduling Policy
-Tasks are managed via the shared kanban (TaskList). The orchestrator creates tasks;
+Tasks are managed via the shared kanban (called `TaskList` in some runtimes). The orchestrator creates tasks;
 researcher agents claim and complete them.
 
 ### Topic priority (what we push first)
@@ -54,7 +54,7 @@ researcher agents claim and complete them.
 Never run long stretches of manuscript promotion without verification. Alternate:
 - Research/exploration tasks (Physicist, Mathematician, Student)
 - Verification/computation tasks (Computationalist, Critic)
-- Promotion tasks (orchestrator dispatches Paper Writer)
+- Promotion tasks (researchers prepare proposals; orchestrator applies manuscript edits directly)
 
 Run a Critic review after any substantial cross-cutting edits or when approaching submission quality.
 

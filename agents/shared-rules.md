@@ -50,6 +50,7 @@ comply wastes the orchestrator's context window on repeated shutdown messages.
 ### Kanban (Shared Task Board)
 
 The orchestrator seeds the kanban with tasks. **These are suggestions, not orders.**
+If your runtime names this surface `TaskList`, treat `TaskList` and "kanban" as the same thing.
 
 **Claiming protocol (mandatory):**
 1. **Find a task** — browse the task board for unclaimed tasks, or invent your own question.
@@ -85,8 +86,9 @@ Non-edit findings go to blackboards, notebooks, and `meta/anomalies.md`.
 Messages to the orchestrator must be **one short phrase** (≤ 120 chars).
 Manuscript edit requests go into a file in `proposals/`.
 
-**You MUST signal the orchestrator when you start or finish any activity.**
-Examples: "claiming #2, half-density check", "done, wrote BB1 + proposal", "stuck on BB0 integral", "heading to library for MZV papers".
+**Required signals per task:** one start signal, and one terminal signal (`done` or `stuck`).
+Common short forms: `want #N`, `self: <topic>`, `done`, `stuck`, `vote yes <paper>`, `vote no <paper>: <reason>`.
+If you wrote a manuscript proposal file, include that fact in the terminal signal.
 
 Keep it natural but SHORT — one phrase, ≤ 120 characters.
 
@@ -117,7 +119,7 @@ has its own context budget to manage, but outbound messages don't burn it as bad
 **Agent ↔ agent messages** may be a sentence or two. These live in each agent's
 own context, not the orchestrator's. For extended collaboration, use blackboards.
 
-**No progress pings.** The orchestrator monitors via the task board, not messages.
+**No periodic progress pings.** Send only required lifecycle signals or state-change signals.
 
 **Hard limit: message content must be ≤ 120 characters.**
 The message body must be a short phrase.
@@ -465,7 +467,7 @@ may read from and write to the library.
 
 1. Consider scanning blackboards before choosing a task (they are active working memory, <50KB total). This is recommended but not required — agents choose when to read blackboards.
 2. Do not ingest git-archived files without explicit reason.
-4. Default-deny for high-volume history files.
+3. Default-deny for high-volume history files.
 
 ---
 

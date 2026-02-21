@@ -106,6 +106,7 @@ To create a new agent variant (e.g., a nuclear physicist or algebraic geometer):
 ## 5. Task Management (Shared Kanban)
 
 The shared kanban is the project's task board.
+In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer to the same runtime surface.
 
 - **Orchestrator** creates tasks with subject, description, and priority.
 - **Agents** check the kanban for available tasks (prefer lowest ID first, unblocked only).
@@ -346,7 +347,7 @@ When accepted:
 ## 13. Context Budget Rules
 1. Consider scanning blackboards before choosing a task (recommended, not required).
 2. Read only relevant blackboard slots during a task.
-4. Default-deny for high-volume history files.
+3. Default-deny for high-volume history files.
 
 ---
 
@@ -394,7 +395,7 @@ When given a time deadline, continue autonomously without pausing. Only stop whe
 ### When No Tasks Are Available
 **PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.
 
-1. Browse the library (Philosophenweg): search the web for papers, download references, build `sources/`.
+1. Browse the library (indoor work): search the web for papers, download references, build `sources/`.
 2. Scan manuscripts for research opportunities (deep questions, derivation witnesses, promotion candidates).
 3. Scan bibliography for source-driven work (PENDING sources, unintegrated sources).
 4. If everything is stable: run quality sweeps via Critic, check page counts.

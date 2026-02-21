@@ -31,7 +31,7 @@ Key policies:
 ## Team Architecture
 The project uses a persistent team of 5 researcher agents (Physicist, Mathematician,
 Critic, Computationalist, Student) coordinated by an orchestrator via a shared kanban
-(`TaskList`). See `AGENTS.md` for the full architecture.
+(runtime surface often named `TaskList`). See `AGENTS.md` for the full architecture.
 
 ## Research Continuation (Durable State)
 - Working memory + active threads: `meta/research-state.md` (non-citable)
