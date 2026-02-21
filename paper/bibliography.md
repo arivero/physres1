@@ -122,7 +122,7 @@ Use this file as a source ledger.
 3. `[Dirac1933]`: acquired via OA PDF scan in `sources/dirac1933-c72e7a7e.md` (OA URL: <https://www.informationphilosopher.com/solutions/scientists/dirac/Lagrangian_1933.pdf>).
 4. `[Feynman1948]`: acquired via Caltech author-repository PDF (GREEN OA) capture in `sources/feyrmp48-282cef74.md` (OA URL: <https://authors.library.caltech.edu/47756/1/FEYrmp48.pdf>).
 5. `[Connes1994]`: acquired via author-provided OA PDF in `sources/connes1994-7af601f0.md` (OA URL: <https://alainconnes.org/wp-content/uploads/book94bigpdf.pdf>). Tangent groupoid: Ch. II §5, Propositions 4–5.
-6. `[Landsman1998]`: `PENDING_LIBRARY` — book (Springer, 1998). DOI `10.1007/978-1-4612-1680-3`; ISBN `978-0-387-98318-9`. Springer institutional access or physical library. (No author OA found; no magnet reference located as of 2026-02-12. Check offline for alternative lawful acquisition.)
+6. `[Landsman1998]`: `ACQUIRED` — OA PDF at author's Radboud University homepage: <http://www.math.ru.nl/~landsman/1998book.pdf>. Ingested: `sources/landsman-1998-mathematical-topics.md` (2026-02-21).
 7. `[ConnesKreimer2000]`: acquired via arXiv preprint in `sources/9912092-6e62bce5.md`.
 8. `[Brouder1999]`: acquired in `sources/9904014-3a8a814b.md`.
 9. `[McLachlan2017]`: acquired in `sources/1512-00906-2a111472.md`.
