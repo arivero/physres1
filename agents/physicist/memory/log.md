@@ -259,3 +259,38 @@
   - denominator bound on c/24 does not follow
   - my own earlier proposal introduced this error; critic caught it
 - wrote: proposals/physicist-review-p93-lcm-error.md
+
+## 2026-02-21 (Session 9)
+- read: .claude/agents/physicist.md, agents/shared-rules.md, meta/kanban.md
+- read: meta/motivations.md, meta/research-state.md, agents/physicist/memory/status.md
+- read: blackboards/README.md, blackboards/0.md, blackboards/4.md, blackboards/6.md
+- scanned: proposals/ (old proposals cleaned), notebooks/ (full list)
+- checked: uncuttable DISCARD confirmed (3/5 votes), Landsman1998 ACQUIRED
+- self-directed: fix uncuttable dangling ref — on review, line 12 text is self-contained (no explicit companion note citation); E1 sev-2 is RESOLVED by DISCARD completion
+- found: bibliography.md [Oksendal2003] cites "uncuttable satellite" but is unreferenced in main.md — dangling bib entry
+- claimed: task #10 (P4.2e(3) Lorentzian iε sev-4)
+- assessed: P4.2e(3) line 630 — CORRECT, no fix needed
+  - iε uniqueness from Gaussian closure under convolution: only quadratic exponents survive composition integral (completing the square)
+  - "degree-counting" language is adequate shorthand for this
+  - signature independence of d/2 and κ=ℏ: correct (algebraic, not analytic)
+  - physically: iε = minimal Wick rotation preserving semigroup structure
+  - verdict: sev-4 CLOSED, no paper edit required
+- reviewed: proposals/mathematician-edit-p93-svn-degradation.md — APPROVE (TWO-AGENT)
+  - SVN uniqueness at Stage 2 vs Haag at Stage 3+: correct structural explanation
+  - wrote: proposals/physicist-review-p93-svn-degradation.md
+- library: searched half-density quantization recent literature
+  - found: arXiv:2508.14822 (Köplinger+Habeck+Goyal 2025) — composition algebras → Feynman rules
+    - extends GKS2010 (cited in P4.2i); derives C, H as allowable amplitude algebras
+    - complementary to our P4.2: they derive algebraic structure, we derive dynamical structure
+    - wrote: sources/koplinger2025-feynman-composition-algebras.md
+  - found: arXiv:2509.17656 (Chitan 2025) — half-density quantization of JWW 3-manifold invariants
+    - half-densities needed for reducible connections on moduli spaces
+    - supports half-density thesis at Stage 4 (TQFT), complementary to our Stage 2 use
+    - wrote: sources/chitan2025-half-density-jww-invariants.md
+  - no other significant new references found (Van Vleck, ordering ambiguity searches returned older work)
+- completed: task #17 (citation evaluation)
+  - Köplinger+2025: LOW PRIORITY optional cite at P4.2i alongside GKS2010
+  - Chitan2025: NO cite (too tangential, different half-density context)
+  - wrote: proposals/physicist-citation-eval-2025-papers.md
+  - read: proposals/mathematician-task-koplinger-chitan-citation.md (mathematician recommends citing both)
+  - updated: physicist eval with disagreement note on Chitan2025 (defer to orchestrator)

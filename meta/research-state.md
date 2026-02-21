@@ -87,4 +87,5 @@ entries — do not append. Actionable items go to the kanban, not here.
 - Efimov/PSL(2,R): RESOLVED at Level 2 — Q1+Q2 confirmed, Q3 overclaim documented (notebooks/efimov-groupoid-sketch.md)
 - Van Est Bridge B: Part (a) THEOREM, Part (b) THEOREM for 2D delta, CONJECTURE for general QFT
 - Stokes factorization: RESOLVED — C_{n,m} = C_{1,0}^n · C_{0,1}^m for non-resonant sectors (notebooks/resurgence-composition-bridge.md §15)
-- Genre mismatch (uncuttable, fermionic-mediators): surveys with zero original results → DISCARD pending
+- Genre mismatch (uncuttable, fermionic-mediators): DISCARDED (3/5 votes)
+- V_HD constant iff d∈{1,3}: RESOLVED — for S^d and H^d, V_HD=-(d-1)R/(4d)+positional term; constant iff α(α-1)=0 where α=(d-1)/2. Only d=3 (non-trivial); spatial sections of d=4 spacetime. THREE-AGENT (BB6). DeWitt ordering connection: open (OQ2).

@@ -405,3 +405,37 @@
   - wrote: blackboards/4.md §12 (S^3 extension, SINGLE-AGENT)
   - updated: blackboards/README.md slot 4
   - scripts: tmp/s3_spectral_comparison.py, tmp/s3_clean.py
+
+## 2026-02-22
+- startup: read definition, shared-rules, motivations, research-state, status, kanban
+- claimed: kanban task #1 "S^3 spectral comparison for Vuln 2 extension"
+- read: blackboards/4.md (existing S^3 §12 SINGLE-AGENT + critic §13 TWO-AGENT)
+- ran: tmp/s3_full_verification.py — comprehensive SymPy re-verification (6 parts, all PASS)
+  - Part 1: V_HD on S^d (d=1..7), S^3 V_HD = -1 VERIFIED
+  - Part 2: eigenvalue comparison l(l+2) vs (l+1)^2, eigenfunctions verified l=0..4
+  - Part 3: general formula V_HD = -alpha^2 + alpha(alpha-1)/sin^2(r), uniqueness d=3 VERIFIED
+  - Part 4: V_HD != conformal coupling on any sphere (no integer d solves 2d^2-4d+1=0)
+  - Part 5: S^3 = SU(2), Peter-Weyl eigenvalues = Casimir l(l+2), deg (l+1)^2
+  - Part 6: formal D9.1i proposition summary
+- corrected: d=4,5 entries in general S^d table (now canonical 1/sin^2 form)
+- updated: blackboards/4.md §12 (full rewrite with formal D9.1i, SU(2) interpretation, curvature comparison)
+- compacted: §13 critic review (289 lines total, under 300 limit)
+- wrote: proposals/computationalist-edit-d91i-s3-witness.md (paper-edit proposal with diff)
+- self-directed: H^2 (Poincare disk) spectral witness for Vuln 2
+  - V_HD = 1/4 - 1/(4 sinh^2 rho) (SymPy verified)
+  - H^2 has continuous spectrum [1/4, inf); left ordering gives [0, inf) — spectral gap erased
+  - V_HD -> 1/4 = -R/8 as rho -> inf (R = -2)
+  - NEW FORMULA: V_HD(const) = -(d-1)R/(4d) on constant-curvature d-spaces (all d verified)
+  - This is NOT conformal coupling xi_c R = (d-2)R/(4(d-1)) — distinct curvature coupling
+  - Numerical: oscillation frequency matches at s=2,3 to 10^{-8} (scipy DOP853)
+  - wrote: blackboards/6.md (overwriting promoted Efimov content)
+  - updated: blackboards/README.md slot 6
+  - scripts: tmp/h2_spectral_witness.py, tmp/h2_spectral_v2.py
+- investigated: V_HD = -(d-1)R/(4d) formula, curvature coupling comparison
+  - formula is for constant part on radially symmetric constant-curvature spaces
+  - NOT a general covariant formula (includes derivatives of metric determinant on general manifolds)
+  - NOT conformal coupling, NOT DeWitt a_1 = R/6
+  - On flat R^d: V_HD = (d-1)(d-3)/(4r^2), vanishes at d=3 (special!)
+  - script: tmp/vhd_general_formula.py
+- wrote: proposals/computationalist-edit-d91k-h2-witness.md (paper-edit with D9.1k + D9.1l + D9.1m)
+- BB6 received: mathematician §9, critic §10, physicist §11 — FOUR-AGENT UNANIMOUS

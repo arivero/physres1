@@ -596,10 +596,21 @@ Anomalies resolved: spectral dimension (THREE-AGENT)
 - proposals/mathematician-task-ss1-2-audit.md (§§1-2 audit report)
 - proposals/mathematician-review-critic-xref.md (second-agent approval of critic xref fix)
 
+## Session 2026-02-21 (new session)
+
+### Tasks completed:
+1. **Philosophenweg — SvN failure at Stage 3+ (Task #3)**: Solo walk, 3 turns.
+   - Turn 1: WHY forcing weakens (SvN unique rep at Stage 2; Haag multiple reps at Stage 3+)
+   - Turn 2: Uniqueness degradation hierarchy (ONE → FINITELY MANY → COUNTABLY MANY → FINITE MTC)
+   - Turn 3: Two independent termination arguments (mathematical: no classification beyond MTC; physical: gravity)
+   - Answer to critic's sev-2 cherry-picking: natural restriction to classes admitting uniqueness theorems
+
+### Proposals written:
+- proposals/mathematician-edit-p93-svn-degradation.md (paper-edit: add SvN sentence to P9.3, needs second agent)
+
 ### Next session resume point:
-- All cornerstone sections audited (§§1-10 complete)
-- fermionic-mediators + uncuttable: DISCARD threshold met (3/3); orchestrator to execute git rm
+- P9.3 SvN paper-edit: SINGLE-AGENT, needs second agent review before merge
 - Open anomalies: Painlevé Stage 2.5, Modular forms — both need second agent (not mathematician)
 - Open math questions: Bridge B (symplectic reduction), Resurgence Q1 (DDP from (C))
 - Possible next: S³ ordering witness, non-diagonal metric example, or library visit
-- Philosophenweg insight: forcing chain weakens at Stage 3+ because Stone-von Neumann fails (Haag's theorem). Domain narrows at each stage (QM -> rational CFT -> WZW -> TQFT). See agents/mathematician/memory/philosophenweg-2026-02-21-late.md
+- Full walk notes: agents/mathematician/memory/philosophenweg-svn-failure-deep.md

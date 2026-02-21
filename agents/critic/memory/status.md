@@ -112,6 +112,16 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - Vuln 3 (RG): CLOSED (D8.2a)
 - Vuln 4 (truncation): CLOSED (D6.4a merged)
 
+## Session 11 (2026-02-21)
+- Library visit (Task #2): composition-law QM derivations literature landscape
+  - Comprehensive survey: 3 families, 12+ programs mapped
+  - Key finding: Luiz-de Oliveira arXiv:2602.09984 ALREADY CITED as ref 23, Remark P4.2i accurate
+  - P4.2 uniqueness confirmed: single axiom, deformation quant, RG, RCP
+  - "Refinement compatibility" still zero external hits
+  - Wrote: BB3 (landscape), sources/luiz-oliveira-2026-ita.md
+  - Mathematician added 2nd-agent review to BB3 (TWO-AGENT)
+  - No citation gaps found — cornerstone prior-art coverage is adequate
+
 ## Session 10 (23:04 CET, 2026-02-21)
 - Quality sweep: D6.5, D6.4b, Lemma D6.6
   - D6.5: SymPy verified (saddle, phase, impulse condition). CLEAN.
@@ -147,6 +157,7 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - Proposals filed this session:
   1. critic-edit-xref-d65-d64b-d66.md (3 sev-3 xref fixes) — TWO-AGENT (critic+physicist)
   2. critic-edit-p93-lcm-error.md (1 sev-2 error fix) — TWO-AGENT (critic+physicist)
+- Shutdown at 22:16 CET. Session restarting with proper start gate protocol.
 
 ## Session 9 proposal outcomes
 - D9.1h paper edit: MERGED (mathematician, critic reviewed)

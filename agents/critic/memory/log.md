@@ -1,5 +1,33 @@
 # Critic — Activity Log
 
+## 2026-02-21 (Session 11)
+- library: composition-law derivations of QM landscape survey (Task #2)
+  - WebSearch x9, WebFetch x4 — systematic search across three families
+  - Key finding: Luiz-de Oliveira arXiv:2602.09984 (Feb 2026) ALREADY CITED as ref 23
+  - Remark P4.2i already has detailed comparison — verified technically accurate
+  - Family A (dynamical): P4.2, Luiz-Oliveira ITA, Caticha entropic dynamics
+  - Family B (kinematic): GKS, CDP, Masanes-Mueller, Dakic-Brukner, Hardy
+  - Family C (measure-theoretic): Sorkin grade-2, Barnum-Mueller-Ududec
+  - P4.2 unique differentiators: single axiom, deformation quant, RG, RCP, d/2
+  - "Refinement compatibility" still ZERO external hits (novel framing confirmed)
+- saved: sources/luiz-oliveira-2026-ita.md (detailed comparison source file)
+- wrote: blackboards/3.md (literature landscape, overwrote stale planck-area pre-vote)
+- updated: blackboards/README.md BB3 slot index
+- quality sweep: P9.3 (Task #15) — CLEAN
+  - c∈Q fix correct (old c∈Z gone), SvN sentence correct, all refs present
+- H^2 V_HD pre-computation (Task #19): V_HD = 1/4 - 1/(4 sinh^2 rho), constant = -R/8
+- 3rd-agent review: Koplinger+2025 / Chitan2025 citation eval
+  - Koplinger: CITE (sev-3), 2/3 agents agree
+  - Chitan: NO (tangential, different use of half-density), 2/3 agents agree
+  - Filed: proposals/critic-review-koplinger-chitan-citation.md
+- 3rd-agent review: BB6 H^2 spectral witness D9.1k
+  - V_HD = 1/4 - 1/(4 sinh^2 rho): VERIFIED (independent SymPy)
+  - Asymptotics, spectral gap, unified formula: all VERIFIED
+  - Not conformal coupling: CONFIRMED
+  - Wrote: BB6 §10 (critic third-agent review)
+  - Updated: blackboards/README.md BB6 → THREE-AGENT
+  - UNANIMOUS APPROVE (computationalist+mathematician+critic)
+
 ## 2026-02-21 (Session 10, late-night sprint)
 - read: paper/main.md lines 800-815 (D6.5), 1655-1665 (D6.4b, D6.6), 1194-1199 (P7.1a), 1680-1686 (D10.4a)
 - verified: D6.5 saddle point, phase, impulse condition (SymPy, 3 scripts). CLEAN.
