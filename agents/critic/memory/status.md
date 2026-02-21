@@ -73,9 +73,11 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - §9.1 claim graph cross-check: all 3 tracks (26 labels) verified present
 - Coverage: §6.3-6.5, §7, §8, §9.1, §10.1-10.6, xref scan = ~80% of technical content audited
 - Remaining unaudited this session: §1-5, §6.1-6.2, §9.2-9.6 (covered in prior sessions)
-- Session output: 1 Philosophenweg proposal, 2 edit proposals, 0 errors in algebra, 2 sev-3 xref fixes, 1 sev-2 scope concern
+- Cross-checked mathematician's Task #1 audit: 1 false positive (D6.4b/D6.5 not in paper), 3 valid findings
+- Session output: 1 Philosophenweg proposal, 2 edit proposals, 0 errors in algebra, 2 sev-3 xref fixes, 1 sev-2 scope concern, 1 false-positive correction
 
-## Next steps
-- Await team lead response on P9.3 edit proposal + Philosophenweg findings
+## Next steps (for next session)
+- P9.3 edit + xref fixes MERGED this session
+- Sections 3-5, 6.1-6.2 not audited this session (covered in prior sessions)
 - Available for revision review when planck-area / action-angle revisions are ready
-- Available for any other tasks
+- Mathematician audit findings 4.2-4.4 may generate edit tasks

@@ -632,3 +632,9 @@
   - Representation track: D4.1b(680)→D5.1(832)→D9.1(1464)/D9.1a(1479)/D9.1b(1487)/D9.1d(1508)/D9.1e(1530) — ALL PRESENT
   - Scale track: D6.0(971)/D6.1(981)/D6.2(1033)→D6.2a-sg(1080)/D6.4(1137)→D8.1(1367)/D8.2(1388)→D11.2(1674)/D11.3(1727) — ALL PRESENT
   - verdict: claim graph accurately references all derivation/proposition labels. No broken links.
+- cross-checked: mathematician's Task #1 proposal (task-claim-graph-audit.md)
+  - finding 4.1 (D6.4b/D6.5 phantom refs): FALSE POSITIVE — labels don't appear in paper/main.md. Grep confirms 0 matches. D10.1c describes results inline as "programmatic extensions... not formal propositions."
+  - finding 4.2 (D9.1a/D6.2a-sg nomenclature): VALID — they are Remarks not Derivations
+  - finding 4.3 (D8→D11 missing bridge): VALID — narrative but no numbered proposition
+  - finding 4.4 (P7.1 label): VALID but debatable — "Summary Proposition" is standard in survey-style papers
+  - sent: correction to orchestrator
