@@ -417,6 +417,9 @@ Composition (C) applied to the representation channel yields a three-layer hiera
 
 The ordering choice (Weyl, Born--Jordan, half-density) is a gauge freedom within the Morita class fixed by Layer 2 — classified by formal diffeomorphisms of the Poisson manifold, not arbitrary. This makes the representation channel's status *moderate* (classified gauge family), intermediate between the partition channel's *strong* uniqueness (Stone) and the scale channel's *weak* existence (Hille--Yosida) described in Remark RCP-R7.2.
 
+**Remark RCP-R7.3 (Krein Q-function as spectral transport datum for self-adjoint extensions).**
+For a symmetric operator \(S\) with deficiency indices \((1,1)\) (e.g., \(-d^2/dx^2\) on \(C_c^\infty(0,\infty)\)), composition (A1) applied to different self-adjoint extensions \(H_{\gamma_1}, H_{\gamma_2}\) generates unitarily inequivalent propagators whenever the extensions have different spectra (bound states vs. no bound states). The Krein resolvent formula relates the resolvents of any two extensions via the Krein Q-function \(Q(z)\) (equivalently, the Weyl M-function in the boundary-triple formalism), and the scattering matrix between extensions is uniquely determined by \(Q(z)\) and the extension parameters [Albeverio2005]. This means: composition fixes the *transport data* between extensions (the S-matrix) but does *not* select which extension is physical — the extension parameter \(\gamma\) (Robin boundary condition) remains a free input, determined by experiment or additional physical principles (scattering data, boundary conditions at a physical scale). This confirms the MODERATE calibration of the representation channel: composition classifies transport between representations via \(Q(z)\), but the representation choice itself is a gauge-like freedom, not uniquely forced. Contrast with the partition channel, where composition forces a *unique* structural constant \(\hbar\) (Proposition P4.2).
+
 ## 7.5 Forward Connections
 
 Three companion satellite papers develop the RCP channels in detail:
@@ -468,3 +471,5 @@ Together with the cornerstone manuscript [Main], these papers form a **coherent 
 19. [Collins1984] J. C. Collins, *Renormalization*, Cambridge University Press, 1984. (Standard reference on renormalization theory, beta functions, and dimensional regularization.)
 
 20. [BursztynWaldmann2002] H. Bursztyn and S. Waldmann, "The characteristic classes of Morita equivalent star products on symplectic manifolds," *Commun. Math. Phys.* **228** (2002), 103–121.
+
+21. [Albeverio2005] S. Albeverio, F. Gesztesy, R. Hoegh-Krohn, and H. Holden, *Solvable Models in Quantum Mechanics*, 2nd ed., AMS Chelsea Publishing, 2005. ISBN `0-8218-3624-2`. (Rank-1 perturbations, Krein resolvent formula, S-matrix via Q-function for self-adjoint extensions.)
