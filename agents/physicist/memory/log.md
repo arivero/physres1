@@ -213,3 +213,8 @@
 - annotated: blackboards/5.md §7b (physicist third-agent: action-angle pre-vote YES)
 - updated: blackboards/README.md slots 0 (THREE-AGENT), 5 (THREE-AGENT)
 - updated: agents/physicist/memory/status.md (cumulative session totals)
+- promoted: BB0 §§9-11 → notebooks/p42-extensions-interacting-curved.md Part 5 (composition forces singular dynamics classification table)
+- marked: Task #23 completed
+- created+completed: Task #24 (physicist audit of §6 Composition and Path Integral)
+- wrote: proposals/physicist-audit-section6.md (SINGLE-AGENT audit, 18 items, all CLEAN, no sev-1/2)
+- key: P4.2 necessity argument verified, hypothesis reduction P4.2c-h checked, Van Vleck D4.3 correct

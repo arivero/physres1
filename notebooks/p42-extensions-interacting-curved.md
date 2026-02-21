@@ -663,3 +663,48 @@ computation of K_impulse and the saddle-point check. Would close §9.2 item 3 fr
 "adequately asserted" to "explicitly proved."
 
 **Action:** Physicist to propose manuscript edit to orchestrator when session permits.
+
+## Part 5: Composition Forces Classical Singular Dynamics — Classification (2026-02-21)
+
+**Promoted from:** blackboards/0.md §§9-11 (THREE-AGENT: physicist + mathematician + computationalist).
+
+### Overview
+
+Composition stationarity (the semiclassical saddle-point limit of the kernel composition integral) recovers classical equations of motion INCLUDING boundary/matching data. This Part classifies all five types of classical singular dynamics and their composition-forcing status.
+
+### Classification Table
+
+| Singular class | Forced by (C)? | Mechanism | Paper reference |
+|---|---|---|---|
+| Smooth Euler-Lagrange | YES | Stationary phase of K composition integral | §§4-5 |
+| Corner/impulse (Weierstrass-Erdmann) | YES | Saddle of K_J composition integral (Part 4) | D6.5 |
+| Self-adjoint extensions (domain data) | PARTIALLY | SAE parameter \(\theta\) transported by composition | D9.1f |
+| Holonomic constraint forces | YES | Stationarity of constrained composition; FP determinant = half-density on constraint surface \(M\) | BB0 §§10-10b |
+| Distributional potentials | SUBSUMED | Delta potential = SAE with \(\theta\) encoding coupling \(g\) | → SAE row (D9.1f) |
+
+### Key Results
+
+**Constraint forces (THREE-AGENT verified, SymPy confirmed):**
+
+General holonomic case: \(f:\mathbb{R}^n \to \mathbb{R}^k\), constraint \(M = f^{-1}(0)\).
+
+(i) Fourier representation of constraint:
+\(\prod_t \delta(f(q(t))) = \int \mathcal{D}\lambda \exp(i\hbar^{-1}\int \lambda \cdot f(q)\,dt)\).
+Combined action: \(S_\lambda = \int [L + \lambda \cdot f]\,dt\).
+Stationarity in \(q\): Euler-Lagrange + \(\lambda_a \nabla f_a\). In \(\lambda\): constraint \(f = 0\).
+
+(ii) Faddeev-Popov determinant = half-density on \(M\):
+\(\det(\nabla f_a \cdot \nabla f_b)^{1/2} = |g_M|^{1/2}/|g|^{1/2}\)
+where \(g_M\) = induced metric on \(M\). This connects to the paper's half-density thesis: the measure on the constraint surface that preserves composition is automatically the half-density measure.
+
+(iii) Special case (SymPy verified): free particle constrained to pass through \(y=0\) at time \(t_0\):
+impulse \(J = mx_i/t_0 + mx_f/(T-t_0)\) = Lagrange multiplier. Residuals: J = 0, phase = 0.
+
+**Distributional potentials (SUBSUMED):**
+The Dirac delta potential \(V(x) = g\delta(x)\) in 1D is a special case of a self-adjoint extension of \(-d^2/dx^2\) on \(\mathbb{R}\setminus\{0\}\). The SAE parameter \(\theta\) encodes the coupling \(g\) via the matching condition \(\psi'(0^+) - \psi'(0^-) = (2mg/\hbar^2)\psi(0)\). Since D9.1f already shows that composition transports the SAE parameter, distributional potentials are not a separate forcing class.
+
+### Assessment
+
+Composition forces 3/5 classes fully (smooth EL, corners, constraints), 1 partially (SAE: parameter transported but which value is realized requires physical input), and 1 is subsumed (distributional = SAE). The remaining gap — full SAE classification — requires knowing which self-adjoint extension is physically realized, which is a boundary condition input, not a consequence of composition.
+
+**Connection to OQ2 (minimal axiom set):** Composition does not just force \(\hbar\) and the path integral; it also forces ALL classical matching conditions that would otherwise need to be postulated separately (Euler-Lagrange, Weierstrass-Erdmann, Lagrange multipliers). The "1 axiom (composition) + physical setup" count from OQ2 is more powerful than previously recognized.
