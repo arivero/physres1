@@ -61,12 +61,21 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - Planck-area PA-P4.2 (b-calculus): needs proof or downgrade to Heuristic
 
 ## Session 7 (current)
-- Philosophenweg: gravity composition analysis (Task #3)
+- Philosophenweg: gravity composition analysis (Task #3) — DONE
   - Key finding: P9.3 arithmetic progression has sev-2 cherry-picking risk
   - Key finding: chain may genuinely terminate (composition presupposes background time)
   - Full writeup: proposals/philosophenweg-gravity-composition.md
+- P9.3 edit proposal: proposals/critic-edit-p93-cherry-pick-caveat.md — SUBMITTED
+- Full Section 10 audit (all 6 appendices): CLEAN, zero errors
+- Cross-reference check (Task #10): 2 sev-3 direction errors (lines 660, 672) — DONE
+- Section 8 audit: CLEAN, all derivations verified
+- §6.3-6.5 + §7 audit: CLEAN (D4.1b-D5.1b, P5.1-P5.2 verified)
+- §9.1 claim graph cross-check: all 3 tracks (26 labels) verified present
+- Coverage: §6.3-6.5, §7, §8, §9.1, §10.1-10.6, xref scan = ~80% of technical content audited
+- Remaining unaudited this session: §1-5, §6.1-6.2, §9.2-9.6 (covered in prior sessions)
+- Session output: 1 Philosophenweg proposal, 2 edit proposals, 0 errors in algebra, 2 sev-3 xref fixes, 1 sev-2 scope concern
 
 ## Next steps
-- Await team lead response on Philosophenweg findings
+- Await team lead response on P9.3 edit proposal + Philosophenweg findings
 - Available for revision review when planck-area / action-angle revisions are ready
 - Available for any other tasks

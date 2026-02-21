@@ -594,3 +594,41 @@
   - All other xrefs verified correct (D0.2, P9.2, D8.1-D8.2, P7.1a, bibliography)
   - wrote: proposals/task-xref-check.md
 - completed: Task #10
+- self-directed: audit §8 (RG as refinement control, lines 927-1158)
+  - H6.1: renormalization framing — appropriate
+  - P6.1: renormalized observable — clean operational definition
+  - D6.0: control map τ — well-formulated parametric RG
+  - D6.1: RG equation from cutoff independence — CORRECT (standard chain rule)
+  - P6.2: flow generator from semigroup — CORRECT (standard infinitesimal generator)
+  - D6.2: toy log divergence — CORRECT (matches D8.1 in §10.1)
+  - D6.2a: step-halving control map — CORRECT (verified: τ₂(a)=a/2+1/4, a*=1/2)
+  - D6.2a-HO: harmonic oscillator witness — CORRECT (matches exact flow to O(h²))
+  - D6.2a-sg: general b-fold refinement — CORRECT (verified semigroup law τ_b∘τ_c=τ_{bc}, β(a)=1/2-a)
+  - D6.2a1: next discrepancy term — CORRECT (h³/16 f''[f,f])
+  - P6.3: closure caveat — appropriate
+  - D6.4: two-level truncation audit — CORRECT (δ_β = |b₁/b₀|·|g|)
+  - D6.3: difference quotient as counterterm — CORRECT (trivial)
+  - H6.3: non-perturbative recovery — CORRECT (Pade example verified)
+  - verdict: NO ERRORS in §8. All derivations verified.
+- self-directed: audit §6.3-6.5 + §7 (ordering, deformation quantization, groupoid bridge)
+  - D4.1b: α-discretization of H=qp — CORRECT (Ĥ_α = p̂q̂ + αiℏ)
+  - D4.1c: symmetry defect — CORRECT (iℏ(2α-1)⟨u,v⟩, vanishes iff α=1/2)
+  - D4.1d: Itô-Stratonovich dictionary — correct framing (no algebra to check)
+  - D4.2: classical recovery — standard stationary phase (correct)
+  - D4.2a: soft extremum — correct formulation
+  - D4.2b: free-particle two-slice integral — CORRECT (completing the square verified, W_ℏ and S_eff verified)
+  - D4.2c: delocalized angles — correct
+  - D4.3: Van Vleck as bi-half-density — CORRECT (coordinate transformation of mixed Hessian verified)
+  - D4.3a: caustics and Maslov index — correct conceptual statement
+  - P5.1: classical compatibility — CORRECT (standard deformation quantization)
+  - D5.1: correspondence limit — CORRECT (B₁ᵃⁿᵗⁱ = i{f,g})
+  - D5.1a: Moyal product for linear/quadratic — CORRECT (q⋆p = qp+iℏ/2, [q²,p]=2iℏq)
+  - D5.1b: cubic witness — CORRECT ([q³,p³] = iℏ{q³,p³} - 3iℏ³/2; coefficient -3/2 verified)
+  - P5.2: equivalent star products — correct formulation
+  - P5.2a: physical deformation equivalence — correct (references §10.2 correctly)
+  - verdict: NO ERRORS in §6.3-6.5 + §7. All algebra verified.
+- self-directed: cross-check §9.1 claim graph (P7.1a three-track map)
+  - Partition track: D1.1(165)→D1.2(188)→D2.1(276)→D3.1(412)→D4.1(573)/D4.1a(585)→P4.2(611) — ALL PRESENT
+  - Representation track: D4.1b(680)→D5.1(832)→D9.1(1464)/D9.1a(1479)/D9.1b(1487)/D9.1d(1508)/D9.1e(1530) — ALL PRESENT
+  - Scale track: D6.0(971)/D6.1(981)/D6.2(1033)→D6.2a-sg(1080)/D6.4(1137)→D8.1(1367)/D8.2(1388)→D11.2(1674)/D11.3(1727) — ALL PRESENT
+  - verdict: claim graph accurately references all derivation/proposition labels. No broken links.

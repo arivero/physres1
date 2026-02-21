@@ -522,3 +522,20 @@ Needs critic check before any paper mention.
 
 ### LESSON:
 - BB2's README status had "ACTIVE (student)" — always check README AND the actual blackboard before claiming status
+
+## Session 2026-02-21 (physics-afternoon team)
+
+### Tasks completed:
+1. **Task #1 — §9.1 claim graph audit**: All 17 elements in 3 tracks confirmed to exist. Issues: D9.1a/D6.2a-sg are Remarks not Derivations (nomenclature); D8→D11 arrow lacks formal bridge; D6.4b/Lemma D6.5 have no definition headers in paper (see below).
+2. **Task #8 — Appendix 10.6 rigor audit**: 8 issues found. Key: C=2 bound unproved; L¹ convergence missing DCT argument; K_{ω,ε}→0 convergence not stated for nontrivial model. 4 of 8 merged by orchestrator.
+
+### Key finding this session:
+- D6.4b (Instanton Lattice Rigidity) and Lemma D6.5 (Stokes factorization) appear in paper/main.md D10.1c without definition headers. NOT phantom — both are fully verified in notebooks/resurgence-composition-bridge.md §13 and §15 (three-agent, computationally confirmed). Fix: add Proposition D6.4b and Lemma D6.5 definition blocks to the cornerstone (proposed in §17 of the notebook).
+
+### Proposals written:
+- proposals/task-claim-graph-audit.md (updated post-session with D6.4b status correction)
+- proposals/task-appendix106-review.md
+
+### Next session resume point:
+- D6.4b/Lemma D6.5 paper-edit pending orchestrator dispatch
+- Possible: formalize Painlevé Stage 2.5 or modular forms questions from anomalies list

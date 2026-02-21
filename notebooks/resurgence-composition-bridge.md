@@ -661,3 +661,15 @@ not just the functional form of β. For A_i=8π²/g_i², equal log-rates require
 which holds at all μ only if g₁(μ)=g₂(μ) for all μ — forcing equal coupling values, not just equal β-function forms.
 
 **THREE-AGENT endorsement:** Mathematician + Computationalist + Physicist.
+
+---
+
+## §17. Paper-Internal Status of D6.4b and Lemma D6.5 (2026-02-21, Mathematician)
+
+**Finding from claim-graph audit (Task #1):** D6.4b and Lemma D6.5 are referenced in `paper/main.md` Remark D10.1c but have no formal definition headers in `paper/main.md`. The mathematics is fully verified here (§13 and §15 of this notebook), and paper-edit #27 applied their conclusions as inline text to D10.1c. However, no `Proposition D6.4b (...)` or `Lemma D6.5 (...)` definition block exists in the paper.
+
+**Required fix:** A paper-edit should add definition blocks for both results, likely in Appendix 10.3 or a new Appendix 10.7 (Resurgence/Scale-Channel Witnesses). The content already exists:
+- **Proposition D6.4b** = RCP-Res-P1.1 (§13): composition (C) forces Borel singularity positions to form an additive semigroup {nζ₁}; all instanton sectors run rigidly under RG (conditional on: simple-pole Borel singularity type, Écalle alien calculus).
+- **Lemma D6.5** = RES-15 Stokes factorization (§15): composition forces C_{n,m} = C_{1,0}^n · C_{0,1}^m for non-resonant sectors (conditional on: dilute-gas scope, leading-order in t, no bion resonances).
+
+**Severity:** IMPORTANT. The mathematics is verified; only paper-internal labeling is missing. Orchestrator should dispatch a paper-edit to add the two definition headers to the cornerstone.

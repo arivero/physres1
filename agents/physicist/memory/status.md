@@ -1,155 +1,26 @@
-# Physicist — Status
+# Physicist Status
 
-## Current state (2026-02-20, Session 5+, COMPLETE)
+**Session:** 2026-02-21 (afternoon)
+**Last updated:** 2026-02-21 ~18:00 CET
 
-### Completed this session
-1. **Task #2 (OQ1)**: Half-density D=4 dimension selection — THREE-AGENT complete
-   - BB1: Three independent D=4 coincidences; (i) and (ii) INDEPENDENT
-   - ξ_eff = ξ_conf(D=4) algebraically unique — MATHEMATICIAN VERIFIED
-   - SymPy confirmed all claims — COMPUTATIONALIST VERIFIED
-   - a_1(x,x) = 0 at D=4 (Seeley-DeWitt, consequence of conformal unification)
-   - Sub-question 1a: ℏ = (Planck area) × (gravitational stiffness c³/G)
-   - Promoted to: notebooks/oq1a-planck-area-fundamental.md
+## Completed this session
+- Task #2: §9.2 stress test review → proposals/task-stress-test-review.md
+  - Found §5→§6 gap: corner paths in kernel composition unwitnessed
+- Task #7: §6.2 clarity review → proposals/task-section6-2-review.md
+  - Found P4.1 is circular; real derivation buried in P4.2c remark
+- Task #9: §9.4 vulnerability coherence → proposals/task-vulnerability-coherence.md
+  - MERGED: closing para conflated #1/#3 status (now fixed)
 
-2. **BB0 second agent (TG-P2.1)**: TWO-AGENT complete
-   - Van Vleck factor D^{1/2} confirmed intrinsic to bi-half-density structure
-   - Explicit Gaussian integral: d/2 unchanged by half-density
-   - TG-Q4: μ_APS not selected by (C) — promoted to TG notebook
-   - proposals/physicist-tgr51-paper-edit.md (TG-bridge §5.3)
+## Idle work (winding down)
+- Appended impulse-kick kernel computation to
+  notebooks/p42-extensions-interacting-curved.md (Part 4)
+- This closes the §5→§6 bridge gap at kernel level for free particle + single delta kick
+- Identified as promotion candidate for §6.5 of paper/main.md
 
-3. **BB2 second agent (arithmetic Feynman)**: TWO-AGENT complete
-   - Endorsed critic's verdict: UV (Brown periods) vs IR (D6.4b Borel) are orthogonal
-   - proposals/physicist-rg-arithmetic-footnote.md (rg-fundamental cosmic Galois footnote)
+## Next steps (next session)
+- Propose manuscript edit: add K_impulse computation to §6.5 or as a note
+- The §5→§6 gap is now resolved in notebooks; only needs promotion to paper
+- Check on §6.2 fix decision (which option: A/B/C was chosen?)
 
-4. **OQ3 Level 3 (NEGATIVE)**: Self-directed
-   - BB4: Composition + unitarity does NOT bound C₂ₙ signs (only forces ℝ)
-   - Adams bounds need Lorentz+crossing+analyticity — not in (C)
-   - Promoted to: notebooks/nonperturbative-contact-pade.md
-
-5. **BB3 third agent (cobordism)**: THREE-AGENT complete
-   - TG-P3.1 physical content verified; L1-L4 limitations endorsed
-   - proposals/physicist-p91a-cobordism.md (cornerstone P9.1a-Cob)
-
-### Active blackboards
-- BB0: THREE-AGENT (TG-P2.1 + TG-Q4); paper-edit TG-R5.1 proposed
-- BB1: THREE-AGENT (OQ1 D=4); promoted to notebook; HD-D1.3c decision for orchestrator
-- BB2: THREE-AGENT (arithmetic); paper-edit rg-fundamental footnote proposed
-- BB3: THREE-AGENT (cobordism); paper-edit P9.1a-Cob proposed
-- BB4: Physicist OQ3 Level 3 (negative); PROMOTED to notebook
-- BB5: PROMOTED (resurgence)
-- BB6: FOUR-AGENT (Maiezza-Vasquez); paper-edit #28 APPLIED
-
-### Proposals pending orchestrator action
-1. proposals/physicist-halfdensity-d4-selection.md → HD-D1.3c decision (cornerstone or notebook)
-2. proposals/physicist-tgr51-paper-edit.md → TG-bridge §5.3 (TG-R5.1)
-3. proposals/physicist-rg-arithmetic-footnote.md → rg-fundamental cosmic Galois footnote
-4. proposals/physicist-p91a-cobordism.md → cornerstone P9.1a-Cob
-
-6. **Task #12 (CFT-P1.1)**: Self-directed, COMPLETE
-   - BB5: c-theorem orthogonal to (C); d/2 ↔ c/24 double analogy (physical interpretation)
-   - Composition forces NORMALIZATION EXPONENT per DOF at each stage (1/2 spatial, 1/24 conformal)
-   - Proposed Remark P9.1b-phys for cornerstone §9.6 (optional — awaits critic Task #15)
-   - proposals/physicist-p91b-phys-remark.md
-   - Promoted to: notebooks/rcp-axiom-structure-analysis.md (Stage 3 CFT analog section)
-
-### Proposals pending orchestrator action
-1. proposals/physicist-halfdensity-d4-selection.md → HD-D1.3c decision (cornerstone or notebook)
-2. proposals/physicist-tgr51-paper-edit.md → TG-bridge §5.3 (TG-R5.1)
-3. proposals/physicist-rg-arithmetic-footnote.md → rg-fundamental cosmic Galois footnote
-4. proposals/physicist-p91a-cobordism.md → cornerstone P9.1a-Cob
-5. proposals/physicist-p91b-phys-remark.md → cornerstone §9.6 Remark P9.1b-phys (optional)
-
-### Open questions for next session
-1. HD-D1.3c: is there room in cornerstone §9 for conformal unification remark?
-2. μ_APS physical selection: any gravitational/holographic principle beyond (C)?
-3. OQ4/OQ5: soft-limit universality (Task #9 complete — results pending review)
-4. Task #17 (A4/Borel): COMPLETE — Q2c biconditional confirmed; SUSY example added; resurgence notebook updated
-5. Task #18 (BB6 Padé): COMPLETE — THREE-AGENT; physicist physical verification; nonperturbative notebook updated
-6. Task #19 (Stage 1 forcing): COMPLETE — CL-1 theorem; BB0 overwritten; proposals/physicist-stage1-locality.md
-7. Library: witten1989-chern-simons-jones.md + zamolodchikov1986-ctheorem.md added to sources/
-8. anomalies.md: CFT sewing entry partially resolved (Stage 2 ⊂ Stage 3 in the forcing chain)
-
-### Session 6 status (2026-02-21, context-reset continuation, updated)
-- Votes: YES half-density-qft, delta-objects, dirac-probes; NO relativistic-central-orbits (pending Remark 3.1d merge → YES)
-- Task #1: DONE (votes)
-- Task #2: DONE (P9.2 APPROVED — RT-theorem distinct from P9.1a-Cob; needs RT-1991+Witten-1989 in bibliography)
-- Task #4: DONE (stale — already THREE-AGENT in Session 5)
-- Task #12: DONE (PathIntNorm→PathIntegralNormalization proposal written)
-- Task #13: DONE (Q1d promoted to TG notebook)
-- Task #14: CREATED (critic review of Q1d Stage 3.5)
-- Self-directed: BB0 CL-1' third-agent; BB1 Q1d second-agent; orbits Remark 3.1d proposal
-
-### Post-context-reset work (2026-02-21)
-- proposals/ was EMPTY at session resume (all prior proposals processed by orchestrator)
-- Task #14 (critic Q1d review): COMPLETE — THREE-AGENT with sev-3 incorporated
-- Wrote: proposals/physicist-edit-p92-stage35-verlinde.md (Remark P9.1b-Q1d + Verlinde/RT/Witten bib entries)
-- BB3 overwritten: relativistic-central-orbits referee assessment (2 referee errors found)
-  - Referee-2 wrong on ω_r²/ω_φ²: effective mass = γm (relativistic mass), not γ³m (longitudinal)
-  - Referee-2 wrong on sign: U'(r) = K/r^q IS correct for attractive force convention
-  - Fixes recommended: "gauge accident" → "coordinate identity", Sommerfeld caveat, [Will1993]
-- BB1 mathematician arithmetic chain: ℝ₊→ℚ→ℤ→μ_N (self-directed, Stage 2→3→3.5→4)
-  - Physicist second-agent pass added (§7): CONFIRMED (1 sev-3: c/24∈ℚ needs c∈ℤ qualifier)
-  - Needs critic as third agent
-
-### Session 7 (2026-02-21, new session)
-
-- Task #1: re-vote RCO — already YES (recorded in prior session, votes.md has physicist YES)
-- Task #2: re-vote half-density-qft — voted YES (both MAJORs confirmed resolved)
-- Task #3: Efimov/PSL(2,R) DONE
-  - proposals/physicist-edit-efimov-scale-channel.md written (diff included)
-  - Paper home: rcp-foundations §5 after 5.5 (before §6)
-  - PSL(2,R) Möbius language used (not full groupoid claim)
-  - "at unitarity" qualifier explicit in remark
-  - 3 new refs: Efimov1970, BedaqueHammerVanKolck1999, KraemerEtAl2006
-  - Mathematician third-agent on BB3 groupoid language still pending (non-blocking)
-
-### Session 6 post-context-reset continuation (2026-02-21, latest)
-
-**Completed this sub-session:**
-- Task #24: proposals/physicist-edit-hd-referee-revision.md (2M+11m all addressed, [ParkerToms2009] added)
-- p92-stage35-verlinde: RT1991 page typo fixed (547–598); critic approved; ready for orchestrator
-- BB3 overwrite: Efimov/PSL(2,R) second-agent pass (computationalist+physicist TWO-AGENT)
-  - s₀=1.006238 verified; "at unitarity" qualifier needed; PSL(2,R) ≠ pair groupoid (TG-Q2 caution)
-- RCO Round 2 vote: physicist YES (all fixes verified in Tasks #23/#28)
-- Task #22: proposals/physicist-edit-dp-referee-revision.md (dp 5 MINOR referee-2 items)
-  - m1: exponent (N+1)/2 clarification; m2: impulse-work displayed eq; m3: DCT sentence
-  - m4: Noether [Goldstein2002] reference; m5: viscosity-solution clarification
-
-### Session 9 (2026-02-21, xref audit session) — COMPLETE, SHUTDOWN
-
-**Completed this sub-session:**
-- Task #1 (cornerstone xref audit): COMPLETE
-  - proposals/task-cornerstone-xref-audit.md written (all issues resolved)
-  - All 12 satellites verified: no broken xrefs
-  - Key finding: 3 formal citation keys ([PathIntegralNormalization], [TangentGroupoidBridge], [RCPFoundations]) missing from bibliography
-  - All specific derivation xrefs verified: PA-D1.2a/b, HD-D1.3, RG-D1.2a, RG-D1.7, RCPFound §6, Theorem 2.1 Dirac Probes
-  - Rooted-tree-bookkeeping verified: 7-entry table, Hopf coproduct ≤ order 3, group-vs-semigroup §5.3, 2D delta RG §4.5 — all CORRECT
-- Self-directed: proposals/physicist-edit-cornerstone-satellite-bibliography.md
-  - Diff: add entries 27-29 to paper/main.md References for the 3 formally cited satellites
-  - Pending orchestrator action + second-agent review
-
-**Outstanding for next session:**
-- Bibliography proposal needs second-agent review then orchestrator merge
-
-### Session 8 (2026-02-21, continuation after context-reset)
-
-**Completed this sub-session:**
-- Task #6 (physicist): planck-area triage
-  - proposals/physicist-edit-planck-area-s5-triage.md: remove §5 (245 lines), APPLIED by orchestrator
-  - proposals/physicist-edit-planck-area-bibliography.md: add Morette/DeWitt/Vassilevich, APPLIED
-  - §5 material saved to papers/areal-speed/main.md by orchestrator
-- BB2 §10: H6.2 physicist second-agent — isomonodromy ≠ β=0. BB2 now TWO-AGENT.
-- BB3 §6: planck-area structural review physicist second-agent
-  - PA-H1.3 NOT weight-bearing (heuristic, zero logical deps in §§1-4)
-  - §5 duplication vs rel-orbits CONFIRMED
-  - Conditional YES → YES (unconditional on §§1-4). BB3 now TWO-AGENT.
-- critic-edit-pa-h25c-justification.md: physicist endorsed (exponent k=1 unique integer, G^k analytic at G=0)
-- critic-prevote-tier1.md: rcp-foundations + TG-bridge READY per critic; forwarded to orchestrator
-- tasks #15, #16: docs/ publishing done by orchestrator (rel-orbits, half-density-qft)
-- areal-speed editorial assessment forwarded to orchestrator
-
-**Current outstanding:**
-- BB2: needs computationalist third-agent (τ-function groupoid H6.4)
-- BB3: planck-area pre-vote TWO-AGENT; critic + others needed for full vote
-- papers/areal-speed/main.md: needs editorial shaping (abstract, renumbering, intro)
-- Woodhouse/Bates-Weinstein: library visit needed (student commission)
+## Pending tasks
+- None claimed; session winding down ~18:00
