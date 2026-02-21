@@ -71,6 +71,7 @@ Use this file as a source ledger.
 
 55. `[Murakami1995]` Hitoshi Murakami, "Quantum SO(3)-invariants dominate the SU(2)-invariant of Casson and Walker," *Math. Proc. Cambridge Philos. Soc.* **117** (1995), no. 2, 237–249. DOI `10.1017/S0305004100073084`. (Algebraic integrality of WRT-type SU(2)/SO(3) invariants at prime order roots of unity.)
 56. `[Habiro2008]` Kazuo Habiro, "A unified Witten-Reshetikhin-Turaev invariant for integral homology spheres," *Invent. Math.* **171** (2008), no. 1, 1–81. DOI `10.1007/s00222-007-0071-0`. (Cyclotomic integrality: Z(M³) ∈ ℤ[ζ_N, N^{-1}] for integral homology spheres.)
+57. `[ElShowk2014]` Sheer El-Showk et al., "Solving the 3d Ising Model with the Conformal Bootstrap II. c-Minimization and Precise Critical Exponents," arXiv:`1403.4545` (2014). (Reports \(\Delta_\sigma = 0.518154(15)\); used as a concrete irrational-dimension example in the conformal-bootstrap channel.)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
@@ -113,6 +114,7 @@ Use this file as a source ledger.
 38. `[Bertrand1873ClosedOrbits]`: 19th-century primary source; no DOI used in this ledger.
 39. `[HairerLubichWanner2006GNI]`: DOI `10.1007/3-540-30666-8`; ISBN `978-3-540-30666-5`.
 40. `[HairerNorsettWanner1993ODE1]`: DOI `10.1007/978-3-540-78862-1`; ISBN `978-3-540-56670-0`.
+41. `[ElShowk2014]`: arXiv primary anchor used (`1403.4545`).
 
 ## OA Acquisition Status
 1. `[Newton1687]`: acquired as HTML source record in `sources/natp00001-6da00d8c.md`.
@@ -154,6 +156,7 @@ Use this file as a source ledger.
 37. `[Bertrand1873ClosedOrbits]`: `PENDING` — metadata added in B27; archival OA scan ingestion pending.
 38. `[HairerLubichWanner2006GNI]`: `PENDING_LIBRARY` — book (Springer, 2006). DOI `10.1007/3-540-30666-8`; ISBN `978-3-540-30666-5`. Author has made partial chapter PDFs available (e.g. intro, selected sections) but full text requires institutional access or physical library. (B33 note: Archive Ouverte UNIGE lists the book but requires institutional login.)
 39. `[HairerNorsettWanner1993ODE1]`: `PENDING_LIBRARY` — book (Springer, 1993). DOI `10.1007/978-3-540-78862-1`; ISBN `978-3-540-56670-0`. Archive Ouverte UNIGE lists a related version but requires institutional login. Institutional access or physical library needed.
+40. `[ElShowk2014]`: acquired via arXiv source note in `sources/el-showk-et-al-2014-3d-ising-bootstrap.md` (URL: <https://arxiv.org/abs/1403.4545>; abstract reports \(\Delta_\sigma = 0.518154(15)\)).
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).

@@ -119,6 +119,9 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
   (a) explicit kanban assignment (`assigned`), or (b) explicit end-of-day/stop call.
 - **Default self-task policy:** when an agent suggests `self: <topic>`, the orchestrator
   creates the task and assigns it to that agent unless explicitly redirecting.
+- **Task-source priority (hard):** self-assigned tasks are primary. Agents should propose
+  `self: <topic>` based on their own memory/state first; orchestrator-seeded tasks are
+  secondary (used to unblock dependencies, enforce deadlines, or cover neglected areas).
 - **Agents** mark tasks completed when done.
 - **Dependencies**: tasks can block or be blocked by other tasks.
 
@@ -436,6 +439,16 @@ If `paper/main.md` changed:
 **Default mode is continuous operation.** Agents should keep cycling through request -> assignment -> execution -> completion without going idle.
 When given a time deadline, continue autonomously without pausing. Commit policy (§8) still applies — check timing before each commit. Only stop when:
 (a) deadline reached, (b) context exhausted, (c) no productive work remains.
+
+### Task Sourcing Priority (Hard)
+1. Primary: self-assigned tasks (`self: <topic>`) chosen by each agent from its own memory and local context.
+2. Secondary: orchestrator-seeded tasks, used when coordination, coverage, or deadline control requires explicit steering.
+3. The start gate still applies: no work starts before assignment appears in kanban.
+
+### Time Deadline Interpretation (Hard)
+1. If a stop/finish hour is given, the orchestrator must check current time using a shell command (for example `date`) before and during execution.
+2. If the user provides an hour without a timezone, interpret it as **CET** by default.
+3. If the user specifies a different timezone explicitly, use that timezone instead of CET.
 
 ### Stop Method (Operational)
 1. Agent sends `want #N` or `self: <topic>`.
