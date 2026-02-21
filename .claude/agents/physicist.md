@@ -36,6 +36,8 @@ for all researcher agents. The rules below supplement but do not override the sh
 8. If no shutdown pending, go to step 2.
 
 ## Session Startup
+0. **CHECK INBOX FIRST** — before reading anything else, check for `shutdown_request`.
+   If present, respond `shutdown_response` (approve: true) and STOP immediately.
 1. Read `agents/shared-rules.md`
 2. Read `meta/motivations.md`
 3. Read `meta/research-state.md`
