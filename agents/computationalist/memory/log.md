@@ -498,3 +498,22 @@
 - wrote: BB5 (overwrites stale quality sweep, SINGLE-AGENT)
 - updated: blackboards/README.md slot 5
 - scripts: tmp/product_vhd.py, tmp/product_vhd_v3.py
+- SELF-CORRECTION: full V_HD(S^3) in geodesic polar is NOT constant
+  - V_HD = -1 - 1/(4 sin^2 chi) - 1/(4 sin^2 chi sin^2 theta)
+  - BB4 radial-sector V_HD = -1 (correct for radial separation, not full)
+  - Spectral shift -1 still intrinsic; V_HD function is coordinate-dependent (BB0 §9)
+  - Updated BB5 with correction + warped product formula
+- warped product formula: V_HD = V_rad(r) + V_ang(Omega)/f^2
+  - V_rad = alpha[f''/f + (alpha-1)(f')^2/f^2], alpha = (d-1)/2
+  - H^3 full V_HD: NOT constant (confirmed SymPy)
+  - S^3 full V_HD: NOT constant (confirmed SymPy)
+  - Constancy on Lie groups: in LEFT-INVARIANT coords only (Prop M0.1)
+- scripts: tmp/warped_product_vhd.py, tmp/warped_product_correct.py, tmp/s3_vhd_full.py, tmp/h3_vhd_check.py
+- third-agent verification: Thm M4.1 (BB4) a_1(Delta_{1/2}) = 0 universally
+  - SymPy confirms a_1 = 0 for d = 2..8 on S^d
+  - NEW FINDING: a_2(S^d) = -d(d-1)(d-3)/180 (closed-form)
+  - a_2 = 0 at d = 3 ONLY — another d=3 selection mechanism
+  - S^3 heat kernel: no curvature corrections to O(t^2)
+  - (d-3) factor in a_2: independent algebraic mechanism from alpha(alpha-1)=0
+  - wrote: BB4 §10 (computationalist annotation, THREE-AGENT complete)
+  - script: tmp/a1_a2_verification.py
