@@ -1194,7 +1194,7 @@ The manuscript has built one chain across seven technical steps:
 `Remark P7.1a (Compact compatibility map for navigation).`
 The same chain can be read as three linked tracks, each with explicit witnesses:
 1. **Partition track**: D1.1-D1.2 \(\to\) D2.1 \(\to\) D3.1 \(\to\) D4.1/D4.1a \(\to\) P4.2 \(\to\) D6.5.
-2. **Representation track**: D4.1b \(\to\) D5.1 \(\to\) D9.1/(Remark D9.1a)/D9.1b/D9.1d/D9.1e/D9.1h/D9.1i.
+2. **Representation track**: D4.1b \(\to\) D5.1 \(\to\) D9.1/(Remark D9.1a)/D9.1b/D9.1d/D9.1e/D9.1h/D9.1i/D9.1k.
 3. **Scale track**: D6.0-D6.2 \(\to\) (Remark D6.2a-sg)/D6.4/D6.4b/D6.6 \(\to\) D8.1-D8.2 \(\to\) D11.2-D11.3.
 Each arrow is a compatibility bridge, not a change of subject. This compact map is the textual counterpart of the diagram requested in Section 9.5.
 
