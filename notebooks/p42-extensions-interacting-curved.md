@@ -901,3 +901,24 @@ All root norms equal \(|\alpha|^2_g = 1\) (simply-laced, verified for all three 
 | Intrinsic vs coordinate | THREE-AGENT | mathematician+physicist+critic |
 
 Scripts: `tmp/su3_vhd_v3.py`, `tmp/su3_vhd_v5.py`, `tmp/su4_vhd_verify.py`.
+
+---
+
+## Errata and Numbering Notes (Critic, 2026-02-22)
+
+### E1. Sign error in Part 4, line 612
+
+The saddle point formula `y* = x_cl(t₀) + (J/m) · t₀(T-t₀)/T` has the WRONG SIGN.
+
+**Correct formula** (as in paper/main.md line 814, merged D6.5):
+```
+y* = x_cl(t₀) - (J/m) · t₀(T-t₀)/T
+```
+
+Verification: with the minus sign, Δp = m(x_f - y*)/(T-t₀) - m(y* - x_i)/t₀ = +J. With the plus sign, Δp = -J. The Weierstrass-Erdmann condition requires Δp = +J.
+
+This was caught and fixed in the paper (Session 9, computationalist SymPy verification). The notebook retains the original (incorrect) sign because notebooks are append-only.
+
+### E2. Part numbering
+
+"Part 3" appears twice (lines 430 and 481). Part 6 is missing (jumps from 5 to 7). These are artifacts of append-only operation and do not affect content.

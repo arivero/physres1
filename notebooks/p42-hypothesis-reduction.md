@@ -817,4 +817,16 @@ THREE-AGENT (mathematician + physicist + critic, BB0). Unanimous approval.
 - blackboards/0.md: full THREE-AGENT analysis (§§1-11)
 - Part 7 (this notebook): d/2 uniqueness theorem
 - agents/mathematician/memory/philosophenweg-symmetric-spaces.md: desk reflection on rank-1 spaces
+
+### Update (Critic, 2026-02-22): SU(3) and SU(4) RESOLVED
+
+Key Result 4 line "SU(3) computation pending (Task #32)" is now STALE.
+
+**SU(3):** V_HD = -1.00000000 (numerical, computationalist BB0 §12), matching -|rho|^2 = -1. VERIFIED.
+**SU(4):** V_HD = -2.50000002 (numerical, computationalist BB0 §12), matching -|rho|^2 = -5/2. VERIFIED.
+**Analytic proof (Theorem M0.3, BB0 §13):** V_HD = -R/6 on all compact semisimple Lie groups with bi-invariant metric. Proof: constancy (Prop M0.1) + RNC evaluation at identity. FdV identity: R/6 = |rho|^2.
+
+Agent status: FIVE-AGENT (mathematician+physicist+critic+computationalist; student summary pending).
+
+The general formula \(V_{\mathrm{HD}} = -|\rho|^2_g = -\dim(G) h^\vee/24\) is now PROVED, not just conjectured. D9.1o in paper/main.md upgraded from "Numerical verification" to analytic proof + numerical confirmation.
 - proposals/mathematician-edit-d91j-lie-groups.md: paper-edit proposal

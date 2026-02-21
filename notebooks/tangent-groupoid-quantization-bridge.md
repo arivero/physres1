@@ -1700,3 +1700,86 @@ The two groupoids are NOT the same (different target spaces = different objects)
 The boundary restriction functor maps the former to the latter. The isotropy changes from elliptic (compact) to hyperbolic/parabolic (non-compact) at the boundary.
 
 **Status:** THREE-AGENT (mathematician + physicist + mathematician annotation). Sev-3, no paper-edit needed. Stable result in this notebook.
+
+## Literature Update: Lackman 2-Groupoid and Star-Exponential/Propagator Bridge (Student, 2026-02-22)
+
+### New Papers Found (3)
+
+**1. Lackman (arXiv:2404.03628, April 2024): "A Canonical Quantization of Poisson Manifolds: a 2-Groupoid Scheme"**
+
+SAME AUTHOR as the pair-groupoid construction in sections 2 and A1-A6 above.
+Key advance: extends from 1-groupoid (pair groupoid) to Lie 2-groupoid.
+
+- Quantizes Poisson manifold to Lie 2-groupoid
+- Perturbative expansion in hbar of CONVOLUTION of two quantized functions yields Kontsevich star product
+- Path integral via integration over path HOMOTOPIES (polarization-free)
+- 2-groupoid composition law directly encodes deformation-quantization
+
+**Connection to our program:**
+The chain is now: pair groupoid (Lackman 2024a) -> 2-groupoid (Lackman 2024b, 2404.03628) -> Kontsevich star product.
+This is the RIGOROUS version of what P4.2 claims abstractly: composition -> star product -> deformation quantization.
+The 2-groupoid adds PATH HOMOTOPIES as the mechanism (higher morphisms), which may connect to the
+RCP representation channel (homotopy = change of representation of the composition path).
+
+**2. Berra-Montiel, Garcia-Compean, Molgado (arXiv:2404.08815, April 2024): "Star Exponentials from Propagators and Path Integrals"**
+
+- Propagator = integral transform of star exponential (via time evolution operator symbol)
+- Star exponential constructed without formal series convergence issues
+- For finite-dim systems: star product representation resembles Poisson sigma model formulation
+
+**Connection to our program:**
+Makes explicit the MAP from propagator (composition law object) to star exponential (deformation quantization object).
+The propagator-as-integral-transform-of-star-exponential makes the composition -> star product bridge CONSTRUCTIVE,
+not just existential. Supports cornerstone section 6 narrative.
+
+**3. Kafuri (arXiv:2602.00367, January 2026): "Path Integrals and Deformation Quantization: the Fermionic Case"**
+
+- Extends Berra-Montiel et al. to fermionic systems (Grassmann variables, coherent states)
+- Fermionic star-exponential from path integral (bypasses convergence)
+- Fermionic Feynman-Kac formula in phase space
+
+**Connection to our program:**
+Shows the propagator/star-exponential bridge is UNIVERSAL (bosonic + fermionic).
+Open question: does P4.2 composition axiom extend to fermionic systems? If so, the forcing
+chain composition -> star product -> deformation quantization works for the full matter sector.
+
+### Synthesis: Three-Paper Cluster (2024-2026)
+
+These three papers form a coherent cluster that INDEPENDENTLY confirms the central claim
+of our tangent-groupoid bridge and cornerstone section 6:
+
+```
+Composition law (pair groupoid)
+    |
+    v  [Lackman 2024a: arXiv:2402.05866]
+Groupoid convolution
+    |
+    v  [Lackman 2024b: arXiv:2404.03628]
+2-groupoid quantization -> Kontsevich star product
+    |
+    v  [Berra-Montiel+ 2024: arXiv:2404.08815]
+Propagator = integral transform of star exponential
+    |
+    v  [Kafuri 2026: arXiv:2602.00367]
+Extends to fermionic sector (Grassmann)
+```
+
+This is the composition -> deformation quantization pipeline REALIZED in the literature.
+Our contribution (P4.2 + cornerstone section 6) is to show this pipeline is FORCED by
+a single axiom (composition), not merely a mathematical construction.
+
+### Open Questions from This Update
+
+**TG-Q5:** Does Lackman's 2-groupoid homotopy structure correspond to the RCP representation channel?
+(Path homotopies = different representations of the same composition)
+
+**TG-Q6:** Can Kafuri's fermionic extension inform a fermionic version of P4.2?
+(Grassmann composition law: what replaces the Levy-Khintchine classification?)
+
+**TG-Q7:** The Berra-Montiel star-exponential avoids convergence issues. Does this resolve the
+formal-vs-strict deformation quantization gap that our tangent-groupoid paper flags in section 6?
+
+### Source Files
+- sources/lackman-2024-canonical-quantization-2groupoid.md
+- sources/berra-montiel-2024-star-exponentials-propagators.md
+- sources/kafuri-2026-fermionic-star-exponential.md

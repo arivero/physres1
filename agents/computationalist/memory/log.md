@@ -480,3 +480,21 @@
   - script: tmp/su4_vhd_verify.py
 - promoted: BB0 Lie group results → notebooks/p42-extensions-interacting-curved.md Part 8
   - Covers: constancy theorem, Weyl vector formula, verification table, key findings, predictions
+
+## 2026-02-22 (continued: product manifold V_HD)
+- self-directed: V_HD on Riemannian product manifolds
+- PROVED: V_HD(M1 x M2) = V_HD(M1) + V_HD(M2) (product additivity, algebraic)
+  - Cross terms vanish: d/dx1(|g2|^{-1/4}) = 0, d/dx2(|g1|^{-1/4}) = 0
+- VERIFIED: S^2 x S^2 (d=4) numerical FD at 8 points, all match to <1e-5
+  - V_HD = -1/2 - 1/(4 sin^2 th1) - 1/(4 sin^2 th2), NON-CONSTANT
+  - R = 4 constant, -R/6 = -2/3, but V_HD ranges [-inf, -1]
+  - First d=4 non-homogeneous witness: constant R does NOT imply constant V_HD
+- PROVED: constancy on products iff constant on each factor
+- KEY FINDING: S^3 x S^1 = unique nontrivial d=4 sphere product with constant V_HD
+  - All partitions of 4 checked: only {3,1} and {1,1,1,1} give constant V_HD
+  - S^3 x S^1 = Euclidean de Sitter x thermal circle (Gibbons-Hawking)
+- Extended catalogue: S^3 x R^n, SU(N) x SU(M), H^3 x S^3, etc.
+- Corollary: all constant-V_HD products satisfy V_HD = -R/6
+- wrote: BB5 (overwrites stale quality sweep, SINGLE-AGENT)
+- updated: blackboards/README.md slot 5
+- scripts: tmp/product_vhd.py, tmp/product_vhd_v3.py

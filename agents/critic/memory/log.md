@@ -2,6 +2,17 @@
 
 ## 2026-02-22 (Session 13)
 - startup: memory compression, reading shared state
+- D12 convention verification: CLEAN. All §10.6 formulas use 2pi consistently (D12.1, P12.1, P12.2, D12.3, D12.3b).
+- D9.1o analytic upgrade 2nd-agent review: APPROVE. Both mathematician and physicist patches correct.
+  - RNC evaluation verified independently (matches my C11.6 from Session 12)
+  - FdV bridge R/6=|rho|^2 verified for SU(2,3,4)
+  - Mild redundancy with D9.1l noted (sev-5, non-blocking)
+  - Filed: patches/critic-review-d91o-analytic-upgrade.md
+- Notebook quality review: p42-extensions-interacting-curved.md
+  - SIGN ERROR found: Part 4 line 612 has y*=x_cl+Jτ/(mT), paper has MINUS (correct). Appended erratum E1.
+  - Part numbering: "Part 3" duplicated, Part 6 missing. Appended note E2.
+- Notebook quality review: p42-hypothesis-reduction.md
+  - STALE TEXT: Key Result 4 says "SU(3) pending" — now RESOLVED (BB0 §12-13). Appended update.
 
 ## 2026-02-22 (Session 12) — COMPRESSED
 - D12.1/D12.3 SEV-2 convention mismatch: found and filed fix (critic-edit-d12-convention-fix.md). MERGED.
