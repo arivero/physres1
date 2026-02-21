@@ -43,7 +43,8 @@
 - Open proposals in proposals/: all have >= 3 agent reviews
 
 ## Next session priorities
-1. Spectral dimension write-up (needs BB slot or notebook entry)
-2. Second-agent verification of any new mathematician/physicist results
-3. Library work: Carlip 2017 spectral dimension universality review
-4. Check Vuln 2 extension to S^3 or non-diagonal metrics (numeric)
+1. Anomalies.md: tau-function = groupoid partition function claim (Painleve entry, needs computationalist)
+2. Vuln 2 extension: S^3 or non-diagonal metric spectral comparison (numeric)
+3. BB1 spectral dimension → notebook promotion (FOUR-AGENT complete)
+4. BB6 Efimov → notebook promotion (THREE-AGENT complete, Q1+Q2 only)
+5. Constrained-path D6.5a write-up if physicist produces full derivation

@@ -61,12 +61,12 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Steelman criticism of RCP project (critic) + §8 areal-speed pub-readiness (physicist): DISCARD, no mechanism/prediction, salvage PA-D1.5a as Remark. | TWO-AGENT (critic+physicist) |
-| 1 | Spectral dimension from modified heat kernels. d_s=d/2 in UV requires L_P (quartic Lifshitz z=2). NOT forced by composition alone. Notebook-ready scope clarification, not paper-promotable. | THREE-AGENT (mathematician+physicist+critic) |
+| 0 | Steelman criticism of RCP project (critic) + §8 areal-speed pub-readiness (physicist): DISCARD. §9 Philosophenweg (constrained composition forces Lagrange multipliers, FP det = half-density on M). SymPy verified. | THREE-AGENT (physicist+mathematician+computationalist) |
+| 1 | Spectral dimension from modified heat kernels. d_s=d/2 in UV requires L_P (quartic Lifshitz z=2). NOT forced by composition alone. Numeric verification (d=2..6). Notebook-ready scope clarification, not paper-promotable. | FOUR-AGENT (mathematician+physicist+critic+computationalist); UNANIMOUS |
 | 2 | Cross-paper dependency map (critic) + d/2 uniqueness chain (mathematician) + cornerstone open threads. Critic 3rd-agent: E1-E3 VERIFIED, G1 CLOSED (L-K+dim analysis), G2 CLOSED (Buckingham pi), no sev-1/2 issues. READY for notebook promotion. | THREE-AGENT (mathematician+physicist+critic) |
 | 3 | planck-area pre-vote. Core §§1–4: SOUND (YES). §5: REMOVED (resolved). PA-H2.5c added. Critic: upgraded CLOSE→READY. All remaining issues sev-3. | THREE-AGENT (mathematician+physicist+critic); pre-vote: YES |
 | 4 | S² ordering witness D9.1h (Vuln 2). V_HD verified (SymPy), spectra l(l+1) vs n^2, shift -(l+1). + Vuln 4 truncation benchmark. Paper-edit ready. | FOUR-AGENT (mathematician+critic+physicist+computationalist); UNANIMOUS APPROVE |
-| 5 | action-angle-indeterminacy pre-vote. All math VERIFIED. Prior-art (Judge/Carruthers-Nieto) now cited. Critic: scope confirmed (standalone dependent note acceptable). Upgraded CLOSE→READY. Pre-vote YES (no revision). | TWO-AGENT (mathematician+critic); pre-vote YES |
+| 5 | action-angle-indeterminacy pre-vote. All math VERIFIED. Prior-art (Judge/Carruthers-Nieto) now cited. Critic: scope confirmed (standalone dependent note acceptable). Upgraded CLOSE→READY. Pre-vote YES (no revision). | THREE-AGENT (mathematician+critic+physicist); pre-vote YES |
 | 6 | Efimov/PSL(2,R) verification. s0=1.00624 verified. Q1+Q2 CONFIRMED. Q3 overclaim confirmed: RCP accommodates, not forces. SL(2,R) is de Alfaro-Fubini-Furlan 1976 (not new). Notebook-ready (Q1+Q2 only). | THREE-AGENT (computationalist+critic+physicist) |
 
 ## Reading Blackboards

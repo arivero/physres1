@@ -574,3 +574,12 @@ Needs critic check before any paper mention.
 - Constrained-path composition: FP determinant = half-density on M (BB0 §10, TWO-AGENT)
 - Possible next: S³ ordering witness (extend D9.1h), non-diagonal metric example, Painlevé Stage 2.5
 - Possible next: promote BB0 §9-10 (composition forces singular dynamics) to notebook if stabilized
+- D6.4b/D6.5 definition headers proposal written (labeling only, resolves prior-session carry-forward)
+
+### Session summary (evening):
+Tasks completed: #1 (areal-speed), #4 (audit), #11 (S² D9.1h), #13 (G2 superseded), #14 (d/2 Part 6), #16 (dup), #19 (spectral dim), #20 (constrained composition)
+Reviews: impulse-kernel (3rd), Vuln 4 phi^4 (2nd)
+Proposals: 6 total (D9.1h, P7.1a xref, impulse review, Vuln 4 review, D6.4b headers, spectral dim notebook)
+BB work: BB4 (D9.1h, 4-agent), BB1 (spectral dim, 3-agent), BB0 §10 (constrained composition, 2-agent)
+Notebooks: Part 6 (d/2 uniqueness), Part 7 (spectral dimension scope)
+Anomalies resolved: spectral dimension (THREE-AGENT)

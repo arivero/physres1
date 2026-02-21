@@ -360,3 +360,16 @@
   - delta(y) constraint = impulse J at saddle: J = m*xi/t0 + m*xf/(T-t0) = Lagrange multiplier
   - phase residual vs direct constrained-path: 0 (SymPy)
   - wrote: proposals/computationalist-task-constrained-path-lagrange.md
+- self-directed: spectral dimension d=4 selection argument (NEW FINDING)
+  - half-density d_s = d/2 matches QG universal d_s = 2 iff d = 4
+  - numeric verification: d=2,3,4,5,6 with scipy integration, only d=4 matches
+  - analytic proof: P(t) ~ t^{-d/(2z)} => d_s = d/z; z=2 gives d/2; d/2=2 => d=4
+  - wrote: proposals/computationalist-task-spectral-dimension-d4-selection.md
+  - SINGLE-AGENT, needs physicist + mathematician review
+  - SELF-CORRECTION: BB1 THREE-AGENT already analyzed this; d/2=2 is dimensional not d=4-specific
+  - Updated proposal to reflect overclaim. Numerics remain valid.
+- self-directed: BB1 fourth-agent annotation (§12)
+  - d_s numeric table for d=2..6 at t=0.001 matches d/2 within 3%
+  - S^2 ordering comparison: LB d_s->2, left-ordered d_s>2
+  - Horava (z=d): d_s->1 (spatial) verified
+  - FOUR-AGENT UNANIMOUS on BB1

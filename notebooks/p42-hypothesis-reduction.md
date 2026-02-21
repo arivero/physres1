@@ -621,3 +621,38 @@ The initial framing ("d/2 IS the UV spectral dimension") was too strong. The cor
 - Carlip, arXiv:1705.05417 (2017): spectral dimension convergence review
 - Horava, Phys. Rev. D 79, 084008 (2009): Lifshitz gravity
 - meta/anomalies.md: "Spectral dimension d_s=2" entry (SUBSTANTIALLY RESOLVED)
+
+---
+
+## Part 8: d/2 Occurrence Landscape (Disambiguation)
+
+**Source:** Student Philosophenweg (2026-02-21, context window 2)
+**Status:** SINGLE-AGENT (student). Cataloguing note, no new claims.
+
+### Four appearances of d/2 in the project
+
+| # | Appearance | Mechanism | Independent? |
+|---|-----------|-----------|-------------|
+| 1 | Composition normalization: \(K_t \sim t^{-d/2}\) | Levy-Khintchine + \(\{m,\hbar\}\) (Part 6, P4.2) | PRIMARY |
+| 2 | Half-density weight: \(\|g\|^{1/2}\) gives length\(^{d/2}\) | Geometric (density bundle on \(d\)-manifold) | = #1 |
+| 3 | UV spectral dimension: \(d_s = d/2\) for \(z=2\) Lifshitz | Quartic dispersion + \(L_P\) (Part 7) | INDEPENDENT of #1 |
+| 4 | Planck-area sieve: \(d=4\) singled out because \(d/2 = 2 \in \mathbb{Z}\) | Number-theoretic (Diophantine on PA-D1.3) | CONSEQUENCE of #1 |
+
+### Identifications and separations
+
+**(1) = (2):** The Van Vleck determinant \(\|g\|^{1/2}\) in the short-time kernel IS the mechanism producing \(t^{-d/2}\) under composition. The half-density formalism gives geometric meaning to the composition normalization. These are the same fact viewed algebraically (#1) and geometrically (#2). Documented in: path-integral-normalization satellite, oq1a-planck-area-fundamental notebook.
+
+**(3) is INDEPENDENT of (1)/(2):** The UV spectral dimension \(d_s = d/z = d/2\) at \(z=2\) requires the Planck length \(L_P\) as a third dimensional constant (Part 7). The composition normalization \(t^{-d/2}\) is an IR property forced by \(\{m,\hbar\}\) alone. The UV modification requires gravity. The numerical coincidence \(d/2 = d/2\) is trivial (both are half of \(d\)), not a shared mechanism.
+
+**(4) is a CONSEQUENCE of (1)/(2):** The Diophantine sieve in PA-D1.3 uses the VALUE of the composition normalization exponent (\(d/2\)) in a number-theoretic constraint. If composition forced a different exponent (say \(d/3\)), the sieve would select a different dimension. So #4 parasitizes #1.
+
+### Overclaim prevention
+
+The statement "d/2 appears four times in the project" could mislead a reader into thinking four independent mechanisms converge on the same number. The correct count of genuinely independent d/2 mechanisms is TWO: (1)/(2) [composition/half-density] and (3) [Lifshitz UV dispersion]. Appearance (4) is a number-theoretic derivative of (1)/(2).
+
+### References
+
+- Part 6: d/2 uniqueness theorem
+- Part 7: spectral dimension scope
+- notebooks/oq1a-planck-area-fundamental.md: Planck-area sieve
+- docs/planck-area/main.md: PA-D1.3 (gravity-only sieve)

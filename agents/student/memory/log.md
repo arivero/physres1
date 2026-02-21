@@ -155,6 +155,21 @@
 - promoted: BB6 Efimov Q1+Q2 (THREE-AGENT verified) to notebooks/efimov-groupoid-sketch.md Part 2
 - reviewed: all active proposals (D6.4a=4-agent UNANIMOUS, D6.5=3-agent, D9.1h=2-agent, 3 critic xref fixes)
 - sent: 6 messages to orchestrator (task claim, completion, self-directed proposals, idle status, planck-area gap, Efimov promotion)
+- (context window 2) self-directed: section 7 source verification for critic audit task #21
+  - verified [Landsman1998] citations via web search (standard DQ textbook material, PENDING_LIBRARY sev-3)
+  - verified [Connes1994] tangent groupoid Ch. II section 5 (acquired)
+  - verified [deGosson2018] short-time propagators (acquired)
+  - verified D5.1b cubic witness [q^3,p^3]_M = ihbar{q^3,p^3} - 3/2 ihbar^3 via SymPy
+  - wrote: proposals/student-review-section7-source-check.md (SINGLE-AGENT)
+- self-directed: planck-area d=4 prior art bibliography proposal
+  - confirmed: docs/planck-area/main.md cites zero d=4 selection prior art
+  - wrote: proposals/student-edit-planck-area-d4-prior-art.md (SINGLE-AGENT, sev-3)
+  - adds Ehrenfest 1917, Tegmark 1997, Carlip 2017 + contextualizing sentence
+- self-directed: Package E compatibility diagram draft
+  - read section 9.5 Package E requirements + P7.1a + D10.4a navigation map
+  - drafted ASCII compatibility diagram with all arrow witnesses
+  - wrote: proposals/student-task-package-e-diagram.md (SINGLE-AGENT, task suggestion)
+- sent: 4 messages to orchestrator (section 7 source-check, planck-area bibliography, Package E diagram, availability)
 
 ## Session Summary: Complete
 
