@@ -1,7 +1,7 @@
 # Regenerable research captures
 sources/
 bibliography/sources/
-proposals/
+patches/
 
 # Python
 __pycache__/

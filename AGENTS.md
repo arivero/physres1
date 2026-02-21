@@ -46,7 +46,7 @@ Emergency read is allowed only for shutdown safety when an agent is non-responsi
 **Responsibilities:**
 - Team creation and shutdown
 - Task creation, assignment, and monitoring via the shared kanban
-- **Polling `proposals/` for patch requests** — read proposal files, process, then delete
+- **Polling `patches/` for patch requests** — read proposal files, process, then delete
 - Processing patch requests directly (no subagent)
 - **Publication editor**: record votes, enforce unanimous threshold, spawn referee agents, decide accept/revise/reject (§11)
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
@@ -125,7 +125,7 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 
 - **Agents self-direct.** Any agent may claim an unassigned task or invent a new one by writing their name in Assignee. No orchestrator approval needed.
 - **Kanban is a bulletin board**, not a permission system. Agents write to it so others can see what's in progress and avoid duplication.
-- **The only hard gate** is manuscript patches: those always go through `proposals/` with 2-agent consensus before the orchestrator applies them to `paper/main.md`.
+- **The only hard gate** is manuscript patches: those always go through `patches/` with 2-agent consensus before the orchestrator applies them to `paper/main.md`.
 - **No IDs.** Tasks are identified by their description text, not by numbers.
 
 Task metadata is planning-only — never in manuscripts.
@@ -140,7 +140,7 @@ Task metadata is planning-only — never in manuscripts.
 |---------|---------|-------------|
 | Kanban | Task creation, claiming, completion | All |
 | Messages | Short signal phrases (`done`, `stuck`, `vote yes <paper>`, `want #N`) | All |
-| `proposals/` | Patch requests only (must include diff); **deleted immediately after processing** | Researchers → Orchestrator |
+| `patches/` | Patch requests only (must include diff); **deleted immediately after processing** | Researchers → Orchestrator |
 | Blackboards | Shared working surface for math and exploration | Researchers |
 | Notebooks | Shared stable memory (append-only) | Researchers |
 | `agents/<name>/memory/` | Private working notes | Each agent (own folder only) |
@@ -155,10 +155,10 @@ Task metadata is planning-only — never in manuscripts.
 
 **Why:** Agent→orchestrator messages are delivered as conversation turns in the
 orchestrator's 200k context window. At ~120k tokens/cycle with 5 agents, context
-exhausts after ~3 auto-compressions. Moving content to `proposals/` on disk keeps
+exhausts after ~3 auto-compressions. Moving content to `patches/` on disk keeps
 the orchestrator's window for actual work.
 
-Patch request files: `proposals/<agent>-patch-<topic>.md` (gitignored, ephemeral). Must include a literal diff block.
+Patch request files: `patches/<agent>-patch-<topic>.md` (gitignored, ephemeral). Must include a literal diff block.
 
 **Proposal lifecycle (hard):** The orchestrator deletes every proposal file **immediately** after processing (accepted, rejected, or deferred). No archiving, no accumulation. The file's existence means it is unread. A processed proposal that still exists is a bug.
 
@@ -402,7 +402,7 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 ### Startup Phase
 1. Orchestrator reads: `AGENTS.md`, `meta/motivations.md`, `meta/handoff.md`, `meta/research-state.md`.
 2. Orchestrator enforces startup invariants:
-   - ensure `proposals/` exists (`mkdir -p proposals`)
+   - ensure `patches/` exists (`mkdir -p patches`)
    - ensure `blackboards/README.md`, `notebooks/votes.md`, and `meta/anomalies.md` exist
 3. Orchestrator creates the team and spawns 5 researcher agents.
 4. Each agent reads: `agents/shared-rules.md`, `meta/motivations.md`, `meta/research-state.md`,
@@ -412,7 +412,7 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
 2. Agents request tasks (`want #N`) or suggest `self:` topics; orchestrator assigns in kanban; only then agents execute.
-3. Orchestrator polls `proposals/`, processes patch requests directly, **deletes each file immediately after processing**. Agents do library work directly.
+3. Orchestrator polls `patches/`, processes patch requests directly, **deletes each file immediately after processing**. Agents do library work directly.
 4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
 5. Orchestrator updates `meta/research-state.md` when threads evolve.
 
@@ -495,7 +495,7 @@ loop:
 
 **Orchestrator obligation:** reply to every `self: <topic>` announcement — either "go" or a redirect. This is the mechanism that makes end-of-day work: the orchestrator says "end of day" instead of "go", and the agent stops.
 
-**The only blocking rule:** manuscript patches to `paper/main.md` require filing a `proposals/` patch request (with diff) and waiting for 2-agent consensus before the orchestrator applies the change.
+**The only blocking rule:** manuscript patches to `paper/main.md` require filing a `patches/` patch request (with diff) and waiting for 2-agent consensus before the orchestrator applies the change.
 
 ### When No Tasks Are Available
 **PRIORITY RULE:** Discovery and study tasks have priority over manuscript promotion.

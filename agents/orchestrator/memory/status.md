@@ -5,7 +5,7 @@ Previous run completed with request-first kanban flow, all tasks closed.
 Primary outcomes:
 - applied manuscript edits in `paper/main.md` (P7.1a label disambiguation, P9 scope caveats, D11.0a bridge remark + wording hardening),
 - added and integrated `[ElShowk2014]` in both `paper/main.md` references and `paper/bibliography.md`,
-- cleared active `proposals/` queue and archived processed items under `proposals/archive/2026-02-21-run2130/`,
+- cleared active `patches/` queue and archived processed items under `patches/archive/2026-02-21-run2130/`,
 - recorded run summary in `meta/research-state.md`.
 
 ## Pending research actions
@@ -18,4 +18,4 @@ Primary outcomes:
 ## Next steps at startup
 1. Re-open `meta/kanban.md` and create fresh open tasks from pending items.
 2. Keep request-first assignment (`self:` -> assign -> execute) as default.
-3. Poll `proposals/` root (currently empty) and process any new patch files immediately.
+3. Poll `patches/` root (currently empty) and process any new patch files immediately.
