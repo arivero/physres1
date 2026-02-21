@@ -385,14 +385,33 @@ P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless expl
 - **R1 ordering-equivalence**: MAJOR REV (2M+6m from both referees). Full revision: M1 geometric-only scope for OE-P1.1, M2 dimensional consistency rewrite (α₀=αa², corrected 0.006–0.06 meV), +vonRoos1983, +BenDanielDuke1966, +DeWitt1957
 - **R1 rooted-tree-bookkeeping**: MAJOR REV (3M+6m / 3M+7m). Full revision: M1 F([[•]]) corrected, M2 §4.4→§4.5 dedup, M3 sunset→self-energy, +Jackiw1991
 
-### Publication totals
-- **6 published** (docs/): delta-objects, dirac-probes, rel-orbits, half-density-qft, rcp-foundations, tangent-groupoid-bridge
-- **2 under R2 review**: ordering-equivalence, rooted-tree-bookkeeping
-- **2 under R1 review**: rg-fundamental, path-integral-normalization
-- **2 queued for batch 5**: planck-area, action-angle (copied to pub-track/sent/)
+### Batch 4 referee results processed (16:11–16:27)
+- **R2 ordering-equivalence**: MINOR REV (0M from both) → **ACCEPT**. Published to docs/ordering-equivalence/
+- **R2 rooted-tree-bookkeeping**: MINOR REV (0M from both) → **ACCEPT**. Published to docs/rooted-tree-bookkeeping/
+- **R1 rg-fundamental**: MAJOR REV (3M+6m / 3M+8m). Full revision applied:
+  - M1: Taylor expansion for RG-P1.1 + Hille-Yosida ref + forward pointer
+  - M2: Calculus disanalogy acknowledgment (limit-sequence vs integral divergence)
+  - M3(R1): Minimal Butcher/RG dictionary (RG-H1.2a) with explicit coproduct comparison
+  - M1(R2): Explicit O(h³) discrepancy in composition test
+  - M2(R2): RG-R1.1 internal tags removed, multi-instanton conjecture demoted
+  - M3(R2): 3D integral factor-of-2 corrected (2π→4π, both occurrences)
+  - Minor: κ→κ_b notation, •²→•·• forest notation, [PathIntegralNormalization] ref added,
+    ConnesMarcolli published citation, conclusion trimmed, D(1)=0 motivation, convention map note
+- **R1 path-integral-normalization**: MAJOR REV (3M-scope / 3M+6m). Full revision applied:
+  - M1: PN-D1.2 forward-ref to PN-P1.3; explicit functional-equation argument
+  - M2: Van Vleck qualified as semiclassical throughout; caustic caveat added
+  - M3(R1): Lévy-stable dimensional exclusion proof (3-line argument)
+  - M3(R2): "Non-renormalizable" → "non-perturbatively renormalizable via SAE"
+  - Minor: ℏ explicit in dimensional analysis, oscillatory Gaussian note, E+iε,
+    half-density derivation sketch, fractal citations (Barlow/Kigami), Jackiw/ManuelTarrach refs
+
+### Publication totals (updated 16:27)
+- **8 published** (docs/): delta-objects, dirac-probes, rel-orbits, half-density-qft, rcp-foundations, tangent-groupoid-bridge, ordering-equivalence, rooted-tree-bookkeeping
+- **2 under R2 review**: rg-fundamental, path-integral-normalization (8 referee agents spawned)
+- **2 under R1 review**: planck-area, action-angle (batch 5, referee agents spawned)
 
 ### Infrastructure
-- All 6 published papers now have `layout: page` front matter for Jekyll auto-discovery
+- All 8 published papers have `layout: page` front matter for Jekyll auto-discovery
 - Batch 5 papers copied to pub-track/sent/
 
 ## Immediate Next Actions (Low Friction)

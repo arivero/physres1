@@ -43,6 +43,8 @@ Papers submitted through the internal peer review process (AGENTS.md §11).
 | Rooted Tree Bookkeeping (R2) | 2026-02-21 | MINOR REV (R2, 0M+3m) | MINOR REV (R2, 0M+3m) | **ACCEPT → published** | 2026-02-21 | All MAJORs resolved; residual minors (σ def, coproduct convention) |
 | RG Fundamental | 2026-02-21 | MAJOR REV (3M+6m) | MAJOR REV (3M+8m) | **MAJOR REVISION** | 2026-02-21 | RG-P1.1 unproved; calculus analogy misleading; RG-R1.1 internal tags; 3D integral factor-of-2 |
 | Path Integral Normalization | 2026-02-21 | MINOR REV (3M-scope+6m) | MAJOR REV (3M+6m) | **MAJOR REVISION** | 2026-02-21 | Van Vleck semiclassical overclaim; uniqueness gap; d≥3 terminology |
+| RG Fundamental (R2) | 2026-02-21 | ACCEPT (R2) | ACCEPT (R2, 2 editorial) | **ACCEPT → published** | 2026-02-21 | All 3+3 MAJORs resolved; published to docs/rg-fundamental/ |
+| Path Integral Normalization (R2) | 2026-02-21 | ACCEPT (R2, 1m residual) | ACCEPT (R2, 1m residual) | **ACCEPT → published** | 2026-02-21 | All 3+3 MAJORs resolved; published to docs/path-integral-normalization/ |
 
 ## Readiness Queue
 
@@ -61,28 +63,26 @@ Tiers: **READY** (content complete, needs submission task only), **NEEDS-POLISH*
 | Tangent Groupoid Bridge | `docs/tangent-groupoid-bridge/` | 2026-02-21 | Round 2 ACCEPT (both MAJORs resolved + 3 new minors fixed) |
 | Ordering Equivalence | `docs/ordering-equivalence/` | 2026-02-21 | Round 2 ACCEPT (both MAJORs resolved; 6+4 residual minors presentational) |
 | Rooted Tree Bookkeeping | `docs/rooted-tree-bookkeeping/` | 2026-02-21 | Round 2 ACCEPT (all 3 MAJORs resolved; σ/coproduct minors) |
+| RG Fundamental | `docs/rg-fundamental/` | 2026-02-21 | Round 2 ACCEPT (all 6 MAJORs resolved; composition test, dictionary, 3D integral fixed) |
+| Path Integral Normalization | `docs/path-integral-normalization/` | 2026-02-21 | Round 2 ACCEPT (all 6 MAJORs resolved; Van Vleck qualified, Lévy exclusion proved) |
 
-### Under Revision (MAJOR REVISION from referee review)
+### Under Review (batch 5, R1)
 
-| Paper | Path | Referee-1 | Referee-2 | Key issues |
-|-------|------|-----------|-----------|------------|
-| RCP Foundations | `docs/rcp-foundations/` | ACCEPT (R2) | ACCEPT (R2) | Published 2026-02-21 |
-| Tangent Groupoid Bridge | `docs/tangent-groupoid-bridge/` | ACCEPT (R2) | ACCEPT (R2) | Published 2026-02-21 |
-| Ordering Equivalence | `docs/ordering-equivalence/` | MINOR (R2) | MINOR (R2) | Published 2026-02-21 |
-| Rooted Tree Bookkeeping | `docs/rooted-tree-bookkeeping/` | MINOR (R2) | MINOR (R2) | Published 2026-02-21 |
-| RG Fundamental | `papers/rg-fundamental/` | MAJOR (3M+6m) | MAJOR (3M+8m) | RG-P1.1 unproved; calculus analogy; RG-R1.1 tags; 3D integral |
-| Path Integral Normalization | `papers/path-integral-normalization/` | MINOR (3M-scope) | MAJOR (3M+6m) | Van Vleck overclaim; uniqueness gap; d≥3 terminology |
+| Paper | Path | Status | Notes |
+|-------|------|--------|-------|
+| Planck Area | `papers/planck-area/` | R1 in progress | Referee agents spawned |
+| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | R1 in progress | Referee agents spawned |
 
 ### Tier 1 — READY (critic pre-vote: READY; next for referee review)
 
 | Paper | Path | .md lines | Refs | Critic verdict | Notes |
 |-------|------|-----------|------|----------------|-------|
-| ~~Ordering Equivalence~~ | `papers/ordering-equivalence/` | — | — | Under revision | MAJOR REV from referee review |
-| ~~Rooted Tree Bookkeeping~~ | `papers/rooted-tree-bookkeeping/` | — | — | Under revision | MAJOR REV from referee review |
-| ~~RG Fundamental~~ | `papers/rg-fundamental/` | — | — | Under revision | MAJOR REV from referee review |
-| ~~Path Integral Normalization~~ | `papers/path-integral-normalization/` | — | — | Under revision | MAJOR REV from referee review |
-| Planck Area | `papers/planck-area/` | 512 | 7 | READY | §5 removed, PA-H2.5c added, bibliography expanded |
-| Action-Angle Indeterminacy | `papers/action-angle-indeterminacy-central-potentials/` | 255 | 40 | READY | Judge/Carruthers-Nieto prior-art added |
+| ~~Ordering Equivalence~~ | — | — | — | Published | R2 ACCEPT |
+| ~~Rooted Tree Bookkeeping~~ | — | — | — | Published | R2 ACCEPT |
+| ~~RG Fundamental~~ | — | — | — | Published | R2 ACCEPT |
+| ~~Path Integral Normalization~~ | — | — | — | Published | R2 ACCEPT |
+| ~~Planck Area~~ | `papers/planck-area/` | 512 | 7 | Under R1 review | Referee agents spawned |
+| ~~Action-Angle Indeterminacy~~ | `papers/action-angle-indeterminacy-central-potentials/` | 255 | 40 | Under R1 review | Referee agents spawned |
 
 ### Genre Mismatch (survey/perspective — not research papers)
 
