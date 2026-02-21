@@ -194,4 +194,10 @@
 - wrote: proposals/physicist-review-vuln2-summary.md (APPROVE)
 - read: proposals/mathematician-edit-p71a-d91h-xref.md
 - wrote: proposals/physicist-review-p71a-xref.md (APPROVE)
+- read: blackboards/1.md (spectral dimension, mathematician investigation)
+- annotated: blackboards/1.md §10 (physicist 2nd-agent: z=2 Lifshitz physics confirmed)
+- updated: blackboards/README.md slot 1 (TWO-AGENT -> THREE-AGENT with critic)
+- Philosophenweg follow-up: BB0 constrained-path composition (Lagrange multiplier from stationarity)
+- updated: blackboards/0.md (constraint forces → YES via Faddeev-Popov mechanism)
+- updated: meta/anomalies.md spectral-dimension entry (z=2 not unique, d/2 coincidence numerical not mechanistic, RESOLVED)
 - marked: Task #17 completed

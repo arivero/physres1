@@ -453,6 +453,14 @@ P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless expl
 - BB6 (computationalist/critic): Efimov/PSL(2,R) full verification. s₀=1.00624, elliptic SL(2,R), Casimir match. TWO-AGENT: Q1+Q2 CONFIRMED, Q3 overclaim (RCP compatible, not forcing).
 - Notebooks: `p42-hypothesis-reduction.md` extended (d/2 uniqueness chain, G2 closure).
 
+### Additional results (post-commit, delivered at session end)
+
+- **Task #20 (mathematician + physicist, TWO-AGENT):** Constrained composition (BB0 §10): composition on constrained paths forces Lagrange multiplier + Faddeev-Popov determinant = half-density on constraint surface M. Direct connection from constrained-path composition to half-density thesis. New candidate for notebooks or half-density satellite.
+- **Spectral dimension (mathematician + physicist + critic, THREE-AGENT):** BB1 + anomalies.md updated. d_s=d/2 in UV requires L_P (quartic Lifshitz, z=2), NOT forced by composition alone. Promoted to p42-hypothesis-reduction.md Part 7. Corrects anomaly framing.
+- **Efimov Q1+Q2 promoted (student):** notebooks/efimov-groupoid-sketch.md Part 2 — verified numerics (THREE-AGENT: computationalist + critic + physicist). Q3 overclaim honestly documented.
+- **Physicist Philosophenweg finding:** Constrained composition forces Lagrange multipliers (contributed to Task #20 via physicist + mathematician collaboration on BB0 §9-10).
+- **Planck-area bibliography gap (student, sev-3):** docs/planck-area paper selects d=4 but cites zero prior art (Ehrenfest 1917, Tegmark 1997, Carlip 2017). Sources ingested to sources/. Flag for next revision round.
+
 ### Pending for next session
 - **fermionic-mediators + uncuttable git rm**: need 3rd agent vote (critic + physicist voted YES; mathematician or student or computationalist needed).
 - **PA-D1.5a salvage** (areal-speed): add one-sentence Remark in cornerstone §3 if desired.

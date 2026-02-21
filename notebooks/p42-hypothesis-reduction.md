@@ -559,3 +559,65 @@ P4.2d (paper/main.md line ~623) states the dimensional matching \(\alpha = 2\) a
 - paper/main.md: P4.2, P4.2d, P4.2e
 - Levy-Khintchine representation theorem (Sato, "Levy Processes and Infinitely Divisible Distributions")
 - Buckingham pi theorem (dimensional analysis)
+
+---
+
+## Part 7: Scope of d/2 Uniqueness — Spectral Dimension and Planck-Scale Dispersion
+
+**Source:** blackboards/1.md (2026-02-21, mathematician + physicist second-agent review)
+**Status:** TWO-AGENT verified (mathematician + physicist), 2026-02-21
+**Extends:** Part 6 (scope boundaries table)
+
+### Question
+
+Does the d/2 composition exponent connect to the UV spectral dimension \(d_s \to 2\) observed across quantum gravity approaches (Carlip arXiv:1705.05417)?
+
+### Answer
+
+The spectral dimension is \(d_s(t) = -2\,d\ln P(t)/d\ln t\) where \(P(t) = \int d^dp/(2\pi)^d\, e^{t\phi(p)}\).
+
+For general Lifshitz dispersion \(\phi(p) = -c_z|p|^{2z}\):
+\[
+P(t) \sim t^{-d/(2z)} \quad\Rightarrow\quad d_s = d/z.
+\]
+
+Standard QM (\(z=1\)): \(d_s = d\). Quartic UV (\(z=2\)): \(d_s = d/2\).
+
+### Dimensional mechanism
+
+Part 6 proved: \(\{m,\hbar\}\)-only forces \(\alpha = 2\) (quadratic).
+
+With \(\{m,\hbar,L_P\}\): \(c_\alpha \sim m^{-1}\hbar L_P^{\alpha-2}\) is dimensionally consistent for any \(\alpha = 2+2k\), \(k \geq 0\). In particular:
+- \(\alpha = 2\): standard (\(c_2 = \hbar/m\), no \(L_P\))
+- \(\alpha = 4\): quartic (\(c_4 = \hbar L_P^2/m\), Lifshitz \(z=2\))
+
+The Planck length \(L_P\) unlocks higher-order dispersion. The spectral dimension flow \(d \to d/2\) requires this third constant.
+
+### Physical realizations (physicist review)
+
+| QG approach | \(z\) | Mechanism |
+|---|---|---|
+| Horava-Lifshitz | 2 (by construction) | Anisotropic UV scaling |
+| CDT | \(\approx 2\) (measured) | Lattice + causality |
+| Asymptotic Safety | effective \(\sim 2\) | Non-Gaussian fixed point |
+| LQG | not directly \(z=2\) | Polymer quantization |
+
+Horava-Lifshitz: \(z=2\) is a UV fixed point of the RG flow, not a postulate. Lorentz invariance (\(z=1\)) is recovered in the IR.
+
+### Project implication
+
+The d/2 uniqueness theorem (Part 6) is STRENGTHENED by this analysis:
+- Composition + \(\{m,\hbar\}\) forces standard QM (the paper's P4.2).
+- UV spectral dimension reduction requires gravity (\(L_P\)), which composition alone does not provide.
+- The paper's thesis is correct: composition forces \(\hbar\) WITHOUT needing gravity.
+
+### Verdict on anomaly entry
+
+The initial framing ("d/2 IS the UV spectral dimension") was too strong. The correct statement: the Planck length allows quartic dispersion, which gives \(d_s = d/z = d/2\) generically (for any \(d\), not just \(d=4\)).
+
+### References
+
+- blackboards/1.md: mathematician analysis (§§1-9) + physicist review (§10)
+- Carlip, arXiv:1705.05417 (2017): spectral dimension convergence review
+- Horava, Phys. Rev. D 79, 084008 (2009): Lifshitz gravity
+- meta/anomalies.md: "Spectral dimension d_s=2" entry (SUBSTANTIALLY RESOLVED)

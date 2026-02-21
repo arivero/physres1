@@ -564,7 +564,13 @@ Needs critic check before any paper mention.
 - BB2: d/2 uniqueness chain, THREE-AGENT, promoted to notebook Part 6
 
 ### Next session resume point:
-- D9.1h §10.2 insertion pending merge (proposal ready, two-agent approved)
+- D9.1h §10.2 insertion pending merge (proposal ready, FOUR-AGENT approved)
+- D6.4a (Vuln 4 phi^4 benchmark) pending merge (proposal ready, TWO-AGENT approved)
+- D6.5 (impulse-kick kernel) pending merge (proposal ready, THREE-AGENT approved)
+- P7.1a xref update (D9.1h) pending merge (depends on D9.1h merge)
 - D6.4b/Lemma D6.5 paper-edit still pending from prior session
-- Spectral dimension d_s=2 anomaly: mathematician assessment requested (anomalies.md)
-- Possible: S³ ordering witness (extend D9.1h), non-diagonal metric example
+- Spectral dimension anomaly: SUBSTANTIALLY RESOLVED (BB1 + notebook Part 7)
+- Spectral dimension anomaly: RESOLVED (THREE-AGENT, notebook Part 7)
+- Constrained-path composition: FP determinant = half-density on M (BB0 §10, TWO-AGENT)
+- Possible next: S³ ordering witness (extend D9.1h), non-diagonal metric example, Painlevé Stage 2.5
+- Possible next: promote BB0 §9-10 (composition forces singular dynamics) to notebook if stabilized

@@ -20,6 +20,9 @@
 - verified: D6.5 format fixes applied correctly (markdown italics, \[...\] delimiters)
 - verified: D6.4a already merged with correct coefficients
 - wrote: proposals/critic-session9-paper-status-report.md — comprehensive paper status
+- wrote: blackboards/1.md §11 — critic 3rd-agent review of spectral dimension (THREE-AGENT)
+  - dimensional analysis VERIFIED, overclaim risk assessed (sev-2), notebook-ready, not paper-promotable
+- updated: blackboards/README.md — BB1 index (THREE-AGENT)
 
 ## 2026-02-21 (Session 8, 21:41 CET)
 - read: startup files (critic.md, shared-rules.md, motivations.md, research-state.md, status.md)

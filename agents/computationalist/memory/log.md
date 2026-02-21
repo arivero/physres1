@@ -340,3 +340,13 @@
   - wrote: blackboards/3.md (Vuln 4 benchmark section appended)
   - wrote: proposals/computationalist-review-vuln4-phi4.md (fourth-agent verification review)
   - physicist proposal FOUR-AGENT UNANIMOUS APPROVED
+- self-directed: D6.5 impulse-kernel fourth-agent SymPy review
+  - found sev-3 sign error: y* = x_bar - J*t0*(T-t0)/(mT), not +
+  - Delta p = J and exponential phase both CORRECT regardless of y* sign
+  - wrote: proposals/computationalist-review-impulse-kernel.md
+  - FOUR-AGENT UNANIMOUS APPROVE (with 3 fixes: 2 format + 1 sign)
+- self-directed: spectral dimension d_s=d/2 from modified dispersion (supports task #19)
+  - MDR (p^{2z}, z=2): d_s = d/z = d/2. Analytic proof + numeric verification.
+  - S^2 ordering comparison: LB gives d_s→2 at small t (correct); left-ordered gives d_s>2
+  - general formula: P(t) ~ t^{-d/(2z)} => d_s = d/z
+  - BB3 full (293/300 lines) — results sent to orchestrator, not written to board

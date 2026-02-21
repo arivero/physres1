@@ -1,43 +1,49 @@
 # Computationalist — Status
 
-## Last session: 2026-02-21 (full session, shutdown at 15:50 CET)
+## Last session: 2026-02-21 (evening run, 21:41–~22:30 CET)
 
 ## Tasks completed this session
 
-### Task #1 (re-vote): relativistic-central-orbits Round 2 — VOTE YES
-- Remark 5.2d: ω_r²/ω_φ² = 3-q-β² CORRECT (SymPy)
-- Key: Hamiltonian effective mass = γm, not longitudinal mass γ³m
-- For q=2: ratio = 1/γ² = ω² (precession param). Referee-2 error identified.
-- Vote recorded in votes.md (3/5 at shutdown, awaiting critic+student)
+### Task #5: Efimov/PSL(2,R) verification
+- s0 = 1.006237825102782 from transcendental eq (brentq, residual 8.88e-16)
+- CRITICAL: equation has DIFFERENT arguments for cosh (pi*s/2) and sinh (pi*s/6)
+- Mobius eigenstructure: ELLIPTIC SL(2,R), theta = pi/s0, |tr(M)| = 1.9996 < 2
+- PSL(2,R) spectral parameter: Casimir C = s0^2 + 1/4 = 1.2625
+- Verdict: Q1 CONFIRMED, Q2 CONFIRMED with caveat, Q3 OVERCLAIM (sev-3)
+- Wrote BB6, critic added 2nd-agent review, physicist added 3rd-agent
 
-### Task #2 (re-vote): half-density-qft Round 2 — VOTE YES
-- M1: ξ_conf=1/6 iff D=4 verified (SymPy)
-- M2: ParkerToms2009 §6.3 citation confirmed in text
-- Vote recorded in votes.md (3/5 at shutdown, awaiting critic+student)
+### Task #15: Vuln 4 lambda phi^4 truncation benchmark
+- b0 = 3/(16pi^2) = 0.01900, b1 = -17/(3*(16pi^2)^2) = -2.272e-4
+- |b0/b1| = 83.60, stability window (eta=0.1): |g| < 8.36
+- scipy integration: inside (1.15e-5 rel diff) vs outside (0.81 rel diff)
+- D6.4 stability bound quantitative. Vuln 4 CLOSED.
+- Wrote BB3 + proposals/computationalist-review-vuln4-phi4.md (4th agent)
 
-### Task #5 (research): OQ4 Padé branch-cut amendment
-- I_n ~ n^{-3/2} confirmed numerically (scipy betaln, n=5..1000)
-- N~16-26 for 1% threshold (refined from prior 16-20)
-- Promoted to notebooks/nonperturbative-contact-pade.md
+### Self-directed: S^2 D9.1h fourth-agent verification
+- V_HD = -1/4 - 1/(4*sin^2(theta)) VERIFIED (SymPy residual = 0)
+- Eigenfunction check, H_L spectrum, spectral shift: all VERIFIED
+- Wrote BB4 §11 (FOUR-AGENT UNANIMOUS)
 
-### Self-directed: OQ1a second-agent (blackboards/5.md §9b)
-- L_P² = Gℏ/c³ unique background-free area scale (dimensional analysis, SymPy)
-- ℂ× orthogonality: ℏ↔phase (S¹), L_P²↔amplitude (ℝ₊) — confirmed NOT tautological
-- Promoted to notebooks/oq1a-planck-area-fundamental.md
-- Needs mathematician third-agent
+### Self-directed: D6.5 impulse-kernel fourth-agent review
+- Found sev-3 sign error: y* = x_bar - J*t0*(T-t0)/(mT), not +
+- Delta p = J and phase both CORRECT regardless
+- Wrote proposals/computationalist-review-impulse-kernel.md
 
-### Library: arXiv:2503.02941 ingested
-- JHEP 2025: FV vs Fujikawa path integral measures
-- Relevant to half-density-qft + OQ1a
-- Saved to sources/2503.02941-path-integral-measures-diffeomorphism.md
+### Self-directed: spectral dimension d_s = d/2 computation
+- MDR (p^{2z}, z=2): d_s = d/z = d/2 analytically and numerically
+- S^2 ordering comparison: LB gives d_s -> 2, left-ordered gives d_s > 2
+- General formula: P(t) ~ t^{-d/(2z)} => d_s = d/z
+- Ingested: sources/horava-spectral-dimension-lifshitz.md (arXiv:0902.3657)
 
 ## State at shutdown
-- Both re-vote papers at 3/5 (mathematician+physicist+computationalist YES each)
-- Awaiting critic + student votes on both papers
-- Efimov RCP-R5.1 already in rcp-foundations (confirmed at lines 243-281)
-- Blackboard slot 6 free; slot 0 has vote verification record
+- All assigned tasks completed
+- BB3 at 293/300 lines (near limit)
+- BB6: Efimov/PSL(2,R) THREE-AGENT (computationalist+critic+physicist)
+- BB4: S^2 witness FOUR-AGENT UNANIMOUS
+- Open proposals in proposals/: all have >= 3 agent reviews
 
 ## Next session priorities
-1. Check if critic+student votes arrived → unanimous? → re-submit to fresh referees
-2. OQ1a third-agent (mathematician needed)
-3. FV/Fujikawa relevance assessment for half-density-qft (physicist+mathematician)
+1. Spectral dimension write-up (needs BB slot or notebook entry)
+2. Second-agent verification of any new mathematician/physicist results
+3. Library work: Carlip 2017 spectral dimension universality review
+4. Check Vuln 2 extension to S^3 or non-diagonal metrics (numeric)

@@ -108,6 +108,16 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 
 ## Vulnerability status (updated Session 9)
 - Vuln 1 (path-space): SUBSTANTIALLY CLOSED (Appendix 10.6)
-- Vuln 2 (ordering/domain): SUBSTANTIALLY ADDRESSED (D9.1h merged)
+- Vuln 2 (ordering/domain): SUBSTANTIALLY ADDRESSED (D9.1h merged, summary line fixed)
 - Vuln 3 (RG): CLOSED (D8.2a)
-- Vuln 4 (truncation): PARTIALLY CLOSED -> CLOSED pending D6.4a merge
+- Vuln 4 (truncation): CLOSED (D6.4a merged)
+
+## Session 9 proposal outcomes
+- D9.1h paper edit: MERGED (mathematician, critic reviewed)
+- D6.5 impulse-kernel: MERGED (physicist, FOUR-AGENT approved)
+- D6.4a phi4 benchmark: MERGED (physicist, FOUR-AGENT approved)
+- P7.1a xref: TWO-AGENT approved (mathematician+critic+physicist), ready to merge
+- D10.4a nav map: TWO-AGENT approved (critic+physicist), ready to merge
+- Vuln 2 summary fix: TWO-AGENT approved (critic+physicist), APPLIED
+- Package D status: TWO-AGENT approved (critic+physicist), APPLIED
+- BB1 spectral dimension: THREE-AGENT reviewed, notebook-ready

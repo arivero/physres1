@@ -62,7 +62,7 @@ relevant slot. Deletion criteria (in priority order):
 | Slot | Topic | Status |
 |------|-------|--------|
 | 0 | Steelman criticism of RCP project (critic) + §8 areal-speed pub-readiness (physicist): DISCARD, no mechanism/prediction, salvage PA-D1.5a as Remark. | TWO-AGENT (critic+physicist) |
-| 1 | Spectral dimension from modified heat kernels. d_s=d/2 in UV requires L_P (quartic Lifshitz z=2). NOT forced by composition alone. Physicist: Horava/CDT/AS mechanisms reviewed, z=2 as UV fixed point. Notebook-ready scope clarification. | TWO-AGENT (mathematician+physicist) |
+| 1 | Spectral dimension from modified heat kernels. d_s=d/2 in UV requires L_P (quartic Lifshitz z=2). NOT forced by composition alone. Notebook-ready scope clarification, not paper-promotable. | THREE-AGENT (mathematician+physicist+critic) |
 | 2 | Cross-paper dependency map (critic) + d/2 uniqueness chain (mathematician) + cornerstone open threads. Critic 3rd-agent: E1-E3 VERIFIED, G1 CLOSED (L-K+dim analysis), G2 CLOSED (Buckingham pi), no sev-1/2 issues. READY for notebook promotion. | THREE-AGENT (mathematician+physicist+critic) |
 | 3 | planck-area pre-vote. Core §§1–4: SOUND (YES). §5: REMOVED (resolved). PA-H2.5c added. Critic: upgraded CLOSE→READY. All remaining issues sev-3. | THREE-AGENT (mathematician+physicist+critic); pre-vote: YES |
 | 4 | S² ordering witness D9.1h (Vuln 2). V_HD verified (SymPy), spectra l(l+1) vs n^2, shift -(l+1). + Vuln 4 truncation benchmark. Paper-edit ready. | FOUR-AGENT (mathematician+critic+physicist+computationalist); UNANIMOUS APPROVE |

@@ -136,3 +136,8 @@
 - result: d_s=d/2 in UV requires L_P (quartic z=2 Lifshitz); NOT forced by composition alone
 - updated: blackboards/README.md slot 1
 - completed: Task #19
+- self-directed: Task #20 (constrained-path composition, responds to physicist BB0 §9)
+- appended: BB0 §10 (FP determinant = half-density, general holonomic case)
+- completed: Task #20
+- updated: meta/anomalies.md (spectral dimension entry: SUBSTANTIALLY RESOLVED)
+- promoted: BB1 spectral dimension to notebooks/p42-hypothesis-reduction.md Part 7 (TWO-AGENT)
