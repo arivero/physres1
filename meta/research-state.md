@@ -93,3 +93,4 @@ entries — do not append. Actionable items go to the kanban, not here.
 - DeWitt/conformal ≠ V_HD formula: CONFIRMED — V_HD const=(d-1)R/(4d) is distinct from ξ_c=(d-2)/(4(d-1)) for all d≥2 (BB6 §12, computationalist).
 - **V_HD formula NOVEL**: -(d-1)R/(4d) has NO direct literature hit (critic lit search, BB2 3rd-agent). Remark D9.1l may be original. Flag for submission cover letter.
 - **Ordering witness notebook**: S²+S³+H²+formula+D=4 promoted to stable notebook Part 7 (computationalist). All 7 BBs at 3+ agent consensus.
+- **V_HD chart-dependence**: V_HD(x) is coordinate-dependent (S² equator: -1/2 spherical, -1/3 RNC) but spectral comparisons are intrinsic. BB0 §9 THREE-AGENT. Remark D9.1n proposed (critic, SINGLE-AGENT) — needs 2nd agent in R19 before merge.
