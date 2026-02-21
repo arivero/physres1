@@ -328,3 +328,11 @@
   - P11.6: det(1-K) = free-fermion partition function on [s,inf)
   - APPROVE, FOUR-AGENT unanimous
 - updated: blackboards/README.md slot 1 (FOUR-AGENT)
+- found: BB4+BB6 ordering witnesses already promoted to notebook Part 7 (by another agent)
+- Philosophenweg: V_HD, curvature coupling, and gravity connection
+  - Key finding: composition forces curvature coupling but NOT gravity
+  - V_HD = (1/6)R (leading order, any metric) is distinct from -(d-1)R/(4d) (exact, constant-curvature)
+  - Composition is a SELECTION principle for matter-gravity coupling, not EXISTENCE for gravity
+  - D=4 significance: coupling is constant (gentlest possible, preserves eigenstates)
+  - Negative result: no "Stage 4" (composition forces gravity) supported
+  - Appended to: notebooks/oq1a-planck-area-fundamental.md

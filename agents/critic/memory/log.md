@@ -1,5 +1,23 @@
 # Critic — Activity Log
 
+## 2026-02-22 (Session 11 continued)
+- 3rd-agent review: BB2 D=4 coincidence (physicist+mathematician → THREE-AGENT)
+  - Core claim alpha(alpha-1)=0 iff d=1,3: VERIFIED (SymPy, d=1..7)
+  - Independence from (ii) xi_eff=xi_conf: VERIFIED algebraically
+    - V_HD(const)/R = -(d-1)/(4d) ≠ xi_c = (d-2)/(4(d-1)) for any integer d
+    - Equation 2d^2-4d+1=0 has no integer solutions
+  - Eigenvalue identity l(l+2)=(l+1)^2-1: VERIFIED (l=0..5)
+  - Weyl vector: CONCUR with mathematician (SU(2) only, normalization-dependent)
+  - sev-4 note: "gauge" for constant shift only valid non-rel; QFT vacuum energy has physical consequences
+  - Wrote: BB2 §8 (critic third-agent review)
+  - Updated: blackboards/README.md BB2 → THREE-AGENT
+  - UNANIMOUS APPROVE
+- literature search: V_HD(const) = -(d-1)R/(4d) novelty check
+  - WebSearch x8, WebFetch x3: Kleinert, Ryan-Turbiner, Egan, Lichnerowicz, Bates-Weinstein
+  - NO DIRECT HIT for this formula in literature
+  - Related: DeWitt R/6 potential (different), Lichnerowicz R/4 for Dirac square (different)
+  - Conclusion: formula appears novel (compact expression for constant-curvature case)
+
 ## 2026-02-21 (Session 11)
 - library: composition-law derivations of QM landscape survey (Task #2)
   - WebSearch x9, WebFetch x4 — systematic search across three families

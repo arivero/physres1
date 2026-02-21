@@ -880,3 +880,70 @@ J1 and J2 together give the strongest justification:
 The PA-H2.7 vulnerability remains: if one allows non-analytic G-dependence (e.g., from quantum gravity effects), the sieve breaks and d=4 is no longer unique. The sieve is a PERTURBATIVE statement about the classical limit.
 
 **Recommendation for planck-area paper:** Add a brief remark (PA-H2.5c or similar) stating: "The physical content of PA-H2.5a is that d=4 is the unique dimension where the half-density normalization can be supplied by the classical (tree-level) gravitational coupling. In other dimensions, the scale requires quantum (loop-level, non-analytic) generation." This converts the sieve from an aesthetic assumption to a physical distinction between classical and quantum scale generation.
+
+## Philosophenweg: Composition, Curvature Coupling, and Gravity (2026-02-21/22)
+
+**Physicist unstructured thinking. Single-agent.**
+
+### Observation
+
+The unified formula \(V_{\mathrm{HD}}(\text{const}) = -(d-1)R/(4d)\) (BB6/notebook Part 7, FOUR-AGENT) raises the question: does composition FORCE a curvature coupling, and does this amount to forcing gravity?
+
+### Chain of reasoning
+
+1. Composition forces the half-density measure \(|g|^{1/4}\) (P4.2, paper §6.2).
+2. On curved \((M,g)\), the half-density Hamiltonian acquires \(V_{\mathrm{HD}}\).
+3. \(V_{\mathrm{HD}}\) is proportional to \(R\) on constant-curvature spaces.
+4. In normal coordinates (any metric): \(V_{\mathrm{HD}} = (1/6)R + O(\text{Riem}^2)\) (HD-D1.3b).
+
+### Two distinct curvature quantities
+
+- **Normal-coordinate leading order**: \(V_{\mathrm{HD}} \approx (1/6)R\). Valid for ANY metric, weak curvature.
+- **Constant-curvature exact**: \(V_{\mathrm{HD}}(\text{const}) = -(d-1)R/(4d)\). Exact on maximally symmetric spaces.
+
+These are different. The leading-order \((1/6)R\) comes from the short-distance expansion of \(|g|^{1/4}\). The exact constant part \(-(d-1)R/(4d)\) comes from the global structure of the Sturm-Liouville conjugation on spaces where sectional curvature is constant.
+
+### Answer: composition forces curvature coupling but NOT gravity
+
+1. **Composition forces the half-density measure** — this is P4.2.
+2. **On flat space**: \(V_{\mathrm{HD}} = 0\). No curvature, no coupling.
+3. **On curved space**: \(V_{\mathrm{HD}} \sim (1/6)R + \cdots\). Composition forces a SPECIFIC curvature coupling.
+4. **This coupling is DERIVED, not chosen.** Unlike the standard \(\xi R \phi^2\) coupling where \(\xi\) is a free parameter, the half-density coupling is uniquely determined by composition.
+5. **But the metric is an INPUT.** Composition does not derive the Einstein equations or force gravity to exist. It forces HOW quantum matter couples to a given curved background.
+
+### Precise statement
+
+> Composition is a SELECTION principle for the matter-gravity coupling,
+> not an EXISTENCE principle for gravity.
+>
+> On any \((M,g)\), the composition-forced measure uniquely determines the
+> curvature coupling of quantized matter. The coupling \(V_{\mathrm{HD}}\) is
+> not a free parameter — it is a THEOREM of the half-density prescription.
+> But \((M,g)\) itself is external.
+
+### D=4 significance
+
+At \(D=4\) (spatial section \(S^3\)):
+- The curvature coupling \(V_{\mathrm{HD}} = -1\) is constant.
+- The composition-forced measure couples to curvature WITHOUT distorting the spatial wavefunction.
+- This is the "gentlest" possible curvature coupling: it shifts energies but preserves eigenstates.
+
+At \(D \neq 4\):
+- \(V_{\mathrm{HD}}\) is position-dependent.
+- The curvature coupling DISTORTS spatial wavefunctions relative to naive ordering.
+- Composition forces a genuinely different quantum theory, not just an energy shift.
+
+### Connection to OQ1a
+
+This does NOT help with OQ1a (Lp vs hbar) because:
+- The V_HD formula requires knowing \(R\), which requires knowing the metric.
+- The metric requires Einstein equations (or input data), which composition alone does not provide.
+- OQ1a's question about whether Lp or hbar is more fundamental remains open — composition forces hbar (P4.2) but does not force Lp.
+- A path from composition to Lp would require composition to force gravity (Einstein equations), which this analysis shows it does NOT do.
+
+### Negative result (important)
+
+The fact that composition forces curvature coupling but NOT gravity means:
+- The three-stage chain (classical -> quantum -> QFT) ends at QFT.
+- A hypothetical Stage 4 ("composition forces gravity") is NOT supported by the V_HD analysis.
+- This is consistent with the paper's conservative scope (Stages 1-3 only, gravity not claimed).

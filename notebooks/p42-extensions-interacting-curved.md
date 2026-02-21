@@ -708,3 +708,106 @@ The Dirac delta potential \(V(x) = g\delta(x)\) in 1D is a special case of a sel
 Composition forces 3/5 classes fully (smooth EL, corners, constraints), 1 partially (SAE: parameter transported but which value is realized requires physical input), and 1 is subsumed (distributional = SAE). The remaining gap — full SAE classification — requires knowing which self-adjoint extension is physically realized, which is a boundary condition input, not a consequence of composition.
 
 **Connection to OQ2 (minimal axiom set):** Composition does not just force \(\hbar\) and the path integral; it also forces ALL classical matching conditions that would otherwise need to be postulated separately (Euler-Lagrange, Weierstrass-Erdmann, Lagrange multipliers). The "1 axiom (composition) + physical setup" count from OQ2 is more powerful than previously recognized.
+
+---
+
+## Part 7. Curved-Manifold Ordering Witnesses (Vuln 2 Closure Suite)
+
+Date: 2026-02-22. Promoted from blackboards 4 and 6.
+
+### 7.1 Context
+
+Vulnerability 2 of the cornerstone paper concerns the representation track:
+the half-density ordering prescription must be shown to produce genuinely
+different physics from naive (left/principal-symbol) ordering on curved manifolds.
+The S^2 witness (D9.1h) was established FOUR-AGENT in Session 2026-02-21.
+Two additional witnesses (S^3 and H^2) were computed and verified 2026-02-22.
+
+### 7.2 The General S^d Formula
+
+On \(S^d\) (unit sphere, geodesic radial coord \(r\)), set \(\alpha=(d{-}1)/2\). Then:
+
+\[
+V_{\mathrm{HD}}^{S^d}(r) = -\alpha^2 + \frac{\alpha(\alpha{-}1)}{\sin^2 r}
+= -\frac{(d{-}1)^2}{4}+\frac{(d{-}1)(d{-}3)}{4\sin^2 r}.
+\]
+
+**Constancy condition:** \(V_{\mathrm{HD}}\) is constant iff \(\alpha(\alpha{-}1)=0\), i.e., \(d=1\) (trivial) or \(d=3\).
+
+On constant-curvature \(d\)-spaces with scalar curvature \(R\):
+
+\[
+V_{\mathrm{HD}}(\text{constant part}) = -\frac{(d{-}1)R}{4d}.
+\]
+
+This is NOT conformal coupling \(\xi_c R = (d{-}2)R/(4(d{-}1))\), NOT the Seeley-DeWitt
+\(a_1 = R/6\), and NOT the DeWitt ordering \(\xi_D = (d{-}2)/(8(d{-}1))\).
+The half-density potential is a distinct, non-perturbative curvature coupling.
+SymPy verified for \(d=1,...,7\), both \(S^d\) and \(H^d\).
+
+### 7.3 Three Witnesses
+
+| Label | Manifold | Curvature | Compact | Spectrum | \(V_{\mathrm{HD}}\) | Shift |
+|---|---|---|---|---|---|---|
+| D9.1h | \(S^2\) | \(R=+2\) | yes | discrete \(\{l(l{+}1)\}\) | \(-\tfrac{1}{4}-\tfrac{1}{4\sin^2\theta}\) | \(-(l{+}1)\) growing |
+| D9.1i | \(S^3\) | \(R=+6\) | yes | discrete \(\{l(l{+}2)\}\) | \(-1\) constant | \(-1\) uniform |
+| D9.1k | \(H^2\) | \(R=-2\) | no | continuous \([1/4,\infty)\) | \(+\tfrac{1}{4}-\tfrac{1}{4\sinh^2\rho}\) | gap \(+1/4\) |
+
+Coverage: positive AND negative curvature, compact AND non-compact, discrete AND continuous spectra, variable/constant/threshold shifts.
+
+### 7.4 S^3 = SU(2) (D9.1i)
+
+Coords: \((\chi,\theta,\phi)\). Metric: \(ds^2=d\chi^2+\sin^2\!\chi(d\theta^2+\sin^2\!\theta\,d\phi^2)\).
+
+\(V_{\mathrm{HD}}=-1\) (CONSTANT). Unique among \(S^d\), \(d\ge2\).
+
+Eigenfunctions: \(\psi_l(\chi)=\sin((l{+}1)\chi)\), eigenvalue \(l(l{+}2)=(l{+}1)^2-1\).
+Degeneracy: \((l{+}1)^2\) (Peter-Weyl on SU(2), quadratic Casimir).
+
+The spectral shift is algebraic: \(l(l{+}2)-(l{+}1)^2=-1\) for all \(l\).
+
+**SU(2) Weyl vector:** \(V_{\mathrm{HD}}=-4|\rho|^2_{\text{Killing}}\) where \(|\rho|^2=\dim(\mathrm{SU}(2))/12=1/4\)
+(Freudenthal-de Vries). On any compact Lie group with bi-invariant metric, \(V_{\mathrm{HD}}\) is constant
+(by homogeneity); the value requires case-by-case computation and normalization conventions.
+
+### 7.5 H^2 Hyperbolic Plane (D9.1k)
+
+Coords: geodesic radial \(\rho\in[0,\infty)\). Metric: \(ds^2=d\rho^2+\sinh^2\!\rho\,d\phi^2\).
+
+\(V_{\mathrm{HD}}(\rho)=1/4-1/(4\sinh^2\rho)\). Asymptotics: \(V_{\mathrm{HD}}\to+1/4\) as \(\rho\to\infty\).
+
+Spectral comparison:
+- \(\mathrm{Spec}(\widetilde{H})=[1/4,\infty)\) (McKean gap).
+- \(\mathrm{Spec}(H_L)=[0,\infty)\) (no gap).
+- **The left ordering erases the spectral gap.** The gap \(1/4=-R/8\) is a geometric invariant
+  recovered by the half-density ordering.
+
+### 7.6 D=4 Coincidence (de Sitter Connection)
+
+On \(S^{D-1}\) (spatial section of \(D\)-dimensional de Sitter): \(V_{\mathrm{HD}}\) constant iff \(D=4\).
+
+This is the fourth independent D=4 coincidence of the half-density framework:
+- (i) \((\partial\sigma)^2\) coupling vanishes (conformal-class, HD-D1.3a)
+- (ii) \(\xi_{\mathrm{eff}}=\xi_{\mathrm{conf}}=1/6\) (universal, HD-D1.3b)
+- (iii) \(a_1(x,x)=0\) (Seeley-DeWitt, consequence of (ii))
+- **(iv) \(V_{\mathrm{HD}}\) on \(S^{D-1}\) constant iff \(D=4\)** (eigenvalue structure, BB4+BB6)
+
+(iv) is independent: (i)-(iii) concern curvature coupling on GENERAL \((M,g)\);
+(iv) concerns the SPECIFIC manifold \(S^{D-1}\) with round metric and its eigenvalue structure.
+
+### 7.7 Flat Space
+
+On \(\mathbb{R}^d\): \(V_{\mathrm{HD}}=\alpha(\alpha{-}1)/r^2=(d{-}1)(d{-}3)/(4r^2)\).
+Vanishes at \(d=3\) (another special property of \(d=3\)).
+
+### 7.8 Agent verification status
+
+| Result | Status | Agents |
+|---|---|---|
+| S^2 (D9.1h) | FOUR-AGENT UNANIMOUS | mathematician+critic+physicist+computationalist |
+| S^3 (D9.1i) | THREE-AGENT UNANIMOUS | computationalist+critic+mathematician |
+| H^2 (D9.1k) | FOUR-AGENT UNANIMOUS | computationalist+mathematician+critic+physicist |
+| General formula | FOUR-AGENT | computationalist+mathematician+critic+physicist |
+| D=4 coincidence | THREE-AGENT UNANIMOUS | physicist+mathematician+critic |
+
+Scripts: `tmp/s3_full_verification.py`, `tmp/h2_spectral_witness.py`, `tmp/h2_spectral_v2.py`, `tmp/vhd_general_formula.py`.

@@ -439,3 +439,7 @@
   - script: tmp/vhd_general_formula.py
 - wrote: proposals/computationalist-edit-d91k-h2-witness.md (paper-edit with D9.1k + D9.1l + D9.1m)
 - BB6 received: mathematician §9, critic §10, physicist §11 — FOUR-AGENT UNANIMOUS
+- completed: task #23 (V_HD vs DeWitt/conformal/a_1 comparison, BB6 §12)
+- verified: D=4 coincidence on BB2 (alpha(alpha-1)=0 on S^{D-1}, SU(2) Weyl vector |rho|^2=1/4)
+- verified: Freudenthal-de Vries formula: V_HD = -4|rho|^2_Killing = -dim(G)/3 for simply-laced
+- promoted: BB4 §12 + BB6 ordering witnesses → notebooks/p42-extensions-interacting-curved.md Part 7
