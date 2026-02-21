@@ -123,8 +123,7 @@ Condition (C) in Fourier space gives:
 \[
 \hat{h}(p;\,t_1)\,\hat{h}(p;\,t_2) = \hat{h}(p;\,t_1+t_2).
 \]
-This is Cauchy's functional equation for measurable multiplicative functions in the time variable; equivalently, \(\log \hat{h}(p;t)\) (well-defined by condition (M): \(\hat{h} \neq 0\) a.e.) satisfies the additive Cauchy equation in \(t\). By Cauchy's measurability theorem, the only measurable solutions are \(\hat{h}(p;t) = \exp(t\,\varphi(p))\). Condition (D) forces
-\(\int h(x;t)\,d^dx = 1\), so \(\hat{h}(0;t) = 1\), fixing the additive constant. For
+This is Cauchy's functional equation for measurable multiplicative functions in the time variable; equivalently, \(\log \hat{h}(p;t)\) (well-defined by condition (M): \(\hat{h} \neq 0\) a.e.) satisfies the additive Cauchy equation in \(t\). By Cauchy's measurability theorem, the only measurable solutions are \(\hat{h}(p;t) = \exp(t\,\varphi(p))\). Condition (D) together with the physical requirement that \(f\) is a transition kernel (so that \(\int h(x;t)\,d^dx = 1\) — total weight conservation, a consequence of unitarity of the time-evolution operator) gives \(\hat{h}(0;t) = 1\), fixing the additive constant. For
 quadratic \(\varphi(p) = c\,p^2\) (forced by rotation symmetry + dimensional analysis),
 inverse Fourier transform gives \(h(x;t) \propto N(t)\exp(c'|x|^2/t)\) with
 \(N(t) \propto t^{-d/2}\) from the Gaussian normalization integral. \(\square\)

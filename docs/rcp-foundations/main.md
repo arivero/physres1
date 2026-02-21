@@ -292,10 +292,10 @@ a single model to a class of structurally distinct patterns, both disciplined by
 
 ## 6.1 Statement
 
-**Hypothesis P4.2 (from [Main]; proof sketch below).** Consider action-based dynamics on \(\mathbb{R}^d\) with mass parameter \(m\) and self-adjoint generator, and let \(\{K(x,y;t)\}_{t>0}\) be a family of transition kernels satisfying:
+**Theorem P4.2 (from [Main]; proof sketch below).** Consider action-based dynamics on \(\mathbb{R}^d\) with mass parameter \(m\) and self-adjoint generator, and let \(\{K(x,y;t)\}_{t>0}\) be a family of transition kernels satisfying:
 - **A1 (Composition):** \(\int K(x,z;t_1)\,K(z,y;t_2)\,d^dz = K(x,y;t_1+t_2)\).
 
-Then, without further axioms, the composition law forces:
+Then, without further axioms beyond the physical setup (in particular self-adjointness of the generator, which supplies unitarity; see Remark RCP-R6.2 for the full regularity conditions), the composition law forces:
 1. \([K] = L^{-d}\) (dimensional consistency of the composition integral).
 2. Normalization exponent \(d/2\): kernel \(\sim t^{-d/2}\) (semigroup closure).
 3. Exponential weight: \(K \propto \exp(iS/\kappa)\) (functional equation uniqueness).
