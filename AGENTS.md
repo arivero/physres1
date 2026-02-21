@@ -487,11 +487,11 @@ loop:
     EITHER claim an open kanban task (self-assign by writing own name)
     OR invent a task (add it to kanban with self as Assignee)
     Announce to orchestrator: "self: <topic>" (≤120 chars)
-    Wait ~30s for orchestrator to redirect (end-of-day, priority change, or conflict)
-    If no redirect received: proceed with the announced task
+    Wait for orchestrator's reply ("go", redirect, or shutdown)
+    Execute the confirmed task (or redirected task if orchestrator says otherwise)
 ```
 
-**PhD model:** agents are independent researchers. They *announce* what they're about to do, wait briefly so the orchestrator can intervene (redirect, shut down, change priority), then proceed. They do not ask permission.
+**Coordination model:** agents announce their intent and wait for the orchestrator's sync signal before proceeding. The orchestrator replies quickly — either confirming ("go ahead") or redirecting ("do X instead" / "end of day"). This is coordination, not permission: the agent has already decided what to do and is informing the orchestrator, who can steer if needed.
 
 **The only blocking rule:** manuscript edits to `paper/main.md` require filing a `proposals/` diff and waiting for 2-agent consensus before the orchestrator applies the change.
 
