@@ -1619,13 +1619,20 @@ where \(V_{\mathrm{HD}}(\rho)=\tfrac{1}{4}-\tfrac{1}{4\sinh^2\!\rho}\). Then:
 Combined with the compact witnesses (Propositions D9.1h--D9.1i), this covers positive and negative curvature, compact and non-compact topology, and discrete and continuous spectra.
 
 `Remark D9.1l (Unified constant-curvature formula).`
-On \(S^d\) (respectively \(H^d\)) of unit radius, the half-density potential takes the form \(V_{\mathrm{HD}}=-\alpha^2+\alpha(\alpha{-}1)/\sin^2 r\) (resp.\ \(+\alpha^2+\alpha(\alpha{-}1)/\sinh^2 r\)) with \(\alpha=(d{-}1)/2\). The constant part satisfies \(V_{\mathrm{HD}}(\mathrm{const})=-(d{-}1)R/(4d)\) where \(R\) is the scalar curvature. This coupling is distinct from conformal coupling \(\xi_c=(d{-}2)/(4(d{-}1))\) for all integer \(d\ge2\).
+On \(S^d\) (respectively \(H^d\)) of unit radius, the half-density potential takes the form \(V_{\mathrm{HD}}=-\alpha^2+\alpha(\alpha{-}1)/\sin^2 r\) (resp.\ \(+\alpha^2+\alpha(\alpha{-}1)/\sinh^2 r\)) with \(\alpha=(d{-}1)/2\). The constant part satisfies \(V_{\mathrm{HD}}(\mathrm{const})=-(d{-}1)R/(4d)\) where \(R\) is the scalar curvature. This coupling is distinct from conformal coupling \(\xi_c=(d{-}2)/(4(d{-}1))\) for all integer \(d\ge2\). More generally, on any Riemannian manifold, \(V_{\mathrm{HD}}(p)=-R(p)/6\) at the center of Riemann normal coordinates at \(p\) (since \(|g(0)|=1\) and \(|g(x)|^{-1/4}=1+\frac{1}{12}R_{ij}x^ix^j+O(|x|^3)\) in RNC). On a compact Lie group with bi-invariant metric, bi-invariance forces \(V_{\mathrm{HD}}\) to be constant (by the argument of Remark D9.1n), so \(V_{\mathrm{HD}}=-R/6\) globally. The two formulas agree (i.e., \((d{-}1)/(4d)=1/6\)) only for \(d=3\), confirming that \(S^3\cong\mathrm{SU}(2)\) is the unique sphere where \(V_{\mathrm{HD}}\) is simultaneously constant in geodesic polars and matches the RNC value.
 
 `Remark D9.1m (Scope boundary for non-compact spectral witnesses).`
 The \(H^2\) witness exploits maximal symmetry and radial decomposition. Extension to non-homogeneous negative-curvature manifolds, variable-curvature spaces, or Lorentzian signature remains open.
 
 `Remark D9.1n (Chart dependence vs intrinsic content).`
 The pointwise value of \(V_{\mathrm{HD}}(x)=-|g(x)|^{1/4}\Delta_g(|g(x)|^{-1/4})\) depends on the coordinate chart (e.g., on \(S^2\) at the equator: \(-1/2\) in spherical coordinates, \(-R/6=-1/3\) in Riemann normal coordinates). However, the spectral comparison \(\mathrm{Spec}(\widetilde{H})\neq\mathrm{Spec}(H_L)\) is intrinsic: both operators are chart-independently defined, and their spectra are coordinate-invariant. All witnesses in this appendix are stated as spectral identities, hence chart-independent.
+
+`Remark D9.1o (Weyl vector formula on compact Lie groups).`
+On a compact semisimple Lie group \(G\) with bi-invariant metric \(g(X,Y)=-2\,\mathrm{Tr}(XY)\) (Gell-Mann/ON normalization), the half-density ordering potential \(V_{\mathrm{HD}}\) is constant (Remark D9.1j) with value
+\[
+V_{\mathrm{HD}}(G)=-|\rho|^2_g,
+\]
+where \(\rho=\tfrac{1}{2}\sum_{\alpha\in\Phi^+}\alpha\) is the Weyl vector and \(|\cdot|_g\) is the metric-dual norm on the Cartan subalgebra. Equivalently, via the Freudenthal--de Vries formula, \(V_{\mathrm{HD}}=-\dim(G)\,h^\vee/24\) in the Cartan--Killing normalization (\(|\alpha_{\mathrm{long}}|^2=2\)). Numerical verification (finite-difference \(\Delta_g(|g|^{-1/4})\) in exponential coordinates): \(\mathrm{SU}(2):-1/4\), \(\mathrm{SU}(3):-1\), \(\mathrm{SU}(4):-5/2\), all matching \(-|\rho|^2_g\) to \(10^{-7}\). The constant-curvature formula \(-(d{-}1)R/(4d)\) of Remark D9.1l coincides with \(-|\rho|^2_g\) only for \(\mathrm{SU}(2)\cong S^3\) (constant sectional curvature); for higher-rank groups they diverge, with \(-|\rho|^2_g\) always smaller in magnitude.
 
 `Derivation D9.1f (Domain-parameter witness: same symbol, inequivalent self-adjoint realizations).`
 Consider the formal 1D kinetic operator
@@ -1723,7 +1730,7 @@ These additions do not alter the thesis; they increase computational accountabil
 `Remark D10.4a (Package-to-appendix map for fast navigation).`
 For reader navigation:
 1. **Package C/D (RG witness + truncation control):** Appendix 10.1 with `D8.1`, `D8.2`, `D8.2a`, `P8.1`, Section 8.6 `D6.4`, `Remark D6.4a`, and Appendix 10.3 `Proposition D6.4b`, `Lemma D6.6`.
-2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`, `Proposition D9.1k`, `Remark D9.1l`, `Remark D9.1m`, `Remark D9.1n`.
+2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`, `Proposition D9.1k`, `Remark D9.1l`, `Remark D9.1m`, `Remark D9.1n`, `Remark D9.1o`.
 3. **Package A (path-space/kernel closure ladder):** Appendix 10.6 with `D12.1`, `P12.1`, `D12.2`, `P12.2`, `D12.3`.
 4. **Package E (global compatibility map):** Section 9.1 `P7.1a` plus Appendix 10.3 `P10.1`, `D10.1a`, `D10.1b`, `Remark D10.1c`.
 
