@@ -1602,7 +1602,7 @@ Unlike the \(S^2\) witness (Proposition D9.1h), where the shift \(-(l{+}1)\) gro
 Since \(S^3\) is the spatial section of four-dimensional de Sitter spacetime, this gives a fourth independent \(D=4\) coincidence of the half-density framework: the compositionally forced ordering on the de Sitter spatial section produces no position-dependent correction, only a vacuum energy shift.
 
 `Remark D9.1j (Scope boundary for curved spectral witnesses).`
-Propositions D9.1h and D9.1i cover the maximally symmetric compact spaces \(S^2\) and \(S^3\). Extension to non-diagonal metrics, non-homogeneous spaces, or higher-dimensional spheres with position-dependent \(V_{\mathrm{HD}}\) remains open.
+Propositions D9.1h and D9.1i cover the maximally symmetric compact spaces \(S^2\) and \(S^3\). On any compact Lie group with bi-invariant metric, \(V_{\mathrm{HD}}\) is constant (the bi-invariance of the volume form forces the half-density conjugation to commute with group translations); \(S^3 = \mathrm{SU}(2)\) is the unique case where this coincides with constant sectional curvature. Extension to non-homogeneous spaces or higher-dimensional spheres with position-dependent \(V_{\mathrm{HD}}\) remains open.
 
 `Proposition D9.1k (Non-compact ordering witness: unit \(H^2\)).`
 On the hyperbolic plane \(H^2\) (constant curvature \(K=-1\)) with geodesic radial coordinate \(\rho\in[0,\infty)\) and metric \(ds^2=d\rho^2+\sinh^2\!\rho\,d\phi^2\), define on \(L^2(d\rho\,d\phi)\):
