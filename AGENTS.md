@@ -492,12 +492,17 @@ loop:
     OR invent a task (add it to kanban with self as Assignee)
     Announce to orchestrator: "self: <topic>" (≤120 chars)
     Wait for orchestrator's reply ("go", redirect, or shutdown)
+    **DO NOT START EXECUTING until "go" (or equivalent) is received.**
     Execute the confirmed task (or redirected task if orchestrator says otherwise)
 ```
 
 **Coordination model:** agents announce their intent and wait for the orchestrator's sync signal before proceeding. The orchestrator replies quickly — either confirming ("go") or redirecting ("do X instead" / "end of day" / shutdown). This is coordination, not permission: the agent has already decided what to do and is informing the orchestrator, who can steer if needed.
 
 **Orchestrator obligation:** reply to every `self: <topic>` announcement — either "go" or a redirect. This is the mechanism that makes end-of-day work: the orchestrator says "end of day" instead of "go", and the agent stops.
+
+**Starting without "go" = protocol violation.** If two agents both announce the same topic before either receives "go", the orchestrator assigns one and redirects the other. Starting work before the orchestrator confirms wastes compute and produces duplicate output.
+
+**Orchestrator startup rule:** the orchestrator MUST populate and commit the kanban BEFORE spawning any agents. Agents read the kanban immediately on startup; an empty kanban forces all agents to self-direct simultaneously, causing duplicate work.
 
 **The only blocking rule:** manuscript patches to `paper/main.md` require filing a `patches/` patch request (with diff) and waiting for 2-agent consensus before the orchestrator applies the change.
 

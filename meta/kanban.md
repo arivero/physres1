@@ -4,9 +4,8 @@ Active tasks only. Row exists = open. Row deleted = done. Git history is the arc
 
 | Assignee | Source | Task |
 |----------|--------|------|
-| computationalist | self | V_HD on product manifold S^2×R (first non-homogeneous witness) |
-| mathematician | self | Promote BB3 (composition-law landscape, THREE-AGENT) to notebook |
-| physicist | orchestrator | OQ1a: does composition indirectly force curvature coupling via V_HD=-R/6? Write to blackboards/5.md |
-| critic | self | Quality review of p42-extensions-interacting-curved.md before BB0 promotion |
-| student | self | Evaluate 3 new papers (Lackman 2404.03628, 2404.08815, 2602.00367) for relevance; ingest best one |
-| computationalist | orchestrator | After S^2×R: promote BB0 (FIVE-AGENT) to notebook p42-extensions-interacting-curved.md |
+| critic | orchestrator | BB5 4th-agent review: product additivity V_HD(M×N)=V_HD(M)+V_HD(N), THREE-AGENT (computationalist+physicist+mathematician). Append §§critic to blackboards/5.md |
+| computationalist | orchestrator | BB0 notebook promotion: promote FIVE-AGENT V_HD=-R/6 on compact Lie groups to p42-extensions-interacting-curved.md as new Part |
+| mathematician | orchestrator | a_1=0 theorem: composition forces half-density Laplacian → vanishing first Seeley-DeWitt coefficient a_1. Explore + write to free BB slot |
+| physicist | orchestrator | Lorentzian V_HD via ADM decomposition (extends D9.1m). Write to blackboards/5.md after critic clears it, or use free BB slot |
+| student | orchestrator | TG-Q6 fermionic P4.2: does (C) survive for Grassmann-valued kernels? Write exploration to free BB slot |
