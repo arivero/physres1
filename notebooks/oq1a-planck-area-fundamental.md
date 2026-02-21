@@ -947,3 +947,39 @@ The fact that composition forces curvature coupling but NOT gravity means:
 - The three-stage chain (classical -> quantum -> QFT) ends at QFT.
 - A hypothetical Stage 4 ("composition forces gravity") is NOT supported by the V_HD analysis.
 - This is consistent with the paper's conservative scope (Stages 1-3 only, gravity not claimed).
+
+## Fourth D=4 Coincidence: V_HD on de Sitter Spatial Sections (2026-02-22)
+
+**Promoted from:** blackboards/2.md (THREE-AGENT: physicist + mathematician + critic).
+
+### Statement
+
+On \(S^{D-1}\) (spatial section of \(D\)-dimensional de Sitter), \(V_{\mathrm{HD}}\) is constant iff \(D=4\) (nontrivially).
+
+From the general \(S^d\) formula: \(V_{\mathrm{HD}} = -\alpha^2 + \alpha(\alpha-1)/\sin^2 r\), \(\alpha = (d-1)/2\).
+Constant iff \(\alpha(\alpha-1) = 0\), i.e., \(d = 1\) (trivial) or \(d = 3\). De Sitter spatial section: \(d = D-1 = 3\) gives \(D = 4\).
+
+### Independence from existing D=4 coincidences
+
+| # | Coincidence | Source | Type |
+|---|---|---|---|
+| (i) | \((\partial\sigma)^2\) coupling vanishes | HD-D1.3a | Conformal-class specific |
+| (ii) | \(\xi_{\mathrm{eff}} = \xi_{\mathrm{conf}} = 1/6\) | HD-D1.3b | Universal (all metrics) |
+| (iii) | \(a_1(x,x) = 0\) | Seeley-DeWitt | Consequence of (ii) |
+| **(iv)** | **\(V_{\mathrm{HD}}\) on \(S^{D-1}\) constant** | **BB4+BB2** | **Eigenvalue structure on specific manifold** |
+
+(iv) is independent: (i)-(iii) concern curvature coupling on GENERAL \((M,g)\); (iv) concerns the SPECIFIC manifold \(S^{D-1}\) with round metric.
+
+### Physical interpretation
+
+In D=4 de Sitter: half-density ordering on spatial S^3 produces ONLY a constant shift (\(V_{\mathrm{HD}} = -1\)). Eigenstates are the SAME spherical harmonics. Ordering is "gauge" (energy zero point). The compositionally forced measure is the "gentlest" possible on the spatial manifold.
+
+In D != 4: V_HD is position-dependent, distorting spatial wavefunctions. Ordering choice genuinely changes the quantum theory.
+
+### Paper edit proposed
+
+One sentence after D9.1i (proposal: `proposals/physicist-edit-d4-coincidence-d91i.md`).
+
+### Agent verification
+
+THREE-AGENT (physicist + mathematician + critic). Unanimous approve. BB2 complete.

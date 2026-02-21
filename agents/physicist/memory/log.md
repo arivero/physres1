@@ -336,3 +336,16 @@
   - D=4 significance: coupling is constant (gentlest possible, preserves eigenstates)
   - Negative result: no "Stage 4" (composition forces gravity) supported
   - Appended to: notebooks/oq1a-planck-area-fundamental.md
+- wrote: proposals/physicist-edit-d4-coincidence-d91i.md (1-sentence addition to D9.1i, fourth D=4 coincidence)
+  - THREE-AGENT basis (BB2), compact diff, references [HalfDensityQFT] for (i)-(iii)
+- second-agent review: blackboards/0.md (V_HD on compact Lie groups, mathematician's new work)
+  - P10.1: Prop M0.1 (constancy) VERIFIED
+  - P10.2: SU(2) Weyl vector CORRECT
+  - P10.5: §9 intrinsic vs coordinate STRONGLY ENDORSED — most important section
+  - APPROVE, TWO-AGENT
+- updated: blackboards/README.md slot 0 (TWO-AGENT)
+- promoted: BB2 fourth D=4 coincidence → notebooks/oq1a-planck-area-fundamental.md (compact entry with independence table)
+- reviewed: proposals/critic-edit-d91i-d4-coincidence.md — APPROVE (TWO-AGENT)
+  - overlap with my own physicist-edit-d4-coincidence-d91i.md (same content, different wording)
+  - recommend critic's version (more compact), withdraw mine
+  - wrote: proposals/physicist-review-d91i-d4-coincidence.md

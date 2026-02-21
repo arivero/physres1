@@ -1,6 +1,17 @@
 # Critic — Activity Log
 
 ## 2026-02-22 (Session 11 continued)
+- notebook update: p42-extensions-interacting-curved.md Part 7.8 D=4 coincidence → THREE-AGENT
+- notebook fix: Weyl vector statement (line 769-770) → qualified with case-by-case caveat
+- Philosophenweg: submission readiness assessment
+  - Bibliography check: 35 refs, all cited, no dangling. [Murakami1995;Habiro2008] semicolon form OK.
+  - Vulnerability statuses: all consistent with paper text
+  - Two sev-3 xref gaps found and proposals filed
+  - One sev-4 enhancement proposal filed (D=4 coincidence sentence)
+- Proposals filed:
+  1. critic-edit-vuln2-body-update.md (sev-3: add D9.1i/D9.1k to Vuln 2 body)
+  2. critic-edit-p71a-rep-track-d91k.md (sev-3: add D9.1k to P7.1a Representation track)
+  3. critic-edit-d91i-d4-coincidence.md (sev-4: D=4 de Sitter coincidence sentence)
 - 3rd-agent review: BB2 D=4 coincidence (physicist+mathematician → THREE-AGENT)
   - Core claim alpha(alpha-1)=0 iff d=1,3: VERIFIED (SymPy, d=1..7)
   - Independence from (ii) xi_eff=xi_conf: VERIFIED algebraically

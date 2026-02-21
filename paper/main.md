@@ -1599,6 +1599,7 @@ where \(V_{\mathrm{HD}}=-1\) (constant). Then:
 4. The ordering difference is a pure Layer-3 constant potential. No Layer-4 domain freedom appears.
 
 Unlike the \(S^2\) witness (Proposition D9.1h), where the shift \(-(l{+}1)\) grows linearly and \(V_{\mathrm{HD}}\) depends on position, the \(S^3\) shift is uniform. In the general \(S^d\) family, the half-density potential takes the form \(V_{\mathrm{HD}}=-(d{-}1)^2/4+(d{-}1)(d{-}3)/(4\sin^2 r)\), which is constant if and only if \(d=3\). Thus \(S^3\) is the unique higher-dimensional sphere for which the ordering correction reduces to a spectral offset without position-dependent distortion.
+Since \(S^3\) is the spatial section of four-dimensional de Sitter spacetime, this gives a fourth independent \(D=4\) coincidence of the half-density framework: the compositionally forced ordering on the de Sitter spatial section produces no position-dependent correction, only a vacuum energy shift.
 
 `Remark D9.1j (Scope boundary for curved spectral witnesses).`
 Propositions D9.1h and D9.1i cover the maximally symmetric compact spaces \(S^2\) and \(S^3\). Extension to non-diagonal metrics, non-homogeneous spaces, or higher-dimensional spheres with position-dependent \(V_{\mathrm{HD}}\) remains open.
