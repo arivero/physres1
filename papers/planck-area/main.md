@@ -24,9 +24,9 @@ The key operational point is:
 when a kernel is a half-density in its integration variable, composition of kernels does not depend on an arbitrary choice of coordinate measure.
 
 `Heuristic PA-H1.1 (Why half-densities).`
-If \(K_1(x,y)\) and \(K_2(y,z)\) are chosen so that their product in the intermediate variable \(y\) is a density, then
+If \(K_1(x,y)\) and \(K_2(y,z)\) are each half-densities in the intermediate variable \(y\), then their product is automatically a density in \(y\) (no additional choice required), and
 \(\int_M K_1(x,y)K_2(y,z)\) is coordinate-invariant without fixing a preferred \(dy\).
-This is the structural reason why kernel composition in the path-integral formalism is coordinate-invariant.
+This is the structural reason why kernel composition in the path-integral formalism is coordinate-invariant: the half-density structure of each factor ensures the density-product property by construction (Derivation PA-D1.1 makes this precise).
 
 `Derivation PA-D1.1 (Coordinate invariance of half-density pairing and composition [Woodhouse1992; BatesWeinstein1997]).`
 In a local chart \(y=(y^1,\ldots,y^d)\), write a half-density as \(\psi(y)=\varphi(y)\,|dy|^{1/2}\).
@@ -103,7 +103,7 @@ which holds if and only if \(d=4\).
 In that case \(G_4\) itself has dimension of area, and the corresponding area scale is the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
 `Remark PA-D1.3a (Three obstruction mechanisms: why \(d=4\) is uniquely un-obstructed).`
-The failure of the gravity-only sieve away from \(d=4\) has three qualitatively distinct causes. For odd \(d\), the target exponent \(d/2\) is a half-integer, while any monomial in couplings with integer length dimensions has integer total dimension — a *parity* obstruction that is categorical regardless of which integer-dimensional couplings are admitted (including \(\Lambda_d\)). For even \(d\ge 6\), the target \(d/2\) is an integer but \(k=d/(2(d-2))<1\), so no positive-integer power of \(G_d\) alone suffices — a *magnitude* obstruction. For \(d=2\), \(G_2\) is dimensionless and gravity provides no scale. Thus \(d=4\) is not merely the solution of a single Diophantine equation; it is the unique integer dimension that evades all three obstructions simultaneously.
+The failure of the gravity-only sieve away from \(d=4\) has three qualitatively distinct causes. For odd \(d\), the target exponent \(d/2\) is a half-integer, while any monomial in couplings with integer length dimensions has integer total dimension — a *parity* obstruction that is categorical regardless of which integer-dimensional couplings are admitted (including \(\Lambda_d\)). For even \(d\ge 6\), the target \(d/2\) is an integer but \(k=d/(2(d-2))<1\), so no positive-integer power of \(G_d\) alone suffices — a *magnitude* obstruction. For \(d=2\), \(G_2\) is dimensionless and gravity provides no scale — but \(d=2\) is precisely the dimension where the transmutation route (PA-H2.13, Example PA-E5) provides its minimal witness: the marginal 2D delta coupling generates the scale \(\kappa_\ast^{-1} = \text{length}^{d/2}\) via RG invariance rather than coupling monomials. Thus the "trivial gravity" and "minimal transmutation witness" appearances of \(d=2\) are complementary: the monomial sieve fails (no scale from gravity), but the transmutation mechanism succeeds. Thus \(d=4\) is not merely the solution of a single Diophantine equation; it is the unique integer dimension that evades all three obstructions simultaneously.
 
 `Remark PA-D1.3b (Odd-\(d\) parity lemma and transmutation route).`
 The parity obstruction for odd \(d\) is categorical under the monomial sieve (PA-H2.5a): if all admitted couplings have integer length dimensions \(a_i\in\mathbb Z\), then any monomial \(\prod g_i^{n_i}\) with \(n_i\in\mathbb Z\) has total dimension \(\sum n_i a_i\in\mathbb Z\), so a half-integer target \(d/2\) is unreachable. Standard couplings \(G_d\), \(\Lambda_d\), \(g_d^2\) (YM action coupling), mass \(m\), and area parameter \(\alpha_*\) all have integer length dimensions in any \(d\). The transmutation route (PA-H2.13 / Derivation PA-D1.6a) is parity-blind: if a marginal or relevant coupling generates an RG-invariant scale \(\Lambda_*\) with \([\Lambda_*]=\text{length}^{-1}\), then \(\Lambda_*^{-d/2}\) has dimension \(\text{length}^{d/2}\) for any \(d\), integer or not, because \(\Lambda_*\) is a positive real number (not a coupling to be raised to an integer power). Explicit witness for \(d=3\): the 3D delta interaction generates a scattering length \(a\) (dimension \(\text{length}^1\)) via power-law renormalization, and the scalarization constant \(a^{3/2}=\text{length}^{3/2}=\text{length}^{d/2}\) is well-defined (smooth function of \(a\)) without involving fractional powers of fundamental couplings. Thus the claim "\(d=4\) is selected by the monomial sieve" should be stated precisely as: "among even \(d\) with gravity-only coupling, \(d=4\) is uniquely selected." Odd \(d\) is blocked by parity, not by the gravity coupling's specific dimension.
@@ -160,7 +160,7 @@ In the QFT-facing half-density calculus, a background metric supplies a referenc
 \[
 \widetilde\Delta:=|g|^{1/4}\Delta_g|g|^{-1/4}.
 \]
-In a conformal background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) in spacetime dimension \(D\), a direct computation gives
+In a conformal background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) in spacetime dimension \(D\) (here \(\sigma(x)\) denotes the conformal factor, not the reference half-density \(\sigma_\ast\) of Section 3), a direct computation gives
 \[
 \widetilde\Delta\psi
 =e^{-2\sigma}\Big(
@@ -170,12 +170,14 @@ In a conformal background \(g_{\mu\nu}=e^{2\sigma(x)}\delta_{\mu\nu}\) in spacet
 +\frac{D(4-D)}{4}(\partial\sigma)^2\,\psi
 \Big).
 \]
+*Derivation sketch.* On \((\mathbb{R}^D, e^{2\sigma}\delta_{\mu\nu})\), the scalar Laplacian is \(\Delta_g = e^{-2\sigma}(\partial^2 + (D-2)\partial\sigma\cdot\partial)\). The half-density conjugation \(\widetilde\Delta = |g|^{1/4}\Delta_g|g|^{-1/4}\) uses \(|g|^{1/4} = e^{D\sigma/2}\). Writing \(|g|^{-1/4}\psi = e^{-D\sigma/2}\psi\) and applying \(\Delta_g\) to \(e^{-D\sigma/2}\psi\) via the product rule generates four terms: (i) \(e^{-2\sigma}\partial^2\psi\), (ii) \(-2\partial\sigma\cdot\partial\psi\) from the cross term \((D-2)\partial\sigma\cdot\partial(e^{-D\sigma/2}\psi)\) combined with the product-rule derivative acting on \(e^{-D\sigma/2}\), (iii) \(-\frac{D}{2}(\partial^2\sigma)\psi\) from the Laplacian hitting the exponential, and (iv) \(\frac{D(4-D)}{4}(\partial\sigma)^2\psi\) from collecting the quadratic-gradient contributions: the \((D-2)\partial\sigma\) Christoffel term gives \(+D(D-2)/2\) while the square of the gradient from the exponential gives \(-D^2/4\), combining to \(D(4-D)/4\). See also Birrell and Davies, *Quantum Fields in Curved Space* (1982), §3.2 for the conformal transformation of the scalar Laplacian; the half-density conjugation step is the standard Weyl rescaling with weight \(D/4\) [Vassilevich2003HeatKernel, §3.3].
+
 Thus the quadratic-gradient term \((\partial\sigma)^2\psi\) cancels at \(D=4\) (within the conformal ansatz). If one adopts the extra criterion that scalarization-gauge changes should not generate such quadratic-gradient "potentials" in the half-density kinetic operator, then \(D=4\) is singled out by *operator simplicity* rather than by coupling-dimension matching.
 
 This filter is independent of PA-H2.5 and, by itself, does not supply a length scale; it is recorded only as an additional "special dimension" candidate knob to compare against the scale-sieve hypotheses.
 
 `Remark PA-H2.6c (Heat-kernel witness: conformal coupling and \(D=4\)).`
-The \(D=4\) conformal specialness has a parallel heat-kernel manifestation. For the scalar kinetic operator \(P=-\nabla^2+\xi R+m^2\) on a closed Riemannian \(D\)-manifold, the first Seeley-DeWitt coefficient at coincidence is \(a_1(x,x)=(\tfrac16-\xi)R\). Conformal coupling corresponds to \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), which gives \(a_1(x,x)\big|_{\xi=\xi_{\mathrm{conf}}}=\tfrac{4-D}{12(D-1)}R\). This vanishes if and only if \(D=4\). The physical interpretation: at \(D=4\), the half-density conjugation potential \(V=\tfrac16 R\) (universal for any metric in any dimension) exactly equals the conformal coupling \(\xi_{\mathrm{conf}}R=\tfrac16 R\), so the conformally coupled half-density field has no leading curvature correction to its heat kernel at coincidence. The heat-kernel trace \(\mathrm{Tr}\,e^{-tP}\sim(4\pi t)^{-D/2}\sum A_n t^n\) carries the same \(D/2\) exponent as the identity kernel normalization (Derivation PA-D1.2b), the propagator Schwinger parametrization, the UV divergence degree \(\Lambda^{D-2n}\), and the dimensional-regularization pole structure \(\Gamma(D/2-n)\) — five manifestations of the single fact that the half-density identity kernel on \(\mathbb R^D\) scales as \(\varepsilon^{-D/2}\) [Vassilevich2003HeatKernel].
+The \(D=4\) conformal specialness has a parallel heat-kernel manifestation. For the scalar kinetic operator \(P=-\nabla^2+\xi R+m^2\) on a closed Riemannian \(D\)-manifold, the first Seeley-DeWitt coefficient at coincidence is \(a_1(x,x)=(\tfrac16-\xi)R\). Conformal coupling corresponds to \(\xi_{\mathrm{conf}}=(D-2)/(4(D-1))\), which gives \(a_1(x,x)\big|_{\xi=\xi_{\mathrm{conf}}}=\tfrac{4-D}{12(D-1)}R\). This vanishes if and only if \(D=4\). The physical interpretation: at \(D=4\), the half-density conjugation potential \(V=\tfrac16 R\) (universal for any metric in any dimension) exactly equals the conformal coupling \(\xi_{\mathrm{conf}}R=\tfrac16 R\), so the conformally coupled half-density field has no leading curvature correction to its heat kernel at coincidence. The heat-kernel trace \(\mathrm{Tr}\,e^{-tP}\sim(4\pi t)^{-D/2}\sum A_n t^n\) carries the same \(D/2\) exponent as the identity kernel normalization (Derivation PA-D1.2b), the propagator Schwinger parametrization, the UV divergence degree \(\Lambda^{D-2n}\), and the dimensional-regularization pole structure \(\Gamma(D/2-n)\) — five manifestations of the single fact that the half-density identity kernel on \(\mathbb R^D\) scales as \(\varepsilon^{-D/2}\) [Vassilevich2003HeatKernel, eq. (4.14) for the \(a_1\) coefficient].
 
 ## 3.2 What Changes When a Hypothesis Is Relaxed?
 This subsection records the main “branches” that need separate study.
@@ -236,6 +238,10 @@ The integrality sieve (PA-H2.5a) has a physical interpretation beyond the aesthe
 
 The physical distinction is therefore: **$d=4$ is the unique dimension where the half-density normalization can be supplied by the classical (tree-level) gravitational coupling alone.** In other dimensions, the normalization requires quantum (loop-level) scale generation. The integrality sieve is equivalent to asking: “in which dimension does the half-density normalization survive in the classical ($G_d \to 0$) limit?” — and the answer is $d=4$.
 
+**Important caveat:** The tree-level/loop distinction invoked here is itself a statement within perturbative gravity. In the Wilsonian effective-action framework, the EH action $\int\sqrt{|g|}R/(16\pi G_d)$ defines the tree-level vertex; loops contribute higher-derivative corrections suppressed by powers of $E^2 G_d$. Analyticity of the scalarization constant in $G_d$ near $G_d = 0$ is therefore analyticity in the perturbative gravitational expansion — a physically natural requirement if one demands that the half-density normalization be definable without needing to resum the gravitational loop series. This is the precise sense in which PA-H2.5a is a “tree-level sufficiency” criterion rather than a mathematical elegance condition. However, this motivation is itself perturbative: a non-perturbative UV completion of gravity might supply alternative mechanisms, which is why the conclusion is labeled as conditional on PA-H2.5 rather than unconditional.
+
+To summarize the logical status: the $d/2$ exponent in the half-density normalization is *proved* (Derivation PA-D1.4a); the Planck area identification is *motivated by, not derived from*, the half-density formalism — it requires the additional PA-H2.4 + PA-H2.5a + gravity-only hypotheses. This distinction is structural, not a weakness: the paper's contribution is precisely delineating which conclusion follows from which hypothesis.
+
 `Example PA-E1 (Gravity-only).`
 With only \(G_d\) available, \(a_1=d-2\) and the condition becomes \(n(d-2)=d/2\). For integer \(d\ge 3\), this has a solution only at \(d=4\) with \(n=1\), reproducing Derivation PA-D1.3.
 
@@ -267,7 +273,7 @@ p(d-4)=d
 \quad\Longrightarrow\quad
 d=\frac{4p}{p-1}=4+\frac{4}{p-1}.
 \]
-Thus integer solutions occur only when \(p-1\mid 4\), i.e. \(p\in\{2,3,5\}\), giving \(d\in\{8,6,5\}\) respectively.
+The case \(p=1\) is excluded (it gives \(d=4p/(p-1)\) undefined; the YM coupling would be dimensionless in that formal limit); \(p=0\) gives a dimensionless \(C\), which carries no scale. For \(p\ge 2\), integer solutions occur when \(p-1\mid 4\), i.e. \(p\in\{2,3,5\}\), giving \(d\in\{8,6,5\}\) respectively.
 
 In particular, in \(d=4\) the gauge coupling is dimensionless and cannot by itself supply the \(\text{length}^{d/2}\) factor needed for half-density scalarization; in that case the scale must come from another dimensionful coupling (e.g. gravity) or from a non-analytic mechanism (dimensional transmutation).
 
@@ -445,8 +451,8 @@ which is the prefactor of \(K(x,z;t_1+t_2)\). The semigroup property holds becau
 
 In the tangent-groupoid near-diagonal picture, the parameter \(\varepsilon=\hbar t/m\) (diffusion scale) plays the role of the rescaling parameter in PA-D1.2a: the prefactor is proportional to \(\varepsilon^{-d/2}\), and the passage from kernel to symbol on \(TM\) absorbs this half-density Jacobian.
 
-`Derivation PA-D1.9 (Square-root delta normalization has half-density weight).`
-In finite dimension, the “localize on critical points” distribution is \(\delta(\nabla f)\), supported on \(\mathrm{Crit}(f)\). A concrete way it appears is via a “halved” oscillatory integral with a normalization exponent fixed by dimension.
+`Heuristic PA-D1.9 (Square-root delta normalization has half-density weight).`
+In finite dimension, the “localize on critical points” distribution is \(\delta(\nabla f)\), supported on \(\mathrm{Crit}(f)\). A concrete way it appears is via a “halved” oscillatory integral with a normalization exponent fixed by dimension. (The \(\varepsilon\to 0\) limit below is formal; a rigorous treatment requires distributional convergence in the Schwartz topology, e.g. via stationary-phase estimates in the distributional sense — see Hörmander, *The Analysis of Linear Partial Differential Operators I*, §7.7.)
 
 Let \(f:\mathbb R^N\to\mathbb R\) be smooth and define, for \(\varepsilon>0\),
 \[
@@ -469,8 +475,8 @@ Formally letting \(\varepsilon\to 0\) yields
 \]
 The exponent \(N/2\) in the prefactor is exactly the half-density scaling: it cancels the Jacobian \(dy=\varepsilon^Ndz\) under near-diagonal rescaling, and it is the “square root” of the density normalization that produces \(\delta(\nabla f)\).
 
-`Heuristic PA-H1.4 (Where Planck area can enter, minimally).`
-Derivation PA-D1.3 isolates one minimal route by which a Planck-scale quantity can enter:
+`Remark PA-H1.4 (Where Planck area can enter, minimally — summary of Derivation PA-D1.3).`
+For the reader's convenience, we restate the conclusion of Derivation PA-D1.3 in compact form:
 if the theory supplies a single universal coupling with dimension of length (Newton’s constant) and one demands that the half-density normalization constant be built from that coupling *without fractional powers*, then \(d=4\) is singled out and the resulting constant has the dimension of an area, naturally identified with the Planck area \(L_P^2\sim \hbar G_4/c^3\).
 
 # 5. Connection to the Refinement-Composition Framework
@@ -490,16 +496,16 @@ This note adds a complementary ingredient: the kernel side is most naturally for
 `Heuristic PA-H4.1 (Half-density and the Misner measure problem).`
 For finite-dimensional configuration spaces (minisuperspace), half-density wavefunctions uniquely resolve the Hilbert space structure ambiguity identified by Misner (1962) and DeWitt (1967): the factor \(\sqrt{\gamma}\) in Wheeler–DeWitt wavefunctions is the finite-dimensional half-density weight (Derivation PA-D1.2a, restricted to minisuperspace coordinates). For the infinite-dimensional case, the half-density approach reduces — but does not eliminate — the Misner ambiguity: the residual freedom is in the choice of Riemannian structure on superspace. The discrete area spectrum of loop quantum gravity, \(A_n = 8\pi L_p^2\sqrt{j(j+1)}\), provides a candidate regularization compatible with \(L_p^2\) as the half-density area scale, but the connection between the Ashtekar–Lewandowski measure and half-density composition is not yet established.
 
-`Proposition PA-P4.2 (d=4 b-calculus contact spectrum: analytic, not non-perturbative).`
-The b-Laplacian \(-\Delta_b\) on \(\mathbb{R}^4\setminus\{0\}\) in \(L^2_b = L^2(\mathbb{R}^4\setminus\{0\}, r^{-4}d^4x)\), s-wave sector, has deficiency indices \(n_\pm=1\) (one-parameter Robin self-adjoint extension family — the b-calculus analog of B-DEF-P1.1). The bound-state spectrum under the Robin APS boundary condition at the blown-up face \(r = L_0\) is:
+`Conjecture PA-C4.2 (d=4 b-calculus contact spectrum: analytic, not non-perturbative).`
+The b-Laplacian \(-\Delta_b\) on \(\mathbb{R}^4\setminus\{0\}\) — viewed as a manifold with boundary after real blow-up of the origin (replacing \(r=0\) by the front face \(S^3\)) — in \(L^2_b = L^2(\mathbb{R}^4\setminus\{0\}, r^{-4}d^4x)\), s-wave sector, is expected to have deficiency indices \(n_\pm=1\) (one-parameter Robin self-adjoint extension family). The conjectured bound-state spectrum under the Robin APS boundary condition at the blown-up face \(r = L_0\) is:
 \[
 E_B = -\frac{\hbar^2}{2mL_0^2}\,\mu_{\mathrm{APS}}(\mu_{\mathrm{APS}}-2), \qquad \mu_{\mathrm{APS}} < 0,
 \]
-where \(\mu_{\mathrm{APS}}\in\mathbb{R}\) is the Robin extension parameter. The pre-squaring constraint \(\sqrt{1+\kappa^2}=1-\mu_{\mathrm{APS}}>0\) restricts to \(\mu_{\mathrm{APS}}<0\) only; the \(\mu_{\mathrm{APS}}>2\) branch is spurious (a squaring artifact).
+where \(\mu_{\mathrm{APS}}\in\mathbb{R}\) is the Robin extension parameter and \(\kappa = \sqrt{-2mE_B}/\hbar\) is the bound-state inverse length. The constraint \(\sqrt{1+\kappa^2 L_0^2}=1-\mu_{\mathrm{APS}}>0\) restricts to \(\mu_{\mathrm{APS}}<0\); the \(\mu_{\mathrm{APS}}>2\) branch is a squaring artifact. The deficiency-index claim (that \(n_\pm = 1\) for the b-Laplacian restricted to the s-wave sector on \(\mathbb{R}^d\setminus\{0\}\) in the b-calculus measure, for all \(d \geq 2\)) and spectrum formula require a self-contained proof or reference to a completed companion paper; they are stated here as a conjecture pending such verification.
 
-**Contrast with d=2:** In the 2D delta interaction, the bound state energy \(E_B = -e^{-1/g_R(\mu)}\) is genuinely non-perturbative (exponentially small in the coupling) and requires dimensional transmutation. In the d=4 b-calculus, the spectrum is \emph{algebraic} in \(\mu_{\mathrm{APS}}\): no RG running, no beta function, no dimensional transmutation. The UV scale \(L_0\) (at which the APS condition is imposed, e.g. \(L_0=L_P\)) enters directly as a scale parameter, not through a running coupling.
+**Contrast with d=2 (if the conjecture holds):** In the 2D delta interaction, the bound state energy \(E_B \propto e^{-1/g_R(\mu)}\) is genuinely non-perturbative (exponentially small in the coupling) and requires dimensional transmutation. In the conjectured d=4 b-calculus spectrum, the dependence on \(\mu_{\mathrm{APS}}\) is algebraic: no RG running, no beta function, no dimensional transmutation. The UV scale \(L_0\) (at which the APS condition is imposed, e.g. \(L_0=L_P\)) enters directly as a scale parameter, not through a running coupling.
 
-**Implication for the area-scale program:** B-DEF-P1.1 establishes that d=4 b-calculus contact interactions exist (\(n_\pm=1\) for all \(d\)). PA-P4.2 now provides their explicit spectrum. However, the extension parameter \(\mu_{\mathrm{APS}}\) is NOT fixed by the b-calculus structure, composition, or dimensional analysis: it is a free dimensionless parameter requiring additional physical input (scattering length, or Planck-scale boundary condition). The b-calculus selects the \emph{type} of contact interaction (Robin at \(r=L_0\)) but not its \emph{strength} \(\mu_{\mathrm{APS}}\). This is distinct from the transmutation route (PA-H2.13) where the coupling itself fixes the scale. (THREE-AGENT result: mathematician + physicist + critic, BB4; sev-2.)
+**Conjectured implication for the area-scale program:** If the deficiency-index and spectral claims hold, then the extension parameter \(\mu_{\mathrm{APS}}\) is a free dimensionless parameter not fixed by the b-calculus structure, composition, or dimensional analysis — requiring additional physical input (scattering data or Planck-scale boundary condition). The b-calculus would select the *type* of contact interaction (Robin at \(r=L_0\)) but not its *strength* \(\mu_{\mathrm{APS}}\). This would be distinct from the transmutation route (PA-H2.13) where the coupling itself fixes the scale.
 
 # References
 
@@ -512,3 +518,4 @@ where \(\mu_{\mathrm{APS}}\in\mathbb{R}\) is the Robin extension parameter. The 
 7. [Vassilevich2003HeatKernel] D. V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* 388 (2003), 279–360. arXiv:`hep-th/0306138`. DOI `10.1016/j.physrep.2003.09.002`.
 8. [Woodhouse1992] N. M. J. Woodhouse, *Geometric Quantization*, 2nd ed., Oxford Mathematical Monographs, Oxford University Press, 1992. ISBN `0-19-853673-9`. (Standard reference for half-density line bundles and BKS pairing in geometric quantization.)
 9. [BatesWeinstein1997] Sean Bates and Alan Weinstein, *Lectures on the Geometry of Quantization*, Berkeley Mathematics Lecture Notes vol. 8, AMS, 1997. ISBN `0-8218-0798-9`. OA: <https://math.berkeley.edu/~alanw/GofQ.pdf>. (Half-densities as sections of a line bundle, metalinear structures, composition.)
+10. [PathIntegralNormalization] A. Rivero and A.I.Scaffold, "Path-Integral Normalization: The d/2 Exponent as Composition Compatibility Datum," companion satellite paper in this series (2026). (Comprehensive treatment of the d/2 exponent across temporal composition, Van Vleck determinant, heat-kernel diffusion, renormalization thresholds, and Lévy-stable exclusion.)
