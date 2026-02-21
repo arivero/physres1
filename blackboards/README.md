@@ -61,13 +61,13 @@ relevant slot. Deletion criteria (in priority order):
 ## Slot Index (update when overwriting)
 | Slot | Topic | Status |
 |------|-------|--------|
-| 0 | Steelman criticism of RCP project (Philosophenweg, critic). C1: tautology (rebutted by Levy exclusion). C3: textbook repackaging (partially valid). C4: d=4 gap (needs PA-H2.5c). | ONE-AGENT (critic) |
-| 1 | rg-fundamental pre-vote. All computations VERIFIED. Sev-2: RG-D1.4 resummed vs perturbative confusion (one-line fix). Critic concurs: YES, MINOR REV. | TWO-AGENT (mathematician+critic); pre-vote YES |
-| 2 | Cross-paper dependency map (Philosophenweg, critic). Citation graph, critical path analysis, "what if" scenarios. RCPFound = single hub. 5/12 READY papers standalone. Dominant referee weakness: "companion unavailable." | ONE-AGENT (critic) |
+| 0 | Steelman criticism of RCP project (critic) + §8 areal-speed pub-readiness (physicist): DISCARD, no mechanism/prediction, salvage PA-D1.5a as Remark. | TWO-AGENT (critic+physicist) |
+| 1 | Spectral dimension from modified heat kernels. d_s=d/2 in UV requires L_P (quartic Lifshitz z=2). NOT forced by composition alone. Physicist: Horava/CDT/AS mechanisms reviewed, z=2 as UV fixed point. Notebook-ready scope clarification. | TWO-AGENT (mathematician+physicist) |
+| 2 | Cross-paper dependency map (critic) + d/2 uniqueness chain (mathematician) + cornerstone open threads. Critic 3rd-agent: E1-E3 VERIFIED, G1 CLOSED (L-K+dim analysis), G2 CLOSED (Buckingham pi), no sev-1/2 issues. READY for notebook promotion. | THREE-AGENT (mathematician+physicist+critic) |
 | 3 | planck-area pre-vote. Core §§1–4: SOUND (YES). §5: REMOVED (resolved). PA-H2.5c added. Critic: upgraded CLOSE→READY. All remaining issues sev-3. | THREE-AGENT (mathematician+physicist+critic); pre-vote: YES |
-| 4 | RG-fundamental revision support (critic). 3D Im(I_3) verified: paper CORRECT, Ref-2 wrong (used d=2 measure factor). Pre-vote postmortem: 4 calibration lessons. MAJOR revision checklist (7 MUST, 6 SHOULD, 3 COULD). | ONE-AGENT (critic) |
+| 4 | S² ordering witness D9.1h (Vuln 2). V_HD verified (SymPy), spectra l(l+1) vs n^2, shift -(l+1). + Vuln 4 truncation benchmark. Paper-edit ready. | FOUR-AGENT (mathematician+critic+physicist+computationalist); UNANIMOUS APPROVE |
 | 5 | action-angle-indeterminacy pre-vote. All math VERIFIED. Prior-art (Judge/Carruthers-Nieto) now cited. Critic: scope confirmed (standalone dependent note acceptable). Upgraded CLOSE→READY. Pre-vote YES (no revision). | TWO-AGENT (mathematician+critic); pre-vote YES |
-| 6 | path-integral-normalization pre-vote. d/2 forcing VERIFIED. Sev-2: §6.1 missing iε (trivial fix). Critic concurs: READY, MINOR REV. All sev-3 items editorial. | TWO-AGENT (mathematician+critic); pre-vote YES |
+| 6 | Efimov/PSL(2,R) verification. s0=1.00624 verified. Q1+Q2 CONFIRMED. Q3 overclaim confirmed: RCP accommodates, not forces. SL(2,R) is de Alfaro-Fubini-Furlan 1976 (not new). Notebook-ready (Q1+Q2 only). | THREE-AGENT (computationalist+critic+physicist) |
 
 ## Reading Blackboards
 Blackboards are the active working memory (max 7 slots, ~300 lines each, <50KB total).

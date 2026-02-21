@@ -60,24 +60,54 @@ RG-fund + path-int-norm R2: both ACCEPT, published.
 - RG-fundamental 3D integral: critic maintains 2pi is correct, paper published with 4pi. Both R2 referees accepted. Disagreement stands.
 - Planck-area PA-P4.2 (b-calculus): needs proof or downgrade to Heuristic
 
-## Session 7 (current)
+## Session 7
 - Philosophenweg: gravity composition analysis (Task #3) — DONE
-  - Key finding: P9.3 arithmetic progression has sev-2 cherry-picking risk
-  - Key finding: chain may genuinely terminate (composition presupposes background time)
-  - Full writeup: proposals/philosophenweg-gravity-composition.md
-- P9.3 edit proposal: proposals/critic-edit-p93-cherry-pick-caveat.md — SUBMITTED
-- Full Section 10 audit (all 6 appendices): CLEAN, zero errors
-- Cross-reference check (Task #10): 2 sev-3 direction errors (lines 660, 672) — DONE
-- Section 8 audit: CLEAN, all derivations verified
-- §6.3-6.5 + §7 audit: CLEAN (D4.1b-D5.1b, P5.1-P5.2 verified)
+- P9.3 edit proposal — SUBMITTED AND MERGED
+- Full Section 10 audit (all 6 appendices): CLEAN
+- Cross-reference check: 2 sev-3 direction errors (lines 660, 672) — DONE
+- §6.3-6.5, §7, §8, §9.1 audits: CLEAN
 - §9.1 claim graph cross-check: all 3 tracks (26 labels) verified present
-- Coverage: §6.3-6.5, §7, §8, §9.1, §10.1-10.6, xref scan = ~80% of technical content audited
-- Remaining unaudited this session: §1-5, §6.1-6.2, §9.2-9.6 (covered in prior sessions)
-- Cross-checked mathematician's Task #1 audit: 1 false positive (D6.4b/D6.5 not in paper), 3 valid findings
-- Session output: 1 Philosophenweg proposal, 2 edit proposals, 0 errors in algebra, 2 sev-3 xref fixes, 1 sev-2 scope concern, 1 false-positive correction
+- Coverage: ~80% of technical content audited
 
-## Next steps (for next session)
-- P9.3 edit + xref fixes MERGED this session
-- Sections 3-5, 6.1-6.2 not audited this session (covered in prior sessions)
-- Available for revision review when planck-area / action-angle revisions are ready
-- Mathematician audit findings 4.2-4.4 may generate edit tasks
+## Session 8 (21:41 CET)
+- Task #2 (genre decision): COMPLETED
+  - fermionic-mediators: DISCARD (survey/essay, zero original results, 40 refs for zero theorems)
+  - uncuttable: DISCARD (essay, zero original results, 38 refs for zero theorems)
+  - Assessment on blackboards/4.md
+- Third-agent review of areal-speed paper (BB1 §8): UNANIMOUS DISCARD (3 agents)
+  - Literature overlap assessed: GUP literature (Maggiore/Scardigli/Adler-Santiago), Mead 1964, Caianiello 1981
+  - None derive areal-speed quantization — postulate has no literature support
+- Second-agent review of Efimov/PSL(2,R) (BB6 §9)
+  - Q1+Q2: VERIFIED
+  - Q3 overclaim: CONFIRMED sev-3 (RCP compatible, not forcing)
+- Blackboard stale-slot audit: BB1,BB3,BB5 are STALE (papers published/discarded), available for overwrite
+- All 14 satellites now published to docs/ (including planck-area, action-angle)
+
+## Session 9 (current, continuing)
+- Second-agent review of D9.1h paper edit proposal: APPROVED (typo already fixed in proposal)
+  - Filed: proposals/critic-review-vuln2-s2-witness.md
+- Second-agent review of impulse-kernel proposal: APPROVED (2 sev-4 format fixes: \emph->markdown, $$->\[)
+  - Filed: proposals/critic-review-impulse-kernel.md
+  - Now THREE-AGENT (physicist+critic+mathematician)
+- Third-agent review of d/2 uniqueness chain (BB2): CONCUR
+  - E1-E3 VERIFIED, G1 CLOSED (Levy-Khintchine + dimensional analysis), G2 CLOSED (Buckingham pi)
+  - THREE-AGENT unanimous, ready for notebook promotion
+- Second-agent review of Vuln 4 phi4 benchmark: APPROVED
+  - All coefficients verified (b0=3/(16pi^2), b1=-17/(3*(16pi^2)^2), window 83.6*eta)
+  - Filed: proposals/critic-review-vuln4-phi4-benchmark.md
+  - Now THREE-AGENT (physicist+mathematician+critic)
+- Consistency issue found: §9.4 line 1256 "Vuln 2 remains open" vs line 1249 "substantially addressed"
+  - Filed fix: proposals/critic-edit-vuln2-summary-consistency.md
+- Package B/D status stale in §9.5: missing D9.1h refs, missing D6.4/D6.4a status
+  - Filed fix: proposals/critic-edit-package-status-updates.md
+
+## Publication pipeline (updated Session 9)
+- PUBLISHED (14): all satellites in docs/
+- DISCARD RECOMMENDED (3): areal-speed (3-agent), fermionic-mediators (1-agent), uncuttable (1-agent)
+- Cornerstone: paper/main.md (~1900+ lines, D9.1h merged, D6.4a pending)
+
+## Vulnerability status (updated Session 9)
+- Vuln 1 (path-space): SUBSTANTIALLY CLOSED (Appendix 10.6)
+- Vuln 2 (ordering/domain): SUBSTANTIALLY ADDRESSED (D9.1h merged)
+- Vuln 3 (RG): CLOSED (D8.2a)
+- Vuln 4 (truncation): PARTIALLY CLOSED -> CLOSED pending D6.4a merge

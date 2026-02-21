@@ -55,9 +55,32 @@ Run window start: 2026-02-21T20:27:57+01:00
 | R15B-029 | critic | orchestrator seed | Verify exact target lines for xref fixes in `paper/main.md` and log in `blackboards/3.md` | completed |
 | R15B-030 | computationalist | orchestrator seed | Add one concise stop/go recommendation for applying xref fix in `blackboards/4.md` | completed |
 | R15B-031 | critic | orchestrator seed | End-run risk summary (sev-ranked) in `blackboards/4.md` | completed |
-| R15B-032 | unassigned | orchestrator seed | End-run formal gap summary for d/2 theoremization in `blackboards/2.md` | open |
+| R15B-032 | mathematician | orchestrator seed | End-run formal gap summary for d/2 theoremization in `blackboards/2.md` | completed |
 | R15B-033 | computationalist | orchestrator seed | End-run numeric checklist with one reproducible command in `blackboards/3.md` | completed |
-| R15B-034 | unassigned | orchestrator seed | End-run source lead list (3 items max) in `blackboards/5.md` | open |
+| R15B-034 | student | orchestrator seed | End-run source lead list (3 items max) in `blackboards/5.md` | completed |
 | R15B-035 | physicist | orchestrator seed | End-run falsification-protocol recap in `blackboards/0.md` | completed |
 | R15B-036 | mathematician | self suggestion | Compile end-state note mapping resolved vs open d/2 uniqueness obligations in `blackboards/2.md` | completed |
 | R15B-037 | student | self suggestion | Closeout micro-note linking irrational-dimension caution to next-session source queue in `blackboards/5.md` | completed |
+
+## Run R16 (continuous mode)
+
+Run window start: 2026-02-21T20:47:38+01:00
+
+| ID | Assignee | Source | Assignment | Status |
+|---|---|---|---|---|
+| R16-001 | physicist | orchestrator seed | Triage `proposals/philosophenweg-gravity-composition.md` into apply-ready bullets in `blackboards/0.md` | completed |
+| R16-002 | critic | orchestrator seed | Severity-rank proposal queue blockers in `proposals/*.md`; summarize in `blackboards/4.md` | completed |
+| R16-003 | computationalist | orchestrator seed | Reproduce one numeric check from `proposals/task-efimov-psl2r.md` in `blackboards/3.md` | completed |
+| R16-004 | student | orchestrator seed | Source-check one high-impact claim from `proposals/task-claim-graph-audit.md`; log verdict in `blackboards/5.md` | completed |
+| R16-005 | critic | orchestrator seed | Turn one high-value no-diff review in `proposals/` into a minimal unified diff proposal in `proposals/` | completed |
+| R16-006 | mathematician | orchestrator seed | Independently verify the `D8.1/D11.*` bridge verdict and log any residual gap in `blackboards/2.md` | completed |
+| R16-007 | physicist | orchestrator seed | Convert `blackboards/0.md` proposal-triage bullets into one minimal unified diff proposal for `paper/main.md` | completed |
+| R16-008 | computationalist | orchestrator seed | Run one Jacobian/measure toy computation tied to half-density wording and append command+result in `blackboards/3.md` | completed |
+| R16-009 | critic | orchestrator seed | Review newly applied P9 edits for overclaim/tone risk and log sev-ranked verdict in `blackboards/4.md` | completed |
+| R16-010 | student | orchestrator seed | Source-anchor the new 3D Ising irrational-dimension citation and append precise pointer in `blackboards/5.md` | completed |
+| R16-011 | critic | orchestrator seed | Convert `R16-006` residual bridge gap into one minimal unified diff proposal in `proposals/` | completed |
+| R16-012 | mathematician | orchestrator seed | Audit manuscript citation-key hygiene after `ElShowk2014` insertion and log verdict in `blackboards/4.md` | completed |
+| R16-013 | computationalist | orchestrator seed | Recompute the D11.0a reparametrization identities symbolically and append a command+result check in `blackboards/3.md` | completed |
+| R16-014 | critic | orchestrator seed | Severity-check `Remark D11.0a` for overclaim or notation drift and log verdict in `blackboards/4.md` | completed |
+| R16-015 | mathematician | orchestrator seed | Verify revised `Remark D11.0a` wording resolves identity/notation drift concerns and log verdict in `blackboards/2.md` | completed |
+| R16-016 | student | orchestrator seed | Draft three concrete next-session tasks from Run R16 outcomes in `blackboards/5.md` | completed |

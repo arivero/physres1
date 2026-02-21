@@ -103,3 +103,27 @@ Resolved in B12 (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal19
 ## Follow-Up Papers Roadmap
 Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` as brainstorming input):
 - `meta/next-articles.md`
+
+## Session Update (2026-02-21, Run R17 ending 23:00 CET)
+- Lifecycle cleanup: git-rm'd 10 published satellite working dirs + areal-speed (unanimous 3-agent DISCARD).
+- **paper/main.md** (2 commits: d8c94f5, 3a490d2):
+  - D9.1h (S² ordering witness, THREE-AGENT): spectral comparison H_L vs H̃, l(l+1) vs n².
+  - D9.1i (scope remark for D9.1h).
+  - D6.5 (THREE-AGENT): impulse-kick kernel, Weierstrass-Erdmann jump as composition saddle.
+  - D6.4a (FOUR-AGENT): λφ⁴ two-loop benchmark, |λ|≲8.4 at η=0.1.
+  - Vuln 2: substantially addressed. Vuln 4: CLOSED. Representation track + Package B/D updated.
+- All active proposals processed (critic-review-impulse-kernel, critic-review-vuln4-phi4-benchmark, mathematician-review-impulse-kernel, mathematician-review-vuln4-phi4, computationalist-review-vuln4-phi4). Applied.
+- Unprocessed (SINGLE-AGENT only, pending second-agent vote next session): none — all applied or deferred.
+- Pending discard vote: fermionic-mediators + uncuttable (critic+physicist voted YES; need 1 more).
+- Research state updated: `meta/research-state.md` (section: "Session 2026-02-21 (21:40-23:00 CET, Run R17)").
+
+## Session Update (2026-02-21, Run R16 ending 21:30 CET)
+- Kanban run `R16` executed with request-first gate (`want #...` before assignment); tasks `R16-001..R16-016` completed.
+- Applied manuscript edits in `paper/main.md`:
+  - `P7.1a` track labels now mark remark nodes explicitly.
+  - `P9.1a` and `P9.3` scope wording tightened; Stage-4 and arithmetic-ladder claims now explicitly non-theorem/channel-scoped.
+  - New `Remark D11.0a` bridges `D8` to `D11`; wording revised to avoid object-identity drift.
+  - Added in-text cite `[ElShowk2014]` and matching reference-list entry.
+- Updated `paper/bibliography.md` with `[ElShowk2014]` in Sources + DOI audit + OA acquisition status.
+- Proposals queue processed and cleared from root; artifacts archived under `proposals/archive/2026-02-21-run2130/`.
+- Durable run summary appended to `meta/research-state.md` (section: "Session 2026-02-21 (20:47-21:13 CET, Run R16)").

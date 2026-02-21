@@ -102,4 +102,61 @@ If formalized, this could:
 
 ---
 
-**Status:** Exploratory note, not yet ready for proposal format. Useful as thinking material for next phase of research or for mathematician to evaluate feasibility.
+**Status:** Exploratory note (Part 1), with verified numerics (Part 2, promoted from BB6).
+
+---
+
+## Part 2: Verified Efimov/PSL(2,R) Numerics
+
+**Promoted from:** blackboards/6.md (THREE-AGENT: computationalist + critic + physicist, 2026-02-21)
+**Status:** VERIFIED (Q1+Q2 confirmed; Q3 overclaim — see scope note)
+
+### Efimov Parameter s0
+
+Transcendental equation (Efimov 1970, Braaten-Hammer 2006):
+s0 cosh(pi s0/2) = (8/sqrt(3)) sinh(pi s0/6)
+
+Numerical solution (Brent method, xtol=1e-15): **s0 = 1.006237825102782**, residual 8.88e-16.
+
+### Scaling Ratios
+
+| Quantity | Value |
+|---|---|
+| lambda = exp(pi/s0) | 22.6943825954 |
+| lambda^2 = exp(2pi/s0) | 515.035001 |
+| E_1/E_0 = exp(-2pi/s0) | 1.9416e-03 |
+
+Experimental (Kraemer et al. 2006, Cs-133): lambda ~ 22.7. Agreement 0.02%.
+
+### SL(2,R) Identification
+
+Effective hyperradial coupling: alpha = s0^2 + 1/4 = 1.2625 (Casimir of PSL(2,R) principal series at spectral parameter s0).
+
+Conformal weight: Delta = 1/2 + i*s0 = 0.5 + 1.006i (on the critical line).
+
+Mobius rotation angle: theta = pi/s0 = 3.12212 rad.
+Trace: tr(M) = 2 cos(theta) = -1.99962. |tr| < 2 => ELLIPTIC element of SL(2,R).
+
+SAE angle evolution: phi' = phi + s0 ln(Lambda'/Lambda) (mod pi). Period: pi/s0 = theta. Consistent.
+
+### THREE-AGENT Verdict
+
+**Q1 (PSL(2,R) <-> Efimov tower): CONFIRMED.** s0 = PSL(2,R) spectral parameter. Limit cycle = elliptic SL(2,R) orbit.
+
+**Q2 (exp(pi/s0) representation-theoretic): CONFIRMED with CAVEAT.** Scaling ratio = exp(SL(2,R) rotation angle). But s0 requires STM physics input (the transcendental equation) — not purely group-theoretic.
+
+**Q3 (RCP forces limit cycle): OVERCLAIM.** RCP accommodates the limit cycle (it IS a scale-channel semigroup orbit), but does NOT force it. The limit cycle is forced by resonant interactions + UV incompleteness (Camblong et al. 2000), which are physical inputs independent of RCP. Safe language: "The Efimov limit cycle realizes discrete scale invariance within the RCP scale channel."
+
+### Prior Art
+
+- de Alfaro, Fubini, Furlan (1976): SO(2,1) ~ SL(2,R) dynamical symmetry of 1/R^2 potential
+- Camblong, Ordonez et al. (2000-2003): explicit connection to Efimov
+- Braaten-Hammer (2006): review of Efimov universality
+- arXiv:2509.04746: three-body limit cycle as Mobius transformation (universal regulator independence)
+
+### References
+
+- blackboards/6.md (source — THREE-AGENT verified)
+- sources/efimov-effect-discrete-scaling-rg.md
+- sources/2509-04746-three-body-limit-cycle.md
+- meta/anomalies.md (Efimov entry: RESOLVED at Level 2)

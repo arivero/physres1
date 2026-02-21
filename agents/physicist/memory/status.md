@@ -1,26 +1,24 @@
 # Physicist Status
 
-**Session:** 2026-02-21 (afternoon)
-**Last updated:** 2026-02-21 ~18:00 CET
+**Session:** 2026-02-21 (evening, ~21:41 CET start)
+**Last updated:** 2026-02-21 ~22:50 CET
 
 ## Completed this session
-- Task #2: §9.2 stress test review → proposals/task-stress-test-review.md
-  - Found §5→§6 gap: corner paths in kernel composition unwitnessed
-- Task #7: §6.2 clarity review → proposals/task-section6-2-review.md
-  - Found P4.1 is circular; real derivation buried in P4.2c remark
-- Task #9: §9.4 vulnerability coherence → proposals/task-vulnerability-coherence.md
-  - MERGED: closing para conflated #1/#3 status (now fixed)
+- Task #1: Areal-speed paper pub-readiness → DISCARD (THREE-AGENT)
+- Task #12: d/2 uniqueness chain review (BB2) → AIRTIGHT (THREE-AGENT)
+- S² ordering witness review (BB4) → FOUR-AGENT APPROVE
+- Task #17: phi^4 truncation benchmark proposal → Vuln 4 full closure
+- Task #18: Efimov/PSL(2,R) review (BB6) → THREE-AGENT, Q3 overclaim
+- Philosophenweg §9 on BB0: "Composition forces classical singular dynamics"
 
-## Idle work (winding down)
-- Appended impulse-kick kernel computation to
-  notebooks/p42-extensions-interacting-curved.md (Part 4)
-- This closes the §5→§6 bridge gap at kernel level for free particle + single delta kick
-- Identified as promotion candidate for §6.5 of paper/main.md
+## Proposals pending orchestrator action
+1. proposals/physicist-edit-impulse-kernel.md (D6.5 for cornerstone §6.5)
+2. proposals/physicist-edit-vuln4-phi4-benchmark.md (Remark D6.4a, Vuln 4 full closure)
+3. proposals/physicist-edit-vuln4-status.md (SUPERSEDED by #2)
 
-## Next steps (next session)
-- Propose manuscript edit: add K_impulse computation to §6.5 or as a note
-- The §5→§6 gap is now resolved in notebooks; only needs promotion to paper
-- Check on §6.2 fix decision (which option: A/B/C was chosen?)
-
-## Pending tasks
-- None claimed; session winding down ~18:00
+## Session tally
+- 5 tasks completed (#1, #12, #17, #18, + BB4 review)
+- 3 proposals written
+- 3 blackboard reviews (BB2, BB4, BB6)
+- 1 Philosophenweg note (BB0 §9)
+- Variety: reviews (3x) + proposals (3x) + Philosophenweg (1x)

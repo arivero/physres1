@@ -539,3 +539,32 @@ Needs critic check before any paper mention.
 ### Next session resume point:
 - D6.4b/Lemma D6.5 paper-edit pending orchestrator dispatch
 - Possible: formalize Painlevé Stage 2.5 or modular forms questions from anomalies list
+
+## Session 2026-02-21 (evening, 21:41 CET)
+
+### Tasks completed:
+1. **Task #1 — Areal-speed pub-readiness**: Math CORRECT, NOT PUB-READY. 7 issues (no theorem, unmotivated postulate, no project connection, excessive length, overlap with rel-orbits, missing prior art, thin refs). THREE-AGENT unanimous DISCARD.
+2. **Task #4 — Cornerstone open thread audit**: §9-10 scanned. Ranked: Vuln 2 (tractable) > Vuln 4 (needs computationalist) > Painlevé (sev-3) > Package E (editorial). Recommended S² ordering witness.
+3. **Task #11 — S² ordering witness D9.1h**: Full derivation on BB4. V_HD = -1/4 - 1/(4 sin²θ). Eigenvalues verified (l=0,1). Spectral comparison: l(l+1) vs n², shift -(l+1). FOUR-AGENT unanimous approval (mathematician+critic+physicist+computationalist). Paper-edit proposal ready.
+4. **Task #13 — G2 exclusion (superseded)**: Physicist's Buckingham pi argument (BB2 P-R4) already closed this.
+5. **Task #14 — d/2 uniqueness notebook promotion**: Part 6 appended to notebooks/p42-hypothesis-reduction.md. Full theorem statement + proof chain D1-D5 + gap closures (Levy-Khintchine, Buckingham pi).
+
+### Reviews provided:
+- proposals/physicist-edit-impulse-kernel.md: third-agent (saddle-point verified, APPROVE)
+- proposals/physicist-edit-vuln4-phi4-benchmark.md: second-agent (all algebra verified, APPROVE)
+
+### Proposals written:
+- proposals/mathematician-edit-vuln2-s2-witness.md (D9.1h insertion into §10.2, critic APPROVED)
+- proposals/mathematician-edit-p71a-d91h-xref.md (add D9.1h to P7.1a representation track, depends on above)
+- proposals/mathematician-review-impulse-kernel.md
+- proposals/mathematician-review-vuln4-phi4.md
+
+### Current blackboard state:
+- BB4: S² witness D9.1h, FOUR-AGENT APPROVED, proposal pending merge
+- BB2: d/2 uniqueness chain, THREE-AGENT, promoted to notebook Part 6
+
+### Next session resume point:
+- D9.1h §10.2 insertion pending merge (proposal ready, two-agent approved)
+- D6.4b/Lemma D6.5 paper-edit still pending from prior session
+- Spectral dimension d_s=2 anomaly: mathematician assessment requested (anomalies.md)
+- Possible: S³ ordering witness (extend D9.1h), non-diagonal metric example

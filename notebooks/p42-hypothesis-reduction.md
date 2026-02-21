@@ -484,3 +484,78 @@ The last entry is new: composition (C) applied to angle-variable kernels on the 
 - Arnold "Mathematical Methods of Classical Mechanics" §49: action-angle variables
 - paper/main.md P4.2: composition forces kernel structure
 - papers/action-angle-indeterminacy-central-potentials/main.md: context paper
+
+---
+
+## Part 6: d/2 Normalization Uniqueness from Composition
+
+**Source:** blackboards/2.md (sections R15B-003 through R15B-036, plus physicist second-agent review P-R1 through P-R5)
+**Status:** TWO-AGENT verified (mathematician + physicist), 2026-02-21
+**Connects to:** P4.2d (paper/main.md line ~623), Remark P4.2e
+
+### Statement
+
+**Theorem (d/2 normalization uniqueness).**
+Let \(K_t\) be a family of kernels on \(\mathbb{R}^d\) satisfying:
+- (M1) Convolution semigroup: \(K_{t+s} = K_t * K_s\) for all \(t,s > 0\), with \(K_t \in L^1\).
+- (M2) Mass conservation: \(\int_{\mathbb{R}^d} K_t(x)\,d^dx = 1\) (equivalently \(\widehat{K}_t(0) = 1\)).
+- (M3) Measurability + nonvanishing: \(t \mapsto \widehat{K}_t(p)\) measurable, \(\widehat{K}_t(p) \neq 0\) a.e. in \(p\).
+- (M4) Isotropy and dimensional constants restricted to \(\{m, \hbar\}\).
+
+Then the normalization exponent is uniquely \(d/2\): \(K_t(x) = C\,t^{-d/2}\,\Psi(x/\sqrt{t})\).
+
+### Proof chain (D1-D5)
+
+**(D1) Semigroup \(\Rightarrow\) exponential characteristic function.**
+In Fourier space, (M1) gives \(\widehat{K}_{t+s}(p) = \widehat{K}_t(p)\widehat{K}_s(p)\). By (M3), \(t \mapsto \widehat{K}_t(p)\) is a measurable multiplicative function on \((0,\infty)\) with no zeros. By the measurable Cauchy theorem, \(\widehat{K}_t(p) = e^{t\phi(p)}\) for a unique \(\phi(p) \in \mathbb{C}\), for a.e. \(p\).
+
+**(D2) Mass conservation fixes \(\phi(0)\).**
+\(\widehat{K}_t(0) = 1\) for all \(t > 0\) gives \(\phi(0) = 0\).
+
+**(D3) Isotropy \(\Rightarrow\) power-law form.**
+\(\phi\) isotropic: \(\phi(p) = -c_\alpha |p|^\alpha\) for some \(\alpha > 0\), \(c_\alpha \in \mathbb{C}\).
+Dimensional requirement: \(t\phi(p)\) is dimensionless, so \([c_\alpha] = L^\alpha T^{-1}\).
+
+**(D4) Dimensional matching forces \(\alpha = 2\).**
+\(c_\alpha\) must be constructed from \(\{m, \hbar\}\) only. With \([m] = M\), \([\hbar] = ML^2T^{-1}\):
+\(c_\alpha \sim m^a \hbar^b\) gives \(M^{a+b} L^{2b} T^{-b}\).
+Matching: \(a+b = 0\), \(2b = \alpha\), \(-b = -1\). Solution: \(b = 1\), \(a = -1\), \(\alpha = 2\). UNIQUE.
+Hence \(\phi(p) = -(\hbar/m)\gamma\,|p|^2\) with \(\operatorname{Re}\gamma \geq 0\).
+
+**(D5) Inverse Fourier scaling.**
+\(\widehat{K}_t(p) = e^{-t(\hbar/m)\gamma|p|^2}\). Inverse transform: \(K_t(x) = t^{-d/2}\Psi(x/\sqrt{t})\). QED.
+
+### Gap closure
+
+**(G1) Why \(\phi(p) = -c_\alpha|p|^\alpha\)?**
+The Levy-Khintchine representation theorem classifies all infinitely divisible distributions on \(\mathbb{R}^d\). For the isotropic case without drift: \(\phi(p) = \int_0^\infty (e^{-|p|^2 r} - 1)\nu(dr)\) where \(\nu\) is the Levy measure. The \(|p|^\alpha\) family corresponds to stable laws. General \(\nu\) introduces additional dimensional parameters (mass spectrum, cutoff scale). Under (M4), only the one-parameter stable subfamily survives, and D4 gives \(\alpha = 2\). (Physicist verdict: Levy-Khintchine resolves G1 at physics rigor.)
+
+**(G2) Why monomial \(c_\alpha(m,\hbar)\) is the only option?**
+Buckingham pi theorem: any function \(f(m, \hbar)\) with dimensions \([L^2 T^{-1}]\) and no extra dimensional constants satisfies \(f(\lambda m, \mu\hbar) = \lambda^{-1}\mu\,f(m, \hbar)\) by scaling homogeneity. This fixes \(f = C \cdot \hbar/m\) up to a dimensionless numerical constant. Non-monomial constructions like \((\hbar/m)\log(m/m_0)\) require a reference mass \(m_0\), violating (M4).
+
+**(G3) Regularity assumptions.**
+sev-3 (minor): physical propagators are tempered distributions. Positivity/continuity in \(t\) is standard for heat kernels (\(\operatorname{Re} c \geq 0\)), and holds in the \(i\varepsilon\) sense for Fresnel propagators (see P4.2e in paper).
+
+### Scope boundaries
+
+The theorem applies to \(\{m, \hbar\}\)-only free kernels. Known physics that falls outside (M4):
+
+| System | Extra constant | Effect |
+|--------|---------------|--------|
+| Fractional QM (Laskin 2000) | \(D_\alpha\) (medium) | \(\alpha \in (1,2]\) allowed |
+| Relativistic \(\sqrt{p^2c^2 + m^2c^4}\) | \(c\) | \(\alpha = 1\) (Cauchy) |
+| Anomalous diffusion | \(\tau\) (waiting time) | Subdiffusive scaling |
+| Lattice dispersion | \(a\) (spacing) | Periodic Brillouin zone |
+
+This is physically correct: new physics = new dimensional constants = new dispersion relations.
+
+### Connection to paper
+
+P4.2d (paper/main.md line ~623) states the dimensional matching \(\alpha = 2\) argument. The BB2 chain is an independent re-derivation consistent with the published text, providing the full proof infrastructure (measurable Cauchy lemma, Levy-Khintchine scaffold, Buckingham pi closure) that the paper states concisely.
+
+### References
+
+- blackboards/2.md: R15B-003 (theorem statement), R15B-017 (measurable branch lemma), R15B-022 (dependency chain), R15B-023 (G1 closure), R15B-032 (gap summary), physicist review P-R1--P-R5
+- paper/main.md: P4.2, P4.2d, P4.2e
+- Levy-Khintchine representation theorem (Sato, "Levy Processes and Infinitely Divisible Distributions")
+- Buckingham pi theorem (dimensional analysis)

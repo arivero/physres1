@@ -1,5 +1,37 @@
 # Critic — Activity Log
 
+## 2026-02-21 (Session 9, continuation)
+- reviewed: proposals/mathematician-edit-vuln2-s2-witness.md — APPROVE (typo fixed in proposal)
+  - filed: proposals/critic-review-vuln2-s2-witness.md
+- reviewed: proposals/physicist-edit-impulse-kernel.md — APPROVE (2 sev-4 format fixes: emph->md, $$->\[)
+  - filed: proposals/critic-review-impulse-kernel.md (now THREE-AGENT)
+- wrote: blackboards/2.md — critic 3rd-agent review of d/2 uniqueness chain
+  - E1-E3 VERIFIED, G1 CLOSED (L-K+dim analysis), G2 CLOSED (Buckingham pi)
+  - THREE-AGENT unanimous, notebook promotion ready
+- updated: blackboards/README.md — BB2 index (THREE-AGENT)
+- reviewed: proposals/physicist-edit-vuln4-phi4-benchmark.md — APPROVE (all coefficients verified)
+  - filed: proposals/critic-review-vuln4-phi4-benchmark.md (now THREE-AGENT, later FOUR-AGENT)
+- found: §9.4 line 1256 Vuln 2 summary inconsistency (sev-3)
+  - filed: proposals/critic-edit-vuln2-summary-consistency.md — APPLIED by orchestrator
+- found: §9.5 Package B/D stale status + D10.4a stale nav map (sev-3/4)
+  - filed: proposals/critic-edit-package-status-updates.md — Diffs 1+2 APPLIED, Diff 3 pending
+- reviewed: proposals/mathematician-edit-p71a-d91h-xref.md — APPROVE (trivial, TWO-AGENT)
+  - filed: proposals/critic-review-p71a-d91h-xref.md
+- verified: D6.5 format fixes applied correctly (markdown italics, \[...\] delimiters)
+- verified: D6.4a already merged with correct coefficients
+- wrote: proposals/critic-session9-paper-status-report.md — comprehensive paper status
+
+## 2026-02-21 (Session 8, 21:41 CET)
+- read: startup files (critic.md, shared-rules.md, motivations.md, research-state.md, status.md)
+- read: papers/fermionic-mediators-contact-limits/main.md (245 lines, 40 refs)
+- read: papers/uncuttable-controlled-refinement/main.md (244 lines, 38 refs)
+- wrote: blackboards/4.md — genre assessment for both papers (Task #2)
+- verdict: DISCARD both (survey/essay, zero original results, lifecycle rule applies)
+- wrote: blackboards/1.md §8 — critic third-agent review of areal-speed (UNANIMOUS DISCARD)
+- updated: blackboards/README.md — BB1 and BB4 index entries
+- wrote: blackboards/6.md §9 — critic 2nd-agent review of Efimov/PSL(2,R) (Q3 overclaim confirmed)
+- updated: blackboards/README.md — BB6 index entry (TWO-AGENT)
+
 ## 2026-02-20
 - read: agents/critic.md, agents/shared-rules.md, meta/motivations.md, meta/research-state.md
 - read: paper/main.md lines 1-200 (intro, H0.2), 540-700 (P4.2, P4.2h), 1050-1200 (Section 8-9), 1270-1390 (Section 9.5-9.6+10.1), 1498-1557 (P9.1 label collision in 10.2)
@@ -638,3 +670,4 @@
   - finding 4.3 (D8→D11 missing bridge): VALID — narrative but no numbered proposition
   - finding 4.4 (P7.1 label): VALID but debatable — "Summary Proposition" is standard in survey-style papers
   - sent: correction to orchestrator
+- completed: R16-002 triaged proposals/*.md apply-readiness; wrote sev-ranked blocker matrix to blackboards/4.md

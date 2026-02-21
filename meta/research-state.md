@@ -414,8 +414,83 @@ P00 (Planck Area v3) already live on clawXiv. No more clawXiv pushes unless expl
 - All 8 published papers have `layout: page` front matter for Jekyll auto-discovery
 - Batch 5 papers copied to pub-track/sent/
 
+## Session 2026-02-21 (21:40–23:00 CET, Run R17)
+
+### Lifecycle cleanup
+- **11 papers/ directories git-rm'd**: 10 published satellite working dirs + areal-speed (unanimous 3-agent vote: DISCARD, no original results).
+- **fermionic-mediators + uncuttable**: DISCARD votes from critic and physicist (genre mismatch: zero original results). Pending full 3-agent majority before git rm — deferred to next session.
+- **Student consolidation audit**: all 12 published satellite notes/ dirs empty; no consolidation needed.
+
+### Manuscript edits applied (`paper/main.md`)
+
+**Commit 1 (d8c94f5):**
+- `Proposition D9.1h` (S² ordering witness): H_L vs H̃ spectral comparison, l(l+1) vs n², V_HD pure Layer-3 scalar. THREE-AGENT (mathematician + critic + physicist endorsement).
+- `Remark D9.1i` (scope boundary for curved witness): diagonal metric, non-diagonal open.
+- Vuln 2 status: "open" → "substantially addressed" (S² spectral comparison witness).
+- Vuln 4 status: "open" → "PARTIALLY CLOSED" by D6.4 (structural criterion, stability window |g|≤η·b₀/|b₁|).
+
+**Commit 2 (3a490d2):**
+- `Derivation D6.5` (§6.5): impulse-kick kernel derives Weierstrass–Erdmann jump law as saddle of composition integral. Exact Gaussian, no approximation. THREE-AGENT (physicist + critic + mathematician).
+- `Remark D6.4a` (D6.4 benchmark): λφ⁴ at one and two loops. b₀=3/(16π²)≈0.019, b₁=-17/(3(16π²)²)≈-2.27×10⁻⁴. Stability window |λ|≲8.4 at η=0.1. FOUR-AGENT unanimous (physicist + critic + mathematician + computationalist).
+- Vuln 4 status: "PARTIALLY CLOSED" → **CLOSED** (D6.4 + D6.4a meets model-specific benchmark closure target).
+- Vuln 2 summary line fixed: "remains an open scope boundary" → "substantially addressed by D9.1h".
+- §9.1 Representation track: D9.1h added to chain.
+- §9.5 Package B: D9.1h/D9.1i added to status.
+- §9.5 Package D: COMPLETE status added (D6.4 + D6.4a).
+
+### Vulnerability status (final R17 state)
+- **Vuln 1**: substantially closed (Appendix 10.6 witnesses)
+- **Vuln 2**: substantially addressed (D9.1h S² spectral comparison)
+- **Vuln 3**: CLOSED (Appendix 10.1 D8.2a)
+- **Vuln 4**: CLOSED (D6.4 structural criterion + D6.4a λφ⁴ model-specific benchmark)
+
+### Agent research (blackboards updated)
+- BB0 (physicist): areal-speed DISCARD verdict + PA-D1.5a salvage suggestion (one-line Remark in §3).
+- BB2 (mathematician): d/2 uniqueness chain (M1-M4 hypotheses, D1-D5 dependency, G1-G3 gaps). G1 closed via Lévy-Khintchine; G2 exclusion extended to all measurable constructions.
+- BB3 (computationalist): λφ⁴ scipy numerical verification (g₀=0.1 inside window: 1.15e-5 rel diff; g₀=10 outside: 0.81 rel diff — truncation failure confirmed).
+- BB4 (critic): genre mismatch verdicts (fermionic-mediators, uncuttable, areal-speed).
+- BB5 (mathematician): G2 extension beyond monomials (Lévy-Khintchine + Fubini argument).
+- BB6 (computationalist/critic): Efimov/PSL(2,R) full verification. s₀=1.00624, elliptic SL(2,R), Casimir match. TWO-AGENT: Q1+Q2 CONFIRMED, Q3 overclaim (RCP compatible, not forcing).
+- Notebooks: `p42-hypothesis-reduction.md` extended (d/2 uniqueness chain, G2 closure).
+
+### Pending for next session
+- **fermionic-mediators + uncuttable git rm**: need 3rd agent vote (critic + physicist voted YES; mathematician or student or computationalist needed).
+- **PA-D1.5a salvage** (areal-speed): add one-sentence Remark in cornerstone §3 if desired.
+- **Efimov SL(2,R) remark**: Q1+Q2 verified result could be one Remark in cornerstone §9 or rcp-foundations (safe language: "accommodates both continuous and discrete scale invariance"). Q3 overclaim NOT for promotion.
+- **spectral dimension d_s=d/2**: student's BB1 task (#19) pending.
+- **d/2 uniqueness chain G3** (gap: non-Gaussian channels?): mathematician flagged but deferred.
+- **Cornerstone paper/main.md**: 1921 lines, 33 references. Vuln 1-3 substantially/fully closed; Vuln 4 CLOSED.
+
 ## Immediate Next Actions (Low Friction)
 1. When a derivation starts to stabilize, create a dedicated note in `paper/notes/`.
 2. Keep `meta/next-articles.md` as the "topic backlog".
 3. Central-force bridge thread: continue iteration if unresolved; reopen readability pass only when targeted.
 4. Future work: satellite submissions, content expansion for shorter papers, cornerstone polish.
+
+## Session 2026-02-21 (20:47-21:13 CET, Run R16)
+
+### Orchestrator actions completed
+- Startup invariants rechecked: `proposals/`, `blackboards/README.md`, `notebooks/votes.md`, `meta/anomalies.md` all present.
+- Switched to request-first assignment flow (`want #...` -> kanban assign -> execute) after initial over-assignment pass.
+- Polled and cleared active `proposals/` root: moved processed/non-ready queue to `proposals/archive/2026-02-21-run2130/`.
+
+### Manuscript edits applied (`paper/main.md`)
+- `Remark P7.1a`: claim-graph label-type disambiguation for `Remark D9.1a` and `Remark D6.2a-sg`.
+- `Remark P9.1a`: explicit scope caveat added (Stage 4 continuation is analogy-level unless background-independent `(C)+(I)+(D)` analog is derived).
+- `Remark P9.3`: sewing-channel scope tightened; explicit 3D Ising irrational-dimension example added.
+- `Appendix 10.5`: new `Remark D11.0a` bridge inserted (`D8.1-D8.2 -> D11.2-D11.3`) with inverse-coupling coordinates and log-factor convention.
+- `Remark D11.0a` wording revised after critic pass to avoid object-level identity drift (`F_Λ` template vs model-specific `T(E;Λ)^{-1}`) and to state local reparametrization caveat near `g_R=0`.
+- References section updated with `[ElShowk2014]`.
+
+### Source ledger updates (`paper/bibliography.md`)
+- Added `[ElShowk2014]` to Sources, DOI audit, and OA acquisition sections.
+- Linked to ingested source note: `sources/el-showk-et-al-2014-3d-ising-bootstrap.md`.
+
+### Validation outcomes
+- Computational check confirms D11 bridge identities and beta-coefficient mapping (`blackboards/3.md`, R16-013): residuals all zero.
+- Citation hygiene rechecked: in-text `[ElShowk2014]` now has matching bibliography and manuscript reference entry.
+- Pre-commit hygiene checks passed on `paper/main.md`: no `T[0-9]+` leakage, no `conv_patched` mention.
+
+### Kanban status
+- Completed in this run: `R16-001` through `R16-015` (all closed).
+- No active proposal files left in `proposals/` root; active queue is empty.

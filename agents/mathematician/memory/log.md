@@ -105,3 +105,34 @@
 - annotated: blackboards/5.md §13 (mathematician verification of ζ-regularization, THREE-AGENT complete)
 - updated: blackboards/README.md slots 3,5
 - completed: Task #17
+
+## 2026-02-21 (evening session, 21:41 CET)
+- read: startup docs (.claude/agents/mathematician.md, shared-rules, motivations, research-state, status)
+- read: papers/areal-speed/main.md (259 lines, pub-readiness assessment)
+- read: blackboards/0,2,3,5 (current state scan)
+- read: papers/planck-area/main.md §§1-3 (provenance of areal-speed extraction)
+- claimed: Task #1 (areal-speed pub-readiness)
+- wrote: blackboards/1.md (full assessment: math CORRECT, NOT PUB-READY, 7 issues identified)
+- updated: blackboards/README.md slot 1
+- claimed: Task #11 (S² ordering witness D9.1h, Vuln 2)
+- ran: SymPy verification of half-density conjugation on S² (V_HD, eigenvalues l=0,1)
+- wrote: blackboards/4.md (overwriting stale RG-fundamental slot; full derivation + spectral comparison)
+- fixed: typo in §6 formal statement (sin^{-2} → sin^2, per critic C9.3)
+- wrote: proposals/mathematician-edit-vuln2-s2-witness.md (paper-edit diff for §10.2)
+- updated: blackboards/README.md slot 4
+- completed: Task #11
+- self-directed: Task #13 (G2 exclusion) — SUPERSEDED by physicist Buckingham pi argument (BB2 P-R4)
+- completed: Task #13 (superseded)
+- self-directed: Task #14 (promote d/2 chain from BB2 to notebook)
+- wrote: notebooks/p42-hypothesis-reduction.md Part 6 (d/2 normalization uniqueness)
+- completed: Task #14
+- reviewed: proposals/physicist-edit-impulse-kernel.md (third-agent: saddle-point verified, APPROVE)
+- wrote: proposals/mathematician-review-impulse-kernel.md
+- reviewed: proposals/physicist-edit-vuln4-phi4-benchmark.md (second-agent: all algebra verified, APPROVE)
+- wrote: proposals/mathematician-review-vuln4-phi4.md
+- wrote: proposals/mathematician-edit-p71a-d91h-xref.md (P7.1a representation track xref)
+- self-directed: Task #19 (spectral dimension anomaly investigation)
+- wrote: blackboards/1.md (overwriting settled areal-speed DISCARD; spectral dimension analysis)
+- result: d_s=d/2 in UV requires L_P (quartic z=2 Lifshitz); NOT forced by composition alone
+- updated: blackboards/README.md slot 1
+- completed: Task #19
