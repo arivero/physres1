@@ -1779,7 +1779,25 @@ a single axiom (composition), not merely a mathematical construction.
 **TG-Q7:** The Berra-Montiel star-exponential avoids convergence issues. Does this resolve the
 formal-vs-strict deformation quantization gap that our tangent-groupoid paper flags in section 6?
 
+### Addendum: Lackman's Complete Program (2023-2024)
+
+Found a THIRD Lackman paper: arXiv:2406.14547 (June 2024), "A Mathematical Definition of
+Path Integrals on Symplectic Manifolds." This establishes rigorous coherent state path
+integrals on symplectic/Poisson manifolds (Kahler examples computed explicitly).
+
+The full Lackman program now spans:
+1. arXiv:2303.05494 (2023): Deformation quantization via higher groupoids (formal equivalence)
+2. arXiv:2402.05866 (Feb 2024): Pair groupoid functional integrals (Brownian motion, TQFTs)
+3. arXiv:2404.03628 (Apr 2024): 2-groupoid quantization (Kontsevich star product from convolution)
+4. arXiv:2406.14547 (Jun 2024): Rigorous path integrals on symplectic manifolds
+
+This is the most systematic rigorous program connecting groupoid composition to quantization
+in the current literature. Our tangent-groupoid bridge paper (and cornerstone §6) should
+cite Lackman's program as the mathematical realization of the composition -> quantization
+chain that P4.2 shows is FORCED.
+
 ### Source Files
 - sources/lackman-2024-canonical-quantization-2groupoid.md
 - sources/berra-montiel-2024-star-exponentials-propagators.md
 - sources/kafuri-2026-fermionic-star-exponential.md
+- sources/lackman-2024-path-integrals-symplectic.md

@@ -830,3 +830,21 @@ Agent status: FIVE-AGENT (mathematician+physicist+critic+computationalist; stude
 
 The general formula \(V_{\mathrm{HD}} = -|\rho|^2_g = -\dim(G) h^\vee/24\) is now PROVED, not just conjectured. D9.1o in paper/main.md upgraded from "Numerical verification" to analytic proof + numerical confirmation.
 - proposals/mathematician-edit-d91j-lie-groups.md: paper-edit proposal
+
+### Student Summary (2026-02-22): V_HD Lie Group + Product Results — Literature Context
+
+Read BB0 (FIVE-AGENT), BB5 (TWO-AGENT product theorem), and conducted independent literature search.
+
+**Literature novelty assessment:**
+- Searched nLab ("density", "geometric quantization"), Wikipedia (Laplace operators in differential geometry), and arXiv for "half-density Laplacian" + scalar curvature + ordering. Result: V_HD = -(d-1)R/(4d) on constant-curvature spaces has NO DIRECT LITERATURE HIT. The formula is distinct from conformal coupling xi_c = (d-2)/(4(d-1)) and from DeWitt's R/6 (which equals V_HD only in RNC at a point, or globally on Lie groups).
+- The Lie group formula V_HD = -|rho|^2 = -R/6 (Theorem M0.3) uses standard ingredients (Freudenthal-de Vries, RNC expansion) but the COMBINATION — constancy by bi-invariance + RNC evaluation = global result — appears to be new. No paper in the standard literature (DeWitt 1957, Bates-Weinstein 1997, Landsman 1998) states this result explicitly.
+- Kirwin 2014 (arXiv:1408.1527) mentions "Laplacian plus scalar curvature term" from BKS geometric quantization, which is related but not the same formula.
+
+**Cross-connections noted:**
+1. BB5 product theorem (C5.1-C5.4) + A_geom integrality sieve = SIX d=4 coincidences from half-density framework (anomalies entry added).
+2. Lackman 2-groupoid program (4 papers, 2023-2024) provides rigorous mathematical foundation for the composition -> quantization chain (notebook section added to tangent-groupoid-quantization-bridge.md).
+3. Berra-Montiel+ (2024) star-exponential/propagator bridge makes explicit the map from composition to deformation quantization that caustics/Maslov notebook discusses at the semiclassical level.
+
+**Assessment:** The V_HD program (BB0/BB2/BB4/BB5/BB6) is the strongest novel contribution of this project alongside P4.2 itself. The formula's literature absence, combined with the multiple d=4 coincidences, makes a compelling case for publication priority.
+
+**Agent status: FIVE-AGENT complete** (mathematician+physicist+critic+computationalist+student).

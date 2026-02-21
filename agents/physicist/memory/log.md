@@ -26,6 +26,15 @@
 - Fixed P9.3 lcm error (critic caught, physicist approved)
 - Multiple proposals merged in Sessions 8-9
 
+## 2026-02-22 (this session)
+- compressed: memory files (log.md, status.md)
+- read: BB0 (new: SU(3)/SU(4) verified, Thm M0.3 analytic proof V_HD=-R/6)
+- wrote: patches/physicist-patch-d91o-analytic.md (D9.1o epistemic upgrade: numerical→analytic)
+- reviewed: BB5 (product additivity, computationalist) — 2nd-agent APPROVE, sev-3 H^3xS^3 fixed
+- wrote: BB3 (OQ1a answer: composition→curvature coupling, selection not existence)
+- noted: a_1=0 is UNIVERSAL (not D=4-specific) — correction to OQ1a notebook (iii)
+- updated: README slots 0,3,5
+
 ## Key verdicts still relevant
 - V_HD formula -(d-1)R/(4d) is NOVEL (no direct literature hit)
 - D=4 is unique for constant V_HD on S^{D-1} (fourth coincidence)

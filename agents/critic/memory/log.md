@@ -8,11 +8,18 @@
   - FdV bridge R/6=|rho|^2 verified for SU(2,3,4)
   - Mild redundancy with D9.1l noted (sev-5, non-blocking)
   - Filed: patches/critic-review-d91o-analytic-upgrade.md
+- D9.1 sequence (15 labels) consistency audit: CLEAN. D9.1o upgrade already merged.
 - Notebook quality review: p42-extensions-interacting-curved.md
   - SIGN ERROR found: Part 4 line 612 has y*=x_cl+Jτ/(mT), paper has MINUS (correct). Appended erratum E1.
   - Part numbering: "Part 3" duplicated, Part 6 missing. Appended note E2.
 - Notebook quality review: p42-hypothesis-reduction.md
   - STALE TEXT: Key Result 4 says "SU(3) pending" — now RESOLVED (BB0 §12-13). Appended update.
+- Library: V_HD novelty search (6 WebSearch, 3 WebFetch)
+  - V_HD(p)=-R(p)/6 in RNC is KNOWN (DeWitt 1957, standard path-integral ordering)
+  - Literature debate: ξ = 1/24, 1/12, 1/8 for Schrodinger eq — DeWitt's R/6 is the half-density version
+  - NOVEL parts: (a) global extension on Lie groups via bi-invariance, (b) Weyl vector connection via FdV
+  - Refinement of novelty claim: D9.1l RNC formula is standard; D9.1o Weyl vector formula appears novel
+  - Research-state note: "V_HD formula NOVEL" should be refined to "Weyl vector formula novel"
 
 ## 2026-02-22 (Session 12) — COMPRESSED
 - D12.1/D12.3 SEV-2 convention mismatch: found and filed fix (critic-edit-d12-convention-fix.md). MERGED.
