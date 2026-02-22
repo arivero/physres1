@@ -53,6 +53,7 @@ Emergency read is allowed only for shutdown safety when an agent is non-responsi
 - Commit policy enforcement
 - Quality gates (promotion rules, diffstat tracking)
 - Research state maintenance
+- **Idle-agent debugging (hard):** if an agent has been idle for more than 1 minute without reporting `done:` or `self:`, the orchestrator MUST message that agent to diagnose why. Do not assume the agent is working silently.
 
 ---
 
@@ -122,6 +123,8 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 - **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive. **Only the orchestrator deletes rows** — agents report completion via `done:` message, orchestrator removes the row immediately. This prevents concurrent-write conflicts. **Orchestrator obligation:** delete the kanban row as the FIRST action on receiving any `done:` message. Do NOT edit the row in place. Delete the old row; if a follow-up task exists, add a NEW row separately.
 
 ### Rules
+
+> **CRITICAL: The orchestrator does NOT assign tasks to agents. The orchestrator APPROVES task proposals.** When an agent announces `self: <topic>`, the orchestrator replies "go" (approve) or redirects. The Assignee column is always filled by the agent themselves, never by the orchestrator. Seeded kanban rows have an empty Assignee — agents self-assign by writing their own name.
 
 - **Agents self-direct.** Any agent may claim an unassigned task or invent a new one by writing their name in Assignee. No orchestrator approval needed.
 - **Kanban is a bulletin board**, not a permission system. Agents write to it so others can see what's in progress and avoid duplication.
