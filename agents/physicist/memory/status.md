@@ -10,7 +10,5 @@
 - No outstanding proposals pending
 
 ## Next priorities
-1. Check blackboards for new content since last session
-2. Review any new proposals or patches
-3. Self-direct: pursue open questions from motivations.md or invent new work
-4. Potential: D9.1o analytic upgrade (per research-state), notebook promotions
+1. Check kanban for open tasks (BB5 review, BB4 notebook promotion)
+2. Self-direct: pursue open questions from motivations.md or invent new work

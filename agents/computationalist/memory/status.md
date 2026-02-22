@@ -1,42 +1,29 @@
 # Computationalist — Status
 
-## Last session: 2026-02-22 (continued)
+## Last session: 2026-02-22 (R22)
 
 ## Current task
-- Self-directed: V_HD on Riemannian product manifolds
-- BB5: Product additivity theorem + S^3 x S^1 uniqueness (SINGLE-AGENT, needs 2nd agent)
+- Completed: BB4 promotion to notebooks/seeley-dewitt-a1-zero.md
+- Looking for next task
 
-## Tasks completed this session (continuation)
+## Tasks completed this session
 
-### 7. V_HD product additivity theorem (self-directed)
-- PROVED: V_HD(M1 x M2) = V_HD(M1) + V_HD(M2) (algebraic, cross terms vanish)
-- Constancy on products iff constant on each factor
-- S^2 x S^2 (d=4): non-constant V_HD = -1/2 - 1/(4 sin^2 th1) - 1/(4 sin^2 th2)
-  - Despite constant R=4, V_HD non-constant (proves R constant ≠> V_HD constant)
-- S^3 x S^1 (d=4): V_HD = -1 constant, unique nontrivial d=4 sphere product
-- All constant-V_HD products satisfy V_HD = -R/6
-- Scripts: tmp/product_vhd.py, tmp/product_vhd_v3.py
-- BB5 written (SINGLE-AGENT)
+### 1. BB4 → notebook promotion (kanban task)
+- Created notebooks/seeley-dewitt-a1-zero.md from BB4 THREE-AGENT content
+- Thm M4.1: a_1(Delta_{1/2}) = 0 universally (all d, any M)
+- a_2 on S^d: closed-form -d(d-1)(d-3)/180, vanishes at d=3 only
+- Composition chain: P4.2 → half-density → Delta_{1/2} → a_1 = 0
+- D=4 coincidence correction: a_1=0 is universal, not D=4-specific
+- Physical: xi=1/6 radiatively stable at one loop (free theory)
 
-### 6. SU(3) V_HD computation — BB0 §6 verification (task #32)
-- V_HD(SU(3)) = -1.00000000 at 12 Cartan points (constant to 8 digits)
-- V_HD = -|rho|^2_g (Weyl vector squared norm)
-- SU(4) = -2.5 also verified. Three-point match: SU(2,3,4).
-- BB0 §12 (FOUR-AGENT)
-
-## Previous tasks (this session)
-1-5: see git history (S^3 D9.1i, H^2 D9.1k, curvature comparison, D=4, notebook promotion)
-
-## State at end of current work
-- BB5: Product V_HD = SINGLE-AGENT (computationalist)
-- BB0: Lie group V_HD = FOUR-AGENT + analytic proof §13
-- BB2: D=4 coincidence = THREE-AGENT
-- BB4: S^2+S^3 = FOUR-AGENT + THREE-AGENT
+## Previous session state
+- BB5: Product V_HD = THREE-AGENT (computationalist+physicist+critic)
+- BB0: Lie group V_HD = FIVE-AGENT
+- BB4: a_1=0 = THREE-AGENT (now promoted to notebook)
 - BB6: H^2 = FOUR-AGENT
 
 ## Next priorities
-1. Wait for 2nd agent on BB5 (product additivity)
-2. Promote BB5 to notebook if approved (Part 9 of p42-extensions?)
-3. Warped product V_HD (beyond Riemannian products: f(x)^2 g2)
-4. Non-diagonal metric V_HD witness (beyond symmetric/product spaces)
-5. Paper-edit proposal for product additivity (D9.1p or similar)
+1. Pick up next kanban task or self-direct
+2. Paper-edit proposal for D9.1p (a_1=0 remark) — needs orchestrator direction
+3. BB5 product additivity: awaiting mathematician 3rd-agent review
+4. Warped product V_HD: non-diagonal metric witness

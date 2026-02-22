@@ -922,3 +922,157 @@ This was caught and fixed in the paper (Session 9, computationalist SymPy verifi
 ### E2. Part numbering
 
 "Part 3" appears twice (lines 430 and 481). Part 6 is missing (jumps from 5 to 7). These are artifacts of append-only operation and do not affect content.
+
+---
+
+## Part 8. The Strange Formula as Half-Density Physics (Physicist, 2026-02-22)
+
+**Sources:** BB0 §§4-5, §12-§13 (Lie group V_HD, Thm M0.3); BB2 §5 (Weyl vector); BB3 §§1-10 (OQ1a); BB4 (a₁=0).
+**Agent consensus on inputs:** BB0 FIVE-AGENT, BB2 THREE-AGENT, BB3 TWO-AGENT, BB4 THREE-AGENT.
+
+### 8.1. The Identity
+
+On a compact semisimple Lie group \(G\) with bi-invariant metric \(g = -c\,B\) (Killing form, \(c > 0\)):
+
+\[V_{\mathrm{HD}} = -\frac{R}{6} = -|\rho|^2_g\]
+
+where \(\rho\) is the Weyl vector and \(|\rho|^2_g\) is computed in the metric dual on \(\mathfrak{h}^*\).
+
+The second equality \(R/6 = |\rho|^2_g\) is the **Freudenthal-de Vries strange formula** (1969), originally proved algebraically from the Weyl character formula. The first equality \(V_{\mathrm{HD}} = -R/6\) is Thm M0.3 (BB0 §13), proved geometrically via RNC expansion + Prop M0.1 (bi-invariance → constancy).
+
+### 8.2. Why the Coincidence Is Not a Coincidence
+
+The three quantities \(V_{\mathrm{HD}}\), \(R/6\), and \(|\rho|^2\) are computed from the **same geometric data** — the Taylor expansion of the metric determinant at the identity — through three different lenses:
+
+| Quantity | Computed from | Lens |
+|----------|--------------|------|
+| \(V_{\mathrm{HD}}\) | \(-|g|^{1/4}\Delta(|g|^{-1/4})\) | Half-density conjugation (quantum ordering) |
+| \(R/6\) | Ricci trace of \(\partial^2 g\) at RNC center | Riemannian geometry |
+| \(|\rho|^2\) | \(\sum_{\alpha \in \Phi^+} |\alpha|^2/4\) | Root system / representation theory |
+
+For bi-invariant metrics on Lie groups, the Riemann curvature is entirely determined by the Lie bracket: \(R(X,Y)Z = -\frac{1}{4}[[X,Y],Z]\). The scalar curvature then becomes a trace over the root system: \(R = \frac{1}{4}\sum_{\alpha \in \Phi}|\alpha|^2 = \frac{d}{4c}\). The Freudenthal-de Vries formula \(|\rho|^2 = d/(24c)\) is the statement that \(|\rho|^2 = R/6\) — and this is a **consequence of the same bracket-curvature relation**.
+
+So the identity \(V_{\mathrm{HD}} = -|\rho|^2\) is not a coincidence between quantum mechanics and representation theory. It is a single geometric fact — that the half-density ordering correction equals \(-R/6\) at RNC center (standard) — applied to a space (Lie group with bi-invariant metric) where constancy promotes a local identity to a global one.
+
+### 8.3. Physical Interpretation: The Casimir Shift
+
+On a compact Lie group \(G\), the spectrum of \(-\Delta_g\) is given by Peter-Weyl:
+\[\mathrm{Spec}(-\Delta_g) = \{C_2(\lambda)\}_{\lambda \in \hat{G}}\]
+where \(C_2(\lambda)\) is the quadratic Casimir of irreducible representation \(\lambda\).
+
+The half-density Laplacian has spectrum:
+\[\mathrm{Spec}(\Delta_{1/2}) = \{C_2(\lambda) + V_{\mathrm{HD}}\} = \{C_2(\lambda) - |\rho|^2\}\]
+
+But \(C_2(\lambda) = |\lambda + \rho|^2 - |\rho|^2\) (standard identity). Therefore:
+\[\mathrm{Spec}(\Delta_{1/2}) = \{|\lambda + \rho|^2 - 2|\rho|^2\}\]
+
+For the trivial representation (\(\lambda = 0\)): eigenvalue \(= |\rho|^2 - 2|\rho|^2 = -|\rho|^2\).
+
+**Physical reading:** The half-density Hamiltonian shifts every Casimir eigenvalue by the same constant \(-|\rho|^2\). This is the quantum-mechanical analog of the Weyl character formula's \(\rho\)-shift: the denominator \(\prod_{\alpha>0}(e^{\alpha/2} - e^{-\alpha/2})\) = the half-density \(|g|^{1/4}\) in the Harish-Chandra radial decomposition.
+
+### 8.4. The Strange Formula Demystified
+
+The FdV "strange formula" states:
+\[|\rho|^2 = \frac{\dim(\mathfrak{g}) \cdot h^\vee}{24}\]
+where \(h^\vee\) is the dual Coxeter number (for Cartan-Killing norm with long root \(|\alpha_{\mathrm{long}}|^2 = 2\)).
+
+In half-density language, this says:
+\[V_{\mathrm{HD}}(G) = -\frac{\dim(G) \cdot h^\vee}{24}\]
+
+**Why 24?** The factor comes from the interplay of three ingredients:
+1. \(R = \dim(G)/(4c)\) for bi-invariant metric \(g = -c\,B\) (the 4 is geometric: curvature from brackets).
+2. \(V_{\mathrm{HD}} = -R/6\) (the 6 is the RNC expansion coefficient: \(|g|^{-1/4} = 1 + R_{ij}x^ix^j/12 + \ldots\), Laplacian doubles the 12 to 6).
+3. Combined: \(4 \times 6 = 24\).
+
+The "strangeness" of the formula dissolves when read as a product of two standard geometric factors. Freudenthal and de Vries proved it representation-theoretically (via the Weyl denominator); Thm M0.3 proves it geometrically (via RNC + bi-invariance). The two proofs are related by the Peter-Weyl theorem: the Weyl denominator IS the Harish-Chandra volume density, which IS \(|g|^{1/2}\) in radial coordinates.
+
+### 8.5. Limiting Cases and Dimensional Analysis
+
+| Group | dim | \(h^\vee\) | \(V_{\mathrm{HD}}\) | Physical system |
+|-------|-----|-----------|-----------------|-----------------|
+| SU(2) | 3 | 2 | \(-1/4\) | Spin / angular momentum (S³) |
+| SU(3) | 8 | 3 | \(-1\) | Flavor rotations (eightfold way) |
+| SU(4) | 15 | 4 | \(-5/2\) | Charm sector |
+| SO(3) | 3 | 2 | \(-1/4\) | Rigid body rotation |
+| G₂ | 14 | 4 | \(-7/3\) | Exceptional |
+
+**Dimensional analysis:** \([V_{\mathrm{HD}}] = [R] = L^{-2}\). With the bi-invariant metric normalized to unit radius, \(V_{\mathrm{HD}}\) is a pure number (the metric carries the length scale).
+
+**Limiting case \(\dim(G) \to \infty\):** For SU(N), \(V_{\mathrm{HD}} = -N(N^2-1)/24 \sim -N^3/24\). The ordering correction grows cubically with rank. This is the large-N scaling: the half-density shift is a one-loop vacuum energy on the group manifold, and vacuum energy scales as \(N^3\) for SU(N) gauge theory (matching the matrix-model expectation).
+
+### 8.6. Connection to the Composition Chain
+
+The chain from composition to the strange formula:
+
+```
+P4.2 (composition) → half-density measure → V_HD = -R/6 at RNC center
+    + bi-invariance on G → V_HD = -R/6 globally (Thm M0.3)
+    + FdV → V_HD = -|ρ|² = -dim(G)·h∨/24
+```
+
+Each step is a theorem. The endpoint: **the composition axiom, applied to a particle moving on a Lie group manifold, reproduces the Freudenthal-de Vries formula as its quantum ordering correction.**
+
+This gives the strange formula a physical interpretation it previously lacked: \(|\rho|^2\) is the energy cost of compositionally correct quantization on \(G\). The Weyl \(\rho\)-shift — familiar from representation theory as a bookkeeping device in the character formula — emerges here as a physical vacuum energy shift forced by the path integral measure.
+
+### 8.7. Connection to a₁ = 0 (Thm M4.1)
+
+On any Riemannian manifold: \(a_1(\Delta_{1/2}) = R/6 + V_{\mathrm{HD}} = 0\) (universal, BB4 THREE-AGENT).
+
+On a Lie group: \(V_{\mathrm{HD}} = -R/6 = -|\rho|^2\). So:
+
+\[a_1 = R/6 - |\rho|^2 = |\rho|^2 - |\rho|^2 = 0\]
+
+The strange formula is precisely the statement that makes \(a_1 = 0\) obvious on Lie groups: the Seeley-DeWitt coefficient and the Casimir shift cancel because they are the same number.
+
+### 8.8. What Is New Here
+
+| Statement | Known? | Our contribution |
+|-----------|--------|-----------------|
+| FdV formula \(|\rho|^2 = \dim \cdot h^\vee/24\) | Yes (1969) | — |
+| \(V_{\mathrm{HD}} = -R/6\) in RNC | Yes (DeWitt 1957, Gilkey 1975) | — |
+| \(V_{\mathrm{HD}}\) constant on Lie groups | Likely known (folklore) | Explicit statement as Prop M0.1 |
+| \(V_{\mathrm{HD}} = -|\rho|^2\) on Lie groups | NOT in literature (critic search) | **New identification** |
+| Physical interpretation: \(|\rho|^2\) = composition ordering cost | **New** | This analysis |
+| FdV as consequence of RNC + bi-invariance | **New proof** | Thm M0.3 (geometric, not algebraic) |
+| Connection composition → FdV → a₁ = 0 chain | **New** | This analysis |
+
+The key novelty is the **physical reading**: the representation-theoretic \(\rho\)-shift has a quantum-mechanical origin in the composition law. This connects Freudenthal-de Vries (1969, pure algebra) to Feynman (1948, path integrals) through the half-density bridge.
+
+### 8.9. Open Questions
+
+**OQ-FdV-1.** Does the identity \(V_{\mathrm{HD}} = -|\rho|^2\) extend to compact symmetric spaces \(G/H\)? On such spaces, V_HD is generally non-constant (BB5 §7). But the SPECTRAL shift might still involve \(|\rho_G|^2 - |\rho_H|^2\). Worth checking on \(\mathbb{CP}^n = \mathrm{SU}(n+1)/\mathrm{U}(n)\).
+
+**OQ-FdV-2.** The large-N scaling \(V_{\mathrm{HD}}(\mathrm{SU}(N)) \sim -N^3/24\) matches the free energy of a matrix model on \(S^3\) (Gross-Witten-Wadia). Is this a coincidence of scaling, or a deeper connection through the heat kernel on SU(N)?
+
+**OQ-FdV-3.** The Weyl denominator \(\prod_{\alpha>0}(e^{\alpha/2}-e^{-\alpha/2})\) equals the Harish-Chandra \(c\)-function, which equals \(|g|^{1/2}\) in radial coordinates on \(G\). The half-density is \(|g|^{1/4}\) = square root of Weyl denominator. Is there a direct proof that \(|g|^{1/4}(-\Delta)|g|^{-1/4}\) shifts by \(-|\rho|^2\) using the Harish-Chandra radial decomposition, without going through RNC?
+
+**Agent status: SINGLE-AGENT (physicist). Needs second agent for promotion.**
+
+---
+
+## Errata (continued)
+
+### E3. V_HD on S^3 coordinate dependence (Mathematician, 2026-02-22)
+
+Part 7, §7.3 (line 762) and §7.4 (line 771) state \(V_{\mathrm{HD}} = -1\) (constant) on \(S^3\).
+This is the RADIAL SECTOR value \(V_{\mathrm{rad}} = -\alpha^2 = -1\) after angular separation,
+NOT the full coordinate V_HD.
+
+**Correction:** The full V_HD on \(S^3\) in geodesic polar \((\chi,\theta,\phi)\) is:
+\[V_{\mathrm{HD}}(\chi,\theta) = -1 - \frac{1}{4\sin^2\!\chi} - \frac{1}{4\sin^2\!\chi\,\sin^2\!\theta}\]
+which is NON-CONSTANT (BB5 §3, self-corrected, FOUR-AGENT verified).
+
+In left-invariant coordinates on \(\mathrm{SU}(2) \cong S^3\): \(V_{\mathrm{HD}} = -R/6 = -1\) (constant, Prop M0.1).
+
+The spectral shift \(l(l{+}2) - (l{+}1)^2 = -1\) remains correct (intrinsic, operator-level).
+The paper (D9.1i, line 1595) already contains the corrected formula.
+
+### E4. D=4 coincidence table correction (Mathematician, 2026-02-22)
+
+Part 7, §7.6 (line 814) lists (iii) \(a_1(x,x) = 0\) as a D=4-specific coincidence.
+
+**Correction:** Theorem M4.1 (BB4, THREE-AGENT) proves \(a_1(\Delta_{1/2}; x) = 0\) UNIVERSALLY
+(all dimensions, all Riemannian manifolds). The cancellation \(V_{\mathrm{HD}}(x) = -R(x)/6\) at the
+RNC center is dimension-independent. Item (iii) should be removed from the D=4 coincidence list.
+
+The genuine D=4 coincidences are (i), (ii), and (iv) only.

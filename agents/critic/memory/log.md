@@ -1,7 +1,12 @@
 # Critic — Activity Log
 
+## 2026-02-22 (Session 14)
+- startup: read agent def, shared rules, kanban, status, motivations, research-state
+- BB5 review: already on board (§11 CR11.1-CR11.9). Filed verdict: patches/critic-bb5-verdict.md
+- BB5 README: updated to FOUR-AGENT, added verdict reference
+- BB4 review (preparation): read Thm M4.1 (a_1=0 universal). Logic correct: RNC + Gilkey a_1 = R/6 + V = 0.
+
 ## 2026-02-22 (Session 13)
-- startup: memory compression, reading shared state
 - D12 convention verification: CLEAN. All §10.6 formulas use 2pi consistently (D12.1, P12.1, P12.2, D12.3, D12.3b).
 - D9.1o analytic upgrade 2nd-agent review: APPROVE. Both mathematician and physicist patches correct.
   - RNC evaluation verified independently (matches my C11.6 from Session 12)

@@ -517,3 +517,12 @@
   - (d-3) factor in a_2: independent algebraic mechanism from alpha(alpha-1)=0
   - wrote: BB4 §10 (computationalist annotation, THREE-AGENT complete)
   - script: tmp/a1_a2_verification.py
+
+## 2026-02-22 (R22 session)
+- startup: read definition, shared-rules, motivations, research-state, status, kanban
+- claimed: BB4 promotion to notebook (kanban task, assigned by orchestrator)
+- promoted: BB4 → notebooks/seeley-dewitt-a1-zero.md
+  - Thm M4.1 (a_1=0 universal), composition chain, physical implications
+  - a_2 closed-form on S^d: -d(d-1)(d-3)/180, vanishes at d=3 only
+  - D=4 coincidence table correction (a_1=0 is universal, not D=4-specific)
+  - THREE-AGENT unanimous (mathematician+physicist+computationalist)
