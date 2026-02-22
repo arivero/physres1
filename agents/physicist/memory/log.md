@@ -23,6 +23,12 @@
 - wrote: BB3 §13 OQ-FdV-1 RESOLVED (negative): V_HD=−|ρ|² does NOT extend to G/H; constancy obstruction
   - S² = SU(2)/U(1) witness: V_HD non-constant, no FdV extension
   - Lie groups genuinely special due to bi-invariance → constancy chain
+- checked: D9.1i paper text already correct (SEV-2 was fixed in prior session)
+- wrote: BB2 §9 fifth D=4 coincidence: a₂(S³)=0 + de Sitter partition function
+  - half-density scalar cleanest on S³: no R or R² corrections to one-loop action
+  - radius log-scaling is volume-only (no ξ running with curvature)
+  - comparison: minimal (a₁=R/6) and conformal (a₁=R/24) both worse
+  - 3 new open questions: a₃ value, (d-3) geometric origin, S⁴ vs S³ Hamiltonian/Lagrangian
 
 ## Key verdicts still relevant
 - V_HD formula -(d-1)R/(4d) is NOVEL (no direct literature hit)

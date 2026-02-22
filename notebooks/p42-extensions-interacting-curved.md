@@ -1149,3 +1149,104 @@ This means \(\Delta_{1/2}|_{\mathrm{class}} = -\Delta_T\) on the interior of a W
 The physicist's analysis is mathematically sound. The connections between V_HD, the FdV strange formula, the Casimir shift, and a₁ = 0 are correctly drawn. The novelty claims are mostly accurate (with the caveat in R8.6). The open questions are well-posed.
 
 **STATUS: TWO-AGENT (physicist + mathematician). APPROVED.**
+
+---
+
+## Part 9: The Fourth D=4 Coincidence — V_HD on de Sitter Spatial Sections (2026-02-22)
+
+**Promoted from:** Blackboard 2 (physicist §§1-6, mathematician §7, critic §8)
+**Consensus:** THREE-AGENT (physicist + mathematician + critic), unanimous approve
+
+### 9.1. Statement
+
+On \(S^{D-1}\) (the spatial section of \(D\)-dimensional de Sitter spacetime),
+\(V_{\mathrm{HD}}\) is constant (in geodesic radial coordinates) iff \(D = 4\).
+
+**Proof.** From the general \(S^d\) formula (Part 7, §7.2):
+\[V_{\mathrm{HD}}^{S^d}(r) = -\alpha^2 + \frac{\alpha(\alpha-1)}{\sin^2 r}, \qquad \alpha = \frac{d-1}{2}.\]
+Constant iff \(\alpha(\alpha-1) = 0\), i.e., \(d = 1\) (trivial, \(S^1\)) or \(d = 3\) (nontrivial, \(S^3\)).
+Setting \(d = D - 1\): \(D = 4\). \(\square\)
+
+**Caveat (BB5 correction, E3):** This constancy refers to the RADIAL sector \(V_{\mathrm{rad}}\).
+The full \(V_{\mathrm{HD}}\) on \(S^3\) in geodesic polar coordinates is non-constant
+(\(-1 - 1/(4\sin^2\chi) - 1/(4\sin^2\chi\sin^2\theta)\)). The SPECTRAL shift
+\(l(l{+}2) - (l{+}1)^2 = -1\) is constant and intrinsic (operator-level, coordinate-independent).
+In left-invariant coordinates on \(\mathrm{SU}(2) \cong S^3\), \(V_{\mathrm{HD}} = -R/6 = -1\) is globally constant (Prop M0.1).
+
+### 9.2. Physical Interpretation
+
+On \(S^3\) (\(D = 4\)):
+- Half-density Hamiltonian: \(\widetilde{H} = H_L - 1\) (uniform shift).
+- Eigenstates: SAME spherical harmonics as \(-\Delta_{S^3}\).
+- Eigenvalues: \(l(l{+}2) = (l{+}1)^2 - 1\).
+- **The ordering prescription is a pure vacuum energy shift — no spectral distortion.**
+
+On \(S^2\) (\(D = 3\)):
+- \(V_{\mathrm{HD}}\) is position-dependent: \(-1/4 - 1/(4\sin^2\theta)\).
+- Eigenstates of \(\widetilde{H}\) differ from those of \(-\Delta_{S^2}\): \((\sin\theta)^{1/2}Y_l^m\) vs \(Y_l^m\).
+- **The ordering prescription genuinely changes the eigenfunctions.**
+
+On \(S^{D-1}\) for \(D > 4\):
+- \(V_{\mathrm{HD}}\) has a position-dependent divergence near the poles (\(\propto 1/\sin^2 r\)).
+- The half-density ordering produces a nontrivial potential well that distorts the spectrum.
+
+**Physical restatement:** In \(D = 4\) de Sitter QFT, the compositionally forced ordering on the
+spatial section \(S^3\) produces no position-dependent correction — only a vacuum energy shift.
+The half-density measure is maximally compatible with the sphere's homogeneity.
+
+### 9.3. Independence from Other D=4 Coincidences
+
+**Corrected table** (supersedes Part 7 §7.6 and the OQ1a notebook table):
+
+| # | Coincidence | Source | Type | D=4 specific? |
+|---|---|---|---|---|
+| (i) | \((\partial\sigma)^2\) coupling vanishes | HD-D1.3a | Conformal-class | YES |
+| (ii) | \(\xi_{\mathrm{eff}} = \xi_{\mathrm{conf}} = 1/6\) | HD-D1.3b | All metrics | YES |
+| ~~(iii)~~ | ~~\(a_1 = 0\)~~ | ~~Seeley-DeWitt~~ | | **REMOVED: universal (Thm M4.1)** |
+| (iv) | \(V_{\mathrm{HD}}\) on \(S^{D-1}\) constant spectral shift | BB2/BB4/BB6 | Eigenvalue structure | YES |
+
+**Independence proof.** Could (iv) follow from (ii)?
+In spatial dimension \(d = D - 1\):
+- Conformal coupling: \(\xi_c = (d{-}2)/(4(d{-}1))\).
+- Half-density coupling: \(V_{\mathrm{HD,const}}/R = -(d{-}1)/(4d)\).
+Setting equal: \((d{-}2)/(4(d{-}1)) = (d{-}1)/(4d)\), i.e., \(d(d{-}2) = (d{-}1)^2\), i.e., \(2d^2 - 4d + 1 = 0\).
+Roots: \(d = (4 \pm \sqrt{8})/4 \approx 1.71, 0.29\). No integer solutions.
+**Independence CONFIRMED.** (Critic C8.3.)
+
+### 9.4. Why S^3 Is Special
+
+\(S^3 = \mathrm{SU}(2)\) is the unique compact simple Lie group that is also a round sphere.
+
+On \(\mathrm{SU}(2)\): Prop M0.1 (bi-invariance \(\Rightarrow\) constancy) + Thm M0.3 (\(V_{\mathrm{HD}} = -R/6\)):
+\(V_{\mathrm{HD}} = -|\rho|^2_g = -1/4\) (ON metric \(g = -2\,\mathrm{Tr}\)).
+Freudenthal-de Vries: \(|\rho|^2 = \dim(\mathrm{SU}(2)) \cdot h^\vee / 24 = 3 \cdot 2/24 = 1/4\). MATCH.
+
+For unit \(S^3\) (\(R = 6\)): \(V_{\mathrm{HD}} = -R/6 = -1\). The spectral shift is \(-4|\rho|^2_{\mathrm{FdV}} = -1\).
+
+**SU(2) is special because it combines:**
+1. Bi-invariance \(\Rightarrow V_{\mathrm{HD}}\) constant (Prop M0.1)
+2. Constant sectional curvature (round sphere)
+3. \(d = 3\): \(\alpha(\alpha-1) = 0\) (radial constancy)
+
+No other compact simple Lie group has properties (2)-(3).
+
+### 9.5. Summary
+
+The fourth D=4 coincidence adds to the project's evidence that spatial dimension \(d = 3\)
+(spacetime \(D = 4\)) is selected by half-density constraints:
+
+1. **\(\xi = \xi_c\)** only at \(D = 4\) (conformal coupling = composition coupling).
+2. **\((\partial\sigma)^2\) cancellation** only at \(D = 4\) (conformal class).
+3. **Spectral uniformity of V_HD on \(S^{D-1}\)** only at \(D = 4\).
+4. **\(a_2(S^d) = 0\)** only at \(d = 3\) (seeley-dewitt-a1-zero.md §5-6).
+
+These are algebraically independent dimension-selection mechanisms, all pointing to \(d = 3\).
+
+### 9.6. Agent Verification Status
+
+| Claim | Status | Agents |
+|---|---|---|
+| Constancy iff D=4 | THREE-AGENT | physicist + mathematician + critic |
+| Independence from (i)-(ii) | THREE-AGENT | physicist + mathematician + critic |
+| Corrected table ((iii) universal) | THREE-AGENT | mathematician + physicist + computationalist (BB4) |
+| SU(2) = S^3 Weyl vector | TWO-AGENT | physicist + mathematician (SU(2) verified, general G partial) |

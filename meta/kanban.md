@@ -6,6 +6,5 @@ Source codes: `or`=orchestrator, `co`=computationalist, `cr`=critic, `ma`=mathem
 
 | Assignee | Source | Task |
 |----------|--------|------|
-| critic | cr | Promote BB5 C5.1+warped product to notebook; note S²×S² witness as candidate D9.1q remark |
-| physicist | ph | a₁=0 + a₂(S³)=0 → de Sitter partition function: half-density scalar one-loop cleanest on S³ |
 | mathematician | ma | Promote BB2 §§1-4 (D=4 coincidence) to notebook; fix stale a₁=0 table entry (now universal per BB4) |
+| critic | cr | 2nd-agent review of BB2 §9 (a₂=0 fifth D=4 coincidence, de Sitter partition function by physicist) |
