@@ -150,7 +150,7 @@ The \(O(\alpha_0)\) term is a constant (\(q\)-independent) shift affecting all e
 **Numerical estimate (GaAs quantum well parameters):**
 - \(\hbar\omega \sim 10\) meV, \(m^* \approx 0.067\,m_e\), oscillator length \(a \approx 10\) nm,
 - \(\alpha_0 \sim 0.1\)–\(0.3\) (dimensionless; corresponding to \(\alpha \sim 0.001\)–\(0.003\) nm\(^{-2}\)),
-- \(|\delta(E_1 - E_0)| \sim \hbar\omega\,\alpha_0^2/16 \sim 0.006\)–\(0.06\) meV.
+- \(\lvert\delta(E_1 - E_0)\rvert \sim \hbar\omega\,\alpha_0^2/16 \sim 0.006\)–\(0.06\) meV.
 
 This is **below** typical experimental energy resolution (\(\sim 0.1\) meV), confirming that Layer 3 differences are **physically unmeasurable** in this system for spectroscopic observables. (The absolute energy shift \(\alpha_0\hbar\omega/4 \sim 0.25\)–\(0.75\) meV is larger but spectroscopically irrelevant since it is level-independent.)
 
@@ -205,7 +205,7 @@ This is the leading short-time correction to the free heat kernel on a curved ma
 **Proposition OE-P1.3 (Geometric prescriptions agree on Layers 1 and 2).**
 On a Riemannian configuration space, geometric quantization prescriptions (half-density, Weyl-type, etc.) all produce:
 1. **Layer 1:** The same classical Hamiltonian \(g^{ij}p_ip_j/(2m) + V(q)\).
-2. **Layer 2:** Connection terms proportional to \(\partial_i g^{ij}\) and \(\partial_i\ln|g|\), differing only by scheme-dependent numerical coefficients.
+2. **Layer 2:** Connection terms proportional to \(\partial_i g^{ij}\) and \(\partial_i\ln\lvert g\rvert\), differing only by scheme-dependent numerical coefficients.
 3. **Layer 3:** Curvature-dependent scalar potentials proportional to \(R(q)\), with prescription-dependent coefficients (e.g., \(1/6\) for half-density).
 
 ## 4.4 Heat Kernel and Van Vleck Determinant

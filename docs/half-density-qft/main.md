@@ -13,7 +13,7 @@ abstract: |
 # 1. Purpose and Scope
 This note is intentionally narrow:
 1. establish the “kernel as bi-half-density” semantics for spacetime propagators in QFT,
-2. isolate what is **canonical** (half-density kernels, identity delta kernel) versus what is **a convention** (scalarization choices such as \(\sqrt{|g|}\)),
+2. isolate what is **canonical** (half-density kernels, identity delta kernel) versus what is **a convention** (scalarization choices such as \(\sqrt{\lvert g\rvert}\)),
 3. give one explicit computation that can later be promoted (densitized scalar field).
 
 BV/BRST/field-space half-densities are only flagged as outlook here; a full treatment would require additional dedicated sources and is beyond scope.
@@ -123,7 +123,7 @@ so the kinetic operator \(\widetilde P_{\mathrm{kin}}=-\widetilde\Delta\) contai
 Scope disclaimer: this is recorded only as a checked simplification for \(\widetilde\Delta\) in this metric class; it is not, by itself, a dimension-selection claim or a conformal-invariance statement. A symbolic coefficient/sign check (SymPy) confirms the expansion.
 
 Interpretation:
-- the metric half-density \(|g|^{1/4}|dx|^{1/2}\) is a **scalarization gauge** (a choice of reference half-density) on a fixed background,
+- the metric half-density \(\lvert g\rvert^{1/4}\lvert dx\rvert^{1/2}\) is a **scalarization gauge** (a choice of reference half-density) on a fixed background,
 - writing the field as \(\psi\) makes the "half-density prioritary" viewpoint explicit: both the field and the kernels live naturally as half-density objects.
 
 `Remark HD-D1.3a (Half-density conjugation is distinct from conformal coupling).`

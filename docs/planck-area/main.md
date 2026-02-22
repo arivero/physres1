@@ -382,7 +382,7 @@ If we take “background-free” in the strong sense “no additional structure 
 
 `Derivation PA-D1.8 (Three natural families of \(\sigma_\ast\) and what they mean).`
 On a configuration space \(M\), the common ways to choose a reference half-density are:
-1. **Flat/affine choice (when available):** on \(\mathbb R^d\) with its affine structure, translation invariance picks \(|dx|^{1/2}\) uniquely up to a constant factor. This is “constant” in the sense of being homogeneous under translations.
+1. **Flat/affine choice (when available):** on \(\mathbb R^d\) with its affine structure, translation invariance picks \(\lvert dx\rvert^{1/2}\) uniquely up to a constant factor. This is “constant” in the sense of being homogeneous under translations.
 2. **Metric-derived choice:** given a Riemannian/Lorentzian metric \(g\), one can take
    \(\sigma_g := |g|^{1/4}|dx|^{1/2}\),
    so that \(\rho_g=\sigma_g^2=\sqrt{|g|}\,|dx|\) is the familiar invariant volume density. This makes the scalar representative \(f\) a genuine scalar field but makes the scalarization depend on background geometry.
