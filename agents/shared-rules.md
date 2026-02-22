@@ -75,13 +75,13 @@ before starting substantive work.
   operation in your runtime to
   add a task for someone else (e.g. "Computationalist should verify X"). Leave it
   unclaimed — another agent or the orchestrator will pick it up.
-- After completing a task, immediately look for the next one (task board or self-direct).
-- **If the kanban becomes empty mid-session: STOP.** Save memory, message orchestrator
-  "kanban empty — ready to terminate", then wait. Do NOT invent tasks or self-direct.
-  Empty kanban mid-session = orchestrator has cleared the board = session ending.
-- **If the kanban was empty at session start** (before you did any work): you may
-  propose one task with "self: <topic>" and wait for orchestrator go. If no go arrives,
-  stop. Alternatives: visit the library, review a notebook, or Philosophenweg.
+- After completing a task, immediately look for the next one on the kanban.
+- **Orchestrator signals.** The kanban may contain a row from `or` (orchestrator)
+  with one of these commands. Obey immediately:
+  - **GOOD DAY** — session open, work normally (claim tasks, self-direct).
+  - **DO SUGGESTIONS** — propose tasks only ("self: <topic>"), do NOT start work.
+  - **STOP JOB** — session over. Save memory, approve any pending shutdown_request,
+    terminate. Do NOT start new work, do NOT propose tasks.
 
 ### Messaging — Minimal Context Protocol
 
