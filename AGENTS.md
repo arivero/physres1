@@ -118,7 +118,7 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 ```
 
 - **Assignee** = who is currently executing this task. An agent self-assigns by writing their own name.
-- **Source** = who suggested it (provenance only).
+- **Source** = who suggested it (provenance only). **Two-letter code only:** `or`=orchestrator, `co`=computationalist, `cr`=critic, `ma`=mathematician, `ph`=physicist, `st`=student.
 - **Assignee empty** = open / anyone can claim it by self-assigning.
 - **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive. **Only the orchestrator deletes rows** — agents report completion via `done:` message, orchestrator removes the row immediately. This prevents concurrent-write conflicts. **Orchestrator obligation:** delete the kanban row as the FIRST action on receiving any `done:` message. Do NOT edit the row in place. Delete the old row; if a follow-up task exists, add a NEW row separately.
 
