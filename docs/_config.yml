@@ -1,7 +1,7 @@
 title: "Physics Research Notes"
 description: "Companion papers — A. Rivero and A.I.Scaffold"
 theme: minima
-markdown: kramdown
+markdown: CommonMarkGhPages
 minima:
   nav_pages:
     - about.md
