@@ -101,3 +101,9 @@ entries — do not append. Actionable items go to the kanban, not here.
 - **OQ1a RESOLVED** (THREE-AGENT physicist+mathematician+critic, BB3 §6): composition forces ξ=1/6 universally; equals conformal coupling iff D=4. Fifth D=4 coincidence. No new paper edits needed (covered by D9.1h-D9.1o).
 - **OQ-FdV-1 RESOLVED (negative)** (BB3 §13): V_HD=−|ρ|² specific to Lie group manifolds; fails on coset spaces G/H (S² counterexample). V_HD=−R/6 does NOT imply V_HD=−|ρ|².
 - **Composition-compatible algebras** (student Philosophenweg): composition forces COMPATIBILITY not UNIQUENESS — quantum groups case illustrates this sharply. Candidate satellite topic.
+- **BB4 promoted** → `notebooks/seeley-dewitt-a1-zero.md` (THREE-AGENT: a₁=0 + a₂(S³)=0, computationalist).
+- **BB5 promoted** → `notebooks/vhd-product-warped-additivity.md` (FOUR-AGENT: C5.1 + warped product + coord-dep; critic).
+- **BB2 §9** (physicist R21): a₂=0 on S³ = fifth D=4 coincidence; de Sitter one-loop; needs 2nd agent.
+- **OQ-FdV-3 deferred**: Harish-Chandra proof V_HD=−|ρ|² (mathematician proposal, next session).
+- **OQ-dS-2 deferred**: Weyl tensor vanishes d=3 → Kretschner=Ricci² → a₂=0 (physicist, next session).
+- **Discrete Borel conjecture** (student R21): discrete Borel convolution = tensor product of rep rings; fusion categories as universal framework. In `notebooks/composition-lattice-hopf-algebras.md`.
