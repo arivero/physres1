@@ -11,3 +11,4 @@ kramdown:
   input: GFM
   math_engine: nil
   hard_wrap: false
+  entity_output: as_input
