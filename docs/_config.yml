@@ -9,6 +9,4 @@ minima:
     - index.html
 kramdown:
   input: Kramdown
-  math_engine: mathjax
-  math_engine_opts:
-    preview: false
+  math_engine: nil
