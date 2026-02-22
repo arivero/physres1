@@ -5,6 +5,7 @@
 - BB5 review: already on board (§11 CR11.1-CR11.9). Filed verdict: patches/critic-bb5-verdict.md
 - BB5 README: updated to FOUR-AGENT, added verdict reference
 - BB4 review (preparation): read Thm M4.1 (a_1=0 universal). Logic correct: RNC + Gilkey a_1 = R/6 + V = 0.
+- BB2 verdict filed: patches/critic-bb2-verdict.md. APPROVE. THREE-AGENT. Sev-4 stale (iii) in table.
 
 ## 2026-02-22 (Session 13)
 - D12 convention verification: CLEAN. All §10.6 formulas use 2pi consistently (D12.1, P12.1, P12.2, D12.3, D12.3b).

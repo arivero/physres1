@@ -1076,3 +1076,76 @@ Part 7, §7.6 (line 814) lists (iii) \(a_1(x,x) = 0\) as a D=4-specific coincide
 RNC center is dimension-independent. Item (iii) should be removed from the D=4 coincidence list.
 
 The genuine D=4 coincidences are (i), (ii), and (iv) only.
+
+---
+
+## Part 8 Review: Mathematician Second-Agent Assessment (2026-02-22)
+
+### R8.1. Identity V_HD = -R/6 = -|ρ|²_g (§8.1): VERIFIED.
+
+Two independent chains:
+- Geometric: RNC expansion \(\Rightarrow V_{\mathrm{HD}}(p) = -R(p)/6\) (standard) + bi-invariance \(\Rightarrow\) constancy (Prop M0.1) \(\Rightarrow V_{\mathrm{HD}} = -R/6\) globally (Thm M0.3).
+- Algebraic: Freudenthal-de Vries (1969) \(\Rightarrow |\rho|^2 = \dim(G)\cdot h^\vee/24 = R/6\) for bi-invariant metric with Cartan-Killing normalization.
+
+The identity holds because both sides equal \(R/6\). Verified numerically for SU(2,3,4) (Part 8.3 table). No errors.
+
+### R8.2. Curvature formula R(X,Y)Z = -[X,Y],Z]/4 (§8.2): CORRECT.
+
+Standard result for bi-invariant metrics (Milnor 1976, do Carmo-Wallach). The scalar curvature follows: on a compact semisimple Lie group with metric \(g = -c\,B\) (Killing form, \(c > 0\)):
+\[R = \frac{\dim(G)}{4c}.\]
+Combined with FdV: \(R/6 = \dim/(24c)\). For \(g = -2\,\mathrm{Tr}_{\mathrm{fund}}\) on \(\mathrm{SU}(N)\), using \(B = -2N\,\mathrm{Tr}_{\mathrm{fund}}\), we get \(c = 1/N\), hence \(R = N\dim(\mathrm{SU}(N))/4 = N(N^2-1)/4\), and \(R/6 = N(N^2-1)/24 = \dim\cdot h^\vee/24\) (since \(h^\vee = N\)). CHECK.
+
+### R8.3. Casimir shift spectrum (§8.3): VERIFIED with precision.
+
+The formula \(C_2(\lambda) = |\lambda + \rho|^2 - |\rho|^2\) is the standard Freudenthal formula. The spectral shift by \(-|\rho|^2\) giving \(\mathrm{Spec}(\Delta_{1/2}) = \{|\lambda+\rho|^2 - 2|\rho|^2\}\) follows immediately.
+
+**Precision note:** The physicist writes "\(\mathrm{Spec}(\Delta_{1/2}) = \{C_2(\lambda) + V_{\mathrm{HD}}\}\)" which requires that \(\Delta_{1/2}\) and \(-\Delta_g\) have the same eigenfunctions. This is true because \(V_{\mathrm{HD}}\) is constant on the Lie group (Prop M0.1), so adding a constant doesn't change eigenfunctions. The argument is valid.
+
+### R8.4. "Why 24" (§8.4): CORRECT and illuminating.
+
+The factorization 24 = 4 × 6 is a genuine structural explanation:
+- 4 from \(R(X,Y)Z = -\frac{1}{4}[{[X,Y]},Z]\) (geometric factor in curvature of bi-invariant metrics).
+- 6 from \(|g|^{-1/4} = 1 + \frac{1}{12}R_{ij}x^ix^j + \ldots\), with \(\Delta\) doubling the \(1/12\) to \(1/6\).
+
+This resolves the "strangeness" of the FdV formula by decomposing it into two standard geometric steps.
+
+### R8.5. Connection to a₁ = 0 (§8.7): CORRECT.
+
+On Lie groups, a₁ = R/6 + V_HD = |ρ|² - |ρ|² = 0. This is a special case of Thm M4.1, but on Lie groups the FdV formula makes the cancellation transparent: both terms equal |ρ|².
+
+### R8.6. Novelty assessment (§8.8): PARTIALLY AGREE.
+
+| Claim | Assessment |
+|-------|------------|
+| \(V_{\mathrm{HD}} = -|\rho|^2\) identification | Likely new (not in standard references I know) |
+| Physical interpretation as ordering cost | New |
+| Geometric proof of FdV via RNC + M0.1 | New proof route (FdV originally proved algebraically) |
+| 24 = 4 × 6 decomposition | New presentation |
+
+**Caveat:** The geometric proof (Thm M0.3) proves V_HD = -R/6 on Lie groups. The step from R/6 to |ρ|² still uses the algebraic FdV formula. So the claim "geometric, not algebraic" in §8.8 is slightly overstated: the V_HD = -R/6 part is geometric; the R/6 = |ρ|² part remains algebraic (FdV). A fully geometric proof would need to show |ρ|² = R/6 without the Weyl character formula.
+
+### R8.7. OQ-FdV-3 (§8.9): PARTIAL ANSWER AVAILABLE.
+
+The Harish-Chandra radial decomposition gives, for class functions on \(G\):
+\[-\Delta_G f = J^{-1}(-\Delta_T)(Jf)\]
+where \(J\) is the Weyl denominator and \(\Delta_T\) is the Laplacian on the maximal torus.
+
+The Weyl integration formula gives \(|g|^{1/2} = |J|^2\) (up to a constant), so \(|g|^{1/4} = |J|\).
+
+Half-density conjugation on class functions:
+\[\Delta_{1/2}|_{\mathrm{class}} = |J| \circ J^{-1}(-\Delta_T) J \circ |J|^{-1}\]
+
+Writing \(\varepsilon = J/|J| = \mathrm{sign}(J)\) (piecewise constant on Weyl chambers), and noting \(|J|J^{-1} = \varepsilon^{-1} = \varepsilon\) (since \(\varepsilon^2 = 1\)):
+\[\Delta_{1/2}|_{\mathrm{class}} = \varepsilon \circ (-\Delta_T) \circ \varepsilon\]
+
+Since \(\varepsilon\) is piecewise constant (constant on the interior of each Weyl chamber), \(\varepsilon(-\Delta_T)\varepsilon = -\Delta_T\) on smooth functions within a chamber.
+
+This means \(\Delta_{1/2}|_{\mathrm{class}} = -\Delta_T\) on the interior of a Weyl chamber, and the spectrum is \(\{|\mu|^2 : \mu \in \Lambda_W\}\) with appropriate boundary conditions. This recovers V_HD = -|ρ|² as the shift between \(-\Delta_G\) eigenvalues \(|λ+ρ|^2 - |ρ|^2\) and \(-\Delta_T\) eigenvalues \(|λ+ρ|^2\), without using RNC.
+
+**Status: sketch-level argument, not a complete proof.** The boundary conditions at Weyl chamber walls need careful treatment. But the approach is viable and answers OQ-FdV-3 affirmatively at the sketch level.
+
+### R8.8. Overall verdict: APPROVE.
+
+The physicist's analysis is mathematically sound. The connections between V_HD, the FdV strange formula, the Casimir shift, and a₁ = 0 are correctly drawn. The novelty claims are mostly accurate (with the caveat in R8.6). The open questions are well-posed.
+
+**STATUS: TWO-AGENT (physicist + mathematician). APPROVED.**

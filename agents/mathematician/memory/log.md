@@ -38,4 +38,6 @@
 - BB5 third-agent review: §10 appended (M10.1-M10.6), THREE-AGENT unanimous
 - a_1=0 theorem (Thm M4.1): written to BB4, SINGLE-AGENT, awaiting review
 - BB5 3rd-agent review (§12): C5.1 product additivity, warped product, S^3 correction all verified. APPROVE. THREE-AGENT unanimous.
-- BB4 promotion to notebook: claimed, awaiting orchestrator go
+- BB4 promotion to notebook: claimed, redirected to computationalist
+- Errata E3+E4 appended to p42-extensions notebook (V_HD S^3 + D=4 table corrections)
+- Part 8 (FdV Strange Formula) 2nd-agent review: APPROVE (TWO-AGENT). OQ-FdV-3 sketch via HC.
