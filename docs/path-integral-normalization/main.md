@@ -14,7 +14,7 @@ The prefactor \((m/2\pi\hbar t)^{d/2}\) in the free-particle path-integral kerne
 
 The same exponent governs four apparently distinct settings:
 1. **Path-integral temporal composition** (Section 2): Free kernel \(K(x,y;t) \sim (m/2\pi\hbar t)^{d/2}\exp(iS_0/\hbar)\).
-2. **Heat-kernel diffusion** (Section 5): Euclidean kernel \(H(x,y;\tau) \sim (m/2\pi\hbar\tau)^{d/2}\exp(-m|x-y|^2/2\hbar\tau)\).
+2. **Heat-kernel diffusion** (Section 5): Euclidean kernel \(H(x,y;\tau) \sim (m/2\pi\hbar\tau)^{d/2}\exp(-m\lvert x-y\rvert^2/2\hbar\tau)\).
 3. **Van Vleck determinant in curved space** (Section 4): Prefactor \((m/2\pi\hbar t)^{d/2}\Delta^{1/2}(x,y)\) with geometric factor \(\Delta\) independent of \(d\).
 4. **Renormalization thresholds** (Section 6): Point-interaction divergence at \(d\ge 2\) from integral \(\int_0^\infty t^{-d/2}dt\).
 

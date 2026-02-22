@@ -7,5 +7,5 @@ commonmark:
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
   math_engine: nil
 kramdown:
-  input: GFM
+  input: Kramdown
   math_engine: nil
