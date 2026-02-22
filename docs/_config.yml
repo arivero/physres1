@@ -10,3 +10,4 @@ minima:
 kramdown:
   input: GFM
   math_engine: nil
+  hard_wrap: false
