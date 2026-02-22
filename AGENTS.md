@@ -502,11 +502,13 @@ loop:
 
 **Termination via kanban:** The orchestrator signals session end by deleting all kanban rows. An agent whose row disappears (without a "done:" from themselves) must treat this as a shutdown signal: save memory and terminate. Agents should check whether their kanban row still exists at the start of each loop iteration.
 
-**Coordination model:** agents announce their intent and wait for the orchestrator's sync signal before proceeding. The orchestrator replies quickly — either confirming ("go") or redirecting ("do X instead" / "end of day" / shutdown). This is coordination, not permission: the agent has already decided what to do and is informing the orchestrator, who can steer if needed.
+**Coordination model:** agents announce their intent and wait for the orchestrator's sync signal before proceeding. The orchestrator either approves (adds/updates the kanban row) or redirects ("do X instead" / "end of day" / shutdown). This is coordination, not permission: the agent has already decided what to do and is informing the orchestrator, who can steer if needed.
 
-**Orchestrator obligation:** reply to every `self: <topic>` announcement — either "go" or a redirect. This is the mechanism that makes end-of-day work: the orchestrator says "end of day" instead of "go", and the agent stops.
+> **CRITICAL: The kanban edit IS the "go" signal — nothing else is.** When an agent announces `self: <topic>`, the orchestrator approves by adding the row to the kanban. The agent must watch the kanban, not wait for a chat message. A chat reply from the orchestrator is NOT a start signal. Only seeing your own row appear in `meta/kanban.md` means you are cleared to execute.
 
-**Starting without "go" = protocol violation.** If two agents both announce the same topic before either receives "go", the orchestrator assigns one and redirects the other. Starting work before the orchestrator confirms wastes compute and produces duplicate output.
+**Orchestrator obligation:** respond to every `self: <topic>` announcement — either add the task to the kanban (approval) or send a redirect message. This is the mechanism that makes end-of-day work: the orchestrator simply does not add the row, and the agent cannot start.
+
+**Starting without a kanban row = protocol violation.** If two agents both announce the same topic, the orchestrator adds one row and redirects the other. Starting work before your row appears in the kanban wastes compute and produces duplicate output.
 
 **Orchestrator startup rule:** the orchestrator MUST populate and commit the kanban BEFORE spawning any agents. Agents read the kanban immediately on startup; an empty kanban forces all agents to self-direct simultaneously, causing duplicate work.
 
