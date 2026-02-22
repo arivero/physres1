@@ -6,3 +6,5 @@ Source codes: `or`=orchestrator, `co`=computationalist, `cr`=critic, `ma`=mathem
 
 | Assignee | Source | Task |
 |----------|--------|------|
+| physicist | ph | ALL a_k(Δ_{1/2}; S³)=0 for k≥1 — Kluth-Litim generating function proof; write to BB |
+| — | or | GOOD DAY. DO SUGGESTIONS. STOP JOB. |
