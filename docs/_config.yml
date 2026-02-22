@@ -6,6 +6,7 @@ minima:
   nav_pages:
     - about.md
     - portfolio.md
+    - index.html
 kramdown:
   input: Kramdown
   math_engine: mathjax
