@@ -76,11 +76,12 @@ before starting substantive work.
   add a task for someone else (e.g. "Computationalist should verify X"). Leave it
   unclaimed — another agent or the orchestrator will pick it up.
 - After completing a task, immediately look for the next one (task board or self-direct).
-- **If the kanban is empty or nothing interests you: SELF-DIRECT.** Invent your own
-  research question from `meta/motivations.md`, blackboards, or your curiosity.
-  Message the orchestrator with "self: <topic>" and wait for assignment.
-  Alternatives: visit the library, review a notebook, or take a Philosophenweg.
-  **Do NOT go idle waiting for the orchestrator to assign work — suggest something.**
+- **If the kanban becomes empty mid-session: STOP.** Save memory, message orchestrator
+  "kanban empty — ready to terminate", then wait. Do NOT invent tasks or self-direct.
+  Empty kanban mid-session = orchestrator has cleared the board = session ending.
+- **If the kanban was empty at session start** (before you did any work): you may
+  propose one task with "self: <topic>" and wait for orchestrator go. If no go arrives,
+  stop. Alternatives: visit the library, review a notebook, or Philosophenweg.
 
 ### Messaging — Minimal Context Protocol
 
