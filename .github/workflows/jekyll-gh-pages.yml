@@ -33,14 +33,11 @@ jobs:
       - name: Fix backslash math delimiters
         run: |
           grep -rl '^math: backslash' --include='*.md' . | while read f; do
-            sed -i \
-            -e 's/\\\(/\\\\(/g' \
-            -e 's/\\\)/\\\\)/g' \
-            -e 's/\\\[/\\\\[/g' \
-            -e 's/\\\]/\\\\]/g' \
+            sed -E -i \
+            -e 's/\\(\(|\)|\[|\])/\\\\\1/g' \
             "$f"
           done
-        
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
