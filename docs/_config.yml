@@ -4,6 +4,8 @@ theme: minima
 markdown: kramdown
 minima:
   nav_pages:
+    - about.md
+    - portfolio.md
 kramdown:
   input: Kramdown
   math_engine: mathjax
