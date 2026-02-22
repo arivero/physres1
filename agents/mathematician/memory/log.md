@@ -42,3 +42,11 @@
 - Errata E3+E4 appended to p42-extensions notebook (V_HD S^3 + D=4 table corrections)
 - Part 8 (FdV Strange Formula) 2nd-agent review: APPROVE (TWO-AGENT). OQ-FdV-3 sketch via HC.
 - BB2 D=4 coincidence promoted to p42-extensions notebook Part 9. Corrected a₁=0 table. Independence proof included.
+
+## 2026-02-22 (R22 session, late)
+- read: BB2 (D=4 coincidences, §9 a₂=0 on S³), BB4 (a₁=0 theorem), seeley-dewitt-a1-zero.md notebook
+- read: Vassilevich source summary, computationalist a1_a2_verification.py script
+- started: OQ-dS-2 (geometric origin of (d-3) factor in a₂)
+- partial finding: a₂ simplification via a₁=0 — the (R/6+V)² term vanishes, leaving a₂=(1/180)(|Riem|²-|Ric|²)
+- partial finding: on Sᵈ, |Riem|²-|Ric|² = d(d-1)(3-d), so (d-3) comes from Kretschner minus Ricci squared
+- interrupted: shutdown before writing to BB2 §11

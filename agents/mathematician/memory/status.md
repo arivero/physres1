@@ -3,12 +3,14 @@
 ## Current state (2026-02-22, updated mid-session)
 
 ### Resume point
-- BB5: 3rd-agent review DONE (§12, FOUR-AGENT unanimous)
-- Part 8 FdV Strange Formula: 2nd-agent review DONE (TWO-AGENT approved). OQ-FdV-3 sketch in R8.7.
-- BB2 D=4 coincidence: PROMOTED to p42-extensions notebook Part 9
-- Errata E3+E4 appended to p42-extensions notebook
-- BB4 a_1=0: THREE-AGENT, promoted to seeley-dewitt-a1-zero.md (by computationalist)
-- Awaiting orchestrator on OQ-dS-2 or OQ-FdV-3
+- OQ-dS-2 IN PROGRESS (interrupted by shutdown): (d-3) factor in a₂ geometric origin
+- Key partial finding: for half-density Laplacian, V_eff = -R/6 (intrinsic), so a₁=0 means (R/6+V)²=0
+- The Gilkey formula for a₂ with V=-R/6 simplifies: the R² and V² and RV terms cancel exactly
+- Result: a₂(Δ_{1/2};Sᵈ) = (1/180)(|Riem|²-|Ric|²) = d(d-1)(3-d)/180. The (d-3) factor IS the Kretschner-Ricci combination
+- Need to complete: Weyl tensor decomposition showing |Riem|²-|Ric|² = |Weyl|²+f(d)·R² where f vanishes at d=3
+- BB4 formula issue: the a₂ formula in BB4 §1 uses wrong sign for ΔV term vs Vassilevich (irrelevant on Sᵈ where ΔV=0)
+- Computationalist script tmp/a1_a2_verification.py confirms -d(d-1)(d-3)/180 numerically
+- Previous resume items all still valid (BB5, Part 8, BB2 promoted, BB4 promoted)
 
 ### Key completed results (promoted/merged)
 - P4.2 uniqueness: 1 axiom (composition) + setup. Hypothesis reduction complete (notebook Parts 1-7)

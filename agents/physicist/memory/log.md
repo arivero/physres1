@@ -39,6 +39,12 @@
   - Slogan: "composition protects spatial vacuum; spacetime curvature reintroduces anomaly"
   - 3 open questions: OQ-dS-3a (general static S³ spatial), OQ-dS-3b (SdS), OQ-dS-3c (Dirac)
 
+- DISCOVERY (during library browsing): ALL a_k(Δ_{1/2}; S³) = 0 for k≥1
+  - Kluth-Litim arXiv:1910.00543: κ_n(d=3) = δ_{n,0} from B_{2n+1}(1) = 0
+  - Their "special endomorphism" Ē = (1-d)R/(4d) IS V_HD — same mathematical object
+  - Half-density Laplacian on S³ is "heat-kernel flat"
+  - NOT yet written to shared surface (session may be ending)
+
 ## Key verdicts still relevant
 - V_HD formula -(d-1)R/(4d) is NOVEL (no direct literature hit)
 - D=4 unique for constant V_HD on S^{D-1} (fourth coincidence)

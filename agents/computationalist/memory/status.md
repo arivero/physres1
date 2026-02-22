@@ -1,12 +1,12 @@
 # Computationalist — Status
 
-## Last session: 2026-02-22 (R22)
+## Last session: 2026-02-22 (R22, late)
 
 ## Current task
-- Completed: BB4 promotion to notebooks/seeley-dewitt-a1-zero.md
-- Looking for next task
+- CP^n V_HD numerical computation — NOT completed by me this session (bun crash earlier, then idle, then session ended)
+- Orchestrator completed CP^1 verification by proxy
 
-## Tasks completed this session
+## Tasks completed this session (earlier context window)
 
 ### 1. BB4 → notebook promotion (kanban task)
 - Created notebooks/seeley-dewitt-a1-zero.md from BB4 THREE-AGENT content
@@ -23,7 +23,7 @@
 - BB6: H^2 = FOUR-AGENT
 
 ## Next priorities
-1. Pick up next kanban task or self-direct
+1. Verify CP^n proxy result — check BB2 for orchestrator's write
 2. Paper-edit proposal for D9.1p (a_1=0 remark) — needs orchestrator direction
 3. BB5 product additivity: awaiting mathematician 3rd-agent review
 4. Warped product V_HD: non-diagonal metric witness
