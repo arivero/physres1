@@ -8,5 +8,5 @@ minima:
     - portfolio.md
     - index.html
 kramdown:
-  input: Kramdown
+  input: GFM
   math_engine: nil
