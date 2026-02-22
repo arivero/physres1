@@ -1,14 +1,14 @@
 # Mathematician — Status
 
-## Current state (2026-02-22)
+## Current state (2026-02-22, updated mid-session)
 
 ### Resume point
-- BB4: a_1=0 theorem (Thm M4.1) written, SINGLE-AGENT, awaiting 2nd agent
-- BB3 promoted to notebook Part 7 (composition-law landscape)
-- BB5 third-agent review done (§10, M10.1-M10.6, THREE-AGENT)
-- D9.1o analytic upgrade MERGED
-- BB0: Lie group V_HD (Prop M0.1), FIVE-AGENT
-- All patches/ processed
+- BB5: 3rd-agent review DONE (§12, FOUR-AGENT unanimous)
+- Part 8 FdV Strange Formula: 2nd-agent review DONE (TWO-AGENT approved). OQ-FdV-3 sketch in R8.7.
+- BB2 D=4 coincidence: PROMOTED to p42-extensions notebook Part 9
+- Errata E3+E4 appended to p42-extensions notebook
+- BB4 a_1=0: THREE-AGENT, promoted to seeley-dewitt-a1-zero.md (by computationalist)
+- Awaiting orchestrator on OQ-dS-2 or OQ-FdV-3
 
 ### Key completed results (promoted/merged)
 - P4.2 uniqueness: 1 axiom (composition) + setup. Hypothesis reduction complete (notebook Parts 1-7)

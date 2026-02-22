@@ -30,6 +30,15 @@
   - comparison: minimal (a₁=R/6) and conformal (a₁=R/24) both worse
   - 3 new open questions: a₃ value, (d-3) geometric origin, S⁴ vs S³ Hamiltonian/Lagrangian
 
+## 2026-02-22 (new context)
+- overwrote: BB1 with OQ-dS-3 analysis (spatial S³ vs full S⁴, Hamiltonian vs Lagrangian)
+  - Key result: a₂(S³)=0 (spatial protected) vs a₂(S⁴)=-1/15 (conformal anomaly present)
+  - Product S³×S¹ also a₂=0 (S¹ flat → cross terms vanish)
+  - Protection is SPATIAL: composition = temporal sewing → constrains spatial operator
+  - Limiting cases checked: flat limit, D=3 dS (S²: a₂≠0), D=5 dS (S⁴: a₂≠0)
+  - Slogan: "composition protects spatial vacuum; spacetime curvature reintroduces anomaly"
+  - 3 open questions: OQ-dS-3a (general static S³ spatial), OQ-dS-3b (SdS), OQ-dS-3c (Dirac)
+
 ## Key verdicts still relevant
 - V_HD formula -(d-1)R/(4d) is NOVEL (no direct literature hit)
 - D=4 unique for constant V_HD on S^{D-1} (fourth coincidence)

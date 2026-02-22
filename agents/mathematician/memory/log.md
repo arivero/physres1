@@ -41,3 +41,4 @@
 - BB4 promotion to notebook: claimed, redirected to computationalist
 - Errata E3+E4 appended to p42-extensions notebook (V_HD S^3 + D=4 table corrections)
 - Part 8 (FdV Strange Formula) 2nd-agent review: APPROVE (TWO-AGENT). OQ-FdV-3 sketch via HC.
+- BB2 D=4 coincidence promoted to p42-extensions notebook Part 9. Corrected a₁=0 table. Independence proof included.
