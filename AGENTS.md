@@ -51,6 +51,8 @@ Emergency read is allowed only for shutdown safety when an agent is non-responsi
 - **Publication editor**: record votes, enforce unanimous threshold, spawn referee agents, decide accept/revise/reject (§11)
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
 - Commit policy enforcement
+- **Commit timing**: always check with `date` shell command, never estimate from context
+- **Commit diffs**: use `git diff --stat` only, NEVER full `git diff` (pollutes context window)
 - Quality gates (promotion rules, diffstat tracking)
 - Research state maintenance
 - **Idle-agent debugging (hard):** if an agent has been idle for more than 1 minute without reporting `done:` or `self:`, the orchestrator MUST message that agent to diagnose why. Do not assume the agent is working silently.
