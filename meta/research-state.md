@@ -98,3 +98,6 @@ entries — do not append. Actionable items go to the kanban, not here.
 - **D12 convention fix**: MERGED — D12.1/P12.1/D12.3b unified to H=-(1/2)Δ (kernel (2πt)^{-d/2}), matching D12.3 Mehler + P12.2. TWO-AGENT (critic+mathematician).
 - **V_HD on compact Lie groups**: VERIFIED SU(2,3,4). Formula V_HD = -dim·h∨/24 = -R/6 (FdV). SU(4)=-5/2 confirmed (computationalist BB0). Analytic proof BB0 §13: RNC gives -R/6 at any point; Prop M0.1 extends globally on Lie groups. All three numerics match.
 - **D9.1j Lie group extension**: MERGED (TWO-AGENT mathematician+critic) — Remark D9.1j updated with Prop M0.1 scope extension.
+- **OQ1a RESOLVED** (THREE-AGENT physicist+mathematician+critic, BB3 §6): composition forces ξ=1/6 universally; equals conformal coupling iff D=4. Fifth D=4 coincidence. No new paper edits needed (covered by D9.1h-D9.1o).
+- **OQ-FdV-1 RESOLVED (negative)** (BB3 §13): V_HD=−|ρ|² specific to Lie group manifolds; fails on coset spaces G/H (S² counterexample). V_HD=−R/6 does NOT imply V_HD=−|ρ|².
+- **Composition-compatible algebras** (student Philosophenweg): composition forces COMPATIBILITY not UNIQUENESS — quantum groups case illustrates this sharply. Candidate satellite topic.
