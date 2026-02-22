@@ -5,6 +5,8 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["agent-roles"]
+    paths:
+      - "docs/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,6 +30,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Fix backslash math delimiters
+        run: |
+          grep -rl '^math: backslash' --include='*.md' . | while read f; do
+            sed -i \
+            -e 's/\\\(/\\\\(/g' \
+            -e 's/\\\)/\\\\)/g' \
+            -e 's/\\\[/\\\\[/g' \
+            -e 's/\\\]/\\\\]/g' \
+            "$f"
+          done
+        
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
