@@ -1,7 +1,7 @@
 title: "Physics Research Notes"
 description: "Companion papers — A. Rivero and A.I.Scaffold"
 theme: minima
-markdown: CommonMarkGhPages
+markdown: kramdown
 commonmark:
   options: ["UNSAFE", "SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
@@ -9,5 +9,3 @@ commonmark:
 kramdown:
   input: GFM
   math_engine: nil
-  hard_wrap: false
-  entity_output: as_input
