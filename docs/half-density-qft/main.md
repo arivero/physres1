@@ -1,5 +1,6 @@
 ---
 layout: page
+math: backslash
 title: "Half-Densities in QFT: Propagators as Bi-Half-Density Kernels"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

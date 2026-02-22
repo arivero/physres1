@@ -1,5 +1,6 @@
 ---
 layout: page
+math: backslash
 title: "Rooted Trees as Bookkeeping: The Butcher–RG Dictionary"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

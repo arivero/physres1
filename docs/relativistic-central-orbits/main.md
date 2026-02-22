@@ -1,5 +1,6 @@
 ---
 layout: page
+math: backslash
 title: "Relativistic Central Orbits as Refinement-Witnesses"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

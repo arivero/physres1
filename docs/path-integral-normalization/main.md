@@ -1,5 +1,6 @@
 ---
 layout: page
+math: backslash
 title: "Path-Integral Normalization: The d/2 Exponent as Composition Compatibility Datum"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

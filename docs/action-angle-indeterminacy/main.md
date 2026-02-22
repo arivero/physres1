@@ -1,5 +1,6 @@
 ---
 layout: page
+math: backslash
 title: "Action–Angle Indeterminacy in Central Potentials: A Referee-Safe Witness"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

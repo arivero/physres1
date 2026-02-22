@@ -1,5 +1,6 @@
 ---
 layout: page
+math: backslash
 title: "Planck Area from Half-Density Normalization"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

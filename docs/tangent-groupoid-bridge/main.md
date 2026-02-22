@@ -1,5 +1,6 @@
 ---
 layout: page
+math: backslash
 title: "From Pair Groupoid to Tangent Groupoid: Composition, Quantization, and the d/2 Exponent"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"

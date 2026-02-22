@@ -1,5 +1,6 @@
 ---
 layout: page
+math: backslash
 title: "Renormalization Group as a Fundamental Compatibility Principle"
 author: "A. Rivero and A.I.Scaffold"
 date: "2026"
