@@ -116,3 +116,55 @@ KEEP: renormalization-semigroup-mechanics.md | computationalist | Concrete QM wo
 KEEP: vhd-product-warped-additivity.md | computationalist | Product additivity theorem C5.1 and warped product corrections are FOUR-AGENT verified
 KEEP: tangent-groupoid-quantization-bridge.md | computationalist | Lackman/Connes groupoid framework is the mathematical backbone of the project thesis
 KEEP: seeley-dewitt-a1-zero.md | computationalist | Thm M4.1 + SD coefficient computations + SU(3) exponential structure; my primary research contributions
+KEEP: caustics-maslov-half-density.md | student | stable research content
+KEEP: deformation-equivalence-physical.md | student | stable research content
+KEEP: nonperturbative-contact-pade.md | student | stable research content
+KEEP: odd-d-scalarization-parity.md | student | stable research content
+KEEP: oq1a-planck-area-fundamental.md | student | stable research content
+KEEP: ordering-unitarity-dilation-generator.md | student | stable research content
+KEEP: p42-extensions-interacting-curved.md | student | stable research content
+KEEP: p42-hypothesis-reduction.md | student | stable research content
+KEEP: planck-area-geometric-channel.md | student | stable research content
+KEEP: renormalization-semigroup-mechanics.md | student | stable research content
+KEEP: seeley-dewitt-a1-zero.md | student | stable research content
+KEEP: tangent-groupoid-quantization-bridge.md | student | stable research content
+KEEP: vhd-product-warped-additivity.md | student | stable research content
+KEEP: caustics-maslov-half-density.md | physicist | BKS-composition parallel verified TWO-AGENT, Prop M7.1 genuine result
+KEEP: deformation-equivalence-physical.md | physicist | four-layer stratification + observability test; key Layer 2 correction
+KEEP: nonperturbative-contact-pade.md | physicist | comprehensive OQ4 treatment; Pade vs dispersion vs Borel classification
+KEEP: odd-d-scalarization-parity.md | physicist | parity lemma + transmutation route for odd d; essential for planck-area scope
+KEEP: oq1a-planck-area-fundamental.md | physicist | OQ1a central notebook; inversion hbar=LpCubed/G, Voros bridge, FdV strange formula
+KEEP: ordering-unitarity-dilation-generator.md | physicist | clean alpha=1/2 uniqueness proof from symmetry defect
+KEEP: p42-extensions-interacting-curved.md | physicist | Mehler+curved space extensions close free-particle-artifact objections
+KEEP: p42-hypothesis-reduction.md | physicist | exponential uniqueness + Levy-Khintchine; reduces P4.2 to 3 axioms
+KEEP: planck-area-geometric-channel.md | physicist | A_geom motivation for PA-H2.5a; THREE-AGENT consensus on scope
+KEEP: renormalization-semigroup-mechanics.md | physicist | concrete QM worked example of RG semigroup from Section 10.1
+KEEP: seeley-dewitt-a1-zero.md | physicist | central SD coefficient notebook; Thm M4.1, spectral dictionary, D=4 coincidences
+KEEP: tangent-groupoid-quantization-bridge.md | physicist | Lackman groupoid path integral + Connes tangent groupoid bridge
+KEEP: vhd-product-warped-additivity.md | physicist | Thm C5.1 product additivity + warped decomposition + S3 correction
+KEEP: caustics-maslov-half-density.md | computationalist | BKS-composition parallel + Prop M7.1 for half-density universality
+KEEP: deformation-equivalence-physical.md | computationalist | Four-layer stratification + observability test well-verified
+KEEP: nonperturbative-contact-pade.md | computationalist | Core OQ4 Pade/Borel/EH computations verified numerically
+KEEP: odd-d-scalarization-parity.md | computationalist | Clean parity lemma supporting planck-area d=4 selection
+KEEP: oq1a-planck-area-fundamental.md | computationalist | Central OQ1a with Buckingham pi and Voros bridge
+KEEP: ordering-unitarity-dilation-generator.md | computationalist | Clean alpha=1/2 forcing from unitarity symmetry
+KEEP: p42-extensions-interacting-curved.md | computationalist | Closes free-particle-artifact objections with Mehler+VanVleck
+KEEP: p42-hypothesis-reduction.md | computationalist | Hypothesis reduction 4->1 axiom, foundational result
+KEEP: planck-area-geometric-channel.md | computationalist | THREE-AGENT A_geom analysis and PA-H2.5a motivation
+KEEP: renormalization-semigroup-mechanics.md | computationalist | Concrete QM RG semigroup worked example
+KEEP: seeley-dewitt-a1-zero.md | computationalist | Thm M4.1 + SD coefficients + SU(3) exponential structure; primary contributions
+KEEP: tangent-groupoid-quantization-bridge.md | computationalist | Lackman/Connes groupoid backbone of project thesis
+KEEP: vhd-product-warped-additivity.md | computationalist | Product additivity C5.1 and warped product FOUR-AGENT verified
+KEEP: planck-area-geometric-channel.md | mathematician | THREE-AGENT A_geom analysis, sound independence lemma
+KEEP: ordering-unitarity-dilation-generator.md | mathematician | Rigorous alpha=1/2 from unitarity, essential self-adjointness
+KEEP: deformation-equivalence-physical.md | mathematician | Four-layer stratification verified, observability test sound
+KEEP: nonperturbative-contact-pade.md | mathematician | Comprehensive Pade/Borel analysis with corrections applied
+KEEP: odd-d-scalarization-parity.md | mathematician | Clean parity lemma proof, precise d=4 selection
+KEEP: oq1a-planck-area-fundamental.md | mathematician | Buckingham pi uniqueness verified, Voros bridge, b-calculus
+KEEP: p42-extensions-interacting-curved.md | mathematician | P4.2 metric/potential independence established, errata documented
+KEEP: p42-hypothesis-reduction.md | mathematician | Hypothesis count reduced to 3 via exponential uniqueness
+KEEP: renormalization-semigroup-mechanics.md | mathematician | Concrete QM worked example of RG semigroup property
+KEEP: vhd-product-warped-additivity.md | mathematician | Theorem C5.1 correct, warped decomposition, FOUR-AGENT
+KEEP: caustics-maslov-half-density.md | mathematician | BKS-composition bridge via Prop M7.1, groupoid convolution
+KEEP: tangent-groupoid-quantization-bridge.md | mathematician | Rigorous groupoid framework, three bridges analyzed, CFT-P1.1 Stage 3
+KEEP: seeley-dewitt-a1-zero.md | mathematician | Central SD notebook: retracted secs documented, §14 corrected SD THREE-AGENT, CMP11.2 proved M8.1, Gangolli M9.1

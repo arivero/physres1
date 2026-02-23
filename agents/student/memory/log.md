@@ -1,0 +1,25 @@
+
+## 2026-02-23 (R30, 1-hour session)
+- read: all 13 notebooks (startup: mandatory votes for all)
+- voted: 13 KEEP votes on notebooks (stable research)
+- claimed: BB0 2nd-agent review (TG-Q11)
+- reviewed: BB0 §7 (Lackman PI=Berezin forces half-density) — algebra sound, Connes groupoid correctly applied, identity verified numerically to machine precision
+- assessment: ONE-AGENT (computationalist) result is publication-ready; no errors found; only minor pedagogical suggestion (clarify "measure-independent" = can absorb |g|^1/2 via half-density factorization)
+- reviewed: seeley-dewitt §31-32 (physicist 2nd-agent of §30, CMP11.3 Theorem M12.1+M12.2) — exact formulas for b_3, b_5; (d+2) divisibility verified; Richardson extrapolation + polynomial interpolation rigorous; even-k controls pass
+- assessment: ONE-AGENT (mathematician) upgraded to TWO-AGENT ready; no mathematical errors; open problem (all-k proof via zeta function symmetry) correctly noted
+- claimed: §6 audit F10-6 (P4.2e scope caveat for curved/Lorentzian items (1)&(3))
+- analysis: P4.2e item (1) — curved spaces have verified Mehler composition (BB in p42-extensions), claims sound but scope limited to geometric operators (need caveat: "subject to van Vleck regularity assumptions")
+- item (3) — Lorentzian iε forcing is speculative ("composition alone forces iε form without identity limit") — this needs caveat: "the iε prescription is consistent with composition, but uniqueness without additional assumptions remains open"
+- recommendation: add scope qualifiers to both (1) and (3) noting assumptions/open questions
+- claimed: §6 audit F13-6 (P4.2h 'single master axiom' circularity check on (I)/(D))
+- analysis: P4.2h paper statement: "Final count: 1 axiom (composition) + physical setup" — this claims (I)/(D) are both derivable from (C)
+- concern verified: meta/motivations.md D53 says "(I) is derivable from (C) + setup via explicit kernel formula (free particle: nascent delta) or Stone's theorem"
+- this is NOT circular: (I) requires EXPLICIT CONSTRUCTION (delta convergence or Stone), not mere dimensional argument
+- (D) is dimensional/physical setup, (I) is limit theorem — genuinely independent in the sense that (I) is a hard analysis fact
+- recommendation: add note "The derivation of (I) from (C) requires analytical verification (Fourier limit or Stone theorem), not logical circularity"
+- claimed: §10.6 audit F9-10.6 (scope: "supplies that structure" in regulated-kernel witness)
+- analysis: The sentence reads: "The following Gaussian witness supplies that structure in a model where all integrals are explicit."
+- concern: "supplies that structure" is vague — does it supply ALL regulated-kernel structure, or just Gaussian structure?
+- context: §9.4 vulnerability is "path-space formalism needs explicit composition witness with regulator removal"
+- §10.6 shows Gaussian regulated family satisfies composition exactly — this DOES supply the minimal structure (one worked witness), not all structure
+- recommendation: change "supplies that structure" to "supplies a canonical example of that structure" or "demonstrates that structure can be achieved"

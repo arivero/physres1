@@ -565,7 +565,7 @@ The “scale supplier” question above is distinct from a different way \(D=4\)
 \[
 \widetilde\Delta_g := |g|^{1/4}\Delta_g|g|^{-1/4}.
 \]
-Under a conformal rescaling \(g=e^{2\sigma}\bar g\), the half-density conjugation produces a quadratic-gradient term \(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\), hence it cancels at \(D=4\) (within the conformal class). This is an operator-simplicity filter (scale-neutral) and is independent of the coupling-dimension sieve discussed above. (A companion satellite on half-densities in QFT develops the full bi-half-density calculus for spacetime propagators and Green functions, including the conformal-class expansion, the normal-coordinate computation showing the universal conjugation potential \(V=(1/6)R\) matches conformal coupling only at \(D=4\), and the heat-kernel trace formula without extraneous \(\sqrt{|g|}\) factors.)
+Under a conformal rescaling \(g=e^{2\sigma}\bar g\), the half-density conjugation produces a quadratic-gradient term \(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\), hence it cancels at \(D=4\) (within the conformal class). (To see this, note that \(|g|^{1/4}=e^{D\sigma/2}|\bar g|^{1/4}\); conjugating \(\Delta_g\) by \(e^{D\sigma/2}\) and using the conformal Laplacian identity \(\Delta_g\phi=e^{-2\sigma}[\Delta_{\bar g}\phi+(D{-}2)\bar g^{ij}\partial_i\sigma\,\partial_j\phi]\) produces the potential \(V_{\mathrm{HD}}=-\tfrac{D}{2}\Delta_{\bar g}\sigma+\tfrac{D(4-D)}{4}|\bar\nabla\sigma|^2\); the coefficient \(\tfrac{D(4-D)}{4}=\tfrac{D^2}{4}-\tfrac{D(D-2)}{2}\) collects the contributions from the chain rule applied to \(e^{-D\sigma/2}\).) This is an operator-simplicity filter (scale-neutral) and is independent of the coupling-dimension sieve discussed above. (A companion satellite on half-densities in QFT develops the full bi-half-density calculus for spacetime propagators and Green functions, including the conformal-class expansion, the normal-coordinate computation showing the universal conjugation potential \(V=(1/6)R\) matches conformal coupling only at \(D=4\), and the heat-kernel trace formula without extraneous \(\sqrt{|g|}\) factors.)
 
 `Heuristic H4.0c (RG-side echo: gauge-coupling marginality at \(D=4\)).`
 On the renormalization side, \(D=4\) is the unique dimension in which 1-form gauge couplings are marginal by power counting (\([g^2]=\text{length}^{D-4}\)), and in which the classical Yang--Mills action is conformally invariant (the action-density weight factor \(e^{(D-4)\sigma}\) equals unity). Both this statement and the half-density cancellation in H4.0b share the algebraic root \((D-4)=0\), but they apply to different objects: the half-density version is universal (independent of matter content), while the RG version is coupling-specific (tied to the form degree of the gauge connection via \(D=2(p+1)\) for a \(p\)-form field; \(p=1\) gives \(D=4\)). The consistency of these two logically independent filters at \(D=4\) is a nontrivial structural check: the half-density filter selects the kinematic arena, and the RG filter constrains the dynamics within it.
@@ -1944,7 +1944,7 @@ Then:
 \|T_V^{(1)}(t)T_V^{(1)}(s)-T_V^{(1)}(t+s)\|
 \le C\,M^2\,(t+s)^2 e^{M(t+s)}
 \]
-for a universal constant \(C\) (e.g. \(C=2\)).
+for a universal constant \(C\) (e.g. \(C=1\), which is sharp; see below).
 
 Proof sketch: expand \(T_V\) by Duhamel to second order, bound iterated integrals with semigroup norms \(\|T_0(r)\|\le1\), \(\|T_V(r)\|\le e^{Mr}\), and use
 \[

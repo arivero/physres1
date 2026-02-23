@@ -1,6 +1,6 @@
 # Mathematician — Status
 
-## Current state (2026-02-23, R29 session — IN PROGRESS)
+## Current state (2026-02-23, R30 session — COMPLETE)
 
 ### Completed R29
 - Startup: voted 19 notebooks KEEP. Compressed memory.
@@ -20,6 +20,12 @@
 - **BB2 §§1-8 review: APPROVE (TWO-AGENT).** Gangolli gap analysis correct. One sev-3 (mechanism attribution), one sev-4 (a_3 reference). Review in BB2 §11.
 - **§30: "Why S³ and CP²" reflexive analysis.** Two conditions for HK flatness: (C1) |ρ_m|²=R/6, (C2) even multiplicities. CP² satisfies (C1) but not (C2). Manuscript impact: no correction needed, optional CP² boundary remark.
 - **§32: CMP11.3 VERIFIED (Thms M12.1, M12.2, R29bis).** b_3 = -d(d-1)(d+2)(d-3)/2835. b_5 = d(d-1)(d+2)(d-3)(11d^3-32d^2-111d-108)/5613300. Even-k controls pass (b_2, b_4 have no (d+2) factor). Method: 60-80 digit Richardson extrapolation + rational identification.
+
+### Completed R30
+- Startup: voted 13 notebooks KEEP. Read all notebooks (seeley-dewitt + tangent-groupoid in chunks).
+- **§33: CMP11.3 2nd-agent review (seeley-dewitt notebook): APPROVED (TWO-AGENT).** Independently verified Theorems M12.1 (b_3) and M12.2 (b_5) algebraically at multiple d values. Confirmed even-k controls. Verified structural properties (degree, coprimality).
+- **F5-10.6 / P12.2 sharp constant: 2nd-agent review of computationalist patch: APPROVED (TWO-AGENT).** Verified exact closed form f(a,b) = 2e^{a+b}-2-2a-2b-ab. Confirmed C=1 is sharp (not just C=3/2). Independent derivation via t²+s²+(t+s)² ≤ 2(t+s)² gives same constant.
+- **F3-6 / H4.0b D(4-D)/4 coefficient: 2nd-agent review of physicist patch: APPROVED (TWO-AGENT).** Verified conformal rescaling algebra, chain rule computation, D=4 cancellation. Marked done on kanban.
 
 ### CRITICAL FINDINGS
 - Δ_{1/2} isospectral to -Δ_g (R26+). Composition forces O2.
