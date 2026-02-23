@@ -60,8 +60,79 @@ The Gilkey endomorphism for Δ_{1/2} is E' = 0 (drift cancels V_HD), giving a_1 
 - Mathematician discovered: HC notebook Thm M3.1 error, V_HD coord-dep implications for BB0
 - Retraction patch NOT yet applied (awaiting computationalist THREE-AGENT sign-off on BB3)
 
+## R28 Completed Work (2026-02-23)
+1. Startup protocol: all 19 notebooks reviewed and voted KEEP.
+2. BB4 promoted to seeley-dewitt-a1-zero.md as §14 (lines 772-939):
+   - §14.1: Sign convention definitive
+   - §14.2: Three-operator dictionary (O1/O2/O3/conformal) with spectral table
+   - §14.3: Exact heat traces via Jacobi theta (bare a_k=1/k!, O3 a_k=2^k/k!, conformal a_k=0)
+   - §14.4: Perfect-square identity PH8.1 and conformal uniqueness
+   - §14.5: Corrected fifth D=4 coincidence — belongs to conformal operator
+   - §14.6: Conformal a_k closed forms on S^d with universal d(d-1)(d-3) factor (CMP11.1)
+   - §14.7: Full section-level verdict table (retracted/rescoped/valid)
+3. Library search: Bastianelli-Comberiati (2005.08737) ingested to sources/
+   No recent papers directly address half-density + drift + SD coefficients.
+4. Kanban cleared (physicist tasks done). Remaining: mathematician (HC erratum).
+
+## R29 Completed Work (2026-02-23)
+5. 2nd-agent review of seeley-dewitt-a1-zero.md §15 (de Sitter physical implications):
+   - Core physics APPROVED: composition -> ξ=1/6 -> a_k=0 on S^3 -> curvature-insensitive vacuum energy
+   - Issue 1 (important, editorial): §15.4 table label "Conformal (D=4)" should be "Conformal (d=3 spatial)" — ξ=1/8 is d=3 spatial, not D=4
+   - Issue 2 (minor): §15.3 "O(H^6) or exp small" undersells — all polynomial terms vanish by (d-3) factor
+   - Issue 3 (minor): §15.5 should distinguish algebraic (a_1=0) from geometric (a_2=0 via d-3) origin
+   - Issue 4 (minor): §15.6 uniqueness needs R≠0 caveat
+   - Appended as §18 of the notebook. STATUS: TWO-AGENT APPROVED.
+
+6. §15.5 sharpening: appended §19 to seeley-dewitt-a1-zero.md (universal potential mirror
+   V_HD(d) = -V_conf(D=d+1) identity + two-mechanism d=3 selection table).
+7. Manuscript patch: patches/physicist-patch-universal-mirror.md — adds Remark D9.1l'
+   (universal potential mirror) after D9.1l. Source: notebooks/seeley-dewitt-a1-zero.md §19.
+
+8. RNC-masking verification: O2=O3 at every RNC center (all d), diverge at O(|x|) via
+   drift. Appended as §20 of seeley-dewitt-a1-zero.md. Script: tmp/rnc_masking_verify.py.
+   Key finding: pointwise agreement masks a factor-of-2 difference in a_1 (R/6 vs R/3).
+   Root-cause analysis of the §§2-10 error chain.
+
+9. Weyl denominator assessment: does NOT give a 6th independent D=4 coincidence.
+   Explains coincidence (iv) algebraically (|rho|^2 = R/6 iff SU(2)). Appended as §22.
+   Updated anomalies.md to PARTIALLY RESOLVED. Count stays at 5.
+
+10. v_HK scoping: "a_k=0 iff d=3" holds among spheres only, not all manifolds (M8.4:
+    all compact simple Lie groups have conformal a_k=0). Appended §23. Patch filed:
+    patches/physicist-patch-vHK-scoping.md (D9.1q revision).
+
+## Current state
+- seeley-dewitt-a1-zero.md: §18-§27.
+- §27: manuscript audit §8-§9 (course correction task).
+  - §8: CLEAN, no findings.
+  - §9: 5 missing caveats (sev-3/4), 1 potential overstatement (sev-2).
+  - Key issue: §9 summarizes ordering narrative without O2/O3 distinction or D9.1p isospectrality.
+  - All fixes are cross-reference insertions, no new math needed.
+- Patches: D9.1l' (revised, mathematician-approved, ready to apply),
+  D9.1q v_HK scoping (needs 2nd-agent review),
+  P9.3 cherry-picking (needs 2nd-agent review).
+- Kanban task (§8-§9 audit): DONE.
+
 ## Next priorities
-1. Await computationalist spectral verification of O2 eigenvalues (kanban task)
-2. After THREE-AGENT on BB3: apply retraction patch (D9.1p rewrite, D9.1q+ref37 delete)
-3. Re-examine coincidence count (sixth coincidence retracted)
-4. BB4 promotion: CMP9b.4, PH10.1, CMP11.1, CMP12.1 → notebook (after BB4 restored)
+1. §9 cross-reference patches (F1, F3 highest priority) — awaiting orchestrator direction.
+2. D9.1q scoping patch needs reviewer.
+3. Monitor D9.1l' application by orchestrator.
+
+## Philosophenweg Walk (R29, solo)
+
+**Key insight: V_HD(d) = -V_conf(D=d+1) is an identity, not a D=4 coincidence.**
+
+The half-density potential V_HD = -(d-1)R/(4d) on d-dimensional spatial section equals
+minus the conformal coupling V_conf = (d-1)R/(4d) of (d+1)-dimensional spacetime for ALL d.
+The "fifth D=4 coincidence" (V_HD + V_conf = 0) is tautological.
+
+What IS uniquely D=4 (d=3):
+1. The (d-3) factor in Gilkey-Vassilevich coefficients makes a_k(conf; S^3) = 0 for all k >= 1.
+2. The theta-function reduction (eigenvalues = perfect squares minus 1) is specific to S^3.
+
+Two-mechanism narrative: (1) universal potential mirror V_HD = -V_conf forces the coupling,
+(2) d=3-specific Weyl vanishing makes that coupling spectrally flat. §15 could be
+strengthened by separating these.
+
+This observation may also clarify OQ-SI-2: the potential mirror is universal and
+dimension-independent; the spectral consequences are dimension-specific.

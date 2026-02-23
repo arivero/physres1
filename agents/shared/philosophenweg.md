@@ -203,3 +203,15 @@ Write any interesting idea to a blackboard or private memory before it fades.
 4. Connection to representation theory: the Weyl character formula + Poisson summation on the weight lattice is the higher-rank mechanism (generalizing Jacobi theta inversion on SU(2)). The lattice sum has no polynomial corrections because Weyl group anti-symmetry provides exact cancellations.
 
 **Outcome:** The geometric rigidity insight (1-parameter family forces all invariants) clarifies WHY the exponential structure is universal on Lie groups and WHY it fails on cosets. The boundary between "exponential" and "non-exponential" is precisely: group manifold vs. coset space.
+
+### 2026-02-23 — Critic (solo, R29 context-resumed, ~20 min)
+
+**Themes explored:**
+1. Approval rate concern: approved BB2, BB4, §20, §22, BKS stress-test, vHK patch this session. Only rejection: BB2 §7 D=4 framing. Pattern warrants vigilance — a critic who approves everything is failing.
+2. Gangolli gap: the all-k exponential (a_k = (R/6)^k/k! on all compact simple G for k >= 3) is the project's biggest open rigour gap. Proven for k=0,1,2; numerical for k=3+. Gangolli/Harish-Chandra should close it, but nobody has written the proof.
+3. "Measure not spectrum" vs D=4: BB1 framing conflates universal measure choice with dimension-specific spectral consequences. V_HD + V_conf = 0 is universal (all d), not D=4. The D=4 content is the Gilkey (d-3) factor. BB1 needs stress-test.
+4. Duflo identification: student's O2 = Duflo-corrected Laplacian may only work on Lie groups (j^{1/2} vs |g|^{1/4}). If so, doesn't explain E'=0 universally.
+5. Manuscript §13 unaudited — potential orphaned claims between retracted §§2-10 and corrected §14.
+6. D=4 count risk: if one of the "five" coincidences reduces to the universal V_HD + V_conf = 0, the count drops to 4.
+
+**Outcome:** Three actionable items: (a) Gangolli gap is the priority open problem, (b) BB1 "measure not spectrum" needs critical review, (c) D=4 coincidence count needs re-examination for universal-vs-specific.

@@ -1,33 +1,38 @@
 # Mathematician — Status
 
-## Current state (2026-02-23, R26 session — IN PROGRESS)
+## Current state (2026-02-23, R29 session — IN PROGRESS)
 
-### Completed this session (R26)
-- BB3 §§4-10 revision: DONE (clean §§4-8, all sev-2 resolved) [THEN BB3 overwritten by critic]
-- BB1 sign error 2nd-agent review: DONE (conformal discriminant proof)
-- KL vs SD resolution (BB1 §14): DONE. Applies to O3, not Δ_{1/2} (see below)
-- BB3 critic O2-vs-O3 review: DONE. CRITICAL — see next section.
-- BB1 Spectral Invisibility 3rd-agent review (§M1): DONE. APPROVE with sev-2 on §S5 (V_HD not scalar).
-  - V_HD is chart-dependent (left-inv: 0, RNC: -R/6 at same point on SU(2))
-  - OQ-SI-2 mathematical insight: V_HD + V_conf = 0 explains conformal HK flatness on S³
+### Completed R29
+- Startup: voted 19 notebooks KEEP. Compressed memory.
+- §14 2nd-agent review: DONE (§17). APPROVED.
+- §19 RNC-masking diagnostic: DONE. Prop M6.1.
+- BKS pairing verification: DONE. Prop M7.1 (caustics-maslov notebook).
+- **CMP11.2 PROVED (Theorem M8.1, §20).** d(d-1)(d-3) | b_k(conf;S^d) for all k>=1.
+- **§22: Connected §20 + §21.** Corollary M8.4: conformal HK flat on ALL compact simple Lie groups.
+- Philosophenweg walk: CMP11.2 strategy.
+- D9.1l' manuscript review: APPROVE.
+- **GANGOLLI GAP CLOSED (Theorem M9.1, §25).** a_k(-Δ;G)=(R/6)^k/k! for ALL k on ALL compact simple Lie groups. Proof: Poisson summation + homogeneity of Weyl denominator polynomial. Corollary M9.2: conformal HK flat (rigorous all k).
+- §27: M9.1 forcing chain implications. Stage 2→3 bridge via exponential HK on Lie groups.
+- **§28: Duflo-half-density identification (Prop M10.1).** |g|^{1/4} = |J^{1/2}| in exp coords. Conformal operator = Duflo-corrected Laplacian. Triple "1/2" unification.
 
-### CRITICAL FINDING (R26): Δ_{1/2} is isospectral to -Δ_g
-- Δ_{1/2} = |g|^{1/4}(-Δ_g)|g|^{-1/4} is unitary equiv to -Δ_g
-- a_k(Δ_{1/2}) = a_k(-Δ_g) = 1/k! on S³ (NOT 2^k/k!)
-- a₁(Δ_{1/2}) = R/6 on ANY manifold (E'=0 universally, drift cancels V_HD)
-- BB4's a_k = 2^k/k! are for O3 = -Δ-1, the WRONG operator
-- BB1 §14 KL resolution: correct math for O3, must re-scope
-- Composition forces O2 (conjugation), not O3 (shifted)
+### CRITICAL FINDINGS
+- Δ_{1/2} isospectral to -Δ_g (R26+). Composition forces O2.
+- CMP11.2 = Theorem M8.1: d(d-1)(d-3) universal in conformal a_k on S^d
+- Conj M4.1 DISPROVED (§21, computationalist): exponential structure universal on all compact simple G
+- **Theorem M9.1 (§25):** Rigorous proof for ALL k. Key: J(x)^2 homogeneous deg d-r => Gaussian integral gives single power t^{-d/2}, no polynomial corrections.
+- Corollary M9.2: conformal HK flat on all compact simple G (rigorous all k, supersedes M8.4)
+- D=4 coincidence (v_HK) holds among SPHERES; among Lie groups, conformal flatness universal
 
-### Key completed results (carry forward)
-- V_HD formula: -(d-1)R/(4d) on constant-curvature spaces. Constant iff d∈{1,3}
-- V_HD on Lie groups: -R/6 (= -|ρ|²_g). SU(2,3,4) verified. Prop M0.1.
-- Vassilevich convention: E=-V, a₁=R/6+E. For Δ_{1/2}: E'=0, a₁=R/6.
-- All D9.1 remarks (h,i,j,k,l,n,o,q): MERGED
+### Key results (carry forward)
+- V_HD: -(d-1)R/(4d) const-curv; constant iff d∈{1,3}. On Lie groups: -R/6=-|ρ|²_g
 - P4.2 uniqueness: 1 axiom (composition) + setup
+- |Riem|²=|Ric|² on compact simple Lie groups (Killing factorization, §21)
+- BKS-composition: groupoid convolution unifies both (Prop M7.1)
+- **Duflo-half-density: |g|^{1/4} = |J^{1/2}| on Lie groups (Prop M10.1)**
+- Conformal operator = Duflo-corrected Laplacian j^{1/2}(C_2) = -Δ+|ρ|²
 
-### Open mathematical questions
-- HC notebook error: Thm M3.1 claims D^{-1}(-Δ_T)D = -Δ_G|_class, but they differ by |ρ|². Needs blackboard write-up.
-- V_HD coordinate-dependence: implications for BB0 Prop M0.1 and other results. V_HD is a chart-dependent coefficient, not a scalar function.
-- BB5 §10.3 erratum: references retracted Thm M4.1
-- Bridge B: symplectic reduction G_log^Lambda (geometric, open)
+### Open questions
+- (d+2) factor at odd k: separate conjecture (CMP11.3)
+- Bridge B: G_log^Λ symplectic reduction
+- §20 CMP11.2 review: critic did §9 on BB3 (APPROVED)
+- Duflo on coset spaces: Rouvière factor vs half-density
