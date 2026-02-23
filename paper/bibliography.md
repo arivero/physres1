@@ -72,6 +72,24 @@ Use this file as a source ledger.
 55. `[Habiro2008]` Kazuo Habiro, "A unified Witten-Reshetikhin-Turaev invariant for integral homology spheres," *Invent. Math.* **171** (2008), no. 1, 1–81. DOI `10.1007/s00222-007-0071-0`. (Cyclotomic integrality: Z(M³) ∈ ℤ[ζ_N, N^{-1}] for integral homology spheres.)
 56. `[ElShowk2014]` Sheer El-Showk et al., "Solving the 3d Ising Model with the Conformal Bootstrap II. c-Minimization and Precise Critical Exponents," arXiv:`1403.4545` (2014). (Reports \(\Delta_\sigma = 0.518154(15)\); used as a concrete irrational-dimension example in the conformal-bootstrap channel.)
 
+57. `[GoyalKnuthSkilling2010]` Philip Goyal, Kevin H. Knuth, and John Skilling, "Origin of complex quantum amplitudes and Feynman's rules," *Physical Review A* **81**, 022109 (2010). arXiv:`0907.0909`. (Derives complex amplitudes, Feynman's sum and product rules, and the Born rule from composition of sequential measurement pairs plus continuity — kinematic complement to the dynamical forcing in P4.2.)
+
+58. `[LuizOliveira2026]` Fabricio Souza Luiz and Marcos César de Oliveira, "Information Theory of Action: Reconstructing Quantum Dynamics from Inference over Action Space," arXiv:`2602.09984` (10 Feb 2026). (Independent information-theoretic reconstruction: composition in action space plus finite variance forces Gaussian kernels and an action-dimensional scale via the same Lévy–Khintchine exclusion.)
+
+59. `[PathIntegralNormalization]` A. Rivero and A.I.Scaffold, "Path-Integral Normalization: The d/2 Exponent as Composition Compatibility Datum," companion satellite paper in this series (2026). (Comprehensive treatment of the d/2 exponent across temporal composition, Van Vleck determinant, heat-kernel diffusion, renormalization thresholds, and Lévy-stable exclusion.)
+
+60. `[RCPFoundations]` A. Rivero and A.I.Scaffold, "Refinement Compatibility Principle: Foundations," companion satellite paper in this series (2026). (Axiom system for RCP; three-channel forcing hierarchy; Krein Q-function transport; forward connections to all satellite papers.)
+
+61. `[TangentGroupoidBridge]` A. Rivero and A.I.Scaffold, "Groupoid Composition and Quantization: The Pair-Groupoid Bridge," companion satellite paper in this series (2026). (Pair groupoid as sewing law; d/2 forced by Fourier multiplicativity and dimensional homogeneity; tangent groupoid as hbar-deformation; Wick rotation as A3.)
+
+62. `[DeWitt1957]` Bryce S. DeWitt, "Dynamical Theory in Curved Spaces. I. A Review of the Classical and Quantum Action Principles," *Reviews of Modern Physics* **29**(3), 377–397 (1957). DOI `10.1103/RevModPhys.29.377`. (Derives the RNC expansion of \(|g|^{-1/4}\) and the ordering potential \(V_{\mathrm{HD}}=-R/6\) at any point in Riemann normal coordinates; foundational reference for curved-space path-integral measure and operator ordering.)
+
+63. `[KleinertChervyakov2000]` Hagen Kleinert and Aleksei Chervyakov, "Reparametrization Invariance of Path Integrals," arXiv:`quant-ph/0002008` (v1, 1 Feb 2000). (Derives the Van Vleck–Morette determinant \(\Delta^{1/2}\) from the global semigroup/composition property of the path integral; direct precedent for P4.2's composition-forced normalization.)
+
+64. `[BaldazziPercacciZanusso2021]` Pietro Baldazzi, Roberto Percacci, and Omar Zanusso, "Self-normalizing path integrals," arXiv:`2109.00517` (v1, 1 Sep 2021). (Shows that cutting and gluing — composition across temporal boundaries — uniquely determines the normalization of self-normalizing path integrals.)
+
+65. `[Duflo1977]` Michel Duflo, "Opérateurs différentiels bi-invariants sur un groupe de Lie," *Annales Scientifiques de l'École Normale Supérieure* (4) **10**(2), 265–288 (1977). (Constructs the Duflo isomorphism \(j^{1/2}\colon S(\mathfrak{g})^G\to Z(U(\mathfrak{g}))\); the half-density factor \(|g|^{1/4}\) on compact semisimple Lie groups equals \(|J^{1/2}|\) in exponential coordinates.)
+
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
 2. `[Noether1918]`: no canonical DOI for the 1918 original publication record used here.
