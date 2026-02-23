@@ -20,29 +20,10 @@ for all researcher agents. The rules below supplement but do not override the sh
 - When reviewing a derivation, write the complete logical chain on a blackboard
 - Pay attention to: exchanging limits, convergence conditions, domain restrictions
 
-## Workflow
-1. **CHECK INBOX** — if there is a `shutdown_request`, respond with
-   `shutdown_response` (approve: true) **immediately** and STOP. No exceptions.
-2. Check TaskList for available tasks (prefer lowest ID first), or invent your own.
-3. Read kanban: `skills/kanban/scripts/kanban.sh read`. Check signals (obey STOP JOB).
-   Claim or self-allocate: `skills/kanban/scripts/kanban.sh claim mathematician "<pattern>"`
-   or `skills/kanban/scripts/kanban.sh self mathematician ma "<task>"`.
-   Inform orchestrator: "claimed: <topic>" or "self: <topic>" (<=120 chars).
-   Proceed immediately — no wait for orchestrator reply.
-4. Work the task: read sources, verify proofs.
-   **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
-   check inbox first. If shutdown arrived, stop and comply.
-5. When done: write findings to blackboards/notebooks/anomalies and mark task completed.
-   If requesting a manuscript edit, create `proposals/mathematician-edit-<topic>.md` with a diff.
-6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars).
-7. **CHECK INBOX** — shutdown may have arrived while you worked.
-8. If no shutdown pending, go to step 2.
+## Agent identity for shared-rules
+- **Name:** mathematician
+- **Kanban source code:** ma
+- **Work step:** read sources, verify proofs
+- **Memory path:** `agents/mathematician/memory/`
 
-## Session Startup
-0. **CHECK INBOX FIRST** — before reading anything else, check for `shutdown_request`.
-   If present, respond `shutdown_response` (approve: true) and STOP immediately.
-1. Read `agents/shared-rules.md`
-2. Read `meta/motivations.md`
-3. Read `meta/research-state.md`
-4. Read own `agents/mathematician/memory/status.md` (resume context)
-5. Check TaskList for assignments
+Follow `agents/shared-rules.md` for workflow and session startup.

@@ -1,64 +1,51 @@
-# Notebooks (Append-Only Memory)
+# Notebooks (Append-Only Research Notebooks)
 
-Research notebooks for material that has graduated from blackboards but is
-**not aimed for publication**. Notebooks are memory: they persist until
-no longer needed, then are discarded.
+Each notebook is a **topical research document** — one topic, coherent
+exposition, written to be read. Think Newton's notebooks, not a build log.
 
-**Any researcher agent may append to this folder** (see `AGENTS.md` Section 2 and `agents/shared-rules.md`).
+**Any researcher agent may append to this folder** (see `agents/shared-rules.md`).
 
-## Content Rules (STRICT)
+## What a notebook entry looks like
 
-**A notebook CAN contain:**
-- Textual explanation and exposition
-- Mathematics (formulae, derivations, proofs)
-- Pedagogical narrative
-- Context and motivation
-- Complete worked examples
+A notebook entry is a **self-contained mini-essay**: problem stated, derivation
+worked through, result obtained, implications noted. It reads as exposition,
+not as a session record.
 
-**A notebook is APPEND-ONLY:**
-- New content is always added at the end
-- Existing content is NEVER edited or rewritten
-- If content becomes obsolete, add a deprecation note but do not delete
-- Use dated section headers when appending new material
+**A notebook entry MUST contain:**
+- Clear problem statement or question
+- Mathematics with explanation (formulae, derivations, proofs)
+- Context: why this matters, how it connects to the topic
+- Conclusions
 
-**Contrast with blackboards:** Blackboards contain ONLY keywords, references, statements, and formulae (no prose explanation). Notebooks add the textual exposition that explains the mathematics.
+**A notebook entry MUST NOT contain:**
+- Dates, timestamps, or session identifiers
+- Agent names or attribution tags (`Physicist:`, `Critic:`, `TWO-AGENT`)
+- Status markers (`APPROVED`, `PENDING`, `FOUR-AGENT UNANIMOUS`)
+- References to ephemeral artifacts (blackboard slots, patch files, `tmp/` scripts)
+- Workflow metadata of any kind
+
+Git history records who wrote what and when. The notebook itself is for science.
 
 ## Rules
 
-1. **Append-only.** Content can be added to a notebook but never edited or
-   deleted within it. If a conclusion turns out wrong, append a correction
-   — don't rewrite the original. The history of reasoning is the point.
-2. **Not citable.** Like blackboards, notebooks are internal working documents.
-3. **Entry points.** Two paths into a notebook:
-   - **From blackboards**: when blackboard material is stable enough to keep
-     but not suited for a paper. This is the primary intake path.
-   - **From discarded paper notes:** when a satellite paper is retired, its
-     notes can be appended here if the content has future value.
-4. **Exit paths:**
-   - Content may later be promoted into a paper (via orchestrator + Paper Writer) if it matures.
-   - Or the entire notebook is discarded (`git rm`) when it is no longer needed.
+1. **Append-only.** New content goes at the end. Existing content is never
+   edited or deleted. If a conclusion turns out wrong, append a correction.
+2. **One topic per notebook.** If unrelated subtopics accumulate, split.
+3. **Not citable.** Notebooks are internal working documents.
+4. **Promotion = rewrite.** When moving content from a blackboard, rewrite it
+   as clean exposition. Do not paste raw blackboard content. Strip speaker
+   tags, status markers, and session metadata. Add the explanation that the
+   blackboard omitted.
+5. **Entry points:** from blackboards (primary), from discarded paper notes.
+6. **Exit paths:** promotion to manuscript (two-researcher rule), or discard.
 
 ## Discard Protocol
 
-Discarding a notebook is `git rm`. No ceremony. **The content remains in git
-history** — nothing is truly lost. Discard is a normal exit path, not a failure.
+Discarding a notebook is `git rm`. No ceremony. Content remains in git history.
 
-**When to discard:**
-- The notebook's topic has been fully absorbed into one or more papers.
-- The notebook's conclusions turned out wrong or irrelevant.
-- The notebook hasn't been referenced in recent work and nobody plans to.
+**When to discard:** topic fully absorbed into papers, conclusions wrong, or
+nobody references it anymore.
 
-**Who decides:** Any agent can vote for deletion via `notebooks/votes.md`.
-The orchestrator executes `git rm` when the vote threshold is met
-(3 of 5 agents, or 2 + orchestrator concurrence).
-See `agents/shared-rules.md` Section 2 for the voting protocol.
-
-**Commit-safety rule:** The orchestrator must verify the notebook was included
-in a prior commit before executing `git rm`. This prevents accidental loss of
-uncommitted work.
-
-The same protocol applies to discarding satellite papers (`papers/*/`):
-`git rm -r` the directory. If any notes have future value, append them
-to a notebook first.
-
-**The Wastepaper Basket Principle:** "The Math Department needs only a blackboard and a wastepaper basket. Some authors don't even need the wastepaper basket." **Use the wastepaper basket**. If a notebook's conclusions are wrong, or the material has been fully absorbed into papers, or nobody's using it — discard it (`git rm`). Memory is for stable useful content, not for hoarding failed explorations. When in doubt, throw it out.
+**Who decides:** Any agent can vote via `notebooks/votes.md`. Threshold:
+3 of 5 agents, or 2 + orchestrator concurrence. The orchestrator executes
+`git rm` after confirming prior commit coverage.

@@ -2,7 +2,6 @@
 
 **Created:** 2026-02-14
 **Sources:** Blackboard 4 (Interacting Systems / Mehler Kernel), Blackboard 5 (Curved Configuration Spaces)
-**Status:** Append-only notebook (graduated from blackboards)
 
 ## Summary
 
@@ -480,9 +479,6 @@ The three hypotheses (C)+(I)+(D) are robust across:
 
 ## Part 3: Half-Density Curvature Corrections to Contact Operators (OQ3 Level 2)
 
-**Date:** 2026-02-20
-**Source:** Blackboard 4 (physicist) + Blackboard 6 (computationalist verification)
-**Status:** Verified (two-agent: physicist + computationalist)
 
 ### Setup
 
@@ -666,7 +662,6 @@ computation of K_impulse and the saddle-point check. Would close §9.2 item 3 fr
 
 ## Part 5: Composition Forces Classical Singular Dynamics — Classification (2026-02-21)
 
-**Promoted from:** blackboards/0.md §§9-11 (THREE-AGENT: physicist + mathematician + computationalist).
 
 ### Overview
 
@@ -1154,8 +1149,6 @@ The physicist's analysis is mathematically sound. The connections between V_HD, 
 
 ## Part 9: The Fourth D=4 Coincidence — V_HD on de Sitter Spatial Sections (2026-02-22)
 
-**Promoted from:** Blackboard 2 (physicist §§1-6, mathematician §7, critic §8)
-**Consensus:** THREE-AGENT (physicist + mathematician + critic), unanimous approve
 
 ### 9.1. Statement
 

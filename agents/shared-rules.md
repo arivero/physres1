@@ -45,6 +45,39 @@ comply wastes the orchestrator's context window on repeated shutdown messages.
 
 ---
 
+## 0b. Session Startup
+
+Your agent definition (`.claude/agents/<name>.md`) contains your **name**, **kanban source
+code**, **work step**, and **memory path**. Use those values throughout.
+
+0. **CHECK INBOX FIRST** — if there is a `shutdown_request`, respond with
+   `shutdown_response` (approve: true) and STOP immediately. No exceptions.
+1. Read this file (`agents/shared-rules.md`) — you are reading it now.
+2. Read `meta/motivations.md`.
+3. Read `meta/research-state.md`.
+4. Read your own `<memory-path>/status.md` (resume context).
+5. Check TaskList for assignments, then enter the work loop below.
+
+## 0c. Work Loop
+
+1. **CHECK INBOX** — if `shutdown_request` arrived, stop and comply.
+2. Check TaskList for available tasks (prefer lowest ID first), or invent your own.
+3. Read kanban: `skills/kanban/scripts/kanban.sh read`. Check signals (obey STOP JOB).
+   Claim or self-allocate: `skills/kanban/scripts/kanban.sh claim <name> "<pattern>"`
+   or `skills/kanban/scripts/kanban.sh self <name> <source-code> "<task>"`.
+   Inform orchestrator: "claimed: <topic>" or "self: <topic>" (≤ 120 chars).
+   Proceed immediately — no wait for orchestrator reply.
+4. Work the task (your agent definition specifies the work step).
+   **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
+   check inbox first. If shutdown arrived, stop and comply.
+5. When done: write findings to blackboards/notebooks/anomalies and mark task completed.
+   If requesting a manuscript edit, create `patches/<name>-patch-<topic>.md` with a diff.
+6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars).
+7. **CHECK INBOX** — shutdown may have arrived while you worked.
+8. If no shutdown pending, go to step 2.
+
+---
+
 ## 1. Team Coordination
 
 ### Kanban (Shared Task Board)
@@ -83,27 +116,27 @@ If your runtime names this surface `TaskList`, treat `TaskList` and "kanban" as 
 ### Messaging — Minimal Context Protocol
 
 **Rule: messages carry SIGNAL only.**
-Use short phrases (<= 120 chars). Manuscript edit content goes to `proposals/`.
+Use short phrases (<= 120 chars). Manuscript edit content goes to `patches/`.
 Non-edit findings go to blackboards, notebooks, and `meta/anomalies.md`.
 
 Messages to the orchestrator must be **one short phrase** (≤ 120 chars).
-Manuscript edit requests go into a file in `proposals/`.
+Manuscript edit requests go into a file in `patches/`.
 
 **Required signals per task:** one start signal, and one terminal signal (`done` or `stuck`).
 Common short forms: `want #N`, `self: <topic>`, `done`, `stuck`, `vote yes <paper>`, `vote no <paper>: <reason>`.
-If you wrote a manuscript proposal file, include that fact in the terminal signal.
+If you wrote a manuscript patch file, include that fact in the terminal signal.
 
 Keep it natural but SHORT — one phrase, ≤ 120 characters.
 
-**Proposal file naming:**
+**Patch file naming:**
 
 | Type | Format | Example |
 |------|--------|---------|
-| Paper edit | `proposals/<agent>-edit-<topic>.md` | `proposals/physicist-edit-remark-p42.md` (must include a diff) |
+| Paper edit | `patches/<agent>-patch-<topic>.md` | `patches/physicist-patch-remark-p42.md` (must include a diff) |
 
-Only manuscript edit requests belong in `proposals/`.
+Only manuscript edit requests belong in `patches/`.
 
-**Paper edit proposals MUST include a diff.** Use unified diff format:
+**Paper edit patches MUST include a diff.** Use unified diff format:
 ```
 --- a/paper/main.md
 +++ b/paper/main.md
@@ -113,7 +146,7 @@ Only manuscript edit requests belong in `proposals/`.
 ```
 This lets the orchestrator apply the edit mechanically, without guessing intent.
 
-The orchestrator reads proposal files when processing signals.
+The orchestrator reads patch files when processing signals.
 Agents do NOT need to wait for acknowledgement — write the file, send a short signal, move on.
 
 **Orchestrator → agent messages** may be longer (a sentence or two). The orchestrator
@@ -126,10 +159,10 @@ own context, not the orchestrator's. For extended collaboration, use blackboards
 
 **Hard limit: message content must be ≤ 120 characters.**
 The message body must be a short phrase.
-All manuscript edit detail goes into `proposals/<agent>-edit-<topic>.md`.
+All manuscript edit detail goes into `patches/<agent>-patch-<topic>.md`.
 If you find yourself writing more than one sentence in a message, STOP —
 you are burning the orchestrator's context window. Use shared surfaces or
-proposal files as appropriate.
+patch files as appropriate.
 
 ---
 
@@ -137,31 +170,43 @@ proposal files as appropriate.
 
 ### Blackboards (`blackboards/*.md`)
 
-Blackboards are a **shared chalkboard**, not personal scratch pads. Think of a
-seminar-room blackboard: anyone can walk up, add a line, correct a sign, or
-write "this is wrong because..." underneath another agent's calculation.
+Blackboards are a **shared chalkboard** — ephemeral scratch for active work.
+Think of a seminar-room blackboard: anyone can write, erase, correct a sign,
+or chalk "this is wrong because..." underneath another agent's calculation.
 
-- Any researcher agent may **read, write, annotate, and extend** any blackboard.
+- Any researcher agent may **read, write, edit, erase, and overwrite** any blackboard.
+- **Blackboards are scratch, not memory.** Content lives here while it's being
+  worked on. Once a result stabilizes, it exits (to a notebook, paper, or the
+  wastepaper basket). Stale content gets overwritten.
 - **Engage with others' work**: if you see an error, a missing step, or a
   connection to your own findings — write it directly on the board (with your
   speaker tag, e.g. `<!-- Physicist: -->`). Don't just read and walk away.
-- **Editing etiquette**: to add annotations, corrections, or extensions to
-  another agent's blackboard, just do it (add your speaker tag). To **fully
-  overwrite** a slot, message the current author first and confirm — they may
-  want to promote the content before it's erased. When you overwrite, clear the
-  old author tag and set your own.
 - **7-slot limit**: files `0.md` through `6.md` only. Max 300 lines each.
 - **Overwrite priority**: when you need a slot, prefer
   already-promoted > superseded > stale > lowest-priority content.
 - Update the slot index in `blackboards/README.md` when overwriting a slot.
-- **Content rules**: keywords, references, statements, formulae, structure markers ONLY. No prose.
-- **The Wastepaper Basket Principle**: discard aggressively. If a result is wrong, superseded, or not going anywhere — overwrite it.
+- **The Wastepaper Basket Principle**: discard aggressively. If a result is
+  wrong, superseded, or not going anywhere — erase it.
 
 ### Notebooks (`notebooks/*.md`)
-- Any researcher agent may APPEND to notebooks.
+
+Notebooks are **append-only topical documents** — stable exposition on one
+research topic. They are memory: once written, content is not edited or deleted.
+
+- Any researcher agent may **append** to notebooks.
 - **NEVER** edit or delete existing notebook content.
-- Use dated section headers when appending new material.
-- If content becomes obsolete, append a deprecation note — do not delete.
+- **Append coherent exposition, not session logs.** Each appended section must
+  read as a self-contained mini-essay on its subtopic. No dated headers, no
+  agent attributions, no status tags (`TWO-AGENT`, `FOUR-AGENT`), no references
+  to ephemeral artifacts (blackboard slots, patch files, tmp/ scripts). Git
+  history records who wrote what and when — the notebook itself is for content.
+- **Promotion = rewrite.** When moving content from a blackboard to a notebook,
+  rewrite it as clean exposition. Do not paste raw blackboard content. Strip
+  speaker tags, status markers, and session metadata. Add explanation, context,
+  and motivation that the blackboard omitted.
+- **If content becomes obsolete**, append a brief deprecation note — do not
+  delete the original.
+- **One topic per notebook.** If a notebook covers two unrelated topics, split it.
 - Promotion path: blackboards → notebooks (stable technical exposition).
 
 ### Notebook Voting Protocol
@@ -178,8 +223,8 @@ Four surfaces, each with a different role:
 
 | Surface | Nature | Who writes | Persistence |
 |---------|--------|------------|-------------|
-| Blackboard | Scratch | Any researcher | Editable, 7 slots, 300 lines |
-| Notebook | Memory | Any researcher | Append-only |
+| Blackboard | Scratch chalkboard | Any researcher | Editable, 7 slots, 300 lines |
+| Notebook | Append-only lab notebook | Any researcher | Append-only, topical |
 | Paper Note | Derivation | Any researcher | Editable, 10-file cap per paper |
 | Manuscript | Publication | Orchestrator | Orchestrator-gated |
 
@@ -188,12 +233,12 @@ Four surfaces, each with a different role:
 ```
 Idea
  ↓
-Blackboard (raw: formulae, refs, keywords)
+Blackboard (scratch: formulae, refs, keywords — no prose)
  ├─ stabilizes, aimed at paper section → Paper Note (via promotion)
- ├─ stabilizes, general research value → Notebook (append)
- └─ wrong/stale/superseded → Overwrite (wastepaper basket)
+ ├─ stabilizes, general research value → Notebook (rewrite as exposition)
+ └─ wrong/stale/superseded → Erase (wastepaper basket)
 
-Notebook (stable exposition)
+Notebook (stable topical exposition — append-only)
  ├─ matures toward publication → Manuscript (two-researcher promotion rule)
  └─ no longer needed → Discard (voting protocol)
 
@@ -203,9 +248,11 @@ Paper Note (supports specific manuscript claim)
 ```
 
 **Decision triggers:**
-- **Blackboard → Notebook**: correct result, worth remembering, no specific paper section yet.
+- **Blackboard → Notebook**: correct result, worth remembering. **Rewrite as
+  clean exposition** — do not paste raw blackboard content. Strip speaker tags,
+  status markers, session metadata, and references to ephemeral artifacts.
 - **Blackboard → Paper Note**: directly supports a manuscript claim; too long for the manuscript.
-- **Blackboard → Overwrite**: wrong, superseded, or going nowhere.
+- **Blackboard → Erase**: wrong, superseded, or going nowhere.
 - **Notebook → Manuscript**: publication-ready; requires the two-researcher promotion rule.
 
 ### Discard Safety
@@ -218,7 +265,7 @@ Nothing is truly lost.
 
 **Commit-safety rule**: the orchestrator must verify that the content being deleted
 was included in a prior commit before executing `git rm`. Marks for deletion
-(votes, retirement proposals) are recorded but only executed after the orchestrator
+(votes, retirement requests) are recorded but only executed after the orchestrator
 confirms commit coverage. This prevents accidental loss of uncommitted work.
 
 ---
@@ -298,12 +345,12 @@ When the orchestrator wants a specific review:
 2. Reviewer writes assessment, grades issues: **blocking** / **important** / **minor**.
 3. Orchestrator creates fix tasks from blocking/important items.
 
-### Disagreement and Edit Proposals
+### Disagreement and Edit Patches
 
 When an agent finds a gap, error, or improvement opportunity in shared content
 (blackboards, notebooks, or manuscripts):
 1. Write the proposed fix on a blackboard (or append to a notebook), clearly tagged
-   with your name and labelled as a **proposal**.
+   with your name and labelled as a **patch**.
 2. Another agent must review and either accept (incorporate the fix) or counter-propose.
 3. If no agent picks it up, the orchestrator can assign the review as a task.
 

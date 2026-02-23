@@ -2,7 +2,6 @@
 
 **Created:** 2026-02-14
 **Sources:** Blackboard 3, Blackboard 6
-**Status:** Append-only notebook (graduated from blackboards)
 
 ## Summary
 
@@ -342,7 +341,6 @@ in perturbative regime (α₀ ≲ 0.3).
 
 > **Key structural property:** The first-derivative term d/dq is eliminated.
 
-**Status:** **Incorrect** in 1D.
 
 ### Corrected Statement (Blackboard 6)
 
@@ -449,7 +447,6 @@ and showed 2fW' + f'/2 = f' (the self-adjointness condition).
 
 ## RCP-Rep-P1.1: Representation Channel Forcing — Morita Classification (Physicist + Critic, 2026-02-20)
 
-**Promoted from:** blackboards/0.md. Two-agent complete (physicist proposed, critic verified).
 **Paper-edit sent:** RCP-Rep-P1.1 for rcp-foundations §7.
 
 ### Core result

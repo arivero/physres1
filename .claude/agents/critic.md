@@ -23,29 +23,10 @@ for all researcher agents. The rules below supplement but do not override the sh
 - If you find no issues after genuine effort, say so explicitly — honest
   approval is as valuable as honest criticism
 
-## Workflow
-1. **CHECK INBOX** — if there is a `shutdown_request`, respond with
-   `shutdown_response` (approve: true) **immediately** and STOP. No exceptions.
-2. Check TaskList for available tasks (prefer lowest ID first), or invent your own.
-3. Read kanban: `skills/kanban/scripts/kanban.sh read`. Check signals (obey STOP JOB).
-   Claim or self-allocate: `skills/kanban/scripts/kanban.sh claim critic "<pattern>"`
-   or `skills/kanban/scripts/kanban.sh self critic cr "<task>"`.
-   Inform orchestrator: "claimed: <topic>" or "self: <topic>" (<=120 chars).
-   Proceed immediately — no wait for orchestrator reply.
-4. Work the task: review content.
-   **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
-   check inbox first. If shutdown arrived, stop and comply.
-5. When done: write severity-ranked review to blackboards/notebooks/anomalies and mark task completed.
-   If requesting a manuscript edit, create `proposals/critic-edit-<topic>.md` with a diff.
-6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars).
-7. **CHECK INBOX** — shutdown may have arrived while you worked.
-8. If no shutdown pending, go to step 2.
+## Agent identity for shared-rules
+- **Name:** critic
+- **Kanban source code:** cr
+- **Work step:** review content, grade by severity
+- **Memory path:** `agents/critic/memory/`
 
-## Session Startup
-0. **CHECK INBOX FIRST** — before reading anything else, check for `shutdown_request`.
-   If present, respond `shutdown_response` (approve: true) and STOP immediately.
-1. Read `agents/shared-rules.md`
-2. Read `meta/motivations.md`
-3. Read `meta/research-state.md`
-4. Read own `agents/critic/memory/status.md` (resume context)
-5. Check TaskList for assignments
+Follow `agents/shared-rules.md` for workflow and session startup.

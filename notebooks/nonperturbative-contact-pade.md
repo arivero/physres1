@@ -427,7 +427,6 @@ Two-agent rule satisfied: Mathematician (§7, proposed (T)-violation argument) +
 
 ## P4.2 Scope in the Instanton Sector (Physicist + Mathematician, 2026-02-20)
 
-**Promoted from:** blackboards/3.md. Two-agent complete (physicist proposed, mathematician verified).
 **Paper-edits sent:** PN-R1.3a (#10), P9.2 cornerstone §9 (#12).
 
 ### Key results
@@ -799,8 +798,6 @@ Costin, Dunne, "Conformal and Uniformizing Maps in Borel Analysis," Eur. Phys. J
 
 ## OQ3 Level 3 Closure: Positivity Bounds from Composition + Unitarity (Negative Result)
 
-**Source:** blackboards/4.md, Physicist self-directed (2026-02-20).
-**Status:** Sev-3 negative result. Closes OQ3 Level 3 from meta/motivations.md.
 
 ### Question
 
@@ -856,9 +853,6 @@ them requires Lorentz invariance (which connects time-evolution and momentum-str
 
 ## OQ4-Convergence: Padé Rate to Vacuum Polarization Branch Cut
 
-**Date:** 2026-02-20
-**Agent:** Computationalist
-**Source:** blackboards/6.md (ONE-AGENT); script: tmp/pade_vacuum_pol.py
 
 ### Setting
 

@@ -2,9 +2,6 @@
 
 **Date Started:** 2026-02-22
 
-**Agent:** Student
-
-**Status:** ACTIVE INVESTIGATION (task assigned, Level 2-3 serendipity)
 
 **Objective:** Determine whether lattice discretization of the path integral composition law naturally forces quantum group structure (q-deformed symmetries), or if q-deformation is a pragmatic regularization choice independent of composition principles.
 
@@ -37,7 +34,6 @@ where $\Delta_\omega$ is the **alien derivative** (measures discontinuity of Bor
 
 **Key insight:** Composition imposes algebraic constraints on the resurgent structure via the Leibniz rule for alien calculus. Not all resurgent kernels satisfy P4.2 — only those whose alien calculus is compatible with composition semigroup.
 
-**Source:** Dunne-Ünsal (arXiv:1207.0905, 2012), Dorigoni (arXiv:1411.3585, 2014), van Spaendonck-Vonk (arXiv:2204.09062, 2022); reviewed in resurgence-composition-bridge.md §1-§5.
 
 ---
 
@@ -101,7 +97,6 @@ For **gauge theories** on the lattice:
 3. Borel convolution on truncated space cannot close under standard (cocommutative) Hopf algebra
 4. Therefore, **quantum group (non-cocommutative Hopf algebra) forced by composition + truncation**
 
-**Status:** Speculative. Would require:
 - Proving discrete analogue of Borel convolution semigroup on finite Hilbert space
 - Showing standard Hopf algebra cannot satisfy the discrete Leibniz rule for alien calculus
 - Demonstrating quantum group structure is unique/necessary for closure
@@ -125,7 +120,6 @@ For **gauge theories** on the lattice:
 
 **Task 1:** Study how Borel convolution and alien calculus Leibniz rule are derived from continuous composition.
 
-**Source:** Review resurgence-composition-bridge.md §1-§5 in detail; check van Spaendonck-Vonk (arXiv:2204.09062) and Dunne-Ünsal references.
 
 **Goal:** Understand precisely what algebraic constraints composition imposes (Leibniz rule, singularity structure).
 
@@ -357,6 +351,90 @@ $$\Delta(g) = g \otimes g + \text{q-deformation terms}$$
 
 ---
 
-**Last updated:** 2026-02-22, 01:45+ CET
+---
 
-**Status:** ANALYSIS SUBSTANTIALLY COMPLETE; READY FOR TEAM FEEDBACK
+## 9. Weak Hopf Algebras and Truncation
+
+### 9.1 Weak Hopf Algebras
+
+Definition (Böhm, Nill, Szlachányi, 1999): Relax the antipode axiom so the antipode
+maps to a projection rather than recovering the full identity:
+$$m \circ (S \otimes \text{id}) \circ \Delta(h) = e_L(h) \quad (\text{left identity element})$$
+
+When you compose with a "partial inverse," you get a projection onto a subspace, not the
+original element.
+
+### 9.2 Why Weak Hopf Algebras Appear in Lattice Truncation
+
+Truncating the infinite-dimensional lattice Hilbert space to the lowest k representations
+means the antipode can no longer return the full identity — it returns projection onto
+the truncated subspace. The truncated algebra is naturally a weak Hopf algebra.
+
+This happens automatically in ANY truncation scheme, not just q-deformation.
+
+### 9.3 Quantum Groups vs. Weak Hopf Algebras
+
+Quantum groups (Drinfeld-Jimbo): non-cocommutative deformations with parameter q ≠ 1.
+Weak Hopf algebras: relaxed antipode (projection), no deformation parameter.
+
+Connection: truncating SU(2)_q to a finite-dimensional subspace gives a weak Hopf algebra
+on the truncated space.
+
+---
+
+## 10. Kitaev Lattice Models and Topological Origin
+
+Result (Meusburger, 2017 CMP; arXiv:1607.01144): Kitaev lattice models for
+finite-dimensional semisimple Hopf algebra H are equivalent to the combinatorial
+quantization of Chern-Simons theory with gauge group H.
+
+The Hopf algebra structure emerges from topological constraints (how curvature/holonomy
+acts on the lattice), NOT from composition axioms. This is a second, independent source
+of Hopf structure:
+
+- Source 1 (Composition/P4.2): path integral semigroup → coassociativity (algebraic)
+- Source 2 (Topology/Kitaev): lattice holonomy closure → observable closure (topological)
+
+Both lead to Hopf structures via different mechanisms.
+
+---
+
+## 11. Composition-Compatible Algebras
+
+### 11.1 Formal Definition
+
+An algebra A is composition-compatible if:
+1. Admits a coassociative coproduct Δ: A → A⊗A (coalgebra structure)
+2. Multiplicative structure respects composition law
+3. May have antipode S (full Hopf), projection (weak Hopf), or neither (bialgebra)
+
+### 11.2 Solution Space
+
+Conjecture: all finite-dimensional composition-compatible algebras on a truncated Hilbert
+space form the category of finite-dimensional bialgebras (at minimum) or weak Hopf
+algebras (if antipode needed). The space of valid truncations is NOT unique but forms
+a category.
+
+Examples (all composition-compatible):
+1. Quantum groups SU(2)_q (Hopf)
+2. RDM-optimal truncations (bialgebra structure)
+3. Gauge-fixed formulations (depend on gauge choice)
+4. Continuous-variable (no truncation, standard Hopf)
+
+### 11.3 Universality Classes for Lattice Regularization
+
+Hypothesis: different composition-compatible algebras on truncated Hilbert spaces
+correspond to different universality classes (same continuum limit, different
+finite-cutoff physics, different effective couplings and convergence rates).
+
+Testable prediction: compute β-functions for Zache's SU(2)_k, RDM-optimal, and
+gauge-fixed truncation. Should agree at low energies, differ at cutoff scale.
+
+### 11.4 Open Questions
+
+- OQ-Comp-1: Minimal Hopf algebra structures compatible with composition
+- OQ-Comp-2: RG fixed points for composition-compatible algebras
+- OQ-Comp-3: Universality classes for lattice regularization
+- OQ-Comp-4: Continuum limit convergence rates
+- OQ-Comp-5: Category-theoretic structure of composition-compatible algebras
+

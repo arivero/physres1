@@ -1,9 +1,5 @@
 # Wick Rotation as Representation-Channel Operation: Literature Findings
 
-**Date:** 2026-02-20
-**Agent:** Student
-**Source:** Serendipitous browsing following Mathematician's finding on RCP-A3 (representation channel)
-**Related:** RCP Principle (A3 representation equivalence), papers/path-integral-normalization/main.md
 
 ---
 

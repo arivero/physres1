@@ -1,9 +1,5 @@
 # OQ1a: Planck Area vs ℏ — Which is More Fundamental?
 
-**Date:** 2026-02-20
-**Agent:** Student
-**Source:** Self-directed investigation of OQ1a from motivations.md
-**Related:** papers/planck-area/main.md, RCP Principle, composition axioms
 
 ---
 
@@ -226,7 +222,6 @@ If this inversion is correct:
 
 ## 8. Voros Exact WKB: The Bridge to Resurgence (Round 5 Deep Dive)
 
-**Source:** Voros (1983) "The return of the quartic oscillator. The complex WKB method," *Annales de l'I.H.P.* **39** (1983): 211–338; Les Houches 2024 lectures (Iwaki); SciPost (2024) "Exact instanton transseries for quantum mechanics."
 
 ### 8.1 Why Voros Matters for OQ1a
 
@@ -380,7 +375,6 @@ This notebook entry documents the exploratory investigation into OQ1a. Once the 
 
 ## PA Hypothesis Ladder: H2.3/H2.4/H2.5 Physical Reinterpretation (Physicist + Mathematician, 2026-02-20)
 
-**Promoted from:** blackboards/4.md. Two-agent complete (physicist proposed §1–§5, mathematician verified §6).
 **Paper-edit sent:** PA-R2.3 for planck-area satellite §3 (#11).
 
 ### Named hypotheses
@@ -437,7 +431,6 @@ H2.5 (dimensional economy) → d=4 unique (parity filter ∧ gravity sieve)
 
 ## b-Calculus Half-Density in d Dimensions
 
-**Source:** blackboards/0.md, THREE-AGENT (physicist+critic+mathematician), 2026-02-20.
 
 ### General formula (§2-3, VERIFIED)
 
@@ -472,8 +465,6 @@ L²_b integrability near r=0: ∫_0^1 r^{2α-1} dr converges iff α > 0.
 
 ## b-Calculus Contact Interactions: n_±=1 for ALL d
 
-**Source:** blackboards/4.md, THREE-AGENT (mathematician+physicist+critic), 2026-02-20.
-**Status:** Three-agent complete. Critic literature check: NOT in literature, sev-2 confirmed (new result).
 
 ### Classical result (Albeverio et al. 1988)
 
@@ -545,7 +536,6 @@ But this requires additional physical input beyond composition.
 
 ## d=4 Contact Interaction: Exact APS Spectrum
 
-**Source:** blackboards/3.md §11 (mathematician), THREE-AGENT complete, 2026-02-20.
 **Confirmed:** Critic (§10) + Mathematician (§11) — exactly solvable, no RG needed.
 
 ### Exact result
@@ -596,8 +586,6 @@ This open question would be a research direction for the planck-area satellite.
 
 ## D=4 Physical Selection Mechanism: Seeley-DeWitt and the a_1=0 Observation
 
-**Source:** blackboards/1.md, Physicist first pass (2026-02-20).
-**Status:** Sev-2 candidate. Needs mathematician algebraic confirmation of ξ_eff = ξ_conf(D=4) uniqueness.
 
 ### Three D=4 Coincidences (Independent Levels)
 
@@ -759,9 +747,6 @@ questions HD-H2.3–H2.5). Promote to planck-area paper only after third-agent (
 
 ## Section OQ1a-Uniqueness: Uniqueness of L_P² as Background-Free Area Scale
 
-**Date:** 2026-02-21
-**Agents:** physicist (claim), computationalist (dimensional verification), mathematician (Buckingham + precision)
-**Source:** blackboards/5.md §§8-9c
 
 ### Claim
 
@@ -811,7 +796,6 @@ Neither is "more fundamental" — they parameterize orthogonal sectors of the ph
 The BB1 §4 framing "ℏ fixes S¹ phase, L_P² fixes ℝ₊ norm" is an analogy, not an identification.
 Mathematically precise: ℏ and L_P² appear in different structural roles in the path integral kernel (phase vs. normalization), and are dimensionally independent. The ℂ× decomposition ℂ× = ℝ₊ × S¹ captures this independence at the level of analogy.
 
-**Status:** THREE-AGENT complete. Stable result for planck-area satellite §7 or §8 if needed.
 
 ### Critic Precision (sev-2 fix, FOUR-AGENT complete)
 
@@ -830,7 +814,6 @@ Distinct roles, not independent quantities. The ratio G/c³ = L_P²/ℏ absorbs 
 
 **Real open question (critic C3):** Does PA-H2.5a (integrality sieve, fractional-power exclusion) have independent physical justification beyond "aesthetics"? PA-H2.7 flags this as the key vulnerability in the planck-area satellite. OQ1a does not address this.
 
-**Status:** FOUR-AGENT complete (physicist + computationalist + mathematician + critic). Not promotable to paper in current form; stable as notebook context for planck-area §7-8 cross-reference.
 
 ---
 
@@ -950,7 +933,6 @@ The fact that composition forces curvature coupling but NOT gravity means:
 
 ## Fourth D=4 Coincidence: V_HD on de Sitter Spatial Sections (2026-02-22)
 
-**Promoted from:** blackboards/2.md (THREE-AGENT: physicist + mathematician + critic).
 
 ### Statement
 
@@ -978,7 +960,6 @@ In D != 4: V_HD is position-dependent, distorting spatial wavefunctions. Orderin
 
 ### Paper edit proposed
 
-One sentence after D9.1i (proposal: `proposals/physicist-edit-d4-coincidence-d91i.md`).
 
 ### Agent verification
 

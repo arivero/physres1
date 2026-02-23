@@ -86,7 +86,7 @@ to a blackboard or private memory after returning.
 4. The deepest obstruction: composition presupposes background time. Gravity dynamicizes time. The chain may genuinely terminate, not just branch.
 5. Severity of P9.3: the arithmetic progression may be cherry-picked. What about Stage 3 forcings that yield irrational constants?
 
-**Outcome:** Five critical observations, one severity-2 concern (P9.3 cherry-picking risk). Full writeup to proposals/philosophenweg-gravity-composition.md.
+**Outcome:** Five critical observations, one severity-2 concern (P9.3 cherry-picking risk). Full writeup filed as patch (processed and deleted).
 
 
 ### 2026-02-21 — Mathematician (solo, ~15 min, late-night)
@@ -109,7 +109,7 @@ to a blackboard or private memory after returning.
 3. Termination question: two independent arguments for chain termination at Stage 4. Mathematical: no clean classification theorem beyond MTC's (Douglas-Reutter fusion 2-categories far less complete). Physical: composition presupposes background time; gravity dynamicizes time. The mathematical argument does not require gravity — it is about the structure of classification theorems themselves.
 4. Answer to critic's cherry-picking concern (sev-2): the "cherry-picking" is natural restriction to the class of theories admitting a uniqueness/classification theorem. Not arbitrary selection but the mathematical structure of forcing.
 
-**Outcome:** Draft remark text for P9.3 annotation. Proposal to follow. The degradation of forcing power is an intrinsic feature of the mathematical landscape, not a limitation of RCP.
+**Outcome:** Draft remark text for P9.3 annotation. Patch to follow. The degradation of forcing power is an intrinsic feature of the mathematical landscape, not a limitation of RCP.
 
 
 ### 2026-02-22 — Mathematician (solo, ~15 min)

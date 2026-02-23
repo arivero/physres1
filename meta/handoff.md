@@ -117,7 +117,7 @@ The critic (R26, BB3) performed a definitive three-operator analysis:
 
 **Retraction patch filed:** `patches/critic-patch-retract-D91pq.md` (TWO-AGENT: critic+mathematician, BB3 §§1-15 APPROVE). **DO NOT APPLY until THREE-AGENT consensus (computationalist spectral check pending).** See kanban.
 
-**Do NOT apply:** `proposals/physicist-edit-retract-d91p-d91q.md` — proposes a₁=R/3 which is for O3, not Δ_{1/2}.
+**Deleted:** `proposals/physicist-edit-retract-d91p-d91q.md` (was wrong: proposed a₁=R/3 for O3, not Δ_{1/2}). The `proposals/` directory has been eliminated in favor of `patches/`.
 
 **BB changes:**
 - **BB3** (critic R26): three-operator analysis, a₁=R/6. Overwrote OQ-FdV-3 (§§11-13 already in notebook).
@@ -178,7 +178,7 @@ The critic (R26, BB3) performed a definitive three-operator analysis:
   - D6.5 (THREE-AGENT): impulse-kick kernel, Weierstrass-Erdmann jump as composition saddle.
   - D6.4a (FOUR-AGENT): λφ⁴ two-loop benchmark, |λ|≲8.4 at η=0.1.
   - Vuln 2: substantially addressed. Vuln 4: CLOSED. Representation track + Package B/D updated.
-- All active proposals processed (critic-review-impulse-kernel, critic-review-vuln4-phi4-benchmark, mathematician-review-impulse-kernel, mathematician-review-vuln4-phi4, computationalist-review-vuln4-phi4). Applied.
+- All active patches processed (critic-review-impulse-kernel, critic-review-vuln4-phi4-benchmark, mathematician-review-impulse-kernel, mathematician-review-vuln4-phi4, computationalist-review-vuln4-phi4). Applied.
 - Unprocessed (SINGLE-AGENT only, pending second-agent vote next session): none — all applied or deferred.
 - Pending discard vote: fermionic-mediators + uncuttable (critic+physicist voted YES; need 1 more).
 - Research state updated: `meta/research-state.md` (section: "Session 2026-02-21 (21:40-23:00 CET, Run R17)").
@@ -191,5 +191,5 @@ The critic (R26, BB3) performed a definitive three-operator analysis:
   - New `Remark D11.0a` bridges `D8` to `D11`; wording revised to avoid object-identity drift.
   - Added in-text cite `[ElShowk2014]` and matching reference-list entry.
 - Updated `paper/bibliography.md` with `[ElShowk2014]` in Sources + DOI audit + OA acquisition status.
-- Proposals queue processed and cleared from root; artifacts archived under `proposals/archive/2026-02-21-run2130/`.
+- Patch queue processed and cleared.
 - Durable run summary appended to `meta/research-state.md` (section: "Session 2026-02-21 (20:47-21:13 CET, Run R16)").

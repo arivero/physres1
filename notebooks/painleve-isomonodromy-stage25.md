@@ -17,7 +17,6 @@ This notebook assesses the relationship between Painleve isomonodromy and RCP co
 
 **Def 1.3.** Painleve I-VI = reductions of isomonodromy conditions for 2x2 systems on P^1.
 
-**Source:** Jimbo-Miwa-Ueno (1981), Harnad (1993), Bertola-Tovbis arXiv:1506.06897
 
 ## 2. Composition Compatibility
 

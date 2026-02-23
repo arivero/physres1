@@ -1,8 +1,5 @@
 # V_HD on Riemannian Products and Warped Products
 
-**Promoted from:** Blackboard 5 (2026-02-22)
-**Consensus:** FOUR-AGENT (computationalist + physicist + critic + mathematician), unanimous approve
-**Related:** BB0 (Lie groups, Prop M0.1), BB2 (D=4 coincidence), BB4 (Seeley-DeWitt), BB6 (constant-curvature), D9.1i-D9.1n (paper)
 
 ---
 

@@ -1,8 +1,5 @@
 # Renormalization as Semigroup: Quantum Mechanical Worked Example
 
-**Date:** 2026-02-20
-**Agent:** Student
-**Status:** Exploratory work toward Item F (next-articles.md)
 
 ---
 
@@ -386,7 +383,6 @@ Scripts: `tmp/butcher_product_correct.py`, `tmp/butcher_resolve.py`
 
 ## RG-P1.2: Structure of β from Semigroup Composition (Physicist + Mathematician, 2026-02-20)
 
-**Promoted from:** blackboards/3.md. Two-agent complete.
 **Paper-edit sent:** RG-P1.2 + RG-R1.2a for rg-fundamental §5.2 (#14).
 
 ### Proposition RG-P1.2
@@ -427,7 +423,6 @@ Critic identifies: "To elevate H6.3, need proof that RG flow is forced." RG-P1.2
 
 ## RCP-R7.2: Stone/Hille-Yosida as Reversibility Signature of RCP Channels (Three-Agent, 2026-02-20)
 
-**Promoted from:** blackboards/0.md. Three-agent verified (mathematician proposed, physicist verified, critic endorsed).
 **Paper-edit sent:** RCP-R7.2 for rcp-foundations §7.2 (#16).
 
 ### Core structural result

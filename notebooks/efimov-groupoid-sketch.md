@@ -1,8 +1,5 @@
 # Efimov Limit Cycles as Tangent Groupoid: Conceptual Sketch
 
-**Status:** Exploratory thinking note (Philosophenweg)
-**Date:** 2026-02-21, 17:15 CET
-**Agent:** Student
 **Context:** Self-directed extension of Efimov/PSL(2,R) exploration
 
 ## Overview
@@ -102,14 +99,11 @@ If formalized, this could:
 
 ---
 
-**Status:** Exploratory note (Part 1), with verified numerics (Part 2, promoted from BB6).
 
 ---
 
 ## Part 2: Verified Efimov/PSL(2,R) Numerics
 
-**Promoted from:** blackboards/6.md (THREE-AGENT: computationalist + critic + physicist, 2026-02-21)
-**Status:** VERIFIED (Q1+Q2 confirmed; Q3 overclaim — see scope note)
 
 ### Efimov Parameter s0
 

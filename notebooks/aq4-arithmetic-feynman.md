@@ -1,8 +1,5 @@
 # OQ4: Arithmetic of Feynman Integrals and RCP Connections
 
-**Date:** 2026-02-20, Session 3 (Continuation)
-**Agent:** Student (serendipity browsing)
-**Status:** Exploratory, Tier 1 (high potential for P4.2 and RCP connections)
 
 ## Overview
 
@@ -456,7 +453,85 @@ If anomalies obstruct composition (OQ5-H3), then:
 the categorical anomaly structure to be **minimal/rigid** — i.e., fewest degrees of freedom
 in the category of tensor functors.
 
-## §13. References (Updated)
+## §13. Three-Level Hierarchy and Logical Boundaries
+
+### Level A: Composition → RG Existence
+
+P4.2 / D6.4b: The composition axiom (C) forces the existence of a one-parameter flow
+(the renormalization group) whenever the naive limit diverges. Composition forces RG to
+EXIST (as a semigroup on coupling space), but does not constrain which theory (which
+β-function) the flow describes.
+
+### Level B: RG as Subgroup of Cosmic Galois Group (Connes-Marcolli 2004)
+
+Theorem (Connes-Marcolli, arXiv:hep-th/0411114): In the MS-bar scheme with dimensional
+regularization, the RG embeds as a one-parameter subgroup of the cosmic Galois group G
+via Birkhoff decomposition. G = G_m ⋉ U where G_m is the grading (= RG) and U contains
+all "higher structure" (amplitude arithmetic).
+
+### Level C: G Constrains Amplitude Arithmetic (Brown 2015/2017)
+
+Coaction principle: Δ(A(G)) = Σ_{γ⊂G} A(G/γ) ⊗ A(γ). Both factors lie in motivic
+cohomology; G acts on all periods via the coaction, constraining which number-theoretic
+classes the amplitudes can populate.
+
+### What (C) Does and Does NOT Force
+
+| Level | What composition forces | What it does NOT force |
+|-------|------------------------|----------------------|
+| A | RG semigroup EXISTS | Form of β-function; specific theory |
+| B | (Not forced by (C) directly) | Birkhoff structure; equisingularity; MS-bar scheme |
+| C | (Not forced by (C) at all) | Number-theoretic class of loop integrals; coaction; MZVs |
+
+The three levels are logically independent. (C) → A only.
+
+### The Direct Connection: Connes-Kreimer Hopf Algebra
+
+Our rooted-tree-bookkeeping satellite (papers/rooted-tree-bookkeeping/main.md §6.2)
+computes the Connes-Kreimer coproduct Δ on rooted trees: Δ(τ) = Σ P_c(τ) ⊗ R_c(τ).
+This IS the CK Hopf algebra H_CK — not an analogy, the same object.
+
+Chain: rooted-tree-bookkeeping → H_CK ⊂ G (via Connes-Marcolli) → Brown coaction.
+
+### What NOT to Claim
+
+1. RCP does NOT force the number-theoretic type of loop integrals.
+2. Composition (C) does NOT imply the coaction principle.
+3. P4.2 does NOT force MZVs to appear.
+4. "Refinement compatibility" ≠ "regularization."
+5. Temporal composition semigroup ≠ Brown's algebraic coaction on periods.
+
+---
+
+## §14. Why Modular Forms Appear (Algebraic-Geometry Mechanism)
+
+The modular group PSL(2,ℤ) is the mapping class group of the torus (genus-1 surface).
+Modular forms are sections of line bundles on M_{1,1} = H / PSL(2,ℤ).
+
+At loop order L, the Symanzik variety defined by (U, F) has genus ≥ 1 starting at L=2
+(sunrise diagram = elliptic curve). When the variety is an elliptic curve, periods are
+elliptic integrals with monodromy in SL(2,ℤ) — hence modular.
+
+Loop-order genus progression:
+- L=1: genus 0 (rational → MPLs/MZVs)
+- L=2, sunrise-type: genus 1 (→ elliptic polylogarithms → modular forms)
+- L≥3, banana-type: K3 surfaces
+
+Does composition force modular structure? NO. The chain:
+(C) → RG exists [A] → RG ⊂ G [B] → periods of Symanzik variety [C] → modular if genus=1.
+Each arrow requires substantial additional structure beyond (C).
+
+RCP channel realizations (not derivations):
+- Partition (A1): Symanzik coproduct IS a partition-channel operation
+- Scale (A4): G_m factor = arithmetic RG
+- Representation (A3): scheme independence = representation-channel equivalence
+
+Connection to Painlevé: (C) + (I_int) → Painlevé τ-function → theta function → modular
+form. Closest to "composition forces modular forms," but requires integrability axiom.
+
+---
+
+## §15. References (Updated)
 
 - papers/rcp-foundations/main.md: RCP axioms and three channels
 - papers/rg-fundamental/main.md: RG as fundamental, two-layer structure

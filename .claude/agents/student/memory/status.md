@@ -119,7 +119,7 @@ Session summary: 18 targeted searches; 179 new blackboard lines; 450 total lines
 4. **RCP scale channel hypothesis:** Discrete scale invariance = limit cycle in RCP scale channel; may lift to groupoid structure combining RG flow + partition refinement
 
 **Deliverables:**
-- proposals/task-efimov-psl2r.md: 400+ lines, comprehensive survey
+- Efimov/PSL(2,R) survey: 400+ lines (filed as patch, processed and deleted)
 - 8 key papers analyzed and cited (arXiv:2509.04746, 2601.09266, 2501.18844, 1208.3674, 2111.12716, 1302.0884, physics/0507031, 2404.00275)
 - Three-tier next steps formulated: (1A) mathematician PSL(2,ℝ) verification, (1B) physicist numerical extraction, (2) groupoid construction
 
@@ -145,7 +145,7 @@ Session summary: 18 targeted searches; 179 new blackboard lines; 450 total lines
 - **Bonus finding:** Stable distributions literature (Brown U OA, Nolan chapters) supports P4.2 "alpha=2 exclusion" argument
 
 **Deliverable:**
-- proposals/task-library-audit.md: 400+ lines, tiered acquisition plan, 11+ references with OA status, ready for implementation
+- Library audit: 400+ lines, tiered acquisition plan, 11+ references with OA status (filed as patch, processed and deleted)
 
 **Next Phase:** Download/ingest OA sources (3-4 PDFs), attempt Pourciau acquisition via ResearchGate, coordinate with Landsman/Hairer institutional access
 
@@ -307,7 +307,7 @@ Team-lead nudge: "Kanban empty, self-direct". Began OQ2 axiomatization survey.
 
 ## Session 5 (2026-02-21, Efimov/PSL(2,R) Refinement, 16:00–16:45 CET)
 
-**Upgraded from initial Efimov proposal:** Team-lead's refined questions pointed to specific missing pieces. Searched for:
+**Upgraded from initial Efimov survey:** Team-lead's refined questions pointed to specific missing pieces. Searched for:
 1. **Hyperradial equation + PSL(2,R)** connection
 2. **Bedaque-Hammer-vanKolck** effective field theory framework
 3. **Hille-Yosida semigroup** formulation of RCP scale channel
@@ -344,7 +344,7 @@ Team-lead nudge: "Kanban empty, self-direct". Began OQ2 axiomatization survey.
 - Refined: Hyperradial arena + SAE + Bedaque-Hammer + Hille-Yosida = MEDIUM-HIGH convergence
 - Still need explicit PSL(2,R) representation calcs, but structure is solid
 
-**Status (16:45 CET):** Efimov/PSL(2,R) refined proposal complete with hyperradial inverse-square arena, self-adjoint extension parametrization, Bedaque-Hammer-vanKolck framework, and Hille-Yosida semigroup connection to RCP. Ready for team execution (mathematician priority for UIR calculation verification).
+**Status (16:45 CET):** Efimov/PSL(2,R) refined survey complete with hyperradial inverse-square arena, self-adjoint extension parametrization, Bedaque-Hammer-vanKolck framework, and Hille-Yosida semigroup connection to RCP. Ready for team execution (mathematician priority for UIR calculation verification).
 
 ## OA Source Ingestion Implementation (2026-02-21, 16:50–17:15 CET)
 

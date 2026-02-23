@@ -91,7 +91,7 @@ When a paper receives MINOR REVISION:
 3. Agents address concerns by:
    - Reading the referee report file
    - Working on fixes via blackboards
-   - Proposing paper edits via `proposals/`
+   - Filing paper edits via `patches/`
 4. After MINOR items are resolved or justified:
    - The `votes.md` file is reset
    - A new voting round begins
@@ -104,7 +104,7 @@ When a paper receives MAJOR REVISION:
 3. Agents address concerns by:
    - Reading the referee report file
    - Working on fixes via blackboards
-   - Proposing paper edits via `proposals/`
+   - Filing paper edits via `patches/`
 4. After MAJOR items are addressed and MINOR items are resolved or justified:
    - The `votes.md` file is reset
    - A new voting round begins

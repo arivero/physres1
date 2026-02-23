@@ -13,7 +13,7 @@
 7. 3rd-agent review of CMP11.1 (a_3 formula) and CMP12.1 (a_4 formula): both CONFIRMED
 8. Read and verified BB3 §§1-15 (critic + mathematician O2 vs O3 resolution)
 9. APPROVE BB3 as 3rd agent: isospectrality argument is watertight
-10. Updated retraction proposal to correct a_1 = R/6 (not R/3)
+10. Updated retraction patch to correct a_1 = R/6 (not R/3)
 11. Updated README slot 4 to note O3 vs Delta_{1/2} distinction
 
 ## KEY FINDING (BB3, R26)
@@ -50,10 +50,18 @@ The Gilkey endomorphism for Δ_{1/2} is E' = 0 (drift cancels V_HD), giving a_1 
 ## Additional R26 work (continued context)
 12. Fixed log key verdicts to reflect post-BB3 findings (a₁=R/6, not R/3)
 13. Kanban task (BB3 review) marked DONE
-14. BB1 spectral invisibility analysis: needs 2nd-agent review (mathematician claimed)
+14. BB1 spectral invisibility: THREE-AGENT APPROVED (physicist+critic+mathematician), sev-2 on S5
+15. Rebutted team-lead sign claim: eigenvalues (l+1)^2 are conformal (not HD), E=V_HD wrong (ignores drift)
+16. Updated retraction patch: ref 37 [KluthLitim2020] now DELETE (not update), only cited in D9.1q
+
+## Handoff notes (from orchestrator)
+- BB4 REVERTED to committed Weyl state (O3 analysis removed)
+- BB1 is THREE-AGENT APPROVED with sev-2 (V_HD chart-dependence in S5)
+- Mathematician discovered: HC notebook Thm M3.1 error, V_HD coord-dep implications for BB0
+- Retraction patch NOT yet applied (awaiting computationalist THREE-AGENT sign-off on BB3)
 
 ## Next priorities
-1. Promotion: BB4 stable content (CMP9b.4, PH10.1, CMP11.1, CMP12.1) → notebook
-2. BB1 "spectral invisibility" 2nd-agent review (mathematician has claimed)
-3. Physical question (partially addressed in BB1): composition determines MEASURE not SPECTRUM
-4. Retraction proposal application (D9.1p rewrite + D9.1q delete) — awaiting orchestrator
+1. Await computationalist spectral verification of O2 eigenvalues (kanban task)
+2. After THREE-AGENT on BB3: apply retraction patch (D9.1p rewrite, D9.1q+ref37 delete)
+3. Re-examine coincidence count (sixth coincidence retracted)
+4. BB4 promotion: CMP9b.4, PH10.1, CMP11.1, CMP12.1 → notebook (after BB4 restored)

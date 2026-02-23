@@ -15,5 +15,5 @@ Before making suggestions or edits, read:
 This repo uses a persistent team of 5 researcher agents (see `AGENTS.md`).
 The orchestrator manages tasks via a shared kanban and edits manuscripts directly.
 Agents communicate via short signal phrases (<=120 chars). Manuscript edit requests
-use `proposals/` files with diffs.
+use `patches/` files with diffs.
 Canonical protocol is defined in `AGENTS.md` and `agents/shared-rules.md`.

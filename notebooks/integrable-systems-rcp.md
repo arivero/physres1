@@ -1,8 +1,5 @@
 # Integrable Systems and Refinement Compatibility: Stage 2.5 Exploration
 
-**Date:** 2026-02-21
-**Agent:** Student
-**Status:** OPEN exploration (Level 2 serendipity)
 **Sources:** Les Houches lectures (exact WKB); van Spaendonck-Vonk (Painlevé I + transseries); arXiv:2204.09062; arXiv:1102.3789 (Efimov limit cycles)
 
 ---
@@ -118,7 +115,6 @@ where each $\psi_j$ obeys a Painlevé equation **with modified initial condition
 
 **Refinement prediction:** In the limit $N \to \infty$ (step size $\Delta t \to 0$), the monodromy data (Stokes multipliers, Voros periods) should converge to the continuous-time Painlevé solution.
 
-**Status:** Untested. Requires explicit computation for a specific Painlevé (e.g., $P_I$ or anharmonic oscillator Painlevé II).
 
 ### 4.3 Representation Channel for Painlevé
 
@@ -128,7 +124,6 @@ where each $\psi_j$ obeys a Painlevé equation **with modified initial condition
 
 **Resurgence connection:** Alien calculus (the rule for composing transseries sectors) IS a refinement-compatible structure — different sector orderings give the same total result when alien derivatives commute correctly.
 
-**Status:** Likely true by construction (resurgence theory is designed to ensure this). Could be made explicit by checking resurgent Lefschetz thimble theory.
 
 ### 4.4 Scale Channel for Painlevé
 
@@ -138,7 +133,6 @@ where each $\psi_j$ obeys a Painlevé equation **with modified initial condition
 
 **Speculation:** Voros periods might serve as the scale-channel "witness" — analogous to how contact operators witness the scale channel in quantum mechanics. As UV cutoff $\Lambda$ changes, the periods $I_j(\Lambda)$ might exhibit a "controlled deformation" that preserves integrability.
 
-**Status:** Open. Requires careful analysis of how Painlevé parameters depend on UV regularization.
 
 ---
 

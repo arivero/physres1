@@ -2,7 +2,6 @@
 
 **Created:** 2026-02-14
 **Sources:** Blackboard 0 (P4.2 ↔ RCP mapping, (D) derivability, commuting diagrams), cornerstone P4.2, rcp-foundations Section 6
-**Status:** Append-only notebook (graduated from blackboard)
 
 ## Summary
 
@@ -195,8 +194,6 @@ The "physical setup" assumption now carries: self-adjoint generator \(H\) (exclu
 
 ## Stage 3 CFT Analog: c/24 Forcing and the Double Analogy
 
-**Source:** blackboards/5.md, Physicist (2026-02-20).
-**Status:** Sev-3 conceptual clarification. Extends the Stage 1-2 axiom analysis to Stage 3.
 
 ### The d/2 ↔ c/24 Double Analogy
 
@@ -256,8 +253,6 @@ Composition forces the GEOMETRIC/ALGEBRAIC FACTOR per DOF (1/2, 1/24, or the sem
 
 ## Part 6: OQ2-H1 Axiomatization Convergence (TWO-AGENT: student + mathematician)
 
-**Source:** blackboards/2.md §§1-9 (student survey + mathematician assessment), 2026-02-21.
-**Status:** Sev-3 conceptual (not load-bearing for cornerstone). Good context for rcp-foundations §1 introduction.
 
 ### 6.1 The Four Frameworks
 
@@ -278,7 +273,6 @@ Composition forces the GEOMETRIC/ALGEBRAIC FACTOR per DOF (1/2, 1/24, or the sem
 | A4 (Local Discriminability) | Representation | Best match: states distinguishable by local ops ≈ representation-channel equivalence. |
 | A5 (Continuity) | ALL THREE | Continuity of state space spans all RCP channels. Not a clean one-to-one mapping. |
 
-**Verdict:** NOT isomorphic. Spatial tensor product (Hardy A3) ≠ temporal convolution (RCP partition channel). Hardy's axioms cannot be reorganized as (partition/repr/scale) triples without loss of structural specificity.
 
 ### 6.3 AQFT → RCP Mapping (Strongest Correspondence)
 
@@ -332,8 +326,6 @@ Categorical QM ⊂ Hardy ⊂ AQFT ≈ RCP
 
 ## Part 7: Composition-Law Derivations of QM — Literature Landscape (THREE-AGENT: critic + mathematician + physicist)
 
-**Source:** blackboards/3.md (2026-02-21, Session 11). Promoted 2026-02-22.
-**Status:** THREE-AGENT unanimous. Prior art coverage complete (arXiv:2602.09984 already cited as ref 23).
 
 ### 7.1 Three Families of QM Derivations
 

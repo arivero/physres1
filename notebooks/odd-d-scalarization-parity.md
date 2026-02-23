@@ -1,8 +1,6 @@
 # Odd-d Scalarization: Parity Obstruction and Transmutation Witnesses
 
 **Created:** 2026-02-14
-**Source:** Blackboard 0 (2026-02-14)
-**Status:** Append-only notebook (graduated from blackboards)
 
 ## Summary
 

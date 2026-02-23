@@ -7,7 +7,7 @@
 - BB1 §13: Corollary M1.1 (uniqueness proof, FOUR-AGENT). BB3: errata (M3.2, M3.3).
 - BB4/BB5: third-agent reviews. Notebooks promoted (seeley-dewitt, vhd-product, HC interpretation).
 - Vassilevich sign: E=-V_HD, a₁=R/3≠0, a₂(S³)=0 confirmed.
-- 4 Philosophenweg walks. Multiple paper-edit proposals approved/merged.
+- 4 Philosophenweg walks. Multiple paper-edit patches approved/merged.
 - Physicist patch D9.1q: approved as second agent.
 
 ## 2026-02-23 (R26 session)

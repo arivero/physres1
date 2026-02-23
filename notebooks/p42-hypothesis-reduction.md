@@ -2,7 +2,6 @@
 
 **Created:** 2026-02-14
 **Sources:** Blackboard 1 (Exponential Weight Uniqueness), Blackboard 2 (Levy-Khintchine Obstruction)
-**Status:** Append-only notebook (graduated from blackboards)
 
 ## Summary
 
@@ -328,7 +327,6 @@ So Route (I₃) does NOT actually require the iε prescription as an input — i
 that the oscillatory Gaussian integral is evaluated by Fresnel (analytic continuation),
 which is a separate mathematical fact.
 
-**Verdict:** The two derivations are logically independent:
 - iε from composition: uses sign of S_cl and composition growth conditions
 - Identity limit via stationary phase: uses Fresnel/analytic continuation of Gaussian, not iε
 
@@ -427,7 +425,6 @@ References: blackboards/2.md (identity limit stationary phase analysis); Exponen
 
 ## Part 6: Composition, Action-Angle Coordinates, and Bohr-Sommerfeld (Mathematician+Physicist, 2026-02-20)
 
-**Source:** blackboards/5.md, TWO-AGENT complete (mathematician + physicist). Sev-3 (clarification).
 
 ### The Question
 
@@ -489,8 +486,6 @@ The last entry is new: composition (C) applied to angle-variable kernels on the 
 
 ## Part 7: d/2 Normalization Uniqueness from Composition
 
-**Source:** blackboards/2.md (d/2 uniqueness theorem and proof chain, plus physicist second-agent review)
-**Status:** TWO-AGENT verified (mathematician + physicist), 2026-02-21
 **Connects to:** P4.2d (paper/main.md line ~623), Remark P4.2e
 
 ### Statement
@@ -564,9 +559,6 @@ P4.2d (paper/main.md line ~623) states the dimensional matching \(\alpha = 2\) a
 
 ## Part 8: Scope of d/2 Uniqueness — Spectral Dimension and Planck-Scale Dispersion
 
-**Source:** blackboards/1.md (2026-02-21, mathematician + physicist second-agent review)
-**Status:** TWO-AGENT verified (mathematician + physicist), 2026-02-21
-**Extends:** Part 7 (scope boundaries table)
 
 ### Question
 
@@ -626,8 +618,6 @@ The initial framing ("d/2 IS the UV spectral dimension") was too strong. The cor
 
 ## Part 9: d/2 Occurrence Landscape (Disambiguation)
 
-**Source:** Student Philosophenweg (2026-02-21, context window 2)
-**Status:** SINGLE-AGENT (student). Cataloguing note, no new claims.
 
 ### Four appearances of d/2 in the project
 
@@ -661,10 +651,6 @@ The statement "d/2 appears four times in the project" could mislead a reader int
 
 ## Part 10: Spectral Dimension d=4 Selection — Compatibility, Not Forcing (FOUR-AGENT)
 
-**Source:** blackboards/1.md §§1-12 (mathematician + physicist + critic + computationalist)
-**Proposal:** proposals/computationalist-task-spectral-dimension-d4-selection.md
-**Status:** FOUR-AGENT UNANIMOUS (2026-02-21). Corrected framing of original computationalist proposal.
-**Extends:** Part 8 (scope of d/2 uniqueness, TWO-AGENT) → upgraded to FOUR-AGENT with sharpened verdict.
 
 ### The observation
 
@@ -732,7 +718,6 @@ All four agents concur: this result is a scope clarification for the d/2 uniquen
 - Part 7 (this notebook): d/2 uniqueness theorem
 - Part 8 (this notebook): spectral dimension scope (TWO-AGENT, now subsumed)
 - Part 9 (this notebook): d/2 occurrence landscape (student)
-- proposals/computationalist-task-spectral-dimension-d4-selection.md: original proposal + self-correction
 - Carlip, arXiv:1705.05417 (2017): spectral dimension universality review
 - Horava, Phys. Rev. D 79, 084008 (2009): Lifshitz gravity
 - sources/horava-spectral-dimension-lifshitz.md: ingested reference
@@ -829,7 +814,6 @@ Key Result 4 line "SU(3) computation pending (Task #32)" is now STALE.
 Agent status: FIVE-AGENT (mathematician+physicist+critic+computationalist; student summary pending).
 
 The general formula \(V_{\mathrm{HD}} = -|\rho|^2_g = -\dim(G) h^\vee/24\) is now PROVED, not just conjectured. D9.1o in paper/main.md upgraded from "Numerical verification" to analytic proof + numerical confirmation.
-- proposals/mathematician-edit-d91j-lie-groups.md: paper-edit proposal
 
 ### Student Summary (2026-02-22): V_HD Lie Group + Product Results — Literature Context
 

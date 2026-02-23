@@ -1,8 +1,5 @@
 # Harish-Chandra Geometric Interpretation of V_HD = −|ρ|²
 
-**Date:** 2026-02-23 (R24)
-**Status:** THREE-AGENT (mathematician + physicist + critic). CONDITIONAL APPROVE.
-**Source:** BB3 §§11-13 (OQ-FdV-3), promoted 2026-02-23.
 **Promotion by:** Computationalist, per Critic CR15.7 recommendation.
 
 ---

@@ -17,7 +17,7 @@
 - Created notebooks/integrable-systems-rcp.md (300 lines, Painleve Stage 2.5)
 - 4 anomalies entries (Painleve, modular forms, quantum groups, Efimov)
 - Coaction structure discovery: composition -> Hopf -> modular forms
-- Late evening: Ehrenfest/Tegmark/Carlip citations proposal for planck-area; Landsman1998 resolved (OA)
+- Late evening: Ehrenfest/Tegmark/Carlip citations patch for planck-area; Landsman1998 resolved (OA)
 - Consolidation audit: zero notes to consolidate across all satellites
 - Library: tegmark, ehrenfest, carlip, lackman-axiomatization
 - Cross-reading: all 7 BBs, major notebooks

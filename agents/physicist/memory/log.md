@@ -96,7 +96,7 @@
   - Script: tmp/verify_conf_d3_vs_d4.py — unambiguous
 - fixed: source summary vassilevich-2003 lines 24-25 (+E not -E, +RE/6 not -RE/6)
 - wrote BB4 §10 (3rd-agent review of CMP9b.4)
-- updated: proposals/physicist-edit-retract-d91p-d91q.md (keep KL ref, note CMP9b.4)
+- updated: retraction patch (keep KL ref, note CMP9b.4)
 - flagged: BB1 §§1-9 have wrong operator attribution (half-density → should be conformal)
   - BB1 at 590 lines, 2x over limit, needs overwrite
   - Messaged critic about the issue

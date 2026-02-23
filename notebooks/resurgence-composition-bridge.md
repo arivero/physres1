@@ -213,7 +213,6 @@ Sentence: "The composition law (C) forces the instanton lattice {n·ζ_*}, while
 
 ## 12. Q1 Resolution: WKB Connection Formulas from Composition
 
-**Source:** blackboards/3.md, THREE-AGENT (physicist+critic+mathematician), 2026-02-20.
 
 ### Main result (sev-3: framing contribution, not new mathematics)
 
@@ -304,7 +303,6 @@ Physicist sends paper edit to orchestrator.
 
 ## 13. H6.3 Upgrade: Scale-Channel Witness to Conditional Proposition
 
-**Source:** blackboards/3.md, THREE-AGENT (physicist+critic+mathematician), 2026-02-20.
 **Paper edit applied** to paper/main.md Remark D10.1c (line 1566).
 
 ### Main Result (sev-2)
@@ -571,7 +569,6 @@ to match the Écalle-normalized alien derivative definition, not from the convol
 
 ## §17. A4 Scale-Channel Constraints on Borel Singularity Positions
 
-**Source:** blackboards/3.md; TWO-AGENT (mathematician + computationalist).
 
 ### Setup
 
@@ -660,7 +657,6 @@ The equal log-rate condition (1/A₁)(dA₁/dlogμ) = (1/A₂)(dA₂/dlogμ) dep
 not just the functional form of β. For A_i=8π²/g_i², equal log-rates require β(g₁)/g₁³ = β(g₂)/g₂³,
 which holds at all μ only if g₁(μ)=g₂(μ) for all μ — forcing equal coupling values, not just equal β-function forms.
 
-**THREE-AGENT endorsement:** Mathematician + Computationalist + Physicist.
 
 ---
 

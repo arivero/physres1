@@ -46,7 +46,7 @@ Emergency read is allowed only for shutdown safety when an agent is non-responsi
 **Responsibilities:**
 - Team creation and shutdown
 - Task seeding and signal management via the shared kanban (agents self-service via `skills/kanban/`)
-- **Polling `patches/` for patch requests** — read proposal files, process, then delete
+- **Polling `patches/` for patch requests** — read patch files, process, then delete
 - Processing patch requests directly (no subagent)
 - **Publication editor**: record votes, enforce unanimous threshold, spawn referee agents, decide accept/revise/reject (§11)
 - Notebook deletion vote tallying (commit-safety check before executing `git rm`)
@@ -165,7 +165,7 @@ the orchestrator's window for actual work.
 
 Patch request files: `patches/<agent>-patch-<topic>.md` (gitignored, ephemeral). Must include a literal diff block.
 
-**Proposal lifecycle (hard):** The orchestrator deletes every proposal file **immediately** after processing (accepted, rejected, or deferred). No archiving, no accumulation. The file's existence means it is unread. A processed proposal that still exists is a bug.
+**Patch lifecycle (hard):** The orchestrator deletes every patch file **immediately** after processing (accepted, rejected, or deferred). No archiving, no accumulation. The file's existence means it is unread. A processed patch that still exists is a bug.
 
 ---
 

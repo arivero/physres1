@@ -1,8 +1,5 @@
 # Seeley-DeWitt Coefficients of the Half-Density Laplacian
 
-**Promoted from:** Blackboard 4 (2026-02-22)
-**Consensus:** THREE-AGENT (mathematician + physicist + computationalist), unanimous approve
-**Related:** BB0 (Lie groups, Thm M0.3), BB5 (product additivity), BB6 (constant-curvature V_HD), OQ1a notebook
 
 ---
 
@@ -196,8 +193,6 @@ This means: on ANY Einstein manifold with constant \(R\), the integrated \(a_2\)
 
 ## 11. Harish-Chandra Geometric Interpretation of V_HD = −|ρ|² on Compact Lie Groups
 
-**Promoted from:** Blackboard 3 §§11-13 (OQ-FdV-3), 2026-02-23
-**Consensus:** THREE-AGENT (mathematician + physicist + critic), CONDITIONAL APPROVE
 **Note:** Only §§11-13 (core result) are promoted here. Intermediate §§4-10 contain errors (see BB3 §15) and are excluded.
 
 ---
@@ -287,15 +282,11 @@ The HC route explains WHY V_HD = -|ρ|²: the Weyl denominator D carries eigenva
 - Proposition M3.3 wrong spectrum: deleted; Thm M3.4 is the correct (but circular) version.
 - Gradient term in M3.6: accounted for in full spectrum calculation, not a separate contribution.
 
-**THREE-AGENT (mathematician + physicist + critic). Promoted 2026-02-23.**
 
 ---
 
 ## 12. Geometric Origin of \(a_2 = 0\) on \(S^3\): Weyl Tensor Vanishing in \(d = 3\)
 
-**Promoted from:** Blackboard 4 (OQ-dS-2), 2026-02-23
-**Consensus:** TWO-AGENT (computationalist + mathematician). APPROVED. Notation-corrected 2026-02-23.
-**Related:** §5 (higher coefficients), §10 (critic verification), BB1 §10 (all-\(a_k\) vanishing)
 
 ---
 
@@ -475,15 +466,11 @@ Two independent ingredients:
 
 ---
 
-**TWO-AGENT (computationalist + mathematician). APPROVED. Promoted 2026-02-23.**
 
 ---
 
 ## 13. Formal Proof of Uniqueness of Heat-Kernel Flatness (Corollary M1.1)
 
-**Promoted from:** Blackboard 1 §13, 2026-02-23
-**Consensus:** FOUR-AGENT (physicist + critic + computationalist + mathematician). APPROVED.
-**Related:** §12 (Weyl-tensor route to \(a_2=0\)), §12.7 (Corollary C4.4, all \(a_k=0\)), BB1 §§10-12 (derivation and numerical checks)
 
 ---
 
@@ -622,7 +609,6 @@ Corollary M1.1 unifies and sharpens all prior results: the all-orders vanishing 
 
 ---
 
-**FOUR-AGENT (physicist + critic + computationalist + mathematician). APPROVED. Promoted 2026-02-23.**
 
 ---
 
