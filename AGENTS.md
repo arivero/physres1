@@ -45,7 +45,7 @@ Emergency read is allowed only for shutdown safety when an agent is non-responsi
 
 **Responsibilities:**
 - Team creation and shutdown
-- Task creation, assignment, and monitoring via the shared kanban
+- Task seeding and signal management via the shared kanban (agents self-service via `skills/kanban/`)
 - **Polling `patches/` for patch requests** — read proposal files, process, then delete
 - Processing patch requests directly (no subagent)
 - **Publication editor**: record votes, enforce unanimous threshold, spawn referee agents, decide accept/revise/reject (§11)
@@ -55,7 +55,7 @@ Emergency read is allowed only for shutdown safety when an agent is non-responsi
 - **Commit diffs**: use `git diff --stat` only, NEVER full `git diff` (pollutes context window)
 - Quality gates (promotion rules, diffstat tracking)
 - Research state maintenance
-- **Idle-agent debugging (hard):** if an agent has been idle for more than 1 minute without reporting `done:` or `self:`, the orchestrator MUST message that agent to diagnose why. Do not assume the agent is working silently.
+- **Idle-agent debugging:** if an agent has been idle for more than 1 minute without reporting `done:` or `self:`, the orchestrator may message that agent to diagnose why.
 
 ---
 
@@ -122,13 +122,13 @@ In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer t
 - **Assignee** = who is currently executing this task. An agent self-assigns by writing their own name.
 - **Source** = who suggested it (provenance only). **Two-letter code only:** `or`=orchestrator, `co`=computationalist, `cr`=critic, `ma`=mathematician, `ph`=physicist, `st`=student.
 - **Assignee empty** = open / anyone can claim it by self-assigning.
-- **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive. **Only the orchestrator deletes rows** — agents report completion via `done:` message, orchestrator removes the row immediately. This prevents concurrent-write conflicts. **Orchestrator obligation:** delete the kanban row as the FIRST action on receiving any `done:` message. Do NOT edit the row in place. Delete the old row; if a follow-up task exists, add a NEW row separately.
+- **Row deleted** = done. Completed tasks are immediately deleted; git history is the archive. Any agent deletes their own completed rows via `skills/kanban/scripts/kanban.sh done`.
 
 ### Rules
 
-> **CRITICAL: The orchestrator does NOT assign tasks to agents. The orchestrator APPROVES task proposals.** When an agent announces `self: <topic>`, the orchestrator replies "go" (approve) or redirects. The Assignee column is always filled by the agent themselves, never by the orchestrator. Seeded kanban rows have an empty Assignee — agents self-assign by writing their own name.
+> **Agents self-service the kanban using `skills/kanban/scripts/kanban.sh`.** See `skills/kanban/SKILL.md` for the full protocol. The orchestrator steers via signals (GOOD DAY / DO SUGGESTIONS / STOP JOB), not per-task approval.
 
-- **Agents self-direct.** Any agent may claim an unassigned task or invent a new one by writing their name in Assignee. No orchestrator approval needed.
+- **Agents self-direct.** Any agent may claim an unassigned task or invent a new one via the kanban skill. No orchestrator approval needed.
 - **Kanban is a bulletin board**, not a permission system. Agents write to it so others can see what's in progress and avoid duplication.
 - **The only hard gate** is manuscript patches: those always go through `patches/` with 2-agent consensus before the orchestrator applies them to `paper/main.md`.
 - **No IDs.** Tasks are identified by their description text, not by numbers.
@@ -180,6 +180,7 @@ Patch request files: `patches/<agent>-patch-<topic>.md` (gitignored, ephemeral).
 | Computationalist | `blackboards/*.md`, `notebooks/*.md` (append), `paper/notes/*.md`, `papers/*/notes/*.md`, `meta/anomalies.md` (append), `agents/computationalist/memory/*` | `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md`, `meta/handoff.md`, `meta/research-state.md` |
 | Student | `blackboards/*.md`, `notebooks/*.md` (append), `paper/notes/*.md`, `papers/*/notes/*.md`, `meta/anomalies.md` (append), `agents/student/memory/*` | `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md`, `meta/handoff.md`, `meta/research-state.md` |
 | Any researcher | `sources/*` (library — download and ingest references) | — |
+| Any researcher | `meta/kanban.md` (via `skills/kanban/scripts/kanban.sh` only) | Direct manual edits to `meta/kanban.md` |
 
 **Rule**: if a task requires touching files outside an agent's permissions, request it via the orchestrator.
 
@@ -420,7 +421,7 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.
-2. Agents request tasks (`want #N`) or suggest `self:` topics; orchestrator assigns in kanban; only then agents execute.
+2. Agents claim or self-allocate tasks via `skills/kanban/scripts/kanban.sh`. Orchestrator seeds tasks and manages signals.
 3. Orchestrator polls `patches/`, processes patch requests directly, **deletes each file immediately after processing**. Agents do library work directly.
 4. Commit every 60+ minutes (two-commit structure: manuscripts first, scaffolding second).
 5. Orchestrator updates `meta/research-state.md` when threads evolve.
@@ -474,7 +475,7 @@ When given a time deadline, continue autonomously without pausing. Commit policy
 ### Task Sourcing Priority (Hard)
 1. Primary: self-assigned tasks (`self: <topic>`) chosen by each agent from its own memory and local context.
 2. Secondary: orchestrator-seeded tasks, used when coordination, coverage, or deadline control requires explicit steering.
-3. The start gate still applies: no work starts before assignment appears in kanban.
+3. Agents self-assign via `skills/kanban/scripts/kanban.sh` before starting work.
 
 ### Time Deadline Interpretation (Hard)
 1. If a stop/finish hour is given, the orchestrator must check current time using a shell command (for example `date`) before and during execution.
@@ -488,29 +489,23 @@ Every agent runs this loop:
 ```
 loop:
   CHECK INBOX — process any shutdown_request immediately (shutdown = terminate)
-  CHECK KANBAN — if your row is gone, session is ending: save memory and terminate
+  READ KANBAN — skills/kanban/scripts/kanban.sh read
+    Check signal line. Obey STOP JOB / DO SUGGESTIONS / GOOD DAY.
+    If your row is gone (and you didn't done it), session is ending: save memory and terminate.
   IF have assigned task (your row exists in kanban):
     execute it
-    message orchestrator: "done: <task-description>" (≤120 chars)
-    (orchestrator deletes your kanban row on receipt of "done:")
+    run: skills/kanban/scripts/kanban.sh done "<pattern>"
+    message orchestrator: "done: <topic>" (<=120 chars, informational)
   ELSE:
-    EITHER claim an open kanban task (self-assign by writing own name)
-    OR invent a task (add it to kanban with self as Assignee)
-    Announce to orchestrator: "self: <topic>" (≤120 chars)
-    Wait for orchestrator's reply ("go", redirect, or shutdown)
-    **DO NOT START EXECUTING until "go" (or equivalent) is received.**
-    Execute the confirmed task (or redirected task if orchestrator says otherwise)
+    EITHER claim: skills/kanban/scripts/kanban.sh claim <name> "<pattern>"
+    OR self-allocate: skills/kanban/scripts/kanban.sh self <name> <code> "<task>"
+    message orchestrator: "claimed: <topic>" or "self: <topic>" (informational)
+    Start working immediately.
 ```
 
-**Termination via kanban:** The orchestrator signals session end by deleting all kanban rows. An agent whose row disappears (without a "done:" from themselves) must treat this as a shutdown signal: save memory and terminate. Agents should check whether their kanban row still exists at the start of each loop iteration.
+**Termination via kanban:** The orchestrator signals session end via the signal line (STOP JOB) or by deleting all kanban rows. An agent whose row disappears (without having run `done` themselves) must treat this as a shutdown signal: save memory and terminate.
 
-**Coordination model:** agents announce their intent and wait for the orchestrator's sync signal before proceeding. The orchestrator either approves (adds/updates the kanban row) or redirects ("do X instead" / "end of day" / shutdown). This is coordination, not permission: the agent has already decided what to do and is informing the orchestrator, who can steer if needed.
-
-> **CRITICAL: The kanban edit IS the "go" signal — nothing else is.** When an agent announces `self: <topic>`, the orchestrator approves by adding the row to the kanban. The agent must watch the kanban, not wait for a chat message. A chat reply from the orchestrator is NOT a start signal. Only seeing your own row appear in `meta/kanban.md` means you are cleared to execute.
-
-**Orchestrator obligation:** respond to every `self: <topic>` announcement — either add the task to the kanban (approval) or send a redirect message. This is the mechanism that makes end-of-day work: the orchestrator simply does not add the row, and the agent cannot start.
-
-**Starting without a kanban row = protocol violation.** If two agents both announce the same topic, the orchestrator adds one row and redirects the other. Starting work before your row appears in the kanban wastes compute and produces duplicate output.
+**Coordination model:** agents act autonomously within the orchestrator's signal regime. The orchestrator steers by setting signals and seeding tasks, not by gating individual assignments. Agents still inform the orchestrator (<=120 chars) but do not wait for a reply before starting.
 
 **Orchestrator startup rule:** the orchestrator MUST populate and commit the kanban BEFORE spawning any agents. Agents read the kanban immediately on startup; an empty kanban forces all agents to self-direct simultaneously, causing duplicate work.
 

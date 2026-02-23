@@ -22,6 +22,9 @@ __pycache__/
 *.lof
 *.lot
 
+# Kanban lock file
+meta/.kanban.lock
+
 # macOS
 .DS_Store
 tmp/

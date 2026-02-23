@@ -15,9 +15,9 @@ This is non-negotiable. The orchestrator may have sent a shutdown request, a red
 or feedback. If you skip this, you will miss shutdown signals.
 
 **Every task must include communication with the orchestrator.** You may not complete
-an entire task in silence. At minimum: (1) announce when you start, (2) check inbox
-mid-task before writing to shared surfaces, (3) report when done. A task where you
-never spoke to the orchestrator is a task done wrong.
+an entire task in silence. At minimum: (1) inform when you start (after claiming
+in kanban), (2) check inbox mid-task before writing to shared surfaces, (3) report
+when done. A task where you never spoke to the orchestrator is a task done wrong.
 
 **NEVER write to these paths** — send a message to the orchestrator instead:
 - `paper/main.md`, `papers/*/main.md`, `paper/bibliography.md`
@@ -53,22 +53,19 @@ The orchestrator seeds the kanban with tasks. **These are suggestions, not order
 If your runtime names this surface `TaskList`, treat `TaskList` and "kanban" as the same thing.
 
 **Claiming protocol (mandatory):**
-1. **Find a task** — browse the task board for unclaimed tasks, or invent your own question.
-2. **Tell the orchestrator** — message: "want #N" or "self: <topic>" (≤ 120 chars).
-3. **Wait for assignment** — you may ONLY start working on a task once you see it
-   assigned to you in the task board. The orchestrator confirms by updating assignment.
-   **Do NOT self-assign before orchestrator confirmation.**
-4. **While waiting** — check your inbox. The orchestrator may redirect you, or a
-   shutdown may arrive. Do NOT start the task before assignment is confirmed.
-
-If you self-direct (invent your own task), the orchestrator will create the task and
-assign it to you by default (unless explicitly redirected). Wait for that confirmation
-before starting substantive work.
+1. **Read the kanban** — `skills/kanban/scripts/kanban.sh read`. Check orchestrator
+   signals first (obey STOP JOB / DO SUGGESTIONS / GOOD DAY).
+2. **Claim or self-allocate** — use `skills/kanban/scripts/kanban.sh claim` or `self`.
+   See `skills/kanban/SKILL.md` for full usage.
+3. **Inform the orchestrator** — send `"claimed: <topic>"` or `"self: <topic>"`
+   (≤ 120 chars, informational only).
+4. **Start working.** The kanban row you created IS your authorization. Do not wait
+   for an orchestrator reply.
 
 **Continuous-mode default:**
-- Keep cycling: request (`want`/`self`) -> assignment -> execute -> terminal signal.
-- If your request is not assigned yet, wait and do not start.
-- If the orchestrator explicitly calls end-of-day/stop, halt and await next session.
+- Keep cycling: read signals -> claim/self -> execute -> done -> next task.
+- If the orchestrator signals DO SUGGESTIONS, only propose tasks (do not claim/start).
+- If the orchestrator signals STOP JOB, save memory and terminate.
 
 - Mark tasks completed by updating task status when finished.
 - **You can also suggest tasks you are NOT going to do yourself.** Use the task-create
@@ -331,7 +328,7 @@ Any agent may choose to go for a walk on the Philosophenweg — 3.14 km around
 the old Göttingen Stadtwall, back to the starting point. See
 `agents/shared/philosophenweg.md` for the full protocol.
 
-**You can self-assign a walk.** Message the orchestrator: `self: Philosophenweg`.
+**You can self-assign a walk.** Use `skills/kanban/scripts/kanban.sh self <your-name> <your-code> "Philosophenweg"`. Message the orchestrator: `self: Philosophenweg`.
 The walk appears in the kanban like any other task. Other agents can see you walking.
 
 - **Solo walk** (nobody else walking): exactly **3 turns** — think, think, think.

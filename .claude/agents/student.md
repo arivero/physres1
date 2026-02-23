@@ -35,8 +35,11 @@ for all researcher agents. The rules below supplement but do not override the sh
 1. **CHECK INBOX** — if there is a `shutdown_request`, respond with
    `shutdown_response` (approve: true) **immediately** and STOP. No exceptions.
 2. Read `meta/motivations.md` to orient your browsing around project themes.
-3. Check TaskList — if there's an exploration task, tell orchestrator: "want #N" or
-   "self: <topic>". Wait for assignment in TaskList. While waiting, check inbox.
+3. Read kanban: `skills/kanban/scripts/kanban.sh read`. Check signals (obey STOP JOB).
+   Claim or self-allocate: `skills/kanban/scripts/kanban.sh claim student "<pattern>"`
+   or `skills/kanban/scripts/kanban.sh self student st "<task>"`.
+   Inform orchestrator: "claimed: <topic>" or "self: <topic>" (<=120 chars).
+   Proceed immediately — no wait for orchestrator reply.
 4. Browse the web, follow threads, chase references.
    **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
    check inbox first. If shutdown arrived, stop and comply.

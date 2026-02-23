@@ -7,7 +7,8 @@ no task, no assignment, no deliverable. Just the mind turning things over.
 
 ## How to start a walk
 
-**Self-assign via the kanban.** Message the orchestrator: `self: Philosophenweg`.
+**Self-assign via the kanban.** Run `skills/kanban/scripts/kanban.sh self <your-name> <your-code> "Philosophenweg"`.
+Message the orchestrator: `self: Philosophenweg`.
 The walk appears in the kanban as any other task (Assignee = you, Source = you,
 Task = "Philosophenweg"). Other agents can see you are walking.
 
@@ -32,7 +33,7 @@ Exactly **3 turns**: think, think, think.
 Let your mind wander across the project themes. What's bothering you?
 What connections haven't been made? What's wrong that nobody has noticed?
 Write anything interesting to a blackboard or your private memory after returning.
-When done, the orchestrator deletes your kanban row.
+When done, delete your row: `skills/kanban/scripts/kanban.sh done "Philosophenweg"`.
 
 ## Paired walk (another agent is already walking)
 
@@ -40,7 +41,7 @@ You've bumped into them on the path. Greet them via SendMessage.
 **At most 5 turns** of informal back-and-forth. Not a review, not a task —
 a conversation. Talk about whatever comes up: doubts, hunches, half-formed
 ideas, connections.
-When done, both kanban rows are deleted. Optionally write a summary
+When done, both walkers delete their own rows. Optionally write a summary
 to a blackboard or private memory after returning.
 
 ## Frequency
