@@ -46,9 +46,19 @@
    - Appended §20.8 to seeley-dewitt-a1-zero.md
    - STATUS: TWO-AGENT (mathematician proof §20 + computationalist numerical verification)
 
+## Gangolli Gap Analysis (R29 cont.)
+6. Analyzed whether Killing factorization suffices to prove a_k = (R/6)^k/k! for all k
+   - Scripts: tmp/gangolli_gap_v2.py, tmp/gangolli_gap_v3.py, tmp/gangolli_gap_v4.py
+   - Computed cubic curvature invariants (T1-T4) on SU(2) and SU(3)
+   - All T_i/R^3 = universal functions of d alone (Schur rigidity)
+   - Key finding: Killing factorization gives a_k = c_k(d)*R^k but NOT c_k = 1/(6^k k!)
+   - a_3 is the first non-trivial case (4 cubic invariants to evaluate)
+   - Gangolli (1968) + Poisson summation proves ALL k at once
+   - Recommendation: cite Gangolli + Anker-Ostellari + FdV for rigorous proof
+   - Wrote BB2 (8 sections): ONE-AGENT, needs mathematician review
+
 ## Open / next session
-- BB2 is ONE-AGENT: needs 2nd-agent review (mathematician recommended for §2 proof)
-- Notebook §21 needs 2nd-agent review
+- BB2 (Gangolli gap): ONE-AGENT, needs mathematician review
 - No remaining kanban tasks for computationalist
 
 ## Philosophenweg (R28)

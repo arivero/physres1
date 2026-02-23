@@ -1,6 +1,6 @@
 # Critic -- Status
 
-## Current state (2026-02-23, Session R28-R29 — active, 12 tasks completed)
+## Current state (2026-02-23, Session R28-R29 — active, 15 tasks completed)
 
 ### R28 Completed
 1. Full startup protocol: read all files, all 19 notebooks, voted (15 KEEP, 4 DELETE)
@@ -42,6 +42,7 @@ O2 (conjugation) isospectral to O1 (bare). O3 (shifted) is different. E'=0 unive
 - BB1 "measure not spectrum" reframing: APPROVED
 - CMP11.2 (Thm M8.1): PROVED (TWO-AGENT)
 - OQ-SD-1: RESOLVED — exponential structure universal (TWO-AGENT)
+- Thm M9.1: a_k = (R/6)^k/k! for ALL k on compact simple G. PROVED (TWO-AGENT). Closes sev-3 gap.
 
 ### Notebook votes (R28)
 15 KEEP, 4 DELETE (efimov-groupoid-sketch, quantum-groups-lattice-composition, seeley-dewitt-a1-zero, vhd-product-warped-additivity)
@@ -56,6 +57,14 @@ O2 (conjugation) isospectral to O1 (bare). O3 (shifted) is different. E'=0 unive
     Duflo gap, §13 unaudited, D=4 count risk. Notes in memory/philosophenweg-r29.md.
 12. Reviewed patches/physicist-patch-P93-cherry-picking.md (2nd-agent, P9.3 sentence)
     - APPROVED with sev-4 (source surface §25 should be §26). Wrote BB3 §11.
+
+13. Reviewed seeley-dewitt §25 (Theorem M9.1, all-k exponential via Poisson summation)
+    - APPROVED with sev-4 (volume formula citation). Closes BB3 §8.5 sev-3 gap.
+    - Wrote BB3 §12. Updated notebook §25 status line.
+
+14. D=4 coincidences narrative audit (self-directed). No changes needed. Wrote BB3 §13.
+15. BB1 "measure not spectrum" stress-test (orchestrator task). Reframing CORRECT,
+    two sev-3 presentation issues. Wrote BB3 §14.
 
 ### Pending
 1. ~~D9.1p,q patch~~ PROCESSED.

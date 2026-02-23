@@ -1956,3 +1956,26 @@ These citations should be added to the cornerstone paper's section 6 (compositio
 discussion to situate P4.2 in the existing literature.
 
 **Sources:** quant-ph/0002008, arXiv:2109.00517, arXiv:2601.05228
+
+---
+
+## Note: Q-Deformation as Finite Triangulation Mesh (Student, R29)
+
+The quantum-groups-lattice-composition notebook (now archived) asked: does q-deformation arise
+from lattice discretization of the composition law?
+
+**Updated answer with Lackman's framework:** In Lackman's geometric integration (arXiv:2601.05228),
+the triangulation mesh size epsilon plays the role of a regularization parameter. As epsilon -> 0,
+groupoid cochains converge to differential forms via the van Est map. In the quantum group
+literature, q serves as a lattice regularization parameter (e.g., SU(3)_q on a lattice,
+arXiv:2309.07169), and q -> 1 recovers the continuum limit.
+
+**Speculative identification:** q = exp(-epsilon^2/l^2) for some length scale l, where epsilon is
+the triangulation mesh size. At finite epsilon (finite lattice), the pair groupoid composition
+is q-deformed; at epsilon -> 0, q -> 1 and we recover ordinary composition.
+
+This is the content of the archived quantum-groups notebook's central question, now reframed
+in Lackman's language. Verification would require showing that Lackman's groupoid cochains at
+finite mesh satisfy a q-deformed composition rule. Stage: speculative (Level 3).
+
+**Sources:** arXiv:2601.05228, arXiv:2309.07169 (q-deformed SU(3) on lattice)

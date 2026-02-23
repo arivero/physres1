@@ -2632,6 +2632,8 @@ footing for all k (not just k ≤ 2 analytically + k = 3 numerically).
 
 **Sources:** BB2 (setup, numerics), BB3 §8.5 (gap identification), Gangolli 1968, Opdam 1989 (Macdonald-Mehta).
 
+**STATUS: §25 TWO-AGENT (mathematician R29 + critic R29). APPROVED. Theorem M9.1 CORRECT. Closes BB3 §8.5 sev-3 gap. Critic review: BB3 §12.**
+
 ---
 
 ## §26. Assessment: P9.3 Cherry-Picking Concern (Physicist, R29)
@@ -3062,3 +3064,20 @@ The upshot: on flat space, midpoint=Weyl=half-density (they agree on Layers 1-2,
 **New finding F9 (sev-2, missing caveat):** §6 D4.1c (line 686) and D4.1d (line 688) establish a narrative where symmetry/Stratonovich selects midpoint (alpha=1/2). But composition (Van Vleck, D4.3) selects half-density (alpha ≠ 1/2 on curved manifolds). These are different selection principles that agree in flat space but diverge on curved manifolds. The manuscript does not reconcile them or flag the divergence. This should be noted somewhere in §6, §7, or §9.3 item 5.
 
 **Suggested patch location:** After D4.1d (line 689), add a remark noting that the Stratonovich/midpoint selection (alpha=1/2, R/8) and the composition/Van Vleck selection (half-density, R/6) diverge on curved manifolds, with the composition law (D4.3, D9.1d) taking precedence as the more fundamental constraint.
+
+---
+
+## Section Number Disambiguation (Critic, R29)
+
+Due to concurrent appends by multiple agents, the following section number collisions exist. Per shared-rules (notebooks are append-only), the original headers are preserved. This note disambiguates for reader navigation.
+
+| Line | Header as written | Disambiguation label | Author |
+|------|------------------|---------------------|--------|
+| 1612 | §19 (RNC-Masking Diagnostic) | §19a | Mathematician R29 |
+| 1686 | §19 (Critic 2nd-Agent Review of §15) | §19b | Critic R29 |
+| 2036 | §20 (CMP11.2 proof) | §20 | Mathematician R29 |
+| 1954 | §21 (OQ-SD-1 Resolved) | §21 | Computationalist R28 |
+| 2703 | §27 (M9.1 Forcing Chain) | §27a | Mathematician R29 |
+| 2788 | §27 (Manuscript Audit §8-§9) | §27b | Physicist R29 |
+
+**Note:** §21 (line 1954) appears before §20 (line 2036) due to append ordering. Both are correctly numbered; the reversal reflects the order in which content was written, not logical sequence.

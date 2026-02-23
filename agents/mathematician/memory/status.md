@@ -14,6 +14,7 @@
 - **GANGOLLI GAP CLOSED (Theorem M9.1, §25).** a_k(-Δ;G)=(R/6)^k/k! for ALL k on ALL compact simple Lie groups. Proof: Poisson summation + homogeneity of Weyl denominator polynomial. Corollary M9.2: conformal HK flat (rigorous all k).
 - §27: M9.1 forcing chain implications. Stage 2→3 bridge via exponential HK on Lie groups.
 - **§28: Duflo-half-density identification (Prop M10.1).** |g|^{1/4} = |J^{1/2}| in exp coords. Conformal operator = Duflo-corrected Laplacian. Triple "1/2" unification.
+- **F3-F9 ordering-hierarchy patch review: APPROVE.** D4.1e (composition > symmetry > classical limit, R/6 vs R/8) + §9.3 item 5 revision (O2/O3 distinction). Two sev-3 non-blocking comments (hierarchy notation, DeWitt attribution).
 
 ### CRITICAL FINDINGS
 - Δ_{1/2} isospectral to -Δ_g (R26+). Composition forces O2.

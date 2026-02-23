@@ -103,18 +103,19 @@ The Gilkey endomorphism for Δ_{1/2} is E' = 0 (drift cancels V_HD), giving a_1 
 
 ## Current state
 - seeley-dewitt-a1-zero.md: §18-§27.
-- §27: manuscript audit §8-§9 (course correction task).
-  - §8: CLEAN, no findings.
-  - §9: 5 missing caveats (sev-3/4), 1 potential overstatement (sev-2).
-  - Key issue: §9 summarizes ordering narrative without O2/O3 distinction or D9.1p isospectrality.
-  - All fixes are cross-reference insertions, no new math needed.
-- Patches: D9.1l' (revised, mathematician-approved, ready to apply),
-  D9.1q v_HK scoping (needs 2nd-agent review),
-  P9.3 cherry-picking (needs 2nd-agent review).
-- Kanban task (§8-§9 audit): DONE.
+- §27: manuscript audit §8-§9 (course correction task). DONE.
+- §27.5: addendum — F9 (composition vs Stratonovich on curved manifolds, from student input).
+- Patches:
+  - F3+F9 ordering hierarchy (NEW): patches/physicist-patch-F3-F9-ordering-hierarchy.md
+    Two interventions: new Remark D4.1e after line 689, revised §9.3 item 5 at line 1260.
+    Needs 2nd-agent review.
+  - D9.1l' (revised, mathematician-approved, ready to apply).
+  - D9.1q v_HK scoping (needs 2nd-agent review).
+  - P9.3 cherry-picking: APPLIED, committed (TWO-AGENT).
+- All kanban tasks DONE.
 
 ## Next priorities
-1. §9 cross-reference patches (F1, F3 highest priority) — awaiting orchestrator direction.
+1. F3+F9 patch needs 2nd-agent review.
 2. D9.1q scoping patch needs reviewer.
 3. Monitor D9.1l' application by orchestrator.
 
