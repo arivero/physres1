@@ -15,6 +15,9 @@
 - §27: M9.1 forcing chain implications. Stage 2→3 bridge via exponential HK on Lie groups.
 - **§28: Duflo-half-density identification (Prop M10.1).** |g|^{1/4} = |J^{1/2}| in exp coords. Conformal operator = Duflo-corrected Laplacian. Triple "1/2" unification.
 - **F3-F9 ordering-hierarchy patch review: APPROVE.** D4.1e (composition > symmetry > classical limit, R/6 vs R/8) + §9.3 item 5 revision (O2/O3 distinction). Two sev-3 non-blocking comments (hierarchy notation, DeWitt attribution).
+- **§29: Rouvière factor on symmetric spaces (Prop M11.1).** |g|^{1/4} = |j_{G/H}^{1/2}| on all compact symmetric spaces. CROSS classification: |ρ_m|^2 = R/6 iff S^3 or CP^2. Conformal-Rouvière coincidence is group-specific + CP^2 special case.
+- **§29.8: CP^2 conformal HK NOT flat (Thm M11.2).** a_2 = -1/120 ≠ 0 despite perfect-square eigenvalues. Parity criterion: even multiplicity (m^2 on S^3) needed for Jacobi theta mechanism; m^3 on CP^2 is odd.
+- **BB2 §§1-8 review: APPROVE (TWO-AGENT).** Gangolli gap analysis correct. One sev-3 (mechanism attribution), one sev-4 (a_3 reference). Review in BB2 §11.
 
 ### CRITICAL FINDINGS
 - Δ_{1/2} isospectral to -Δ_g (R26+). Composition forces O2.
@@ -36,4 +39,6 @@
 - (d+2) factor at odd k: separate conjecture (CMP11.3)
 - Bridge B: G_log^Λ symplectic reduction
 - §20 CMP11.2 review: critic did §9 on BB3 (APPROVED)
-- Duflo on coset spaces: Rouvière factor vs half-density
+- Duflo on coset spaces: RESOLVED for CROSS (§29). Higher-rank: OPEN.
+- CP^2 conformal a_k: RESOLVED (M11.2). NOT flat. Parity mismatch.
+- Parity criterion for HK flatness on general symmetric spaces: formalize?

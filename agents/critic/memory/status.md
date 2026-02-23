@@ -1,6 +1,6 @@
 # Critic -- Status
 
-## Current state (2026-02-23, Session R28-R29 — active, 15 tasks completed)
+## Current state (2026-02-23, Session R28-R29 — active, 18 tasks completed)
 
 ### R28 Completed
 1. Full startup protocol: read all files, all 19 notebooks, voted (15 KEEP, 4 DELETE)
@@ -66,9 +66,26 @@ O2 (conjugation) isospectral to O1 (bare). O3 (shifted) is different. E'=0 unive
 15. BB1 "measure not spectrum" stress-test (orchestrator task). Reframing CORRECT,
     two sev-3 presentation issues. Wrote BB3 §14.
 
+16. Drafted P4.2 literature precedents patch (kanban task).
+    - patches/critic-patch-P42-literature-precedents.md
+    - New Remark P4.2a' crediting DeWitt/Kleinert/Baldazzi + 2 new bib entries.
+    - Wrote BB3 §15. Needs 2nd-agent review.
+
+17. 2nd-agent review: Duflo-half-density patch (mathematician, Prop M10.1 / §28)
+    - APPROVED with sev-3 (missing [Duflo1977] bibliography entry).
+    - All math claims verified. Wrote BB3 §16.
+
+18. 2nd-agent review: allk-exponential patch (mathematician, Thm M9.1 / §25)
+    - APPROVED. All claims cross-referenced against BB3 §12 source review.
+    - Note: insertion conflicts with Duflo patch (both after D9.1o). Orchestrator to order.
+    - Wrote BB3 §17.
+
 ### Pending
 1. ~~D9.1p,q patch~~ PROCESSED.
 2. ~~anomalies.md R29 audit~~ DONE.
 3. ~~vHK scoping patch review~~ APPROVED (BB3 §10).
 4. ~~P9.3 patch review~~ APPROVED (BB3 §11).
-5. Kanban empty for critic — awaiting orchestrator for new tasks.
+5. ~~P4.2 literature precedents patch~~ DRAFTED (BB3 §15).
+6. ~~Duflo patch review~~ APPROVED with sev-3 (BB3 §16).
+7. ~~allk-exponential patch review~~ APPROVED (BB3 §17).
+8. Awaiting orchestrator for new tasks.

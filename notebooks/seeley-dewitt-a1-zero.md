@@ -3081,3 +3081,290 @@ Due to concurrent appends by multiple agents, the following section number colli
 | 2788 | §27 (Manuscript Audit §8-§9) | §27b | Physicist R29 |
 
 **Note:** §21 (line 1954) appears before §20 (line 2036) due to append ordering. Both are correctly numbered; the reversal reflects the order in which content was written, not logical sequence.
+
+
+---
+
+## §29. Rouvière Factor and Half-Density on Symmetric Spaces (Mathematician, R29)
+
+**Author:** Mathematician (R29). **Source:** §28 (Prop M10.1), Helgason Ch.IV,
+Rouvière 1986/1991 (arXiv:math/0202311).
+
+### §29.1. The Identification on Symmetric Spaces
+
+Let M = G/H be a compact Riemannian symmetric space with the Cartan decomposition
+g = h + m ([h,h] ⊂ h, [h,m] ⊂ m, [m,m] ⊂ h) and the metric induced by -B|_m
+(B = Killing form of g). Let a ⊂ m be a maximal abelian subspace, Σ_m^+ the
+positive restricted roots, m_α the root multiplicities.
+
+For x ∈ m, the exponential map Exp: m → G/H (Exp(x) = exp(x)·eH) has Jacobian
+(Helgason, Ch. IV, Theorem 4.1):
+
+|g(x)|^{1/2} = |det_m(sin(ad(x))/ad(x))| [compact type]
+|g(x)|^{1/2} = |det_m(sinh(ad(x))/ad(x))| [noncompact type]
+
+where ad(x)^2|_m: m → m is the curvature endomorphism (well-defined since
+[m,m] ⊂ h and [h,m] ⊂ m force ad(x)^{2k}|_m: m → m for all k ≥ 0).
+
+**Proposition M11.1 (Rouvière-half-density identification on symmetric spaces).**
+On a compact symmetric space G/H,
+
+|g(x)|^{1/4} = |j_{G/H}^{1/2}(x)|
+
+where j_{G/H}(x) = det_m(sin(ad(x))/ad(x)) is the Rouvière factor.
+
+*Proof.* Immediate from the Jacobian formula: |g(x)|^{1/2} = |j_{G/H}(x)|,
+so |g(x)|^{1/4} = |j_{G/H}(x)|^{1/2} = |j_{G/H}^{1/2}(x)|. □
+
+This extends Proposition M10.1 (§28) from Lie groups to all symmetric spaces:
+the half-density factor in exponential coordinates always equals the Rouvière
+factor. The proof is simpler than M10.1 because on symmetric spaces the
+Jacobian formula is directly j_{G/H}, without the need to factor out det(e^{-ad/2}).
+
+### §29.2. The Rouvière-Corrected Laplacian
+
+The Rouvière isomorphism (Rouvière 1986; Kashiwara-Vergne, Torossian):
+
+j_{G/H}^{1/2}: S(m)^H → D(G/H)^H
+
+maps the quadratic element q(x) = |x|^2 ∈ S(m)^H to:
+
+j_{G/H}^{1/2}(q) = -Δ_{G/H} + |ρ_m|^2
+
+where ρ_m = (1/2) Σ_{α ∈ Σ_m^+} m_α · α is the half-sum of positive restricted
+roots (counted with multiplicity). The eigenvalues of this operator on the
+spherical function φ_λ (λ ∈ a*_+) are |λ + ρ_m|^2.
+
+This is the symmetric space analogue of the Harish-Chandra result on Lie groups:
+j^{1/2}(C_2) = -Δ_G + |ρ|^2 (§28.2).
+
+### §29.3. Comparison: |ρ_m|^2 vs R/6
+
+**On Lie groups** (G = K × K / diag(K)), the symmetric pair structure gives
+Σ_m^+ = Φ^+ (the positive roots of K, each with multiplicity 2 — one for each
+copy of K). The half-sum ρ_m = (1/2)Σ 2α = Σα = ρ_K matches the Weyl vector
+of K, and by Freudenthal-de Vries: |ρ_m|^2 = |ρ|^2 = R/6.
+
+**On general symmetric spaces, |ρ_m|^2 ≠ R/6.** The scalar curvature of G/H
+with the Killing metric is:
+
+R = -(1/2) Σ_{α ∈ Σ_m^+} m_α |α|^2
+
+while:
+
+|ρ_m|^2 = (1/4) |Σ_{α ∈ Σ_m^+} m_α α|^2
+
+These are different in general:
+- R/6 involves a SUM of squares (Σ m_α |α|^2) — linear in multiplicities.
+- |ρ_m|^2 involves the SQUARE of a sum (|Σ m_α α|^2) — quadratic in multiplicities.
+
+They agree when the restricted root system has rank 1 (all roots proportional)
+or when the algebraic structure forces the coincidence (as on Lie groups).
+
+### §29.4. Rank-1 Symmetric Spaces (CROSS Spaces)
+
+For compact rank-one symmetric spaces (CROSS), the restricted root system is
+either A_1 or BC_1 with roots {±α, ±2α}. Let p = m_α, q = m_{2α} be the
+multiplicities. Then:
+
+ρ_m = (1/2)(p·α + q·2α) = (p/2 + q)α
+
+|ρ_m|^2 = (p/2 + q)^2 |α|^2
+
+R = -(1/2)(p|α|^2 + 4q|α|^2) = (p + 4q)|α|^2/2 [sign: compact type, R > 0]
+
+Actually, for compact type with our sign convention (R > 0 on spheres), the scalar
+curvature is R = (d-1)(p + 4q)|α|^2/d for d = dim(G/H) = 1 + p + q...
+
+Let me compute case by case using the actual known values.
+
+| M | d | p | q | R (normalized) | R/6 | |ρ_m|^2 | Equal? |
+|---|---|---|---|-------|-----|---------|--------|
+| S^n | n | n-1 | 0 | n(n-1) | n(n-1)/6 | (n-1)^2/4·|α|^2 | iff n=1,3* |
+| CP^n | 2n | 2(n-1) | 1 | 4n(n+1) | 2n(n+1)/3 | n^2·|α|^2 | see below |
+| HP^n | 4n | 4(n-1) | 3 | 8n(2n+3) | 4n(2n+3)/3 | (2n+1)^2·|α|^2 | see below |
+| OP^2 | 16 | 8 | 7 | 16·18=288 | 48 | 11^2=121 | NO |
+
+* For S^n with unit radius: R = n(n-1), |α|^2 needs to be fixed by eigenvalue
+normalization. The eigenvalues of -Δ on S^n are l(l+n-1), so the Casimir is
+l(l+n-1). The Harish-Chandra formula gives eigenvalue (l + ρ_m)^2 - |ρ_m|^2 =
+l^2 + 2l·ρ_m = l(l + 2ρ_m). Comparing: 2ρ_m = n-1, so ρ_m = (n-1)/2 and
+|ρ_m|^2 = (n-1)^2/4. Meanwhile R/6 = n(n-1)/6. These are equal iff
+(n-1)^2/4 = n(n-1)/6, i.e., 3(n-1) = 2n, i.e., n = 3.
+
+**Result: |ρ_m|^2 = R/6 iff n = 3 (i.e., S^3 = SU(2)) among spheres.**
+
+For CP^n: eigenvalues of -Δ on spherical functions are 4k(k+n), so comparing
+with (k + ρ_m)^2 - |ρ_m|^2 = k^2 + 2k·n gives ρ_m = n (in appropriate units
+where |α|^2 corresponds to eigenvalue normalization). Then |ρ_m|^2 = n^2.
+R = 4n(n+1), R/6 = 2n(n+1)/3. Equal iff n^2 = 2n(n+1)/3, i.e., 3n = 2(n+1),
+i.e., n = 2.
+
+**Result: |ρ_m|^2 = R/6 iff n = 2 (i.e., CP^2 = SU(3)/U(2)) among CP^n.**
+
+This is a surprise: CP^2 (the 4-real-dimensional Kähler manifold) satisfies the
+Freudenthal-de Vries-type identity. This is NOT because CP^2 is a Lie group
+(it is not), but because of a dimension-specific algebraic coincidence.
+
+### §29.5. When |ρ_m|^2 = R/6: The Conformal-Rouvière Coincidence
+
+The condition |ρ_m|^2 = R/6 on a compact symmetric space means the
+Rouvière-corrected Laplacian IS the conformal operator. By the rank-1 analysis:
+
+| Space | d | |ρ_m|^2 = R/6? |
+|-------|---|---------------|
+| S^3 | 3 | YES (= SU(2), Freudenthal-de Vries) |
+| CP^2 | 4 | YES (dimension coincidence, n=2) |
+| S^n, n≠3 | n | NO |
+| CP^n, n≠2 | 2n | NO |
+| HP^n, n≥1 | 4n | CHECK |
+
+For HP^n: eigenvalues 4k(k+2n+1), Harish-Chandra form: (k+ρ_m)^2-|ρ_m|^2,
+2ρ_m = 2n+1, so |ρ_m|^2 = (2n+1)^2/4. R = 8n(2n+3), R/6 = 4n(2n+3)/3.
+Equal iff (2n+1)^2/4 = 4n(2n+3)/3, i.e., 3(2n+1)^2 = 16n(2n+3).
+3(4n^2+4n+1) = 16n(2n+3), 12n^2+12n+3 = 32n^2+48n, 0 = 20n^2+36n-3.
+Discriminant = 1296+240 = 1536, sqrt(1536) ≈ 39.2. n = (-36+39.2)/40 ≈ 0.08.
+Not an integer. **HP^n: NEVER.**
+
+For OP^2: |ρ_m|^2 = 11^2/4 = 121/4 (if |α|^2 = 1/4) vs R/6 = 288/6 = 48.
+Need to check normalization. With eigenvalues of Casimir = k(k+22) on OP^2
+(dim = 16, ρ_m = 11), |ρ_m|^2 = 121, R = 16·22 = 352, R/6 = 352/6 ≈ 58.7.
+Not equal. **OP^2: NO.**
+
+**Complete CROSS classification:** |ρ_m|^2 = R/6 iff M ∈ {S^3, CP^2}.
+
+This is striking: exactly two compact rank-1 symmetric spaces have the
+conformal-Rouvière coincidence, and they are the two lowest-dimensional ones in
+their respective families (the 3-sphere and the complex projective plane).
+
+### §29.6. Implications
+
+1. **§28 Duflo picture is group-specific.** The identification "conformal
+   operator = Duflo-corrected Laplacian" (§28.2) fails on general symmetric
+   spaces. On G/H, the algebraically natural operator is -Δ + |ρ_m|^2, while
+   the conformally natural operator is -Δ + R/6. These coincide only in special
+   cases (Lie groups, CP^2, and possibly some higher-rank symmetric spaces).
+
+2. **The exponential HK structure breaks on G/H.** On Lie groups, Theorem M9.1
+   gives a_k(-Δ;G) = (R/6)^k/k\! = |ρ|^{2k}/k\!, and the conformal operator has
+   a_k = 0 for all k ≥ 1. On general symmetric spaces, neither |ρ_m|^{2k}/k\!
+   nor (R/6)^k/k\! need be the correct heat-kernel coefficients. The exponential
+   structure relied on the Killing factorization |Riem|^2 = |Ric|^2 (specific to
+   bi-invariant metrics on Lie groups) and the homogeneity of J(x)^2. Both fail
+   on G/H.
+
+3. **CP^2 is special.** The conformal-Rouvière coincidence on CP^2 suggests that
+   CP^2 might have enhanced heat-kernel regularity, analogous to S^3 among
+   spheres. This is worth investigating: does the conformal operator on CP^2
+   have a_k = 0 for some range of k? (Note: CP^2 has dim 4, so the D=4
+   coincidence arguments from the sphere also apply. But CP^2 is Einstein, not
+   conformally flat, so the heat-kernel analysis differs.)
+
+4. **Composition still forces the half-density.** The Rouvière identification
+   M11.1 shows that composition (P4.2) forces |g|^{1/4} = |j_{G/H}^{1/2}| on
+   ALL symmetric spaces. The half-density measure is universal. What is
+   non-universal is the algebraic bonus: the Rouvière-corrected Laplacian
+   does not always coincide with the conformal operator.
+
+### §29.7. Status and Open Questions
+
+- Prop M11.1: routine (Helgason Jacobian formula). ONE-AGENT.
+- CROSS classification: complete. |ρ_m|^2 = R/6 iff S^3 or CP^2.
+- Higher-rank symmetric spaces: classification of |ρ_m|^2 = R/6 is OPEN.
+  (Requires computing |ρ_m|^2 and R case-by-case from restricted root data.)
+- CP^2 heat-kernel coefficients: OPEN. Does the conformal-Rouvière coincidence
+  imply enhanced heat-kernel regularity?
+
+**Sources:** Helgason 1978 Ch.IV (Jacobian formula), Rouvière 1986/1991
+(isomorphism on symmetric spaces, arXiv:math/0202311), Kashiwara-Vergne 1978,
+§28 (Prop M10.1 on Lie groups), BB2 §8 (CP^2 test).
+
+
+### §29.8. CP^2 Conformal Heat-Kernel: NOT Flat (Analytic Proof)
+
+The conformal operator -Δ + R/6 = -Δ + 4 on CP^2 has eigenvalues 4(p+1)^2
+(p = 0,1,2,...) with multiplicities (p+1)^3. Equivalently, with m = p+1:
+eigenvalue 4m^2, multiplicity m^3 (m = 1,2,...).
+
+The heat trace is:
+
+Z(t) = Σ_{m=1}^∞ m^3 exp(-4m^2 t)
+
+**Theorem M11.2.** a_2(-Δ+R/6; CP^2) = -1/120 ≠ 0. In particular, the conformal
+operator on CP^2 is NOT heat-kernel flat.
+
+*Proof.* By Euler-Maclaurin summation on f(x) = x^3 exp(-4x^2 t):
+
+Z(t) = ∫_0^∞ x^3 e^{-4x^2 t} dx + (B_4/4\!) f^{(3)}(0) + O(t)
+     = 1/(32t^2) - 1/120 + O(t)
+
+since f^{(3)}(0) = 6, B_4 = -1/30, and B_4/(4\!)·6 = (-1/30)/24·6 = -1/120.
+Comparing with the standard expansion Z(t) = a_0 t^{-2} + a_1 t^{-1} + a_2 + ...:
+a_0 = 1/32, a_1 = 0, a_2 = -1/120 ≠ 0. □
+
+**Why S^3 works but CP^2 does not:** On S^3, the conformal heat trace has
+multiplicity m^2 and eigenvalue m^2 — both EVEN functions of m. The Euler-Maclaurin
+corrections involve f^{(2k-1)}(0) for f(x) = x^2 exp(-x^2 t), but all odd
+derivatives of an even function vanish at the origin. On CP^2, the multiplicity m^3
+is ODD — the Euler-Maclaurin boundary terms f^{(2k-1)}(0) are generically nonzero,
+producing polynomial corrections in the heat expansion.
+
+**Parity criterion:** The conformal heat-kernel flatness requires the function
+d(m) exp(-λ(m)t) to extend to an EVEN function on Z. On S^3, d(m) = m^2 (even)
+and λ(m) = m^2 (even) — the product is even. On CP^2, d(m) = m^3 (odd) and
+λ(m) = 4m^2 (even) — the product is odd. The Jacobi theta mechanism that kills
+all polynomial corrections on S^3 fails on CP^2 due to this parity mismatch.
+
+**Conclusion:** Despite the conformal-Rouvière coincidence (|ρ_m|^2 = R/6) and
+the perfect-square eigenvalue structure (λ_m = 4m^2), CP^2 does NOT have
+conformal heat-kernel flatness. The coincidence S^3 = SU(2) is DOUBLY special:
+it satisfies both the algebraic condition (|ρ|^2 = R/6, Freudenthal-de Vries)
+AND the parity condition (even multiplicities from the Weyl dimension formula
+on a group manifold).
+
+
+### §29.9. Why Lie Groups Are Special: Polynomial c-Function
+
+The conformal heat-kernel flatness on compact simple Lie groups (Theorem M9.1, §25)
+ultimately relies on the Harish-Chandra c-function being POLYNOMIAL.
+
+On a compact symmetric space G/H, the heat kernel at the origin is (Gangolli):
+
+K(t,eH,eH) ~ C ∫_{a*} exp(-|ξ+ρ_m|^2 t) |c(ξ)|^{-2} dξ + exponentially small
+
+where c(ξ) is the Harish-Chandra c-function. Its squared norm is:
+
+|c(ξ)|^{-2} = ∏_{α ∈ Σ_m^+} F_{m_α}(⟨ξ, α⟩/|α|)
+
+where F_m is a function depending on the root multiplicity m:
+- m = 1: F_1(x) ∝ |x|
+- m = 2: F_2(x) ∝ x^2 (polynomial\!)
+- m ≥ 3: F_m involves Gamma function ratios (NOT polynomial in general)
+
+**On a Lie group** (G viewed as G×G/diag(G)): ALL root multiplicities are 2.
+Therefore |c(ξ)|^{-2} = const · ∏_{α>0} ⟨ξ,α⟩^2 = const · J(ξ)^2 — a homogeneous
+POLYNOMIAL of degree d-r. The M9.1 proof (Poisson summation + homogeneity)
+goes through, producing a single power t^{-d/2} and no polynomial corrections.
+
+**On a general symmetric space:** Root multiplicities can be 1, 2, 3, 4, 7, 8
+(the allowed values from the classification). For m ≠ 2, the c-function factors
+are non-polynomial, the integrand is not homogeneous in ξ, and the Poisson
+summation argument fails. Polynomial corrections survive in the heat expansion.
+
+**The parity criterion of §29.8 is the rank-1 shadow of this phenomenon.** For
+CROSS spaces, the c-function involves a SINGLE variable, and the Euler-Maclaurin
+analysis detects the parity of the multiplicity function d(m). On Lie groups
+(all multiplicities 2), d(m) = m^2 (even from J^2). On CP^n (multiplicities
+2(n-1) and 1), d(m) = m^3 at n=2 (odd from the non-polynomial c-function
+contribution at m_{2α} = 1).
+
+**Summary:**
+
+| Property | Lie groups | General G/H |
+|----------|-----------|-------------|
+| All root mult = 2 | YES | NO |
+| c-function polynomial | YES | Generally NO |
+| M9.1 applies | YES | NO |
+| Conformal a_k = 0 ∀k≥1 | YES (M9.1) | Generally NO (M11.2) |
+| Half-density = Rouvière | YES (M10.1) | YES (M11.1) |
+| |ρ_m|^2 = R/6 | YES (FdV) | Rarely (§29.5) |
