@@ -73,20 +73,20 @@ code**, **work step**, and **memory path**. Use those values throughout.
 ## 0c. Work Loop
 
 1. **CHECK INBOX** — if `shutdown_request` arrived, stop and comply.
-2. Read kanban (`skills/kanban/scripts/kanban.sh read`) for available tasks, or invent your own.
-3. Read kanban: `skills/kanban/scripts/kanban.sh read`. Check signals (obey STOP JOB).
+2. Read kanban: `skills/kanban/scripts/kanban.sh read`. Check signals (obey STOP JOB).
    Claim or self-allocate: `skills/kanban/scripts/kanban.sh claim <name> "<pattern>"`
    or `skills/kanban/scripts/kanban.sh self <name> <source-code> "<task>"`.
+   If nothing to claim, invent your own task via `self`.
    Inform orchestrator: "claimed: <topic>" or "self: <topic>" (≤ 120 chars).
    Proceed immediately — no wait for orchestrator reply.
-4. Work the task (your agent definition specifies the work step).
+3. Work the task (your agent definition specifies the work step).
    **Before every write to a shared surface** (blackboard, notebook, anomalies.md):
    check inbox first. If shutdown arrived, stop and comply.
-5. When done: write findings to blackboards/notebooks/anomalies and mark task completed.
+4. When done: write findings to blackboards/notebooks/anomalies and mark task completed.
    If requesting a manuscript edit, create `patches/<name>-patch-<topic>.md` with a diff.
-6. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars).
-7. **CHECK INBOX** — shutdown may have arrived while you worked.
-8. If no shutdown pending, go to step 2.
+5. Send ONE SHORT PHRASE to orchestrator (≤ 120 chars).
+6. **CHECK INBOX** — shutdown may have arrived while you worked.
+7. If no shutdown pending, go to step 2.
 
 ---
 
