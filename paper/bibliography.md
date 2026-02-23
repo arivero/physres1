@@ -90,6 +90,10 @@ Use this file as a source ledger.
 
 65. `[Duflo1977]` Michel Duflo, "Opérateurs différentiels bi-invariants sur un groupe de Lie," *Annales Scientifiques de l'École Normale Supérieure* (4) **10**(2), 265–288 (1977). (Constructs the Duflo isomorphism \(j^{1/2}\colon S(\mathfrak{g})^G\to Z(U(\mathfrak{g}))\); the half-density factor \(|g|^{1/4}\) on compact semisimple Lie groups equals \(|J^{1/2}|\) in exponential coordinates.)
 
+66. `[Sudakov1959]` V.N. Sudakov, "Linear sets with quasi-invariant measure," *Doklady Akademii Nauk SSSR* **127**(3) (1959), 524–526. (In Russian.) (Establishes the absence of nontrivial translation-invariant \(\sigma\)-finite Borel measures on infinite-dimensional normed spaces; foundational non-existence result for Lebesgue measure on path space.)
+
+67. `[GlimmJaffe1987]` James Glimm and Arthur Jaffe, *Quantum Physics: A Functional Integral Point of View*, 2nd ed., Springer-Verlag, New York (1987). ISBN 978-0-387-96476-8. DOI `10.1007/978-1-4612-4728-9`. (Standard textbook treatment of the non-existence of translation-invariant measures on infinite-dimensional spaces and the rigorous foundations of the path integral; H0.2a statement is standard in this context.)
+
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).
 2. `[Noether1918]`: no canonical DOI for the 1918 original publication record used here.
