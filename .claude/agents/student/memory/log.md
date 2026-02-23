@@ -186,7 +186,7 @@ The EH Lagrangian super-factorial growth (2k-1)!/π^{2k} and Schwinger e^{-π/z}
 - team-lead message: Voros NUMDAM link is confirmed OA source for team use. ✓
 - **Reframe on zero-mode → d/2:** Standard instanton physics (Coleman "Aspects of Symmetry" Ch. 7). Value is in **explicit connection to composition framework**, not in the dimensional counting itself. This correctly repositions contribution as validation/integration of existing physics within project framework.
 - team-lead: "You've done excellent work this session. Findings are recorded in blackboards and notebooks. OQ1a exploration marked complete."
-- **OQ1a exploration completion:** Marked complete via TaskUpdate.
+- **OQ1a exploration completion:** Marked complete on kanban.
 
 **Final Assessment:**
 This session was about deep integration and validation, not novel physics discovery. The work successfully:

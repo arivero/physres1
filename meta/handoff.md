@@ -6,8 +6,8 @@ It is meant to survive chat/context resets.
 ## Canonical Agent Instructions
 - Canonical rules live in `AGENTS.md`.
 - On reset/startup, the full AGENTS startup read order is mandatory.
-- Startup guardrail for runtimes without native `TaskList`: initialize `meta/kanban.md`
-  with empty/unassigned tasks only. Do **not** pre-assign at startup.
+- Startup guardrail: initialize `meta/kanban.md` with empty/unassigned tasks only.
+  Do **not** pre-assign at startup.
 - Assignment rule: agents self-service the kanban via `skills/kanban/scripts/kanban.sh`
   (claim, self-allocate, done). The orchestrator seeds tasks and manages signals
   (GOOD DAY / DO SUGGESTIONS / STOP JOB) but does not gate individual assignments.
@@ -38,7 +38,7 @@ Key policies:
 ## Team Architecture
 The project uses a persistent team of 5 researcher agents (Physicist, Mathematician,
 Critic, Computationalist, Student) coordinated by an orchestrator via a shared kanban
-(runtime surface often named `TaskList`). See `AGENTS.md` for the full architecture.
+via the kanban skill (`skills/kanban/scripts/kanban.sh`). See `AGENTS.md` for the full architecture.
 
 ## Research Continuation (Durable State)
 - Working memory + active threads: `meta/research-state.md` (non-citable)

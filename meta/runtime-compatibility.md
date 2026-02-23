@@ -15,7 +15,7 @@ The project protocol should stay stable while runtime adapters vary.
 
 | Concept | Claude-style runtime | Codex-style runtime | GitHub-style runtime | Google-style runtime |
 |--------|-----------------------|---------------------|----------------------|----------------------|
-| Task board | `TaskList` / `TaskCreate` / `TaskUpdate` | Runtime task facility or file fallback | Issue/PR or file fallback | Runtime task facility or file fallback |
+| Task board | `skills/kanban/scripts/kanban.sh` (file-based) | Runtime task facility or file fallback | Issue/PR or file fallback | Runtime task facility or file fallback |
 | Messaging | `SendMessage` + inbox | Runtime messaging or file inbox | Issue/PR comments or file inbox | Runtime messaging or file inbox |
 | Agent roles | `.claude/agents/*.md` | Runtime role/subagent config | `.github` instructions/agents | Gemini/agent config files |
 | Web access | Runtime web tools | Runtime web tools | Runtime web tools | Runtime web tools |

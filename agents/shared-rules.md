@@ -56,12 +56,12 @@ code**, **work step**, and **memory path**. Use those values throughout.
 2. Read `meta/motivations.md`.
 3. Read `meta/research-state.md`.
 4. Read your own `<memory-path>/status.md` (resume context).
-5. Check TaskList for assignments, then enter the work loop below.
+5. Read kanban (`skills/kanban/scripts/kanban.sh read`) for assignments, then enter the work loop below.
 
 ## 0c. Work Loop
 
 1. **CHECK INBOX** — if `shutdown_request` arrived, stop and comply.
-2. Check TaskList for available tasks (prefer lowest ID first), or invent your own.
+2. Read kanban (`skills/kanban/scripts/kanban.sh read`) for available tasks, or invent your own.
 3. Read kanban: `skills/kanban/scripts/kanban.sh read`. Check signals (obey STOP JOB).
    Claim or self-allocate: `skills/kanban/scripts/kanban.sh claim <name> "<pattern>"`
    or `skills/kanban/scripts/kanban.sh self <name> <source-code> "<task>"`.
@@ -83,7 +83,7 @@ code**, **work step**, and **memory path**. Use those values throughout.
 ### Kanban (Shared Task Board)
 
 The orchestrator seeds the kanban with tasks. **These are suggestions, not orders.**
-If your runtime names this surface `TaskList`, treat `TaskList` and "kanban" as the same thing.
+All task management uses `skills/kanban/scripts/kanban.sh` — no other task facility.
 
 **Claiming protocol (mandatory):**
 1. **Read the kanban** — `skills/kanban/scripts/kanban.sh read`. Check orchestrator

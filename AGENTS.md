@@ -111,7 +111,7 @@ To create a new agent variant (e.g., a nuclear physicist or algebraic geometer):
 ## 5. Task Management (Shared Kanban)
 
 The shared kanban (`meta/kanban.md`) is the project's task board.
-In runtimes that expose the board as `TaskList`, `TaskList` and "kanban" refer to the same runtime surface.
+All task management goes through the kanban skill (`skills/kanban/scripts/kanban.sh`).
 
 ### Schema
 
@@ -323,7 +323,7 @@ Referees cannot read each other's reports. They have no team membership.
 **Implementation**: Referees must be spawned as **independent agents** (no `team_name`
 parameter), NOT as members of the research team. They are ephemeral, fire-and-forget
 subprocesses that terminate after writing their report. They must not have access to
-team task lists, agent memories, or inter-agent messaging.
+the team kanban, agent memories, or inter-agent messaging.
 
 ### Editor Decision
 
