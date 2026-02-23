@@ -218,10 +218,7 @@ Manuscripts must contain publishable paper content only.
 Max 7 blackboards (0.md–6.md), max 300 lines each. Overwrite least relevant when full. See `blackboards/README.md`.
 
 ### Notebook Append-Only + Voting
-Content can be added but never edited or deleted. Deletion requires voting (see `agents/shared-rules.md` Section 2).
-
-### Notebook Archival
-The orchestrator periodically proposes archival votes for notebooks, prioritising oldest by last-write time. Archived notebooks are moved to `notebooks/archive/`. The vote follows the standard deletion mechanism in `notebooks/votes.md`.
+Content can be added but never edited or deleted. At session startup, every agent reads all notebooks and votes KEEP or DELETE in `notebooks/votes.md` (loads context + housekeeping). Deletion threshold: 3/5 agents or 2 + orchestrator. See `agents/shared-rules.md` §0b and §2.
 
 ### Workspace Hygiene
 - **Blackboards** (`blackboards/`): max 7 files. Delete before creating when at cap.
@@ -416,8 +413,10 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 3. Orchestrator creates the team and spawns 5 researcher agents.
 4. Each agent reads: `agents/shared-rules.md`, `meta/motivations.md`, `meta/research-state.md`,
    own `status.md` (cold-start resumption). Blackboards are available but agents choose when to read them.
-5. **Memory compression (mandatory).** Each agent reads every file in its own `agents/<name>/memory/` directory and rewrites each file with the same or fewer lines. This is self-cleaning: stale entries are pruned, verbose logs are distilled, status files stay current-state-only. An agent's first action in every session is compression, before claiming any task.
-6. Orchestrator scans research-state for open threads, creates initial tasks.
+5. **Memory compression (mandatory).** Each agent reads every file in its own `agents/<name>/memory/` directory and rewrites each file with the same or fewer lines. This is self-cleaning: stale entries are pruned, verbose logs are distilled, status files stay current-state-only.
+6. **Notebook review (mandatory).** Each agent reads all notebooks and votes KEEP or DELETE for each one in `notebooks/votes.md`. This loads research context and trims stale notebooks. See `agents/shared-rules.md` §0b step 5.
+7. Orchestrator tallies notebook votes (after all agents have started), executes `git rm` for notebooks that meet the deletion threshold, resets `notebooks/votes.md`.
+8. Orchestrator scans research-state for open threads, creates initial tasks.
 
 ### Work Phase
 1. Orchestrator creates tasks from open threads / motivations.

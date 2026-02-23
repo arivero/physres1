@@ -39,13 +39,12 @@ Git history records who wrote what and when. The notebook itself is for science.
 5. **Entry points:** from blackboards (primary), from discarded paper notes.
 6. **Exit paths:** promotion to manuscript (two-researcher rule), or discard.
 
-## Discard Protocol
+## Voting and Discard
 
-Discarding a notebook is `git rm`. No ceremony. Content remains in git history.
+At session startup, every agent reads all notebooks and votes KEEP or DELETE
+for each one in `notebooks/votes.md`. This loads research context and keeps the
+collection trimmed. See `agents/shared-rules.md` §0b step 5.
 
-**When to discard:** topic fully absorbed into papers, conclusions wrong, or
-nobody references it anymore.
-
-**Who decides:** Any agent can vote via `notebooks/votes.md`. Threshold:
-3 of 5 agents, or 2 + orchestrator concurrence. The orchestrator executes
-`git rm` after confirming prior commit coverage.
+**Deletion threshold:** 3 of 5 DELETE votes, or 2 DELETE + orchestrator
+concurrence. The orchestrator executes `git rm` after tallying.
+Content remains in git history.

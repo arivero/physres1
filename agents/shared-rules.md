@@ -56,7 +56,19 @@ code**, **work step**, and **memory path**. Use those values throughout.
 2. Read `meta/motivations.md`.
 3. Read `meta/research-state.md`.
 4. Read your own `<memory-path>/status.md` (resume context).
-5. Read kanban (`skills/kanban/scripts/kanban.sh read`) for assignments, then enter the work loop below.
+5. **Notebook review (mandatory).** Read every file in `notebooks/` (excluding
+   `README.md` and `votes.md`). For each notebook, append one line to
+   `notebooks/votes.md`:
+   ```
+   KEEP: <filename> | <your-name> | <one-line reason>
+   ```
+   or
+   ```
+   DELETE: <filename> | <your-name> | <one-line reason>
+   ```
+   This serves two purposes: (a) loads research context before you start working,
+   (b) continuous housekeeping of the notebook collection.
+6. Read kanban (`skills/kanban/scripts/kanban.sh read`) for assignments, then enter the work loop below.
 
 ## 0c. Work Loop
 
@@ -210,12 +222,16 @@ research topic. They are memory: once written, content is not edited or deleted.
 - Promotion path: blackboards → notebooks (stable technical exposition).
 
 ### Notebook Voting Protocol
-To propose deleting a notebook, append a line to `notebooks/votes.md`:
+
+Every agent votes on every notebook at session startup (§0b step 5).
+Format in `notebooks/votes.md`:
 ```
-VOTE-DELETE: <filename> | <your-agent-name> | <date> | <one-line reason>
+KEEP: <filename> | <agent-name> | <one-line reason>
+DELETE: <filename> | <agent-name> | <one-line reason>
 ```
-Threshold: 3 of 5 agents, or 2 agents + orchestrator concurrence.
-The orchestrator executes `git rm` when threshold is met.
+**Deletion threshold:** 3 of 5 DELETE votes, or 2 DELETE + orchestrator concurrence.
+The orchestrator tallies votes after all agents have started, executes `git rm`
+when threshold is met, and resets `notebooks/votes.md` for the next session.
 
 ### Content Lifecycle
 

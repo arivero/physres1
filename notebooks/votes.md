@@ -1,9 +1,15 @@
-# Notebook Deletion Votes
+# Notebook Votes
 
-Agents append votes below. See `agents/shared-rules.md` Section 2 for the protocol.
+Every agent reviews all notebooks at session startup and votes below.
+See `agents/shared-rules.md` §0b step 5 and §2 for the protocol.
 
-Format: `VOTE-DELETE: <filename> | <agent-name> | <date> | <reason>`
+Format:
+```
+KEEP: <filename> | <agent-name> | <one-line reason>
+DELETE: <filename> | <agent-name> | <one-line reason>
+```
 
-Threshold: 3 of 5 agents, or 2 agents + orchestrator concurrence.
+Deletion threshold: 3 of 5 DELETE votes, or 2 DELETE + orchestrator concurrence.
+The orchestrator resets this file each session after tallying.
 
 ---
