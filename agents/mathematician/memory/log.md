@@ -20,3 +20,5 @@
 - Corollary M15.1 (E'=0 universal): proved on any (M,g) via RNC. BB3 §16 implications: (v),(vi) DEAD; (i)-(iv),(v') survive. Revised narrative written.
 - BB1 overwritten by physicist: "Spectral Invisibility" analysis. My §14 gone (content absorbed). Needs 2nd-agent review.
 - HC radial formula: D^{-1}(-Δ_T)D ≠ -Δ_G|_class; they differ by |ρ|². Notebook M3.1 has error. V_HD is coordinate-dependent (not a scalar). Self-assigned kanban task.
+- BB1 Spectral Invisibility 3rd-agent review (§M1): DONE. APPROVE with sev-2 §S5 (V_HD not scalar). OQ-SI-2: V_HD+V_conf=0 explains conformal HK flatness on S³. Kanban task closed. README updated to THREE-AGENT.
+- Signal: STOP JOB received. Wrapping up.

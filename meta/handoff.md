@@ -124,8 +124,12 @@ The critic (R26, BB3) performed a definitive three-operator analysis:
 - **BB1** (physicist R26): "Spectral Invisibility" narrative, Δ_{1/2} isospectral to bare. SINGLE-AGENT (needs 2nd).
 - **BB4**: physicist's wrong O3 analysis REVERTED to committed Weyl state.
 
+**BB1 is THREE-AGENT (physicist+critic+mathematician). APPROVED with sev-2 §S5.**
+**Mathematician sev-2 (§S5):** V_HD is **chart-dependent**: in left-invariant coords on SU(2), V_HD(e) = 0; in RNC, V_HD(e) = −R/6. Not a scalar function on M — this is the mathematical root of why "Δ_{1/2} = −Δ + V_HD" is not a global operator identity. Mathematical insight: V_HD + V_conf = 0 explains conformal flatness.
+**Mathematician discovered (not yet written):** HC notebook Thm M3.1 error: D^{-1}(−Δ_T)D ≠ −Δ_G|_class, differ by |ρ|². Also V_HD coordinate-dependence implications for BB0 Prop M0.1.
+
 **Next session priorities:**
-1. THREE-AGENT sign-off on BB3 (computationalist spectral verification of O2 eigenvalues). **Then apply critic's retraction patch.**
+1. THREE-AGENT sign-off on BB3 (computationalist spectral verification of O2 eigenvalues, task on kanban). **Then apply critic's retraction patch.**
 2. BB1 2nd-agent review (mathematician).
 3. D9.1q removal from paper → also remove ref 37 [KluthLitim2020] (only cited there), remove from Package B list.
 4. D9.1p replacement text: a₁=R/6 isospectrality remark.
