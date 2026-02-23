@@ -1,6 +1,11 @@
 # Computationalist — Status
 
-## Last session: 2026-02-23 (R26)
+## Last session: 2026-02-23 (R28 — notebook voting, 19 notebooks)
+
+## Completed R28 (NO-WORK session)
+1. Voted on all 19 notebooks in notebooks/votes.md (echo >> bash append, no Edit/Write)
+2. DELETE vote: integrable-systems-rcp.md (session-log headers; negative result §8 superseded by resurgence-composition-bridge.md and nonperturbative-contact-pade.md)
+3. KEEP votes: all 18 remaining notebooks
 
 ## Completed R26
 1. OQ-dS-4: sign error confirmed, T³/S³/H³ table, conformal vs HD comparison

@@ -32,6 +32,11 @@ The half-density Laplacian Δ_{1/2} = |g|^{1/4}(-Δ_g)|g|^{-1/4} (conjugation, O
 - Corollary M1.1 uniqueness: CORRECT for O3, needs re-scoping
 - BB1 "measure not spectrum" reframing: APPROVED
 
+### R28 notebook voting (2026-02-23, NO-WORK session, round 3)
+Voted on all 19 notebooks. Summary:
+- 15 KEEP, 4 DELETE
+- DELETE votes: efimov-groupoid-sketch (speculation, no verification, Q3 OVERCLAIM), quantum-groups-lattice-composition (pure conjecture, no agent consensus), seeley-dewitt-a1-zero (Thm M4.1 correct but downstream O2/O3 confusion invalidated most sections per R26), vhd-product-warped-additivity (absorbed into p42-extensions Part 7, chart-dependence in paper D9.1n)
+
 ### Pending (for next session)
 1. Await orchestrator processing of patches/critic-patch-retract-D91pq.md
 2. Monitor three-agent consensus (physicist + computationalist verification tasks still open)

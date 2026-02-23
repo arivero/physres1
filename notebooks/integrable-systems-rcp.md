@@ -1,7 +1,5 @@
 # Integrable Systems and Refinement Compatibility: Stage 2.5 Exploration
 
-**Sources:** Les Houches lectures (exact WKB); van Spaendonck-Vonk (Painlevé I + transseries); arXiv:2204.09062; arXiv:1102.3789 (Efimov limit cycles)
-
 ---
 
 ## Summary
