@@ -30,9 +30,9 @@ code**, **work step**, and **memory path**. Use those values throughout.
 2. Read `meta/motivations.md`.
 3. Read `meta/research-state.md`.
 4. Read your own `<memory-path>/status.md` (resume context).
-5. **Notebook review (mandatory).** Read every file in `notebooks/` (excluding
-   `README.md` and `votes.md`). For each notebook, append one line to
-   `notebooks/votes.md`:
+5. **Notebook review (mandatory — NO EXCEPTIONS, including context-resumed sessions).**
+   List all `.md` files in `notebooks/` (excluding `README.md` and `votes.md`).
+   Read every notebook. For each one, append one line to `notebooks/votes.md`:
    ```
    KEEP: <filename> | <your-name> | <one-line reason>
    ```
@@ -42,7 +42,10 @@ code**, **work step**, and **memory path**. Use those values throughout.
    ```
    This serves two purposes: (a) loads research context before you start working,
    (b) continuous housekeeping of the notebook collection.
-6. Read kanban (`skills/kanban/scripts/kanban.sh read`) for assignments, then enter the work loop below.
+6. **Verify your votes.** Read `notebooks/votes.md` and confirm it contains one
+   line with your name for EVERY notebook. If any are missing, append the missing
+   votes now. **Do not proceed to step 7 until every notebook has your vote.**
+7. Read kanban (`skills/kanban/scripts/kanban.sh read`) for assignments, then enter the work loop below.
 
 ## 0c. Work Loop
 

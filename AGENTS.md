@@ -414,7 +414,7 @@ Summary: never cite transcripts, prefer OA, treat preprints as guides, `sources/
 4. Each agent reads: `agents/shared-rules.md`, `meta/motivations.md`, `meta/research-state.md`,
    own `status.md` (cold-start resumption). Blackboards are available but agents choose when to read them.
 5. **Memory compression (mandatory).** Each agent reads every file in its own `agents/<name>/memory/` directory and rewrites each file with the same or fewer lines. This is self-cleaning: stale entries are pruned, verbose logs are distilled, status files stay current-state-only.
-6. **Notebook review (mandatory).** Each agent reads all notebooks and votes KEEP or DELETE for each one in `notebooks/votes.md`. This loads research context and trims stale notebooks. See `agents/shared-rules.md` §0b step 5.
+6. **Notebook review (mandatory — including context-resumed sessions).** Each agent reads all notebooks and votes KEEP or DELETE for each one in `notebooks/votes.md`, then verifies all votes are present before proceeding. See `agents/shared-rules.md` §0b steps 5–6.
 7. Orchestrator tallies notebook votes (after all agents have started), executes `git rm` for notebooks that meet the deletion threshold, resets `notebooks/votes.md`.
 8. Orchestrator scans research-state for open threads, creates initial tasks.
 
