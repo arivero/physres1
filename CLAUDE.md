@@ -10,15 +10,16 @@ This file is Claude-specific glue only and must not restate repository policy.
 At session start, create the persistent team with:
 - `TeamCreate("physics-research")`
 
-Spawn these researcher agents with Task tool parameters (`team_name`, `name`):
+Spawn these researcher agents with Task tool parameters (`team_name`, `name`, `model`).
+**Always set `model` explicitly** — inheritance is unreliable (agents may inherit opus instead of sonnet):
 
-| Name | Model | Definition |
-|------|-------|------------|
-| physicist | sonnet | `.claude/agents/physicist.md` |
-| mathematician | sonnet | `.claude/agents/mathematician.md` |
-| critic | opus | `.claude/agents/critic.md` |
-| computationalist | sonnet | `.claude/agents/computationalist.md` |
-| student | haiku | `.claude/agents/student.md` |
+| Name | model param | Definition |
+|------|-------------|------------|
+| physicist | `sonnet` | `.claude/agents/physicist.md` |
+| mathematician | `sonnet` | `.claude/agents/mathematician.md` |
+| critic | `opus` | `.claude/agents/critic.md` |
+| computationalist | `sonnet` | `.claude/agents/computationalist.md` |
+| student | `haiku` | `.claude/agents/student.md` |
 
 For referee reviews, use `.claude/agents/referee.md` and
 `agents/shared/referee-protocol.md`.
