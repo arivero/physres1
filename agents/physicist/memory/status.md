@@ -47,7 +47,13 @@ The Gilkey endomorphism for Δ_{1/2} is E' = 0 (drift cancels V_HD), giving a_1 
 - D9.1q: must be deleted (KL applies to O3, not Δ_{1/2})
 - BB4 §§1-8 "a_k(HD)=2^k/k!": these are for O3, not Δ_{1/2}
 
+## Additional R26 work (continued context)
+12. Fixed log key verdicts to reflect post-BB3 findings (a₁=R/6, not R/3)
+13. Kanban task (BB3 review) marked DONE
+14. BB1 spectral invisibility analysis: needs 2nd-agent review (mathematician claimed)
+
 ## Next priorities
 1. Promotion: BB4 stable content (CMP9b.4, PH10.1, CMP11.1, CMP12.1) → notebook
-2. Physical question: if Δ_{1/2} = -Δ_g spectrally, what IS the physical content of half-density normalization?
-3. The operator O3 = -Δ_g + V_HD is still interesting: what physical system does it describe?
+2. BB1 "spectral invisibility" 2nd-agent review (mathematician has claimed)
+3. Physical question (partially addressed in BB1): composition determines MEASURE not SPECTRUM
+4. Retraction proposal application (D9.1p rewrite + D9.1q delete) — awaiting orchestrator

@@ -19,3 +19,6 @@
 - KL sources file corrected: half-density NOT flat on S³, conformal IS flat.
 - CMP13.1: a₅(conf;S^d) = d(d-1)(d-3)(d+2)(11d³-32d²-111d-108)/5613300. CMP11.2 confirmed k=5.
 - Pattern: (d+2) factor appears at odd k (k=3,5) but not even k (k=2,4).
+- BB4 rewritten from scratch: old sign-error version was still on disk (physicist's R26 corrected version was lost). Reconstructed all content.
+- OQ-SD-2 RESOLVED: conformal a_k=0 on lens spaces (trivially, local invariants).
+- STOP JOB received. Unfinished: orchestrator-assigned O2-vs-O3 spectrum verification task (not started).

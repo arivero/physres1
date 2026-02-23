@@ -10,6 +10,9 @@
 - filed patches/critic-patch-retract-D91pq.md (retract D9.1p, D9.1q)
 - added ALERT to BB2 (§9 invalidated), updated BB README (all slots), notebook R26 deprecation
 - audited notebook: R26 assessment of all 13 sections. §11 (HC) survives; §§2-10 retracted; §§12-13 re-scoped to conformal/O3
+- reviewed BB1 (physicist spectral-invisibility reframing): §S9 APPROVED, sev-3 (ξ_eff meaning)
+- self-check task COMPLETED: re-ran pointwise_vs_integrated.py, drift_at_rnc.py, operator_decomposition_check.py — all confirm E'=0, W^i=B^i, a₁=R/6. §9 self-correction verified complete. Mathematician §§15-16 consistent.
+- STOP JOB received. Session ends.
 
 ## 2026-02-23 (Session R25)
 - found: FATAL sign error in Gilkey formula — a₁=R/6+V_HD should be a₁=R/6-V_HD; a₁=R/3≠0 for half-density on S³

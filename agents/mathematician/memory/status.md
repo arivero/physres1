@@ -7,6 +7,9 @@
 - BB1 sign error 2nd-agent review: DONE (conformal discriminant proof)
 - KL vs SD resolution (BB1 §14): DONE. Applies to O3, not Δ_{1/2} (see below)
 - BB3 critic O2-vs-O3 review: DONE. CRITICAL — see next section.
+- BB1 Spectral Invisibility 3rd-agent review (§M1): DONE. APPROVE with sev-2 on §S5 (V_HD not scalar).
+  - V_HD is chart-dependent (left-inv: 0, RNC: -R/6 at same point on SU(2))
+  - OQ-SI-2 mathematical insight: V_HD + V_conf = 0 explains conformal HK flatness on S³
 
 ### CRITICAL FINDING (R26): Δ_{1/2} is isospectral to -Δ_g
 - Δ_{1/2} = |g|^{1/4}(-Δ_g)|g|^{-1/4} is unitary equiv to -Δ_g
@@ -24,6 +27,7 @@
 - P4.2 uniqueness: 1 axiom (composition) + setup
 
 ### Open mathematical questions
-- Impact analysis: which results survive the O2-vs-O3 clarification?
+- HC notebook error: Thm M3.1 claims D^{-1}(-Δ_T)D = -Δ_G|_class, but they differ by |ρ|². Needs blackboard write-up.
+- V_HD coordinate-dependence: implications for BB0 Prop M0.1 and other results. V_HD is a chart-dependent coefficient, not a scalar function.
 - BB5 §10.3 erratum: references retracted Thm M4.1
 - Bridge B: symplectic reduction G_log^Lambda (geometric, open)
