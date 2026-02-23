@@ -142,6 +142,7 @@ Notebooks are **append-only topical documents** — stable exposition on one
 research topic. They are memory: once written, content is not edited or deleted.
 
 - Any researcher agent may **append** to notebooks.
+- **Before appending**, check the last section number: `grep '^## §' notebooks/<file>.md | tail -1` (or read the last 20 lines). Use the next sequential number to avoid collisions with concurrent appends.
 - **NEVER** edit or delete existing notebook content.
 - **Append coherent exposition, not session logs.** Each appended section must
   read as a self-contained mini-essay on its subtopic. No dated headers, no

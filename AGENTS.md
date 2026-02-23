@@ -55,7 +55,7 @@ Emergency read is allowed only for shutdown safety when an agent is non-responsi
 - **Commit diffs**: use `git diff --stat` only, NEVER full `git diff` (pollutes context window)
 - Quality gates (promotion rules, diffstat tracking)
 - Research state maintenance
-- **Idle-agent debugging:** if an agent has been idle for more than 1 minute without reporting `done:` or `self:`, the orchestrator may message that agent to diagnose why.
+- **Idle-agent monitoring (mandatory):** Watch for agents that go idle without reporting `done:` or `self:`. If an agent is idle mid-task, message to diagnose. If an agent has finished all tasks and the kanban is empty for them, **proactively message them** to either: (a) propose a new task (`kanban.sh propose <src> "<task>"`), or (b) take a Philosophenweg walk (`kanban.sh self <agent> <src> "Philosophenweg"` — see `agents/shared/philosophenweg.md`). Do not wait for agents to self-initiate; they need the explicit invitation.
 
 ---
 

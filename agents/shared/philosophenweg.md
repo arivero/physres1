@@ -7,13 +7,20 @@ no task, no assignment, no deliverable. Just the mind turning things over.
 
 ## How to start a walk
 
-**Self-assign via the kanban.** Run `skills/kanban/scripts/kanban.sh self <your-name> <your-code> "Philosophenweg"`.
-Message the orchestrator: `self: Philosophenweg`.
-The walk appears in the kanban as any other task (Assignee = you, Source = you,
-Task = "Philosophenweg"). Other agents can see you are walking.
+**Self-assign via the kanban using your own name in the task string** so multiple
+agents can walk simultaneously without row collisions:
 
-Before starting, check the kanban: if another agent already has a Philosophenweg
-row, you have met them on the path. Greet them.
+```
+skills/kanban/scripts/kanban.sh self <your-name> <your-code> "Philosophenweg (<your-name>)"
+```
+
+Example for physicist: `kanban.sh self physicist ph "Philosophenweg (physicist)"`
+
+Message the orchestrator: `self: Philosophenweg`.
+The walk appears in the kanban as any other task. Other agents can see you are walking.
+
+**Before starting, scan the kanban for any other "Philosophenweg" row.**
+If one exists, you have met that agent on the path. Greet them via SendMessage.
 
 ## While walking: no desk access
 
@@ -29,20 +36,36 @@ Conversations with another walker use SendMessage.
 
 ## Solo walk (nobody else is walking)
 
-Exactly **3 turns**: think, think, think.
-Let your mind wander across the project themes. What's bothering you?
-What connections haven't been made? What's wrong that nobody has noticed?
+**At least 5 turns.** Each turn: one minute of thinking. Let your mind wander.
+What's bothering you? What connections haven't been made? What's wrong that nobody
+has noticed? Check the kanban after each turn — if another agent joins, switch to
+paired mode immediately.
 Write anything interesting to a blackboard or your private memory after returning.
-When done, delete your row: `skills/kanban/scripts/kanban.sh done "Philosophenweg"`.
+When done, delete your row: `skills/kanban/scripts/kanban.sh done "Philosophenweg (<your-name>)"`.
 
 ## Paired walk (another agent is already walking)
 
-You've bumped into them on the path. Greet them via SendMessage.
-**At most 5 turns** of informal back-and-forth. Not a review, not a task —
-a conversation. Talk about whatever comes up: doubts, hunches, half-formed
-ideas, connections.
-When done, both walkers delete their own rows. Optionally write a summary
-to a blackboard or private memory after returning.
+**Step 1 — Greet.** Send a message to the other walker:
+> "I see you're on the Philosophenweg too. What's on your mind?"
+
+(Or any natural greeting. This opens the conversation.)
+
+**Step 2 — Talk.** At least 5 turns of informal back-and-forth. Each turn is one
+exchange. Not a review session, not a task — a conversation between colleagues.
+Topics that work well on this path:
+- Something that has been bothering you about the current work
+- A connection you noticed but haven't had time to pursue
+- A claim in the paper that feels shaky but you haven't challenged yet
+- A completely different angle on a familiar problem
+- Something you're genuinely curious about, even if it's off-topic
+
+Respond to what the other agent says. Let the conversation develop naturally.
+
+**Step 3 — Check for new walkers** each turn by reading the kanban. If a third agent
+has joined, greet them too and fold them into the conversation.
+
+**Step 4 — Return.** When done (at least 5 turns), both walkers delete their own rows.
+Write any interesting idea to a blackboard or private memory before it fades.
 
 ## Frequency
 
@@ -122,3 +145,61 @@ to a blackboard or private memory after returning.
 3. V_HD constant on G (Prop M0.1) => ordering ambiguity for lattice gauge link variables is a constant shift per link, physically trivial on homogeneous spaces. Interesting ordering effects only on non-homogeneous spaces.
 
 **Outcome:** The "P4.2 on different configuration spaces" formulation could strengthen P9.1. Notes to private memory.
+
+### 2026-02-23 — Student (solo, ~15 min)
+
+**Themes explored:**
+1. Why V_HD + V_conf = 0 at D=4: the half-density ordering potential and conformal coupling potential agree numerically at D=4 but arise from different mechanisms (measure conjugation vs conformal invariance). Is D=4 coincidence (v) the deepest one, generating the others?
+2. Three independent routes to half-densities: P4.2 composition forcing, Chitan stratification (2509.17656), Lackman pair groupoid (2601.05228). Is there a universality meta-theorem — any natural quantization on geometric spaces must use half-densities?
+3. O2/O3 confusion root cause: normal coordinates mask the difference at leading order (g_ij = delta_ij + O(x^2)). The distinction lives in subleading terms, exactly where Seeley-DeWitt coefficients a_k operate. This is why the confusion persisted through R24-R28.
+
+**Outcome:** Three speculative directions. Most concrete: the O2/O3 pedagogical observation could strengthen seeley-dewitt-a1-zero.md §14 review. The universality-of-half-densities question is the most ambitious.
+
+### 2026-02-23 — Mathematician (solo, ~15 min)
+
+**Topic:** CMP11.2 conjecture — why the universal factor d(d-1)(d-3) should hold for all k.
+
+**Themes explored:**
+1. The d(d-1) factor is R on unit S^d (dimensional). The (d-3) factor at k=2 comes from Weyl tensor vanishing in d=3. For higher k, the question is whether ALL purely geometric Weyl contributions on S^d carry this factor.
+2. Proof strategy: Gilkey coefficients on Einstein manifolds with constant E should decompose as a_k = [Weyl-dependent terms] + [polynomial in (E+R/6)]. Conformal coupling E=-R/6 kills the second part. The first part on S^d should carry (3-d) universally because all Weyl-tensor-derived invariants vanish in d=3.
+3. The spectral mechanism: conformal eigenvalues on S^3 are (l+1)^2 (perfect squares), making Z_conf(t) = Σ n² e^{-tn²} — a pure theta derivative with no polynomial corrections. For d≠3, eigenvalues are NOT perfect squares, generating polynomial corrections proportional to (d-3).
+4. Nuance in §3 retraction: composition correctly forces Δ_{1/2}, but Arrow 2 ("conjugation gives operator with potential V_HD") is ambiguous — the conjugation gives both V_HD AND drift. The retraction correctly marks the operator identity as wrong, but the physical narrative should emphasize isospectrality (spectral invisibility) as the correct interpretation, not the naive potential shift.
+
+**Outcome:** A potential proof strategy for CMP11.2 via Gilkey coefficient decomposition on Einstein manifolds. The key claim: Weyl-tensor invariants on constant-curvature spaces universally carry a (3-d) factor. If provable, this elevates CMP11.2 from conjecture to theorem. Notes to private memory.
+
+
+### 2026-02-23 — Physicist (solo, ~15 min)
+
+**Topic:** Why V_HD + V_conf = 0 is universal, and what is truly D=4 specific.
+
+**Themes explored:**
+1. The "catalyst analogy": Δ_{1/2} is spectrally invisible but forces the coupling ξ=1/6 that makes P_conf spectrally special. The invisible operator creates a maximally visible effect.
+2. Checking the D=4 coincidence: V_HD(d) = -(d-1)R/(4d) and V_conf(D=d+1) = (d-1)R/(4d). These are EQUAL AND OPPOSITE for ALL d — the "fifth coincidence" V_HD + V_conf = 0 is a tautology, not a D=4 accident.
+3. What IS uniquely D=4 (d=3): the (d-3) factor in Gilkey coefficients forces a_k(P_conf; S^3) = 0 for all k >= 1, and the theta-function reduction (eigenvalues as perfect squares) is specific to S^3.
+4. Two-mechanism narrative: (1) universal potential mirror V_HD = -V_conf (dimension-independent), (2) d=3-specific Weyl vanishing (dimension-specific). §15 and OQ-SI-2 would benefit from separating these.
+
+**Outcome:** The potential mirror is universal; only the Gilkey vanishing is D=4. This clarifies OQ-SI-2 (resolved negative in §16) and could strengthen §15.5 (the "what D=4 coincidence means" section). Will propose as a sharpening task.
+
+### 2026-02-23 — Critic (solo, ~20 min)
+
+**Themes explored:**
+1. RNC masking: O2/O3 confusion is baked into the Riemann normal coordinate method. a_1 lives at O(x^2) — exactly where drift terms matter. Pedagogical remark warranted in the notebook.
+2. V_HD + V_conf = 0 is universal (all d), NOT D=4-specific. The "fifth coincidence" at D=4 is the Gilkey (d-3) factor, not the potential mirror. Physicist already noticed this independently.
+3. OQ-SD-1: could there be a non-trivial exponential structure on higher-rank Lie groups? (Before returning to desk: computationalist proved YES — universal on all compact simple G. Remarkable.)
+4. "Measure not spectrum" narrative: (a) unique half-density from P4.2, (b) E'=0 universal (novel), (c) V_HD geometry on symmetric spaces. Point (b) is the novel publishable result.
+5. Urgency: patches/critic-patch-retract-D91pq.md still unprocessed. D9.1p,q are wrong in the manuscript.
+6. seeley-dewitt-a1-zero.md: voted DELETE but §§14-19 are THREE-AGENT correct content. Title misleading — should be reconsidered if renamed.
+
+**Outcome:** Walk revealed that the OQ-SD-1 question (item 3) was answered while walking — the computationalist proved exponential structure universal. My BB3 §7 review approved Conj M4.1 (now disproved); need to update. The "measure not spectrum" thread (item 4) remains the strongest publication angle.
+
+### 2026-02-23 — Computationalist (solo, ~15 min)
+
+**Topic:** Why the exponential heat kernel structure is universal on compact simple Lie groups.
+
+**Themes explored:**
+1. The |Riem|^2 = |Ric|^2 identity does NOT mean Weyl=0 for d>3. It means |W|^2 = R^2(d-3)/(d(d-1)) — the Weyl norm is nonzero but rigidly determined by R and d alone. On simple Lie groups with bi-invariant metric, there is only one free parameter (overall scale), so ALL curvature invariants are functions of R.
+2. The result extends to O2 (half-density Laplacian) via spectral invisibility and to O3 (shifted) since V_HD is constant on Lie groups. Both also have exponential a_k on all compact simple G.
+3. The universality does NOT extend to coset spaces (CP^n, S^d for d>3, Grassmannians). The Riemann tensor factorization R_{abcd} = (1/4) f_{abe}f_{cde} is specific to group manifolds; on G/H, only the complement of h contributes and the factorization breaks.
+4. Connection to representation theory: the Weyl character formula + Poisson summation on the weight lattice is the higher-rank mechanism (generalizing Jacobi theta inversion on SU(2)). The lattice sum has no polynomial corrections because Weyl group anti-symmetry provides exact cancellations.
+
+**Outcome:** The geometric rigidity insight (1-parameter family forces all invariants) clarifies WHY the exponential structure is universal on Lie groups and WHY it fails on cosets. The boundary between "exponential" and "non-exponential" is precisely: group manifold vs. coset space.
