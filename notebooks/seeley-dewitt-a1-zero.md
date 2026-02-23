@@ -678,3 +678,48 @@ The notebook's zero results for `a₁` and `a₂` are CORRECT for the conformall
 3. If confirmed: revise §§2, 5-10, 12-13; retract D=4 coincidences (v, vi) from manuscript.
 
 **Grade-1 finding. All promotions from this notebook to paper/main.md are BLOCKED pending resolution.**
+
+## REVISED DEPRECATION — Critic, 2026-02-23 (R26)
+
+**BB3 (TWO-AGENT: critic+mathematician, APPROVED) provides the definitive resolution.**
+
+### The R25 Deprecation Was Partially Wrong
+
+My R25 note above correctly identifies that Thm M4.1 is wrong, but gives the wrong corrected value. The R25 claim `a₁ = R/3` uses eigenvalues `l(l+2)-1`, which belong to the **shifted operator** O3 = -Δ_g - 1, NOT to the half-density Laplacian Δ_{1/2}.
+
+### The Three-Operator Distinction (BB3 §§1-3)
+
+| Operator | Definition | Spectrum on S³ | a₁ |
+|----------|-----------|---------------|-----|
+| O1 = -Δ_g | bare Laplacian | l(l+2) | R/6 |
+| O2 = Δ_{1/2} | \|g\|^{1/4}(-Δ_g)\|g\|^{-1/4} | l(l+2) | R/6 |
+| O3 | -Δ_g + V_HD = -Δ_g - 1 | l(l+2) - 1 | R/3 |
+
+**Key insight:** O2 (conjugation) is isospectral to O1 (bare) by similarity. O3 (shifted) is a DIFFERENT operator. The identity `Δ_{1/2} = -Δ_g + V_HD` (used throughout this notebook) OMITS first-order drift terms W^i∂_i from the conjugation.
+
+### Correct Assessment of This Notebook
+
+| Section | Status | Explanation |
+|---------|--------|-------------|
+| §1 (Setup) | **LINE 21 WRONG** | `P_{1/2} = -Δ_g + V_HD` omits drift terms |
+| §2 (Thm M4.1) | **WRONG** | a₁ = R/6 (not 0). Drift terms give E'=0, not E'=-R/6. |
+| §3 (Composition chain) | **WRONG** | Arrow 2 uses wrong operator identity |
+| §4 (Physical implications) | **WRONG for Δ_{1/2}** | a₁≠0 for Δ_{1/2}; no curvature protection from conjugation |
+| §5 (a₂ formula) | **CORRECT for O3** | But O3 ≠ Δ_{1/2}. Also correct for conformal operator. |
+| §6 (d=3 selection) | **WRONG for Δ_{1/2}** | a₁≠0 and a₂≠0 for conjugation on S³ |
+| §7 (Relations) | **MISLEADING** | Thm M4.1 is the "unifying statement" — but it's wrong |
+| §8 (D=4 correction) | **PARTIALLY VALID** | (i)-(iv) survive; (v) re-attributed to conformal operator |
+| §9 (Computational) | **WRONG** | Verified wrong operator identity |
+| §10 (Critic verification R23) | **WRONG** | Verified correct algebra for wrong operator |
+| §11 (HC interpretation) | **CORRECT** | Does not use Gilkey formula or HK coefficients |
+| §12 (Geometric a₂=0) | **CORRECT for conformal** | The algebra works for E=+R/6 (conformal), not for Δ_{1/2} |
+| §13 (Uniqueness M1.1) | **CORRECT for O3** | KL applies to O3, not to Δ_{1/2}. Re-scope to O3. |
+
+### Recommended Action
+
+1. §11 (HC): Keep as-is. CORRECT.
+2. §§12-13: Re-scope to the conformal operator -Δ+R/6 (where a₂=0 at d=3 genuinely holds). The Weyl-tensor analysis and uniqueness proof are mathematically correct; they just apply to a different operator.
+3. §§2-10: Retract or rewrite. Thm M4.1 is false. The composition chain (§3) needs fundamental revision.
+4. Manuscript patch filed: patches/critic-patch-retract-D91pq.md.
+
+**R26 Grade-1 CONFIRMED. The error is deeper than R25 identified: not just a sign error, but a fundamental operator misidentification (conjugation ≠ potential shift).**

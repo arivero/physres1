@@ -104,6 +104,36 @@ Resolved (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `V
 Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` as brainstorming input):
 - `meta/next-articles.md`
 
+## Session Update (2026-02-23, Run R26 ending ~13:30 CET — major sign error resolution)
+
+**CRITICAL NEW FINDING: D9.1p and D9.1q are WRONG. a₁(Δ_{1/2}) = R/6, not 0.**
+
+The critic (R26, BB3) performed a definitive three-operator analysis:
+- **O2 = Δ_{1/2} = |g|^{1/4}(-Δ_g)|g|^{-1/4}**: isospectral to -Δ_g (similarity transform, bijection on L²), eigenvalues l(l+2), a₁ = R/6. Ground state eigenvalue = 0 (verified: |g|^{1/4}·1 → eigenvalue 0).
+- **O3 = -Δ_g + V_HD globally**: eigenvalues l(l+2)−1 (negative ground state −1!), a₁ = R/3. This is NOT Δ_{1/2}.
+- **Conformal -Δ_g + R/6**: eigenvalues n², a₁ = 0, heat-kernel flat. CORRECT for fifth D=4 coincidence (CMP9b.4, BB4).
+
+**Paper error:** D9.1p used the formula a₁ = R/6 + V_HD = 0, but omits drift terms W^i∂_i. With drift absorbed into modified connection, the effective endomorphism E' = 0 (not −R/6), giving a₁ = R/6 + 0 = R/6. D9.1q then applied KL formula to O3 mistaking it for Δ_{1/2}.
+
+**Retraction patch filed:** `patches/critic-patch-retract-D91pq.md` (TWO-AGENT: critic+mathematician, BB3 §§1-15 APPROVE). **DO NOT APPLY until THREE-AGENT consensus (computationalist spectral check pending).** See kanban.
+
+**Do NOT apply:** `proposals/physicist-edit-retract-d91p-d91q.md` — proposes a₁=R/3 which is for O3, not Δ_{1/2}.
+
+**BB changes:**
+- **BB3** (critic R26): three-operator analysis, a₁=R/6. Overwrote OQ-FdV-3 (§§11-13 already in notebook).
+- **BB1** (physicist R26): "Spectral Invisibility" narrative, Δ_{1/2} isospectral to bare. SINGLE-AGENT (needs 2nd).
+- **BB4**: physicist's wrong O3 analysis REVERTED to committed Weyl state.
+
+**Next session priorities:**
+1. THREE-AGENT sign-off on BB3 (computationalist spectral verification of O2 eigenvalues). **Then apply critic's retraction patch.**
+2. BB1 2nd-agent review (mathematician).
+3. D9.1q removal from paper → also remove ref 37 [KluthLitim2020] (only cited there), remove from Package B list.
+4. D9.1p replacement text: a₁=R/6 isospectrality remark.
+5. Re-examine fifth D=4 coincidence (a₂(conformal;S³)=0, NOT Δ_{1/2}) — still valid via CMP9b.4.
+6. The sixth D=4 coincidence ("heat-kernel flatness") is now retracted; reassess coincidence count.
+
+**Team:** `curried-roaming-snowglobe` (see ~/claude/teams/).
+
 ## Session Update (2026-02-23, Run R25 ending ~12:50 CET — interrupted for team relaunch)
 - **D9.1q applied**: Remark D9.1q (heat-kernel flatness on S³, sixth D=4 coincidence) added to paper/main.md. THREE-AGENT (physicist+computationalist+mathematician). [KluthLitim2020] ref 37 added.
 - **BB1 §13**: Mathematician formally proved Corollary M1.1 (uniqueness of heat-kernel flatness: d=3 only). FOUR-AGENT.

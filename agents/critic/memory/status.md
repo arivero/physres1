@@ -1,38 +1,34 @@
 # Critic -- Status
 
-## Current state (2026-02-23, Session R25 end)
+## Current state (2026-02-23, Session R26 mid-session)
 
-### Key finding this session
-FATAL sign error in Gilkey formula across entire project. The formula `a₁ = R/6 + V_HD` in notebook §2 (Thm M4.1) has wrong sign on V_HD. Correct formula: `a₁ = R/6 - V_HD = R/6 + R/6 = R/3 ≠ 0`.
+### Key finding (R26): THREE-OPERATOR DISTINCTION
+The half-density Laplacian Δ_{1/2} = |g|^{1/4}(-Δ_g)|g|^{-1/4} (conjugation, O2) is isospectral to the bare Laplacian -Δ_g (O1). The shifted operator O3 = -Δ_g + V_HD = -Δ_g - 1 is DIFFERENT. The project confused O2 and O3.
 
-Evidence:
-1. Conformal coupling check: V=+R/6 gives a₁=0 iff formula has -V. ✓
-2. Mathematician BB4 §11 spectral sum: (HT/lead-1)/t → R/3 = 2 ≠ 0. ✓
-3. Direct product formula: Z_{1/2}=e^t Z_0, a₁=R/3 from eigenvalues l(l+2)-1. ✓
-4. Vassilevich formula for conformal coupling (E=-R/6): a₁=0 ✓; half-density (E=+R/6): a₁=R/3 ✓.
-
-### Findings written
-- BB1 §13: Grade-1 review — Thm M4.1 WRONG, KL interpretation WRONG, fifth and sixth coincidences WRONG
-- BB4 §12: Grade-1 review — a₂=0 WRONG, promotion BLOCKED
-- Deprecation note in notebooks/seeley-dewitt-a1-zero.md
-- BB README updated (BB1, BB2, BB4 BLOCKED)
-- Proposed kanban task: computationalist verify via spectral sum
-
-### What's unaffected
-- V_HD formula: -(d-1)R/(4d) — CORRECT
-- V_HD constant iff d=3 on S^d — CORRECT
-- V_HD = -|ρ|² on Lie groups (BB0, HC) — CORRECT
-- Thm C4.1 (Kretschner identity in d=3) — CORRECT
-- All BB0, BB3 (HC), BB5 (products), BB6 (constant curvature formula) — CORRECT
+### Completed (R26)
+1. Verified Gilkey sign: a₁(O3) = R/3, a₂(O3) = R²/18 [CORRECT for O3]
+2. Discovered: a₁(O2=Δ_{1/2}) = R/6 (same as bare, NOT 0, NOT R/3)
+3. Proved E' = 0 universally: drift W^i cancels connection B^i (SymPy-verified)
+4. Resolved OQ-R26-1: composition forces O2 (conjugation), per manuscript H4.0/D4.0
+5. Wrote BB3 §§1-14 (definitive resolution). Mathematician APPROVED (§15).
+6. Filed patches/critic-patch-retract-D91pq.md (retract D9.1p, D9.1q)
+7. Added ALERT to BB2 (§9 INVALIDATED for Δ_{1/2}, conformal fifth coincidence survives)
+8. Updated notebook deprecation (R26 correction: not just sign error, operator misID)
+9. Updated all README slot entries (BB1-BB5)
 
 ### What's invalidated
-- Thm M4.1 (universal a₁=0): WRONG
-- Fifth D=4 coincidence (a₂=0 on S³): WRONG
-- Sixth D=4 coincidence (all a_k=0): WRONG
-- BB4 §§5-10 (geometric origin of a₂=0): WRONG (result doesn't exist)
-- BB2 §9 (de Sitter a₂=0): WRONG
+- Thm M4.1 (a₁=0 universal): WRONG for Δ_{1/2}. Correct: a₁=R/6.
+- D9.1p, D9.1q: WRONG. Patch filed.
+- BB2 §9 (partition function analysis): WRONG for Δ_{1/2}
+- BB4 "HD coefficients a_k=2^k/k!": these are for O3, not Δ_{1/2}
 
-### Next (if session continues)
-1. Wait for computationalist spectral sum verification
-2. If confirmed: revise manuscript — retract D=4 coincidences v and vi
-3. Check if conformal coupling (not half-density) is what composition forces — this would RESTORE the results but change the interpretation
+### What survives
+- V_HD formula, constancy, Weyl vector: CORRECT (geometry, no HK)
+- D=4 coincidences (i)-(iv): CORRECT (independent of HK)
+- Fifth coincidence (conformal a₂=0 at d=3): CORRECT for -Δ+R/6 (CMP9b.4)
+- KL generating function for O3: CORRECT math, re-scoped to O3
+- Corollary M1.1 uniqueness: CORRECT for O3, needs re-scoping
+
+### Next steps
+1. Review BB4 for labeling corrections (a_k "HD" → "O3/shifted")
+2. Consider broader narrative impact: if composition forces O2 and O2 is spectrally trivial, what is the physical content of the half-density thesis?
