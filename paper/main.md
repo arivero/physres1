@@ -1173,7 +1173,7 @@ For a tolerance \(\eta\in(0,1)\), requiring \(\delta_\beta(g)\le \eta\) yields a
 Thus the truncation is quantitatively controlled only in the weak-coupling region \( |g|\ll b_0/|b_1| \); when \( |g|\sim b_0/|b_1| \), the neglected term is order-one and truncation closure fails. This turns the qualitative caveat of `Proposition P6.3` into a concrete pass/fail criterion.
 
 `Remark D6.4a (Model-specific benchmark: \(\lambda\phi^4\) at one and two loops).`
-For scalar \(\lambda\phi^4\) theory in \(D=4\) with \(\mathcal{L}_{\mathrm{int}}=\lambda\phi^4/4!\), the MS coefficients from `Derivation D8.2a` and its two-loop extension are
+For scalar \(\lambda\phi^4\) theory in \(D=4\) with \(\mathcal{L}_{\mathrm{int}}=\lambda\phi^4/4!\), the MS coefficients from `Derivation D8.2a` (one-loop \(b_0\)) and the standard two-loop MS-bar result are
 \[
 b_0=\frac{3}{16\pi^2}\approx 0.019,
 \qquad
