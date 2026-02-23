@@ -266,7 +266,8 @@ Update it before going idle or at session end. When starting a new session, read
 
 To promote content from blackboards/notebooks into a paper:
 1. **Proposer**: one agent sends a paper edit request to the orchestrator
-   (include: target file, section, proposed text, rationale).
+   (include: target file, section, proposed text, rationale citing the source
+   surface — e.g. `notebooks/foo.md §3` or `blackboards/2.md`).
 2. **Reviewer**: a *different researcher agent* must review and approve the promotion.
    The proposer cannot also be the reviewer — a second pair of eyes is required.
 3. The orchestrator may apply the manuscript edit, but does NOT count as the second
