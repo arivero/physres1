@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Atomic kanban operations using flock.
+# Atomic kanban operations using flock + awk/sed.
 # All write operations acquire an exclusive lock on LOCKFILE before editing.
 # Read is lock-free.
+# BSD/macOS compatible: no GNU sed extensions, no sed -i.
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
 KANBAN="$REPO_ROOT/meta/kanban.md"
@@ -41,35 +42,10 @@ validate_pattern() {
   [[ ${#pattern} -ge 3 ]] || die "pattern too short (min 3 chars): '$pattern'"
 }
 
-# Parse a kanban table row into columns.  Expects "| col1 | col2 | col3 |"
-# Sets COLS array (0-indexed).
-parse_row() {
-  local line="$1"
-  IFS='|' read -ra _parts <<< "$line"
-  COLS=()
-  for p in "${_parts[@]}"; do
-    # trim leading/trailing whitespace
-    p="${p#"${p%%[![:space:]]*}"}"
-    p="${p%"${p##*[![:space:]]}"}"
-    COLS+=("$p")
-  done
-}
-
-# Return true if line is a data row (starts with |, not header/separator)
-is_data_row() {
-  local line="$1"
-  [[ "$line" =~ ^\| ]] || return 1
-  # skip separator (|---|)
-  [[ "$line" =~ ^\|[[:space:]]*-+ ]] && return 1
-  # skip header (contains "Assignee")
-  [[ "$line" == *"Assignee"* ]] && return 1
-  return 0
-}
-
-is_signal_line() {
-  local line="$1"
-  [[ "$line" =~ ^Orchestrator\ says: ]]
-}
+# ── awk helpers ─────────────────────────────────────────────────────────
+# Data-row filter (used as awk pattern in every program):
+#   /^\|/ && !/^\|[[:space:]]*-/ && !/Assignee/
+# Column extraction:  split($0, f, "|")  then  gsub(/^[ \t]+|[ \t]+$/, "", f[N])
 
 # ── Operations ──────────────────────────────────────────────────────────
 
@@ -85,43 +61,38 @@ cmd_claim() {
   (
     flock -w 5 200 || { echo "ERROR: could not acquire lock" >&2; exit 3; }
 
-    local tmpfile
+    local tmpfile ec=0 msg=""
     tmpfile=$(mktemp)
-    local found=0 matched_but_claimed=0 matched_line="" claimed_by=""
 
-    while IFS= read -r line || [[ -n "$line" ]]; do
-      if [[ $found -eq 0 ]] && is_data_row "$line"; then
-        parse_row "$line"
-        local assignee="${COLS[1]:-}"
-        local task="${COLS[3]:-}"
-        if [[ "$task" == *"$pattern"* ]]; then
-          if [[ -z "$assignee" ]]; then
-            # Unclaimed — claim it
-            line="| $agent | ${COLS[2]:-} | ${COLS[3]:-} |"
-            matched_line="$line"
-            found=1
-          else
-            # Matched but already taken
-            matched_but_claimed=1
-            claimed_by="$assignee"
-          fi
-        fi
-      fi
-      printf '%s\n' "$line" >> "$tmpfile"
-    done < "$KANBAN"
+    msg=$(awk -v agent="$agent" -v pat="$pattern" '
+      /^\|/ && !/^\|[[:space:]]*-/ && !/Assignee/ && !found && !conflict {
+        split($0, f, "|")
+        assignee = f[2]; gsub(/^[[:space:]]+|[[:space:]]+$/, "", assignee)
+        src      = f[3]; gsub(/^[[:space:]]+|[[:space:]]+$/, "", src)
+        task     = f[4]; gsub(/^[[:space:]]+|[[:space:]]+$/, "", task)
+        if (index(task, pat) > 0) {
+          if (assignee == "") {
+            $0 = "| " agent " | " src " | " task " |"
+            found = 1
+            print $0 > "/dev/stderr"
+          } else {
+            conflict = 1; claimed_by = assignee
+          }
+        }
+      }
+      { print }
+      END {
+        if (found) exit 0
+        if (conflict) { print claimed_by > "/dev/stderr"; exit 2 }
+        exit 1
+      }
+    ' "$KANBAN" 2>&1 >"$tmpfile") || ec=$?
 
-    if [[ $found -eq 0 ]]; then
-      rm -f "$tmpfile"
-      if [[ $matched_but_claimed -eq 1 ]]; then
-        echo "CONFLICT: row already claimed by '$claimed_by'" >&2
-        exit 2
-      fi
-      echo "No row matching '$pattern'" >&2
-      exit 1
-    fi
-
-    mv "$tmpfile" "$KANBAN"
-    echo "$matched_line"
+    case $ec in
+      0) mv "$tmpfile" "$KANBAN"; echo "$msg" ;;
+      2) rm -f "$tmpfile"; echo "CONFLICT: row already claimed by '$msg'" >&2; exit 2 ;;
+      *) rm -f "$tmpfile"; echo "No row matching '$pattern'" >&2; exit 1 ;;
+    esac
   ) 200>"$LOCKFILE"
 }
 
@@ -136,20 +107,12 @@ cmd_propose() {
 
     local tmpfile
     tmpfile=$(mktemp)
-    local inserted=0
 
-    while IFS= read -r line || [[ -n "$line" ]]; do
-      if [[ $inserted -eq 0 ]] && is_signal_line "$line"; then
-        printf '%s\n' "$new_row" >> "$tmpfile"
-        inserted=1
-      fi
-      printf '%s\n' "$line" >> "$tmpfile"
-    done < "$KANBAN"
-
-    # If no signal line, append after last line
-    if [[ $inserted -eq 0 ]]; then
-      printf '%s\n' "$new_row" >> "$tmpfile"
-    fi
+    awk -v row="$new_row" '
+      /^Orchestrator says:/ && !ins { print row; ins=1 }
+      { print }
+      END { if (!ins) print row }
+    ' "$KANBAN" > "$tmpfile"
 
     mv "$tmpfile" "$KANBAN"
     echo "$new_row"
@@ -168,19 +131,12 @@ cmd_self() {
 
     local tmpfile
     tmpfile=$(mktemp)
-    local inserted=0
 
-    while IFS= read -r line || [[ -n "$line" ]]; do
-      if [[ $inserted -eq 0 ]] && is_signal_line "$line"; then
-        printf '%s\n' "$new_row" >> "$tmpfile"
-        inserted=1
-      fi
-      printf '%s\n' "$line" >> "$tmpfile"
-    done < "$KANBAN"
-
-    if [[ $inserted -eq 0 ]]; then
-      printf '%s\n' "$new_row" >> "$tmpfile"
-    fi
+    awk -v row="$new_row" '
+      /^Orchestrator says:/ && !ins { print row; ins=1 }
+      { print }
+      END { if (!ins) print row }
+    ' "$KANBAN" > "$tmpfile"
 
     mv "$tmpfile" "$KANBAN"
     echo "$new_row"
@@ -195,32 +151,32 @@ cmd_relinquish() {
   (
     flock -w 5 200 || { echo "ERROR: could not acquire lock" >&2; exit 3; }
 
-    local tmpfile
+    local tmpfile ec=0 msg=""
     tmpfile=$(mktemp)
-    local found=0 matched_line=""
 
-    while IFS= read -r line || [[ -n "$line" ]]; do
-      if [[ $found -eq 0 ]] && is_data_row "$line"; then
-        parse_row "$line"
-        local assignee="${COLS[1]:-}"
-        local task="${COLS[3]:-}"
-        if [[ "$assignee" == "$agent" && "$task" == *"$pattern"* ]]; then
-          line="| | ${COLS[2]:-} | ${COLS[3]:-} |"
-          matched_line="$line"
-          found=1
-        fi
-      fi
-      printf '%s\n' "$line" >> "$tmpfile"
-    done < "$KANBAN"
+    msg=$(awk -v agent="$agent" -v pat="$pattern" '
+      /^\|/ && !/^\|[[:space:]]*-/ && !/Assignee/ && !found {
+        split($0, f, "|")
+        assignee = f[2]; gsub(/^[[:space:]]+|[[:space:]]+$/, "", assignee)
+        src      = f[3]; gsub(/^[[:space:]]+|[[:space:]]+$/, "", src)
+        task     = f[4]; gsub(/^[[:space:]]+|[[:space:]]+$/, "", task)
+        if (assignee == agent && index(task, pat) > 0) {
+          $0 = "| | " src " | " task " |"
+          found = 1
+          print $0 > "/dev/stderr"
+        }
+      }
+      { print }
+      END { if (!found) exit 1 }
+    ' "$KANBAN" 2>&1 >"$tmpfile") || ec=$?
 
-    if [[ $found -eq 0 ]]; then
+    if [[ $ec -ne 0 ]]; then
       rm -f "$tmpfile"
       echo "No row assigned to '$agent' matching '$pattern'" >&2
       exit 1
     fi
-
     mv "$tmpfile" "$KANBAN"
-    echo "$matched_line"
+    echo "$msg"
   ) 200>"$LOCKFILE"
 }
 
@@ -231,31 +187,26 @@ cmd_done() {
   (
     flock -w 5 200 || { echo "ERROR: could not acquire lock" >&2; exit 3; }
 
-    local tmpfile
+    local tmpfile ec=0 msg=""
     tmpfile=$(mktemp)
-    local found=0 deleted_line=""
 
-    while IFS= read -r line || [[ -n "$line" ]]; do
-      if [[ $found -eq 0 ]] && is_data_row "$line"; then
-        parse_row "$line"
-        local task="${COLS[3]:-}"
-        if [[ "$task" == *"$pattern"* ]]; then
-          deleted_line="$line"
-          found=1
-          continue  # skip this line (delete it)
-        fi
-      fi
-      printf '%s\n' "$line" >> "$tmpfile"
-    done < "$KANBAN"
+    msg=$(awk -v pat="$pattern" '
+      /^\|/ && !/^\|[[:space:]]*-/ && !/Assignee/ && !found {
+        split($0, f, "|")
+        task = f[4]; gsub(/^[[:space:]]+|[[:space:]]+$/, "", task)
+        if (index(task, pat) > 0) { found=1; print $0 > "/dev/stderr"; next }
+      }
+      { print }
+      END { if (!found) exit 1 }
+    ' "$KANBAN" 2>&1 >"$tmpfile") || ec=$?
 
-    if [[ $found -eq 0 ]]; then
+    if [[ $ec -ne 0 ]]; then
       rm -f "$tmpfile"
       echo "No row matching '$pattern'" >&2
       exit 1
     fi
-
     mv "$tmpfile" "$KANBAN"
-    echo "DELETED: $deleted_line"
+    echo "DELETED: $msg"
   ) 200>"$LOCKFILE"
 }
 
@@ -267,18 +218,12 @@ cmd_signal() {
 
     local tmpfile
     tmpfile=$(mktemp)
-    local replaced=0
 
-    while IFS= read -r line || [[ -n "$line" ]]; do
-      if is_signal_line "$line"; then
-        line="Orchestrator says:  $message"
-        replaced=1
-      fi
-      printf '%s\n' "$line" >> "$tmpfile"
-    done < "$KANBAN"
-
-    if [[ $replaced -eq 0 ]]; then
-      printf '\n%s\n' "Orchestrator says:  $message" >> "$tmpfile"
+    # sed s/// is BSD-compatible (no -i, no address ranges)
+    if grep -q "^Orchestrator says:" "$KANBAN"; then
+      sed "s|^Orchestrator says:.*|Orchestrator says:  $message|" "$KANBAN" > "$tmpfile"
+    else
+      { cat "$KANBAN"; printf '\nOrchestrator says:  %s\n' "$message"; } > "$tmpfile"
     fi
 
     mv "$tmpfile" "$KANBAN"
