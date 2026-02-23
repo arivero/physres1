@@ -104,6 +104,16 @@ Resolved (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `V
 Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` as brainstorming input):
 - `meta/next-articles.md`
 
+## Session Update (2026-02-23, Run R25 ending ~12:50 CET — interrupted for team relaunch)
+- **D9.1q applied**: Remark D9.1q (heat-kernel flatness on S³, sixth D=4 coincidence) added to paper/main.md. THREE-AGENT (physicist+computationalist+mathematician). [KluthLitim2020] ref 37 added.
+- **BB1 §13**: Mathematician formally proved Corollary M1.1 (uniqueness of heat-kernel flatness: d=3 only). FOUR-AGENT.
+- **BB3 errata**: Mathematician struck M3.2 step(iv) and deleted M3.3 (sev-2 critic findings). BB3 now annotated with errata.
+- **BB4 Vassilevich**: Computationalist notation-corrected (E=+R/6 explicit). Promoted to seeley-dewitt notebook Part 12.
+- **Notebook**: seeley-dewitt-a1-zero.md +390 lines (Part 12 full, Part 13 BB1 corollary promotion started by new computationalist spawn).
+- **Student**: Weyl-heat kernel bridge survey (sources/R25-WeylHeatKernel-LiteratureSurvey.md, 5 papers ingested).
+- **Team mode**: Sessions R20-R24 used `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` env var (v2.1.49). R25 inadvertently ran without it (v2.1.50) → local agents only. User relaunching with proper team env. See: https://code.claude.com/docs/en/agent-teams
+- **Next session**: Use `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1 claude ...` to restore TeamCreate+inbox messaging. Pending: BB1 §13→notebook (Part 13), BB3 §§4-10 revision, BB4 slot reuse.
+
 ## Session Update (2026-02-23, Run R24 ending 12:00 CET)
 - Short session (25 min). Self-service kanban, all 5 agents looped correctly.
 - **Physicist**: Applied BB1 §10.7 d=2 correction (κ_n=0 but V_HD non-constant → KL inapplicable). Upgraded uniqueness corollary to two-condition form. Also contributed 2nd-agent physical review of BB3 (HC proof).

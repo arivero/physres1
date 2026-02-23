@@ -63,6 +63,15 @@
   HC proof physically sound: D = standing wave at |ρ|², V_HD = self-energy of Jacobian.
   No blocking issues.
 
+## 2026-02-23 (R25)
+- read: BB1 §10 (three-agent result: all a_k(Δ_{1/2};S³)=0, uniqueness two-condition form)
+- read: paper/main.md §10.2 D9.1 series (D9.1p = last remark; position for D9.1q identified)
+- read: sources/kluth-litim2020-heat-kernel-sphere.md (generating function, vanishing conditions)
+- wrote: patches/physicist-patch-sixth-coincidence.md (D9.1q remark + Package B update + [KluthLitim2020] ref 37)
+- updated: agents/physicist/memory/status.md for R25
+- claimed: kanban "Manuscript patch: sixth D=4 coincidence"
+- done: kanban task "sixth D=4 coincidence" → marked done
+
 ## Key verdicts still relevant
 - V_HD formula -(d-1)R/(4d) is NOVEL (no direct literature hit)
 - D=4 unique for constant V_HD on S^{D-1} (fourth coincidence)

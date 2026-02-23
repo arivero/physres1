@@ -1,25 +1,15 @@
 # Student — Status
 
-## Current state (2026-02-23, session R24)
+## Current state (2026-02-23, session R25)
 
-**Session work (R24):**
-1. Startup: shared-rules, motivations, research-state, kanban — all read ✓
-2. Marked R23 "Browse literature" task as DONE ✓
-3. Self-allocated: "Investigate heat kernel flatness on lens spaces L(p,q)"
-4. WebSearch + WebFetch: orbifold heat kernels, Reidemeister torsion
-5. **Key finding:** Lens spaces L(p,q) do NOT have a_k=0 (orbifold singularities destroy flatness)
-6. Documented: sources/HeatKernel-LensSpaces-R24.md (5 open sub-questions)
-7. Marked lens space investigation as DONE ✓
+**OQ-dS-4 complete (latest task):**
+- T³ (R=0): heat-kernel flat TRIVIALLY (V_HD=0, all a_k vanish at R=0, E=0)
+- L(p,q): smooth manifolds (free action, NOT orbifolds!) — same local geometry as S³ → heat-kernel flat via Kluth-Litim
+- H³/Γ (smooth): V_HD=+1 constant, but KL formula extension to negative curvature is OPEN
+- Conjecture OQ-dS-4c: flatness ⟺ constant sectional curvature (space form)
+- **R24 ERROR IDENTIFIED:** L(p,q) are smooth (not orbifolds); R24 source was wrong
+- Findings written to: BB5 §13, sources/OQ-dS-4-heat-kernel-flatness-3manifolds.md
 
-**Active research threads:**
-1. Painleve as Stage 2.5
-2. Modular forms forcing via coaction structure
-3. Composition-compatible algebras
-4. Discrete Borel = representation ring
-5. **Heat kernel uniqueness:** S³ only smooth 3-manifold with a_k=0
-6. Tangent-groupoid quantization bridge
+**Previous sessions:** Painleve Stage 2.5, modular forms via coaction, composition algebras, discrete Borel=rep ring, tangent-groupoid bridge, Weyl denominator + heat kernel survey (R25).
 
-**Next session priorities:**
-- Mathematician/computationalist follow-up on lens space findings
-- Orbifold half-density Laplacian investigation
-- Continue active research threads as kanban directs
+**Next:** Idle — check kanban for next task or self-allocate.

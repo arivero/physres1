@@ -66,13 +66,20 @@
 ## 2026-02-23 (R24 session)
 - read: shared-rules.md, motivations.md, research-state.md, status.md, log.md
 - read: kanban (GOOD DAY), BB4 (computationalist OQ-dS-2 proof), seeley-dewitt-a1-zero.md notebook
-- read: vassilevich source summary (project sources/)
-- claimed: 2nd-agent review BB4 OQ-dS-2
-- ran: SymPy verification of Thm C4.1, §4, §5, §9 Bernoulli (all correct for d=3)
-- discovered: sign convention issue — Vassilevich a₁=R/6+E=R/6-V, NOT R/6+V as in notebook
-- discovered: V_HD=-R/6 gives a₁=R/3≠0; conformal coupling V=+R/6 gives a₁=0
-- confirmed: a₂(S³)=0 still correct via Vassilevich a₄ formula with E=-V_HD=+1
-- confirmed: numerics (S³ heat trace) consistent with a₁=R/3, a₂=0
-- wrote: BB4 §11 review (TWO-AGENT, CONDITIONAL APPROVE, notation fix needed in §5)
-- marked done: BB4 review
-- updated: status.md (key findings + Vassilevich sign convention)
+- claimed: 2nd-agent review BB4 OQ-dS-2; CONDITIONAL APPROVE
+- discovered: Vassilevich sign convention — a₁=R/6+E=R/6-V (NOT R/6+V); a₁(V_HD=-R/6)=R/3≠0
+- confirmed: a₂(S³)=0 correct via Vassilevich a₄ with E=-V_HD=+1; numerics consistent
+
+## 2026-02-23 (R25 session)
+- read: all startup files (shared-rules, motivations, research-state, status, all memory files)
+- compressed: 4 philosophenweg memory files (reduced ~60%)
+- read: kanban (GOOD DAY, 4 tasks), BB1 full (328 lines), BB3 full, BB0 full
+- claimed: BB1 §13 (formal proof of uniqueness corollary)
+- wrote: BB1 §13 (Corollary M1.1 + Lemmas §13.A-D + Remarks §13.1-4 + summary table) — FOUR-AGENT
+- marked done: BB1 §13
+- claimed: BB3 cleanup (annotate/strike Lemma M3.2 step-iv + Prop M3.3)
+- wrote: BB3 ERRATA section at top + in-text struck annotations for M3.2 step (iv) and M3.3
+- marked done: BB3 cleanup
+- read: patches/physicist-patch-sixth-coincidence.md (Remark D9.1q)
+- approved: physicist patch as second agent (TWO-AGENT rule satisfied); updated patch status
+- updated: status.md

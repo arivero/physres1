@@ -156,6 +156,8 @@ Use this file as a source ledger.
 38. `[HairerLubichWanner2006GNI]`: `PENDING_LIBRARY` — book (Springer, 2006). DOI `10.1007/3-540-30666-8`; ISBN `978-3-540-30666-5`. Author has made partial chapter PDFs available (e.g. intro, selected sections) but full text requires institutional access or physical library. (B33 note: Archive Ouverte UNIGE lists the book but requires institutional login.)
 39. `[HairerNorsettWanner1993ODE1]`: `PENDING_LIBRARY` — book (Springer, 1993). DOI `10.1007/978-3-540-78862-1`; ISBN `978-3-540-56670-0`. Archive Ouverte UNIGE lists a related version but requires institutional login. Institutional access or physical library needed.
 40. `[ElShowk2014]`: acquired via arXiv source note in `sources/el-showk-et-al-2014-3d-ising-bootstrap.md` (URL: <https://arxiv.org/abs/1403.4545>; abstract reports \(\Delta_\sigma = 0.518154(15)\)).
+41. `[DeWitt1957]` Bryce S. DeWitt, "Dynamical Theory in Curved Spaces. I. A Review of the Classical and Quantum Action Principles," *Reviews of Modern Physics* **29**(3), 377–397 (1957). DOI `10.1103/RevModPhys.29.377`. **Added R25.** Source: publisher DOI (paywalled). `PENDING` — OA route unknown; standard library access.
+42. `[KluthLitim2020]` Y. Kluth and D. F. Litim, "Heat kernel coefficients on the sphere in any dimension," *Eur. Phys. J. C* **80**:269 (2020). arXiv:`1910.00543`. DOI `10.1140/epjc/s10052-020-7784-2`. **Added R25.** Source ingested: `sources/kluth-litim2020-heat-kernel-sphere.md` (confirmed by computationalist, R24/R25). **INGESTED** (arXiv OA).
 
 ## A. Rivero ArXiv Queue
 1. `[Rivero0404086]` Alejandro Rivero, "Some minor examples on discrete geometry," arXiv:`gr-qc/0404086` (v1, 20 Apr 2004).

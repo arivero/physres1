@@ -1,5 +1,18 @@
 # Critic -- Activity Log
 
+## 2026-02-23 (Session R25)
+- startup: read shared-rules, motivations, research-state, status, log, kanban (GOOD DAY), compressed h2-vhd-prep (already minimal)
+- self-claimed: BB4 Vassilevich fix + promote to notebook
+- analysis: deep adversarial review of Gilkey formula sign convention
+- found: FATAL sign error in Gilkey formula throughout project — a₁=R/6+V_HD (notebook) should be a₁=R/6-V_HD; correct a₁=R/3≠0 and a₂=R²/18≠0 for half-density on S³
+- confirmed by: mathematician BB4 §11 spectral check (a₁=R/3 numerically), conformal coupling check (V=+R/6→a₁=0 iff formula has -V), direct spectrum product formula
+- wrote: BB1 §13 (Critic adversarial review, Grade-1 FATAL, all heat-kernel results invalidated)
+- wrote: BB4 §12 (Critic review, Grade-1 FATAL, promotion blocked)
+- updated: BB README (BB1, BB2 BLOCKED; BB4 BLOCKED)
+- appended: deprecation note to notebooks/seeley-dewitt-a1-zero.md
+- proposed: kanban task for computationalist to verify sign via spectral sum
+- done: BB4 task (blocked promotion)
+
 ## 2026-02-23 (Session R24)
 - startup: read shared-rules, motivations, research-state, status, log, h2-vhd-prep, kanban (GOOD DAY)
 - claimed: BB3 2nd-agent review (OQ-FdV-3 HC proof, mathematician wrote)

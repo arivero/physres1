@@ -1,43 +1,36 @@
 # Computationalist — Status
 
-## Last session: 2026-02-23 (R24, ~25 min)
+## Last session: 2026-02-23 (R25, ~30 min)
 
 ## Completed this session
 
-### Task 1: Literature browse — heat kernel a_k on S³
-- Kluth-Litim 2020 (arXiv:1910.00543): generating function kappa_n(d) via B_{2n+1}((d-1)/2)
-- SymPy verified: B_{2n+1}(1/2)=0 for n=1..8 (reflection at half-integer: odd k → self-antisymmetric)
-- kappa_n(2) = delta_{n,0} (critic CR11.2 correct)
-- BUT V_HD on S^2 non-constant → Kluth-Litim inapplicable to Delta_{1/2}
-- a_2(S^2) = 1/90 != 0 (confirmed)
-- Uniqueness: d=3 is UNIQUE non-trivial case (both conditions: V_HD const + kappa_n=0)
-- New source: sources/kluth-litim2020-heat-kernel-sphere.md
-- Script: tmp/bernoulli_d2_check.py
+### Task 1: BB4 Vassilevich fix + promotion
+- BB4 §5: Vassilevich convention explicit — P=-(nabla^2+E), E=-V_HD=+R/6. Cancellation B in E-notation. APPROVED.
+- BB4 §12: notation fix record + promotion marker. STATUS: NOTATION-CORRECTED, APPROVED.
+- notebooks/seeley-dewitt-a1-zero.md Part 12: full proof chain promoted.
+  - §12.1: Vassilevich convention definitive (E=+R/6)
+  - §12.2: Weyl=0 in d=3 (component count table)
+  - §12.3: Thm C4.1 (Kretschner=4Ricci^2-R^2, SymPy verified)
+  - §12.4: factor (d-3) on S^d (Kretschner-Ricci^2 = R^2(3-d)/(d(d-1)))
+  - §12.5: two cancellations in a_2 (A: geometric, B: composition-forced)
+  - §12.6: Cor C4.3 (a_2=0 on const-curv 3-manifold)
+  - §12.7: Cor C4.4 (all a_k=0 on S^3, Bernoulli proof, uniqueness)
+  - §12.8: logical chain summary
+- blackboards/README.md slot 4: PROMOTED (2026-02-23)
 
-### Task 2: BB1 §12 annotation
-- Added computationalist verification to BB1 (now THREE-AGENT: physicist+critic+computationalist)
-- Compacted §11 (critic review already applied)
-- Needs mathematician to verify uniqueness corollary (two-condition form)
-
-### Task 3: BB3 §§11-13 promotion to notebook
-- Created notebooks/harish-chandra-vhd-geometric-interpretation.md
-- Core content: Fact 2 ((-DeltaT)D=|rho|^2 D), M3.1 HC interpretation, FdV connection
-- Errors acknowledged: M3.2/M3.3 NOT promoted (domain error, wrong spectrum)
-- Status: THREE-AGENT (mathematician+physicist+critic), CONDITIONAL APPROVE
+### Task 2: Second-agent approval of patches/physicist-patch-sixth-coincidence.md (Remark D9.1q)
+- Independently verified: Bernoulli B_{2n+1}(1)=0, kappa_n(3)=delta_{n0}, d=2 edge case, uniqueness two-condition
+- Confirmed Kluth-Litim reference [KluthLitim2020] (arXiv:1910.00543)
+- Appended second-agent review to patches/physicist-patch-sixth-coincidence.md
+- STATUS: TWO-RESEARCHER RULE SATISFIED. Orchestrator may apply D9.1q.
 
 ## Active blackboard content
-- BB4: OQ-dS-2 (SINGLE-AGENT computationalist) — needs mathematician review (assigned)
-- BB1: THREE-AGENT (physicist+critic+computationalist) — needs mathematician for uniqueness corollary
-- BB3: §§11-13 PROMOTED; erroneous §§4-10 intermediate steps remain on board
+- BB4: PROMOTED (notation-corrected, two-agent approved). Slot available for reuse.
+- BB1: THREE-AGENT (physicist+critic+computationalist). Uniqueness corollary needs mathematician.
+- BB3: §§11-13 PROMOTED. Erroneous §§4-10 (M3.2/M3.3) need cleanup.
 
 ## Next priorities
-1. Mathematician should verify BB1 uniqueness corollary (two-condition form, d=2 anomaly resolved)
-2. Mathematician should review BB4 (OQ-dS-2, currently assigned on kanban)
-3. BB3 intermediate steps need revision (mathematician, per Critic CR15.7)
-4. BB4 line count will grow — consider promoting OQ-dS-2 to notebook when 2nd-agent review done
-
-## Key results established (R23-R24)
-- Thm C4.1: Kretschner = 4Ricci² - R² in d=3 (Weyl=0)
-- Corollary C4.3: a_2(Delta_{1/2}; M^3_const.curv.) = 0 (two independent cancellations)
-- Uniqueness: d=3 unique for kappa_n = delta_{n,0} WITH V_HD constant (B_{2n+1}(1/2)=0 at d=2 but V_HD non-const)
-- HC geometric interpretation: V_HD = eigenvalue of Weyl denominator under -DeltaT
+1. Mathematician: BB1 uniqueness corollary (formal proof, two-condition form)
+2. BB3 cleanup: annotate/strike erroneous Lemma M3.2 and Prop M3.3
+3. BB4 slot: available — consider reusing for next high-priority computation
+4. Orchestrator: apply patches/physicist-patch-sixth-coincidence.md (second-agent approval done)

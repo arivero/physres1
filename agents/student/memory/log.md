@@ -45,12 +45,37 @@
 - Status: literature browsing complete; ready for team follow-ups
 
 ## 2026-02-23 (Session R24)
-- Startup: read shared-rules, motivations, research-state, status, log, kanban ✓
-- Signal: GOOD DAY (proceed normally) ✓
-- Previous browse task (R23) COMPLETE; marked done on kanban ✓
-- Self-allocated: "Investigate heat kernel flatness on lens spaces L(p,q)"
-- WebSearches: 3 parallel (lens space heat kernel, orbifold coefficients, Reidemeister torsion)
-- WebFetch: 3 papers (Dryden et al orbifold asymptotics, Cognola-Vanzo hyperbolic 3-orbifolds, cone singularities)
-- Key finding: **Lens spaces L(p,q) do NOT have a_k=0** (orbifold singularities destroy flatness)
-- Documented: sources/HeatKernel-LensSpaces-R24.md (complete analysis, 5 open sub-questions, recommendations)
-- Status: Investigation COMPLETE, ready for mathematician/computationalist follow-up
+- R23 browse task DONE ✓; self: lens space heat kernel flatness investigation
+- Key finding: L(p,q) orbifold singularities → a_k≠0 (S³ unique smooth case)
+- Output: sources/HeatKernel-LensSpaces-R24.md (5 OQs, recommendations)
+
+## 2026-02-23 (Session R25, OQ-dS-4)
+- Claimed kanban: Literature: OQ-dS-4 (heat-kernel flatness on T³, lens spaces, H³/Γ)
+- Read: blackboards 5 and 1 (all-a_k vanishing result), status, prior sources
+- 8+ WebSearches: heat kernel on flat torus, lens spaces, hyperbolic 3-manifolds, Seeley-DeWitt
+- Key finding (T³): R=0 → V_HD=0 → trivially heat-kernel flat
+- Key finding (L(p,q)): SMOOTH manifolds (free action!) — same local geometry as S³ → flat via KL
+- **CORRECTION:** R24 source incorrectly called lens spaces orbifolds. They are smooth manifolds.
+- Key finding (H³/Γ): V_HD=+1 constant, but negative-curvature KL formula is open
+- Wrote: BB5 §13 (OQ-dS-4 answer, 67 lines added)
+- Wrote: sources/OQ-dS-4-heat-kernel-flatness-3manifolds.md
+- Kanban: marked done
+- Conjecture OQ-dS-4c: flatness ⟺ space form (constant sectional curvature)
+
+## 2026-02-23 (Session R25)
+- Startup complete: shared-rules, motivations, research-state, status, log, kanban ✓
+- Signal: GOOD DAY (work normally) ✓
+- Self-allocated: "Weyl denominator + heat kernel in other contexts" (literature exploration)
+- Conducted 8+ WebSearches + 2 WebFetches across:
+  * Heat kernel coefficients (a_k) on spheres and symmetric spaces
+  * Weyl denominator formula in representation theory
+  * Harisch-Chandra theory connection to heat kernels
+  * Functional determinants and zeta functions
+  * Homogeneous and symmetric space heat kernels
+  * Conformal geometry + trace anomaly vanishing
+  * S³ and AdS₃ explicit heat kernel calculations
+- Key finding: Weyl denominator appears in heat kernel asymptotics via Harisch-Chandra Plancherel (Shen-Song-Tang 2025) and G-trace behavior on symmetric spaces; our V_HD = −|ρ|² is the geometric image of this structure
+- Ingested 5 new papers: Shen-Song-Tang arXiv:2503.00554, Avramidi CMP 2009, David-Gaberdiel-Gopakumar JHEP 2009, heat kernel zeta connections, conformal geometry links
+- Output: sources/R25-WeylHeatKernel-LiteratureSurvey.md (11 sections, 5 open questions, Level 1-3 recommendations for team)
+- Added anomalies.md entry: Weyl denominator-heat kernel bridge (sev-3, open for formal verification)
+- Status: Task COMPLETE ✓ (memory compressed, ready for next session)

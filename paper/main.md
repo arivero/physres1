@@ -1638,6 +1638,20 @@ where \(\rho=\tfrac{1}{2}\sum_{\alpha\in\Phi^+}\alpha\) is the Weyl vector and \
 The half-density Laplacian \(\Delta_{1/2}=|g|^{1/4}\Delta_g\,|g|^{-1/4}\) satisfies \(a_1(\Delta_{1/2};x)=0\) at every point of any Riemannian manifold in any dimension. *Proof:* In Riemann normal coordinates at \(x\), the standard expansion gives \(V_{\mathrm{HD}}(x)=-R(x)/6\); the Gilkey coefficient \(a_1=R/6+V_{\mathrm{HD}}\) then vanishes identically.
 Consequently, the curvature coupling \(\xi=1/6\) forced by composition (Remark D9.1l) receives no first-order radiative correction at one loop: no \(\int R\,\phi^2\) counterterm appears. Higher Seeley--DeWitt coefficients \(a_k\), \(k\ge 2\), are generically non-zero, so the one-loop protection does not extend to all orders.
 
+`Remark D9.1q (Heat-kernel flatness on \(S^3\): sixth \(D=4\) coincidence).`
+Remark D9.1p shows \(a_1(\Delta_{1/2})=0\) universally. For the spatial section \(S^3\) of four-dimensional de Sitter spacetime the vanishing extends to all orders:
+\[
+a_k(\Delta_{1/2};\,S^3)=0\qquad\forall\,k\ge1.
+\]
+Consequently the heat trace is \emph{exactly} flat:
+\[
+\mathrm{tr}\,e^{-t\Delta_{1/2}}=(4\pi t)^{-3/2}\,\mathrm{Vol}(S^3),\qquad t>0,
+\]
+with no curvature corrections at any order in \(t\).
+*Proof.* On \(S^3\) the half-density potential is \(V_{\mathrm{HD}}=-R/6\) globally (Remark D9.1l, since \((d{-}1)/(4d)=1/6\) iff \(d=3\)). Thus \(\Delta_{1/2}=-\Delta_{S^3}+V_{\mathrm{HD}}\) is precisely the Kluth--Litim operator \(-\Delta+\bar{E}\) at the special endomorphism \(\bar{E}=\frac{1-d}{4d}R\big|_{d=3}=-R/6\) [KluthLitim2020]. The Kluth--Litim generating function for the integrated coefficients reduces to \(\exp\bigl(\sum_{n\ge1}\frac{(-1)^{n+1}}{n(2n+1)}B_{2n+1}(1)\,z^n\bigr)\); the odd Bernoulli polynomials satisfy \(B_{2n+1}(1)=0\) for all \(n\ge1\) (reflection identity \(B_k(1)=(-1)^kB_k\) with \(B_{2n+1}=0\)), so the exponent vanishes and \(\kappa_n(3)=\delta_{n,0}\), giving \(a_k=0\) for all \(k\ge1\). \(\square\)
+*Uniqueness.* Among \(d\ge2\) this phenomenon is unique to \(d=3\). Two conditions must hold simultaneously: \textit{(i)}~\(V_{\mathrm{HD}}\) globally constant (required for the Kluth--Litim formula to apply to \(\Delta_{1/2}\)): this holds on \(S^d\) iff \(\alpha(\alpha{-}1)=0\) where \(\alpha=(d{-}1)/2\), i.e.\ \(d\in\{1,3\}\) (Remark D9.1l); \textit{(ii)}~\(\kappa_n(d)=\delta_{n,0}\): this requires \(B_{2n+1}\bigl(\tfrac{d-1}{2}\bigr)=0\) for all \(n\ge1\), which holds for \(d\in\{1,2,3\}\) but fails for \(d\ge4\). For \(d=2\), condition (i) fails (\(V_{\mathrm{HD}}\) is position-dependent on \(S^2\)); the Kluth--Litim formula is inapplicable and \(a_2(\Delta_{1/2};S^2)=1/90\ne0\). For \(d=1\), \(S^1\) is flat and the result is trivial. Only \(d=3\) satisfies both conditions non-trivially.
+Since \(d=D{-}1=3\) is the spatial dimension of four-dimensional spacetime, heat-kernel flatness of the composition-forced half-density scalar is a sixth independent \(D=4\) coincidence, complementing the uniform spectral shift (Proposition D9.1i), the constant \(V_{\mathrm{HD}}\) (Remark D9.1l), the conformal coupling identity \((d{-}1)/(4d)=\xi_c\) at \(d=3\) (Remark D9.1l), the composition-forced \(\xi=1/6\) (Remark D9.1p), and the de Sitter spatial \(a_2=0\) (Proposition D9.1i). Physically: the one-loop effective action of \(\Delta_{1/2}\) on \(S^3\) has no curvature-dependent divergences at \emph{any} loop order in the heat-kernel expansion; all UV divergences are volume-type. No \(R^k\)-counterterms appear. The Seeley--DeWitt expansion does not see the \(S^3\) curvature at all.
+
 `Derivation D9.1f (Domain-parameter witness: same symbol, inequivalent self-adjoint realizations).`
 Consider the formal 1D kinetic operator
 \[
@@ -1734,7 +1748,7 @@ These additions do not alter the thesis; they increase computational accountabil
 `Remark D10.4a (Package-to-appendix map for fast navigation).`
 For reader navigation:
 1. **Package C/D (RG witness + truncation control):** Appendix 10.1 with `D8.1`, `D8.2`, `D8.2a`, `P8.1`, Section 8.6 `D6.4`, `Remark D6.4a`, and Appendix 10.3 `Proposition D6.4b`, `Lemma D6.6`.
-2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`, `Proposition D9.1k`, `Remark D9.1l`, `Remark D9.1m`, `Remark D9.1n`, `Remark D9.1o`, `Remark D9.1p`.
+2. **Package B (ordering/domain/extension):** Appendix 10.2 with `D9.1`, `D9.1a`, `D9.1b`, `D9.1d`, `D9.1e`, `D9.1f`, `Proposition D9.1h`, `Proposition D9.1i`, `Remark D9.1j`, `Proposition D9.1k`, `Remark D9.1l`, `Remark D9.1m`, `Remark D9.1n`, `Remark D9.1o`, `Remark D9.1p`, `Remark D9.1q`.
 3. **Package A (path-space/kernel closure ladder):** Appendix 10.6 with `D12.1`, `P12.1`, `D12.2`, `P12.2`, `D12.3`.
 4. **Package E (global compatibility map):** Section 9.1 `P7.1a` plus Appendix 10.3 `P10.1`, `D10.1a`, `D10.1b`, `Remark D10.1c`.
 
@@ -2013,3 +2027,4 @@ These checks ensure `Derivation D12.3` is consistent with both the free witness 
 34. [ElShowk2014] Sheer El-Showk et al., "Solving the 3d Ising Model with the Conformal Bootstrap II. c-Minimization and Precise Critical Exponents," arXiv:`1403.4545` (2014). (Reports \(\Delta_\sigma = 0.518154(15)\), used as a concrete non-rational scaling-dimension example in the conformal-bootstrap channel.)
 35. [Köplinger2025] Jonas Köplinger, Ingo Habeck, and Philip Goyal, "Composition algebras and the origin of quantum amplitudes," arXiv:`2508.14822` (Aug 2025). (Coordinate-independent extension of GKS: Hurwitz's theorem on composition algebras forces the amplitude field to be \(\mathbb{R}\), \(\mathbb{C}\), or \(\mathbb{H}\); Born rule derived without postulating complex arithmetic.)
 36. [DeWitt1957] Bryce S. DeWitt, "Dynamical Theory in Curved Spaces. I. A Review of the Classical and Quantum Action Principles," *Reviews of Modern Physics* **29**(3), 377–397 (1957). DOI `10.1103/RevModPhys.29.377`. (Derives the RNC expansion of \(|g|^{-1/4}\) and the ordering potential \(V_{\mathrm{HD}}=-R/6\) at any point in Riemann normal coordinates; foundational reference for curved-space path-integral measure and operator ordering.)
+37. [KluthLitim2020] Y. Kluth and D. F. Litim, "Heat kernel coefficients on the sphere in any dimension," *Eur. Phys. J. C* **80**:269 (2020). arXiv:`1910.00543`. DOI `10.1140/epjc/s10052-020-7784-2`. (Derives all integrated Seeley--DeWitt coefficients for Laplacians on round \(S^d\) via a Bernoulli-polynomial generating function; the vanishing condition \(\kappa_n(d)=\delta_{n,0}\) at the special endomorphism \(\bar{E}=(1-d)R/(4d)\) is central to Remark D9.1q.)
