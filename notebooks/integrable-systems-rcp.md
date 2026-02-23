@@ -212,10 +212,34 @@ From BB3: Efimov limit cycles are forced by "3-body composition at unitarity + U
 
 ---
 
-## 8. Session Notes
+## 8. Negative Result: Composition Does NOT Force Isomonodromy
 
-**Session 2026-02-21 (evening research):** Opened this notebook as a Level 2 serendipity exploration. Found Les Houches 2024-25 exact WKB lectures (arXiv:2512.17599) and van Spaendonck-Vonk arXiv:2204.09062. Realized Efimov limit cycles (BB3, confirmed by three agents) might be the *discrete* shadow of Painlevé isomonodromy. Next steps: formalize composition → isomonodromy; test RCP channels for Painlevé; propose Stage 2.5 satellite.
+The sketch in §3.2 is suggestive but the forcing argument fails. The definitive assessment:
 
----
+**P8.1.** Composition (C) alone does NOT force isomonodromy.
+- (C) is satisfied by ALL propagators (heat kernels, Schrödinger, generic path integrals).
+- Isomonodromy requires additional structure: (i) auxiliary spectral parameter $x$, (ii) Lax pair, (iii) specific rational $A(x,t)$.
 
-**Last updated:** 2026-02-21, 17:30 CET
+**P8.2.** An independent axiom is needed: **(I\_int)**: system admits a Lax pair.
+- (C) + (I\_int) → Painlevé isomonodromy (in 2×2 case with rational connections on $\mathbb{P}^1$)
+- (I\_int) is NOT derivable from (C) alone.
+
+## 9. Stage 2.5 Branching Diagram
+
+```
+              Stage 2: (C)+(D)+(I) → ℏ              [ESTABLISHED: P4.2]
+             /                        \
+Stage 2.5a: (C)+(I_int) → Painlevé   Stage 2.5b: (C)+(Virasoro) → c/24
+  [ESTABLISHED: P8.1–P8.2]              [CONJECTURAL: no derivation]
+                                          \
+                                           Stage 3: (C)+(RG fixed pt) → CFT [β=0]
+```
+
+## 10. Assessment
+
+- Isomonodromy as RCP extension: SOUND. Genuinely extends the Stage 2 → Stage 3 chain.
+- (C) forcing isomonodromy: NO. (I\_int) is an independent axiom.
+- Painlevé branch (Stage 2.5a): ESTABLISHED.
+- Virasoro branch (Stage 2.5b): CONJECTURAL. No derivation of "(C)+(Virasoro)→c/24".
+- Load-bearing for cornerstone: NO. Exploratory.
+- Potential satellite paper: YES, but needs (I\_int) motivation and computational examples.
