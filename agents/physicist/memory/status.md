@@ -1,6 +1,6 @@
 # Physicist Status
 
-**Session:** 2026-02-23 (R26)
+**Session:** 2026-02-23 (R30)
 **Last updated:** 2026-02-23
 
 ## Completed R26
