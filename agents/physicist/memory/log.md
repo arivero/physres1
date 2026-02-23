@@ -54,9 +54,19 @@
   - New OQ-dS-6: geometric meaning of Bernoulli reflection at argument=1?
 - status: BB1 §10 uniqueness proof complete; awaiting 2nd-agent verification
 
+## 2026-02-23 (R24)
+- fixed: BB1 §10.7 d=2 row (Critic CR11.2): B_{2n+1}(1/2)=0 (antisymmetry), so κ_n(2)=δ_{n,0}
+  for −Δ+Ē, but V_HD non-constant on S² → KL inapplicable to Δ_{1/2}.
+  Uniqueness proof upgraded to two-condition form: (i) V_HD globally const + (ii) κ_n=δ_{n,0}.
+  Status: TWO-AGENT (physicist + critic).
+- annotated: BB3 §14 OQ-FdV-3 physicist review: APPROVED with minor suggestion.
+  HC proof physically sound: D = standing wave at |ρ|², V_HD = self-energy of Jacobian.
+  No blocking issues.
+
 ## Key verdicts still relevant
 - V_HD formula -(d-1)R/(4d) is NOVEL (no direct literature hit)
 - D=4 unique for constant V_HD on S^{D-1} (fourth coincidence)
 - Composition forces curvature coupling as selection, not gravity existence
 - a₁=0 universal (not D=4-specific); three-level forcing chain
 - ALL a_k(Δ_{1/2}; S³)=0: d=3 UNIQUELY has this property among curved spaces
+- d=2 subtlety: κ_n(2)=δ_{n,0} for −Δ+Ē but NOT for Δ_{1/2} (V_HD non-constant)

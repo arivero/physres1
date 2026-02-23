@@ -191,3 +191,100 @@ This means: on ANY Einstein manifold with constant \(R\), the integrated \(a_2\)
 **10.6 Verdict: APPROVED.** No errors found. The fifth D=4 coincidence is clean, independent, and physically significant. The \(V\)-dependent cancellation identity (§10.2) is an elegant structural result worth noting in any paper remark.
 
 **Consensus: TWO-AGENT on BB2 §9 (physicist + critic). APPROVED.**
+
+---
+
+## 11. Harish-Chandra Geometric Interpretation of V_HD = −|ρ|² on Compact Lie Groups
+
+**Promoted from:** Blackboard 3 §§11-13 (OQ-FdV-3), 2026-02-23
+**Consensus:** THREE-AGENT (mathematician + physicist + critic), CONDITIONAL APPROVE
+**Note:** Only §§11-13 (core result) are promoted here. Intermediate §§4-10 contain errors (see BB3 §15) and are excluded.
+
+---
+
+### 11.1 Setup and Prior Results
+
+On compact semisimple G with bi-invariant metric g:
+- **Prop M0.1** (BB0, FIVE-AGENT): V_HD is constant.
+- **Thm M0.3** (BB0, FIVE-AGENT): V_HD = -R/6 = -|ρ|²_g (via RNC + Freudenthal-de Vries).
+
+The Harish-Chandra route provides a geometric INTERPRETATION of this identity, not an independent derivation.
+
+### 11.2 Key Tools (HC Framework)
+
+**Notation:**
+- T: maximal torus, Φ+: positive roots, m_α: multiplicity
+- ρ = (1/2)∑_{α∈Φ+} m_α · α (Weyl vector)
+- D(H) = ∏_{α>0} (e^{α(H)/2} − e^{-α(H)/2})^{m_α} (Weyl denominator)
+
+**HC Radial Formula (Helgason 1984, II §3):**
+\[(-\Delta_G f)(e^H) = D(H)^{-1}(-\Delta_T)(D(H)\cdot f(e^H))\]
+for class functions f on G.
+
+**Weyl Integration Formula:**
+\[\int_G f\,dg = \frac{1}{|W|}\int_T D(t)^2\!\left(\int_{G/T} f(k^{-1}tk)\,dk\right)dt\]
+Hence L²(G)_{class} ≅ L²(T, D²dt/|W|)^{W,+}.
+
+### 11.3 Core Identity (HC interpretation)
+
+**Theorem M3.1 (HC Geometric Interpretation).**
+
+On compact semisimple G with bi-invariant metric:
+\[\boxed{-\Delta_G\big|_\text{class} = -\Delta_{1/2}^{(T,\,D^2dt)}}\]
+
+That is: the Laplacian on G restricted to class functions equals the half-density Laplacian on the maximal torus T equipped with the Weyl measure D²dt.
+
+**Proof:** From the HC radial formula:
+\[-\Delta_G\big|_\text{class} = D^{-1}(-\Delta_T)D\]
+The half-density of (T, D²dt) is (D²)^{1/2}dt = D·dt^{1/2}. The half-density Laplacian on (T, D²dt) is:
+\[-\Delta_{1/2}^{(T,D^2dt)} = D^{-1}(-\Delta_T)D\]
+(conjugation by the square-root of the density D). These are the same operator. □
+
+**Scope note:** Fact 2 below is stated for simply-laced groups (m_α = 1 for all α); the conclusion V_HD = -|ρ|² holds for all compact semisimple G via BB0 Thm M0.3.
+
+### 11.4 Core Eigenvalue Identity
+
+**Fact (Weyl denominator eigenvalue):**
+\[\boxed{(-\Delta_T)D = |\rho|^2 \cdot D}\]
+
+**Proof (simply-laced):** D = A_ρ = ∑_{w∈W} det(w) e^{w(ρ)}. Each term e^{w(ρ)} has -Δ_T eigenvalue |w(ρ)|² = |ρ|² (Weyl group preserves norm). Hence -Δ_T A_ρ = |ρ|² A_ρ.
+
+**Meaning:** The Weyl denominator D is an eigenfunction of the flat toral Laplacian with eigenvalue = squared length of Weyl vector.
+
+### 11.5 HC Interpretation of V_HD
+
+**Theorem M3.6 (HC Interpretation, corrected).**
+
+The half-density correction V_HD on G equals the eigenvalue ratio D^{-1}(-Δ_T D) = |ρ|². More precisely:
+
+The operator -Δ_G|_{class} = D^{-1}(-Δ_T)D can be written as:
+\[D^{-1}(-\Delta_T)D = -\Delta_T + |\rho|^2 + 2\nabla(\log D)\cdot\nabla\]
+
+The two non-trivial contributions relative to -Δ_T are: (i) the zero-order term |ρ|², and (ii) the first-order drift term 2∇(log D)·∇. Together they reproduce the correct spectrum Spec(-Δ_G) = {|λ+ρ|² - |ρ|² : λ ∈ Λ+}. The net spectral shift between -Δ_{1/2}^G and -Δ_G is V_HD = -|ρ|², verified by BB0 Thm M0.3.
+
+**Physical interpretation (Physicist §14):** D is a standing wave on T built from momentum eigenstates, all with |p|² = |ρ|². The half-density correction V_HD is the "self-energy" of this density wave: the cost of maintaining the Weyl denominator equals |ρ|².
+
+### 11.6 Proof Chain Summary
+
+On compact semisimple G with bi-invariant g:
+1. V_HD = const — Prop M0.1 (bi-invariance).
+2. D^{-1}(-Δ_T D) = |ρ|² — Weyl denominator eigenvalue (Fact above).
+3. V_HD = -|ρ|² — from M0.3 (RNC regularization + Freudenthal-de Vries).
+
+The HC framework (Thm M3.1) shows that V_HD is algebraically encoded in the Weyl denominator. The singularity at H = 0 (D = 0 at identity) forces regularization via RNC. The HC proof is NOT independent of M0.3; it provides the algebraic REASON why V_HD equals the Weyl denominator eigenvalue.
+
+### 11.7 What HC Adds (Over RNC+FdV Route)
+
+| Route | What it computes | Conceptual content |
+|-------|-----------------|-------------------|
+| RNC + FdV | V_HD = -R/6 = -\|ρ\|² (direct) | V_HD is a curvature invariant |
+| HC spectral | -Δ_G\|_{class} = -Δ_{1/2}^{(T,D²dt)} | V_HD = eigenvalue of Weyl denominator |
+
+The HC route explains WHY V_HD = -|ρ|²: the Weyl denominator D carries eigenvalue |ρ|² under -Δ_T, and V_HD is exactly the cost of the density D²dt relative to flat dt on T.
+
+**Status of errors in intermediate steps (BB3 §15, sev-2):**
+- Lemma M3.2 domain error (class fn vs W-antisymmetric): the core result §11.3 bypasses this.
+- Proposition M3.3 wrong spectrum: deleted; Thm M3.4 is the correct (but circular) version.
+- Gradient term in M3.6: accounted for in full spectrum calculation, not a separate contribution.
+
+**THREE-AGENT (mathematician + physicist + critic). Promoted 2026-02-23.**

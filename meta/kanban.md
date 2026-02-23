@@ -6,5 +6,4 @@ Source codes: `or`=orchestrator, `co`=computationalist, `cr`=critic, `ma`=mathem
 
 | Assignee | Source | Task |
 |----------|--------|------|
-| | or | Browse literature: heat kernel a_k coefficients on round S³ and constant-curvature spaces |
 Orchestrator says:  STOP JOB

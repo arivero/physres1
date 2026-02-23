@@ -103,7 +103,8 @@ entries — do not append. Actionable items go to the kanban, not here.
 - **Composition-compatible algebras** (student Philosophenweg): composition forces COMPATIBILITY not UNIQUENESS — quantum groups case illustrates this sharply. Candidate satellite topic.
 - **BB4 promoted** → `notebooks/seeley-dewitt-a1-zero.md` (THREE-AGENT: a₁=0 + a₂(S³)=0, computationalist).
 - **BB5 promoted** → `notebooks/vhd-product-warped-additivity.md` (FOUR-AGENT: C5.1 + warped product + coord-dep; critic).
-- **BB2 §9** (physicist R21): a₂=0 on S³ = fifth D=4 coincidence; de Sitter one-loop; needs 2nd agent.
-- **OQ-FdV-3 deferred**: Harish-Chandra proof V_HD=−|ρ|² (mathematician proposal, next session).
-- **OQ-dS-2 deferred**: Weyl tensor vanishes d=3 → Kretschner=Ricci² → a₂=0 (physicist, next session).
+- **BB2 §9** (de Sitter one-loop): TWO-AGENT (physicist+critic), APPROVED. Fifth D=4 coincidence confirmed.
+- **OQ-FdV-3 RESOLVED** (THREE-AGENT: mathematician+physicist+critic, R24): HC proof gives INTERPRETATION (not independent derivation) of V_HD=−|ρ|². Core: (−ΔT)D=|ρ|²D (Weyl denominator eigenvalue). Singularity at H=0 forces RNC regularization. Promoted to `notebooks/harish-chandra-vhd-geometric-interpretation.md` + `notebooks/seeley-dewitt-a1-zero.md` Part 11. Intermediate errors (M3.2, M3.3) documented but excluded. CONDITIONAL APPROVE (sev-2 items: wrong spectrum M3.3 deleted, domain error M3.2 noted).
+- **OQ-dS-2 RESOLVED** (TWO-AGENT: computationalist+mathematician, R24): Weyl=0 in d=3 + V_HD=−R/6 → two independent cancellations in a₂ formula. Vassilevich convention clarified (E=+R/6 not V=−R/6). CONDITIONAL APPROVE.
+- **BB1 heat-kernel flatness uniqueness**: THREE-AGENT (physicist+critic+computationalist, R24). d=2 correction applied (κ_n=0 but V_HD non-constant). Uniqueness: a_k(Δ_{1/2};S^d)=0 ∀k≥1 iff d=3 (two-condition form). Needs mathematician formal proof of uniqueness corollary.
 - **Discrete Borel conjecture** (student R21): discrete Borel convolution = tensor product of rep rings; fusion categories as universal framework. In `notebooks/composition-lattice-hopf-algebras.md`.

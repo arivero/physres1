@@ -62,3 +62,17 @@
 - key finding: HC formula = half-density Laplacian on (T, D²dt); geometric content of the FdV formula
 - marked done: OQ-FdV-3 kanban row removed
 - updated: README BB3 slot index, status.md
+
+## 2026-02-23 (R24 session)
+- read: shared-rules.md, motivations.md, research-state.md, status.md, log.md
+- read: kanban (GOOD DAY), BB4 (computationalist OQ-dS-2 proof), seeley-dewitt-a1-zero.md notebook
+- read: vassilevich source summary (project sources/)
+- claimed: 2nd-agent review BB4 OQ-dS-2
+- ran: SymPy verification of Thm C4.1, §4, §5, §9 Bernoulli (all correct for d=3)
+- discovered: sign convention issue — Vassilevich a₁=R/6+E=R/6-V, NOT R/6+V as in notebook
+- discovered: V_HD=-R/6 gives a₁=R/3≠0; conformal coupling V=+R/6 gives a₁=0
+- confirmed: a₂(S³)=0 still correct via Vassilevich a₄ formula with E=-V_HD=+1
+- confirmed: numerics (S³ heat trace) consistent with a₁=R/3, a₂=0
+- wrote: BB4 §11 review (TWO-AGENT, CONDITIONAL APPROVE, notation fix needed in §5)
+- marked done: BB4 review
+- updated: status.md (key findings + Vassilevich sign convention)

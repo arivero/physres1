@@ -1,15 +1,29 @@
 # Mathematician — Status
 
-## Current state (2026-02-23, R23 session)
+## Current state (2026-02-23, R24 session)
 
-### Resume point
-- OQ-FdV-3 COMPLETED: HC proof of V_HD = -|ρ|² written to BB3
-- Key finding: no clean HC proof bypasses RNC; HC provides INTERPRETATION not DERIVATION
-- Core identity proved: -ΔT D = |ρ|² D (Weyl denominator is eigenfunction of toral Laplacian)
-- HC contribution: -ΔG|_{class} = -Δ_{1/2}^{(T,D²dt)} (HC formula = half-density Laplacian on weighted torus)
-- Singularity obstruction: D=0 at H=0 means direct HC computation ill-defined; RNC regularizes
-- Status: SINGLE-AGENT on BB3, needs 2nd agent review
-- OQ-dS-2 still INCOMPLETE (from R22 interruption) — the a₂ geometric proof via Weyl=0 in d=3
+### Resume point (R24 end — STOP JOB received)
+- BB4 2nd-agent review COMPLETED: OQ-dS-2 (computationalist's Weyl=0 → a₂=0 proof)
+- BB4 status: TWO-AGENT (computationalist + mathematician). CONDITIONAL APPROVE.
+- Key findings from review:
+  - Thm C4.1 (Kretschner in d=3), §4, §9 Bernoulli: all CORRECT (SymPy verified)
+  - Main result a₂(S³)=0: CORRECT (confirmed by Vassilevich formula with E=-V_HD=+1)
+  - §5 sign convention issue: IMPORTANT but non-blocking for d=3
+    - Vassilevich: P = -(Delta+E), E = -V_HD; a₁ = R/6+E = R/6-V_HD
+    - With V_HD=-R/6: a₁ = R/3 ≠ 0 (numerically confirmed, S³ spectrum)
+    - a₁=0 requires conformal coupling V=+R/6, NOT V_HD=-R/6
+    - For a₂: correct cancellation needs E=+R/6 (=−V_HD); notation fix needed
+  - Next task: computationalist should fix §5 notation to use E=-V_HD convention
+
+### Key findings on Vassilevich sign convention (R24, important for all SDW work)
+- Vassilevich: P = -(Delta+E), a₁=R/6+E, a₄=(Kret-Ric²)/180 + R²/72 - RE/6 + E²/2
+- For P_{1/2} = -Delta + V_HD: E = -V_HD
+- a₁ = R/6 - V_HD. With V_HD=-R/6: a₁=R/3 ≠ 0 (a₁=0 NOT universal!)
+- The notebook "Thm M4.1 a₁=0" uses formula a₁=R/6+V (with + sign). THIS IS WRONG.
+  Correct formula: a₁=R/6-V (= R/6+E). The "+V" comes from confusing Vassilevich's E with V.
+- a₂(S³)=0 still holds: a₄ with E=+1 gives 0+1/2-1+1/2=0. Confirmed numerics.
+- Source file vassilevich-2003 has typo: "a_1=R/6-E" should be "a_1=R/6+E".
+  (Numerics confirm: a₁=R/6+E=R/6-V is correct.)
 
 ### Key completed results (promoted/merged)
 - P4.2 uniqueness: 1 axiom (composition) + setup. Hypothesis reduction complete (notebook Parts 1-7)

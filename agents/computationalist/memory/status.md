@@ -1,41 +1,43 @@
 # Computationalist — Status
 
-## Last session: 2026-02-23 (R23, short 15-min)
+## Last session: 2026-02-23 (R24, ~25 min)
 
-## Current task
-- OQ-dS-2: COMPLETED. Weyl=0 in d=3 → Kretschner=Ricci² → geometric origin of a₂=0 on S³.
-- Written to BB4 (overwrote promoted a_1=0 content, which lives in notebooks/seeley-dewitt-a1-zero.md).
-- Kanban row removed (task done).
-- Status: SINGLE-AGENT — needs 2nd-agent review (mathematician or physicist).
+## Completed this session
 
-## Key findings from R23
+### Task 1: Literature browse — heat kernel a_k on S³
+- Kluth-Litim 2020 (arXiv:1910.00543): generating function kappa_n(d) via B_{2n+1}((d-1)/2)
+- SymPy verified: B_{2n+1}(1/2)=0 for n=1..8 (reflection at half-integer: odd k → self-antisymmetric)
+- kappa_n(2) = delta_{n,0} (critic CR11.2 correct)
+- BUT V_HD on S^2 non-constant → Kluth-Litim inapplicable to Delta_{1/2}
+- a_2(S^2) = 1/90 != 0 (confirmed)
+- Uniqueness: d=3 is UNIQUE non-trivial case (both conditions: V_HD const + kappa_n=0)
+- New source: sources/kluth-litim2020-heat-kernel-sphere.md
+- Script: tmp/bernoulli_d2_check.py
 
-### Thm C4.1 (new): In d=3, Weyl=0 ⟹ R_abcd R^abcd = 4R_ab R^ab - R^2.
-- Proof: orthonormal frame, diagonal Ricci, Weyl decomposition.
-- SymPy script: tmp/oq_ds2_weyl_d3.py
+### Task 2: BB1 §12 annotation
+- Added computationalist verification to BB1 (now THREE-AGENT: physicist+critic+computationalist)
+- Compacted §11 (critic review already applied)
+- Needs mathematician to verify uniqueness corollary (two-condition form)
 
-### Corollary C4.3: a₂(Δ_{1/2}; M³_const.curv.) = 0.
-- Two cancellations required:
-  (A) Kretschner = Ricci² on S^3 (Weyl=0 + constant curvature: 2/(d(d-1))=1/d iff d=3)
-  (B) R²/72 - R²/36 + R²/72 = 0 (V_HD = -R/6, composition)
-
-### Corollary C4.4 (Bernoulli/Kluth-Litim):
-- B_{2n+1}(1) = 0 for n≥1 ⟹ κ_n(3) = δ_{n0} ⟹ ALL a_k(Δ_{1/2}; S³) = 0.
-- Verified: n=1..7.
+### Task 3: BB3 §§11-13 promotion to notebook
+- Created notebooks/harish-chandra-vhd-geometric-interpretation.md
+- Core content: Fact 2 ((-DeltaT)D=|rho|^2 D), M3.1 HC interpretation, FdV connection
+- Errors acknowledged: M3.2/M3.3 NOT promoted (domain error, wrong spectrum)
+- Status: THREE-AGENT (mathematician+physicist+critic), CONDITIONAL APPROVE
 
 ## Active blackboard content
-- BB4: OQ-dS-2 computation (SINGLE-AGENT, needs 2nd agent)
-- BB1: OQ-dS-3 + Kluth-Litim all-a_k (physicist, SINGLE-AGENT, needs 2nd agent — critic reviewing)
-- BB2: D=4 coincidences §§1-8 (THREE-AGENT APPROVED), §9 (TWO-AGENT APPROVED), §10 (closed)
+- BB4: OQ-dS-2 (SINGLE-AGENT computationalist) — needs mathematician review (assigned)
+- BB1: THREE-AGENT (physicist+critic+computationalist) — needs mathematician for uniqueness corollary
+- BB3: §§11-13 PROMOTED; erroneous §§4-10 intermediate steps remain on board
 
 ## Next priorities
-1. 2nd-agent review of BB4 (OQ-dS-2) — flag for mathematician or physicist
-2. Read BB1 §10 (Kluth-Litim) — critic is reviewing; could add computationalist annotation
-3. Explore: BB1 OQ-dS-4 (does all-a_k vanishing extend to other 3-manifolds?)
-4. OQ-dS-5 (Kluth-Litim special endomorphism = V_HD connection — new observation)
+1. Mathematician should verify BB1 uniqueness corollary (two-condition form, d=2 anomaly resolved)
+2. Mathematician should review BB4 (OQ-dS-2, currently assigned on kanban)
+3. BB3 intermediate steps need revision (mathematician, per Critic CR15.7)
+4. BB4 line count will grow — consider promoting OQ-dS-2 to notebook when 2nd-agent review done
 
-## Previous session state
-- BB5: Product V_HD = FOUR-AGENT (promoted to notebook)
-- BB0: Lie group V_HD = FIVE-AGENT
-- BB4: a_1=0 = THREE-AGENT (PROMOTED to notebooks/seeley-dewitt-a1-zero.md → now overwritten with OQ-dS-2)
-- BB6: H^2 = FOUR-AGENT
+## Key results established (R23-R24)
+- Thm C4.1: Kretschner = 4Ricci² - R² in d=3 (Weyl=0)
+- Corollary C4.3: a_2(Delta_{1/2}; M^3_const.curv.) = 0 (two independent cancellations)
+- Uniqueness: d=3 unique for kappa_n = delta_{n,0} WITH V_HD constant (B_{2n+1}(1/2)=0 at d=2 but V_HD non-const)
+- HC geometric interpretation: V_HD = eigenvalue of Weyl denominator under -DeltaT
