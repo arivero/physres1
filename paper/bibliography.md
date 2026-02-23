@@ -76,11 +76,11 @@ Use this file as a source ledger.
 
 58. `[LuizOliveira2026]` Fabricio Souza Luiz and Marcos César de Oliveira, "Information Theory of Action: Reconstructing Quantum Dynamics from Inference over Action Space," arXiv:`2602.09984` (10 Feb 2026). (Independent information-theoretic reconstruction: composition in action space plus finite variance forces Gaussian kernels and an action-dimensional scale via the same Lévy–Khintchine exclusion.)
 
-59. `[PathIntegralNormalization]` A. Rivero and A.I.Scaffold, "Path-Integral Normalization: The d/2 Exponent as Composition Compatibility Datum," companion satellite paper in this series (2026). (Comprehensive treatment of the d/2 exponent across temporal composition, Van Vleck determinant, heat-kernel diffusion, renormalization thresholds, and Lévy-stable exclusion.)
+59. `[PathIntegralNormalization]` A. Rivero and A.I.Scaffold, "Path-Integral Normalization: The d/2 Exponent as Composition Compatibility Datum," companion satellite paper in this series (in preparation, 2026). (Comprehensive treatment of the d/2 exponent across temporal composition, Van Vleck determinant, heat-kernel diffusion, renormalization thresholds, and Lévy-stable exclusion.)
 
-60. `[RCPFoundations]` A. Rivero and A.I.Scaffold, "Refinement Compatibility Principle: Foundations," companion satellite paper in this series (2026). (Axiom system for RCP; three-channel forcing hierarchy; Krein Q-function transport; forward connections to all satellite papers.)
+60. `[RCPFoundations]` A. Rivero and A.I.Scaffold, "Refinement Compatibility Principle: Foundations," companion satellite paper in this series (in preparation, 2026). (Axiom system for RCP; three-channel forcing hierarchy; Krein Q-function transport; forward connections to all satellite papers.)
 
-61. `[TangentGroupoidBridge]` A. Rivero and A.I.Scaffold, "Groupoid Composition and Quantization: The Pair-Groupoid Bridge," companion satellite paper in this series (2026). (Pair groupoid as sewing law; d/2 forced by Fourier multiplicativity and dimensional homogeneity; tangent groupoid as hbar-deformation; Wick rotation as A3.)
+61. `[TangentGroupoidBridge]` A. Rivero and A.I.Scaffold, "Groupoid Composition and Quantization: The Pair-Groupoid Bridge," companion satellite paper in this series (in preparation, 2026). (Pair groupoid as sewing law; d/2 forced by Fourier multiplicativity and dimensional homogeneity; tangent groupoid as hbar-deformation; Wick rotation as A3.)
 
 62. `[DeWitt1957]` Bryce S. DeWitt, "Dynamical Theory in Curved Spaces. I. A Review of the Classical and Quantum Action Principles," *Reviews of Modern Physics* **29**(3), 377–397 (1957). DOI `10.1103/RevModPhys.29.377`. (Derives the RNC expansion of \(|g|^{-1/4}\) and the ordering potential \(V_{\mathrm{HD}}=-R/6\) at any point in Riemann normal coordinates; foundational reference for curved-space path-integral measure and operator ordering.)
 
@@ -93,6 +93,8 @@ Use this file as a source ledger.
 66. `[Sudakov1959]` V.N. Sudakov, "Linear sets with quasi-invariant measure," *Doklady Akademii Nauk SSSR* **127**(3) (1959), 524–526. (In Russian.) (Establishes the absence of nontrivial translation-invariant \(\sigma\)-finite Borel measures on infinite-dimensional normed spaces; foundational non-existence result for Lebesgue measure on path space.)
 
 67. `[GlimmJaffe1987]` James Glimm and Arthur Jaffe, *Quantum Physics: A Functional Integral Point of View*, 2nd ed., Springer-Verlag, New York (1987). ISBN 978-0-387-96476-8. DOI `10.1007/978-1-4612-4728-9`. (Standard textbook treatment of the non-existence of translation-invariant measures on infinite-dimensional spaces and the rigorous foundations of the path integral; H0.2a statement is standard in this context.)
+
+68. `[Köplinger2025]` Jens Köplinger, Michael Habeck, and Philip Goyal, "Operational reconstruction of Feynman rules for quantum amplitudes via composition algebras," arXiv:`2508.14822` (v2, 16 Dec 2025). (Coordinate-independent classification of allowable amplitude algebras as real associative composition algebras (complex, quaternionic, and split forms) via Hurwitz's theorem; derives the Born rule without postulating the complex field. Extension of [GoyalKnuthSkilling2010].)
 
 ## DOI Audit (Current)
 1. `[Newton1687]`: no DOI (17th-century primary source).

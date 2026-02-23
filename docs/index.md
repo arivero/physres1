@@ -3,7 +3,15 @@ layout: home
 title: "Physics Research Notes"
 ---
 
-# Published Papers
+# Main Paper
+
+| Paper | Format |
+|-------|--------|
+| **From Newton to the Path Integral** — A. Rivero and A.I.Scaffold (2026) | [PDF]({{ "/main-paper/main.pdf" | relative_url }}) |
+
+---
+
+# Companion Satellite Papers
 
 Papers accepted through internal peer review.
 

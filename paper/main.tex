@@ -148,13 +148,14 @@ smallest scale.''
 \texttt{Heuristic\ H0.2a\ (No\ Lebesgue\ measure\ on\ path\ space).} In
 infinite-dimensional spaces there is no nontrivial translation-invariant
 \(\sigma\)-finite Borel measure (no Lebesgue/Haar measure)
-{[}Velhinho2017InfDimMeasure{]}, so the formal symbol \(Dq\) in a path
-integral cannot be interpreted as an ordinary ``Lebesgue measure on
-trajectories.'' Therefore the slogan ``refine the time slicing,
-integrate over paths, and send \(\Delta t\to0\)'' is not a raw Newtonian
-limit statement but a definition-by-refinement that must specify
-normalization and, when singularities are present, regulator/subtraction
-rules.
+{[}Sudakov1959{]} {[}GlimmJaffe1987{]} (see also
+{[}Velhinho2017InfDimMeasure{]} for a modern survey), so the formal
+symbol \(Dq\) in a path integral cannot be interpreted as an ordinary
+``Lebesgue measure on trajectories.'' Therefore the slogan ``refine the
+time slicing, integrate over paths, and send \(\Delta t\to0\)'' is not a
+raw Newtonian limit statement but a definition-by-refinement that must
+specify normalization and, when singularities are present,
+regulator/subtraction rules.
 
 \texttt{Heuristic\ H0.3\ (Constants\ as\ control\ parameters\ for\ compatibility\ limits).}
 In this program, \(\hbar\), \(c\), and \(G\) can be read as control
@@ -1062,15 +1063,24 @@ conjugation, \[
 \] Under a conformal rescaling \(g=e^{2\sigma}\bar g\), the half-density
 conjugation produces a quadratic-gradient term
 \(\propto |\nabla\sigma|^2\) with universal coefficient \(D(4-D)/4\),
-hence it cancels at \(D=4\) (within the conformal class). This is an
-operator-simplicity filter (scale-neutral) and is independent of the
-coupling-dimension sieve discussed above. (A companion satellite on
-half-densities in QFT develops the full bi-half-density calculus for
-spacetime propagators and Green functions, including the conformal-class
-expansion, the normal-coordinate computation showing the universal
-conjugation potential \(V=(1/6)R\) matches conformal coupling only at
-\(D=4\), and the heat-kernel trace formula without extraneous
-\(\sqrt{|g|}\) factors.)
+hence it cancels at \(D=4\) (within the conformal class). (To see this,
+note that \(|g|^{1/4}=e^{D\sigma/2}|\bar g|^{1/4}\); conjugating
+\(\Delta_g\) by \(e^{D\sigma/2}\) and using the conformal Laplacian
+identity
+\(\Delta_g\phi=e^{-2\sigma}[\Delta_{\bar g}\phi+(D{-}2)\bar g^{ij}\partial_i\sigma\,\partial_j\phi]\)
+produces the potential
+\(V_{\mathrm{HD}}=-\tfrac{D}{2}\Delta_{\bar g}\sigma+\tfrac{D(4-D)}{4}|\bar\nabla\sigma|^2\);
+the coefficient \(\tfrac{D(4-D)}{4}=\tfrac{D^2}{4}-\tfrac{D(D-2)}{2}\)
+collects the contributions from the chain rule applied to
+\(e^{-D\sigma/2}\).) This is an operator-simplicity filter
+(scale-neutral) and is independent of the coupling-dimension sieve
+discussed above. (A companion satellite on half-densities in QFT
+develops the full bi-half-density calculus for spacetime propagators and
+Green functions, including the conformal-class expansion, the
+normal-coordinate computation showing the universal conjugation
+potential \(V=(1/6)R\) matches conformal coupling only at \(D=4\), and
+the heat-kernel trace formula without extraneous \(\sqrt{|g|}\)
+factors.)
 
 \texttt{Heuristic\ H4.0c\ (RG-side\ echo:\ gauge-coupling\ marginality\ at\ \textbackslash{}(D=4\textbackslash{})).}
 On the renormalization side, \(D=4\) is the unique dimension in which
@@ -1152,9 +1162,12 @@ limit (the composed kernel approaches
 \(\delta(q_f-q_i)\) for \(t>0\)); setting \(\kappa\to\infty\) makes the
 weight trivial and loses dynamical content. The scale \(\kappa\) is
 therefore a necessary structural constant of any composition-compatible
-refinement of action-based dynamics. (iv) Identifying \(\kappa=\hbar\)
-recovers the standard quantum propagator with Feynman phase
-\(e^{iS/\hbar}\) and Van Vleck normalization.
+refinement of action-based dynamics. (iv) The structural result is that
+\(\kappa\) exists and is necessary; identifying \(\kappa=\hbar\) (a
+physical identification with the empirically measured quantum of action,
+not a further structural forcing) recovers the standard quantum
+propagator with Feynman phase \(e^{iS/\hbar}\) and Van Vleck
+normalization.
 
 \texttt{Remark\ P4.2a\ (Consolidation\ of\ existing\ derivations).} The
 proposition consolidates Derivation D4.1a (composition forces
@@ -1301,8 +1314,16 @@ effective hypothesis count for Proposition P4.2 is therefore one
 mathematical axiom (composition) plus the physical setup} (action-based
 dynamics on \(\mathbb{R}^d\) with mass \(m\) and self-adjoint
 Hamiltonian). Composition is the single master axiom for the partition
-channel. See {[}RCPFoundations{]} Section 6 for the full axiom-reduced
-formulation.
+channel. (Scope caveat: the clean hypothesis reduction via the Cauchy
+functional equation (P4.2c) and Lévy--Khintchine exclusion (P4.2d) is
+established rigorously for the translation-invariant free case on
+\(\mathbb{R}^d\). The extensions to curved, interacting, and Lorentzian
+settings (Remark P4.2e) proceed by a different route ---
+semiclassical/Van Vleck/operator-theoretic --- that invokes stronger
+hypotheses than composition alone. The ``single master axiom'' label
+applies without qualification only to the flat free case; the extended
+cases share the same conclusion but via additional input.) See
+{[}RCPFoundations{]} Section 6 for the full axiom-reduced formulation.
 
 \texttt{Remark\ P4.2i\ (Parallel\ reconstruction:\ information-theoretic\ route).}
 Luiz and de Oliveira {[}LuizOliveira2026{]} independently arrive at
@@ -1484,6 +1505,7 @@ curvature couplings vanish.
 \subsection{6.4 Formal Continuum Limit and Stationary
 Phase}\label{formal-continuum-limit-and-stationary-phase}}
 
+\texttt{Heuristic\ H4.2a\ (Formal\ continuum-limit\ expression).}
 Formally, as mesh size \(\max_k\Delta t_k\to0\):
 
 \[
@@ -1493,7 +1515,10 @@ K(q_f,t_f;q_i,t_i)\sim
 \]
 
 This expression is formal at this stage: we do not claim a countably
-additive measure construction on full path space.
+additive measure construction on full path space. (For an explicit
+regulated-kernel family with exact composition and controlled regulator
+removal in the Euclidean free and harmonic-oscillator models, see
+Appendix 10.6.)
 
 \texttt{Derivation\ D4.2\ (Classical\ recovery\ mechanism).} Let
 \(q=q_{\mathrm{cl}}+\xi\), where \(q_{\mathrm{cl}}\) is stationary:
@@ -1767,7 +1792,8 @@ f(q,p)\exp\!\left[
 \]
 
 which reproduces the Poisson bracket at leading order and higher quantum
-corrections at higher orders {[}Landsman1998{]}.
+corrections at higher orders {[}Groenewold1946ElementaryQM{]}
+{[}Moyal1949StatisticalQM{]} {[}Landsman1998{]}.
 
 \texttt{Derivation\ D5.1a\ (Moyal\ product\ for\ linear\ and\ quadratic\ observables).}
 For the canonical pair \(f=q\), \(g=p\), the exponential terminates at
@@ -2290,7 +2316,8 @@ pass/fail criterion.
 \texttt{Remark\ D6.4a\ (Model-specific\ benchmark:\ \textbackslash{}(\textbackslash{}lambda\textbackslash{}phi\^{}4\textbackslash{})\ at\ one\ and\ two\ loops).}
 For scalar \(\lambda\phi^4\) theory in \(D=4\) with
 \(\mathcal{L}_{\mathrm{int}}=\lambda\phi^4/4!\), the MS coefficients
-from \texttt{Derivation\ D8.2a} and its two-loop extension are \[
+from \texttt{Derivation\ D8.2a} (one-loop \(b_0\)) and the standard
+two-loop MS-bar result are \[
 b_0=\frac{3}{16\pi^2}\approx 0.019,
 \qquad
 b_1=-\frac{17}{3(16\pi^2)^2}\approx -2.27\times 10^{-4}.
@@ -2500,10 +2527,12 @@ bridges:
   Boundary: distribution linearity and no undefined nonlinear products.
 \item
   \textbf{Section 6:} composition plus additivity imply exponential
-  weighting; stationary phase yields classical recovery. (mixed:
-  \texttt{Proposition}, \texttt{Derivation}, \texttt{Heuristic})
-  Boundary: formal path-integral usage and local stationary-phase
-  assumptions.
+  weighting; stationary phase yields classical recovery. The formal
+  continuum-limit passage (§6.4, Heuristic H4.2a) is explicitly labeled
+  as heuristic; the surrounding Derivations (D4.2, D4.2a) are labeled as
+  such. (mixed: \texttt{Proposition}, \texttt{Derivation},
+  \texttt{Heuristic}) Boundary: formal path-integral usage and local
+  stationary-phase assumptions.
 \item
   \textbf{Section 7:} deformation products recover the Poisson bracket;
   ordering appears as deformation-equivalence choice. A complementary
@@ -2534,6 +2563,17 @@ bridges:
   Boundary: closure/truncation assumptions and regulator-scheme choice.
 \end{enumerate}
 
+\texttt{Remark\ (D=4\ scope\ boundary).} The framework does not select
+\(D=4\) as the unique spacetime dimension from first principles. Several
+independent observations each have \((D{-}4)=0\) as a root by different
+algebraic mechanisms: conformal Laplacian simplification (H4.0b),
+gauge-coupling marginality (H4.0c), constant spectral shift on \(S^3\)
+(Proposition D9.1i), and conformal heat-kernel flatness (Remark D9.1q).
+These are structural coincidences at the algebraic level, not a
+derivation of \(D=4\) from the composition axioms. The paper reports
+them as independent data points, not as evidence that the framework
+privileges four dimensions.
+
 \texttt{Heuristic\ H7.1\ (Programmatic\ interpretation).} The
 Newton-to-path-integral narrative is best read as a \emph{compatibility
 program} rather than a single theorem: each layer adds new consistency
@@ -2551,14 +2591,16 @@ Vulnerabilities}\label{residual-vulnerabilities}}
   constructive control is not provided here. Minimal closure target:
   exhibit one explicit regulated kernel family \(K_\varepsilon\) with a
   proved composition law and a controlled \(\varepsilon\to0\) statement
-  in a nontrivial model. Status: \textbf{SUBSTANTIALLY CLOSED.} Appendix
+  in a nontrivial model. Status: \textbf{Partially addressed.} Appendix
   10.6 provides the regulated Gaussian family (D12.1: exact composition
   with additive regulator; P12.1: controlled \(\varepsilon\to0\) limit
   recovering the heat-kernel semigroup), a first-order bounded-potential
   extension (D12.2: \(O(V)\) composition closure), quantitative
   operator-norm bounds (P12.2), and an explicit failure mode for
-  singular potentials (D12.2a). Full constructive path-space control
-  (e.g., Wiener-measure-level estimates) remains open.
+  singular potentials (D12.2a). These witnesses cover only the free
+  Gaussian and first-order bounded-potential regimes; non-Gaussian,
+  non-perturbative path-space constructions (i.e., the content of
+  constructive quantum field theory) remain fully open.
 \item
   Deformation equivalence is stated at the structural level; explicit
   model-by-model operator-domain analysis is partially addressed.
@@ -2597,8 +2639,9 @@ Vulnerabilities}\label{residual-vulnerabilities}}
   model-specific benchmark meeting the stated closure target.
 \end{enumerate}
 
-Vulnerability 1 is now substantially closed by Appendix 10.6;
-Vulnerability 3 is closed by Appendix 10.1. Vulnerability 2 is
+Vulnerability 1 is partially addressed by Appendix 10.6 (explicit
+Gaussian and first-order witnesses; full constructive control remains
+open); Vulnerability 3 is closed by Appendix 10.1. Vulnerability 2 is
 substantially addressed by the \(S^2\), \(S^3\), and \(H^2\) spectral
 witnesses (P D9.1h, P D9.1i, P D9.1k); Vulnerability 4 is closed by D6.4
 + Remark D6.4a (quantitative truncation defect criterion with
@@ -2894,10 +2937,10 @@ quantum group deformation parameter: P4.2 fixes the norm
 the phase \(\arg(q) = 2\pi/(k+g^\vee)\) to a torsion element. The
 partition functions of the associated TQFTs satisfy
 \(Z(M^3) \in \mathbb{Z}[\zeta_N, N^{-1}]\), \(N = k + g^\vee\),
-reflecting the cyclotomic integrality of Stage 4 {[}Murakami1995;
-Habiro2008{]}. The forcing mechanism at Stage 2 rests on the Stone--von
-Neumann uniqueness theorem for irreducible representations of the
-Heisenberg algebra; at higher stages, where unitarily inequivalent
+reflecting the cyclotomic integrality of Stage 4 {[}Murakami1995{]}
+{[}Habiro2008{]}. The forcing mechanism at Stage 2 rests on the
+Stone--von Neumann uniqueness theorem for irreducible representations of
+the Heisenberg algebra; at higher stages, where unitarily inequivalent
 representations proliferate (Haag's theorem), each additional finiteness
 axiom serves as a partial substitute for uniqueness, applicable only
 within a narrower class of theories. The restriction at each stage to
@@ -3218,13 +3261,13 @@ shift.
 \texttt{Remark\ D9.1j\ (Scope\ boundary\ for\ curved\ spectral\ witnesses).}
 Propositions D9.1h and D9.1i cover the maximally symmetric compact
 spaces \(S^2\) and \(S^3\). On any compact Lie group with bi-invariant
-metric, \(V_{\mathrm{HD}}\) is constant
-\emph{in left-invariant coordinates} (the bi-invariance of the volume
-form forces the half-density conjugation to commute with group
-translations); \(S^3 = \mathrm{SU}(2)\) is the unique case where this
-coincides with constant sectional curvature. Extension to
-non-homogeneous spaces or higher-dimensional spheres with
-position-dependent \(V_{\mathrm{HD}}\) remains open.
+metric, \(V_{\mathrm{HD}}\) is constant \emph{in left-invariant
+coordinates} (the bi-invariance of the volume form forces the
+half-density conjugation to commute with group translations);
+\(S^3 = \mathrm{SU}(2)\) is the unique case where this coincides with
+constant sectional curvature. Extension to non-homogeneous spaces or
+higher-dimensional spheres with position-dependent \(V_{\mathrm{HD}}\)
+remains open.
 
 \texttt{Proposition\ D9.1k\ (Non-compact\ ordering\ witness:\ unit\ \textbackslash{}(H\^{}2\textbackslash{})).}
 On the hyperbolic plane \(H^2\) (constant curvature \(K=-1\)) with
@@ -3370,7 +3413,14 @@ of degree \(d-r\) (where \(r=\mathrm{rank}\)), this integral equals
 \(K(t,e,e)=(4\pi t)^{-d/2}\exp(t|\rho|^2)+O(\exp(-c/t))\), giving
 \(a_k=|\rho|^{2k}/k!=(R/6)^k/k!\). Corollary: the conformal operator
 \(-\Delta_G+R/6\) has \(a_k=0\) for all \(k\ge 1\) on every compact
-simple Lie group.
+simple Lie group. Among rank-1 symmetric spaces,
+\(\mathbb{CP}^2=\mathrm{SU}(3)/\mathrm{U}(2)\) also satisfies
+\(|\rho_m|^2=R/6\) (a dimension-specific algebraic coincidence at
+\(n=2\)) but fails conformal heat-kernel flatness because its spectral
+multiplicities are odd-degree polynomials in the eigenvalue label, so
+the Euler--Maclaurin boundary terms do not vanish; the exponential
+Seeley--DeWitt structure is thus specific to Lie groups (where the
+multiplicity function is an even polynomial).
 
 \texttt{Remark\ D9.1p\ (Isospectrality\ of\ the\ half-density\ Laplacian).}
 The half-density Laplacian
@@ -3448,7 +3498,7 @@ Principle}\label{foundational-compatibility-principle}}
 This appendix states a foundational compatibility principle aimed at the
 manuscript's core objective.
 
-\texttt{Proposition\ P10.1\ (Refinement\ Compatibility\ Principle,\ RCP).}
+\texttt{Principle\ P10.1\ (Refinement\ Compatibility\ Principle,\ RCP).}
 A dynamical framework is admissible when three compatibility conditions
 hold simultaneously: 1. \textbf{Partition compatibility}: composition
 across temporal subdivisions preserves the same action-based extremal
@@ -3890,7 +3940,8 @@ T_V^{(1)}(t):=T_0(t)-\int_0^t T_0(t-\tau)\,V\,T_0(\tau)\,d\tau.
 \] 2. \textbf{Composition-defect bound (first-order approximation)} \[
 \|T_V^{(1)}(t)T_V^{(1)}(s)-T_V^{(1)}(t+s)\|
 \le C\,M^2\,(t+s)^2 e^{M(t+s)}
-\] for a universal constant \(C\) (e.g.~\(C=2\)).
+\] for a universal constant \(C\) (e.g.~\(C=1\), which is sharp; see
+below).
 
 Proof sketch: expand \(T_V\) by Duhamel to second order, bound iterated
 integrals with semigroup norms \(\|T_0(r)\|\le1\),
@@ -4034,6 +4085,14 @@ heat-kernel normalization at short times.
   Theory on Infinite Dimensional Spaces,'' \emph{Mathematics} 5(3)
   (2017), 44. DOI \texttt{10.3390/math5030044}. OA: MDPI.
 \item
+  {[}Groenewold1946ElementaryQM{]} H. J. Groenewold, ``On the Principles
+  of Elementary Quantum Mechanics,'' \emph{Physica} 12 (1946), 405--460.
+  DOI \texttt{10.1016/S0031-8914(46)80059-4}.
+\item
+  {[}Moyal1949StatisticalQM{]} J. E. Moyal, ``Quantum mechanics as a
+  statistical theory,'' \emph{Proceedings of the Cambridge Philosophical
+  Society} 45 (1949), 99--124. DOI \texttt{10.1017/S0305004100000487}.
+\item
   {[}TongQMLectures{]} David Tong, ``Quantum Mechanics'' (lecture notes,
   no DOI). OA: lecture-note PDF. (Contains
   \(Y_{l,m}(\theta,\phi)=P_{l,m}(\cos\theta)e^{im\phi}\) as simultaneous
@@ -4103,6 +4162,18 @@ heat-kernel normalization at short times.
   q=e\^{}\{2πi/(k+g∨)\}.) Source:
   sources/witten1989-chern-simons-jones.md.
 \item
+  {[}Murakami1995{]} Hitoshi Murakami, ``Quantum SO(3)-invariants
+  dominate the SU(2)-invariant of Casson and Walker,'' \emph{Math. Proc.
+  Cambridge Philos. Soc.} \textbf{117} (1995), no. 2, 237--249. DOI
+  \texttt{10.1017/S0305004100073084}. (Algebraic integrality of WRT-type
+  SU(2)/SO(3) invariants at prime order roots of unity.)
+\item
+  {[}Habiro2008{]} Kazuo Habiro, ``A unified Witten-Reshetikhin-Turaev
+  invariant for integral homology spheres,'' \emph{Invent. Math.}
+  \textbf{171} (2008), no. 1, 1--81. DOI
+  \texttt{10.1007/s00222-007-0071-0}. (Cyclotomic integrality: Z(M³) ∈
+  ℤ{[}ζ\_N, N\^{}\{-1\}{]} for integral homology spheres.)
+\item
   {[}ElShowk2014{]} Sheer El-Showk et al., ``Solving the 3d Ising Model
   with the Conformal Bootstrap II. c-Minimization and Precise Critical
   Exponents,'' arXiv:\texttt{1403.4545} (2014). (Reports
@@ -4127,22 +4198,23 @@ heat-kernel normalization at short times.
 \item
   {[}PathIntegralNormalization{]} A. Rivero and A.I.Scaffold,
   ``Path-Integral Normalization: The d/2 Exponent as Composition
-  Compatibility Datum,'' companion satellite paper in this series
-  (2026). (Comprehensive treatment of the d/2 exponent across temporal
-  composition, Van Vleck determinant, heat-kernel diffusion,
-  renormalization thresholds, and Lévy-stable exclusion.)
+  Compatibility Datum,'' companion satellite paper in this series (in
+  preparation, 2026). (Comprehensive treatment of the d/2 exponent
+  across temporal composition, Van Vleck determinant, heat-kernel
+  diffusion, renormalization thresholds, and Lévy-stable exclusion.)
 \item
   {[}RCPFoundations{]} A. Rivero and A.I.Scaffold, ``Refinement
   Compatibility Principle: Foundations,'' companion satellite paper in
-  this series (2026). (Axiom system for RCP; three-channel forcing
-  hierarchy; Krein Q-function transport; forward connections to all
-  satellite papers.)
+  this series (in preparation, 2026). (Axiom system for RCP;
+  three-channel forcing hierarchy; Krein Q-function transport; forward
+  connections to all satellite papers.)
 \item
   {[}TangentGroupoidBridge{]} A. Rivero and A.I.Scaffold, ``Groupoid
   Composition and Quantization: The Pair-Groupoid Bridge,'' companion
-  satellite paper in this series (2026). (Pair groupoid as sewing law;
-  d/2 forced by Fourier multiplicativity and dimensional homogeneity;
-  tangent groupoid as hbar-deformation; Wick rotation as A3.)
+  satellite paper in this series (in preparation, 2026). (Pair groupoid
+  as sewing law; d/2 forced by Fourier multiplicativity and dimensional
+  homogeneity; tangent groupoid as hbar-deformation; Wick rotation as
+  A3.)
 \item
   {[}DeWitt1957{]} Bryce S. DeWitt, ``Dynamical Theory in Curved Spaces.
   I. A Review of the Classical and Quantum Action Principles,''
@@ -4171,6 +4243,30 @@ heat-kernel normalization at short times.
   isomorphism \(j^{1/2}\colon S(\mathfrak{g})^G\to Z(U(\mathfrak{g}))\);
   the half-density factor \(|g|^{1/4}\) on compact semisimple Lie groups
   equals \(|J^{1/2}|\) in exponential coordinates.)
+\item
+  {[}Sudakov1959{]} V.N. Sudakov, ``Linear sets with quasi-invariant
+  measure,'' \emph{Doklady Akademii Nauk SSSR} \textbf{127}(3) (1959),
+  524--526. (In Russian.) (Establishes the absence of nontrivial
+  translation-invariant \(\sigma\)-finite Borel measures on
+  infinite-dimensional normed spaces; foundational non-existence result
+  for Lebesgue measure on path space.)
+\item
+  {[}GlimmJaffe1987{]} James Glimm and Arthur Jaffe, \emph{Quantum
+  Physics: A Functional Integral Point of View}, 2nd ed.,
+  Springer-Verlag, New York (1987). ISBN 978-0-387-96476-8. DOI
+  \texttt{10.1007/978-1-4612-4728-9}. (Standard textbook treatment of
+  the non-existence of translation-invariant measures on
+  infinite-dimensional spaces and the rigorous foundations of the path
+  integral; H0.2a statement is standard in this context.)
+\item
+  {[}Köplinger2025{]} Jens Köplinger, Michael Habeck, and Philip Goyal,
+  ``Operational reconstruction of Feynman rules for quantum amplitudes
+  via composition algebras,'' arXiv:\texttt{2508.14822} (v2, 16 Dec
+  2025). (Coordinate-independent classification of allowable amplitude
+  algebras as real associative composition algebras (complex,
+  quaternionic, and split forms) via Hurwitz's theorem; derives the Born
+  rule without postulating the complex field. Extension of
+  {[}GoyalKnuthSkilling2010{]}.)
 \end{enumerate}
 
 \end{document}
