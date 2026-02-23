@@ -90,3 +90,29 @@ KEEP: wick-rotation-representation-channel.md | critic | Correct RCP-A3 classifi
 DELETE: quantum-groups-lattice-composition.md | critic | Pure conjecture, no agent consensus, Level 3 speculation without path to verification
 KEEP: integrable-systems-rcp.md | critic | Sound isomonodromy-composition connection, Stage 2.5 framing appropriate
 DELETE: seeley-dewitt-a1-zero.md | critic | Thm M4.1 correct but downstream O2/O3 confusion invalidated most sections per R26
+KEEP: caustics-maslov-half-density.md | physicist | clean BKS-composition bridge with TWO-AGENT Prop M7.1
+KEEP: deformation-equivalence-physical.md | physicist | four-layer stratification resolves apparent tension, observability test complete
+KEEP: nonperturbative-contact-pade.md | physicist | comprehensive OQ4 treatment with loop-level computation and conformal Pade
+KEEP: odd-d-scalarization-parity.md | physicist | essential parity obstruction analysis for planck-area paper
+KEEP: oq1a-planck-area-fundamental.md | physicist | central to OQ1a with Voros bridge and FOUR-AGENT uniqueness
+KEEP: ordering-unitarity-dilation-generator.md | physicist | clean derivation of alpha=1/2 from symmetry with scope disclaimers
+KEEP: p42-extensions-interacting-curved.md | physicist | closes three free-particle artifact objections with Mehler+VanVleck+singular dynamics
+KEEP: p42-hypothesis-reduction.md | physicist | foundational hypothesis reduction from 4 to 1 axiom
+KEEP: planck-area-geometric-channel.md | physicist | A_geom motivation for PA-H2.5a with THREE-AGENT consensus
+KEEP: renormalization-semigroup-mechanics.md | physicist | RG semigroup worked example with Stone/HY reversibility analysis
+KEEP: vhd-product-warped-additivity.md | physicist | product additivity theorem C5.1 and warped product decomposition
+KEEP: tangent-groupoid-quantization-bridge.md | physicist | groupoid foundation for composition-law approach
+KEEP: seeley-dewitt-a1-zero.md | physicist | core SD coefficient analysis with a1=0 theorem and D=4 coincidences
+KEEP: caustics-maslov-half-density.md | computationalist | BKS-composition parallel + Prop M7.1 valuable for half-density universality argument
+KEEP: deformation-equivalence-physical.md | computationalist | Four-layer stratification + observability test are rigorous and well-verified
+KEEP: nonperturbative-contact-pade.md | computationalist | Contains my verified computations (Pade, EH, BW, conformal Pade); core OQ4 content
+KEEP: odd-d-scalarization-parity.md | computationalist | Parity lemma and transmutation route are clean results supporting planck-area paper
+KEEP: oq1a-planck-area-fundamental.md | computationalist | Comprehensive OQ1a treatment with 5-level validation and FOUR-AGENT consensus on key results
+KEEP: ordering-unitarity-dilation-generator.md | computationalist | Clean alpha=1/2 selection proof from symmetry/unitarity; foundational for ordering arguments
+KEEP: p42-extensions-interacting-curved.md | computationalist | Closes three major P4.2 generality objections (interacting, curved, combined); core project content
+KEEP: p42-hypothesis-reduction.md | computationalist | Documents hypothesis reduction from 4 to 1 axiom; central to composition-forcing narrative
+KEEP: planck-area-geometric-channel.md | computationalist | A_geom analysis and PA-H2.5a motivation are THREE-AGENT; supports planck-area paper
+KEEP: renormalization-semigroup-mechanics.md | computationalist | Concrete QM worked example for RG semigroup property; useful for RG-fundamental paper
+KEEP: vhd-product-warped-additivity.md | computationalist | Product additivity theorem C5.1 and warped product corrections are FOUR-AGENT verified
+KEEP: tangent-groupoid-quantization-bridge.md | computationalist | Lackman/Connes groupoid framework is the mathematical backbone of the project thesis
+KEEP: seeley-dewitt-a1-zero.md | computationalist | Thm M4.1 + SD coefficient computations + SU(3) exponential structure; my primary research contributions

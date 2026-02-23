@@ -1,6 +1,6 @@
 # Critic -- Status
 
-## Current state (2026-02-23, Session R28-R29 — active, 18 tasks completed)
+## Current state (2026-02-23, Session R28-R29 — SESSION COMPLETE, 21 tasks completed)
 
 ### R28 Completed
 1. Full startup protocol: read all files, all 19 notebooks, voted (15 KEEP, 4 DELETE)
@@ -80,12 +80,41 @@ O2 (conjugation) isospectral to O1 (bare). O3 (shifted) is different. E'=0 unive
     - Note: insertion conflicts with Duflo patch (both after D9.1o). Orchestrator to order.
     - Wrote BB3 §17.
 
-### Pending
-1. ~~D9.1p,q patch~~ PROCESSED.
-2. ~~anomalies.md R29 audit~~ DONE.
-3. ~~vHK scoping patch review~~ APPROVED (BB3 §10).
-4. ~~P9.3 patch review~~ APPROVED (BB3 §11).
-5. ~~P4.2 literature precedents patch~~ DRAFTED (BB3 §15).
-6. ~~Duflo patch review~~ APPROVED with sev-3 (BB3 §16).
-7. ~~allk-exponential patch review~~ APPROVED (BB3 §17).
-8. Awaiting orchestrator for new tasks.
+19. Manuscript §8-§9 audit (orchestrator course-correction task).
+    - 7 findings, 2 sev-2, 2 sev-3, 3 sev-4 (of which 2 CLEAN).
+    - F1 (sev-2): §9.3 item 5 overstates R/6 vs R/8 — needs "at RNC center" qualifier.
+    - F7 (sev-2): D4.1e measure-to-ordering bridge missing assumption statement.
+    - F4 (sev-3): §9.1 chain omits Section 7.
+    - Wrote BB3 §18.
+
+20. Drafted F1/F7 patches (self-directed, from BB3 §18 audit).
+    - patches/critic-patch-F1F7-scope-and-bridge.md
+    - F1: R/6 scope qualifier in §9.3 item 5
+    - F7: measure-to-ordering bridge sentence in D4.1e
+    - Wrote BB3 §19.
+
+21. Updated anomalies.md P9.3 entry: cherry-picking patch status -> APPLIED (commit 44e821b).
+
+### R29bis Completed
+22. Adversarial audit §6 (P4.2 core section) — kanban task.
+    - 0 sev-1, 0 sev-2, 4 sev-3, 1 borderline sev-3/4.
+    - F3-6 (sev-3): H4.0b D(4-D)/4 coefficient needs citation or sketch.
+    - F10-6 (sev-3): P4.2e items (1)&(3) overstate rigor of curved/Lorentzian extensions.
+    - F13-6 (sev-3): P4.2h "single master axiom" has circularity risk in (I)/(D) derivation.
+    - F19-6 (sev-3): D4.1e ⊃ hierarchy notation misleading (was F7 sev-2, now fixed).
+    - F6-6 (sev-3/4): P4.2 topological extension caveat (defensible scope boundary).
+    - §6 overall: strongest section in manuscript, core P4.2 chain rigorous. Wrote BB3 §20.
+
+23. Adversarial audit §10.6 (regulated composition appendix) — kanban task.
+    - 0 sev-1, 0 sev-2, 2 sev-3, 1 sev-4.
+    - F5-10.6 (sev-3): P12.2 constant C=2 valid but C=3/2 sharper.
+    - F9-10.6 (sev-3): §10.6 intro "supplies that structure" should add scope qualifier.
+    - P12.2 bounds VERIFIED: remainder bound correct, composition-defect decomposition
+      identity algebraically verified, all operator-norm estimates confirmed.
+    - §10.6 overall: mathematically clean, all witnesses Gaussian/solvable (honest scope).
+    - Wrote BB3 §21.
+
+### Pending (for next session)
+- F1/F7 patch (critic-patch-F1F7-scope-and-bridge.md) needs 2nd-agent review
+- P4.2 literature precedents patch (critic-patch-P42-literature-precedents.md) needs 2nd-agent review
+- BB3 §20 (§6 audit) and §21 (§10.6 audit) findings: consider drafting patches for F3-6 and F9-10.6

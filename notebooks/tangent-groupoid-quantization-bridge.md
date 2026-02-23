@@ -1979,3 +1979,75 @@ in Lackman's language. Verification would require showing that Lackman's groupoi
 finite mesh satisfy a q-deformed composition rule. Stage: speculative (Level 3).
 
 **Sources:** arXiv:2601.05228, arXiv:2309.07169 (q-deformed SU(3) on lattice)
+
+---
+
+## Lackman 2024: Axiomatization of Path Integral Quantization (arXiv:2410.02739)
+
+### Main Result
+
+Lackman axiomatizes path integral quantization on symplectic manifolds and proves it is
+equivalent to abstract coherent state (Berezin) quantization. The composition/semigroup
+property is the central structural axiom.
+
+### Axioms (implicit)
+
+The path integral is defined as:
+
+integral_{gamma(0)=x}^{gamma(1)=y} P(gamma) D gamma in Hom(L_x, L_y)
+
+with properties:
+1. **Composition:** Integral x->z then z->y = integral x->y after integrating over z.
+2. **Identity:** When x=y, the result is the identity.
+3. **Measure:** Defined as formal inverse limit of complex measures on path spaces.
+
+### Equivalence Theorem
+
+The categories of path integral quantizations and abstract coherent state quantizations
+are equivalent:
+- **PI -> Coherent states:** Computing the propagator determines a classifying map
+  q: M -> P(H) satisfying overcompleteness: 1_H = integral_M q(x) omega^n / hbar^n.
+- **Coherent states -> PI:** Given q with overcompleteness, the canonical projection
+  L_x -> L_y (= |x> -> |y><y|x>) IS the path integral.
+
+### 3-Point Function and Pair Groupoid
+
+The paper defines Delta(x,y,z) = rho_x(q_y q_z) on the 2-fold pair groupoid Pair^(2)(M).
+This function:
+- Determines a cohomology class in H^2(M,Z) (first Chern class)
+- Satisfies cocycle relations via the groupoid differential
+- Under the van Est map yields a closed 2-form (the curvature of the prequantum line bundle)
+
+This is the precise mathematical structure underlying the pair-groupoid convolution in
+Sections 1-3 of this notebook.
+
+### Connection to Our Framework
+
+| Lackman 2024c | Our project |
+|---------------|-------------|
+| Composition axiom | P4.2 composition theorem |
+| Overcompleteness = resolution of identity | Semigroup property of heat kernel |
+| 3-point function on pair groupoid | Kernel composition K(x,z)K(z,y) |
+| Van Est map -> 2-form | Tangent groupoid hbar=0 limit recovers symplectic structure |
+| No half-densities discussed | **Our contribution:** half-densities are the coefficient system |
+
+### Gap: Half-Densities
+
+Lackman's axiomatization does NOT discuss half-densities. The measure is treated formally
+(inverse limit of finite-dimensional measures). In finite dimensions, the g^{1/4} factor
+is invisible (absorbed into the coordinate chart). Our project's contribution is that:
+1. The composition axiom, applied to manifolds with nontrivial geometry, forces the
+   half-density coefficient system (P4.2).
+2. This is the content of Proposition M7.1(c) in the caustics-maslov notebook:
+   half-densities are the unique coefficient system making groupoid convolution
+   well-defined without a measure choice.
+3. Bonanno-Falls-Ferrero 2025 (arXiv:2503.02941) independently show diffeomorphism
+   invariance forces the same g^{1/4} factor (Fujikawa's variable = density of weight 1/2).
+
+### Open Question TG-Q11
+
+Does Lackman's axiomatization, when applied to Riemannian (not just symplectic) manifolds
+with the heat kernel as propagator, force the half-density coefficient system? If so,
+this would close the gap between his formal axioms and our P4.2 composition theorem.
+
+**Sources:** arXiv:2410.02739 (Lackman 2024c), arXiv:2503.02941 (Bonanno-Falls-Ferrero 2025)

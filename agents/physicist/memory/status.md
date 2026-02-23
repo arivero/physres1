@@ -114,6 +114,20 @@ The Gilkey endomorphism for Δ_{1/2} is E' = 0 (drift cancels V_HD), giving a_1 
   - P9.3 cherry-picking: APPLIED, committed (TWO-AGENT).
 - All kanban tasks DONE.
 
+## R29bis Completed Work (2026-02-23)
+11. Startup: all 19 notebooks reviewed and voted KEEP.
+12. 2nd-agent review of §30 (mathematician CROSS classification):
+    - (C1)+(C2) framework CORRECT, CP^2 remark recommended for manuscript
+    - Full CROSS table NOT recommended for paper (too specialized)
+    - §30.6 manuscript impact assessment AGREE
+    - Appended as §31 of seeley-dewitt-a1-zero.md
+13. BB0 S^2 ordering table review for F9 patch:
+    - a_1 and a_2 values independently verified (standard Gilkey)
+    - BB0 §§1-4 now TWO-AGENT (computationalist + physicist)
+    - F9 patch potential: STRONG — cite BB0 table in F9 rationale
+    - BB0 §5 P12.2 bounds: all PASS
+    - BB0 §6 H^2 spectral gap: VERIFIED (McKean gap 1/4)
+
 ## Next priorities
 1. F3+F9 patch needs 2nd-agent review.
 2. D9.1q scoping patch needs reviewer.

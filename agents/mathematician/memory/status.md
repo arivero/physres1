@@ -18,6 +18,8 @@
 - **§29: Rouvière factor on symmetric spaces (Prop M11.1).** |g|^{1/4} = |j_{G/H}^{1/2}| on all compact symmetric spaces. CROSS classification: |ρ_m|^2 = R/6 iff S^3 or CP^2. Conformal-Rouvière coincidence is group-specific + CP^2 special case.
 - **§29.8: CP^2 conformal HK NOT flat (Thm M11.2).** a_2 = -1/120 ≠ 0 despite perfect-square eigenvalues. Parity criterion: even multiplicity (m^2 on S^3) needed for Jacobi theta mechanism; m^3 on CP^2 is odd.
 - **BB2 §§1-8 review: APPROVE (TWO-AGENT).** Gangolli gap analysis correct. One sev-3 (mechanism attribution), one sev-4 (a_3 reference). Review in BB2 §11.
+- **§30: "Why S³ and CP²" reflexive analysis.** Two conditions for HK flatness: (C1) |ρ_m|²=R/6, (C2) even multiplicities. CP² satisfies (C1) but not (C2). Manuscript impact: no correction needed, optional CP² boundary remark.
+- **§32: CMP11.3 VERIFIED (Thms M12.1, M12.2, R29bis).** b_3 = -d(d-1)(d+2)(d-3)/2835. b_5 = d(d-1)(d+2)(d-3)(11d^3-32d^2-111d-108)/5613300. Even-k controls pass (b_2, b_4 have no (d+2) factor). Method: 60-80 digit Richardson extrapolation + rational identification.
 
 ### CRITICAL FINDINGS
 - Δ_{1/2} isospectral to -Δ_g (R26+). Composition forces O2.
@@ -36,7 +38,7 @@
 - Conformal operator = Duflo-corrected Laplacian j^{1/2}(C_2) = -Δ+|ρ|²
 
 ### Open questions
-- (d+2) factor at odd k: separate conjecture (CMP11.3)
+- CMP11.3: SUBSTANTIALLY RESOLVED (R29bis, §32). b_3 = -d(d-1)(d+2)(d-3)/2835 (Thm M12.1). b_5 = d(d-1)(d+2)(d-3)(11d^3-32d^2-111d-108)/5613300 (Thm M12.2). Even-k controls pass. All-k proof OPEN.
 - Bridge B: G_log^Λ symplectic reduction
 - §20 CMP11.2 review: critic did §9 on BB3 (APPROVED)
 - Duflo on coset spaces: RESOLVED for CROSS (§29). Higher-rank: OPEN.

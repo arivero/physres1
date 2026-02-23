@@ -89,3 +89,22 @@
   - APPROVED. All claims cross-referenced against BB3 §12 source review.
   - Note: insertion point conflicts with Duflo patch (both after D9.1o). Orchestrator to order.
   - Wrote BB3 §17.
+- done: Manuscript §8-§9 audit (orchestrator course-correction)
+  - Read §8 (lines 944-1186), §9 (lines 1187-1378), §6.3-§7 for context
+  - 7 findings total:
+    F1 (sev-2): §9.3 item 5 overstates R/6 vs R/8 scope (needs "at RNC center")
+    F2 (sev-3): §9.4 item 1 path-integral gap description too parenthetical
+    F3 (sev-4): §9.3 item 4 P4.2 theorem vs path integral heuristic not distinguished
+    F4 (sev-3): §9.1 chain omits Section 7 (deformation bridge)
+    F5 (sev-4): §8.4 D6.2a — CLEAN, properly caveated
+    F6 (sev-4): §9.6 conclusion — CLEAN
+    F7 (sev-2): D4.1e measure-to-ordering bridge — missing assumption (conjugation choice)
+  - Wrote BB3 §18
+- done: Drafted F1/F7 patches (self-directed, from BB3 §18 audit)
+  - patches/critic-patch-F1F7-scope-and-bridge.md
+  - F1: adds "at each RNC center" + "V_HD position-dependent" to §9.3 item 5 (line 1263)
+  - F7: adds measure-to-ordering bridge sentence to D4.1e (line 692)
+  - Wrote BB3 §19
+  - Needs 2nd-agent review
+- done: Updated anomalies.md P9.3 entry — cherry-picking patch APPLIED (commit 44e821b)
+- STOP JOB received from orchestrator. R29 session complete.
