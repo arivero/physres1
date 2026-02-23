@@ -34,3 +34,12 @@
 - Created notebooks/composition-lattice-hopf-algebras.md (9 sections, 5 OQs)
 - Philosophenweg: discrete Borel = rep ring; fusion categories universal framework
 - Ingested: Zache 2023, lattice gauge optimal truncation 2024
+
+## 2026-02-23 (Session R23)
+- Kanban task: "Browse literature: heat kernel a_k coefficients on round S³ and constant-curvature spaces"
+- 7 WebSearches: Vassilevich 2003, Kluth-Litim 2020, Grigor'yan hyperbolic, Seeley-DeWitt, Gilkey algorithm, GJMS Branson, Camporesi Lie groups
+- Key finds: Kluth-Litim EPJC 2020 (foundational S^d), Vassilevich hep-th/0306138 (manual), Grigor'yan hyperbolic notes, modern Gilkey PRD 2021-2024
+- Insight: Kluth-Litim E_bar = -R/6 = composition V_HD (same object, different physics)
+- Verified: Bernoulli B_{2n+1}(1)=0 → κ_n(3)=δ_{n,0} → a_k(S³)=0 for k≥1 (matches BB1 §10)
+- Documented: sources/HeatKernel-Akcoefficients-Survey-R23.md (4700+ words, 13 sections, 5 OQs, 7 recommendations)
+- Status: literature browsing complete; ready for team follow-ups

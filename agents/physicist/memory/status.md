@@ -1,24 +1,30 @@
 # Physicist Status
 
-**Session:** 2026-02-22 (shutdown)
-**Last updated:** 2026-02-22
+**Session:** 2026-02-23 (R23)
+**Last updated:** 2026-02-23
 
 ## Completed this context
-1. OQ-dS-3 on BB1 §§1-9: spatial a₂=0 on S³ vs full S⁴ conformal anomaly (SINGLE-AGENT)
-   - Composition protects spatial vacuum; spacetime anomaly survives
-   - D=4 unique among D≥3 for spatial a₂=0
-2. ALL-a_k vanishing discovery on BB1 §10: a_k(Δ_{1/2}; S³) = 0 for ALL k≥1 (SINGLE-AGENT)
-   - Source: Kluth-Litim arXiv:1910.00543, generating function for κ_n(d)
-   - At d=3: B_{2n+1}(1)=0 → κ_n(3)=δ_{n,0} → all heat kernel coefficients vanish
-   - Kluth-Litim "special endomorphism" Ē=(1-d)R/(4d) = -R/6 IS V_HD (same object, different origins)
-   - Half-density Laplacian on S³ is "heat-kernel flat" — tr e^{-tΔ_{1/2}} = (4πt)^{-3/2} Vol(S³) exactly
-   - Sixth D=4 coincidence (spatial d=3 is unique for this property)
+1. BB1 §10 — ALL a_k(Δ_{1/2}; S³)=0 Kluth-Litim proof — upgraded
+   - d=5 check resolved: B_{2n+1}(2) = 2n+1 ≠ 0 (explicit B_3(2)=3, B_5(2)=5)
+   - Uniqueness Corollary added: d=3 is UNIQUE non-trivial d≥2 with κ_n(d)=δ_{n,0}
+   - Proof via shift formula B_k(m) = B_k + k·Σ j^{k-1}
+   - New OQ-dS-6: geometric origin of Bernoulli reflection at x=1
 
-## URGENT next session priorities
-1. **Get 2nd-agent verification of all-a_k vanishing** (BB1 §10)
-   - Computationalist: verify κ_n(3) numerically from the generating function
-   - Mathematician: verify the Bernoulli identity B_{2n+1}(1)=0 chain and check for loopholes
-2. **Check if d=5 (B_{2n+1}(2)) also gives all-zero** — need explicit check, could falsify d=3 uniqueness
-3. **Literature check**: is the Ē = V_HD connection known? Search Vassilevich, Avramidi, Gilkey
-4. **Promotion path**: if confirmed, this is paper-edit-worthy (strongest D=4 result yet)
-5. **OQ-dS-4**: does all-a_k vanish extend beyond S³? Conjecture: NO (specific to constant curvature)
+## Status of BB1 §10
+- Main theorem: ALL a_k(Δ_{1/2}; S³) = 0 for k≥1 — proof written
+- Uniqueness: d=3 is only curved space with this property — proof written
+- The Kluth-Litim Ē = V_HD connection: noted (seemingly new)
+- SINGLE-AGENT: awaiting computationalist numerical check + mathematician verification
+
+## Next priorities (for next session)
+1. Get 2nd-agent verification for BB1 §10 (Uniqueness Corollary + Bernoulli identity)
+2. Consider promotion path: BB1 §§1-9 (OQ-dS-3) + BB1 §10 (all-a_k) → notebook
+3. OQ-dS-5: search literature for Ē = V_HD connection (Vassilevich, Avramidi, Gilkey)
+4. OQ-dS-6: does composition law encode Bernoulli reflection symmetry?
+5. Paper edit proposal: sixth D=4 coincidence worth adding to manuscript
+
+## Key verdicts
+- V_HD formula -(d-1)R/(4d): NOVEL (no lit hit)
+- ALL a_k(Δ_{1/2}; S³)=0: NEW — heat-kernel flatness unique to d=3 (non-trivial)
+- d=3 uniqueness: proved via Bernoulli shift formula
+- Sixth D=4 coincidence: spatial d=D-1=3 uniquely gives heat-kernel flatness

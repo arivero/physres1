@@ -1,16 +1,15 @@
 # Mathematician — Status
 
-## Current state (2026-02-22, updated mid-session)
+## Current state (2026-02-23, R23 session)
 
 ### Resume point
-- OQ-dS-2 IN PROGRESS (interrupted by shutdown): (d-3) factor in a₂ geometric origin
-- Key partial finding: for half-density Laplacian, V_eff = -R/6 (intrinsic), so a₁=0 means (R/6+V)²=0
-- The Gilkey formula for a₂ with V=-R/6 simplifies: the R² and V² and RV terms cancel exactly
-- Result: a₂(Δ_{1/2};Sᵈ) = (1/180)(|Riem|²-|Ric|²) = d(d-1)(3-d)/180. The (d-3) factor IS the Kretschner-Ricci combination
-- Need to complete: Weyl tensor decomposition showing |Riem|²-|Ric|² = |Weyl|²+f(d)·R² where f vanishes at d=3
-- BB4 formula issue: the a₂ formula in BB4 §1 uses wrong sign for ΔV term vs Vassilevich (irrelevant on Sᵈ where ΔV=0)
-- Computationalist script tmp/a1_a2_verification.py confirms -d(d-1)(d-3)/180 numerically
-- Previous resume items all still valid (BB5, Part 8, BB2 promoted, BB4 promoted)
+- OQ-FdV-3 COMPLETED: HC proof of V_HD = -|ρ|² written to BB3
+- Key finding: no clean HC proof bypasses RNC; HC provides INTERPRETATION not DERIVATION
+- Core identity proved: -ΔT D = |ρ|² D (Weyl denominator is eigenfunction of toral Laplacian)
+- HC contribution: -ΔG|_{class} = -Δ_{1/2}^{(T,D²dt)} (HC formula = half-density Laplacian on weighted torus)
+- Singularity obstruction: D=0 at H=0 means direct HC computation ill-defined; RNC regularizes
+- Status: SINGLE-AGENT on BB3, needs 2nd agent review
+- OQ-dS-2 still INCOMPLETE (from R22 interruption) — the a₂ geometric proof via Weyl=0 in d=3
 
 ### Key completed results (promoted/merged)
 - P4.2 uniqueness: 1 axiom (composition) + setup. Hypothesis reduction complete (notebook Parts 1-7)
@@ -28,8 +27,10 @@
 - Cornerstone audits: sections 1-2, 9, 10.6 all audited (CLEAN)
 - a_1(Delta_{1/2})=0 universally: Thm M4.1 in BB4 (composition → no 1st-order curvature counterterm)
 - BB3 composition-law landscape promoted to rcp-axiom-structure-analysis.md Part 7
+- OQ-FdV-3: HC proof written to BB3 (2026-02-23)
 
 ### Open mathematical questions (carry forward)
+- OQ-dS-2 INCOMPLETE: Weyl=0 in d=3 → |Riem|²=|Ric|² → a₂=0. Need 2nd agent for BB4
 - Bridge B: symplectic reduction G_log^Lambda (geometric, open)
 - Resurgence Q1: DDP connection formulas from (C) directly
 - Modular forms in Feynman integrals: OPEN anomaly
@@ -47,4 +48,5 @@
 - b-Laplacian in t=log r is constant-coefficient (universal in d)
 - Character != state on non-commutative C*-algebra (GNS requires state)
 - V_HD is coordinate-dependent (not intrinsic); spectral comparisons ARE intrinsic
-- Spurious self-message pattern: task_assignment from self = loop artifact; ignore
+- HC proof of V_HD = -|ρ|²: D^{-1} singularity at H=0 blocks direct computation; need RNC
+- The INSIGHT: -ΔT D = |ρ|² D is the algebraic heart of V_HD = -|ρ|²

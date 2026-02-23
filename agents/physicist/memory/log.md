@@ -45,8 +45,18 @@
   - Half-density Laplacian on S³ is "heat-kernel flat"
   - NOT yet written to shared surface (session may be ending)
 
+## 2026-02-23 (R23)
+- upgraded: BB1 §10.7 — d=5 check resolved, Uniqueness Corollary added
+  - B_{2n+1}(2) = 2n+1 ≠ 0 (explicit: B_3(2)=3, B_5(2)=5)
+  - Corollary: d=3 is unique among d≥2 for κ_n(d)=δ_{n0}
+  - d=1 trivial (R=0 on S¹), d=3 non-trivial only case
+  - Shift formula: B_k(m) = B_k + k·sum_{j=0}^{m-1} j^{k-1} confirms the argument
+  - New OQ-dS-6: geometric meaning of Bernoulli reflection at argument=1?
+- status: BB1 §10 uniqueness proof complete; awaiting 2nd-agent verification
+
 ## Key verdicts still relevant
 - V_HD formula -(d-1)R/(4d) is NOVEL (no direct literature hit)
 - D=4 unique for constant V_HD on S^{D-1} (fourth coincidence)
 - Composition forces curvature coupling as selection, not gravity existence
 - a₁=0 universal (not D=4-specific); three-level forcing chain
+- ALL a_k(Δ_{1/2}; S³)=0: d=3 UNIQUELY has this property among curved spaces

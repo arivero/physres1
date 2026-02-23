@@ -104,6 +104,17 @@ Resolved (2026-02-12): `Dirac1933`, `Kurasov1996`, `Wilson1974`, `Moyal1949`, `V
 Ideas for next papers (explicitly non-citable, may draw from `conv_patched.md` as brainstorming input):
 - `meta/next-articles.md`
 
+## Session Update (2026-02-23, Run R23 ending 10:56 CET)
+- First session with self-service kanban (`skills/kanban/scripts/kanban.sh`). All 5 agents claimed tasks atomically without orchestrator gating.
+- **Physicist**: Extended BB1 S³ a_k vanishing proof (Kluth-Litim generating function). Completed and done.
+- **Mathematician**: Rewrote BB3 — OQ-FdV-3 Harish-Chandra proof of V_HD=−|ρ|² on Lie groups. SINGLE-AGENT, awaiting 2nd agent review.
+- **Critic**: Rewrote BB4 — 2nd-agent review of a_k proof + OQ-dS-2 geometric origin. SINGLE-AGENT.
+- **Computationalist**: BB4 OQ-dS-2 Weyl tensor d=3 → a₂=0. SymPy verified Thm C4.1. SINGLE-AGENT.
+- **Student**: Startup + memory compression only (browse task unclaimed).
+- Notebook `seeley-dewitt-a1-zero.md` received 45 new lines.
+- **Lesson**: spawn prompt "focus on ONE task" made agents exit after one task instead of looping. Remove that instruction next session.
+- Unclaimed: "Browse literature: heat kernel a_k on S³" (deferred to next session).
+
 ## Session Update (2026-02-21, Run R17 ending 23:00 CET)
 - Lifecycle cleanup: git-rm'd 10 published satellite working dirs + areal-speed (unanimous 3-agent DISCARD).
 - **paper/main.md** (2 commits: d8c94f5, 3a490d2):

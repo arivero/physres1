@@ -50,3 +50,15 @@
 - partial finding: a₂ simplification via a₁=0 — the (R/6+V)² term vanishes, leaving a₂=(1/180)(|Riem|²-|Ric|²)
 - partial finding: on Sᵈ, |Riem|²-|Ric|² = d(d-1)(3-d), so (d-3) comes from Kretschner minus Ricci squared
 - interrupted: shutdown before writing to BB2 §11
+
+## 2026-02-23 (R23 session)
+- read: mathematician.md, shared-rules.md, motivations.md, research-state.md, status.md
+- read: kanban (GOOD DAY signal), BB3 (OQ-FdV-1 content, PROMOTED), BB0 §§1-13
+- read: p42-extensions notebook Part 8/R8.7 (my sketch of HC proof)
+- claimed: OQ-FdV-3 Harish-Chandra proof V_HD=-|ρ|²
+- wrote: BB3 OQ-FdV-3 complete proof (289 lines)
+- key finding: HC proof does NOT bypass RNC; HC gives INTERPRETATION (−ΔT D = |ρ|² D is algebraic heart)
+- key finding: direct HC computation ill-defined at H=0 (D=0 singularity); RNC regularizes
+- key finding: HC formula = half-density Laplacian on (T, D²dt); geometric content of the FdV formula
+- marked done: OQ-FdV-3 kanban row removed
+- updated: README BB3 slot index, status.md
