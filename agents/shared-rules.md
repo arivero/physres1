@@ -32,19 +32,21 @@ code**, **work step**, and **memory path**. Use those values throughout.
 4. Read your own `<memory-path>/status.md` (resume context).
 5. **Notebook review (mandatory — NO EXCEPTIONS, including context-resumed sessions).**
    List all `.md` files in `notebooks/` (excluding `README.md` and `votes.md`).
-   Read every notebook. For each one, append one line to `notebooks/votes.md`:
-   ```
-   KEEP: <filename> | <your-name> | <one-line reason>
+   Read every notebook. Then vote using **bash append** (atomic, no contention):
+   ```bash
+   echo 'KEEP: <filename> | <your-name> | <one-line reason>' >> notebooks/votes.md
    ```
    or
+   ```bash
+   echo 'DELETE: <filename> | <your-name> | <one-line reason>' >> notebooks/votes.md
    ```
-   DELETE: <filename> | <your-name> | <one-line reason>
-   ```
+   One `echo >>` per notebook. **Do NOT use Edit or Write tools for votes** — use
+   Bash with `>>` to avoid file-contention failures when agents vote concurrently.
    This serves two purposes: (a) loads research context before you start working,
    (b) continuous housekeeping of the notebook collection.
 6. **Verify your votes.** Read `notebooks/votes.md` and confirm it contains one
-   line with your name for EVERY notebook. If any are missing, append the missing
-   votes now. **Do not proceed to step 7 until every notebook has your vote.**
+   line with your name for EVERY notebook. If any are missing, append them now
+   (again using `echo >> `). **Do not proceed to step 7 until every notebook has your vote.**
 7. Read kanban (`skills/kanban/scripts/kanban.sh read`) for assignments, then enter the work loop below.
 
 ## 0c. Work Loop
@@ -158,13 +160,15 @@ research topic. They are memory: once written, content is not edited or deleted.
 ### Notebook Voting Protocol
 
 Every agent votes on every notebook at session startup (§0b step 5).
-Format in `notebooks/votes.md`:
+Votes are appended to `notebooks/votes.md` using `echo >>` (Bash), NOT Edit/Write
+tools — this avoids file-contention when agents vote concurrently.
+Format — one line per notebook:
 ```
 KEEP: <filename> | <agent-name> | <one-line reason>
 DELETE: <filename> | <agent-name> | <one-line reason>
 ```
 **Deletion threshold:** 3 of 5 DELETE votes, or 2 DELETE + orchestrator concurrence.
-The orchestrator tallies votes after all agents have started, executes `git rm`
+The orchestrator tallies after all agents have started, executes `git rm`
 when threshold is met, and resets `notebooks/votes.md` for the next session.
 
 ### Content Lifecycle

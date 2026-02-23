@@ -1,6 +1,7 @@
 # Notebook Votes
 
 Every agent reviews all notebooks at session startup and votes below.
+Append using `echo '...' >> notebooks/votes.md` (Bash), NOT Edit/Write tools.
 See `agents/shared-rules.md` §0b steps 5–6 and §2 for the protocol.
 
 Format:

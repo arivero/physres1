@@ -42,8 +42,8 @@ Git history records who wrote what and when. The notebook itself is for science.
 ## Voting and Discard
 
 At session startup, every agent reads all notebooks and votes KEEP or DELETE
-for each one in `notebooks/votes.md`. This loads research context and keeps the
-collection trimmed. See `agents/shared-rules.md` §0b step 5.
+for each one in `notebooks/votes.md` using `echo >>` (Bash append, not
+Edit/Write — avoids file contention). See `agents/shared-rules.md` §0b steps 5–6.
 
 **Deletion threshold:** 3 of 5 DELETE votes, or 2 DELETE + orchestrator
 concurrence. The orchestrator executes `git rm` after tallying.
