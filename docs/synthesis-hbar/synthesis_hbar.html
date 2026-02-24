@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Origin of Planck's Constant — A Unified View</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=JetBrains+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a; --paper: #faf8f4; --accent: #8b2500; --accent-light: #c44d2a;
+    --muted: #6b6560; --rule: #d4cfc7; --highlight: #f0ebe3;
+    --sidebar-bg: #f5f1ea; --max-w: 760px;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body { font-family: 'Crimson Pro', Georgia, serif; color: var(--ink); background: var(--paper); line-height: 1.72; -webkit-font-smoothing: antialiased; }
+  header { max-width: var(--max-w); margin: 0 auto; padding: 5rem 2rem 2.5rem; border-bottom: 2px solid var(--ink); }
+  header .kicker { font-family: 'Source Sans 3', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+  header h1 { font-size: 2.6rem; font-weight: 300; line-height: 1.18; letter-spacing: -0.02em; margin-bottom: 0.6rem; }
+  header h1 em { font-weight: 500; font-style: normal; color: var(--accent); }
+  header .subtitle { font-size: 1.15rem; font-weight: 300; color: var(--muted); font-style: italic; max-width: 600px; line-height: 1.55; }
+  header .meta { margin-top: 1.4rem; font-family: 'Source Sans 3', sans-serif; font-size: 0.78rem; color: var(--muted); }
+  main { max-width: var(--max-w); margin: 0 auto; padding: 0 2rem 6rem; }
+  section { margin-top: 3.5rem; }
+  section + section { border-top: 1px solid var(--rule); padding-top: 3rem; }
+  h2 { font-family: 'Crimson Pro', serif; font-size: 1.55rem; font-weight: 600; margin-bottom: 1.2rem; color: var(--ink); letter-spacing: -0.01em; }
+  h2 .num { font-family: 'Source Sans 3', sans-serif; font-weight: 700; font-size: 0.82rem; color: var(--accent); letter-spacing: 0.08em; display: block; margin-bottom: 0.3rem; }
+  h3 { font-size: 1.12rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.7rem; color: var(--ink); }
+  p { margin-bottom: 1rem; }
+  .theorem { background: var(--highlight); border-left: 3px solid var(--accent); padding: 1.3rem 1.5rem; margin: 1.8rem 0; border-radius: 0 6px 6px 0; }
+  .theorem .label { font-family: 'Source Sans 3', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+  .theorem p:last-child { margin-bottom: 0; }
+  .insight { background: #eef3ee; border-left: 3px solid #3a6b35; padding: 1.3rem 1.5rem; margin: 1.8rem 0; border-radius: 0 6px 6px 0; }
+  .insight .label { font-family: 'Source Sans 3', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #3a6b35; margin-bottom: 0.6rem; }
+  .insight p:last-child { margin-bottom: 0; }
+  .failure { background: #f5eaea; border-left: 3px solid #922; padding: 1.3rem 1.5rem; margin: 1.8rem 0; border-radius: 0 6px 6px 0; }
+  .failure .label { font-family: 'Source Sans 3', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #922; margin-bottom: 0.6rem; }
+  .failure p:last-child { margin-bottom: 0; }
+  .hierarchy { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; margin: 2rem 0; }
+  .hierarchy .col { background: var(--paper); padding: 1.2rem 1rem; text-align: center; }
+  .hierarchy .col.active { background: var(--highlight); }
+  .hierarchy .col-head { font-family: 'Source Sans 3', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+  .hierarchy .col-body { font-size: 0.88rem; line-height: 1.55; }
+  .flow-strip { display: flex; align-items: stretch; gap: 0; margin: 2.2rem 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--rule); }
+  .flow-step { flex: 1; padding: 1rem 0.8rem; text-align: center; position: relative; background: var(--paper); font-size: 0.84rem; line-height: 1.45; }
+  .flow-step:not(:last-child)::after { content: '→'; position: absolute; right: -0.55rem; top: 50%; transform: translateY(-50%); font-size: 1.1rem; color: var(--accent); z-index: 1; background: var(--paper); width: 1.1rem; text-align: center; }
+  .flow-step .step-num { font-family: 'Source Sans 3', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.3rem; }
+  .flow-step strong { font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+  thead th { font-family: 'Source Sans 3', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); text-align: left; padding: 0.5rem 0.7rem; border-bottom: 2px solid var(--ink); }
+  tbody td { padding: 0.55rem 0.7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  .epigraph { font-style: italic; font-size: 1.05rem; color: var(--muted); border-left: 2px solid var(--rule); padding-left: 1.3rem; margin: 2rem 0 2.5rem; max-width: 560px; }
+  nav.toc { margin-top: 2.5rem; padding: 1.5rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  nav.toc .toc-title { font-family: 'Source Sans 3', sans-serif; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem; }
+  nav.toc ol { list-style: none; counter-reset: toc-counter; }
+  nav.toc li { counter-increment: toc-counter; margin-bottom: 0.35rem; }
+  nav.toc li::before { content: counter(toc-counter) "."; font-family: 'Source Sans 3', sans-serif; font-size: 0.78rem; font-weight: 600; color: var(--accent); margin-right: 0.5rem; }
+  nav.toc a { color: var(--ink); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+  nav.toc a:hover { color: var(--accent); }
+  .source { font-family: 'Source Sans 3', sans-serif; font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; }
+  mjx-container { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+  @media (max-width: 640px) {
+    html { font-size: 16px; } header { padding: 3rem 1.2rem 2rem; } header h1 { font-size: 1.9rem; }
+    main { padding: 0 1.2rem 4rem; } .hierarchy { grid-template-columns: 1fr; }
+    .flow-strip { flex-direction: column; }
+    .flow-step:not(:last-child)::after { content: '↓'; right: 50%; top: auto; bottom: -0.55rem; transform: translateX(50%); }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">Synthesis Note</div>
+  <h1>The Origin of <em>ℏ</em>: Composition,<br>Regularity, and Renormalization</h1>
+  <p class="subtitle">A unified reading of three companion notes on how Planck's constant emerges from the requirement that physical laws survive refinement.</p>
+  <p class="meta">Alejandro Rivero · Compiled 2026 · Based on <i>Refinement Compatibility</i>, <i>The Lipschitz Boundary</i>, <i>The RG-Lipschitz Theorem</i>, and <i>Trees-Cornerstone</i></p>
+</header>
+<main>
+<nav class="toc">
+  <div class="toc-title">Contents</div>
+  <ol>
+    <li><a href="#s1">The Central Claim</a></li>
+    <li><a href="#s2">Level I — Composition Forces ℏ</a></li>
+    <li><a href="#s3">Level II — ℏ as a Lipschitz Regularizer</a></li>
+    <li><a href="#s4">Level III — When Even ℏ Is Not Enough</a></li>
+    <li><a href="#s5">The Three-Level Hierarchy</a></li>
+    <li><a href="#s6">The Classical Limit as Catastrophe</a></li>
+    <li><a href="#s7">Synthesis: The Chain of Forced Completions</a></li>
+    <li><a href="#s8">The Butcher–Hopf Algebra: One Operation at Every Level</a></li>
+    <li><a href="#s9">Foundational Implications: Measurement as Semigroup Severance</a></li>
+    <li><a href="#s10">Conclusion: Differentiability Forces ℏ</a></li>
+    <li><a href="#refs">References</a></li>
+  </ol>
+</nav>
+
+<section id="s1">
+  <h2><span class="num">I</span>The Central Claim</h2>
+  <p class="epigraph">"Planck's constant is not an input to physics. It is the structural constant forced by the requirement that composed predictions remain well-defined."</p>
+  <p>Three companion notes — on refinement compatibility (RCP), the Lipschitz boundary, and the RG-Lipschitz theorem — converge on a single thesis. Planck's constant $\hbar$ is not a free parameter imported from experiment: it is <em>forced into existence</em> by the demand that physical laws survive controlled changes of partition, representation, and scale. The three arguments form a chain of increasing scope, not three independent derivations: composition forces $\hbar$; regularity analysis characterizes the singularity structure at $\hbar=0$; renormalization extends the framework beyond the Kato class where even $\hbar > 0$ is insufficient.</p>
+  <p>The RCP framework shows that the semigroup composition law for transition kernels has no consistent solution at $\hbar = 0$ or $\hbar = \infty$, forcing a finite, nonzero action-scale constant. The Lipschitz analysis — a regularity property <em>of the kernel produced by composition</em> — shows that $\hbar > 0$ converts singular, delta-supported classical "kernels" into Gaussian-regularized objects with finite spatial Lipschitz bounds, and that the classical limit $\hbar \to 0$ is a <em>Lipschitz catastrophe</em>. The RG-Lipschitz synthesis extends the hierarchy one level further, placing the Lipschitz condition, the Kato class, and full renormalizability into a single chain that tracks how far beyond the classical domain each level of structural completion can reach.</p>
+</section>
+
+<section id="s2">
+  <h2><span class="num">II</span>Level I — Composition Forces $\hbar$</h2>
+  <p>The most dramatic origin story comes from the partition-compatibility channel of the RCP framework. Consider action-based dynamics on $\mathbb{R}^d$ with a mass parameter $m$, and let $\{K(x,y;t)\}_{t>0}$ be a family of transition kernels. Impose a single physical requirement:</p>
+  <div class="theorem">
+    <div class="label">Axiom — Composition (A1)</div>
+    <p>$$\int K(x,z;t_1)\,K(z,y;t_2)\,d^dz \;=\; K(x,y;\,t_1+t_2).$$</p>
+    <p>Refined and coarse predictions must agree: composing $N$ short-time steps reproduces a single long-time step.</p>
+  </div>
+  <p>By the Hille–Yosida theorem [HY48], (A1) plus strong continuity forces the existence of an infinitesimal generator — the Hamiltonian is produced, not postulated.</p>
+  <div class="theorem">
+    <div class="label">Proposition — ℏ-Necessity (P4.2)</div>
+    <p><em>Assumptions:</em> (A1) composition; strong continuity $K_t \to \delta$ as $t\to 0^+$; translation invariance on $\mathbb{R}^d$; action-based Lagrangian structure $L(q,\dot{q})$.</p>
+    <p>From these the following are forced: (1) Dimensional constraint $[K] = L^{-d}$. (2) The normalization exponent is $d/2$: $K$ scales as $t^{-d/2}$. (3) The exponential weight has the form $K \propto \exp(iS/\kappa)$ for a structural constant $\kappa$ with dimensions of action. (4) Both limiting cases fail: $\kappa \to 0$ produces oscillatory divergence; $\kappa \to \infty$ trivializes the weight.</p>
+    <p>With the additional assumption of $C^2$ kernel regularity: (5) Non-Gaussian stable processes ($\alpha \neq 2$) are excluded by the Lévy–Khintchine classification of convolution semigroups. (6) No discrete time-scale is constructible from $\{m, \hbar\}$ alone.</p>
+    <p>The constant $\kappa$ is identified with $\hbar$ by dimensional analysis. <strong>Composition is the primary structural axiom</strong>, though the full result requires the regularity and symmetry assumptions listed above.</p>
+  </div>
+  <p>The probabilistic version is Kolmogorov's 1931 theorem [Ko31]: the Chapman–Kolmogorov equation with continuity forces the generator to be a second-order differential operator (for diffusion) or an integral operator (for jumps).</p>
+  <p>The short-time kernel is forced into the Gaussian form $K(x,y;\varepsilon) \sim \left(\frac{m}{2\pi\hbar\varepsilon}\right)^{d/2} \exp\!\left(\frac{iS_{\mathrm{cl}}}{\hbar}\right)$, and this form is the <em>unique</em> family that closes under the semigroup composition integral.</p>
+</section>
+
+<section id="s3">
+  <h2><span class="num">III</span>Level II — $\hbar$ as a Lipschitz Regularizer</h2>
+  <p>The Lipschitz-boundary note analyzes a regularity property of the kernel produced by composition. The key insight: the Lipschitz condition on the force field is the <em>precise mathematical boundary</em> between where classical refinement converges and where it fails.</p>
+  <h3>Classical mechanics lives inside the Lipschitz boundary</h3>
+  <p>The Picard–Lindelöf theorem guarantees existence and uniqueness of solutions to $\dot{y} = f(y)$ when $f$ is Lipschitz continuous with constant $L$, with Gronwall's inequality bounding trajectory separation: $|\Phi_t(x_1) - \Phi_t(x_2)| \le e^{Lt}|x_1 - x_2|$. Without the Lipschitz bound, uniqueness fails — Peano's $\dot{y} = y^{2/3}$ [Pe1890] is the standard counterexample.</p>
+  <h3>The heat kernel's Lipschitz constant</h3>
+  <p>The Euclidean free propagator in $d$ dimensions has spatial Lipschitz constant:</p>
+  <div class="theorem">
+    <div class="label">Lipschitz scaling</div>
+    <p>$$\mathrm{Lip}_x(K_t) \;\sim\; \left(\frac{m}{\hbar\, t}\right)^{\!d/2+1}.$$</p>
+    <p>This is <strong>finite for all $\hbar > 0$, $t > 0$</strong>, and diverges in both the classical limit $\hbar \to 0$ and the identity limit $t \to 0^+$.</p>
+  </div>
+  <p>At $\hbar = 0$, the "kernel" collapses to $\delta^{(d)}(x - x_{\mathrm{cl}}(y,T))$ whose Lipschitz constant is infinite. The parameter $\hbar > 0$ converts delta-supported classical kernels into Gaussian-regularized kernels with finite Lipschitz bounds.</p>
+  <h3>Composition improves regularity</h3>
+  <p>A striking fact: semigroup composition is a <em>smoothing</em> operation. For any partition $0 = t_0 &lt; t_1 &lt; \cdots &lt; t_N = T$, the composed kernel's Lipschitz constant equals that of the single kernel at time $T$, regardless of the partition. Each individual short-time slice has Lipschitz constant $\sim (\hbar\,\Delta t_k)^{-(d/2+1)}$, far larger than the composed whole. Composition automatically cancels the excess singularity — but only for $\hbar > 0$.</p>
+  <h3>The paths themselves are not Lipschitz</h3>
+  <p>The path integral is supported on paths that are almost surely Hölder-$\tfrac{1}{2}$ but <em>not</em> Lipschitz — their quadratic variation is $[X]_T = \hbar T/m > 0$. The <strong>Cameron–Martin theorem</strong> makes this precise: the set of classical (smooth, Lipschitz) paths has <em>Wiener measure zero</em>. The classical limit $\hbar \to 0$ is a concentration phenomenon — the measure collapses toward the classical path — not a restriction to a dominant subset.</p>
+</section>
+
+<section id="s4">
+  <h2><span class="num">IV</span>Level III — When Even $\hbar$ Is Not Enough</h2>
+  <p>The RG-Lipschitz note extends the story one level further. Even with $\hbar > 0$ providing Lipschitz regularization, there exist potentials singular enough to overwhelm it. The natural domain where $\hbar$-regularization suffices is the <em>Kato class</em> $\mathcal{K}_d$.</p>
+  <p>The paradigmatic example: the Coulomb potential $V(r) = -Ze^2/r$ in $d = 3$. Its gradient diverges as $r^{-2}$ at the origin, so the force is not Lipschitz — classical mechanics breaks down at head-on collision. But $V \in \mathcal{K}_3$: the Kato–Rellich theorem guarantees a unique self-adjoint Hamiltonian. The hydrogen atom is well-posed quantum-mechanically precisely because $\hbar$ regularizes the Lipschitz singularity.</p>
+  <p>But the 2D contact interaction $H = -(\hbar^2/2m)\Delta + g\,\delta^{(2)}(x)$ is <em>not</em> in $\mathcal{K}_2$. The 1-loop integral $\int_{|p|\le\Lambda} d^2p/(p^2+M^2) = (1/2\pi)\log((\Lambda^2+M^2)/M^2)$ diverges logarithmically, and even $\hbar$-regularization cannot produce a finite theory. Renormalization enters as a third level of structural completion: the running coupling $g(\Lambda) = g_0/(1 - g_0\log(\Lambda/\Lambda_0)/(2\pi))$ absorbs the divergence, yielding $\beta(g_R) = g_R^2/(2\pi)$.</p>
+</section>
+
+<section id="s5">
+  <h2><span class="num">V</span>The Three-Level Hierarchy</h2>
+  <div class="hierarchy">
+    <div class="col"><div class="col-head">Level 0 — Classical</div><div class="col-body">$\nabla V$ Lipschitz<br>Picard–Lindelöf applies<br>$L_0 &lt; \infty$<br><em>No $\hbar$ needed</em></div></div>
+    <div class="col active"><div class="col-head">Level 1 — Quantum</div><div class="col-body">$V \in \mathcal{K}_d$, $\nabla V$ not Lipschitz<br>Kato–Rellich applies<br>$E_0/\hbar &lt; \infty$<br><em>$\hbar > 0$ suffices</em></div></div>
+    <div class="col"><div class="col-head">Level 2 — Renormalizable</div><div class="col-body">$V \notin \mathcal{K}_d$<br>RG flow required<br>$\beta(g_R)$ exists<br><em>Scale compatibility (A4)</em></div></div>
+  </div>
+  <p>The hierarchy is strict: $\{\nabla V \text{ Lipschitz}\} \subsetneq \{V \in \mathcal{K}_d\} \subsetneq \{\text{renormalizable}\}.$ The first inclusion is witnessed by the Coulomb potential ($1/r \in \mathcal{K}_3$ but $\nabla(1/r)$ is not Lipschitz). The second inclusion requires that every Kato-class potential be trivially renormalizable (no counterterms needed), which follows from the Kato–Rellich theorem guaranteeing self-adjoint $H$ without renormalization [RS75].</p>
+  <table>
+    <thead><tr><th>Criterion</th><th>Mechanism</th><th>RCP Channel</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>$\nabla V$ Lipschitz</td><td>Picard–Lindelöf / Gronwall</td><td>Partition (A1)</td><td>Harmonic oscillator</td></tr>
+      <tr><td>$V \in \mathcal{K}_d$</td><td>Kato–Rellich / Feynman–Kac</td><td>Partition + Representation (A1 + A3)</td><td>Hydrogen atom ($1/r$)</td></tr>
+      <tr><td>$V \notin \mathcal{K}_d$, renormalizable</td><td>RG flow / dimensional transmutation</td><td>Partition + Scale (A1 + A4)</td><td>2D delta interaction</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="s6">
+  <h2><span class="num">VI</span>The Classical Limit as Catastrophe</h2>
+  <div class="failure">
+    <div class="label">Failures of $\hbar \to 0$</div>
+    <p><strong>Composition failure (P4.2):</strong> The kernel collapses to $\delta(x - x_{\mathrm{cl}})$, which cannot serve as an $L^1$ convolution factor. The semigroup composition integral becomes ill-defined.</p>
+    <p><strong>Lipschitz catastrophe:</strong> The kernel Lipschitz constant $\sim (m/\hbar t)^{d/2+1} \to \infty$. Regularity degenerates.</p>
+    <p><strong>Measure collapse:</strong> The quadratic variation $[X]_T = \hbar T/m \to 0$. The path-integral measure concentrates on classical trajectories — which have Wiener measure zero.</p>
+    <p><strong>Identity-limit failure:</strong> At $\hbar = 0$ the "kernel" is a delta function for all $t > 0$, so the identity limit $K \to \delta$ as $t \to 0^+$ is trivially satisfied — but composition fails, making the identity limit vacuous.</p>
+  </div>
+  <p><strong>The precise nature of the singularity.</strong> The $\hbar\to 0$ limit is <em>essentially singular</em>: the WKB expansion $K \sim \sum a_n\,\hbar^n$ is asymptotic but not convergent, with optimal truncation errors of order $\sim\exp(-S/\hbar)$, and the classical limit is non-injective — distinct quantum systems can share the same asymptotic expansion [Po1886]. The Stokes phenomenon further implies that exponentially small contributions switch on discontinuously at anti-Stokes rays in the complex $\hbar$-plane.</p>
+  <div class="insight">
+    <div class="label">Key Insight</div>
+    <p>Classical mechanics is not the base theory from which quantum mechanics is a perturbation. Quantum mechanics is the <strong>minimal closure</strong> of partition-compatible, action-based dynamics. The classical limit is a failure mode, not a foundation.</p>
+  </div>
+</section>
+
+<section id="s7">
+  <h2><span class="num">VII</span>Synthesis: The Chain of Forced Completions</h2>
+  <div class="flow-strip">
+    <div class="flow-step"><div class="step-num">Stage 1</div><strong>Discrete mechanics</strong><br>Newton's polygons<br><span class="source">Converges via Picard–Lindelöf where $\nabla V$ is Lipschitz</span></div>
+    <div class="flow-step"><div class="step-num">Stage 2</div><strong>Calculus</strong><br>$\Delta t \to 0$ limits<br><span class="source">Completes discrete mechanics; Euler–Lagrange variational principle</span></div>
+    <div class="flow-step"><div class="step-num">Stage 3</div><strong>Quantum mechanics</strong><br>$\hbar > 0$<br><span class="source">Kernel composition forces $\hbar$; extends domain to $\mathcal{K}_d$</span></div>
+    <div class="flow-step"><div class="step-num">Stage 4</div><strong>Renormalization</strong><br>$\beta(g_R)$ flow<br><span class="source">Extends domain beyond $\mathcal{K}_d$; absorbs residual divergences</span></div>
+  </div>
+  <div class="insight">
+    <div class="label">Three Levels of the ℏ Argument</div>
+    <p><strong>Level 1 — Algebraic (composition):</strong> The semigroup composition law for transition kernels admits no consistent solution at $\kappa = 0$ or $\kappa = \infty$. A finite, nonzero constant $\kappa = \hbar$ with dimensions of action is forced.</p>
+    <p><strong>Level 2 — Analytic (regularity):</strong> The kernel produced by composition has finite spatial Lipschitz constant precisely when $\hbar > 0$. This is a regularity property of the Level 1 output, not an independent derivation.</p>
+    <p><strong>Level 3 — Scale-theoretic (renormalization):</strong> For potentials beyond the Kato class, even $\hbar > 0$ is insufficient. The RG flow provides a further structural completion, absorbing the residual divergences that the Lipschitz regularization cannot.</p>
+  </div>
+</section>
+
+<section id="s8">
+  <h2><span class="num">VIII</span>The Butcher–Hopf Algebra: One Operation at Every Level</h2>
+  <p>A fourth companion note (<i>Trees-Cornerstone</i>) identifies the algebraic backbone: the Connes–Kreimer Hopf algebra $\mathcal{H}_{\mathrm{CK}}$ of rooted trees — the same algebra that John Butcher discovered in 1972 to organize numerical ODE methods.</p>
+  <h3>The derivative is a single counterterm subtraction</h3>
+  $$f'(x) \;=\; \lim_{\varepsilon\to 0} \underbrace{\frac{f(x+\varepsilon)}{\varepsilon}}_{\text{divergent}} \;-\;\underbrace{\frac{f(x)}{\varepsilon}}_{\text{counterterm}}$$
+  <p>Each application of the derivative is one counterterm subtraction. This is the atomic unit of the entire algebraic story.</p>
+  <h3>Trees as organized subtractions</h3>
+  <div class="theorem">
+    <div class="label">Tree–Subtraction Correspondence</div>
+    <p>For a rooted tree $\tau$ with $|\tau|$ vertices, the associated <strong>elementary differential</strong> $F(\tau)(y)$ is built recursively: if the root has children $\tau_1,\ldots,\tau_k$, then $F(\tau)(y) = f^{(k)}(y)\!\big[F(\tau_1)(y),\ldots,F(\tau_k)(y)\big]$. The total number of subtractions in tree $\tau$ equals the number of edges $|\tau|-1$.</p>
+    <p><strong>Lipschitz link:</strong> the tree-indexed bound is $\|F(\tau)(y)\| \le L_0^{\,|\tau|-1}\!\cdot\!\|f\|_\infty$, where $L_0 = \|f'\|_\infty$ is the Lipschitz constant.</p>
+  </div>
+  <h3>Characters and the exact flow</h3>
+  <p>A <strong>character</strong> of $\mathcal{H}_{\mathrm{CK}}$ is an algebra map $\phi\!:\mathcal{H}_{\mathrm{CK}}\to\mathbb{R}$. The exact flow defines the character $\phi_{\mathrm{exact}}(\tau) = 1/\sigma(\tau)$:</p>
+  $$\Phi_h(y) = y + \sum_\tau h^{|\tau|}\,\frac{1}{\sigma(\tau)}\,F(\tau)(y).$$
+  <h3>Composition is the Hopf product</h3>
+  $$(\phi \star \psi)(\tau) = \sum_{(\tau)} \phi(\tau_{(1)})\,\psi(\tau_{(2)})$$
+  <div class="insight">
+    <div class="label">Brouder's Theorem [Br00]</div>
+    <p>The Butcher group of numerical analysis and the Connes–Kreimer renormalization group of perturbative QFT are isomorphic as groups of characters of the same Hopf algebra $\mathcal{H}_{\mathrm{CK}}$ [Br00, CK00].</p>
+    <p><strong>In ODE language:</strong> the coproduct factors composite derivative patterns into inner and outer parts (Butcher order conditions).</p>
+    <p><strong>In QFT language:</strong> the same coproduct factors nested divergences in Feynman diagrams into subdivergences and residues (BPHZ forest formula, counterterms).</p>
+  </div>
+  <h3>Why $\hbar$ enters: from one character to all characters</h3>
+  <p>Classically, only one character $\phi_{\mathrm{exact}}$ contributes. But composition forces smooth kernels, which require a weighted sum over all paths $K(x,y;t) \sim \int_{\text{paths}} \exp(iS[\text{path}]/\hbar)$. In the tree language, this is the passage from <em>one character</em> to a <em>measure over characters</em> weighted by $e^{iS/\hbar}$. As $\hbar\to 0$, stationary phase collapses it back onto $\phi_{\mathrm{exact}}$ alone.</p>
+  <h3>Renormalization uses the same coproduct</h3>
+  <p>When the sum over characters diverges — as it must beyond the Kato class — <em>renormalization</em> is the Birkhoff decomposition $\phi = \phi_-^{-1}\star\phi_+$ in the Butcher group. The divergent part $\phi_-$ (encoding subdivergences) is extracted using the coproduct $\Delta$. The renormalized character $\phi_+$ is finite.</p>
+  <div class="insight">
+    <div class="label">Interpretive Principle — The Cornerstone Identification</div>
+    <p>The derivative (one counterterm subtraction), quantization (extension from one character to all characters), and renormalization (Birkhoff decomposition for divergent sums) share the same algebraic operation — counterterm subtraction organized by rooted trees — applied at increasing levels of compositional complexity. This is an organizing analogy, not a theorem; making it precise requires identifying the exact functorial relationship between the three settings.</p>
+  </div>
+  <h3>The tree hierarchy mirrors the regularity hierarchy</h3>
+  <div class="hierarchy">
+    <div class="col"><div class="col-head">Level 1 — Butcher trees</div><div class="col-body">Smooth ODE<br>Vertices = smooth derivatives<br>Characters of $\mathcal{H}_{\mathrm{CK}}$<br><span style="color:var(--muted)">Butcher 1972</span></div></div>
+    <div class="col active"><div class="col-head">Level 2 — Colored trees</div><div class="col-body">Multi-species QFT<br>Colored vertices = field types<br>Non-commutative Hopf algebra<br><span style="color:var(--muted)">Brouder–Frabetti 2000</span></div></div>
+    <div class="col"><div class="col-head">Level 3 — Decorated trees</div><div class="col-body">Singular SPDE / constructive QFT<br>Decorated vertices = distributional operations<br>Regularity structures<br><span style="color:var(--muted)">Hairer 2014, Bruned–Hairer–Zambotti 2019</span></div></div>
+  </div>
+  <p><strong>Honest gap.</strong> The path integral is <em>not</em> literally a sum over B-series characters. A generic Feynman path is Hölder-$\frac{1}{2}$, not $C^\infty$ — it has no B-series expansion. The tree-algebraic description applies to the <em>perturbative</em> expansion of the propagator, not to individual paths. Non-perturbative content (tunneling, instantons, resurgence) goes beyond the tree algebra.</p>
+</section>
+
+<section id="s9">
+  <h2><span class="num">IX</span>Foundational Implications: Measurement as Semigroup Severance</h2>
+  <h3>What composition forces: the full arena</h3>
+  <p>The wavefunction is a derived object: given the kernel $K(x,y;t)$ forced by composition, $\psi(x,t) = \int K(x,y;t)\,\psi_0(y)\,d^dy$. Interference is automatic once $\hbar > 0$ forces complex amplitudes: $|K(x,y;t_1+t_2)|^2 \neq \int |K(x,z;t_1)|^2\,|K(z,y;t_2)|^2\,d^dz$. No superposition postulate is needed — it is a theorem of the composition law.</p>
+  <p><strong>Gleason's theorem</strong> [Gl57]: for Hilbert spaces of dimension $\ge 3$, the <em>only</em> frame function (countably additive probability measure on closed subspaces) is the Born rule $p(\phi) = |\langle\psi|\phi\rangle|^2$. The chain (noting that the $\dim\ge 3$ and frame-function assumptions are additional inputs, not derived from (A1)):</p>
+  <div class="flow-strip">
+    <div class="flow-step"><div class="step-num">Forced</div><strong>Composition (A1)</strong><br><span class="source">The single axiom</span></div>
+    <div class="flow-step"><div class="step-num">Forced</div><strong>Hilbert space + $H$</strong><br><span class="source">Hille–Yosida</span></div>
+    <div class="flow-step"><div class="step-num">Forced</div><strong>Complex amplitudes</strong><br><span class="source">$\exp(iS/\hbar)$, P4.2</span></div>
+    <div class="flow-step"><div class="step-num">Conditional</div><strong>Born rule</strong><br><span class="source">Gleason 1957 (dim ≥ 3)</span></div>
+  </div>
+  <h3>Measurement is a local classical limit</h3>
+  <p>A measurement is the assertion that some subsystem — the apparatus — is well-described by the classical limit. The apparatus has $S_{\mathrm{app}}/\hbar \gg 1$: the pointer does not tunnel between positions. Section VI proved that $\hbar \to 0$ is an <em>essential singularity</em>. Measurement is the act of <strong>approaching an essential singularity for a specific subsystem</strong>.</p>
+  <h3>Semigroup severance: an interpretive framing of collapse</h3>
+  <p>When the apparatus forces the local classical limit at the moment of measurement $t_m$, the transition kernel degenerates to $K(x,y;t) \xrightarrow{S_{\mathrm{app}}/\hbar\,\to\,\infty} \delta^{(d)}\!\big(x - x_{\mathrm{cl}}(y,t)\big)$. The delta function is not an $L^1$ function. The composition integral fails. In composition language, the semigroup timeline is <strong>severed</strong>.</p>
+  <div class="theorem">
+    <div class="label">Measurement as semigroup severance (interpretive)</div>
+    <p>Let $\{K_t\}_{t>0}$ be the smooth semigroup kernel forced by (A1) with $\hbar > 0$. A measurement at time $t_m$ by an apparatus with $S_{\mathrm{app}}/\hbar \gg 1$ is the event at which $K_{\mathrm{total}}(x,y;\,t_1+t_2) = \int K(x,z;t_1)\;\underbrace{K_{\mathrm{app}}(z,z';t_m)}_{\to\;\delta(z-z')}\;K(z',y;t_2)\,d^dz\,d^dz'$ loses its $L^1$ middle factor.</p>
+  </div>
+  <h3>Decoherence as asymptotic remainder</h3>
+  <p>For a macroscopic apparatus with $S_{\mathrm{app}} \gg \hbar$, the off-diagonal elements of the reduced density matrix decay as $\rho_{\mathrm{off}} \sim \exp\!\left(-S_{\mathrm{app}}/\hbar\right)$ — the non-perturbative terms invisible at every finite order of the classical expansion [JZ85, Zu03]. The pointer basis is selected by the physical apparatus, not by the quantum theory alone.</p>
+  <div class="insight">
+    <div class="label">Summary of forced foundational structure</div>
+    <p><strong>Forced by composition:</strong> Hilbert space, unitary evolution, complex amplitudes, interference, Born rule (via Gleason's theorem, assuming $\dim \ge 3$ and the frame-function axiom — these are not derived from (A1)).</p>
+    <p><strong>Interpretive consequences of semigroup severance:</strong> collapse as $L^1$ failure of the composition integral when the apparatus forces a local classical limit; decoherence as non-perturbative remainder of order $\exp(-S_{\mathrm{app}}/\hbar)$. These are reframings of the decoherence program in composition language, not new derivations.</p>
+    <p><strong>Open:</strong> which outcome $x_0$ occurs on a given run. This is the measurement problem proper, and composition does not resolve it.</p>
+  </div>
+</section>
+
+<section id="s10">
+  <h2><span class="num">X</span>Conclusion: Differentiability Forces $\hbar$</h2>
+  <p>The thesis: <em>demanding differentiability</em> of the propagation kernel <em>forces</em> $\hbar > 0$.</p>
+  <p>Smooth kernels are doubly exceptional: topologically (nowhere-differentiable functions are comeager in $C[0,1]$ by the Banach–Mazurkiewicz theorem [BM31]) and measure-theoretically (Wiener-typical paths are differentiable nowhere). The propagation kernel is smooth <em>in its arguments</em> precisely because $\hbar > 0$ Gaussian-regularizes the short-time limit; the paths it sums over are not smooth. The kernel's regularity is the output of composition, not a generic property of function spaces.</p>
+  <p>The kernel Lipschitz bound $\mathrm{Lip}_x(K_t) \sim \left(\frac{m}{\hbar\, t}\right)^{d/2+1}$ is finite precisely because $\hbar > 0$. One trades regularity of the kernel for roughness of the paths. <strong>Differentiability of the kernel forces non-differentiability of the paths.</strong></p>
+  <p>A final remark. The complex exponential $e^{iS/\hbar}$ is already present in the <strong>zero-dimensional</strong> static variational problem. The Dirac measure $\delta(f'(x))$ concentrated on critical points of $f$ admits the integral representation $\langle\delta_f \mid g\rangle = \iint \lim_{\varepsilon\to 0} e^{i(f(y)-f(x))/\varepsilon}\; g(x)\;dx\,dy$. The passage from this 0+0 problem to the 0+1 problem (dynamics) requires the regularized measure to converge, which forces a nonzero control parameter $h > 0$ [Ri98].</p>
+  <div class="flow-strip">
+    <div class="flow-step"><div class="step-num">0+0</div><strong>Statics</strong><br>$\delta(f'(x))$, $e^{iS/\varepsilon}$<br><span class="source">Complex exponential already present</span></div>
+    <div class="flow-step"><div class="step-num">0+1</div><strong>Dynamics</strong><br>$\{K_t\}$, $\hbar > 0$<br><span class="source">Forced by convergence of regularized measure</span></div>
+    <div class="flow-step"><div class="step-num">0+0</div><strong>Measurement</strong><br>$x_0$, Born rule<br><span class="source">Semigroup severed; return to static value</span></div>
+  </div>
+  <p>$\hbar > 0$ is the price of dynamics: the minimal structural constant that makes composed predictions well-defined. Measurement, in the semigroup-severance framing, is the return to statics — the local classical limit where composition fails.</p>
+</section>
+
+<section id="refs">
+  <h2><span class="num"></span>References</h2>
+  <table>
+    <tbody>
+      <tr><td>[BM31]</td><td>S. Banach, S. Mazurkiewicz. "Sur les fonctions non dérivables." <em>Studia Math.</em> 3 (1931), 92–94.</td></tr>
+      <tr><td>[Br00]</td><td>C. Brouder. "Runge–Kutta methods and renormalization." <em>Eur. Phys. J. C</em> 12 (2000), 521–534. arXiv:hep-th/9904014.</td></tr>
+      <tr><td>[BHZ19]</td><td>Y. Bruned, M. Hairer, L. Zambotti. "Algebraic renormalisation of regularity structures." <em>Invent. Math.</em> 215 (2019), 1039–1156.</td></tr>
+      <tr><td>[Bu72]</td><td>J. C. Butcher. "An algebraic theory of integration methods." <em>Math. Comp.</em> 26 (1972), 79–106.</td></tr>
+      <tr><td>[CK00]</td><td>A. Connes, D. Kreimer. "Renormalization in quantum field theory and the Riemann–Hilbert problem I." <em>Comm. Math. Phys.</em> 210 (2000), 249–273.</td></tr>
+      <tr><td>[Gl57]</td><td>A. M. Gleason. "Measures on the closed subspaces of a Hilbert space." <em>J. Math. Mech.</em> 6 (1957), 885–893.</td></tr>
+      <tr><td>[Ha14]</td><td>M. Hairer. "A theory of regularity structures." <em>Invent. Math.</em> 198 (2014), 269–504.</td></tr>
+      <tr><td>[HY48]</td><td>E. Hille, K. Yosida. "Functional Analysis and Semi-Groups." <em>AMS Colloquium Pub.</em> 31 (1948; rev. 1957).</td></tr>
+      <tr><td>[JZ85]</td><td>E. Joos, H. D. Zeh. "The emergence of classical properties through interaction with the environment." <em>Z. Phys. B</em> 59 (1985), 223–243.</td></tr>
+      <tr><td>[Ko31]</td><td>A. N. Kolmogorov. "Über die analytischen Methoden in der Wahrscheinlichkeitsrechnung." <em>Math. Ann.</em> 104 (1931), 415–458.</td></tr>
+      <tr><td>[Pe1890]</td><td>G. Peano. "Démonstration de l'intégrabilité des équations différentielles ordinaires." <em>Math. Ann.</em> 37 (1890), 182–228.</td></tr>
+      <tr><td>[Po1886]</td><td>H. Poincaré. "Sur les intégrales irrégulières des équations linéaires." <em>Acta Math.</em> 8 (1886), 295–344.</td></tr>
+      <tr><td>[Ri98]</td><td>A. Rivero. "Oscillatory integrals and the stationary-phase origin of the action principle." Preprint, 1998.</td></tr>
+      <tr><td>[RS75]</td><td>M. Reed, B. Simon. <em>Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness.</em> Academic Press, 1975.</td></tr>
+      <tr><td>[Zu03]</td><td>W. H. Zurek. "Decoherence, einselection, and the quantum origins of the classical." <em>Rev. Mod. Phys.</em> 75 (2003), 715–775.</td></tr>
+    </tbody>
+  </table>
+</section>
+</main>
+</body>
+</html>
