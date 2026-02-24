@@ -1,15 +1,7 @@
 name: Lean Proof Verification
 
 on:
-  push:
-    branches: [ main, claude/* ]
-    paths:
-      - 'lean/**'
-      - '.github/workflows/lean-check.yml'
-  pull_request:
-    branches: [ main ]
-    paths:
-      - 'lean/**'
+  workflow_dispatch:  # Manual trigger only via GitHub Actions UI
 
 jobs:
   lean-check:
