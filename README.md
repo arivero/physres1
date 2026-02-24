@@ -73,6 +73,7 @@ continued until the referee gave ACCEPT.
 | §9 Unified | 4 |
 | §10 Appendices | 3 |
 | Satellite: Measurement-Composition | 2 |
+| Satellite: Synthesis (Origin of ℏ) | 2 |
 
 Common issues caught by the referee: Lean status mismatches (sorry vs proved),
 hedging language, tautological formalizations, missing Lean table entries,
