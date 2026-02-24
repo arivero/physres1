@@ -120,6 +120,41 @@ for a unique density matrix $\rho \geq 0$ with $\mathrm{Tr}(\rho) = 1$.
 
 **Conclusion:** The Born rule is forced by A1, not independently postulated.
 
+## 9.2c SN.VI: Casorati-Weierstrass and the Pointer Basis
+
+**Casorati-Weierstrass theorem (SN.VI).**  In every punctured neighborhood of an
+essential singularity $z_0$, the function $f$ comes arbitrarily close to *every*
+complex value.  The limit depends entirely on the *direction of approach*.
+
+**Application to pointer basis:**  The map $\hbar \mapsto (\text{quantum theory at }\hbar)$
+has an essential singularity at $\hbar = 0$.  In the complex $\hbar$-plane, different
+directions of approach to $0$ cross different *Stokes lines* and produce different limits.
+
+**Choosing a measurement setup = choosing a direction of approach to the essential singularity.**
+
+The physical apparatus configuration determines a specific path through parameter space
+toward $\hbar = 0$.  Different apparatus configurations correspond to different rays in
+the complex $\hbar$-plane.  The Stokes phenomenon says these rays are *discontinuously
+different*: the asymptotic expansion changes form abruptly as a Stokes line is crossed.
+
+The pointer basis is not selected by the quantum theory alone — it is selected by *which*
+classical limit is taken, i.e. which direction of approach is used.  The non-uniqueness
+of the pointer basis is a direct consequence of the essential singularity at $\hbar = 0$.
+
+## 9.2d SN.VII: Four Failure Modes of $\hbar = 0$
+
+The synthesis note (§VI) identifies four distinct ways the classical limit fails:
+
+| Failure | Description | Mathematical statement |
+|---------|-------------|----------------------|
+| **Composition** | $\delta(x-x_\text{cl})$ is not $L^1$; composition integral undefined | $\delta \notin L^1(\mathbb{R}^d)$ |
+| **Lipschitz** | Kernel Lipschitz constant $\sim (\hbar t)^{-(d/2+1)} \to\infty$ | Regularity degenerates |
+| **Measure** | Quadratic variation $[X]_T = \hbar T/m \to 0$; measure concentrates on zero-measure set | Cameron-Martin |
+| **Identity limit** | $K = \delta$ for all $t > 0$; identity limit $K\to\delta$ as $t\to 0^+$ is vacuous | Composition fails anyway |
+
+All four are related: they are different manifestations of the single fact that
+$\hbar > 0$ is the compatibility parameter forced by the composition law.
+
 ## 9.3 D9.1: Ordering Differences Are $O(\hbar^2)$
 
 **Derivation D9.1.** The classical action $S[q]$ is independent of operator

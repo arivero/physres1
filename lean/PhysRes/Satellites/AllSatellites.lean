@@ -1,8 +1,9 @@
--- Satellite Papers: Formal proofs for all 13 published papers
+-- Satellite Papers: Formal proofs for all 13 published papers + synthesis note
 -- Cross-cutting applications of the RCP principle
 
 import PhysRes.MainPaper.Section06_Composition
 import PhysRes.Renormalization
+import PhysRes.Satellites.SynthesisNote
 
 namespace PhysRes.Satellites
 

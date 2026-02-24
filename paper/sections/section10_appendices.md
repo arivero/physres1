@@ -219,6 +219,31 @@ All three channels are governed by the same Hopf algebra $H_\text{RT}$.
 The RCP "commutative diagram" is the statement that these three character groups
 commute (i.e. the associated renormalization operations are compatible).
 
+### SN.VII: Birkhoff Decomposition and Renormalization
+
+Renormalization in the Connes-Kreimer framework is a *Birkhoff decomposition* in the
+Butcher group:
+$$\phi = \phi_-^{-1} \star \phi_+$$
+where:
+- $\phi$ = the (divergent) bare character (formal unrenormalized amplitude),
+- $\phi_-$ = the counterterm part encoding subdivergences (extracted by the coproduct $\Delta$),
+- $\phi_+$ = the renormalized character (finite, physical predictions).
+
+The decomposition is algorithmic:
+1. **Compute coproduct:** $\Delta(\tau) = \tau \otimes 1 + 1 \otimes \tau + \sum \tau' \otimes \tau''$ (sum over proper subforest cuts).
+2. **Extract counterterm:** $\phi_-(\tau) = -R\!\left[\phi(\tau) + \sum \phi_-(\tau')\phi(\tau'')\right]$ where $R$ is the renormalization map (projection onto the divergent part).
+3. **Renormalized amplitude:** $\phi_+(\tau) = (1-R)\!\left[\phi(\tau) + \sum \phi_-(\tau')\phi(\tau'')\right]$.
+
+**Relation to B-series:** Each rooted tree $\tau \in \mathcal{T}$ is a diagram; subdivergences are sub-trees removed at a node.  The counterterm for the derivative (D13.2) is the one-node tree $\tau = \bullet$: $\phi_-(\bullet) = -f(x)/\varepsilon$, $\phi_+(\bullet) = f'(x)$.
+
+**Colored and decorated trees.** Extensions of this formalism handle additional structure:
+- **Colored trees** (Brouder-Frabetti 2000): multi-component fields need trees with colored edges for different propagator types.
+- **Decorated trees** (Hairer 2014; Bruned-Hairer-Zambotti 2019): singular SPDEs need trees decorated by noise types and Taylor monomials; the renormalization group acts on the decoration.
+
+**Lean status.** `SN_VII_birkhoff_decomposition_one_loop` (in `SynthesisNote.lean`) states the decomposition for the one-loop case and the decorated-tree extension.  Status: 🔲 sorry (algebraic manipulation).
+
+Also update the status table (§10.8): `SN_VII_birkhoff_decomposition_one_loop` — 🔲 sorry.
+
 ### D13.3: Path Integral as Sum Over Characters
 
 In the Connes-Kreimer framework, a renormalized Feynman amplitude is a *character*
@@ -251,4 +276,5 @@ is the orbit of the bare action under this conjugation.
 | D13.1 rooted tree order/symmetry | `RootedTree.order`, `RootedTree.symmetryFactor` | ✅ defined |
 | D13.2 derivative as renormalized | `D13_2_derivative_as_renormalized` | ✅ proved |
 | P13.1 Brouder's theorem (witness) | `P13_1_brouder_theorem` | ✅ trivial witness |
+| SN.VII Birkhoff decomposition (1-loop) | `SN_VII_birkhoff_decomposition_one_loop` | 🔲 sorry |
 | D13.3 path integral as character | `D13_3_path_integral_as_character` | 🔲 sorry |

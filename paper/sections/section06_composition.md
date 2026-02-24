@@ -90,6 +90,28 @@ $$\boxed{\alpha = d/2}.$$
 This is a *structural* result: it does not require any input about the physics of
 the particle, only the semigroup closure condition.
 
+## 6.2a SN.I–II: Gronwall's Inequality and Peano's Counterexample
+
+**Gronwall's inequality (SN.I).**  For two solutions $\Phi_t(x_1)$, $\Phi_t(x_2)$ of
+$\dot y = f(y)$ with $\mathrm{Lip}(f) = L$:
+$$e^{-Lt}|x_1 - x_2| \leq |\Phi_t(x_1) - \Phi_t(x_2)| \leq e^{Lt}|x_1 - x_2|.$$
+
+The Lipschitz constant $L$ governs the *exponential divergence rate* of nearby
+trajectories.  For the gravitational force $f(r) = -GM/r^2$, the Lipschitz constant
+$|df/dr| = 2GM/r^3$ diverges at $r = 0$ — the Lipschitz condition breaks at collision.
+
+**Peano's counterexample (SN.II, 1890).**  The ODE $\dot y = y^{2/3}$, $y(0) = 0$
+has infinitely many solutions: both $y\equiv 0$ and $y(t) = ((t-c)/3)^3$ for any
+$c \geq 0$ satisfy the ODE.  The vector field $y^{2/3}$ is continuous but NOT Lipschitz
+at $y = 0$: its derivative $(2/3)y^{-1/3}\to\infty$.
+
+This is the 1D analog of what happens at a classical caustic: the kernel
+$\delta(x - x_\text{cl})$ attempts to track a unique trajectory, but there is no
+unique trajectory to track.
+
+**Lean proof of Peano.** `SN_II_peano_non_uniqueness` exhibits both $y_1 \equiv 0$ and
+$y_2(t) = (t/3)^3$ as explicit distinct solutions.  Status: 🔲 sorry (ODE chain rule).
+
 ## 6.3a D4.1b: Kernel Lipschitz Constant and the Price of Differentiability
 
 **Synthesis Note §III.**  The free-particle kernel $K_\text{free}(x,y,t)$ is Lipschitz
@@ -115,6 +137,22 @@ it arises from *averaging* over all paths.  The parameter $\hbar > 0$ controls t
 averaging: it is the regularization scale that converts the singular sum-over-paths into
 a smooth function.  Setting $\hbar = 0$ collapses the average to a single classical path,
 losing the Lipschitz property in the process.
+
+**Composition is a smoothing operation (SN.IV).**  A striking fact: for any partition
+$0 = t_0 < t_1 < \cdots < t_N = T$, the composed kernel's Lipschitz constant equals
+that of the single kernel $K_\text{free}(\cdot,\cdot,T)$, regardless of the partition.
+Each individual short-time factor has Lipschitz constant $\sim (\hbar\,\Delta t_k)^{-(d/2+1)}$,
+far larger than the composed whole.  Composition cancels the excess singularity — but only
+for $\hbar > 0$.  At $\hbar = 0$, composing delta functions yields delta functions, and
+the Lipschitz constant remains infinite at every stage.
+
+**Cameron-Martin theorem (SN.V-c).**  The path-integral measure is supported on paths with
+quadratic variation $[X]_T = \hbar T/m > 0$.  Any Lipschitz function has zero quadratic
+variation.  Therefore the set of classical (smooth, Lipschitz) paths has *Wiener measure zero*:
+$$\mathbb{P}(\text{path is Lipschitz}) = 0.$$
+The classical limit $\hbar\to 0$ is a *concentration* phenomenon, not a restriction to a
+dominant subset: the measure collapses toward the classical path, but never actually lives
+on Lipschitz paths for $\hbar > 0$.
 
 ## 6.4 P4.1: Exponential Form Forced
 
