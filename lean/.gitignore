@@ -1,0 +1,22 @@
+# Lake build artifacts
+.lake/
+build/
+lake-packages/
+*.olean
+
+# Temporary files
+*.tmp
+.DS_Store
+
+# Mathlib cache
+lake_env.sh
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*~
+.idea/
+
+# Build logs
+build.log

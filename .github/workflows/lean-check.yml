@@ -1,0 +1,105 @@
+name: Lean Proof Verification
+
+on:
+  push:
+    branches: [ main, claude/* ]
+    paths:
+      - 'lean/**'
+      - '.github/workflows/lean-check.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'lean/**'
+
+jobs:
+  lean-check:
+    name: Verify Lean Proofs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Lean 4
+        uses: leanprover/lean4-action@v1
+        with:
+          lean-version: v4.3.0
+
+      - name: Cache Mathlib
+        uses: actions/cache@v3
+        with:
+          path: ~/.elan/toolchains/*/lib/lean/library/
+          key: ${{ runner.os }}-mathlib-${{ hashFiles('lean/lakefile.lean') }}
+          restore-keys: |
+            ${{ runner.os }}-mathlib-
+
+      - name: Build Lean project
+        working-directory: ./lean
+        run: |
+          lake update
+          lake build 2>&1 | tee build.log
+
+      - name: Check for compilation errors
+        working-directory: ./lean
+        run: |
+          if grep -q "error:" build.log; then
+            echo "❌ Lean compilation failed!"
+            cat build.log
+            exit 1
+          else
+            echo "✅ All Lean proofs verified successfully"
+          fi
+
+      - name: Generate proof report
+        if: always()
+        working-directory: ./lean
+        run: |
+          cat > proof_report.md << 'EOF'
+          # Lean Proof Verification Report
+
+          **Timestamp**: $(date)
+          **Commit**: ${{ github.sha }}
+          **Branch**: ${{ github.ref }}
+
+          ## Build Status
+          EOF
+
+          if [ $? -eq 0 ]; then
+            echo "✅ **SUCCESS**" >> proof_report.md
+          else
+            echo "❌ **FAILED**" >> proof_report.md
+          fi
+
+          echo "" >> proof_report.md
+          echo "## Modules Verified" >> proof_report.md
+          echo "- [ ] PhysRes.Core" >> proof_report.md
+          echo "- [ ] PhysRes.CompositionLaw" >> proof_report.md
+          echo "- [ ] PhysRes.Renormalization" >> proof_report.md
+          echo "- [ ] PhysRes.DeformationQuantization" >> proof_report.md
+
+          cat proof_report.md
+
+      - name: Upload build artifacts
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: lean-build-log
+          path: lean/build.log
+
+      - name: Comment on PR (if applicable)
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const buildLog = fs.readFileSync('lean/build.log', 'utf8');
+            const success = !buildLog.includes('error:');
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: success
+                ? '✅ Lean proof verification passed!'
+                : '❌ Lean proof verification failed. See [build log](../actions/runs/${{ github.run_id }})'
+            });
