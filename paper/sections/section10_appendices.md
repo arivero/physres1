@@ -134,7 +134,7 @@ system, not just the free particle.
 
 The derivative
 $$f'(x) = \lim_{\varepsilon\to 0}\frac{f(x+\varepsilon) - f(x)}{\varepsilon}$$
-is the simplest example of BPHZ renormalization:
+has the structure of a renormalization:
 
 | Step | QFT language | Calculus language |
 |------|-------------|------------------|
@@ -191,16 +191,18 @@ renormalization group on the character group.
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
 | D10.1 bridge theorem | `D10_1_bridge_to_master` | sorry |
-| D10.1a operational closure | `D10_1a_operational_implies_convergent` | sorry |
+| D10.1a operational closure | `D10_1a_operational_implies_convergent` | sorry (Lean statement asserts convergence; paper text correctly notes log-Lipschitz does not imply convergence — statement needs weakening) |
 | D11.1 loop integral > 0 | `D11_1_contact_loop_integral` | proved |
 | D11.2 beta function exact | `D11_2_contact_beta_exact` | proved |
 | P11.1 transmutation scale > 0 | `P11_1_dimensional_transmutation` | proved |
 | P11.1 transmutation invariant | `P11_1_transmutation_invariant` | proved |
 | D11.3 scheme shift | `D11_3_scheme_is_multiplicative_shift` | proved |
 | D12.1 free kernel exact | `D12_1_free_kernel_exact_composition` | sorry |
-| P12.1 regulator removal | `P12_1_regulator_removal` | proved |
+| D12.2 perturbative composition | `D12_2_perturbative_composition` | sorry |
+| P12.1 log-Lipschitz bound | `P12_1_regulator_removal` | proved (tautological: conclusion restates hypothesis) |
+| P12.2 composition error | `P12_2_composition_error` | sorry |
 | D12.3 harmonic oscillator exact | `D12_3_harmonic_oscillator_exact` | sorry |
 | D13.1 rooted tree order/symmetry | `RootedTree.order`, `RootedTree.symmetryFactor` | defined |
 | D13.2 derivative as renormalized | `D13_2_derivative_as_renormalized` | proved |
 | P13.1 Brouder's theorem (witness) | `P13_1_brouder_theorem` | trivial witness |
-| D13.3 path integral as character | `D13_3_path_integral_as_character` | sorry |
+| D13.3 path integral as character | `D13_3_path_integral_as_character` | proved (simplified positivity witness) |

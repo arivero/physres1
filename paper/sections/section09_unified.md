@@ -15,8 +15,7 @@ channels (i.e., whose partition limit, ordering limit, and scale limit all exist
 has a single well-defined value.
 
 The three channels do not produce *identical* intermediate values; they produce
-predictions that agree *in the appropriate limit*. The corrected Lean version
-`CompatibleObservable` separates the three convergence conditions.
+predictions that agree *in the appropriate limit*. Lean: `CompatibleObservable` separates the three convergence conditions.
 
 ## 9.2 Three-Level Regularity Hierarchy (D9.2a)
 
@@ -179,10 +178,10 @@ Physical predictions (renormalized observables) are ordering-independent.
 | D9.2a three-level hierarchy | `D9_2a_three_level_hierarchy` | sorry |
 | D9.2b essential singularity at hbar=0 | `D9_2b_essential_singularity_at_hbar_zero` | sorry |
 | D9.2b non-perturbative remainder | `D9_2b_nonperturbative_remainder` | sorry |
-| D7.1 no hidden leap | `D7_1_no_hidden_leap` | trivial |
+| D7.1 no hidden leap | `D7_1_no_hidden_leap` | stub (proves `True`; claim is informal) |
 | D9.3 measurement severs semigroup | `D9_3_measurement_severs_semigroup` | sorry |
 | P7.2 Gleason / Born rule forced | `P7_2_gleason_born_rule_forced` | sorry |
-| P7.3 round-trip structure | `P7_3_round_trip_structure` | trivial |
+| P7.3 round-trip structure | `P7_3_round_trip_structure` | stub (proves `True`; claim is informal) |
 | D9.4 decoherence non-perturbative | `D9_4_decoherence_nonperturbative` | sorry |
 | D9.1 ordering diff = O(hbar^2) | `D9_1_ordering_difference_is_order_hbar_squared` | sorry |
 | D9.1a flat agreement | `D9_1a_flat_ordering_agreement` | sorry |

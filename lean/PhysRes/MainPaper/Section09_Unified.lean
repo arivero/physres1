@@ -344,7 +344,7 @@ theorem D9_1a_flat_ordering_agreement (ℏ m : ℝ) (hℏ : ℏ > 0) (hm : m > 0
     This means decoherence cannot be captured by any finite-loop expansion,
     but IS captured by non-perturbative methods (lattice, instanton calculus).
 
-    Status: ✅ proved (elementary real analysis).
+    Status: sorry (elementary real analysis; needs substitution u=1/ℏ and Mathlib's tendsto_pow_mul_exp_neg).
 -/
 theorem D9_4_decoherence_nonperturbative (S : ℝ) (hS : S > 0) :
     -- exp(-S/ℏ) → 0 faster than any power of ℏ:

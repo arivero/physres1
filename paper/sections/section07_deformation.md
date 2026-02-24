@@ -34,15 +34,19 @@ Lean: `D5_1a_moyal_canonical_commutation` -- proved by `ring`.
 The complex operator form `D5_1a_canonical_commutation_complex` states
 $i[q,p]_\star = -\hbar$ and is also proved.
 
-## 7.4 D5.1b: Cubic Witness for $O(\hbar^2)$ Corrections
+## 7.4 D5.1b: Cubic Witness for $O(\hbar^3)$ Commutator Corrections
 
 **Derivation D5.1b.**  For $f = q^3$ and $g = p$:
 $$[q^3, p]_{\star_\hbar} = \hbar\cdot 3q^2 + \hbar^3\cdot(-q/4) + O(\hbar^5).$$
 
-The $O(\hbar^3)$ correction (arising from parity of the Moyal expansion) is a genuine
-quantum effect not captured by the classical Poisson bracket $\{q^3,p\} = 3q^2$.
-The Moyal algebra contains strictly more information than the Poisson algebra at
-finite $\hbar$.
+The Moyal *product* has $O(\hbar^2)$ corrections; the *commutator* has corrections
+at odd powers only, so the leading correction is $O(\hbar^3)$. This $\hbar^3$ term
+proves the Moyal commutator is not determined by the Poisson bracket alone.
+
+**Lean note.** The Lean formalization `D5_1b_cubic_witness` uses `moyalProduct1`
+(first-order truncation) which cannot capture the $\hbar^3$ term. The sorry
+reflects a modeling gap, not just a proof gap: a higher-order Moyal definition
+is needed.
 
 ## 7.5 P5.2: All Orderings Are Equivalent
 
@@ -52,20 +56,20 @@ gauge-equivalent: there exists a formal power series map $T_\hbar$ (starting wit
 the identity at $\hbar=0$) such that
 $$f\star_1 g = T_\hbar^{-1}(T_\hbar(f)\star_2 T_\hbar(g)).$$
 
-Weyl ordering, symmetric ordering, normal ordering, and left/right ordering all
-define equivalent quantum theories. Observables computed in different orderings are
-related by a redefinition of the coupling constants.
+The Lean formalization `P5_2_star_product_equivalence` carries `sorry`; its
+hypotheses (arbitrary associative operations with the right classical limit)
+are weaker than Kontsevich's full conditions (formal power series of
+bidifferential operators on a Poisson manifold).
 
-## 7.6 Ehrenfest's Theorem (D5.1)
+## 7.6 Classical Limit of Ehrenfest's Theorem (D5.1)
 
-**Derivation D5.1** (Ehrenfest).  For observable $A$ and Hamiltonian $H$:
-$$\frac{d\langle A\rangle}{dt} = \frac{\langle[A,H]_\star\rangle}{i\hbar}
-\xrightarrow{\hbar\to 0} \langle\{A,H\}\rangle_\text{Poisson}.$$
+**Derivation D5.1.**  Ehrenfest's theorem states
+$d\langle A\rangle/dt = \langle[A,H]_\star\rangle/(i\hbar)$. In the classical
+limit $\hbar\to 0$, the Moyal commutator reduces to the Poisson bracket:
+$$\frac{[A,H]_\star}{i\hbar} \;\xrightarrow{\hbar\to 0}\; \{A,H\}_\text{Poisson}.$$
 
-The leading quantum correction is $O(\hbar^2)$ (from the third-derivative term
-in the Moyal product), consistent with D5.1b.
-
-Lean: `D5_1_ehrenfest_to_poisson` proves the $\hbar\to 0$ limit.  Status: proved.
+Lean: `D5_1_ehrenfest_to_poisson` proves this classical limit (mathematically
+the same statement as P5.1(ii)).  Status: proved.
 
 ## 7.7 Ordering Stratification
 
@@ -75,7 +79,7 @@ Four layers of ordering effects, in increasing subtlety:
 |-------|--------|-----------------|
 | 1 | Classical action $S[q]$ | $\hbar^0$ -- ordering-independent |
 | 2 | Operator symbol | $\hbar^1$ -- first ordering shift |
-| 3 | Moyal correction | $\hbar^2$ -- genuine quantum |
+| 3 | Moyal correction | $\hbar^2$ in product, $\hbar^3$ in commutator |
 | 4 | Domain/boundary | Non-perturbative -- self-adjoint extensions |
 
 Layer 4 (self-adjoint extensions) is treated in Section 9 (D9.1f).

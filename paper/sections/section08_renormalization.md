@@ -67,8 +67,9 @@ stays finite and positive on $[0,T]$ provided $g_0 T < 2\pi$.
 The Landau pole occurs at $t^* = 2\pi/g_0$: the coupling diverges at finite
 RG scale.
 
-Lean: `P6_3_rg_flow_bounded` gives an explicit formula and proves it satisfies
-the ODE.  Status: proved.
+Lean: `P6_3_rg_flow_bounded` verifies the explicit formula satisfies the ODE and
+initial condition.  The Lean "bound" is the exact solution itself ($g(t) \leq g(t)$
+by reflexivity); the substantive content is the ODE verification.  Status: proved.
 
 ## 8.7 D6.4: Truncation Error Quantification
 
@@ -84,9 +85,11 @@ This gives explicit control over perturbative truncation, answering the question
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
 | P6.1 renormalized observable (Cauchy) | `P6_1_renormalized_observable` | proved |
-| D6.1 beta from semigroup | `D6_1_beta_function_from_semigroup` | sorry |
+| D6.0 control map rescaling | `D6_0_control_map_rescaling` | proved |
+| D6.1 beta from semigroup | `D6_1_beta_function_from_semigroup` | sorry (proof strategy needs rework) |
+| P6.2 flow generator unique | `P6_2_flow_generator_unique` | proved |
 | D6.2 log divergence | `D6_2_log_divergence` | sorry |
 | D6.2 log slower than power | `D6_2_log_slower_than_power` | proved |
-| D6.2a step-halving RG | `D6_2a_step_halving_rg` | sorry |
-| P6.3 flow bounded below Landau pole | `P6_3_rg_flow_bounded` | proved |
-| D6.4 truncation error bound | `D6_4_truncation_error` | sorry |
+| D6.2a step-halving RG | `D6_2a_step_halving_rg` | sorry (Lean uses $b_0=1$, should be $1/(2\pi)$) |
+| P6.3 flow bounded below Landau pole | `P6_3_rg_flow_bounded` | proved (bound is exact solution, trivially $\leq$ itself) |
+| D6.4 truncation error bound | `D6_4_truncation_error` | stub (conclusion is `True`; bound not verified) |

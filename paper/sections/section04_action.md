@@ -32,9 +32,6 @@ $$\text{Angular momentum conservation} \iff \text{E-L equation for } \theta.$$
 
 Concretely: $\frac{d}{dt}(mr^2\dot\theta) = 0 \iff \frac{\partial\mathcal{L}}{\partial\theta} - \frac{d}{dt}\frac{\partial\mathcal{L}}{\partial\dot\theta} = 0$.
 
-This closes the bridge from Section 3 (geometric) to Section 4 (variational):
-the *same* invariant appears from two directions.
-
 Lean: `P2_1_geometric_variational_equivalence` in Section04_Action.lean.  Status: sorry.
 
 ## 4.4 Temporal Additivity
@@ -45,8 +42,7 @@ $$S[q; t_i, t_f] = S[q; t_i, t_m] + S[q; t_m, t_f].$$
 *Proof.* Split the integral: $\int_{t_i}^{t_f} = \int_{t_i}^{t_m} + \int_{t_m}^{t_f}$. $\square$
 
 Lean: `action_additivity_temporal` in Section04_Action.lean.
-Uses `intervalIntegral.integral_add_adjacent_intervals`.  Status: sorry (requires
-continuity hypothesis, proof is near-trivial once hypotheses are stated).
+Uses `intervalIntegral.integral_add_adjacent_intervals` with a `ContinuousOn` hypothesis.  Status: proved.
 
 ## 4.5 P2.2: Lagrangian Form is Unique
 
@@ -56,12 +52,15 @@ continuity hypothesis, proof is near-trivial once hypotheses are stated).
 
 must take the Lagrangian form $F = S[\cdot;L]$ for some $L$.
 
-*Proof sketch.* Locality + additivity constrains the integrand to depend on $q$
-only through values and first derivatives (no higher derivatives, no cross-time terms). $\square$
+The locality hypothesis already provides the integral form with an integrand
+$\lambda(q,\dot q,t)$; the theorem extracts $L = \lambda$. The non-trivial
+content — that a local additive functional cannot depend on higher derivatives or
+cross-time correlations — is encoded in the locality hypothesis itself, not derived
+from it.
 
-Lean: `P2_2_action_uniqueness_from_additivity` in Section04_Action.lean.
-The Lean proof extracts $L = \lambda$ from the locality hypothesis; the deep
-content is the justification of locality, which is stated as a hypothesis.  Status: proved.
+Lean: `P2_2_action_uniqueness_from_additivity` in Section04_Action.lean.  Status: proved
+(the proof extracts $L$ from the locality hypothesis; the Ostrogradsky argument in
+Section 4.6 provides the physical justification for that hypothesis).
 
 ## 4.6 Why No Higher Derivatives
 
@@ -78,5 +77,5 @@ two consecutive time steps to specify, breaking the single-step additive structu
 |-------|-------------|--------|
 | P2.0 Euler-Lagrange | `P2_0_fundamental_variational` | sorry |
 | P2.1 geometric-variational equivalence | `P2_1_geometric_variational_equivalence` | sorry |
-| Temporal additivity | `action_additivity_temporal` | sorry |
+| Temporal additivity | `action_additivity_temporal` | proved |
 | P2.2 Lagrangian uniqueness | `P2_2_action_uniqueness_from_additivity` | proved |

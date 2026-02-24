@@ -40,7 +40,7 @@ $$\rho_\varepsilon(x) = \frac{1}{\varepsilon\sqrt{2\pi}}\,e^{-x^2/2\varepsilon^2
 Any use of Dirac-supported variations in this manuscript is understood as a
 mollified limit unless explicitly labelled heuristic.
 
-## 2.5 Seed Theorems
+## 2.5 Foundational Propositions
 
 **P0.1 (Temporal additivity of discrete action).** For any partition split at $M$:
 $$S_{M+N}[q] = S_M[q] + S_N[q_{(\cdot+M)}].$$
@@ -50,8 +50,7 @@ Lean: `P0_1_additive_structure` -- proved via `Finset.sum_range_add`.
 
 **P0.2 (Exponential seed theorem).** Suppose $W$ is a weight on paths satisfying:
 1. Multiplicativity: $W[\gamma_1 \circ \gamma_2] = W[\gamma_1] \cdot W[\gamma_2]$.
-2. Log-additivity: $\log W[\gamma]$ depends on $\gamma$ only through an additive
-   functional $S[\gamma]$, i.e.\ $\log W = f \circ S$ for some $f:\mathbb{R}\to\mathbb{C}$.
+2. Log-dependence on action: $\log W[\gamma] = f(S[\gamma])$ for some $f:\mathbb{R}\to\mathbb{C}$, where $\log$ denotes the principal branch ($\operatorname{Im} \log \in (-\pi,\pi]$) and $W[\gamma]\neq 0$ for all $\gamma$.
 
 Then $f$ is linear, i.e.\ $f(s) = c\cdot s$ for some $c\in\mathbb{C}$, so
 $$W[\gamma] = e^{c\,S[\gamma]}.$$
@@ -69,20 +68,12 @@ Section 6 identifies $\kappa = \hbar$.
 The central claim: all three channels yield the same physical
 predictions, and this commutativity uniquely forces $\hbar$.
 
-## 2.7 Nonrelativistic Limit (D0.2)
-
-The relativistic free-particle action
-$$S_\text{rel}[q] = -mc^2\int_{t_i}^{t_f}\sqrt{1 - \|\dot q\|^2/c^2}\,dt$$
-expands at $\|\dot q\|\ll c$ as
-$$S_\text{rel}[q] = \int(-mc^2 + \tfrac{1}{2}m\|\dot q\|^2 + O(c^{-2}))\,dt.$$
-Subtracting the inert constant $-mc^2(t_f - t_i)$ recovers the Newtonian action.
-In the path integral this subtraction is an overall phase $e^{-imc^2(t_f-t_i)/\hbar}$
-which cancels in all physical amplitudes.
-
-## 2.8 Lean Formalization Status
+## 2.7 Lean Formalization Status
 
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
 | P0.1 additivity | `P0_1_additive_structure` | proved |
 | Gaussian mollifier unit integral | `gaussMollifier_integral` | sorry |
+| Gaussian mollifier concentration | `gaussMollifier_concentration` | sorry |
 | P0.2 exponential seed | `P0_2_exponential_seed` | sorry |
+| P0.3 mollifier approximation | `P0_3_mollifier_approximates` | sorry |

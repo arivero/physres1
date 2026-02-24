@@ -10,7 +10,7 @@ $$K(x,z,t_1+t_2) = \int K(x,w,t_1)\,K(w,z,t_2)\,dw.$$
 
 This is a *semigroup property* of the kernel family $\{K(\cdot,\cdot,t)\}_{t>0}$.
 Algebraically, it is identical to the Chapman--Kolmogorov equation for Markov
-kernels [Kolmogorov 1931]. The only difference is the sign: Kolmogorov's $K$ is
+kernels [Kolmogorov 1931]. The domain differs: Kolmogorov's $K$ is
 real and non-negative (probability density), while the quantum $K$ is complex
 (amplitude), with $\int |K|^2 = 1$ (Born rule normalization).
 
@@ -30,9 +30,10 @@ Then there exists a unique densely-defined, closed, linear operator $H$
 (the *infinitesimal generator*) such that
 $$U_t = e^{-iHt/\hbar}.$$
 
-The composition axiom plus strong continuity in time *forces* the Schrodinger
-equation $i\hbar\,d\psi/dt = H\psi$ without any additional postulate about $H$.
-The Hamiltonian is the infinitesimal generator, not an independent assumption.
+The composition axiom plus strong continuity in time forces the Schrodinger
+equation $i\hbar\,d\psi/dt = H\psi$. Strong continuity is itself a non-trivial
+input (it excludes pathological semigroups); given it, the Hamiltonian is the
+infinitesimal generator, not an independent assumption.
 
 ## 6.3 D4.0: Coordinate Invariance via Half-Densities
 
@@ -77,7 +78,7 @@ functions on $[0,1]$ is *comeager* in $C([0,1])$ with the sup-norm topology
 nowhere differentiable, yet the kernel $K$ is smooth in $x,y$ because it arises
 from *averaging* over all paths.
 
-**Cameron-Martin.**  The path-integral measure is supported on paths with
+**Cameron-Martin** [Simon 1979].  The path-integral measure is supported on paths with
 quadratic variation $[X]_T = \hbar T/m > 0$.  Lipschitz functions have zero
 quadratic variation, so the classical paths have Wiener measure zero. The classical
 limit $\hbar\to 0$ is a *concentration* phenomenon, not a restriction to a dominant
@@ -89,15 +90,10 @@ of the partition. Each short-time factor has Lipschitz constant
 $\sim (\hbar\,\Delta t_k)^{-(d/2+1)}$, far larger than the composed whole.
 Composition cancels the excess singularity -- but only for $\hbar > 0$.
 
-**Gronwall's inequality.** For two solutions of $\dot y = f(y)$ with
-$\mathrm{Lip}(f) = L$:
-$$e^{-Lt}|x_1 - x_2| \leq |\Phi_t(x_1) - \Phi_t(x_2)| \leq e^{Lt}|x_1 - x_2|.$$
-For gravitational force $f(r) = -GM/r^2$, the Lipschitz constant diverges at
-$r = 0$.
-
-**Peano's counterexample.** The ODE $\dot y = y^{2/3}$, $y(0) = 0$ has infinitely
-many solutions, illustrating uniqueness failure when Lipschitz continuity breaks.
-Lean: `SN_II_peano_non_uniqueness` exhibits both solutions. Status: sorry.
+When $f$ is not Lipschitz (e.g.\ $f(r) = -GM/r^2$ at $r=0$), ODE uniqueness
+fails and the classical flow is ill-defined. The quantum kernel, by contrast,
+remains well-defined for Kato-class potentials — a concrete sense in which
+$\hbar > 0$ regularizes.
 
 ## 6.6 P4.1: Exponential Form Forced
 
@@ -132,12 +128,17 @@ has a **unique** positive scale parameter $\kappa$.
 
 That unique value, identified with the observed action quantum, is $\kappa = \hbar$.
 
-*Proof.*  By D4.1a, only $\alpha=d/2$ is consistent with closure.  Given $\alpha=d/2$,
-the composition law is an identity in $\kappa$ for all $t_1,t_2$: from the Gaussian
-convolution formula, $\kappa$ appears as $1/(2\kappa t)$ in the exponent, and the
-normalisation factor is $(m/2\pi\kappa)^{d/2}\cdot t^{-d/2}$.  The balance gives
-$\kappa$ uniquely in terms of $m$ and the physical unit system.  Dimensional analysis
-pins $\kappa$ to the action dimension, and the observed value is $\hbar$. $\square$
+*Proof sketch.*  By D4.1a, only $\alpha=d/2$ is consistent with closure.  Given
+$\alpha=d/2$, the Gaussian convolution identity holds for any $\kappa > 0$: the
+algebraic balance is $\kappa$-independent. What fixes $\kappa$ is the *identity
+limit*: the requirement $K(x,y,t)\to\delta(x-y)$ as $t\to 0^+$ forces the
+normalization $(m/2\pi\kappa t)^{d/2}$ to produce the correct delta-function
+mass, which pins $\kappa$ to a unique value with action dimensions. That value
+is $\hbar$.
+
+**Gap note.** The Lean formalization (`P4_2_action_scale_uniquely_forced`) carries
+`sorry` for the uniqueness step: showing that two values of $\kappa$ satisfying
+the composition identity plus the identity limit must agree.
 
 Lean: `P4_2_action_scale_uniquely_forced` states existence and uniqueness of
 $\kappa$; the uniqueness argument (currently sorry) requires showing that two

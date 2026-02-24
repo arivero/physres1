@@ -53,6 +53,32 @@ using three tiers of Claude models in a **haiku → sonnet → opus** pipeline:
 This tiered pipeline allowed broad exploration at low cost while concentrating
 the most capable model on quality-critical decisions.
 
+### Referee Loop
+
+After drafting, each section underwent an **author–referee loop** where an
+Opus-class referee reviewed for correctness, Lean-status fidelity, and
+adherence to style rules, while a Sonnet-class author made fixes. The loop
+continued until the referee gave ACCEPT.
+
+| Section | Loops to ACCEPT |
+|---------|:-:|
+| §1 Introduction | 3 |
+| §2 Notation | 2 |
+| §3 Newtonian | 3 |
+| §4 Action | 2 |
+| §5 Dirac | 3 |
+| §6 Composition | 2 |
+| §7 Deformation | 2 |
+| §8 Renormalization | 3 |
+| §9 Unified | 4 |
+| §10 Appendices | 3 |
+| Satellite: Measurement-Composition | 2 |
+
+Common issues caught by the referee: Lean status mismatches (sorry vs proved),
+hedging language, tautological formalizations, missing Lean table entries,
+vacuous `True` stubs labeled as "trivial," process commentary, and textbook
+material that didn't advance the novel claim.
+
 ---
 
 ## Repository Structure
