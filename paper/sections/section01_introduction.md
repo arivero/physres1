@@ -2,14 +2,12 @@
 
 ## 1.1 The Refinement Program
 
-The historical and technical problem addressed here is not "how to quantize" but
-"how to define a stable continuum theory from iterative refinement."  The paper
-treats Newtonian mechanics, action principles, path integration, deformation
-quantization, and renormalization as parts of one continuity problem.
-
-The program is constructive: every new structure is retained as a *limit* or
-*compatibility condition* of the previous one, not as a replacement.  The chain
-is
+The question this paper addresses is not "how to quantize" but how to define a
+stable continuum theory from iterative refinement. We treat Newtonian mechanics,
+action principles, path integration, deformation quantization, and
+renormalization as parts of one continuity problem. The program is constructive:
+every new structure is retained as a *limit* or *compatibility condition* of the
+previous one, not as a replacement. The chain is
 
 $$
 \text{Newton's polygon} \;\longrightarrow\;
@@ -51,42 +49,24 @@ unique couplings forced by composition:
 
 | Constant | Compatibility condition | Paper section |
 |----------|------------------------|---------------|
-| $\hbar$  | Amplitude semigroup closure | P4.2 (§6) |
-| $c$      | Relativistic composition | §9 (discussed) |
-| $G$      | Gravitational composition | §9 (discussed) |
+| $\hbar$  | Amplitude semigroup closure | Section 6 |
+| $c$      | Relativistic composition | Section 9 |
+| $G$      | Gravitational composition | Section 9 |
 
-## 1.3 Methodological Anchors
+## 1.3 Contributions
 
-**Newton's polygon.**  Replace a curve by short segments, impose a local update
-rule, and pass to a limit. The key object is a refinement procedure with invariant
-content, not a smallest geometric piece.
-
-**Action additivity.**  $S[\gamma_{if}] = S[\gamma_{im}] + S[\gamma_{mf}]$ under
-temporal partition is the algebraic structure that compares coarse and fine
-descriptions. If weights compose multiplicatively while the functional is additive,
-exponential weighting is forced (P0.2).
-
-**Two limit-control mechanisms.** Deformation quantization controls the
-classical-to-quantum passage [Landsman 1998]. Renormalization controls divergent
-refinements by regulator-dependent intermediate steps [Connes--Kreimer 2000].
-
-## 1.4 Contributions
-
-1. A *refinement/composition reading* of the Newton → action → kernel chain.
+1. A *refinement/composition reading* of the Newton to action to kernel chain.
 2. An *intrinsic half-density* formulation of propagator composition.
 3. A *semigroup-closure derivation* showing the $t^{-d/2}$ normalization is forced.
-4. **Proposition P4.2** (master theorem): an action-dimensional scale $\kappa = \hbar$ is uniquely forced by composition.
+4. **P4.2** (master theorem): an action-dimensional scale $\kappa = \hbar$ is uniquely forced by composition.
 5. A *refinement-compatibility framing* of renormalization.
 6. A fully explicit *2D delta-interaction RG computation* as appendix witness.
 
-## 1.5 Lean Formalization Status
+## 1.4 Lean Formalization Status
 
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
-| H0.1 phase norm = 1 | `H0_1_phase_has_unit_norm` | ✅ proved |
-| H0.2 log divergence | `H0_2_log_divergence` | 🔲 sorry |
-| H0.3 control params | `H0_3_control_parameters_are_positive` | ✅ trivial |
-| P0.0 unique scale | `P0_0_unique_scale` | 🔲 sorry |
-
----
-*Next:* Section 2 fixes notation and the claim taxonomy (P/D/H).
+| H0.1 phase norm = 1 | `H0_1_phase_has_unit_norm` | proved |
+| H0.2 log divergence | `H0_2_log_divergence` | sorry |
+| H0.3 control params | `H0_3_control_parameters_are_positive` | trivial |
+| P0.0 unique scale | `P0_0_unique_scale` | sorry |

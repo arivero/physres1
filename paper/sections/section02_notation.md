@@ -2,10 +2,10 @@
 
 ## 2.1 Dimension Conventions
 
-- $d$ — dimension of the **configuration space** $Q$ (nonrelativistic mechanics).
-- $D = d+1$ — spacetime dimension.
-- $\hbar$ — Planck-scale parameter; units of *action* $= [\text{mass} \cdot \text{length}^2 \cdot \text{time}^{-1}]$.
-- $S[\gamma]$ — action functional for path $\gamma:[t_i,t_f]\to\mathbb{R}^d$.
+- $d$ -- dimension of the **configuration space** $Q$ (nonrelativistic mechanics).
+- $D = d+1$ -- spacetime dimension.
+- $\hbar$ -- Planck-scale parameter; units of *action* $= [\text{mass} \cdot \text{length}^2 \cdot \text{time}^{-1}]$.
+- $S[\gamma]$ -- action functional for path $\gamma:[t_i,t_f]\to\mathbb{R}^d$.
 
 ## 2.2 Core Objects
 
@@ -46,7 +46,7 @@ mollified limit unless explicitly labelled heuristic.
 $$S_{M+N}[q] = S_M[q] + S_N[q_{(\cdot+M)}].$$
 *Proof.* The sum $\sum_{k=0}^{M+N-1}$ splits into $\sum_{k<M}$ and $\sum_{k\geq M}$. $\square$
 
-This is proved in Lean as `P0_1_additive_structure` (complete proof, no sorry).
+Lean: `P0_1_additive_structure` -- proved via `Finset.sum_range_add`.
 
 **P0.2 (Exponential seed theorem).** Suppose $W$ is a weight on paths satisfying:
 1. Multiplicativity: $W[\gamma_1 \circ \gamma_2] = W[\gamma_1] \cdot W[\gamma_2]$.
@@ -62,11 +62,11 @@ Section 6 identifies $\kappa = \hbar$.
 
 | Channel | Refinement parameter | Key section |
 |---------|---------------------|-------------|
-| Partition | step size $\Delta t$ | §3--4 |
-| Representation | ordering prescription | §6--7 |
-| Scale | UV cutoff $\Lambda$ | §8 |
+| Partition | step size $\Delta t$ | Sections 3--4 |
+| Representation | ordering prescription | Sections 6--7 |
+| Scale | UV cutoff $\Lambda$ | Section 8 |
 
-The paper's central claim: all three channels yield the same physical
+The central claim: all three channels yield the same physical
 predictions, and this commutativity uniquely forces $\hbar$.
 
 ## 2.7 Nonrelativistic Limit (D0.2)
@@ -83,10 +83,6 @@ which cancels in all physical amplitudes.
 
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
-| P0.1 additivity | `P0_1_additive_structure` | ✅ proved |
-| Gaussian mollifier unit integral | `gaussMollifier_integral` | 🔲 sorry |
-| P0.2 exponential seed | `P0_2_exponential_seed` | 🔲 sorry |
-
----
-*Transition to §3.* With notation fixed, the next section derives Newton's area
-law from the discrete polygon model.
+| P0.1 additivity | `P0_1_additive_structure` | proved |
+| Gaussian mollifier unit integral | `gaussMollifier_integral` | sorry |
+| P0.2 exponential seed | `P0_2_exponential_seed` | sorry |

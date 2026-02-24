@@ -2,38 +2,24 @@
 
 ## 6.1 The Composition Postulate
 
-The central structural claim of this paper: physical amplitudes compose
-multiplicatively when their supporting time intervals are concatenated.
+Physical amplitudes compose multiplicatively when their supporting time intervals
+are concatenated.
 
 **Composition postulate.**  For amplitude kernels $K(x,y,t)$:
 $$K(x,z,t_1+t_2) = \int K(x,w,t_1)\,K(w,z,t_2)\,dw.$$
 
 This is a *semigroup property* of the kernel family $\{K(\cdot,\cdot,t)\}_{t>0}$.
+Algebraically, it is identical to the Chapman--Kolmogorov equation for Markov
+kernels [Kolmogorov 1931]. The only difference is the sign: Kolmogorov's $K$ is
+real and non-negative (probability density), while the quantum $K$ is complex
+(amplitude), with $\int |K|^2 = 1$ (Born rule normalization).
 
-## 6.1a D4.0a: Kolmogorov 1931 and the Chapman–Kolmogorov Equation
+**D4.0a (Three-fold associativity).**  Applying the semigroup property twice:
+$$K(x,z;t_1+t_2+t_3) = \int\!\int K(x,w_1;t_1)\,K(w_1,w_2;t_2)\,K(w_2,z;t_3)\,dw_1\,dw_2.$$
+Slicing $[0,T]$ into $N$ equal steps and applying the semigroup $N-1$ times gives
+the Feynman sum over paths.
 
-**Historical remark (Synthesis Note §II).**  The composition postulate is
-structurally identical to the *Chapman–Kolmogorov equation* for Markov kernels,
-established by A.N. Kolmogorov in 1931:
-$$p(x,z;t_1+t_2) = \int p(x,w;t_1)\,p(w,z;t_2)\,dw$$
-where $p(x,z;t)$ is a transition probability (real, non-negative, normalised to 1).
-
-The **only difference** between Kolmogorov's and our setting is the sign of the kernel:
-- Kolmogorov: $K$ is real and non-negative (probability density).
-- Quantum: $K$ is complex (amplitude), with $\int |K|^2 = 1$ (Born rule normalization).
-
-The *algebraic* semigroup structure is identical.  The imaginary unit $i$
-distinguishes quantum amplitudes from classical probabilities.
-
-**Derivation D4.0a.**  The three-fold associativity
-$$K(x,z;t_1+t_2+t_3) = \int\!\int K(x,w_1;t_1)\,K(w_1,w_2;t_2)\,K(w_2,z;t_3)\,dw_1\,dw_2$$
-follows directly from applying the semigroup property twice.  This is the
-path-integral measure: slicing $[0,T]$ into $N$ equal steps and applying semigroup
-$N-1$ times gives the Feynman sum over paths.
-
-## 6.1b D4.0b: Hille-Yosida Theorem — Semigroup Forces Hamiltonian
-
-**Synthesis Note §II.**  One of the key novelties integrated here:
+## 6.2 D4.0b: Semigroup Forces Hamiltonian (Hille-Yosida)
 
 **Theorem D4.0b (Hille-Yosida).**  Let $\{U_t\}_{t \geq 0}$ be a strongly-continuous
 one-parameter semigroup of bounded operators on a Hilbert space $\mathcal{H}$:
@@ -44,36 +30,22 @@ Then there exists a unique densely-defined, closed, linear operator $H$
 (the *infinitesimal generator*) such that
 $$U_t = e^{-iHt/\hbar}.$$
 
-**Consequence for physics.**  The composition axiom (A1) + strong continuity in time
-*forces* the Schrödinger equation
-$$i\hbar\,\frac{d\psi}{dt} = H\psi$$
-without any additional postulate about $H$.  The Hamiltonian is not assumed — it is
-the infinitesimal generator of the required semigroup.
+The composition axiom plus strong continuity in time *forces* the Schrodinger
+equation $i\hbar\,d\psi/dt = H\psi$ without any additional postulate about $H$.
+The Hamiltonian is the infinitesimal generator, not an independent assumption.
 
-**No hidden leap.**  The Hille-Yosida theorem is purely mathematical and requires no
-physical input beyond A1.  The physics enters only in identifying which generator $H$
-describes a given physical system (e.g. $H = p^2/2m + V$ for a particle in a potential).
-
-## 6.2 D4.0: Coordinate Invariance via Half-Densities
+## 6.3 D4.0: Coordinate Invariance via Half-Densities
 
 The composition integral $\int K(x,w)\,K(w,z)\,dw$ changes under a coordinate
 transformation $\phi$ unless $K$ transforms as a *bi-half-density*:
 $$K_\text{new}(\phi(x), \phi(y)) = K(x,y)\cdot|\det J_\phi(x)|^{-1/2}\cdot|\det J_\phi(y)|^{-1/2}$$
 where $J_\phi = d\phi/dx$ is the Jacobian.
 
-**Derivation D4.0.**  Under this transformation law, the change-of-variables
-$w\mapsto\phi(w)$ in the composition integral produces exactly the Jacobian factors
-needed to preserve the semigroup property in the new coordinates.
+Under this transformation law, the change-of-variables $w\mapsto\phi(w)$ in the
+composition integral produces exactly the Jacobian factors needed to preserve the
+semigroup property in the new coordinates.
 
-**Bug fixed from previous Lean version.**  The earlier formalization stated:
-```
-(∫ w, K_old x w t₁ * K_old w z t₂) = (∫ w, K_old x w t₁ * K_old w z t₂)
-```
-which is trivially true regardless of any half-density structure.  The corrected
-`D4_0_half_density_coordinate_invariance` properly states that $K_\text{new}$
-satisfies the composition law when $K_\text{old}$ does.
-
-## 6.3 D4.1a: Normalization Exponent $d/2$ is Forced
+## 6.4 D4.1a: Normalization Exponent $d/2$ is Forced
 
 Consider the Gaussian ansatz $K_\alpha(x,y,t) = (m/2\pi\hbar t)^\alpha\,e^{im|x-y|^2/2\hbar t}$.
 
@@ -90,71 +62,44 @@ $$\boxed{\alpha = d/2}.$$
 This is a *structural* result: it does not require any input about the physics of
 the particle, only the semigroup closure condition.
 
-## 6.2a SN.I–II: Gronwall's Inequality and Peano's Counterexample
+## 6.5 Regularity and the Classical Limit
 
-**Gronwall's inequality (SN.I).**  For two solutions $\Phi_t(x_1)$, $\Phi_t(x_2)$ of
-$\dot y = f(y)$ with $\mathrm{Lip}(f) = L$:
-$$e^{-Lt}|x_1 - x_2| \leq |\Phi_t(x_1) - \Phi_t(x_2)| \leq e^{Lt}|x_1 - x_2|.$$
-
-The Lipschitz constant $L$ governs the *exponential divergence rate* of nearby
-trajectories.  For the gravitational force $f(r) = -GM/r^2$, the Lipschitz constant
-$|df/dr| = 2GM/r^3$ diverges at $r = 0$ — the Lipschitz condition breaks at collision.
-
-**Peano's counterexample (SN.II, 1890).**  The ODE $\dot y = y^{2/3}$, $y(0) = 0$
-has infinitely many solutions: both $y\equiv 0$ and $y(t) = ((t-c)/3)^3$ for any
-$c \geq 0$ satisfy the ODE.  The vector field $y^{2/3}$ is continuous but NOT Lipschitz
-at $y = 0$: its derivative $(2/3)y^{-1/3}\to\infty$.
-
-This is the 1D analog of what happens at a classical caustic: the kernel
-$\delta(x - x_\text{cl})$ attempts to track a unique trajectory, but there is no
-unique trajectory to track.
-
-**Lean proof of Peano.** `SN_II_peano_non_uniqueness` exhibits both $y_1 \equiv 0$ and
-$y_2(t) = (t/3)^3$ as explicit distinct solutions.  Status: 🔲 sorry (ODE chain rule).
-
-## 6.3a D4.1b: Kernel Lipschitz Constant and the Price of Differentiability
-
-**Synthesis Note §III.**  The free-particle kernel $K_\text{free}(x,y,t)$ is Lipschitz
+**D4.1b (Kernel Lipschitz constant).** The free-particle kernel is Lipschitz
 in the initial position $x$ with constant
-$$L(\hbar, t) = C\cdot\left(\frac{m}{\hbar t}\right)^{(d+2)/2}\cdot\|x-x'\|$$
-for some dimension-dependent constant $C$.
+$$L(\hbar, t) = C\cdot\left(\frac{m}{\hbar t}\right)^{(d+2)/2}\cdot\|x-x'\|.$$
+As $\hbar \to 0$, $L(\hbar,t) \to \infty$: the classical limit is not Lipschitz.
+Setting $\hbar > 0$ buys Lipschitz continuity of the kernel -- $\hbar$ is the
+price of differentiability.
 
-**The classical limit is not Lipschitz.**  As $\hbar \to 0$, $L(\hbar,t) \to \infty$.
-At $\hbar = 0$, the "kernel" degenerates to a delta function $\delta(x-y)$, which is
-not a Lipschitz function.
+**D4.2a (Banach--Mazurkiewicz).**  The set of continuous, nowhere-differentiable
+functions on $[0,1]$ is *comeager* in $C([0,1])$ with the sup-norm topology
+[Banach 1931, Mazurkiewicz 1931]. The typical path in the path-integral measure is
+nowhere differentiable, yet the kernel $K$ is smooth in $x,y$ because it arises
+from *averaging* over all paths.
 
-**$\hbar$ as price of differentiability.**  Setting $\hbar > 0$ buys Lipschitz
-continuity of the kernel.  In the $\hbar \to 0$ limit, the kernel loses its
-smoothness — this is the "Lipschitz catastrophe" of the classical limit.
+**Cameron-Martin.**  The path-integral measure is supported on paths with
+quadratic variation $[X]_T = \hbar T/m > 0$.  Lipschitz functions have zero
+quadratic variation, so the classical paths have Wiener measure zero. The classical
+limit $\hbar\to 0$ is a *concentration* phenomenon, not a restriction to a dominant
+subset.
 
-**Banach–Mazurkiewicz theorem (D4.2a).**  The set of continuous, nowhere-differentiable
-functions on $[0,1]$ is *comeager* in $C([0,1])$ with the sup-norm topology — i.e.
-the "typical" path is nowhere differentiable (Banach 1931, Mazurkiewicz 1931).
+**Composition as smoothing.**  For any partition, the composed kernel's Lipschitz
+constant equals that of the single kernel $K_\text{free}(\cdot,\cdot,T)$, regardless
+of the partition. Each short-time factor has Lipschitz constant
+$\sim (\hbar\,\Delta t_k)^{-(d/2+1)}$, far larger than the composed whole.
+Composition cancels the excess singularity -- but only for $\hbar > 0$.
 
-**Reconciliation.**  The path integral integrates over all continuous paths, including
-nowhere-differentiable ones.  The kernel $K$ is nonetheless smooth in $x,y$, because
-it arises from *averaging* over all paths.  The parameter $\hbar > 0$ controls this
-averaging: it is the regularization scale that converts the singular sum-over-paths into
-a smooth function.  Setting $\hbar = 0$ collapses the average to a single classical path,
-losing the Lipschitz property in the process.
+**Gronwall's inequality.** For two solutions of $\dot y = f(y)$ with
+$\mathrm{Lip}(f) = L$:
+$$e^{-Lt}|x_1 - x_2| \leq |\Phi_t(x_1) - \Phi_t(x_2)| \leq e^{Lt}|x_1 - x_2|.$$
+For gravitational force $f(r) = -GM/r^2$, the Lipschitz constant diverges at
+$r = 0$.
 
-**Composition is a smoothing operation (SN.IV).**  A striking fact: for any partition
-$0 = t_0 < t_1 < \cdots < t_N = T$, the composed kernel's Lipschitz constant equals
-that of the single kernel $K_\text{free}(\cdot,\cdot,T)$, regardless of the partition.
-Each individual short-time factor has Lipschitz constant $\sim (\hbar\,\Delta t_k)^{-(d/2+1)}$,
-far larger than the composed whole.  Composition cancels the excess singularity — but only
-for $\hbar > 0$.  At $\hbar = 0$, composing delta functions yields delta functions, and
-the Lipschitz constant remains infinite at every stage.
+**Peano's counterexample.** The ODE $\dot y = y^{2/3}$, $y(0) = 0$ has infinitely
+many solutions, illustrating uniqueness failure when Lipschitz continuity breaks.
+Lean: `SN_II_peano_non_uniqueness` exhibits both solutions. Status: sorry.
 
-**Cameron-Martin theorem (SN.V-c).**  The path-integral measure is supported on paths with
-quadratic variation $[X]_T = \hbar T/m > 0$.  Any Lipschitz function has zero quadratic
-variation.  Therefore the set of classical (smooth, Lipschitz) paths has *Wiener measure zero*:
-$$\mathbb{P}(\text{path is Lipschitz}) = 0.$$
-The classical limit $\hbar\to 0$ is a *concentration* phenomenon, not a restriction to a
-dominant subset: the measure collapses toward the classical path, but never actually lives
-on Lipschitz paths for $\hbar > 0$.
-
-## 6.4 P4.1: Exponential Form Forced
+## 6.6 P4.1: Exponential Form Forced
 
 **Proposition P4.1.**  A weight $W[\gamma]$ satisfying:
 1. $W[\gamma_1\circ\gamma_2] = W[\gamma_1]\cdot W[\gamma_2]$ (multiplicativity),
@@ -165,31 +110,19 @@ must have the form
 $$W[\gamma] = e^{iS[\gamma]/\kappa}$$
 for some $\kappa > 0$.
 
-The imaginary unit $i$ is forced by unitarity (condition 2): a real exponent would
-give exponential growth or decay, violating $|W|=1$ for generic $S$.
+The imaginary unit $i$ is forced by unitarity: a real exponent would give
+exponential growth or decay, violating $|W|=1$ for generic $S$.
 
-**Improvement over previous version.**  The earlier Lean formalization was missing
-the unitarity hypothesis; this is now included as `hW_unit : ∀ γ, Complex.abs (W γ) = 1`.
+## 6.7 P4.1a: Gaussian Uniqueness (Levy-Khintchine)
 
-## 6.4a P4.1a: Lévy-Khintchine — Gaussian Uniqueness
+Among all isotropic infinitely-divisible distributions on $\mathbb{R}^d$ with
+*finite second moment*, the Gaussian is the unique stable distribution
+(Levy-Khintchine representation). The composition law with isotropy, finite second
+moment $d \cdot m \cdot t/\hbar$, and infinite divisibility forces $K$ to be
+Gaussian. This *excludes* fractional quantum mechanics (Levy path integrals with
+$\alpha\neq 2$) as the canonical quantization of a non-relativistic particle.
 
-**Synthesis Note §III.**  Among all isotropic infinitely-divisible distributions on
-$\mathbb{R}^d$ with *finite second moment*, the Gaussian is the unique stable distribution
-(Lévy-Khintchine representation theorem).
-
-**Consequence.**  The composition law $K(t_1+t_2) = K(t_1)*K(t_2)$ with:
-- (a) isotropy in $\mathbb{R}^d$,
-- (b) second moment $= d\cdot m\cdot t/\hbar$ (from dimensional analysis),
-- (c) infinite divisibility (semigroup for all rational $t$),
-
-forces $K$ to be Gaussian.  Lévy-stable processes ($\alpha$-stable with $\alpha\neq 2$)
-have infinite second moments and do not satisfy (b).
-
-This *excludes* fractional quantum mechanics (Lévy path integrals with $\alpha\neq 2$)
-as the canonical quantization of a non-relativistic particle with finite mass $m$.
-The Gaussian free-particle kernel is *the unique* answer.
-
-## 6.5 P4.2: Master Theorem — $\hbar$ is Uniquely Forced
+## 6.8 P4.2: Master Theorem -- $\hbar$ is Uniquely Forced
 
 **Proposition P4.2** (Master Theorem).  For the free-particle Lagrangian
 $\mathcal{L} = m|\dot q|^2/2$, any kernel of the form
@@ -206,11 +139,11 @@ normalisation factor is $(m/2\pi\kappa)^{d/2}\cdot t^{-d/2}$.  The balance gives
 $\kappa$ uniquely in terms of $m$ and the physical unit system.  Dimensional analysis
 pins $\kappa$ to the action dimension, and the observed value is $\hbar$. $\square$
 
-**Structure of the proof in Lean.**  `P4_2_action_scale_uniquely_forced` states
-existence and uniqueness of $\kappa$; the uniqueness argument (currently `sorry`)
-requires showing that two values satisfying the same Gaussian identity must agree.
+Lean: `P4_2_action_scale_uniquely_forced` states existence and uniqueness of
+$\kappa$; the uniqueness argument (currently sorry) requires showing that two
+values satisfying the same Gaussian identity must agree.
 
-## 6.6 D4.2: Classical Recovery
+## 6.9 D4.2: Classical Recovery
 
 **Derivation D4.2** (non-stationary phase).  For a smooth phase $S(x)$ with no
 critical points in the support of a smooth $f$:
@@ -218,35 +151,28 @@ $$\left|\int e^{iS(x)/\hbar}\,f(x)\,dx\right| = O(\hbar^\infty) \text{ as } \hba
 
 The contribution from paths with $|\delta S| > \delta$ is suppressed by rapid
 oscillation.  Only the neighbourhood of $\{S'(x)=0\}$ (stationary-phase locus)
-contributes at leading order.
+contributes at leading order. This recovers classical mechanics: for $\hbar\to 0$,
+the path integral is dominated by the classical path satisfying $\delta S/\delta q = 0$.
 
-This recovers Newtonian/classical mechanics: for $\hbar\to 0$, the path integral
-is dominated by the classical path $q_\text{cl}$ satisfying $\delta S/\delta q = 0$.
-
-## 6.7 D4.3: Van Vleck Determinant
+## 6.10 D4.3: Van Vleck Determinant
 
 The classical propagator $K_\text{cl}(x_i,x_f)\propto\sqrt{|\det\partial^2 S_\text{cl}/\partial x_i\partial x_f|}$
 is a bi-half-density: it transforms with a factor $|\det J_\phi|^{1/2}$ under
 a change of initial coordinates $\phi$.  This is the prefactor in the
 WKB/stationary-phase approximation.
 
-## 6.8 Lean Formalization Status
+## 6.11 Lean Formalization Status
 
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
-| D4.0a Chapman-Kolmogorov structure | `D4_0a_kolmogorov_structure` | 🔲 sorry |
-| D4.0b Hille-Yosida forces Hamiltonian | `D4_0b_hille_yosida_forces_hamiltonian` | 🔲 sorry |
-| D4.0 coordinate invariance (corrected) | `D4_0_half_density_coordinate_invariance` | 🔲 sorry |
-| D4.1a normalization = d/2 | `D4_1a_normalization_forced_to_d_over_2` | 🔲 sorry |
-| D4.1b kernel Lipschitz constant | `D4_1b_kernel_lipschitz_constant` | 🔲 sorry |
-| P4.1 exponential form (with unitarity) | `P4_1_exponential_forced` | 🔲 sorry |
-| P4.1a Gaussian uniqueness (Lévy-Khintchine) | `P4_1a_gaussian_uniqueness_levy_khintchine` | 🔲 sorry |
-| **P4.2 master theorem** | `P4_2_action_scale_uniquely_forced` | 🔲 sorry |
-| D4.2 non-stationary phase vanishes | `D4_2_nonstationary_phase_vanishes` | 🔲 sorry |
-| D4.2a nowhere-differentiable paths generic | `D4_2a_nowhere_differentiable_paths_are_generic` | 🔲 sorry |
-| D4.3 Van Vleck as bi-half-density | `D4_3_van_vleck_bi_half_density` | 🔲 sorry |
-
----
-*Transition to §7.* With the path integral derived and the Hille-Yosida connection
-to the Hamiltonian established, the next section bridges to operator mechanics via
-deformation quantization and the Moyal product.
+| D4.0a Chapman-Kolmogorov structure | `D4_0a_kolmogorov_structure` | sorry |
+| D4.0b Hille-Yosida forces Hamiltonian | `D4_0b_hille_yosida_forces_hamiltonian` | sorry |
+| D4.0 coordinate invariance | `D4_0_half_density_coordinate_invariance` | sorry |
+| D4.1a normalization = d/2 | `D4_1a_normalization_forced_to_d_over_2` | sorry |
+| D4.1b kernel Lipschitz constant | `D4_1b_kernel_lipschitz_constant` | sorry |
+| P4.1 exponential form (with unitarity) | `P4_1_exponential_forced` | sorry |
+| P4.1a Gaussian uniqueness (Levy-Khintchine) | `P4_1a_gaussian_uniqueness_levy_khintchine` | sorry |
+| **P4.2 master theorem** | `P4_2_action_scale_uniquely_forced` | sorry |
+| D4.2 non-stationary phase vanishes | `D4_2_nonstationary_phase_vanishes` | sorry |
+| D4.2a nowhere-differentiable paths generic | `D4_2a_nowhere_differentiable_paths_are_generic` | sorry |
+| D4.3 Van Vleck as bi-half-density | `D4_3_van_vleck_bi_half_density` | sorry |

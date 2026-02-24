@@ -1,6 +1,6 @@
 # 5. Dirac Distributions and Extremal Action
 
-## 5.1 Motivation: Why Weak Forms Are Necessary
+## 5.1 Why Weak Forms Are Necessary
 
 The classical variational argument (Section 4) requires smooth variations $\eta\in C_c^\infty$.
 Physical scenarios force us beyond this:
@@ -24,11 +24,10 @@ $$\delta S[q;\eta] = \int_{t_i}^{t_f}
 - \frac{d}{dt}\frac{\partial\mathcal{L}}{\partial\dot q}(q,\dot q,t)\right)\cdot\eta(t)\,dt.$$
 
 Setting this to zero for all smooth $\eta$ supported in $(t_i,t_f)$ and applying
-the du Bois-Reymond lemma gives the pointwise Euler–Lagrange equation.
+the du Bois-Reymond lemma gives the pointwise Euler--Lagrange equation.
 
-**Key improvement over previous Lean version.**  The earlier formalization had
-`P3_1_weak_stationarity` assert `IsLocalMinimum` unconditionally (wrong direction).
-The corrected version `P3_1_weak_stationarity_iff_EL` is a proper biconditional.
+The corrected Lean version `P3_1_weak_stationarity_iff_EL` is a proper biconditional,
+fixing the earlier one-directional formulation.
 
 ## 5.3 P3.2: Localized Probing
 
@@ -36,7 +35,7 @@ The corrected version `P3_1_weak_stationarity_iff_EL` is a proper biconditional.
 test function $\eta$ with $\text{supp}(\eta)\subseteq(t_0-\varepsilon, t_0+\varepsilon)$
 and $\int\eta = 1$.
 
-Such *local probes* can resolve arbitrarily fine changes in the Euler–Lagrange residual.
+Such *local probes* can resolve arbitrarily fine changes in the Euler--Lagrange residual.
 The mollifier family of Section 2 provides the explicit construction.
 
 ## 5.4 P3.3 and P3.4: Corners vs. Impulses
@@ -44,14 +43,10 @@ The mollifier family of Section 2 provides the explicit construction.
 ### Corners (P3.3)
 A **corner** is a point $t_c$ where $q$ is continuous but $\dot{q}$ is discontinuous.
 
-**Proposition P3.3.** A corner at $t_c$ is consistent with the Euler–Lagrange equation
+**Proposition P3.3.** A corner at $t_c$ is consistent with the Euler--Lagrange equation
 on $(t_i,t_c)\cup(t_c,t_f)$ provided the **junction condition** holds:
 $$\frac{\partial\mathcal{L}}{\partial\dot{q}}\bigg|_{t_c^-} = \frac{\partial\mathcal{L}}{\partial\dot{q}}\bigg|_{t_c^+} \qquad (\text{continuity of momentum})$$
-and NO impulsive force is required.
-
-**Physical meaning.** A ball bouncing off a wall has a corner in its trajectory.
-The wall exerts an instantaneous normal force, but the *tangential* component of
-momentum is continuous — the corner alone does not require a tangential impulse.
+and no impulsive force is required.
 
 ### Impulses (P3.4)
 **Proposition P3.4.** A momentum jump $\Delta p = p(t_c^+) - p(t_c^-)$ at $t_c$
@@ -61,10 +56,9 @@ $$F(t) = \Delta p\cdot\delta(t - t_c).$$
 The weak form: for all $\eta\in C_c^\infty$,
 $$\int m\ddot{q}(t)\,\eta(t)\,dt = \Delta p\cdot\eta(t_c).$$
 
-**Delta-object dictionary.** The classification of when distributional objects
-are safe (corners, impulses) vs.\ requiring regularization (delta-squared, etc.)
-follows the criterion: a distributional operation is safe iff it is a continuous
-linear functional on $C_c^\infty$.
+A distributional operation is safe iff it is a continuous
+linear functional on $C_c^\infty$. This classifies corners and impulses as safe,
+while products like $\delta^2$ require regularization.
 
 ## 5.5 D3.5: Born Rule as Half-Density Product
 
@@ -75,10 +69,6 @@ where $\rho(x) = |\psi(x)|^2$ is the probability density.
 **Proposition D3.5** (biconditional).
 $$\int|\psi|^2 = 1 \iff \exists\,\rho\geq 0:\;|\psi|^2 = \rho\;\text{ and }\;\int\rho = 1.$$
 
-**Correction from Lean review.** The earlier version had this biconditional
-backwards (it claimed $\psi = \sqrt\rho$ as a condition, which is too restrictive).
-The correct version only requires $|\psi|^2 = \rho$.
-
 The half-density structure $\sqrt{\rho}$ is the key input to Section 6's
 coordinate-invariant composition law (the Van Vleck prefactor).
 
@@ -86,12 +76,8 @@ coordinate-invariant composition law (the Van Vleck prefactor).
 
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
-| P3.1 weak stationarity ↔ E-L | `P3_1_weak_stationarity_iff_EL` | 🔲 sorry |
-| P3.2 local probes exist | `P3_2_local_probes_exist` | 🔲 sorry |
-| P3.3 corner without impulse | `P3_3_corner_consistent_with_smooth_force` | 🔲 sorry |
-| P3.4 impulse ↔ momentum jump | `P3_4_impulse_iff_momentum_jump` | 🔲 sorry |
-| D3.5 Born rule biconditional | `D3_5_born_rule_as_half_density` | ✅ proved |
-
----
-*Transition to §6.* With the weak variational framework in place, the next section
-derives the path integral as the unique amplitude consistent with temporal composition.
+| P3.1 weak stationarity (biconditional) | `P3_1_weak_stationarity_iff_EL` | sorry |
+| P3.2 local probes exist | `P3_2_local_probes_exist` | sorry |
+| P3.3 corner without impulse | `P3_3_corner_consistent_with_smooth_force` | sorry |
+| P3.4 impulse = momentum jump | `P3_4_impulse_iff_momentum_jump` | sorry |
+| D3.5 Born rule biconditional | `D3_5_born_rule_as_half_density` | proved |

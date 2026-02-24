@@ -9,9 +9,9 @@ and stationarity is $\delta S[q;\eta] = 0$ for all admissible $\eta$.
 
 ## 4.2 P2.0: Fundamental Lemma
 
-**Proposition P2.0** (Euler–Lagrange, vector form).
+**Proposition P2.0** (Euler--Lagrange, vector form).
 The action is stationary for all compactly supported $\eta$ if and only if the
-Euler–Lagrange equations hold:
+Euler--Lagrange equations hold:
 $$\frac{\partial\mathcal{L}}{\partial q^i} - \frac{d}{dt}\frac{\partial\mathcal{L}}{\partial\dot{q}^i} = 0, \qquad i = 1,\ldots,d,$$
 pointwise on $(t_i, t_f)$.
 
@@ -19,9 +19,9 @@ pointwise on $(t_i, t_f)$.
 Integrate by parts (the boundary terms vanish since $\eta(t_i)=\eta(t_f)=0$).
 Apply the du Bois-Reymond fundamental lemma. $\square$
 
-**Lean formalization.** `P2_0_fundamental_variational` in Section04_Action.lean.
+Lean: `P2_0_fundamental_variational` in Section04_Action.lean.
 The first-variation formula is modelled as `firstVariation`, with explicit partial
-derivative hypotheses `h_deriv_q` and `h_deriv_v`.  Status: 🔲 sorry.
+derivative hypotheses `h_deriv_q` and `h_deriv_v`.  Status: sorry.
 
 ## 4.3 P2.1: Geometric-Variational Equivalence
 
@@ -35,9 +35,7 @@ Concretely: $\frac{d}{dt}(mr^2\dot\theta) = 0 \iff \frac{\partial\mathcal{L}}{\p
 This closes the bridge from Section 3 (geometric) to Section 4 (variational):
 the *same* invariant appears from two directions.
 
-**Lean formalization.** `P2_1_geometric_variational_equivalence` in Section04_Action.lean.
-The Lean statement correctly uses $\frac{d}{dt}(mr^2\dot\theta) = 0$ as the angular
-momentum condition.  Status: 🔲 sorry.
+Lean: `P2_1_geometric_variational_equivalence` in Section04_Action.lean.  Status: sorry.
 
 ## 4.4 Temporal Additivity
 
@@ -46,8 +44,8 @@ $$S[q; t_i, t_f] = S[q; t_i, t_m] + S[q; t_m, t_f].$$
 
 *Proof.* Split the integral: $\int_{t_i}^{t_f} = \int_{t_i}^{t_m} + \int_{t_m}^{t_f}$. $\square$
 
-**Lean formalization.** `action_additivity_temporal` in Section04_Action.lean.
-Uses `intervalIntegral.integral_add_adjacent_intervals`.  Status: 🔲 sorry (requires
+Lean: `action_additivity_temporal` in Section04_Action.lean.
+Uses `intervalIntegral.integral_add_adjacent_intervals`.  Status: sorry (requires
 continuity hypothesis, proof is near-trivial once hypotheses are stated).
 
 ## 4.5 P2.2: Lagrangian Form is Unique
@@ -61,9 +59,9 @@ must take the Lagrangian form $F = S[\cdot;L]$ for some $L$.
 *Proof sketch.* Locality + additivity constrains the integrand to depend on $q$
 only through values and first derivatives (no higher derivatives, no cross-time terms). $\square$
 
-**Lean formalization.** `P2_2_action_uniqueness_from_additivity` in Section04_Action.lean.
-The Lean proof simply extracts $L = \lambda$ from the locality hypothesis; the deep
-content is the justification of locality, which is stated as a hypothesis.  Status: ✅ proved.
+Lean: `P2_2_action_uniqueness_from_additivity` in Section04_Action.lean.
+The Lean proof extracts $L = \lambda$ from the locality hypothesis; the deep
+content is the justification of locality, which is stated as a hypothesis.  Status: proved.
 
 ## 4.6 Why No Higher Derivatives
 
@@ -78,11 +76,7 @@ two consecutive time steps to specify, breaking the single-step additive structu
 
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
-| P2.0 Euler-Lagrange ↔ stationarity | `P2_0_fundamental_variational` | 🔲 sorry |
-| P2.1 geometric-variational equivalence | `P2_1_geometric_variational_equivalence` | 🔲 sorry |
-| Temporal additivity | `action_additivity_temporal` | 🔲 sorry |
-| P2.2 Lagrangian uniqueness | `P2_2_action_uniqueness_from_additivity` | ✅ proved |
-
----
-*Transition to §5.* With the action principle established for smooth paths, the
-next section extends to weak/distributional formulations needed for point probes.
+| P2.0 Euler-Lagrange | `P2_0_fundamental_variational` | sorry |
+| P2.1 geometric-variational equivalence | `P2_1_geometric_variational_equivalence` | sorry |
+| Temporal additivity | `action_additivity_temporal` | sorry |
+| P2.2 Lagrangian uniqueness | `P2_2_action_uniqueness_from_additivity` | proved |
