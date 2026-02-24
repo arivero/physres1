@@ -27,35 +27,27 @@ parameter must emerge for that preservation to hold?
 $$
 \left|e^{iS/\hbar}\right| = 1.
 $$
-Classical *concentration* is not a property of individual amplitude magnitudes;
-it is a property of oscillatory *integrals*.  The precise statement is Proposition
-D4.2 (stationary-phase theorem).
+Classical concentration is a property of oscillatory *integrals*, not of
+individual amplitudes. The precise mechanism is stationary phase (D4.2).
 
-**H0.2 (Three obstruction types).** Naive refinement-to-zero encounters three
-recurring difficulties:
+**H0.2 (Three obstruction types).** Naive refinement encounters three difficulties:
 
-1. **Singular probes.**  Point-supported variations $\delta(t - t_0)$ lie outside
-   the domain of the standard first-variation formula.  Distributional treatment
-   (mollifiers, weak forms) is mandatory (Section 5).
+1. **Singular probes.**  Point-supported variations lie outside the domain of the
+   first-variation formula. Distributional treatment is mandatory (Section 5).
 
-2. **Ordering/discretization ambiguity.**  Two discretizations can agree on the
-   classical action $S[q]$ at every $N$ while differing at $O(\hbar)$ as operators.
-   The minimal resolution is to require self-adjointness of the generator, which
-   selects the midpoint (half-density) prescription (Sections 6–7).
+2. **Ordering ambiguity.**  Two discretizations can agree on $S[q]$ at every $N$
+   while differing at $O(\hbar)$ as operators. Self-adjointness of the generator
+   selects the midpoint prescription (Sections 6--7).
 
-3. **UV divergence.**  The prototypical toy divergence is
-   $$\int_1^\Lambda \frac{dk}{k} = \log\Lambda \;\xrightarrow{\Lambda\to\infty}\; \infty.$$
-   No continuum limit exists without a compensating running coupling (Section 8
-   and Appendix 10.5).
+3. **UV divergence.**  $\int_1^\Lambda dk/k = \log\Lambda \to \infty$.
+   No continuum limit exists without a running coupling (Section 8).
 
-**H0.2a (No Lebesgue measure on path space).** There is no nontrivial
-translation-invariant $\sigma$-finite Borel measure on the space of continuous
-paths [Sudakov 1959; Glimm–Jaffe 1987].  The symbol $\mathcal{D}q$ is therefore a
-definition-by-refinement, not a raw limit of Lebesgue measure.
+There is no nontrivial translation-invariant $\sigma$-finite Borel measure on
+path space [Sudakov 1959; Glimm--Jaffe 1987], so $\mathcal{D}q$ is a
+definition-by-refinement, not a limit of Lebesgue measure.
 
-**H0.3 (Constants as control parameters).**  $\hbar$, $c$, $G$ are not a priori
-"given" constants; they emerge as the unique couplings forced by distinct
-compatibility conditions:
+**H0.3 (Constants as control parameters).**  $\hbar$, $c$, $G$ emerge as the
+unique couplings forced by composition:
 
 | Constant | Compatibility condition | Paper section |
 |----------|------------------------|---------------|
@@ -65,21 +57,18 @@ compatibility conditions:
 
 ## 1.3 Methodological Anchors
 
-**First anchor: Newton's polygon.**  Replace a curve by short segments, impose a
-local update rule, and pass to a limit while controlling what "vanishing" means.
-The key object is a *refinement procedure with invariant content*, not a smallest
-geometric piece.
+**Newton's polygon.**  Replace a curve by short segments, impose a local update
+rule, and pass to a limit. The key object is a refinement procedure with invariant
+content, not a smallest geometric piece.
 
-**Second anchor: Action additivity.**  $S[\gamma_{if}] = S[\gamma_{im}] + S[\gamma_{mf}]$
-under temporal partition is the algebraic structure that compares coarse and fine
-descriptions.  The bridge to quantum amplitudes: if weights compose
-multiplicatively while the underlying functional is additive, exponential weighting
-is structurally forced (P0.2 / D0.1).
+**Action additivity.**  $S[\gamma_{if}] = S[\gamma_{im}] + S[\gamma_{mf}]$ under
+temporal partition is the algebraic structure that compares coarse and fine
+descriptions. If weights compose multiplicatively while the functional is additive,
+exponential weighting is forced (P0.2).
 
-**Third anchor: Two limit-control mechanisms.** Deformation quantization controls
-the classical-to-quantum passage via algebraic deformation [Landsman 1998].
-Renormalization controls divergent refinements by regulator-dependent intermediate
-steps [Connes–Kreimer 2000].
+**Two limit-control mechanisms.** Deformation quantization controls the
+classical-to-quantum passage [Landsman 1998]. Renormalization controls divergent
+refinements by regulator-dependent intermediate steps [Connes--Kreimer 2000].
 
 ## 1.4 Contributions
 
@@ -95,10 +84,9 @@ steps [Connes–Kreimer 2000].
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
 | H0.1 phase norm = 1 | `H0_1_phase_has_unit_norm` | ✅ proved |
-| H0.2 log divergence | `H0_2_log_divergence` | ✅ proved |
+| H0.2 log divergence | `H0_2_log_divergence` | 🔲 sorry |
 | H0.3 control params | `H0_3_control_parameters_are_positive` | ✅ trivial |
 | P0.0 unique scale | `P0_0_unique_scale` | 🔲 sorry |
 
 ---
-*Transition to §2.* With the program stated, the next section fixes formal
-vocabulary and the claim taxonomy (P/D/H).
+*Next:* Section 2 fixes notation and the claim taxonomy (P/D/H).

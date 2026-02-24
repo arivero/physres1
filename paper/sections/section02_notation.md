@@ -60,14 +60,14 @@ Section 6 identifies $\kappa = \hbar$.
 
 ## 2.6 Three Compatibility Channels
 
-| Channel | Symbol | Refinement parameter | Key section |
-|---------|--------|---------------------|-------------|
-| Partition | $\mathcal{C}_t$ | step size $\Delta t$ | §3–4 |
-| Representation | $\mathcal{Q}_\hbar$ | ordering prescription | §6–7 |
-| Scale | $\mathcal{R}_\Lambda$ | UV cutoff $\Lambda$ | §8 |
+| Channel | Refinement parameter | Key section |
+|---------|---------------------|-------------|
+| Partition | step size $\Delta t$ | §3--4 |
+| Representation | ordering prescription | §6--7 |
+| Scale | UV cutoff $\Lambda$ | §8 |
 
-The claim of the paper: all three channels yield the same physical predictions,
-and this commutativity uniquely forces $\hbar$.
+The paper's central claim: all three channels yield the same physical
+predictions, and this commutativity uniquely forces $\hbar$.
 
 ## 2.7 Nonrelativistic Limit (D0.2)
 

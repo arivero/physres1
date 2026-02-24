@@ -242,8 +242,6 @@ The decomposition is algorithmic:
 
 **Lean status.** `SN_VII_birkhoff_decomposition_one_loop` (in `SynthesisNote.lean`) states the decomposition for the one-loop case and the decorated-tree extension.  Status: 🔲 sorry (algebraic manipulation).
 
-Also update the status table (§10.8): `SN_VII_birkhoff_decomposition_one_loop` — 🔲 sorry.
-
 ### D13.3: Path Integral as Sum Over Characters
 
 In the Connes-Kreimer framework, a renormalized Feynman amplitude is a *character*
