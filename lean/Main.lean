@@ -1,12 +1,10 @@
 -- Main entry point for PhysRes Lean formalization
--- Master import file for all 10 main paper sections + 13 satellite papers
+-- Imports all 10 main paper sections + 13 satellite papers
 
 import PhysRes.Core
 import PhysRes.CompositionLaw
 import PhysRes.Renormalization
 import PhysRes.DeformationQuantization
-
--- Main Paper Sections
 import PhysRes.MainPaper.Section01_Introduction
 import PhysRes.MainPaper.Section02_Notation
 import PhysRes.MainPaper.Section03_Newtonian
@@ -17,9 +15,11 @@ import PhysRes.MainPaper.Section07_Deformation
 import PhysRes.MainPaper.Section08_Renormalization
 import PhysRes.MainPaper.Section09_Unified
 import PhysRes.MainPaper.Section10_Appendices
-
--- Satellite Papers (13 papers)
-import PhysRes.Satellites.AllSatellites
+import PhysRes.Satellites.RCPFoundations
+import PhysRes.Satellites.PathIntegralNormalization
+import PhysRes.Satellites.HalfDensityQFT
+import PhysRes.Satellites.RGFundamental
+import PhysRes.Satellites.OtherSatellites
 
 namespace PhysRes
 
@@ -44,10 +44,10 @@ namespace PhysRes
 #check @MainPaper.Section09.P7_1_compatibility_chain
 #check @MainPaper.Section10.D10_1_bridge_to_master
 
-#check @Satellites.RCPFoundations.partition_channel_invariance
+#check @Satellites.RCPFoundations.A1_composition_law
 #check @Satellites.PathIntegralNormalization.path_integral_normalization_unique
-#check @Satellites.HalfDensityQFT.bi_half_density_law
-#check @Satellites.RGFundamental.rg_flow_from_semigroup
+#check @Satellites.HalfDensityQFT.bi_half_density_transformation
+#check @Satellites.RGFundamental.rg_flow_from_semigroup_closure
 #check @Satellites.OrderingEquivalence.ordering_schemes_equivalent
 #check @Satellites.RootedTreeBookkeeping.butcher_group_composition
 
