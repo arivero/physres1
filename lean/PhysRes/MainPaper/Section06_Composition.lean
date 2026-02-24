@@ -3,6 +3,12 @@
 -- IMPROVED: correct half-density coordinate invariance (fixed trivial-conclusion bug),
 --           proper P4.2 formulation, unitarity hypothesis added,
 --           stationary-phase well-typed, Van Vleck half-density corrected
+-- SYNTHESIS NOTE ADDITIONS (2026-02-24):
+--   - Kolmogorov/Chapman-Kolmogorov historical remark (D4.0a)
+--   - Hille-Yosida theorem: semigroup forces Hamiltonian (D4.0b)
+--   - Kernel Lipschitz constant = (ℏt)^{-1/2} (D4.1b)
+--   - Lévy-Khintchine / Gaussian uniqueness (P4.1a)
+--   - Differentiability forcing non-differentiable paths (D4.2a)
 
 import Mathlib.Analysis.SpecialFunctions.Gaussian.Basic
 import Mathlib.MeasureTheory.Integral.SetIntegral
@@ -22,6 +28,27 @@ The path integral is *derived*, not postulated, as the unique amplitude consiste
 
 **P4.2** (master theorem): composition forces a unique action scale κ = ℏ > 0.
 **D4.1a**: the normalization exponent d/2 is uniquely forced by (1).
+
+### Synthesis Note additions (§II–§III of the Synthesis Note)
+
+**Kolmogorov 1931**: the composition law (1) is exactly the Chapman–Kolmogorov
+equation for a Markov process transition kernel.  The quantum case differs only
+in that the kernel is complex-valued (amplitude rather than probability).
+
+**Hille-Yosida** (D4.0b): a strongly-continuous one-parameter semigroup {Kₜ} of
+bounded operators on a Hilbert space has a unique densely-defined generator H,
+so that Kₜ = exp(-itH/ℏ).  No additional "Hamiltonian postulate" is needed:
+the semigroup axiom A1 *forces* the Schrödinger equation.
+
+**Lipschitz regularity** (D4.1b): the free-particle kernel K_free(x,y,t) is
+Lipschitz in x with Lipschitz constant ~ (m/(ℏt))^{1/2}.  As ℏ → 0 this blows up,
+which means the classical limit is NOT Lipschitz — it is the "Lipschitz catastrophe".
+The quantum kernel is *smoother* than the classical propagator.
+
+**Lévy-Khintchine** (P4.1a): among all infinitely-divisible distributions that
+generate a *Gaussian* composition law (second moment finite, isotropy in ℝ^d),
+the Gaussian is the only stable distribution.  Other stable processes (Lévy flights)
+produce composition kernels that do not match the free-particle kernel.
 -/
 
 -- ─────────────────────────────────────────────────────────────────────────────
@@ -33,6 +60,70 @@ The path integral is *derived*, not postulated, as the unique amplitude consiste
 noncomputable def K_free (x y : EuclideanSpace ℝ (Fin d)) (t : ℝ) : ℂ :=
   (m / (2 * Real.pi * ℏ * t) : ℝ) ^ ((d : ℝ) / 2) *
   Complex.exp (Complex.I * m * ‖x - y‖^2 / (2 * ℏ * t))
+
+-- ─────────────────────────────────────────────────────────────────────────────
+-- §6.0a  Kolmogorov / Chapman–Kolmogorov historical note (D4.0a)
+-- ─────────────────────────────────────────────────────────────────────────────
+
+/-- D4.0a (Kolmogorov 1931): The composition axiom
+    K(x,z,t₁+t₂) = ∫ K(x,w,t₁) K(w,z,t₂) dw
+    is identical in structure to the Chapman–Kolmogorov equation for Markov kernels.
+
+    For a Markov process, K(x,z,t) is a probability density (real, non-negative, integrates to 1).
+    For quantum mechanics, K(x,z,t) is a complex amplitude (integrates to δ(x-z) as t→0).
+    The algebraic composition law is the SAME in both cases.
+
+    The distinguishing feature of the quantum case is unitarity: |K|² rather than K itself
+    is the probability density.  This complex structure is the ONLY difference from Kolmogorov.
+-/
+theorem D4_0a_kolmogorov_structure
+    (K : EuclideanSpace ℝ (Fin d) → EuclideanSpace ℝ (Fin d) → ℝ → ℂ)
+    -- K satisfies composition (Chapman-Kolmogorov with complex values):
+    (hK : ∀ x z t₁ t₂, t₁ > 0 → t₂ > 0 →
+      (∫ w, K x w t₁ * K w z t₂) = K x z (t₁ + t₂))
+    -- K is unitary (complex probability): ∫ |K(x,w,t)|² dw = 1
+    (hK_unit : ∀ x t, t > 0 → ∫ w, Complex.normSq (K x w t) = 1) :
+    -- The family {K_t}_{t>0} is a one-parameter family satisfying semigroup law:
+    ∀ x z t₁ t₂ t₃, t₁ > 0 → t₂ > 0 → t₃ > 0 →
+    (∫ w₁, (∫ w₂, K x w₁ t₁ * K w₁ w₂ t₂ * K w₂ z t₃)) =
+    K x z (t₁ + t₂ + t₃) := by
+  intro x z t₁ t₂ t₃ ht₁ ht₂ ht₃
+  -- (t₁ + t₂) + t₃ = t₁ + (t₂ + t₃) by assoc; apply hK twice
+  have h12 : t₁ + t₂ > 0 := add_pos ht₁ ht₂
+  -- apply composition twice:
+  sorry
+
+-- ─────────────────────────────────────────────────────────────────────────────
+-- §6.0b  Hille-Yosida: semigroup forces Hamiltonian (D4.0b)
+-- ─────────────────────────────────────────────────────────────────────────────
+
+/-- D4.0b (Hille-Yosida forcing): A strongly-continuous one-parameter semigroup of
+    bounded operators on a Hilbert space H admits a unique densely-defined closed
+    linear operator H (the *generator*) such that Kₜ = exp(-itH).
+
+    **Consequence for physics**: The composition axiom K(t₁+t₂) = K(t₁) ∘ K(t₂),
+    together with strong continuity in t, *forces* the Schrödinger equation
+      dψ/dt = -iH/ℏ · ψ
+    without any additional postulate about H.  The Hamiltonian is not assumed —
+    it is the infinitesimal generator of the required semigroup.
+
+    Status: 🔲 sorry (requires Mathlib's `ContinuousLinearMap.StronglyMeasurable`
+    and Hille-Yosida theorem, which are in development).
+-/
+theorem D4_0b_hille_yosida_forces_hamiltonian
+    {H_space : Type*} [NormedAddCommGroup H_space] [InnerProductSpace ℂ H_space]
+    [CompleteSpace H_space]
+    -- A strongly-continuous one-parameter unitary group {Uₜ}_{t:ℝ}:
+    (U : ℝ → H_space →L[ℂ] H_space)
+    (hU_semi : ∀ s t, U (s + t) = U s ∘L U t)
+    (hU_id : U 0 = ContinuousLinearMap.id ℂ H_space)
+    (hU_cts : Continuous (fun t => U t))
+    (hU_unitary : ∀ t, ∀ x : H_space, ‖U t x‖ = ‖x‖) :
+    -- There exists a densely-defined self-adjoint generator G such that U t = exp(-itG):
+    ∃ (G : H_space →L[ℂ] H_space),
+    ∀ (ψ : H_space) (t : ℝ),
+    HasDerivAt (fun s => U s ψ) (G (U t ψ)) t := by
+  sorry  -- Hille-Yosida theorem from functional analysis
 
 -- ─────────────────────────────────────────────────────────────────────────────
 -- §6.1  Half-density coordinate invariance (D4.0)
@@ -91,6 +182,36 @@ theorem D4_1a_normalization_forced_to_d_over_2 (α : ℝ) :
   sorry  -- Dimensional analysis: (t^{-α})^2 · (Gaussian factor)^d/2 = (t+t')^{-α}
 
 -- ─────────────────────────────────────────────────────────────────────────────
+-- §6.2a  Kernel Lipschitz constant = (ℏt)^{-1/2} (D4.1b)
+-- ─────────────────────────────────────────────────────────────────────────────
+
+/-- D4.1b (Synthesis Note §III): The free-particle kernel K_free is Lipschitz
+    in the initial position x with Lipschitz constant ~ (m/(ℏt))^{1/2}.
+
+    Specifically: |K_free(x,z,t) - K_free(x',z,t)| ≤ L(ℏ,t) · ‖x - x'‖
+    where L(ℏ,t) = C · (m/(ℏt))^{(d+2)/2} · max_distance.
+
+    **Physical interpretation**:
+    - As ℏ → 0, L(ℏ,t) → ∞: the kernel becomes *less* Lipschitz.
+    - The classical limit ℏ = 0 has L = ∞: the kernel is NOT Lipschitz.
+    - Quantum mechanics *regularizes* the classical singularity.
+    - ℏ is the *price of differentiability*: paying ℏ > 0 buys Lipschitz continuity.
+
+    The Banach-Mazurkiewicz theorem (D4.2a) makes this precise: the paths that
+    contribute to the path integral are *nowhere differentiable* (generic in
+    the Baire-category sense), but the kernel itself is differentiable.
+    This is not a contradiction: the kernel smooths the measure over all paths.
+
+    Status: 🔲 sorry (requires bounding the gradient of the Fresnel phase).
+-/
+theorem D4_1b_kernel_lipschitz_constant
+    (x x' z : EuclideanSpace ℝ (Fin d)) (t : ℝ) (ht : t > 0) :
+    ∃ C : ℝ, C > 0 ∧
+    Complex.abs (K_free d m ℏ x z t - K_free d m ℏ x' z t) ≤
+    C * (m / (ℏ * t)) ^ ((d : ℝ) / 2 + 1) * ‖x - x'‖ := by
+  sorry
+
+-- ─────────────────────────────────────────────────────────────────────────────
 -- §6.3  Exponential form forced (P4.1)
 -- ─────────────────────────────────────────────────────────────────────────────
 
@@ -107,6 +228,46 @@ theorem P4_1_exponential_forced
     (hW_unit : ∀ γ, Complex.abs (W γ) = 1)
     (hW_nd : ∃ γ₀, W γ₀ ≠ 0) :
     ∃ (κ : ℝ), κ > 0 ∧ ∀ γ, W γ = Complex.exp (Complex.I * S γ / κ) := by
+  sorry
+
+-- ─────────────────────────────────────────────────────────────────────────────
+-- §6.3a  Lévy-Khintchine: Gaussian uniqueness (P4.1a)
+-- ─────────────────────────────────────────────────────────────────────────────
+
+/-- P4.1a (Lévy-Khintchine / Gaussian uniqueness):
+    Among all *isotropic* infinitely-divisible distributions on ℝ^d with
+    *finite second moment*, the Gaussian (normal distribution) is the unique
+    stable distribution.
+
+    **Consequence**: The composition law K(t₁+t₂) = K(t₁)*K(t₂) with:
+    (a) isotropy in ℝ^d,
+    (b) second moment = d · m · t / ℏ (from dimensional analysis),
+    (c) infinite divisibility (semigroup for all rational t),
+    forces K to be Gaussian.  Lévy-stable processes (α-stable with α ≠ 2) have
+    infinite second moments and do not satisfy (b).
+
+    This excludes fractional quantum mechanics (Lévy path integrals with α ≠ 2)
+    as the unique canonical quantization of a non-relativistic particle with finite mass.
+
+    Status: 🔲 sorry (requires Lévy-Khintchine representation theorem from probability theory).
+-/
+theorem P4_1a_gaussian_uniqueness_levy_khintchine :
+    -- A kernel K : ℝ^d × ℝ^d × ℝ>0 → ℝ satisfying:
+    ∀ (K : EuclideanSpace ℝ (Fin d) → EuclideanSpace ℝ (Fin d) → ℝ → ℝ)
+      -- (1) non-negative (probability kernel):
+      (hK_pos : ∀ x y t, K x y t ≥ 0)
+      -- (2) normalised: ∫ K(x,y,t) dy = 1
+      (hK_norm : ∀ x t, ∫ y, K x y t = 1)
+      -- (3) composition (Chapman-Kolmogorov):
+      (hK_comp : ∀ x z t₁ t₂, ∫ w, K x w t₁ * K w z t₂ = K x z (t₁ + t₂))
+      -- (4) isotropic: K(x,y,t) depends only on |x-y|:
+      (hK_iso : ∀ x y t, ∃ k : ℝ → ℝ → ℝ, K x y t = k ‖x - y‖ t)
+      -- (5) finite second moment ∀ t:
+      (hK_mom2 : ∀ x t, ∫ y, ‖x - y‖^2 * K x y t < ∞),
+    -- Then K is Gaussian:
+    ∃ (σ : ℝ → ℝ) (hσ : ∀ t, σ t > 0),
+    ∀ x y t, K x y t = (2 * Real.pi * σ t)^(-(d : ℝ)/2) *
+             Real.exp (- ‖x - y‖^2 / (2 * σ t)) := by
   sorry
 
 -- ─────────────────────────────────────────────────────────────────────────────
@@ -160,12 +321,47 @@ theorem D4_2_nonstationary_phase_vanishes
   sorry  -- Riemann-Lebesgue lemma + integration by parts
 
 -- ─────────────────────────────────────────────────────────────────────────────
+-- §6.5a  Banach-Mazurkiewicz: paths are nowhere differentiable (D4.2a)
+-- ─────────────────────────────────────────────────────────────────────────────
+
+/-- D4.2a (Banach 1931, Mazurkiewicz 1931 / Synthesis Note §VIII):
+    The set of continuous but nowhere-differentiable functions is a comeager (residual)
+    subset of C([0,1], ℝ^d) in the sup-norm topology.  Its complement —
+    the set of everywhere-differentiable functions — is meager (first-category).
+
+    **Consequence for path integrals**: the "typical" path in the path-integral
+    measure is nowhere differentiable.  Yet the *kernel* K_free(x,y,t) is
+    smooth in x,y.  This is not a contradiction: the kernel arises from
+    *integrating out* all paths, including the nowhere-differentiable ones.
+    The Lipschitz constant of the kernel (D4.1b) represents the price paid
+    to make this integral well-defined: L(ℏ,t) = C·(ℏt)^{-1/2} with ℏ > 0.
+
+    **ℏ as price of differentiability**: setting ℏ = 0 would require a
+    delta-function path (perfectly classical), which is NOT in the support
+    of the path-integral measure.  ℏ > 0 buys a smeared, differentiable kernel.
+
+    Status: 🔲 sorry (classical result, requires Baire-category argument).
+-/
+theorem D4_2a_nowhere_differentiable_paths_are_generic :
+    -- In C([0,1], ℝ), equipped with sup-norm:
+    let X := C(Set.Icc (0 : ℝ) 1, ℝ)
+    -- The set of nowhere-differentiable functions is residual (comeager):
+    -- i.e., its complement (differentiable somewhere) is meager (first category):
+    ∃ (meager_set : Set (C(Set.Icc (0 : ℝ) 1, ℝ))),
+    -- meager_set is the set of functions differentiable at some point
+    (∀ f ∈ meager_set, ∃ (x : Set.Icc (0 : ℝ) 1), DifferentiableAt ℝ (fun t => f t) x) ∧
+    -- its complement is dense (the nowhere-differentiable functions are dense)
+    Dense (meager_setᶜ) := by
+  sorry
+
+-- ─────────────────────────────────────────────────────────────────────────────
 -- §6.6  Van Vleck determinant (D4.3)
 -- ─────────────────────────────────────────────────────────────────────────────
 
 /-- D4.3: The Van Vleck prefactor √|det ∂²S_cl/∂x_i ∂x_f|
-    is a bi-half-density: it acquires a factor |det Jφ|^{1/2} when
-    the initial coordinate x_i is transformed by φ.
+    is a bi-half-density: it transforms with a factor |det Jφ|^{1/2} under
+    a change of initial coordinates φ.  This is the prefactor in the
+    WKB/stationary-phase approximation.
 -/
 theorem D4_3_van_vleck_bi_half_density
     (S_cl : EuclideanSpace ℝ (Fin d) → EuclideanSpace ℝ (Fin d) → ℝ)

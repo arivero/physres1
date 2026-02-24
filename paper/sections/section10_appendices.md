@@ -63,6 +63,18 @@ $$\begin{tikzcd}
 \text{Ordering 2} \ar[r, "\text{RG flow}"] & \text{Scale }\Lambda
 \end{tikzcd}$$
 
+## 10.4 Three-Level Regularity Hierarchy (Summary)
+
+The RCP channels correspond to three levels of regularity (from §9.1a):
+
+| Level | Criterion | Mechanism | RCP Channel | Example |
+|-------|-----------|-----------|-------------|---------|
+| **Classical** | Lipschitz flow (Picard-Lindelöf) | ODE existence | Partition $\mathcal{C}_t$ | Newton, Kepler |
+| **Quantum** | Kato-class potential | $\hbar$ UV regularization | Representation $\mathcal{Q}_\hbar$ | Hydrogen atom |
+| **Renormalizable** | UV fixed point / asym. freedom | Beta function flow | Scale $\mathcal{R}_\Lambda$ | 2D delta, QCD |
+
+A theory must pass all three levels to be a complete, consistent QFT.
+
 ## 10.5 2D Contact Interaction (D11.1–D11.3 and P11.1)
 
 The 2D contact (delta) interaction is the simplest fully explicit RG witness:
@@ -153,7 +165,76 @@ satisfies $\int K_\text{HO}(x,w,t_1)K_\text{HO}(w,z,t_2)\,dw = K_\text{HO}(x,z,t
 This is a non-trivial witness: the composition law holds for a genuinely interacting
 system (not just the free particle).
 
-## 10.7 Lean Formalization Status
+## 10.7 Butcher-Hopf Algebra and the Derivative as Renormalized Object (D13.1–D13.3, P13.1)
+
+**(Synthesis Note §VIII — new material)**
+
+### D13.2: The Derivative is a Renormalized Object
+
+The derivative
+$$f'(x) = \lim_{\varepsilon\to 0}\frac{f(x+\varepsilon) - f(x)}{\varepsilon}$$
+is the simplest example of *BPHZ renormalization*:
+
+| Step | QFT language | Calculus language |
+|------|-------------|------------------|
+| "Bare amplitude" | $\Gamma_\text{bare}(\varepsilon) = 1/\varepsilon$ | difference quotient $(f(x+\varepsilon)-f(x))/\varepsilon$ |
+| "Divergence" | $\Gamma_\text{bare}\to\infty$ as $\varepsilon\to 0$ | individually, $f(x+\varepsilon)/\varepsilon$ and $f(x)/\varepsilon$ both diverge |
+| "Counterterm" | subtract subdivergence $f(x)/\varepsilon$ | $f(x)/\varepsilon - f(x)/\varepsilon = 0$ |
+| "Renormalized amplitude" | $\Gamma_\text{ren} = f'(x)$ (finite) | the limit exists by differentiability |
+
+The counterterm is the subtraction of $f(x)/\varepsilon$ from $f(x+\varepsilon)/\varepsilon$;
+the difference quotient is the "renormalized" result.
+
+**Lean proof.** `D13_2_derivative_as_renormalized` is proved by `hf.hasDerivAt.tendsto_nhds`.  Status: ✅ proved.
+
+### D13.1: Rooted Trees and Butcher's B-Series
+
+Runge-Kutta methods for $y' = f(y)$ are organized by rooted trees:
+$$y(t+h) = y(t) + \sum_{\tau\in\mathcal{T}} \frac{h^{|\tau|}}{\sigma(\tau)}\,a_\tau\,F_\tau(y(t))$$
+where $|\tau|$ = number of nodes, $\sigma(\tau)$ = symmetry factor,
+$F_\tau$ = elementary differential (product of $f$-derivatives along the tree).
+
+Each rooted tree $\tau$ represents one "counterterm" needed to achieve a given order
+of accuracy in $h$.  Removing a subtree = subtracting a subdivergence.
+
+The coefficients $a_\tau$ are constrained by consistency conditions that form a
+**Hopf algebra** structure on the vector space $H_\text{RT}$ spanned by rooted trees.
+
+### P13.1: Brouder's Theorem (1999) — Butcher = Connes-Kreimer
+
+**Theorem P13.1 (Brouder 1999).**  The Butcher group of Runge-Kutta B-series
+(numerical ODE methods, organized by the Hopf algebra $H_\text{RT}$) is isomorphic
+to the Connes-Kreimer renormalization group of perturbative QFT.
+
+Both groups are the **character group** of $H_\text{RT}$: the group of multiplicative
+linear maps $\phi: H_\text{RT}\to\mathbb{R}$ under convolution.
+
+**Consequence for this paper:**  The three RCP channels correspond to three families
+of characters of $H_\text{RT}$:
+- **Partition channel:** B-series for time discretization (Butcher trees for temporal RK steps).
+- **Representation channel:** characters for operator-ordering (star products on $H_\text{RT}$).
+- **Scale channel:** Connes-Kreimer characters for UV renormalization (Feynman diagrams as trees).
+
+All three channels are governed by the same Hopf algebra $H_\text{RT}$.
+The RCP "commutative diagram" is the statement that these three character groups
+commute (i.e. the associated renormalization operations are compatible).
+
+### D13.3: Path Integral as Sum Over Characters
+
+In the Connes-Kreimer framework, a renormalized Feynman amplitude is a *character*
+$\phi_\text{ren}: H_\text{RT}\to\mathbb{R}$, computed from the bare character
+$\phi_\text{bare}$ by the convolution:
+$$\phi_\text{ren} = S \star \phi_\text{bare}$$
+where $S$ is the antipode of $H_\text{RT}$ (the Hopf algebra inverse).
+
+The full path integral is the *generating function for all characters*:
+$$Z[J] = \int\!\mathcal{D}\phi\,e^{iS[\phi]+J\phi} = \sum_{\text{diagrams}} \phi_\text{ren}(\text{diagram}).$$
+
+**Physical consequence:**  RG-invariant observables are fixed points of the conjugation
+action of the renormalization group on the character group.  The Wilson effective action
+is the orbit of the bare action under this conjugation.
+
+## 10.8 Lean Formalization Status
 
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
@@ -167,3 +248,7 @@ system (not just the free particle).
 | D12.1 free kernel exact | `D12_1_free_kernel_exact_composition` | 🔲 sorry |
 | P12.1 regulator removal (corrected) | `P12_1_regulator_removal` | ✅ proved |
 | D12.3 harmonic oscillator exact | `D12_3_harmonic_oscillator_exact` | 🔲 sorry |
+| D13.1 rooted tree order/symmetry | `RootedTree.order`, `RootedTree.symmetryFactor` | ✅ defined |
+| D13.2 derivative as renormalized | `D13_2_derivative_as_renormalized` | ✅ proved |
+| P13.1 Brouder's theorem (witness) | `P13_1_brouder_theorem` | ✅ trivial witness |
+| D13.3 path integral as character | `D13_3_path_integral_as_character` | 🔲 sorry |

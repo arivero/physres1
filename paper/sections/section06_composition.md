@@ -10,6 +10,50 @@ $$K(x,z,t_1+t_2) = \int K(x,w,t_1)\,K(w,z,t_2)\,dw.$$
 
 This is a *semigroup property* of the kernel family $\{K(\cdot,\cdot,t)\}_{t>0}$.
 
+## 6.1a D4.0a: Kolmogorov 1931 and the Chapman–Kolmogorov Equation
+
+**Historical remark (Synthesis Note §II).**  The composition postulate is
+structurally identical to the *Chapman–Kolmogorov equation* for Markov kernels,
+established by A.N. Kolmogorov in 1931:
+$$p(x,z;t_1+t_2) = \int p(x,w;t_1)\,p(w,z;t_2)\,dw$$
+where $p(x,z;t)$ is a transition probability (real, non-negative, normalised to 1).
+
+The **only difference** between Kolmogorov's and our setting is the sign of the kernel:
+- Kolmogorov: $K$ is real and non-negative (probability density).
+- Quantum: $K$ is complex (amplitude), with $\int |K|^2 = 1$ (Born rule normalization).
+
+The *algebraic* semigroup structure is identical.  The imaginary unit $i$
+distinguishes quantum amplitudes from classical probabilities.
+
+**Derivation D4.0a.**  The three-fold associativity
+$$K(x,z;t_1+t_2+t_3) = \int\!\int K(x,w_1;t_1)\,K(w_1,w_2;t_2)\,K(w_2,z;t_3)\,dw_1\,dw_2$$
+follows directly from applying the semigroup property twice.  This is the
+path-integral measure: slicing $[0,T]$ into $N$ equal steps and applying semigroup
+$N-1$ times gives the Feynman sum over paths.
+
+## 6.1b D4.0b: Hille-Yosida Theorem — Semigroup Forces Hamiltonian
+
+**Synthesis Note §II.**  One of the key novelties integrated here:
+
+**Theorem D4.0b (Hille-Yosida).**  Let $\{U_t\}_{t \geq 0}$ be a strongly-continuous
+one-parameter semigroup of bounded operators on a Hilbert space $\mathcal{H}$:
+$$U_{t_1+t_2} = U_{t_1} \circ U_{t_2}, \quad U_0 = \mathrm{id}, \quad
+t \mapsto U_t\psi \text{ continuous for all } \psi \in \mathcal{H}.$$
+
+Then there exists a unique densely-defined, closed, linear operator $H$
+(the *infinitesimal generator*) such that
+$$U_t = e^{-iHt/\hbar}.$$
+
+**Consequence for physics.**  The composition axiom (A1) + strong continuity in time
+*forces* the Schrödinger equation
+$$i\hbar\,\frac{d\psi}{dt} = H\psi$$
+without any additional postulate about $H$.  The Hamiltonian is not assumed — it is
+the infinitesimal generator of the required semigroup.
+
+**No hidden leap.**  The Hille-Yosida theorem is purely mathematical and requires no
+physical input beyond A1.  The physics enters only in identifying which generator $H$
+describes a given physical system (e.g. $H = p^2/2m + V$ for a particle in a potential).
+
 ## 6.2 D4.0: Coordinate Invariance via Half-Densities
 
 The composition integral $\int K(x,w)\,K(w,z)\,dw$ changes under a coordinate
@@ -46,6 +90,32 @@ $$\boxed{\alpha = d/2}.$$
 This is a *structural* result: it does not require any input about the physics of
 the particle, only the semigroup closure condition.
 
+## 6.3a D4.1b: Kernel Lipschitz Constant and the Price of Differentiability
+
+**Synthesis Note §III.**  The free-particle kernel $K_\text{free}(x,y,t)$ is Lipschitz
+in the initial position $x$ with constant
+$$L(\hbar, t) = C\cdot\left(\frac{m}{\hbar t}\right)^{(d+2)/2}\cdot\|x-x'\|$$
+for some dimension-dependent constant $C$.
+
+**The classical limit is not Lipschitz.**  As $\hbar \to 0$, $L(\hbar,t) \to \infty$.
+At $\hbar = 0$, the "kernel" degenerates to a delta function $\delta(x-y)$, which is
+not a Lipschitz function.
+
+**$\hbar$ as price of differentiability.**  Setting $\hbar > 0$ buys Lipschitz
+continuity of the kernel.  In the $\hbar \to 0$ limit, the kernel loses its
+smoothness — this is the "Lipschitz catastrophe" of the classical limit.
+
+**Banach–Mazurkiewicz theorem (D4.2a).**  The set of continuous, nowhere-differentiable
+functions on $[0,1]$ is *comeager* in $C([0,1])$ with the sup-norm topology — i.e.
+the "typical" path is nowhere differentiable (Banach 1931, Mazurkiewicz 1931).
+
+**Reconciliation.**  The path integral integrates over all continuous paths, including
+nowhere-differentiable ones.  The kernel $K$ is nonetheless smooth in $x,y$, because
+it arises from *averaging* over all paths.  The parameter $\hbar > 0$ controls this
+averaging: it is the regularization scale that converts the singular sum-over-paths into
+a smooth function.  Setting $\hbar = 0$ collapses the average to a single classical path,
+losing the Lipschitz property in the process.
+
 ## 6.4 P4.1: Exponential Form Forced
 
 **Proposition P4.1.**  A weight $W[\gamma]$ satisfying:
@@ -62,6 +132,24 @@ give exponential growth or decay, violating $|W|=1$ for generic $S$.
 
 **Improvement over previous version.**  The earlier Lean formalization was missing
 the unitarity hypothesis; this is now included as `hW_unit : ∀ γ, Complex.abs (W γ) = 1`.
+
+## 6.4a P4.1a: Lévy-Khintchine — Gaussian Uniqueness
+
+**Synthesis Note §III.**  Among all isotropic infinitely-divisible distributions on
+$\mathbb{R}^d$ with *finite second moment*, the Gaussian is the unique stable distribution
+(Lévy-Khintchine representation theorem).
+
+**Consequence.**  The composition law $K(t_1+t_2) = K(t_1)*K(t_2)$ with:
+- (a) isotropy in $\mathbb{R}^d$,
+- (b) second moment $= d\cdot m\cdot t/\hbar$ (from dimensional analysis),
+- (c) infinite divisibility (semigroup for all rational $t$),
+
+forces $K$ to be Gaussian.  Lévy-stable processes ($\alpha$-stable with $\alpha\neq 2$)
+have infinite second moments and do not satisfy (b).
+
+This *excludes* fractional quantum mechanics (Lévy path integrals with $\alpha\neq 2$)
+as the canonical quantization of a non-relativistic particle with finite mass $m$.
+The Gaussian free-particle kernel is *the unique* answer.
 
 ## 6.5 P4.2: Master Theorem — $\hbar$ is Uniquely Forced
 
@@ -108,13 +196,19 @@ WKB/stationary-phase approximation.
 
 | Claim | Lean theorem | Status |
 |-------|-------------|--------|
+| D4.0a Chapman-Kolmogorov structure | `D4_0a_kolmogorov_structure` | 🔲 sorry |
+| D4.0b Hille-Yosida forces Hamiltonian | `D4_0b_hille_yosida_forces_hamiltonian` | 🔲 sorry |
 | D4.0 coordinate invariance (corrected) | `D4_0_half_density_coordinate_invariance` | 🔲 sorry |
 | D4.1a normalization = d/2 | `D4_1a_normalization_forced_to_d_over_2` | 🔲 sorry |
+| D4.1b kernel Lipschitz constant | `D4_1b_kernel_lipschitz_constant` | 🔲 sorry |
 | P4.1 exponential form (with unitarity) | `P4_1_exponential_forced` | 🔲 sorry |
+| P4.1a Gaussian uniqueness (Lévy-Khintchine) | `P4_1a_gaussian_uniqueness_levy_khintchine` | 🔲 sorry |
 | **P4.2 master theorem** | `P4_2_action_scale_uniquely_forced` | 🔲 sorry |
 | D4.2 non-stationary phase vanishes | `D4_2_nonstationary_phase_vanishes` | 🔲 sorry |
+| D4.2a nowhere-differentiable paths generic | `D4_2a_nowhere_differentiable_paths_are_generic` | 🔲 sorry |
 | D4.3 Van Vleck as bi-half-density | `D4_3_van_vleck_bi_half_density` | 🔲 sorry |
 
 ---
-*Transition to §7.* With the path integral derived, the next section bridges to
-operator mechanics via deformation quantization and the Moyal product.
+*Transition to §7.* With the path integral derived and the Hille-Yosida connection
+to the Hamiltonian established, the next section bridges to operator mechanics via
+deformation quantization and the Moyal product.
