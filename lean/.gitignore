@@ -20,3 +20,4 @@ lake_env.sh
 
 # Build logs
 build.log
+build_result.txt
