@@ -2,9 +2,10 @@
 """Rooted-tree coefficient checks for papers/rooted-tree-bookkeeping/main.md.
 
 Language: Python 3 with exact rationals (fractions.Fraction) and SymPy;
-mpmath for the renormalisation toy model.  Julia/BSeries.jl is not installed
-on the machine where this was run, so the B-series operations are
-reimplemented here in the BSeries.jl / Hairer-Lubich-Wanner normalisation
+mpmath for the renormalisation toy model.  The B-series operations are
+reimplemented here in the BSeries.jl / Hairer-Lubich-Wanner normalisation;
+the companion scripts/check_rooted_tree_coefficients.jl repeats the table and
+the midpoint checks inside BSeries.jl itself
 
     B(a; h, y) = y + sum_t h^|t| / sigma(t) * a(t) * F(t)(y),
 
