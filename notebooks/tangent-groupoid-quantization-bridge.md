@@ -2051,3 +2051,7 @@ with the heat kernel as propagator, force the half-density coefficient system? I
 this would close the gap between his formal axioms and our P4.2 composition theorem.
 
 **Sources:** arXiv:2410.02739 (Lackman 2024c), arXiv:2503.02941 (Bonanno-Falls-Ferrero 2025)
+
+## The physical scale of a positive slice
+
+For a free flight at trial action $s$, the three impulses $+J,-2J,+J$ separated by equal times $T$ restore the original momentum and free displacement. The two intermediate momentum squares add to $2p^2+2J^2$, giving the relative unitary $\exp[-iJ^2T/(ms)]$ for every incident packet. The measured phase slope against the mechanical action $J^2T/m$ fixes the scale. A phase regulator with action units divided by a time mesh has energy units. [Revised manuscript, §6](../docs/main-paper/main-revised.md#6-composition-and-path-integral)

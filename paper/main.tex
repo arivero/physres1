@@ -191,18 +191,14 @@ intrinsic half-density formulation of the composition law for
 propagators, separating coordinate-free kernel composition from
 scalarization conventions. 3. A semigroup-closure derivation showing the
 short-time normalization exponent \(t^{-d/2}\) is forced by composition
-(the ``square-root Jacobian''). 4. A necessity theorem (Proposition
-P4.2) showing that an action-dimensional scale \(\kappa=\hbar\) is
-forced by composition (the single master axiom), with the identity limit
-and dimensional homogeneity derivable from composition combined with the
-physical setup (action-based dynamics on \(\mathbb{R}^d\) with mass
-\(m\)). The exponential weight form is derived rather than assumed;
-extensions to curved, interacting, and Lorentzian settings are
-discussed. 5. A refinement-compatibility framing of renormalization in
-which RG invariance is the consistency condition demanded by divergent
-refinement limits. 6. A fully explicit ``RG appears before QFT''
-computation (2D delta/contact interaction) included as an appendix-level
-witness.
+(the ``square-root Jacobian''). 4. Proposition P4.2 constrains the free
+kernel in the stated action-based class. The phase scale has action
+units, and a closed sequence of impulses gives an operational
+calibration of that scale. 5. A refinement-compatibility framing of
+renormalization in which RG invariance is the consistency condition
+demanded by divergent refinement limits. 6. A fully explicit ``RG
+appears before QFT'' computation (2D delta/contact interaction) included
+as an appendix-level witness.
 
 \hypertarget{notation-and-claim-taxonomy}{%
 \section{2. Notation and Claim
@@ -1356,6 +1352,22 @@ coordinate-independent classification of allowable amplitude algebras
 (complex and quaternionic) via Hurwitz's composition-algebra theorem,
 deriving the Born rule without postulating the complex field
 {[}Köplinger2025{]}.
+
+\textbf{Phase calibration on a closed impulse sequence.} Let \(s>0\)
+denote a trial action. Free evolution of momentum \(p\) during \(T\) has
+phase \(\exp[-iTp^2/(2ms)]\). Apply \(+J,-2J,+J\) at \(0,T,2T\). The two
+flight momenta are \(p+J\) and \(p-J\), and both the final momentum and
+classical displacement agree with free evolution for time \(2T\). The
+relative unitary is the same scalar on every input wave packet: \[
+\exp\!\left[-\frac{iT}{2ms}\{(p+J)^2+(p-J)^2-2p^2\}\right]
+  =\exp[-iJ^2T/(ms)] .
+\] A coherent reference with controlled impulse phases gives \(1/s\) as
+the slope of the unwrapped phase lag versus the independently calibrated
+action \(J^2T/m\). At fixed initial velocity a simultaneous rescaling
+\((m,J,s)\mapsto(c m,c J,c s)\) preserves both the displacement and the
+phase. Free composition holds at every positive trial \(s\). Equality of
+the scales assigned to different systems and calibration of their common
+numerical value therefore require their respective physical inputs.
 
 \hypertarget{from-additive-action-to-multiplicative-weights}{%
 \subsection{6.2 From Additive Action to Multiplicative
@@ -2783,7 +2795,7 @@ data rather than a limit-control problem per se.
 \texttt{Remark\ P9.1a\ (Stage\ 4:\ composition\ over\ dynamical\ geometry).}
 The forced-completion chain 0→1→2→3 does not obviously terminate at QFT.
 When gravity is dynamical, the composition integral must sum over
-spatial-slice geometries themselves, and the notion ``t = t₁ + t₂'' that
+spatial-slice geometries themselves, and the notion \(t=t_1+t_2\) that
 composition (hypothesis (C) of Proposition P4.2; axiom A1 of
 {[}RCPFoundations{]}) presupposes becomes gauge-dependent under general
 covariance. This is qualitatively different from stages 1--3, which fix
@@ -4145,8 +4157,9 @@ heat-kernel normalization at short times.
   ``Invariants of 3-manifolds via link polynomials and quantum groups,''
   \emph{Inventiones Mathematicae} \textbf{103}, 547--598 (1991). DOI
   \texttt{10.1007/BF01239527}. (RT construction: ribbon categories +
-  quantum groups → 3-manifold invariants; forces q\_QG =
-  e\^{}\{2πi/(k+g∨)\} from unitarity of the modular tensor category.)
+  quantum groups → 3-manifold invariants; forces
+  \(q_{\rm QG}=e^{2\pi i/(k+g^\vee)}\) from unitarity of the modular
+  tensor category.)
 \item
   {[}Verlinde1988{]} Erik Verlinde, ``Fusion rules and modular
   transformations in 2D conformal field theory,'' \emph{Nuclear Physics
@@ -4158,9 +4171,9 @@ heat-kernel normalization at short times.
   {[}Witten1989{]} Edward Witten, ``Quantum field theory and the Jones
   polynomial,'' \emph{Communications in Mathematical Physics}
   \textbf{121}, 351--399 (1989). DOI \texttt{10.1007/BF01217730}.
-  (Chern-Simons theory as 3D TQFT; k∈ℤ from π₃(G)=ℤ gauge invariance;
-  q=e\^{}\{2πi/(k+g∨)\}.) Source:
-  sources/witten1989-chern-simons-jones.md.
+  (Chern-Simons theory as 3D TQFT; \(k\in\mathbb Z\) from
+  \(\pi_3(G)=\mathbb Z\) gauge invariance; \(q=e^{2\pi i/(k+g^\vee)}\).)
+  Source: sources/witten1989-chern-simons-jones.md.
 \item
   {[}Murakami1995{]} Hitoshi Murakami, ``Quantum SO(3)-invariants
   dominate the SU(2)-invariant of Casson and Walker,'' \emph{Math. Proc.
@@ -4171,8 +4184,8 @@ heat-kernel normalization at short times.
   {[}Habiro2008{]} Kazuo Habiro, ``A unified Witten-Reshetikhin-Turaev
   invariant for integral homology spheres,'' \emph{Invent. Math.}
   \textbf{171} (2008), no. 1, 1--81. DOI
-  \texttt{10.1007/s00222-007-0071-0}. (Cyclotomic integrality: Z(M³) ∈
-  ℤ{[}ζ\_N, N\^{}\{-1\}{]} for integral homology spheres.)
+  \texttt{10.1007/s00222-007-0071-0}. (Cyclotomic integrality:
+  \(Z(M^3)\in\mathbb Z[\zeta_N,N^{-1}]\) for integral homology spheres.)
 \item
   {[}ElShowk2014{]} Sheer El-Showk et al., ``Solving the 3d Ising Model
   with the Conformal Bootstrap II. c-Minimization and Precise Critical
