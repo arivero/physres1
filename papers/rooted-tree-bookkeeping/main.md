@@ -461,10 +461,10 @@ The circulated version (archived as `pub-track/sent/rooted-tree-bookkeeping/main
 
 7. [Jackiw1991] R. Jackiw, "Delta function potentials in two- and three-dimensional quantum mechanics," in *M.A.B. Beg Memorial Volume*, eds. A. Ali and P. Hoodbhoy (World Scientific, 1991), 25–42.
 
-8. [ChartierHairerVilmart2010] Philippe Chartier, Ernst Hairer, and Gilles Vilmart, "Algebraic structures of B-series," *Found. Comput. Math.* 10 (2010), 407–427. DOI `10.1007/s10208-010-9065-1`.
+8. [ChartierHairerVilmart2010] Philippe Chartier, Ernst Hairer, and Gilles Vilmart, "Algebraic structures of B-series," *Found. Comput. Math.* 10 (2010), 407–427. DOI `10.1007/s10208-010-9065-1`. (DOI as quoted in the BSeries.jl documentation; volume and pages not verified against the publisher page.)
 
 9. [CalaqueEbrahimiFardManchon2011] Damien Calaque, Kurusch Ebrahimi-Fard, and Dominique Manchon, "Two interacting Hopf algebras of trees: a Hopf-algebraic approach to composition and substitution of B-series," *Adv. Appl. Math.* 47 (2011), 282–308. arXiv:`0806.2238`. DOI `10.1016/j.aam.2009.08.003`.
 
 10. [EbrahimiFardKreimer2005] Kurusch Ebrahimi-Fard and Dirk Kreimer, "The Hopf algebra approach to Feynman diagram calculations," *J. Phys. A* 38 (2005), R385–R406. arXiv:`hep-th/0510202`. DOI `10.1088/0305-4470/38/50/R01`.
 
-11. [KetchesonRanocha2023] David I. Ketcheson and Hendrik Ranocha, "Computing with B-series," *ACM Trans. Math. Softw.* 49(2) (2023). arXiv:`2111.11680`. DOI `10.1145/3573384`. Software: BSeries.jl, https://github.com/ranocha/BSeries.jl.
+11. [KetchesonRanocha2023] David I. Ketcheson and Hendrik Ranocha, "Computing with B-series," *ACM Trans. Math. Softw.* 49(2) (2023), volume and issue as in the BSeries.jl citation file; article number not verified. arXiv:`2111.11680`. DOI `10.1145/3573384`. Software: BSeries.jl, https://github.com/ranocha/BSeries.jl.
